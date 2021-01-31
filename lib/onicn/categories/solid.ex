@@ -35,9 +35,50 @@ defmodule Onicn.Categories.Solid do
       end
 
       def output(:link_name_icon) do
-        ~s|<a href="">unquote(attributes[:cn_name])</a>|
+        ~s|<a href="/solid/#{Macro.underscore(unquote(element_id))}/">#{unquote(attributes[:cn_name])}</a>|
       end
     end
+  end
+
+  def output(:json_elements) do
+    @elements
+    |> Enum.filter(fn %{"elementId" => element_id} ->
+      module = Module.concat(["Onicn.Elements", element_id])
+      function_exported?(module, :__attributes__, 0) && module.__attributes__[:nav] === __MODULE__
+    end)
+    |> Enum.map(fn %{"elementId" => element_id} ->
+      module = Module.concat(["Onicn.Elements", element_id])
+      module.__attributes__
+      |> Enum.filter(fn {field, _} -> field in @fields end)
+      |> Keyword.put(:cn_name, module.output(:link_name_icon))
+      |> Onicn.Categories.Element.attributes_to_json()
+    end)
+  end
+
+  def output(:html_table) do
+    %{
+      container: ~s|<table id="element" lay-filter=""></table>|,
+      script: ~s|
+      layui.use(['element', 'table'], function() {
+        var table = layui.table;
+        table.render({
+          elem: '#element',
+          url: '/solid.json',
+          page: false,
+          cols: [
+            [
+              { field: 'cn_name', title: '名称', sort: true, fixed: 'left' },
+              { field: 'thermal_conductivity', title: '导热率', sort: true  },
+              { field: 'specific_heat_capacity', title: '比热容', sort: true },
+              { field: 'high_temp', title: '高温相变温度', sort: true },
+              { field: 'high_temp_transition_target', title: '高温相变产物'},
+              { field: 'hardness', title: '硬度', sort: true },
+              { field: 'molar_mass', title: '摩尔质量', sort: true }
+            ]
+          ]
+        });
+      });|
+    }
   end
 
   def __fields__, do: @fields

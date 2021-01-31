@@ -64,13 +64,16 @@ defmodule Onicn.Categories.Element do
         _ ->
           []
       end,
-      Keyword.take([
-        specific_heat_capacity: element["specificHeatCapacity"],
-        thermal_conductivity: element["thermalConductivity"],
-        mass_per_tile: element["defaultMass"],
-        molar_mass: element["molarMass"],
-        hardness: element["hardness"]
-      ], fields)
+      Keyword.take(
+        [
+          specific_heat_capacity: element["specificHeatCapacity"],
+          thermal_conductivity: element["thermalConductivity"],
+          mass_per_tile: element["defaultMass"],
+          molar_mass: element["molarMass"],
+          hardness: element["hardness"]
+        ],
+        fields
+      )
     ])
   end
 
@@ -79,12 +82,16 @@ defmodule Onicn.Categories.Element do
     |> Enum.map(fn
       {:high_temp_transition_target, {element_module, _}} ->
         {:high_temp_transition_target, element_module.output(:link_name_icon)}
+
       {:high_temp_transition_target, element_module} ->
         {:high_temp_transition_target, element_module.output(:link_name_icon)}
+
       {:low_temp_transition_target, {element_module, _}} ->
         {:low_temp_transition_target, element_module.output(:link_name_icon)}
+
       {:low_temp_transition_target, element_module} ->
         {:low_temp_transition_target, element_module.output(:link_name_icon)}
+
       {field, value} ->
         {field, value}
     end)

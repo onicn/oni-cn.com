@@ -1,0 +1,15 @@
+<div class="layui-logo" style="width:300px">
+  <img src="/img/header_basic.jpg">
+</div>
+
+<ul class="layui-nav layui-layout-left" style="left:300px;z-index:-1;">
+  <li class="layui-nav-item <%= if nav === "solid" do %>layui-this<% end %>"><a href="/solid/"><img src="/img/categories/solid.png"><span>固体</span></a></li>
+  <li class="layui-nav-item <%= if nav === "liquid" do %>layui-this<% end %>"><a href="/liquid/"><img src="/img/categories/liquids.png"><span>液体</span></a></li>
+  <li class="layui-nav-item <%= if nav === "gas" do %>layui-this<% end %>"><a href="/gas/"><img src="/img/categories/gases.png"><span>气体</span></a></li>
+  <li class="layui-nav-item gray"><a href="javascript:;"><img src="/img/categories/buildings.png"><span>建筑</span></a></li>
+  <li class="layui-nav-item gray"><a href="javascript:;"><img src="/img/categories/critters.png"><span>动物</span></a></li>
+  <li class="layui-nav-item gray"><a href="javascript:;"><img src="/img/categories/plants.png"><span>植物</span></a></li>
+  <li class="layui-nav-item gray"><a href="javascript:;"><img src="/img/categories/food.png"><span>食物</span></a></li>
+  <li class="layui-nav-item gray"><a href="javascript:;"><img src="/img/categories/geysers.png"><span>间歇泉</span></a></li>
+  <li class="layui-nav-item gray"><a href="javascript:;"><img src="/img/categories/disease.png"><span>疾病</span></a></li>
+</ul>
