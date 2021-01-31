@@ -1,7 +1,8 @@
 defmodule Onicn.Categories.Gas do
   @fields [
     :category,
-    :low_temp_transition,
+    :low_temp,
+    :low_temp_transition_target,
     :specific_heat_capacity,
     :thermal_conductivity,
     :density

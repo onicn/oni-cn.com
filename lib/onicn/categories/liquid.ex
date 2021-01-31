@@ -1,7 +1,7 @@
 defmodule Onicn.Categories.Liquid do
   @fields [
     :low_temp,
-    :high_temp_transition_target,
+    :low_temp_transition_target,
     :high_temp,
     :high_temp_transition_target,
     :specific_heat_capacity,

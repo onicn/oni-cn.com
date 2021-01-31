@@ -1,7 +1,8 @@
 defmodule Onicn.Categories.Solid do
   @fields [
     :category,
-    :high_temp_transition,
+    :high_temp,
+    :high_temp_transition_target,
     :specific_heat_capacity,
     :thermal_conductivity,
     :hardness
