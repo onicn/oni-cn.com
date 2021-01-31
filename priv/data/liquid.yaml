@@ -1,0 +1,921 @@
+---
+elements:
+  - elementId: Brine # 30% solution. keep in sync with desalinator!
+    maxMass: 1000
+    liquidCompression: 1.01
+    speed: 100
+    minHorizontalFlow: 0.01
+    minVerticalFlow: 0.01
+    specificHeatCapacity: 3.4
+    thermalConductivity: 0.609
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 25
+    gasSurfaceAreaMultiplier: 1
+    lowTemp: 250.65
+    highTemp: 375.9
+    lowTempTransitionTarget: BrineIce
+    highTempTransitionTarget: Steam
+    highTempTransitionOreId: Salt
+    highTempTransitionOreMassConversion: 0.3
+    defaultTemperature: 282.15
+    defaultMass: 1200
+    molarMass: 22
+    toxicity: 0
+    lightAbsorptionFactor: 0.25
+    tags:
+    - AnyWater
+    isDisabled: false
+    state: Liquid
+    localizationID: STRINGS.ELEMENTS.BRINE.NAME
+
+  - elementId: Chlorine
+    maxMass: 1000
+    liquidCompression: 1.01
+    speed: 180
+    minHorizontalFlow: 0.01
+    minVerticalFlow: 0.01
+    specificHeatCapacity: 0.48
+    thermalConductivity: 0.0081
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 25
+    gasSurfaceAreaMultiplier: 1
+    lowTemp: 172.17
+    highTemp: 238.55
+    lowTempTransitionTarget: SolidChlorine
+    highTempTransitionTarget: ChlorineGas
+    defaultTemperature: 200
+    defaultMass: 600
+    molarMass: 34.453
+    toxicity: 0
+    lightAbsorptionFactor: 1
+    tags:
+    isDisabled: false
+    state: Liquid
+    localizationID: STRINGS.ELEMENTS.CHLORINE.NAME
+  
+  - elementId: CrudeOil
+    maxMass: 870
+    liquidCompression: 1.01
+    speed: 50
+    minHorizontalFlow: 0.1
+    minVerticalFlow: 0.1
+    specificHeatCapacity: 1.69
+    thermalConductivity: 2
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 25
+    gasSurfaceAreaMultiplier: 1
+    lowTemp: 233
+    highTemp: 673
+    lowTempTransitionTarget: SolidCrudeOil
+    highTempTransitionTarget: Petroleum
+    defaultTemperature: 350
+    defaultMass: 200
+    molarMass: 500
+    toxicity: 0
+    lightAbsorptionFactor: 1
+    tags:
+    isDisabled: false
+    state: Liquid
+    localizationID: STRINGS.ELEMENTS.CRUDEOIL.NAME
+  
+  - elementId: DirtyWater
+    maxMass: 1000
+    liquidCompression: 1.01
+    speed: 125
+    minHorizontalFlow: 0.01
+    minVerticalFlow: 0.01
+    specificHeatCapacity: 4.179
+    thermalConductivity: 0.58
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 25
+    gasSurfaceAreaMultiplier: 1
+    lowTemp: 252.5
+    highTemp: 392.5
+    lowTempTransitionTarget: DirtyIce
+    highTempTransitionTarget: Steam
+    sublimateId: ContaminatedOxygen
+    sublimateFx: ContaminatedOxygenBubble
+    highTempTransitionOreId: Dirt
+    highTempTransitionOreMassConversion: 0.01
+    defaultTemperature: 300
+    defaultMass: 1000
+    molarMass: 20
+    toxicity: 0.1
+    lightAbsorptionFactor: 0.7
+    tags:
+    - Mixture
+    - AnyWater
+    isDisabled: false
+    state: Liquid
+    localizationID: STRINGS.ELEMENTS.DIRTYWATER.NAME
+  
+  - elementId: LiquidCarbonDioxide
+    maxMass: 2000
+    liquidCompression: 1.01
+    speed: 125
+    minHorizontalFlow: 0.01
+    minVerticalFlow: 0.01
+    specificHeatCapacity: 0.846
+    thermalConductivity: 1.46
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 25
+    gasSurfaceAreaMultiplier: 1
+    lowTemp: 216.6
+    highTemp: 225
+    lowTempTransitionTarget: SolidCarbonDioxide
+    highTempTransitionTarget: CarbonDioxide
+    defaultTemperature: 220
+    defaultMass: 600
+    molarMass: 44.01
+    toxicity: 0
+    lightAbsorptionFactor: 1
+    isDisabled: false
+    state: Liquid
+    localizationID: STRINGS.ELEMENTS.LIQUIDCARBONDIOXIDE.NAME
+  
+  - elementId: LiquidHelium
+    maxMass: 1000
+    liquidCompression: 1.01
+    speed: 100
+    minHorizontalFlow: 0.01
+    minVerticalFlow: 0.01
+    specificHeatCapacity: 0.2
+    thermalConductivity: 0.236
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 25
+    gasSurfaceAreaMultiplier: 1
+    lowTemp: 0
+    highTemp: 4.22
+    highTempTransitionTarget: Helium
+    defaultTemperature: 1
+    defaultMass: 200
+    molarMass: 4
+    toxicity: 0
+    lightAbsorptionFactor: 0.8
+    isDisabled: true
+    state: Liquid
+    localizationID: STRINGS.ELEMENTS.LIQUIDHELIUM.NAME
+  
+  - elementId: LiquidHydrogen
+    maxMass: 1000
+    liquidCompression: 1.01
+    speed: 180
+    minHorizontalFlow: 0.01
+    minVerticalFlow: 0.01
+    specificHeatCapacity: 2.4
+    thermalConductivity: 0.1
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 25
+    gasSurfaceAreaMultiplier: 1
+    lowTemp: 14
+    highTemp: 21
+    lowTempTransitionTarget: SolidHydrogen
+    highTempTransitionTarget: Hydrogen
+    defaultTemperature: 18
+    defaultMass: 600
+    molarMass: 1.00794
+    toxicity: 0
+    lightAbsorptionFactor: 1
+    tags:
+    isDisabled: false
+    state: Liquid
+    localizationID: STRINGS.ELEMENTS.LIQUIDHYDROGEN.NAME
+  
+  - elementId: LiquidMethane
+    maxMass: 1000
+    liquidCompression: 1.01
+    speed: 180
+    minHorizontalFlow: 0.01
+    minVerticalFlow: 0.01
+    specificHeatCapacity: 2.191
+    thermalConductivity: 0.03
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 25
+    gasSurfaceAreaMultiplier: 1
+    lowTemp: 90.55
+    highTemp: 111.65
+    lowTempTransitionTarget: SolidMethane
+    highTempTransitionTarget: Methane
+    defaultTemperature: 100
+    defaultMass: 600
+    molarMass: 16.044
+    toxicity: 0
+    lightAbsorptionFactor: 0.6
+    tags:
+    isDisabled: false
+    state: Liquid
+    localizationID: STRINGS.ELEMENTS.LIQUIDMETHANE.NAME
+  
+  - elementId: LiquidOxygen
+    maxMass: 500
+    liquidCompression: 1.01
+    speed: 200
+    minHorizontalFlow: 0.01
+    minVerticalFlow: 0.01
+    specificHeatCapacity: 1.01
+    thermalConductivity: 2
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 25
+    gasSurfaceAreaMultiplier: 1
+    lowTemp: 54.36
+    highTemp: 90.19
+    lowTempTransitionTarget: SolidOxygen
+    highTempTransitionTarget: Oxygen
+    defaultTemperature: 74.36
+    defaultMass: 300
+    molarMass: 15.9994
+    toxicity: 0
+    lightAbsorptionFactor: 1
+    isDisabled: false
+    state: Liquid
+    localizationID: STRINGS.ELEMENTS.LIQUIDOXYGEN.NAME
+  
+  - elementId: LiquidPhosphorus
+    maxMass: 1000
+    liquidCompression: 1.01
+    speed: 100
+    minHorizontalFlow: 2
+    minVerticalFlow: 1
+    specificHeatCapacity: 0.7697
+    thermalConductivity: 0.236
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 25
+    gasSurfaceAreaMultiplier: 1
+    lowTemp: 317.3
+    highTemp: 553.6
+    lowTempTransitionTarget: Phosphorus
+    highTempTransitionTarget: PhosphorusGas
+    defaultTemperature: 500
+    defaultMass: 200
+    molarMass: 30.973762
+    toxicity: 0
+    lightAbsorptionFactor: 1
+    tags:
+    - EmitsLight
+    isDisabled: false
+    state: Liquid
+    localizationID: STRINGS.ELEMENTS.LIQUIDPHOSPHORUS.NAME
+  
+  - elementId: LiquidPropane
+    maxMass: 1000
+    liquidCompression: 1.01
+    speed: 180
+    minHorizontalFlow: 0.01
+    minVerticalFlow: 0.01
+    specificHeatCapacity: 2.4
+    thermalConductivity: 0.1
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 25
+    gasSurfaceAreaMultiplier: 1
+    lowTemp: 85
+    highTemp: 231
+    lowTempTransitionTarget: SolidPropane
+    highTempTransitionTarget: Propane
+    defaultTemperature: 200
+    defaultMass: 600
+    molarMass: 44.1
+    toxicity: 0
+    lightAbsorptionFactor: 1
+    tags:
+    isDisabled: false
+    state: Liquid
+    localizationID: STRINGS.ELEMENTS.LIQUIDPROPANE.NAME
+  
+  - elementId: LiquidSulfur
+    maxMass: 740
+    liquidCompression: 1.01
+    speed: 50
+    minHorizontalFlow: 0.1
+    minVerticalFlow: 0.1
+    specificHeatCapacity: 0.7
+    thermalConductivity: 0.2
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 25
+    gasSurfaceAreaMultiplier: 1
+    lowTemp: 388.35
+    highTemp: 610.15
+    lowTempTransitionTarget: Sulfur
+    highTempTransitionTarget: SulfurGas
+    defaultTemperature: 450
+    defaultMass: 190
+    molarMass: 32
+    toxicity: 0
+    lightAbsorptionFactor: 0.1
+    tags:
+    isDisabled: false
+    state: Liquid
+    localizationID: STRINGS.ELEMENTS.LIQUIDSULFUR.NAME
+  
+  - elementId: Magma
+    maxMass: 1840
+    liquidCompression: 1.01
+    speed: 60
+    minHorizontalFlow: 50
+    minVerticalFlow: 20
+    specificHeatCapacity: 1
+    thermalConductivity: 1
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 25
+    gasSurfaceAreaMultiplier: 1
+    lowTemp: 1683
+    highTemp: 2630
+    lowTempTransitionTarget: IgneousRock
+    highTempTransitionTarget: RockGas
+    defaultTemperature: 2000
+    defaultMass: 1840
+    molarMass: 50
+    toxicity: 0
+    lightAbsorptionFactor: 1
+    tags:
+    - EmitsLight
+    isDisabled: false
+    state: Liquid
+    localizationID: STRINGS.ELEMENTS.MAGMA.NAME
+  
+  - elementId: Mercury
+    maxMass: 1000
+    liquidCompression: 1.01
+    speed: 140
+    minHorizontalFlow: 0.01
+    minVerticalFlow: 0.01
+    specificHeatCapacity: 0.14
+    thermalConductivity: 8.3
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 25
+    gasSurfaceAreaMultiplier: 1
+    lowTemp: 234.3
+    highTemp: 629.9
+    lowTempTransitionTarget: SolidMercury
+    highTempTransitionTarget: MercuryGas
+    defaultTemperature: 320
+    defaultMass: 600
+    molarMass: 200.59
+    toxicity: 0
+    lightAbsorptionFactor: 1
+    tags:
+    - Metal
+    isDisabled: true
+    state: Liquid
+    localizationID: STRINGS.ELEMENTS.MERCURY.NAME
+  
+  - elementId: MoltenAluminum
+    maxMass: 7870
+    liquidCompression: 1.01
+    speed: 100
+    minHorizontalFlow: 30
+    minVerticalFlow: 3
+    specificHeatCapacity: 0.91
+    thermalConductivity: 20.5
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 25
+    gasSurfaceAreaMultiplier: 1
+    lowTemp: 933.45
+    highTemp: 2743.15
+    lowTempTransitionTarget: Aluminum
+    highTempTransitionTarget: AluminumGas
+    defaultTemperature: 2000
+    defaultMass: 1000
+    molarMass: 55.845
+    toxicity: 0
+    lightAbsorptionFactor: 1
+    tags:
+    - Metal
+    - RefinedMetal
+    - EmitsLight
+    isDisabled: false
+    state: Liquid
+    localizationID: STRINGS.ELEMENTS.MOLTENALUMINUM.NAME
+
+  - elementId: MoltenCarbon
+    maxMass: 4000
+    liquidCompression: 1.01
+    speed: 150
+    minHorizontalFlow: 0.01
+    minVerticalFlow: 0.01
+    specificHeatCapacity: 0.71
+    thermalConductivity: 2
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 25
+    gasSurfaceAreaMultiplier: 1
+    lowTemp: 3825
+    highTemp: 5100
+    lowTempTransitionTarget: RefinedCarbon
+    highTempTransitionTarget: CarbonGas
+    defaultTemperature: 4600
+    defaultMass: 600
+    molarMass: 12.0107
+    toxicity: 0
+    lightAbsorptionFactor: 1
+    tags:
+    isDisabled: false
+    state: Liquid
+    localizationID: STRINGS.ELEMENTS.MOLTENCARBON.NAME
+  
+  - elementId: MoltenCopper
+    maxMass: 3870
+    liquidCompression: 1.01
+    speed: 100
+    minHorizontalFlow: 20
+    minVerticalFlow: 2
+    specificHeatCapacity: 0.386
+    thermalConductivity: 12
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 25
+    gasSurfaceAreaMultiplier: 1
+    lowTemp: 1357
+    highTemp: 2834
+    lowTempTransitionTarget: Copper
+    highTempTransitionTarget: CopperGas
+    defaultTemperature: 1800
+    defaultMass: 900
+    molarMass: 63.546
+    toxicity: 0
+    lightAbsorptionFactor: 1
+    tags:
+    - Metal
+    - RefinedMetal
+
+    - EmitsLight
+    isDisabled: false
+    state: Liquid
+    localizationID: STRINGS.ELEMENTS.MOLTENCOPPER.NAME
+  
+  - elementId: MoltenGlass
+    maxMass: 1840
+    liquidCompression: 1.01
+    speed: 60
+    minHorizontalFlow: 50
+    minVerticalFlow: 20
+    specificHeatCapacity: 0.2
+    thermalConductivity: 1
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 25
+    gasSurfaceAreaMultiplier: 1
+    lowTemp: 1400
+    highTemp: 2630
+    lowTempTransitionTarget: Glass
+    highTempTransitionTarget: RockGas
+    defaultTemperature: 2000
+    defaultMass: 200
+    molarMass: 50
+    toxicity: 0
+    lightAbsorptionFactor: 0.7
+    tags:
+    - EmitsLight
+    isDisabled: false
+    state: Liquid
+    localizationID: STRINGS.ELEMENTS.MOLTENGLASS.NAME
+  
+  - elementId: MoltenGold
+    maxMass: 9970
+    liquidCompression: 1.01
+    speed: 100
+    minHorizontalFlow: 25
+    minVerticalFlow: 1
+    specificHeatCapacity: 0.1291
+    thermalConductivity: 6
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 25
+    gasSurfaceAreaMultiplier: 1
+    lowTemp: 1337
+    highTemp: 3129
+    lowTempTransitionTarget: Gold
+    highTempTransitionTarget: GoldGas
+    defaultTemperature: 2000
+    defaultMass: 870
+    molarMass: 196.966569
+    toxicity: 0
+    lightAbsorptionFactor: 1
+    tags:
+    - Metal
+    - RefinedMetal
+    - EmitsLight
+    isDisabled: false
+    state: Liquid
+    localizationID: STRINGS.ELEMENTS.MOLTENGOLD.NAME
+  
+  - elementId: MoltenIron
+    maxMass: 7870
+    liquidCompression: 1.01
+    speed: 100
+    minHorizontalFlow: 30
+    minVerticalFlow: 3
+    specificHeatCapacity: 0.449
+    thermalConductivity: 4
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 25
+    gasSurfaceAreaMultiplier: 1
+    lowTemp: 1808
+    highTemp: 3023
+    lowTempTransitionTarget: Iron
+    highTempTransitionTarget: IronGas
+    defaultTemperature: 2500
+    defaultMass: 1000
+    molarMass: 55.845
+    toxicity: 0
+    lightAbsorptionFactor: 1
+    tags:
+    - Metal
+    - RefinedMetal
+    - EmitsLight
+    isDisabled: false
+    state: Liquid
+    localizationID: STRINGS.ELEMENTS.MOLTENIRON.NAME
+  
+  - elementId: MoltenLead
+    maxMass: 9970
+    liquidCompression: 1.01
+    speed: 100
+    minHorizontalFlow: 25
+    minVerticalFlow: 1
+    specificHeatCapacity: 0.128
+    thermalConductivity: 11
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 25
+    gasSurfaceAreaMultiplier: 1
+    lowTemp: 600.65
+    highTemp: 2022.15
+    lowTempTransitionTarget: Lead
+    highTempTransitionTarget: LeadGas
+    defaultTemperature: 2000
+    defaultMass: 3000
+    molarMass: 196.966569
+    toxicity: 0
+    lightAbsorptionFactor: 1
+    tags:
+    - Metal
+    - RefinedMetal
+    - EmitsLight
+    isDisabled: false
+    state: Liquid
+    localizationID: STRINGS.ELEMENTS.MOLTENLEAD.NAME
+
+  - elementId: MoltenNiobium
+    maxMass: 3870
+    liquidCompression: 1.01
+    speed: 100
+    minHorizontalFlow: 20
+    minVerticalFlow: 10
+    specificHeatCapacity: 0.265
+    thermalConductivity: 54
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 25
+    gasSurfaceAreaMultiplier: 1
+    lowTemp: 2750
+    highTemp: 5017
+    lowTempTransitionTarget: Niobium
+    highTempTransitionTarget: NiobiumGas
+    defaultTemperature: 3000
+    defaultMass: 900
+    molarMass: 92.9
+    toxicity: 0
+    lightAbsorptionFactor: 1
+    tags:
+    - Metal
+    - RefinedMetal
+    - EmitsLight
+    isDisabled: false
+    state: Liquid
+    localizationID: STRINGS.ELEMENTS.MOLTENNIOBIUM.NAME
+  
+  - elementId: MoltenSalt
+    maxMass: 740
+    liquidCompression: 1.01
+    speed: 50
+    minHorizontalFlow: 0.1
+    minVerticalFlow: 0.1
+    specificHeatCapacity: 0.7
+    thermalConductivity: 0.444
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 25
+    gasSurfaceAreaMultiplier: 1
+    lowTemp: 1073
+    highTemp: 1738
+    lowTempTransitionTarget: Salt
+    highTempTransitionTarget: SaltGas
+    defaultTemperature: 450
+    defaultMass: 190
+    molarMass: 32
+    toxicity: 0
+    lightAbsorptionFactor: 0.1
+    tags:
+    isDisabled: false
+    state: Liquid
+    localizationID: STRINGS.ELEMENTS.MOLTENSALT.NAME
+
+  - elementId: MoltenSteel
+    maxMass: 3870
+    liquidCompression: 1.01
+    speed: 100
+    minHorizontalFlow: 20
+    minVerticalFlow: 10
+    specificHeatCapacity: 0.386
+    thermalConductivity: 80
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 25
+    gasSurfaceAreaMultiplier: 1
+    lowTemp: 1357
+    highTemp: 4100
+    lowTempTransitionTarget: Steel
+    highTempTransitionTarget: SteelGas
+    defaultTemperature: 2000
+    defaultMass: 900
+    molarMass: 63.546
+    toxicity: 0
+    lightAbsorptionFactor: 1
+    tags:
+    - Metal
+    - RefinedMetal
+    - EmitsLight
+    isDisabled: false
+    state: Liquid
+    localizationID: STRINGS.ELEMENTS.MOLTENSTEEL.NAME
+  
+  - elementId: MoltenTungsten
+    maxMass: 3870
+    liquidCompression: 1.01
+    speed: 100
+    minHorizontalFlow: 20
+    minVerticalFlow: 10
+    specificHeatCapacity: 0.134
+    thermalConductivity: 4
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 25
+    gasSurfaceAreaMultiplier: 1
+    lowTemp: 3695
+    highTemp: 6203
+    lowTempTransitionTarget: Tungsten
+    highTempTransitionTarget: TungstenGas
+    defaultTemperature: 4000
+    defaultMass: 200
+    molarMass: 183.84
+    toxicity: 0
+    lightAbsorptionFactor: 0.7
+    tags:
+    - Metal
+    - RefinedMetal
+    isDisabled: false
+    state: Liquid
+    localizationID: STRINGS.ELEMENTS.MOLTENTUNGSTEN.NAME
+  
+  - elementId: MoltenUranium
+    maxMass: 9970
+    liquidCompression: 1.01
+    speed: 100
+    minHorizontalFlow: 25
+    minVerticalFlow: 1
+    specificHeatCapacity: 1.69
+    thermalConductivity: 2
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 25
+    gasSurfaceAreaMultiplier: 1
+    lowTemp: 1132
+    highTemp: 4405
+    lowTempTransitionTarget: DepletedUranium
+    highTempTransitionTarget: RockGas
+    defaultTemperature: 2000
+    defaultMass: 3000
+    molarMass: 196.966569
+    toxicity: 0
+    lightAbsorptionFactor: 1
+    tags:
+    - Metal
+    - RefinedMetal
+    - EmitsLight
+    isDisabled: true
+    state: Liquid
+    localizationID: STRINGS.ELEMENTS.MOLTENURANIUM.NAME
+
+  - elementId: Naphtha
+    maxMass: 740
+    liquidCompression: 1.01
+    speed: 30
+    minHorizontalFlow: 10
+    minVerticalFlow: 10
+    specificHeatCapacity: 2.191
+    thermalConductivity: 0.2
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 25
+    gasSurfaceAreaMultiplier: 1
+    lowTemp: 223
+    highTemp: 812
+    lowTempTransitionTarget: SolidNaphtha
+    highTempTransitionTarget: SourGas
+    defaultTemperature: 350
+    defaultMass: 740
+    molarMass: 102.2
+    toxicity: 0.25
+    lightAbsorptionFactor: 0.8
+    tags:
+    - Oil
+    isDisabled: false
+    state: Liquid
+    localizationID: STRINGS.ELEMENTS.NAPHTHA.NAME
+  
+  - elementId: NuclearWaste
+    maxMass: 9970
+    liquidCompression: 1.01
+    speed: 100
+    minHorizontalFlow: 25
+    minVerticalFlow: 1
+    specificHeatCapacity: 7.44
+    thermalConductivity: 6
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 25
+    gasSurfaceAreaMultiplier: 1
+    lowTemp: 0
+    highTemp: 4405
+    defaultTemperature: 2000
+    defaultMass: 3000
+    molarMass: 196.966569
+    toxicity: 0
+    lightAbsorptionFactor: 1
+    tags:
+    - Metal
+    - RefinedMetal
+    - EmitsLight
+    isDisabled: true
+    state: Liquid
+    localizationID: STRINGS.ELEMENTS.NUCLEARWASTE.NAME
+
+  - elementId: Petroleum
+    maxMass: 740
+    liquidCompression: 1.01
+    speed: 50
+    minHorizontalFlow: 0.1
+    minVerticalFlow: 0.1
+    specificHeatCapacity: 1.76
+    thermalConductivity: 2
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 25
+    gasSurfaceAreaMultiplier: 1
+    lowTemp: 216
+    highTemp: 812
+    lowTempTransitionTarget: SolidPetroleum
+    highTempTransitionTarget: SourGas
+    defaultTemperature: 300
+    defaultMass: 190
+    molarMass: 82.2
+    toxicity: 0
+    lightAbsorptionFactor: 0.8
+    tags:
+    - CombustibleLiquid
+    isDisabled: false
+    state: Liquid
+    localizationID: STRINGS.ELEMENTS.PETROLEUM.NAME
+  
+  - elementId: SaltWater # approx 7% solution -- keep in sync with desalinator
+    maxMass: 1000
+    liquidCompression: 1.01
+    speed: 100
+    minHorizontalFlow: 0.01
+    minVerticalFlow: 0.01
+    specificHeatCapacity: 4.1
+    thermalConductivity: 0.609
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 25
+    gasSurfaceAreaMultiplier: 1
+    lowTemp: 265.65
+    highTemp: 372.84
+    lowTempTransitionTarget: Brine
+    highTempTransitionTarget: Steam
+    lowTempTransitionOreId: Ice
+    lowTempTransitionOreMassConversion: 0.77 # this is the actual value of clean water that would be removed to leave a 30% brine remaining.
+    highTempTransitionOreId: Salt
+    highTempTransitionOreMassConversion: 0.07
+    defaultTemperature: 300
+    defaultMass: 1100
+    molarMass: 21
+    toxicity: 0
+    lightAbsorptionFactor: 0.25
+    tags:
+    - AnyWater
+    isDisabled: false
+    state: Liquid
+    localizationID: STRINGS.ELEMENTS.SALTWATER.NAME
+
+  - elementId: SuperCoolant
+    maxMass: 910
+    liquidCompression: 1.01
+    speed: 150
+    minHorizontalFlow: 0.01
+    minVerticalFlow: 0.01
+    specificHeatCapacity: 8.44
+    thermalConductivity: 9.46
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 25
+    gasSurfaceAreaMultiplier: 1
+    lowTemp: 2
+    highTemp: 710
+    lowTempTransitionTarget: SolidSuperCoolant
+    highTempTransitionTarget: SuperCoolantGas
+    defaultTemperature: 238
+    defaultMass: 800
+    molarMass: 250
+    toxicity: 0
+    lightAbsorptionFactor: 0.9
+    isDisabled: false
+    state: Liquid
+    localizationID: STRINGS.ELEMENTS.SUPERCOOLANT.NAME
+  
+  - elementId: ViscoGel
+    maxMass: 100
+    liquidCompression: 1.01
+    speed: 1
+    minHorizontalFlow: 10
+    minVerticalFlow: 10
+    specificHeatCapacity: 1.55
+    thermalConductivity: 0.45
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 25
+    gasSurfaceAreaMultiplier: 1
+    lowTemp: 242.5
+    highTemp: 753
+    lowTempTransitionTarget: SolidViscoGel
+    highTempTransitionTarget: Naphtha
+    defaultTemperature: 238
+    defaultMass: 100
+    molarMass: 10
+    toxicity: 0
+    lightAbsorptionFactor: 0.1
+    isDisabled: false
+    state: Liquid
+    localizationID: STRINGS.ELEMENTS.VISCOGEL.NAME
+  
+  - elementId: Water
+    maxMass: 1000
+    liquidCompression: 1.01
+    speed: 125
+    minHorizontalFlow: 0.01
+    minVerticalFlow: 0.01
+    specificHeatCapacity: 4.179
+    thermalConductivity: 0.609
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 25
+    gasSurfaceAreaMultiplier: 1
+    lowTemp: 272.5
+    highTemp: 372.5
+    lowTempTransitionTarget: Ice
+    highTempTransitionTarget: Steam
+    convertId: DirtyWater
+    defaultTemperature: 300
+    defaultMass: 1000
+    molarMass: 18.01528
+    toxicity: 0
+    lightAbsorptionFactor: 0.25
+    tags:
+    - AnyWater
+    isDisabled: false
+    state: Liquid
+    localizationID: STRINGS.ELEMENTS.WATER.NAME
+
+  - elementId: Ethanol
+    maxMass: 1000
+    liquidCompression: 1.01
+    speed: 125
+    minHorizontalFlow: 0.01
+    minVerticalFlow: 0.01
+    specificHeatCapacity: 2.46
+    thermalConductivity: 0.171
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 25
+    gasSurfaceAreaMultiplier: 1
+    lowTemp: 159.1
+    highTemp: 351.5
+    lowTempTransitionTarget: SolidEthanol
+    highTempTransitionTarget: EthanolGas
+    defaultTemperature: 300
+    defaultMass: 1000
+    molarMass: 46.07
+    toxicity: 0
+    lightAbsorptionFactor: 0.25
+    tags:
+    - CombustibleLiquid
+    isDisabled: false
+    state: Liquid
+    localizationID: STRINGS.ELEMENTS.ETHANOL.NAME
+
+  - elementId: MoltenSyngas
+    maxMass: 1000
+    liquidCompression: 1.01
+    speed: 180
+    minHorizontalFlow: 0.01
+    minVerticalFlow: 0.01
+    specificHeatCapacity: 2.4
+    thermalConductivity: 0.1
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 25
+    gasSurfaceAreaMultiplier: 1
+    lowTemp: 14
+    highTemp: 21
+    lowTempTransitionTarget: SolidSyngas
+    highTempTransitionTarget: Syngas
+    defaultTemperature: 18
+    defaultMass: 600
+    molarMass: 1.00794
+    toxicity: 0
+    lightAbsorptionFactor: 1
+    tags:
+    isDisabled: true
+    state: Liquid
+    localizationID: STRINGS.ELEMENTS.MOLTENSYNGAS.NAME

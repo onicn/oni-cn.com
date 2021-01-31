@@ -1,0 +1,2030 @@
+---
+elements:
+  - elementId: Aerogel
+    specificHeatCapacity: 1
+    thermalConductivity: 0.003
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 0.001
+    highTemp: 10000
+    highTempTransitionTarget: Katairite
+    defaultTemperature: 290
+    defaultMass: 1
+    maxMass: 2
+    # hardnessTier: 1
+    hardness: 2
+    molarMass: 200
+    lightAbsorptionFactor: 0.25
+    buildMenuSort: 1
+    isDisabled: true
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.AEROGEL.NAME
+  
+  - elementId: Algae
+    specificHeatCapacity: 0.2
+    thermalConductivity: 2
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 0.2
+    highTemp: 398.15
+    highTempTransitionTarget: Dirt
+    defaultTemperature: 290
+    defaultMass: 200
+    maxMass: 300
+    # hardnessTier: 1
+    hardness: 2
+    molarMass: 4
+    lightAbsorptionFactor: 1
+    materialCategory: Organics
+    buildMenuSort: 2
+    isDisabled: false
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.ALGAE.NAME
+  
+  - elementId: Aluminum
+    specificHeatCapacity: 0.91
+    thermalConductivity: 205
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 1
+    highTemp: 933.45
+    highTempTransitionTarget: MoltenAluminum
+    defaultTemperature: 300
+    defaultMass: 200
+    maxMass: 1000
+    # hardnessTier: 3
+    hardness: 25
+    molarMass: 55.845
+    lightAbsorptionFactor: 1
+    materialCategory: RefinedMetal
+    tags:
+    - BuildableAny
+    buildMenuSort: 2
+    isDisabled: false
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.ALUMINUM.NAME
+
+  - elementId: AluminumOre
+    specificHeatCapacity: 0.91
+    thermalConductivity: 20.5
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 0.7
+    highTemp: 1357
+    highTempTransitionTarget: MoltenAluminum
+    defaultTemperature: 300
+    defaultMass: 500
+    maxMass: 500
+    # hardnessTier: 3
+    hardness: 25
+    molarMass: 143.09
+    lightAbsorptionFactor: 1
+    materialCategory: Metal
+    tags:
+    - Ore
+    - BuildableAny
+    buildMenuSort: 1
+    isDisabled: false
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.ALUMINUMORE.NAME
+
+  - elementId: Bitumen
+    specificHeatCapacity: 1.76
+    thermalConductivity: 0.17
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 0.1
+    highTemp: 812
+    highTempTransitionTarget: CarbonDioxide
+    defaultTemperature: 232.15
+    defaultMass: 740
+    maxMass: 1840
+    # hardnessTier: 1
+    hardness: 2
+    molarMass: 82.2
+    lightAbsorptionFactor: 1
+    buildMenuSort: 1
+    isDisabled: false
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.BITUMEN.NAME
+  
+  - elementId: BleachStone
+    specificHeatCapacity: 0.5
+    thermalConductivity: 4
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 1
+    highTemp: 942
+    highTempTransitionTarget: Chlorine
+    defaultTemperature: 300
+    defaultMass: 50
+    maxMass: 500
+    # hardnessTier: 4
+    hardness: 50
+    molarMass: 43
+    lightAbsorptionFactor: 1
+    materialCategory: ConsumableOre
+    buildMenuSort: 3
+    isDisabled: false
+    state: Solid
+    tags:
+    - FlyingCritterEdible
+    localizationID: STRINGS.ELEMENTS.BLEACHSTONE.NAME
+  
+  - elementId: Brick
+    specificHeatCapacity: 0.84
+    thermalConductivity: 0.62
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 1
+    highTemp: 1683
+    highTempTransitionTarget: Magma
+    defaultTemperature: 300
+    defaultMass: 1000
+    maxMass: 2000
+    # hardnessTier: 4
+    hardness: 50
+    molarMass: 25
+    lightAbsorptionFactor: 1
+    materialCategory: BuildableProcessed
+    tags:
+    - BuildableAny
+    buildMenuSort: 1
+    isDisabled: true
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.BRICK.NAME
+  
+  - elementId: BrineIce
+    specificHeatCapacity: 3.4
+    thermalConductivity: 2.18
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 1
+    highTemp: 256.65
+    highTempTransitionTarget: Brine
+    defaultTemperature: 232.15
+    defaultMass: 1000
+    maxMass: 1100
+    # hardnessTier: 3
+    hardness: 25
+    molarMass: 18.01528
+    lightAbsorptionFactor: 0.33333
+    materialCategory: Liquifiable
+    tags:
+    - IceOre
+    - BuildableAny
+    buildMenuSort: 5
+    isDisabled: false
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.BRINEICE.NAME
+
+  - elementId: Carbon
+    specificHeatCapacity: 0.71
+    thermalConductivity: 1
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 0.8
+    highTemp: 550
+    highTempTransitionTarget: RefinedCarbon
+    defaultTemperature: 300
+    defaultMass: 600
+    maxMass: 4000
+    # hardnessTier: 1
+    hardness: 2
+    molarMass: 12.0107
+    lightAbsorptionFactor: 1
+    materialCategory: ConsumableOre
+    tags:
+    - Coal
+    - BuildableAny
+    buildMenuSort: 1
+    isDisabled: false
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.CARBON.NAME
+  
+  - elementId: CarbonFibre
+    specificHeatCapacity: 0.52
+    thermalConductivity: 0
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 1
+    highTemp: 5000
+    highTempTransitionTarget: MoltenCarbon
+    defaultTemperature: 300
+    defaultMass: 1000
+    maxMass: 800
+    # hardnessTier: 8
+    hardness: 250
+    molarMass: 25
+    lightAbsorptionFactor: 1
+    tags:
+    - BuildableAny
+    buildMenuSort: 1
+    isDisabled: true
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.CARBONFIBRE.NAME
+  
+  - elementId: Cement
+    specificHeatCapacity: 1.55
+    thermalConductivity: 8
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 1
+    highTemp: 1683
+    highTempTransitionTarget: Magma
+    defaultTemperature: 300
+    defaultMass: 1000
+    maxMass: 2000
+    # hardnessTier: 7
+    hardness: 200
+    molarMass: 25
+    lightAbsorptionFactor: 1
+    materialCategory: BuildableProcessed
+    tags:
+    - BuildableAny
+    buildMenuSort: 1
+    isDisabled: true
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.CEMENT.NAME
+  
+  - elementId: CementMix
+    specificHeatCapacity: 0.52
+    thermalConductivity: 8
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 1
+    highTemp: 1683
+    highTempTransitionTarget: Magma
+    defaultTemperature: 300
+    defaultMass: 1000
+    maxMass: 2000
+    # hardnessTier: 2
+    hardness: 10
+    molarMass: 25
+    lightAbsorptionFactor: 1
+    tags:
+    - BuildableAny
+    buildMenuSort: 1
+    isDisabled: true
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.CEMENTMIX.NAME
+  
+  - elementId: Ceramic
+    specificHeatCapacity: 0.84
+    thermalConductivity: 0.62
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 1
+    highTemp: 2123
+    highTempTransitionTarget: Magma
+    defaultTemperature: 300
+    defaultMass: 1000
+    maxMass: 2000
+    # hardnessTier: 4
+    hardness: 50
+    molarMass: 25
+    lightAbsorptionFactor: 1
+    materialCategory: BuildableRaw
+    tags:
+    - Plumbable
+    - Crushable
+    - BuildableAny
+    buildMenuSort: 5
+    isDisabled: false
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.CERAMIC.NAME
+  
+  
+  - elementId: Clay
+    specificHeatCapacity: 0.92
+    thermalConductivity: 2
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 0.2
+    highTemp: 1200
+    highTempTransitionTarget: Ceramic
+    defaultTemperature: 290
+    defaultMass: 1000
+    maxMass: 1840
+    # hardnessTier: 1.5
+    hardness: 5
+    molarMass: 200
+    lightAbsorptionFactor: 1
+    materialCategory: Farmable
+    tags:
+    - BuildableAny
+    buildMenuSort: 3
+    isDisabled: false
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.CLAY.NAME
+  
+  - elementId: Copper
+    specificHeatCapacity: 0.385
+    thermalConductivity: 60
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 0.8
+    highTemp: 1357
+    highTempTransitionTarget: MoltenCopper
+    defaultTemperature: 300
+    defaultMass: 900
+    maxMass: 3870
+    # hardnessTier: 3
+    hardness: 25
+    molarMass: 63.546
+    lightAbsorptionFactor: 1
+    materialCategory: RefinedMetal
+    tags:
+    - BuildableAny
+    buildMenuSort: 1
+    isDisabled: false
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.COPPER.NAME
+  
+  - elementId: Creature
+    specificHeatCapacity: 3.47
+    thermalConductivity: 0.6
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 1
+    highTemp: 10000
+    highTempTransitionTarget: Creature
+    defaultTemperature: 310
+    defaultMass: 40
+    maxMass: 200
+    # hardnessTier: 1
+    hardness: 10
+    molarMass: 25
+    lightAbsorptionFactor: 1
+    buildMenuSort: 1
+    isDisabled: false
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.CREATURE.NAME
+  
+  - elementId: CrushedIce
+    specificHeatCapacity: 2.05
+    thermalConductivity: 2.18
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1000
+    strength: 0.4
+    highTemp: 272.5
+    highTempTransitionTarget: Water
+    defaultTemperature: 242.15
+    defaultMass: 10
+    maxMass: 20
+    # hardnessTier: 2
+    hardness: 10
+    molarMass: 18.01528
+    lightAbsorptionFactor: 0.5
+    minHorizontalFlow: 50
+    materialCategory: Liquifiable
+    tags:
+    - IceOre
+    - Unstable
+    buildMenuSort: 5
+    isDisabled: false
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.CRUSHEDICE.NAME
+  
+  - elementId: CrushedRock
+    specificHeatCapacity: 0.2
+    thermalConductivity: 2
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 0.7
+    highTemp: 1683
+    highTempTransitionTarget: Magma
+    defaultTemperature: 300
+    defaultMass: 1000
+    maxMass: 1840
+    # hardnessTier: 2
+    hardness: 10
+    molarMass: 50
+    lightAbsorptionFactor: 1
+    minHorizontalFlow: 50
+    materialCategory: BuildableProcessed
+    tags:
+    - Unstable
+    buildMenuSort: 1
+    isDisabled: false
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.CRUSHEDROCK.NAME
+  
+  - elementId: Cuprite
+    specificHeatCapacity: 0.386
+    thermalConductivity: 4.5
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 0.7
+    highTemp: 1357
+    highTempTransitionTarget: MoltenCopper
+    defaultTemperature: 300
+    defaultMass: 800
+    maxMass: 1840
+    # hardnessTier: 3
+    hardness: 25
+    molarMass: 143.09
+    lightAbsorptionFactor: 1
+    materialCategory: Metal
+    tags:
+    - Ore
+    - BuildableAny
+    buildMenuSort: 1
+    isDisabled: false
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.CUPRITE.NAME
+  
+  - elementId: DepletedUranium
+    specificHeatCapacity: 1
+    thermalConductivity: 20
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 1
+    highTemp: 1132
+    highTempTransitionTarget: MoltenUranium
+    defaultTemperature: 300
+    defaultMass: 100
+    maxMass: 200
+    # hardnessTier: 8
+    hardness: 250
+    molarMass: 120
+    lightAbsorptionFactor: 1
+    tags:
+    buildMenuSort: 1
+    isDisabled: true
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.DEPLETEDURANIUM.NAME
+
+  - elementId: Diamond
+    specificHeatCapacity: 0.516
+    thermalConductivity: 80
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 2.5
+    highTemp: 4200
+    highTempTransitionTarget: MoltenCarbon
+    defaultTemperature: 300
+    defaultMass: 700
+    maxMass: 1840
+    # hardnessTier: 8
+    hardness: 250
+    molarMass: 12.0107
+    lightAbsorptionFactor: 0.1
+    materialCategory: Other
+    tags:
+    - BuildableAny
+    - Transparent
+    - FlyingCritterEdible
+    buildMenuSort: 1
+    isDisabled: false
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.DIAMOND.NAME
+  
+  - elementId: Dirt
+    specificHeatCapacity: 1.48
+    thermalConductivity: 2
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 0.2
+    highTemp: 600
+    highTempTransitionTarget: Sand
+    defaultTemperature: 290
+    defaultMass: 1840
+    maxMass: 1840
+    # hardnessTier: 1
+    hardness: 2
+    molarMass: 50
+    lightAbsorptionFactor: 1
+    materialCategory: Farmable
+    tags:
+    - BuildableAny
+    buildMenuSort: 1
+    isDisabled: false
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.DIRT.NAME
+  
+  - elementId: DirtyIce
+    specificHeatCapacity: 3.05
+    thermalConductivity: 1
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 1
+    highTemp: 252.5
+    highTempTransitionTarget: DirtyWater
+    defaultTemperature: 230
+    defaultMass: 500
+    maxMass: 800
+    # hardnessTier: 2
+    hardness: 10
+    molarMass: 25
+    lightAbsorptionFactor: 0.8
+    materialCategory: Liquifiable
+    tags:
+    - IceOre
+    - Mixture
+    - BuildableAny
+    buildMenuSort: 5
+    isDisabled: false
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.DIRTYICE.NAME
+
+  - elementId: Electrum
+    specificHeatCapacity: 0.15
+    thermalConductivity: 2
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 0.7
+    highTemp: 1337
+    highTempTransitionTarget: MoltenGold
+    defaultTemperature: 300
+    defaultMass: 800
+    maxMass: 1840
+    # hardnessTier: 1
+    hardness: 2
+    molarMass: 95.61
+    lightAbsorptionFactor: 1
+    materialCategory: Metal
+    tags:
+    - Ore
+    - BuildableAny
+    buildMenuSort: 1
+    isDisabled: false
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.ELECTRUM.NAME
+  
+  - elementId: EnrichedUranium
+    specificHeatCapacity: 1
+    thermalConductivity: 20
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 1
+    highTemp: 1132
+    highTempTransitionTarget: MoltenUranium
+    defaultTemperature: 300
+    defaultMass: 100
+    maxMass: 200
+    # hardnessTier: 8
+    hardness: 250
+    molarMass: 120
+    lightAbsorptionFactor: 1
+    tags:
+    buildMenuSort: 1
+    isDisabled: true
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.ENRICHEDURANIUM.NAME
+
+  - elementId: Fertilizer
+    specificHeatCapacity: 0.83
+    thermalConductivity: 2
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 0.2
+    highTemp: 398.15
+    highTempTransitionTarget: Dirt
+    defaultTemperature: 300
+    defaultMass: 200
+    maxMass: 300
+    # hardnessTier: 1
+    hardness: 2
+    molarMass: 50
+    lightAbsorptionFactor: 1
+    materialCategory: Agriculture
+    buildMenuSort: 5
+    isDisabled: false
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.FERTILIZER.NAME
+  
+  - elementId: FoolsGold
+    specificHeatCapacity: 0.386
+    thermalConductivity: 4.5
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 0.7
+    highTemp: 1357
+    highTempTransitionTarget: MoltenIron
+    defaultTemperature: 300
+    defaultMass: 800
+    maxMass: 1840
+    # hardnessTier: 3
+    hardness: 25
+    molarMass: 95.61
+    lightAbsorptionFactor: 1
+    materialCategory: Metal
+    tags:
+    - Ore
+    - BuildableAny
+    buildMenuSort: 1
+    isDisabled: false
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.FOOLSGOLD.NAME
+  
+  - elementId: Fossil
+    specificHeatCapacity: 0.91
+    thermalConductivity: 2
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 0.2
+    highTemp: 1612
+    highTempTransitionTarget: Magma
+    defaultTemperature: 300
+    defaultMass: 500
+    maxMass: 1000
+    # hardnessTier: 4
+    hardness: 50
+    molarMass: 200
+    lightAbsorptionFactor: 1
+    materialCategory: BuildableRaw
+    buildMenuSort: 4
+    isDisabled: false
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.FOSSIL.NAME
+  
+  - elementId: Fullerene
+    specificHeatCapacity: 0.95
+    thermalConductivity: 50
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 1
+    highTemp: 4200
+    highTempTransitionTarget: MoltenCarbon
+    defaultTemperature: 242.15
+    defaultMass: 30
+    maxMass: 50
+    # hardnessTier: 8
+    hardness: 250
+    molarMass: 12.0107
+    lightAbsorptionFactor: 1
+    materialCategory: RareMaterials
+    buildMenuSort: 52
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.FULLERENE.NAME
+  
+  - elementId: Glass
+    specificHeatCapacity: 0.84
+    thermalConductivity: 1.11
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 1
+    highTemp: 1700
+    highTempTransitionTarget: MoltenGlass
+    defaultTemperature: 300
+    defaultMass: 1000
+    maxMass: 800
+    # hardnessTier: 2
+    hardness: 10
+    molarMass: 25
+    lightAbsorptionFactor: 0.1
+    materialCategory: ManufacturedMaterial
+    tags:
+    - BuildableAny
+    - Transparent
+    buildMenuSort: 5
+    isDisabled: false
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.GLASS.NAME
+  
+  - elementId: Gold
+    specificHeatCapacity: 0.129
+    thermalConductivity: 60
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 0.7
+    highTemp: 1337
+    highTempTransitionTarget: MoltenGold
+    defaultTemperature: 300
+    defaultMass: 870
+    maxMass: 9970
+    # hardnessTier: 1
+    hardness: 2
+    molarMass: 196.966569
+    lightAbsorptionFactor: 1
+    materialCategory: RefinedMetal
+    tags:
+    - BuildableAny
+    buildMenuSort: 3
+    isDisabled: false
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.GOLD.NAME
+  
+  - elementId: GoldAmalgam
+    specificHeatCapacity: 0.15
+    thermalConductivity: 2
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 0.8
+    highTemp: 1337
+    highTempTransitionTarget: MoltenGold
+    defaultTemperature: 300
+    defaultMass: 800
+    maxMass: 1840
+    # hardnessTier: 1
+    hardness: 2
+    molarMass: 95.61
+    lightAbsorptionFactor: 1
+    materialCategory: Metal
+    tags:
+    - Ore
+    - BuildableAny
+    buildMenuSort: 3
+    isDisabled: false
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.GOLDAMALGAM.NAME
+  
+  - elementId: Granite
+    specificHeatCapacity: 0.79
+    thermalConductivity: 3.39
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 1.5
+    highTemp: 942
+    highTempTransitionTarget: Magma
+    defaultTemperature: 300
+    defaultMass: 1840
+    maxMass: 1840
+    # hardnessTier: 5
+    hardness: 80
+    molarMass: 50
+    lightAbsorptionFactor: 1
+    materialCategory: BuildableRaw
+    tags:
+    - Plumbable
+    - Crushable
+    - BuildableAny
+    - PreciousRock
+    buildMenuSort: 2
+    isDisabled: false
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.GRANITE.NAME
+  
+  - elementId: Ice
+    specificHeatCapacity: 2.05
+    thermalConductivity: 2.18
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 1
+    highTemp: 272.5
+    highTempTransitionTarget: Water
+    defaultTemperature: 232.15
+    defaultMass: 1000
+    maxMass: 1100
+    # hardnessTier: 3
+    hardness: 25
+    molarMass: 18.01528
+    lightAbsorptionFactor: 0.33333
+    materialCategory: Liquifiable
+    tags:
+    - IceOre
+    - BuildableAny
+    buildMenuSort: 5
+    isDisabled: false
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.ICE.NAME
+  
+  - elementId: IgneousRock
+    specificHeatCapacity: 1
+    thermalConductivity: 2
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 1
+    highTemp: 1683
+    highTempTransitionTarget: Magma
+    defaultTemperature: 300
+    defaultMass: 1840
+    maxMass: 1840
+    # hardnessTier: 3
+    hardness: 25
+    molarMass: 50
+    lightAbsorptionFactor: 1
+    materialCategory: BuildableRaw
+    tags:
+    - Plumbable
+    - Crushable
+    - BuildableAny
+    buildMenuSort: 2
+    isDisabled: false
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.IGNEOUSROCK.NAME
+  
+  - elementId: Iron
+    specificHeatCapacity: 0.449
+    thermalConductivity: 55
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 1
+    highTemp: 1808
+    highTempTransitionTarget: MoltenIron
+    defaultTemperature: 300
+    defaultMass: 1000
+    maxMass: 7870
+    # hardnessTier: 4
+    hardness: 50
+    molarMass: 55.845
+    lightAbsorptionFactor: 1
+    materialCategory: RefinedMetal
+    tags:
+    - BuildableAny
+    buildMenuSort: 2
+    isDisabled: false
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.IRON.NAME
+  
+  - elementId: IronOre
+    specificHeatCapacity: 0.449
+    thermalConductivity: 4
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 0.9
+    highTemp: 1808
+    highTempTransitionTarget: MoltenIron
+    defaultTemperature: 300
+    defaultMass: 800
+    maxMass: 1840
+    # hardnessTier: 3
+    hardness: 25
+    molarMass: 159.6882
+    lightAbsorptionFactor: 1
+    materialCategory: Metal
+    tags:
+    - Ore
+    - BuildableAny
+    buildMenuSort: 2
+    isDisabled: false
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.IRONORE.NAME
+  
+  - elementId: Isoresin
+    specificHeatCapacity: 1.3
+    thermalConductivity: 0.17
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 0.4
+    highTemp: 373.15
+    highTempTransitionTarget: Naphtha
+    defaultTemperature: 242.15
+    defaultMass: 30
+    maxMass: 50
+    # hardnessTier: 2
+    hardness: 10
+    molarMass: 162.14
+    lightAbsorptionFactor: 1
+    materialCategory: RareMaterials
+    tags:
+    - BuildableRaw
+    buildMenuSort: 51
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.ISORESIN.NAME
+  
+  - elementId: Katairite
+    specificHeatCapacity: 4
+    thermalConductivity: 1.0e-05
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 2
+    highTemp: 3695
+    highTempTransitionTarget: MoltenTungsten
+    defaultTemperature: 300
+    defaultMass: 500
+    maxMass: 3200
+    # hardnessTier: 7
+    hardness: 150
+    molarMass: 341.76
+    lightAbsorptionFactor: 1
+    materialCategory: Other
+    buildMenuSort: 100
+    isDisabled: false
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.KATAIRITE.NAME
+  
+  - elementId: Lead
+    specificHeatCapacity: 0.128
+    thermalConductivity: 35
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 0.8
+    highTemp: 600.65
+    highTempTransitionTarget: MoltenLead
+    defaultTemperature: 300
+    defaultMass: 2000
+    maxMass: 2000
+    # hardnessTier: 4
+    hardness: 10
+    molarMass: 55.845
+    lightAbsorptionFactor: 1
+    materialCategory: RefinedMetal
+    tags:
+    - BuildableAny
+    buildMenuSort: 2
+    isDisabled: false
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.LEAD.NAME
+
+  - elementId: Lime
+    specificHeatCapacity: 0.834
+    thermalConductivity: 2
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 0.2
+    highTemp: 1330
+    highTempTransitionTarget: Magma
+    defaultTemperature: 290
+    defaultMass: 1000
+    maxMass: 1840
+    # hardnessTier: 4
+    hardness: 50
+    molarMass: 200
+    lightAbsorptionFactor: 1
+    materialCategory: ConsumableOre
+    buildMenuSort: 4
+    isDisabled: false
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.LIME.NAME
+  
+  - elementId: MaficRock
+    specificHeatCapacity: 0.2
+    thermalConductivity: 1
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 1
+    highTemp: 1683
+    highTempTransitionTarget: Magma
+    defaultTemperature: 300
+    defaultMass: 1840
+    maxMass: 1840
+    # hardnessTier: 1
+    hardness: 2
+    molarMass: 50
+    lightAbsorptionFactor: 1
+    materialCategory: BuildableRaw
+    tags:
+    - BuildableAny
+    buildMenuSort: 20
+    isDisabled: false
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.MAFICROCK.NAME
+  
+  - elementId: Niobium
+    specificHeatCapacity: 0.265
+    thermalConductivity: 54
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 0.8
+    highTemp: 2750
+    highTempTransitionTarget: MoltenNiobium
+    defaultTemperature: 242.15
+    defaultMass: 30
+    maxMass: 50
+    # hardnessTier: 4
+    hardness: 50
+    molarMass: 92.9
+    lightAbsorptionFactor: 1
+    materialCategory: RareMaterials
+    tags:
+    - Metal
+    - RefinedMetal
+    - BuildableAny
+    buildMenuSort: 50
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.NIOBIUM.NAME
+  
+  - elementId: Obsidian
+    specificHeatCapacity: 0.2
+    thermalConductivity: 2
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 1
+    highTemp: 3000
+    highTempTransitionTarget: Magma
+    defaultTemperature: 300
+    defaultMass: 1000
+    maxMass: 1840
+    # hardnessTier: 4
+    hardness: 200
+    molarMass: 50
+    lightAbsorptionFactor: 1
+    materialCategory: BuildableRaw
+    tags:
+    - Plumbable
+    - Crushable
+    - BuildableAny
+    - PreciousRock
+    buildMenuSort: 3
+    isDisabled: false
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.OBSIDIAN.NAME
+  
+  - elementId: OxyRock
+    specificHeatCapacity: 1
+    thermalConductivity: 4
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 1
+    highTemp: 1683
+    highTempTransitionTarget: Magma
+    sublimateId: Oxygen
+    sublimateFx: OxygenEmissionBubbles
+    defaultTemperature: 300
+    defaultMass: 200
+    maxMass: 500
+    # hardnessTier: 2
+    hardness: 10
+    molarMass: 43
+    lightAbsorptionFactor: 1
+    materialCategory: ConsumableOre
+    buildMenuSort: 5
+    isDisabled: false
+    state: Solid
+    tags:
+    - FlyingCritterEdible
+    localizationID: STRINGS.ELEMENTS.OXYROCK.NAME
+  
+  - elementId: PhosphateNodules
+    specificHeatCapacity: 0.15
+    thermalConductivity: 2
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 0.8
+    highTemp: 700
+    highTempTransitionTarget: LiquidPhosphorus
+    defaultTemperature: 300
+    defaultMass: 600
+    maxMass: 1840
+    # hardnessTier: 3
+    hardness: 25
+    molarMass: 95.61
+    lightAbsorptionFactor: 1
+    materialCategory: Agriculture
+    buildMenuSort: 1
+    isDisabled: true
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.PHOSPHATENODULES.NAME
+  
+  - elementId: Phosphorite
+    specificHeatCapacity: 0.15
+    thermalConductivity: 2
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 0.8
+    highTemp: 517
+    highTempTransitionTarget: LiquidPhosphorus
+    defaultTemperature: 300
+    defaultMass: 600
+    maxMass: 1840
+    # hardnessTier: 3
+    hardness: 25
+    molarMass: 95.61
+    lightAbsorptionFactor: 1
+    materialCategory: Agriculture
+    buildMenuSort: 1
+    isDisabled: false
+    state: Solid
+    tags:
+    - FlyingCritterEdible
+    localizationID: STRINGS.ELEMENTS.PHOSPHORITE.NAME
+  
+  - elementId: Phosphorus
+    specificHeatCapacity: 0.7697
+    thermalConductivity: 0.236
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 0.85
+    highTemp: 317.3
+    highTempTransitionTarget: LiquidPhosphorus
+    defaultTemperature: 300
+    defaultMass: 200
+    maxMass: 1000
+    # hardnessTier: 0
+    hardness: 0
+    molarMass: 30.973762
+    lightAbsorptionFactor: 1
+    materialCategory: ConsumableOre
+    tags:
+    - FlyingCritterEdible
+    buildMenuSort: 1
+    isDisabled: false
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.PHOSPHORUS.NAME
+  
+  - elementId: Polypropylene
+    specificHeatCapacity: 1.92
+    thermalConductivity: 0.15
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 0.4
+    highTemp: 433
+    highTempTransitionTarget: Naphtha
+    defaultTemperature: 296
+    defaultMass: 913
+    maxMass: 913
+    # hardnessTier: 1
+    hardness: 1
+    molarMass: 42.08
+    lightAbsorptionFactor: 1
+    materialCategory: ManufacturedMaterial
+    tags:
+    - Antiseptic
+    - Plastic
+    - BuildableAny
+    buildMenuSort: 10
+    isDisabled: false
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.POLYPROPYLENE.NAME
+  
+  - elementId: Radium
+    specificHeatCapacity: 1
+    thermalConductivity: 20
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 1
+    highTemp: 1233
+    highTempTransitionTarget: Magma
+    defaultTemperature: 300
+    defaultMass: 100
+    maxMass: 200
+    # hardnessTier: 8
+    hardness: 250
+    molarMass: 120
+    lightAbsorptionFactor: 1
+    tags:
+    buildMenuSort: 1
+    isDisabled: false
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.RADIUM.NAME
+  
+  - elementId: RefinedCarbon
+    specificHeatCapacity: 0.71
+    thermalConductivity: 1
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 0.8
+    highTemp: 4600
+    highTempTransitionTarget: MoltenCarbon
+    defaultTemperature: 300
+    defaultMass: 600
+    maxMass: 4000
+    # hardnessTier: 1
+    hardness: 2
+    molarMass: 12.0107
+    lightAbsorptionFactor: 1
+    materialCategory: ConsumableOre
+    buildMenuSort: 1
+    isDisabled: false
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.REFINEDCARBON.NAME
+  
+  - elementId: Regolith
+    specificHeatCapacity: 0.2
+    thermalConductivity: 1
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 0.5
+    highTemp: 1683
+    highTempTransitionTarget: Magma
+    defaultTemperature: 300
+    defaultMass: 1000
+    maxMass: 1000
+    # hardnessTier: 1
+    hardness: 2
+    molarMass: 50
+    lightAbsorptionFactor: 1
+    minHorizontalFlow: 50
+    materialCategory: Filter
+    tags:
+    - Unstable
+    buildMenuSort: 20
+    isDisabled: false
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.REGOLITH.NAME
+  
+  - elementId: Rust
+    specificHeatCapacity: 0.449
+    thermalConductivity: 4
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 0.9
+    highTemp: 1808
+    highTempTransitionTarget: MoltenIron
+    defaultTemperature: 300
+    defaultMass: 800
+    maxMass: 1840
+    materialCategory: ConsumableOre
+    # hardnessTier: 3
+    hardness: 25
+    molarMass: 159.6882
+    lightAbsorptionFactor: 1
+    buildMenuSort: 2
+    isDisabled: false
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.RUST.NAME
+
+  - elementId: Salt
+    specificHeatCapacity: 0.7
+    thermalConductivity: 0.444
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 0.1
+    highTemp: 1073
+    highTempTransitionTarget: MoltenSalt
+    defaultTemperature: 290
+    defaultMass: 500
+    maxMass: 2000
+    # hardnessTier: 1
+    hardness: 5
+    molarMass: 50
+    lightAbsorptionFactor: 1
+    materialCategory: ConsumableOre
+    buildMenuSort: 10
+    isDisabled: false
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.SALT.NAME
+
+  - elementId: Sand
+    specificHeatCapacity: 0.83
+    thermalConductivity: 2
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 0.25
+    highTemp: 1986
+    highTempTransitionTarget: MoltenGlass
+    defaultTemperature: 300
+    defaultMass: 1000
+    maxMass: 1840
+    # hardnessTier: 2
+    hardness: 10
+    molarMass: 50
+    lightAbsorptionFactor: 1
+    minHorizontalFlow: 50
+    materialCategory: Filter
+    tags:
+    - Unstable
+    buildMenuSort: 1
+    isDisabled: false
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.SAND.NAME
+  
+  - elementId: SandCement
+    specificHeatCapacity: 1.5
+    thermalConductivity: 8
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 1
+    highTemp: 1683
+    highTempTransitionTarget: Magma
+    defaultTemperature: 300
+    defaultMass: 1000
+    maxMass: 2000
+    # hardnessTier: 4
+    hardness: 50
+    molarMass: 25
+    lightAbsorptionFactor: 1
+    materialCategory: BuildableProcessed
+    tags:
+    - BuildableAny
+    buildMenuSort: 1
+    isDisabled: true
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.SANDCEMENT.NAME
+  
+  - elementId: SandStone
+    specificHeatCapacity: 0.8
+    thermalConductivity: 2.9
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 0.5
+    highTemp: 1200
+    highTempTransitionTarget: Magma
+    defaultTemperature: 300
+    defaultMass: 1000
+    maxMass: 1840
+    # hardnessTier: 2
+    hardness: 10
+    molarMass: 50
+    lightAbsorptionFactor: 1
+    materialCategory: BuildableRaw
+    tags:
+    - Plumbable
+    - Crushable
+    - BuildableAny
+    buildMenuSort: 1
+    isDisabled: false
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.SANDSTONE.NAME
+  
+  - elementId: SedimentaryRock
+    specificHeatCapacity: 0.2
+    thermalConductivity: 2
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 0.2
+    highTemp: 1200
+    highTempTransitionTarget: Magma
+    defaultTemperature: 300
+    defaultMass: 1840
+    maxMass: 1840
+    # hardnessTier: 1
+    hardness: 2
+    molarMass: 50
+    lightAbsorptionFactor: 1
+    materialCategory: BuildableRaw
+    tags:
+    - Plumbable
+    - Crushable
+    - BuildableAny
+    buildMenuSort: 2
+    isDisabled: false
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.SEDIMENTARYROCK.NAME
+  
+  - elementId: Slabs
+    specificHeatCapacity: 0.52
+    thermalConductivity: 8
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 1
+    highTemp: 1683
+    highTempTransitionTarget: Magma
+    defaultTemperature: 300
+    defaultMass: 1000
+    maxMass: 2000
+    # hardnessTier: 4
+    hardness: 50
+    molarMass: 25
+    lightAbsorptionFactor: 1
+    materialCategory: BuildableProcessed
+    tags:
+    - BuildableAny
+    buildMenuSort: 1
+    isDisabled: true
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.SLABS.NAME
+  
+  - elementId: SlimeMold
+    specificHeatCapacity: 0.2
+    thermalConductivity: 2
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 0.2
+    highTemp: 398.15
+    highTempTransitionTarget: Dirt
+    defaultTemperature: 290
+    defaultMass: 200
+    maxMass: 300
+    # hardnessTier: 1
+    hardness: 2
+    molarMass: 4
+    lightAbsorptionFactor: 1
+    materialCategory: Organics
+    buildMenuSort: 3
+    isDisabled: false
+    state: Solid
+    tags:
+    - FlyingCritterEdible
+    localizationID: STRINGS.ELEMENTS.SLIMEMOLD.NAME
+  
+  - elementId: Snow
+    specificHeatCapacity: 2.05
+    thermalConductivity: 0.545
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1000
+    strength: 0.3
+    highTemp: 272.5
+    highTempTransitionTarget: Water
+    defaultTemperature: 242.15
+    defaultMass: 10
+    maxMass: 20
+    # hardnessTier: 2
+    hardness: 10
+    molarMass: 18.01528
+    lightAbsorptionFactor: 1
+    minHorizontalFlow: 50
+    materialCategory: Liquifiable
+    tags:
+    - IceOre
+    - Unstable
+    buildMenuSort: 5
+    isDisabled: false
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.SNOW.NAME
+  
+  - elementId: SolidCarbonDioxide
+    specificHeatCapacity: 0.846
+    thermalConductivity: 1.46
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 0.6
+    highTemp: 216.6
+    highTempTransitionTarget: LiquidCarbonDioxide
+    defaultTemperature: 192.15
+    defaultMass: 600
+    maxMass: 2000
+    # hardnessTier: 1
+    hardness: 2
+    molarMass: 44.01
+    lightAbsorptionFactor: 1
+    materialCategory: Liquifiable
+    buildMenuSort: 1
+    isDisabled: false
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.SOLIDCARBONDIOXIDE.NAME
+  
+  - elementId: SolidChlorine
+    specificHeatCapacity: 0.48
+    thermalConductivity: 0.75
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 0.5
+    highTemp: 172.17
+    highTempTransitionTarget: Chlorine
+    defaultTemperature: 150
+    defaultMass: 600
+    maxMass: 1000
+    # hardnessTier: 3
+    hardness: 25
+    molarMass: 34.453
+    lightAbsorptionFactor: 1
+    materialCategory: Liquifiable
+    tags:
+    buildMenuSort: 1
+    isDisabled: false
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.SOLIDCHLORINE.NAME
+  
+  - elementId: SolidCrudeOil
+    specificHeatCapacity: 1.69
+    thermalConductivity: 2
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 0.1
+    highTemp: 233
+    highTempTransitionTarget: CrudeOil
+    defaultTemperature: 200
+    defaultMass: 870
+    maxMass: 1840
+    # hardnessTier: 1
+    hardness: 2
+    molarMass: 500
+    lightAbsorptionFactor: 1
+    materialCategory: Liquifiable
+    buildMenuSort: 1
+    isDisabled: false
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.SOLIDCRUDEOIL.NAME
+  
+  - elementId: SolidHydrogen
+    specificHeatCapacity: 2.4
+    thermalConductivity: 1
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 0.25
+    highTemp: 14
+    highTempTransitionTarget: LiquidHydrogen
+    defaultTemperature: 5
+    defaultMass: 600
+    maxMass: 1000
+    # hardnessTier: 1
+    hardness: 2
+    molarMass: 44.1
+    lightAbsorptionFactor: 0.75
+    materialCategory: Liquifiable
+    tags:
+    buildMenuSort: 1
+    isDisabled: false
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.SOLIDHYDROGEN.NAME
+  
+  - elementId: SolidMercury
+    specificHeatCapacity: 0.14
+    thermalConductivity: 8.3
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 0.5
+    highTemp: 234.3
+    highTempTransitionTarget: Mercury
+    defaultTemperature: 200
+    defaultMass: 600
+    maxMass: 1000
+    # hardnessTier: 1
+    hardness: 2
+    molarMass: 200.59
+    lightAbsorptionFactor: 1
+    materialCategory: Liquifiable
+    tags:
+    - Metal
+    - BuildableAny
+    buildMenuSort: 1
+    isDisabled: true
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.SOLIDMERCURY.NAME
+  
+  - elementId: SolidMethane
+    specificHeatCapacity: 2.191
+    thermalConductivity: 0.03
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 1
+    highTemp: 90.55
+    highTempTransitionTarget: LiquidMethane
+    defaultTemperature: 50
+    defaultMass: 500
+    maxMass: 750
+    # hardnessTier: 1
+    hardness: 2
+    molarMass: 16.044
+    lightAbsorptionFactor: 1
+    materialCategory: ConsumableOre
+    tags:
+    buildMenuSort: 1
+    isDisabled: false
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.SOLIDMETHANE.NAME
+  
+  - elementId: SolidNaphtha
+    specificHeatCapacity: 2.191
+    thermalConductivity: 0.2
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 0.1
+    highTemp: 223
+    highTempTransitionTarget: Naphtha
+    defaultTemperature: 200
+    defaultMass: 740
+    maxMass: 1840
+    # hardnessTier: 1
+    hardness: 2
+    molarMass: 102.2
+    lightAbsorptionFactor: 1
+    materialCategory: Liquifiable
+    buildMenuSort: 1
+    isDisabled: false
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.SOLIDNAPHTHA.NAME
+  
+  - elementId: SolidOxygen
+    specificHeatCapacity: 1.01
+    thermalConductivity: 1
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 0.5
+    highTemp: 54.36
+    highTempTransitionTarget: LiquidOxygen
+    defaultTemperature: 30
+    defaultMass: 300
+    maxMass: 1
+    # hardnessTier: 1
+    hardness: 2
+    molarMass: 50
+    lightAbsorptionFactor: 0.75
+    materialCategory: Liquifiable
+    buildMenuSort: 1
+    isDisabled: false
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.SOLIDOXYGEN.NAME
+  
+  - elementId: SolidPetroleum
+    specificHeatCapacity: 1.76
+    thermalConductivity: 2
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 0.1
+    highTemp: 216
+    highTempTransitionTarget: Petroleum
+    defaultTemperature: 200
+    defaultMass: 740
+    maxMass: 1840
+    # hardnessTier: 1
+    hardness: 2
+    molarMass: 82.2
+    lightAbsorptionFactor: 1
+    materialCategory: Liquifiable
+    buildMenuSort: 1
+    isDisabled: false
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.SOLIDPETROLEUM.NAME
+  
+  - elementId: SolidPropane
+    specificHeatCapacity: 2.4
+    thermalConductivity: 1
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 0.5
+    highTemp: 85
+    highTempTransitionTarget: LiquidPropane
+    defaultTemperature: 60
+    defaultMass: 600
+    maxMass: 1000
+    # hardnessTier: 2
+    hardness: 10
+    molarMass: 44.1
+    lightAbsorptionFactor: 1
+    materialCategory: Liquifiable
+    tags:
+    - BuildableAny
+    buildMenuSort: 1
+    isDisabled: false
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.SOLIDPROPANE.NAME
+  
+  - elementId: SolidSuperCoolant
+    specificHeatCapacity: 8.44
+    thermalConductivity: 9.46
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 0.1
+    highTemp: 2
+    highTempTransitionTarget: SuperCoolant
+    defaultTemperature: 80
+    defaultMass: 740
+    maxMass: 1840
+    # hardnessTier: 1
+    hardness: 2
+    molarMass: 250
+    lightAbsorptionFactor: 1
+    materialCategory: ManufacturedMaterial
+    buildMenuSort: 62
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.SOLIDSUPERCOOLANT.NAME
+  
+  - elementId: SolidViscoGel
+    specificHeatCapacity: 1.55
+    thermalConductivity: 0.45
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 0.1
+    highTemp: 242.5
+    highTempTransitionTarget: ViscoGel
+    defaultTemperature: 150
+    defaultMass: 100
+    maxMass: 150
+    # hardnessTier: 1
+    hardness: 2
+    molarMass: 95
+    lightAbsorptionFactor: 0.2
+    materialCategory: ManufacturedMaterial
+    tags:
+    - Plastic
+    buildMenuSort: 63
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.SOLIDVISCOGEL.NAME
+  
+  - elementId: Steel
+    specificHeatCapacity: 0.49
+    thermalConductivity: 54
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 2
+    highTemp: 2700
+    highTempTransitionTarget: MoltenSteel
+    defaultTemperature: 300
+    defaultMass: 400
+    maxMass: 10000
+    # hardnessTier: 4
+    hardness: 50
+    molarMass: 54.97
+    lightAbsorptionFactor: 1
+    materialCategory: ManufacturedMaterial
+    tags:
+    - Metal
+    - RefinedMetal
+    - BuildableAny
+    buildMenuSort: 10
+    isDisabled: false
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.STEEL.NAME
+  
+  - elementId: Sulfur
+    specificHeatCapacity: 0.7
+    thermalConductivity: 0.2
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 0.1
+    highTemp: 388.35
+    highTempTransitionTarget: LiquidSulfur
+    defaultTemperature: 290
+    defaultMass: 500
+    maxMass: 2000
+    # hardnessTier: 1
+    hardness: 5
+    molarMass: 50
+    lightAbsorptionFactor: 1
+    materialCategory: Other
+    buildMenuSort: 10
+    isDisabled: false
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.SULFUR.NAME
+  
+  - elementId: SuperInsulator
+    specificHeatCapacity: 5.57
+    thermalConductivity: 1.0e-05
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 2
+    highTemp: 3895
+    highTempTransitionTarget: MoltenTungsten
+    highTempTransitionOreId: SourGas
+    highTempTransitionOreMassConversion: 0.15
+    defaultTemperature: 300
+    defaultMass: 900
+    maxMass: 1800
+    # hardnessTier: 7
+    hardness: 200
+    molarMass: 341.76
+    lightAbsorptionFactor: 1
+    materialCategory: ManufacturedMaterial
+    tags:
+    - BuildableRaw
+    - Plumbable
+    - Crushable
+    - BuildableAny
+    buildMenuSort: 60
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.SUPERINSULATOR.NAME
+  
+  - elementId: TempConductorSolid
+    specificHeatCapacity: 0.622
+    thermalConductivity: 220
+    solidSurfaceAreaMultiplier: 2
+    liquidSurfaceAreaMultiplier: 2
+    gasSurfaceAreaMultiplier: 2
+    strength: 0.8
+    highTemp: 2950
+    highTempTransitionTarget: MoltenNiobium
+    highTempTransitionOreId: Tungsten
+    highTempTransitionOreMassConversion: 0.95
+    defaultTemperature: 242.15
+    defaultMass: 900
+    maxMass: 1800
+    # hardnessTier: 5
+    hardness: 80
+    molarMass: 174.35
+    lightAbsorptionFactor: 1
+    materialCategory: ManufacturedMaterial
+    tags:
+    - Metal
+    - RefinedMetal
+    - Plumbable
+    - BuildableAny
+    buildMenuSort: 61
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.TEMPCONDUCTORSOLID.NAME
+  
+  - elementId: ToxicSand
+    specificHeatCapacity: 0.83
+    thermalConductivity: 2
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 0.25
+    highTemp: 1986
+    highTempTransitionTarget: MoltenGlass
+    defaultTemperature: 300
+    defaultMass: 1000
+    maxMass: 1840
+    # hardnessTier: 2
+    hardness: 10
+    molarMass: 50
+    lightAbsorptionFactor: 1
+    minHorizontalFlow: 50
+    materialCategory: Organics
+    tags:
+    - Unstable
+    - Compostable
+    buildMenuSort: 1
+    isDisabled: false
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.TOXICSAND.NAME
+  
+  - elementId: Tungsten
+    specificHeatCapacity: 0.134
+    thermalConductivity: 60
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 0.9
+    highTemp: 3695
+    highTempTransitionTarget: MoltenTungsten
+    defaultTemperature: 300
+    defaultMass: 200
+    maxMass: 1000
+    # hardnessTier: 7
+    hardness: 200
+    molarMass: 183.84
+    lightAbsorptionFactor: 1
+    materialCategory: RefinedMetal
+    tags:
+    - Plumbable
+    - BuildableAny
+    buildMenuSort: 4
+    isDisabled: false
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.TUNGSTEN.NAME
+  
+  - elementId: Unobtanium
+    specificHeatCapacity: 0
+    thermalConductivity: 0
+    solidSurfaceAreaMultiplier: 0
+    liquidSurfaceAreaMultiplier: 0
+    gasSurfaceAreaMultiplier: 0
+    strength: 0
+    highTemp: 10000
+    highTempTransitionTarget: Unobtanium
+    defaultTemperature: 1
+    defaultMass: 20000
+    maxMass: 20000
+    # hardnessTier: 100
+    hardness: 255
+    molarMass: 10000
+    lightAbsorptionFactor: 1
+    materialCategory: Special
+    buildMenuSort: 1
+    isDisabled: false
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.UNOBTANIUM.NAME
+  
+  - elementId: UraniumOre
+    specificHeatCapacity: 1
+    thermalConductivity: 20
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 1
+    highTemp: 1132
+    highTempTransitionTarget: MoltenUranium
+    defaultTemperature: 300
+    defaultMass: 100
+    maxMass: 200
+    # hardnessTier: 8
+    hardness: 250
+    molarMass: 120
+    lightAbsorptionFactor: 1
+    tags:
+    buildMenuSort: 1
+    isDisabled: true
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.URANIUMORE.NAME
+
+  - elementId: Wolframite
+    specificHeatCapacity: 0.134
+    thermalConductivity: 15
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 0.8
+    highTemp: 3200
+    highTempTransitionTarget: MoltenTungsten
+    defaultTemperature: 300
+    defaultMass: 600
+    maxMass: 1840
+    # hardnessTier: 6
+    hardness: 150
+    molarMass: 150
+    lightAbsorptionFactor: 1
+    materialCategory: Metal
+    tags:
+    - Plumbable
+    - BuildableAny
+    buildMenuSort: 4
+    isDisabled: false
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.WOLFRAMITE.NAME
+
+  - elementId: Yellowcake
+    specificHeatCapacity: 1
+    thermalConductivity: 20
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 1
+    highTemp: 1132
+    highTempTransitionTarget: MoltenUranium
+    defaultTemperature: 300
+    defaultMass: 100
+    maxMass: 200
+    # hardnessTier: 8
+    hardness: 250
+    molarMass: 120
+    lightAbsorptionFactor: 1
+    tags:
+    buildMenuSort: 1
+    isDisabled: true
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.YELLOWCAKE.NAME
+
+  - elementId: SolidEthanol
+    specificHeatCapacity: 2.46
+    thermalConductivity: 20
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 1
+    highTemp: 159.1
+    highTempTransitionTarget: Ethanol
+    defaultTemperature: 150
+    defaultMass: 100
+    maxMass: 200
+    # hardnessTier: 8
+    hardness: 250
+    molarMass: 46.07
+    lightAbsorptionFactor: 1
+    tags:
+    buildMenuSort: 1
+    isDisabled: false
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.SOLIDETHANOL.NAME
+
+  - elementId: SolidSyngas
+    specificHeatCapacity: 2.4
+    thermalConductivity: 1
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 0.25
+    highTemp: 14
+    highTempTransitionTarget: MoltenSyngas
+    defaultTemperature: 5
+    defaultMass: 600
+    maxMass: 1000
+    # hardnessTier: 1
+    hardness: 2
+    molarMass: 44.1
+    lightAbsorptionFactor: 0.75
+    materialCategory: Liquifiable
+    tags:
+    buildMenuSort: 1
+    isDisabled: true
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.SOLIDSYNGAS.NAME

@@ -3,3 +3,15 @@ defmodule Onicn.Elements.Ice do
     "冰"
   end
 end
+
+defmodule Onicn.Elements.BrineIce do
+  def output(:link_name_icon) do
+    "盐冰"
+  end
+end
+
+defmodule Onicn.Elements.Salt do
+  def output(:link_name_icon) do
+    "盐"
+  end
+end
