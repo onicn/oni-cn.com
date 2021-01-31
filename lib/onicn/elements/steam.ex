@@ -1,5 +1,4 @@
 defmodule Onicn.Elements.Steam do
-  def output(:link_name_icon) do
-    "蒸汽"
-  end
+  use Onicn.Categories.Gas,
+    cn_name: "蒸汽,"
 end

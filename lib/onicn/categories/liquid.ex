@@ -11,80 +11,20 @@ defmodule Onicn.Categories.Liquid do
   ]
 
   @elements :onicn
-    |> :code.priv_dir()
-    |> Path.join("data/liquid.yaml")
-    |> YamlElixir.read_from_file!()
-    |> Map.get("elements")
-
-  defp parse_element(element) do
-    to_module = fn element_id -> Module.concat(["Onicn.Elements", element_id]) end
-
-    Enum.concat([
-      case element do
-        %{
-          "highTemp" => high_temp,
-          "highTempTransitionTarget" => target_1,
-          "highTempTransitionOreId" => target_2,
-          "highTempTransitionOreMassConversion" => percentage_2
-        } -> [
-          high_temp: high_temp - 273.15,
-          high_temp_transition_target: {to_module.(target_1), 1 - percentage_2},
-          high_temp_transition_target: {to_module.(target_2), percentage_2}
-        ]
-
-        %{
-          "highTemp" => high_temp,
-          "highTempTransitionTarget" => target,
-        } -> [
-          high_temp: high_temp - 273.15,
-          high_temp_transition_target: to_module.(target)
-        ]
-
-        _ -> []
-      end,
-
-      case element do
-        %{
-          "lowTemp" => low_temp,
-          "lowTempTransitionTarget" => target_1,
-          "lowTempTransitionOreId" => target_2,
-          "lowTempTransitionOreMassConversion" => percentage_2
-        } -> [
-          low_temp: low_temp - 273.15,
-          low_temp_transition_target: {to_module.(target_1), 1 - percentage_2},
-          low_temp_transition_target: {to_module.(target_2), percentage_2}
-        ]
-
-        %{
-          "lowTemp" => low_temp,
-          "lowTempTransitionTarget" => target,
-        } -> [
-          low_temp: low_temp - 273.15,
-          low_temp_transition_target: to_module.(target)
-        ]
-
-        _ -> []
-      end,
-
-      [
-        specific_heat_capacity: element["specificHeatCapacity"],
-        thermal_conductivity: element["thermalConductivity"],
-        mass_per_tile: element["defaultMass"],
-        molar_mass: element["molarMass"]
-      ]
-    ])
-  end
+            |> :code.priv_dir()
+            |> Path.join("data/liquid.yaml")
+            |> YamlElixir.read_from_file!()
+            |> Map.get("elements")
 
   defmacro __using__(attributes) do
     element_id = __CALLER__.module |> to_string() |> String.split(".") |> List.last()
+
     attributes =
       @elements
       |> Enum.find(fn e -> e["elementId"] === element_id end)
-      |> parse_element()
+      |> Onicn.Categories.Element.parse(@fields)
       |> Keyword.merge(attributes)
-|> IO.inspect
       |> Keyword.put(:nav, __MODULE__)
-|> IO.inspect
 
     quote do
       def __attributes__ do
@@ -93,6 +33,10 @@ defmodule Onicn.Categories.Liquid do
 
       def output(:html_attributes) do
         Onicn.Categories.Element.output(:html_attributes, __MODULE__)
+      end
+
+      def output(:link_name_icon) do
+        ~s|<a href="">unquote(attributes[:cn_name])</a>|
       end
     end
   end

@@ -1,5 +1,4 @@
 defmodule Onicn.Elements.LiquidOxygen do
-  def output(:link_name_icon) do
-    "液态氧"
-  end
+  use Onicn.Categories.Liquid,
+    cn_name: "液态氧"
 end

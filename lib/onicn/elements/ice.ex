@@ -15,3 +15,9 @@ defmodule Onicn.Elements.Salt do
     "盐"
   end
 end
+
+defmodule Onicn.Elements.Sulfur do
+  def output(:link_name_icon) do
+    "硫"
+  end
+end
