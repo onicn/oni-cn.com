@@ -1,0 +1,19 @@
+<fieldset class="layui-elem-field">
+  <legend><h1><b><%= name %></b></h1></legend>
+  <div class="layui-field-box">
+    <div style="text-align: center; margin: 30px">
+      <img src="<%= img %>" style="text-align: center">
+    </div>
+
+    <table class="layui-table" lay-even="" lay-skin="nob">
+      <tbody>
+        <%= for {key, value} <- data do %>
+          <tr>
+            <td><%=key%></td>
+            <td><%=value%></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</fieldset>
