@@ -1,5 +1,5 @@
 <div class="layui-logo" style="width:300px">
-  <img src="/img/header_basic.jpg">
+  <a href="/"><img src="/img/header_basic.jpg"></a>
 </div>
 
 <ul class="layui-nav layui-layout-left" style="left:300px;z-index:-1;">
