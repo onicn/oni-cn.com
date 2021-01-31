@@ -12,10 +12,6 @@ defmodule Onicn.Categories.Element do
     molar_mass: {"摩尔质量", "g/mol"}
   }
 
-  defp to_module(element_id) do
-    Module.concat(["Onicn.Elements", element_id])
-  end
-
   def parse(element, fields) do
     Enum.concat([
       case element do
@@ -76,6 +72,32 @@ defmodule Onicn.Categories.Element do
         hardness: element["hardness"]
       ], fields)
     ])
+  end
+
+  def attributes_to_json(attributes) do
+    attributes
+    |> Enum.map(fn
+      {:high_temp_transition_target, {element_module, _}} ->
+        {:high_temp_transition_target, element_module.output(:link_name_icon)}
+      {:high_temp_transition_target, element_module} ->
+        {:high_temp_transition_target, element_module.output(:link_name_icon)}
+      {:low_temp_transition_target, {element_module, _}} ->
+        {:low_temp_transition_target, element_module.output(:link_name_icon)}
+      {:low_temp_transition_target, element_module} ->
+        {:low_temp_transition_target, element_module.output(:link_name_icon)}
+      {field, value} ->
+        {field, value}
+    end)
+    |> Enum.reduce(%{}, fn {field, value}, acc ->
+      case Map.get(acc, field) do
+        nil -> Map.put(acc, field, value)
+        existed -> Map.put(acc, field, "#{existed} #{value}")
+      end
+    end)
+  end
+
+  defp to_module(element_id) do
+    Module.concat(["Onicn.Elements", element_id])
   end
 
   def output(:html_attributes, element) do
