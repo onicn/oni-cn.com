@@ -1,0 +1,30 @@
+<%= if length(summary) > 0 do %>
+  <fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
+    <legend>简介</legend>
+  </fieldset>
+<% end %>
+<%= for content <- summary do %>
+  <div class="layui-text" style="margin: 5px 5px">
+    <%= content %>
+  </div>
+<% end %>
+<%= if length(usage) > 0 do %>
+  <fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
+    <legend>用途</legend>
+  </fieldset>
+<% end %>
+<%= for content <- usage do %>
+  <div class="layui-text" style="margin: 5px 5px">
+    <%= content %>
+  </div>
+<% end %>
+<%= if length(production) > 0 do %>
+  <fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
+    <legend>生产</legend>
+  </fieldset>
+<% end %>
+<%= for content <- production do %>
+  <div class="layui-text" style="margin: 5px 5px">
+    <%= content %>
+  </div>
+<% end %>

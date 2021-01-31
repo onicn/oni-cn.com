@@ -27,12 +27,16 @@ defmodule Onicn.Categories.Liquid do
       |> Keyword.put(:nav, __MODULE__)
 
     quote do
+      use Onicn.Content
+
       def __attributes__ do
         unquote(attributes)
       end
 
       def output(:link_name_icon) do
-        ~s|<a href="/liquid/#{Macro.underscore(unquote(element_id))}/">#{unquote(attributes[:cn_name])}</a>|
+        ~s|<a href="/liquid/#{Macro.underscore(unquote(element_id))}/">#{
+          unquote(attributes[:cn_name])
+        }</a>|
       end
 
       def output(:html_attributes) do
@@ -49,6 +53,7 @@ defmodule Onicn.Categories.Liquid do
     end)
     |> Enum.map(fn %{"elementId" => element_id} ->
       module = Module.concat(["Onicn.Elements", element_id])
+
       module.__attributes__
       |> Enum.filter(fn {field, _} -> field in @fields end)
       |> Keyword.put(:cn_name, module.output(:link_name_icon))
@@ -82,6 +87,63 @@ defmodule Onicn.Categories.Liquid do
         });
       });|
     }
+  end
+
+  def output(:link_name_icon) do
+    ~s|<a href="/liquid/">液体</a>|
+  end
+
+
+  def generate_pages do
+    @elements
+    |> Enum.map(fn %{"elementId" => element_id} ->
+      module = Module.concat(["Onicn.Elements", element_id])
+
+      (function_exported?(module, :__attributes__, 0) &&
+         module.__attributes__[:nav] === __MODULE__ &&
+         module) || nil
+    end)
+    |> Enum.reject(&is_nil/1)
+    |> Enum.each(&generate_element_page(&1))
+  end
+
+  defp generate_element_page(element_module) do
+    name = element_module |> to_string() |> String.split(".") |> List.last() |> Macro.underscore()
+
+    temp_path =
+      :onicn
+      |> :code.priv_dir()
+      |> Path.join("templates")
+
+    nav =
+      temp_path
+      |> Path.join("nav.eex")
+      |> EEx.eval_file(nav: "liquid")
+
+    contents = element_module.output(:html_content)
+    attributes = element_module.output(:html_attributes)
+
+    container = ~s|
+      <div class="layui-row layui-col-space30">
+        <div class="layui-col-md8">#{contents}</div>
+        <div class="layui-col-md4">#{attributes}</div>
+      </div>|
+
+    script = ~s|layui.use('element', function() {});|
+
+    page =
+      temp_path
+      |> Path.join("index.eex")
+      |> EEx.eval_file(nav: nav, container: container, script: script)
+
+    page_path =
+      :onicn
+      |> :code.priv_dir()
+      |> Path.join("dist")
+      |> Path.join("/liquid/#{name}/")
+
+    File.mkdir_p!(page_path)
+    File.write!(Path.join(page_path, "index.html"), page)
   end
 
   def __fields__, do: @fields
