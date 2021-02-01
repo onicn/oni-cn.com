@@ -4,6 +4,7 @@
   locals_without_parens: [
     summary: :*,
     usage: :*,
-    production: :*
+    production: :*,
+    tips: :*
   ]
 ]
