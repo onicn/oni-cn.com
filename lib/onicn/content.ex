@@ -4,7 +4,8 @@ defmodule Onicn.Content do
       @contents %{
         summary: [],
         usage: [],
-        production: []
+        production: [],
+        tips: []
       }
 
       @before_compile unquote(__MODULE__)
@@ -46,6 +47,14 @@ defmodule Onicn.Content do
 
   defmacro production(options, str) do
     do_append(:production, options, str)
+  end
+
+  defmacro tips(str) do
+    do_append(:tips, [], str)
+  end
+
+  defmacro tips(options, str) do
+    do_append(:tips, options, str)
   end
 
   defp do_append(type, options, str) do
