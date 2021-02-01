@@ -14,4 +14,6 @@ defmodule Onicn.Elements.Iron do
   production "碎石机能够将铁矿粉碎成铁和沙子。100 千克 铁矿 = 50 千克 铁 + 50 千克 沙子。"
   production "贫瘠区含有天然的铁。"
   production "太空区中的陨石雨会带来铁。"
+  
+  tips "虽然铁没有特别的特性，但大量存在的铁矿使得铁成为潜在储量最高的精炼金属。"
 end
