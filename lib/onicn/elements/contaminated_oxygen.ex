@@ -15,5 +15,7 @@ defmodule Onicn.Elements.ContaminatedOxygen do
   production "在气压小于 1800 克时，并且接触到氧气或者污染氧时，污染水会持续释放出污染氧。"
   production "疫病章鱼会持续排泄出污染氧。"
   production "高温污染氧喷孔和菌染氧喷孔会定期排放出污染氧。"
-  production [only: spaced_out], "升华站能够将#{Onicn.Elements.ToxicSand.output(:link_name_icon)}转化为污染氧。1000 克/秒 污染土 = 660 克/秒 污染氧"
+
+  production [only: :spaced_out],
+             "升华站能够将#{Onicn.Elements.ToxicSand.output(:link_name_icon)}转化为污染氧。1000 克/秒 污染土 = 660 克/秒 污染氧"
 end
