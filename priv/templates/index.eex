@@ -12,7 +12,7 @@
     <meta property="og:image" content="https://oni-cn.com/img/header_basic.jpg">
     <meta property="og:description" content="缺氧 Wiki | oni-cn.com" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/layui/2.5.7/css/layui.min.css"  media="all">
-    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
   </head>
   <body>
     <div class="layui-layout layui-layout-admin">
