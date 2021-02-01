@@ -52,5 +52,9 @@
     <div class="layui-text" style="margin: 5px 5px">
       <a href="https://oni-db.com" target="_blank">缺氧数据库（英文）</a>
     </div>
+    <div class="layui-text" style="margin: 5px 5px">
+      <a href="https://onimap.upyoucan.com/map-tools/map-browser" target="_blank">工具不足（地图/种子搜寻）</a>
+    </div>
+
   </div>
 </div>
