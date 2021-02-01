@@ -31,12 +31,12 @@ defmodule Onicn do
       |> Path.join("index.eex")
       |> EEx.eval_file(nav: nav, container: container, script: script)
 
-      page_path =
-        :onicn
-        |> :code.priv_dir()
-        |> Path.join("dist")
+    page_path =
+      :onicn
+      |> :code.priv_dir()
+      |> Path.join("dist")
 
-      File.mkdir_p!(page_path)
-      File.write!(Path.join(page_path, "index.html"), page)
+    File.mkdir_p!(page_path)
+    File.write!(Path.join(page_path, "index.html"), page)
   end
 end

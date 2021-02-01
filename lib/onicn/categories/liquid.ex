@@ -93,7 +93,6 @@ defmodule Onicn.Categories.Liquid do
     ~s|<a href="/liquid/">液体</a>|
   end
 
-
   def generate_pages do
     @elements
     |> Enum.map(fn %{"elementId" => element_id} ->
