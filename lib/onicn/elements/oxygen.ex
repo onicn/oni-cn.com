@@ -1,9 +1,12 @@
+alias Onicn.Categories.Gas
+alias Onicn.Elements.{OxyRock, Gold}
+
 defmodule Onicn.Elements.Oxygen do
-  use Onicn.Categories.Gas,
+  use Gas,
     cn_name: "氧气",
     category: "可呼吸气体"
 
-  summary "氧气是一种#{Onicn.Categories.Gas.output(:link_name_icon)}，是游戏中最重要的资源之一。复制人必须呼吸氧气才能生存。"
+  summary "氧气是一种#{link(Gas)}，是游戏中最重要的资源之一。复制人必须呼吸氧气才能生存。"
 
   usage "复制人每秒通常需要 100 克氧气（大口呼吸者特质需要 200 克/秒，潜水员之肺特质需要 75 克/秒）。在正常气压下复制人会正常呼吸，如果气压过低（小于 50 克）或者环境气体不能呼吸，复制人可以短时间憋气。长时间无法呼吸的复制人会窒息而死。"
 
@@ -11,12 +14,8 @@ defmodule Onicn.Elements.Oxygen do
   usage "气压服存放柜需要氧气来给气压服充气。"
   usage "喷气服存放柜需要氧气来给喷气服充气。"
   usage [only: :basic], "望远镜需要氧气才能正常工作。"
-
-  usage "氧石精炼炉能够将氧气和金合成氧石。600 克/秒 氧气 + 3 克/秒 #{Onicn.Elements.Gold.output(:link_name_icon)} = 600 克/秒 #{
-          Onicn.Elements.OxyRock.output(:link_name_icon)
-        }。"
-
-  usage "贵族飞鱼和厚壳飞鱼能够呼吸氧气，排泄出#{Onicn.Elements.OxyRock.output(:link_name_icon)}。"
+  usage "氧石精炼炉能够将氧气和金合成氧石。600 克/秒 氧气 + 3 克/秒 #{link(Gold)} = 600 克/秒 #{link(OxyRock)}。"
+  usage "贵族飞鱼和厚壳飞鱼能够呼吸氧气，排泄出#{link(OxyRock)}。"
 
   production "地图中存在天然的氧石，会挥发出氧气。特别的，在起始的打印舱附近必定存在 5 格氧石。"
   production "氧气扩散器能够将藻类转化为氧气。550 克/秒 藻类 = 500 克/秒 氧气。"

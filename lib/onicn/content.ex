@@ -25,6 +25,10 @@ defmodule Onicn.Content do
     end
   end
 
+  def link(module) do
+    module.output(:link_name_icon)
+  end
+
   defmacro summary(str) do
     do_append(:summary, [], str)
   end
