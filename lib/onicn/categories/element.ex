@@ -116,7 +116,7 @@ defmodule Onicn.Categories.Element do
       attributes[:nav] |> to_string() |> String.split(".") |> List.last() |> Macro.underscore()
 
     cn_name = attributes[:cn_name]
-    img = "/img/#{category}/#{name}.png"
+    img = "/assets/img/#{category}/#{name}.png"
 
     data =
       attributes

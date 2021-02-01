@@ -1,0 +1,62 @@
+.oni-header {
+  height: 150px;
+  overflow: hidden;
+}
+
+.oni-header div img{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.oni-header ul {
+  padding-top: 20px;
+}
+
+.oni-header ul li {
+  width: 100px;
+  text-align: center;
+}
+
+.oni-header ul li a img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  z-index: -1;
+}
+
+.oni-header ul li a span {
+  font-size: 18px;
+  margin: 0 auto;
+}
+
+.gray {
+  filter: grayscale(100%);
+}
+
+.layui-field-title.section-header {
+  margin-top: 30px;
+}
+
+.layui-text.section-paragraph {
+  margin: 5px 5px;
+}
+
+.layui-logo.logo.medium {
+  width:300px;
+}
+
+.layui-container.body{
+  margin-bottom:80px;
+}
+
+.layui-nav.layui-layout-left.nav {
+  left: 300px;
+  z-index: -1;
+}
+
+.layui-layout-admin .layui-footer{
+  left:0;
+  text-align: center;
+  z-index: 1000000000;
+}

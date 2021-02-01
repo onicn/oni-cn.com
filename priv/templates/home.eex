@@ -1,55 +1,55 @@
 <div class="layui-row">
   <div class="layui-col-md12">
-    <fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
+    <fieldset class="layui-elem-field layui-field-title section-header">
       <legend>缺氧是什么</legend>
     </fieldset>
 
-    <div class="layui-text" style="margin: 5px 5px">
+    <div class="layui-text section-paragraph">
       「缺氧」（英语：Oxygen Not Included）是一款透过 Steam 网路平台发行由 Klei Entertainment 制作的太空模拟策略游戏，采用 2D 横版布局，玩家需要管理复制人，让他们挖掘、建立并维护起一个地下的基地，为此，玩家需要水、食物、氧气、适当的调节压力和适宜的温度等条件来维持复制人生存并满足他们的其他需求。
     </div>
 
-    <fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
+    <fieldset class="layui-elem-field layui-field-title section-header">
       <legend>缺氧的玩法</legend>
     </fieldset>
 
-    <div class="layui-text" style="margin: 5px 5px">
+    <div class="layui-text section-paragraph">
       玩家使用上帝视角操作一队由打印舱产生的复制人，一开始玩家可以拥有三人，并采用无限随机方式决定三人的各项技能值，进入游戏后每隔三周前能产生一个复制人队员或选择一项随机的物品，玩家可以从每次提供的四个选项选择一个或是全部放弃，然而游戏中的生成队员不能再用无限骰子方式，若是不满意可以选择放弃并等待三周期。
     </div>
-    <div class="layui-text" style="margin: 5px 5px">
+    <div class="layui-text section-paragraph">
       进入游戏后玩家队伍出现在一个未知的行星地下基地内部的打印舱前，基地未完工且多数房间已经坍方解体散落在各处成为遗迹，必须利用队员手上的裂解炮在地下开挖创造新的房间和利用矿物建立各种设施，有时能连通遗迹并发现一些有用设备，但基本上要靠玩家自立存活，游戏可以选择星球剧情并达成成就任务，玩家在其中有无限制的延长存活时间、解开科技并增加人数，乐趣在于建造过程，基本上游戏没有结束。
     </div>
-    <div class="layui-text" style="margin: 5px 5px">
+    <div class="layui-text section-paragraph">
       缺氧游戏的难度随刚开始选择星球而有所不同，其内生的环境生态模拟系统，会在一段时间后让游戏难度自然而然的大幅增高，游戏最大挑战是建立一个自给自足的内循环系统和制作火箭离开星球，所能利用的地下和地表陨石撞击的残骸，探索出的各种矿物、液体、气体、动物、植物等资源，每种物质有其物理特性与用途，各自的模拟熔点、气化点、冰点、导热率、比重等物理参数之间交互影响。游戏后期各种机械设备的运行会使整个地下基地缓慢升温到无法容忍的程度，温度降低的难题与每种农作物的生长温度区间将交互考验玩家调动各种物质的能力
     </div>
 
-    <fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
+    <fieldset class="layui-elem-field layui-field-title section-header">
       <legend>关于本站</legend>
     </fieldset>
 
-    <div class="layui-text" style="margin: 5px 5px">
+    <div class="layui-text section-paragraph">
       本站由 B 站 up 主 <a href="https://space.bilibili.com/18135979" target="_blank">程序喵喵喵</a> 业余时间开发，缺氧的中文资料比较匮乏，希望本站给广大缺氧爱好者带来帮助，如有建议欢迎 B 站私信。
     </div>
-    <div class="layui-text" style="margin: 5px 5px">
+    <div class="layui-text section-paragraph">
       目前仅完成固体、液体、气体元素的属性页和部分元素的详细页，建筑、动物、植物、食物及 DLC 的内容全速追加中。
     </div>
 
-    <fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
+    <fieldset class="layui-elem-field layui-field-title section-header">
       <legend>相关链接</legend>
     </fieldset>
 
-    <div class="layui-text" style="margin: 5px 5px">
+    <div class="layui-text section-paragraph">
       <a href="https://www.klei.com/games/oxygen-not-included" target="_blank">官方网站（英文）</a>
     </div>
-    <div class="layui-text" style="margin: 5px 5px">
+    <div class="layui-text section-paragraph">
       <a href="https://forums.kleientertainment.com/forums/forum/118-oxygen-not-included/" target="_blank">官方论坛（英文）</a>
     </div>
-    <div class="layui-text" style="margin: 5px 5px">
+    <div class="layui-text section-paragraph">
       <a href="https://store.steampowered.com/app/457140/Oxygen_Not_Included/" target="_blank">Steam 页面</a>
     </div>
-    <div class="layui-text" style="margin: 5px 5px">
+    <div class="layui-text section-paragraph">
       <a href="https://oxygennotincluded.gamepedia.com/Oxygen_Not_Included_Wiki/zh" target="_blank">Gamepedia Wiki</a>
     </div>
-    <div class="layui-text" style="margin: 5px 5px">
+    <div class="layui-text section-paragraph">
       <a href="https://oni-db.com" target="_blank">缺氧数据库（英文）</a>
     </div>
   </div>
