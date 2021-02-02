@@ -27,6 +27,7 @@ defmodule Onicn.Categories.Element do
       name = options[:name]
       cn_name = options[:cn_name]
       fields = options[:fields]
+
       elements =
         :onicn
         |> :code.priv_dir()
@@ -73,7 +74,7 @@ defmodule Onicn.Categories.Element do
         unquote(elements)
         |> Enum.map(fn %{"elementId" => element_id} ->
           module = Module.concat(["Onicn.Elements", element_id])
-          function_exported?(module, :__attributes__, 0) && module || nil
+          (function_exported?(module, :__attributes__, 0) && module) || nil
         end)
         |> Enum.reject(&is_nil/1)
       end
@@ -240,15 +241,16 @@ defmodule Onicn.Categories.Element do
   def output(:html_table, category_name, fields) do
     cols =
       Jason.encode!([
-        %{field: "cn_name", title: "名称", sort: true} |
-        Enum.map(fields, fn field ->
-          case @available_fields[field] do
-            {name, unit} ->
-              %{field: field, title: "#{name}(#{unit})", sort: field in @sortable_fields}
-            name ->
-              %{field: field, title: name, sort: field in @sortable_fields}
-          end
-        end)
+        %{field: "cn_name", title: "名称", sort: true}
+        | Enum.map(fields, fn field ->
+            case @available_fields[field] do
+              {name, unit} ->
+                %{field: field, title: "#{name}(#{unit})", sort: field in @sortable_fields}
+
+              name ->
+                %{field: field, title: name, sort: field in @sortable_fields}
+            end
+          end)
       ])
 
     %{
