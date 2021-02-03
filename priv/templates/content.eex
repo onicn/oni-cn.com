@@ -1,56 +1,17 @@
-<%= if length(summary) > 0 do %>
-  <fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
-    <legend>简介</legend>
-  </fieldset>
-<% end %>
-<%= for {options, content} <- summary do %>
-  <div class="layui-text" style="margin: 5px 5px">
-    <%= if options |> Keyword.get(:tag) |> is_nil do %>
-      <%= content %>
-    <% else %>
-        <span class="layui-badge layui-bg-blue"><%= options[:tag] %></span> <%= content %>
-    <% end %>
-  </div>
-<% end %>
-<%= if length(usage) > 0 do %>
-  <fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
-    <legend>用途</legend>
-  </fieldset>
-<% end %>
-<%= for {options, content} <- usage do %>
-  <div class="layui-text" style="margin: 5px 5px">
-    <%= if options |> Keyword.get(:tag) |> is_nil do %>
-      <%= content %>
-    <% else %>
-        <span class="layui-badge layui-bg-blue"><%= options[:tag] %></span> <%= content %>
-    <% end %>
-  </div>
-<% end %>
-<%= if length(production) > 0 do %>
-  <fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
-    <legend>生产</legend>
-  </fieldset>
-<% end %>
-<%= for {options, content} <- production do %>
-  <div class="layui-text" style="margin: 5px 5px">
-    <%= if options |> Keyword.get(:tag) |> is_nil do %>
-      <%= content %>
-    <% else %>
-        <span class="layui-badge layui-bg-blue"><%= options[:tag] %></span> <%= content %>
-    <% end %>
-  </div>
-<% end %>
-<%= if length(tips) > 0 do %>
-  <fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
-    <legend>小技巧</legend>
-  </fieldset>
-<% end %>
-<%= for {options, content} <- tips do %>
-  <div class="layui-text" style="margin: 5px 5px">
-    <%= if options |> Keyword.get(:tag) |> is_nil do %>
-      <%= content %>
-    <% else %>
-        <span class="layui-badge layui-bg-blue"><%= options[:tag] %></span> <%= content %>
-    <% end %>
-  </div>
+<%= for {name, cn_name} <- order do %>
+  <%= if length(contents[name]) > 0 do %>
+    <fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
+      <legend><%= cn_name %></legend>
+    </fieldset>
+  <% end %>
+  <%= for {options, content} <- contents[name] do %>
+    <% content = Onicn.Item.replace_link(content) %>
+    <div class="layui-text" style="margin: 5px 5px">
+      <%= if options |> Keyword.get(:tag) |> is_nil do %>
+        <%= content %>
+      <% else %>
+          <span class="layui-badge layui-bg-blue"><%= options[:tag] %></span> <%= content %>
+      <% end %>
+    </div>
+  <% end %>
 <% end %>

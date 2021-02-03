@@ -1,11 +1,8 @@
-alias Onicn.Categories.Gas
-alias Onicn.Elements.{Oxygen, ToxicSand}
-
 defmodule Onicn.Elements.ContaminatedOxygen do
-  use Gas,
+  use Onicn.Categories.Gas,
     cn_name: "污染氧"
 
-  summary "污染氧是#{link(Oxygen)}之外的另一种可呼吸的#{link(Gas)}，常见于沼泽区。污染氧通常含有粘液肺病菌，需要小心处理。"
+  summary "污染氧是氧气之外的另一种可呼吸的气体，常见于沼泽区。污染氧通常含有粘液肺病菌，需要小心处理。"
   summary "污染氧会引起接触的食物腐败速率加倍。"
   summary "不含病菌的污染氧可以安全呼吸，复制人不会得病，但会造成 肺部不适 的状态，增加 30% 氧气消耗。"
 
@@ -19,5 +16,5 @@ defmodule Onicn.Elements.ContaminatedOxygen do
   production "疫病章鱼会持续排泄出污染氧。"
   production "高温污染氧喷孔和菌染氧喷孔会定期排放出污染氧。"
 
-  production [only: :spaced_out], "升华站能够将#{link(ToxicSand)}转化为污染氧。1000 克/秒 污染土 = 660 克/秒 污染氧"
+  production [only: :spaced_out], "升华站能够将污染土转化为污染氧。1000 克/秒 污染土 = 660 克/秒 污染氧"
 end

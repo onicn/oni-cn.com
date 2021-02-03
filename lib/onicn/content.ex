@@ -25,10 +25,6 @@ defmodule Onicn.Content do
     end
   end
 
-  def link(module) do
-    module.output(:link_name_icon)
-  end
-
   defmacro summary(str) do
     do_append(:summary, [], str)
   end
@@ -69,11 +65,16 @@ defmodule Onicn.Content do
   end
 
   def output(:html_content, contents) do
-    contents = Map.to_list(contents)
+    order = [
+      summary: "简介",
+      usage: "用途",
+      production: "生产",
+      tips: "小技巧"
+    ]
 
     :onicn
     |> :code.priv_dir()
     |> Path.join("templates/content.eex")
-    |> EEx.eval_file(contents)
+    |> EEx.eval_file(contents: contents, order: order)
   end
 end
