@@ -2,6 +2,7 @@ defmodule Onicn.Elements.Water do
   use Onicn.Categories.Liquid,
     cn_name: "水"
 
+
   summary "水是游戏中最重要的资源之一。水是制作食物和提供氧气的重要来源。"
   summary "用于生产食物和饮料的水需要是无菌的。使用含有食物中毒菌的水会导致复制人患上同名疾病。"
 
