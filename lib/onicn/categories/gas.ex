@@ -3,7 +3,6 @@ defmodule Onicn.Categories.Gas do
     name: "gas",
     cn_name: "气体",
     fields: [
-      :category,
       :low_temp,
       :low_temp_transition_target,
       :specific_heat_capacity,
