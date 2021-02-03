@@ -3,9 +3,13 @@
     <legend>简介</legend>
   </fieldset>
 <% end %>
-<%= for content <- summary do %>
+<%= for {options, content} <- summary do %>
   <div class="layui-text" style="margin: 5px 5px">
-    <%= content %>
+    <%= if options |> Keyword.get(:tag) |> is_nil do %>
+      <%= content %>
+    <% else %>
+        <span class="layui-badge layui-bg-blue"><%= options[:tag] %></span> <%= content %>
+    <% end %>
   </div>
 <% end %>
 <%= if length(usage) > 0 do %>
@@ -13,9 +17,13 @@
     <legend>用途</legend>
   </fieldset>
 <% end %>
-<%= for content <- usage do %>
+<%= for {options, content} <- usage do %>
   <div class="layui-text" style="margin: 5px 5px">
-    <%= content %>
+    <%= if options |> Keyword.get(:tag) |> is_nil do %>
+      <%= content %>
+    <% else %>
+        <span class="layui-badge layui-bg-blue"><%= options[:tag] %></span> <%= content %>
+    <% end %>
   </div>
 <% end %>
 <%= if length(production) > 0 do %>
@@ -23,9 +31,13 @@
     <legend>生产</legend>
   </fieldset>
 <% end %>
-<%= for content <- production do %>
+<%= for {options, content} <- production do %>
   <div class="layui-text" style="margin: 5px 5px">
-    <%= content %>
+    <%= if options |> Keyword.get(:tag) |> is_nil do %>
+      <%= content %>
+    <% else %>
+        <span class="layui-badge layui-bg-blue"><%= options[:tag] %></span> <%= content %>
+    <% end %>
   </div>
 <% end %>
 <%= if length(tips) > 0 do %>
@@ -33,8 +45,12 @@
     <legend>小技巧</legend>
   </fieldset>
 <% end %>
-<%= for content <- tips do %>
+<%= for {options, content} <- tips do %>
   <div class="layui-text" style="margin: 5px 5px">
-    <%= content %>
+    <%= if options |> Keyword.get(:tag) |> is_nil do %>
+      <%= content %>
+    <% else %>
+        <span class="layui-badge layui-bg-blue"><%= options[:tag] %></span> <%= content %>
+    <% end %>
   </div>
 <% end %>

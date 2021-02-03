@@ -69,12 +69,7 @@ defmodule Onicn.Content do
   end
 
   def output(:html_content, contents) do
-    contents =
-      contents
-      |> Map.to_list()
-      |> Enum.map(fn {key, values} ->
-        {key, Enum.map(values, fn {_option, value} -> value end)}
-      end)
+    contents = Map.to_list(contents)
 
     :onicn
     |> :code.priv_dir()
