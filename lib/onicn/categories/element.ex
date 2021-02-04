@@ -60,8 +60,11 @@ defmodule Onicn.Categories.Element do
 
           def output(:link_name_icon) do
             path = "/#{unquote(category_name)}/#{Macro.underscore(unquote(element_id))}"
+
             ~s|<a href="#{path}">
-              <img src="/img#{path}.png" style="weight:16px;height:16px;">#{unquote(attributes[:cn_name])}
+              <img src="/img#{path}.png" style="weight:16px;height:16px;">#{
+              unquote(attributes[:cn_name])
+            }
             </a>|
           end
         end
