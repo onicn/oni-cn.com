@@ -5,7 +5,7 @@
     </fieldset>
   <% end %>
   <%= for {options, content} <- contents[name] do %>
-    <% content = Onicn.Item.replace_link(content) %>
+    <% content = Onicn.Item.replace_link(content, escape) %>
     <div class="layui-text" style="margin: 5px 5px">
       <%= if options |> Keyword.get(:tag) |> is_nil do %>
         <%= content %>

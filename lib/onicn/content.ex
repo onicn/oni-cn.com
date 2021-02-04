@@ -16,7 +16,7 @@ defmodule Onicn.Content do
   defmacro __before_compile__(%Macro.Env{}) do
     quote do
       def output(:html_content) do
-        unquote(__MODULE__).output(:html_content, __contents__())
+        unquote(__MODULE__).output(:html_content, __MODULE__, __contents__())
       end
 
       def __contents__ do
@@ -64,7 +64,9 @@ defmodule Onicn.Content do
     end
   end
 
-  def output(:html_content, contents) do
+  def output(:html_content, item_module, contents) do
+    escape = item_module.__attributes__[:cn_name]
+
     order = [
       summary: "简介",
       usage: "用途",
@@ -75,6 +77,6 @@ defmodule Onicn.Content do
     :onicn
     |> :code.priv_dir()
     |> Path.join("templates/content.eex")
-    |> EEx.eval_file(contents: contents, order: order)
+    |> EEx.eval_file(contents: contents, escape: escape, order: order)
   end
 end

@@ -28,26 +28,18 @@ defmodule Onicn.Categories.Element do
       cn_name = options[:cn_name]
       fields = options[:fields]
 
-      elements =
-        :onicn
-        |> :code.priv_dir()
-        |> Path.join("data/#{name}.yaml")
-        |> YamlElixir.read_from_file!()
-        |> Map.get("elements")
-        |> Macro.escape()
-
       defmacro __using__(attributes) do
         category_name = unquote(name)
         category_cn_name = unquote(cn_name)
         category_fields = unquote(fields)
-        category_elements = Macro.escape(unquote(elements))
         element_id = __CALLER__.module |> to_string() |> String.split(".") |> List.last()
 
         quote do
           use Onicn.Content
 
           def __attributes__ do
-            unquote(category_elements)
+            Onicn.Categories.Element.__elements__()
+            |> Map.get(unquote(category_name))
             |> Enum.find(fn e -> e["elementId"] === unquote(element_id) end)
             |> Onicn.Categories.Element.parse(unquote(category_fields))
             |> Keyword.merge(unquote(attributes))
@@ -75,7 +67,8 @@ defmodule Onicn.Categories.Element do
       end
 
       def __element_modules__ do
-        unquote(elements)
+        Onicn.Categories.Element.__elements__()
+        |> Map.get(unquote(name))
         |> Enum.map(fn %{"elementId" => element_id} ->
           module = Module.concat(["Onicn.Elements", element_id])
           (function_exported?(module, :__attributes__, 0) && module) || nil
@@ -106,6 +99,24 @@ defmodule Onicn.Categories.Element do
         Onicn.Categories.Element.output(:html_table, unquote(name), unquote(fields))
       end
     end
+  end
+
+  elements =
+    ["solid", "liquid", "gas"]
+    |> Map.new(fn name ->
+      {
+        name,
+        :onicn
+        |> :code.priv_dir()
+        |> Path.join("data/#{name}.yaml")
+        |> YamlElixir.read_from_file!()
+        |> Map.get("elements")
+      }
+    end)
+    |> Macro.escape()
+
+  def __elements__ do
+    unquote(elements)
   end
 
   def parse(element, fields) do
