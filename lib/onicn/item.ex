@@ -1,4 +1,4 @@
-alias Onicn.Categories.{Solid, Liquid, Gas}
+alias Onicn.Categories.{Solid, Liquid, Gas, Building}
 
 defmodule Onicn.Item do
   def replace_link(string, escape) do
@@ -21,7 +21,8 @@ defmodule Onicn.Item do
     [
       Solid.__element_modules__(),
       Liquid.__element_modules__(),
-      Gas.__element_modules__()
+      Gas.__element_modules__(),
+      Building.__building_modules__()
     ]
     |> Enum.concat()
     |> Enum.map(fn module ->

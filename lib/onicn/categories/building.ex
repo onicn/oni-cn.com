@@ -24,10 +24,10 @@ defmodule Onicn.Categories.Building do
 
       def output(:link_name_icon) do
         path = "/buildings/#{Macro.underscore(unquote(name))}"
+        cn_name = __attributes__()[:cn_name]
 
         ~s|<a href="#{path}">
-          <img src="/img#{path}.png" style="height:16px;">
-          #{__attributes__()[:name]}
+          <img src="/img#{path}.png" style="height:16px;"> #{cn_name}
         </a>|
       end
     end
