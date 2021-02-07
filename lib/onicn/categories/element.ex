@@ -95,8 +95,8 @@ defmodule Onicn.Categories.Element do
         ~s|<a href="/#{unquote(name)}/">#{unquote(cn_name)}</a>|
       end
 
-      def output(:html_table) do
-        Onicn.Categories.Element.output(:html_table, unquote(name), unquote(fields))
+      def output(:html_body) do
+        Onicn.Categories.Element.output(:html_body, unquote(name), unquote(fields))
       end
     end
   end
@@ -253,7 +253,7 @@ defmodule Onicn.Categories.Element do
     |> EEx.eval_file(name: cn_name, img: img, data: data)
   end
 
-  def output(:html_table, category_name, fields) do
+  def output(:html_body, category_name, fields) do
     cols =
       Jason.encode!([
         %{field: "cn_name", title: "名称", sort: true}

@@ -40,6 +40,44 @@
     .gray {
       filter: grayscale(100%);
     }
+
+    .oni-building-category {
+      height: 40px;
+    }
+
+    .oni-building-category img {
+      vertical-align: bottom;
+      width: auto;
+      height: 40px;
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    .oni-building-element {
+      display:inline-block;
+      vertical-align: top;
+      width: 70px;
+      height: 110px;
+      text-align: center;
+      margin: 3px;
+    }
+    .oni-building-element div {
+       width: 70px;
+       height: 70px;
+       vertical-align: bottom;
+       display: table-cell;
+    }
+    .oni-building-element img {
+      width: auto;
+      height: auto;
+      max-width: 100%;
+      max-height: 100%;
+    }
+    .oni-building-element div span {
+      color: "#333";
+      display: block;
+      min-width: 70px;
+    }
   </style>
 
   <body>

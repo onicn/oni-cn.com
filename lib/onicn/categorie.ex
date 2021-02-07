@@ -2,21 +2,29 @@ defmodule Onicn.Category do
   @category_modules [
     Onicn.Categories.Solid,
     Onicn.Categories.Liquid,
-    Onicn.Categories.Gas
+    Onicn.Categories.Gas,
+    Onicn.Categories.Building
   ]
 
   def generate_json do
-    Enum.each(@category_modules, fn module ->
-      name = module |> to_string() |> String.split(".") |> List.last() |> Macro.underscore()
-      data = module.output(:json_elements)
+    Enum.each(
+      [
+        Onicn.Categories.Solid,
+        Onicn.Categories.Liquid,
+        Onicn.Categories.Gas
+      ],
+      fn module ->
+        name = module |> to_string() |> String.split(".") |> List.last() |> Macro.underscore()
+        data = module.output(:json_elements)
 
-      :onicn
-      |> :code.priv_dir()
-      |> Path.join("dist/#{name}.json")
-      |> File.write!(Jason.encode!(%{code: 0, count: length(data), data: data}))
+        :onicn
+        |> :code.priv_dir()
+        |> Path.join("dist/#{name}.json")
+        |> File.write!(Jason.encode!(%{code: 0, count: length(data), data: data}))
 
-      :ok
-    end)
+        :ok
+      end
+    )
   end
 
   def generate_pages do
@@ -24,7 +32,7 @@ defmodule Onicn.Category do
 
     Enum.each(@category_modules, fn module ->
       name = module |> to_string() |> String.split(".") |> List.last() |> Macro.underscore()
-      %{container: container, script: script} = module.output(:html_table)
+      %{container: container, script: script} = module.output(:html_body)
 
       nav =
         temp_path
