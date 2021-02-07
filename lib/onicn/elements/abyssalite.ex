@@ -7,5 +7,5 @@ defmodule Onicn.Elements.Abyssalite do
     specific_heat_capacity: 4.0,
     thermal_conductivity: 0.00001
 
-  # summary "深渊晶石是一种非常坚硬的固体元素，常见于分隔不同生态区。"
+  summary "深渊晶石是一种非常坚硬的固体元素，常见于分隔不同生态区。"
 end
