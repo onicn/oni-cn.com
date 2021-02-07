@@ -42,15 +42,19 @@
     }
 
     .oni-building-category {
-      height: 40px;
+      height: 30px;
     }
 
     .oni-building-category img {
       vertical-align: bottom;
       width: auto;
-      height: 40px;
+      height: 30px;
       max-width: 100%;
       max-height: 100%;
+    }
+
+    .oni-building-category span {
+      font-size: 26px;
     }
 
     .oni-building-element {
@@ -59,7 +63,7 @@
       width: 70px;
       height: 110px;
       text-align: center;
-      margin: 3px;
+      margin: 5px 20px;
     }
     .oni-building-element div {
        width: 70px;

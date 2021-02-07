@@ -59,8 +59,13 @@ defmodule Onicn.Categories.Building do
   def __building_modules__ do
     __buildings__()
     |> Enum.map(fn %{tag: tag} ->
-      module = Module.concat(["Onicn.Buildings", tag])
-      (function_exported?(module, :__attributes__, 0) && module) || nil
+      ["Onicn.Buildings", tag]
+      |> Module.concat()
+      |> Code.ensure_compiled()
+      |> case do
+           {:module, module} -> module
+           {:error, :nofile} -> nil
+         end
     end)
     |> Enum.reject(&is_nil/1)
   end

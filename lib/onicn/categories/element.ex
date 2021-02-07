@@ -70,8 +70,13 @@ defmodule Onicn.Categories.Element do
         Onicn.Categories.Element.__elements__()
         |> Map.get(unquote(name))
         |> Enum.map(fn %{"elementId" => element_id} ->
-          module = Module.concat(["Onicn.Elements", element_id])
-          (function_exported?(module, :__attributes__, 0) && module) || nil
+          ["Onicn.Elements", element_id]
+          |> Module.concat()
+          |> Code.ensure_compiled()
+          |> case do
+            {:module, module} -> module
+            {:error, :nofile} -> nil
+          end
         end)
         |> Enum.reject(&is_nil/1)
       end
