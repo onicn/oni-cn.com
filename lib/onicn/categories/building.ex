@@ -95,9 +95,14 @@ defmodule Onicn.Categories.Building do
         {"装饰度", "#{a[:base_decor]} (#{a[:base_decor_radius]} 格)"},
         {"建造时间", "#{a[:construction_time]} 秒"},
         {"会被淹没", (a[:floodable] && "是") || "否"},
-        {"占用空间", "宽 #{a[:width_in_cells]} 格，高 #{a[:heigth_in_cells]} 格"},
+        {"占用空间", "宽 #{a[:width_in_cells]} 格，高 #{a[:height_in_cells]} 格"},
         {"会过热", (a[:overheatable] && "是") || "否"}
-      ] ++ ((a[:overheatable] && [{"过热温度", "#{a[:overheat_temperature] - 273.15}°C"}]) || [])
+      ] ++
+        ((a[:overheatable] &&
+            [
+              {"过热温度",
+               "#{:erlang.float_to_binary(a[:overheat_temperature] - 273.15, decimals: 2)}°C"}
+            ]) || [])
 
     :onicn
     |> :code.priv_dir()

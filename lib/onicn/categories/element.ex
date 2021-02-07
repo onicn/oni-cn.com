@@ -129,7 +129,7 @@ defmodule Onicn.Categories.Element do
           "highTempTransitionOreMassConversion" => percentage_2
         } ->
           [
-            high_temp: Float.floor(high_temp - 273.15, 2),
+            high_temp: floor(high_temp - 273.15, 2),
             high_temp_transition_target: {to_module(target_1), 1 - percentage_2},
             high_temp_transition_target: {to_module(target_2), percentage_2}
           ]
@@ -139,7 +139,7 @@ defmodule Onicn.Categories.Element do
           "highTempTransitionTarget" => target
         } ->
           [
-            high_temp: Float.floor(high_temp - 273.15, 2),
+            high_temp: floor(high_temp - 273.15, 2),
             high_temp_transition_target: to_module(target)
           ]
 
@@ -154,7 +154,7 @@ defmodule Onicn.Categories.Element do
           "lowTempTransitionOreMassConversion" => percentage_2
         } ->
           [
-            low_temp: Float.floor(low_temp - 273.15, 2),
+            low_temp: floor(low_temp - 273.15, 2),
             low_temp_transition_target: {to_module(target_1), 1 - percentage_2},
             low_temp_transition_target: {to_module(target_2), percentage_2}
           ]
@@ -164,7 +164,7 @@ defmodule Onicn.Categories.Element do
           "lowTempTransitionTarget" => target
         } ->
           [
-            low_temp: Float.floor(low_temp - 273.15, 2),
+            low_temp: floor(low_temp - 273.15, 2),
             low_temp_transition_target: to_module(target)
           ]
 
@@ -232,7 +232,7 @@ defmodule Onicn.Categories.Element do
         {field, {e, percentage}}
         when field in [:low_temp_transition_target, :high_temp_transition_target] ->
           {@available_fields[field],
-           "#{e.output(:link_name_icon)} (#{Float.floor(percentage * 100, 2)}%)"}
+           "#{e.output(:link_name_icon)} (#{floor(percentage * 100, 0)}%)"}
 
         {field, e} when field in [:low_temp_transition_target, :high_temp_transition_target] ->
           {@available_fields[field], e.output(:link_name_icon)}
@@ -320,5 +320,9 @@ defmodule Onicn.Categories.Element do
 
     File.mkdir_p!(page_path)
     File.write!(Path.join(page_path, "index.html"), page)
+  end
+
+  defp floor(f, decimals) do
+    :erlang.float_to_binary(f, decimals: decimals)
   end
 end
