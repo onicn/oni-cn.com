@@ -1,6 +1,6 @@
 defmodule Onicn.Buildings.PressureDoor do
   use Onicn.Categories.Building
-  
+
   summary "机械气闸可以阻挡液体和气体的流动，维持房间气压。它可以由自动化信号控制。"
   summary "当未接通自动化信号时，机械气闸拥有打开、自动、锁定三种模式："
   summary "打开：机械气闸保持打开，液体气体自由流动，复制人和动物可以通过。"
@@ -18,5 +18,4 @@ defmodule Onicn.Buildings.PressureDoor do
   usage "机械气闸可用于封闭密闭房间，由自动化信号控制允许/阻止液体或气体交换。"
   usage "水平放置的机械气闸可由自动化信号控制打开/关闭，从而间接控制上方建筑运转/停止。"
   usage "太空区的望远镜建议建造在水平放置的机械气闸上。由恰当设计的自动化信号控制打开/关闭，以便在陨石雨结束之后，浮土能够掉落到气闸下方，避免浮土热量导致望远镜过热"
-
 end

@@ -63,9 +63,9 @@ defmodule Onicn.Categories.Building do
       |> Module.concat()
       |> Code.ensure_compiled()
       |> case do
-           {:module, module} -> module
-           {:error, :nofile} -> nil
-         end
+        {:module, module} -> module
+        {:error, :nofile} -> nil
+      end
     end)
     |> Enum.reject(&is_nil/1)
   end

@@ -1,6 +1,6 @@
 defmodule Onicn.Buildings.InsulationTile do
   use Onicn.Categories.Building
-  
+
   summary "隔热砖可以大幅度减缓热量传递。跟普通砖块相比需要更多材料并且装饰度较低。"
   summary "隔热砖拥有特殊的隔热属性，其导热系数降为材料导热系数的1%。例如，火成岩的导热系数是2，制成隔热砖后，隔热砖的导热系数是0.02。"
 

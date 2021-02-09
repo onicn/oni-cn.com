@@ -1,6 +1,6 @@
 defmodule Onicn.Buildings.Door do
   use Onicn.Categories.Building
-  
+
   summary "气动门是最常见的门。它可以供复制人进出房间，也可以用来设置通行权限。"
   summary "气动门和砖块一起围成房间。"
   summary "液体、气体、光照、装饰值可以穿透气动门。"

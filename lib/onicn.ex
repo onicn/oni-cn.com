@@ -47,6 +47,7 @@ defmodule Onicn do
       :onicn
       |> :code.priv_dir()
       |> Path.join("dist")
+
     do_generate([""], dist_root, [])
   end
 

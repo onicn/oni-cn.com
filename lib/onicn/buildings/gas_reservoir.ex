@@ -1,6 +1,6 @@
 defmodule Onicn.Buildings.GasReservoir do
   use Onicn.Categories.Building
-  
+
   summary "储气库可用于存储气体，其容量为150千克。"
   summary "储气库可以连接一根气体输入管和一根气体输出管。其中输入管是必需的，输出管是可选的。"
   summary "如果用氯气包围储气库，一周期后储气库储存气体中携带的病菌会被氯气杀死。"

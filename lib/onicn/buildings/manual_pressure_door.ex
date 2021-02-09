@@ -1,6 +1,6 @@
 defmodule Onicn.Buildings.ManualPressureDoor do
   use Onicn.Categories.Building
-  
+
   summary "手动气闸可以阻挡液体和气体的流动，维持房间气压。"
   summary "类似于气动门，手动气闸同样拥有打开、自动、锁定三种模式："
   summary "打开：手动气闸保持打开，液体气体自由流动，复制人和动物可以通过。"
@@ -13,5 +13,4 @@ defmodule Onicn.Buildings.ManualPressureDoor do
   usage "手动气闸常用于密封房间，尽可能减少房间中特定气体外泄。"
 
   tips "液封门可起到同样效果"
-
 end
