@@ -7,6 +7,7 @@ defmodule Onicn do
     Onicn.Category.generate_json()
     Onicn.Category.generate_pages()
     generate_home()
+    generate_sitemap()
   end
 
   def generate_home do
@@ -39,5 +40,42 @@ defmodule Onicn do
 
     File.mkdir_p!(page_path)
     File.write!(Path.join(page_path, "index.html"), page)
+  end
+
+  def generate_sitemap do
+    dist_root =
+      :onicn
+      |> :code.priv_dir()
+      |> Path.join("dist")
+    do_generate([""], dist_root, [])
+  end
+
+  defp do_generate([], _, results) do
+    results
+    |> Enum.map(&"https://oni-cn.com#{&1}")
+    |> Enum.join("\n")
+  end
+
+  defp do_generate([h | t], dist_root, results) do
+    {:ok, files} =
+      dist_root
+      |> Path.join(h)
+      |> File.ls()
+
+    results =
+      if "index.html" in files do
+        [h | results]
+      else
+        results
+      end
+
+    new =
+      files
+      |> Enum.map(&Path.join(h, &1))
+      |> Enum.filter(fn path ->
+        dist_root |> Path.join(path) |> File.dir?()
+      end)
+
+    do_generate(t ++ new, dist_root, results)
   end
 end
