@@ -49,6 +49,7 @@ defmodule Onicn do
       |> Path.join("dist")
 
     content = do_generate([""], dist_root, [])
+
     dist_root
     |> Path.join("sitemap.txt")
     |> File.write!(content)
