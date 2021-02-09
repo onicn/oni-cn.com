@@ -39,22 +39,21 @@
 
     <div class="layui-text" style="margin: 5px 5px">
       <a href="https://www.klei.com/games/oxygen-not-included" target="_blank">官方网站（英文）</a>
-    </div>
-    <div class="layui-text" style="margin: 5px 5px">
+      <span>/</span>
       <a href="https://forums.kleientertainment.com/forums/forum/118-oxygen-not-included/" target="_blank">官方论坛（英文）</a>
+      <span>/</span>
+      <a href="https://oni-db.com" target="_blank">缺氧数据库（英文）</a>
+      <span>/</span>
+      <a href="https://oni-assistant.com/" target="_blank">缺氧计算器（英文）</a>
     </div>
     <div class="layui-text" style="margin: 5px 5px">
       <a href="https://store.steampowered.com/app/457140/Oxygen_Not_Included/" target="_blank">Steam 页面</a>
-    </div>
-    <div class="layui-text" style="margin: 5px 5px">
+      <span>/</span>
       <a href="https://oxygennotincluded.gamepedia.com/Oxygen_Not_Included_Wiki/zh" target="_blank">Gamepedia Wiki</a>
-    </div>
-    <div class="layui-text" style="margin: 5px 5px">
-      <a href="https://oni-db.com" target="_blank">缺氧数据库（英文）</a>
-    </div>
-    <div class="layui-text" style="margin: 5px 5px">
+      <span>/</span>
       <a href="https://onimap.upyoucan.com/map-tools/map-browser" target="_blank">工具不足（地图/种子搜寻）</a>
+      <span>/</span>
+      <a href="https://aizhuzi.com/oni-rocket/" target="_blank">火箭计算</a>
     </div>
-
   </div>
 </div>
