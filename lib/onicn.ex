@@ -48,12 +48,16 @@ defmodule Onicn do
       |> :code.priv_dir()
       |> Path.join("dist")
 
-    do_generate([""], dist_root, [])
+    content = do_generate([""], dist_root, [])
+    dist_root
+    |> Path.join("sitemap.txt")
+    |> File.write!(content)
   end
 
   defp do_generate([], _, results) do
     results
-    |> Enum.map(&"https://oni-cn.com#{&1}")
+    |> Enum.reverse()
+    |> Enum.map(fn path -> Path.join(["https://oni-cn.com", path]) <> "/" end)
     |> Enum.join("\n")
   end
 
