@@ -1,6 +1,6 @@
 defmodule Onicn.Buildings.Generator do
   use Onicn.Categories.Building
-  
+
   summary "煤炭发电机燃烧煤发电。"
   summary "煤炭发电机的容量为500千克煤，可以发出300千焦电力，其发电效率为0.6千焦/千克煤。"
   summary "煤炭发电机的电力连接点在下面中间位置。"
@@ -13,5 +13,4 @@ defmodule Onicn.Buildings.Generator do
 
   tips "饲养哈奇来保证煤的可持续供应。"
   tips "煤炭发电机不需要氧气即可发电。"
-
 end

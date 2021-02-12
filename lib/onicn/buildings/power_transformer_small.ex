@@ -1,6 +1,6 @@
 defmodule Onicn.Buildings.PowerTransformerSmall do
   use Onicn.Categories.Building
-  
+
   summary "功率转变器用于分割高负载电网和低负载电网，保护低负载电网不会过载。"
   summary "常见的电网由电线或导电线连接，其负载能力分别是1千瓦和2千瓦。"
   summary "当电网的实时负载功率超过该限制时，即有一定概率某段电线会过载损坏。"
@@ -12,5 +12,4 @@ defmodule Onicn.Buildings.PowerTransformerSmall do
 
   usage "连接高负载电网和低负载电网（限制为1千瓦）。"
   usage "参见大功率转变器"
-
 end

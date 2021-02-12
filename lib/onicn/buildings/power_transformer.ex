@@ -10,5 +10,4 @@ defmodule Onicn.Buildings.PowerTransformer do
 
   tips "电池应放置于高负载电网，而非低负载电网。"
   tips "电池充电速率无限制，会导致低负载电网迅速过载。"
-
 end

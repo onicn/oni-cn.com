@@ -8,7 +8,7 @@ defmodule Onicn.Buildings.MetalTile do
 
   usage "金属砖可用于导热。"
   usage "金属砖可用于建造地鼠的饲养室。"
-  
+
   tips "用金作为材料建造金属砖装饰度更高。"
   tips "用铌，钢，钨，导热质建造的金属砖不会在岩浆中融化。"
 end

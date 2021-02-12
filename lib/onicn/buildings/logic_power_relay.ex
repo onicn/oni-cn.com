@@ -1,6 +1,6 @@
 defmodule Onicn.Buildings.LogicPowerRelay do
   use Onicn.Categories.Building
-  
+
   summary "电力开关能够用自动化信号来控制接通或断开电路。"
   summary "当自动化信号输入为T时，接通电路。"
   summary "当信号为F时，断开电路。"

@@ -1,6 +1,6 @@
 defmodule Onicn.Buildings.Wire do
   use Onicn.Categories.Building
-  
+
   summary "电线用于传输电力。"
   summary "电线可以埋藏在墙壁和地板砖块内，此时它的装饰值处罚不会生效。"
   summary "电线的负载功率是1千瓦。"

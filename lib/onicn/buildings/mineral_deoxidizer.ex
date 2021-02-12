@@ -1,6 +1,6 @@
 defmodule Onicn.Buildings.MineralDeoxidizer do
   use Onicn.Categories.Building
-  
+
   summary "氧气扩散器是最早的生产氧气的建筑。"
   summary "氧气扩散器消耗藻类生成氧气。"
   summary "当周围气压达到1800克时，氧气扩散器会因气压过高而暂停工作。"
@@ -9,5 +9,4 @@ defmodule Onicn.Buildings.MineralDeoxidizer do
 
   usage "在游戏早期，氧气扩散器是主要的供氧方式。"
   tips "氧气扩散器对藻类需求很大，玩家需要适时切换到电解水供氧的方式。"
-
 end

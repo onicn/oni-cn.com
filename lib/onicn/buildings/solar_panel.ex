@@ -1,6 +1,6 @@
 defmodule Onicn.Buildings.SolarPanel do
   use Onicn.Categories.Building
-  
+
   summary "太阳能电池板能够将光照转化为电力。"
   summary "太阳能电池板的功率和光照强度成正比。"
   summary "当光照强度达到49999勒克斯时，太阳能电池板达到最大功率380瓦。"

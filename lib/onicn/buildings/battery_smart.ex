@@ -1,6 +1,6 @@
 defmodule Onicn.Buildings.BatterySmart do
   use Onicn.Categories.Building
-  
+
   summary "智能电池是电池系列的自动化版本，可以按照当前电量输出自动化信号控制其他建筑。"
   summary "当发电机产生的电力大于电器消耗的电力时，同一电网的智能电池可以储存多余电力，上限20千焦。"
   summary "当发电机产生的电力小于电器消耗的电力时，巨型电池储存的电力可以供给电网。"
@@ -15,5 +15,4 @@ defmodule Onicn.Buildings.BatterySmart do
   usage "智能电池最常见的用途是控制发电机的启用和停用，从而在电满时关闭发电机节约燃料，在缺电时开启发电机供电。"
   usage "使用多个智能电池可以达到分优先级开启和关闭不同发电机的效果。"
   usage "每个智能电池设定不同的阈值，然后各自用自动化信号线连接相应的发电机。"
-
 end
