@@ -25,4 +25,3 @@ jobs:
           files: '.'
           name: github action
           email: github.action@onicn.com
-      - run: mix test
