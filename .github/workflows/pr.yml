@@ -1,0 +1,15 @@
+name: Pull Request Action
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: erlef/setup-elixir@v1
+        with:
+          otp-version: '23.2'
+          elixir-version: '1.11.2'
+      - run: mix test
