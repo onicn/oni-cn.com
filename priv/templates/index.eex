@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>缺氧 Wiki</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/layui/2.5.7/css/layui.min.css"  media="all">
+
+  </head>
+
+  <style>
+    .oni-header {
+      height: 150px;
+      overflow: hidden;
+    }
+    .oni-header div img{
+      max-width: 100%;
+      max-height: 100%;
+    }
+    .oni-header ul {
+      padding-top: 20px;
+    }
+    .oni-header ul li {
+      width: 100px;
+      text-align: center;
+    }
+    .oni-header ul li a img {
+      width: auto;
+      height: auto;
+      max-width: 100%;
+      max-height: 100%;
+      z-index: -1;
+    }
+    .oni-header ul li a span {
+      font-size: 18px;
+      margin: 0 auto;
+    }
+    .gray {
+      filter: grayscale(100%);
+    }
+
+    .oni-building-category {
+      height: 30px;
+    }
+
+    .oni-building-category img {
+      vertical-align: bottom;
+      width: auto;
+      height: 30px;
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    .oni-building-category span {
+      font-size: 26px;
+    }
+
+    .oni-building-element {
+      display:inline-block;
+      vertical-align: top;
+      width: 70px;
+      height: 110px;
+      text-align: center;
+      margin: 5px 20px;
+    }
+    .oni-building-element div {
+       width: 70px;
+       height: 70px;
+       vertical-align: bottom;
+       display: table-cell;
+    }
+    .oni-building-element img {
+      width: auto;
+      height: auto;
+      max-width: 100%;
+      max-height: 100%;
+    }
+    .oni-building-element div span {
+      color: "#333";
+      display: block;
+      min-width: 70px;
+    }
+  </style>
+
+  <body>
+    <div class="layui-layout layui-layout-admin">
+      <div class="layui-header oni-header">
+        <%= nav %>
+      </div>
+
+      <div class="layui-container" style="margin-bottom:80px">
+        <%= container %>
+      </div>
+
+      <div class="layui-footer" style="left:0;text-align:center;z-index:1000000000">
+        <span><a href="https://www.klei.com/games/oxygen-not-included" target="_blank">Oxygen Not Included</a> Unofficial Wiki, Built by <a href="https://space.bilibili.com/18135979" target="_blank">程序喵喵喵</a></span> with <i class="layui-icon layui-icon-heart-fill"></i></span>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/layui/2.5.7/layui.min.js" charset="utf-8"></script>
+    <script><%= script %></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S3EMERLQBT"></script>
+    <script>
+     window.dataLayer = window.dataLayer || [];
+     function gtag(){dataLayer.push(arguments);}
+     gtag('js', new Date());
+     gtag('config', 'G-S3EMERLQBT');
+    </script>
+  </body>
+</html>

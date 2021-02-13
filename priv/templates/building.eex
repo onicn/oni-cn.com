@@ -1,0 +1,27 @@
+<div class="layui-row">
+    <div class="layui-col-md12">
+        <%= for {name, cn_name, buildings} <- grouped_buildings do %>
+            <fieldset class="layui-elem-field" style="margin-top: 25px;">
+                <legend class="oni-building-category">
+                    <img src="/img/buildings/categories/<%= name %>.png">
+                    <span><%= cn_name %></span>
+                </legend>
+                <div class="layui-field-box">
+                    <div style="text-align: left">
+                        <%= for building <- buildings do %>
+                            <% name = Macro.underscore(building[:tag]) %>
+                            <a href="/buildings/<%= name %>">
+                                <div class="oni-building-element">
+                                    <div>
+                                        <img src="/img/buildings/<%= name %>.png">
+                                    </div>
+                                    <span><%= building[:cn_name] %></span>
+                                </div>
+                            </a>
+                        <% end %>
+                    </div>
+                </div>
+            </fieldset>
+        <% end %>
+    </div>
+</div>

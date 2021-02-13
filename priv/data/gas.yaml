@@ -1,0 +1,566 @@
+---
+elements:
+  - elementId: AluminumGas
+    specificHeatCapacity: 0.91
+    thermalConductivity: 2.5
+    solidSurfaceAreaMultiplier: 25
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    flow: 0.1
+    lowTemp: 2743.15
+    lowTempTransitionTarget: MoltenAluminum
+    defaultTemperature: 3200
+    defaultPressure: 202
+    molarMass: 63.546
+    toxicity: 0
+    lightAbsorptionFactor: 0.5
+    materialCategory: Unbreathable
+    tags:
+    - Metal
+    - RefinedMetal
+    - EmitsLight
+    isDisabled: false
+    state: Gas
+    localizationID: STRINGS.ELEMENTS.ALUMINUMGAS.NAME
+
+  - elementId: CarbonDioxide
+    specificHeatCapacity: 0.846
+    thermalConductivity: 0.0146
+    solidSurfaceAreaMultiplier: 25
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    flow: 0.1
+    lowTemp: 225
+    lowTempTransitionTarget: LiquidCarbonDioxide
+    defaultTemperature: 300
+    defaultPressure: 139
+    molarMass: 44.01
+    toxicity: 0.0001
+    lightAbsorptionFactor: 0.1
+    materialCategory: Unbreathable
+    isDisabled: false
+    state: Gas
+    localizationID: STRINGS.ELEMENTS.CARBONDIOXIDE.NAME
+  
+  - elementId: CarbonGas
+    specificHeatCapacity: 0.71
+    thermalConductivity: 1.7
+    solidSurfaceAreaMultiplier: 25
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    flow: 0.1
+    lowTemp: 5100
+    lowTempTransitionTarget: MoltenCarbon
+    defaultTemperature: 5700
+    defaultPressure: 38
+    molarMass: 12.0107
+    toxicity: 0
+    lightAbsorptionFactor: 0.3
+    materialCategory: Unbreathable
+    tags:
+    - EmitsLight
+    isDisabled: false
+    state: Gas
+    localizationID: STRINGS.ELEMENTS.CARBONGAS.NAME
+  
+  - elementId: ChlorineGas
+    specificHeatCapacity: 0.48
+    thermalConductivity: 0.0081
+    solidSurfaceAreaMultiplier: 25
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    flow: 0.1
+    lowTemp: 238.55
+    lowTempTransitionTarget: Chlorine
+    defaultTemperature: 300
+    defaultPressure: 228
+    molarMass: 34.453
+    toxicity: 0
+    lightAbsorptionFactor: 0.2
+    materialCategory: Unbreathable
+    tags:
+    isDisabled: false
+    state: Gas
+    localizationID: STRINGS.ELEMENTS.CHLORINEGAS.NAME
+  
+  - elementId: ContaminatedOxygen
+    specificHeatCapacity: 1.01
+    thermalConductivity: 0.024
+    solidSurfaceAreaMultiplier: 25
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    flow: 0.12
+    lowTemp: 90.19
+    lowTempTransitionTarget: LiquidOxygen
+    defaultTemperature: 300
+    defaultPressure: 101.3
+    molarMass: 15.9994
+    toxicity: 0.01
+    lightAbsorptionFactor: 0.1
+    materialCategory: Breathable
+    tags:
+    isDisabled: false
+    state: Gas
+    localizationID: STRINGS.ELEMENTS.CONTAMINATEDOXYGEN.NAME
+  
+  - elementId: CopperGas
+    specificHeatCapacity: 0.386
+    thermalConductivity: 1
+    solidSurfaceAreaMultiplier: 25
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    flow: 0.1
+    lowTemp: 2834
+    lowTempTransitionTarget: MoltenCopper
+    defaultTemperature: 3200
+    defaultPressure: 202
+    molarMass: 63.546
+    toxicity: 0
+    lightAbsorptionFactor: 0.5
+    materialCategory: Unbreathable
+    tags:
+    - Metal
+    - RefinedMetal
+    - EmitsLight
+    isDisabled: false
+    state: Gas
+    localizationID: STRINGS.ELEMENTS.COPPERGAS.NAME
+  
+  - elementId: GoldGas
+    specificHeatCapacity: 0.1291
+    thermalConductivity: 1
+    solidSurfaceAreaMultiplier: 25
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    flow: 0.1
+    lowTemp: 3129
+    lowTempTransitionTarget: MoltenGold
+    defaultTemperature: 3500
+    defaultPressure: 624
+    molarMass: 196.966569
+    toxicity: 0
+    lightAbsorptionFactor: 0.5
+    materialCategory: Unbreathable
+    tags:
+    - Metal
+    - RefinedMetal
+    - EmitsLight
+    isDisabled: false
+    state: Gas
+    localizationID: STRINGS.ELEMENTS.GOLDGAS.NAME
+  
+  - elementId: Helium
+    specificHeatCapacity: 0.14
+    thermalConductivity: 0.236
+    solidSurfaceAreaMultiplier: 25
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    flow: 0.1
+    lowTemp: 4.22
+    lowTempTransitionTarget: LiquidHelium
+    defaultTemperature: 300
+    defaultPressure: 13
+    molarMass: 4
+    toxicity: 0
+    lightAbsorptionFactor: 0.1
+    materialCategory: Unbreathable
+    isDisabled: true
+    state: Gas
+    localizationID: STRINGS.ELEMENTS.HELIUM.NAME
+  
+  - elementId: Hydrogen
+    specificHeatCapacity: 2.4
+    thermalConductivity: 0.168
+    solidSurfaceAreaMultiplier: 25
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    flow: 0.1
+    lowTemp: 21
+    lowTempTransitionTarget: LiquidHydrogen
+    defaultTemperature: 300
+    defaultPressure: 7
+    molarMass: 1.00794
+    toxicity: 0
+    lightAbsorptionFactor: 0.1
+    materialCategory: Unbreathable
+    tags:
+    isDisabled: false
+    state: Gas
+    localizationID: STRINGS.ELEMENTS.HYDROGEN.NAME
+  
+  - elementId: IronGas
+    specificHeatCapacity: 0.449
+    thermalConductivity: 1
+    solidSurfaceAreaMultiplier: 25
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    flow: 0.1
+    lowTemp: 3023
+    lowTempTransitionTarget: MoltenIron
+    defaultTemperature: 4000
+    defaultPressure: 177
+    molarMass: 55.845
+    toxicity: 0
+    lightAbsorptionFactor: 0.5
+    materialCategory: Unbreathable
+    tags:
+    - Metal
+    - RefinedMetal
+    - EmitsLight
+    isDisabled: false
+    state: Gas
+    localizationID: STRINGS.ELEMENTS.IRONGAS.NAME
+  
+  - elementId: LeadGas
+    specificHeatCapacity: 0.128
+    thermalConductivity: 3.5
+    solidSurfaceAreaMultiplier: 25
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    flow: 0.1
+    lowTemp: 2022.15
+    lowTempTransitionTarget: MoltenLead
+    defaultTemperature: 3500
+    defaultPressure: 624
+    molarMass: 196.966569
+    toxicity: 0
+    lightAbsorptionFactor: 0.5
+    materialCategory: Unbreathable
+    tags:
+    - Metal
+    - RefinedMetal
+    - EmitsLight
+    isDisabled: false
+    state: Gas
+    localizationID: STRINGS.ELEMENTS.LEADGAS.NAME
+
+  - elementId: MercuryGas
+    specificHeatCapacity: 0.14
+    thermalConductivity: 8.3
+    solidSurfaceAreaMultiplier: 25
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    flow: 0.1
+    lowTemp: 629.9
+    lowTempTransitionTarget: Mercury
+    defaultTemperature: 850
+    defaultPressure: 633
+    molarMass: 200.59
+    toxicity: 0
+    lightAbsorptionFactor: 0.5
+    materialCategory: Unbreathable
+    tags:
+    - Metal
+    isDisabled: true
+    state: Gas
+    localizationID: STRINGS.ELEMENTS.MERCURYGAS.NAME
+  
+  - elementId: Methane
+    specificHeatCapacity: 2.191
+    thermalConductivity: 0.035
+    solidSurfaceAreaMultiplier: 25
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    flow: 0.1
+    lowTemp: 111.65
+    lowTempTransitionTarget: LiquidMethane
+    defaultTemperature: 300
+    defaultPressure: 7
+    molarMass: 16.044
+    toxicity: 0
+    lightAbsorptionFactor: 0.25
+    materialCategory: Unbreathable
+    tags:
+    - CombustibleGas
+    isDisabled: false
+    state: Gas
+    localizationID: STRINGS.ELEMENTS.METHANE.NAME
+  
+  - elementId: NiobiumGas
+    specificHeatCapacity: 0.265
+    thermalConductivity: 1
+    solidSurfaceAreaMultiplier: 25
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    flow: 0.1
+    lowTemp: 5017
+    lowTempTransitionTarget: MoltenNiobium
+    defaultTemperature: 5500
+    defaultPressure: 500
+    molarMass: 92.9
+    toxicity: 0
+    lightAbsorptionFactor: 0.5
+    materialCategory: Unbreathable
+    tags:
+    - Metal
+    - RefinedMetal
+    - EmitsLight
+    isDisabled: false
+    state: Gas
+    localizationID: STRINGS.ELEMENTS.NIOBIUMGAS.NAME
+  
+  - elementId: Oxygen
+    specificHeatCapacity: 1.005
+    thermalConductivity: 0.024
+    solidSurfaceAreaMultiplier: 25
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    flow: 0.12
+    lowTemp: 90.19
+    lowTempTransitionTarget: LiquidOxygen
+    defaultTemperature: 300
+    defaultPressure: 101.3
+    molarMass: 15.9994
+    toxicity: 0
+    lightAbsorptionFactor: 0
+    materialCategory: Breathable
+    isDisabled: false
+    state: Gas
+    localizationID: STRINGS.ELEMENTS.OXYGEN.NAME
+  
+  - elementId: PhosphorusGas
+    specificHeatCapacity: 0.7697
+    thermalConductivity: 0.236
+    solidSurfaceAreaMultiplier: 25
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    flow: 0.1
+    lowTemp: 553.6
+    lowTempTransitionTarget: LiquidPhosphorus
+    defaultTemperature: 700
+    defaultPressure: 98
+    molarMass: 30.973762
+    toxicity: 0
+    lightAbsorptionFactor: 0.5
+    materialCategory: Unbreathable
+    tags:
+    - EmitsLight
+    isDisabled: false
+    state: Gas
+    localizationID: STRINGS.ELEMENTS.PHOSPHORUSGAS.NAME
+  
+  - elementId: Propane
+    specificHeatCapacity: 2.4
+    thermalConductivity: 0.015
+    solidSurfaceAreaMultiplier: 25
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    flow: 0.1
+    lowTemp: 231
+    lowTempTransitionTarget: LiquidPropane
+    defaultTemperature: 350
+    defaultPressure: 140
+    molarMass: 44.1
+    toxicity: 0
+    lightAbsorptionFactor: 0.25
+    materialCategory: Unbreathable
+    tags:
+    isDisabled: false
+    state: Gas
+    localizationID: STRINGS.ELEMENTS.PROPANE.NAME
+  
+  - elementId: RockGas
+    specificHeatCapacity: 1
+    thermalConductivity: 0.1
+    solidSurfaceAreaMultiplier: 25
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    flow: 0.1
+    lowTemp: 2630
+    lowTempTransitionTarget: Magma
+    defaultTemperature: 3000
+    defaultPressure: 1076
+    molarMass: 50
+    toxicity: 0
+    lightAbsorptionFactor: 0.5
+    materialCategory: Unbreathable
+    tags:
+    - EmitsLight
+    isDisabled: false
+    state: Gas
+    localizationID: STRINGS.ELEMENTS.ROCKGAS.NAME
+  
+  - elementId: SaltGas
+    specificHeatCapacity: 0.88
+    thermalConductivity: 0.444
+    solidSurfaceAreaMultiplier: 25
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    flow: 0.1
+    lowTemp: 1738
+    lowTempTransitionTarget: MoltenSalt
+    defaultTemperature: 3000
+    defaultPressure: 1076
+    molarMass: 50
+    toxicity: 0
+    lightAbsorptionFactor: 0.1
+    materialCategory: Unbreathable
+    isDisabled: false
+    state: Gas
+    localizationID: STRINGS.ELEMENTS.SALTGAS.NAME
+
+  - elementId: SourGas
+    specificHeatCapacity: 1.898
+    thermalConductivity: 0.018
+    solidSurfaceAreaMultiplier: 25
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    flow: 0.1
+    lowTemp: 111.65
+    lowTempTransitionTarget: LiquidMethane
+    lowTempTransitionOreId: Sulfur
+    lowTempTransitionOreMassConversion: 0.33
+    defaultTemperature: 300
+    defaultPressure: 7
+    molarMass: 19.044
+    toxicity: 0
+    lightAbsorptionFactor: 0.25
+    materialCategory: Unbreathable
+    tags:
+    isDisabled: false
+    state: Gas
+    localizationID: STRINGS.ELEMENTS.SOURGAS.NAME
+  
+  - elementId: Steam
+    specificHeatCapacity: 4.179
+    thermalConductivity: 0.184
+    solidSurfaceAreaMultiplier: 25
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    flow: 0.1
+    lowTemp: 372.5
+    lowTempTransitionTarget: Water
+    defaultTemperature: 400
+    defaultPressure: 57
+    molarMass: 18.01528
+    toxicity: 0
+    lightAbsorptionFactor: 0.1
+    materialCategory: Unbreathable
+    isDisabled: false
+    state: Gas
+    localizationID: STRINGS.ELEMENTS.STEAM.NAME
+  
+  - elementId: SteelGas
+    specificHeatCapacity: 0.49
+    thermalConductivity: 1
+    solidSurfaceAreaMultiplier: 25
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    flow: 0.1
+    lowTemp: 4100
+    lowTempTransitionTarget: MoltenSteel
+    defaultTemperature: 4500
+    defaultPressure: 1076
+    molarMass: 54.97
+    toxicity: 0
+    lightAbsorptionFactor: 0.5
+    materialCategory: Unbreathable
+    tags:
+    - Metal
+    - Alloy
+    - RefinedMetal
+    - EmitsLight
+    isDisabled: false
+    state: Gas
+    localizationID: STRINGS.ELEMENTS.STEELGAS.NAME
+  
+  - elementId: SulfurGas
+    specificHeatCapacity: 0.7
+    thermalConductivity: 0.2
+    solidSurfaceAreaMultiplier: 25
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    flow: 0.1
+    lowTemp: 610.15
+    lowTempTransitionTarget: LiquidSulfur
+    defaultTemperature: 700
+    defaultPressure: 7
+    molarMass: 32
+    toxicity: 0
+    lightAbsorptionFactor: 0.1
+    materialCategory: Unbreathable
+    tags:
+    isDisabled: false
+    state: Gas
+    localizationID: STRINGS.ELEMENTS.SULFURGAS.NAME
+  
+  - elementId: SuperCoolantGas
+    specificHeatCapacity: 8.44
+    thermalConductivity: 1.2
+    solidSurfaceAreaMultiplier: 25
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    flow: 0.1
+    lowTemp: 710
+    lowTempTransitionTarget: SuperCoolant
+    defaultTemperature: 850
+    defaultPressure: 550
+    molarMass: 190
+    toxicity: 0
+    lightAbsorptionFactor: 0.5
+    materialCategory: Unbreathable
+    state: Gas
+    localizationID: STRINGS.ELEMENTS.SUPERCOOLANTGAS.NAME
+  
+  - elementId: TungstenGas
+    specificHeatCapacity: 0.134
+    thermalConductivity: 1
+    solidSurfaceAreaMultiplier: 25
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    flow: 0.1
+    lowTemp: 6203
+    lowTempTransitionTarget: MoltenTungsten
+    defaultTemperature: 6500
+    defaultPressure: 581.9685
+    molarMass: 183.84
+    toxicity: 0
+    lightAbsorptionFactor: 0.5
+    materialCategory: Unbreathable
+    tags:
+    - Metal
+    - RefinedMetal
+    isDisabled: false
+    state: Gas
+    localizationID: STRINGS.ELEMENTS.TUNGSTENGAS.NAME
+
+  - elementId: EthanolGas
+    specificHeatCapacity: 2.148
+    thermalConductivity: 0.167
+    solidSurfaceAreaMultiplier: 25
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    flow: 0.1
+    lowTemp: 351.5
+    lowTempTransitionTarget: Ethanol
+    defaultTemperature: 390
+    defaultPressure: 7
+    molarMass: 46.07
+    toxicity: 0
+    lightAbsorptionFactor: 0.5
+    materialCategory: Unbreathable
+    tags:
+    isDisabled: false
+    state: Gas
+    localizationID: STRINGS.ELEMENTS.ETHANOLGAS.NAME
+
+  - elementId: Syngas
+    specificHeatCapacity: 2.4
+    thermalConductivity: 0.168
+    solidSurfaceAreaMultiplier: 25
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    flow: 0.1
+    lowTemp: 21
+    lowTempTransitionTarget: MoltenSyngas
+    defaultTemperature: 320
+    defaultPressure: 7
+    molarMass: 26.96
+    toxicity: 0
+    lightAbsorptionFactor: 0.1
+    materialCategory: Unbreathable
+    tags:
+    - CombustibleGas
+    isDisabled: true
+    state: Gas
+    localizationID: STRINGS.ELEMENTS.SYNGAS.NAME

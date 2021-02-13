@@ -1,0 +1,27 @@
+name: Pull Request Action
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - uses: erlef/setup-elixir@v1
+        with:
+          otp-version: '23.2'
+          elixir-version: '1.11.2'
+      - run: mix deps.get
+      - run: mix format
+      - name: push format
+        uses: github-actions-x/commit@v2.7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          push-branch: ${{ github.head_ref }}
+          commit-message: 'code format'
+          files: '.'
+          name: github action
+          email: github.action@onicn.com
