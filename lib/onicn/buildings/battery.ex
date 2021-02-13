@@ -6,5 +6,5 @@ defmodule Onicn.Buildings.Battery do
   summary "当发电机产生的电力小于电器消耗的电力时，电池储存的电力可以供给电网。"
   summary "储存在电池中的电力会自然流失，速率为每周期1千焦。"
 
-  usage "在游戏早期储存多余电力。"
+  usage "在游戏早期储存多余电力。后期应升级为其它种类的电池。"
 end
