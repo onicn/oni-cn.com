@@ -8,8 +8,6 @@ defmodule Onicn do
     Onicn.Category.generate_pages()
     generate_home()
     generate_sitemap()
-    [
-]
   end
 
   def generate_home do
