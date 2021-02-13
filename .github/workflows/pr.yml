@@ -12,4 +12,6 @@ jobs:
         with:
           otp-version: '23.2'
           elixir-version: '1.11.2'
+      - run: mix format --check-formatted
+      - run: mix deps.get
       - run: mix test
