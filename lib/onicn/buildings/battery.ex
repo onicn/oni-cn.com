@@ -8,5 +8,5 @@ defmodule Onicn.Buildings.Battery do
 
   usage "在游戏早期储存多余电力。后期应升级为其它种类的电池。"
   
-  tips "每个发电机都应连接电池，否则多余的电力会被浪费。"
+  tips "每个发电机都应连接电池来减少电力和资源浪费。"
 end
