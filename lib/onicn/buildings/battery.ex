@@ -7,4 +7,6 @@ defmodule Onicn.Buildings.Battery do
   summary "储存在电池中的电力会自然流失，速率为每周期1千焦。"
 
   usage "在游戏早期储存多余电力。后期应升级为其它种类的电池。"
+  
+  tips "每个发电机都应连接电池，否则多余的电力会被浪费。"
 end
