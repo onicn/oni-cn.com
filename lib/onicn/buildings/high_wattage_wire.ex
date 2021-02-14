@@ -8,5 +8,4 @@ defmodule Onicn.Buildings.HighWattageWire do
 
   tips "因为装饰度很低，不适合建造在复制人经常呆的地方，例如人力发电机附近。"
   tips "不能穿过墙和门，要提前规划好高负荷电线接合板的位置。"
-  
 end
