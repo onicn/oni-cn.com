@@ -9,5 +9,4 @@ defmodule Onicn.Buildings.CreatureDeliveryPoint do
   usage "在饲养室中布置放生点。选择动物类型，并设定动物数量。"
 
   tips "在原油区饲养浮油生物时，应使用金汞齐以避免建筑过热。"
-
 end

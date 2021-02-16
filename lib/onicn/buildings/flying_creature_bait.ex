@@ -7,5 +7,4 @@ defmodule Onicn.Buildings.FlyingCreatureBait do
   summary "飞行动物诱饵不是陷阱，不会捕获飞行生物。它会吸引生物群聚到诱饵周围。建造多个诱饵并且逐个打开和关闭诱饵可以将飞行生物诱导到期望的地点。"
 
   usage "诱导飞行生物移动到期望地点。"
-
 end

@@ -7,5 +7,4 @@ defmodule Onicn.Buildings.CreatureFeeder do
   summary "不可用喂食器的小动物：帕库鱼及其亚种，食用气体的小动物例如浮油生物，食用植物的小动物例如毛鳞壁虎，不吃东西的小动物疫病章鱼。"
 
   usage "给小动物喂食。"
-
 end

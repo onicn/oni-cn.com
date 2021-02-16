@@ -6,5 +6,4 @@ defmodule Onicn.Buildings.FishDeliveryPoint do
   summary "鱼类放生点可以作为砖块围成房间。"
 
   usage "在饲养水池上方建造鱼类放生点，释放陷阱抓捕的鱼。"
-
 end

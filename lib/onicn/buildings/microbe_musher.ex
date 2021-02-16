@@ -6,5 +6,4 @@ defmodule Onicn.Buildings.MicrobeMusher do
   summary "较高的烹饪技能有助于加快烹饪速度。"
 
   usage "在游戏早期烹饪食物。"
-
 end

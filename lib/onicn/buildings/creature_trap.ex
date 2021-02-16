@@ -9,5 +9,4 @@ defmodule Onicn.Buildings.CreatureTrap do
   usage "好吃哈奇、毛鳞壁虎、锹环田鼠可简单地捆绑捕获。"
 
   tips "在原油区陷阱容易过热，需小心处理。"
-
 end

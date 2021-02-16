@@ -8,5 +8,4 @@ defmodule Onicn.Buildings.EggIncubator do
   usage "孵化小动物蛋。"
 
   tips "由于蛋的摇篮曲状态可以持续一个周期，在持续期间即使孵化器不通电蛋也可以保持高孵化速度，因此可以通过在摇篮曲状态期间关闭孵化器电源的方式来节约电力和降低发热量。"
-
 end

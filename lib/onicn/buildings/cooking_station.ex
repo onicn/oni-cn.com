@@ -7,5 +7,4 @@ defmodule Onicn.Buildings.CookingStation do
   summary "制作一份食物需要25秒，烹饪属性可以降低耗时和耗电。"
 
   usage "电动烤炉比食物压制器能做出品质更好的食品，是游戏中后期的主要烹饪建筑。"
-
 end

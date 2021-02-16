@@ -5,5 +5,4 @@ defmodule Onicn.Buildings.FishTrap do
   summary "捕鱼陷阱只能一次性使用。"
 
   usage "捕获帕库鱼。"
-
 end
