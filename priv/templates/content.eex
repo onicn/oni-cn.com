@@ -1,12 +1,12 @@
-<%= for {name, cn_name} <- order do %>
-  <%= if length(contents[name]) > 0 do %>
-    <fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
-      <legend><%= cn_name %></legend>
-    </fieldset>
-  <% end %>
-  <%= for {options, content} <- contents[name] do %>
+<%= for {cn_name, contents} <- sections do %>
+  <fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
+    <legend><%= cn_name %></legend>
+  </fieldset>
+
+  <%= for {:content, content, options} <- contents do %>
     <% content = Onicn.Item.replace_link(content, escape) %>
     <div class="layui-text" style="margin: 5px 5px">
+
       <%= if options |> Keyword.get(:tag) |> is_nil do %>
         <%= content %>
       <% else %>
