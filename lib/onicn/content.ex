@@ -1,12 +1,7 @@
 defmodule Onicn.Content do
   defmacro __using__(_) do
     quote do
-      @contents %{
-        summary: [],
-        usage: [],
-        production: [],
-        tips: []
-      }
+      Module.register_attribute(__MODULE__, :sections, accumulate: true)
 
       @before_compile unquote(__MODULE__)
       import unquote(__MODULE__)
@@ -16,67 +11,44 @@ defmodule Onicn.Content do
   defmacro __before_compile__(%Macro.Env{}) do
     quote do
       def output(:html_content) do
-        unquote(__MODULE__).output(:html_content, __MODULE__, __contents__())
+        unquote(__MODULE__).output(:html_content, __MODULE__, __sections__())
       end
 
-      def __contents__ do
-        @contents
+      def __sections__ do
+        Enum.reverse(@sections)
       end
     end
   end
 
-  defmacro summary(str) do
-    do_append(:summary, [], str)
+  defmacro section(section_name, do: {:__block__, [], block}) do
+    do_section(section_name, block)
   end
 
-  defmacro summary(options, str) do
-    do_append(:summary, options, str)
+  defmacro section(section_name, do: str) when is_binary(str) do
+    do_section(section_name, [str])
   end
 
-  defmacro usage(str) do
-    do_append(:usage, [], str)
-  end
+  def do_section(section_name, contents) do
+    contents =
+      contents
+      |> Enum.map(fn
+        {:content, _, [content, options]} -> {:content, content, options}
+        {:content, _, [content]} -> {:content, content, []}
+        content when is_binary(content) -> {:content, content, []}
+      end)
+      |> Macro.escape()
 
-  defmacro usage(options, str) do
-    do_append(:usage, options, str)
-  end
-
-  defmacro production(str) do
-    do_append(:production, [], str)
-  end
-
-  defmacro production(options, str) do
-    do_append(:production, options, str)
-  end
-
-  defmacro tips(str) do
-    do_append(:tips, [], str)
-  end
-
-  defmacro tips(options, str) do
-    do_append(:tips, options, str)
-  end
-
-  defp do_append(type, options, str) do
     quote do
-      new_value = Map.get(@contents, unquote(type)) ++ [{unquote(options), unquote(str)}]
-      @contents Map.put(@contents, unquote(type), new_value)
+      @sections {unquote(section_name), unquote(contents)}
     end
   end
 
-  def output(:html_content, item_module, contents) do
+  def output(:html_content, item_module, sections) do
     escape = item_module.__attributes__[:cn_name]
-
-    order = [
-      summary: "简介",
-      usage: "用途",
-      production: "生产",
-      tips: "小技巧"
-    ]
 
     :onicn
     |> :code.priv_dir()
     |> Path.join("templates/content.eex")
-    |> EEx.eval_file(contents: contents, escape: escape, order: order)
+    |> EEx.eval_file(sections: sections, escape: escape)
   end
 end
