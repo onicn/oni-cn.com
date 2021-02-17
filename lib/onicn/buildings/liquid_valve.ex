@@ -7,5 +7,4 @@ defmodule Onicn.Buildings.LiquidValve do
   summary "当输入管道液体流速低于该上限时，正常向下游管道输出。"
 
   usage "精细调整液体管道流速。"
-
 end

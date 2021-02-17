@@ -6,5 +6,4 @@ defmodule Onicn.Buildings.LiquidConduitElementSensor do
   summary "在该种液体流过这一格时，传感器输出自动化绿色信号T；其余时间输出红色信号F。"
 
   usage "传感器和液体开关阀配合使用可以替代液体过滤器。"
-
 end

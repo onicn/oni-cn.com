@@ -14,5 +14,4 @@ defmodule Onicn.Buildings.LiquidConduit do
 
   tips "一个管网内存在多个建筑输出口和多个建筑输入口时，系统计算流动方向可能会出现回流现象。"
   tips "建议使用液体管桥分割成多个管网。"
-
 end

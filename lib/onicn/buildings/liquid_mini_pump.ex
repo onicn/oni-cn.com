@@ -6,5 +6,4 @@ defmodule Onicn.Buildings.LiquidMiniPump do
   summary "微型液泵由塑料制成，在75摄氏度过热，在161.85摄氏度（塑料熔点+2摄氏度）熔化。"
 
   usage "用于低速抽取液体时节约电力。"
-
 end

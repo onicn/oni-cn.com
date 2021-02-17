@@ -1,6 +1,6 @@
 defmodule Onicn.Buildings.FlushToilet do
   use Onicn.Categories.Building
-  
+
   summary "抽水马桶是户外厕所的升级版本，能够让复制人解决内急需求。"
   summary "抽水马桶接入清水，排出污染水和食物中毒病菌。"
   summary "每次使用消耗5千克水，同时生成11.7千克污水和105000个食物中毒病菌。"

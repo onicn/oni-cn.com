@@ -8,5 +8,4 @@ defmodule Onicn.Buildings.LiquidPump do
   usage "用于抽取各种液体输入到液体管道中。"
 
   tips "液泵的默认过热温度为75摄氏度。在抽取热水及原油时，应选用金汞合金（过热温度+50摄氏度）以避免系统过热。"
-
 end

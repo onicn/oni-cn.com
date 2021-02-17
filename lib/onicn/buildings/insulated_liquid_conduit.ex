@@ -5,5 +5,4 @@ defmodule Onicn.Buildings.InsulatedLiquidConduit do
   summary "类似于隔热砖，隔热液体管道拥有大幅降低的导热系数，以及隔热属性。"
 
   usage "保持管道内液体温度，避免热交换。"
-
 end

@@ -10,5 +10,4 @@ defmodule Onicn.Buildings.Shower do
 
   usage "建造淋浴间保持复制人卫生，并提供+3士气。"
   usage "淋浴间可以建造在开放区域。"
-
 end

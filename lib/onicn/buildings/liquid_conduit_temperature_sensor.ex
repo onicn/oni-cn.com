@@ -6,5 +6,4 @@ defmodule Onicn.Buildings.LiquidConduitTemperatureSensor do
   summary "当液体管道内的液体温度符合该条件时，传感器输出自动化绿色信号T；否则输出自动化红色信号F。"
 
   usage "和液体开关阀配合，仅当液体加热完成或冷却完成时允许液体通过。"
-
 end

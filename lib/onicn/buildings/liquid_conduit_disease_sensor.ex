@@ -6,5 +6,4 @@ defmodule Onicn.Buildings.LiquidConduitDiseaseSensor do
   summary "当液体管道内的病菌数量满足该条件时，传感器输出自动化绿色信号，否则输出自动化红色信号。"
 
   usage "区分含菌的液体和不含菌的液体。"
-
 end

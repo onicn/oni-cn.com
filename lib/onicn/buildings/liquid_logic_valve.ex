@@ -7,5 +7,4 @@ defmodule Onicn.Buildings.LiquidLogicValve do
   summary "如果液体开关阀未通电，禁止液体通过。"
 
   usage "自动化控制液体流向。"
-
 end

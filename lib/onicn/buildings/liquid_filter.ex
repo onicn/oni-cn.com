@@ -9,5 +9,4 @@ defmodule Onicn.Buildings.LiquidFilter do
   summary "绿色为默认液体输出口标志。输出其余种类的液体。"
 
   usage "从混合的液体中分离出需要的特定液体。"
-
 end
