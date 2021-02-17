@@ -21,7 +21,8 @@ defmodule Onicn.MixProject do
   defp deps do
     [
       {:jason, "~> 1.2"},
-      {:yaml_elixir, "~> 2.5"}
+      {:yaml_elixir, "~> 2.5"},
+      {:earmark, "~> 1.4"}
     ]
   end
 end

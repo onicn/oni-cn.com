@@ -36,6 +36,19 @@ defmodule Onicn.Content do
         {:content, _, [content]} -> {:content, content, []}
         content when is_binary(content) -> {:content, content, []}
       end)
+      |> Enum.map(fn {:content, content, options} ->
+        content =
+          content
+          |> String.split("\n", trim: true)
+          |> Enum.all?(fn line ->
+            String.starts_with?(line, "|") && String.ends_with?(line, "|")
+          end)
+          |> case do
+            true -> Enum.join([content, "{: .layui-table}"], "\n")
+            false -> content
+          end
+        {:content, content, options}
+      end)
       |> Macro.escape()
 
     quote do
