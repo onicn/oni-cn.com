@@ -5,6 +5,8 @@
     summary: :*,
     usage: :*,
     production: :*,
-    tips: :*
+    tips: :*,
+    section: :*,
+    content: :*
   ]
 ]
