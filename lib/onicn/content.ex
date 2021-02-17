@@ -47,6 +47,7 @@ defmodule Onicn.Content do
             true -> Enum.join([content, "{: .layui-table}"], "\n")
             false -> content
           end
+
         {:content, content, options}
       end)
       |> Macro.escape()

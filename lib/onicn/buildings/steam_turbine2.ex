@@ -3,6 +3,7 @@ defmodule Onicn.Buildings.SteamTurbine2 do
 
   section "表格测试" do
     "其它简介"
+
     """
     | 蒸汽吸入口数量 | 蒸汽温度(°C) | 功率(W) |
     | -------------- | ------------ | ------- |
