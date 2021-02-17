@@ -13,7 +13,7 @@ defmodule Onicn.Elements.CarbonDioxide do
     "浮油生物呼吸二氧化碳，排泄出原油。熔岩浮油生物呼吸二氧化碳，排泄出石油。"
     "当处于二氧化碳环境时，藻类箱能够清除 333.33 毫克/秒二氧化碳。"
     "人工种植的氧齿蕨能够清除 625 毫克/秒二氧化碳。野生的氧齿蕨的效率为四分之一。 "
-    content("二氧化碳引擎使用二氧化碳作为火箭动力。", only: :spaced_out)
+    content "二氧化碳引擎使用二氧化碳作为火箭动力。", only: :spaced_out
   end
 
   section "生产" do

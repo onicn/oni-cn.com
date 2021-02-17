@@ -20,6 +20,6 @@ defmodule Onicn.Elements.ContaminatedOxygen do
     "在气压小于 1800 克时，并且接触到氧气或者污染氧时，污染水会持续释放出污染氧。"
     "疫病章鱼会持续排泄出污染氧。"
     "高温污染氧喷孔和菌染氧喷孔会定期排放出污染氧。"
-    content("升华站能够将污染土转化为污染氧。1000 克/秒 污染土 = 660 克/秒 污染氧", only: :spaced_out)
+    content "升华站能够将污染土转化为污染氧。1000 克/秒 污染土 = 660 克/秒 污染氧", only: :spaced_out
   end
 end
