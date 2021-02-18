@@ -10,7 +10,7 @@ defmodule Onicn.Buildings.LiquidReservoir do
 
   section "用途" do
     "储液库可以用作一个简单的液体缓冲，避免建设水池的麻烦。"
-    "可以在氯气室中建造储液库存放携带病菌的污水来杀菌。"
+    "可以在氯气室中建造储液库存放携带病菌的污染水来杀菌。"
   end
 
   section "小技巧" do
