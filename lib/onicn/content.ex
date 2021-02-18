@@ -34,13 +34,19 @@ defmodule Onicn.Content do
       |> Enum.map(fn
         {:content, _, [content, options]} -> {:content, content, options}
         {:content, _, [content]} -> {:content, content, []}
-        content when is_binary(content) -> {:content, content, []}
+        content -> {:content, content, []}
       end)
       |> Enum.map(fn {:content, content, options} ->
         content =
           content
+          |> Code.eval_quoted()
+          |> elem(0)
+
+        content =
+          content
           |> String.split("\n", trim: true)
           |> Enum.all?(fn line ->
+            line = String.trim(line)
             String.starts_with?(line, "|") && String.ends_with?(line, "|")
           end)
           |> case do
