@@ -30,13 +30,11 @@ defmodule Onicn.Content do
 
   def do_section(section_name, contents) do
     contents =
-      contents
-      |> Enum.map(fn
-        {:content, _, [content, options]} -> {:content, content, options}
-        {:content, _, [content]} -> {:content, content, []}
-        content when is_binary(content) -> {:content, content, []}
+      Enum.map(contents, fn
+        {:content, _, [content, options]} -> [:content, content, options]
+        {:content, _, [content]} -> [:content, content, []]
+        content -> [:content, content, []]
       end)
-      |> Macro.escape()
 
     quote do
       @sections {unquote(section_name), unquote(contents)}

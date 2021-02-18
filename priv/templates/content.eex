@@ -3,7 +3,7 @@
     <legend><%= cn_name %></legend>
   </fieldset>
 
-  <%= for {:content, content, options} <- contents do %>
+  <%= for [:content, content, options] <- contents do %>
     <% content = Onicn.Item.replace_link(content, escape) %>
     <div class="layui-text" style="margin: 5px 5px">
 
