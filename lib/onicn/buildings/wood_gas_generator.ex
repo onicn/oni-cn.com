@@ -1,5 +1,6 @@
 defmodule Onicn.Buildings.WoodGasGenerator do
   use Onicn.Categories.Building
+
   section "简介" do
     "木料燃烧器消耗木料产生电力。可以设置在连接的电池电力低于某一水平时才开启。"
   end
