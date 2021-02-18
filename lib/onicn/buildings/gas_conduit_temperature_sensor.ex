@@ -1,6 +1,6 @@
 defmodule Onicn.Buildings.GasConduitTemperatureSensor do
   use Onicn.Categories.Building
-  
+
   section "简介" do
     "气体管道温度传感器能够检测气体管道内的气体温度，并输出自动化信号。"
     "玩家能够设定气体管道温度传感器的温度范围为大于某阈值或小于某阈值。"

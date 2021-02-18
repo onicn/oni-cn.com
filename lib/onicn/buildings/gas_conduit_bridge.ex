@@ -1,5 +1,6 @@
 defmodule Onicn.Buildings.GasConduitBridge do
   use Onicn.Categories.Building
+
   section "简介" do
     "气体管桥能够让一根气体管道跨过另一根气体管道。"
     "气体管桥拥有一个输入口和一个输出口，可以和气体管道相连接。"

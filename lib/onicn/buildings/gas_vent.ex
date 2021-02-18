@@ -1,5 +1,6 @@
 defmodule Onicn.Buildings.GasVent do
   use Onicn.Categories.Building
+
   section "简介" do
     "排气口能够将自气体管道输入的气体排放到世界中。"
     "排气口有一个气体输入口，接入气体管道系统后，能够将来自气体管道的气体排放到世界中。"

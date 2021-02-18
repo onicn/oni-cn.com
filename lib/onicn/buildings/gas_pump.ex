@@ -1,5 +1,6 @@
 defmodule Onicn.Buildings.GasPump do
   use Onicn.Categories.Building
+
   section "简介" do
     "气泵能够以500克/秒的速率抽取气体并输出到气体管道系统中。"
     "气泵需要最下两格接触气体才能工作。气泵不需要地基。"

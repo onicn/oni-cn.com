@@ -1,5 +1,6 @@
 defmodule Onicn.Buildings.GasValve do
   use Onicn.Categories.Building
+
   section "简介" do
     "气体调节阀能够限制管道气体流速。"
     "气体调节阀能够设定气体流速上限。修改设定后需要复制人操作后才能生效。"
