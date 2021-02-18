@@ -3,8 +3,9 @@
     <legend><%= cn_name %></legend>
   </fieldset>
 
-  <%= for [:content, content, options] <- contents do %>
-    <% content = Onicn.Item.replace_link(content, escape) %>
+  <%= for {:content, content, options} <- contents do %>
+    <% content = content |> Earmark.as_html!() |> Onicn.Item.replace_link(escape) %>
+
     <div class="layui-text" style="margin: 5px 5px">
 
       <%= if options |> Keyword.get(:tag) |> is_nil do %>
