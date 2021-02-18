@@ -1,4 +1,6 @@
 %{
+  "earmark": {:hex, :earmark, "1.4.13", "2c6ce9768fc9fdbf4046f457e207df6360ee6c91ee1ecb8e9a139f96a4289d91", [:mix], [{:earmark_parser, ">= 1.4.12", [hex: :earmark_parser, repo: "hexpm", optional: false]}], "hexpm", "a0cf3ed88ef2b1964df408889b5ecb886d1a048edde53497fc935ccd15af3403"},
+  "earmark_parser": {:hex, :earmark_parser, "1.4.12", "b245e875ec0a311a342320da0551da407d9d2b65d98f7a9597ae078615af3449", [:mix], [], "hexpm", "711e2cc4d64abb7d566d43f54b78f7dc129308a63bc103fbd88550d2174b3160"},
   "jason": {:hex, :jason, "1.2.2", "ba43e3f2709fd1aa1dce90aaabfd039d000469c05c56f0b8e31978e03fa39052", [:mix], [{:decimal, "~> 1.0 or ~> 2.0", [hex: :decimal, repo: "hexpm", optional: true]}], "hexpm", "18a228f5f0058ee183f29f9eae0805c6e59d61c3b006760668d8d18ff0d12179"},
   "yamerl": {:hex, :yamerl, "0.8.1", "07da13ffa1d8e13948943789665c62ccd679dfa7b324a4a2ed3149df17f453a4", [:rebar3], [], "hexpm", "96cb30f9d64344fed0ef8a92e9f16f207de6c04dfff4f366752ca79f5bceb23f"},
   "yaml_elixir": {:hex, :yaml_elixir, "2.5.0", "45de762be6d75fa5a8b5f44ddff8c30f64c26526eab5b1d72e36d616007b7796", [:mix], [{:yamerl, "~> 0.7", [hex: :yamerl, repo: "hexpm", optional: false]}], "hexpm", "80fe4e43f05582f2a90f2dcd73fc6171fbd65f2e6836f71fe4ce2154ef358c36"},
