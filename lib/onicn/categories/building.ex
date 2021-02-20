@@ -95,19 +95,24 @@ defmodule Onicn.Categories.Building do
     en_name = Macro.underscore(a[:tag])
     img = "/img/buildings/#{en_name}.png"
 
-    data =
-      [
-        {"装饰度", "#{a[:base_decor]} (#{a[:base_decor_radius]} 格)"},
-        {"建造时间", "#{a[:construction_time]} 秒"},
-        {"会被淹没", (a[:floodable] && "是") || "否"},
-        {"占用空间", "宽 #{a[:width_in_cells]} 格，高 #{a[:height_in_cells]} 格"},
-        {"会过热", (a[:overheatable] && "是") || "否"}
-      ] ++
-        ((a[:overheatable] &&
-            [
-              {"过热温度",
-               "#{:erlang.float_to_binary(a[:overheat_temperature] - 273.15, decimals: 2)}°C"}
-            ]) || [])
+    data = [
+      {"装饰度", "#{a[:base_decor]} (#{a[:base_decor_radius]} 格)"},
+      {"占用空间", "宽 #{a[:width_in_cells]} 格，高 #{a[:height_in_cells]} 格"},
+      {"建造时间", "#{a[:construction_time]} 秒"},
+      {"会被淹没", (a[:floodable] && "是") || "否"},
+      {"会被掩埋", (a[:entombable] && "是") || "否"},
+      {"会过热", (a[:overheatable] && "是") || "否"}
+      | Enum.concat([
+          (a[:overheatable] &&
+             [
+               {"过热温度",
+                "#{:erlang.float_to_binary(a[:overheat_temperature] - 273.15, decimals: 2)}°C"}
+             ]) || [],
+          (is_nil(a[:power_generate]) && []) || [{"电力生产", "#{a[:power_generate]} W"}],
+          (is_nil(a[:power_consume]) && []) || [{"电力消耗", "#{a[:power_consume]} W"}],
+          (is_nil(a[:heat_generate]) && []) || [{"产热", "#{a[:heat_generate]} DTU/s"}]
+        ])
+    ]
 
     :onicn
     |> :code.priv_dir()
