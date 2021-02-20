@@ -82,9 +82,9 @@ defmodule Onicn.Categories.Element do
       end
 
       def generate_pages do
-        Enum.each(__element_modules__(), fn module ->
-          Onicn.Categories.Element.generate_page(module, unquote(name))
-        end)
+        __element_modules__()
+        |> Enum.map(&Task.async(fn -> Onicn.Categories.Element.generate_page(&1, unquote(name)) end))
+        |> Enum.each(&Task.await(&1, :infinity))
       end
 
       def output(:json_elements) do

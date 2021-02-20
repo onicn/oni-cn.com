@@ -121,7 +121,9 @@ defmodule Onicn.Categories.Building do
   end
 
   def generate_pages do
-    Enum.each(__building_modules__(), &do_generate_page/1)
+    __building_modules__()
+    |> Enum.map(&Task.async(fn -> do_generate_page(&1) end))
+    |> Enum.each(&Task.await(&1, :infinity))
   end
 
   defp do_generate_page(module) do
