@@ -3,6 +3,20 @@ alias Onicn.Critters
 defmodule Onicn.Categories.Critter do
   use Onicn.Content
 
+  @species [
+    Critters.HatchSpecies,
+    Critters.PacuSpecies,
+    Critters.SquirrelSpecies,
+    Critters.OilFloaterSpecies,
+    Critters.DreckoSpecies,
+    Critters.MoleSpecies,
+    Critters.CrabSpecies,
+    Critters.PuftSpecies,
+    Critters.LightBugSpecies,
+    Critters.MooSpecies,
+    Critters.GlomSpecies
+  ]
+
   section "小动物状态信息" do
     """
     | 状态         | 效果                               | 条件                             |
@@ -25,9 +39,12 @@ defmodule Onicn.Categories.Critter do
     """
   end
 
-  defmacro __using__(critteries) do
+  defmacro __using__(critters) do
     quote do
       defmacro __using__(attributes) do
+        species =
+          __MODULE__ |> to_string() |> String.split(".") |> List.last() |> Macro.underscore()
+
         quote do
           def __attributes__ do
             name =
@@ -40,13 +57,33 @@ defmodule Onicn.Categories.Critter do
 
             unquote(attributes)
             |> Keyword.put(:name, name)
+            |> Keyword.put(:species, unquote(species))
             |> Keyword.merge(properties)
+          end
+
+          def output(:html_attributes) do
+            icon = ~s|<i class="layui-icon layui-icon-subtraction"></i>|
+            a = __attributes__()
+            img = "/img/critters/#{a[:name]}.png"
+
+            data = [
+              {"生命值", a[:hp]},
+              {"寿命", "#{a[:age_max]} 周期"},
+              {"存活温度",
+               "#{a[:temperature_min_liveable]} #{icon} #{a[:temperature_max_liveable]} °C"},
+              {"舒适温度", "#{a[:temperature_min_comfort]} #{icon} #{a[:temperature_max_comfort]} °C"}
+            ]
+
+            :onicn
+            |> :code.priv_dir()
+            |> Path.join("templates/attributes.eex")
+            |> EEx.eval_file(name: a[:cn_name], img: img, data: data)
           end
 
           def output(:link_name_icon) do
             a = __attributes__()
 
-            ~s|<a href="/critter/">
+            ~s|<a href="/critters/#{a[:species]}">
               <img src="/img/critters/#{a[:name]}.png" style="weight:16px;height:16px;">
               #{a[:cn_name]}
               </a>
@@ -57,7 +94,7 @@ defmodule Onicn.Categories.Critter do
             a = __attributes__()
 
             if a[:baby] do
-              ~s|<a href="/critter/">
+              ~s|<a href="/critters/#{a[:species]}">
                 <img src="/img/critters/#{a[:baby]}.png" style="weight:16px;height:16px;">
                 #{a[:baby_cn_name]}
                 </a>
@@ -69,7 +106,7 @@ defmodule Onicn.Categories.Critter do
             a = __attributes__()
 
             if a[:egg] do
-              ~s|<a href="/critter/">
+              ~s|<a href="/critters/#{a[:species]}">
                 <img src="/img/critters/#{a[:egg]}.png" style="weight:16px;height:16px;">
                 #{a[:egg_cn_name]}
                 </a>
@@ -79,10 +116,14 @@ defmodule Onicn.Categories.Critter do
         end
       end
 
-      def __critteries__ do
-        unquote(critteries)
+      def __critters__ do
+        unquote(critters)
       end
     end
+  end
+
+  def __species__ do
+    @species
   end
 
   properties =
@@ -97,19 +138,56 @@ defmodule Onicn.Categories.Critter do
     unquote(properties)
   end
 
-  @species [
-    Critters.HatchSpecies,
-    Critters.PacuSpecies,
-    Critters.SquirrelSpecies,
-    Critters.OilFloaterSpecies,
-    Critters.DreckoSpecies,
-    Critters.MoleSpecies,
-    Critters.CrabSpecies,
-    Critters.PuftSpecies,
-    Critters.LightBugSpecies,
-    Critters.MooSpecies,
-    Critters.GlomSpecies
-  ]
+  def generate_pages do
+    @species
+    |> Enum.map(&Task.async(fn -> do_generate_page(&1) end))
+    |> Enum.each(&Task.await(&1, :infinity))
+  end
+
+  def do_generate_page(module) do
+    name = module |> to_string() |> String.split(".") |> List.last() |> Macro.underscore()
+
+    temp_path =
+      :onicn
+      |> :code.priv_dir()
+      |> Path.join("templates")
+
+    nav =
+      temp_path
+      |> Path.join("nav.eex")
+      |> EEx.eval_file(nav: "critter")
+
+    contents = ""
+
+    attributes =
+      module.__critters__()
+      |> Enum.map(fn critter ->
+        critter.output(:html_attributes)
+      end)
+      |> Enum.join()
+
+    container = ~s|
+      <div class="layui-row layui-col-space30">
+        <div class="layui-col-md8">#{contents}</div>
+        <div class="layui-col-md4">#{attributes}</div>
+      </div>|
+
+    script = ~s|layui.use('element', function() {});|
+
+    page =
+      temp_path
+      |> Path.join("index.eex")
+      |> EEx.eval_file(nav: nav, container: container, script: script)
+
+    page_path =
+      :onicn
+      |> :code.priv_dir()
+      |> Path.join("dist")
+      |> Path.join("/critters/#{name}/")
+
+    File.mkdir_p!(page_path)
+    File.write!(Path.join(page_path, "index.html"), page)
+  end
 
   def output(:html_body) do
     contents = output(:html_content)
@@ -155,8 +233,10 @@ defmodule Onicn.Categories.Critter do
   end
 
   def output(:json_elements) do
+    icon = ~s|<i class="layui-icon layui-icon-subtraction"></i>|
+
     @species
-    |> Enum.map(& &1.__critteries__)
+    |> Enum.map(& &1.__critters__)
     |> Enum.concat()
     |> Enum.map(fn module ->
       a = module.__attributes__()
@@ -167,8 +247,10 @@ defmodule Onicn.Categories.Critter do
         egg: module.output(:link_egg_name_icon),
         hp: a[:hp],
         age_max: (a[:age_max] === 0 && "∞") || a[:age_max],
-        temperature_liveable: "#{a[:temperature_min_liveable]} - #{a[:temperature_max_liveable]}",
-        temperature_comfort: "#{a[:temperature_min_comfort]} - #{a[:temperature_max_comfort]}"
+        temperature_liveable:
+          "#{a[:temperature_min_liveable]} #{icon} #{a[:temperature_max_liveable]}",
+        temperature_comfort:
+          "#{a[:temperature_min_comfort]} #{icon} #{a[:temperature_max_comfort]}"
       }
     end)
   end
