@@ -26,6 +26,7 @@ defmodule Onicn.Item do
       |> Enum.concat()
       |> Enum.map(fn module ->
         a = module.__attributes__()
+
         [
           {a[:cn_name], hash(a[:cn_name]), module.output(:link_name_icon)},
           {a[:baby_cn_name], hash(a[:baby_cn_name]), module.output(:link_baby_name_icon)},
@@ -51,6 +52,7 @@ defmodule Onicn.Item do
   end
 
   defp hash(nil), do: nil
+
   defp hash(string) do
     :md5 |> :crypto.hash(string) |> Base.encode16()
   end
