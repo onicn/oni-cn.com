@@ -160,12 +160,13 @@ defmodule Onicn.Categories.Critter do
     |> Enum.concat()
     |> Enum.map(fn module ->
       a = module.__attributes__()
+
       %{
         cn_name: module.output(:link_name_icon),
         baby: module.output(:link_baby_name_icon),
         egg: module.output(:link_egg_name_icon),
         hp: a[:hp],
-        age_max: a[:age_max] === 0 && "∞" || a[:age_max],
+        age_max: (a[:age_max] === 0 && "∞") || a[:age_max],
         temperature_liveable: "#{a[:temperature_min_liveable]} - #{a[:temperature_max_liveable]}",
         temperature_comfort: "#{a[:temperature_min_comfort]} - #{a[:temperature_max_comfort]}"
       }
