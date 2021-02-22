@@ -1,6 +1,13 @@
 alias Onicn.Categories.{Solid, Liquid, Gas, Building, Critter}
 
 defmodule Onicn.Item do
+  @skiplist [
+    "溺水",
+    "被水淹没",
+    "离水之鱼",
+    "金属"
+  ]
+
   def replace_link(string, escape) do
     index = index()
 
@@ -11,7 +18,7 @@ defmodule Onicn.Item do
 
     index
     |> Enum.reduce(hashed_string, fn {name, hashed_name, link}, acc ->
-      if name in escape do
+      if name in (escape ++ @skiplist) do
         String.replace(acc, hashed_name, name)
       else
         String.replace(acc, hashed_name, link)
@@ -20,6 +27,8 @@ defmodule Onicn.Item do
   end
 
   defp index do
+    skiplist = Enum.map(@skiplist, &{&1, hash(&1), ""})
+
     critters =
       Critter.__species__()
       |> Enum.map(& &1.__critters__)
@@ -48,6 +57,7 @@ defmodule Onicn.Item do
       {cn_name, hash(cn_name), module.output(:link_name_icon)}
     end)
     |> Enum.concat(critters)
+    |> Enum.concat(skiplist)
     |> Enum.sort_by(fn {cn_name, _, _} -> String.length(cn_name) end, :desc)
   end
 
