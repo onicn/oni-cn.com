@@ -4,6 +4,7 @@ defmodule Onicn do
     Onicn.Categories.Liquid.generate_pages()
     Onicn.Categories.Gas.generate_pages()
     Onicn.Categories.Building.generate_pages()
+    Onicn.Categories.Critter.generate_pages()
     Onicn.Category.generate_json()
     Onicn.Category.generate_pages()
     generate_home()
