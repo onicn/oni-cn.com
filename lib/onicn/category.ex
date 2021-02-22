@@ -3,7 +3,8 @@ defmodule Onicn.Category do
     Onicn.Categories.Solid,
     Onicn.Categories.Liquid,
     Onicn.Categories.Gas,
-    Onicn.Categories.Building
+    Onicn.Categories.Building,
+    Onicn.Categories.Critter
   ]
 
   def generate_json do
@@ -11,7 +12,8 @@ defmodule Onicn.Category do
       [
         Onicn.Categories.Solid,
         Onicn.Categories.Liquid,
-        Onicn.Categories.Gas
+        Onicn.Categories.Gas,
+        Onicn.Categories.Critter
       ],
       fn module ->
         name = module |> to_string() |> String.split(".") |> List.last() |> Macro.underscore()

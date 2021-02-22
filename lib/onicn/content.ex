@@ -64,7 +64,12 @@ defmodule Onicn.Content do
   end
 
   def output(:html_content, item_module, sections) do
-    escape = item_module.__attributes__[:cn_name]
+    escape =
+      if function_exported?(item_module, :__attributes__, 0) do
+        [item_module.__attributes__()[:cn_name]]
+      else
+        []
+      end
 
     :onicn
     |> :code.priv_dir()
