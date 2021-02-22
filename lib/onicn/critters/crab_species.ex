@@ -13,6 +13,7 @@ defmodule CrabSpecies.Crab do
     baby: "crab_baby",
     baby_cn_name: "抛壳蟹幼体",
     baby_en_name: "Pokeshell Spawn",
+    egg: "crab_egg",
     egg_cn_name: "抛壳蟹卵",
     egg_en_name: "Pinch Roe"
 end

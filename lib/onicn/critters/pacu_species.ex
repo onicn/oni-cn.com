@@ -15,6 +15,7 @@ defmodule PacuSpecies.Pacu do
     baby: "pacu_baby",
     baby_cn_name: "帕库幼鱼",
     baby_en_name: "Pacu Fry",
+    egg: "pacu_egg",
     egg_cn_name: "帕库鱼卵",
     egg_en_name: "Fry Egg"
 end
@@ -26,6 +27,7 @@ defmodule PacuSpecies.PacuCleaner do
     baby: "pacu_cleaner_baby",
     baby_cn_name: "大嘴幼鱼",
     baby_en_name: "Gulp Fry",
+    egg: "pacu_cleaner_egg",
     egg_cn_name: "大嘴鱼卵",
     egg_en_name: "Gulp Fry Egg"
 end
@@ -37,6 +39,7 @@ defmodule PacuSpecies.PacuTropical do
     baby: "pacu_tropical_baby",
     baby_cn_name: "热带帕库幼鱼",
     baby_en_name: "Tropical Fry",
+    egg: "pacu_tropical_egg",
     egg_cn_name: "热带帕库鱼卵",
     egg_en_name: "Tropical Fry Egg"
 end

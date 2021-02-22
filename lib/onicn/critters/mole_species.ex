@@ -11,6 +11,7 @@ defmodule MoleSpecies.Mole do
     baby: "mole_baby",
     baby_cn_name: "锹环田鼠幼体",
     baby_en_name: "Vole Pup",
+    egg: "mole_egg",
     egg_cn_name: "锹环田鼠蛋",
     egg_en_name: "Shove Vole Egg"
 end

@@ -11,6 +11,7 @@ defmodule SquirrelSpecies.Squirrel do
     baby: "squirrel_baby",
     baby_cn_name: "小树鼠",
     baby_en_name: "Pipsqueak",
+    egg: "squirrel_egg",
     egg_cn_name: "树鼠蛋",
     egg_en_name: "Pip Egg"
 end
