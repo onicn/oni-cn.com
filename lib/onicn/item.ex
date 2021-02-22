@@ -10,11 +10,13 @@ defmodule Onicn.Item do
       end)
 
     index
-    |> Enum.reduce(hashed_string, fn
-      {^escape, _hashed_name, _}, acc -> acc
-      {_name, hashed_name, link}, acc -> String.replace(acc, hashed_name, link)
+    |> Enum.reduce(hashed_string, fn {name, hashed_name, link}, acc ->
+      if name in escape do
+        String.replace(acc, hashed_name, name)
+      else
+        String.replace(acc, hashed_name, link)
+      end
     end)
-    |> String.replace(hash(escape), escape)
   end
 
   defp index do
