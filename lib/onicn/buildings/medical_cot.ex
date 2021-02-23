@@ -1,5 +1,6 @@
 defmodule Onicn.Buildings.MedicalCot do
   use Onicn.Categories.Building
+
   section "简介" do
     "分诊床可以提升复制人的生命值。如果没人照顾提升50生命值每周期，有人照顾则提升75生命值每周期。可以恢复呼吸度（不需要氧气）。"
     "躺在上面的复制人相当于在睡觉，可以降低压力和恢复体力。"
@@ -9,5 +10,4 @@ defmodule Onicn.Buildings.MedicalCot do
   section "用途" do
     "治疗受伤的复制人。"
   end
-
 end

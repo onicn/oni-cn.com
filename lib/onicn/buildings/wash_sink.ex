@@ -1,5 +1,6 @@
 defmodule Onicn.Buildings.WashSink do
   use Onicn.Categories.Building
+
   section "简介" do
     "洗手池可以用水移除路过的复制人表面的病菌（120000个），生成污染水。移除的病菌被转移到污染水中。"
     "可以指定复制人路过需要洗手的方向。"
