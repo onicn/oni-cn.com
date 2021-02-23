@@ -1,6 +1,6 @@
 defmodule Onicn.Buildings.MetalRefinery do
   use Onicn.Categories.Building
-    
+
   section "简介" do
     "金属精炼器可以将金属矿石转化为精炼金属，也可以炼钢。"
     "需要输入至少400千克任意液体作为冷却剂（最高存储800千克），每次操作完成后会把大量热量转移到冷却剂中，输出温度较高的冷却剂和对应的金属。"

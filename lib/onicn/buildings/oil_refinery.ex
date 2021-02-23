@@ -10,5 +10,4 @@ defmodule Onicn.Buildings.OilRefinery do
   section "用途" do
     "将原油转化为石油和天然气，石油可以用来供给石油发电机发电，或聚合压机生产塑料。"
   end
-
 end
