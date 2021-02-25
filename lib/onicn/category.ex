@@ -4,29 +4,24 @@ defmodule Onicn.Category do
     Onicn.Categories.Liquid,
     Onicn.Categories.Gas,
     Onicn.Categories.Building,
-    Onicn.Categories.Critter
+    Onicn.Categories.Critter,
+    Onicn.Categories.Plant
   ]
 
   def generate_json do
-    Enum.each(
-      [
-        Onicn.Categories.Solid,
-        Onicn.Categories.Liquid,
-        Onicn.Categories.Gas,
-        Onicn.Categories.Critter
-      ],
-      fn module ->
-        name = module |> to_string() |> String.split(".") |> List.last() |> Macro.underscore()
-        data = module.output(:json_elements)
+    @category_modules
+    |> List.delete(Onicn.Categories.Building)
+    |> Enum.each(fn module ->
+      name = module |> to_string() |> String.split(".") |> List.last() |> Macro.underscore()
+      data = module.output(:json_elements)
 
-        :onicn
-        |> :code.priv_dir()
-        |> Path.join("dist/#{name}.json")
-        |> File.write!(Jason.encode!(%{code: 0, count: length(data), data: data}))
+      :onicn
+      |> :code.priv_dir()
+      |> Path.join("dist/#{name}.json")
+      |> File.write!(Jason.encode!(%{code: 0, count: length(data), data: data}))
 
-        :ok
-      end
-    )
+      :ok
+    end)
   end
 
   def generate_pages do
