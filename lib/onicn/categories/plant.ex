@@ -150,7 +150,7 @@ defmodule Onicn.Categories.Plant do
       Jason.encode!([
         %{field: "cn_name", title: "名称"},
         %{field: "seed", title: "种子"},
-        %{field: "life_cycle", title: "生长周期"},
+        %{field: "life_cycle", title: "种植生长周期"},
         %{field: "temperature", title: "温度范围（°C）"}
       ])
 
