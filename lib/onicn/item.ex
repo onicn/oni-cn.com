@@ -64,7 +64,7 @@ defmodule Onicn.Item do
         a = module.__attributes__()
 
         [
-          {a[:cn_name], hash(a[:cn_name]), module.output(:link_name_icon)},
+          {a[:cn_name], hash(a[:cn_name]), module.output(:link_name_icon)}
         ]
       end)
       |> Enum.concat()
