@@ -20,7 +20,13 @@ defmodule Onicn.Categories.Other do
     Others.SwampLilyFlower,
     Others.TableSalt,
     Others.WarmVest,
-    Others.Wood
+    Others.Wood,
+    Others.AdvancedCure,
+    Others.Antihistamine,
+    Others.BasicBooster,
+    Others.BasicCure,
+    Others.IntermediateBooster,
+    Others.IntermediateCure
   ]
 
   defmacro __using__(attributes) do
