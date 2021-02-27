@@ -1,28 +1,38 @@
-alias Onicn.Plants
+alias Onicn.Foods
 
-defmodule Onicn.Categories.Plant do
-  @plants [
-    Plants.BasicFabricPlant,
-    Plants.BasicForagePlantPlanted,
-    Plants.BasicSingleHarvestPlant,
-    Plants.BeanPlant,
-    Plants.BulbPlant,
-    Plants.CactusPlant,
-    Plants.ColdBreather,
-    Plants.ColdWheat,
-    Plants.EvilFlower,
-    Plants.ForestForagePlantPlanted,
-    Plants.ForestTree,
-    Plants.GasGrass,
-    Plants.LeafyPlant,
-    Plants.MushroomPlant,
-    Plants.Oxyfern,
-    Plants.PrickleFlower,
-    Plants.PrickleGrass,
-    Plants.SaltPlant,
-    Plants.SeaLettuce,
-    Plants.SpiceVine,
-    Plants.SwampLily
+defmodule Onicn.Categories.Food do
+  @foods [
+    Foods.BasicForagePlant,
+    Foods.BasicPlantBar,
+    Foods.BasicPlantFood,
+    Foods.BeanPlantSeed,
+    Foods.Burger,
+    Foods.ColdWheatBread,
+    Foods.ColdWheatSeed,
+    Foods.CookedEgg,
+    Foods.CookedFish,
+    Foods.CookedMeat,
+    Foods.FieldRation,
+    Foods.FishMeat,
+    Foods.ForestForagePlant,
+    Foods.FriedMushBar,
+    Foods.FriedMushroom,
+    Foods.FruitCake,
+    Foods.GrilledPrickleFruit,
+    Foods.Lettuce,
+    Foods.Meat,
+    Foods.MushBar,
+    Foods.Mushroom,
+    Foods.MushroomWrap,
+    Foods.PickledMeal,
+    Foods.PrickleFruit,
+    Foods.RawEgg,
+    Foods.Salsa,
+    Foods.SpiceBread,
+    Foods.SpiceNut,
+    Foods.SpicyTofu,
+    Foods.SurfAndTurf,
+    Foods.Tofu
   ]
 
   defmacro __using__(attributes) do
@@ -41,14 +51,12 @@ defmodule Onicn.Categories.Plant do
       end
 
       def output(:html_attributes) do
-        icon = ~s|<i class="layui-icon layui-icon-subtraction"></i>|
         a = __attributes__()
-        img = "/img/plants/#{a[:name]}.png"
+        img = "/img/foods/#{a[:name]}.png"
 
         data = [
-          {"装饰度", "#{a[:decor]}（#{a[:decor_radius]}格）"},
-          {"生长周期", a[:life_cycle_second] / 600},
-          {"温度范围", "#{a[:min_temp]} #{icon} #{a[:max_temp]} °C"}
+          {"卡路里", "#{div(a[:calories_per_unit], 1000)} 千卡"},
+          {"品质", a[:quality]}
         ]
 
         :onicn
@@ -60,28 +68,10 @@ defmodule Onicn.Categories.Plant do
       def output(:link_name_icon) do
         a = __attributes__()
 
-        ~s|<a href="/plants/#{a[:name]}">
-          <img src="/img/plants/#{a[:name]}.png" style="weight:16px;height:16px;">
+        ~s|<a href="/foods/#{a[:name]}">
+          <img src="/img/foods/#{a[:name]}.png" style="weight:16px;height:16px;">
           #{a[:cn_name]}
         </a>|
-      end
-
-      def output(:link_seed_name_icon) do
-        a = __attributes__()
-
-        case a[:seed] do
-          nil ->
-            ""
-
-          seed when is_binary(seed) ->
-            ~s|<a href="/plants/#{a[:name]}">
-              <img src="/img/plants/#{a[:seed]}.png" style="weight:16px;height:16px;">
-              #{a[:seed_cn_name]}
-            </a>|
-
-          seed when is_atom(seed) ->
-            seed.output(:link_name_icon)
-        end
       end
     end
   end
@@ -89,7 +79,7 @@ defmodule Onicn.Categories.Plant do
   properties =
     :onicn
     |> :code.priv_dir()
-    |> Path.join("data/plant.ex")
+    |> Path.join("data/food.ex")
     |> Code.eval_file()
     |> elem(0)
     |> Macro.escape()
@@ -98,12 +88,12 @@ defmodule Onicn.Categories.Plant do
     unquote(properties)
   end
 
-  def __plants__ do
-    @plants
+  def __foods__ do
+    @foods
   end
 
   def generate_pages do
-    @plants
+    @foods
     |> Enum.map(&Task.async(fn -> do_generate_page(&1) end))
     |> Enum.each(&Task.await(&1, :infinity))
   end
@@ -119,7 +109,7 @@ defmodule Onicn.Categories.Plant do
     nav =
       temp_path
       |> Path.join("nav.eex")
-      |> EEx.eval_file(nav: "plant")
+      |> EEx.eval_file(nav: "food")
 
     contents = ""
     attributes = module.output(:html_attributes)
@@ -141,7 +131,7 @@ defmodule Onicn.Categories.Plant do
       :onicn
       |> :code.priv_dir()
       |> Path.join("dist")
-      |> Path.join("/plants/#{name}/")
+      |> Path.join("/foods/#{name}/")
 
     File.mkdir_p!(page_path)
     File.write!(Path.join(page_path, "index.html"), page)
@@ -151,16 +141,15 @@ defmodule Onicn.Categories.Plant do
     container = ~s|
       <div class="layui-row">
         <div class="layui-col-md12">
-          <table id="plant" lay-filter=""></table>
+          <table id="food" lay-filter=""></table>
         </div>
       </div>|
 
     cols =
       Jason.encode!([
         %{field: "cn_name", title: "名称"},
-        %{field: "seed", title: "种子"},
-        %{field: "life_cycle", title: "种植生长周期"},
-        %{field: "temperature", title: "温度范围（°C）"}
+        %{field: "calories", title: "卡路里（千卡）"},
+        %{field: "quality", title: "品质"}
       ])
 
     script = ~s|
@@ -168,8 +157,8 @@ defmodule Onicn.Categories.Plant do
       layui.use(['element', 'table'], function() {
         var table = layui.table;
         table.render({
-          elem: '#plant',
-          url: '/plant.json',
+          elem: '#food',
+          url: '/food.json',
           page: false,
           cols: [#{cols}]
         });
@@ -182,16 +171,13 @@ defmodule Onicn.Categories.Plant do
   end
 
   def output(:json_elements) do
-    icon = ~s|<i class="layui-icon layui-icon-subtraction"></i>|
-
-    Enum.map(@plants, fn module ->
+    Enum.map(@foods, fn module ->
       a = module.__attributes__()
 
       %{
         cn_name: module.output(:link_name_icon),
-        seed: module.output(:link_seed_name_icon),
-        life_cycle: (a[:life_cycle_second] === 0 && "") || a[:life_cycle_second] / 600,
-        temperature: "#{a[:min_temp]} #{icon} #{a[:max_temp]}"
+        calories: (a[:calories_per_unit] === 0 && "") || div(a[:calories_per_unit], 1000),
+        quality: a[:quality]
       }
     end)
   end

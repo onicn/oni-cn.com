@@ -5,7 +5,8 @@ defmodule Onicn.Category do
     Onicn.Categories.Gas,
     Onicn.Categories.Building,
     Onicn.Categories.Critter,
-    Onicn.Categories.Plant
+    Onicn.Categories.Plant,
+    Onicn.Categories.Food
   ]
 
   def generate_json do
