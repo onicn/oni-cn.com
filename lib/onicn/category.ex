@@ -6,12 +6,14 @@ defmodule Onicn.Category do
     Onicn.Categories.Building,
     Onicn.Categories.Critter,
     Onicn.Categories.Plant,
-    Onicn.Categories.Food
+    Onicn.Categories.Food,
+    Onicn.Categories.Other
   ]
 
   def generate_json do
     @category_modules
     |> List.delete(Onicn.Categories.Building)
+    |> List.delete(Onicn.Categories.Other)
     |> Enum.each(fn module ->
       name = module |> to_string() |> String.split(".") |> List.last() |> Macro.underscore()
       data = module.output(:json_elements)
@@ -28,7 +30,9 @@ defmodule Onicn.Category do
   def generate_pages do
     temp_path = :onicn |> :code.priv_dir() |> Path.join("templates")
 
-    Enum.each(@category_modules, fn module ->
+    @category_modules
+    |> List.delete(Onicn.Categories.Other)
+    |> Enum.each(fn module ->
       name = module |> to_string() |> String.split(".") |> List.last() |> Macro.underscore()
       %{container: container, script: script} = module.output(:html_body)
 
