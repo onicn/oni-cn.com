@@ -110,7 +110,7 @@ defmodule Onicn.Categories.Building do
              ]) || [],
           (is_nil(a[:power_generate]) && []) || [{"电力生产", "#{a[:power_generate]} W"}],
           (is_nil(a[:power_consume]) && []) || [{"电力消耗", "#{a[:power_consume]} W"}],
-          (is_nil(a[:heat_generate]) && []) || [{"产热", "#{a[:heat_generate]} DTU/s"}]
+          (is_nil(a[:heat_generate]) && []) || [{"产热", "#{a[:heat_generate]} kDTU/s"}]
         ])
     ]
 

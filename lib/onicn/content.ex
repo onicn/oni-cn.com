@@ -11,12 +11,47 @@ defmodule Onicn.Content do
   defmacro __before_compile__(%Macro.Env{}) do
     quote do
       def output(:html_content) do
-        unquote(__MODULE__).output(:html_content, __MODULE__, __sections__())
+        sections = unquote(__MODULE__).merge_sections(__sections__(), __extra_sections__())
+        unquote(__MODULE__).output(:html_content, __MODULE__, sections)
       end
 
       def __sections__ do
         Enum.reverse(@sections)
       end
+
+      def __extra_sections__ do
+        options = [markdown: false, link_name_icon: false]
+
+        requires = Onicn.Recipe.require(__MODULE__)
+
+        produces =
+          Enum.concat([
+            Onicn.Recipe.building(__MODULE__),
+            Onicn.Recipe.produce(__MODULE__)
+          ])
+
+        Enum.concat([
+          (requires === [] && []) ||
+            [{"生产", [{:content, Onicn.Recipe.to_html(requires), options}]}],
+          (produces === [] && []) ||
+            [{"用途", [{:content, Onicn.Recipe.to_html(produces), options}]}]
+        ])
+      end
+    end
+  end
+
+  def merge_sections(sections1, sections2) do
+    do_merge_sections(sections1, sections2, [])
+  end
+
+  defp do_merge_sections([], s2, result) do
+    Enum.reverse(result) ++ s2
+  end
+
+  defp do_merge_sections([{n1, c1} | t], s2, result) do
+    case Enum.split_with(s2, fn {n2, _} -> n2 === n1 end) do
+      {[], _} -> do_merge_sections(t, s2, [{n1, c1} | result])
+      {[{_name, c2}], rest} -> do_merge_sections(t, rest, [{n1, c1 ++ c2} | result])
     end
   end
 
@@ -29,12 +64,19 @@ defmodule Onicn.Content do
   end
 
   def do_section(section_name, contents) do
+    default_options = [markdown: true, link_name_icon: true]
+
     contents =
       contents
       |> Enum.map(fn
-        {:content, _, [content, options]} -> {:content, content, options}
-        {:content, _, [content]} -> {:content, content, []}
-        content -> {:content, content, []}
+        {:content, _, [content, options]} ->
+          {:content, content, Keyword.merge(default_options, options)}
+
+        {:content, _, [content]} ->
+          {:content, content, default_options}
+
+        content ->
+          {:content, content, default_options}
       end)
       |> Enum.map(fn {:content, content, options} ->
         content =

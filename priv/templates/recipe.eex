@@ -1,0 +1,15 @@
+<div class="layui-field-box">
+  <table class="layui-table" lay-skin="nob">
+    <tbody>
+      <%= for {building, requires, produces} <- recipes do %>
+        <tr>
+          <td> <%= requires %> </td>
+          <td> <i class="layui-icon layui-icon-right"></i> </td>
+          <td> <%= building %> </td>
+          <td> <i class="layui-icon layui-icon-right"></i> </td>
+          <td> <%= produces %> </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
