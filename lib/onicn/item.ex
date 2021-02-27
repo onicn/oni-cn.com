@@ -1,4 +1,4 @@
-alias Onicn.Categories.{Solid, Liquid, Gas, Building, Critter, Plant}
+alias Onicn.Categories.{Solid, Liquid, Gas, Building, Critter, Plant, Food}
 
 defmodule Onicn.Item do
   @skiplist [
@@ -56,6 +56,19 @@ defmodule Onicn.Item do
         ]
       end)
       |> Enum.concat()
+      |> Enum.reject(fn {name, _, _} -> is_nil(name) end)
+
+    foods =
+      Food.__foods__()
+      |> Enum.map(fn module ->
+        a = module.__attributes__()
+
+        [
+          {a[:cn_name], hash(a[:cn_name]), module.output(:link_name_icon)},
+        ]
+      end)
+      |> Enum.concat()
+      |> Enum.reject(fn {name, _, _} -> is_nil(name) end)
 
     [
       Solid.__element_modules__(),
@@ -71,6 +84,7 @@ defmodule Onicn.Item do
     |> Enum.concat(critters)
     |> Enum.concat(plants)
     |> Enum.concat(skiplist)
+    |> Enum.concat(foods)
     |> Enum.sort_by(fn {cn_name, _, _} -> String.length(cn_name) end, :desc)
   end
 
