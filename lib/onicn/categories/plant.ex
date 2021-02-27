@@ -27,6 +27,8 @@ defmodule Onicn.Categories.Plant do
 
   defmacro __using__(attributes) do
     quote do
+      use Onicn.Content
+
       def __attributes__ do
         name = __MODULE__ |> to_string() |> String.split(".") |> List.last() |> Macro.underscore()
 

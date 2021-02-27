@@ -37,6 +37,8 @@ defmodule Onicn.Categories.Food do
 
   defmacro __using__(attributes) do
     quote do
+      use Onicn.Content
+
       def __attributes__ do
         name = __MODULE__ |> to_string() |> String.split(".") |> List.last() |> Macro.underscore()
 
@@ -111,7 +113,7 @@ defmodule Onicn.Categories.Food do
       |> Path.join("nav.eex")
       |> EEx.eval_file(nav: "food")
 
-    contents = ""
+    contents = module.output(:html_content)
     attributes = module.output(:html_attributes)
 
     container = ~s|

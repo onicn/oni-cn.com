@@ -21,20 +21,19 @@ defmodule Onicn.Content do
 
       def __extra_sections__ do
         options = [markdown: false, link_name_icon: false]
+        produces = Onicn.Recipe.produce(__MODULE__)
 
-        requires = Onicn.Recipe.require(__MODULE__)
-
-        produces =
+        requires =
           Enum.concat([
             Onicn.Recipe.building(__MODULE__),
-            Onicn.Recipe.produce(__MODULE__)
+            Onicn.Recipe.require(__MODULE__)
           ])
 
         Enum.concat([
-          (requires === [] && []) ||
-            [{"生产", [{:content, Onicn.Recipe.to_html(requires), options}]}],
           (produces === [] && []) ||
-            [{"用途", [{:content, Onicn.Recipe.to_html(produces), options}]}]
+            [{"生产", [{:content, Onicn.Recipe.to_html(produces), options}]}],
+          (requires === [] && []) ||
+            [{"用途", [{:content, Onicn.Recipe.to_html(requires), options}]}]
         ])
       end
     end
