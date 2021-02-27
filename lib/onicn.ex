@@ -6,6 +6,7 @@ defmodule Onicn do
     Onicn.Categories.Building.generate_pages()
     Onicn.Categories.Critter.generate_pages()
     Onicn.Categories.Plant.generate_pages()
+    Onicn.Categories.Food.generate_pages()
     Onicn.Category.generate_json()
     Onicn.Category.generate_pages()
     generate_home()

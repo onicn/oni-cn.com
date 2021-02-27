@@ -56,6 +56,7 @@ defmodule Onicn.Item do
         ]
       end)
       |> Enum.concat()
+      |> Enum.reject(fn {name, _, _} -> is_nil(name) end)
 
     [
       Solid.__element_modules__(),
