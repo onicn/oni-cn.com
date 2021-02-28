@@ -4,7 +4,7 @@ defmodule Onicn.Elements.Hydrogen do
 
   section "简介" do
     "氢气是一种不可呼吸的气体。可用于发电，也可用于制冷。常见于腐蚀区。"
-    content "暴露在氢气中的复制人会造成 眼部刺激 的异常状态，运动 -2", only: :spaced_out
+    content "[DLC]暴露在氢气中的复制人会造成 眼部刺激 的异常状态，运动 -2", only: :spaced_out
   end
 
   section "用途" do
