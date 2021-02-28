@@ -952,14 +952,20 @@
     recipes: [
       %{
         produce: [
-          %{material_id: Onicn.Elements.Water, rate: 4.65},
-          %{material_id: Onicn.Elements.Salt, rate: 0.35},
           %{material_id: Onicn.Elements.Water, min_temp: 40, rate: 3.5},
           %{material_id: Onicn.Elements.Salt, min_temp: 40, rate: 1.5}
         ],
         require: [
-          %{material_id: Onicn.Elements.SaltWater, rate: 5},
           %{material_id: Onicn.Elements.Brine, rate: 5}
+        ]
+      },
+      %{
+        produce: [
+          %{material_id: Onicn.Elements.Water, rate: 4.65},
+          %{material_id: Onicn.Elements.Salt, rate: 0.35}
+        ],
+        require: [
+          %{material_id: Onicn.Elements.SaltWater, rate: 5}
         ]
       }
     ]
