@@ -751,5 +751,320 @@
         require: [%{amount: 1, material_id: Onicn.Others.ResearchDataBank}]
       }
     ]
+  },
+  %{
+    name: Onicn.Buildings.GourmetCookingStation,
+    recipes: [
+      %{
+        produce: [%{material_id: Onicn.Elements.CarbonDioxide, min_temp: 75, rate: 0.025}],
+        require: [%{material_id: Onicn.Elements.Methane, rate: 0.1}]
+      }
+    ]
+  },
+  %{
+    name: Onicn.Buildings.MineralDeoxidizer,
+    recipes: [
+      %{
+        produce: [%{material_id: Onicn.Elements.Oxygen, min_temp: 30, rate: 0.5}],
+        require: [%{material_id: Onicn.Elements.Algae, rate: 0.55}]
+      }
+    ]
+  },
+  %{
+    name: Onicn.Buildings.AlgaeHabitat,
+    recipes: [
+      %{
+        produce: [
+          %{material_id: Onicn.Elements.Oxygen, min_temp: 30, rate: 0.04},
+          %{material_id: Onicn.Elements.DirtyWater, min_temp: 30, rate: 0.3}
+        ],
+        require: [
+          %{material_id: Onicn.Elements.Algae, rate: 0.03},
+          %{material_id: Onicn.Elements.Water, rate: 0.3},
+          %{material_id: Onicn.Elements.CarbonDioxide, rate: 0.0003}
+        ]
+      }
+    ]
+  },
+  %{
+    name: Onicn.Buildings.AirFilter,
+    recipes: [
+      %{
+        produce: [
+          %{material_id: Onicn.Elements.Clay, rate: 0.14},
+          %{material_id: Onicn.Elements.Oxygen, rate: 0.09}
+        ],
+        require: [
+          %{material_id: Onicn.Elements.Regolith, rate: 0.13333334},
+          %{material_id: Onicn.Elements.ContaminatedOxygen, rate: 0.1}
+        ]
+      },
+      %{
+        produce: [
+          %{material_id: Onicn.Elements.Clay, rate: 0.14},
+          %{material_id: Onicn.Elements.Oxygen, rate: 0.09}
+        ],
+        require: [
+          %{material_id: Onicn.Elements.Sand, rate: 0.13333334},
+          %{material_id: Onicn.Elements.ContaminatedOxygen, rate: 0.1}
+        ]
+      }
+    ]
+  },
+  %{
+    name: Onicn.Buildings.CO2Scrubber,
+    recipes: [
+      %{
+        produce: [%{material_id: Onicn.Elements.DirtyWater, rate: 1}],
+        require: [
+          %{material_id: Onicn.Elements.Water, rate: 1},
+          %{material_id: Onicn.Elements.CarbonDioxide, rate: 0.3}
+        ]
+      }
+    ]
+  },
+  %{
+    name: Onicn.Buildings.Electrolyzer,
+    recipes: [
+      %{
+        produce: [
+          %{material_id: Onicn.Elements.Oxygen, min_temp: 70, rate: 0.888},
+          %{material_id: Onicn.Elements.Hydrogen, min_temp: 70, rate: 0.112}
+        ],
+        require: [%{material_id: Onicn.Elements.Water, rate: 1}]
+      }
+    ]
+  },
+  %{
+    name: Onicn.Buildings.RustDeoxidizer,
+    recipes: [
+      %{
+        produce: [
+          %{material_id: Onicn.Elements.Oxygen, min_temp: 75, rate: 0.57},
+          %{material_id: Onicn.Elements.ChlorineGas, min_temp: 75, rate: 0.03},
+          %{material_id: Onicn.Elements.IronOre, min_temp: 75, rate: 0.4}
+        ],
+        require: [
+          %{material_id: Onicn.Elements.Rust, rate: 0.75},
+          %{material_id: Onicn.Elements.Salt, rate: 0.25}
+        ]
+      }
+    ]
+  },
+  %{
+    name: Onicn.Buildings.Generator,
+    recipes: [
+      %{
+        produce: [%{material_id: Onicn.Elements.CarbonDioxide, min_temp: 110, rate: 0.02}],
+        require: [%{material_id: Onicn.Elements.Carbon, rate: 1}]
+      }
+    ]
+  },
+  %{
+    name: Onicn.Buildings.WoodGasGenerator,
+    recipes: [
+      %{
+        produce: [%{material_id: Onicn.Elements.CarbonDioxide, min_temp: 110, rate: 0.17}],
+        require: [%{material_id: Onicn.Others.Wood, rate: 1.2}]
+      }
+    ]
+  },
+  %{
+    name: Onicn.Buildings.MethaneGenerator,
+    recipes: [
+      %{
+        produce: [
+          %{material_id: Onicn.Elements.DirtyWater, min_temp: 40, rate: 0.0675},
+          %{material_id: Onicn.Elements.CarbonDioxide, min_temp: 110, rate: 0.0225}
+        ],
+        require: [%{material_id: Onicn.Elements.Methane, rate: 0.09}]
+      }
+    ]
+  },
+  %{
+    name: Onicn.Buildings.PetroleumGenerator,
+    recipes: [
+      %{
+        produce: [
+          %{material_id: Onicn.Elements.CarbonDioxide, min_temp: 110, rate: 0.5},
+          %{material_id: Onicn.Elements.DirtyWater, min_temp: 40, rate: 0.75}
+        ],
+        require: [%{material_id: Onicn.Elements.Petroleum, rate: 2}]
+      },
+      %{
+        produce: [
+          %{material_id: Onicn.Elements.CarbonDioxide, min_temp: 110, rate: 0.5},
+          %{material_id: Onicn.Elements.DirtyWater, min_temp: 40, rate: 0.75}
+        ],
+        require: [%{material_id: Onicn.Elements.Ethanol, rate: 2}]
+      }
+    ]
+  },
+  %{
+    name: Onicn.Buildings.Shower,
+    recipes: [
+      %{
+        produce: [%{material_id: Onicn.Elements.DirtyWater, rate: 1}],
+        require: [%{material_id: Onicn.Elements.Water, rate: 1}]
+      }
+    ]
+  },
+  %{
+    name: Onicn.Buildings.Compost,
+    recipes: [
+      %{
+        produce: [%{material_id: Onicn.Elements.Dirt, min_temp: 75, rate: 0.1}],
+        require: [%{material_id: Onicn.Elements.ToxicSand, rate: 0.1}]
+      },
+      %{
+        produce: [%{material_id: Onicn.Elements.Dirt, min_temp: 75, rate: 0.1}],
+        require: [%{material_id: Onicn.Others.RotPile, rate: 0.1}]
+      }
+    ]
+  },
+  %{
+    name: Onicn.Buildings.WaterPurifier,
+    recipes: [
+      %{
+        produce: [
+          %{material_id: Onicn.Elements.Water, rate: 5},
+          %{material_id: Onicn.Elements.ToxicSand, rate: 0.2}
+        ],
+        require: [
+          %{material_id: Onicn.Elements.Regolith, rate: 1},
+          %{material_id: Onicn.Elements.DirtyWater, rate: 5}
+        ]
+      },
+      %{
+        produce: [
+          %{material_id: Onicn.Elements.Water, rate: 5},
+          %{material_id: Onicn.Elements.ToxicSand, rate: 0.2}
+        ],
+        require: [
+          %{material_id: Onicn.Elements.Sand, rate: 1},
+          %{material_id: Onicn.Elements.DirtyWater, rate: 5}
+        ]
+      }
+    ]
+  },
+  %{
+    name: Onicn.Buildings.Desalinator,
+    recipes: [
+      %{
+        produce: [
+          %{material_id: Onicn.Elements.Water, rate: 4.65},
+          %{material_id: Onicn.Elements.Salt, rate: 0.35},
+          %{material_id: Onicn.Elements.Water, min_temp: 40, rate: 3.5},
+          %{material_id: Onicn.Elements.Salt, min_temp: 40, rate: 1.5}
+        ],
+        require: [
+          %{material_id: Onicn.Elements.SaltWater, rate: 5},
+          %{material_id: Onicn.Elements.Brine, rate: 5}
+        ]
+      }
+    ]
+  },
+  %{
+    name: Onicn.Buildings.FertilizerMaker,
+    recipes: [
+      %{
+        produce: [
+          %{material_id: Onicn.Elements.Fertilizer, min_temp: 50, rate: 0.12},
+          %{material_id: Onicn.Elements.Methane, min_temp: 76, rate: 0.01}
+        ],
+        require: [
+          %{material_id: Onicn.Elements.DirtyWater, rate: 0.039},
+          %{material_id: Onicn.Elements.Dirt, rate: 0.065},
+          %{material_id: Onicn.Elements.Phosphorite, rate: 0.026}
+        ]
+      }
+    ]
+  },
+  %{
+    name: Onicn.Buildings.AlgaeDistillery,
+    recipes: [
+      %{
+        produce: [
+          %{material_id: Onicn.Elements.Algae, min_temp: 30, rate: 0.2},
+          %{material_id: Onicn.Elements.DirtyWater, min_temp: 30, rate: 0.4}
+        ],
+        require: [%{material_id: Onicn.Elements.SlimeMold, rate: 0.6}]
+      }
+    ]
+  },
+  %{
+    name: Onicn.Buildings.EthanolDistillery,
+    recipes: [
+      %{
+        produce: [
+          %{material_id: Onicn.Elements.Ethanol, min_temp: 73.35, rate: 0.5},
+          %{material_id: Onicn.Elements.ToxicSand, min_temp: 93.35, rate: 0.33},
+          %{material_id: Onicn.Elements.CarbonDioxide, min_temp: 93.35, rate: 0.17}
+        ],
+        require: [%{material_id: Onicn.Others.Wood, rate: 1}]
+      }
+    ]
+  },
+  %{
+    name: Onicn.Buildings.EthanolDistillery,
+    recipes: [
+      %{
+        produce: [
+          %{material_id: Onicn.Elements.Ethanol, min_temp: 73, rate: 0.5},
+          %{material_id: Onicn.Elements.ToxicSand, min_temp: 93, rate: 0.333},
+          %{material_id: Onicn.Elements.CarbonDioxide, min_temp: 93, rate: 0.167}
+        ],
+        require: [%{material_id: Onicn.Others.Wood, rate: 1}]
+      }
+    ]
+  },
+  %{
+    name: Onicn.Buildings.OilRefinery,
+    recipes: [
+      %{
+        produce: [
+          %{material_id: Onicn.Elements.Petroleum, min_temp: 75, rate: 5},
+          %{material_id: Onicn.Elements.Methane, min_temp: 75, rate: 0.09}
+        ],
+        require: [%{material_id: Onicn.Elements.CrudeOil, rate: 10}]
+      }
+    ]
+  },
+  %{
+    name: Onicn.Buildings.Polymerizer,
+    recipes: [
+      %{
+        produce: [
+          %{material_id: Onicn.Elements.Polypropylene, min_temp: 75, rate: 0.5},
+          %{material_id: Onicn.Elements.Steam, min_temp: 200, rate: 0.0083},
+          %{material_id: Onicn.Elements.CarbonDioxide, min_temp: 150, rate: 0.0083}
+        ],
+        require: [%{material_id: Onicn.Elements.Petroleum, rate: 0.83}]
+      }
+    ]
+  },
+  %{
+    name: Onicn.Buildings.OxyliteRefinery,
+    recipes: [
+      %{
+        produce: [%{material_id: Onicn.Elements.OxyRock, min_temp: 30, rate: 0.6}],
+        require: [
+          %{material_id: Onicn.Elements.Oxygen, rate: 0.6},
+          %{material_id: Onicn.Elements.Gold, rate: 0.003}
+        ]
+      }
+    ]
+  },
+  %{
+    name: Onicn.Buildings.OilWellCap,
+    recipes: [
+      %{
+        produce: [
+          %{material_id: Onicn.Elements.CrudeOil, min_temp: 90, rate: 3.33},
+          %{material_id: Onicn.Elements.Methane, min_temp: 300, rate: 0.03}
+        ],
+        require: [%{material_id: Onicn.Elements.Water, rate: 1}]
+      }
+    ]
   }
 ]
