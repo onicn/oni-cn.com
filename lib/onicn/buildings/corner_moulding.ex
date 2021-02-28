@@ -1,5 +1,6 @@
 defmodule Onicn.Buildings.CornerMoulding do
   use Onicn.Categories.Building
+
   section "简介" do
     "角饰条是装饰性建筑，可以放在天花板的角落里增加周围的装饰度。"
   end

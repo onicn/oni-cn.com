@@ -1,12 +1,11 @@
 defmodule Onicn.Buildings.WaterPurifier do
   use Onicn.Categories.Building
-  
+
   section "简介" do
     "净水器用过滤介质净化污染水，从输出管道输出水，产生的污染土会掉在地上。"
   end
 
   section "用途" do
-    
   end
 
   section "小技巧" do

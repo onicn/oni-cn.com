@@ -1,5 +1,6 @@
 defmodule Onicn.Buildings.Bed do
   use Onicn.Categories.Building
+
   section "简介" do
     "床铺提供复制人睡觉的场所，可以避免睡在地上出现腰酸背痛的状态。"
     "复制人在就寝时间会自动到被安排的床铺上休息，在没有被安排床铺时会给自己指派一个没有被安排给别人的床铺。"

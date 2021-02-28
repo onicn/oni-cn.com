@@ -1,5 +1,6 @@
 defmodule Onicn.Buildings.Desalinator do
   use Onicn.Categories.Building
+
   section "简介" do
     "脱盐器将浓盐水或盐水转化为水和盐。"
     "脱盐器的转化效率和用加热蒸发的方式相同。"
@@ -7,7 +8,6 @@ defmodule Onicn.Buildings.Desalinator do
   end
 
   section "用途" do
-    
   end
 
   section "小技巧" do

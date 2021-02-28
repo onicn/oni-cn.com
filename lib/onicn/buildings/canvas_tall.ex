@@ -1,6 +1,6 @@
 defmodule Onicn.Buildings.CanvasTall do
   use Onicn.Categories.Building
-  
+
   section "简介" do
     "肖像画布是装饰性建筑，可以增加周围的装饰度。"
     "有装饰相关技能的复制人可以在画布上绘画，提高增加的装饰度，提高的程度取决于作品质量。"
