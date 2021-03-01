@@ -1,7 +1,8 @@
 defmodule Onicn.MixProject do
   use Mix.Project
 
-  def project do
+  def project 
+  do
     [
       app: :onicn,
       version: "0.1.0",
