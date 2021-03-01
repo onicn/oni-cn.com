@@ -10,6 +10,8 @@ jobs:
       - run: echo ${{ github.repository }}
       - run: echo ${{ github.base_ref }}
       - run: echo ${{ github.head_ref }}
+      - run: echo "This PR is opened by ${{ github.event.pull_request.user.login }} ."
+      - run: echo "${{ toJSON(github.event.pull_request) }}"
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
