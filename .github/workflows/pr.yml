@@ -7,6 +7,9 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
+      - run: echo ${{ github.repository }}
+      - run: echo ${{ github.base_ref }}
+      - run: echo ${{ github.head_ref }}
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
