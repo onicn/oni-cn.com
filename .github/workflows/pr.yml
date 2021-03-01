@@ -12,6 +12,7 @@ jobs:
           repository: ${{ github.event.pull_request.head.repo.full_name }}
           ref: ${{ github.event.pull_request.head.ref }}
           fetch-depth: 0
+      - run: echo ${{ secrets.GITHUB_TOKEN }}
       - run: echo ${{ secrets.TOKEN_FOR_FORMAT_BOT }}
       - uses: erlef/setup-elixir@v1
         with:
