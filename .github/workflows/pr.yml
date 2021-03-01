@@ -25,5 +25,5 @@ jobs:
           push-branch: ${{ github.event.pull_request.head.ref }}
           commit-message: 'code format'
           files: '.'
-          name: github action
+          name: ${{ github.event.pull_request.user.login }}
           email: github.action@onicn.com
