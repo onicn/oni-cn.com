@@ -12,6 +12,7 @@ jobs:
           repository: ${{ github.event.pull_request.head.repo.full_name }}
           ref: ${{ github.event.pull_request.head.ref }}
           fetch-depth: 0
+          persist-credentials: false
       - uses: erlef/setup-elixir@v1
         with:
           otp-version: '23.2'
@@ -21,12 +22,8 @@ jobs:
           mix format
       - id: git-check
         run: echo ::set-output name=modified::$(if git diff-index --quiet HEAD --; then echo "false"; else echo "true"; fi)
-      - if: steps.git-check.outputs.modified == 'true'
-        run: |
-          git config user.name ${{ github.event.pull_request.user.login }}
-          git config user.email github.action@onicn.com
-          git add .
-          git commit -m "code format"
-          git config -l | grep 'http\..*\.extraheader' | cut -d= -f1 | xargs -L1 git config --unset-all
-          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.event.pull_request.head.repo.full_name }}
-          git push
+      - uses: ad-m/github-push-action@master
+        if: steps.git-check.outputs.modified == 'true'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.event.pull_request.head.ref }}
