@@ -18,12 +18,9 @@ jobs:
           elixir-version: '1.11.2'
       - run: mix deps.get
       - run: mix format
-      - name: push format
-        uses: github-actions-x/commit@v2.7
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          push-branch: ${{ github.event.pull_request.head.ref }}
-          commit-message: 'code format'
-          files: '.'
-          name: ${{ github.event.pull_request.user.login }}
-          email: github.action@onicn.com
+      - run: |
+          git config user.name ${{ github.event.pull_request.user.login }}
+          git config user.email github.action@onicn.com
+          git add .
+          git commit -m "code format"
+          git push
