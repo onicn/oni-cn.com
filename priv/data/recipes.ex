@@ -1003,19 +1003,6 @@
     recipes: [
       %{
         produce: [
-          %{material_id: Onicn.Elements.Ethanol, min_temp: 73.35, rate: 0.5},
-          %{material_id: Onicn.Elements.ToxicSand, min_temp: 93.35, rate: 0.33},
-          %{material_id: Onicn.Elements.CarbonDioxide, min_temp: 93.35, rate: 0.17}
-        ],
-        require: [%{material_id: Onicn.Others.Wood, rate: 1}]
-      }
-    ]
-  },
-  %{
-    name: Onicn.Buildings.EthanolDistillery,
-    recipes: [
-      %{
-        produce: [
           %{material_id: Onicn.Elements.Ethanol, min_temp: 73, rate: 0.5},
           %{material_id: Onicn.Elements.ToxicSand, min_temp: 93, rate: 0.333},
           %{material_id: Onicn.Elements.CarbonDioxide, min_temp: 93, rate: 0.167}
