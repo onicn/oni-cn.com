@@ -2,7 +2,7 @@
   %{
     cn_name: "低温蒸汽喷孔",
     disease_amount: 0,
-    en_name: "cool _steam _vent",
+    en_name: "Cool Steam Vent",
     max_iteration_length: 1140,
     max_iteration_percent: 0.9,
     max_pressure: 5,
@@ -21,7 +21,7 @@
   %{
     cn_name: "蒸汽喷孔",
     disease_amount: 0,
-    en_name: "steam _vent",
+    en_name: "Steam Vent",
     max_iteration_length: 1140,
     max_iteration_percent: 0.9,
     max_pressure: 5,
@@ -40,7 +40,7 @@
   %{
     cn_name: "水间歇泉",
     disease_amount: 0,
-    en_name: "water _geyser",
+    en_name: "Water Geyser",
     max_iteration_length: 1140,
     max_iteration_percent: 0.9,
     max_pressure: 500,
@@ -59,7 +59,7 @@
   %{
     cn_name: "低温泥浆间歇泉",
     disease_amount: 0,
-    en_name: "cool _slush _geyser",
+    en_name: "Cool Slush Geyser",
     max_iteration_length: 1140,
     max_iteration_percent: 0.9,
     max_pressure: 500,
@@ -78,7 +78,7 @@
   %{
     cn_name: "污染水喷孔",
     disease_amount: 20000,
-    en_name: "polluted _water _vent",
+    en_name: "Polluted Water Vent",
     max_iteration_length: 1140,
     max_iteration_percent: 0.9,
     max_pressure: 500,
@@ -97,7 +97,7 @@
   %{
     cn_name: "盐水间歇泉",
     disease_amount: 0,
-    en_name: "salt _water _geyser",
+    en_name: "Salt Water Geyser",
     max_iteration_length: 1140,
     max_iteration_percent: 0.9,
     max_pressure: 500,
@@ -116,7 +116,7 @@
   %{
     cn_name: "小型火山",
     disease_amount: 0,
-    en_name: "minor _volcano",
+    en_name: "Minor Volcano",
     max_iteration_length: 12000,
     max_iteration_percent: 0.01,
     max_pressure: 150,
@@ -135,7 +135,7 @@
   %{
     cn_name: "火山",
     disease_amount: 0,
-    en_name: "volcano",
+    en_name: "Volcano",
     max_iteration_length: 12000,
     max_iteration_percent: 0.01,
     max_pressure: 150,
@@ -154,7 +154,7 @@
   %{
     cn_name: "二氧化碳间歇泉",
     disease_amount: 0,
-    en_name: "carbon _dioxide _geyser",
+    en_name: "Carbon Dioxide Geyser",
     max_iteration_length: 1140,
     max_iteration_percent: 0.9,
     max_pressure: 50,
@@ -173,7 +173,7 @@
   %{
     cn_name: "二氧化碳喷孔",
     disease_amount: 0,
-    en_name: "carbon _dioxide _vent",
+    en_name: "Carbon Dioxide Vent",
     max_iteration_length: 1140,
     max_iteration_percent: 0.9,
     max_pressure: 5,
@@ -192,7 +192,7 @@
   %{
     cn_name: "氢气喷孔",
     disease_amount: 0,
-    en_name: "hydrogen _vent",
+    en_name: "Hydrogen Vent",
     max_iteration_length: 1140,
     max_iteration_percent: 0.9,
     max_pressure: 5,
@@ -211,7 +211,7 @@
   %{
     cn_name: "高温污染氧喷孔",
     disease_amount: 0,
-    en_name: "hot _polluted _oxygen _vent",
+    en_name: "Hot Polluted Oxygen Vent",
     max_iteration_length: 1140,
     max_iteration_percent: 0.9,
     max_pressure: 5,
@@ -230,7 +230,7 @@
   %{
     cn_name: "菌染氧喷孔",
     disease_amount: 5000,
-    en_name: "infectious _polluted _oxygen _vent",
+    en_name: "Infectious Polluted Oxygen Vent",
     max_iteration_length: 1140,
     max_iteration_percent: 0.9,
     max_pressure: 5,
@@ -249,7 +249,7 @@
   %{
     cn_name: "氯气喷孔",
     disease_amount: 0,
-    en_name: "chlorine _gas _vent",
+    en_name: "Chlorine Gas Vent",
     max_iteration_length: 1140,
     max_iteration_percent: 0.9,
     max_pressure: 5,
@@ -268,7 +268,7 @@
   %{
     cn_name: "天然气间歇泉",
     disease_amount: 0,
-    en_name: "natural _gas _geyser",
+    en_name: "Natural Gas Geyser",
     max_iteration_length: 1140,
     max_iteration_percent: 0.9,
     max_pressure: 5,
@@ -287,7 +287,7 @@
   %{
     cn_name: "铜火山",
     disease_amount: 0,
-    en_name: "copper _volcano",
+    en_name: "Copper Volcano",
     max_iteration_length: 1080,
     max_iteration_percent: 0.1,
     max_pressure: 150,
@@ -306,7 +306,7 @@
   %{
     cn_name: "铁火山",
     disease_amount: 0,
-    en_name: "iron _volcano",
+    en_name: "Iron Volcano",
     max_iteration_length: 1080,
     max_iteration_percent: 0.1,
     max_pressure: 150,
@@ -325,7 +325,7 @@
   %{
     cn_name: "金火山",
     disease_amount: 0,
-    en_name: "gold _volcano",
+    en_name: "Gold Volcano",
     max_iteration_length: 1080,
     max_iteration_percent: 0.1,
     max_pressure: 150,
@@ -344,7 +344,7 @@
   %{
     cn_name: "漏油裂缝",
     disease_amount: 0,
-    en_name: "leaky _oil _fissure",
+    en_name: "Leaky Oil Fissure",
     max_iteration_length: 600,
     max_iteration_percent: 1,
     max_pressure: 50,
