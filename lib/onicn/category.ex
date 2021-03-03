@@ -7,6 +7,7 @@ defmodule Onicn.Category do
     Onicn.Categories.Critter,
     Onicn.Categories.Plant,
     Onicn.Categories.Food,
+    Onicn.Categories.Geyser,
     Onicn.Categories.Other
   ]
 

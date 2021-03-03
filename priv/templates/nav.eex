@@ -10,6 +10,6 @@
   <li class="layui-nav-item <%= if nav === "critter" do %>layui-this<% end %>"><a href="/critter/"><img src="/img/categories/critters.png"><span>动物</span></a></li>
   <li class="layui-nav-item <%= if nav === "plant" do %>layui-this<% end %>"><a href="/plant/"><img src="/img/categories/plants.png"><span>植物</span></a></li>
   <li class="layui-nav-item <%= if nav === "food" do %>layui-this<% end %>"><a href="/food/"><img src="/img/categories/food.png"><span>食物</span></a></li>
-  <li class="layui-nav-item gray"><a href="javascript:;"><img src="/img/categories/geysers.png"><span>间歇泉</span></a></li>
+  <li class="layui-nav-item <%= if nav === "geyser" do %>layui-this<% end %>"><a href="/geyser"><img src="/img/categories/geysers.png"><span>间歇泉</span></a></li>
   <li class="layui-nav-item gray"><a href="javascript:;"><img src="/img/categories/disease.png"><span>疾病</span></a></li>
 </ul>
