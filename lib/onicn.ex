@@ -31,12 +31,17 @@ defmodule Onicn do
       |> Path.join("home.eex")
       |> EEx.eval_file([])
 
+    footer =
+      temp_path
+      |> Path.join("footer.eex")
+      |> EEx.eval_file(edit_link: nil)
+
     script = ~s|layui.use('element', function() {});|
 
     page =
       temp_path
       |> Path.join("index.eex")
-      |> EEx.eval_file(nav: nav, container: container, script: script)
+      |> EEx.eval_file(nav: nav, container: container, footer: footer, script: script)
 
     page_path =
       :onicn

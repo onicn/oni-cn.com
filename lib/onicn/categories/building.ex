@@ -30,6 +30,11 @@ defmodule Onicn.Categories.Building do
           <img src="/img#{path}.png" style="height:16px;"> #{cn_name}
         </a>|
       end
+
+      def output(:edit_link) do
+        a = __attributes__()
+        "https://github.com/onicn/oni-cn.com/blob/main/lib/onicn/buildings/#{a[:name]}.ex"
+      end
     end
   end
 
@@ -148,12 +153,17 @@ defmodule Onicn.Categories.Building do
         <div class="layui-col-md4">#{attributes}</div>
       </div>|
 
+    footer =
+      temp_path
+      |> Path.join("footer.eex")
+      |> EEx.eval_file(edit_link: module.output(:edit_link))
+
     script = ~s|layui.use('element', function() {});|
 
     page =
       temp_path
       |> Path.join("index.eex")
-      |> EEx.eval_file(nav: nav, container: container, script: script)
+      |> EEx.eval_file(nav: nav, container: container, footer: footer, script: script)
 
     page_path =
       :onicn

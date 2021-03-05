@@ -96,7 +96,7 @@
       </div>
 
       <div class="layui-footer" style="left:0;text-align:center;z-index:1000000000">
-        <span><a href="https://www.klei.com/games/oxygen-not-included" target="_blank">Oxygen Not Included</a> Unofficial Wiki, Built by <a href="https://space.bilibili.com/18135979" target="_blank">程序喵喵喵</a></span> with <i class="layui-icon layui-icon-heart-fill"></i></span>
+        <%= footer %>
       </div>
     </div>
 

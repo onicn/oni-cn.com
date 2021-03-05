@@ -1,0 +1,3 @@
+<span>
+    <a href="https://www.klei.com/games/oxygen-not-included" target="_blank">Oxygen Not Included</a> Unofficial Wiki, Built by <a href="https://space.bilibili.com/18135979" target="_blank">程序喵喵喵</a></span> with <i class="layui-icon layui-icon-heart-fill"></i>. <%= unless is_nil(edit_link) do %> <a href="<%= edit_link %>" target="_blank">[编辑此页]</a> <% end %>
+</span>

@@ -43,7 +43,8 @@ defmodule Onicn.Categories.Element do
             |> Enum.find(fn e -> e["elementId"] === unquote(element_id) end)
             |> Onicn.Categories.Element.parse(unquote(category_fields))
             |> Keyword.merge(unquote(attributes))
-            |> Keyword.put(:nav, unquote(category_name))
+            |> Keyword.put(:name, Macro.underscore(unquote(element_id)))
+            |> Keyword.put(:category_name, unquote(category_name))
           end
 
           def output(:html_attributes) do
@@ -51,13 +52,18 @@ defmodule Onicn.Categories.Element do
           end
 
           def output(:link_name_icon) do
-            path = "/#{unquote(category_name)}/#{Macro.underscore(unquote(element_id))}"
+            a = __attributes__()
+            path = "/#{a[:category_name]}/#{a[:name]}"
 
             ~s|<a href="#{path}">
-              <img src="/img#{path}.png" style="weight:16px;height:16px;">#{
-              unquote(attributes[:cn_name])
-            }
+              <img src="/img#{path}.png" style="weight:16px;height:16px;">
+              #{a[:cn_name]}
             </a>|
+          end
+
+          def output(:edit_link) do
+            a = __attributes__()
+            "https://github.com/onicn/oni-cn.com/blob/main/lib/onicn/elements/#{a[:name]}.ex"
           end
         end
       end
@@ -226,8 +232,7 @@ defmodule Onicn.Categories.Element do
 
     name = element |> to_string() |> String.split(".") |> List.last() |> Macro.underscore()
 
-    category =
-      attributes[:nav] |> to_string() |> String.split(".") |> List.last() |> Macro.underscore()
+    category = attributes[:category_name]
 
     cn_name = attributes[:cn_name]
     img = "/img/#{category}/#{name}.png"
@@ -303,6 +308,11 @@ defmodule Onicn.Categories.Element do
       |> Path.join("nav.eex")
       |> EEx.eval_file(nav: category_name)
 
+    footer =
+      temp_path
+      |> Path.join("footer.eex")
+      |> EEx.eval_file(edit_link: element_module.output(:edit_link))
+
     contents = element_module.output(:html_content)
     attributes = element_module.output(:html_attributes)
 
@@ -317,7 +327,7 @@ defmodule Onicn.Categories.Element do
     page =
       temp_path
       |> Path.join("index.eex")
-      |> EEx.eval_file(nav: nav, container: container, script: script)
+      |> EEx.eval_file(nav: nav, container: container, footer: footer, script: script)
 
     page_path =
       :onicn
