@@ -80,21 +80,13 @@ defmodule Onicn.Recipe do
         requires =
           recipe
           |> Map.get(:require)
-          |> Enum.map(fn
-            %{material_id: {:egg, module}} -> module.output(:link_egg_name_icon)
-            %{material_id: {:seed, module}} -> module.output(:link_seed_name_icon)
-            %{material_id: module} -> module.output(:link_name_icon)
-          end)
+          |> Enum.map(&format/1)
           |> Enum.join("<br />")
 
         produces =
           recipe
           |> Map.get(:produce)
-          |> Enum.map(fn
-            %{material_id: {:egg, module}} -> module.output(:link_egg_name_icon)
-            %{material_id: {:seed, module}} -> module.output(:link_seed_name_icon)
-            %{material_id: module} -> module.output(:link_name_icon)
-          end)
+          |> Enum.map(&format/1)
           |> Enum.join("<br />")
 
         {building, requires, produces}
@@ -104,5 +96,28 @@ defmodule Onicn.Recipe do
     |> :code.priv_dir()
     |> Path.join("templates/recipe.eex")
     |> EEx.eval_file(recipes: recipes)
+  end
+
+  defp format(material) do
+    [:material_id, :rate, :min_temp]
+    |> Enum.map(fn key -> material |> Map.take([key]) |> do_format() end)
+    |> Enum.join()
+  end
+
+  defp do_format(%{material_id: {:egg, module}}), do: module.output(:link_egg_name_icon)
+  defp do_format(%{material_id: {:seed, module}}), do: module.output(:link_seed_name_icon)
+  defp do_format(%{material_id: module}), do: module.output(:link_name_icon)
+  defp do_format(%{min_temp: temp}), do: "（最低 #{number_to_string(temp)} °C）"
+  defp do_format(%{rate: rate}) when rate < 1, do: "#{number_to_string(rate * 1000)} g/s"
+  defp do_format(%{rate: rate}), do: "#{number_to_string(rate)} kg/s"
+  defp do_format(%{}), do: ""
+
+  defp number_to_string(number) when is_integer(number), do: number
+
+  defp number_to_string(number) when is_float(number) do
+    number
+    |> :erlang.float_to_binary(decimals: 2)
+    |> String.trim_trailing("0")
+    |> String.trim_trailing(".")
   end
 end
