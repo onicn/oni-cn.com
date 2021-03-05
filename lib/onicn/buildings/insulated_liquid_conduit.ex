@@ -9,6 +9,6 @@ defmodule Onicn.Buildings.InsulatedLiquidConduit do
 
   section "用途" do
     "保持管道内液体温度，避免热交换。"
-    "玻璃熔炉，金属精炼其和液温调节器附近的管道通常需要用隔热液体管道。"
+    "玻璃熔炉，金属精炼器和液温调节器附近的管道通常需要用隔热液体管道。"
   end
 end
