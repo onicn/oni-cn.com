@@ -16,6 +16,8 @@ defmodule Onicn.Categories.Building do
       def __attributes__ do
         Onicn.Categories.Building.__buildings__()
         |> Enum.find(fn building -> building[:tag] === unquote(name) end)
+        |> Enum.into([])
+        |> Keyword.put(:name, Macro.underscore(unquote(name)))
       end
 
       def output(:html_attributes) do
