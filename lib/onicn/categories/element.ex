@@ -339,7 +339,15 @@ defmodule Onicn.Categories.Element do
     File.write!(Path.join(page_path, "index.html"), page)
   end
 
+  defp floor(f, 0) do
+    f
+    |> :erlang.float_to_binary(decimals: 0)
+    |> :erlang.binary_to_integer()
+  end
+
   defp floor(f, decimals) do
-    :erlang.float_to_binary(f, decimals: decimals)
+    f
+    |> :erlang.float_to_binary(decimals: decimals)
+    |> :erlang.binary_to_float()
   end
 end
