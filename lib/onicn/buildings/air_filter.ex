@@ -6,7 +6,7 @@ defmodule Onicn.Buildings.AirFilter do
     "污染氧的作用范围是左右各三格，上下各两格（不含空气净化器本身格子）。"
     "污染氧中携带的黏液肺病菌大部分转移到产出的粘土中，少部分转移到产出的氧气中。这两者中黏液肺均不能存活，会快速死亡。"
     "需要放入过滤介质（沙子或浮土），产出粘土的温度是输入材料的温度。"
-    content "需要通电并消耗 5W 电力。", only: :spaced_out
+    content "[DLC]需要通电并消耗 5W 电力。", only: :spaced_out
   end
 
   section "用途" do
