@@ -1059,5 +1059,14 @@
         require: [%{material_id: Onicn.Elements.Water, rate: 1}]
       }
     ]
+  },
+  %{
+    name: Onicn.Buildings.FlushToilet,
+    recipes: [
+      %{
+        produce: [%{material_id: Onicn.Elements.DirtyWater, min_temp: 37, amount: 11.7}],
+        require: [%{material_id: Onicn.Elements.Water, amount: 5}]
+      }
+    ]
   }
 ]
