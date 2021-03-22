@@ -1,6 +1,6 @@
 defmodule Onicn.Buildings.SunLamp do
   use Onicn.Categories.Building
-  
+
   section "简介" do
     "日光灯是可以提供日光级别（40000 Lux）的光照度，主要用来提高沙滩椅的效果。"
   end

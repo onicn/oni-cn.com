@@ -12,5 +12,6 @@ defmodule Onicn.Buildings.FloorLamp do
     "光照可以提高藻类箱的制氧量。"
     content "[DLC]怕黑的小人睡觉时需要光照。", only: :spaced_out
   end
+
   # todo add an image of light
 end
