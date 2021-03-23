@@ -1,6 +1,6 @@
 defmodule Onicn.Buildings.SpaceHeater do
   use Onicn.Categories.Building
- 
+
   section "简介" do
     "空间加热器可以给周围环境升温，在环境到达 70 摄氏度时停止工作。"
   end
