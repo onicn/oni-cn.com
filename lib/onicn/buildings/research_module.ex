@@ -13,7 +13,7 @@ defmodule Onicn.Buildings.ResearchModule do
 
   section "小技巧" do
     "一个指挥舱+五个研究舱+任意引擎，是一个不错的配置组合："
-    
+
     """
     | 引擎类型            | 距离（千米） |
     | ------------------- | ------------ |
