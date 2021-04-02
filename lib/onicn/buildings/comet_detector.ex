@@ -8,7 +8,7 @@ defmodule Onicn.Buildings.CometDetector do
     "建造多个太空扫描仪（互相之间有一定距离）可以形成扫描网络增加扫描质量。"
   end
 
-  #todo add image
+  # todo add image
   section "小技巧" do
     "扫描质量不能提高到100％以上，但扫描网络可以。"
     "扫描网络质量为0％时，扫描仪会在传入对象1秒至200秒出现之前对其进行检测。"

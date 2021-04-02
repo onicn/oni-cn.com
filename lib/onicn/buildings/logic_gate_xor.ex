@@ -1,8 +1,10 @@
 defmodule Onicn.Buildings.LogicGateXOR do
   use Onicn.Categories.Building
+
   section "简介" do
     "异或门在两个输入信号颜色不同时输出绿色信号，其它情况输出红色信号。"
   end
+
   section "小技巧" do
     "可以与其它大多数建筑重叠建造。"
     "有一个没有输入输出的空格子可以自由通过其它自动化线。"

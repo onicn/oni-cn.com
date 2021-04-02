@@ -1,5 +1,6 @@
 defmodule Onicn.Buildings.LogicMemory do
   use Onicn.Categories.Building
+
   section "简介" do
     "锁存器有两个信号输入， S（Set）和 R（Reset），一个信号输出口。"
     "1. S口输入绿色信号，R口输入红色信号，锁存器开始输出绿色信号。"
@@ -8,6 +9,7 @@ defmodule Onicn.Buildings.LogicMemory do
     "4. S口输入红色信号，R口变为红色信号，锁存器依然输出红色信号。"
     "简而言之是S决定输出绿色信号的开始时间，R决定绿色信号的结束时间。"
   end
+
   section "小技巧" do
     "可以与其它大多数建筑重叠建造。"
     "有一个没有输入输出的空格子可以自由通过其它自动化线。"
