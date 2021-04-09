@@ -106,6 +106,7 @@ defmodule Onicn.Categories.Building do
       {"装饰度", "#{a[:base_decor]} (#{a[:base_decor_radius]} 格)"},
       {"占用空间", "宽 #{a[:width_in_cells]} 格，高 #{a[:height_in_cells]} 格"},
       {"建造时间", "#{a[:construction_time]} 秒"},
+      {"工业器械", (a[:is_industrial_machinery] && "是") || "否"},
       {"会被淹没", (a[:floodable] && "是") || "否"},
       {"会被掩埋", (a[:entombable] && "是") || "否"},
       {"会过热", (a[:overheatable] && "是") || "否"}
