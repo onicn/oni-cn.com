@@ -6,12 +6,11 @@ defmodule Onicn.Buildings.FloorLamp do
   end
 
   section "用途" do
+    image("floor_lamp_light_range.webp", align: :right, width: 200, height: 200)
     "光照可以增加复制人 15% 操作速度。"
     "种植毛刺花需要光照。"
     "沙滩椅需要光照。"
     "光照可以提高藻类箱的制氧量。"
     content "[DLC]怕黑的小人睡觉时需要光照。", only: :spaced_out
   end
-
-  # todo add an image of light
 end

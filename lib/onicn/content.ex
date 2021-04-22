@@ -74,34 +74,51 @@ defmodule Onicn.Content do
         {:content, _, [content]} ->
           {:content, content, default_options}
 
+        {:image, _, [path, options]} ->
+          {:image, image_block(path, options), Keyword.merge(default_options, options)}
+
         content ->
           {:content, content, default_options}
       end)
-      |> Enum.map(fn {:content, content, options} ->
-        content =
-          content
-          |> Code.eval_quoted()
-          |> elem(0)
+      |> Enum.map(fn
+        {:content, content, options} ->
+          content =
+            content
+            |> Code.eval_quoted()
+            |> elem(0)
 
-        content =
-          content
-          |> String.split("\n", trim: true)
-          |> Enum.all?(fn line ->
-            line = String.trim(line)
-            String.starts_with?(line, "|") && String.ends_with?(line, "|")
-          end)
-          |> case do
-            true -> Enum.join([content, "{: .layui-table}"], "\n")
-            false -> content
-          end
+          content =
+            content
+            |> String.split("\n", trim: true)
+            |> Enum.all?(fn line ->
+              line = String.trim(line)
+              String.starts_with?(line, "|") && String.ends_with?(line, "|")
+            end)
+            |> case do
+              true -> Enum.join([content, "{: .layui-table}"], "\n")
+              false -> content
+            end
 
-        {:content, content, options}
+          {:content, content, options}
+
+        other ->
+          other
       end)
       |> Macro.escape()
 
     quote do
       @sections {unquote(section_name), unquote(contents)}
     end
+  end
+
+  defp image_block(path, options) do
+    html_options =
+      options
+      |> Keyword.take([:align, :width, :height])
+      |> Enum.map(fn {k, v} -> ~s|#{k}="#{v}"| end)
+      |> Enum.join(" ")
+
+    ~s|<img #{html_options} src="/content_images/#{path}">|
   end
 
   def output(:html_content, item_module, sections) do
