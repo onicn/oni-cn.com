@@ -3,17 +3,23 @@
     <legend><%= cn_name %></legend>
   </fieldset>
 
-  <%= for {:content, content, options} <- contents do %>
-    <% content = options[:markdown] && Earmark.as_html!(content) || content %>
-    <% content = options[:link_name_icon] && Onicn.Item.replace_link(content, escape) || content %>
+  <%= for {content_tupe, content, options} <- contents do %>
+    <%= if content_tupe === :content do %>
+      <% content = options[:markdown] && Earmark.as_html!(content) || content %>
+      <% content = options[:link_name_icon] && Onicn.Item.replace_link(content, escape) || content %>
 
-    <div class="layui-text" style="margin: 5px 5px">
+      <div class="layui-text" style="margin: 5px 5px">
 
-      <%= if options |> Keyword.get(:tag) |> is_nil do %>
-        <%= content %>
-      <% else %>
-          <span class="layui-badge layui-bg-blue"><%= options[:tag] %></span> <%= content %>
-      <% end %>
-    </div>
+        <%= if options |> Keyword.get(:tag) |> is_nil do %>
+          <%= content %>
+        <% else %>
+            <span class="layui-badge layui-bg-blue"><%= options[:tag] %></span> <%= content %>
+        <% end %>
+      </div>
+    <% end %>
+
+    <%= if content_tupe === :image do %>
+      <%= content %>
+    <% end %>
   <% end %>
 <% end %>
