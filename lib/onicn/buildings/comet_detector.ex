@@ -10,6 +10,7 @@ defmodule Onicn.Buildings.CometDetector do
 
   # todo add image
   section "小技巧" do
+    image("comet_detector_range.png", align: :right, width: 300, height: 300)
     "扫描质量不能提高到100％以上，但扫描网络可以。"
     "扫描网络质量为0％时，扫描仪会在传入对象1秒至200秒出现之前对其进行检测。"
     "扫描网络质量为100％或更高时，扫描仪将始终提前200秒检测到传入的对象。"
