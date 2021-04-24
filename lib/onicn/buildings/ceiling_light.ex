@@ -6,6 +6,7 @@ defmodule Onicn.Buildings.CeilingLight do
   end
 
   section "用途" do
+    image("ceiling_light_range.png", align: :right, width: 300, height: 300)
     "光照可以增加复制人 15% 操作速度。"
     "种植毛刺花需要光照。"
     "沙滩椅需要光照。"
