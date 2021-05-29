@@ -105,7 +105,7 @@ defmodule Onicn.Categories.Plant do
     unquote(properties)
   end
 
-  def __name__, do: "plants"
+  def __name__, do: "plant"
   def __cn_name__, do: "植物"
 
   def __plants__ do
