@@ -34,7 +34,8 @@ defmodule Onicn.Category do
     @category_modules
     |> List.delete(Onicn.Categories.Other)
     |> Enum.each(fn module ->
-      name = module |> to_string() |> String.split(".") |> List.last() |> Macro.underscore()
+      name = module.__name__()
+      cn_name = module.__cn_name__()
       %{container: container, script: script} = module.output(:html_body)
 
       nav =
@@ -50,7 +51,13 @@ defmodule Onicn.Category do
       page =
         temp_path
         |> Path.join("index.eex")
-        |> EEx.eval_file(nav: nav, container: container, footer: footer, script: script)
+        |> EEx.eval_file(
+          title: cn_name,
+          nav: nav,
+          container: container,
+          footer: footer,
+          script: script
+        )
 
       page_path =
         :onicn

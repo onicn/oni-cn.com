@@ -83,6 +83,9 @@ defmodule Onicn.Categories.Geyser do
     unquote(properties)
   end
 
+  def __name__, do: "geyser"
+  def __cn_name__, do: "间歇泉"
+
   def __geysers__ do
     @geysers
   end
@@ -95,6 +98,7 @@ defmodule Onicn.Categories.Geyser do
 
   def do_generate_page(module) do
     name = module |> to_string() |> String.split(".") |> List.last() |> Macro.underscore()
+    cn_name = module.__attributes__()[:cn_name]
 
     temp_path =
       :onicn
@@ -109,11 +113,12 @@ defmodule Onicn.Categories.Geyser do
     contents = module.output(:html_content)
     attributes = module.output(:html_attributes)
 
-    container = ~s|
+    container = ~s"""
       <div class="layui-row layui-col-space30">
         <div class="layui-col-md8">#{contents}</div>
         <div class="layui-col-md4">#{attributes}</div>
-      </div>|
+      </div>
+    """
 
     footer =
       temp_path
@@ -125,7 +130,13 @@ defmodule Onicn.Categories.Geyser do
     page =
       temp_path
       |> Path.join("index.eex")
-      |> EEx.eval_file(nav: nav, container: container, footer: footer, script: script)
+      |> EEx.eval_file(
+        title: cn_name,
+        nav: nav,
+        container: container,
+        footer: footer,
+        script: script
+      )
 
     page_path =
       :onicn
@@ -138,12 +149,13 @@ defmodule Onicn.Categories.Geyser do
   end
 
   def output(:html_body) do
-    container = ~s|
+    container = ~s"""
       <div class="layui-row">
         <div class="layui-col-md12">
           <table id="geyser" lay-filter=""></table>
         </div>
-      </div>|
+      </div>
+    """
 
     cols =
       Jason.encode!([

@@ -83,22 +83,24 @@ defmodule Onicn.Categories.Critter do
           def output(:link_name_icon) do
             a = __attributes__()
 
-            ~s|<a href="/critters/#{a[:species]}">
+            ~s"""
+            <a href="/critters/#{a[:species]}">
               <img src="/img/critters/#{a[:name]}.png" style="weight:16px;height:16px;">
               #{a[:cn_name]}
-              </a>
-            |
+            </a>
+            """
           end
 
           def output(:link_baby_name_icon) do
             a = __attributes__()
 
             if a[:baby] do
-              ~s|<a href="/critters/#{a[:species]}">
+              ~s"""
+              <a href="/critters/#{a[:species]}">
                 <img src="/img/critters/#{a[:baby]}.png" style="weight:16px;height:16px;">
                 #{a[:baby_cn_name]}
-                </a>
-              |
+              </a>
+              """
             end
           end
 
@@ -106,14 +108,21 @@ defmodule Onicn.Categories.Critter do
             a = __attributes__()
 
             if a[:egg] do
-              ~s|<a href="/critters/#{a[:species]}">
+              ~s"""
+              <a href="/critters/#{a[:species]}">
                 <img src="/img/critters/#{a[:egg]}.png" style="weight:16px;height:16px;">
                 #{a[:egg_cn_name]}
-                </a>
-              |
+              </a>
+              """
             end
           end
         end
+      end
+
+      def __attributes__ do
+        unquote(critters)
+        |> List.first()
+        |> Kernel.then(fn module -> module.__attributes__() end)
       end
 
       def __critters__ do
@@ -126,6 +135,9 @@ defmodule Onicn.Categories.Critter do
       end
     end
   end
+
+  def __name__, do: "critter"
+  def __cn_name__, do: "动物"
 
   def __species__ do
     @species
@@ -151,6 +163,7 @@ defmodule Onicn.Categories.Critter do
 
   def do_generate_page(module) do
     name = module |> to_string() |> String.split(".") |> List.last() |> Macro.underscore()
+    cn_name = module.__attributes__()[:cn_name]
 
     temp_path =
       :onicn
@@ -187,7 +200,13 @@ defmodule Onicn.Categories.Critter do
     page =
       temp_path
       |> Path.join("index.eex")
-      |> EEx.eval_file(nav: nav, container: container, footer: footer, script: script)
+      |> EEx.eval_file(
+        title: cn_name,
+        nav: nav,
+        container: container,
+        footer: footer,
+        script: script
+      )
 
     page_path =
       :onicn

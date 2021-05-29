@@ -76,6 +76,7 @@ defmodule Onicn.Categories.Other do
 
   def do_generate_page(module) do
     name = module |> to_string() |> String.split(".") |> List.last() |> Macro.underscore()
+    cn_name = module.__attributes__()[:cn_name]
 
     temp_path =
       :onicn
@@ -90,11 +91,12 @@ defmodule Onicn.Categories.Other do
     contents = ""
     attributes = module.output(:html_attributes)
 
-    container = ~s|
+    container = ~s"""
       <div class="layui-row layui-col-space30">
         <div class="layui-col-md8">#{contents}</div>
         <div class="layui-col-md4">#{attributes}</div>
-      </div>|
+      </div>
+    """
 
     footer =
       temp_path
@@ -106,7 +108,13 @@ defmodule Onicn.Categories.Other do
     page =
       temp_path
       |> Path.join("index.eex")
-      |> EEx.eval_file(nav: nav, container: container, footer: footer, script: script)
+      |> EEx.eval_file(
+        title: cn_name,
+        nav: nav,
+        container: container,
+        footer: footer,
+        script: script
+      )
 
     page_path =
       :onicn

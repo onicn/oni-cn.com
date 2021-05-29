@@ -68,6 +68,14 @@ defmodule Onicn.Categories.Element do
         end
       end
 
+      def __name__ do
+        unquote(name)
+      end
+
+      def __cn_name__ do
+        unquote(cn_name)
+      end
+
       def __fields__ do
         unquote(fields)
       end
@@ -229,7 +237,6 @@ defmodule Onicn.Categories.Element do
 
   def output(:html_attributes, element) do
     attributes = element.__attributes__()
-
     name = element |> to_string() |> String.split(".") |> List.last() |> Macro.underscore()
 
     category = attributes[:category_name]
@@ -297,6 +304,7 @@ defmodule Onicn.Categories.Element do
 
   def generate_page(element_module, category_name) do
     name = element_module |> to_string() |> String.split(".") |> List.last() |> Macro.underscore()
+    cn_name = element_module.__attributes__()[:cn_name]
 
     temp_path =
       :onicn
@@ -316,18 +324,25 @@ defmodule Onicn.Categories.Element do
     contents = element_module.output(:html_content)
     attributes = element_module.output(:html_attributes)
 
-    container = ~s|
+    container = ~s"""
       <div class="layui-row layui-col-space30">
         <div class="layui-col-md8">#{contents}</div>
         <div class="layui-col-md4">#{attributes}</div>
-      </div>|
+      </div>
+    """
 
     script = ~s|layui.use('element', function() {});|
 
     page =
       temp_path
       |> Path.join("index.eex")
-      |> EEx.eval_file(nav: nav, container: container, footer: footer, script: script)
+      |> EEx.eval_file(
+        title: cn_name,
+        nav: nav,
+        container: container,
+        footer: footer,
+        script: script
+      )
 
     page_path =
       :onicn

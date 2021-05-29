@@ -41,7 +41,13 @@ defmodule Onicn do
     page =
       temp_path
       |> Path.join("index.eex")
-      |> EEx.eval_file(nav: nav, container: container, footer: footer, script: script)
+      |> EEx.eval_file(
+        title: "首页",
+        nav: nav,
+        container: container,
+        footer: footer,
+        script: script
+      )
 
     page_path =
       :onicn

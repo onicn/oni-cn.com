@@ -77,6 +77,9 @@ defmodule Onicn.Categories.Building do
     |> Enum.reject(&is_nil/1)
   end
 
+  def __name__, do: "building"
+  def __cn_name__, do: "建筑"
+
   def output(:html_body) do
     buildings = Enum.group_by(__buildings__(), &Map.get(&1, :category))
 
@@ -135,7 +138,8 @@ defmodule Onicn.Categories.Building do
   end
 
   defp do_generate_page(module) do
-    name = Macro.underscore(module.__attributes__()[:tag])
+    name = module |> to_string() |> String.split(".") |> List.last() |> Macro.underscore()
+    cn_name = module.__attributes__()[:cn_name]
 
     temp_path =
       :onicn
@@ -150,11 +154,12 @@ defmodule Onicn.Categories.Building do
     contents = module.output(:html_content)
     attributes = module.output(:html_attributes)
 
-    container = ~s|
+    container = ~s"""
       <div class="layui-row layui-col-space30">
         <div class="layui-col-md8">#{contents}</div>
         <div class="layui-col-md4">#{attributes}</div>
-      </div>|
+      </div>
+    """
 
     footer =
       temp_path
@@ -166,7 +171,13 @@ defmodule Onicn.Categories.Building do
     page =
       temp_path
       |> Path.join("index.eex")
-      |> EEx.eval_file(nav: nav, container: container, footer: footer, script: script)
+      |> EEx.eval_file(
+        title: cn_name,
+        nav: nav,
+        container: container,
+        footer: footer,
+        script: script
+      )
 
     page_path =
       :onicn

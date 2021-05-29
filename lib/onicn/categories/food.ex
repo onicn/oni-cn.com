@@ -95,6 +95,9 @@ defmodule Onicn.Categories.Food do
     unquote(properties)
   end
 
+  def __name__, do: "food"
+  def __cn_name__, do: "食物"
+
   def __foods__ do
     @foods
   end
@@ -107,6 +110,7 @@ defmodule Onicn.Categories.Food do
 
   def do_generate_page(module) do
     name = module |> to_string() |> String.split(".") |> List.last() |> Macro.underscore()
+    cn_name = module.__attributes__()[:cn_name]
 
     temp_path =
       :onicn
@@ -137,7 +141,13 @@ defmodule Onicn.Categories.Food do
     page =
       temp_path
       |> Path.join("index.eex")
-      |> EEx.eval_file(nav: nav, container: container, footer: footer, script: script)
+      |> EEx.eval_file(
+        title: cn_name,
+        nav: nav,
+        container: container,
+        footer: footer,
+        script: script
+      )
 
     page_path =
       :onicn
