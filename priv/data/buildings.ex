@@ -4659,5 +4659,23 @@
     power_consume: 480,
     tag: "Desalinator",
     width_in_cells: 4
+  },
+  %{
+    base_decor: 5,
+    base_decor_radius: 1,
+    breakable: false,
+    category: :base,
+    cn_name: "砖块",
+    construction_time: 3,
+    en_name: "Tile",
+    entombable: false,
+    floodable: false,
+    height_in_cells: 1,
+    is_industrial_machinery: true,
+    materials: ["BuildableRaw"],
+    overheat_temperature: 348.15,
+    overheatable: false,
+    tag: "Tile",
+    width_in_cells: 1
   }
 ]
