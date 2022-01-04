@@ -41,6 +41,7 @@ defmodule Onicn.Categories.Critter do
 
   defmacro __using__(critters) do
     quote do
+      use Onicn.Content
       defmacro __using__(attributes) do
         species =
           __MODULE__ |> to_string() |> String.split(".") |> List.last() |> Macro.underscore()
@@ -61,18 +62,26 @@ defmodule Onicn.Categories.Critter do
             |> Keyword.merge(properties)
           end
 
-          def output(:html_attributes) do
+          defp append_data_if_no_key(properties, a, data, key, data_item) do
+            if Keyword.has_key?(properties, key) or !Keyword.has_key?(a, key), do: data, else: data ++ [data_item]
+          end
+
+          def output(:html_attributes, common_properties) do
             icon = ~s|<i class="layui-icon layui-icon-subtraction"></i>|
             a = __attributes__()
             img = "/img/critters/#{a[:name]}.png"
-
-            data = [
-              {"生命值", a[:hp]},
-              {"寿命", "#{a[:age_max]} 周期"},
-              {"存活温度",
-               "#{a[:temperature_min_liveable]} #{icon} #{a[:temperature_max_liveable]} °C"},
-              {"舒适温度", "#{a[:temperature_min_comfort]} #{icon} #{a[:temperature_max_comfort]} °C"}
-            ]
+            
+            data = append_data_if_no_key(common_properties, a, [], :hp, {"生命值", a[:hp]})
+            data = append_data_if_no_key(common_properties, a, data, :age_max, {"寿命", "#{a[:age_max]} 周期"})
+            data = append_data_if_no_key(common_properties, a, data, :temperature_min_liveable, {"存活温度", "#{a[:temperature_min_liveable]} #{icon} #{a[:temperature_max_liveable]} °C"})
+            data = append_data_if_no_key(common_properties, a, data, :temperature_min_comfort, {"舒适温度", "#{a[:temperature_min_comfort]} #{icon} #{a[:temperature_max_comfort]} °C"})
+            data = append_data_if_no_key(common_properties, a, data, :space_required, {"需求空间", "#{a[:space_required]}"})
+            data = append_data_if_no_key(common_properties, a, data, :decor, {"装饰度", "#{a[:decor]}（#{a[:decor_radius]}格）"})
+            data = append_data_if_no_key(common_properties, a, data, :death_drop_item, {"死亡掉落", "#{a[:death_drop_item]} #{a[:death_drop_item_amount]} 千克"})
+            data = append_data_if_no_key(common_properties, a, data, :base_incubation_rate_per_cycle, {"自然孵化时长", "#{a[:base_incubation_rate_per_cycle]} 周期"})
+            data = append_data_if_no_key(common_properties, a, data, :base_lay_egg_cycles, {"产蛋周期", "#{a[:base_lay_egg_cycles]} 周期"})
+            data = append_data_if_no_key(common_properties, a, data, :k_calories_per_cycle, {"每周期消耗卡路里", "#{a[:k_calories_per_cycle]}"})
+            data = append_data_if_no_key(common_properties, a, data, :k_calories_stomach_size, {"最大卡路里", "#{a[:k_calories_stomach_size]}"})
 
             :onicn
             |> :code.priv_dir()
@@ -133,6 +142,37 @@ defmodule Onicn.Categories.Critter do
         name = __MODULE__ |> to_string() |> String.split(".") |> List.last() |> Macro.underscore()
         "https://github.com/onicn/oni-cn.com/blob/main/lib/onicn/critters/#{name}.ex"
       end
+
+      defp append_data_if_has_key(properties, data, key, data_item) do
+        if Keyword.has_key?(properties, key), do: data ++ [data_item], else: data
+      end
+      
+      def output(:html_attributes, a) do
+        if Enum.count(a) == 0 do
+            ""
+        else
+            icon = ~s|<i class="layui-icon layui-icon-subtraction"></i>|
+            img = ""
+            data = append_data_if_has_key(a, [], :hp, {"生命值", a[:hp]})
+            data = append_data_if_has_key(a, data, :age_max, {"寿命", "#{a[:age_max]} 周期"})
+            data = append_data_if_has_key(a, data, :temperature_min_liveable, {"存活温度", "#{a[:temperature_min_liveable]} #{icon} #{a[:temperature_max_liveable]} °C"})
+            data = append_data_if_has_key(a, data, :temperature_min_comfort, {"舒适温度", "#{a[:temperature_min_comfort]} #{icon} #{a[:temperature_max_comfort]} °C"})
+            data = append_data_if_has_key(a, data, :space_required, {"需求空间", "#{a[:space_required]}"})
+            data = append_data_if_has_key(a, data, :decor, {"装饰度", "#{a[:decor]}（#{a[:decor_radius]}格）"})
+            data = append_data_if_has_key(a, data, :death_drop_item, {"死亡掉落", "#{a[:death_drop_item]} #{a[:death_drop_item_amount]} 千克"})
+            data = append_data_if_has_key(a, data, :base_incubation_rate_per_cycle, {"自然孵化时长", "#{a[:base_incubation_rate_per_cycle]} 周期"})
+            data = append_data_if_has_key(a, data, :base_lay_egg_cycles, {"产蛋周期", "#{a[:base_lay_egg_cycles]} 周期"})
+            data = append_data_if_has_key(a, data, :k_calories_per_cycle, {"每周期消耗卡路里", "#{a[:k_calories_per_cycle]}"})
+            data = append_data_if_has_key(a, data, :k_calories_stomach_size, {"最大卡路里", "#{a[:k_calories_stomach_size]}"})
+    
+            result = :onicn
+            |> :code.priv_dir()
+            |> Path.join("templates/attributes.eex")
+            |> EEx.eval_file(name: "共同属性", img: img, data: data)
+    
+            String.replace(result, ~s|<img src="" style="text-align: center">|, "")
+        end
+      end
     end
   end
 
@@ -161,6 +201,37 @@ defmodule Onicn.Categories.Critter do
     |> Enum.each(&Task.await(&1, :infinity))
   end
 
+  def delete_if_not_both_exist(a, key1, key2) do
+    if Keyword.has_key?(a, key1) != Keyword.has_key?(a, key2) do
+        a |> Keyword.delete(key1) |> Keyword.delete(key2)
+    else
+        a
+    end
+  end
+
+  def get_common_attributes(module) do
+    if Enum.count(module.__critters__()) == 1 do
+        []
+    else
+        properties = module.__critters__() |> Enum.map(fn critter ->
+            critter |> to_string() |> String.split(".") |> List.last() |> Macro.underscore()
+          end) |> Enum.map(fn critter ->
+            Onicn.Categories.Critter.__properties__() |> Enum.find(fn attribute -> attribute[:name] == critter end)
+        end)
+        
+        a = List.first(properties) |> Enum.filter(fn property ->
+            {k, v} = property
+            Enum.all?(properties, fn critter_properties ->
+                Map.has_key?(critter_properties, k) and critter_properties[k] == v
+            end)
+        end)
+    
+        a = delete_if_not_both_exist(a, :decor, :decor_radius)
+        a = delete_if_not_both_exist(a, :temperature_min_liveable, :temperature_max_liveable)
+        delete_if_not_both_exist(a, :temperature_min_comfort, :temperature_max_comfort)
+    end
+  end
+
   def do_generate_page(module) do
     name = module |> to_string() |> String.split(".") |> List.last() |> Macro.underscore()
     cn_name = module.__attributes__()[:cn_name]
@@ -175,14 +246,17 @@ defmodule Onicn.Categories.Critter do
       |> Path.join("nav.eex")
       |> EEx.eval_file(nav: "critter")
 
-    contents = ""
+    contents = module.output(:html_content)
 
-    attributes =
-      module.__critters__()
+    common_attributes = get_common_attributes(module)
+    attributes = module.output(:html_attributes, common_attributes)
+
+    attributes = attributes <>
+      (module.__critters__()
       |> Enum.map(fn critter ->
-        critter.output(:html_attributes)
+        critter.output(:html_attributes, common_attributes)
       end)
-      |> Enum.join()
+      |> Enum.join())
 
     container = ~s|
       <div class="layui-row layui-col-space30">
