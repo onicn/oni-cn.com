@@ -16,7 +16,6 @@ defmodule HatchSpecies do
     "哈奇在液体中会淹死。"
     "所有种类的成年哈奇在受到攻击时会进行反击而小哈奇则不会。"
   end
-
 end
 
 defmodule HatchSpecies.Hatch do
