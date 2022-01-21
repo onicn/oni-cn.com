@@ -47,11 +47,22 @@ defmodule Onicn.Categories.Plant do
         a = __attributes__()
         img = "/img/plants/#{a[:name]}.png"
 
-        data = [
-          {"装饰度", "#{a[:decor]}（#{a[:decor_radius]}格）"},
-          {"生长周期", a[:life_cycle_second] / 600},
-          {"温度范围", "#{a[:min_temp]} #{icon} #{a[:max_temp]} °C"}
-        ]
+        data =
+          [
+            decor: {"装饰度", "#{a[:decor]}（#{a[:decor_radius]}格）"},
+            max_cycles: {"生长周期", a[:max_cycles]},
+            min_temp: {"温度范围", "#{a[:min_temp]} #{icon} #{a[:max_temp]} °C"},
+            pressure_warning_low:
+              {"气压范围", "#{a[:pressure_warning_low]} #{icon} #{a[:pressure_warning_high]} 千克"},
+            produce_crop_cn: {"产出", a[:produce_crop_cn]},
+            produce_crop_num: {"产量", a[:produce_crop_num]},
+            seed_cn: {"种子", a[:seed_cn]},
+            can_drown: {"会溺死", (a[:can_drown] && "是") || "否"},
+            can_tinker: {"农业种植", (a[:can_tinker] && "是") || "否"},
+            hanging: {"倒挂生长", (a[:hanging] && "是") || "否"}
+          ]
+          |> Enum.filter(fn {key, _value} -> Keyword.has_key?(a, key) end)
+          |> Enum.map(fn {_key, value} -> value end)
 
         :onicn
         |> :code.priv_dir()
@@ -78,7 +89,7 @@ defmodule Onicn.Categories.Plant do
           seed when is_binary(seed) ->
             ~s|<a href="/plants/#{a[:name]}">
               <img src="/img/plants/#{a[:seed]}.png" style="weight:16px;height:16px;">
-              #{a[:seed_cn_name]}
+              #{a[:seed_cn]}
             </a>|
 
           seed when is_atom(seed) ->
@@ -183,7 +194,7 @@ defmodule Onicn.Categories.Plant do
       Jason.encode!([
         %{field: "cn_name", title: "名称"},
         %{field: "seed", title: "种子"},
-        %{field: "life_cycle", title: "种植生长周期"},
+        %{field: "max_cycles", title: "种植生长周期"},
         %{field: "temperature", title: "温度范围（°C）"}
       ])
 
@@ -214,7 +225,7 @@ defmodule Onicn.Categories.Plant do
       %{
         cn_name: module.output(:link_name_icon),
         seed: module.output(:link_seed_name_icon),
-        life_cycle: (a[:life_cycle_second] === 0 && "") || a[:life_cycle_second] / 600,
+        max_cycles: (Keyword.has_key?(a, :max_cycles) && a[:max_cycles]) || "",
         temperature: "#{a[:min_temp]} #{icon} #{a[:max_temp]}"
       }
     end)
