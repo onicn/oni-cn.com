@@ -137,11 +137,7 @@ defmodule Onicn.Categories.Critter do
         end
       end
 
-      def __attributes__ do
-        unquote(critters)
-        |> List.first()
-        |> Kernel.then(fn module -> module.__attributes__() end)
-      end
+      def __attributes__, do: []
 
       def __critters__ do
         unquote(critters)
