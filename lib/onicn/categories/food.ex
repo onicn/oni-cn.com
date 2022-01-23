@@ -56,10 +56,25 @@ defmodule Onicn.Categories.Food do
         a = __attributes__()
         img = "/img/foods/#{a[:name]}.png"
 
-        data = [
-          {"卡路里", "#{div(a[:calories_per_unit], 1000)} 千卡"},
-          {"品质", a[:quality]}
-        ]
+        q = ["恶心", "糟糕", "低劣", "标准", "良好", "优秀", "杰出", "极佳"]
+
+        data =
+          [
+            calories: {"卡路里", "#{a[:calories]} 千卡"},
+            quality: {"品质", "#{Enum.at(q, a[:quality] + 1)}（#{a[:quality]}）"},
+            stale_time: {"腐败时间", "#{a[:stale_time]} 周期"},
+            rot_temperature: {"腐败减缓(0.2x)", "< #{a[:rot_temperature]} °C"},
+            preserve_temperature: {"停止腐败", "< #{a[:preserve_temperature]} °C"}
+          ]
+          |> Enum.filter(fn {key, _value} -> Keyword.has_key?(a, key) end)
+          |> Enum.map(fn {_key, value} -> value end)
+
+        data =
+          if Keyword.has_key?(a, :stale_time) do
+            data
+          else
+            data ++ {"腐败时间", "不腐败"}
+          end
 
         :onicn
         |> :code.priv_dir()
@@ -170,8 +185,9 @@ defmodule Onicn.Categories.Food do
     cols =
       Jason.encode!([
         %{field: "cn_name", title: "名称"},
-        %{field: "calories", title: "卡路里（千卡）"},
-        %{field: "quality", title: "品质"}
+        %{field: "calories", title: "卡路里（千卡）", sort: true},
+        %{field: "quality", title: "品质", sort: true},
+        %{field: "stale_time", title: "腐败时间（周期）", sort: true}
       ])
 
     script = ~s|
@@ -198,8 +214,9 @@ defmodule Onicn.Categories.Food do
 
       %{
         cn_name: module.output(:link_name_icon),
-        calories: (a[:calories_per_unit] === 0 && "") || div(a[:calories_per_unit], 1000),
-        quality: a[:quality]
+        calories: (a[:calories] === 0 && "") || a[:calories],
+        quality: a[:quality],
+        stale_time: a[:stale_time]
       }
     end)
   end
