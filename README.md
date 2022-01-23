@@ -1,7 +1,10 @@
 # Onicn
 On MacOS:
+
 mix deps.get
+
 mix compile
+
 mix onicn.generate
 
 **TODO: Add description**
