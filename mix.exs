@@ -22,7 +22,8 @@ defmodule Onicn.MixProject do
     [
       {:jason, "~> 1.2"},
       {:yaml_elixir, "~> 2.5"},
-      {:earmark, "~> 1.4"}
+      {:earmark, "~> 1.4"},
+      {:plug_cowboy, "~> 2.5"}
     ]
   end
 end
