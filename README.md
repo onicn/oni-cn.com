@@ -20,7 +20,7 @@ iex(1)>
 
 ## 安装依赖
 
-运行如下命令安装依赖环境，第一次运行时，根据提示手动输入 `y` 安装包管理器。
+运行如下命令安装依赖环境，第一次运行时，根据提示手动输入 `y⏎` 安装包管理器。
 
 ```bash
 mix deps.get
@@ -49,5 +49,5 @@ mix onicn.generate
 
 
 ```bash
-mix onicn.generate
+mix onicn.server
 ```
