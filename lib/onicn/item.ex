@@ -5,7 +5,12 @@ defmodule Onicn.Item do
     "溺水",
     "被水淹没",
     "离水之鱼",
-    "金属"
+    "水域",
+    "水温",
+    "水中",
+    "水下",
+    "金属",
+    "眼冒金星"
   ]
 
   def replace_link(string, escape) do
