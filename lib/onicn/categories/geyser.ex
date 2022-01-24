@@ -40,13 +40,32 @@ defmodule Onicn.Categories.Geyser do
         |> Keyword.merge(properties)
       end
 
+      def to_percentage(number) do
+        percent = number * 100.0
+
+        if Float.floor(percent) == percent do
+          (percent |> floor |> Integer.to_string()) <> "%"
+        else
+          ((number * 100.0) |> Float.round(1) |> Float.to_string()) <> "%"
+        end
+      end
+
       def output(:html_attributes) do
         a = __attributes__()
         img = "/img/geysers/#{a[:name]}.png"
+        icon = ~s|<i class="layui-icon layui-icon-subtraction"></i>|
+        produce_module = Module.concat(Onicn.Elements, Macro.camelize(a[:produced_element]))
 
         data = [
-          {"产物", a[:produced_element].output(:link_name_icon)},
-          {"温度", "#{a[:temperature]} °C"}
+          {"产物", produce_module.output(:link_name_icon)},
+          {"温度", "#{a[:temperature]} °C"},
+          {"平均产率", "#{a[:min_rate_per_cycle]} #{icon} #{a[:max_rate_per_cycle]} 千克/周期"},
+          {"喷发期时长", "#{a[:min_iteration_length]} #{icon} #{a[:max_iteration_length]} 秒"},
+          {"喷发期占比",
+           "#{to_percentage(a[:min_iteration_percent])} #{icon} #{to_percentage(a[:max_iteration_percent])} "},
+          {"活跃期时长", "#{a[:min_year_length]} #{icon} #{a[:max_year_length]} 周期"},
+          {"活跃期占比",
+           "#{to_percentage(a[:min_year_percent])} #{icon} #{to_percentage(a[:max_year_percent])} "}
         ]
 
         :onicn
@@ -161,7 +180,11 @@ defmodule Onicn.Categories.Geyser do
       Jason.encode!([
         %{field: "cn_name", title: "名称"},
         %{field: "produced_element", title: "产物"},
-        %{field: "temperature", title: "温度（°C）"}
+        %{field: "temperature", title: "温度（°C）"},
+        %{field: "rate_per_cycle", title: "平均产率（千克/周期）"},
+        %{field: "iteration_length", title: "喷发期时长（秒）"},
+        %{field: "iteration_percent", title: "喷发期占比"},
+        %{field: "year_length", title: "活跃期时长（周期）"}
       ])
 
     script = ~s|
@@ -185,11 +208,18 @@ defmodule Onicn.Categories.Geyser do
   def output(:json_elements) do
     Enum.map(@geysers, fn module ->
       a = module.__attributes__()
+      produce_module = Module.concat(Onicn.Elements, Macro.camelize(a[:produced_element]))
+      icon = ~s|<i class="layui-icon layui-icon-subtraction"></i>|
 
       %{
         cn_name: module.output(:link_name_icon),
-        produced_element: a[:produced_element].output(:link_name_icon),
-        temperature: a[:temperature]
+        produced_element: produce_module.output(:link_name_icon),
+        temperature: a[:temperature],
+        rate_per_cycle: "#{a[:min_rate_per_cycle]} #{icon} #{a[:max_rate_per_cycle]}",
+        iteration_length: "#{a[:min_iteration_length]} #{icon} #{a[:max_iteration_length]}",
+        iteration_percent:
+          "#{module.to_percentage(a[:min_iteration_percent])} #{icon} #{module.to_percentage(a[:max_iteration_percent])}",
+        year_length: "#{a[:min_year_length]} #{icon} #{a[:max_year_length]}"
       }
     end)
   end
