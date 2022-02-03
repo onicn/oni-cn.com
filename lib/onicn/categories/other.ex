@@ -20,7 +20,7 @@ defmodule Onicn.Categories.Other do
     Others.SwampLilyFlower,
     Others.TableSalt,
     Others.WarmVest,
-    Others.Wood,
+    Others.WoodLog,
     Others.AdvancedCure,
     Others.Antihistamine,
     Others.BasicBooster,

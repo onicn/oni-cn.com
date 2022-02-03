@@ -865,7 +865,7 @@
     recipes: [
       %{
         produce: [%{material_id: Onicn.Elements.CarbonDioxide, min_temp: 110, rate: 0.17}],
-        require: [%{material_id: Onicn.Others.Wood, rate: 1.2}]
+        require: [%{material_id: Onicn.Others.WoodLog, rate: 1.2}]
       }
     ]
   },
@@ -1007,7 +1007,7 @@
           %{material_id: Onicn.Elements.ToxicSand, min_temp: 93, rate: 0.333},
           %{material_id: Onicn.Elements.CarbonDioxide, min_temp: 93, rate: 0.167}
         ],
-        require: [%{material_id: Onicn.Others.Wood, rate: 1}]
+        require: [%{material_id: Onicn.Others.WoodLog, rate: 1}]
       }
     ]
   },
@@ -1191,7 +1191,7 @@
     name: Onicn.Plants.ForestTree,
     recipes: [
       %{
-        produce: [%{amount: 300, material_id: Onicn.Others.Wood}],
+        produce: [%{amount: 300, material_id: Onicn.Others.WoodLog}],
         require: [
           %{material_id: Onicn.Elements.Dirt, rate: {:circle, 10}},
           %{material_id: Onicn.Elements.DirtyWater, rate: {:circle, 70}}
