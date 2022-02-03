@@ -143,7 +143,7 @@ defmodule Onicn.Categories.Plant do
       |> Path.join("nav.eex")
       |> EEx.eval_file(nav: "plant")
 
-    contents = ""
+    contents = module.output(:html_content)
     attributes = module.output(:html_attributes)
 
     container = ~s"""

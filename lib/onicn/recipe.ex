@@ -99,18 +99,36 @@ defmodule Onicn.Recipe do
   end
 
   defp format(material) do
-    [:material_id, :rate, :min_temp]
-    |> Enum.map(fn key -> material |> Map.take([key]) |> do_format() end)
-    |> Enum.join()
+    Enum.map([:material_id, :rate, :min_temp, :amount], fn key ->
+      if Map.has_key?(material, key) do
+        material |> Map.take([:material_id, key]) |> do_format()
+      else
+        ""
+      end
+    end)
   end
 
+  defp do_format(%{material_id: {_, module}, amount: amount}) do
+    do_format(%{material_id: module, amount: amount})
+  end
+
+  defp do_format(%{material_id: module, amount: amount}) do
+    calories = Keyword.get(module.__attributes__(), :calories, 0)
+
+    case Module.split(module) do
+      ["Onicn", "Elements" | _] -> "#{amount} kg"
+      _ when calories > 0 -> "#{amount} 单位(#{amount * calories} 千卡)"
+      _ -> "#{amount} 单位"
+    end
+  end
+
+  defp do_format(%{min_temp: temp}), do: "（最低 #{number_to_string(temp)} °C）"
+  defp do_format(%{rate: {:circle, rate}}), do: "#{number_to_string(rate)} kg/周期"
+  defp do_format(%{rate: rate}) when rate < 1, do: "#{number_to_string(rate * 1000)} g/s"
+  defp do_format(%{rate: rate}), do: "#{number_to_string(rate)} kg/s"
   defp do_format(%{material_id: {:egg, module}}), do: module.output(:link_egg_name_icon)
   defp do_format(%{material_id: {:seed, module}}), do: module.output(:link_seed_name_icon)
   defp do_format(%{material_id: module}), do: module.output(:link_name_icon)
-  defp do_format(%{min_temp: temp}), do: "（最低 #{number_to_string(temp)} °C）"
-  defp do_format(%{rate: rate}) when rate < 1, do: "#{number_to_string(rate * 1000)} g/s"
-  defp do_format(%{rate: rate}), do: "#{number_to_string(rate)} kg/s"
-  defp do_format(%{}), do: ""
 
   defp number_to_string(number) when is_integer(number), do: number
 

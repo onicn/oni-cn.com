@@ -3,11 +3,15 @@
     <tbody>
       <%= for {building, requires, produces} <- recipes do %>
         <tr>
-          <td> <%= requires %> </td>
-          <td> <i class="layui-icon layui-icon-right"></i> </td>
+          <%= if byte_size(requires) > 0 do %>
+            <td> <%= requires %> </td>
+            <td> <i class="layui-icon layui-icon-right"></i> </td>
+          <% end %>
           <td> <%= building %> </td>
-          <td> <i class="layui-icon layui-icon-right"></i> </td>
-          <td> <%= produces %> </td>
+          <%= if byte_size(produces) > 0 do %>
+            <td> <i class="layui-icon layui-icon-right"></i> </td>
+            <td> <%= produces %> </td>
+          <% end %>
         </tr>
       <% end %>
     </tbody>

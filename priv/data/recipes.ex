@@ -1068,5 +1068,153 @@
         require: [%{material_id: Onicn.Elements.Water, amount: 5}]
       }
     ]
+  },
+  %{
+    name: Onicn.Plants.BasicFabricPlant,
+    recipes: [
+      %{
+        produce: [%{amount: 1, material_id: Onicn.Others.BasicFabric}],
+        require: [
+          %{material_id: Onicn.Elements.DirtyWater, rate: {:circle, 160}}
+        ]
+      }
+    ]
+  },
+  %{
+    name: Onicn.Plants.SpiceVine,
+    recipes: [
+      %{
+        produce: [%{amount: 4, material_id: Onicn.Foods.SpiceNut}],
+        require: [
+          %{material_id: Onicn.Elements.Phosphorite, rate: {:circle, 1}},
+          %{material_id: Onicn.Elements.DirtyWater, rate: {:circle, 35}}
+        ]
+      }
+    ]
+  },
+  %{
+    name: Onicn.Plants.SwampLily,
+    recipes: [
+      %{
+        produce: [%{amount: 2, material_id: Onicn.Others.SwampLilyFlower}],
+        require: []
+      }
+    ]
+  },
+  %{
+    name: Onicn.Plants.SaltPlant,
+    recipes: [
+      %{
+        produce: [%{amount: 65, material_id: Onicn.Elements.Salt}],
+        require: [%{material_id: Onicn.Elements.Sand, rate: {:circle, 7}}]
+      }
+    ]
+  },
+  %{
+    name: Onicn.Plants.SeaLettuce,
+    recipes: [
+      %{
+        produce: [%{amount: 12, material_id: Onicn.Foods.Lettuce}],
+        require: [
+          %{material_id: Onicn.Elements.BleachStone, rate: {:circle, 0.5}},
+          %{material_id: Onicn.Elements.SaltWater, rate: {:circle, 5}}
+        ]
+      }
+    ]
+  },
+  %{
+    name: Onicn.Plants.Oxyfern,
+    recipes: [
+      %{
+        produce: [],
+        require: [
+          %{material_id: Onicn.Elements.Dirt, rate: {:circle, 4}},
+          %{material_id: Onicn.Elements.Water, rate: {:circle, 19}}
+        ]
+      }
+    ]
+  },
+  %{
+    name: Onicn.Plants.PrickleFlower,
+    recipes: [
+      %{
+        produce: [%{amount: 1, material_id: Onicn.Foods.PrickleFruit}],
+        require: [%{material_id: Onicn.Elements.Water, rate: {:circle, 20}}]
+      }
+    ]
+  },
+  %{
+    name: Onicn.Plants.ColdBreather,
+    recipes: [
+      %{
+        produce: [],
+        require: [
+          %{material_id: Onicn.Elements.Phosphorite, rate: {:circle, 4}}
+        ]
+      }
+    ]
+  },
+  %{
+    name: Onicn.Plants.BeanPlant,
+    recipes: [
+      %{
+        produce: [%{amount: 12, material_id: Onicn.Foods.BeanPlantSeed}],
+        require: [
+          %{material_id: Onicn.Elements.Dirt, rate: {:circle, 5}},
+          %{material_id: Onicn.Elements.Ethanol, rate: {:circle, 20}}
+        ]
+      }
+    ]
+  },
+  %{
+    name: Onicn.Plants.BasicSingleHarvestPlant,
+    recipes: [
+      %{
+        produce: [%{amount: 1, material_id: Onicn.Foods.BasicPlantFood}],
+        require: [%{material_id: Onicn.Elements.Dirt, rate: {:circle, 10}}]
+      }
+    ]
+  },
+  %{
+    name: Onicn.Plants.ColdWheat,
+    recipes: [
+      %{
+        produce: [%{amount: 18, material_id: Onicn.Foods.ColdWheatSeed}],
+        require: [
+          %{material_id: Onicn.Elements.Dirt, rate: {:circle, 5}},
+          %{material_id: Onicn.Elements.Water, rate: {:circle, 20}}
+        ]
+      }
+    ]
+  },
+  %{
+    name: Onicn.Plants.ForestTree,
+    recipes: [
+      %{
+        produce: [%{amount: 300, material_id: Onicn.Others.Wood}],
+        require: [
+          %{material_id: Onicn.Elements.Dirt, rate: {:circle, 10}},
+          %{material_id: Onicn.Elements.DirtyWater, rate: {:circle, 70}}
+        ]
+      }
+    ]
+  },
+  %{
+    name: Onicn.Plants.MushroomPlant,
+    recipes: [
+      %{
+        produce: [%{amount: 1, material_id: Onicn.Foods.Mushroom}],
+        require: [%{material_id: Onicn.Elements.SlimeMold, rate: {:circle, 4}}]
+      }
+    ]
+  },
+  %{
+    name: Onicn.Plants.GasGrass,
+    recipes: [
+      %{
+        produce: [%{amount: 1, material_id: Onicn.Others.GasGrassHarvested}],
+        require: [%{material_id: Onicn.Elements.Chlorine, rate: {:circle, 0.5}}]
+      }
+    ]
   }
 ]
