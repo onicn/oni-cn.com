@@ -16,8 +16,9 @@ defmodule Onicn.Categories.Food do
 
         unquote(__MODULE__).__properties__()
         |> Enum.find(fn data -> data[:name] == to_string(name) end)
-        |> Keyword.put(:name, name)
-        |> Keyword.put(:cn_name, Translation.get(name))
+        |> Map.put(:name, name)
+        |> Map.put(:cn_name, Translation.get(name))
+        |> Enum.to_list()
       end
 
       def output(:html_attributes) do
@@ -52,10 +53,12 @@ defmodule Onicn.Categories.Food do
       def output(:link_name_icon) do
         a = __attributes__()
 
-        ~s|<a href="/foods/#{a[:name]}">
+        ~s"""
+        <a href="/foods/#{a[:name]}">
           <img src="/img/foods/#{a[:name]}.png" style="weight:16px;height:16px;">
           #{a[:cn_name]}
-        </a>|
+        </a>
+        """
       end
 
       def output(:edit_link) do
@@ -70,7 +73,8 @@ defmodule Onicn.Categories.Food do
     |> :code.priv_dir()
     |> Path.join("data/food.yaml")
     |> YamlElixir.read_from_file!()
-    |> Enum.map(&Enum.map(&1, fn {key, value} -> {String.to_atom(key), value} end))
+    |> Enum.map(&Map.new(&1, fn {key, value} -> {String.to_atom(key), value} end))
+    |> Macro.escape()
 
   def __properties__ do
     unquote(properties)
@@ -81,7 +85,7 @@ defmodule Onicn.Categories.Food do
 
   def __foods__ do
     __properties__()
-    |> Enum.map(&Keyword.get(&1, :name))
+    |> Enum.map(&Map.get(&1, :name))
     |> Enum.map(&Module.concat(Foods, Macro.camelize(&1)))
     |> Enum.filter(&Code.ensure_loaded?/1)
   end
@@ -109,11 +113,12 @@ defmodule Onicn.Categories.Food do
     contents = module.output(:html_content)
     attributes = module.output(:html_attributes)
 
-    container = ~s|
+    container = ~s"""
       <div class="layui-row layui-col-space30">
         <div class="layui-col-md8">#{contents}</div>
         <div class="layui-col-md4">#{attributes}</div>
-      </div>|
+      </div>
+    """
 
     footer =
       temp_path
@@ -144,12 +149,13 @@ defmodule Onicn.Categories.Food do
   end
 
   def output(:html_body) do
-    container = ~s|
+    container = ~s"""
       <div class="layui-row">
         <div class="layui-col-md12">
           <table id="food" lay-filter=""></table>
         </div>
-      </div>|
+      </div>
+    """
 
     cols =
       Jason.encode!([
@@ -159,7 +165,7 @@ defmodule Onicn.Categories.Food do
         %{field: "stale_time", title: "腐败时间（周期）", sort: true}
       ])
 
-    script = ~s|
+    script = ~s"""
       layui.use('element', function() {});
       layui.use(['element', 'table'], function() {
         var table = layui.table;
@@ -169,7 +175,8 @@ defmodule Onicn.Categories.Food do
           page: false,
           cols: [#{cols}]
         });
-      });|
+      });
+    """
 
     %{
       container: container,

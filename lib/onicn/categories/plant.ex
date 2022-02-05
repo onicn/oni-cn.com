@@ -1,45 +1,32 @@
-alias Onicn.Plants
+alias Onicn.{Plants, Translation}
 
 defmodule Onicn.Categories.Plant do
-  @plants [
-    Plants.BasicFabricPlant,
-    Plants.BasicForagePlantPlanted,
-    Plants.BasicSingleHarvestPlant,
-    Plants.BeanPlant,
-    Plants.BulbPlant,
-    Plants.CactusPlant,
-    Plants.ColdBreather,
-    Plants.ColdWheat,
-    Plants.EvilFlower,
-    Plants.ForestForagePlantPlanted,
-    Plants.ForestTree,
-    Plants.GasGrass,
-    Plants.LeafyPlant,
-    Plants.MushroomPlant,
-    Plants.Oxyfern,
-    Plants.PrickleFlower,
-    Plants.PrickleGrass,
-    Plants.SaltPlant,
-    Plants.SeaLettuce,
-    Plants.SpiceVine,
-    Plants.SwampLily
-  ]
-
-  defmacro __using__(attributes) do
+  defmacro __using__(_attributes) do
     quote do
       use Onicn.Content
 
       def __attributes__ do
-        name = __MODULE__ |> to_string() |> String.split(".") |> List.last() |> Macro.underscore()
+        name =
+          __MODULE__
+          |> to_string()
+          |> String.split(".")
+          |> List.last()
+          |> Macro.underscore()
+          |> String.to_atom()
 
-        properties =
-          unquote(__MODULE__).__properties__()
-          |> Enum.find(fn attribute -> attribute[:name] == name end)
-          |> Enum.into([])
+        unquote(__MODULE__).__properties__()
+        |> Enum.find(fn data -> data[:name] == to_string(name) end)
+        |> Map.put(:name, name)
+        |> Map.put(:cn_name, Translation.get(name))
+        |> then(fn
+          %{seed: seed} = data ->
+            seed_cn_name = data[:seed] |> String.to_atom() |> Translation.get()
+            Map.put(data, :seed_cn_name, seed_cn_name)
 
-        unquote(attributes)
-        |> Keyword.put(:name, name)
-        |> Keyword.merge(properties)
+          data ->
+            data
+        end)
+        |> Enum.to_list()
       end
 
       def output(:html_attributes) do
@@ -56,7 +43,7 @@ defmodule Onicn.Categories.Plant do
               {"气压范围", "#{a[:pressure_warning_low]} #{icon} #{a[:pressure_warning_high]} 千克"},
             produce_crop_cn: {"产出", a[:produce_crop_cn]},
             produce_crop_num: {"产量", a[:produce_crop_num]},
-            seed_cn: {"种子", a[:seed_cn]},
+            seed_cn_name: {"种子", a[:seed_cn_name]},
             can_drown: {"会溺死", (a[:can_drown] && "是") || "否"},
             can_tinker: {"农业种植", (a[:can_tinker] && "是") || "否"},
             hanging: {"倒挂生长", (a[:hanging] && "是") || "否"}
@@ -73,27 +60,26 @@ defmodule Onicn.Categories.Plant do
       def output(:link_name_icon) do
         a = __attributes__()
 
-        ~s|<a href="/plants/#{a[:name]}">
+        ~s"""
+        <a href="/plants/#{a[:name]}">
           <img src="/img/plants/#{a[:name]}.png" style="weight:16px;height:16px;">
           #{a[:cn_name]}
-        </a>|
+        </a>
+        """
       end
 
       def output(:link_seed_name_icon) do
         a = __attributes__()
 
-        case a[:seed] do
-          nil ->
-            ""
-
-          seed when is_binary(seed) ->
-            ~s|<a href="/plants/#{a[:name]}">
-              <img src="/img/plants/#{a[:seed]}.png" style="weight:16px;height:16px;">
-              #{a[:seed_cn]}
-            </a>|
-
-          seed when is_atom(seed) ->
-            seed.output(:link_name_icon)
+        if seed = a[:seed] do
+          ~s"""
+          <a href="/plants/#{a[:name]}">
+            <img src="/img/plants/#{a[:seed]}.png" style="weight:16px;height:16px;">
+            #{a[:seed_cn_name]}
+          </a>
+          """
+        else
+          ""
         end
       end
 
@@ -107,9 +93,9 @@ defmodule Onicn.Categories.Plant do
   properties =
     :onicn
     |> :code.priv_dir()
-    |> Path.join("data/plant.ex")
-    |> Code.eval_file()
-    |> elem(0)
+    |> Path.join("data/plant.yaml")
+    |> YamlElixir.read_from_file!()
+    |> Enum.map(&Map.new(&1, fn {key, value} -> {String.to_atom(key), value} end))
     |> Macro.escape()
 
   def __properties__ do
@@ -120,11 +106,14 @@ defmodule Onicn.Categories.Plant do
   def __cn_name__, do: "植物"
 
   def __plants__ do
-    @plants
+    __properties__()
+    |> Enum.map(&Map.get(&1, :name))
+    |> Enum.map(&Module.concat(Plants, Macro.camelize(&1)))
+    |> Enum.filter(&Code.ensure_loaded?/1)
   end
 
   def generate_pages do
-    @plants
+    __plants__()
     |> Enum.map(&Task.async(fn -> do_generate_page(&1) end))
     |> Enum.each(&Task.await(&1, :infinity))
   end
@@ -198,7 +187,7 @@ defmodule Onicn.Categories.Plant do
         %{field: "temperature", title: "温度范围（°C）"}
       ])
 
-    script = ~s|
+    script = ~s"""
       layui.use('element', function() {});
       layui.use(['element', 'table'], function() {
         var table = layui.table;
@@ -208,7 +197,8 @@ defmodule Onicn.Categories.Plant do
           page: false,
           cols: [#{cols}]
         });
-      });|
+      });
+    """
 
     %{
       container: container,
@@ -219,7 +209,7 @@ defmodule Onicn.Categories.Plant do
   def output(:json_elements) do
     icon = ~s|<i class="layui-icon layui-icon-subtraction"></i>|
 
-    Enum.map(@plants, fn module ->
+    Enum.map(__plants__(), fn module ->
       a = module.__attributes__()
 
       %{

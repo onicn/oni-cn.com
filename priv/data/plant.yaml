@@ -1,0 +1,716 @@
+- name: basic_fabric_plant
+  min_temp: 22
+  max_temp: 37
+  decor: 10
+  decor_radius: 1
+  max_cycles: 2
+  produce_crop: basic_fabric
+  produce_crop_cn: 芦苇纤维
+  produce_crop_num: 1
+  seed: basic_fabric_material_plant_seed
+  seed_cn: 芦苇种子
+  can_tinker: true
+  require_liquid:
+  - dirty_water
+  require_liquid_cn:
+  - 污染水
+  require_liquid_per_cycle:
+  - 160
+- name: basic_forage_plant_planted
+  decor: 15
+  decor_radius: 2
+  can_drown: true
+- name: spice_vine
+  min_temp: 35
+  max_temp: 85
+  pressure_sensitive: true
+  pressure_warning_low: 0.15
+  pressure_warning_high: 10
+  pressure_lethal_low: 0
+  pressure_lethal_high: 30
+  decor: 15
+  decor_radius: 2
+  max_cycles: 8
+  produce_crop: spice_nut
+  produce_crop_cn: 火椒粒
+  produce_crop_num: 4
+  seed: spice_vine_seed
+  seed_cn: 火椒种子
+  can_drown: true
+  can_tinker: true
+  hanging: true
+  require_fertilizer:
+  - phosphorite
+  require_fertilizer_cn:
+  - 磷矿
+  require_fertilizer_per_cycle:
+  - 1
+  require_liquid:
+  - dirty_water
+  require_liquid_cn:
+  - 污染水
+  require_liquid_per_cycle:
+  - 35
+- name: super_worm_plant
+  min_temp: 15
+  max_temp: 50
+  pressure_sensitive: true
+  pressure_warning_low: 0.15
+  pressure_warning_high: 10
+  pressure_lethal_low: 0
+  pressure_lethal_high: 30
+  required_element:
+  - oxygen
+  - contaminated_oxygen
+  - carbon_dioxide
+  required_element_cn:
+  - 氧气
+  - 污染氧
+  - 二氧化碳
+  decor: 15
+  decor_radius: 2
+  max_cycles: 8
+  produce_crop: worm_super_fruit
+  produce_crop_cn: 虫果
+  produce_crop_num: 8
+  seed: worm_plant_seed
+  seed_cn: WormPlantSeed
+  can_drown: true
+  can_tinker: true
+  require_fertilizer:
+  - sulfur
+  require_fertilizer_cn:
+  - 硫
+  require_fertilizer_per_cycle:
+  - 10
+- name: swamp_forage_plant_planted
+  decor: 15
+  decor_radius: 2
+- name: swamp_harvest_plant
+  min_temp: 10
+  max_temp: 30
+  pressure_sensitive: true
+  pressure_warning_low: 0.15
+  pressure_warning_high: 10
+  pressure_lethal_low: 0
+  pressure_lethal_high: 30
+  required_element:
+  - oxygen
+  - contaminated_oxygen
+  - carbon_dioxide
+  required_element_cn:
+  - 氧气
+  - 污染氧
+  - 二氧化碳
+  decor: -10
+  decor_radius: 2
+  max_cycles: 6.6
+  produce_crop: swamp_fruit
+  produce_crop_cn: 沼浆果冻
+  produce_crop_num: 1
+  seed: swamp_harvest_plant_seed
+  seed_cn: 沼浆笼种子
+  can_drown: true
+  can_tinker: true
+  require_liquid:
+  - dirty_water
+  require_liquid_cn:
+  - 污染水
+  require_liquid_per_cycle:
+  - 40
+- name: swamp_lily
+  min_temp: 35
+  max_temp: 85
+  pressure_sensitive: true
+  pressure_warning_low: 0.15
+  pressure_warning_high: 10
+  pressure_lethal_low: 0
+  pressure_lethal_high: 30
+  required_element:
+  - chlorine_gas
+  required_element_cn:
+  - 氯气
+  decor: 15
+  decor_radius: 2
+  max_cycles: 12
+  produce_crop: swamp_lily_flower
+  produce_crop_cn: 芳香百合
+  produce_crop_num: 2
+  seed: swamp_lily_seed
+  seed_cn: 芳香百合种子
+  can_drown: true
+  can_tinker: true
+- name: toe_plant
+  min_temp: -90.14999
+  max_temp: -0.1499939
+  pressure_sensitive: true
+  pressure_warning_low: 0.15
+  pressure_warning_high: 10
+  pressure_lethal_low: 0
+  pressure_lethal_high: 30
+  required_element:
+  - oxygen
+  - contaminated_oxygen
+  - carbon_dioxide
+  required_element_cn:
+  - 氧气
+  - 污染氧
+  - 二氧化碳
+  decor: 25
+  decor_radius: 4
+  seed: toe_plant_seed
+  seed_cn: 安宁芷种子
+  can_drown: true
+- name: wine_cups
+  min_temp: 10
+  max_temp: 30
+  pressure_sensitive: true
+  pressure_warning_low: 0.15
+  pressure_warning_high: 10
+  pressure_lethal_low: 0
+  pressure_lethal_high: 30
+  required_element:
+  - oxygen
+  - contaminated_oxygen
+  - carbon_dioxide
+  required_element_cn:
+  - 氧气
+  - 污染氧
+  - 二氧化碳
+  decor: 25
+  decor_radius: 4
+  seed: wine_cups_seed
+  seed_cn: 醇锦种子
+  can_drown: true
+- name: worm_plant
+  min_temp: 15
+  max_temp: 50
+  pressure_sensitive: true
+  pressure_warning_low: 0.15
+  pressure_warning_high: 10
+  pressure_lethal_low: 0
+  pressure_lethal_high: 30
+  required_element:
+  - oxygen
+  - contaminated_oxygen
+  - carbon_dioxide
+  required_element_cn:
+  - 氧气
+  - 污染氧
+  - 二氧化碳
+  decor: -5
+  decor_radius: 1
+  max_cycles: 4
+  produce_crop: worm_basic_fruit
+  produce_crop_cn: 贫瘠虫果
+  produce_crop_num: 1
+  seed: worm_plant_seed
+  seed_cn: 虫果种子
+  can_drown: true
+  can_tinker: true
+  require_fertilizer:
+  - sulfur
+  require_fertilizer_cn:
+  - 硫
+  require_fertilizer_per_cycle:
+  - 10
+- name: salt_plant
+  min_temp: -25
+  max_temp: 50
+  pressure_sensitive: true
+  pressure_warning_low: 0.025
+  pressure_warning_high: 10
+  pressure_lethal_low: 0
+  pressure_lethal_high: 30
+  required_element:
+  - chlorine_gas
+  required_element_cn:
+  - 氯气
+  decor: -10
+  decor_radius: 2
+  max_cycles: 6
+  produce_crop: salt
+  produce_crop_cn: 盐
+  produce_crop_num: 65
+  seed: salt_plant_seed
+  seed_cn: 沙盐藤种子
+  can_drown: true
+  can_tinker: true
+  hanging: true
+  require_fertilizer:
+  - sand
+  require_fertilizer_cn:
+  - 沙子
+  require_fertilizer_per_cycle:
+  - 7
+- name: prickle_grass
+  min_temp: 10
+  max_temp: 30
+  pressure_sensitive: true
+  pressure_warning_low: 0.15
+  pressure_warning_high: 10
+  pressure_lethal_low: 0
+  pressure_lethal_high: 30
+  required_element:
+  - oxygen
+  - contaminated_oxygen
+  - carbon_dioxide
+  required_element_cn:
+  - 氧气
+  - 污染氧
+  - 二氧化碳
+  decor: 25
+  decor_radius: 4
+  seed: prickle_grass_seed
+  seed_cn: 诱人荆棘种子
+  can_drown: true
+- name: sea_lettuce
+  min_temp: 22
+  max_temp: 65
+  decor: 10
+  decor_radius: 1
+  max_cycles: 12
+  produce_crop: lettuce
+  produce_crop_cn: 海生菜
+  produce_crop_num: 12
+  seed: sea_lettuce_seed
+  seed_cn: 水草种子
+  can_drown: true
+  can_tinker: true
+  require_fertilizer:
+  - bleach_stone
+  require_fertilizer_cn:
+  - 漂白石
+  require_fertilizer_per_cycle:
+  - 0.5
+  require_liquid:
+  - salt_water
+  require_liquid_cn:
+  - 盐水
+  require_liquid_per_cycle:
+  - 5
+- name: oxyfern
+  min_temp: 0
+  max_temp: 40
+  pressure_sensitive: true
+  pressure_warning_low: 0.025
+  pressure_warning_high: 10
+  pressure_lethal_low: 0
+  pressure_lethal_high: 30
+  required_element:
+  - carbon_dioxide
+  required_element_cn:
+  - 二氧化碳
+  decor: -10
+  decor_radius: 2
+  seed: oxyfern_seed
+  seed_cn: 氧齿蕨种子
+  can_drown: true
+  require_fertilizer:
+  - dirt
+  require_fertilizer_cn:
+  - 泥土
+  require_fertilizer_per_cycle:
+  - 4
+  require_liquid:
+  - water
+  require_liquid_cn:
+  - 水
+  require_liquid_per_cycle:
+  - 19
+- name: forest_tree_branch
+  min_temp: 15
+  max_temp: 40
+  pressure_sensitive: true
+  pressure_warning_low: 0.15
+  pressure_warning_high: 10
+  pressure_lethal_low: 0
+  pressure_lethal_high: 30
+  decor: 15
+  decor_radius: 2
+  max_cycles: 4.5
+  produce_crop: wood_log
+  produce_crop_cn: 木料
+  produce_crop_num: 300
+  can_drown: true
+  can_tinker: true
+- name: forest_forage_plant_planted
+  decor: 15
+  decor_radius: 2
+  can_drown: true
+- name: filter_plant
+  min_temp: 20
+  max_temp: 110
+  pressure_sensitive: true
+  pressure_warning_low: 0.025
+  pressure_warning_high: 10
+  pressure_lethal_low: 0
+  pressure_lethal_high: 30
+  required_element:
+  - oxygen
+  required_element_cn:
+  - 氧气
+  decor: -10
+  decor_radius: 2
+  max_cycles: 10
+  produce_crop: water
+  produce_crop_cn: 水
+  produce_crop_num: 350
+  seed: filter_plant_seed
+  seed_cn: 仙水掌种子
+  can_drown: true
+  can_tinker: true
+  require_fertilizer:
+  - sand
+  require_fertilizer_cn:
+  - 沙子
+  require_fertilizer_per_cycle:
+  - 5
+  require_liquid:
+  - dirty_water
+  require_liquid_cn:
+  - 污染水
+  require_liquid_per_cycle:
+  - 65
+- name: evil_flower
+  min_temp: -15
+  max_temp: 240
+  pressure_sensitive: true
+  pressure_warning_low: 0.15
+  pressure_warning_high: 10
+  pressure_lethal_low: 0
+  pressure_lethal_high: 30
+  required_element:
+  - carbon_dioxide
+  required_element_cn:
+  - 二氧化碳
+  decor: 80
+  decor_radius: 7
+  seed: evil_flower_seed
+  seed_cn: 孢子兰种子
+  can_drown: true
+- name: cylindrica
+  min_temp: 20
+  max_temp: 50
+  pressure_sensitive: true
+  pressure_warning_low: 0.15
+  pressure_warning_high: 10
+  pressure_lethal_low: 0
+  pressure_lethal_high: 30
+  required_element:
+  - oxygen
+  - contaminated_oxygen
+  - carbon_dioxide
+  required_element_cn:
+  - 氧气
+  - 污染氧
+  - 二氧化碳
+  decor: 25
+  decor_radius: 4
+  seed: cylindrica_seed
+  seed_cn: 极乐刺种子
+  can_drown: true
+- name: prickle_flower
+  min_temp: 5
+  max_temp: 30
+  pressure_sensitive: true
+  pressure_warning_low: 0.15
+  pressure_warning_high: 10
+  pressure_lethal_low: 0
+  pressure_lethal_high: 30
+  required_element:
+  - oxygen
+  - contaminated_oxygen
+  - carbon_dioxide
+  required_element_cn:
+  - 氧气
+  - 污染氧
+  - 二氧化碳
+  decor: 15
+  decor_radius: 2
+  max_cycles: 6
+  produce_crop: prickle_fruit
+  produce_crop_cn: 毛刺浆果
+  produce_crop_num: 1
+  seed: prickle_flower_seed
+  seed_cn: 毛刺花种子
+  can_drown: true
+  can_tinker: true
+  require_liquid:
+  - water
+  require_liquid_cn:
+  - 水
+  require_liquid_per_cycle:
+  - 20
+- name: critter_trap_plant
+  min_temp: -90.14999
+  max_temp: -0.1499939
+  decor: 15
+  decor_radius: 2
+  max_cycles: 30
+  produce_crop: plant_meat
+  produce_crop_cn: 植物肉
+  produce_crop_num: 10
+  seed: critter_trap_plant_seed
+  seed_cn: 土星动物捕草种子
+  can_drown: true
+  can_tinker: true
+  require_liquid:
+  - dirty_water
+  require_liquid_cn:
+  - 污染水
+  require_liquid_per_cycle:
+  - 10
+- name: cold_breather
+  min_temp: -60
+  max_temp: 95
+  decor: 15
+  decor_radius: 2
+  seed: cold_breather_seed
+  seed_cn: 冰息萝卜种子
+  can_drown: true
+  require_fertilizer:
+  - phosphorite
+  require_fertilizer_cn:
+  - 磷矿
+  require_fertilizer_per_cycle:
+  - 4
+- name: cactus_plant
+  min_temp: 0
+  max_temp: 100
+  decor: 25
+  decor_radius: 4
+  seed: cactus_plant_seed
+  seed_cn: 雀跃掌种子
+  can_drown: true
+- name: bulb_plant
+  min_temp: 20
+  max_temp: 40
+  pressure_sensitive: true
+  pressure_warning_low: 0.15
+  pressure_warning_high: 10
+  pressure_lethal_low: 0
+  pressure_lethal_high: 30
+  required_element:
+  - oxygen
+  - contaminated_oxygen
+  - carbon_dioxide
+  required_element_cn:
+  - 氧气
+  - 污染氧
+  - 二氧化碳
+  decor: 15
+  decor_radius: 2
+  seed: bulb_plant_seed
+  seed_cn: 同伴芽种子
+  can_drown: true
+- name: bean_plant
+  min_temp: -25
+  max_temp: 0
+  pressure_sensitive: true
+  pressure_warning_low: 0.025
+  pressure_warning_high: 10
+  pressure_lethal_low: 0
+  pressure_lethal_high: 30
+  required_element:
+  - carbon_dioxide
+  required_element_cn:
+  - 二氧化碳
+  decor: 15
+  decor_radius: 2
+  max_cycles: 21
+  produce_crop: bean_plant_seed
+  produce_crop_cn: 小吃豆
+  produce_crop_num: 12
+  seed: bean_plant_seed
+  seed_cn: 小吃豆
+  can_drown: true
+  can_tinker: true
+  require_fertilizer:
+  - dirt
+  require_fertilizer_cn:
+  - 泥土
+  require_fertilizer_per_cycle:
+  - 5
+  require_liquid:
+  - ethanol
+  require_liquid_cn:
+  - 乙醇
+  require_liquid_per_cycle:
+  - 20
+- name: basic_single_harvest_plant
+  min_temp: 10
+  max_temp: 30
+  pressure_sensitive: true
+  pressure_warning_low: 0.15
+  pressure_warning_high: 10
+  pressure_lethal_low: 0
+  pressure_lethal_high: 30
+  required_element:
+  - oxygen
+  - contaminated_oxygen
+  - carbon_dioxide
+  required_element_cn:
+  - 氧气
+  - 污染氧
+  - 二氧化碳
+  decor: -10
+  decor_radius: 2
+  max_cycles: 3
+  produce_crop: basic_plant_food
+  produce_crop_cn: 米虱
+  produce_crop_num: 1
+  seed: basic_single_harvest_plant_seed
+  seed_cn: 米虱木种子
+  can_drown: true
+  require_fertilizer:
+  - dirt
+  require_fertilizer_cn:
+  - 泥土
+  require_fertilizer_per_cycle:
+  - 10
+- name: cold_wheat
+  min_temp: -55
+  max_temp: 5
+  pressure_sensitive: true
+  pressure_warning_low: 0.15
+  pressure_warning_high: 10
+  pressure_lethal_low: 0
+  pressure_lethal_high: 30
+  required_element:
+  - oxygen
+  - contaminated_oxygen
+  - carbon_dioxide
+  required_element_cn:
+  - 氧气
+  - 污染氧
+  - 二氧化碳
+  decor: 15
+  decor_radius: 2
+  max_cycles: 18
+  produce_crop: cold_wheat_seed
+  produce_crop_cn: 冰霜麦粒
+  produce_crop_num: 18
+  seed: cold_wheat_seed
+  seed_cn: 冰霜麦粒
+  can_drown: true
+  can_tinker: true
+  require_fertilizer:
+  - dirt
+  require_fertilizer_cn:
+  - 泥土
+  require_fertilizer_per_cycle:
+  - 5
+  require_liquid:
+  - water
+  require_liquid_cn:
+  - 水
+  require_liquid_per_cycle:
+  - 20
+- name: forest_tree
+  min_temp: 15
+  max_temp: 40
+  pressure_sensitive: true
+  pressure_warning_low: 0.15
+  pressure_warning_high: 10
+  pressure_lethal_low: 0
+  pressure_lethal_high: 30
+  decor: 15
+  decor_radius: 2
+  max_cycles: 4.5
+  produce_crop: wood_log
+  produce_crop_cn: 木料
+  produce_crop_num: 300
+  seed: forest_tree_seed
+  seed_cn: 乔木橡实
+  can_drown: true
+  can_tinker: true
+  require_fertilizer:
+  - dirt
+  require_fertilizer_cn:
+  - 泥土
+  require_fertilizer_per_cycle:
+  - 10
+  require_liquid:
+  - dirty_water
+  require_liquid_cn:
+  - 污染水
+  require_liquid_per_cycle:
+  - 70
+- name: mushroom_plant
+  min_temp: 5
+  max_temp: 35
+  pressure_sensitive: true
+  pressure_warning_low: 0.15
+  pressure_warning_high: 10
+  pressure_lethal_low: 0
+  pressure_lethal_high: 30
+  required_element:
+  - carbon_dioxide
+  required_element_cn:
+  - 二氧化碳
+  decor: 15
+  decor_radius: 2
+  max_cycles: 7.5
+  produce_crop: mushroom
+  produce_crop_cn: 蘑菇
+  produce_crop_num: 1
+  seed: mushroom_seed
+  seed_cn: 真菌孢子
+  can_drown: true
+  can_tinker: true
+  require_fertilizer:
+  - slime_mold
+  require_fertilizer_cn:
+  - 菌泥
+  require_fertilizer_per_cycle:
+  - 4
+- name: leafy_plant
+  min_temp: 20
+  max_temp: 50
+  pressure_sensitive: true
+  pressure_warning_low: 0.15
+  pressure_warning_high: 10
+  pressure_lethal_low: 0
+  pressure_lethal_high: 30
+  required_element:
+  - oxygen
+  - contaminated_oxygen
+  - carbon_dioxide
+  - chlorine_gas
+  - hydrogen
+  required_element_cn:
+  - 氧气
+  - 污染氧
+  - 二氧化碳
+  - 氯气
+  - 氢气
+  decor: 25
+  decor_radius: 4
+  seed: leafy_plant_seed
+  seed_cn: 欢乐叶种子
+  can_drown: true
+- name: gas_grass
+  min_temp: -273.15
+  max_temp: 75
+  pressure_sensitive: true
+  pressure_warning_low: 0.15
+  pressure_warning_high: 10
+  pressure_lethal_low: 0
+  pressure_lethal_high: 30
+  decor: 25
+  decor_radius: 4
+  max_cycles: 4
+  produce_crop: gas_grass_harvested
+  produce_crop_cn: 释气草
+  produce_crop_num: 1
+  seed: gas_grass_seed
+  seed_cn: 释气草种子
+  can_drown: true
+  can_tinker: true
+  require_liquid:
+  - chlorine
+  require_liquid_cn:
+  - 液态氯
+  require_liquid_per_cycle:
+  - 0.5
