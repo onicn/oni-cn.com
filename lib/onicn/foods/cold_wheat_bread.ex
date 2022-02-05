@@ -1,7 +1,5 @@
 defmodule Onicn.Foods.ColdWheatBread do
-  use Onicn.Categories.Food,
-    cn_name: "冰霜面包",
-    en_name: "Frost Bun"
+  use Onicn.Categories.Food
 
   section "简介" do
     "冰霜面包是一种中级食物，由冰霜麦粒烹调而得。"

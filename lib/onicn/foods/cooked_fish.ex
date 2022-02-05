@@ -1,7 +1,5 @@
 defmodule Onicn.Foods.CookedFish do
-  use Onicn.Categories.Food,
-    cn_name: "烤鱼排",
-    en_name: "Cooked Fish"
+  use Onicn.Categories.Food
 
   section "简介" do
     "一份烤鱼排需要一份帕库鱼片作为原料。"

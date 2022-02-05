@@ -1,7 +1,5 @@
 defmodule Onicn.Foods.Lettuce do
-  use Onicn.Categories.Food,
-    cn_name: "海生菜",
-    en_name: "Lettuce"
+  use Onicn.Categories.Food
 
   section "简介" do
     "海生菜是水草的叶子，可以食用。"

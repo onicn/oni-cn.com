@@ -1,7 +1,5 @@
 defmodule Onicn.Foods.Burger do
-  use Onicn.Categories.Food,
-    cn_name: "冰霜汉堡",
-    en_name: "Frost Burger"
+  use Onicn.Categories.Food
 
   section "简介" do
     "冰霜汉堡是游戏中的顶级食物。"

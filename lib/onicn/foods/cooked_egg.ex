@@ -1,7 +1,5 @@
 defmodule Onicn.Foods.CookedEgg do
-  use Onicn.Categories.Food,
-    cn_name: "煎蛋卷",
-    en_name: "Omelette"
+  use Onicn.Categories.Food
 
   section "简介" do
     "一份煎蛋卷需要一千克生蛋作为原料。"

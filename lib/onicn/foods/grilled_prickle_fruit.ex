@@ -1,7 +1,5 @@
 defmodule Onicn.Foods.GrilledPrickleFruit do
-  use Onicn.Categories.Food,
-    cn_name: "炙烤刺果",
-    en_name: "Gristle Berry"
+  use Onicn.Categories.Food
 
   section "简介" do
     "1份炙烤刺果需要1份毛刺浆果作为原料。"

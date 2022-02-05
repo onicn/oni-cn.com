@@ -1,7 +1,5 @@
 defmodule Onicn.Foods.Tofu do
-  use Onicn.Categories.Food,
-    cn_name: "豆腐",
-    en_name: "Tofu"
+  use Onicn.Categories.Food
 
   section "简介" do
     "一份豆腐需要6份小吃豆和50千克水作为原料。"

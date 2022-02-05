@@ -1,7 +1,5 @@
 defmodule Onicn.Foods.Salsa do
-  use Onicn.Categories.Food,
-    cn_name: "浆果酿",
-    en_name: "Stuffed Berry"
+  use Onicn.Categories.Food
 
   section "简介" do
     "一份浆果酿需要2份炙烤刺果和2份火椒粒作为原料。"

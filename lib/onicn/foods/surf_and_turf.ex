@@ -1,7 +1,5 @@
 defmodule Onicn.Foods.SurfAndTurf do
-  use Onicn.Categories.Food,
-    cn_name: "海陆双拼",
-    en_name: "Surf'n'Turf"
+  use Onicn.Categories.Food
 
   section "简介" do
     "一份海陆双拼需要一份烤肉串和一份烤鱼排作为原料。"

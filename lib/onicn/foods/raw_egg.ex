@@ -1,7 +1,5 @@
 defmodule Onicn.Foods.RawEgg do
-  use Onicn.Categories.Food,
-    cn_name: "生蛋",
-    en_name: "Raw Egg"
+  use Onicn.Categories.Food
 
   section "简介" do
     "使用打蛋桌可以从小动物蛋中获得生蛋。它不能直接直接食用，但不好好保存的话也会失去新鲜度。"

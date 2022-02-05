@@ -1,7 +1,5 @@
 defmodule Onicn.Foods.BeanPlantSeed do
-  use Onicn.Categories.Food,
-    cn_name: "小吃豆",
-    en_name: "Nosh Bean"
+  use Onicn.Categories.Food
 
   section "简介" do
     "小吃豆是一种食物原料。它既是是小吃芽的收获物，也是后者的种子。尽管描述中的小吃豆看起来很好吃，但复制人并不能直接食用它。"

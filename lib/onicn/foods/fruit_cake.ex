@@ -1,7 +1,5 @@
 defmodule Onicn.Foods.FruitCake do
-  use Onicn.Categories.Food,
-    cn_name: "浆果糕",
-    en_name: "Berry Sludge"
+  use Onicn.Categories.Food
 
   section "简介" do
     "一份浆果糕需要5份冰霜麦粒和1份毛刺浆果作为原料。"

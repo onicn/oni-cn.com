@@ -1,7 +1,5 @@
 defmodule Onicn.Foods.FieldRation do
-  use Onicn.Categories.Food,
-    cn_name: "营养棒",
-    en_name: "Nutrient Bar"
+  use Onicn.Categories.Food
 
   section "简介" do
     "营养棒是一种初级食物。复制人不能人工制造营养棒。"

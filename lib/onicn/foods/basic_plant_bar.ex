@@ -1,7 +1,5 @@
 defmodule Onicn.Foods.BasicPlantBar do
-  use Onicn.Categories.Food,
-    cn_name: "米虱面包",
-    en_name: "Liceloaf"
+  use Onicn.Categories.Food
 
   section "简介" do
     "一份米虱面包需要2份米虱和50千克水作为原料。"

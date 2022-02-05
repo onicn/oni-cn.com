@@ -1,7 +1,5 @@
 defmodule Onicn.Foods.FriedMushroom do
-  use Onicn.Categories.Food,
-    cn_name: "煎蘑菇",
-    en_name: "Fried Mushroom"
+  use Onicn.Categories.Food
 
   section "简介" do
     "一份煎蘑菇需要一份蘑菇作为原料。"

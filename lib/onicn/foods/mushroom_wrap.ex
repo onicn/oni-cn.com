@@ -1,7 +1,5 @@
 defmodule Onicn.Foods.MushroomWrap do
-  use Onicn.Categories.Food,
-    cn_name: "蘑菇卷",
-    en_name: "Mushroom Wrap"
+  use Onicn.Categories.Food
 
   section "简介" do
     "一份蘑菇卷需要1份煎蘑菇和4份海生菜作为原料。"

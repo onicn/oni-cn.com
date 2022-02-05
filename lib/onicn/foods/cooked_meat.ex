@@ -1,7 +1,5 @@
 defmodule Onicn.Foods.CookedMeat do
-  use Onicn.Categories.Food,
-    cn_name: "烤肉串",
-    en_name: "Barbeque"
+  use Onicn.Categories.Food
 
   section "简介" do
     "一份烤肉串需要2千克肉作为原料。"

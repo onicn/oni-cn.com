@@ -1,7 +1,5 @@
 defmodule Onicn.Foods.SpicyTofu do
-  use Onicn.Categories.Food,
-    cn_name: "麻婆豆腐",
-    en_name: "Spicy Tofu"
+  use Onicn.Categories.Food
 
   section "简介" do
     "一份麻婆豆腐需要一份豆腐和一份火椒粒作为原料。"

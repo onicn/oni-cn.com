@@ -1,7 +1,5 @@
 defmodule Onicn.Foods.FriedMushBar do
-  use Onicn.Categories.Food,
-    cn_name: "炸泥膏",
-    en_name: "Mush Fry"
+  use Onicn.Categories.Food
 
   section "简介" do
     "一份炸泥膏需要一份软泥膏作为原料。"

@@ -1,7 +1,5 @@
 defmodule Onicn.Foods.PrickleFruit do
-  use Onicn.Categories.Food,
-    cn_name: "毛刺浆果",
-    en_name: "Bristle Berry"
+  use Onicn.Categories.Food
 
   section "简介" do
     "毛刺浆果是毛刺花的果实，可以食用。"

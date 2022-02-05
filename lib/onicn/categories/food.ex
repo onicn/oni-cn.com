@@ -1,61 +1,28 @@
-alias Onicn.Foods
+alias Onicn.{Foods, Translation}
 
 defmodule Onicn.Categories.Food do
-  @foods [
-    Foods.BasicForagePlant,
-    Foods.BasicPlantBar,
-    Foods.BasicPlantFood,
-    Foods.BeanPlantSeed,
-    Foods.Burger,
-    Foods.ColdWheatBread,
-    Foods.ColdWheatSeed,
-    Foods.CookedEgg,
-    Foods.CookedFish,
-    Foods.CookedMeat,
-    Foods.FieldRation,
-    Foods.FishMeat,
-    Foods.ForestForagePlant,
-    Foods.FriedMushBar,
-    Foods.FriedMushroom,
-    Foods.FruitCake,
-    Foods.GrilledPrickleFruit,
-    Foods.Lettuce,
-    Foods.Meat,
-    Foods.MushBar,
-    Foods.Mushroom,
-    Foods.MushroomWrap,
-    Foods.PickledMeal,
-    Foods.PrickleFruit,
-    Foods.RawEgg,
-    Foods.Salsa,
-    Foods.SpiceBread,
-    Foods.SpiceNut,
-    Foods.SpicyTofu,
-    Foods.SurfAndTurf,
-    Foods.Tofu
-  ]
-
-  defmacro __using__(attributes) do
+  defmacro __using__(_options) do
     quote do
       use Onicn.Content
 
       def __attributes__ do
-        name = __MODULE__ |> to_string() |> String.split(".") |> List.last() |> Macro.underscore()
+        name =
+          __MODULE__
+          |> to_string()
+          |> String.split(".")
+          |> List.last()
+          |> Macro.underscore()
+          |> String.to_atom()
 
-        properties =
-          unquote(__MODULE__).__properties__()
-          |> Enum.find(fn attribute -> attribute[:name] == name end)
-          |> Enum.into([])
-
-        unquote(attributes)
+        unquote(__MODULE__).__properties__()
+        |> Enum.find(fn data -> data[:name] == to_string(name) end)
         |> Keyword.put(:name, name)
-        |> Keyword.merge(properties)
+        |> Keyword.put(:cn_name, Translation.get(name))
       end
 
       def output(:html_attributes) do
         a = __attributes__()
         img = "/img/foods/#{a[:name]}.png"
-
         q = ["恶心", "糟糕", "低劣", "标准", "良好", "优秀", "杰出", "极佳"]
 
         data =
@@ -101,10 +68,9 @@ defmodule Onicn.Categories.Food do
   properties =
     :onicn
     |> :code.priv_dir()
-    |> Path.join("data/food.ex")
-    |> Code.eval_file()
-    |> elem(0)
-    |> Macro.escape()
+    |> Path.join("data/food.yaml")
+    |> YamlElixir.read_from_file!()
+    |> Enum.map(&Enum.map(&1, fn {key, value} -> {String.to_atom(key), value} end))
 
   def __properties__ do
     unquote(properties)
@@ -114,11 +80,14 @@ defmodule Onicn.Categories.Food do
   def __cn_name__, do: "食物"
 
   def __foods__ do
-    @foods
+    __properties__()
+    |> Enum.map(&Keyword.get(&1, :name))
+    |> Enum.map(&Module.concat(Foods, Macro.camelize(&1)))
+    |> Enum.filter(&Code.ensure_loaded?/1)
   end
 
   def generate_pages do
-    @foods
+    __foods__()
     |> Enum.map(&Task.async(fn -> do_generate_page(&1) end))
     |> Enum.each(&Task.await(&1, :infinity))
   end
@@ -209,7 +178,7 @@ defmodule Onicn.Categories.Food do
   end
 
   def output(:json_elements) do
-    Enum.map(@foods, fn module ->
+    Enum.map(__foods__(), fn module ->
       a = module.__attributes__()
 
       %{

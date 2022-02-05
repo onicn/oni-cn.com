@@ -1,7 +1,5 @@
 defmodule Onicn.Foods.MushBar do
-  use Onicn.Categories.Food,
-    cn_name: "软泥膏",
-    en_name: "Mush Bar"
+  use Onicn.Categories.Food
 
   section "简介" do
     "一份软泥膏需要75千克泥土和75千克水作为原料。"
