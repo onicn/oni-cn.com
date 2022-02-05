@@ -1,43 +1,24 @@
-alias Onicn.Geysers
+alias Onicn.{Geysers, Translation}
 
 defmodule Onicn.Categories.Geyser do
-  @geysers [
-    Geysers.GeyserGenericBigVolcano,
-    Geysers.GeyserGenericChlorineGas,
-    Geysers.GeyserGenericFilthyWater,
-    Geysers.GeyserGenericHotCo2,
-    Geysers.GeyserGenericHotHydrogen,
-    Geysers.GeyserGenericHotPo2,
-    Geysers.GeyserGenericHotSteam,
-    Geysers.GeyserGenericHotWater,
-    Geysers.GeyserGenericLiquidCo2,
-    Geysers.GeyserGenericMethane,
-    Geysers.GeyserGenericMoltenCopper,
-    Geysers.GeyserGenericMoltenGold,
-    Geysers.GeyserGenericMoltenIron,
-    Geysers.GeyserGenericOilDrip,
-    Geysers.GeyserGenericSaltWater,
-    Geysers.GeyserGenericSlimyPo2,
-    Geysers.GeyserGenericSlushWater,
-    Geysers.GeyserGenericSmallVolcano,
-    Geysers.GeyserGenericSteam
-  ]
-
-  defmacro __using__(attributes) do
+  defmacro __using__(_attributes) do
     quote do
       use Onicn.Content
 
       def __attributes__ do
-        name = __MODULE__ |> to_string() |> String.split(".") |> List.last() |> Macro.underscore()
+        name =
+          __MODULE__
+          |> to_string()
+          |> String.split(".")
+          |> List.last()
+          |> Macro.underscore()
+          |> String.to_atom()
 
-        properties =
-          unquote(__MODULE__).__properties__()
-          |> Enum.find(fn attribute -> attribute[:name] == name end)
-          |> Enum.into([])
-
-        unquote(attributes)
-        |> Keyword.put(:name, name)
-        |> Keyword.merge(properties)
+        unquote(__MODULE__).__properties__()
+        |> Enum.find(fn data -> data[:name] == to_string(name) end)
+        |> Map.put(:name, name)
+        |> Map.put(:cn_name, Translation.get(name))
+        |> Enum.to_list()
       end
 
       def to_percentage(number) do
@@ -93,9 +74,9 @@ defmodule Onicn.Categories.Geyser do
   properties =
     :onicn
     |> :code.priv_dir()
-    |> Path.join("data/geysers.ex")
-    |> Code.eval_file()
-    |> elem(0)
+    |> Path.join("data/geyser.yaml")
+    |> YamlElixir.read_from_file!()
+    |> Enum.map(&Map.new(&1, fn {key, value} -> {String.to_atom(key), value} end))
     |> Macro.escape()
 
   def __properties__ do
@@ -106,11 +87,14 @@ defmodule Onicn.Categories.Geyser do
   def __cn_name__, do: "间歇泉"
 
   def __geysers__ do
-    @geysers
+    __properties__()
+    |> Enum.map(&Map.get(&1, :name))
+    |> Enum.map(&Module.concat(Geysers, Macro.camelize(&1)))
+    |> Enum.filter(&Code.ensure_loaded?/1)
   end
 
   def generate_pages do
-    @geysers
+    __geysers__()
     |> Enum.map(&Task.async(fn -> do_generate_page(&1) end))
     |> Enum.each(&Task.await(&1, :infinity))
   end
@@ -206,7 +190,7 @@ defmodule Onicn.Categories.Geyser do
   end
 
   def output(:json_elements) do
-    Enum.map(@geysers, fn module ->
+    Enum.map(__geysers__(), fn module ->
       a = module.__attributes__()
       produce_module = Module.concat(Onicn.Elements, Macro.camelize(a[:produced_element]))
       icon = ~s|<i class="layui-icon layui-icon-subtraction"></i>|
