@@ -16,11 +16,14 @@ elements:
     hardness: 0
     molarMass: 0
     lightAbsorptionFactor: 0
+    radiationAbsorptionFactor: 0
+    radiationPer1000Mass: 0
     materialCategory: Special
     buildMenuSort: 1
     isDisabled: false
     state: Vacuum
     localizationID: STRINGS.ELEMENTS.VACUUM.NAME
+    dlcId: ""
   
   - elementId: Void
     specificHeatCapacity: 0
@@ -38,8 +41,36 @@ elements:
     hardness: 0
     molarMass: 0
     lightAbsorptionFactor: 0
+    radiationAbsorptionFactor: 0
+    radiationPer1000Mass: 0
     materialCategory: Special
     buildMenuSort: 1
     isDisabled: false
     state: Vacuum
     localizationID: STRINGS.ELEMENTS.VOID.NAME
+    dlcId: ""
+    
+  - elementId: COMPOSITION #this is just here so it is added to the simhashes.cs file!
+    specificHeatCapacity: 0
+    thermalConductivity: 0
+    solidSurfaceAreaMultiplier: 0
+    liquidSurfaceAreaMultiplier: 0
+    gasSurfaceAreaMultiplier: 0
+    strength: 0
+    highTemp: 0
+    highTempTransitionTarget: Void
+    defaultTemperature: 0
+    defaultMass: 0
+    maxMass: 0
+    # hardnessTier: 0
+    hardness: 0
+    molarMass: 0
+    lightAbsorptionFactor: 0
+    radiationAbsorptionFactor: 0.5
+    radiationPer1000Mass: 0
+    materialCategory: Special
+    buildMenuSort: 1
+    isDisabled: false
+    state: Vacuum
+    localizationID: STRINGS.ELEMENTS.COMPOSITION.NAME
+    dlcId: EXPANSION1_ID
