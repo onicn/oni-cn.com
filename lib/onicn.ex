@@ -1,3 +1,5 @@
+alias Onicn.{Elements, Buildings, Foods, Plants, Others}
+
 defmodule Onicn do
   def generate_all do
     Onicn.Categories.Solid.generate_pages()
@@ -99,5 +101,11 @@ defmodule Onicn do
       end)
 
     do_generate(t ++ new, dist_root, results)
+  end
+
+  def guess_name(str) do
+    [Elements, Buildings, Foods, Plants, Others]
+    |> Enum.map(&Module.concat(&1, Macro.camelize(str)))
+    |> Enum.find(&Code.ensure_loaded?/1)
   end
 end

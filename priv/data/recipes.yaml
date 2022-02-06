@@ -1,0 +1,1228 @@
+- name: advanced_research_center
+  recipes:
+  - require:
+    - material_id: water
+      rate: 0.833
+    produce: []
+- name: air_filter
+  recipes:
+  - require:
+    - material_id: filter
+      rate: 0.133
+    - material_id: contaminated_oxygen
+      rate: 0.1
+    produce:
+    - material_id: clay
+      min_temp: -273.15
+      rate: 0.143
+    - material_id: oxygen
+      min_temp: -273.15
+      rate: 0.09
+- name: algae_distillery
+  recipes:
+  - require:
+    - material_id: slime_mold
+      rate: 0.6
+    produce:
+    - material_id: algae
+      min_temp: 30
+      rate: 0.2
+    - material_id: dirty_water
+      min_temp: 30
+      rate: 0.4
+- name: algae_habitat
+  recipes:
+  - require:
+    - material_id: algae
+      rate: 0.03
+    - material_id: water
+      rate: 0.3
+    produce:
+    - material_id: oxygen
+      min_temp: 30
+      rate: 0.04
+- name: atomic_garden
+  recipes:
+  - require:
+    - material_id: dirty_water
+      rate: 0.039
+    - material_id: dirt
+      rate: 0.065
+    - material_id: phosphorite
+      rate: 0.026
+    produce:
+    - material_id: fertilizer
+      min_temp: 50
+      rate: 0.12
+- name: c_o2_scrubber
+  recipes:
+  - require:
+    - material_id: water
+      rate: 1
+    - material_id: carbon_dioxide
+      rate: 0.3
+    produce:
+    - material_id: dirty_water
+      min_temp: -273.15
+      rate: 1
+- name: clothing_fabricator
+  recipes:
+  - require:
+    - material_id: basic_fabric
+      amount: 4
+    produce:
+    - material_id: warm_vest
+      amount: 1
+  - require:
+    - material_id: basic_fabric
+      amount: 4
+    produce:
+    - material_id: cool_vest
+      amount: 1
+  - require:
+    - material_id: basic_fabric
+      amount: 4
+    produce:
+    - material_id: funky_vest
+      amount: 1
+- name: compost
+  recipes:
+  - require:
+    - material_id: compostable
+      rate: 0.1
+    produce:
+    - material_id: dirt
+      min_temp: 75
+      rate: 0.1
+- name: cooking_station
+  recipes:
+  - require:
+    - material_id: basic_plant_food
+      amount: 3
+    produce:
+    - material_id: pickled_meal
+      amount: 1
+  - require:
+    - material_id: mush_bar
+      amount: 1
+    produce:
+    - material_id: fried_mush_bar
+      amount: 1
+  - require:
+    - material_id: mushroom
+      amount: 1
+    produce:
+    - material_id: fried_mushroom
+      amount: 1
+  - require:
+    - material_id: meat
+      amount: 2
+    produce:
+    - material_id: cooked_meat
+      amount: 1
+  - require:
+    - material_id: fish_meat
+      amount: 1
+    produce:
+    - material_id: cooked_fish
+      amount: 1
+  - require:
+    - material_id: prickle_fruit
+      amount: 1
+    produce:
+    - material_id: grilled_prickle_fruit
+      amount: 1
+  - require:
+    - material_id: swamp_fruit
+      amount: 1
+    produce:
+    - material_id: swamp_delights
+      amount: 1
+  - require:
+    - material_id: cold_wheat_seed
+      amount: 3
+    produce:
+    - material_id: cold_wheat_bread
+      amount: 1
+  - require:
+    - material_id: raw_egg
+      amount: 1
+    produce:
+    - material_id: cooked_egg
+      amount: 1
+  - require:
+    - material_id: worm_basic_fruit
+      amount: 1
+    produce:
+    - material_id: worm_basic_food
+      amount: 1
+  - require:
+    - material_id: worm_super_fruit
+      amount: 8
+    - material_id: sucrose
+      amount: 4
+    produce:
+    - material_id: worm_super_food
+      amount: 1
+- name: crafting_table
+  recipes:
+  - require:
+    - material_id: cuprite
+      amount: 50
+    produce:
+    - material_id: oxygen_mask
+      amount: 1
+  - require:
+    - material_id: aluminum_ore
+      amount: 50
+    produce:
+    - material_id: oxygen_mask
+      amount: 1
+  - require:
+    - material_id: iron_ore
+      amount: 50
+    produce:
+    - material_id: oxygen_mask
+      amount: 1
+  - require:
+    - material_id: cobaltite
+      amount: 50
+    produce:
+    - material_id: oxygen_mask
+      amount: 1
+  - require:
+    - material_id: worn_oxygen_mask
+      amount: 1
+    produce:
+    - material_id: oxygen_mask
+      amount: 1
+- name: dlc1_cosmic_research_center
+  recipes:
+  - require:
+    - material_id: orbital_research_databank
+      rate: 0.02
+    produce: []
+- name: diamond_press
+  recipes:
+  - require:
+    - material_id: refined_carbon
+      amount: 100
+    produce:
+    - material_id: diamond
+      amount: 100
+- name: electrolyzer
+  recipes:
+  - require:
+    - material_id: water
+      rate: 1
+    produce:
+    - material_id: oxygen
+      min_temp: 70
+      rate: 0.888
+    - material_id: hydrogen
+      min_temp: 70
+      rate: 0.112
+- name: ethanol_distillery
+  recipes:
+  - require:
+    - material_id: wood_log
+      rate: 1
+    produce:
+    - material_id: ethanol
+      min_temp: 73.35
+      rate: 0.5
+    - material_id: toxic_sand
+      min_temp: 93.35
+      rate: 0.333
+    - material_id: carbon_dioxide
+      min_temp: 93.35
+      rate: 0.167
+- name: fertilizer_maker
+  recipes:
+  - require:
+    - material_id: dirty_water
+      rate: 0.039
+    - material_id: dirt
+      rate: 0.065
+    - material_id: phosphorite
+      rate: 0.026
+    produce:
+    - material_id: fertilizer
+      min_temp: 50
+      rate: 0.12
+- name: generator
+  recipes:
+  - require:
+    - material_id: carbon
+      rate: 1
+    produce:
+    - material_id: carbon_dioxide
+      min_temp: 110
+      rate: 0.02
+- name: glass_forge
+  recipes:
+  - require:
+    - material_id: sand
+      amount: 100
+    produce:
+    - material_id: molten_glass
+      amount: 25
+- name: gourmet_cooking_station
+  recipes:
+  - require:
+    - material_id: grilled_prickle_fruit
+      amount: 2
+    - material_id: spice_nut
+      amount: 2
+    produce:
+    - material_id: salsa
+      amount: 1
+  - require:
+    - material_id: fried_mushroom
+      amount: 1
+    - material_id: lettuce
+      amount: 4
+    produce:
+    - material_id: mushroom_wrap
+      amount: 1
+  - require:
+    - material_id: cooked_meat
+      amount: 1
+    - material_id: cooked_fish
+      amount: 1
+    produce:
+    - material_id: surf_and_turf
+      amount: 1
+  - require:
+    - material_id: cold_wheat_seed
+      amount: 10
+    - material_id: spice_nut
+      amount: 1
+    produce:
+    - material_id: spice_bread
+      amount: 1
+  - require:
+    - material_id: tofu
+      amount: 1
+    - material_id: spice_nut
+      amount: 1
+    produce:
+    - material_id: spicy_tofu
+      amount: 1
+  - require:
+    - material_id: cold_wheat_bread
+      amount: 1
+    - material_id: lettuce
+      amount: 1
+    - material_id: cooked_meat
+      amount: 1
+    produce:
+    - material_id: burger
+      amount: 1
+  - require:
+    - material_id: cold_wheat_seed
+      amount: 3
+    - material_id: worm_super_fruit
+      amount: 4
+    - material_id: grilled_prickle_fruit
+      amount: 1
+    produce:
+    - material_id: berry_pie
+      amount: 1
+  - require:
+    - material_id: methane
+      rate: 0.1
+    produce:
+    - material_id: carbon_dioxide
+      min_temp: 75
+      rate: 0.025
+- name: kiln
+  recipes:
+  - require:
+    - material_id: clay
+      amount: 100
+    - material_id: carbon
+      amount: 25
+    produce:
+    - material_id: ceramic
+      amount: 100
+  - require:
+    - material_id: carbon
+      amount: 125
+    produce:
+    - material_id: refined_carbon
+      amount: 100
+- name: manual_high_energy_particle_spawner
+  recipes:
+  - require:
+    - material_id: uranium_ore
+      amount: 1
+    produce:
+    - material_id: depleted_uranium
+      amount: 0.5
+  - require:
+    - material_id: enriched_uranium
+      amount: 1
+    produce:
+    - material_id: depleted_uranium
+      amount: 0.8
+- name: metal_refinery
+  recipes:
+  - require:
+    - material_id: cuprite
+      amount: 100
+    produce:
+    - material_id: copper
+      amount: 100
+  - require:
+    - material_id: cobaltite
+      amount: 100
+    produce:
+    - material_id: cobalt
+      amount: 100
+  - require:
+    - material_id: wolframite
+      amount: 100
+    produce:
+    - material_id: tungsten
+      amount: 100
+  - require:
+    - material_id: electrum
+      amount: 100
+    produce:
+    - material_id: gold
+      amount: 100
+  - require:
+    - material_id: aluminum_ore
+      amount: 100
+    produce:
+    - material_id: aluminum
+      amount: 100
+  - require:
+    - material_id: gold_amalgam
+      amount: 100
+    produce:
+    - material_id: gold
+      amount: 100
+  - require:
+    - material_id: temp_conductor_solid
+      amount: 100
+    produce:
+    - material_id: niobium
+      amount: 100
+  - require:
+    - material_id: iron_ore
+      amount: 100
+    produce:
+    - material_id: iron
+      amount: 100
+  - require:
+    - material_id: fools_gold
+      amount: 100
+    produce:
+    - material_id: iron
+      amount: 100
+  - require:
+    - material_id: iron
+      amount: 70
+    - material_id: refined_carbon
+      amount: 20
+    - material_id: lime
+      amount: 10
+    produce:
+    - material_id: steel
+      amount: 100
+- name: microbe_musher
+  recipes:
+  - require:
+    - material_id: dirt
+      amount: 75
+    - material_id: water
+      amount: 75
+    produce:
+    - material_id: mush_bar
+      amount: 1
+  - require:
+    - material_id: basic_plant_food
+      amount: 2
+    - material_id: water
+      amount: 50
+    produce:
+    - material_id: basic_plant_bar
+      amount: 1
+  - require:
+    - material_id: bean_plant_seed
+      amount: 6
+    - material_id: water
+      amount: 50
+    produce:
+    - material_id: tofu
+      amount: 1
+  - require:
+    - material_id: cold_wheat_seed
+      amount: 5
+    - material_id: prickle_fruit
+      amount: 1
+    produce:
+    - material_id: fruit_cake
+      amount: 1
+- name: mineral_deoxidizer
+  recipes:
+  - require:
+    - material_id: algae
+      rate: 0.55
+    produce:
+    - material_id: oxygen
+      min_temp: 30
+      rate: 0.5
+- name: oil_refinery
+  recipes:
+  - require:
+    - material_id: crude_oil
+      rate: 10
+    produce:
+    - material_id: petroleum
+      min_temp: 75
+      rate: 5
+    - material_id: methane
+      min_temp: 75
+      rate: 0.09
+- name: oil_well_cap
+  recipes:
+  - require:
+    - material_id: water
+      rate: 1
+    produce:
+    - material_id: crude_oil
+      min_temp: 90
+      rate: 3.333
+- name: orbital_research_center
+  recipes:
+  - require:
+    - material_id: polypropylene
+      amount: 5
+    produce:
+    - material_id: orbital_research_databank
+      amount: 1
+- name: oxylite_refinery
+  recipes:
+  - require:
+    - material_id: oxygen
+      rate: 0.6
+    - material_id: gold
+      rate: 0.003
+    produce:
+    - material_id: oxy_rock
+      min_temp: 30
+      rate: 0.6
+- name: polymerizer
+  recipes:
+  - require:
+    - material_id: petroleum
+      rate: 0.833
+    produce:
+    - material_id: polypropylene
+      min_temp: 75
+      rate: 0.5
+    - material_id: steam
+      min_temp: 200
+      rate: 0.008
+    - material_id: carbon_dioxide
+      min_temp: 150
+      rate: 0.008
+- name: radiation_light
+  recipes:
+  - require:
+    - material_id: uranium_ore
+      rate: 0.017
+    produce:
+    - material_id: depleted_uranium
+      min_temp: -273.15
+      rate: 0.008
+- name: research_center
+  recipes:
+  - require:
+    - material_id: dirt
+      rate: 1.111
+    produce: []
+- name: rock_crusher
+  recipes:
+  - require:
+    - material_id: super_insulator
+      amount: 100
+    produce:
+    - material_id: sand
+      amount: 100
+  - require:
+    - material_id: ceramic
+      amount: 100
+    produce:
+    - material_id: sand
+      amount: 100
+  - require:
+    - material_id: obsidian
+      amount: 100
+    produce:
+    - material_id: sand
+      amount: 100
+  - require:
+    - material_id: igneous_rock
+      amount: 100
+    produce:
+    - material_id: sand
+      amount: 100
+  - require:
+    - material_id: granite
+      amount: 100
+    produce:
+    - material_id: sand
+      amount: 100
+  - require:
+    - material_id: sedimentary_rock
+      amount: 100
+    produce:
+    - material_id: sand
+      amount: 100
+  - require:
+    - material_id: sand_stone
+      amount: 100
+    produce:
+    - material_id: sand
+      amount: 100
+  - require:
+    - material_id: cuprite
+      amount: 100
+    produce:
+    - material_id: copper
+      amount: 50
+    - material_id: sand
+      amount: 50
+  - require:
+    - material_id: cobaltite
+      amount: 100
+    produce:
+    - material_id: cobalt
+      amount: 50
+    - material_id: sand
+      amount: 50
+  - require:
+    - material_id: wolframite
+      amount: 100
+    produce:
+    - material_id: tungsten
+      amount: 50
+    - material_id: sand
+      amount: 50
+  - require:
+    - material_id: electrum
+      amount: 100
+    produce:
+    - material_id: gold
+      amount: 50
+    - material_id: sand
+      amount: 50
+  - require:
+    - material_id: aluminum_ore
+      amount: 100
+    produce:
+    - material_id: aluminum
+      amount: 50
+    - material_id: sand
+      amount: 50
+  - require:
+    - material_id: gold_amalgam
+      amount: 100
+    produce:
+    - material_id: gold
+      amount: 50
+    - material_id: sand
+      amount: 50
+  - require:
+    - material_id: temp_conductor_solid
+      amount: 100
+    produce:
+    - material_id: niobium
+      amount: 50
+    - material_id: sand
+      amount: 50
+  - require:
+    - material_id: iron_ore
+      amount: 100
+    produce:
+    - material_id: iron
+      amount: 50
+    - material_id: sand
+      amount: 50
+  - require:
+    - material_id: fools_gold
+      amount: 100
+    produce:
+    - material_id: iron
+      amount: 50
+    - material_id: sand
+      amount: 50
+  - require:
+    - material_id: egg_shell
+      amount: 5
+    produce:
+    - material_id: lime
+      amount: 5
+  - require:
+    - material_id: baby_crab_shell
+      amount: 1
+    produce:
+    - material_id: lime
+      amount: 5
+  - require:
+    - material_id: crab_shell
+      amount: 1
+    produce:
+    - material_id: lime
+      amount: 10
+  - require:
+    - material_id: fossil
+      amount: 100
+    produce:
+    - material_id: lime
+      amount: 5
+    - material_id: sedimentary_rock
+      amount: 95
+  - require:
+    - material_id: salt
+      amount: 100
+    produce:
+    - material_id: table_salt
+      amount: 0.005
+    - material_id: sand
+      amount: 99.995
+  - require:
+    - material_id: fullerene
+      amount: 100
+    produce:
+    - material_id: graphite
+      amount: 90
+    - material_id: sand
+      amount: 10
+- name: rust_deoxidizer
+  recipes:
+  - require:
+    - material_id: rust
+      rate: 0.75
+    - material_id: salt
+      rate: 0.25
+    produce:
+    - material_id: oxygen
+      min_temp: 75
+      rate: 0.57
+    - material_id: chlorine_gas
+      min_temp: 75
+      rate: 0.03
+    - material_id: iron_ore
+      min_temp: 75
+      rate: 0.4
+- name: shower
+  recipes:
+  - require:
+    - material_id: water
+      rate: 1
+    produce:
+    - material_id: dirty_water
+      min_temp: -273.15
+      rate: 1
+- name: sludge_press
+  recipes:
+  - require:
+    - material_id: toxic_mud
+      amount: 150
+    produce:
+    - material_id: toxic_sand
+      amount: 60
+    - material_id: dirty_water
+      amount: 90
+  - require:
+    - material_id: mud
+      amount: 150
+    produce:
+    - material_id: dirt
+      amount: 60
+    - material_id: water
+      amount: 90
+- name: sublimation_station
+  recipes:
+  - require:
+    - material_id: toxic_sand
+      rate: 1
+    produce:
+    - material_id: contaminated_oxygen
+      min_temp: 30
+      rate: 0.66
+- name: suit_fabricator
+  recipes:
+  - require:
+    - material_id: copper
+      amount: 300
+    - material_id: basic_fabric
+      amount: 2
+    produce:
+    - material_id: atmo_suit
+      amount: 1
+  - require:
+    - material_id: aluminum
+      amount: 300
+    - material_id: basic_fabric
+      amount: 2
+    produce:
+    - material_id: atmo_suit
+      amount: 1
+  - require:
+    - material_id: iron
+      amount: 300
+    - material_id: basic_fabric
+      amount: 2
+    produce:
+    - material_id: atmo_suit
+      amount: 1
+  - require:
+    - material_id: cobalt
+      amount: 300
+    - material_id: basic_fabric
+      amount: 2
+    produce:
+    - material_id: atmo_suit
+      amount: 1
+  - require:
+    - material_id: worn_atmo_suit
+      amount: 1
+    - material_id: basic_fabric
+      amount: 1
+    produce:
+    - material_id: atmo_suit
+      amount: 1
+  - require:
+    - material_id: steel
+      amount: 200
+    - material_id: petroleum
+      amount: 25
+    produce:
+    - material_id: jet_suit
+      amount: 1
+  - require:
+    - material_id: worn_jet_suit
+      amount: 1
+    - material_id: basic_fabric
+      amount: 1
+    produce:
+    - material_id: jet_suit
+      amount: 1
+  - require:
+    - material_id: lead
+      amount: 200
+    - material_id: glass
+      amount: 10
+    produce:
+    - material_id: lead_suit
+      amount: 1
+  - require:
+    - material_id: worn_lead_suit
+      amount: 1
+    - material_id: glass
+      amount: 5
+    produce:
+    - material_id: lead_suit
+      amount: 1
+- name: supermaterial_refinery
+  recipes:
+  - require:
+    - material_id: fullerene
+      amount: 1
+    - material_id: gold
+      amount: 49.5
+    - material_id: petroleum
+      amount: 49.5
+    produce:
+    - material_id: super_coolant
+      amount: 100
+  - require:
+    - material_id: graphite
+      amount: 90
+    - material_id: sulfur
+      amount: 5.000001
+    - material_id: aluminum
+      amount: 5.000001
+    produce:
+    - material_id: fullerene
+      amount: 100
+  - require:
+    - material_id: isoresin
+      amount: 15
+    - material_id: katairite
+      amount: 80
+    - material_id: basic_fabric
+      amount: 5
+    produce:
+    - material_id: super_insulator
+      amount: 100
+  - require:
+    - material_id: niobium
+      amount: 5
+    - material_id: tungsten
+      amount: 95
+    produce:
+    - material_id: temp_conductor_solid
+      amount: 100
+  - require:
+    - material_id: isoresin
+      amount: 35
+    - material_id: petroleum
+      amount: 65
+    produce:
+    - material_id: visco_gel
+      amount: 100
+- name: uranium_centrifuge
+  recipes:
+  - require:
+    - material_id: uranium_ore
+      amount: 10
+    produce:
+    - material_id: enriched_uranium
+      amount: 2
+    - material_id: molten_uranium
+      amount: 8
+- name: water_purifier
+  recipes:
+  - require:
+    - material_id: filter
+      rate: 1
+    - material_id: dirty_water
+      rate: 5
+    produce:
+    - material_id: water
+      min_temp: -273.15
+      rate: 5
+    - material_id: toxic_sand
+      min_temp: -273.15
+      rate: 0.2
+- name: desalinator
+  recipes:
+  - require:
+    - material_id: salt_water
+      rate: 5
+    produce:
+    - material_id: water
+      min_temp: -273.15
+      rate: 4.65
+    - material_id: salt
+      min_temp: -273.15
+      rate: 0.35
+- name: apothecary
+  recipes:
+  - require:
+    - material_id: prickle_flower_seed
+      amount: 1
+    - material_id: dirt
+      amount: 1
+    produce:
+    - material_id: antihistamine
+      amount: 10
+  - require:
+    - material_id: carbon
+      amount: 1
+    produce:
+    - material_id: basic_booster
+      amount: 1
+  - require:
+    - material_id: carbon
+      amount: 1
+    - material_id: water
+      amount: 1
+    produce:
+    - material_id: basic_cure
+      amount: 1
+  - require:
+    - material_id: carbon
+      amount: 1
+    produce:
+    - material_id: basic_rad_pill
+      amount: 1
+  - require:
+    - material_id: spice_nut
+      amount: 1
+    produce:
+    - material_id: intermediate_booster
+      amount: 1
+  - require:
+    - material_id: swamp_lily_flower
+      amount: 1
+    - material_id: phosphorite
+      amount: 1
+    produce:
+    - material_id: intermediate_cure
+      amount: 1
+  - require:
+    - material_id: steel
+      amount: 1
+    - material_id: light_bug_orange_egg
+      amount: 1
+    produce:
+    - material_id: advanced_cure
+      amount: 1
+- name: advanced_apothecary
+  recipes:
+  - require:
+    - material_id: carbon
+      amount: 1
+    produce:
+    - material_id: intermediate_rad_pill
+      amount: 1
+- name: egg_cracker
+  recipes:
+  - require:
+    - material_id: light_bug_purple_egg
+      amount: 1
+    produce:
+    - material_id: raw_egg
+      amount: 0.1
+    - material_id: egg_shell
+      amount: 0.1
+  - require:
+    - material_id: mole_egg
+      amount: 1
+    produce:
+    - material_id: raw_egg
+      amount: 1
+    - material_id: egg_shell
+      amount: 1
+  - require:
+    - material_id: oilfloater_egg
+      amount: 1
+    produce:
+    - material_id: raw_egg
+      amount: 1
+    - material_id: egg_shell
+      amount: 1
+  - require:
+    - material_id: oilfloater_decor_egg
+      amount: 1
+    produce:
+    - material_id: raw_egg
+      amount: 1
+    - material_id: egg_shell
+      amount: 1
+  - require:
+    - material_id: oilfloater_high_temp_egg
+      amount: 1
+    produce:
+    - material_id: raw_egg
+      amount: 1
+    - material_id: egg_shell
+      amount: 1
+  - require:
+    - material_id: puft_alpha_egg
+      amount: 1
+    produce:
+    - material_id: raw_egg
+      amount: 0.25
+    - material_id: egg_shell
+      amount: 0.25
+  - require:
+    - material_id: puft_egg
+      amount: 1
+    produce:
+    - material_id: raw_egg
+      amount: 0.25
+    - material_id: egg_shell
+      amount: 0.25
+  - require:
+    - material_id: puft_oxylite_egg
+      amount: 1
+    produce:
+    - material_id: raw_egg
+      amount: 0.25
+    - material_id: egg_shell
+      amount: 0.25
+  - require:
+    - material_id: staterpillar_egg
+      amount: 1
+    produce:
+    - material_id: raw_egg
+      amount: 1
+    - material_id: egg_shell
+      amount: 1
+  - require:
+    - material_id: puft_bleachstone_egg
+      amount: 1
+    produce:
+    - material_id: raw_egg
+      amount: 0.25
+    - material_id: egg_shell
+      amount: 0.25
+  - require:
+    - material_id: light_bug_pink_egg
+      amount: 1
+    produce:
+    - material_id: raw_egg
+      amount: 0.1
+    - material_id: egg_shell
+      amount: 0.1
+  - require:
+    - material_id: light_bug_orange_egg
+      amount: 1
+    produce:
+    - material_id: raw_egg
+      amount: 0.1
+    - material_id: egg_shell
+      amount: 0.1
+  - require:
+    - material_id: drecko_egg
+      amount: 1
+    produce:
+    - material_id: raw_egg
+      amount: 1
+    - material_id: egg_shell
+      amount: 1
+  - require:
+    - material_id: drecko_plastic_egg
+      amount: 1
+    produce:
+    - material_id: raw_egg
+      amount: 1
+    - material_id: egg_shell
+      amount: 1
+  - require:
+    - material_id: light_bug_black_egg
+      amount: 1
+    produce:
+    - material_id: raw_egg
+      amount: 0.1
+    - material_id: egg_shell
+      amount: 0.1
+  - require:
+    - material_id: light_bug_blue_egg
+      amount: 1
+    produce:
+    - material_id: raw_egg
+      amount: 0.1
+    - material_id: egg_shell
+      amount: 0.1
+  - require:
+    - material_id: light_bug_egg
+      amount: 1
+    produce:
+    - material_id: raw_egg
+      amount: 0.1
+    - material_id: egg_shell
+      amount: 0.1
+  - require:
+    - material_id: light_bug_crystal_egg
+      amount: 1
+    produce:
+    - material_id: raw_egg
+      amount: 0.1
+    - material_id: egg_shell
+      amount: 0.1
+  - require:
+    - material_id: squirrel_egg
+      amount: 1
+    produce:
+    - material_id: raw_egg
+      amount: 1
+    - material_id: egg_shell
+      amount: 1
+  - require:
+    - material_id: crab_egg
+      amount: 1
+    produce:
+    - material_id: raw_egg
+      amount: 1
+    - material_id: egg_shell
+      amount: 1
+  - require:
+    - material_id: divergent_beetle_egg
+      amount: 1
+    produce:
+    - material_id: raw_egg
+      amount: 1
+    - material_id: egg_shell
+      amount: 1
+  - require:
+    - material_id: divergent_worm_egg
+      amount: 1
+    produce:
+    - material_id: raw_egg
+      amount: 1
+    - material_id: egg_shell
+      amount: 1
+  - require:
+    - material_id: pacu_cleaner_egg
+      amount: 1
+    produce:
+    - material_id: raw_egg
+      amount: 2
+    - material_id: egg_shell
+      amount: 2
+  - require:
+    - material_id: pacu_egg
+      amount: 1
+    produce:
+    - material_id: raw_egg
+      amount: 2
+    - material_id: egg_shell
+      amount: 2
+  - require:
+    - material_id: hatch_veggie_egg
+      amount: 1
+    produce:
+    - material_id: raw_egg
+      amount: 1
+    - material_id: egg_shell
+      amount: 1
+  - require:
+    - material_id: pacu_tropical_egg
+      amount: 1
+    produce:
+    - material_id: raw_egg
+      amount: 2
+    - material_id: egg_shell
+      amount: 2
+  - require:
+    - material_id: hatch_metal_egg
+      amount: 1
+    produce:
+    - material_id: raw_egg
+      amount: 1
+    - material_id: egg_shell
+      amount: 1
+  - require:
+    - material_id: hatch_hard_egg
+      amount: 1
+    produce:
+    - material_id: raw_egg
+      amount: 1
+    - material_id: egg_shell
+      amount: 1
+  - require:
+    - material_id: hatch_egg
+      amount: 1
+    produce:
+    - material_id: raw_egg
+      amount: 1
+    - material_id: egg_shell
+      amount: 1
+- name: oxyfern
+  recipes:
+  - require:
+    - material_id: carbon_dioxide
+      rate: 0.001
+    produce:
+    - material_id: oxygen
+      min_temp: -273.15
+      rate: 0.031
+- name: pacu_cleaner
+  recipes:
+  - require:
+    - material_id: dirty_water
+      rate: 0.2
+    produce:
+    - material_id: water
+      min_temp: -273.15
+      rate: 0.2

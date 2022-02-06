@@ -1,14 +1,89 @@
 defmodule Onicn.Recipe do
-  recipes =
+  building_recipes =
     :onicn
     |> :code.priv_dir()
-    |> Path.join("data/recipes.ex")
-    |> Code.eval_file()
-    |> elem(0)
+    |> Path.join("data/recipes.yaml")
+    |> YamlElixir.read_from_file!()
+    |> Enum.reject(fn building ->
+      building["name"] |> Onicn.guess_name() |> is_nil()
+    end)
+    |> Enum.map(fn building ->
+      %{
+        name: Onicn.guess_name(building["name"]),
+        recipes:
+          Enum.map(building["recipes"], fn recipe ->
+            %{
+              produce:
+                recipe
+                |> Map.get("produce", [])
+                |> Enum.map(fn p ->
+                  Map.new(p, fn
+                    {"material_id", value} -> {:material_id, Onicn.guess_name(value)}
+                    {key, value} -> {String.to_atom(key), value}
+                  end)
+                end)
+                |> Enum.reject(fn p -> is_nil(p[:material_id]) end),
+              require:
+                recipe
+                |> Map.get("require", [])
+                |> Enum.map(fn p ->
+                  Map.new(p, fn
+                    {"material_id", value} -> {:material_id, Onicn.guess_name(value)}
+                    {key, value} -> {String.to_atom(key), value}
+                  end)
+                end)
+                |> Enum.reject(fn p -> is_nil(p[:material_id]) end)
+            }
+          end)
+      }
+    end)
+    |> Macro.escape()
+
+  plant_recipes =
+    Onicn.Categories.Plant.__properties__()
+    |> Enum.filter(fn plant ->
+      Enum.any?([:require_liquid, :require_fertilizer, :produce_crop], &Map.has_key?(plant, &1))
+    end)
+    |> Enum.reject(fn plant ->
+      plant[:name] |> Onicn.guess_name() |> is_nil()
+    end)
+    |> Enum.map(fn plant ->
+      %{
+        name: Onicn.guess_name(plant[:name]),
+        recipes: [
+          %{
+            produce:
+              for %{produce_crop: produce_crop, produce_crop_num: produce_crop_num} <- plant do
+                %{
+                  material_id: Onicn.guess_name(produce_crop),
+                  amount: produce_crop_num
+                }
+              end,
+            require:
+              [
+                :require_fertilizer,
+                :require_fertilizer_per_cycle,
+                :require_liquid,
+                :require_liquid_per_cycle
+              ]
+              |> Enum.map(&Map.get(plant, &1))
+              |> Enum.map(&List.wrap/1)
+              |> Enum.concat()
+              |> Enum.chunk_every(2)
+              |> Enum.map(fn [require_item, require_item_per_cycle] ->
+                %{
+                  material_id: Onicn.guess_name(require_item),
+                  rate: {:circle, require_item_per_cycle}
+                }
+              end)
+          }
+        ]
+      }
+    end)
     |> Macro.escape()
 
   def recipes do
-    unquote(recipes)
+    Enum.concat(unquote(building_recipes), unquote(plant_recipes))
   end
 
   def building(building) do
