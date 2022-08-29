@@ -106,6 +106,16 @@
   stale_time: 2
   effects:
   - seafood_radiation_resistance
+- name: shellfish_meat
+  name_cn: 生蟹肉
+  calories: 1000
+  quality: 2
+  preserve_temperature: -18
+  rot_temperature: 4
+  spoil_time: 4
+  stale_time: 2
+  effects:
+  - seafood_radiation_resistance
 - name: worm_basic_fruit
   name_cn: 贫瘠虫果
   calories: 800
@@ -195,7 +205,7 @@
   spoil_time: 4
   stale_time: 2
 - name: cooked_fish
-  name_cn: 烤鱼排
+  name_cn: 烤海鲜
   calories: 1600
   quality: 3
   preserve_temperature: -18
@@ -288,6 +298,16 @@
   rot_temperature: 4
   spoil_time: 4
   stale_time: 2
+- name: curry
+  name_cn: 咖喱豆
+  calories: 5000
+  quality: 4
+  preserve_temperature: -18
+  rot_temperature: 4
+  spoil_time: 16
+  stale_time: 8
+  effects:
+  - hot_stuff
 - name: berry_pie
   name_cn: 混合浆果派
   calories: 4200
@@ -339,11 +359,3 @@
   rot_temperature: 4
   spoil_time: 8
   stale_time: 4
-- name: sushi
-  name_cn: 寿司
-  calories: 1600
-  quality: 3
-  preserve_temperature: -18
-  rot_temperature: 4
-  spoil_time: 4
-  stale_time: 2

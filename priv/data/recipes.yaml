@@ -54,7 +54,7 @@
     - material_id: fertilizer
       min_temp: 50
       rate: 0.12
-- name: c_o2_scrubber
+- name: co2_scrubber
   recipes:
   - require:
     - material_id: water
@@ -127,6 +127,12 @@
     - material_id: cooked_fish
       amount: 1
   - require:
+    - material_id: shellfish_meat
+      amount: 1
+    produce:
+    - material_id: cooked_fish
+      amount: 1
+  - require:
     - material_id: prickle_fruit
       amount: 1
     produce:
@@ -164,6 +170,12 @@
     produce:
     - material_id: worm_super_food
       amount: 1
+- name: cosmic_research_center
+  recipes:
+  - require:
+    - material_id: research_databank
+      rate: 0.02
+    produce: []
 - name: crafting_table
   recipes:
   - require:
@@ -308,6 +320,14 @@
       amount: 1
     produce:
     - material_id: spicy_tofu
+      amount: 1
+  - require:
+    - material_id: ginger_config
+      amount: 4
+    - material_id: bean_plant_seed
+      amount: 4
+    produce:
+    - material_id: curry
       amount: 1
   - require:
     - material_id: cold_wheat_bread
@@ -680,6 +700,18 @@
     - material_id: lime
       amount: 10
   - require:
+    - material_id: baby_crab_wood_shell
+      amount: 1
+    produce:
+    - material_id: wood_log
+      amount: 50
+  - require:
+    - material_id: crab_wood_shell
+      amount: 1
+    produce:
+    - material_id: wood_log
+      amount: 500
+  - require:
     - material_id: fossil
       amount: 100
     produce:
@@ -917,6 +949,14 @@
 - name: apothecary
   recipes:
   - require:
+    - material_id: steel
+      amount: 1
+    - material_id: light_bug_orange_egg
+      amount: 1
+    produce:
+    - material_id: advanced_cure
+      amount: 1
+  - require:
     - material_id: prickle_flower_seed
       amount: 1
     - material_id: dirt
@@ -958,14 +998,6 @@
     produce:
     - material_id: intermediate_cure
       amount: 1
-  - require:
-    - material_id: steel
-      amount: 1
-    - material_id: light_bug_orange_egg
-      amount: 1
-    produce:
-    - material_id: advanced_cure
-      amount: 1
 - name: advanced_apothecary
   recipes:
   - require:
@@ -986,6 +1018,14 @@
       amount: 0.1
   - require:
     - material_id: mole_egg
+      amount: 1
+    produce:
+    - material_id: raw_egg
+      amount: 1
+    - material_id: egg_shell
+      amount: 1
+  - require:
+    - material_id: mole_delicacy_egg
       amount: 1
     produce:
     - material_id: raw_egg
@@ -1025,6 +1065,14 @@
     - material_id: egg_shell
       amount: 0.25
   - require:
+    - material_id: puft_bleachstone_egg
+      amount: 1
+    produce:
+    - material_id: raw_egg
+      amount: 0.25
+    - material_id: egg_shell
+      amount: 0.25
+  - require:
     - material_id: puft_egg
       amount: 1
     produce:
@@ -1041,7 +1089,7 @@
     - material_id: egg_shell
       amount: 0.25
   - require:
-    - material_id: staterpillar_egg
+    - material_id: squirrel_egg
       amount: 1
     produce:
     - material_id: raw_egg
@@ -1049,23 +1097,15 @@
     - material_id: egg_shell
       amount: 1
   - require:
-    - material_id: puft_bleachstone_egg
+    - material_id: squirrel_hug_egg
       amount: 1
     produce:
     - material_id: raw_egg
-      amount: 0.25
+      amount: 1
     - material_id: egg_shell
-      amount: 0.25
+      amount: 1
   - require:
     - material_id: light_bug_pink_egg
-      amount: 1
-    produce:
-    - material_id: raw_egg
-      amount: 0.1
-    - material_id: egg_shell
-      amount: 0.1
-  - require:
-    - material_id: light_bug_orange_egg
       amount: 1
     produce:
     - material_id: raw_egg
@@ -1121,7 +1161,15 @@
     - material_id: egg_shell
       amount: 0.1
   - require:
-    - material_id: squirrel_egg
+    - material_id: light_bug_orange_egg
+      amount: 1
+    produce:
+    - material_id: raw_egg
+      amount: 0.1
+    - material_id: egg_shell
+      amount: 0.1
+  - require:
+    - material_id: staterpillar_egg
       amount: 1
     produce:
     - material_id: raw_egg
@@ -1130,6 +1178,22 @@
       amount: 1
   - require:
     - material_id: crab_egg
+      amount: 1
+    produce:
+    - material_id: raw_egg
+      amount: 1
+    - material_id: egg_shell
+      amount: 1
+  - require:
+    - material_id: crab_fresh_water_egg
+      amount: 1
+    produce:
+    - material_id: raw_egg
+      amount: 1
+    - material_id: egg_shell
+      amount: 1
+  - require:
+    - material_id: hatch_hard_egg
       amount: 1
     produce:
     - material_id: raw_egg
@@ -1153,22 +1217,6 @@
     - material_id: egg_shell
       amount: 1
   - require:
-    - material_id: pacu_cleaner_egg
-      amount: 1
-    produce:
-    - material_id: raw_egg
-      amount: 2
-    - material_id: egg_shell
-      amount: 2
-  - require:
-    - material_id: pacu_egg
-      amount: 1
-    produce:
-    - material_id: raw_egg
-      amount: 2
-    - material_id: egg_shell
-      amount: 2
-  - require:
     - material_id: hatch_veggie_egg
       amount: 1
     produce:
@@ -1177,7 +1225,7 @@
     - material_id: egg_shell
       amount: 1
   - require:
-    - material_id: pacu_tropical_egg
+    - material_id: pacu_cleaner_egg
       amount: 1
     produce:
     - material_id: raw_egg
@@ -1193,14 +1241,6 @@
     - material_id: egg_shell
       amount: 1
   - require:
-    - material_id: hatch_hard_egg
-      amount: 1
-    produce:
-    - material_id: raw_egg
-      amount: 1
-    - material_id: egg_shell
-      amount: 1
-  - require:
     - material_id: hatch_egg
       amount: 1
     produce:
@@ -1208,6 +1248,30 @@
       amount: 1
     - material_id: egg_shell
       amount: 1
+  - require:
+    - material_id: pacu_egg
+      amount: 1
+    produce:
+    - material_id: raw_egg
+      amount: 2
+    - material_id: egg_shell
+      amount: 2
+  - require:
+    - material_id: crab_wood_egg
+      amount: 1
+    produce:
+    - material_id: raw_egg
+      amount: 1
+    - material_id: egg_shell
+      amount: 1
+  - require:
+    - material_id: pacu_tropical_egg
+      amount: 1
+    produce:
+    - material_id: raw_egg
+      amount: 2
+    - material_id: egg_shell
+      amount: 2
 - name: oxyfern
   recipes:
   - require:
