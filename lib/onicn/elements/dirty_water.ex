@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.DirtyWater do
-  use Onicn.Categories.Liquid,
-    cn_name: "污染水"
+  use Onicn.Categories.Liquid
 
   section "简介" do
     "污染水是一种液体，常见于沼泽区中。当上方气压小于1800克，会挥发出污染氧。"

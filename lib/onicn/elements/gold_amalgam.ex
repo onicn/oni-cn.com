@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.GoldAmalgam do
-  use Onicn.Categories.Solid,
-    cn_name: "金汞齐"
+  use Onicn.Categories.Solid
 
   section "简介" do
     "金汞齐是一种金属矿石，常见于沼泽区。"

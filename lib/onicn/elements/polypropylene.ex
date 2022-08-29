@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.Polypropylene do
-  use Onicn.Categories.Solid,
-    cn_name: "塑料"
+  use Onicn.Categories.Solid
 
   section "简介" do
     "塑料是一种游戏后期的建筑材料。"

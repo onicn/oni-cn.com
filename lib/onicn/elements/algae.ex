@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.Algae do
-  use Onicn.Categories.Solid,
-    cn_name: "藻类"
+  use Onicn.Categories.Solid
 
   section "简介" do
     "藻类是一种有机物，常见于常温区。它是游戏早期氧气的重要来源。"

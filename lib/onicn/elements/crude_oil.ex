@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.CrudeOil do
-  use Onicn.Categories.Liquid,
-    cn_name: "原油"
+  use Onicn.Categories.Liquid
 
   section "简介" do
     "原油是游戏中的一种重要资源，大量存在于原油区。"

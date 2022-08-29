@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.MoltenCopper do
-  use Onicn.Categories.Liquid,
-    cn_name: "熔融铜"
+  use Onicn.Categories.Liquid
 
   section "简介" do
     "熔融铜是铜元素的液体形态。"

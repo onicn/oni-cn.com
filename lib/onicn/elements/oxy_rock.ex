@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.OxyRock do
-  use Onicn.Categories.Solid,
-    cn_name: "氧石"
+  use Onicn.Categories.Solid
 
   section "简介" do
     "氧石是一种消耗性矿石。它是游戏中的假想物质，在真实世界中并不存在。当它在地图中被发现后，它会持续挥发氧气。"

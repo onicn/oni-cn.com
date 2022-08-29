@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.ChlorineGas do
-  use Onicn.Categories.Gas,
-    cn_name: "氯气"
+  use Onicn.Categories.Gas
 
   section "简介" do
     "氯气是一种不可呼吸的气体，常见于腐蚀区。"

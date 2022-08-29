@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.Isoresin do
-  use Onicn.Categories.Solid,
-    cn_name: "异构树脂"
+  use Onicn.Categories.Solid
 
   section "简介" do
     "异构树脂是一种稀有资源，只能自太空任务中获得。"

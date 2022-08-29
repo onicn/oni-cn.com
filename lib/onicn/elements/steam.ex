@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.Steam do
-  use Onicn.Categories.Gas,
-    cn_name: "蒸汽"
+  use Onicn.Categories.Gas
 
   section "简介" do
     "蒸汽是水的气体形态。"

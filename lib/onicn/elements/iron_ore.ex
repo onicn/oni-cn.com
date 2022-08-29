@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.IronOre do
-  use Onicn.Categories.Solid,
-    cn_name: "铁矿"
+  use Onicn.Categories.Solid
 
   section "简介" do
     "铁矿是一种金属矿石，大量存在于腐蚀区和原油区。"

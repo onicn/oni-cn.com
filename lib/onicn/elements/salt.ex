@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.Salt do
-  use Onicn.Categories.Solid,
-    cn_name: "盐"
+  use Onicn.Categories.Solid
 
   section "简介" do
     "盐是一种消耗性矿石，常见于铁锈区和盐池区。"

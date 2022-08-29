@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.Ethanol do
-  use Onicn.Categories.Liquid,
-    cn_name: "乙醇"
+  use Onicn.Categories.Liquid
 
   section "简介" do
     "乙醇提取自木料，可用于发电。"

@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.Petroleum do
-  use Onicn.Categories.Liquid,
-    cn_name: "石油"
+  use Onicn.Categories.Liquid
 
   section "简介" do
     "石油是游戏后期的一种重要资源，由原油制得。"

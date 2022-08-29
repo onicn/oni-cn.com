@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.Methane do
-  use Onicn.Categories.Gas,
-    cn_name: "天然气"
+  use Onicn.Categories.Gas
 
   section "简介" do
     "天然气是一种不可呼吸的气体，常用于发电。"

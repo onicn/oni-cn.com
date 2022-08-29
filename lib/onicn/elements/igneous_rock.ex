@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.IgneousRock do
-  use Onicn.Categories.Solid,
-    cn_name: "火成岩"
+  use Onicn.Categories.Solid
 
   section "简介" do
     "火成岩是一种矿物原料，大量存在于腐蚀区和原油区。"

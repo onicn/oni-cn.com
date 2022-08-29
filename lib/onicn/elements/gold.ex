@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.Gold do
-  use Onicn.Categories.Solid,
-    cn_name: "金"
+  use Onicn.Categories.Solid
 
   section "简介" do
     "金是一种精炼金属，由金汞齐精炼而得。"

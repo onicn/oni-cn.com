@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.Hydrogen do
-  use Onicn.Categories.Gas,
-    cn_name: "氢气"
+  use Onicn.Categories.Gas
 
   section "简介" do
     "氢气是一种不可呼吸的气体。可用于发电，也可用于制冷。常见于腐蚀区。"

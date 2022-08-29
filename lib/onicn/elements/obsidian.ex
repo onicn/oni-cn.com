@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.Obsidian do
-  use Onicn.Categories.Solid,
-    cn_name: "黑曜石"
+  use Onicn.Categories.Solid
 
   section "简介" do
     "黑曜石是一种矿物原料，常见于贫瘠区和火山区中。"

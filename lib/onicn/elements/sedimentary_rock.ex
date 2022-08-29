@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.SedimentaryRock do
-  use Onicn.Categories.Solid,
-    cn_name: "沉积岩"
+  use Onicn.Categories.Solid
 
   section "简介" do
     "沉积岩是一种矿物原料，常见于沼泽区和盐池区。"

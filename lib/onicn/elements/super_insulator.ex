@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.SuperInsulator do
-  use Onicn.Categories.Solid,
-    cn_name: "隔热质"
+  use Onicn.Categories.Solid
 
   section "简介" do
     "隔热质是一种先进的建筑材料，可以几乎完全阻断热传递。"

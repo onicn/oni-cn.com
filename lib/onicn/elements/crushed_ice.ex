@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.CrushedIce do
-  use Onicn.Categories.Solid,
-    cn_name: "碎冰"
+  use Onicn.Categories.Solid
 
   section "简介" do
     "碎冰是一种水资源，偶见于冰冻区。"

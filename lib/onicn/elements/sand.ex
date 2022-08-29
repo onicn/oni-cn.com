@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.Sand do
-  use Onicn.Categories.Solid,
-    cn_name: "沙子"
+  use Onicn.Categories.Solid
 
   section "简介" do
     "沙子是一种过滤介质，大量存在于常温区和盐池区中。"

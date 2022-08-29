@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.LiquidHydrogen do
-  use Onicn.Categories.Liquid,
-    cn_name: "液态氢"
+  use Onicn.Categories.Liquid
 
   section "简介" do
     "液态氢是氢气的液体形态。"

@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.RefinedCarbon do
-  use Onicn.Categories.Solid,
-    cn_name: "精炼碳"
+  use Onicn.Categories.Solid
 
   section "简介" do
     "精炼碳是一种消耗性矿石。它是炼钢的原料之一。"

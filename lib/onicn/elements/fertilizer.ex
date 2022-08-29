@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.Fertilizer do
-  use Onicn.Categories.Solid,
-    cn_name: "肥料"
+  use Onicn.Categories.Solid
 
   section "简介" do
     "肥料是一种农业相关的资源，常见于常温区的水体附近。"

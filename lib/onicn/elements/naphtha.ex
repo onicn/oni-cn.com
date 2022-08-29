@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.Naphtha do
-  use Onicn.Categories.Liquid,
-    cn_name: "石脑油"
+  use Onicn.Categories.Liquid
 
   section "简介" do
     "石脑油是塑料熔化后的产物。"

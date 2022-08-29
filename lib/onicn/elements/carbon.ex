@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.Carbon do
-  use Onicn.Categories.Solid,
-    cn_name: "煤炭"
+  use Onicn.Categories.Solid
 
   section "简介" do
     "煤炭是一种常见于常温区和腐蚀区的消耗性矿石。它常用于煤炭发电机中作为燃料发电。好吃哈奇在进食之后会排泄煤。"

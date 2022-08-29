@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.SuperCoolant do
-  use Onicn.Categories.Liquid,
-    cn_name: "超级冷却剂"
+  use Onicn.Categories.Liquid
 
   section "简介" do
     "超级冷却剂有着游戏中最低的冰点和优秀的热交换特性，常用于制造液态氧和液态氢。"

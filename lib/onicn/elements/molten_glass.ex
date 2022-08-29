@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.MoltenGlass do
-  use Onicn.Categories.Liquid,
-    cn_name: "熔融玻璃"
+  use Onicn.Categories.Liquid
 
   section "简介" do
     "熔融玻璃是玻璃的液体形态。"

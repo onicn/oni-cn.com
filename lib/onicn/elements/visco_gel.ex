@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.ViscoGel do
-  use Onicn.Categories.Liquid,
-    cn_name: "粘性凝胶"
+  use Onicn.Categories.Liquid
 
   section "简介" do
     "粘性凝胶是一种特殊的液体。和其他液体不同，粘性凝胶不会水平流动，而是会形成近似每格100千克的竖直排列。"

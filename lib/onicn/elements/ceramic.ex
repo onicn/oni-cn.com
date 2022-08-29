@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.Ceramic do
-  use Onicn.Categories.Solid,
-    cn_name: "陶瓷"
+  use Onicn.Categories.Solid
 
   section "简介" do
     "陶瓷是一种人造的隔热建筑材料，游戏中期以后可以制造。"

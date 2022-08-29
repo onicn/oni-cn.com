@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.MoltenLead do
-  use Onicn.Categories.Liquid,
-    cn_name: "熔融铅"
+  use Onicn.Categories.Liquid
 
   section "简介" do
     "熔融铅是铅元素的液体形态。"

@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.Phosphorite do
-  use Onicn.Categories.Solid,
-    cn_name: "磷矿"
+  use Onicn.Categories.Solid
 
   section "简介" do
     "磷矿是一种农业相关资源。"

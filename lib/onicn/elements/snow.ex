@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.Snow do
-  use Onicn.Categories.Solid,
-    cn_name: "雪"
+  use Onicn.Categories.Solid
 
   section "简介" do
     "雪是一种水资源，大量存在于冰冻区。"

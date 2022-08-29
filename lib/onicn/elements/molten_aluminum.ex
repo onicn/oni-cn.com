@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.MoltenAluminum do
-  use Onicn.Categories.Liquid,
-    cn_name: "熔融铝"
+  use Onicn.Categories.Liquid
 
   section "简介" do
     "熔融铝是铝元素的液体形态。"

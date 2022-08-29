@@ -1,3 +1,5 @@
+alias Onicn.Translation
+
 defmodule Onicn.Categories.Element do
   @available_fields %{
     category: "资源种类",
@@ -38,12 +40,15 @@ defmodule Onicn.Categories.Element do
           use Onicn.Content
 
           def __attributes__ do
+            name = unquote(element_id) |> Macro.underscore() |> String.to_atom()
+
             Onicn.Categories.Element.__elements__()
             |> Map.get(unquote(category_name))
             |> Enum.find(fn e -> e["elementId"] === unquote(element_id) end)
             |> Onicn.Categories.Element.parse(unquote(category_fields))
             |> Keyword.merge(unquote(attributes))
-            |> Keyword.put(:name, Macro.underscore(unquote(element_id)))
+            |> Keyword.put(:name, name)
+            |> Keyword.put(:cn_name, Translation.get(name))
             |> Keyword.put(:category_name, unquote(category_name))
           end
 

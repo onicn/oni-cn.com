@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.MoltenGold do
-  use Onicn.Categories.Liquid,
-    cn_name: "熔融金"
+  use Onicn.Categories.Liquid
 
   section "简介" do
     "熔融金是金元素的液体形态。"

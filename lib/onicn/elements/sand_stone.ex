@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.SandStone do
-  use Onicn.Categories.Solid,
-    cn_name: "砂岩"
+  use Onicn.Categories.Solid
 
   section "简介" do
     "砂石是一种矿物原料，大量存在于常温区。"

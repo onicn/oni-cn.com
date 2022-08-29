@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.Clay do
-  use Onicn.Categories.Solid,
-    cn_name: "粘土"
+  use Onicn.Categories.Solid
 
   section "简介" do
     "粘土是一种可耕作的泥土。"

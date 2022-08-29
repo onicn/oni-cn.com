@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.Steel do
-  use Onicn.Categories.Solid,
-    cn_name: "钢"
+  use Onicn.Categories.Solid
 
   section "简介" do
     "钢是一种游戏中后期的建筑材料。"

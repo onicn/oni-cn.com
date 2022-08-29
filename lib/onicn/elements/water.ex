@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.Water do
-  use Onicn.Categories.Liquid,
-    cn_name: "水"
+  use Onicn.Categories.Liquid
 
   section "简介" do
     "水是游戏中最重要的资源之一。水是制作食物和提供氧气的重要来源。"

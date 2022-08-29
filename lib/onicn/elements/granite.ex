@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.Granite do
-  use Onicn.Categories.Solid,
-    cn_name: "花岗岩"
+  use Onicn.Categories.Solid
 
   section "简介" do
     "花岗岩是一种矿物原料。在起始区域周围有一圈“花岗岩圈”。花岗岩也常见于冰冻区、原油区和贫瘠区。"

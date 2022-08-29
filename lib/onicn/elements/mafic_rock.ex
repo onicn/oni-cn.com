@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.MaficRock do
-  use Onicn.Categories.Solid,
-    cn_name: "镁铁质岩"
+  use Onicn.Categories.Solid
 
   section "简介" do
     "镁铁质岩是一种矿物原料，存在于铁锈区和太空区中。"

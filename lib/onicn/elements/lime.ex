@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.Lime do
-  use Onicn.Categories.Solid,
-    cn_name: "石灰"
+  use Onicn.Categories.Solid
 
   section "简介" do
     "石灰是一种消耗性矿石，炼钢的原料之一。石灰不是游戏世界中的天然矿物，需要使用碎石机粉碎蛋壳、蟹壳、化石人工制备。"

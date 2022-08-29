@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.Copper do
-  use Onicn.Categories.Solid,
-    cn_name: "铜"
+  use Onicn.Categories.Solid
 
   section "简介" do
     "铜是一种精炼金属，由铜矿精炼而来。"

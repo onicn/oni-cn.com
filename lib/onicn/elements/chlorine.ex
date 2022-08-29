@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.Chlorine do
-  use Onicn.Categories.Liquid,
-    cn_name: "液态氯"
+  use Onicn.Categories.Liquid
 
   section "简介" do
     "液态氯是氯气的液体形态。有较低的比热容，是导热率最低的液体。"

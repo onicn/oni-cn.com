@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.Cuprite do
-  use Onicn.Categories.Solid,
-    cn_name: "铜矿"
+  use Onicn.Categories.Solid
 
   section "简介" do
     "铜矿是一种金属矿石，大量存在于常温区。"

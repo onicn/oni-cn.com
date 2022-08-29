@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.Aluminum do
-  use Onicn.Categories.Solid,
-    cn_name: "铝"
+  use Onicn.Categories.Solid
 
   section "简介" do
     "铝是一种精炼金属，由铝矿精炼而得。"

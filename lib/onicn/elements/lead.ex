@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.Lead do
-  use Onicn.Categories.Solid,
-    cn_name: "铅"
+  use Onicn.Categories.Solid
 
   section "简介" do
     "铅是一种精炼金属，天然存在于原油区。"

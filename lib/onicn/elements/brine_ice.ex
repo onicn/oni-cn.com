@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.BrineIce do
-  use Onicn.Categories.Solid,
-    cn_name: "浓盐冰"
+  use Onicn.Categories.Solid
 
   section "简介" do
     "浓盐冰是浓盐水的固体形态，可存在于盐池区。"

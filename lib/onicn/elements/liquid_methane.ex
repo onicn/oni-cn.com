@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.LiquidMethane do
-  use Onicn.Categories.Liquid,
-    cn_name: "液态甲烷"
+  use Onicn.Categories.Liquid
 
   section "简介" do
     "液态甲烷是天然气的液体形态。"

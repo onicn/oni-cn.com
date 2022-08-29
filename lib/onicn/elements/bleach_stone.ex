@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.BleachStone do
-  use Onicn.Categories.Solid,
-    cn_name: "漂白石"
+  use Onicn.Categories.Solid
 
   section "简介" do
     "漂白石是一种杀菌用的消耗性矿石，常见于腐蚀区和盐池区。它在挖掘后会持续释放出氯气。"

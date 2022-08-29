@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.Fossil do
-  use Onicn.Categories.Solid,
-    cn_name: "化石"
+  use Onicn.Categories.Solid
 
   section "简介" do
     "化石是一种矿物原料，常见于原油区。"

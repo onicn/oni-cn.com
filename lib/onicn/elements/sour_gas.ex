@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.SourGas do
-  use Onicn.Categories.Gas,
-    cn_name: "高硫天然气"
+  use Onicn.Categories.Gas
 
   section "简介" do
     "高硫天然气是一种不可呼吸的气体，由石油加热而得。在原油区底部有天然高硫天然气存在。 "

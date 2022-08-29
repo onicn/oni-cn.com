@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.Unobtanium do
-  use Onicn.Categories.Solid,
-    cn_name: "中子物质"
+  use Onicn.Categories.Solid
 
   section "简介" do
     "中子物质是游戏中的一种特殊资源。它通常出现在游戏地图的边界处（距离出生点150-200格），或是以四格的形式出现在间歇泉的底部。"

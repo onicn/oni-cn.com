@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.Glass do
-  use Onicn.Categories.Solid,
-    cn_name: "玻璃"
+  use Onicn.Categories.Solid
 
   section "简介" do
     "玻璃是一种人造材料，由沙子制得。"

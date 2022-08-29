@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.SlimeMold do
-  use Onicn.Categories.Solid,
-    cn_name: "菌泥"
+  use Onicn.Categories.Solid
 
   section "简介" do
     "菌泥是一种有机物资源，常见于沼泽区。当环境气压小于1800克时，菌泥会释放出污染氧。"

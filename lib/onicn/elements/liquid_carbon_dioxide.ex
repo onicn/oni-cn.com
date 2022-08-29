@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.LiquidCarbonDioxide do
-  use Onicn.Categories.Liquid,
-    cn_name: "液态二氧化碳"
+  use Onicn.Categories.Liquid
 
   section "简介" do
     "液态二氧化碳是二氧化碳的液体形态。"

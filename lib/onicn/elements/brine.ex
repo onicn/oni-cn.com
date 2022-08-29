@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.Brine do
-  use Onicn.Categories.Liquid,
-    cn_name: "浓盐水"
+  use Onicn.Categories.Liquid
 
   section "简介" do
     "浓盐水是高浓度的盐水。"

@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.LiquidOxygen do
-  use Onicn.Categories.Liquid,
-    cn_name: "液态氧"
+  use Onicn.Categories.Liquid
 
   section "简介" do
     "液态氧是氧气的液体形态。"

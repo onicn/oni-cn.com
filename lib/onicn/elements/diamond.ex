@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.Diamond do
-  use Onicn.Categories.Solid,
-    cn_name: "钻石"
+  use Onicn.Categories.Solid
 
   section "简介" do
     "钻石是一种透明物质，可用于建造某些建筑。钻石常见于原油区。"

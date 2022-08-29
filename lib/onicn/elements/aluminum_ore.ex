@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.AluminumOre do
-  use Onicn.Categories.Solid,
-    cn_name: "铝矿"
+  use Onicn.Categories.Solid
 
   section "简介" do
     "铝矿是一种金属矿石，常见于森林区。它是可以挖到的比热容和导热率最高的矿石。"

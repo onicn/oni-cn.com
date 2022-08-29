@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.DirtyIce do
-  use Onicn.Categories.Solid,
-    cn_name: "污染冰"
+  use Onicn.Categories.Solid
 
   section "简介" do
     "污染冰是一种水资源，大量存在于冰冻区内。"

@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.Regolith do
-  use Onicn.Categories.Solid,
-    cn_name: "浮土"
+  use Onicn.Categories.Solid
 
   section "简介" do
     "浮土是一种过滤介质，只存在于太空区。"

@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.Magma do
-  use Onicn.Categories.Liquid,
-    cn_name: "岩浆"
+  use Onicn.Categories.Liquid
 
   section "简介" do
     "岩浆大量存在于火山区。"

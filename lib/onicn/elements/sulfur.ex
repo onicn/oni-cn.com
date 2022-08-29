@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.Sulfur do
-  use Onicn.Categories.Solid,
-    cn_name: "硫"
+  use Onicn.Categories.Solid
 
   section "简介" do
     "硫是由酸性天然气制备液态甲烷的副产品。"

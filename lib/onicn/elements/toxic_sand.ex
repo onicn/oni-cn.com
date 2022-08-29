@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.ToxicSand do
-  use Onicn.Categories.Solid,
-    cn_name: "污染土"
+  use Onicn.Categories.Solid
 
   section "简介" do
     "污染土是一种有机物。"

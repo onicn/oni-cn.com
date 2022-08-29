@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.CarbonDioxide do
-  use Onicn.Categories.Gas,
-    cn_name: "二氧化碳"
+  use Onicn.Categories.Gas
 
   section "简介" do
     "二氧化碳是一种不可呼吸的气体，常见于各个生态区。复制人呼吸时会排放出二氧化碳。"

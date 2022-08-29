@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.Wolframite do
-  use Onicn.Categories.Solid,
-    cn_name: "钨锰铁矿"
+  use Onicn.Categories.Solid
 
   section "简介" do
     "钨锰铁矿是一种金属矿石，存在于冰冻区。"

@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.ContaminatedOxygen do
-  use Onicn.Categories.Gas,
-    cn_name: "污染氧"
+  use Onicn.Categories.Gas
 
   section "简介" do
     "污染氧是氧气之外的另一种可呼吸的气体，常见于沼泽区。污染氧通常含有粘液肺病菌，需要小心处理。"

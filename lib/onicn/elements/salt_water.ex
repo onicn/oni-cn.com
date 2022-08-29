@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.SaltWater do
-  use Onicn.Categories.Liquid,
-    cn_name: "盐水"
+  use Onicn.Categories.Liquid
 
   section "简介" do
     "盐水是一种水资源，大量存在于盐池区。"

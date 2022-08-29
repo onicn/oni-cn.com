@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.TempConductorSolid do
-  use Onicn.Categories.Solid,
-    cn_name: "导热质"
+  use Onicn.Categories.Solid
 
   section "简介" do
     "导热质是一种人工制造的材料。它拥有优秀的热交换特性。"

@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.Fullerene do
-  use Onicn.Categories.Solid,
-    cn_name: "富勒烯"
+  use Onicn.Categories.Solid
 
   section "简介" do
     "富勒烯是一种稀有资源，只能自太空任务中获得。"

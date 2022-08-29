@@ -1,7 +1,5 @@
 defmodule Onicn.Elements.Oxygen do
-  use Onicn.Categories.Gas,
-    cn_name: "氧气",
-    category: "可呼吸气体"
+  use Onicn.Categories.Gas
 
   section "简介" do
     "氧气是一种气体，是游戏中最重要的资源之一。复制人必须呼吸氧气才能生存。"

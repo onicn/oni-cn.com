@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.Phosphorus do
-  use Onicn.Categories.Solid,
-    cn_name: "固态磷"
+  use Onicn.Categories.Solid
 
   section "简介" do
     "固态磷是一种消耗性矿石。它不是游戏世界中的天然矿物，需要人工制备才能获得。"

@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.Niobium do
-  use Onicn.Categories.Solid,
-    cn_name: "铌"
+  use Onicn.Categories.Solid
 
   section "简介" do
     "铌是一种稀有精炼金属，可以从太空任务获取。"

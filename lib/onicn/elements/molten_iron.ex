@@ -1,6 +1,5 @@
 defmodule Onicn.Elements.MoltenIron do
-  use Onicn.Categories.Liquid,
-    cn_name: "熔融铁"
+  use Onicn.Categories.Liquid
 
   section "简介" do
     "熔融铁是铁元素的液体形态。"
