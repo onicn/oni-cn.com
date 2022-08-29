@@ -59,18 +59,19 @@ defmodule Onicn.Categories.Building do
     [
       base: "基地",
       oxygen: "氧气",
-      electrical: "电力",
+      power: "电力",
       food: "食物",
       plumbing: "液体",
-      ventilation: "气体",
-      refinery: "精炼",
+      hvac: "气体",
+      refining: "精炼",
       medical: "医疗",
       furniture: "家具",
       utilities: "实用",
-      misc: "站台",
+      equipment: "站台",
       automation: "自动化",
-      # conveyance: "运输",
-      rocketry: "火箭"
+      conveyance: "运输",
+      rocketry: "火箭",
+      hep: "辐射"
     ]
   end
 
@@ -115,7 +116,7 @@ defmodule Onicn.Categories.Building do
 
     grouped_buildings =
       Enum.map(__building_categories__(), fn {name, cn_name} ->
-        {name, cn_name, buildings[name]}
+        {name, cn_name, Map.get(buildings, name, [])}
       end)
 
     container =
