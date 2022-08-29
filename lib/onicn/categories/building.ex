@@ -1,23 +1,38 @@
+alias Onicn.Translation
+
 defmodule Onicn.Categories.Building do
   buildings =
     :onicn
     |> :code.priv_dir()
-    |> Path.join("data/buildings.ex")
-    |> Code.eval_file()
-    |> elem(0)
+    |> Path.join("data/building.yaml")
+    |> YamlElixir.read_from_file!()
+    |> Enum.map(
+      &Map.new(&1, fn
+        {key, value} when key in ["name", "category"] ->
+          {String.to_atom(key), String.to_atom(value)}
+
+        {key, value} ->
+          {String.to_atom(key), value}
+      end)
+    )
     |> Macro.escape()
 
   defmacro __using__(_options) do
-    name = __CALLER__.module |> to_string() |> String.split(".") |> List.last()
+    name =
+      __CALLER__.module
+      |> Module.split()
+      |> List.last()
+      |> Macro.underscore()
+      |> String.to_atom()
 
     quote do
       use Onicn.Content
 
       def __attributes__ do
         Onicn.Categories.Building.__buildings__()
-        |> Enum.find(fn building -> building[:tag] === unquote(name) end)
+        |> Enum.find(fn building -> building[:name] === unquote(name) end)
+        |> Map.put(:cn_name, Translation.get(unquote(name)))
         |> Enum.into([])
-        |> Keyword.put(:name, Macro.underscore(unquote(name)))
       end
 
       def output(:html_attributes) do
@@ -25,11 +40,11 @@ defmodule Onicn.Categories.Building do
       end
 
       def output(:link_name_icon) do
-        path = "/buildings/#{Macro.underscore(unquote(name))}"
-        cn_name = __attributes__()[:cn_name]
+        a = __attributes__()
+        path = "/buildings/#{a[:name]}"
 
         ~s|<a href="#{path}">
-          <img src="/img#{path}.png" style="height:16px;"> #{cn_name}
+          <img src="/img#{path}.png" style="height:16px;"> #{a[:cn_name]}
         </a>|
       end
 
@@ -44,17 +59,17 @@ defmodule Onicn.Categories.Building do
     [
       base: "基地",
       oxygen: "氧气",
-      power: "电力",
+      electrical: "电力",
       food: "食物",
       plumbing: "液体",
-      hvac: "气体",
-      refining: "精炼",
+      ventilation: "气体",
+      refinery: "精炼",
       medical: "医疗",
       furniture: "家具",
       utilities: "实用",
-      station: "站台",
+      misc: "站台",
       automation: "自动化",
-      conveyance: "运输",
+      # conveyance: "运输",
       rocketry: "火箭"
     ]
   end
@@ -64,9 +79,21 @@ defmodule Onicn.Categories.Building do
   end
 
   def __building_modules__ do
+    case :persistent_term.get(:__building_modules__, nil) do
+      nil ->
+        data = do_building_modules()
+        :persistent_term.put(:__building_modules__, data)
+        data
+
+      data ->
+        data
+    end
+  end
+
+  defp do_building_modules do
     __buildings__()
-    |> Enum.map(fn %{tag: tag} ->
-      ["Onicn.Buildings", tag]
+    |> Enum.map(fn %{name: name} ->
+      ["Onicn.Buildings", Macro.camelize(to_string(name))]
       |> Module.concat()
       |> Code.ensure_compiled()
       |> case do
@@ -81,7 +108,10 @@ defmodule Onicn.Categories.Building do
   def __cn_name__, do: "建筑"
 
   def output(:html_body) do
-    buildings = Enum.group_by(__buildings__(), &Map.get(&1, :category))
+    buildings =
+      __building_modules__()
+      |> Enum.map(fn module -> module.__attributes__() end)
+      |> Enum.group_by(&Keyword.get(&1, :category))
 
     grouped_buildings =
       Enum.map(__building_categories__(), fn {name, cn_name} ->
@@ -102,11 +132,10 @@ defmodule Onicn.Categories.Building do
 
   def output(:html_attributes, module) do
     a = module.__attributes__()
-    en_name = Macro.underscore(a[:tag])
-    img = "/img/buildings/#{en_name}.png"
+    img = "/img/buildings/#{a[:name]}.png"
 
     data = [
-      {"装饰度", "#{a[:base_decor]} (#{a[:base_decor_radius]} 格)"},
+      {"装饰度", "#{a[:base_decor] || 0} (#{a[:base_decor_radius]} 格)"},
       {"占用空间", "宽 #{a[:width_in_cells]} 格，高 #{a[:height_in_cells]} 格"},
       {"建造时间", "#{a[:construction_time]} 秒"},
       {"工业器械", (a[:is_industrial_machinery] && "是") || "否"},
@@ -114,14 +143,13 @@ defmodule Onicn.Categories.Building do
       {"会被掩埋", (a[:entombable] && "是") || "否"},
       {"会过热", (a[:overheatable] && "是") || "否"}
       | Enum.concat([
-          (a[:overheatable] &&
-             [
-               {"过热温度",
-                "#{:erlang.float_to_binary(a[:overheat_temperature] - 273.15, decimals: 2)}°C"}
-             ]) || [],
-          (is_nil(a[:power_generate]) && []) || [{"电力生产", "#{a[:power_generate]} W"}],
-          (is_nil(a[:power_consume]) && []) || [{"电力消耗", "#{a[:power_consume]} W"}],
-          (is_nil(a[:heat_generate]) && []) || [{"产热", "#{a[:heat_generate]} kDTU/s"}]
+          if(a[:overheatable], do: [{"过热温度", "#{a[:overheat_temperature]} °C"}], else: []),
+          if(a[:generator_wattage_rating] > 0,
+            do: [{"电力生产", "#{a[:generator_wattage_rating]} W"}],
+            else: []
+          ),
+          if(a[:power_consume] > 0, do: [{"电力消耗", "#{a[:power_consume]} W"}], else: []),
+          if(a[:heat_generate] > 0, do: [{"产热", "#{a[:heat_generate]} kDTU/s"}], else: [])
         ])
     ]
 
@@ -137,9 +165,8 @@ defmodule Onicn.Categories.Building do
     |> Enum.each(&Task.await(&1, :infinity))
   end
 
-  defp do_generate_page(module) do
-    name = module |> to_string() |> String.split(".") |> List.last() |> Macro.underscore()
-    cn_name = module.__attributes__()[:cn_name]
+  def do_generate_page(module) do
+    a = module.__attributes__()
 
     temp_path =
       :onicn
@@ -172,7 +199,7 @@ defmodule Onicn.Categories.Building do
       temp_path
       |> Path.join("index.eex")
       |> EEx.eval_file(
-        title: cn_name,
+        title: a[:cn_name],
         nav: nav,
         container: container,
         footer: footer,
@@ -183,7 +210,7 @@ defmodule Onicn.Categories.Building do
       :onicn
       |> :code.priv_dir()
       |> Path.join("dist")
-      |> Path.join("/buildings/#{name}/")
+      |> Path.join("/buildings/#{a[:name]}/")
 
     File.mkdir_p!(page_path)
     File.write!(Path.join(page_path, "index.html"), page)

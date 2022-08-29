@@ -4,9 +4,10 @@ defmodule Onicn.Translation do
     |> :code.priv_dir()
     |> Path.join("data/translation.yaml")
     |> YamlElixir.read_from_file!()
-    |> Enum.map(fn {key, value} -> {String.to_atom(key), value} end)
+    |> Map.new(fn {key, value} -> {String.to_atom(key), value} end)
+    |> Macro.escape()
 
   def get(key) do
-    Keyword.get(unquote(translations), key)
+    Map.fetch!(unquote(translations), key)
   end
 end

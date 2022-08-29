@@ -9,7 +9,7 @@
                 <div class="layui-field-box">
                     <div style="text-align: left">
                         <%= for building <- buildings do %>
-                            <% name = Macro.underscore(building[:tag]) %>
+                            <% name = building[:name] %>
                             <a href="/buildings/<%= name %>">
                                 <div class="oni-building-element">
                                     <div>

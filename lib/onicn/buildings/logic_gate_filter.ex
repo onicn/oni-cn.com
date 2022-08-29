@@ -1,4 +1,4 @@
-defmodule Onicn.Buildings.LogicGateFILTER do
+defmodule Onicn.Buildings.LogicGateFilter do
   use Onicn.Categories.Building
 
   section "简介" do

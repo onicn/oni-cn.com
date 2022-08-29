@@ -1,4 +1,4 @@
-defmodule Onicn.Buildings.LogicGateBUFFER do
+defmodule Onicn.Buildings.LogicGateBuffer do
   use Onicn.Categories.Building
 
   section "简介" do

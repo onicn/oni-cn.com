@@ -1,4 +1,4 @@
-defmodule Onicn.Buildings.LogicGateXOR do
+defmodule Onicn.Buildings.LogicGateXor do
   use Onicn.Categories.Building
 
   section "简介" do

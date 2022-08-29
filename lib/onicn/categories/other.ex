@@ -15,7 +15,7 @@ defmodule Onicn.Categories.Other do
     Others.GasGrassHarvested,
     Others.GeneShufflerRecharge,
     Others.JetSuit,
-    Others.ResearchDataBank,
+    Others.ResearchDatabank,
     Others.RotPile,
     Others.SwampLilyFlower,
     Others.TableSalt,

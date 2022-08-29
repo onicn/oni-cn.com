@@ -1,4 +1,4 @@
-defmodule Onicn.Buildings.LogicGateNOT do
+defmodule Onicn.Buildings.LogicGateNot do
   use Onicn.Categories.Building
 
   section "简介" do

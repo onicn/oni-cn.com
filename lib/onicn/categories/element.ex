@@ -81,6 +81,18 @@ defmodule Onicn.Categories.Element do
       end
 
       def __element_modules__ do
+        case :persistent_term.get({__MODULE__, :__element_modules__}, nil) do
+          nil ->
+            data = do_element_modules()
+            :persistent_term.put({__MODULE__, :__element_modules__}, data)
+            data
+
+          data ->
+            data
+        end
+      end
+
+      defp do_element_modules do
         Onicn.Categories.Element.__elements__()
         |> Map.get(unquote(name))
         |> Enum.map(fn %{"elementId" => element_id} ->
