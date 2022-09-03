@@ -148,7 +148,7 @@ defmodule Onicn.Categories.Building do
             do: [{"电力生产", "#{a[:generator_wattage_rating]} W"}],
             else: []
           ),
-          if(a[:power_consume] > 0, do: [{"电力消耗", "#{a[:power_consume]} W"}], else: []),
+          if(a[:power_consume], do: [{"电力消耗", "#{a[:power_consume]} W"}], else: []),
           if(a[:heat_generate] > 0, do: [{"产热", "#{a[:heat_generate]} kDTU/s"}], else: [])
         ])
     ]
