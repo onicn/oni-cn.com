@@ -1,4 +1,5 @@
 - name: advanced_apothecary
+  image_name: medicine_nuclear
   base_decor_radius: 1
   construction_time: 240
   entombable: true
@@ -15,6 +16,7 @@
   materials:
   - refined_metal
 - name: advanced_doctor_station
+  image_name: bed_medical
   base_decor_radius: 1
   category: medical
   construction_time: 10
@@ -33,6 +35,7 @@
   materials:
   - refined_metal
 - name: advanced_research_center
+  image_name: research_center2
   base_decor_radius: 1
   category: equipment
   construction_time: 30
@@ -51,6 +54,7 @@
   materials:
   - metal
 - name: air_conditioner
+  image_name: airconditioner
   base_decor_radius: 1
   category: utilities
   construction_time: 120
@@ -70,6 +74,7 @@
   materials:
   - metal
 - name: air_filter
+  image_name: co2filter
   base_decor_radius: 1
   category: oxygen
   construction_time: 30
@@ -87,6 +92,7 @@
   materials:
   - buildable_raw
 - name: airborne_creature_lure
+  image_name: airbornecreaturetrap
   base_decor: -15
   base_decor_radius: 3
   category: food
@@ -105,6 +111,7 @@
   materials:
   - plastic
 - name: algae_distillery
+  image_name: algae_distillery
   base_decor: -10
   base_decor_radius: 2
   category: refining
@@ -123,6 +130,7 @@
   materials:
   - metal
 - name: algae_habitat
+  image_name: algaefarm
   base_decor: -10
   base_decor_radius: 2
   category: oxygen
@@ -140,6 +148,7 @@
   materials:
   - farmable
 - name: apothecary
+  image_name: apothecary
   base_decor_radius: 1
   category: medical
   construction_time: 120
@@ -158,6 +167,7 @@
   materials:
   - metal
 - name: arcade_machine
+  image_name: arcade_cabinet
   base_decor: 10
   base_decor_radius: 2
   category: furniture
@@ -177,6 +187,7 @@
   materials:
   - refined_metal
 - name: artifact_analysis_station
+  image_name: artifact_analysis
   base_decor: -15
   base_decor_radius: 3
   category: equipment
@@ -196,6 +207,7 @@
   materials:
   - metal
 - name: artifact_cargo_bay
+  image_name: artifact_transport_module
   base_decor_radius: 1
   construction_time: 60
   entombable: true
@@ -212,6 +224,7 @@
   materials:
   - refined_metal
 - name: astronaut_training_center
+  image_name: centrifuge
   base_decor_radius: 1
   category: equipment
   construction_time: 30
@@ -230,6 +243,7 @@
   materials:
   - metal
 - name: atomic_garden
+  image_name: fertilizer_maker
   base_decor: -15
   base_decor_radius: 3
   construction_time: 30
@@ -248,6 +262,7 @@
   materials:
   - metal
 - name: auto_miner
+  image_name: auto_miner
   base_decor: -15
   base_decor_radius: 3
   category: conveyance
@@ -266,6 +281,7 @@
   materials:
   - refined_metal
 - name: battery
+  image_name: batterysm
   base_decor: -10
   base_decor_radius: 2
   category: power
@@ -284,6 +300,7 @@
   materials:
   - metal
 - name: battery_medium
+  image_name: batterymed
   base_decor: -15
   base_decor_radius: 3
   category: power
@@ -301,6 +318,7 @@
   materials:
   - metal
 - name: battery_module
+  image_name: rocket_battery_pack
   base_decor_radius: 1
   construction_time: 30
   entombable: true
@@ -317,6 +335,7 @@
   materials:
   - metal
 - name: battery_smart
+  image_name: smartbattery
   base_decor: -15
   base_decor_radius: 3
   category: power
@@ -334,6 +353,7 @@
   materials:
   - refined_metal
 - name: beach_chair
+  image_name: beach_chair
   base_decor: 25
   base_decor_radius: 5
   category: furniture
@@ -353,6 +373,7 @@
   - buildable_raw
   - building_fiber
 - name: bed
+  image_name: bedlg
   base_decor_radius: 1
   category: furniture
   construction_time: 10
@@ -369,6 +390,7 @@
   materials:
   - buildable_raw
 - name: bottle_emptier
+  image_name: liquidator
   base_decor: -10
   base_decor_radius: 2
   category: plumbing
@@ -385,6 +407,7 @@
   materials:
   - buildable_raw
 - name: bottle_emptier_gas
+  image_name: gas_emptying_station
   base_decor: -15
   base_decor_radius: 3
   category: hvac
@@ -401,6 +424,7 @@
   materials:
   - refined_metal
 - name: bunker_door
+  image_name: door_bunker
   base_decor_radius: 1
   category: base
   construction_time: 120
@@ -418,6 +442,7 @@
   materials:
   - steel
 - name: bunker_tile
+  image_name: floor_bunker
   base_decor: 5
   base_decor_radius: 1
   category: base
@@ -433,6 +458,7 @@
   materials:
   - steel
 - name: co2_engine
+  image_name: rocket_co2_engine
   base_decor_radius: 1
   construction_time: 30
   entombable: true
@@ -449,6 +475,7 @@
   materials:
   - metal
 - name: co2_scrubber
+  image_name: co2scrubber
   base_decor: -10
   base_decor_radius: 2
   category: oxygen
@@ -468,6 +495,7 @@
   materials:
   - metal
 - name: canvas
+  image_name: painting
   base_decor: 10
   base_decor_radius: 6
   category: furniture
@@ -485,6 +513,7 @@
   - metal
   - building_fiber
 - name: canvas_tall
+  image_name: painting_tall
   base_decor: 15
   base_decor_radius: 6
   category: furniture
@@ -502,6 +531,7 @@
   - metal
   - building_fiber
 - name: canvas_wide
+  image_name: painting_wide
   base_decor: 15
   base_decor_radius: 6
   category: furniture
@@ -519,6 +549,7 @@
   - metal
   - building_fiber
 - name: carpet_tile
+  image_name: floor_carpet
   base_decor: 20
   base_decor_radius: 4
   category: base
@@ -535,6 +566,7 @@
   - buildable_raw
   - building_fiber
 - name: ceiling_light
+  image_name: ceilinglight
   base_decor_radius: 1
   category: furniture
   construction_time: 10
@@ -553,6 +585,7 @@
   materials:
   - metal
 - name: checkpoint
+  image_name: checkpoint
   base_decor: 10
   base_decor_radius: 2
   category: automation
@@ -571,6 +604,7 @@
   materials:
   - refined_metal
 - name: clothing_alteration_station
+  image_name: super_snazzy_suit_alteration_station
   base_decor_radius: 1
   category: equipment
   construction_time: 240
@@ -589,6 +623,7 @@
   materials:
   - refined_metal
 - name: clothing_fabricator
+  image_name: clothingfactory
   base_decor_radius: 1
   category: equipment
   construction_time: 240
@@ -607,6 +642,7 @@
   materials:
   - refined_metal
 - name: cluster_telescope
+  image_name: telescope_low
   base_decor_radius: 1
   category: rocketry
   construction_time: 30
@@ -625,6 +661,7 @@
   materials:
   - metal
 - name: cluster_telescope_enclosed
+  image_name: telescope
   base_decor_radius: 1
   category: rocketry
   construction_time: 30
@@ -643,6 +680,7 @@
   materials:
   - metal
 - name: comet_detector
+  image_name: meteor_detector
   base_decor: -5
   base_decor_radius: 1
   category: automation
@@ -661,6 +699,7 @@
   materials:
   - refined_metal
 - name: command_module
+  image_name: rocket_command_module
   base_decor_radius: 1
   category: rocketry
   construction_time: 60
@@ -678,6 +717,7 @@
   materials:
   - steel
 - name: compost
+  image_name: compost
   base_decor: -20
   base_decor_radius: 4
   category: refining
@@ -695,6 +735,7 @@
   materials:
   - buildable_raw
 - name: gas_conduit_disease_sensor
+  image_name: gas_germs_sensor
   base_decor: -5
   base_decor_radius: 1
   category: hvac
@@ -711,6 +752,7 @@
   - refined_metal
   - plastic
 - name: liquid_conduit_disease_sensor
+  image_name: liquid_germs_sensor
   base_decor: -5
   base_decor_radius: 1
   category: plumbing
@@ -727,6 +769,7 @@
   - refined_metal
   - plastic
 - name: gas_conduit_element_sensor
+  image_name: gas_element_sensor
   base_decor: -5
   base_decor_radius: 1
   category: hvac
@@ -742,6 +785,7 @@
   materials:
   - refined_metal
 - name: liquid_conduit_element_sensor
+  image_name: liquid_element_sensor
   base_decor: -5
   base_decor_radius: 1
   category: plumbing
@@ -757,6 +801,7 @@
   materials:
   - refined_metal
 - name: gas_conduit_temperature_sensor
+  image_name: gas_temperature_sensor
   base_decor: -5
   base_decor_radius: 1
   category: hvac
@@ -772,6 +817,7 @@
   materials:
   - refined_metal
 - name: liquid_conduit_temperature_sensor
+  image_name: liquid_temperature_sensor
   base_decor: -5
   base_decor_radius: 1
   category: plumbing
@@ -787,6 +833,7 @@
   materials:
   - refined_metal
 - name: cooking_station
+  image_name: cookstation
   base_decor_radius: 1
   category: food
   construction_time: 30
@@ -806,6 +853,7 @@
   materials:
   - metal
 - name: corner_moulding
+  image_name: corner_tile
   base_decor: 5
   base_decor_radius: 3
   category: furniture
@@ -822,6 +870,7 @@
   materials:
   - buildable_raw
 - name: cosmic_research_center
+  image_name: research_space
   base_decor_radius: 1
   category: equipment
   construction_time: 30
@@ -840,6 +889,7 @@
   materials:
   - metal
 - name: crafting_table
+  image_name: craftingstation
   base_decor_radius: 1
   category: equipment
   construction_time: 30
@@ -858,6 +908,7 @@
   materials:
   - metal
 - name: creature_delivery_point
+  image_name: relocator_dropoff
   base_decor: -15
   base_decor_radius: 3
   category: food
@@ -876,6 +927,7 @@
   materials:
   - metal
 - name: creature_feeder
+  image_name: feeder
   base_decor: -15
   base_decor_radius: 3
   category: food
@@ -894,6 +946,7 @@
   materials:
   - metal
 - name: creature_trap
+  image_name: creaturetrap
   base_decor: -15
   base_decor_radius: 3
   category: food
@@ -911,6 +964,7 @@
   materials:
   - plastic
 - name: crew_capsule
+  image_name: rocket_small_steam
   base_decor_radius: 1
   construction_time: 480
   entombable: true
@@ -927,6 +981,7 @@
   materials:
   - steel
 - name: crown_moulding
+  image_name: crown_moulding
   base_decor: 5
   base_decor_radius: 3
   category: furniture
@@ -943,6 +998,7 @@
   materials:
   - buildable_raw
 - name: dlc1_cosmic_research_center
+  image_name: research_space
   base_decor_radius: 1
   category: equipment
   construction_time: 30
@@ -961,6 +1017,7 @@
   materials:
   - metal
 - name: decontamination_shower
+  image_name: decontamination_shower
   base_decor: -20
   base_decor_radius: 4
   category: medical
@@ -980,6 +1037,7 @@
   - metal
   - lead
 - name: dev_generator
+  image_name: dev_generator
   base_decor: -15
   base_decor_radius: 3
   category: power
@@ -997,6 +1055,7 @@
   materials:
   - metal
 - name: dev_life_support
+  image_name: dev_generator
   base_decor: -20
   base_decor_radius: 4
   category: medical
@@ -1013,6 +1072,7 @@
   materials:
   - buildable_raw
 - name: dev_pump_gas
+  image_name: dev_pump_gas
   base_decor: -10
   base_decor_radius: 2
   category: hvac
@@ -1029,6 +1089,7 @@
   materials:
   - metal
 - name: dev_pump_liquid
+  image_name: dev_pump_liquid
   base_decor: -10
   base_decor_radius: 2
   category: plumbing
@@ -1045,6 +1106,7 @@
   materials:
   - metal
 - name: dev_radiation_generator
+  image_name: dev_generator
   base_decor: -15
   base_decor_radius: 3
   category: hep
@@ -1061,6 +1123,7 @@
   materials:
   - metal
 - name: diamond_press
+  image_name: diamond_press
   base_decor: -15
   base_decor_radius: 3
   category: refining
@@ -1080,6 +1143,7 @@
   materials:
   - metal
 - name: dining_table
+  image_name: diningtable
   base_decor: 10
   base_decor_radius: 2
   category: furniture
@@ -1097,6 +1161,7 @@
   materials:
   - metal
 - name: doctor_station
+  image_name: treatment_chair
   base_decor_radius: 1
   category: medical
   construction_time: 10
@@ -1113,6 +1178,7 @@
   materials:
   - buildable_raw
 - name: door
+  image_name: door_internal
   base_decor_radius: 1
   category: base
   construction_time: 10
@@ -1129,6 +1195,7 @@
   materials:
   - metal
 - name: egg_cracker
+  image_name: egg_cracker
   base_decor: 5
   base_decor_radius: 1
   category: food
@@ -1147,6 +1214,7 @@
   materials:
   - metal
 - name: egg_incubator
+  image_name: incubator
   base_decor: 5
   base_decor_radius: 1
   category: food
@@ -1166,6 +1234,7 @@
   materials:
   - refined_metal
 - name: electrolyzer
+  image_name: electrolyzer
   base_decor: -10
   base_decor_radius: 2
   category: oxygen
@@ -1185,6 +1254,7 @@
   materials:
   - metal
 - name: espresso_machine
+  image_name: espresso_machine
   base_decor: 10
   base_decor_radius: 2
   category: furniture
@@ -1204,6 +1274,7 @@
   materials:
   - refined_metal
 - name: ethanol_distillery
+  image_name: ethanoldistillery
   base_decor: -10
   base_decor_radius: 2
   category: refining
@@ -1222,6 +1293,7 @@
   materials:
   - metal
 - name: exobase_headquarters
+  image_name: porta_pod_y
   base_decor: 30
   base_decor_radius: 6
   category: base
@@ -1238,6 +1310,7 @@
   materials:
   - buildable_raw
 - name: exterior_wall
+  image_name: walls
   category: utilities
   construction_time: 30
   replaceable: true
@@ -1251,6 +1324,7 @@
   materials:
   - buildable_raw
 - name: facility_back_wall_window
+  image_name: gravitas_window
   base_decor: 25
   base_decor_radius: 4
   construction_time: 30
@@ -1266,6 +1340,7 @@
   materials:
   - glass
 - name: farm_station
+  image_name: planttender
   base_decor_radius: 1
   category: equipment
   construction_time: 30
@@ -1282,6 +1357,7 @@
   materials:
   - metal
 - name: farm_tile
+  image_name: farmtilerotating
   base_decor_radius: 1
   category: food
   construction_time: 30
@@ -1296,6 +1372,7 @@
   materials:
   - farmable
 - name: fertilizer_maker
+  image_name: fertilizer_maker
   base_decor: -15
   base_decor_radius: 3
   category: refining
@@ -1315,6 +1392,7 @@
   materials:
   - metal
 - name: fire_pole
+  image_name: firepole
   base_decor: -5
   base_decor_radius: 1
   category: base
@@ -1330,6 +1408,7 @@
   materials:
   - metal
 - name: fish_delivery_point
+  image_name: fishrelocator
   base_decor: -15
   base_decor_radius: 3
   category: food
@@ -1348,6 +1427,7 @@
   materials:
   - metal
 - name: fish_feeder
+  image_name: fishfeeder
   base_decor: -15
   base_decor_radius: 3
   category: food
@@ -1366,6 +1446,7 @@
   materials:
   - metal
 - name: fish_trap
+  image_name: fishtrap
   base_decor: -15
   base_decor_radius: 3
   category: food
@@ -1383,6 +1464,7 @@
   materials:
   - plastic
 - name: floor_lamp
+  image_name: floorlamp
   base_decor: 10
   base_decor_radius: 2
   category: furniture
@@ -1402,6 +1484,7 @@
   materials:
   - metal
 - name: floor_switch
+  image_name: pressureswitch
   base_decor: -5
   base_decor_radius: 1
   category: automation
@@ -1417,6 +1500,7 @@
   materials:
   - refined_metal
 - name: flower_vase
+  image_name: flowervase
   base_decor_radius: 1
   category: furniture
   construction_time: 10
@@ -1432,6 +1516,7 @@
   materials:
   - buildable_raw
 - name: flower_vase_hanging
+  image_name: flowervase_hanging_basic
   base_decor_radius: 1
   category: furniture
   construction_time: 10
@@ -1447,6 +1532,7 @@
   materials:
   - metal
 - name: flower_vase_hanging_fancy
+  image_name: flowervase_hanging
   base_decor: 10
   base_decor_radius: 4
   category: furniture
@@ -1463,6 +1549,7 @@
   materials:
   - transparent
 - name: flower_vase_wall
+  image_name: flowervase_wall
   base_decor_radius: 1
   category: furniture
   construction_time: 10
@@ -1478,6 +1565,7 @@
   materials:
   - metal
 - name: flush_toilet
+  image_name: toiletflush
   base_decor: -10
   base_decor_radius: 2
   category: plumbing
@@ -1495,6 +1583,7 @@
   materials:
   - metal
 - name: flying_creature_bait
+  image_name: airborne_critter_bait
   base_decor: -15
   base_decor_radius: 3
   category: food
@@ -1514,6 +1603,7 @@
   - metal
   - flying_critter_edible
 - name: gantry
+  image_name: gantry
   base_decor_radius: 1
   category: rocketry
   construction_time: 30
@@ -1532,6 +1622,7 @@
   materials:
   - steel
 - name: gas_bottler
+  image_name: gas_bottler
   base_decor: -10
   base_decor_radius: 2
   category: hvac
@@ -1549,6 +1640,7 @@
   materials:
   - metal
 - name: gas_cargo_bay_cluster
+  image_name: rocket_cluster_storage_gas
   base_decor_radius: 1
   construction_time: 60
   entombable: true
@@ -1565,6 +1657,7 @@
   materials:
   - steel
 - name: gas_cargo_bay
+  image_name: rocket_storage_gas
   base_decor_radius: 1
   category: rocketry
   construction_time: 60
@@ -1582,6 +1675,7 @@
   materials:
   - steel
 - name: gas_cargo_bay_small
+  image_name: rocket_storage_gas_small
   base_decor_radius: 1
   construction_time: 30
   entombable: true
@@ -1598,6 +1692,7 @@
   materials:
   - refined_metal
 - name: gas_conduit_bridge
+  image_name: utilitygasbridge
   base_decor_radius: 1
   category: hvac
   construction_time: 3
@@ -1612,6 +1707,7 @@
   materials:
   - buildable_raw
 - name: gas_conduit
+  image_name: utilities_gas
   base_decor_radius: 1
   category: hvac
   construction_time: 3
@@ -1626,6 +1722,7 @@
   materials:
   - buildable_raw
 - name: gas_conduit_overflow
+  image_name: valvegas
   base_decor_radius: 1
   category: hvac
   construction_time: 3
@@ -1641,6 +1738,7 @@
   materials:
   - buildable_raw
 - name: gas_conduit_preferential_flow
+  image_name: valvegas
   base_decor_radius: 1
   category: hvac
   construction_time: 3
@@ -1656,6 +1754,7 @@
   materials:
   - buildable_raw
 - name: gas_conduit_radiant
+  image_name: utilities_gas_radiant
   base_decor: -5
   base_decor_radius: 1
   category: hvac
@@ -1671,6 +1770,7 @@
   materials:
   - metal
 - name: gas_filter
+  image_name: filter_gas
   base_decor: -5
   base_decor_radius: 1
   category: hvac
@@ -1689,6 +1789,7 @@
   materials:
   - metal
 - name: gas_limit_valve
+  image_name: limit_valve_gas
   base_decor: -5
   base_decor_radius: 1
   category: hvac
@@ -1708,6 +1809,7 @@
   - refined_metal
   - plastic
 - name: gas_logic_valve
+  image_name: valvegas_logic
   base_decor: -5
   base_decor_radius: 1
   category: hvac
@@ -1726,6 +1828,7 @@
   materials:
   - refined_metal
 - name: gas_mini_pump
+  image_name: minigaspump
   base_decor: -10
   base_decor_radius: 2
   category: hvac
@@ -1745,6 +1848,7 @@
   materials:
   - plastic
 - name: gas_permeable_membrane
+  image_name: floor_gasperm
   base_decor: -5
   base_decor_radius: 1
   category: base
@@ -1760,6 +1864,7 @@
   materials:
   - metal
 - name: gas_pump
+  image_name: pumpgas
   base_decor: -10
   base_decor_radius: 2
   category: hvac
@@ -1779,6 +1884,7 @@
   materials:
   - metal
 - name: gas_reservoir
+  image_name: gasstorage
   base_decor: -10
   base_decor_radius: 2
   category: base
@@ -1796,6 +1902,7 @@
   materials:
   - metal
 - name: gas_valve
+  image_name: valvegas
   base_decor: -5
   base_decor_radius: 1
   category: hvac
@@ -1813,6 +1920,7 @@
   materials:
   - metal
 - name: gas_vent
+  image_name: ventgas
   base_decor: -10
   base_decor_radius: 2
   category: hvac
@@ -1829,6 +1937,7 @@
   materials:
   - metal
 - name: gas_vent_high_pressure
+  image_name: ventgas_powered
   base_decor: -10
   base_decor_radius: 2
   category: hvac
@@ -1846,6 +1955,7 @@
   - refined_metal
   - plastic
 - name: generator
+  image_name: generatorphos
   base_decor: -15
   base_decor_radius: 3
   category: power
@@ -1864,6 +1974,7 @@
   materials:
   - metal
 - name: generic_fabricator
+  image_name: fabricator_generic
   base_decor: -15
   base_decor_radius: 3
   construction_time: 30
@@ -1882,6 +1993,7 @@
   materials:
   - metal
 - name: genetic_analysis_station
+  image_name: genetic_analysisstation
   base_decor_radius: 1
   category: equipment
   construction_time: 30
@@ -1901,6 +2013,7 @@
   materials:
   - metal
 - name: glass_forge
+  image_name: glassrefinery
   base_decor: -15
   base_decor_radius: 3
   category: refining
@@ -1920,6 +2033,7 @@
   materials:
   - buildable_raw
 - name: glass_tile
+  image_name: floor_glass
   base_decor: 5
   base_decor_radius: 1
   category: base
@@ -1935,6 +2049,7 @@
   materials:
   - transparent
 - name: gourmet_cooking_station
+  image_name: cookstation_gourmet
   base_decor_radius: 1
   category: food
   construction_time: 30
@@ -1954,6 +2069,7 @@
   materials:
   - metal
 - name: grave
+  image_name: gravestone
   base_decor: -15
   base_decor_radius: 3
   category: medical
@@ -1970,6 +2086,7 @@
   materials:
   - buildable_raw
 - name: gravitas_door
+  image_name: gravitas_door_internal
   base_decor_radius: 1
   construction_time: 10
   replaceable: true
@@ -1984,6 +2101,7 @@
   materials:
   - metal
 - name: gravitas_pedestal
+  image_name: gravitas_pedestal_nice
   base_decor: 5
   base_decor_radius: 1
   construction_time: 30
@@ -1999,6 +2117,7 @@
   materials:
   - buildable_raw
 - name: hepbattery
+  image_name: radbolt_battery
   base_decor: -15
   base_decor_radius: 3
   category: hep
@@ -2016,6 +2135,7 @@
   materials:
   - refined_metal
 - name: hepbridge_tile
+  image_name: radbolt_joint_plate
   base_decor: -25
   base_decor_radius: 6
   category: hep
@@ -2031,6 +2151,7 @@
   materials:
   - plastic
 - name: hepengine
+  image_name: rocket_hep_engine
   base_decor_radius: 1
   construction_time: 60
   entombable: true
@@ -2047,6 +2168,7 @@
   materials:
   - steel
 - name: habitat_module_medium
+  image_name: rocket_habitat_medium_module
   base_decor_radius: 1
   construction_time: 60
   entombable: true
@@ -2063,6 +2185,7 @@
   materials:
   - metal
 - name: habitat_module_small
+  image_name: rocket_nosecone
   base_decor_radius: 1
   construction_time: 60
   entombable: true
@@ -2079,6 +2202,7 @@
   materials:
   - metal
 - name: hand_sanitizer
+  image_name: handsanitizer
   base_decor: 10
   base_decor_radius: 2
   category: medical
@@ -2098,6 +2222,7 @@
   - metal
   - bleach_stone
 - name: headquarters
+  image_name: hqbase
   base_decor: 30
   base_decor_radius: 6
   construction_time: 30
@@ -2113,6 +2238,7 @@
   materials:
   - metal
 - name: heat_compressor
+  image_name: hqbase
   base_decor: 30
   base_decor_radius: 6
   construction_time: 30
@@ -2129,6 +2255,7 @@
   materials:
   - metal
 - name: high_energy_particle_redirector
+  image_name: orb_transporter
   base_decor: -10
   base_decor_radius: 2
   category: hep
@@ -2145,6 +2272,7 @@
   materials:
   - buildable_raw
 - name: high_energy_particle_spawner
+  image_name: radiation_collector
   base_decor: -10
   base_decor_radius: 2
   category: hep
@@ -2162,6 +2290,7 @@
   materials:
   - buildable_raw
 - name: hot_tub
+  image_name: hottub
   base_decor: 20
   base_decor_radius: 4
   category: furniture
@@ -2182,6 +2311,7 @@
   - metal
   - building_wood
 - name: hydrogen_engine_cluster
+  image_name: rocket_cluster_hydrogen_engine
   base_decor_radius: 1
   construction_time: 60
   entombable: true
@@ -2198,6 +2328,7 @@
   materials:
   - steel
 - name: hydrogen_engine
+  image_name: rocket_hydrogen_engine
   base_decor_radius: 1
   category: rocketry
   construction_time: 60
@@ -2215,6 +2346,7 @@
   materials:
   - steel
 - name: hydrogen_generator
+  image_name: generatormerc
   base_decor: -15
   base_decor_radius: 3
   category: power
@@ -2233,6 +2365,7 @@
   materials:
   - metal
 - name: hydroponic_farm
+  image_name: farmtilehydroponicrotating
   base_decor: -5
   base_decor_radius: 1
   category: food
@@ -2248,6 +2381,7 @@
   materials:
   - metal
 - name: ice_cooled_fan
+  image_name: fanice
   base_decor_radius: 1
   category: utilities
   construction_time: 30
@@ -2264,6 +2398,7 @@
   materials:
   - metal
 - name: ice_machine
+  image_name: freezerator
   base_decor_radius: 1
   category: utilities
   construction_time: 30
@@ -2282,6 +2417,7 @@
   materials:
   - metal
 - name: ice_sculpture
+  image_name: icesculpture
   base_decor: 20
   base_decor_radius: 8
   category: furniture
@@ -2298,6 +2434,7 @@
   materials:
   - ice
 - name: insulated_gas_conduit
+  image_name: utilities_gas_insulated
   base_decor: -5
   base_decor_radius: 1
   category: hvac
@@ -2313,6 +2450,7 @@
   materials:
   - buildable_raw
 - name: insulated_liquid_conduit
+  image_name: utilities_liquid_insulated
   base_decor: -5
   base_decor_radius: 1
   category: plumbing
@@ -2328,6 +2466,7 @@
   materials:
   - plumbable
 - name: insulation_tile
+  image_name: floor_insulated
   base_decor: -5
   base_decor_radius: 1
   category: base
@@ -2343,6 +2482,7 @@
   materials:
   - buildable_raw
 - name: item_pedestal
+  image_name: pedestal
   base_decor: 5
   base_decor_radius: 1
   category: furniture
@@ -2359,6 +2499,7 @@
   materials:
   - buildable_raw
 - name: jet_suit_locker
+  image_name: changingarea_jetsuit
   base_decor: 10
   base_decor_radius: 2
   category: equipment
@@ -2378,6 +2519,7 @@
   materials:
   - refined_metal
 - name: jet_suit_marker
+  image_name: changingarea_jetsuit_arrow
   base_decor: 10
   base_decor_radius: 2
   category: equipment
@@ -2396,6 +2538,7 @@
   materials:
   - refined_metal
 - name: juicer
+  image_name: juicer
   base_decor: 10
   base_decor_radius: 2
   category: furniture
@@ -2415,6 +2558,7 @@
   materials:
   - metal
 - name: kerosene_engine_cluster
+  image_name: rocket_cluster_petroleum_engine
   base_decor_radius: 1
   construction_time: 60
   entombable: true
@@ -2431,6 +2575,7 @@
   materials:
   - steel
 - name: kerosene_engine_cluster_small
+  image_name: rocket_petro_engine_small
   base_decor_radius: 1
   construction_time: 60
   entombable: true
@@ -2447,6 +2592,7 @@
   materials:
   - refined_metal
 - name: kerosene_engine
+  image_name: rocket_petroleum_engine
   base_decor_radius: 1
   category: rocketry
   construction_time: 60
@@ -2464,6 +2610,7 @@
   materials:
   - steel
 - name: kiln
+  image_name: kiln
   base_decor: -10
   base_decor_radius: 2
   category: refining
@@ -2481,6 +2628,7 @@
   materials:
   - metal
 - name: ladder_bed
+  image_name: ladder_bed
   base_decor_radius: 1
   category: furniture
   construction_time: 10
@@ -2497,6 +2645,7 @@
   materials:
   - refined_metal
 - name: ladder
+  image_name: ladder
   base_decor: -5
   base_decor_radius: 1
   category: base
@@ -2512,6 +2661,7 @@
   materials:
   - buildable_raw
 - name: ladder_fast
+  image_name: ladder_plastic
   base_decor: -5
   base_decor_radius: 1
   category: base
@@ -2527,6 +2677,7 @@
   materials:
   - plastic
 - name: landing_beacon
+  image_name: landing_beacon
   base_decor: -10
   base_decor_radius: 2
   category: rocketry
@@ -2546,6 +2697,7 @@
   materials:
   - refined_metal
 - name: launch_pad
+  image_name: rocket_launchpad
   base_decor_radius: 1
   category: rocketry
   construction_time: 120
@@ -2562,6 +2714,7 @@
   materials:
   - refined_metal
 - name: lead_suit_locker
+  image_name: changingarea_radiation
   base_decor: 10
   base_decor_radius: 2
   category: equipment
@@ -2581,6 +2734,7 @@
   materials:
   - refined_metal
 - name: lead_suit_marker
+  image_name: changingarea_radiation_arrow
   base_decor: 10
   base_decor_radius: 2
   category: equipment
@@ -2599,6 +2753,7 @@
   materials:
   - refined_metal
 - name: liquid_cargo_bay_cluster
+  image_name: rocket_cluster_storage_liquid
   base_decor_radius: 1
   construction_time: 60
   entombable: true
@@ -2615,6 +2770,7 @@
   materials:
   - steel
 - name: liquid_cargo_bay
+  image_name: rocket_storage_liquid
   base_decor_radius: 1
   category: rocketry
   construction_time: 60
@@ -2632,6 +2788,7 @@
   materials:
   - steel
 - name: liquid_cargo_bay_small
+  image_name: rocket_storage_liquid_small
   base_decor_radius: 1
   construction_time: 30
   entombable: true
@@ -2648,6 +2805,7 @@
   materials:
   - refined_metal
 - name: liquid_conditioner
+  image_name: liquidconditioner
   base_decor_radius: 1
   category: utilities
   construction_time: 120
@@ -2666,6 +2824,7 @@
   materials:
   - metal
 - name: liquid_conduit_bridge
+  image_name: utilityliquidbridge
   base_decor_radius: 1
   category: plumbing
   construction_time: 3
@@ -2680,6 +2839,7 @@
   materials:
   - buildable_raw
 - name: liquid_conduit
+  image_name: utilities_liquid
   base_decor_radius: 1
   category: plumbing
   construction_time: 3
@@ -2694,6 +2854,7 @@
   materials:
   - plumbable
 - name: liquid_conduit_overflow
+  image_name: valveliquid
   base_decor_radius: 1
   category: plumbing
   construction_time: 3
@@ -2709,6 +2870,7 @@
   materials:
   - buildable_raw
 - name: liquid_conduit_preferential_flow
+  image_name: valveliquid
   base_decor_radius: 1
   category: plumbing
   construction_time: 3
@@ -2724,6 +2886,7 @@
   materials:
   - buildable_raw
 - name: liquid_conduit_radiant
+  image_name: utilities_liquid_radiant
   base_decor: -5
   base_decor_radius: 1
   category: plumbing
@@ -2739,6 +2902,7 @@
   materials:
   - refined_metal
 - name: liquid_cooled_fan
+  image_name: fanliquid
   base_decor_radius: 1
   category: utilities
   construction_time: 10
@@ -2755,6 +2919,7 @@
   materials:
   - metal
 - name: liquid_filter
+  image_name: filter_liquid
   base_decor: -5
   base_decor_radius: 1
   category: plumbing
@@ -2773,6 +2938,7 @@
   materials:
   - metal
 - name: liquid_fuel_tank_cluster
+  image_name: rocket_cluster_liquid_fuel_tank
   base_decor_radius: 1
   construction_time: 60
   entombable: true
@@ -2789,6 +2955,7 @@
   materials:
   - steel
 - name: liquid_fuel_tank
+  image_name: rocket_liquid_fuel_tank
   base_decor_radius: 1
   category: rocketry
   construction_time: 60
@@ -2806,6 +2973,7 @@
   materials:
   - steel
 - name: liquid_heater
+  image_name: boiler
   base_decor: -10
   base_decor_radius: 2
   category: utilities
@@ -2824,6 +2992,7 @@
   materials:
   - metal
 - name: liquid_limit_valve
+  image_name: limit_valve_liquid
   base_decor: -5
   base_decor_radius: 1
   category: plumbing
@@ -2843,6 +3012,7 @@
   - refined_metal
   - plastic
 - name: liquid_logic_valve
+  image_name: valveliquid_logic
   base_decor: -5
   base_decor_radius: 1
   category: plumbing
@@ -2861,6 +3031,7 @@
   materials:
   - refined_metal
 - name: liquid_mini_pump
+  image_name: miniwaterpump
   base_decor: -10
   base_decor_radius: 2
   category: plumbing
@@ -2879,6 +3050,7 @@
   materials:
   - plastic
 - name: liquid_pump
+  image_name: pumpliquid
   base_decor: -10
   base_decor_radius: 2
   category: plumbing
@@ -2897,6 +3069,7 @@
   materials:
   - metal
 - name: liquid_pumping_station
+  image_name: waterpump
   base_decor_radius: 1
   category: plumbing
   construction_time: 10
@@ -2913,6 +3086,7 @@
   materials:
   - buildable_raw
 - name: liquid_reservoir
+  image_name: liquidreservoir
   base_decor: -10
   base_decor_radius: 2
   category: base
@@ -2930,6 +3104,7 @@
   materials:
   - metal
 - name: liquid_valve
+  image_name: valveliquid
   base_decor: -5
   base_decor_radius: 1
   category: plumbing
@@ -2947,6 +3122,7 @@
   materials:
   - metal
 - name: liquid_vent
+  image_name: ventliquid
   base_decor: -10
   base_decor_radius: 2
   category: plumbing
@@ -2963,6 +3139,7 @@
   materials:
   - metal
 - name: logic_alarm
+  image_name: alarm_sensor
   base_decor: -5
   base_decor_radius: 1
   category: automation
@@ -2978,6 +3155,7 @@
   materials:
   - refined_metal
 - name: logic_cluster_location_sensor
+  image_name: logic_location
   base_decor: -5
   base_decor_radius: 1
   category: rocketry
@@ -2993,6 +3171,7 @@
   materials:
   - refined_metal
 - name: logic_counter
+  image_name: logic_counter
   base_decor: -5
   base_decor_radius: 1
   category: automation
@@ -3008,6 +3187,7 @@
   materials:
   - refined_metal
 - name: logic_critter_count_sensor
+  image_name: critter_sensor
   base_decor: -5
   base_decor_radius: 1
   category: automation
@@ -3023,6 +3203,7 @@
   materials:
   - refined_metal
 - name: logic_disease_sensor
+  image_name: diseasesensor
   base_decor: -5
   base_decor_radius: 1
   category: automation
@@ -3039,6 +3220,7 @@
   - refined_metal
   - plastic
 - name: logic_duplicant_sensor
+  image_name: presence_sensor
   base_decor: -5
   base_decor_radius: 1
   category: automation
@@ -3054,6 +3236,7 @@
   materials:
   - refined_metal
 - name: logic_element_sensor_gas
+  image_name: world_element_sensor
   base_decor: -5
   base_decor_radius: 1
   category: automation
@@ -3071,6 +3254,7 @@
   materials:
   - refined_metal
 - name: logic_element_sensor_liquid
+  image_name: world_liquid_sensor
   base_decor: -5
   base_decor_radius: 1
   category: automation
@@ -3087,6 +3271,7 @@
   materials:
   - refined_metal
 - name: logic_gate_and
+  image_name: logic_and
   base_decor: -5
   base_decor_radius: 1
   category: automation
@@ -3102,6 +3287,7 @@
   materials:
   - refined_metal
 - name: logic_gate_or
+  image_name: logic_or
   base_decor: -5
   base_decor_radius: 1
   category: automation
@@ -3117,6 +3303,7 @@
   materials:
   - refined_metal
 - name: logic_gate_xor
+  image_name: logic_xor
   base_decor: -5
   base_decor_radius: 1
   category: automation
@@ -3132,6 +3319,7 @@
   materials:
   - refined_metal
 - name: logic_gate_not
+  image_name: logic_not
   base_decor: -5
   base_decor_radius: 1
   category: automation
@@ -3147,6 +3335,7 @@
   materials:
   - refined_metal
 - name: logic_gate_buffer
+  image_name: logic_buffer
   base_decor: -5
   base_decor_radius: 1
   category: automation
@@ -3162,6 +3351,7 @@
   materials:
   - refined_metal
 - name: logic_gate_filter
+  image_name: logic_filter
   base_decor: -5
   base_decor_radius: 1
   category: automation
@@ -3177,6 +3367,7 @@
   materials:
   - refined_metal
 - name: logic_gate_multiplexer
+  image_name: logic_multiplexer
   base_decor: -5
   base_decor_radius: 1
   category: automation
@@ -3192,6 +3383,7 @@
   materials:
   - refined_metal
 - name: logic_gate_demultiplexer
+  image_name: logic_demultiplexer
   base_decor: -5
   base_decor_radius: 1
   category: automation
@@ -3207,6 +3399,7 @@
   materials:
   - refined_metal
 - name: logic_hepsensor
+  image_name: radbolt_sensor
   base_decor: -5
   base_decor_radius: 1
   category: automation
@@ -3222,6 +3415,7 @@
   materials:
   - refined_metal
 - name: logic_hammer
+  image_name: hammer
   base_decor: -5
   base_decor_radius: 1
   category: automation
@@ -3238,6 +3432,7 @@
   materials:
   - refined_metal
 - name: logic_interasteroid_receiver
+  image_name: inter_asteroid_automation_signal_receiver
   base_decor: -5
   base_decor_radius: 1
   category: automation
@@ -3254,6 +3449,7 @@
   materials:
   - refined_metal
 - name: logic_interasteroid_sender
+  image_name: inter_asteroid_automation_signal_sender
   base_decor: -5
   base_decor_radius: 1
   category: automation
@@ -3270,6 +3466,7 @@
   materials:
   - refined_metal
 - name: logic_memory
+  image_name: logic_memory
   base_decor_radius: 1
   category: automation
   construction_time: 30
@@ -3284,6 +3481,7 @@
   materials:
   - refined_metal
 - name: logic_power_relay
+  image_name: switchpowershutoff
   base_decor_radius: 1
   category: power
   construction_time: 30
@@ -3298,6 +3496,7 @@
   materials:
   - metal
 - name: logic_pressure_sensor_gas
+  image_name: switchgaspressure
   base_decor: -5
   base_decor_radius: 1
   category: automation
@@ -3313,6 +3512,7 @@
   materials:
   - refined_metal
 - name: logic_pressure_sensor_liquid
+  image_name: switchliquidpressure
   base_decor: -5
   base_decor_radius: 1
   category: automation
@@ -3328,6 +3528,7 @@
   materials:
   - refined_metal
 - name: logic_radiation_sensor
+  image_name: radiation_sensor
   base_decor: -5
   base_decor_radius: 1
   category: automation
@@ -3343,6 +3544,7 @@
   materials:
   - refined_metal
 - name: logic_ribbon_bridge
+  image_name: logic_ribbon_bridge
   base_decor: -5
   base_decor_radius: 1
   category: automation
@@ -3358,6 +3560,7 @@
   materials:
   - refined_metal
 - name: logic_ribbon
+  image_name: logic_ribbon
   base_decor: -5
   base_decor_radius: 1
   category: automation
@@ -3373,6 +3576,7 @@
   materials:
   - refined_metal
 - name: logic_ribbon_reader
+  image_name: logic_ribbon_reader
   base_decor: -5
   base_decor_radius: 1
   category: automation
@@ -3388,6 +3592,7 @@
   materials:
   - refined_metal
 - name: logic_ribbon_writer
+  image_name: logic_ribbon_writer
   base_decor: -5
   base_decor_radius: 1
   category: automation
@@ -3403,6 +3608,7 @@
   materials:
   - refined_metal
 - name: logic_switch
+  image_name: switchdupecontrolledpower
   base_decor_radius: 1
   category: automation
   construction_time: 30
@@ -3417,6 +3623,7 @@
   materials:
   - refined_metal
 - name: logic_temperature_sensor
+  image_name: switchthermal
   base_decor: -5
   base_decor_radius: 1
   category: automation
@@ -3432,6 +3639,7 @@
   materials:
   - refined_metal
 - name: logic_time_of_day_sensor
+  image_name: switchtimeofday
   base_decor: -5
   base_decor_radius: 1
   category: automation
@@ -3447,6 +3655,7 @@
   materials:
   - refined_metal
 - name: logic_timer_sensor
+  image_name: time_sensor
   base_decor: -5
   base_decor_radius: 1
   category: automation
@@ -3462,6 +3671,7 @@
   materials:
   - refined_metal
 - name: logic_wattage_sensor
+  image_name: wattage_sensor
   base_decor: -5
   base_decor_radius: 1
   category: automation
@@ -3477,6 +3687,7 @@
   materials:
   - refined_metal
 - name: logic_wire_bridge
+  image_name: logic_bridge
   base_decor: -5
   base_decor_radius: 1
   category: automation
@@ -3492,6 +3703,7 @@
   materials:
   - refined_metal
 - name: logic_wire
+  image_name: logic_wires
   base_decor: -5
   base_decor_radius: 1
   category: automation
@@ -3507,6 +3719,7 @@
   materials:
   - refined_metal
 - name: luxury_bed
+  image_name: elegantbed
   base_decor: 15
   base_decor_radius: 3
   category: furniture
@@ -3524,6 +3737,7 @@
   materials:
   - plastic
 - name: machine_shop
+  image_name: machineshop
   base_decor_radius: 1
   construction_time: 30
   entombable: true
@@ -3539,6 +3753,7 @@
   materials:
   - refined_metal
 - name: manual_generator
+  image_name: generatormanual
   base_decor_radius: 1
   category: power
   construction_time: 30
@@ -3557,6 +3772,7 @@
   materials:
   - metal
 - name: manual_high_energy_particle_spawner
+  image_name: manual_radbolt_generator
   base_decor: -10
   base_decor_radius: 2
   category: hep
@@ -3573,6 +3789,7 @@
   materials:
   - buildable_raw
 - name: manual_pressure_door
+  image_name: door_manual
   base_decor: -15
   base_decor_radius: 3
   category: base
@@ -3588,6 +3805,7 @@
   materials:
   - metal
 - name: marble_sculpture
+  image_name: sculpture_marble
   base_decor: 20
   base_decor_radius: 8
   category: furniture
@@ -3604,6 +3822,7 @@
   materials:
   - precious_rock
 - name: massage_table
+  image_name: masseur
   base_decor_radius: 1
   category: medical
   construction_time: 10
@@ -3622,6 +3841,7 @@
   materials:
   - buildable_raw
 - name: massive_heat_sink
+  image_name: massiveheatsink
   base_decor: 15
   base_decor_radius: 3
   construction_time: 120
@@ -3638,6 +3858,7 @@
   materials:
   - metal
 - name: mechanical_surfboard
+  image_name: mechanical_surfboard
   base_decor: 10
   base_decor_radius: 2
   category: furniture
@@ -3656,6 +3877,7 @@
   materials:
   - metal
 - name: medical_cot
+  image_name: medical_cot
   base_decor_radius: 1
   category: medical
   construction_time: 10
@@ -3672,6 +3894,7 @@
   materials:
   - buildable_raw
 - name: mesh_tile
+  image_name: floor_mesh
   base_decor: -5
   base_decor_radius: 1
   category: base
@@ -3687,6 +3910,7 @@
   materials:
   - metal
 - name: metal_refinery
+  image_name: metalrefinery
   base_decor: -15
   base_decor_radius: 3
   category: refining
@@ -3706,6 +3930,7 @@
   materials:
   - buildable_raw
 - name: metal_sculpture
+  image_name: sculpture_metal
   base_decor: 20
   base_decor_radius: 8
   category: furniture
@@ -3722,6 +3947,7 @@
   materials:
   - refined_metal
 - name: metal_tile
+  image_name: floor_metal
   base_decor: 15
   base_decor_radius: 3
   category: base
@@ -3737,6 +3963,7 @@
   materials:
   - refined_metal
 - name: methane_generator
+  image_name: generatormethane
   base_decor: -15
   base_decor_radius: 3
   category: power
@@ -3755,6 +3982,7 @@
   materials:
   - metal
 - name: microbe_musher
+  image_name: microbemusher
   base_decor: -15
   base_decor_radius: 3
   category: food
@@ -3774,6 +4002,7 @@
   materials:
   - metal
 - name: mineral_deoxidizer
+  image_name: mineraldeoxidizer
   base_decor: -10
   base_decor_radius: 2
   category: oxygen
@@ -3794,6 +4023,7 @@
   materials:
   - metal
 - name: modular_launchpad_port_gas
+  image_name: conduit_port_gas_loader
   base_decor_radius: 1
   category: hvac
   construction_time: 60
@@ -3811,6 +4041,7 @@
   materials:
   - refined_metal
 - name: modular_launchpad_port_gas_unloader
+  image_name: conduit_port_gas_unloader
   base_decor_radius: 1
   category: hvac
   construction_time: 60
@@ -3828,6 +4059,7 @@
   materials:
   - refined_metal
 - name: modular_launchpad_port_liquid
+  image_name: conduit_port_liquid_loader
   base_decor_radius: 1
   category: plumbing
   construction_time: 60
@@ -3845,6 +4077,7 @@
   materials:
   - refined_metal
 - name: modular_launchpad_port_liquid_unloader
+  image_name: conduit_port_liquid_unloader
   base_decor_radius: 1
   category: plumbing
   construction_time: 60
@@ -3862,6 +4095,7 @@
   materials:
   - refined_metal
 - name: modular_launchpad_port_solid
+  image_name: conduit_port_solid_loader
   base_decor_radius: 1
   category: conveyance
   construction_time: 60
@@ -3879,6 +4113,7 @@
   materials:
   - refined_metal
 - name: modular_launchpad_port_solid_unloader
+  image_name: conduit_port_solid_unloader
   base_decor_radius: 1
   category: conveyance
   construction_time: 60
@@ -3896,6 +4131,7 @@
   materials:
   - refined_metal
 - name: monument_bottom
+  image_name: victory_monument_base
   base_decor: 10
   base_decor_radius: 5
   category: furniture
@@ -3915,6 +4151,7 @@
   - steel
   - obsidian
 - name: monument_middle
+  image_name: victory_monument_mid
   base_decor: 10
   base_decor_radius: 5
   category: furniture
@@ -3935,6 +4172,7 @@
   - polypropylene
   - steel
 - name: monument_top
+  image_name: victory_monument_upper
   base_decor: 10
   base_decor_radius: 5
   category: furniture
@@ -3955,6 +4193,7 @@
   - diamond
   - steel
 - name: moulding_tile
+  image_name: floor_moulding
   base_decor: 10
   base_decor_radius: 1
   construction_time: 30
@@ -3969,6 +4208,7 @@
   materials:
   - buildable_raw
 - name: nosecone_basic
+  image_name: rocket_nosecone_default
   base_decor_radius: 1
   construction_time: 60
   entombable: true
@@ -3986,6 +4226,7 @@
   - refined_metal
   - insulator
 - name: nosecone_harvest
+  image_name: rocket_nosecone_gathering
   base_decor_radius: 1
   construction_time: 60
   entombable: true
@@ -4003,6 +4244,7 @@
   - refined_metal
   - plastic
 - name: nuclear_reactor
+  image_name: generatornuclear
   base_decor: -15
   base_decor_radius: 3
   category: hep
@@ -4018,6 +4260,7 @@
   materials:
   - refined_metal
 - name: nuclear_research_center
+  image_name: material_research_centre
   base_decor_radius: 1
   category: equipment
   construction_time: 30
@@ -4036,6 +4279,7 @@
   materials:
   - refined_metal
 - name: object_dispenser
+  image_name: object_dispenser
   base_decor: -10
   base_decor_radius: 2
   category: base
@@ -4053,6 +4297,7 @@
   materials:
   - metal
 - name: oil_refinery
+  image_name: oilrefinery
   base_decor: -10
   base_decor_radius: 2
   category: refining
@@ -4072,6 +4317,7 @@
   materials:
   - metal
 - name: oil_well_cap
+  image_name: geyser_oil_cap
   base_decor_radius: 1
   category: utilities
   construction_time: 120
@@ -4090,6 +4336,7 @@
   materials:
   - refined_metal
 - name: orbital_cargo_module
+  image_name: rocket_orbital_deploy_cargo_module
   base_decor_radius: 1
   construction_time: 30
   entombable: true
@@ -4106,6 +4353,7 @@
   materials:
   - metal
 - name: orbital_research_center
+  image_name: orbital_research_station
   base_decor_radius: 1
   category: equipment
   construction_time: 120
@@ -4124,6 +4372,7 @@
   materials:
   - plastic
 - name: ore_scrubber
+  image_name: orescrubber
   base_decor: 10
   base_decor_radius: 2
   category: utilities
@@ -4142,6 +4391,7 @@
   materials:
   - metal
 - name: outhouse
+  image_name: outhouse
   base_decor: -20
   base_decor_radius: 5
   category: plumbing
@@ -4159,6 +4409,7 @@
   materials:
   - buildable_raw
 - name: oxidizer_tank_cluster
+  image_name: rocket_oxidizer_tank
   base_decor_radius: 1
   construction_time: 60
   entombable: true
@@ -4175,6 +4426,7 @@
   materials:
   - steel
 - name: oxidizer_tank
+  image_name: rocket_oxidizer_tank
   base_decor_radius: 1
   category: rocketry
   construction_time: 60
@@ -4192,6 +4444,7 @@
   materials:
   - steel
 - name: oxidizer_tank_liquid_cluster
+  image_name: rocket_cluster_oxidizer_tank_liquid
   base_decor_radius: 1
   construction_time: 60
   entombable: true
@@ -4208,6 +4461,7 @@
   materials:
   - steel
 - name: oxidizer_tank_liquid
+  image_name: rocket_oxidizer_tank_liquid
   base_decor_radius: 1
   category: rocketry
   construction_time: 60
@@ -4225,6 +4479,7 @@
   materials:
   - steel
 - name: oxygen_mask_locker
+  image_name: oxygen_mask_locker
   base_decor: 10
   base_decor_radius: 2
   category: equipment
@@ -4243,6 +4498,7 @@
   materials:
   - metal
 - name: oxygen_mask_marker
+  image_name: oxygen_checkpoint_arrow
   base_decor: 10
   base_decor_radius: 2
   category: equipment
@@ -4261,6 +4517,7 @@
   materials:
   - metal
 - name: oxygen_mask_station
+  image_name: oxygen_mask_station
   base_decor: 10
   base_decor_radius: 2
   construction_time: 30
@@ -4279,6 +4536,7 @@
   materials:
   - buildable_raw
 - name: oxylite_refinery
+  image_name: oxylite_refinery
   base_decor: -10
   base_decor_radius: 2
   category: refining
@@ -4298,6 +4556,7 @@
   - refined_metal
   - plastic
 - name: poibunker_exterior_door
+  image_name: door_poi
   base_decor: -15
   base_decor_radius: 3
   construction_time: 60
@@ -4312,6 +4571,7 @@
   materials:
   - metal
 - name: poidoor_internal
+  image_name: door_poi_internal
   base_decor_radius: 1
   construction_time: 10
   replaceable: true
@@ -4326,6 +4586,7 @@
   materials:
   - metal
 - name: poifacility_door
+  image_name: door_facility
   base_decor: -15
   base_decor_radius: 3
   construction_time: 60
@@ -4341,6 +4602,7 @@
   materials:
   - metal
 - name: park_sign
+  image_name: parksign
   base_decor_radius: 1
   category: furniture
   construction_time: 10
@@ -4358,6 +4620,7 @@
   materials:
   - buildable_any
 - name: petroleum_generator
+  image_name: generatorpetrol
   base_decor: -15
   base_decor_radius: 3
   category: power
@@ -4376,6 +4639,7 @@
   materials:
   - metal
 - name: phonobox
+  image_name: jukebot
   base_decor: 10
   base_decor_radius: 2
   category: furniture
@@ -4395,6 +4659,7 @@
   materials:
   - metal
 - name: pioneer_module
+  image_name: rocket_pioneer_cargo_module
   base_decor_radius: 1
   construction_time: 30
   entombable: true
@@ -4411,6 +4676,7 @@
   materials:
   - refined_metal
 - name: pixel_pack
+  image_name: pixel_pack
   base_decor: 20
   base_decor_radius: 4
   category: furniture
@@ -4428,6 +4694,7 @@
   - glass
   - refined_metal
 - name: planter_box
+  image_name: planterbox
   base_decor: -10
   base_decor_radius: 2
   category: food
@@ -4444,6 +4711,7 @@
   materials:
   - farmable
 - name: plastic_tile
+  image_name: floor_plastic
   base_decor: 5
   base_decor_radius: 1
   category: base
@@ -4459,6 +4727,7 @@
   materials:
   - plastic
 - name: polymerizer
+  image_name: plasticrefinery
   base_decor_radius: 1
   category: refining
   construction_time: 30
@@ -4478,6 +4747,7 @@
   materials:
   - metal
 - name: power_control_station
+  image_name: electricianworkdesk
   base_decor_radius: 1
   category: equipment
   construction_time: 30
@@ -4494,6 +4764,7 @@
   materials:
   - refined_metal
 - name: power_transformer
+  image_name: transformer
   base_decor: -10
   base_decor_radius: 2
   category: power
@@ -4512,6 +4783,7 @@
   materials:
   - refined_metal
 - name: power_transformer_small
+  image_name: transformer_small
   base_decor: -10
   base_decor_radius: 2
   category: power
@@ -4530,6 +4802,7 @@
   materials:
   - metal
 - name: pressure_door
+  image_name: door_external
   base_decor: -10
   base_decor_radius: 2
   category: base
@@ -4546,6 +4819,7 @@
   materials:
   - metal
 - name: pressure_switch_gas
+  image_name: switchgaspressure
   base_decor: -5
   base_decor_radius: 1
   category: power
@@ -4563,6 +4837,7 @@
   materials:
   - metal
 - name: pressure_switch_liquid
+  image_name: switchliquidpressure
   base_decor: -5
   base_decor_radius: 1
   category: power
@@ -4579,6 +4854,7 @@
   materials:
   - metal
 - name: prop_gravitas_lab_wall
+  image_name: gravitas_lab_wall
   base_decor: 10
   base_decor_radius: 1
   construction_time: 30
@@ -4593,6 +4869,7 @@
   materials:
   - buildable_raw
 - name: prop_gravitas_lab_window
+  image_name: gravitas_lab_window
   base_decor: 10
   base_decor_radius: 1
   construction_time: 30
@@ -4607,6 +4884,7 @@
   materials:
   - glass
 - name: prop_gravitas_lab_window_horizontal
+  image_name: gravitas_lab_window_horizontal
   base_decor: 10
   base_decor_radius: 1
   construction_time: 30
@@ -4621,6 +4899,7 @@
   materials:
   - glass
 - name: prop_gravitas_wall
+  image_name: gravitas_walls
   base_decor: 10
   base_decor_radius: 1
   construction_time: 30
@@ -4635,6 +4914,7 @@
   materials:
   - buildable_raw
 - name: radiation_light
+  image_name: radiation_lamp
   base_decor_radius: 1
   category: hep
   construction_time: 10
@@ -4653,6 +4933,7 @@
   materials:
   - metal
 - name: rail_gun
+  image_name: rail_gun
   base_decor_radius: 1
   category: rocketry
   construction_time: 30
@@ -4669,6 +4950,7 @@
   materials:
   - metal
 - name: rail_gun_payload_opener
+  image_name: railgun_emptier
   base_decor_radius: 1
   category: rocketry
   construction_time: 10
@@ -4685,6 +4967,7 @@
   materials:
   - metal
 - name: ranch_station
+  image_name: rancherstation
   base_decor_radius: 1
   category: equipment
   construction_time: 30
@@ -4701,6 +4984,7 @@
   materials:
   - metal
 - name: ration_box
+  image_name: rationbox
   base_decor: 5
   base_decor_radius: 1
   category: food
@@ -4717,6 +5001,7 @@
   materials:
   - buildable_raw
 - name: refrigerator
+  image_name: fridge
   base_decor: 10
   base_decor_radius: 2
   category: food
@@ -4735,6 +5020,7 @@
   materials:
   - buildable_raw
 - name: research_center
+  image_name: research_center
   base_decor_radius: 1
   category: equipment
   construction_time: 30
@@ -4753,6 +5039,7 @@
   materials:
   - metal
 - name: research_module
+  image_name: rocket_research_module
   base_decor_radius: 1
   category: rocketry
   construction_time: 60
@@ -4770,6 +5057,7 @@
   materials:
   - steel
 - name: reset_skills_station
+  image_name: respeccer
   base_decor_radius: 1
   category: equipment
   construction_time: 30
@@ -4788,6 +5076,7 @@
   materials:
   - metal
 - name: rock_crusher
+  image_name: rockrefinery
   base_decor: -15
   base_decor_radius: 3
   category: refining
@@ -4807,6 +5096,7 @@
   materials:
   - metal
 - name: rocket_control_station
+  image_name: rocket_control_station
   base_decor: 15
   base_decor_radius: 3
   category: rocketry
@@ -4823,6 +5113,7 @@
   materials:
   - metal
 - name: rocket_envelope_window_tile
+  image_name: floor_glass
   base_decor: 5
   base_decor_radius: 1
   construction_time: 30
@@ -4836,6 +5127,7 @@
   materials:
   - transparent
 - name: rocket_interior_gas_input
+  image_name: rocket_floor_plug_gas
   base_decor: -15
   base_decor_radius: 3
   category: rocketry
@@ -4851,6 +5143,7 @@
   materials:
   - metal
 - name: rocket_interior_gas_input_port
+  image_name: rocket_interior_port_gas_in
   base_decor: 5
   base_decor_radius: 1
   construction_time: 30
@@ -4864,6 +5157,7 @@
   materials:
   - refined_metal
 - name: rocket_interior_gas_output
+  image_name: rocket_floor_plug_gas_out
   base_decor: -15
   base_decor_radius: 3
   category: rocketry
@@ -4880,6 +5174,7 @@
   materials:
   - metal
 - name: rocket_interior_gas_output_port
+  image_name: rocket_interior_port_gas_out
   base_decor: 5
   base_decor_radius: 1
   construction_time: 30
@@ -4893,6 +5188,7 @@
   materials:
   - refined_metal
 - name: rocket_interior_liquid_input
+  image_name: rocket_floor_plug_liquid
   base_decor: -15
   base_decor_radius: 3
   category: rocketry
@@ -4908,6 +5204,7 @@
   materials:
   - metal
 - name: rocket_interior_liquid_input_port
+  image_name: rocket_interior_port_liquid_in
   base_decor: 5
   base_decor_radius: 1
   construction_time: 30
@@ -4921,6 +5218,7 @@
   materials:
   - refined_metal
 - name: rocket_interior_liquid_output
+  image_name: rocket_floor_plug_liquid_out
   base_decor: -15
   base_decor_radius: 3
   category: rocketry
@@ -4937,6 +5235,7 @@
   materials:
   - metal
 - name: rocket_interior_liquid_output_port
+  image_name: rocket_interior_port_liquid_out
   base_decor: 5
   base_decor_radius: 1
   construction_time: 30
@@ -4950,6 +5249,7 @@
   materials:
   - refined_metal
 - name: rocket_interior_power_plug
+  image_name: rocket_floor_plug
   base_decor: -15
   base_decor_radius: 3
   category: rocketry
@@ -4965,6 +5265,7 @@
   materials:
   - metal
 - name: rocket_interior_solid_input
+  image_name: rocket_floor_plug_solid
   base_decor: -15
   base_decor_radius: 3
   category: rocketry
@@ -4980,6 +5281,7 @@
   materials:
   - metal
 - name: rocket_interior_solid_output
+  image_name: rocket_floor_plug_solid_out
   base_decor: -15
   base_decor_radius: 3
   category: rocketry
@@ -4996,6 +5298,7 @@
   materials:
   - metal
 - name: rocket_wall_tile
+  image_name: floor_rocket
   base_decor: 5
   base_decor_radius: 1
   construction_time: 60
@@ -5009,6 +5312,7 @@
   materials:
   - steel
 - name: role_station
+  image_name: job_station
   base_decor_radius: 1
   category: equipment
   construction_time: 30
@@ -5026,6 +5330,7 @@
   materials:
   - metal
 - name: rust_deoxidizer
+  image_name: rust_deoxidizer
   base_decor: -10
   base_decor_radius: 2
   category: oxygen
@@ -5045,6 +5350,7 @@
   materials:
   - metal
 - name: sauna
+  image_name: sauna
   base_decor: 15
   base_decor_radius: 3
   category: furniture
@@ -5065,6 +5371,7 @@
   - metal
   - building_wood
 - name: scanner_module
+  image_name: rocket_scanner_module
   base_decor_radius: 1
   construction_time: 120
   entombable: true
@@ -5082,6 +5389,7 @@
   - steel
   - polypropylene
 - name: scout_module
+  image_name: rocket_scout_cargo_module
   base_decor_radius: 1
   construction_time: 30
   entombable: true
@@ -5098,6 +5406,7 @@
   materials:
   - metal
 - name: sculpture
+  image_name: sculpture
   base_decor: 10
   base_decor_radius: 8
   category: furniture
@@ -5114,6 +5423,7 @@
   materials:
   - buildable_raw
 - name: shearing_station
+  image_name: shearing_station
   base_decor_radius: 1
   category: equipment
   construction_time: 10
@@ -5132,6 +5442,7 @@
   materials:
   - buildable_raw
 - name: shower
+  image_name: shower
   base_decor: 10
   base_decor_radius: 2
   category: plumbing
@@ -5149,6 +5460,7 @@
   materials:
   - metal
 - name: sludge_press
+  image_name: sludge_press
   base_decor: -10
   base_decor_radius: 2
   category: refining
@@ -5168,6 +5480,7 @@
   materials:
   - buildable_raw
 - name: small_oxidizer_tank
+  image_name: rocket_oxidizer_tank_small
   base_decor_radius: 1
   construction_time: 30
   entombable: true
@@ -5184,6 +5497,7 @@
   materials:
   - metal
 - name: small_sculpture
+  image_name: sculpture_1x2
   base_decor: 5
   base_decor_radius: 4
   category: furniture
@@ -5200,6 +5514,7 @@
   materials:
   - buildable_raw
 - name: soda_fountain
+  image_name: sodamaker
   base_decor: 10
   base_decor_radius: 2
   category: furniture
@@ -5219,6 +5534,7 @@
   materials:
   - refined_metal
 - name: solar_panel
+  image_name: solar_panel
   base_decor: -15
   base_decor_radius: 3
   category: power
@@ -5237,6 +5553,7 @@
   materials:
   - glass
 - name: solar_panel_module
+  image_name: rocket_solar_panel_module
   base_decor_radius: 1
   construction_time: 30
   entombable: true
@@ -5253,6 +5570,7 @@
   materials:
   - glass
 - name: solid_booster
+  image_name: rocket_solid_booster
   base_decor_radius: 1
   category: rocketry
   construction_time: 480
@@ -5270,6 +5588,7 @@
   materials:
   - steel
 - name: cargo_bay_cluster
+  image_name: rocket_cluster_storage_solid
   base_decor_radius: 1
   construction_time: 60
   entombable: true
@@ -5286,6 +5605,7 @@
   materials:
   - steel
 - name: cargo_bay
+  image_name: rocket_storage_solid
   base_decor_radius: 1
   category: rocketry
   construction_time: 60
@@ -5304,6 +5624,7 @@
   - buildable_raw
   - steel
 - name: solid_cargo_bay_small
+  image_name: rocket_storage_solid_small
   base_decor_radius: 1
   construction_time: 30
   entombable: true
@@ -5320,6 +5641,7 @@
   materials:
   - refined_metal
 - name: solid_conduit_bridge
+  image_name: utilities_conveyorbridge
   base_decor_radius: 1
   category: conveyance
   construction_time: 30
@@ -5334,6 +5656,7 @@
   materials:
   - metal
 - name: solid_conduit
+  image_name: utilities_conveyor
   base_decor_radius: 1
   category: conveyance
   construction_time: 3
@@ -5348,6 +5671,7 @@
   materials:
   - metal
 - name: solid_conduit_inbox
+  image_name: conveyorin
   base_decor: -10
   base_decor_radius: 2
   category: conveyance
@@ -5366,6 +5690,7 @@
   materials:
   - refined_metal
 - name: solid_conduit_outbox
+  image_name: conveyorout
   base_decor: -10
   base_decor_radius: 2
   category: conveyance
@@ -5382,6 +5707,7 @@
   materials:
   - metal
 - name: solid_conduit_disease_sensor
+  image_name: conveyor_germs_sensor
   base_decor: -5
   base_decor_radius: 1
   category: conveyance
@@ -5398,6 +5724,7 @@
   - refined_metal
   - plastic
 - name: solid_conduit_element_sensor
+  image_name: conveyor_element_sensor
   base_decor: -5
   base_decor_radius: 1
   category: conveyance
@@ -5413,6 +5740,7 @@
   materials:
   - refined_metal
 - name: solid_conduit_temperature_sensor
+  image_name: conveyor_temperature_sensor
   base_decor: -5
   base_decor_radius: 1
   category: conveyance
@@ -5428,6 +5756,7 @@
   materials:
   - refined_metal
 - name: solid_filter
+  image_name: filter_material_conveyor
   base_decor: -5
   base_decor_radius: 1
   category: conveyance
@@ -5446,6 +5775,7 @@
   materials:
   - metal
 - name: solid_limit_valve
+  image_name: limit_valve_solid
   base_decor: -5
   base_decor_radius: 1
   category: conveyance
@@ -5463,6 +5793,7 @@
   - refined_metal
   - plastic
 - name: solid_logic_valve
+  image_name: conveyor_shutoff
   base_decor: -5
   base_decor_radius: 1
   category: conveyance
@@ -5479,6 +5810,7 @@
   materials:
   - refined_metal
 - name: solid_transfer_arm
+  image_name: conveyor_transferarm
   base_decor: -15
   base_decor_radius: 3
   category: conveyance
@@ -5497,6 +5829,7 @@
   materials:
   - refined_metal
 - name: solid_vent
+  image_name: conveyer_dropper
   base_decor: -10
   base_decor_radius: 2
   category: conveyance
@@ -5513,6 +5846,7 @@
   materials:
   - metal
 - name: space_heater
+  image_name: spaceheater
   base_decor: 10
   base_decor_radius: 2
   category: utilities
@@ -5532,6 +5866,7 @@
   materials:
   - metal
 - name: special_cargo_bay
+  image_name: rocket_storage_live
   base_decor_radius: 1
   category: rocketry
   construction_time: 480
@@ -5549,6 +5884,7 @@
   materials:
   - steel
 - name: staterpillar_generator
+  image_name: egg_caterpillar
   base_decor_radius: 1
   construction_time: 10
   entombable: true
@@ -5563,6 +5899,7 @@
   materials:
   - metal
 - name: steam_engine_cluster
+  image_name: rocket_cluster_steam_engine
   base_decor_radius: 1
   construction_time: 60
   entombable: true
@@ -5579,6 +5916,7 @@
   materials:
   - refined_metal
 - name: steam_engine
+  image_name: rocket_steam_engine
   base_decor_radius: 1
   category: rocketry
   construction_time: 480
@@ -5596,6 +5934,7 @@
   materials:
   - steel
 - name: steam_turbine
+  image_name: steamturbine
   base_decor_radius: 1
   category: power
   construction_time: 60
@@ -5614,6 +5953,7 @@
   - refined_metal
   - plastic
 - name: steam_turbine2
+  image_name: steamturbine2
   base_decor_radius: 1
   category: power
   construction_time: 60
@@ -5632,6 +5972,7 @@
   - refined_metal
   - plastic
 - name: storage_locker
+  image_name: storagelocker
   base_decor: -10
   base_decor_radius: 2
   category: base
@@ -5648,6 +5989,7 @@
   materials:
   - buildable_raw
 - name: storage_locker_smart
+  image_name: smartstoragelocker
   base_decor: -10
   base_decor_radius: 2
   category: base
@@ -5665,6 +6007,7 @@
   materials:
   - refined_metal
 - name: sublimation_station
+  image_name: sublimation_station
   base_decor: -10
   base_decor_radius: 2
   category: oxygen
@@ -5685,6 +6028,7 @@
   materials:
   - metal
 - name: sugar_engine
+  image_name: rocket_sugar_engine
   base_decor_radius: 1
   construction_time: 30
   entombable: true
@@ -5701,6 +6045,7 @@
   materials:
   - metal
 - name: suit_fabricator
+  image_name: suit_maker
   base_decor_radius: 1
   category: equipment
   construction_time: 240
@@ -5719,6 +6064,7 @@
   materials:
   - refined_metal
 - name: suit_locker
+  image_name: changingarea
   base_decor: 10
   base_decor_radius: 2
   category: equipment
@@ -5738,6 +6084,7 @@
   materials:
   - refined_metal
 - name: suit_marker
+  image_name: changingarea_arrow
   base_decor: 10
   base_decor_radius: 2
   category: equipment
@@ -5756,6 +6103,7 @@
   materials:
   - refined_metal
 - name: sun_lamp
+  image_name: sun_lamp
   base_decor: -20
   base_decor_radius: 4
   category: furniture
@@ -5776,6 +6124,7 @@
   - refined_metal
   - glass
 - name: supermaterial_refinery
+  image_name: supermaterial_refinery
   base_decor: -15
   base_decor_radius: 3
   category: refining
@@ -5795,6 +6144,7 @@
   materials:
   - metal
 - name: sweep_bot_station
+  image_name: sweep_bot_base_station
   base_decor: -10
   base_decor_radius: 2
   category: utilities
@@ -5813,6 +6163,7 @@
   materials:
   - refined_metal
 - name: switch
+  image_name: switchpower
   base_decor_radius: 1
   category: power
   construction_time: 30
@@ -5828,6 +6179,7 @@
   materials:
   - metal
 - name: telephone
+  image_name: telephone
   base_decor: 10
   base_decor_radius: 2
   category: furniture
@@ -5847,6 +6199,7 @@
   materials:
   - metal
 - name: teleportal_pad
+  image_name: hqbase
   base_decor: 30
   base_decor_radius: 6
   construction_time: 30
@@ -5863,6 +6216,7 @@
   materials:
   - metal
 - name: telescope
+  image_name: telescope
   base_decor_radius: 1
   category: equipment
   construction_time: 30
@@ -5881,6 +6235,7 @@
   materials:
   - metal
 - name: temperature_controlled_switch
+  image_name: switchthermal
   base_decor: -5
   base_decor_radius: 1
   category: power
@@ -5897,6 +6252,7 @@
   materials:
   - metal
 - name: temporal_tear_opener
+  image_name: temporal_tear_opener
   base_decor: 15
   base_decor_radius: 3
   construction_time: 120
@@ -5913,6 +6269,7 @@
   materials:
   - metal
 - name: thermal_block
+  image_name: thermalblock
   category: utilities
   construction_time: 120
   entombable: true
@@ -5927,6 +6284,7 @@
   materials:
   - buildable_any
 - name: tile
+  image_name: floor_basic
   base_decor: 5
   base_decor_radius: 1
   category: base
@@ -5942,6 +6300,7 @@
   materials:
   - buildable_raw
 - name: tile_poi
+  image_name: floor_mesh
   base_decor: 10
   base_decor_radius: 2
   construction_time: 30
@@ -5955,6 +6314,7 @@
   materials:
   - buildable_raw
 - name: tourist_module
+  image_name: rocket_tourist
   base_decor_radius: 1
   category: rocketry
   construction_time: 60
@@ -5972,6 +6332,7 @@
   materials:
   - steel
 - name: travel_tube
+  image_name: travel_tube
   base_decor: 5
   base_decor_radius: 1
   category: base
@@ -5987,6 +6348,7 @@
   materials:
   - plastic
 - name: travel_tube_entrance
+  image_name: tube_launcher
   base_decor: -10
   base_decor_radius: 2
   category: base
@@ -6005,6 +6367,7 @@
   materials:
   - refined_metal
 - name: travel_tube_wall_bridge
+  image_name: tube_tile_bridge
   base_decor_radius: 1
   category: base
   construction_time: 3
@@ -6019,6 +6382,7 @@
   materials:
   - plastic
 - name: unconstructed_rocket_module
+  image_name: rocket_oxidizer_tank_bg
   base_decor_radius: 1
   entombable: true
   breakable: true
@@ -6034,6 +6398,7 @@
   materials:
   - metal
 - name: uranium_centrifuge
+  image_name: enrichmentcentrifuge
   base_decor: -10
   base_decor_radius: 2
   category: hep
@@ -6053,6 +6418,7 @@
   - refined_metal
   - plastic
 - name: vertical_wind_tunnel
+  image_name: wind_tunnel
   base_decor: 10
   base_decor_radius: 2
   category: furniture
@@ -6072,6 +6438,7 @@
   materials:
   - plastic
 - name: wall_toilet
+  image_name: toilet_wall
   base_decor: -10
   base_decor_radius: 2
   category: plumbing
@@ -6089,6 +6456,7 @@
   materials:
   - plastic
 - name: warp_conduit_receiver
+  image_name: warp_conduit_receiver
   base_decor_radius: 1
   construction_time: 10
   entombable: true
@@ -6103,6 +6471,7 @@
   materials:
   - metal
 - name: warp_conduit_sender
+  image_name: warp_conduit_sender
   base_decor_radius: 1
   construction_time: 30
   entombable: true
@@ -6117,6 +6486,7 @@
   materials:
   - metal
 - name: wash_basin
+  image_name: wash_basin
   base_decor: 10
   base_decor_radius: 2
   category: medical
@@ -6135,6 +6505,7 @@
   materials:
   - buildable_raw
 - name: wash_sink
+  image_name: wash_sink
   base_decor: 10
   base_decor_radius: 2
   category: medical
@@ -6153,6 +6524,7 @@
   materials:
   - metal
 - name: water_cooler
+  image_name: watercooler
   base_decor: 10
   base_decor_radius: 2
   category: furniture
@@ -6169,6 +6541,7 @@
   materials:
   - buildable_raw
 - name: water_purifier
+  image_name: waterpurifier
   base_decor: -15
   base_decor_radius: 3
   category: refining
@@ -6188,6 +6561,7 @@
   materials:
   - metal
 - name: wire_bridge
+  image_name: utilityelectricbridge
   base_decor: -5
   base_decor_radius: 1
   category: power
@@ -6203,6 +6577,7 @@
   materials:
   - metal
 - name: wire_bridge_high_wattage
+  image_name: heavywatttile
   base_decor: -25
   base_decor_radius: 6
   category: power
@@ -6218,6 +6593,7 @@
   materials:
   - metal
 - name: wire
+  image_name: utilities_electric
   base_decor: -5
   base_decor_radius: 1
   category: power
@@ -6233,6 +6609,7 @@
   materials:
   - metal
 - name: high_wattage_wire
+  image_name: utilities_electric_insulated
   base_decor: -25
   base_decor_radius: 6
   category: power
@@ -6248,6 +6625,7 @@
   materials:
   - metal
 - name: wire_refined_bridge
+  image_name: utilityelectricbridgeconductive
   base_decor: -5
   base_decor_radius: 1
   category: power
@@ -6263,6 +6641,7 @@
   materials:
   - refined_metal
 - name: wire_refined_bridge_high_wattage
+  image_name: heavywatttile_conductive
   base_decor: -25
   base_decor_radius: 6
   category: power
@@ -6278,6 +6657,7 @@
   materials:
   - refined_metal
 - name: wire_refined
+  image_name: utilities_electric_conduct
   base_decor_radius: 1
   category: power
   construction_time: 3
@@ -6292,6 +6672,7 @@
   materials:
   - refined_metal
 - name: wire_refined_high_wattage
+  image_name: utilities_electric_conduct_hiwatt
   base_decor: -20
   base_decor_radius: 4
   category: power
@@ -6307,6 +6688,7 @@
   materials:
   - refined_metal
 - name: wood_gas_generator
+  image_name: generatorwood
   base_decor: -15
   base_decor_radius: 3
   category: power
@@ -6325,6 +6707,7 @@
   materials:
   - metal
 - name: desalinator
+  image_name: desalinator
   base_decor: -5
   base_decor_radius: 1
   category: refining

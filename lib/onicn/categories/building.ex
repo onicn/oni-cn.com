@@ -41,10 +41,9 @@ defmodule Onicn.Categories.Building do
 
       def output(:link_name_icon) do
         a = __attributes__()
-        path = "/buildings/#{a[:name]}"
 
-        ~s|<a href="#{path}">
-          <img src="/img#{path}.png" style="height:16px;"> #{a[:cn_name]}
+        ~s|<a href="/buildings/#{a[:name]}">
+          <img src="/img/buildings/#{a[:image_name]}.png" style="height:16px;"> #{a[:cn_name]}
         </a>|
       end
 
@@ -133,7 +132,7 @@ defmodule Onicn.Categories.Building do
 
   def output(:html_attributes, module) do
     a = module.__attributes__()
-    img = "/img/buildings/#{a[:name]}.png"
+    img = "/img/buildings/#{a[:image_name]}.png"
 
     data = [
       {"装饰度", "#{a[:base_decor] || 0} (#{a[:base_decor_radius]} 格)"},
