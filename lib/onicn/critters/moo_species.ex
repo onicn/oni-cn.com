@@ -11,7 +11,5 @@ defmodule MooSpecies do
 end
 
 defmodule MooSpecies.Moo do
-  use MooSpecies,
-    cn_name: "释气海牛",
-    en_name: "Gassy Moo"
+  use MooSpecies
 end

@@ -1,4 +1,4 @@
-alias Onicn.Critters
+alias Onicn.{Critters, Translation}
 
 defmodule Onicn.Categories.Critter do
   use Onicn.Content
@@ -7,7 +7,7 @@ defmodule Onicn.Categories.Critter do
     Critters.HatchSpecies,
     Critters.PacuSpecies,
     Critters.SquirrelSpecies,
-    Critters.OilFloaterSpecies,
+    Critters.OilfloaterSpecies,
     Critters.DreckoSpecies,
     Critters.MoleSpecies,
     Critters.CrabSpecies,
@@ -57,9 +57,21 @@ defmodule Onicn.Categories.Critter do
               |> Enum.find(fn attribute -> attribute[:name] == name end)
               |> Enum.into([])
 
+            baby = unquote(attributes)[:baby]
+            egg = unquote(attributes)[:egg]
+
             unquote(attributes)
-            |> Keyword.put(:name, name)
             |> Keyword.put(:species, unquote(species))
+            |> Keyword.put(:name, name)
+            |> Keyword.put(:cn_name, Translation.get(name))
+            |> then(fn
+              attrs when is_nil(baby) -> attrs
+              attrs -> Keyword.put(attrs, :baby_cn_name, Translation.get(baby))
+            end)
+            |> then(fn
+              attrs when is_nil(egg) -> attrs
+              attrs -> Keyword.put(attrs, :egg_cn_name, Translation.get(egg))
+            end)
             |> Keyword.merge(properties)
           end
 
@@ -83,10 +95,10 @@ defmodule Onicn.Categories.Critter do
                 death_drop_item:
                   {"死亡掉落", "#{a[:death_drop_item]} #{a[:death_drop_item_amount]} 千克"},
                 base_incubation_rate_per_cycle:
-                  {"自然孵化时长", "#{a[:base_incubation_rate_per_cycle]} 周期"},
+                  {"自然孵化度", "#{a[:base_incubation_rate_per_cycle]}% 每周期"},
                 base_lay_egg_cycles: {"产蛋周期", "#{a[:base_lay_egg_cycles]} 周期"},
-                k_calories_per_cycle: {"每周期消耗卡路里", "#{a[:k_calories_per_cycle]}"},
-                k_calories_stomach_size: {"最大卡路里", "#{a[:k_calories_stomach_size]}"}
+                kcal_per_cycle: {"每周期消耗卡路里", "#{a[:kcal_per_cycle]}"},
+                kcal_stomach_size: {"最大卡路里", "#{a[:kcal_stomach_size]}"}
               ]
               |> Enum.reject(fn {key, _value} -> Keyword.has_key?(common_properties, key) end)
               |> Enum.filter(fn {key, _value} -> Keyword.has_key?(a, key) end)
@@ -167,10 +179,10 @@ defmodule Onicn.Categories.Critter do
             decor: {"装饰度", "#{a[:decor]}（#{a[:decor_radius]}格）"},
             death_drop_item: {"死亡掉落", "#{a[:death_drop_item]} #{a[:death_drop_item_amount]} 千克"},
             base_incubation_rate_per_cycle:
-              {"自然孵化时长", "#{a[:base_incubation_rate_per_cycle]} 周期"},
+              {"自然孵化度", "#{a[:base_incubation_rate_per_cycle]}% 每周期"},
             base_lay_egg_cycles: {"产蛋周期", "#{a[:base_lay_egg_cycles]} 周期"},
-            k_calories_per_cycle: {"每周期消耗卡路里", "#{a[:k_calories_per_cycle]}"},
-            k_calories_stomach_size: {"最大卡路里", "#{a[:k_calories_stomach_size]}"}
+            kcal_per_cycle: {"每周期消耗卡路里", "#{a[:kcal_per_cycle]}"},
+            kcal_stomach_size: {"最大卡路里", "#{a[:kcal_stomach_size]}"}
           ]
           |> Enum.filter(fn {key, _value} -> Keyword.has_key?(a, key) end)
           |> Enum.map(fn {_key, value} -> value end)
@@ -196,9 +208,13 @@ defmodule Onicn.Categories.Critter do
   properties =
     :onicn
     |> :code.priv_dir()
-    |> Path.join("data/critter.ex")
-    |> Code.eval_file()
-    |> elem(0)
+    |> Path.join("data/critter.yaml")
+    |> YamlElixir.read_from_file!()
+    |> Enum.map(
+      &Map.new(&1, fn
+        {key, value} -> {String.to_atom(key), value}
+      end)
+    )
     |> Macro.escape()
 
   def __properties__ do
@@ -212,10 +228,10 @@ defmodule Onicn.Categories.Critter do
   end
 
   def delete_if_not_both_exist(a, key1, key2) do
-    if Keyword.has_key?(a, key1) != Keyword.has_key?(a, key2) do
-      a |> Keyword.delete(key1) |> Keyword.delete(key2)
-    else
+    if Keyword.has_key?(a, key1) and Keyword.has_key?(a, key2) do
       a
+    else
+      Keyword.drop(a, [key1, key2])
     end
   end
 

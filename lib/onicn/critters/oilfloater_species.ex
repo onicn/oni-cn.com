@@ -1,10 +1,10 @@
-alias Onicn.Critters.OilFloaterSpecies
+alias Onicn.Critters.OilfloaterSpecies
 
-defmodule OilFloaterSpecies do
+defmodule OilfloaterSpecies do
   use Onicn.Categories.Critter, [
-    OilFloaterSpecies.OilFloater,
-    OilFloaterSpecies.OilFloaterHighTemp,
-    OilFloaterSpecies.OilFloaterDecor
+    OilfloaterSpecies.Oilfloater,
+    OilfloaterSpecies.OilfloaterHighTemp,
+    OilfloaterSpecies.OilfloaterDecor
   ]
 
   section "简介" do
@@ -60,38 +60,20 @@ defmodule OilFloaterSpecies do
   end
 end
 
-defmodule OilFloaterSpecies.OilFloater do
-  use OilFloaterSpecies,
-    cn_name: "浮油生物",
-    en_name: "Slickster",
-    baby: "oil_floater_baby",
-    baby_cn_name: "浮油生物幼体",
-    baby_en_name: "Slickster Larva",
-    egg: "oil_floater_egg",
-    egg_cn_name: "浮油生物蛋",
-    egg_en_name: "Larva Egg"
+defmodule OilfloaterSpecies.Oilfloater do
+  use OilfloaterSpecies,
+    baby: "oilfloater_baby",
+    egg: "oilfloater_egg"
 end
 
-defmodule OilFloaterSpecies.OilFloaterHighTemp do
-  use OilFloaterSpecies,
-    cn_name: "熔岩浮油生物",
-    en_name: "Molten Slickster",
-    baby: "oil_floater_high_temp_baby",
-    baby_cn_name: "熔岩浮油生物幼体",
-    baby_en_name: "Molten Larva",
-    egg: "oil_floater_high_temp_egg",
-    egg_cn_name: "熔岩浮油生物蛋",
-    egg_en_name: "Molten Larva Egg"
+defmodule OilfloaterSpecies.OilfloaterHighTemp do
+  use OilfloaterSpecies,
+    baby: "oilfloater_high_temp_baby",
+    egg: "oilfloater_high_temp_egg"
 end
 
-defmodule OilFloaterSpecies.OilFloaterDecor do
-  use OilFloaterSpecies,
-    cn_name: "长毛浮油生物",
-    en_name: "Longhair Slickster",
-    baby: "oil_floater_decor_baby",
-    baby_cn_name: "长毛浮油生物幼体",
-    baby_en_name: "Longhair Larva",
-    egg: "oil_floater_decor_egg",
-    egg_cn_name: "长毛浮油生物蛋",
-    egg_en_name: "Longhair Larva Egg"
+defmodule OilfloaterSpecies.OilfloaterDecor do
+  use OilfloaterSpecies,
+    baby: "oilfloater_decor_baby",
+    egg: "oilfloater_decor_egg"
 end

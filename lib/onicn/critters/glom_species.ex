@@ -31,7 +31,5 @@ defmodule GlomSpecies do
 end
 
 defmodule GlomSpecies.Glom do
-  use GlomSpecies,
-    cn_name: "疫病章鱼",
-    en_name: "Morb"
+  use GlomSpecies
 end
