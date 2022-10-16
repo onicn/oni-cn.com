@@ -33,7 +33,7 @@ defmodule Onicn.Categories.Geyser do
 
       def output(:html_attributes) do
         a = __attributes__()
-        img = "/img/geysers/#{a[:name]}.png"
+        img = "/img/geysers/#{a[:image_name]}.png"
         icon = ~s|<i class="layui-icon layui-icon-subtraction"></i>|
         produce_module = Module.concat(Onicn.Elements, Macro.camelize(a[:produced_element]))
 
@@ -59,7 +59,7 @@ defmodule Onicn.Categories.Geyser do
         a = __attributes__()
 
         ~s|<a href="/geysers/#{a[:name]}">
-          <img src="/img/geysers/#{a[:name]}.png" style="weight:16px;height:16px;">
+          <img src="/img/geysers/#{a[:image_name]}.png" style="weight:16px;height:16px;">
           #{a[:cn_name]}
         </a>|
       end

@@ -1,5 +1,6 @@
 - name: geyser_generic_steam
   cn_name: 低温蒸汽喷孔
+  image_name: geyser_gas_steam
   produced_element: steam
   produced_element_cn: 蒸汽
   temperature: 110
@@ -16,6 +17,7 @@
   max_year_percent: 0.8
 - name: geyser_generic_hot_steam
   cn_name: 蒸汽喷孔
+  image_name: geyser_gas_steam_hot
   produced_element: steam
   produced_element_cn: 蒸汽
   temperature: 500
@@ -32,6 +34,7 @@
   max_year_percent: 0.8
 - name: geyser_generic_hot_water
   cn_name: 清水泉
+  image_name: geyser_liquid_water_hot
   produced_element: water
   produced_element_cn: 水
   temperature: 95
@@ -48,6 +51,7 @@
   max_year_percent: 0.8
 - name: geyser_generic_slush_water
   cn_name: 低温泥浆泉
+  image_name: geyser_liquid_water_slush
   produced_element: dirty_water
   produced_element_cn: 污染水
   temperature: -10
@@ -64,6 +68,7 @@
   max_year_percent: 0.8
 - name: geyser_generic_filthy_water
   cn_name: 污水泉
+  image_name: geyser_liquid_water_filthy
   produced_element: dirty_water
   produced_element_cn: 污染水
   temperature: 30
@@ -82,6 +87,7 @@
   disease: 食物中毒
 - name: geyser_generic_slush_salt_water
   cn_name: 低温盐泥泉
+  image_name: geyser_liquid_salt_water
   produced_element: brine
   produced_element_cn: 浓盐水
   temperature: -10
@@ -98,6 +104,7 @@
   max_year_percent: 0.8
 - name: geyser_generic_salt_water
   cn_name: 盐水泉
+  image_name: geyser_liquid_salt_water
   produced_element: salt_water
   produced_element_cn: 盐水
   temperature: 95
@@ -114,6 +121,7 @@
   max_year_percent: 0.8
 - name: geyser_generic_small_volcano
   cn_name: 小型火山
+  image_name: geyser_molten_volcano_small
   produced_element: magma
   produced_element_cn: 岩浆
   temperature: 1726.85
@@ -130,6 +138,7 @@
   max_year_percent: 0.8
 - name: geyser_generic_big_volcano
   cn_name: 火山
+  image_name: geyser_molten_volcano_big
   produced_element: magma
   produced_element_cn: 岩浆
   temperature: 1726.85
@@ -146,6 +155,7 @@
   max_year_percent: 0.8
 - name: geyser_generic_liquid_co2
   cn_name: 二氧化碳泉
+  image_name: geyser_liquid_co2
   produced_element: liquid_carbon_dioxide
   produced_element_cn: 液态二氧化碳
   temperature: -55.14999
@@ -162,6 +172,7 @@
   max_year_percent: 0.8
 - name: geyser_generic_hot_co2
   cn_name: 二氧化碳喷孔
+  image_name: geyser_gas_co2_hot
   produced_element: carbon_dioxide
   produced_element_cn: 二氧化碳
   temperature: 500
@@ -178,6 +189,7 @@
   max_year_percent: 0.8
 - name: geyser_generic_hot_hydrogen
   cn_name: 氢气喷孔
+  image_name: geyser_gas_hydrogen_hot
   produced_element: hydrogen
   produced_element_cn: 氢气
   temperature: 500
@@ -194,6 +206,7 @@
   max_year_percent: 0.8
 - name: geyser_generic_hot_po2
   cn_name: 高温污氧喷孔
+  image_name: geyser_gas_po2_hot
   produced_element: contaminated_oxygen
   produced_element_cn: 污染氧
   temperature: 500
@@ -210,6 +223,7 @@
   max_year_percent: 0.8
 - name: geyser_generic_slimy_po2
   cn_name: 含菌污氧喷孔
+  image_name: geyser_gas_po2_slimy
   produced_element: contaminated_oxygen
   produced_element_cn: 污染氧
   temperature: 60
@@ -228,6 +242,7 @@
   disease: 粘液肺病
 - name: geyser_generic_chlorine_gas
   cn_name: 氯气喷孔
+  image_name: geyser_gas_chlorine
   produced_element: chlorine_gas
   produced_element_cn: 氯气
   temperature: 60
@@ -244,6 +259,7 @@
   max_year_percent: 0.8
 - name: geyser_generic_methane
   cn_name: 天然气喷孔
+  image_name: geyser_gas_methane
   produced_element: methane
   produced_element_cn: 天然气
   temperature: 150
@@ -260,6 +276,7 @@
   max_year_percent: 0.8
 - name: geyser_generic_molten_copper
   cn_name: 铜火山
+  image_name: geyser_molten_copper
   produced_element: molten_copper
   produced_element_cn: 熔融铜
   temperature: 2226.85
@@ -276,6 +293,7 @@
   max_year_percent: 0.8
 - name: geyser_generic_molten_iron
   cn_name: 铁火山
+  image_name: geyser_molten_iron
   produced_element: molten_iron
   produced_element_cn: 熔融铁
   temperature: 2526.85
@@ -292,6 +310,7 @@
   max_year_percent: 0.8
 - name: geyser_generic_molten_gold
   cn_name: 金火山
+  image_name: geyser_molten_gold
   produced_element: molten_gold
   produced_element_cn: 熔融金
   temperature: 2626.85
@@ -308,6 +327,7 @@
   max_year_percent: 0.8
 - name: geyser_generic_molten_aluminum
   cn_name: 铝火山
+  image_name: geyser_molten_aluminum
   produced_element: molten_aluminum
   produced_element_cn: 熔融铝
   temperature: 1726.85
@@ -325,6 +345,7 @@
   dlc: true
 - name: geyser_generic_molten_tungsten
   cn_name: 钨火山
+  image_name: geyser_molten_tungsten
   produced_element: molten_tungsten
   produced_element_cn: 熔融钨
   temperature: 3726.85
@@ -342,6 +363,7 @@
   dlc: true
 - name: geyser_generic_molten_niobium
   cn_name: 铌火山
+  image_name: geyser_molten_niobium
   produced_element: molten_niobium
   produced_element_cn: 熔融铌
   temperature: 3226.85
@@ -359,6 +381,7 @@
   dlc: true
 - name: geyser_generic_molten_cobalt
   cn_name: 钴火山
+  image_name: geyser_molten_cobalt
   produced_element: molten_cobalt
   produced_element_cn: 熔融钴
   temperature: 2226.85
@@ -376,6 +399,7 @@
   dlc: true
 - name: geyser_generic_oil_drip
   cn_name: 渗油裂缝
+  image_name: geyser_liquid_oil
   produced_element: crude_oil
   produced_element_cn: 原油
   temperature: 326.85
@@ -392,6 +416,7 @@
   max_year_percent: 0.8
 - name: geyser_generic_liquid_sulfur
   cn_name: 液硫泉
+  image_name: geyser_liquid_sulfur
   produced_element: liquid_sulfur
   produced_element_cn: 液态硫
   temperature: 165.2
