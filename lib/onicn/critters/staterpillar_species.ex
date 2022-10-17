@@ -8,7 +8,6 @@ defmodule StaterpillarSpecies do
   ]
 end
 
-
 defmodule StaterpillarSpecies.Staterpillar do
   use StaterpillarSpecies
 end

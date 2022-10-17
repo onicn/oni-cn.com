@@ -2,7 +2,8 @@ alias Onicn.Critters.MoleSpecies
 
 defmodule MoleSpecies do
   use Onicn.Categories.Critter, [
-    MoleSpecies.Mole, MoleSpecies.MoleDelicacy
+    MoleSpecies.Mole,
+    MoleSpecies.MoleDelicacy
   ]
 
   section "简介" do

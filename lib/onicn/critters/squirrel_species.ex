@@ -2,7 +2,8 @@ alias Onicn.Critters.SquirrelSpecies
 
 defmodule SquirrelSpecies do
   use Onicn.Categories.Critter, [
-    SquirrelSpecies.Squirrel, SquirrelSpecies.SquirrelHug
+    SquirrelSpecies.Squirrel,
+    SquirrelSpecies.SquirrelHug
   ]
 
   section "简介" do

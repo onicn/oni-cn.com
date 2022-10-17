@@ -162,6 +162,7 @@
   produce_crop_cn: 虫果
   produce_crop_num: 8
   seed: worm_plant_seed
+  seed_image_name: seed_wormwood
   can_drown: true
   can_tinker: true
   require_fertilizer:
