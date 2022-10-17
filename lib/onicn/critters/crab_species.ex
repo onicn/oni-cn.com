@@ -2,7 +2,9 @@ alias Onicn.Critters.CrabSpecies
 
 defmodule CrabSpecies do
   use Onicn.Categories.Critter, [
-    CrabSpecies.Crab
+    CrabSpecies.Crab,
+    CrabSpecies.CrabWood,
+    CrabSpecies.CrabFreshWater
   ]
 
   section "简介" do
@@ -40,7 +42,13 @@ defmodule CrabSpecies do
 end
 
 defmodule CrabSpecies.Crab do
-  use CrabSpecies,
-    baby: "crab_baby",
-    egg: "crab_egg"
+  use CrabSpecies
+end
+
+defmodule CrabSpecies.CrabWood do
+  use CrabSpecies
+end
+
+defmodule CrabSpecies.CrabFreshWater do
+  use CrabSpecies
 end

@@ -61,19 +61,13 @@ defmodule OilfloaterSpecies do
 end
 
 defmodule OilfloaterSpecies.Oilfloater do
-  use OilfloaterSpecies,
-    baby: "oilfloater_baby",
-    egg: "oilfloater_egg"
+  use OilfloaterSpecies
 end
 
 defmodule OilfloaterSpecies.OilfloaterHighTemp do
-  use OilfloaterSpecies,
-    baby: "oilfloater_high_temp_baby",
-    egg: "oilfloater_high_temp_egg"
+  use OilfloaterSpecies
 end
 
 defmodule OilfloaterSpecies.OilfloaterDecor do
-  use OilfloaterSpecies,
-    baby: "oilfloater_decor_baby",
-    egg: "oilfloater_decor_egg"
+  use OilfloaterSpecies
 end

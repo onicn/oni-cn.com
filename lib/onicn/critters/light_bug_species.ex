@@ -104,43 +104,29 @@ defmodule LightBugSpecies do
 end
 
 defmodule LightBugSpecies.LightBug do
-  use LightBugSpecies,
-    baby: "light_bug_baby",
-    egg: "light_bug_egg"
+  use LightBugSpecies
 end
 
 defmodule LightBugSpecies.LightBugOrange do
-  use LightBugSpecies,
-    baby: "light_bug_orange_baby",
-    egg: "light_bug_orange_egg"
+  use LightBugSpecies
 end
 
 defmodule LightBugSpecies.LightBugPurple do
-  use LightBugSpecies,
-    baby: "light_bug_purple_baby",
-    egg: "light_bug_purple_egg"
+  use LightBugSpecies
 end
 
 defmodule LightBugSpecies.LightBugPink do
-  use LightBugSpecies,
-    baby: "light_bug_pink_baby",
-    egg: "light_bug_pink_egg"
+  use LightBugSpecies
 end
 
 defmodule LightBugSpecies.LightBugBlue do
-  use LightBugSpecies,
-    baby: "light_bug_blue_baby",
-    egg: "light_bug_blue_egg"
+  use LightBugSpecies
 end
 
 defmodule LightBugSpecies.LightBugBlack do
-  use LightBugSpecies,
-    baby: "light_bug_black_baby",
-    egg: "light_bug_black_egg"
+  use LightBugSpecies
 end
 
 defmodule LightBugSpecies.LightBugCrystal do
-  use LightBugSpecies,
-    baby: "light_bug_crystal_baby",
-    egg: "light_bug_crystal_egg"
+  use LightBugSpecies
 end

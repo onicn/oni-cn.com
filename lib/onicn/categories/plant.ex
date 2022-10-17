@@ -20,7 +20,7 @@ defmodule Onicn.Categories.Plant do
         |> Map.put(:cn_name, Translation.get(name))
         |> then(fn
           %{seed: seed} = data ->
-            seed_cn_name = data[:seed] |> String.to_atom() |> Translation.get()
+            seed_cn_name = Translation.get(data[:seed])
             Map.put(data, :seed_cn_name, seed_cn_name)
 
           data ->
@@ -32,7 +32,7 @@ defmodule Onicn.Categories.Plant do
       def output(:html_attributes) do
         icon = ~s|<i class="layui-icon layui-icon-subtraction"></i>|
         a = __attributes__()
-        img = "/img/plants/#{a[:name]}.png"
+        img = "/img/plants/#{a[:image_name]}.png"
 
         data =
           [
@@ -62,7 +62,7 @@ defmodule Onicn.Categories.Plant do
 
         ~s"""
         <a href="/plants/#{a[:name]}">
-          <img src="/img/plants/#{a[:name]}.png" style="weight:16px;height:16px;">
+          <img src="/img/plants/#{a[:image_name]}.png" style="weight:16px;height:16px;">
           #{a[:cn_name]}
         </a>
         """
@@ -74,7 +74,7 @@ defmodule Onicn.Categories.Plant do
         if seed = a[:seed] do
           ~s"""
           <a href="/plants/#{a[:name]}">
-            <img src="/img/plants/#{a[:seed]}.png" style="weight:16px;height:16px;">
+            <img src="/img/plants/#{a[:seed_image_name]}.png" style="weight:16px;height:16px;">
             #{a[:seed_cn_name]}
           </a>
           """

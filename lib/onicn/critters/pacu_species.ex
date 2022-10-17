@@ -50,19 +50,13 @@ defmodule PacuSpecies do
 end
 
 defmodule PacuSpecies.Pacu do
-  use PacuSpecies,
-    baby: "pacu_baby",
-    egg: "pacu_egg"
+  use PacuSpecies
 end
 
 defmodule PacuSpecies.PacuCleaner do
-  use PacuSpecies,
-    baby: "pacu_cleaner_baby",
-    egg: "pacu_cleaner_egg"
+  use PacuSpecies
 end
 
 defmodule PacuSpecies.PacuTropical do
-  use PacuSpecies,
-    baby: "pacu_tropical_baby",
-    egg: "pacu_tropical_egg"
+  use PacuSpecies
 end

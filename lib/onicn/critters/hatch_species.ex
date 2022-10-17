@@ -67,25 +67,17 @@ defmodule HatchSpecies do
 end
 
 defmodule HatchSpecies.Hatch do
-  use HatchSpecies,
-    baby: "hatch_baby",
-    egg: "hatch_egg"
+  use HatchSpecies
 end
 
 defmodule HatchSpecies.HatchVeggie do
-  use HatchSpecies,
-    baby: "hatch_veggie_baby",
-    egg: "hatch_veggie_egg"
+  use HatchSpecies
 end
 
 defmodule HatchSpecies.HatchHard do
-  use HatchSpecies,
-    baby: "hatch_hard_baby",
-    egg: "hatch_hard_egg"
+  use HatchSpecies
 end
 
 defmodule HatchSpecies.HatchMetal do
-  use HatchSpecies,
-    baby: "hatch_metal_baby",
-    egg: "hatch_metal_egg"
+  use HatchSpecies
 end

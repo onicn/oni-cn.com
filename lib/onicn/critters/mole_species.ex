@@ -1,7 +1,9 @@
 alias Onicn.Critters.MoleSpecies
 
 defmodule MoleSpecies do
-  use Onicn.Categories.Critter, [MoleSpecies.Mole]
+  use Onicn.Categories.Critter, [
+    MoleSpecies.Mole, MoleSpecies.MoleDelicacy
+  ]
 
   section "简介" do
     "锹环田鼠是一种钻地动物，常见于太空生态。它们进食大量浮土，提供肉和蛋。锹环田鼠能够被饲养。"
@@ -57,7 +59,9 @@ defmodule MoleSpecies do
 end
 
 defmodule MoleSpecies.Mole do
-  use MoleSpecies,
-    baby: "mole_baby",
-    egg: "mole_egg"
+  use MoleSpecies
+end
+
+defmodule MoleSpecies.MoleDelicacy do
+  use MoleSpecies
 end

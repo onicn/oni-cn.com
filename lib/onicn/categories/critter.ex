@@ -4,17 +4,19 @@ defmodule Onicn.Categories.Critter do
   use Onicn.Content
 
   @species [
-    Critters.HatchSpecies,
-    Critters.PacuSpecies,
-    Critters.SquirrelSpecies,
-    Critters.OilfloaterSpecies,
-    Critters.DreckoSpecies,
-    Critters.MoleSpecies,
+    Critters.BeeSpecies,
     Critters.CrabSpecies,
-    Critters.PuftSpecies,
+    Critters.DreckoSpecies,
+    Critters.GlomSpecies,
+    Critters.HatchSpecies,
     Critters.LightBugSpecies,
+    Critters.MoleSpecies,
     Critters.MooSpecies,
-    Critters.GlomSpecies
+    Critters.OilfloaterSpecies,
+    Critters.PacuSpecies,
+    Critters.PuftSpecies,
+    Critters.SquirrelSpecies,
+    Critters.StaterpillarSpecies
   ]
 
   section "小动物状态信息" do
@@ -43,7 +45,7 @@ defmodule Onicn.Categories.Critter do
     quote do
       use Onicn.Content
 
-      defmacro __using__(attributes) do
+      defmacro __using__(_attributes) do
         species =
           __MODULE__ |> to_string() |> String.split(".") |> List.last() |> Macro.underscore()
 
@@ -52,33 +54,27 @@ defmodule Onicn.Categories.Critter do
             name =
               __MODULE__ |> to_string() |> String.split(".") |> List.last() |> Macro.underscore()
 
-            properties =
-              Onicn.Categories.Critter.__properties__()
-              |> Enum.find(fn attribute -> attribute[:name] == name end)
-              |> Enum.into([])
-
-            baby = unquote(attributes)[:baby]
-            egg = unquote(attributes)[:egg]
-
-            unquote(attributes)
-            |> Keyword.put(:species, unquote(species))
-            |> Keyword.put(:name, name)
-            |> Keyword.put(:cn_name, Translation.get(name))
-            |> then(fn
-              attrs when is_nil(baby) -> attrs
-              attrs -> Keyword.put(attrs, :baby_cn_name, Translation.get(baby))
-            end)
-            |> then(fn
-              attrs when is_nil(egg) -> attrs
-              attrs -> Keyword.put(attrs, :egg_cn_name, Translation.get(egg))
-            end)
-            |> Keyword.merge(properties)
+            Onicn.Categories.Critter.__properties__()
+            |> Enum.find(fn attribute -> attribute[:name] == name end)
+            |> Map.put(:species, unquote(species))
+            |> Map.put(:cn_name, Translation.get(name))
+            |> case do
+                 %{name: "bee"} =attrs ->
+                   attrs
+                   |> Map.put(:baby_cn_name, Translation.get("#{name}_baby"))
+                 %{base_lay_egg_cycles: _ } =attrs ->
+                   attrs
+                   |> Map.put(:egg_cn_name, Translation.get("#{name}_egg"))
+                   |> Map.put(:baby_cn_name, Translation.get("#{name}_baby"))
+                 attrs -> attrs
+               end
+            |> Enum.into([])
           end
 
           def output(:html_attributes, common_properties) do
             icon = ~s|<i class="layui-icon layui-icon-subtraction"></i>|
             a = __attributes__()
-            img = "/img/critters/#{a[:name]}.png"
+            img = "/img/critters/#{a[:image_name]}.png"
 
             data =
               [
@@ -115,7 +111,7 @@ defmodule Onicn.Categories.Critter do
 
             ~s"""
             <a href="/critters/#{a[:species]}">
-              <img src="/img/critters/#{a[:name]}.png" style="weight:16px;height:16px;">
+              <img src="/img/critters/#{a[:image_name]}.png" style="weight:16px;height:16px;">
               #{a[:cn_name]}
             </a>
             """
@@ -124,10 +120,10 @@ defmodule Onicn.Categories.Critter do
           def output(:link_baby_name_icon) do
             a = __attributes__()
 
-            if a[:baby] do
+            if a[:baby_cn_name] do
               ~s"""
               <a href="/critters/#{a[:species]}">
-                <img src="/img/critters/#{a[:baby]}.png" style="weight:16px;height:16px;">
+                <img src="/img/critters/baby_#{a[:image_name]}.png" style="weight:16px;height:16px;">
                 #{a[:baby_cn_name]}
               </a>
               """
@@ -137,10 +133,10 @@ defmodule Onicn.Categories.Critter do
           def output(:link_egg_name_icon) do
             a = __attributes__()
 
-            if a[:egg] do
+            if a[:egg_cn_name] do
               ~s"""
               <a href="/critters/#{a[:species]}">
-                <img src="/img/critters/#{a[:egg]}.png" style="weight:16px;height:16px;">
+                <img src="/img/critters/egg_#{a[:image_name]}.png" style="weight:16px;height:16px;">
                 #{a[:egg_cn_name]}
               </a>
               """
@@ -383,7 +379,7 @@ defmodule Onicn.Categories.Critter do
         baby: module.output(:link_baby_name_icon),
         egg: module.output(:link_egg_name_icon),
         hp: a[:hp],
-        age_max: (a[:age_max] === 0 && "∞") || a[:age_max],
+        age_max: a[:age_max] || "∞",
         temperature_liveable:
           "#{a[:temperature_min_liveable]} #{icon} #{a[:temperature_max_liveable]}",
         temperature_comfort:

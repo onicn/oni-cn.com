@@ -1,7 +1,9 @@
 alias Onicn.Critters.SquirrelSpecies
 
 defmodule SquirrelSpecies do
-  use Onicn.Categories.Critter, [SquirrelSpecies.Squirrel]
+  use Onicn.Categories.Critter, [
+    SquirrelSpecies.Squirrel, SquirrelSpecies.SquirrelHug
+  ]
 
   section "简介" do
     "树鼠是一种陆生小动物，常见于森林生态。"
@@ -52,7 +54,9 @@ defmodule SquirrelSpecies do
 end
 
 defmodule SquirrelSpecies.Squirrel do
-  use SquirrelSpecies,
-    baby: "squirrel_baby",
-    egg: "squirrel_egg"
+  use SquirrelSpecies
+end
+
+defmodule SquirrelSpecies.SquirrelHug do
+  use SquirrelSpecies
 end

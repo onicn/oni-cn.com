@@ -52,13 +52,9 @@ defmodule DreckoSpecies do
 end
 
 defmodule DreckoSpecies.Drecko do
-  use DreckoSpecies,
-    baby: "drecko_baby",
-    egg: "drecko_egg"
+  use DreckoSpecies
 end
 
 defmodule DreckoSpecies.DreckoPlastic do
-  use DreckoSpecies,
-    baby: "drecko_plastic_baby",
-    egg: "drecko_plastic_egg"
+  use DreckoSpecies
 end

@@ -70,25 +70,17 @@ defmodule PuftSpecies do
 end
 
 defmodule PuftSpecies.Puft do
-  use PuftSpecies,
-    baby: "puft_baby",
-    egg: "puft_egg"
+  use PuftSpecies
 end
 
 defmodule PuftSpecies.PuftAlpha do
-  use PuftSpecies,
-    baby: "puft_alpha_baby",
-    egg: "puft_alpha_egg"
+  use PuftSpecies
 end
 
 defmodule PuftSpecies.PuftBleachstone do
-  use PuftSpecies,
-    baby: "puft_bleachstone_baby",
-    egg: "puft_bleachstone_egg"
+  use PuftSpecies
 end
 
 defmodule PuftSpecies.PuftOxylite do
-  use PuftSpecies,
-    baby: "puft_oxylite_baby",
-    egg: "puft_oxylite_egg"
+  use PuftSpecies
 end
