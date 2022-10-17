@@ -58,10 +58,11 @@ defmodule Onicn.Categories.Element do
 
           def output(:link_name_icon) do
             a = __attributes__()
-            path = "/#{a[:category_name]}/#{ImageName.get(a[:name])}"
+            path = "/#{a[:category_name]}/#{a[:name]}"
+            img_path = "/img/#{a[:category_name]}/#{ImageName.get(a[:name])}.png"
 
             ~s|<a href="#{path}">
-              <img src="/img#{path}.png" style="weight:16px;height:16px;">
+              <img src="#{img_path}" style="weight:16px;height:16px;">
               #{a[:cn_name]}
             </a>|
           end
