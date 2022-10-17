@@ -704,10 +704,10 @@
       amount: 1
     produce:
     - material_id: wood_log
-      amount: 50
+      amount: 10
   - require:
     - material_id: crab_wood_shell
-      amount: 1
+      amount: 5
     produce:
     - material_id: wood_log
       amount: 500
@@ -1105,7 +1105,23 @@
     - material_id: egg_shell
       amount: 1
   - require:
+    - material_id: staterpillar_egg
+      amount: 1
+    produce:
+    - material_id: raw_egg
+      amount: 1
+    - material_id: egg_shell
+      amount: 1
+  - require:
     - material_id: light_bug_pink_egg
+      amount: 1
+    produce:
+    - material_id: raw_egg
+      amount: 0.1
+    - material_id: egg_shell
+      amount: 0.1
+  - require:
+    - material_id: light_bug_orange_egg
       amount: 1
     produce:
     - material_id: raw_egg
@@ -1161,15 +1177,7 @@
     - material_id: egg_shell
       amount: 0.1
   - require:
-    - material_id: light_bug_orange_egg
-      amount: 1
-    produce:
-    - material_id: raw_egg
-      amount: 0.1
-    - material_id: egg_shell
-      amount: 0.1
-  - require:
-    - material_id: staterpillar_egg
+    - material_id: staterpillar_gas_egg
       amount: 1
     produce:
     - material_id: raw_egg
@@ -1177,23 +1185,7 @@
     - material_id: egg_shell
       amount: 1
   - require:
-    - material_id: crab_egg
-      amount: 1
-    produce:
-    - material_id: raw_egg
-      amount: 1
-    - material_id: egg_shell
-      amount: 1
-  - require:
-    - material_id: crab_fresh_water_egg
-      amount: 1
-    produce:
-    - material_id: raw_egg
-      amount: 1
-    - material_id: egg_shell
-      amount: 1
-  - require:
-    - material_id: hatch_hard_egg
+    - material_id: staterpillar_liquid_egg
       amount: 1
     produce:
     - material_id: raw_egg
@@ -1209,7 +1201,31 @@
     - material_id: egg_shell
       amount: 1
   - require:
-    - material_id: divergent_worm_egg
+    - material_id: crab_wood_egg
+      amount: 1
+    produce:
+    - material_id: raw_egg
+      amount: 1
+    - material_id: egg_shell
+      amount: 1
+  - require:
+    - material_id: pacu_cleaner_egg
+      amount: 1
+    produce:
+    - material_id: raw_egg
+      amount: 2
+    - material_id: egg_shell
+      amount: 2
+  - require:
+    - material_id: crab_fresh_water_egg
+      amount: 1
+    produce:
+    - material_id: raw_egg
+      amount: 1
+    - material_id: egg_shell
+      amount: 1
+  - require:
+    - material_id: crab_egg
       amount: 1
     produce:
     - material_id: raw_egg
@@ -1225,7 +1241,7 @@
     - material_id: egg_shell
       amount: 1
   - require:
-    - material_id: pacu_cleaner_egg
+    - material_id: pacu_egg
       amount: 1
     produce:
     - material_id: raw_egg
@@ -1249,22 +1265,6 @@
     - material_id: egg_shell
       amount: 1
   - require:
-    - material_id: pacu_egg
-      amount: 1
-    produce:
-    - material_id: raw_egg
-      amount: 2
-    - material_id: egg_shell
-      amount: 2
-  - require:
-    - material_id: crab_wood_egg
-      amount: 1
-    produce:
-    - material_id: raw_egg
-      amount: 1
-    - material_id: egg_shell
-      amount: 1
-  - require:
     - material_id: pacu_tropical_egg
       amount: 1
     produce:
@@ -1272,6 +1272,22 @@
       amount: 2
     - material_id: egg_shell
       amount: 2
+  - require:
+    - material_id: divergent_worm_egg
+      amount: 1
+    produce:
+    - material_id: raw_egg
+      amount: 1
+    - material_id: egg_shell
+      amount: 1
+  - require:
+    - material_id: hatch_hard_egg
+      amount: 1
+    produce:
+    - material_id: raw_egg
+      amount: 1
+    - material_id: egg_shell
+      amount: 1
 - name: oxyfern
   recipes:
   - require:

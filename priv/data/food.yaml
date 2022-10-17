@@ -1,5 +1,5 @@
 - name: field_ration
-  name_cn: 营养棒
+  image_name: fieldration
   calories: 800
   quality: -1
   preserve_temperature: -18
@@ -7,7 +7,7 @@
   spoil_time: 32
   stale_time: 16
 - name: mush_bar
-  name_cn: 软泥膏
+  image_name: mushbar
   calories: 800
   quality: -1
   preserve_temperature: -18
@@ -15,7 +15,7 @@
   spoil_time: 8
   stale_time: 4
 - name: basic_plant_food
-  name_cn: 米虱
+  image_name: meallicegrain
   calories: 600
   quality: -1
   preserve_temperature: -18
@@ -23,7 +23,7 @@
   spoil_time: 8
   stale_time: 4
 - name: basic_forage_plant
-  name_cn: 淤泥根
+  image_name: muckrootvegetable
   calories: 800
   quality: -1
   preserve_temperature: -18
@@ -31,7 +31,7 @@
   spoil_time: 8
   stale_time: 4
 - name: forest_forage_plant
-  name_cn: 六角根果
+  image_name: podmelon_fruit
   calories: 6400
   quality: -1
   preserve_temperature: -18
@@ -39,7 +39,7 @@
   spoil_time: 8
   stale_time: 4
 - name: swamp_forage_plant
-  name_cn: 沼泽甜菜心
+  image_name: swamptuber_vegetable
   calories: 2400
   quality: -1
   preserve_temperature: -18
@@ -47,7 +47,7 @@
   spoil_time: 8
   stale_time: 4
 - name: mushroom
-  name_cn: 蘑菇
+  image_name: funguscap
   calories: 2400
   quality: 0
   preserve_temperature: -18
@@ -55,7 +55,7 @@
   spoil_time: 8
   stale_time: 4
 - name: lettuce
-  name_cn: 海生菜
+  image_name: sea_lettuce_leaves
   calories: 400
   quality: 0
   preserve_temperature: -18
@@ -65,7 +65,7 @@
   effects:
   - seafood_radiation_resistance
 - name: meat
-  name_cn: 肉
+  image_name: creaturemeat
   calories: 1600
   quality: -1
   preserve_temperature: -18
@@ -73,7 +73,7 @@
   spoil_time: 8
   stale_time: 4
 - name: plant_meat
-  name_cn: 植物肉
+  image_name: critter_trap_fruit
   calories: 1200
   quality: 1
   preserve_temperature: -18
@@ -81,7 +81,7 @@
   spoil_time: 4
   stale_time: 2
 - name: prickle_fruit
-  name_cn: 毛刺浆果
+  image_name: bristleberry
   calories: 1600
   quality: 0
   preserve_temperature: -18
@@ -89,7 +89,7 @@
   spoil_time: 8
   stale_time: 4
 - name: swamp_fruit
-  name_cn: 沼浆果冻
+  image_name: swampcrop_fruit
   calories: 1840
   quality: 0
   preserve_temperature: -18
@@ -97,7 +97,7 @@
   spoil_time: 4
   stale_time: 2
 - name: fish_meat
-  name_cn: 帕库鱼片
+  image_name: pacufillet
   calories: 1000
   quality: 2
   preserve_temperature: -18
@@ -107,7 +107,7 @@
   effects:
   - seafood_radiation_resistance
 - name: shellfish_meat
-  name_cn: 生蟹肉
+  image_name: shellfish
   calories: 1000
   quality: 2
   preserve_temperature: -18
@@ -117,7 +117,7 @@
   effects:
   - seafood_radiation_resistance
 - name: worm_basic_fruit
-  name_cn: 贫瘠虫果
+  image_name: wormwood_basic_fruit
   calories: 800
   quality: 0
   preserve_temperature: -18
@@ -125,7 +125,7 @@
   spoil_time: 8
   stale_time: 4
 - name: worm_super_fruit
-  name_cn: 虫果
+  image_name: wormwood_super_fruits
   calories: 250
   quality: 1
   preserve_temperature: -18
@@ -133,7 +133,7 @@
   spoil_time: 4
   stale_time: 2
 - name: pickled_meal
-  name_cn: 腌制米虱
+  image_name: pickledmeal
   calories: 1800
   quality: -1
   preserve_temperature: -18
@@ -141,7 +141,7 @@
   spoil_time: 32
   stale_time: 16
 - name: basic_plant_bar
-  name_cn: 米虱面包
+  image_name: liceloaf
   calories: 1700
   quality: 0
   preserve_temperature: -18
@@ -149,7 +149,7 @@
   spoil_time: 8
   stale_time: 4
 - name: fried_mush_bar
-  name_cn: 炸泥膏
+  image_name: mushbarfried
   calories: 1050
   quality: 0
   preserve_temperature: -18
@@ -157,7 +157,7 @@
   spoil_time: 8
   stale_time: 4
 - name: gamma_mush
-  name_cn: 伽马泥膏
+  image_name: mushbarfried
   calories: 1050
   quality: 1
   preserve_temperature: -18
@@ -165,7 +165,7 @@
   spoil_time: 4
   stale_time: 2
 - name: grilled_prickle_fruit
-  name_cn: 炙烤刺果
+  image_name: gristleberry
   calories: 2000
   quality: 1
   preserve_temperature: -18
@@ -173,7 +173,7 @@
   spoil_time: 8
   stale_time: 4
 - name: swamp_delights
-  name_cn: 沼泽欢愉
+  image_name: swamp_delights
   calories: 2240
   quality: 1
   preserve_temperature: -18
@@ -181,7 +181,7 @@
   spoil_time: 8
   stale_time: 4
 - name: fried_mushroom
-  name_cn: 煎蘑菇
+  image_name: funguscapfried
   calories: 2800
   quality: 1
   preserve_temperature: -18
@@ -189,7 +189,7 @@
   spoil_time: 8
   stale_time: 4
 - name: cold_wheat_bread
-  name_cn: 冰霜面包
+  image_name: frostbread
   calories: 1200
   quality: 2
   preserve_temperature: -18
@@ -197,7 +197,7 @@
   spoil_time: 8
   stale_time: 4
 - name: cooked_egg
-  name_cn: 煎蛋卷
+  image_name: cookedegg
   calories: 2800
   quality: 2
   preserve_temperature: -18
@@ -205,7 +205,7 @@
   spoil_time: 4
   stale_time: 2
 - name: cooked_fish
-  name_cn: 烤海鲜
+  image_name: grilled_pacu
   calories: 1600
   quality: 3
   preserve_temperature: -18
@@ -215,7 +215,7 @@
   effects:
   - seafood_radiation_resistance
 - name: cooked_meat
-  name_cn: 烤肉串
+  image_name: barbeque
   calories: 4000
   quality: 3
   preserve_temperature: -18
@@ -223,7 +223,7 @@
   spoil_time: 4
   stale_time: 2
 - name: worm_basic_food
-  name_cn: 烤虫果仁
+  image_name: wormwood_roast_nuts
   calories: 1200
   quality: 1
   preserve_temperature: -18
@@ -231,7 +231,7 @@
   spoil_time: 8
   stale_time: 4
 - name: worm_super_food
-  name_cn: 虫果果酱
+  image_name: wormwood_preserved_berries
   calories: 2400
   quality: 3
   preserve_temperature: -18
@@ -239,7 +239,7 @@
   spoil_time: 32
   stale_time: 16
 - name: fruit_cake
-  name_cn: 浆果糕
+  image_name: fruitcake
   calories: 4000
   quality: 3
   preserve_temperature: -18
@@ -247,7 +247,7 @@
   spoil_time: 32
   stale_time: 16
 - name: salsa
-  name_cn: 浆果酿
+  image_name: zestysalsa
   calories: 4400
   quality: 4
   preserve_temperature: -18
@@ -255,7 +255,7 @@
   spoil_time: 4
   stale_time: 2
 - name: surf_and_turf
-  name_cn: 海陆双拼
+  image_name: surfnturf
   calories: 6000
   quality: 4
   preserve_temperature: -18
@@ -265,7 +265,7 @@
   effects:
   - seafood_radiation_resistance
 - name: mushroom_wrap
-  name_cn: 蘑菇卷
+  image_name: mushroom_wrap
   calories: 4800
   quality: 4
   preserve_temperature: -18
@@ -275,7 +275,7 @@
   effects:
   - seafood_radiation_resistance
 - name: tofu
-  name_cn: 豆腐
+  image_name: loafu
   calories: 3600
   quality: 2
   preserve_temperature: -18
@@ -283,7 +283,7 @@
   spoil_time: 4
   stale_time: 2
 - name: spice_bread
-  name_cn: 火椒面包
+  image_name: pepperbread
   calories: 4000
   quality: 5
   preserve_temperature: -18
@@ -291,7 +291,7 @@
   spoil_time: 8
   stale_time: 4
 - name: spicy_tofu
-  name_cn: 麻婆豆腐
+  image_name: spicey_tofu
   calories: 4000
   quality: 5
   preserve_temperature: -18
@@ -299,7 +299,7 @@
   spoil_time: 4
   stale_time: 2
 - name: curry
-  name_cn: 咖喱豆
+  image_name: curried_beans
   calories: 5000
   quality: 4
   preserve_temperature: -18
@@ -309,7 +309,7 @@
   effects:
   - hot_stuff
 - name: berry_pie
-  name_cn: 混合浆果派
+  image_name: wormwood_berry_pie
   calories: 4200
   quality: 5
   preserve_temperature: -18
@@ -317,7 +317,7 @@
   spoil_time: 4
   stale_time: 2
 - name: burger
-  name_cn: 冰霜汉堡
+  image_name: frost_burger
   calories: 6000
   quality: 6
   preserve_temperature: -18
@@ -328,7 +328,7 @@
   - good_eats
   - seafood_radiation_resistance
 - name: bean_plant_seed
-  name_cn: 小吃豆
+  image_name: seed_beanplant
   calories: 0
   quality: 3
   preserve_temperature: -18
@@ -336,7 +336,7 @@
   spoil_time: 8
   stale_time: 4
 - name: spice_nut
-  name_cn: 火椒粒
+  image_name: spicenut
   calories: 0
   quality: 0
   preserve_temperature: -18
@@ -344,7 +344,7 @@
   spoil_time: 4
   stale_time: 2
 - name: cold_wheat_seed
-  name_cn: 冰霜麦粒
+  image_name: seed_coldwheat
   calories: 0
   quality: 0
   preserve_temperature: 10
@@ -352,7 +352,7 @@
   spoil_time: 16
   stale_time: 8
 - name: raw_egg
-  name_cn: 生蛋
+  image_name: rawegg
   calories: 0
   quality: -1
   preserve_temperature: -18

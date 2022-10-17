@@ -495,7 +495,7 @@
   materials:
   - metal
 - name: canvas
-  image_name: painting
+  image_name: painting_off
   base_decor: 10
   base_decor_radius: 6
   category: furniture
@@ -513,7 +513,7 @@
   - metal
   - building_fiber
 - name: canvas_tall
-  image_name: painting_tall
+  image_name: painting_tall_off
   base_decor: 15
   base_decor_radius: 6
   category: furniture
@@ -531,7 +531,7 @@
   - metal
   - building_fiber
 - name: canvas_wide
-  image_name: painting_wide
+  image_name: painting_wide_off
   base_decor: 15
   base_decor_radius: 6
   category: furniture
@@ -2085,6 +2085,37 @@
   generator_base_capacity: 0
   materials:
   - buildable_raw
+- name: gravitas_container
+  image_name: gravitas_container
+  base_decor_radius: 1
+  construction_time: 10
+  replaceable: true
+  is_industrial_machinery: false
+  overheatable: true
+  overheat_temperature: 75
+  heat_generate: 0
+  height_in_cells: 2
+  width_in_cells: 2
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - metal
+- name: gravitas_creature_manipulator
+  image_name: gravitas_critter_manipulator
+  base_decor: 15
+  base_decor_radius: 3
+  construction_time: 120
+  entombable: true
+  replaceable: true
+  is_industrial_machinery: false
+  overheat_temperature: 75
+  heat_generate: 0
+  height_in_cells: 4
+  width_in_cells: 3
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - refined_metal
 - name: gravitas_door
   image_name: gravitas_door_internal
   base_decor_radius: 1
@@ -2095,6 +2126,21 @@
   overheat_temperature: 75
   heat_generate: 0
   height_in_cells: 3
+  width_in_cells: 1
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - metal
+- name: gravitas_lab_light
+  image_name: gravitas_lab_light
+  base_decor_radius: 1
+  construction_time: 10
+  replaceable: true
+  is_industrial_machinery: false
+  overheatable: true
+  overheat_temperature: 75
+  heat_generate: 0
+  height_in_cells: 1
   width_in_cells: 1
   generator_wattage_rating: 0
   generator_base_capacity: 0
@@ -2220,7 +2266,6 @@
   generator_base_capacity: 0
   materials:
   - metal
-  - bleach_stone
 - name: headquarters
   image_name: hqbase
   base_decor: 30
@@ -3893,6 +3938,22 @@
   generator_base_capacity: 0
   materials:
   - buildable_raw
+- name: mega_brain_tank
+  image_name: gravitas_megabrain
+  base_decor: -20
+  base_decor_radius: 5
+  construction_time: 120
+  floodable: true
+  replaceable: true
+  is_industrial_machinery: false
+  overheat_temperature: 75
+  heat_generate: 0
+  height_in_cells: 7
+  width_in_cells: 7
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - metal
 - name: mesh_tile
   image_name: floor_mesh
   base_decor: -5
@@ -5883,6 +5944,23 @@
   generator_base_capacity: 0
   materials:
   - steel
+- name: spice_grinder
+  image_name: spice_grinder
+  base_decor_radius: 1
+  category: food
+  construction_time: 30
+  entombable: true
+  floodable: true
+  replaceable: true
+  is_industrial_machinery: false
+  overheat_temperature: 75
+  heat_generate: 0
+  height_in_cells: 3
+  width_in_cells: 2
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - metal
 - name: staterpillar_generator
   image_name: egg_caterpillar
   base_decor_radius: 1
@@ -5896,6 +5974,36 @@
   width_in_cells: 1
   generator_wattage_rating: 1600
   generator_base_capacity: 5000
+  materials:
+  - metal
+- name: staterpillar_gas_connector
+  image_name: egg_caterpillar
+  base_decor_radius: 1
+  construction_time: 10
+  entombable: true
+  replaceable: true
+  is_industrial_machinery: false
+  overheat_temperature: 150
+  heat_generate: 0
+  height_in_cells: 2
+  width_in_cells: 1
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - metal
+- name: staterpillar_liquid_connector
+  image_name: egg_caterpillar
+  base_decor_radius: 1
+  construction_time: 10
+  entombable: true
+  replaceable: true
+  is_industrial_machinery: false
+  overheat_temperature: 150
+  heat_generate: 0
+  height_in_cells: 2
+  width_in_cells: 1
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
   materials:
   - metal
 - name: steam_engine_cluster

@@ -23,7 +23,7 @@ defmodule Onicn.Categories.Food do
 
       def output(:html_attributes) do
         a = __attributes__()
-        img = "/img/foods/#{a[:name]}.png"
+        img = "/img/foods/#{a[:image_name]}.png"
         q = ["恶心", "糟糕", "低劣", "标准", "良好", "优秀", "杰出", "极佳"]
 
         data =
@@ -55,7 +55,7 @@ defmodule Onicn.Categories.Food do
 
         ~s"""
         <a href="/foods/#{a[:name]}">
-          <img src="/img/foods/#{a[:name]}.png" style="weight:16px;height:16px;">
+          <img src="/img/foods/#{a[:image_name]}.png" style="weight:16px;height:16px;">
           #{a[:cn_name]}
         </a>
         """
