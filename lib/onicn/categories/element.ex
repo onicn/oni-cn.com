@@ -1,4 +1,4 @@
-alias Onicn.Translation
+alias Onicn.{ImageName, Translation}
 
 defmodule Onicn.Categories.Element do
   @available_fields %{
@@ -40,7 +40,7 @@ defmodule Onicn.Categories.Element do
           use Onicn.Content
 
           def __attributes__ do
-            name = unquote(element_id) |> Macro.underscore() |> String.to_atom()
+            name = Macro.underscore(unquote(element_id))
 
             Onicn.Categories.Element.__elements__()
             |> Map.get(unquote(category_name))
@@ -58,7 +58,7 @@ defmodule Onicn.Categories.Element do
 
           def output(:link_name_icon) do
             a = __attributes__()
-            path = "/#{a[:category_name]}/#{a[:name]}"
+            path = "/#{a[:category_name]}/#{ImageName.get(a[:name])}"
 
             ~s|<a href="#{path}">
               <img src="/img#{path}.png" style="weight:16px;height:16px;">
@@ -259,7 +259,7 @@ defmodule Onicn.Categories.Element do
     category = attributes[:category_name]
 
     cn_name = attributes[:cn_name]
-    img = "/img/#{category}/#{name}.png"
+    img = "/img/#{category}/#{ImageName.get(name)}.png"
 
     data =
       attributes

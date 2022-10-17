@@ -1,0 +1,489 @@
+- name: aluminum_gas
+  color: RGBA(209, 237, 248, 255)
+  is_gas: true
+- name: carbon_dioxide
+  color: RGBA(0, 0, 0, 255)
+  is_gas: true
+- name: carbon_gas
+  color: RGBA(186, 162, 198, 255)
+  is_gas: true
+- name: chlorine_gas
+  color: RGBA(4, 167, 120, 255)
+  is_gas: true
+- name: contaminated_oxygen
+  color: RGBA(34, 79, 64, 255)
+  is_gas: true
+- name: copper_gas
+  color: RGBA(255, 156, 8, 255)
+  is_gas: true
+- name: gold_gas
+  color: RGBA(255, 226, 141, 255)
+  is_gas: true
+- name: helium
+  color: RGBA(200, 159, 185, 255)
+  is_gas: true
+- name: hydrogen
+  color: RGBA(197, 31, 139, 255)
+  is_gas: true
+- name: iron_gas
+  color: RGBA(204, 67, 36, 255)
+  is_gas: true
+- name: cobalt_gas
+  color: RGBA(0, 33, 236, 255)
+  is_gas: true
+- name: lead_gas
+  color: RGBA(255, 226, 141, 255)
+  is_gas: true
+- name: mercury_gas
+  color: RGBA(77, 109, 202, 255)
+  is_gas: true
+- name: methane
+  color: RGBA(255, 110, 15, 255)
+  is_gas: true
+- name: niobium_gas
+  color: RGBA(94, 253, 173, 255)
+  is_gas: true
+- name: fallout
+  color: RGBA(0, 255, 44, 255)
+  is_gas: true
+- name: oxygen
+  color: RGBA(183, 255, 255, 255)
+  is_gas: true
+- name: phosphorus_gas
+  color: RGBA(166, 79, 121, 255)
+  is_gas: true
+- name: propane
+  color: RGBA(121, 144, 209, 255)
+  is_gas: true
+- name: rock_gas
+  color: RGBA(178, 178, 178, 255)
+  is_gas: true
+- name: salt_gas
+  color: RGBA(255, 255, 255, 255)
+  is_gas: true
+- name: sour_gas
+  color: RGBA(118, 36, 93, 255)
+  is_gas: true
+- name: steam
+  color: RGBA(133, 201, 227, 255)
+  is_gas: true
+- name: steel_gas
+  color: RGBA(203, 158, 178, 255)
+  is_gas: true
+- name: sulfur_gas
+  color: RGBA(255, 255, 0, 255)
+  is_gas: true
+- name: super_coolant_gas
+  color: RGBA(55, 173, 147, 255)
+  is_gas: true
+- name: tungsten_gas
+  color: RGBA(255, 0, 125, 255)
+  is_gas: true
+- name: ethanol_gas
+  color: RGBA(0, 255, 106, 255)
+  is_gas: true
+- name: syngas
+  color: RGBA(243, 255, 0, 255)
+  is_gas: true
+- name: brine
+  color: RGBA(173, 233, 229, 255)
+  is_liquid: true
+- name: chlorine
+  color: RGBA(58, 195, 48, 255)
+  is_liquid: true
+- name: crude_oil
+  color: RGBA(48, 18, 101, 255)
+  is_liquid: true
+- name: dirty_water
+  color: RGBA(71, 69, 6, 255)
+  is_liquid: true
+- name: liquid_carbon_dioxide
+  color: RGBA(135, 142, 183, 255)
+  is_liquid: true
+- name: liquid_helium
+  color: RGBA(148, 138, 183, 255)
+  is_liquid: true
+- name: liquid_hydrogen
+  color: RGBA(255, 0, 110, 255)
+  is_liquid: true
+- name: liquid_methane
+  color: RGBA(255, 157, 0, 255)
+  is_liquid: true
+- name: liquid_oxygen
+  color: RGBA(87, 154, 169, 255)
+  is_liquid: true
+- name: liquid_phosphorus
+  color: RGBA(144, 139, 183, 255)
+  is_liquid: true
+- name: liquid_propane
+  color: RGBA(110, 149, 179, 255)
+  is_liquid: true
+- name: liquid_sulfur
+  color: RGBA(255, 255, 0, 255)
+  is_liquid: true
+- name: magma
+  color: RGBA(174, 0, 0, 255)
+  is_liquid: true
+- name: mercury
+  color: RGBA(115, 147, 180, 255)
+  is_liquid: true
+- name: molten_aluminum
+  color: RGBA(95, 152, 173, 255)
+  is_liquid: true
+- name: molten_carbon
+  color: RGBA(128, 128, 128, 255)
+  is_liquid: true
+- name: molten_copper
+  color: RGBA(224, 57, 14, 255)
+  is_liquid: true
+- name: molten_glass
+  color: RGBA(121, 230, 255, 255)
+  is_liquid: true
+- name: molten_gold
+  color: RGBA(241, 83, 0, 255)
+  is_liquid: true
+- name: molten_iron
+  color: RGBA(95, 152, 173, 255)
+  is_liquid: true
+- name: molten_cobalt
+  color: RGBA(0, 29, 206, 255)
+  is_liquid: true
+- name: molten_lead
+  color: RGBA(241, 83, 0, 255)
+  is_liquid: true
+- name: molten_niobium
+  color: RGBA(94, 253, 173, 255)
+  is_liquid: true
+- name: molten_salt
+  color: RGBA(245, 137, 112, 255)
+  is_liquid: true
+- name: molten_steel
+  color: RGBA(238, 44, 81, 255)
+  is_liquid: true
+- name: molten_tungsten
+  color: RGBA(229, 41, 14, 255)
+  is_liquid: true
+- name: molten_uranium
+  color: RGBA(162, 221, 16, 255)
+  is_liquid: true
+- name: naphtha
+  color: RGBA(176, 0, 255, 255)
+  is_liquid: true
+- name: nuclear_waste
+  color: RGBA(129, 176, 0, 255)
+  is_liquid: true
+- name: petroleum
+  color: RGBA(255, 195, 37, 255)
+  is_liquid: true
+- name: resin
+  color: RGBA(204, 139, 24, 255)
+  is_liquid: true
+- name: salt_water
+  color: RGBA(206, 210, 236, 255)
+  is_liquid: true
+- name: super_coolant
+  color: RGBA(55, 173, 147, 255)
+  is_liquid: true
+- name: visco_gel
+  color: RGBA(79, 16, 183, 255)
+  is_liquid: true
+- name: water
+  color: RGBA(0, 99, 255, 255)
+  is_liquid: true
+- name: ethanol
+  color: RGBA(0, 255, 106, 255)
+  is_liquid: true
+- name: molten_syngas
+  color: RGBA(0, 255, 116, 255)
+  is_liquid: true
+- name: molten_sucrose
+  color: RGBA(255, 255, 255, 255)
+  is_liquid: true
+- name: aerogel
+  image_name: algae
+  is_solid: true
+- name: algae
+  image_name: algae
+  is_solid: true
+- name: aluminum
+  image_name: aluminum
+  is_solid: true
+- name: aluminum_ore
+  image_name: aluminum_ore
+  is_solid: true
+- name: bitumen
+  image_name: carbon
+  is_solid: true
+- name: bleach_stone
+  image_name: bleach_stone
+  is_solid: true
+- name: brick
+  image_name: granite
+  is_solid: true
+- name: brine_ice
+  image_name: ice
+  is_solid: true
+- name: carbon
+  image_name: carbon
+  is_solid: true
+- name: carbon_fibre
+  image_name: algae
+  is_solid: true
+- name: cement
+  image_name: granite
+  is_solid: true
+- name: cement_mix
+  image_name: algae
+  is_solid: true
+- name: ceramic
+  image_name: ceramic
+  is_solid: true
+- name: clay
+  image_name: clay
+  is_solid: true
+- name: copper
+  image_name: copper_refined
+  is_solid: true
+- name: creature
+  image_name: algae
+  is_solid: true
+- name: crushed_ice
+  image_name: crushed_ice
+  is_solid: true
+- name: crushed_rock
+  image_name: crushed_rock
+  is_solid: true
+- name: cuprite
+  image_name: cuprite
+  is_solid: true
+- name: depleted_uranium
+  image_name: depleted_uranium
+  is_solid: true
+- name: diamond
+  image_name: diamond
+  is_solid: true
+- name: dirt
+  image_name: dirt
+  is_solid: true
+- name: dirty_ice
+  image_name: dirty_ice
+  is_solid: true
+- name: electrum
+  image_name: electrum
+  is_solid: true
+- name: enriched_uranium
+  image_name: enriched_uranium
+  is_solid: true
+- name: fertilizer
+  image_name: fertilizer
+  is_solid: true
+- name: fools_gold
+  image_name: fools_gold
+  is_solid: true
+- name: fossil
+  image_name: fossil
+  is_solid: true
+- name: fullerene
+  image_name: fullerene
+  is_solid: true
+- name: glass
+  image_name: glass
+  is_solid: true
+- name: gold
+  image_name: gold_refined
+  is_solid: true
+- name: gold_amalgam
+  image_name: gold_amalgam
+  is_solid: true
+- name: granite
+  image_name: granite
+  is_solid: true
+- name: ice
+  image_name: ice
+  is_solid: true
+- name: igneous_rock
+  image_name: igneous_rock
+  is_solid: true
+- name: iron
+  image_name: iron_refined
+  is_solid: true
+- name: iron_ore
+  image_name: hematite
+  is_solid: true
+- name: cobalt
+  image_name: cobalt_refined
+  is_solid: true
+- name: cobaltite
+  image_name: cobalt_ore
+  is_solid: true
+- name: isoresin
+  image_name: isoresin
+  is_solid: true
+- name: katairite
+  image_name: katairite
+  is_solid: true
+- name: lead
+  image_name: lead
+  is_solid: true
+- name: lime
+  image_name: limestone
+  is_solid: true
+- name: mafic_rock
+  image_name: igneous_rock
+  is_solid: true
+- name: niobium
+  image_name: niobium
+  is_solid: true
+- name: corium
+  image_name: radium
+  is_solid: true
+- name: obsidian
+  image_name: obsidian
+  is_solid: true
+- name: oxy_rock
+  image_name: oxyrock
+  is_solid: true
+- name: phosphate_nodules
+  image_name: phosphate_nodules
+  is_solid: true
+- name: phosphorite
+  image_name: phosphorite
+  is_solid: true
+- name: phosphorus
+  image_name: phosphorus
+  is_solid: true
+- name: polypropylene
+  image_name: polypropylene
+  is_solid: true
+- name: radium
+  image_name: radium
+  is_solid: true
+- name: refined_carbon
+  image_name: carbon
+  is_solid: true
+- name: regolith
+  image_name: sand
+  is_solid: true
+- name: rust
+  image_name: iron_oxide
+  is_solid: true
+- name: salt
+  image_name: salt
+  is_solid: true
+- name: sand
+  image_name: sand
+  is_solid: true
+- name: sand_cement
+  image_name: granite
+  is_solid: true
+- name: sand_stone
+  image_name: sand_stone
+  is_solid: true
+- name: sedimentary_rock
+  image_name: sedimentary_rock
+  is_solid: true
+- name: slabs
+  image_name: granite
+  is_solid: true
+- name: slime_mold
+  image_name: slime_mold
+  is_solid: true
+- name: snow
+  image_name: snow
+  is_solid: true
+- name: solid_carbon_dioxide
+  image_name: solid_carbon_dioxide
+  is_solid: true
+- name: solid_chlorine
+  image_name: solid_chlorine
+  is_solid: true
+- name: solid_crude_oil
+  image_name: wolframite
+  is_solid: true
+- name: solid_hydrogen
+  image_name: solid_hydrogen
+  is_solid: true
+- name: solid_mercury
+  image_name: solid_mercury
+  is_solid: true
+- name: solid_methane
+  image_name: solid_methane
+  is_solid: true
+- name: solid_naphtha
+  image_name: wolframite
+  is_solid: true
+- name: solid_oxygen
+  image_name: solid_oxygen
+  is_solid: true
+- name: solid_petroleum
+  image_name: wolframite
+  is_solid: true
+- name: solid_propane
+  image_name: solid_propane
+  is_solid: true
+- name: solid_resin
+  image_name: resin_solid
+  is_solid: true
+- name: solid_super_coolant
+  image_name: super_coolant
+  is_solid: true
+- name: solid_visco_gel
+  image_name: viscogel
+  is_solid: true
+- name: steel
+  image_name: steel
+  is_solid: true
+- name: sulfur
+  image_name: sulfur
+  is_solid: true
+- name: super_insulator
+  image_name: super_insulator
+  is_solid: true
+- name: temp_conductor_solid
+  image_name: temp_conductor
+  is_solid: true
+- name: toxic_sand
+  image_name: toxic_sand
+  is_solid: true
+- name: tungsten
+  image_name: tungsten_refined
+  is_solid: true
+- name: unobtanium
+  image_name: neutronium
+  is_solid: true
+- name: uranium_ore
+  image_name: radium
+  is_solid: true
+- name: wolframite
+  image_name: wolframite
+  is_solid: true
+- name: yellowcake
+  image_name: yellowcake
+  is_solid: true
+- name: solid_ethanol
+  image_name: ice
+  is_solid: true
+- name: solid_syngas
+  image_name: solid_hydrogen
+  is_solid: true
+- name: toxic_mud
+  image_name: polluted_sludge
+  is_solid: true
+- name: mud
+  image_name: sludge
+  is_solid: true
+- name: sucrose
+  image_name: sucrose
+  is_solid: true
+- name: graphite
+  image_name: graphite
+  is_solid: true
+- name: solid_nuclear_waste
+  image_name: radium
+  is_solid: true
+- name: vacuum
+  color: RGBA(120, 91, 137, 255)
+- name: void
+  color: RGBA(255, 255, 0, 255)
+- name: composition
+  color: RGBA(255, 0, 9, 255)
