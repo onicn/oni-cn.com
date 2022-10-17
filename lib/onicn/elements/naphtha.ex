@@ -6,7 +6,7 @@ defmodule Onicn.Elements.Naphtha do
   end
 
   section "用途" do
-    "石脑油可以继续加热转化为酸性天然气回收利用。"
+    "石脑油可以继续加热转化为高硫天然气回收利用。"
     "导热率较低可以用于隔热。"
   end
 end

@@ -10,6 +10,6 @@ defmodule Onicn.Elements.LiquidMethane do
   end
 
   section "生产" do
-    "将酸性天然气冷却液化即得到液态甲烷（67%质量）和硫（33%质量）。"
+    "将高硫天然气冷却液化即得到液态甲烷（67%质量）和硫（33%质量）。"
   end
 end
