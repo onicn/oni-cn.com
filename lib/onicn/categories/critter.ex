@@ -6,6 +6,7 @@ defmodule Onicn.Categories.Critter do
   @species [
     Critters.BeeSpecies,
     Critters.CrabSpecies,
+    Critters.DivergentSpecies,
     Critters.DreckoSpecies,
     Critters.GlomSpecies,
     Critters.HatchSpecies,
