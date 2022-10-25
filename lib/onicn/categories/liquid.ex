@@ -1,7 +1,7 @@
 defmodule Onicn.Categories.Liquid do
   use Onicn.Categories.Element,
     name: "liquid",
-    cn_name: "气体",
+    cn_name: "液体",
     fields: [
       :low_temp,
       :low_temp_transition_target,
