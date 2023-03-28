@@ -946,29 +946,29 @@
     - material_id: salt
       min_temp: -273.15
       rate: 0.35
-- name: apothecary
+- name: advanced_apothecary
   recipes:
-  - require:
-    - material_id: steel
-      amount: 1
-    - material_id: light_bug_orange_egg
-      amount: 1
-    produce:
-    - material_id: advanced_cure
-      amount: 1
-  - require:
-    - material_id: prickle_flower_seed
-      amount: 1
-    - material_id: dirt
-      amount: 1
-    produce:
-    - material_id: antihistamine
-      amount: 10
   - require:
     - material_id: carbon
       amount: 1
     produce:
-    - material_id: basic_booster
+    - material_id: intermediate_rad_pill
+      amount: 1
+- name: apothecary
+  recipes:
+  - require:
+    - material_id: swamp_lily_flower
+      amount: 1
+    - material_id: phosphorite
+      amount: 1
+    produce:
+    - material_id: intermediate_cure
+      amount: 1
+  - require:
+    - material_id: carbon
+      amount: 1
+    produce:
+    - material_id: basic_rad_pill
       amount: 1
   - require:
     - material_id: carbon
@@ -982,7 +982,23 @@
     - material_id: carbon
       amount: 1
     produce:
-    - material_id: basic_rad_pill
+    - material_id: basic_booster
+      amount: 1
+  - require:
+    - material_id: prickle_flower_seed
+      amount: 1
+    - material_id: dirt
+      amount: 1
+    produce:
+    - material_id: antihistamine
+      amount: 10
+  - require:
+    - material_id: steel
+      amount: 1
+    - material_id: light_bug_orange_egg
+      amount: 1
+    produce:
+    - material_id: advanced_cure
       amount: 1
   - require:
     - material_id: spice_nut
@@ -990,32 +1006,8 @@
     produce:
     - material_id: intermediate_booster
       amount: 1
-  - require:
-    - material_id: swamp_lily_flower
-      amount: 1
-    - material_id: phosphorite
-      amount: 1
-    produce:
-    - material_id: intermediate_cure
-      amount: 1
-- name: advanced_apothecary
-  recipes:
-  - require:
-    - material_id: carbon
-      amount: 1
-    produce:
-    - material_id: intermediate_rad_pill
-      amount: 1
 - name: egg_cracker
   recipes:
-  - require:
-    - material_id: light_bug_purple_egg
-      amount: 1
-    produce:
-    - material_id: raw_egg
-      amount: 0.1
-    - material_id: egg_shell
-      amount: 0.1
   - require:
     - material_id: mole_egg
       amount: 1
@@ -1065,13 +1057,13 @@
     - material_id: egg_shell
       amount: 0.25
   - require:
-    - material_id: puft_bleachstone_egg
+    - material_id: light_bug_purple_egg
       amount: 1
     produce:
     - material_id: raw_egg
-      amount: 0.25
+      amount: 0.1
     - material_id: egg_shell
-      amount: 0.25
+      amount: 0.1
   - require:
     - material_id: puft_egg
       amount: 1
@@ -1089,14 +1081,6 @@
     - material_id: egg_shell
       amount: 0.25
   - require:
-    - material_id: squirrel_egg
-      amount: 1
-    produce:
-    - material_id: raw_egg
-      amount: 1
-    - material_id: egg_shell
-      amount: 1
-  - require:
     - material_id: squirrel_hug_egg
       amount: 1
     produce:
@@ -1113,15 +1097,15 @@
     - material_id: egg_shell
       amount: 1
   - require:
-    - material_id: light_bug_pink_egg
+    - material_id: puft_bleachstone_egg
       amount: 1
     produce:
     - material_id: raw_egg
-      amount: 0.1
+      amount: 0.25
     - material_id: egg_shell
-      amount: 0.1
+      amount: 0.25
   - require:
-    - material_id: light_bug_orange_egg
+    - material_id: light_bug_pink_egg
       amount: 1
     produce:
     - material_id: raw_egg
@@ -1177,7 +1161,23 @@
     - material_id: egg_shell
       amount: 0.1
   - require:
+    - material_id: light_bug_orange_egg
+      amount: 1
+    produce:
+    - material_id: raw_egg
+      amount: 0.1
+    - material_id: egg_shell
+      amount: 0.1
+  - require:
     - material_id: staterpillar_gas_egg
+      amount: 1
+    produce:
+    - material_id: raw_egg
+      amount: 1
+    - material_id: egg_shell
+      amount: 1
+  - require:
+    - material_id: squirrel_egg
       amount: 1
     produce:
     - material_id: raw_egg
@@ -1200,6 +1200,14 @@
       amount: 1
     - material_id: egg_shell
       amount: 1
+  - require:
+    - material_id: pacu_tropical_egg
+      amount: 1
+    produce:
+    - material_id: raw_egg
+      amount: 2
+    - material_id: egg_shell
+      amount: 2
   - require:
     - material_id: crab_wood_egg
       amount: 1
@@ -1233,14 +1241,6 @@
     - material_id: egg_shell
       amount: 1
   - require:
-    - material_id: hatch_veggie_egg
-      amount: 1
-    produce:
-    - material_id: raw_egg
-      amount: 1
-    - material_id: egg_shell
-      amount: 1
-  - require:
     - material_id: pacu_egg
       amount: 1
     produce:
@@ -1248,6 +1248,14 @@
       amount: 2
     - material_id: egg_shell
       amount: 2
+  - require:
+    - material_id: hatch_veggie_egg
+      amount: 1
+    produce:
+    - material_id: raw_egg
+      amount: 1
+    - material_id: egg_shell
+      amount: 1
   - require:
     - material_id: hatch_metal_egg
       amount: 1
@@ -1264,14 +1272,6 @@
       amount: 1
     - material_id: egg_shell
       amount: 1
-  - require:
-    - material_id: pacu_tropical_egg
-      amount: 1
-    produce:
-    - material_id: raw_egg
-      amount: 2
-    - material_id: egg_shell
-      amount: 2
   - require:
     - material_id: divergent_worm_egg
       amount: 1

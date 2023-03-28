@@ -239,7 +239,7 @@
   min_year_percent: 0.4
   max_year_percent: 0.8
   disease_amount: 5000
-  disease: 粘液肺病
+  disease: 粘液肺
 - name: geyser_generic_chlorine_gas
   cn_name: 氯气喷孔
   image_name: geyser_gas_chlorine
