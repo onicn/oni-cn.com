@@ -1,51 +1,3 @@
-- name: light_bug_purple
-  image_name: lightbug_prp
-  decor: 50
-  decor_radius: 7
-  hp: 5
-  age_max: 25
-  base_incubation_rate_per_cycle: 20
-  base_lay_egg_cycles: 15
-  kcal_per_cycle: 40
-  kcal_stomach_size: 320
-  space_required: 12
-  can_drown: true
-  entombable: true
-  temperature_max_comfort: 40
-  temperature_max_liveable: 50
-  temperature_min_comfort: -9
-  temperature_min_liveable: -19
-  base_lay_egg_chances:
-  - name: light_bug_orange_egg
-    weight: 0.33
-    increase_weight: '食用: 炙烤刺果'
-  - name: light_bug_purple_egg
-    weight: 0.66
-    increase_weight: '食用: 煎蘑菇'
-  - name: light_bug_pink_egg
-    weight: 0.02
-    increase_weight: '食用: 火椒面包'
-  diet:
-  - consume: fried_mushroom
-    produce: 0
-    kcal_per_kg: 40
-    produced_conversion_rate: 1
-  - consume: grilled_prickle_fruit
-    produce: 0
-    kcal_per_kg: 40
-    produced_conversion_rate: 1
-  - consume: spice_nut
-    produce: 0
-    kcal_per_kg: 40
-    produced_conversion_rate: 1
-  - consume: spice_bread
-    produce: 0
-    kcal_per_kg: 40
-    produced_conversion_rate: 1
-  - consume: phosphorite
-    produce: 0
-    kcal_per_kg: 40
-    produced_conversion_rate: 1
 - name: mole
   image_name: driller
   decor: 0
@@ -286,39 +238,54 @@
     produce: oxy_rock
     kcal_per_kg: 6.7
     produced_conversion_rate: 0.1
-- name: puft_bleachstone
-  image_name: puft_anti
-  decor: 10
-  decor_radius: 1
-  hp: 25
-  age_max: 75
-  base_incubation_rate_per_cycle: 6.666667
-  base_lay_egg_cycles: 45
-  death_drop_item: Meat
-  death_drop_item_amount: 1
-  kcal_per_cycle: 200
-  kcal_stomach_size: 1200
-  space_required: 16
+- name: light_bug_purple
+  image_name: lightbug_prp
+  decor: 50
+  decor_radius: 7
+  hp: 5
+  age_max: 25
+  base_incubation_rate_per_cycle: 20
+  base_lay_egg_cycles: 15
+  kcal_per_cycle: 40
+  kcal_stomach_size: 320
+  space_required: 12
   can_drown: true
   entombable: true
-  temperature_max_comfort: 35
-  temperature_max_liveable: 85
-  temperature_min_comfort: -14
-  temperature_min_liveable: -59
+  temperature_max_comfort: 40
+  temperature_max_liveable: 50
+  temperature_min_comfort: -9
+  temperature_min_liveable: -19
   base_lay_egg_chances:
-  - name: puft_egg
-    weight: 0.31
-  - name: puft_alpha_egg
+  - name: light_bug_orange_egg
+    weight: 0.33
+    increase_weight: '食用: 炙烤刺果'
+  - name: light_bug_purple_egg
+    weight: 0.66
+    increase_weight: '食用: 煎蘑菇'
+  - name: light_bug_pink_egg
     weight: 0.02
-    increase_weight: '未临近: 贵族飞鱼'
-  - name: puft_bleachstone_egg
-    weight: 0.67
-    increase_weight: '临近: 贵族飞鱼'
+    increase_weight: '食用: 火椒面包'
   diet:
-  - consume: chlorine_gas
-    produce: bleach_stone
-    kcal_per_kg: 6.7
-    produced_conversion_rate: 0.95
+  - consume: fried_mushroom
+    produce: 0
+    kcal_per_kg: 40
+    produced_conversion_rate: 1
+  - consume: grilled_prickle_fruit
+    produce: 0
+    kcal_per_kg: 40
+    produced_conversion_rate: 1
+  - consume: spice_nut
+    produce: 0
+    kcal_per_kg: 40
+    produced_conversion_rate: 1
+  - consume: spice_bread
+    produce: 0
+    kcal_per_kg: 40
+    produced_conversion_rate: 1
+  - consume: phosphorite
+    produce: 0
+    kcal_per_kg: 40
+    produced_conversion_rate: 1
 - name: puft
   image_name: puft
   decor: 10
@@ -388,42 +355,6 @@
     produce: oxy_rock
     kcal_per_kg: 4
     produced_conversion_rate: 0.95
-- name: squirrel
-  image_name: squirrel
-  decor: 10
-  decor_radius: 1
-  hp: 25
-  age_max: 100
-  base_incubation_rate_per_cycle: 5
-  base_lay_egg_cycles: 60
-  death_drop_item: Meat
-  death_drop_item_amount: 1
-  kcal_per_cycle: 100
-  kcal_stomach_size: 1000
-  space_required: 12
-  can_drown: true
-  entombable: false
-  temperature_max_comfort: 20
-  temperature_max_liveable: 70
-  temperature_min_comfort: 10
-  temperature_min_liveable: -29
-  base_lay_egg_chances:
-  - name: squirrel_egg
-    weight: 0.98
-  - name: squirrel_hug_egg
-    weight: 0.02
-    increase_weight: '食用: 顶针芦苇'
-  diet:
-  - consume: forest_tree
-    produce: dirt
-    kcal_per_kg: 250
-    produced_conversion_rate: 50
-    eats_plants_directly: true
-  - consume: basic_fabric_plant
-    produce: dirt
-    kcal_per_kg: 250
-    produced_conversion_rate: 50
-    eats_plants_directly: true
 - name: squirrel_hug
   image_name: squirrel_hug
   decor: 25
@@ -541,6 +472,39 @@
     produce: hydrogen
     kcal_per_kg: 33.3
     produced_conversion_rate: 0.05
+- name: puft_bleachstone
+  image_name: puft_anti
+  decor: 10
+  decor_radius: 1
+  hp: 25
+  age_max: 75
+  base_incubation_rate_per_cycle: 6.666667
+  base_lay_egg_cycles: 45
+  death_drop_item: Meat
+  death_drop_item_amount: 1
+  kcal_per_cycle: 200
+  kcal_stomach_size: 1200
+  space_required: 16
+  can_drown: true
+  entombable: true
+  temperature_max_comfort: 35
+  temperature_max_liveable: 85
+  temperature_min_comfort: -14
+  temperature_min_liveable: -59
+  base_lay_egg_chances:
+  - name: puft_egg
+    weight: 0.31
+  - name: puft_alpha_egg
+    weight: 0.02
+    increase_weight: '未临近: 贵族飞鱼'
+  - name: puft_bleachstone_egg
+    weight: 0.67
+    increase_weight: '临近: 贵族飞鱼'
+  diet:
+  - consume: chlorine_gas
+    produce: bleach_stone
+    kcal_per_kg: 6.7
+    produced_conversion_rate: 0.95
 - name: light_bug_pink
   image_name: lightbug_pnk
   decor: 50
@@ -592,49 +556,6 @@
   - consume: phosphorite
     produce: 0
     kcal_per_kg: 40
-    produced_conversion_rate: 1
-- name: light_bug_orange
-  image_name: lightbug_org
-  decor: 50
-  decor_radius: 7
-  hp: 5
-  age_max: 25
-  base_incubation_rate_per_cycle: 20
-  base_lay_egg_cycles: 15
-  kcal_per_cycle: 40
-  kcal_stomach_size: 320
-  space_required: 12
-  can_drown: true
-  entombable: true
-  temperature_max_comfort: 40
-  temperature_max_liveable: 50
-  temperature_min_comfort: -9
-  temperature_min_liveable: -19
-  base_lay_egg_chances:
-  - name: light_bug_egg
-    weight: 0.33
-  - name: light_bug_orange_egg
-    weight: 0.66
-    increase_weight: '食用: 炙烤刺果'
-  - name: light_bug_purple_egg
-    weight: 0.02
-    increase_weight: '食用: 煎蘑菇'
-  diet:
-  - consume: mushroom
-    produce: 0
-    kcal_per_kg: 160
-    produced_conversion_rate: 1
-  - consume: fried_mushroom
-    produce: 0
-    kcal_per_kg: 160
-    produced_conversion_rate: 1
-  - consume: grilled_prickle_fruit
-    produce: 0
-    kcal_per_kg: 160
-    produced_conversion_rate: 1
-  - consume: phosphorite
-    produce: 0
-    kcal_per_kg: 160
     produced_conversion_rate: 1
 - name: bee_hive
   image_name: beehive
@@ -773,7 +694,7 @@
     increase_weight: '食用: 浆果酿'
   - name: light_bug_black_egg
     weight: 0.66
-    increase_weight: '食用: 固态磷'
+    increase_weight: '食用: 精炼磷'
   - name: light_bug_crystal_egg
     weight: 0.02
     increase_weight: '食用: 烤肉串'
@@ -824,7 +745,7 @@
     increase_weight: '食用: 浆果酿'
   - name: light_bug_black_egg
     weight: 0.02
-    increase_weight: '食用: 固态磷'
+    increase_weight: '食用: 精炼磷'
   diet:
   - consume: spice_bread
     produce: 0
@@ -910,6 +831,49 @@
     produce: 0
     kcal_per_kg: 40
     produced_conversion_rate: 1
+- name: light_bug_orange
+  image_name: lightbug_org
+  decor: 50
+  decor_radius: 7
+  hp: 5
+  age_max: 25
+  base_incubation_rate_per_cycle: 20
+  base_lay_egg_cycles: 15
+  kcal_per_cycle: 40
+  kcal_stomach_size: 320
+  space_required: 12
+  can_drown: true
+  entombable: true
+  temperature_max_comfort: 40
+  temperature_max_liveable: 50
+  temperature_min_comfort: -9
+  temperature_min_liveable: -19
+  base_lay_egg_chances:
+  - name: light_bug_egg
+    weight: 0.33
+  - name: light_bug_orange_egg
+    weight: 0.66
+    increase_weight: '食用: 炙烤刺果'
+  - name: light_bug_purple_egg
+    weight: 0.02
+    increase_weight: '食用: 煎蘑菇'
+  diet:
+  - consume: mushroom
+    produce: 0
+    kcal_per_kg: 160
+    produced_conversion_rate: 1
+  - consume: fried_mushroom
+    produce: 0
+    kcal_per_kg: 160
+    produced_conversion_rate: 1
+  - consume: grilled_prickle_fruit
+    produce: 0
+    kcal_per_kg: 160
+    produced_conversion_rate: 1
+  - consume: phosphorite
+    produce: 0
+    kcal_per_kg: 160
+    produced_conversion_rate: 1
 - name: staterpillar_gas
   image_name: caterpillar_gas
   decor: 10
@@ -991,6 +955,42 @@
     produce: hydrogen
     kcal_per_kg: 66.7
     produced_conversion_rate: 0.05
+- name: squirrel
+  image_name: squirrel
+  decor: 10
+  decor_radius: 1
+  hp: 25
+  age_max: 100
+  base_incubation_rate_per_cycle: 5
+  base_lay_egg_cycles: 60
+  death_drop_item: Meat
+  death_drop_item_amount: 1
+  kcal_per_cycle: 100
+  kcal_stomach_size: 1000
+  space_required: 12
+  can_drown: true
+  entombable: false
+  temperature_max_comfort: 20
+  temperature_max_liveable: 70
+  temperature_min_comfort: 10
+  temperature_min_liveable: -29
+  base_lay_egg_chances:
+  - name: squirrel_egg
+    weight: 0.98
+  - name: squirrel_hug_egg
+    weight: 0.02
+    increase_weight: '食用: 顶针芦苇'
+  diet:
+  - consume: forest_tree
+    produce: dirt
+    kcal_per_kg: 250
+    produced_conversion_rate: 50
+    eats_plants_directly: true
+  - consume: basic_fabric_plant
+    produce: dirt
+    kcal_per_kg: 250
+    produced_conversion_rate: 50
+    eats_plants_directly: true
 - name: staterpillar_liquid
   image_name: caterpillar_wtr
   decor: 10
@@ -1096,11 +1096,140 @@
     weight: 0.98
   - name: divergent_worm_egg
     weight: 0.02
-    increase_weight: '趋于: 贫瘠虫果植株, 虫果植株'
+    increase_weight: '照料: 贫瘠虫果芽, 虫果芽'
   diet:
   - consume: sulfur
     produce: sucrose
     kcal_per_kg: 35
+    produced_conversion_rate: 0.5
+- name: pacu_tropical
+  image_name: pacu_trp
+  decor: 25
+  decor_radius: 5
+  hp: 25
+  age_max: 25
+  base_incubation_rate_per_cycle: 20
+  base_lay_egg_cycles: 15
+  death_drop_item: FishMeat
+  death_drop_item_amount: 1
+  kcal_per_cycle: 100
+  kcal_stomach_size: 500
+  space_required: 8
+  can_drown: true
+  entombable: false
+  temperature_max_comfort: 80
+  temperature_max_liveable: 100
+  temperature_min_comfort: 30
+  temperature_min_liveable: 10
+  base_lay_egg_chances:
+  - name: pacu_egg
+    weight: 0.32
+  - name: pacu_tropical_egg
+    weight: 0.65
+    increase_weight: '体温范围: 35 - 80 摄氏度'
+  - name: pacu_cleaner_egg
+    weight: 0.02
+    increase_weight: '体温范围: -30 - 5 摄氏度'
+  diet:
+  - consume: algae
+    produce: toxic_sand
+    kcal_per_kg: 0.7
+    produced_conversion_rate: 0.5
+  - consume: prickle_flower_seed
+    produce: toxic_sand
+    kcal_per_kg: 400
+    produced_conversion_rate: 0.5
+  - consume: prickle_grass_seed
+    produce: toxic_sand
+    kcal_per_kg: 400
+    produced_conversion_rate: 0.5
+  - consume: sea_lettuce_seed
+    produce: toxic_sand
+    kcal_per_kg: 400
+    produced_conversion_rate: 0.5
+  - consume: spice_vine_seed
+    produce: toxic_sand
+    kcal_per_kg: 400
+    produced_conversion_rate: 0.5
+  - consume: swamp_harvest_plant_seed
+    produce: toxic_sand
+    kcal_per_kg: 400
+    produced_conversion_rate: 0.5
+  - consume: swamp_lily_seed
+    produce: toxic_sand
+    kcal_per_kg: 400
+    produced_conversion_rate: 0.5
+  - consume: toe_plant_seed
+    produce: toxic_sand
+    kcal_per_kg: 400
+    produced_conversion_rate: 0.5
+  - consume: wine_cups_seed
+    produce: toxic_sand
+    kcal_per_kg: 400
+    produced_conversion_rate: 0.5
+  - consume: worm_plant_seed
+    produce: toxic_sand
+    kcal_per_kg: 400
+    produced_conversion_rate: 0.5
+  - consume: oxyfern_seed
+    produce: toxic_sand
+    kcal_per_kg: 400
+    produced_conversion_rate: 0.5
+  - consume: salt_plant_seed
+    produce: toxic_sand
+    kcal_per_kg: 400
+    produced_conversion_rate: 0.5
+  - consume: mushroom_seed
+    produce: toxic_sand
+    kcal_per_kg: 400
+    produced_conversion_rate: 0.5
+  - consume: cylindrica_seed
+    produce: toxic_sand
+    kcal_per_kg: 400
+    produced_conversion_rate: 0.5
+  - consume: critter_trap_plant_seed
+    produce: toxic_sand
+    kcal_per_kg: 400
+    produced_conversion_rate: 0.5
+  - consume: cold_breather_seed
+    produce: toxic_sand
+    kcal_per_kg: 400
+    produced_conversion_rate: 0.5
+  - consume: cactus_plant_seed
+    produce: toxic_sand
+    kcal_per_kg: 400
+    produced_conversion_rate: 0.5
+  - consume: evil_flower_seed
+    produce: toxic_sand
+    kcal_per_kg: 400
+    produced_conversion_rate: 0.5
+  - consume: bulb_plant_seed
+    produce: toxic_sand
+    kcal_per_kg: 400
+    produced_conversion_rate: 0.5
+  - consume: basic_single_harvest_plant_seed
+    produce: toxic_sand
+    kcal_per_kg: 400
+    produced_conversion_rate: 0.5
+  - consume: basic_fabric_material_plant_seed
+    produce: toxic_sand
+    kcal_per_kg: 400
+    produced_conversion_rate: 0.5
+  - consume: filter_plant_seed
+    produce: toxic_sand
+    kcal_per_kg: 400
+    produced_conversion_rate: 0.5
+  - consume: leafy_plant_seed
+    produce: toxic_sand
+    kcal_per_kg: 400
+    produced_conversion_rate: 0.5
+  - consume: gas_grass_seed
+    produce: toxic_sand
+    kcal_per_kg: 400
+    produced_conversion_rate: 0.5
+  - consume: forest_tree_seed
+    produce: toxic_sand
+    kcal_per_kg: 400
     produced_conversion_rate: 0.5
 - name: crab_wood
   image_name: pincher_wood
@@ -1176,15 +1305,11 @@
     produce: toxic_sand
     kcal_per_kg: 0.7
     produced_conversion_rate: 0.5
-  - consume: oxyfern_seed
+  - consume: prickle_flower_seed
     produce: toxic_sand
     kcal_per_kg: 400
     produced_conversion_rate: 0.5
   - consume: prickle_grass_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: salt_plant_seed
     produce: toxic_sand
     kcal_per_kg: 400
     produced_conversion_rate: 0.5
@@ -1216,39 +1341,15 @@
     produce: toxic_sand
     kcal_per_kg: 400
     produced_conversion_rate: 0.5
+  - consume: oxyfern_seed
+    produce: toxic_sand
+    kcal_per_kg: 400
+    produced_conversion_rate: 0.5
+  - consume: salt_plant_seed
+    produce: toxic_sand
+    kcal_per_kg: 400
+    produced_conversion_rate: 0.5
   - consume: mushroom_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: prickle_flower_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: leafy_plant_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: basic_fabric_material_plant_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: basic_single_harvest_plant_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: bulb_plant_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: cactus_plant_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: cold_breather_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: critter_trap_plant_seed
     produce: toxic_sand
     kcal_per_kg: 400
     produced_conversion_rate: 0.5
@@ -1256,7 +1357,39 @@
     produce: toxic_sand
     kcal_per_kg: 400
     produced_conversion_rate: 0.5
+  - consume: critter_trap_plant_seed
+    produce: toxic_sand
+    kcal_per_kg: 400
+    produced_conversion_rate: 0.5
+  - consume: cold_breather_seed
+    produce: toxic_sand
+    kcal_per_kg: 400
+    produced_conversion_rate: 0.5
+  - consume: cactus_plant_seed
+    produce: toxic_sand
+    kcal_per_kg: 400
+    produced_conversion_rate: 0.5
+  - consume: evil_flower_seed
+    produce: toxic_sand
+    kcal_per_kg: 400
+    produced_conversion_rate: 0.5
+  - consume: bulb_plant_seed
+    produce: toxic_sand
+    kcal_per_kg: 400
+    produced_conversion_rate: 0.5
+  - consume: basic_single_harvest_plant_seed
+    produce: toxic_sand
+    kcal_per_kg: 400
+    produced_conversion_rate: 0.5
+  - consume: basic_fabric_material_plant_seed
+    produce: toxic_sand
+    kcal_per_kg: 400
+    produced_conversion_rate: 0.5
   - consume: filter_plant_seed
+    produce: toxic_sand
+    kcal_per_kg: 400
+    produced_conversion_rate: 0.5
+  - consume: leafy_plant_seed
     produce: toxic_sand
     kcal_per_kg: 400
     produced_conversion_rate: 0.5
@@ -1265,10 +1398,6 @@
     kcal_per_kg: 400
     produced_conversion_rate: 0.5
   - consume: forest_tree_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: evil_flower_seed
     produce: toxic_sand
     kcal_per_kg: 400
     produced_conversion_rate: 0.5
@@ -1349,6 +1478,135 @@
   - consume: rot_pile
     produce: sand
     kcal_per_kg: 1.4
+    produced_conversion_rate: 0.5
+- name: pacu
+  image_name: pacu
+  decor: 10
+  decor_radius: 1
+  hp: 25
+  age_max: 25
+  base_incubation_rate_per_cycle: 20
+  base_lay_egg_cycles: 15
+  death_drop_item: FishMeat
+  death_drop_item_amount: 1
+  kcal_per_cycle: 100
+  kcal_stomach_size: 500
+  space_required: 8
+  can_drown: true
+  entombable: false
+  temperature_max_comfort: 60
+  temperature_max_liveable: 80
+  temperature_min_comfort: 0
+  temperature_min_liveable: -19
+  base_lay_egg_chances:
+  - name: pacu_egg
+    weight: 0.98
+  - name: pacu_tropical_egg
+    weight: 0.02
+    increase_weight: '体温范围: 35 - 80 摄氏度'
+  - name: pacu_cleaner_egg
+    weight: 0.02
+    increase_weight: '体温范围: -30 - 5 摄氏度'
+  diet:
+  - consume: algae
+    produce: toxic_sand
+    kcal_per_kg: 0.7
+    produced_conversion_rate: 0.5
+  - consume: prickle_flower_seed
+    produce: toxic_sand
+    kcal_per_kg: 400
+    produced_conversion_rate: 0.5
+  - consume: prickle_grass_seed
+    produce: toxic_sand
+    kcal_per_kg: 400
+    produced_conversion_rate: 0.5
+  - consume: sea_lettuce_seed
+    produce: toxic_sand
+    kcal_per_kg: 400
+    produced_conversion_rate: 0.5
+  - consume: spice_vine_seed
+    produce: toxic_sand
+    kcal_per_kg: 400
+    produced_conversion_rate: 0.5
+  - consume: swamp_harvest_plant_seed
+    produce: toxic_sand
+    kcal_per_kg: 400
+    produced_conversion_rate: 0.5
+  - consume: swamp_lily_seed
+    produce: toxic_sand
+    kcal_per_kg: 400
+    produced_conversion_rate: 0.5
+  - consume: toe_plant_seed
+    produce: toxic_sand
+    kcal_per_kg: 400
+    produced_conversion_rate: 0.5
+  - consume: wine_cups_seed
+    produce: toxic_sand
+    kcal_per_kg: 400
+    produced_conversion_rate: 0.5
+  - consume: worm_plant_seed
+    produce: toxic_sand
+    kcal_per_kg: 400
+    produced_conversion_rate: 0.5
+  - consume: oxyfern_seed
+    produce: toxic_sand
+    kcal_per_kg: 400
+    produced_conversion_rate: 0.5
+  - consume: salt_plant_seed
+    produce: toxic_sand
+    kcal_per_kg: 400
+    produced_conversion_rate: 0.5
+  - consume: mushroom_seed
+    produce: toxic_sand
+    kcal_per_kg: 400
+    produced_conversion_rate: 0.5
+  - consume: cylindrica_seed
+    produce: toxic_sand
+    kcal_per_kg: 400
+    produced_conversion_rate: 0.5
+  - consume: critter_trap_plant_seed
+    produce: toxic_sand
+    kcal_per_kg: 400
+    produced_conversion_rate: 0.5
+  - consume: cold_breather_seed
+    produce: toxic_sand
+    kcal_per_kg: 400
+    produced_conversion_rate: 0.5
+  - consume: cactus_plant_seed
+    produce: toxic_sand
+    kcal_per_kg: 400
+    produced_conversion_rate: 0.5
+  - consume: evil_flower_seed
+    produce: toxic_sand
+    kcal_per_kg: 400
+    produced_conversion_rate: 0.5
+  - consume: bulb_plant_seed
+    produce: toxic_sand
+    kcal_per_kg: 400
+    produced_conversion_rate: 0.5
+  - consume: basic_single_harvest_plant_seed
+    produce: toxic_sand
+    kcal_per_kg: 400
+    produced_conversion_rate: 0.5
+  - consume: basic_fabric_material_plant_seed
+    produce: toxic_sand
+    kcal_per_kg: 400
+    produced_conversion_rate: 0.5
+  - consume: filter_plant_seed
+    produce: toxic_sand
+    kcal_per_kg: 400
+    produced_conversion_rate: 0.5
+  - consume: leafy_plant_seed
+    produce: toxic_sand
+    kcal_per_kg: 400
+    produced_conversion_rate: 0.5
+  - consume: gas_grass_seed
+    produce: toxic_sand
+    kcal_per_kg: 400
+    produced_conversion_rate: 0.5
+  - consume: forest_tree_seed
+    produce: toxic_sand
+    kcal_per_kg: 400
     produced_conversion_rate: 0.5
 - name: hatch_veggie
   image_name: hatch_veg
@@ -1552,135 +1810,6 @@
     produce: carbon
     kcal_per_kg: 6000
     produced_conversion_rate: 1
-- name: pacu
-  image_name: pacu
-  decor: 10
-  decor_radius: 1
-  hp: 25
-  age_max: 25
-  base_incubation_rate_per_cycle: 20
-  base_lay_egg_cycles: 15
-  death_drop_item: FishMeat
-  death_drop_item_amount: 1
-  kcal_per_cycle: 100
-  kcal_stomach_size: 500
-  space_required: 8
-  can_drown: true
-  entombable: false
-  temperature_max_comfort: 60
-  temperature_max_liveable: 80
-  temperature_min_comfort: 0
-  temperature_min_liveable: -19
-  base_lay_egg_chances:
-  - name: pacu_egg
-    weight: 0.98
-  - name: pacu_tropical_egg
-    weight: 0.02
-    increase_weight: '体温范围: 35 - 80 摄氏度'
-  - name: pacu_cleaner_egg
-    weight: 0.02
-    increase_weight: '体温范围: -30 - 5 摄氏度'
-  diet:
-  - consume: algae
-    produce: toxic_sand
-    kcal_per_kg: 0.7
-    produced_conversion_rate: 0.5
-  - consume: oxyfern_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: prickle_grass_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: salt_plant_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: sea_lettuce_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: spice_vine_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: swamp_harvest_plant_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: swamp_lily_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: toe_plant_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: wine_cups_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: worm_plant_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: mushroom_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: prickle_flower_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: leafy_plant_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: basic_fabric_material_plant_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: basic_single_harvest_plant_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: bulb_plant_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: cactus_plant_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: cold_breather_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: critter_trap_plant_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: cylindrica_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: filter_plant_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: gas_grass_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: forest_tree_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: evil_flower_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
 - name: hatch_metal
   image_name: hatch_mtl
   decor: 10
@@ -1943,135 +2072,6 @@
     produce: carbon
     kcal_per_kg: 6000
     produced_conversion_rate: 0.75
-- name: pacu_tropical
-  image_name: pacu_trp
-  decor: 25
-  decor_radius: 5
-  hp: 25
-  age_max: 25
-  base_incubation_rate_per_cycle: 20
-  base_lay_egg_cycles: 15
-  death_drop_item: FishMeat
-  death_drop_item_amount: 1
-  kcal_per_cycle: 100
-  kcal_stomach_size: 500
-  space_required: 8
-  can_drown: true
-  entombable: false
-  temperature_max_comfort: 80
-  temperature_max_liveable: 100
-  temperature_min_comfort: 30
-  temperature_min_liveable: 10
-  base_lay_egg_chances:
-  - name: pacu_egg
-    weight: 0.32
-  - name: pacu_tropical_egg
-    weight: 0.65
-    increase_weight: '体温范围: 35 - 80 摄氏度'
-  - name: pacu_cleaner_egg
-    weight: 0.02
-    increase_weight: '体温范围: -30 - 5 摄氏度'
-  diet:
-  - consume: algae
-    produce: toxic_sand
-    kcal_per_kg: 0.7
-    produced_conversion_rate: 0.5
-  - consume: oxyfern_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: prickle_grass_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: salt_plant_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: sea_lettuce_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: spice_vine_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: swamp_harvest_plant_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: swamp_lily_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: toe_plant_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: wine_cups_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: worm_plant_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: mushroom_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: prickle_flower_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: leafy_plant_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: basic_fabric_material_plant_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: basic_single_harvest_plant_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: bulb_plant_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: cactus_plant_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: cold_breather_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: critter_trap_plant_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: cylindrica_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: filter_plant_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: gas_grass_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: forest_tree_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: evil_flower_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
 - name: divergent_worm
   image_name: worm
   decor: 10
@@ -2096,7 +2096,7 @@
     weight: 0.33
   - name: divergent_worm_egg
     weight: 0.67
-    increase_weight: '趋于: 贫瘠虫果植株, 虫果植株'
+    increase_weight: '照料: 贫瘠虫果芽, 虫果芽'
   diet:
   - consume: sulfur
     produce: mud
