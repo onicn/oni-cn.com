@@ -202,6 +202,34 @@ elements:
     localizationID: STRINGS.ELEMENTS.BRINEICE.NAME
     dlcId: ""
 
+  - elementId: MilkIce
+    specificHeatCapacity: 3.4
+    thermalConductivity: 2.18
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 1
+    highTemp: 256.65
+    highTempTransitionTarget: Milk
+    defaultTemperature: 232.15
+    defaultMass: 1000
+    maxMass: 1100
+    hardness: 25
+    molarMass: 18.01528
+    lightAbsorptionFactor: 0.33333
+    radiationAbsorptionFactor: 0.8
+    radiationPer1000Mass: 0
+    materialCategory: Liquifiable
+    tags:
+    - IceOre
+    - BuildableAny
+    buildMenuSort: 5
+    isDisabled: false
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.MILKICE.NAME
+    dlcId: ""
+
+
   - elementId: Carbon
     specificHeatCapacity: 0.71
     thermalConductivity: 1.25
@@ -623,7 +651,7 @@ elements:
     - Ore
     - BuildableAny
     buildMenuSort: 1
-    isDisabled: false
+    isDisabled: true
     state: Solid
     localizationID: STRINGS.ELEMENTS.ELECTRUM.NAME
     dlcId: ""
@@ -1121,6 +1149,31 @@ elements:
     state: Solid
     localizationID: STRINGS.ELEMENTS.LIME.NAME
     dlcId: ""
+
+  - elementId: MilkFat
+    specificHeatCapacity: 1.92
+    thermalConductivity: 0.15
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 0.4
+    highTemp: 433
+    highTempTransitionTarget: Naphtha
+    defaultTemperature: 296
+    defaultMass: 913
+    maxMass: 913
+    hardness: 1
+    molarMass: 42.08
+    lightAbsorptionFactor: 1
+    radiationAbsorptionFactor: 0.85
+    radiationPer1000Mass: 0
+    materialCategory: ConsumableOre
+    tags:
+    buildMenuSort: 10
+    isDisabled: false
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.MILKFAT.NAME
+    dlcId: ""
   
   - elementId: MaficRock
     specificHeatCapacity: 0.2
@@ -1341,7 +1394,35 @@ elements:
     state: Solid
     localizationID: STRINGS.ELEMENTS.PHOSPHORUS.NAME
     dlcId: ""
-  
+
+  - elementId: HardPolypropylene
+    specificHeatCapacity: 1.5
+    thermalConductivity: 0.25
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 0.4
+    highTemp: 2100
+    highTempTransitionTarget: SourGas
+    defaultTemperature: 296
+    defaultMass: 913
+    maxMass: 913
+    hardness: 1
+    molarMass: 100.016
+    lightAbsorptionFactor: 1
+    radiationAbsorptionFactor: 0.85
+    radiationPer1000Mass: 0
+    materialCategory: ManufacturedMaterial
+    tags:
+    - Antiseptic
+    - Plastic
+    - BuildableAny
+    buildMenuSort: 10
+    isDisabled: false
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.HARDPOLYPROPYLENE.NAME
+    dlcId: ""
+
   - elementId: Polypropylene
     specificHeatCapacity: 1.92
     thermalConductivity: 0.15

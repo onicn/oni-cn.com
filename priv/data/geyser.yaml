@@ -1,63 +1,29 @@
-- name: geyser_generic_steam
-  cn_name: 低温蒸汽喷孔
-  image_name: geyser_gas_steam
-  produced_element: steam
-  produced_element_cn: 蒸汽
-  temperature: 110
-  min_rate_per_cycle: 1000
-  max_rate_per_cycle: 2000
+- name: geyser_generic_big_volcano
+  cn_name: 火山
+  image_name: geyser_molten_volcano_big
+  produced_element: magma
+  produced_element_cn: 岩浆
+  temperature: 1726.85
+  min_rate_per_cycle: 800
+  max_rate_per_cycle: 1600
+  max_pressure: 150
+  min_iteration_length: 6000
+  max_iteration_length: 12000
+  min_iteration_percent: 0.005
+  max_iteration_percent: 0.01
+  min_year_length: 25
+  max_year_length: 225
+  min_year_percent: 0.4
+  max_year_percent: 0.8
+- name: geyser_generic_chlorine_gas
+  cn_name: 氯气喷孔
+  image_name: geyser_gas_chlorine
+  produced_element: chlorine_gas
+  produced_element_cn: 氯气
+  temperature: 60
+  min_rate_per_cycle: 70
+  max_rate_per_cycle: 140
   max_pressure: 5
-  min_iteration_length: 60
-  max_iteration_length: 1140
-  min_iteration_percent: 0.1
-  max_iteration_percent: 0.9
-  min_year_length: 25
-  max_year_length: 225
-  min_year_percent: 0.4
-  max_year_percent: 0.8
-- name: geyser_generic_hot_steam
-  cn_name: 蒸汽喷孔
-  image_name: geyser_gas_steam_hot
-  produced_element: steam
-  produced_element_cn: 蒸汽
-  temperature: 500
-  min_rate_per_cycle: 500
-  max_rate_per_cycle: 1000
-  max_pressure: 5
-  min_iteration_length: 60
-  max_iteration_length: 1140
-  min_iteration_percent: 0.1
-  max_iteration_percent: 0.9
-  min_year_length: 25
-  max_year_length: 225
-  min_year_percent: 0.4
-  max_year_percent: 0.8
-- name: geyser_generic_hot_water
-  cn_name: 清水泉
-  image_name: geyser_liquid_water_hot
-  produced_element: water
-  produced_element_cn: 水
-  temperature: 95
-  min_rate_per_cycle: 2000
-  max_rate_per_cycle: 4000
-  max_pressure: 500
-  min_iteration_length: 60
-  max_iteration_length: 1140
-  min_iteration_percent: 0.1
-  max_iteration_percent: 0.9
-  min_year_length: 25
-  max_year_length: 225
-  min_year_percent: 0.4
-  max_year_percent: 0.8
-- name: geyser_generic_slush_water
-  cn_name: 低温泥浆泉
-  image_name: geyser_liquid_water_slush
-  produced_element: dirty_water
-  produced_element_cn: 污染水
-  temperature: -10
-  min_rate_per_cycle: 1000
-  max_rate_per_cycle: 2000
-  max_pressure: 500
   min_iteration_length: 60
   max_iteration_length: 1140
   min_iteration_percent: 0.1
@@ -85,91 +51,6 @@
   max_year_percent: 0.8
   disease_amount: 20000
   disease: 食物中毒
-- name: geyser_generic_slush_salt_water
-  cn_name: 低温盐泥泉
-  image_name: geyser_liquid_salt_water
-  produced_element: brine
-  produced_element_cn: 浓盐水
-  temperature: -10
-  min_rate_per_cycle: 1000
-  max_rate_per_cycle: 2000
-  max_pressure: 500
-  min_iteration_length: 60
-  max_iteration_length: 1140
-  min_iteration_percent: 0.1
-  max_iteration_percent: 0.9
-  min_year_length: 25
-  max_year_length: 225
-  min_year_percent: 0.4
-  max_year_percent: 0.8
-- name: geyser_generic_salt_water
-  cn_name: 盐水泉
-  image_name: geyser_liquid_salt_water
-  produced_element: salt_water
-  produced_element_cn: 盐水
-  temperature: 95
-  min_rate_per_cycle: 2000
-  max_rate_per_cycle: 4000
-  max_pressure: 500
-  min_iteration_length: 60
-  max_iteration_length: 1140
-  min_iteration_percent: 0.1
-  max_iteration_percent: 0.9
-  min_year_length: 25
-  max_year_length: 225
-  min_year_percent: 0.4
-  max_year_percent: 0.8
-- name: geyser_generic_small_volcano
-  cn_name: 小型火山
-  image_name: geyser_molten_volcano_small
-  produced_element: magma
-  produced_element_cn: 岩浆
-  temperature: 1726.85
-  min_rate_per_cycle: 400
-  max_rate_per_cycle: 800
-  max_pressure: 150
-  min_iteration_length: 6000
-  max_iteration_length: 12000
-  min_iteration_percent: 0.005
-  max_iteration_percent: 0.01
-  min_year_length: 25
-  max_year_length: 225
-  min_year_percent: 0.4
-  max_year_percent: 0.8
-- name: geyser_generic_big_volcano
-  cn_name: 火山
-  image_name: geyser_molten_volcano_big
-  produced_element: magma
-  produced_element_cn: 岩浆
-  temperature: 1726.85
-  min_rate_per_cycle: 800
-  max_rate_per_cycle: 1600
-  max_pressure: 150
-  min_iteration_length: 6000
-  max_iteration_length: 12000
-  min_iteration_percent: 0.005
-  max_iteration_percent: 0.01
-  min_year_length: 25
-  max_year_length: 225
-  min_year_percent: 0.4
-  max_year_percent: 0.8
-- name: geyser_generic_liquid_co2
-  cn_name: 二氧化碳泉
-  image_name: geyser_liquid_co2
-  produced_element: liquid_carbon_dioxide
-  produced_element_cn: 液态二氧化碳
-  temperature: -55.14999
-  min_rate_per_cycle: 100
-  max_rate_per_cycle: 200
-  max_pressure: 50
-  min_iteration_length: 60
-  max_iteration_length: 1140
-  min_iteration_percent: 0.1
-  max_iteration_percent: 0.9
-  min_year_length: 25
-  max_year_length: 225
-  min_year_percent: 0.4
-  max_year_percent: 0.8
 - name: geyser_generic_hot_co2
   cn_name: 二氧化碳喷孔
   image_name: geyser_gas_co2_hot
@@ -221,14 +102,14 @@
   max_year_length: 225
   min_year_percent: 0.4
   max_year_percent: 0.8
-- name: geyser_generic_slimy_po2
-  cn_name: 含菌污氧喷孔
-  image_name: geyser_gas_po2_slimy
-  produced_element: contaminated_oxygen
-  produced_element_cn: 污染氧
-  temperature: 60
-  min_rate_per_cycle: 70
-  max_rate_per_cycle: 140
+- name: geyser_generic_hot_steam
+  cn_name: 蒸汽喷孔
+  image_name: geyser_gas_steam_hot
+  produced_element: steam
+  produced_element_cn: 蒸汽
+  temperature: 500
+  min_rate_per_cycle: 500
+  max_rate_per_cycle: 1000
   max_pressure: 5
   min_iteration_length: 60
   max_iteration_length: 1140
@@ -238,17 +119,15 @@
   max_year_length: 225
   min_year_percent: 0.4
   max_year_percent: 0.8
-  disease_amount: 5000
-  disease: 粘液肺
-- name: geyser_generic_chlorine_gas
-  cn_name: 氯气喷孔
-  image_name: geyser_gas_chlorine
-  produced_element: chlorine_gas
-  produced_element_cn: 氯气
-  temperature: 60
-  min_rate_per_cycle: 70
-  max_rate_per_cycle: 140
-  max_pressure: 5
+- name: geyser_generic_hot_water
+  cn_name: 清水泉
+  image_name: geyser_liquid_water_hot
+  produced_element: water
+  produced_element_cn: 水
+  temperature: 95
+  min_rate_per_cycle: 2000
+  max_rate_per_cycle: 4000
+  max_pressure: 500
   min_iteration_length: 60
   max_iteration_length: 1140
   min_iteration_percent: 0.1
@@ -257,6 +136,41 @@
   max_year_length: 225
   min_year_percent: 0.4
   max_year_percent: 0.8
+- name: geyser_generic_liquid_co2
+  cn_name: 二氧化碳泉
+  image_name: geyser_liquid_co2
+  produced_element: liquid_carbon_dioxide
+  produced_element_cn: 液态二氧化碳
+  temperature: -55.14999
+  min_rate_per_cycle: 100
+  max_rate_per_cycle: 200
+  max_pressure: 50
+  min_iteration_length: 60
+  max_iteration_length: 1140
+  min_iteration_percent: 0.1
+  max_iteration_percent: 0.9
+  min_year_length: 25
+  max_year_length: 225
+  min_year_percent: 0.4
+  max_year_percent: 0.8
+- name: geyser_generic_liquid_sulfur
+  cn_name: 液硫泉
+  image_name: geyser_liquid_sulfur
+  produced_element: liquid_sulfur
+  produced_element_cn: 液态硫
+  temperature: 165.2
+  min_rate_per_cycle: 1000
+  max_rate_per_cycle: 2000
+  max_pressure: 500
+  min_iteration_length: 60
+  max_iteration_length: 1140
+  min_iteration_percent: 0.1
+  max_iteration_percent: 0.9
+  min_year_length: 25
+  max_year_length: 225
+  min_year_percent: 0.4
+  max_year_percent: 0.8
+  dlc: true
 - name: geyser_generic_methane
   cn_name: 天然气喷孔
   image_name: geyser_gas_methane
@@ -274,11 +188,29 @@
   max_year_length: 225
   min_year_percent: 0.4
   max_year_percent: 0.8
-- name: geyser_generic_molten_copper
-  cn_name: 铜火山
-  image_name: geyser_molten_copper
-  produced_element: molten_copper
-  produced_element_cn: 熔融铜
+- name: geyser_generic_molten_aluminum
+  cn_name: 铝火山
+  image_name: geyser_molten_aluminum
+  produced_element: molten_aluminum
+  produced_element_cn: 熔融铝
+  temperature: 1726.85
+  min_rate_per_cycle: 200
+  max_rate_per_cycle: 400
+  max_pressure: 150
+  min_iteration_length: 480
+  max_iteration_length: 1080
+  min_iteration_percent: 0.017
+  max_iteration_percent: 0.1
+  min_year_length: 25
+  max_year_length: 225
+  min_year_percent: 0.4
+  max_year_percent: 0.8
+  dlc: true
+- name: geyser_generic_molten_cobalt
+  cn_name: 钴火山
+  image_name: geyser_molten_cobalt
+  produced_element: molten_cobalt
+  produced_element_cn: 熔融钴
   temperature: 2226.85
   min_rate_per_cycle: 200
   max_rate_per_cycle: 400
@@ -291,12 +223,13 @@
   max_year_length: 225
   min_year_percent: 0.4
   max_year_percent: 0.8
-- name: geyser_generic_molten_iron
-  cn_name: 铁火山
-  image_name: geyser_molten_iron
-  produced_element: molten_iron
-  produced_element_cn: 熔融铁
-  temperature: 2526.85
+  dlc: true
+- name: geyser_generic_molten_copper
+  cn_name: 铜火山
+  image_name: geyser_molten_copper
+  produced_element: molten_copper
+  produced_element_cn: 熔融铜
+  temperature: 2226.85
   min_rate_per_cycle: 200
   max_rate_per_cycle: 400
   max_pressure: 150
@@ -325,12 +258,12 @@
   max_year_length: 225
   min_year_percent: 0.4
   max_year_percent: 0.8
-- name: geyser_generic_molten_aluminum
-  cn_name: 铝火山
-  image_name: geyser_molten_aluminum
-  produced_element: molten_aluminum
-  produced_element_cn: 熔融铝
-  temperature: 1726.85
+- name: geyser_generic_molten_iron
+  cn_name: 铁火山
+  image_name: geyser_molten_iron
+  produced_element: molten_iron
+  produced_element_cn: 熔融铁
+  temperature: 2526.85
   min_rate_per_cycle: 200
   max_rate_per_cycle: 400
   max_pressure: 150
@@ -342,25 +275,6 @@
   max_year_length: 225
   min_year_percent: 0.4
   max_year_percent: 0.8
-  dlc: true
-- name: geyser_generic_molten_tungsten
-  cn_name: 钨火山
-  image_name: geyser_molten_tungsten
-  produced_element: molten_tungsten
-  produced_element_cn: 熔融钨
-  temperature: 3726.85
-  min_rate_per_cycle: 200
-  max_rate_per_cycle: 400
-  max_pressure: 150
-  min_iteration_length: 480
-  max_iteration_length: 1080
-  min_iteration_percent: 0.017
-  max_iteration_percent: 0.1
-  min_year_length: 25
-  max_year_length: 225
-  min_year_percent: 0.4
-  max_year_percent: 0.8
-  dlc: true
 - name: geyser_generic_molten_niobium
   cn_name: 铌火山
   image_name: geyser_molten_niobium
@@ -379,12 +293,12 @@
   min_year_percent: 0.4
   max_year_percent: 0.8
   dlc: true
-- name: geyser_generic_molten_cobalt
-  cn_name: 钴火山
-  image_name: geyser_molten_cobalt
-  produced_element: molten_cobalt
-  produced_element_cn: 熔融钴
-  temperature: 2226.85
+- name: geyser_generic_molten_tungsten
+  cn_name: 钨火山
+  image_name: geyser_molten_tungsten
+  produced_element: molten_tungsten
+  produced_element_cn: 熔融钨
+  temperature: 3726.85
   min_rate_per_cycle: 200
   max_rate_per_cycle: 400
   max_pressure: 150
@@ -414,12 +328,48 @@
   max_year_length: 0.833
   min_year_percent: 0.4
   max_year_percent: 0.8
-- name: geyser_generic_liquid_sulfur
-  cn_name: 液硫泉
-  image_name: geyser_liquid_sulfur
-  produced_element: liquid_sulfur
-  produced_element_cn: 液态硫
-  temperature: 165.2
+- name: geyser_generic_salt_water
+  cn_name: 盐水泉
+  image_name: geyser_liquid_salt_water
+  produced_element: salt_water
+  produced_element_cn: 盐水
+  temperature: 95
+  min_rate_per_cycle: 2000
+  max_rate_per_cycle: 4000
+  max_pressure: 500
+  min_iteration_length: 60
+  max_iteration_length: 1140
+  min_iteration_percent: 0.1
+  max_iteration_percent: 0.9
+  min_year_length: 25
+  max_year_length: 225
+  min_year_percent: 0.4
+  max_year_percent: 0.8
+- name: geyser_generic_slimy_po2
+  cn_name: 含菌污氧喷孔
+  image_name: geyser_gas_po2_slimy
+  produced_element: contaminated_oxygen
+  produced_element_cn: 污染氧
+  temperature: 60
+  min_rate_per_cycle: 70
+  max_rate_per_cycle: 140
+  max_pressure: 5
+  min_iteration_length: 60
+  max_iteration_length: 1140
+  min_iteration_percent: 0.1
+  max_iteration_percent: 0.9
+  min_year_length: 25
+  max_year_length: 225
+  min_year_percent: 0.4
+  max_year_percent: 0.8
+  disease_amount: 5000
+  disease: 粘液肺
+- name: geyser_generic_slush_salt_water
+  cn_name: 低温盐泥泉
+  image_name: geyser_liquid_salt_water_cool_slush
+  produced_element: brine
+  produced_element_cn: 浓盐水
+  temperature: -10
   min_rate_per_cycle: 1000
   max_rate_per_cycle: 2000
   max_pressure: 500
@@ -431,4 +381,54 @@
   max_year_length: 225
   min_year_percent: 0.4
   max_year_percent: 0.8
-  dlc: true
+- name: geyser_generic_slush_water
+  cn_name: 低温泥浆泉
+  image_name: geyser_liquid_water_slush
+  produced_element: dirty_water
+  produced_element_cn: 污染水
+  temperature: -10
+  min_rate_per_cycle: 1000
+  max_rate_per_cycle: 2000
+  max_pressure: 500
+  min_iteration_length: 60
+  max_iteration_length: 1140
+  min_iteration_percent: 0.1
+  max_iteration_percent: 0.9
+  min_year_length: 25
+  max_year_length: 225
+  min_year_percent: 0.4
+  max_year_percent: 0.8
+- name: geyser_generic_small_volcano
+  cn_name: 小型火山
+  image_name: geyser_molten_volcano_small
+  produced_element: magma
+  produced_element_cn: 岩浆
+  temperature: 1726.85
+  min_rate_per_cycle: 400
+  max_rate_per_cycle: 800
+  max_pressure: 150
+  min_iteration_length: 6000
+  max_iteration_length: 12000
+  min_iteration_percent: 0.005
+  max_iteration_percent: 0.01
+  min_year_length: 25
+  max_year_length: 225
+  min_year_percent: 0.4
+  max_year_percent: 0.8
+- name: geyser_generic_steam
+  cn_name: 低温蒸汽喷孔
+  image_name: geyser_gas_steam
+  produced_element: steam
+  produced_element_cn: 蒸汽
+  temperature: 110
+  min_rate_per_cycle: 1000
+  max_rate_per_cycle: 2000
+  max_pressure: 5
+  min_iteration_length: 60
+  max_iteration_length: 1140
+  min_iteration_percent: 0.1
+  max_iteration_percent: 0.9
+  min_year_length: 25
+  max_year_length: 225
+  min_year_percent: 0.4
+  max_year_percent: 0.8
