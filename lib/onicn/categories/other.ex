@@ -2,9 +2,13 @@ alias Onicn.Others
 
 defmodule Onicn.Categories.Other do
   @others [
+    Others.AdvancedCure,
     Others.Alpha,
+    Others.Antihistamine,
     Others.AtmoSuit,
     Others.BabyCrabShell,
+    Others.BasicBooster,
+    Others.BasicCure,
     Others.BasicFabric,
     Others.Beta,
     Others.CoolVest,
@@ -14,19 +18,16 @@ defmodule Onicn.Categories.Other do
     Others.Gamma,
     Others.GasGrassHarvested,
     Others.GeneShufflerRecharge,
+    Others.IntermediateBooster,
+    Others.IntermediateCure,
     Others.JetSuit,
+    Others.MissileBasic,
     Others.ResearchDatabank,
     Others.RotPile,
     Others.SwampLilyFlower,
     Others.TableSalt,
     Others.WarmVest,
-    Others.WoodLog,
-    Others.AdvancedCure,
-    Others.Antihistamine,
-    Others.BasicBooster,
-    Others.BasicCure,
-    Others.IntermediateBooster,
-    Others.IntermediateCure
+    Others.WoodLog
   ]
 
   defmacro __using__(attributes) do
