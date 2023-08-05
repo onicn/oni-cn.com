@@ -7,10 +7,17 @@ defmodule Onicn.Translation do
     |> Macro.escape()
 
   def get(key) when is_binary(key) do
-    Map.fetch!(unquote(translations), key)
+    Map.get(unquote(translations), key)
   end
 
   def get(key) when is_atom(key) do
     key |> to_string() |> get()
+  end
+
+  def get!(key) do
+    case get(key) do
+      nil -> raise "No translation for #{key}"
+      other -> other
+    end
   end
 end

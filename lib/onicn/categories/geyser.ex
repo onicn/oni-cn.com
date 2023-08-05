@@ -17,7 +17,7 @@ defmodule Onicn.Categories.Geyser do
         unquote(__MODULE__).__properties__()
         |> Enum.find(fn data -> data[:name] == to_string(name) end)
         |> Map.put(:name, name)
-        |> Map.put(:cn_name, Translation.get(name))
+        |> Map.put(:cn_name, Translation.get!(name))
         |> Enum.to_list()
       end
 

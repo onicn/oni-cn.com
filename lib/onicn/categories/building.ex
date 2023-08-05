@@ -31,7 +31,7 @@ defmodule Onicn.Categories.Building do
       def __attributes__ do
         Onicn.Categories.Building.__buildings__()
         |> Enum.find(fn building -> building[:name] === unquote(name) end)
-        |> Map.put(:cn_name, Translation.get(unquote(name)))
+        |> Map.put(:cn_name, Translation.get!(unquote(name)))
         |> Enum.into([])
       end
 

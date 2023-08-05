@@ -58,16 +58,16 @@ defmodule Onicn.Categories.Critter do
             Onicn.Categories.Critter.__properties__()
             |> Enum.find(fn attribute -> attribute[:name] == name end)
             |> Map.put(:species, unquote(species))
-            |> Map.put(:cn_name, Translation.get(name))
+            |> Map.put(:cn_name, Translation.get!(name))
             |> case do
               %{name: "bee"} = attrs ->
                 attrs
-                |> Map.put(:baby_cn_name, Translation.get("#{name}_baby"))
+                |> Map.put(:baby_cn_name, Translation.get!("#{name}_baby"))
 
               %{base_lay_egg_cycles: _} = attrs ->
                 attrs
-                |> Map.put(:egg_cn_name, Translation.get("#{name}_egg"))
-                |> Map.put(:baby_cn_name, Translation.get("#{name}_baby"))
+                |> Map.put(:egg_cn_name, Translation.get!("#{name}_egg"))
+                |> Map.put(:baby_cn_name, Translation.get!("#{name}_baby"))
 
               attrs ->
                 attrs

@@ -34,7 +34,8 @@ defmodule Onicn.Categories.Other do
     quote do
       def __attributes__ do
         name = __MODULE__ |> to_string() |> String.split(".") |> List.last() |> Macro.underscore()
-        Keyword.put(unquote(attributes), :name, name)
+        cn_name = Onicn.Translation.get(name) || Keyword.fetch!(unquote(attributes), :cn_name)
+        Keyword.merge(unquote(attributes), name: name, cn_name: cn_name)
       end
 
       def output(:html_attributes) do

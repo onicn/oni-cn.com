@@ -48,7 +48,7 @@ defmodule Onicn.Categories.Element do
             |> Onicn.Categories.Element.parse(unquote(category_fields))
             |> Keyword.merge(unquote(attributes))
             |> Keyword.put(:name, name)
-            |> Keyword.put(:cn_name, Translation.get(name))
+            |> Keyword.put(:cn_name, Translation.get!(name))
             |> Keyword.put(:category_name, unquote(category_name))
           end
 

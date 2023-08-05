@@ -17,10 +17,10 @@ defmodule Onicn.Categories.Plant do
         unquote(__MODULE__).__properties__()
         |> Enum.find(fn data -> data[:name] == to_string(name) end)
         |> Map.put(:name, name)
-        |> Map.put(:cn_name, Translation.get(name))
+        |> Map.put(:cn_name, Translation.get!(name))
         |> then(fn
           %{seed: seed} = data ->
-            seed_cn_name = Translation.get(data[:seed])
+            seed_cn_name = Translation.get!(data[:seed])
             Map.put(data, :seed_cn_name, seed_cn_name)
 
           data ->
