@@ -121,6 +121,9 @@
 - name: liquid_sulfur
   color: RGBA(255, 255, 0, 255)
   is_liquid: true
+- name: milk
+  color: RGBA(204, 238, 232, 255)
+  is_liquid: true
 - name: magma
   color: RGBA(174, 0, 0, 255)
   is_liquid: true
@@ -222,6 +225,9 @@
   is_solid: true
 - name: brine_ice
   image_name: ice
+  is_solid: true
+- name: milk_ice
+  image_name: milk
   is_solid: true
 - name: carbon
   image_name: carbon
@@ -328,6 +334,9 @@
 - name: lime
   image_name: limestone
   is_solid: true
+- name: milk_fat
+  image_name: milkfat
+  is_solid: true
 - name: mafic_rock
   image_name: igneous_rock
   is_solid: true
@@ -351,6 +360,9 @@
   is_solid: true
 - name: phosphorus
   image_name: phosphorus
+  is_solid: true
+- name: hard_polypropylene
+  image_name: hardplastic
   is_solid: true
 - name: polypropylene
   image_name: polypropylene

@@ -95,7 +95,6 @@
   image_name: airbornecreaturetrap
   base_decor: -15
   base_decor_radius: 3
-  category: food
   construction_time: 10
   entombable: true
   floodable: true
@@ -457,43 +456,6 @@
   generator_base_capacity: 0
   materials:
   - steel
-- name: co2_engine
-  image_name: rocket_co2_engine
-  base_decor_radius: 1
-  construction_time: 30
-  entombable: true
-  breakable: true
-  replaceable: true
-  is_industrial_machinery: true
-  overheatable: true
-  overheat_temperature: 2000
-  heat_generate: 0
-  height_in_cells: 2
-  width_in_cells: 3
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
-  materials:
-  - metal
-- name: co2_scrubber
-  image_name: co2scrubber
-  base_decor: -10
-  base_decor_radius: 2
-  category: oxygen
-  construction_time: 30
-  entombable: true
-  floodable: true
-  replaceable: true
-  is_industrial_machinery: true
-  overheatable: true
-  overheat_temperature: 75
-  heat_generate: 1
-  height_in_cells: 2
-  width_in_cells: 2
-  power_consume: 120
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
-  materials:
-  - metal
 - name: canvas
   image_name: painting_off
   base_decor: 10
@@ -548,6 +510,42 @@
   materials:
   - metal
   - building_fiber
+- name: cargo_bay
+  image_name: rocket_storage_solid
+  base_decor_radius: 1
+  category: rocketry
+  construction_time: 60
+  entombable: true
+  breakable: true
+  replaceable: true
+  is_industrial_machinery: true
+  overheatable: true
+  overheat_temperature: 2000
+  heat_generate: 0
+  height_in_cells: 5
+  width_in_cells: 5
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - buildable_raw
+  - steel
+- name: cargo_bay_cluster
+  image_name: rocket_cluster_storage_solid
+  base_decor_radius: 1
+  construction_time: 60
+  entombable: true
+  breakable: true
+  replaceable: true
+  is_industrial_machinery: true
+  overheatable: true
+  overheat_temperature: 2000
+  heat_generate: 0
+  height_in_cells: 5
+  width_in_cells: 5
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - steel
 - name: carpet_tile
   image_name: floor_carpet
   base_decor: 20
@@ -599,6 +597,26 @@
   height_in_cells: 3
   width_in_cells: 1
   power_consume: 10
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - refined_metal
+- name: chlorinator
+  image_name: chlorinator
+  base_decor: -15
+  base_decor_radius: 3
+  category: refining
+  construction_time: 120
+  entombable: true
+  floodable: true
+  replaceable: true
+  is_industrial_machinery: true
+  overheatable: true
+  overheat_temperature: 75
+  heat_generate: 2
+  height_in_cells: 3
+  width_in_cells: 3
+  power_consume: 480
   generator_wattage_rating: 0
   generator_base_capacity: 0
   materials:
@@ -679,6 +697,43 @@
   generator_base_capacity: 0
   materials:
   - metal
+- name: co2_engine
+  image_name: rocket_co2_engine
+  base_decor_radius: 1
+  construction_time: 30
+  entombable: true
+  breakable: true
+  replaceable: true
+  is_industrial_machinery: true
+  overheatable: true
+  overheat_temperature: 2000
+  heat_generate: 0
+  height_in_cells: 2
+  width_in_cells: 3
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - metal
+- name: co2_scrubber
+  image_name: co2scrubber
+  base_decor: -10
+  base_decor_radius: 2
+  category: oxygen
+  construction_time: 30
+  entombable: true
+  floodable: true
+  replaceable: true
+  is_industrial_machinery: true
+  overheatable: true
+  overheat_temperature: 75
+  heat_generate: 1
+  height_in_cells: 2
+  width_in_cells: 2
+  power_consume: 120
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - metal
 - name: comet_detector
   image_name: meteor_detector
   base_decor: -5
@@ -734,104 +789,6 @@
   generator_base_capacity: 0
   materials:
   - buildable_raw
-- name: gas_conduit_disease_sensor
-  image_name: gas_germs_sensor
-  base_decor: -5
-  base_decor_radius: 1
-  category: hvac
-  construction_time: 30
-  replaceable: true
-  is_industrial_machinery: false
-  overheat_temperature: 75
-  heat_generate: 0
-  height_in_cells: 1
-  width_in_cells: 1
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
-  materials:
-  - refined_metal
-  - plastic
-- name: liquid_conduit_disease_sensor
-  image_name: liquid_germs_sensor
-  base_decor: -5
-  base_decor_radius: 1
-  category: plumbing
-  construction_time: 30
-  replaceable: true
-  is_industrial_machinery: false
-  overheat_temperature: 75
-  heat_generate: 0
-  height_in_cells: 1
-  width_in_cells: 1
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
-  materials:
-  - refined_metal
-  - plastic
-- name: gas_conduit_element_sensor
-  image_name: gas_element_sensor
-  base_decor: -5
-  base_decor_radius: 1
-  category: hvac
-  construction_time: 30
-  replaceable: true
-  is_industrial_machinery: false
-  overheat_temperature: 75
-  heat_generate: 0
-  height_in_cells: 1
-  width_in_cells: 1
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
-  materials:
-  - refined_metal
-- name: liquid_conduit_element_sensor
-  image_name: liquid_element_sensor
-  base_decor: -5
-  base_decor_radius: 1
-  category: plumbing
-  construction_time: 30
-  replaceable: true
-  is_industrial_machinery: false
-  overheat_temperature: 75
-  heat_generate: 0
-  height_in_cells: 1
-  width_in_cells: 1
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
-  materials:
-  - refined_metal
-- name: gas_conduit_temperature_sensor
-  image_name: gas_temperature_sensor
-  base_decor: -5
-  base_decor_radius: 1
-  category: hvac
-  construction_time: 30
-  replaceable: true
-  is_industrial_machinery: false
-  overheat_temperature: 75
-  heat_generate: 0
-  height_in_cells: 1
-  width_in_cells: 1
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
-  materials:
-  - refined_metal
-- name: liquid_conduit_temperature_sensor
-  image_name: liquid_temperature_sensor
-  base_decor: -5
-  base_decor_radius: 1
-  category: plumbing
-  construction_time: 30
-  replaceable: true
-  is_industrial_machinery: false
-  overheat_temperature: 75
-  heat_generate: 0
-  height_in_cells: 1
-  width_in_cells: 1
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
-  materials:
-  - refined_metal
 - name: contact_conductive_pipe_bridge
   image_name: contactconductivepipebridge
   base_decor_radius: 1
@@ -922,6 +879,25 @@
   generator_base_capacity: 0
   materials:
   - metal
+- name: creature_air_trap
+  image_name: critter_trap_air
+  base_decor: -15
+  base_decor_radius: 3
+  category: food
+  construction_time: 10
+  entombable: true
+  floodable: true
+  replaceable: true
+  is_industrial_machinery: false
+  overheatable: true
+  overheat_temperature: 75
+  heat_generate: 0
+  height_in_cells: 2
+  width_in_cells: 1
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - metal
 - name: creature_delivery_point
   image_name: relocator_dropoff
   base_decor: -15
@@ -960,11 +936,28 @@
   generator_base_capacity: 0
   materials:
   - metal
+- name: creature_ground_trap
+  image_name: critter_trap_ground
+  base_decor: -15
+  base_decor_radius: 3
+  category: food
+  construction_time: 10
+  entombable: true
+  replaceable: true
+  is_industrial_machinery: false
+  overheatable: true
+  overheat_temperature: 75
+  heat_generate: 0
+  height_in_cells: 2
+  width_in_cells: 2
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - metal
 - name: creature_trap
   image_name: creaturetrap
   base_decor: -15
   base_decor_radius: 3
-  category: food
   construction_time: 10
   entombable: true
   replaceable: true
@@ -1012,25 +1005,6 @@
   generator_base_capacity: 0
   materials:
   - buildable_raw
-- name: dlc1_cosmic_research_center
-  image_name: research_space
-  base_decor_radius: 1
-  category: equipment
-  construction_time: 30
-  entombable: true
-  floodable: true
-  replaceable: true
-  is_industrial_machinery: false
-  overheatable: true
-  overheat_temperature: 75
-  heat_generate: 4
-  height_in_cells: 4
-  width_in_cells: 4
-  power_consume: 120
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
-  materials:
-  - metal
 - name: decontamination_shower
   image_name: decontamination_shower
   base_decor: -20
@@ -1051,6 +1025,25 @@
   materials:
   - metal
   - lead
+- name: desalinator
+  image_name: desalinator
+  base_decor: -5
+  base_decor_radius: 1
+  category: refining
+  construction_time: 10
+  entombable: true
+  replaceable: true
+  is_industrial_machinery: true
+  overheatable: true
+  overheat_temperature: 75
+  heat_generate: 8
+  height_in_cells: 3
+  width_in_cells: 4
+  power_consume: 480
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - metal
 - name: dev_generator
   image_name: dev_generator
   base_decor: -15
@@ -1069,6 +1062,22 @@
   generator_base_capacity: 200000
   materials:
   - metal
+- name: dev_hepspawner
+  image_name: dev_radbolt_generator
+  base_decor: -10
+  base_decor_radius: 2
+  category: hep
+  construction_time: 10
+  replaceable: true
+  is_industrial_machinery: false
+  overheat_temperature: 75
+  heat_generate: 0
+  height_in_cells: 1
+  width_in_cells: 1
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - buildable_raw
 - name: dev_life_support
   image_name: dev_life_support
   base_decor: -20
@@ -1185,6 +1194,25 @@
   heat_generate: 0
   height_in_cells: 1
   width_in_cells: 1
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - metal
+- name: dlc1_cosmic_research_center
+  image_name: research_space
+  base_decor_radius: 1
+  category: equipment
+  construction_time: 30
+  entombable: true
+  floodable: true
+  replaceable: true
+  is_industrial_machinery: false
+  overheatable: true
+  overheat_temperature: 75
+  heat_generate: 4
+  height_in_cells: 4
+  width_in_cells: 4
+  power_consume: 120
   generator_wattage_rating: 0
   generator_base_capacity: 0
   materials:
@@ -1479,7 +1507,6 @@
   image_name: fishtrap
   base_decor: -15
   base_decor_radius: 3
-  category: food
   construction_time: 10
   entombable: true
   replaceable: true
@@ -1616,7 +1643,6 @@
   image_name: airborne_critter_bait
   base_decor: -15
   base_decor_radius: 3
-  category: food
   construction_time: 10
   entombable: true
   floodable: true
@@ -1632,6 +1658,22 @@
   materials:
   - metal
   - flying_critter_edible
+- name: fossil_dig
+  image_name: fossil_dig
+  base_decor: 10
+  base_decor_radius: 2
+  construction_time: 120
+  floodable: true
+  replaceable: true
+  is_industrial_machinery: false
+  overheat_temperature: 75
+  heat_generate: 0
+  height_in_cells: 3
+  width_in_cells: 5
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - fossil
 - name: gantry
   image_name: gantry
   base_decor_radius: 1
@@ -1669,9 +1711,10 @@
   generator_base_capacity: 0
   materials:
   - metal
-- name: gas_cargo_bay_cluster
-  image_name: rocket_cluster_storage_gas
+- name: gas_cargo_bay
+  image_name: rocket_storage_gas
   base_decor_radius: 1
+  category: rocketry
   construction_time: 60
   entombable: true
   breakable: true
@@ -1686,10 +1729,9 @@
   generator_base_capacity: 0
   materials:
   - steel
-- name: gas_cargo_bay
-  image_name: rocket_storage_gas
+- name: gas_cargo_bay_cluster
+  image_name: rocket_cluster_storage_gas
   base_decor_radius: 1
-  category: rocketry
   construction_time: 60
   entombable: true
   breakable: true
@@ -1721,21 +1763,6 @@
   generator_base_capacity: 0
   materials:
   - refined_metal
-- name: gas_conduit_bridge
-  image_name: utilitygasbridge
-  base_decor_radius: 1
-  category: hvac
-  construction_time: 3
-  replaceable: true
-  is_industrial_machinery: false
-  overheat_temperature: 75
-  heat_generate: 0
-  height_in_cells: 1
-  width_in_cells: 3
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
-  materials:
-  - buildable_raw
 - name: gas_conduit
   image_name: utilities_gas
   base_decor_radius: 1
@@ -1751,6 +1778,54 @@
   generator_base_capacity: 0
   materials:
   - buildable_raw
+- name: gas_conduit_bridge
+  image_name: utilitygasbridge
+  base_decor_radius: 1
+  category: hvac
+  construction_time: 3
+  replaceable: true
+  is_industrial_machinery: false
+  overheat_temperature: 75
+  heat_generate: 0
+  height_in_cells: 1
+  width_in_cells: 3
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - buildable_raw
+- name: gas_conduit_disease_sensor
+  image_name: gas_germs_sensor
+  base_decor: -5
+  base_decor_radius: 1
+  category: hvac
+  construction_time: 30
+  replaceable: true
+  is_industrial_machinery: false
+  overheat_temperature: 75
+  heat_generate: 0
+  height_in_cells: 1
+  width_in_cells: 1
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - refined_metal
+  - plastic
+- name: gas_conduit_element_sensor
+  image_name: gas_element_sensor
+  base_decor: -5
+  base_decor_radius: 1
+  category: hvac
+  construction_time: 30
+  replaceable: true
+  is_industrial_machinery: false
+  overheat_temperature: 75
+  heat_generate: 0
+  height_in_cells: 1
+  width_in_cells: 1
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - refined_metal
 - name: gas_conduit_overflow
   image_name: valvegas
   base_decor_radius: 1
@@ -1799,6 +1874,22 @@
   generator_base_capacity: 0
   materials:
   - metal
+- name: gas_conduit_temperature_sensor
+  image_name: gas_temperature_sensor
+  base_decor: -5
+  base_decor_radius: 1
+  category: hvac
+  construction_time: 30
+  replaceable: true
+  is_industrial_machinery: false
+  overheat_temperature: 75
+  heat_generate: 0
+  height_in_cells: 1
+  width_in_cells: 1
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - refined_metal
 - name: gas_filter
   image_name: filter_gas
   base_decor: -5
@@ -2210,57 +2301,6 @@
   generator_base_capacity: 0
   materials:
   - buildable_raw
-- name: hepbattery
-  image_name: radbolt_battery
-  base_decor: -15
-  base_decor_radius: 3
-  category: hep
-  construction_time: 120
-  entombable: true
-  replaceable: true
-  is_industrial_machinery: false
-  overheat_temperature: 75
-  heat_generate: 1
-  height_in_cells: 3
-  width_in_cells: 3
-  power_consume: 120
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
-  materials:
-  - refined_metal
-- name: hepbridge_tile
-  image_name: radbolt_joint_plate
-  base_decor: -25
-  base_decor_radius: 6
-  category: hep
-  construction_time: 3
-  replaceable: true
-  is_industrial_machinery: false
-  overheat_temperature: 75
-  heat_generate: 0
-  height_in_cells: 1
-  width_in_cells: 2
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
-  materials:
-  - plastic
-- name: hepengine
-  image_name: rocket_hep_engine
-  base_decor_radius: 1
-  construction_time: 60
-  entombable: true
-  breakable: true
-  replaceable: true
-  is_industrial_machinery: true
-  overheatable: true
-  overheat_temperature: 2000
-  heat_generate: 0
-  height_in_cells: 5
-  width_in_cells: 5
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
-  materials:
-  - steel
 - name: habitat_module_medium
   image_name: rocket_habitat_medium_module
   base_decor_radius: 1
@@ -2347,6 +2387,57 @@
   generator_base_capacity: 0
   materials:
   - metal
+- name: hepbattery
+  image_name: radbolt_battery
+  base_decor: -15
+  base_decor_radius: 3
+  category: hep
+  construction_time: 120
+  entombable: true
+  replaceable: true
+  is_industrial_machinery: false
+  overheat_temperature: 75
+  heat_generate: 1
+  height_in_cells: 3
+  width_in_cells: 3
+  power_consume: 120
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - refined_metal
+- name: hepbridge_tile
+  image_name: radbolt_joint_plate
+  base_decor: -25
+  base_decor_radius: 6
+  category: hep
+  construction_time: 3
+  replaceable: true
+  is_industrial_machinery: false
+  overheat_temperature: 75
+  heat_generate: 0
+  height_in_cells: 1
+  width_in_cells: 2
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - plastic
+- name: hepengine
+  image_name: rocket_hep_engine
+  base_decor_radius: 1
+  construction_time: 60
+  entombable: true
+  breakable: true
+  replaceable: true
+  is_industrial_machinery: true
+  overheatable: true
+  overheat_temperature: 2000
+  heat_generate: 0
+  height_in_cells: 5
+  width_in_cells: 5
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - steel
 - name: high_energy_particle_redirector
   image_name: orb_transporter
   base_decor: -10
@@ -2382,6 +2473,22 @@
   generator_base_capacity: 0
   materials:
   - buildable_raw
+- name: high_wattage_wire
+  image_name: utilities_electric_insulated
+  base_decor: -25
+  base_decor_radius: 6
+  category: power
+  construction_time: 3
+  replaceable: true
+  is_industrial_machinery: false
+  overheat_temperature: 75
+  heat_generate: 0
+  height_in_cells: 1
+  width_in_cells: 1
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - metal
 - name: hot_tub
   image_name: hottub
   base_decor: 20
@@ -2403,23 +2510,6 @@
   materials:
   - metal
   - building_wood
-- name: hydrogen_engine_cluster
-  image_name: rocket_cluster_hydrogen_engine
-  base_decor_radius: 1
-  construction_time: 60
-  entombable: true
-  breakable: true
-  replaceable: true
-  is_industrial_machinery: true
-  overheatable: true
-  overheat_temperature: 2000
-  heat_generate: 0
-  height_in_cells: 5
-  width_in_cells: 7
-  generator_wattage_rating: 600
-  generator_base_capacity: 40000
-  materials:
-  - steel
 - name: hydrogen_engine
   image_name: rocket_hydrogen_engine
   base_decor_radius: 1
@@ -2436,6 +2526,23 @@
   width_in_cells: 7
   generator_wattage_rating: 0
   generator_base_capacity: 0
+  materials:
+  - steel
+- name: hydrogen_engine_cluster
+  image_name: rocket_cluster_hydrogen_engine
+  base_decor_radius: 1
+  construction_time: 60
+  entombable: true
+  breakable: true
+  replaceable: true
+  is_industrial_machinery: true
+  overheatable: true
+  overheat_temperature: 2000
+  heat_generate: 0
+  height_in_cells: 5
+  width_in_cells: 7
+  generator_wattage_rating: 600
+  generator_base_capacity: 40000
   materials:
   - steel
 - name: hydrogen_generator
@@ -2650,6 +2757,24 @@
   generator_base_capacity: 0
   materials:
   - metal
+- name: kerosene_engine
+  image_name: rocket_petroleum_engine
+  base_decor_radius: 1
+  category: rocketry
+  construction_time: 60
+  entombable: true
+  breakable: true
+  replaceable: true
+  is_industrial_machinery: true
+  overheatable: true
+  overheat_temperature: 2000
+  heat_generate: 0
+  height_in_cells: 5
+  width_in_cells: 7
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - steel
 - name: kerosene_engine_cluster
   image_name: rocket_cluster_petroleum_engine
   base_decor_radius: 1
@@ -2684,24 +2809,6 @@
   generator_base_capacity: 4000
   materials:
   - refined_metal
-- name: kerosene_engine
-  image_name: rocket_petroleum_engine
-  base_decor_radius: 1
-  category: rocketry
-  construction_time: 60
-  entombable: true
-  breakable: true
-  replaceable: true
-  is_industrial_machinery: true
-  overheatable: true
-  overheat_temperature: 2000
-  heat_generate: 0
-  height_in_cells: 5
-  width_in_cells: 7
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
-  materials:
-  - steel
 - name: kiln
   image_name: kiln
   base_decor: -10
@@ -2720,6 +2827,22 @@
   generator_base_capacity: 0
   materials:
   - metal
+- name: ladder
+  image_name: ladder
+  base_decor: -5
+  base_decor_radius: 1
+  category: base
+  construction_time: 10
+  replaceable: true
+  is_industrial_machinery: false
+  overheat_temperature: 75
+  heat_generate: 0
+  height_in_cells: 1
+  width_in_cells: 1
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - buildable_raw
 - name: ladder_bed
   image_name: ladder_bed
   base_decor_radius: 1
@@ -2737,22 +2860,6 @@
   generator_base_capacity: 0
   materials:
   - refined_metal
-- name: ladder
-  image_name: ladder
-  base_decor: -5
-  base_decor_radius: 1
-  category: base
-  construction_time: 10
-  replaceable: true
-  is_industrial_machinery: false
-  overheat_temperature: 75
-  heat_generate: 0
-  height_in_cells: 1
-  width_in_cells: 1
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
-  materials:
-  - buildable_raw
 - name: ladder_fast
   image_name: ladder_plastic
   base_decor: -5
@@ -2845,9 +2952,10 @@
   generator_base_capacity: 0
   materials:
   - refined_metal
-- name: liquid_cargo_bay_cluster
-  image_name: rocket_cluster_storage_liquid
+- name: liquid_cargo_bay
+  image_name: rocket_storage_liquid
   base_decor_radius: 1
+  category: rocketry
   construction_time: 60
   entombable: true
   breakable: true
@@ -2862,10 +2970,9 @@
   generator_base_capacity: 0
   materials:
   - steel
-- name: liquid_cargo_bay
-  image_name: rocket_storage_liquid
+- name: liquid_cargo_bay_cluster
+  image_name: rocket_cluster_storage_liquid
   base_decor_radius: 1
-  category: rocketry
   construction_time: 60
   entombable: true
   breakable: true
@@ -2916,21 +3023,6 @@
   generator_base_capacity: 0
   materials:
   - metal
-- name: liquid_conduit_bridge
-  image_name: utilityliquidbridge
-  base_decor_radius: 1
-  category: plumbing
-  construction_time: 3
-  replaceable: true
-  is_industrial_machinery: false
-  overheat_temperature: 75
-  heat_generate: 0
-  height_in_cells: 1
-  width_in_cells: 3
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
-  materials:
-  - buildable_raw
 - name: liquid_conduit
   image_name: utilities_liquid
   base_decor_radius: 1
@@ -2946,6 +3038,54 @@
   generator_base_capacity: 0
   materials:
   - plumbable
+- name: liquid_conduit_bridge
+  image_name: utilityliquidbridge
+  base_decor_radius: 1
+  category: plumbing
+  construction_time: 3
+  replaceable: true
+  is_industrial_machinery: false
+  overheat_temperature: 75
+  heat_generate: 0
+  height_in_cells: 1
+  width_in_cells: 3
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - buildable_raw
+- name: liquid_conduit_disease_sensor
+  image_name: liquid_germs_sensor
+  base_decor: -5
+  base_decor_radius: 1
+  category: plumbing
+  construction_time: 30
+  replaceable: true
+  is_industrial_machinery: false
+  overheat_temperature: 75
+  heat_generate: 0
+  height_in_cells: 1
+  width_in_cells: 1
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - refined_metal
+  - plastic
+- name: liquid_conduit_element_sensor
+  image_name: liquid_element_sensor
+  base_decor: -5
+  base_decor_radius: 1
+  category: plumbing
+  construction_time: 30
+  replaceable: true
+  is_industrial_machinery: false
+  overheat_temperature: 75
+  heat_generate: 0
+  height_in_cells: 1
+  width_in_cells: 1
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - refined_metal
 - name: liquid_conduit_overflow
   image_name: valveliquid
   base_decor_radius: 1
@@ -2994,6 +3134,22 @@
   generator_base_capacity: 0
   materials:
   - refined_metal
+- name: liquid_conduit_temperature_sensor
+  image_name: liquid_temperature_sensor
+  base_decor: -5
+  base_decor_radius: 1
+  category: plumbing
+  construction_time: 30
+  replaceable: true
+  is_industrial_machinery: false
+  overheat_temperature: 75
+  heat_generate: 0
+  height_in_cells: 1
+  width_in_cells: 1
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - refined_metal
 - name: liquid_cooled_fan
   image_name: fanliquid
   base_decor_radius: 1
@@ -3030,9 +3186,10 @@
   generator_base_capacity: 0
   materials:
   - metal
-- name: liquid_fuel_tank_cluster
-  image_name: rocket_cluster_liquid_fuel_tank
+- name: liquid_fuel_tank
+  image_name: rocket_liquid_fuel_tank
   base_decor_radius: 1
+  category: rocketry
   construction_time: 60
   entombable: true
   breakable: true
@@ -3047,10 +3204,9 @@
   generator_base_capacity: 0
   materials:
   - steel
-- name: liquid_fuel_tank
-  image_name: rocket_liquid_fuel_tank
+- name: liquid_fuel_tank_cluster
+  image_name: rocket_cluster_liquid_fuel_tank
   base_decor_radius: 1
-  category: rocketry
   construction_time: 60
   entombable: true
   breakable: true
@@ -3379,54 +3535,6 @@
   generator_base_capacity: 0
   materials:
   - refined_metal
-- name: logic_gate_or
-  image_name: logic_or
-  base_decor: -5
-  base_decor_radius: 1
-  category: automation
-  construction_time: 3
-  replaceable: true
-  is_industrial_machinery: false
-  overheat_temperature: 75
-  heat_generate: 0
-  height_in_cells: 2
-  width_in_cells: 2
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
-  materials:
-  - refined_metal
-- name: logic_gate_xor
-  image_name: logic_xor
-  base_decor: -5
-  base_decor_radius: 1
-  category: automation
-  construction_time: 3
-  replaceable: true
-  is_industrial_machinery: false
-  overheat_temperature: 75
-  heat_generate: 0
-  height_in_cells: 2
-  width_in_cells: 2
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
-  materials:
-  - refined_metal
-- name: logic_gate_not
-  image_name: logic_not
-  base_decor: -5
-  base_decor_radius: 1
-  category: automation
-  construction_time: 3
-  replaceable: true
-  is_industrial_machinery: false
-  overheat_temperature: 75
-  heat_generate: 0
-  height_in_cells: 1
-  width_in_cells: 2
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
-  materials:
-  - refined_metal
 - name: logic_gate_buffer
   image_name: logic_buffer
   base_decor: -5
@@ -3439,6 +3547,22 @@
   heat_generate: 0
   height_in_cells: 1
   width_in_cells: 2
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - refined_metal
+- name: logic_gate_demultiplexer
+  image_name: logic_demultiplexer
+  base_decor: -5
+  base_decor_radius: 1
+  category: automation
+  construction_time: 3
+  replaceable: true
+  is_industrial_machinery: false
+  overheat_temperature: 75
+  heat_generate: 0
+  height_in_cells: 4
+  width_in_cells: 3
   generator_wattage_rating: 0
   generator_base_capacity: 0
   materials:
@@ -3475,8 +3599,8 @@
   generator_base_capacity: 0
   materials:
   - refined_metal
-- name: logic_gate_demultiplexer
-  image_name: logic_demultiplexer
+- name: logic_gate_not
+  image_name: logic_not
   base_decor: -5
   base_decor_radius: 1
   category: automation
@@ -3485,24 +3609,40 @@
   is_industrial_machinery: false
   overheat_temperature: 75
   heat_generate: 0
-  height_in_cells: 4
-  width_in_cells: 3
+  height_in_cells: 1
+  width_in_cells: 2
   generator_wattage_rating: 0
   generator_base_capacity: 0
   materials:
   - refined_metal
-- name: logic_hepsensor
-  image_name: radbolt_sensor
+- name: logic_gate_or
+  image_name: logic_or
   base_decor: -5
   base_decor_radius: 1
   category: automation
-  construction_time: 30
+  construction_time: 3
   replaceable: true
   is_industrial_machinery: false
   overheat_temperature: 75
   heat_generate: 0
-  height_in_cells: 1
-  width_in_cells: 1
+  height_in_cells: 2
+  width_in_cells: 2
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - refined_metal
+- name: logic_gate_xor
+  image_name: logic_xor
+  base_decor: -5
+  base_decor_radius: 1
+  category: automation
+  construction_time: 3
+  replaceable: true
+  is_industrial_machinery: false
+  overheat_temperature: 75
+  heat_generate: 0
+  height_in_cells: 2
+  width_in_cells: 2
   generator_wattage_rating: 0
   generator_base_capacity: 0
   materials:
@@ -3520,6 +3660,22 @@
   height_in_cells: 1
   width_in_cells: 1
   power_consume: 60
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - refined_metal
+- name: logic_hepsensor
+  image_name: radbolt_sensor
+  base_decor: -5
+  base_decor_radius: 1
+  category: automation
+  construction_time: 30
+  replaceable: true
+  is_industrial_machinery: false
+  overheat_temperature: 75
+  heat_generate: 0
+  height_in_cells: 1
+  width_in_cells: 1
   generator_wattage_rating: 0
   generator_base_capacity: 0
   materials:
@@ -3636,22 +3792,6 @@
   generator_base_capacity: 0
   materials:
   - refined_metal
-- name: logic_ribbon_bridge
-  image_name: logic_ribbon_bridge
-  base_decor: -5
-  base_decor_radius: 1
-  category: automation
-  construction_time: 3
-  replaceable: true
-  is_industrial_machinery: false
-  overheat_temperature: 75
-  heat_generate: 0
-  height_in_cells: 1
-  width_in_cells: 3
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
-  materials:
-  - refined_metal
 - name: logic_ribbon
   image_name: logic_ribbon
   base_decor: -5
@@ -3664,6 +3804,22 @@
   heat_generate: 0
   height_in_cells: 1
   width_in_cells: 1
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - refined_metal
+- name: logic_ribbon_bridge
+  image_name: logic_ribbon_bridge
+  base_decor: -5
+  base_decor_radius: 1
+  category: automation
+  construction_time: 3
+  replaceable: true
+  is_industrial_machinery: false
+  overheat_temperature: 75
+  heat_generate: 0
+  height_in_cells: 1
+  width_in_cells: 3
   generator_wattage_rating: 0
   generator_base_capacity: 0
   materials:
@@ -3779,22 +3935,6 @@
   generator_base_capacity: 0
   materials:
   - refined_metal
-- name: logic_wire_bridge
-  image_name: logic_bridge
-  base_decor: -5
-  base_decor_radius: 1
-  category: automation
-  construction_time: 3
-  replaceable: true
-  is_industrial_machinery: false
-  overheat_temperature: 75
-  heat_generate: 0
-  height_in_cells: 1
-  width_in_cells: 3
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
-  materials:
-  - refined_metal
 - name: logic_wire
   image_name: logic_wires
   base_decor: -5
@@ -3811,6 +3951,38 @@
   generator_base_capacity: 0
   materials:
   - refined_metal
+- name: logic_wire_bridge
+  image_name: logic_bridge
+  base_decor: -5
+  base_decor_radius: 1
+  category: automation
+  construction_time: 3
+  replaceable: true
+  is_industrial_machinery: false
+  overheat_temperature: 75
+  heat_generate: 0
+  height_in_cells: 1
+  width_in_cells: 3
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - refined_metal
+- name: lonely_mail_box
+  image_name: parcel_delivery
+  base_decor: -15
+  base_decor_radius: 3
+  construction_time: 30
+  entombable: true
+  replaceable: true
+  is_industrial_machinery: false
+  overheat_temperature: 75
+  heat_generate: 0
+  height_in_cells: 2
+  width_in_cells: 2
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - metal
 - name: lonely_minion_house
   image_name: lonely_dupe_home
   base_decor: -25
@@ -3830,22 +4002,6 @@
   generator_base_capacity: 0
   materials:
   - steel
-- name: lonely_mail_box
-  image_name: parcel_delivery
-  base_decor: -15
-  base_decor_radius: 3
-  construction_time: 30
-  entombable: true
-  replaceable: true
-  is_industrial_machinery: false
-  overheat_temperature: 75
-  heat_generate: 0
-  height_in_cells: 2
-  width_in_cells: 2
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
-  materials:
-  - metal
 - name: luxury_bed
   image_name: elegantbed
   base_decor: 15
@@ -4145,6 +4301,83 @@
   generator_base_capacity: 0
   materials:
   - metal
+- name: milk_fat_separator
+  image_name: milk_separator
+  base_decor: -15
+  base_decor_radius: 3
+  category: refining
+  construction_time: 120
+  entombable: true
+  floodable: true
+  replaceable: true
+  is_industrial_machinery: true
+  overheatable: true
+  overheat_temperature: 75
+  heat_generate: 8
+  height_in_cells: 4
+  width_in_cells: 4
+  power_consume: 480
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - refined_metal
+- name: milk_feeder
+  image_name: critter_milk_feeder
+  base_decor: -15
+  base_decor_radius: 3
+  category: food
+  construction_time: 120
+  entombable: true
+  floodable: true
+  replaceable: true
+  is_industrial_machinery: false
+  overheatable: true
+  overheat_temperature: 75
+  heat_generate: 0
+  height_in_cells: 3
+  width_in_cells: 3
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - refined_metal
+- name: milk_press
+  image_name: milkpress
+  base_decor: -10
+  base_decor_radius: 2
+  category: refining
+  construction_time: 30
+  entombable: true
+  floodable: true
+  replaceable: true
+  is_industrial_machinery: false
+  overheatable: true
+  overheat_temperature: 75
+  heat_generate: 2
+  height_in_cells: 3
+  width_in_cells: 2
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - buildable_raw
+- name: milking_station
+  image_name: milking_station
+  base_decor: -15
+  base_decor_radius: 3
+  category: equipment
+  construction_time: 60
+  entombable: true
+  floodable: true
+  replaceable: true
+  is_industrial_machinery: false
+  overheat_temperature: 75
+  heat_generate: 0
+  height_in_cells: 4
+  width_in_cells: 2
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - refined_metal
+  - plastic
 - name: mineral_deoxidizer
   image_name: mineraldeoxidizer
   base_decor: -10
@@ -4166,7 +4399,44 @@
   generator_base_capacity: 0
   materials:
   - metal
-- name: mission_control_cluster
+- name: missile_fabricator
+  image_name: missile_fabricator
+  base_decor: -15
+  base_decor_radius: 3
+  category: equipment
+  construction_time: 60
+  entombable: true
+  floodable: true
+  replaceable: true
+  is_industrial_machinery: false
+  overheatable: true
+  overheat_temperature: 75
+  heat_generate: 8
+  height_in_cells: 4
+  width_in_cells: 5
+  power_consume: 960
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - refined_metal
+- name: missile_launcher
+  image_name: missile_launcher
+  base_decor_radius: 1
+  category: rocketry
+  construction_time: 30
+  entombable: true
+  replaceable: true
+  is_industrial_machinery: false
+  overheat_temperature: 75
+  heat_generate: 2
+  height_in_cells: 5
+  width_in_cells: 3
+  power_consume: 240
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - metal
+- name: mission_control
   image_name: mission_control_station
   base_decor: -5
   base_decor_radius: 1
@@ -4186,7 +4456,7 @@
   generator_base_capacity: 0
   materials:
   - refined_metal
-- name: mission_control
+- name: mission_control_cluster
   image_name: mission_control_station
   base_decor: -5
   base_decor_radius: 1
@@ -4592,6 +4862,24 @@
   generator_base_capacity: 0
   materials:
   - buildable_raw
+- name: oxidizer_tank
+  image_name: rocket_oxidizer_tank
+  base_decor_radius: 1
+  category: rocketry
+  construction_time: 60
+  entombable: true
+  breakable: true
+  replaceable: true
+  is_industrial_machinery: true
+  overheatable: true
+  overheat_temperature: 2000
+  heat_generate: 0
+  height_in_cells: 5
+  width_in_cells: 5
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - steel
 - name: oxidizer_tank_cluster
   image_name: rocket_oxidizer_tank
   base_decor_radius: 1
@@ -4609,8 +4897,8 @@
   generator_base_capacity: 0
   materials:
   - steel
-- name: oxidizer_tank
-  image_name: rocket_oxidizer_tank
+- name: oxidizer_tank_liquid
+  image_name: rocket_oxidizer_tank_liquid
   base_decor_radius: 1
   category: rocketry
   construction_time: 60
@@ -4639,24 +4927,6 @@
   overheat_temperature: 2000
   heat_generate: 0
   height_in_cells: 2
-  width_in_cells: 5
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
-  materials:
-  - steel
-- name: oxidizer_tank_liquid
-  image_name: rocket_oxidizer_tank_liquid
-  base_decor_radius: 1
-  category: rocketry
-  construction_time: 60
-  entombable: true
-  breakable: true
-  replaceable: true
-  is_industrial_machinery: true
-  overheatable: true
-  overheat_temperature: 2000
-  heat_generate: 0
-  height_in_cells: 5
   width_in_cells: 5
   generator_wattage_rating: 0
   generator_base_capacity: 0
@@ -4739,52 +5009,6 @@
   materials:
   - refined_metal
   - plastic
-- name: poibunker_exterior_door
-  image_name: door_poi
-  base_decor: -15
-  base_decor_radius: 3
-  construction_time: 60
-  replaceable: true
-  is_industrial_machinery: false
-  overheat_temperature: 75
-  heat_generate: 0
-  height_in_cells: 2
-  width_in_cells: 1
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
-  materials:
-  - metal
-- name: poidoor_internal
-  image_name: door_poi_internal
-  base_decor_radius: 1
-  construction_time: 10
-  replaceable: true
-  is_industrial_machinery: false
-  overheatable: true
-  overheat_temperature: 75
-  heat_generate: 0
-  height_in_cells: 2
-  width_in_cells: 1
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
-  materials:
-  - metal
-- name: poifacility_door
-  image_name: door_facility
-  base_decor: -15
-  base_decor_radius: 3
-  construction_time: 60
-  entombable: true
-  replaceable: true
-  is_industrial_machinery: false
-  overheat_temperature: 75
-  heat_generate: 0
-  height_in_cells: 3
-  width_in_cells: 2
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
-  materials:
-  - metal
 - name: park_sign
   image_name: parksign
   base_decor_radius: 1
@@ -4909,6 +5133,52 @@
   generator_base_capacity: 0
   materials:
   - plastic
+- name: poibunker_exterior_door
+  image_name: door_poi
+  base_decor: -15
+  base_decor_radius: 3
+  construction_time: 60
+  replaceable: true
+  is_industrial_machinery: false
+  overheat_temperature: 75
+  heat_generate: 0
+  height_in_cells: 2
+  width_in_cells: 1
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - metal
+- name: poidoor_internal
+  image_name: door_poi_internal
+  base_decor_radius: 1
+  construction_time: 10
+  replaceable: true
+  is_industrial_machinery: false
+  overheatable: true
+  overheat_temperature: 75
+  heat_generate: 0
+  height_in_cells: 2
+  width_in_cells: 1
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - metal
+- name: poifacility_door
+  image_name: door_facility
+  base_decor: -15
+  base_decor_radius: 3
+  construction_time: 60
+  entombable: true
+  replaceable: true
+  is_industrial_machinery: false
+  overheat_temperature: 75
+  heat_generate: 0
+  height_in_cells: 3
+  width_in_cells: 2
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - metal
 - name: polymerizer
   image_name: plasticrefinery
   base_decor_radius: 1
@@ -5770,42 +6040,6 @@
   generator_base_capacity: 0
   materials:
   - steel
-- name: cargo_bay_cluster
-  image_name: rocket_cluster_storage_solid
-  base_decor_radius: 1
-  construction_time: 60
-  entombable: true
-  breakable: true
-  replaceable: true
-  is_industrial_machinery: true
-  overheatable: true
-  overheat_temperature: 2000
-  heat_generate: 0
-  height_in_cells: 5
-  width_in_cells: 5
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
-  materials:
-  - steel
-- name: cargo_bay
-  image_name: rocket_storage_solid
-  base_decor_radius: 1
-  category: rocketry
-  construction_time: 60
-  entombable: true
-  breakable: true
-  replaceable: true
-  is_industrial_machinery: true
-  overheatable: true
-  overheat_temperature: 2000
-  heat_generate: 0
-  height_in_cells: 5
-  width_in_cells: 5
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
-  materials:
-  - buildable_raw
-  - steel
 - name: solid_cargo_bay_small
   image_name: rocket_storage_solid_small
   base_decor_radius: 1
@@ -5823,21 +6057,6 @@
   generator_base_capacity: 0
   materials:
   - refined_metal
-- name: solid_conduit_bridge
-  image_name: utilities_conveyorbridge
-  base_decor_radius: 1
-  category: conveyance
-  construction_time: 30
-  replaceable: true
-  is_industrial_machinery: false
-  overheat_temperature: 75
-  heat_generate: 0
-  height_in_cells: 1
-  width_in_cells: 3
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
-  materials:
-  - metal
 - name: solid_conduit
   image_name: utilities_conveyor
   base_decor_radius: 1
@@ -5853,38 +6072,17 @@
   generator_base_capacity: 0
   materials:
   - metal
-- name: solid_conduit_inbox
-  image_name: conveyorin
-  base_decor: -10
-  base_decor_radius: 2
-  category: conveyance
-  construction_time: 60
-  entombable: true
-  replaceable: true
-  is_industrial_machinery: false
-  overheatable: true
-  overheat_temperature: 75
-  heat_generate: 2
-  height_in_cells: 2
-  width_in_cells: 1
-  power_consume: 120
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
-  materials:
-  - refined_metal
-- name: solid_conduit_outbox
-  image_name: conveyorout
-  base_decor: -10
-  base_decor_radius: 2
+- name: solid_conduit_bridge
+  image_name: utilities_conveyorbridge
+  base_decor_radius: 1
   category: conveyance
   construction_time: 30
-  entombable: true
   replaceable: true
   is_industrial_machinery: false
   overheat_temperature: 75
   heat_generate: 0
-  height_in_cells: 2
-  width_in_cells: 1
+  height_in_cells: 1
+  width_in_cells: 3
   generator_wattage_rating: 0
   generator_base_capacity: 0
   materials:
@@ -5922,6 +6120,42 @@
   generator_base_capacity: 0
   materials:
   - refined_metal
+- name: solid_conduit_inbox
+  image_name: conveyorin
+  base_decor: -10
+  base_decor_radius: 2
+  category: conveyance
+  construction_time: 60
+  entombable: true
+  replaceable: true
+  is_industrial_machinery: false
+  overheatable: true
+  overheat_temperature: 75
+  heat_generate: 2
+  height_in_cells: 2
+  width_in_cells: 1
+  power_consume: 120
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - refined_metal
+- name: solid_conduit_outbox
+  image_name: conveyorout
+  base_decor: -10
+  base_decor_radius: 2
+  category: conveyance
+  construction_time: 30
+  entombable: true
+  replaceable: true
+  is_industrial_machinery: false
+  overheat_temperature: 75
+  heat_generate: 0
+  height_in_cells: 2
+  width_in_cells: 1
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - metal
 - name: solid_conduit_temperature_sensor
   image_name: conveyor_temperature_sensor
   base_decor: -5
@@ -6083,21 +6317,6 @@
   generator_base_capacity: 0
   materials:
   - metal
-- name: staterpillar_generator
-  image_name: egg_caterpillar
-  base_decor_radius: 1
-  construction_time: 10
-  entombable: true
-  replaceable: true
-  is_industrial_machinery: false
-  overheat_temperature: 150
-  heat_generate: 4
-  height_in_cells: 2
-  width_in_cells: 1
-  generator_wattage_rating: 1600
-  generator_base_capacity: 5000
-  materials:
-  - metal
 - name: staterpillar_gas_connector
   image_name: egg_caterpillar
   base_decor_radius: 1
@@ -6111,6 +6330,21 @@
   width_in_cells: 1
   generator_wattage_rating: 0
   generator_base_capacity: 0
+  materials:
+  - metal
+- name: staterpillar_generator
+  image_name: egg_caterpillar
+  base_decor_radius: 1
+  construction_time: 10
+  entombable: true
+  replaceable: true
+  is_industrial_machinery: false
+  overheat_temperature: 150
+  heat_generate: 4
+  height_in_cells: 2
+  width_in_cells: 1
+  generator_wattage_rating: 1600
+  generator_base_capacity: 5000
   materials:
   - metal
 - name: staterpillar_liquid_connector
@@ -6128,23 +6362,6 @@
   generator_base_capacity: 0
   materials:
   - metal
-- name: steam_engine_cluster
-  image_name: rocket_cluster_steam_engine
-  base_decor_radius: 1
-  construction_time: 60
-  entombable: true
-  breakable: true
-  replaceable: true
-  is_industrial_machinery: true
-  overheatable: true
-  overheat_temperature: 2000
-  heat_generate: 0
-  height_in_cells: 5
-  width_in_cells: 7
-  generator_wattage_rating: 600
-  generator_base_capacity: 20000
-  materials:
-  - refined_metal
 - name: steam_engine
   image_name: rocket_steam_engine
   base_decor_radius: 1
@@ -6163,6 +6380,23 @@
   generator_base_capacity: 0
   materials:
   - steel
+- name: steam_engine_cluster
+  image_name: rocket_cluster_steam_engine
+  base_decor_radius: 1
+  construction_time: 60
+  entombable: true
+  breakable: true
+  replaceable: true
+  is_industrial_machinery: true
+  overheatable: true
+  overheat_temperature: 2000
+  heat_generate: 0
+  height_in_cells: 5
+  width_in_cells: 7
+  generator_wattage_rating: 600
+  generator_base_capacity: 20000
+  materials:
+  - refined_metal
 - name: steam_turbine
   image_name: steamturbine
   base_decor_radius: 1
@@ -6774,6 +7008,40 @@
   generator_base_capacity: 0
   materials:
   - metal
+- name: water_trap
+  image_name: critter_trap_water
+  base_decor: -15
+  base_decor_radius: 3
+  category: food
+  construction_time: 10
+  entombable: true
+  replaceable: true
+  is_industrial_machinery: false
+  overheatable: true
+  overheat_temperature: 75
+  heat_generate: 0
+  height_in_cells: 2
+  width_in_cells: 1
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - metal
+- name: wire
+  image_name: utilities_electric
+  base_decor: -5
+  base_decor_radius: 1
+  category: power
+  construction_time: 3
+  replaceable: true
+  is_industrial_machinery: false
+  overheat_temperature: 75
+  heat_generate: 0
+  height_in_cells: 1
+  width_in_cells: 1
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - metal
 - name: wire_bridge
   image_name: utilityelectricbridge
   base_decor: -5
@@ -6806,9 +7074,8 @@
   generator_base_capacity: 0
   materials:
   - metal
-- name: wire
-  image_name: utilities_electric
-  base_decor: -5
+- name: wire_refined
+  image_name: utilities_electric_conduct
   base_decor_radius: 1
   category: power
   construction_time: 3
@@ -6821,23 +7088,7 @@
   generator_wattage_rating: 0
   generator_base_capacity: 0
   materials:
-  - metal
-- name: high_wattage_wire
-  image_name: utilities_electric_insulated
-  base_decor: -25
-  base_decor_radius: 6
-  category: power
-  construction_time: 3
-  replaceable: true
-  is_industrial_machinery: false
-  overheat_temperature: 75
-  heat_generate: 0
-  height_in_cells: 1
-  width_in_cells: 1
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
-  materials:
-  - metal
+  - refined_metal
 - name: wire_refined_bridge
   image_name: utilityelectricbridgeconductive
   base_decor: -5
@@ -6858,21 +7109,6 @@
   image_name: heavywatttile_conductive
   base_decor: -25
   base_decor_radius: 6
-  category: power
-  construction_time: 3
-  replaceable: true
-  is_industrial_machinery: false
-  overheat_temperature: 75
-  heat_generate: 0
-  height_in_cells: 1
-  width_in_cells: 1
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
-  materials:
-  - refined_metal
-- name: wire_refined
-  image_name: utilities_electric_conduct
-  base_decor_radius: 1
   category: power
   construction_time: 3
   replaceable: true
@@ -6918,24 +7154,5 @@
   width_in_cells: 2
   generator_wattage_rating: 300
   generator_base_capacity: 20000
-  materials:
-  - metal
-- name: desalinator
-  image_name: desalinator
-  base_decor: -5
-  base_decor_radius: 1
-  category: refining
-  construction_time: 10
-  entombable: true
-  replaceable: true
-  is_industrial_machinery: true
-  overheatable: true
-  overheat_temperature: 75
-  heat_generate: 8
-  height_in_cells: 3
-  width_in_cells: 4
-  power_consume: 480
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
   materials:
   - metal

@@ -1,15 +1,15 @@
-- name: field_ration
-  image_name: fieldration
+- name: basic_forage_plant
+  image_name: muckrootvegetable
   calories: 800
   quality: -1
   preserve_temperature: -18
   rot_temperature: 4
-  spoil_time: 32
-  stale_time: 16
-- name: mush_bar
-  image_name: mushbar
-  calories: 800
-  quality: -1
+  spoil_time: 8
+  stale_time: 4
+- name: basic_plant_bar
+  image_name: liceloaf
+  calories: 1700
+  quality: 0
   preserve_temperature: -18
   rot_temperature: 4
   spoil_time: 8
@@ -22,172 +22,33 @@
   rot_temperature: 4
   spoil_time: 8
   stale_time: 4
-- name: basic_forage_plant
-  image_name: muckrootvegetable
-  calories: 800
-  quality: -1
+- name: bean_plant_seed
+  image_name: seed_beanplant
+  calories: 0
+  quality: 3
   preserve_temperature: -18
   rot_temperature: 4
   spoil_time: 8
   stale_time: 4
-- name: forest_forage_plant
-  image_name: podmelon_fruit
-  calories: 6400
-  quality: -1
+- name: berry_pie
+  image_name: wormwood_berry_pie
+  calories: 4200
+  quality: 5
   preserve_temperature: -18
   rot_temperature: 4
-  spoil_time: 8
-  stale_time: 4
-- name: swamp_forage_plant
-  image_name: swamptuber_vegetable
-  calories: 2400
-  quality: -1
-  preserve_temperature: -18
-  rot_temperature: 4
-  spoil_time: 8
-  stale_time: 4
-- name: mushroom
-  image_name: funguscap
-  calories: 2400
-  quality: 0
-  preserve_temperature: -18
-  rot_temperature: 4
-  spoil_time: 8
-  stale_time: 4
-- name: lettuce
-  image_name: sea_lettuce_leaves
-  calories: 400
-  quality: 0
+  spoil_time: 4
+  stale_time: 2
+- name: burger
+  image_name: frost_burger
+  calories: 6000
+  quality: 6
   preserve_temperature: -18
   rot_temperature: 4
   spoil_time: 4
   stale_time: 2
   effects:
+  - good_eats
   - seafood_radiation_resistance
-- name: meat
-  image_name: creaturemeat
-  calories: 1600
-  quality: -1
-  preserve_temperature: -18
-  rot_temperature: 4
-  spoil_time: 8
-  stale_time: 4
-- name: plant_meat
-  image_name: critter_trap_fruit
-  calories: 1200
-  quality: 1
-  preserve_temperature: -18
-  rot_temperature: 4
-  spoil_time: 4
-  stale_time: 2
-- name: prickle_fruit
-  image_name: bristleberry
-  calories: 1600
-  quality: 0
-  preserve_temperature: -18
-  rot_temperature: 4
-  spoil_time: 8
-  stale_time: 4
-- name: swamp_fruit
-  image_name: swampcrop_fruit
-  calories: 1840
-  quality: 0
-  preserve_temperature: -18
-  rot_temperature: 4
-  spoil_time: 4
-  stale_time: 2
-- name: fish_meat
-  image_name: pacufillet
-  calories: 1000
-  quality: 2
-  preserve_temperature: -18
-  rot_temperature: 4
-  spoil_time: 4
-  stale_time: 2
-  effects:
-  - seafood_radiation_resistance
-- name: shellfish_meat
-  image_name: shellfish
-  calories: 1000
-  quality: 2
-  preserve_temperature: -18
-  rot_temperature: 4
-  spoil_time: 4
-  stale_time: 2
-  effects:
-  - seafood_radiation_resistance
-- name: worm_basic_fruit
-  image_name: wormwood_basic_fruit
-  calories: 800
-  quality: 0
-  preserve_temperature: -18
-  rot_temperature: 4
-  spoil_time: 8
-  stale_time: 4
-- name: worm_super_fruit
-  image_name: wormwood_super_fruits
-  calories: 250
-  quality: 1
-  preserve_temperature: -18
-  rot_temperature: 4
-  spoil_time: 4
-  stale_time: 2
-- name: pickled_meal
-  image_name: pickledmeal
-  calories: 1800
-  quality: -1
-  preserve_temperature: -18
-  rot_temperature: 4
-  spoil_time: 32
-  stale_time: 16
-- name: basic_plant_bar
-  image_name: liceloaf
-  calories: 1700
-  quality: 0
-  preserve_temperature: -18
-  rot_temperature: 4
-  spoil_time: 8
-  stale_time: 4
-- name: fried_mush_bar
-  image_name: mushbarfried
-  calories: 1050
-  quality: 0
-  preserve_temperature: -18
-  rot_temperature: 4
-  spoil_time: 8
-  stale_time: 4
-- name: gamma_mush
-  image_name: mushbarfried
-  calories: 1050
-  quality: 1
-  preserve_temperature: -18
-  rot_temperature: 4
-  spoil_time: 4
-  stale_time: 2
-- name: grilled_prickle_fruit
-  image_name: gristleberry
-  calories: 2000
-  quality: 1
-  preserve_temperature: -18
-  rot_temperature: 4
-  spoil_time: 8
-  stale_time: 4
-- name: swamp_delights
-  image_name: swamp_delights
-  calories: 2240
-  quality: 1
-  preserve_temperature: -18
-  rot_temperature: 4
-  spoil_time: 8
-  stale_time: 4
-- name: fried_mushroom
-  image_name: funguscapfried
-  calories: 2800
-  quality: 1
-  preserve_temperature: -18
-  rot_temperature: 4
-  spoil_time: 8
-  stale_time: 4
 - name: cold_wheat_bread
   image_name: frostbread
   calories: 1200
@@ -196,6 +57,14 @@
   rot_temperature: 4
   spoil_time: 8
   stale_time: 4
+- name: cold_wheat_seed
+  image_name: seed_coldwheat
+  calories: 0
+  quality: 0
+  preserve_temperature: 10
+  rot_temperature: 35
+  spoil_time: 16
+  stale_time: 8
 - name: cooked_egg
   image_name: cookedegg
   calories: 2800
@@ -222,22 +91,58 @@
   rot_temperature: 4
   spoil_time: 4
   stale_time: 2
-- name: worm_basic_food
-  image_name: wormwood_roast_nuts
-  calories: 1200
+- name: curry
+  image_name: curried_beans
+  calories: 5000
+  quality: 4
+  preserve_temperature: -18
+  rot_temperature: 4
+  spoil_time: 16
+  stale_time: 8
+  effects:
+  - hot_stuff
+- name: field_ration
+  image_name: fieldration
+  calories: 800
+  quality: -1
+  preserve_temperature: -18
+  rot_temperature: 4
+  spoil_time: 32
+  stale_time: 16
+- name: fish_meat
+  image_name: pacufillet
+  calories: 1000
+  quality: 2
+  preserve_temperature: -18
+  rot_temperature: 4
+  spoil_time: 4
+  stale_time: 2
+  effects:
+  - seafood_radiation_resistance
+- name: forest_forage_plant
+  image_name: podmelon_fruit
+  calories: 6400
+  quality: -1
+  preserve_temperature: -18
+  rot_temperature: 4
+  spoil_time: 8
+  stale_time: 4
+- name: fried_mush_bar
+  image_name: mushbarfried
+  calories: 1050
+  quality: 0
+  preserve_temperature: -18
+  rot_temperature: 4
+  spoil_time: 8
+  stale_time: 4
+- name: fried_mushroom
+  image_name: funguscapfried
+  calories: 2800
   quality: 1
   preserve_temperature: -18
   rot_temperature: 4
   spoil_time: 8
   stale_time: 4
-- name: worm_super_food
-  image_name: wormwood_preserved_berries
-  calories: 2400
-  quality: 3
-  preserve_temperature: -18
-  rot_temperature: 4
-  spoil_time: 32
-  stale_time: 16
 - name: fruit_cake
   image_name: fruitcake
   calories: 4000
@@ -246,10 +151,154 @@
   rot_temperature: 4
   spoil_time: 32
   stale_time: 16
+- name: gamma_mush
+  image_name: mushbarfried
+  calories: 1050
+  quality: 1
+  preserve_temperature: -18
+  rot_temperature: 4
+  spoil_time: 4
+  stale_time: 2
+- name: grilled_prickle_fruit
+  image_name: gristleberry
+  calories: 2000
+  quality: 1
+  preserve_temperature: -18
+  rot_temperature: 4
+  spoil_time: 8
+  stale_time: 4
+- name: lettuce
+  image_name: sea_lettuce_leaves
+  calories: 400
+  quality: 0
+  preserve_temperature: -18
+  rot_temperature: 4
+  spoil_time: 4
+  stale_time: 2
+  effects:
+  - seafood_radiation_resistance
+- name: meat
+  image_name: creaturemeat
+  calories: 1600
+  quality: -1
+  preserve_temperature: -18
+  rot_temperature: 4
+  spoil_time: 8
+  stale_time: 4
+- name: mush_bar
+  image_name: mushbar
+  calories: 800
+  quality: -1
+  preserve_temperature: -18
+  rot_temperature: 4
+  spoil_time: 8
+  stale_time: 4
+- name: mushroom
+  image_name: funguscap
+  calories: 2400
+  quality: 0
+  preserve_temperature: -18
+  rot_temperature: 4
+  spoil_time: 8
+  stale_time: 4
+- name: mushroom_wrap
+  image_name: mushroom_wrap
+  calories: 4800
+  quality: 4
+  preserve_temperature: -18
+  rot_temperature: 4
+  spoil_time: 4
+  stale_time: 2
+  effects:
+  - seafood_radiation_resistance
+- name: pancakes
+  image_name: stackedpancakes
+  calories: 3600
+  quality: 3
+  preserve_temperature: -18
+  rot_temperature: 4
+  spoil_time: 8
+  stale_time: 4
+- name: pickled_meal
+  image_name: pickledmeal
+  calories: 1800
+  quality: -1
+  preserve_temperature: -18
+  rot_temperature: 4
+  spoil_time: 32
+  stale_time: 16
+- name: plant_meat
+  image_name: critter_trap_fruit
+  calories: 1200
+  quality: 1
+  preserve_temperature: -18
+  rot_temperature: 4
+  spoil_time: 4
+  stale_time: 2
+- name: prickle_fruit
+  image_name: bristleberry
+  calories: 1600
+  quality: 0
+  preserve_temperature: -18
+  rot_temperature: 4
+  spoil_time: 8
+  stale_time: 4
+- name: quiche
+  image_name: quiche
+  calories: 6400
+  quality: 5
+  preserve_temperature: -18
+  rot_temperature: 4
+  spoil_time: 4
+  stale_time: 2
+  effects:
+  - seafood_radiation_resistance
+- name: raw_egg
+  image_name: rawegg
+  calories: 1600
+  quality: -1
+  preserve_temperature: -18
+  rot_temperature: 4
+  spoil_time: 8
+  stale_time: 4
 - name: salsa
   image_name: zestysalsa
   calories: 4400
   quality: 4
+  preserve_temperature: -18
+  rot_temperature: 4
+  spoil_time: 4
+  stale_time: 2
+- name: shellfish_meat
+  image_name: shellfish
+  calories: 1000
+  quality: 2
+  preserve_temperature: -18
+  rot_temperature: 4
+  spoil_time: 4
+  stale_time: 2
+  effects:
+  - seafood_radiation_resistance
+- name: spice_bread
+  image_name: pepperbread
+  calories: 4000
+  quality: 5
+  preserve_temperature: -18
+  rot_temperature: 4
+  spoil_time: 8
+  stale_time: 4
+- name: spice_nut
+  image_name: spicenut
+  calories: 0
+  quality: 0
+  preserve_temperature: -18
+  rot_temperature: 4
+  spoil_time: 4
+  stale_time: 2
+- name: spicy_tofu
+  image_name: spicey_tofu
+  calories: 4000
+  quality: 5
   preserve_temperature: -18
   rot_temperature: 4
   spoil_time: 4
@@ -264,16 +313,30 @@
   stale_time: 2
   effects:
   - seafood_radiation_resistance
-- name: mushroom_wrap
-  image_name: mushroom_wrap
-  calories: 4800
-  quality: 4
+- name: swamp_delights
+  image_name: swamp_delights
+  calories: 2240
+  quality: 1
+  preserve_temperature: -18
+  rot_temperature: 4
+  spoil_time: 8
+  stale_time: 4
+- name: swamp_forage_plant
+  image_name: swamptuber_vegetable
+  calories: 2400
+  quality: -1
+  preserve_temperature: -18
+  rot_temperature: 4
+  spoil_time: 8
+  stale_time: 4
+- name: swamp_fruit
+  image_name: swampcrop_fruit
+  calories: 1840
+  quality: 0
   preserve_temperature: -18
   rot_temperature: 4
   spoil_time: 4
   stale_time: 2
-  effects:
-  - seafood_radiation_resistance
 - name: tofu
   image_name: loafu
   calories: 3600
@@ -282,80 +345,35 @@
   rot_temperature: 4
   spoil_time: 4
   stale_time: 2
-- name: spice_bread
-  image_name: pepperbread
-  calories: 4000
-  quality: 5
+- name: worm_basic_food
+  image_name: wormwood_roast_nuts
+  calories: 1200
+  quality: 1
   preserve_temperature: -18
   rot_temperature: 4
   spoil_time: 8
   stale_time: 4
-- name: spicy_tofu
-  image_name: spicey_tofu
-  calories: 4000
-  quality: 5
+- name: worm_basic_fruit
+  image_name: wormwood_basic_fruit
+  calories: 800
+  quality: 0
   preserve_temperature: -18
   rot_temperature: 4
-  spoil_time: 4
-  stale_time: 2
-- name: curry
-  image_name: curried_beans
-  calories: 5000
-  quality: 4
-  preserve_temperature: -18
-  rot_temperature: 4
-  spoil_time: 16
-  stale_time: 8
-  effects:
-  - hot_stuff
-- name: berry_pie
-  image_name: wormwood_berry_pie
-  calories: 4200
-  quality: 5
-  preserve_temperature: -18
-  rot_temperature: 4
-  spoil_time: 4
-  stale_time: 2
-- name: burger
-  image_name: frost_burger
-  calories: 6000
-  quality: 6
-  preserve_temperature: -18
-  rot_temperature: 4
-  spoil_time: 4
-  stale_time: 2
-  effects:
-  - good_eats
-  - seafood_radiation_resistance
-- name: bean_plant_seed
-  image_name: seed_beanplant
-  calories: 0
+  spoil_time: 8
+  stale_time: 4
+- name: worm_super_food
+  image_name: wormwood_preserved_berries
+  calories: 2400
   quality: 3
   preserve_temperature: -18
   rot_temperature: 4
-  spoil_time: 8
-  stale_time: 4
-- name: spice_nut
-  image_name: spicenut
-  calories: 0
-  quality: 0
+  spoil_time: 32
+  stale_time: 16
+- name: worm_super_fruit
+  image_name: wormwood_super_fruits
+  calories: 250
+  quality: 1
   preserve_temperature: -18
   rot_temperature: 4
   spoil_time: 4
   stale_time: 2
-- name: cold_wheat_seed
-  image_name: seed_coldwheat
-  calories: 0
-  quality: 0
-  preserve_temperature: 10
-  rot_temperature: 35
-  spoil_time: 16
-  stale_time: 8
-- name: raw_egg
-  image_name: rawegg
-  calories: 0
-  quality: -1
-  preserve_temperature: -18
-  rot_temperature: 4
-  spoil_time: 8
-  stale_time: 4

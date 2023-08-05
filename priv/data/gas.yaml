@@ -456,7 +456,7 @@ elements:
     radiationPer1000Mass: 0
     materialCategory: Unbreathable
     tags:
-    isDisabled: false
+    isDisabled: true
     state: Gas
     localizationID: STRINGS.ELEMENTS.PROPANE.NAME
     dlcId: ""
