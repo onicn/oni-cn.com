@@ -104,8 +104,27 @@ defmodule Onicn do
   end
 
   def guess_name(str) do
+    do_guess_blunt(str) || do_guess_critter(str)
+  end
+
+  defp do_guess_blunt(str) do
     [Elements, Buildings, Foods, Plants, Others]
     |> Enum.map(&Module.concat(&1, Macro.camelize(str)))
     |> Enum.find(&Code.ensure_loaded?/1)
+  end
+
+  defp do_guess_critter(str) do
+    egg? = String.ends_with?(str, "_egg")
+    name = String.trim_trailing(str, "_egg")
+
+    Onicn.Categories.Critter.__species__()
+    |> Enum.map(& &1.__critters__)
+    |> Enum.concat()
+    |> Enum.find(fn module -> module.__attributes__()[:name] == name end)
+    |> case do
+      nil -> nil
+      module when egg? -> {:egg, module}
+      module -> module
+    end
   end
 end
