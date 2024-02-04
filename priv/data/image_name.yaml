@@ -473,7 +473,7 @@
   image_name: yellowcake
   is_solid: true
 - name: solid_ethanol
-  image_name: ice
+  image_name: ethanol
   is_solid: true
 - name: solid_syngas
   image_name: solid_hydrogen

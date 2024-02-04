@@ -2386,7 +2386,10 @@ elements:
     lightAbsorptionFactor: 1
     radiationAbsorptionFactor: 0.7
     radiationPer1000Mass: 0
+    materialCategory: Liquifiable
     tags:
+    - IceOre
+    - BuildableAny
     buildMenuSort: 1
     isDisabled: false
     state: Solid

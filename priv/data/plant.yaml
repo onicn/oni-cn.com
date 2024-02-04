@@ -43,7 +43,7 @@
   decor_radius: 2
   max_cycles: 3
   produce_crop: basic_plant_food
-  produce_crop_cn: 米虱
+  produce_crop_cn: BasicPlantFood
   produce_crop_num: 1
   seed: basic_single_harvest_plant_seed
   seed_image_name: seed_meallice
@@ -182,7 +182,7 @@
   decor_radius: 2
   max_cycles: 30
   produce_crop: plant_meat
-  produce_crop_cn: 植物肉
+  produce_crop_cn: PlantMeat
   produce_crop_num: 10
   seed: critter_trap_plant_seed
   seed_image_name: seed_critter_trap

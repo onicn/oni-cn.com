@@ -317,6 +317,126 @@
 - name: egg_cracker
   recipes:
   - require:
+    - material_id: squirrel_egg
+      amount: 1
+    produce:
+    - material_id: raw_egg
+      amount: 1
+    - material_id: egg_shell
+      amount: 1
+  - require:
+    - material_id: squirrel_hug_egg
+      amount: 1
+    produce:
+    - material_id: raw_egg
+      amount: 1
+    - material_id: egg_shell
+      amount: 1
+  - require:
+    - material_id: staterpillar_egg
+      amount: 1
+    produce:
+    - material_id: raw_egg
+      amount: 1
+    - material_id: egg_shell
+      amount: 1
+  - require:
+    - material_id: staterpillar_liquid_egg
+      amount: 1
+    produce:
+    - material_id: raw_egg
+      amount: 1
+    - material_id: egg_shell
+      amount: 1
+  - require:
+    - material_id: puft_egg
+      amount: 1
+    produce:
+    - material_id: raw_egg
+      amount: 0.25
+    - material_id: egg_shell
+      amount: 0.25
+  - require:
+    - material_id: drecko_egg
+      amount: 1
+    produce:
+    - material_id: raw_egg
+      amount: 1
+    - material_id: egg_shell
+      amount: 1
+  - require:
+    - material_id: drecko_plastic_egg
+      amount: 1
+    produce:
+    - material_id: raw_egg
+      amount: 1
+    - material_id: egg_shell
+      amount: 1
+  - require:
+    - material_id: light_bug_black_egg
+      amount: 1
+    produce:
+    - material_id: raw_egg
+      amount: 0.1
+    - material_id: egg_shell
+      amount: 0.1
+  - require:
+    - material_id: light_bug_blue_egg
+      amount: 1
+    produce:
+    - material_id: raw_egg
+      amount: 0.1
+    - material_id: egg_shell
+      amount: 0.1
+  - require:
+    - material_id: light_bug_egg
+      amount: 1
+    produce:
+    - material_id: raw_egg
+      amount: 0.1
+    - material_id: egg_shell
+      amount: 0.1
+  - require:
+    - material_id: puft_oxylite_egg
+      amount: 1
+    produce:
+    - material_id: raw_egg
+      amount: 0.25
+    - material_id: egg_shell
+      amount: 0.25
+  - require:
+    - material_id: light_bug_crystal_egg
+      amount: 1
+    produce:
+    - material_id: raw_egg
+      amount: 0.1
+    - material_id: egg_shell
+      amount: 0.1
+  - require:
+    - material_id: light_bug_pink_egg
+      amount: 1
+    produce:
+    - material_id: raw_egg
+      amount: 0.1
+    - material_id: egg_shell
+      amount: 0.1
+  - require:
+    - material_id: light_bug_purple_egg
+      amount: 1
+    produce:
+    - material_id: raw_egg
+      amount: 0.1
+    - material_id: egg_shell
+      amount: 0.1
+  - require:
+    - material_id: mole_egg
+      amount: 1
+    produce:
+    - material_id: raw_egg
+      amount: 1
+    - material_id: egg_shell
+      amount: 1
+  - require:
     - material_id: mole_delicacy_egg
       amount: 1
     produce:
@@ -365,45 +485,13 @@
     - material_id: egg_shell
       amount: 0.25
   - require:
-    - material_id: mole_egg
+    - material_id: light_bug_orange_egg
       amount: 1
     produce:
     - material_id: raw_egg
-      amount: 1
+      amount: 0.1
     - material_id: egg_shell
-      amount: 1
-  - require:
-    - material_id: puft_egg
-      amount: 1
-    produce:
-    - material_id: raw_egg
-      amount: 0.25
-    - material_id: egg_shell
-      amount: 0.25
-  - require:
-    - material_id: puft_oxylite_egg
-      amount: 1
-    produce:
-    - material_id: raw_egg
-      amount: 0.25
-    - material_id: egg_shell
-      amount: 0.25
-  - require:
-    - material_id: squirrel_egg
-      amount: 1
-    produce:
-    - material_id: raw_egg
-      amount: 1
-    - material_id: egg_shell
-      amount: 1
-  - require:
-    - material_id: squirrel_hug_egg
-      amount: 1
-    produce:
-    - material_id: raw_egg
-      amount: 1
-    - material_id: egg_shell
-      amount: 1
+      amount: 0.1
   - require:
     - material_id: staterpillar_gas_egg
       amount: 1
@@ -413,7 +501,7 @@
     - material_id: egg_shell
       amount: 1
   - require:
-    - material_id: staterpillar_liquid_egg
+    - material_id: hatch_veggie_egg
       amount: 1
     produce:
     - material_id: raw_egg
@@ -421,87 +509,7 @@
     - material_id: egg_shell
       amount: 1
   - require:
-    - material_id: light_bug_purple_egg
-      amount: 1
-    produce:
-    - material_id: raw_egg
-      amount: 0.1
-    - material_id: egg_shell
-      amount: 0.1
-  - require:
-    - material_id: drecko_egg
-      amount: 1
-    produce:
-    - material_id: raw_egg
-      amount: 1
-    - material_id: egg_shell
-      amount: 1
-  - require:
-    - material_id: drecko_plastic_egg
-      amount: 1
-    produce:
-    - material_id: raw_egg
-      amount: 1
-    - material_id: egg_shell
-      amount: 1
-  - require:
-    - material_id: light_bug_pink_egg
-      amount: 1
-    produce:
-    - material_id: raw_egg
-      amount: 0.1
-    - material_id: egg_shell
-      amount: 0.1
-  - require:
-    - material_id: light_bug_orange_egg
-      amount: 1
-    produce:
-    - material_id: raw_egg
-      amount: 0.1
-    - material_id: egg_shell
-      amount: 0.1
-  - require:
-    - material_id: light_bug_crystal_egg
-      amount: 1
-    produce:
-    - material_id: raw_egg
-      amount: 0.1
-    - material_id: egg_shell
-      amount: 0.1
-  - require:
-    - material_id: light_bug_egg
-      amount: 1
-    produce:
-    - material_id: raw_egg
-      amount: 0.1
-    - material_id: egg_shell
-      amount: 0.1
-  - require:
-    - material_id: light_bug_blue_egg
-      amount: 1
-    produce:
-    - material_id: raw_egg
-      amount: 0.1
-    - material_id: egg_shell
-      amount: 0.1
-  - require:
-    - material_id: light_bug_black_egg
-      amount: 1
-    produce:
-    - material_id: raw_egg
-      amount: 0.1
-    - material_id: egg_shell
-      amount: 0.1
-  - require:
-    - material_id: staterpillar_egg
-      amount: 1
-    produce:
-    - material_id: raw_egg
-      amount: 1
-    - material_id: egg_shell
-      amount: 1
-  - require:
-    - material_id: hatch_hard_egg
+    - material_id: hatch_egg
       amount: 1
     produce:
     - material_id: raw_egg
@@ -517,14 +525,6 @@
     - material_id: egg_shell
       amount: 1
   - require:
-    - material_id: crab_fresh_water_egg
-      amount: 1
-    produce:
-    - material_id: raw_egg
-      amount: 1
-    - material_id: egg_shell
-      amount: 1
-  - require:
     - material_id: crab_wood_egg
       amount: 1
     produce:
@@ -533,47 +533,7 @@
     - material_id: egg_shell
       amount: 1
   - require:
-    - material_id: divergent_beetle_egg
-      amount: 1
-    produce:
-    - material_id: raw_egg
-      amount: 1
-    - material_id: egg_shell
-      amount: 1
-  - require:
-    - material_id: pacu_egg
-      amount: 1
-    produce:
-    - material_id: raw_egg
-      amount: 2
-    - material_id: egg_shell
-      amount: 2
-  - require:
-    - material_id: divergent_worm_egg
-      amount: 1
-    produce:
-    - material_id: raw_egg
-      amount: 1
-    - material_id: egg_shell
-      amount: 1
-  - require:
-    - material_id: pacu_tropical_egg
-      amount: 1
-    produce:
-    - material_id: raw_egg
-      amount: 2
-    - material_id: egg_shell
-      amount: 2
-  - require:
-    - material_id: hatch_veggie_egg
-      amount: 1
-    produce:
-    - material_id: raw_egg
-      amount: 1
-    - material_id: egg_shell
-      amount: 1
-  - require:
-    - material_id: hatch_metal_egg
+    - material_id: crab_fresh_water_egg
       amount: 1
     produce:
     - material_id: raw_egg
@@ -589,13 +549,53 @@
     - material_id: egg_shell
       amount: 2
   - require:
-    - material_id: hatch_egg
+    - material_id: divergent_beetle_egg
       amount: 1
     produce:
     - material_id: raw_egg
       amount: 1
     - material_id: egg_shell
       amount: 1
+  - require:
+    - material_id: hatch_hard_egg
+      amount: 1
+    produce:
+    - material_id: raw_egg
+      amount: 1
+    - material_id: egg_shell
+      amount: 1
+  - require:
+    - material_id: pacu_tropical_egg
+      amount: 1
+    produce:
+    - material_id: raw_egg
+      amount: 2
+    - material_id: egg_shell
+      amount: 2
+  - require:
+    - material_id: divergent_worm_egg
+      amount: 1
+    produce:
+    - material_id: raw_egg
+      amount: 1
+    - material_id: egg_shell
+      amount: 1
+  - require:
+    - material_id: hatch_metal_egg
+      amount: 1
+    produce:
+    - material_id: raw_egg
+      amount: 1
+    - material_id: egg_shell
+      amount: 1
+  - require:
+    - material_id: pacu_egg
+      amount: 1
+    produce:
+    - material_id: raw_egg
+      amount: 2
+    - material_id: egg_shell
+      amount: 2
 - name: electrolyzer
   recipes:
   - require:
@@ -636,6 +636,105 @@
     - material_id: fertilizer
       min_temp: 50
       rate: 0.12
+- name: food_dehydrator
+  recipes:
+  - require:
+    - material_id: salsa
+      amount: 1.363636
+    - material_id: polypropylene
+      amount: 12
+    produce:
+    - material_id: dehydrated_salsa
+      amount: 6
+    - material_id: water
+      amount: 6
+  - require:
+    - material_id: mushroom_wrap
+      amount: 1.25
+    - material_id: polypropylene
+      amount: 12
+    produce:
+    - material_id: dehydrated_mushroom_wrap
+      amount: 6
+    - material_id: water
+      amount: 6
+  - require:
+    - material_id: surf_and_turf
+      amount: 1
+    - material_id: polypropylene
+      amount: 12
+    produce:
+    - material_id: dehydrated_surf_and_turf
+      amount: 6
+    - material_id: water
+      amount: 6
+  - require:
+    - material_id: spice_bread
+      amount: 1.5
+    - material_id: polypropylene
+      amount: 12
+    produce:
+    - material_id: dehydrated_spice_bread
+      amount: 6
+    - material_id: water
+      amount: 6
+  - require:
+    - material_id: quiche
+      amount: 0.9375
+    - material_id: polypropylene
+      amount: 12
+    produce:
+    - material_id: dehydrated_quiche
+      amount: 6
+    - material_id: water
+      amount: 6
+  - require:
+    - material_id: curry
+      amount: 1.2
+    - material_id: polypropylene
+      amount: 12
+    produce:
+    - material_id: dehydrated_curry
+      amount: 6
+    - material_id: water
+      amount: 6
+  - require:
+    - material_id: spicy_tofu
+      amount: 1.5
+    - material_id: polypropylene
+      amount: 12
+    produce:
+    - material_id: dehydrated_spicy_tofu
+      amount: 6
+    - material_id: water
+      amount: 6
+  - require:
+    - material_id: burger
+      amount: 1
+    - material_id: polypropylene
+      amount: 12
+    produce:
+    - material_id: dehydrated_food_package
+      amount: 6
+    - material_id: water
+      amount: 6
+  - require:
+    - material_id: berry_pie
+      amount: 1.428571
+    - material_id: polypropylene
+      amount: 12
+    produce:
+    - material_id: dehydrated_berry_pie
+      amount: 6
+    - material_id: water
+      amount: 6
+  - require:
+    - material_id: methane
+      rate: 0.02
+    produce:
+    - material_id: carbon_dioxide
+      min_temp: 75
+      rate: 0.005
 - name: fossil_dig
   recipes:
   - require:

@@ -1258,6 +1258,11 @@
     kcal_per_kg: 100
     produced_conversion_rate: 5
     eats_plants_directly: true
+- name: morb_rover
+  image_name: morbrover
+  hp: 100
+  can_drown: false
+  entombable: false
 - name: oilfloater
   image_name: oilfloater
   decor: 15
@@ -1388,103 +1393,51 @@
   diet:
   - consume: algae
     produce: toxic_sand
-    kcal_per_kg: 0.7
-    produced_conversion_rate: 0.5
-  - consume: worm_plant_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: wine_cups_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: toe_plant_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: swamp_lily_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: swamp_harvest_plant_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
+    kcal_per_kg: 13.3
     produced_conversion_rate: 0.5
   - consume: basic_fabric_material_plant_seed
     produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: spice_vine_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: sea_lettuce_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: salt_plant_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: forest_tree_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: filter_plant_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: evil_flower_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: cylindrica_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: critter_trap_plant_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: cold_breather_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: cactus_plant_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: bulb_plant_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
+    kcal_per_kg: 100
     produced_conversion_rate: 0.5
   - consume: basic_single_harvest_plant_seed
     produce: toxic_sand
-    kcal_per_kg: 400
+    kcal_per_kg: 100
     produced_conversion_rate: 0.5
   - consume: gas_grass_seed
     produce: toxic_sand
-    kcal_per_kg: 400
+    kcal_per_kg: 100
     produced_conversion_rate: 0.5
-  - consume: prickle_grass_seed
+  - consume: salt_plant_seed
     produce: toxic_sand
-    kcal_per_kg: 400
+    kcal_per_kg: 100
     produced_conversion_rate: 0.5
   - consume: prickle_flower_seed
     produce: toxic_sand
-    kcal_per_kg: 400
+    kcal_per_kg: 100
     produced_conversion_rate: 0.5
-  - consume: leafy_plant_seed
+  - consume: sea_lettuce_seed
     produce: toxic_sand
-    kcal_per_kg: 400
+    kcal_per_kg: 100
     produced_conversion_rate: 0.5
-  - consume: oxyfern_seed
+  - consume: spice_vine_seed
     produce: toxic_sand
-    kcal_per_kg: 400
+    kcal_per_kg: 100
+    produced_conversion_rate: 0.5
+  - consume: swamp_harvest_plant_seed
+    produce: toxic_sand
+    kcal_per_kg: 100
+    produced_conversion_rate: 0.5
+  - consume: swamp_lily_seed
+    produce: toxic_sand
+    kcal_per_kg: 100
+    produced_conversion_rate: 0.5
+  - consume: worm_plant_seed
+    produce: toxic_sand
+    kcal_per_kg: 100
     produced_conversion_rate: 0.5
   - consume: mushroom_seed
     produce: toxic_sand
-    kcal_per_kg: 400
+    kcal_per_kg: 100
     produced_conversion_rate: 0.5
 - name: pacu_cleaner
   image_name: pacu_glp
@@ -1517,103 +1470,51 @@
   diet:
   - consume: algae
     produce: toxic_sand
-    kcal_per_kg: 0.7
-    produced_conversion_rate: 0.5
-  - consume: worm_plant_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: wine_cups_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: toe_plant_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: swamp_lily_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: swamp_harvest_plant_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
+    kcal_per_kg: 13.3
     produced_conversion_rate: 0.5
   - consume: basic_fabric_material_plant_seed
     produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: spice_vine_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: sea_lettuce_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: salt_plant_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: forest_tree_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: filter_plant_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: evil_flower_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: cylindrica_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: critter_trap_plant_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: cold_breather_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: cactus_plant_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: bulb_plant_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
+    kcal_per_kg: 100
     produced_conversion_rate: 0.5
   - consume: basic_single_harvest_plant_seed
     produce: toxic_sand
-    kcal_per_kg: 400
+    kcal_per_kg: 100
     produced_conversion_rate: 0.5
   - consume: gas_grass_seed
     produce: toxic_sand
-    kcal_per_kg: 400
+    kcal_per_kg: 100
     produced_conversion_rate: 0.5
-  - consume: prickle_grass_seed
+  - consume: salt_plant_seed
     produce: toxic_sand
-    kcal_per_kg: 400
+    kcal_per_kg: 100
     produced_conversion_rate: 0.5
   - consume: prickle_flower_seed
     produce: toxic_sand
-    kcal_per_kg: 400
+    kcal_per_kg: 100
     produced_conversion_rate: 0.5
-  - consume: leafy_plant_seed
+  - consume: sea_lettuce_seed
     produce: toxic_sand
-    kcal_per_kg: 400
+    kcal_per_kg: 100
     produced_conversion_rate: 0.5
-  - consume: oxyfern_seed
+  - consume: spice_vine_seed
     produce: toxic_sand
-    kcal_per_kg: 400
+    kcal_per_kg: 100
+    produced_conversion_rate: 0.5
+  - consume: swamp_harvest_plant_seed
+    produce: toxic_sand
+    kcal_per_kg: 100
+    produced_conversion_rate: 0.5
+  - consume: swamp_lily_seed
+    produce: toxic_sand
+    kcal_per_kg: 100
+    produced_conversion_rate: 0.5
+  - consume: worm_plant_seed
+    produce: toxic_sand
+    kcal_per_kg: 100
     produced_conversion_rate: 0.5
   - consume: mushroom_seed
     produce: toxic_sand
-    kcal_per_kg: 400
+    kcal_per_kg: 100
     produced_conversion_rate: 0.5
 - name: pacu_tropical
   image_name: pacu_trp
@@ -1646,103 +1547,51 @@
   diet:
   - consume: algae
     produce: toxic_sand
-    kcal_per_kg: 0.7
-    produced_conversion_rate: 0.5
-  - consume: worm_plant_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: wine_cups_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: toe_plant_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: swamp_lily_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: swamp_harvest_plant_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
+    kcal_per_kg: 13.3
     produced_conversion_rate: 0.5
   - consume: basic_fabric_material_plant_seed
     produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: spice_vine_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: sea_lettuce_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: salt_plant_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: forest_tree_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: filter_plant_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: evil_flower_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: cylindrica_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: critter_trap_plant_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: cold_breather_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: cactus_plant_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
-    produced_conversion_rate: 0.5
-  - consume: bulb_plant_seed
-    produce: toxic_sand
-    kcal_per_kg: 400
+    kcal_per_kg: 100
     produced_conversion_rate: 0.5
   - consume: basic_single_harvest_plant_seed
     produce: toxic_sand
-    kcal_per_kg: 400
+    kcal_per_kg: 100
     produced_conversion_rate: 0.5
   - consume: gas_grass_seed
     produce: toxic_sand
-    kcal_per_kg: 400
+    kcal_per_kg: 100
     produced_conversion_rate: 0.5
-  - consume: prickle_grass_seed
+  - consume: salt_plant_seed
     produce: toxic_sand
-    kcal_per_kg: 400
+    kcal_per_kg: 100
     produced_conversion_rate: 0.5
   - consume: prickle_flower_seed
     produce: toxic_sand
-    kcal_per_kg: 400
+    kcal_per_kg: 100
     produced_conversion_rate: 0.5
-  - consume: leafy_plant_seed
+  - consume: sea_lettuce_seed
     produce: toxic_sand
-    kcal_per_kg: 400
+    kcal_per_kg: 100
     produced_conversion_rate: 0.5
-  - consume: oxyfern_seed
+  - consume: spice_vine_seed
     produce: toxic_sand
-    kcal_per_kg: 400
+    kcal_per_kg: 100
+    produced_conversion_rate: 0.5
+  - consume: swamp_harvest_plant_seed
+    produce: toxic_sand
+    kcal_per_kg: 100
+    produced_conversion_rate: 0.5
+  - consume: swamp_lily_seed
+    produce: toxic_sand
+    kcal_per_kg: 100
+    produced_conversion_rate: 0.5
+  - consume: worm_plant_seed
+    produce: toxic_sand
+    kcal_per_kg: 100
     produced_conversion_rate: 0.5
   - consume: mushroom_seed
     produce: toxic_sand
-    kcal_per_kg: 400
+    kcal_per_kg: 100
     produced_conversion_rate: 0.5
 - name: puft
   image_name: puft
