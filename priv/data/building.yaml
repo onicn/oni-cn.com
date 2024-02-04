@@ -1,4 +1,13 @@
 - name: advanced_apothecary
+  desc: 有些药物有助于预防疾病，有些则用于缓解现有的疾病。
+  effect: >-
+    生产药物以治疗大多数基本疾病。
+
+
+    复制人必须具有药物配制技能才能制作药物。
+
+
+    只有在队列中安排配方复制人才会进行制作。
   image_name: medicine_nuclear
   base_decor_radius: 1
   construction_time: 240
@@ -16,6 +25,12 @@
   materials:
   - refined_metal
 - name: advanced_doctor_station
+  desc: 病诊站需要电力，但能治疗比医务站更严重的疾病。
+  effect: >-
+    允许复制人向生病的复制人施用强力药物。
+
+
+    复制人必须具有高级医疗护理技能才能治疗同伴。
   image_name: bed_medical
   base_decor_radius: 1
   category: medical
@@ -35,6 +50,15 @@
   materials:
   - refined_metal
 - name: advanced_research_center
+  desc: 超级计算机可解锁比研究站更高级的技术。
+  effect: >-
+    执行高级研究以解锁新技术。
+
+
+    消耗水。
+
+
+    分配的复制人必须具有高级研究技能。
   image_name: research_center2
   base_decor_radius: 1
   category: equipment
@@ -54,6 +78,8 @@
   materials:
   - metal
 - name: air_conditioner
+  desc: 温度调节器不能减少热量，只能把热量转到其他地方。
+  effect: 冷却通入的气体，但会向周围环境散发热量。
   image_name: airconditioner
   base_decor_radius: 1
   category: utilities
@@ -74,6 +100,8 @@
   materials:
   - metal
 - name: air_filter
+  desc: 哦！是清新的柑橘香！
+  effect: 使用沙子以过滤空气中的污染氧，降低疾病传播风险。
   image_name: co2filter
   base_decor_radius: 1
   category: oxygen
@@ -92,6 +120,12 @@
   materials:
   - buildable_raw
 - name: airborne_creature_lure
+  desc: 诱惑器可以将喷浮飞鱼或发光虫移至我的基地的特定位置。
+  effect: >-
+    一次吸引一种类型的飞行小动物。
+
+
+    必须以菌泥或磷矿为诱饵。
   image_name: airbornecreaturetrap
   base_decor: -15
   base_decor_radius: 3
@@ -110,6 +144,8 @@
   materials:
   - plastic
 - name: algae_distillery
+  desc: 藻类蒸馏器将容易致病的菌泥变成藻类，以供氧气生产。
+  effect: 将菌泥提炼为藻类。
   image_name: algae_distillery
   base_decor: -10
   base_decor_radius: 2
@@ -129,6 +165,12 @@
   materials:
   - metal
 - name: algae_habitat
+  desc: 藻类群体，复制群体……我们只是，大同小异。
+  effect: >-
+    消耗藻类以产生氧气并去除一些二氧化碳。
+
+
+    在光照下可提升10%的效率。
   image_name: algaefarm
   base_decor: -10
   base_decor_radius: 2
@@ -147,6 +189,15 @@
   materials:
   - farmable
 - name: apothecary
+  desc: 有些药物有助于预防疾病，有些则用于缓解现有的疾病。
+  effect: >-
+    生产药物以治疗大多数基本疾病。
+
+
+    复制人必须具有药物配制技能才能制作药物。
+
+
+    只有在队列中安排配方复制人才会进行制作。
   image_name: apothecary
   base_decor_radius: 1
   category: medical
@@ -166,6 +217,15 @@
   materials:
   - metal
 - name: arcade_machine
+  desc: >-
+    彗星碰撞大冒险！
+
+    可供最多两名玩家使用。
+  effect: >-
+    允许复制人在休息时间能够玩电子游戏。
+
+
+    提升复制人的士气。
   image_name: arcade_cabinet
   base_decor: 10
   base_decor_radius: 2
@@ -186,6 +246,8 @@
   materials:
   - refined_metal
 - name: artifact_analysis_station
+  desc: 查明过去的秘密。
+  effect: 分析遗迹工艺品，并除去其表面的中子质。
   image_name: artifact_analysis
   base_decor: -15
   base_decor_radius: 3
@@ -206,6 +268,15 @@
   materials:
   - metal
 - name: artifact_cargo_bay
+  desc: 保存太空中发现的工艺品。
+  effect: >-
+    允许复制人储存在太空任务中找到的任何工艺品。
+
+
+    火箭返回后，工艺品便可供殖民地取用。
+
+
+    必须通过火箭平台建造。
   image_name: artifact_transport_module
   base_decor_radius: 1
   construction_time: 60
@@ -223,6 +294,12 @@
   materials:
   - refined_metal
 - name: astronaut_training_center
+  desc: 复制人必须完成宇航员训练才能驾驶太空火箭。
+  effect: >-
+    训练复制人成为宇航员。
+
+
+    复制人必须具有宇航员特质才能接受训练。
   image_name: centrifuge
   base_decor_radius: 1
   category: equipment
@@ -261,6 +338,8 @@
   materials:
   - metal
 - name: auto_miner
+  desc: 选择建筑即可随时查看自动采矿机的工作范围。
+  effect: 自动挖掘一定范围内的所有材料。
   image_name: auto_miner
   base_decor: -15
   base_decor_radius: 3
@@ -268,7 +347,7 @@
   construction_time: 10
   entombable: true
   replaceable: true
-  is_industrial_machinery: false
+  is_industrial_machinery: true
   overheatable: true
   overheat_temperature: 75
   heat_generate: 2
@@ -280,6 +359,12 @@
   materials:
   - refined_metal
 - name: battery
+  desc: 电池可以将发电机产生的电量储存起来供以后使用。
+  effect: >-
+    储存发电机产生的电力，然后向建筑提供电力。
+
+
+    电量会随着时间流失。
   image_name: batterysm
   base_decor: -10
   base_decor_radius: 2
@@ -299,6 +384,12 @@
   materials:
   - metal
 - name: battery_medium
+  desc: 更大的电池可以保存更多电量，并且供电时间更长。
+  effect: >-
+    储存发电机产生的电力，然后向建筑提供电力。
+
+
+    电量会随着时间少量流失。
   image_name: batterymed
   base_decor: -15
   base_decor_radius: 3
@@ -317,6 +408,18 @@
   materials:
   - metal
 - name: battery_module
+  desc: 在起飞前为电池舱充电，在飞行过程中就更容易为建筑供电了。
+  effect: >-
+    储存由火箭引擎生成的或来自火箭平台的额外电力。
+
+
+    将储存的电力提供给内部火箭插座。
+
+
+    电量会随着时间流失。
+
+
+    必须通过火箭平台建造。
   image_name: rocket_battery_pack
   base_decor_radius: 1
   construction_time: 30
@@ -334,6 +437,15 @@
   materials:
   - metal
 - name: battery_smart
+  desc: 需要充电时，智能电池会输出绿色信号。
+  effect: >-
+    储存发电机产生的电力，然后向建筑提供电力。
+
+
+    根据逻辑激活参数的设定，输出绿色信号或红色信号。
+
+
+    电量会随着时间极少量流失。
   image_name: smartbattery
   base_decor: -15
   base_decor_radius: 3
@@ -352,6 +464,12 @@
   materials:
   - refined_metal
 - name: beach_chair
+  desc: 沉浸在令人放松的日光中。
+  effect: >-
+    复制人可以通过躺在阳光下得以放松。
+
+
+    提升复制人的士气。
   image_name: beach_chair
   base_decor: 25
   base_decor_radius: 5
@@ -372,6 +490,12 @@
   - buildable_raw
   - building_fiber
 - name: bed
+  desc: 如果没有床，复制人会因为睡在地面上而腰酸背痛。
+  effect: >-
+    为复制人提供的睡觉之处。
+
+
+    到了晚上，复制人会自动返回到床铺上睡觉。
   image_name: bedlg
   base_decor_radius: 1
   category: furniture
@@ -389,6 +513,8 @@
   materials:
   - buildable_raw
 - name: bottle_emptier
+  desc: 使用空瓶器的元素筛选项，可在特定区域存储指定液体。
+  effect: 将瓶装液体倒回世界中。
   image_name: liquidator
   base_decor: -10
   base_decor_radius: 2
@@ -406,6 +532,8 @@
   materials:
   - buildable_raw
 - name: bottle_emptier_gas
+  desc: 使用空罐器的元素筛选项，可在特定区域存储指定气体。
+  effect: 将储气罐中的气体倒回世界中。
   image_name: gas_emptying_station
   base_decor: -15
   base_decor_radius: 3
@@ -423,6 +551,12 @@
   materials:
   - refined_metal
 - name: bunker_door
+  desc: 一扇移动缓慢但相当结实的大门，几乎坚不可摧。
+  effect: >-
+    阻挡液体和气体流动，维持各区域间的压力。
+
+
+    可承受极高的压力和冲击。
   image_name: door_bunker
   base_decor_radius: 1
   category: base
@@ -441,6 +575,12 @@
   materials:
   - steel
 - name: bunker_tile
+  desc: 地堡砖可用于在原本危险环境中建造坚固的庇护所。
+  effect: >-
+    用来建造房间的墙体和地面。
+
+
+    可承受极高的压力和冲击。
   image_name: floor_bunker
   base_decor: 5
   base_decor_radius: 1
@@ -457,6 +597,12 @@
   materials:
   - steel
 - name: canvas
+  desc: 建好后，复制人可以在空白画布上绘制装饰画。
+  effect: >-
+    提高装饰度，从而提升士气。
+
+
+    必须由复制人绘制。
   image_name: painting_off
   base_decor: 10
   base_decor_radius: 6
@@ -475,6 +621,12 @@
   - metal
   - building_fiber
 - name: canvas_tall
+  desc: 建好后，复制人可以在空白画布上绘制装饰画。
+  effect: >-
+    适中地提高装饰度，从而提升士气。
+
+
+    必须由复制人绘制。
   image_name: painting_tall_off
   base_decor: 15
   base_decor_radius: 6
@@ -493,6 +645,12 @@
   - metal
   - building_fiber
 - name: canvas_wide
+  desc: 建好后，复制人可以在空白画布上绘制装饰画。
+  effect: >-
+    适中地提高装饰度，从而提升士气。
+
+
+    必须由复制人绘制。
   image_name: painting_wide_off
   base_decor: 15
   base_decor_radius: 6
@@ -511,6 +669,12 @@
   - metal
   - building_fiber
 - name: cargo_bay
+  desc: 复制人会把他们在太空任务中找到的任何资源装入货舱。
+  effect: >-
+    允许复制人储存在太空任务中找到的任何固体资源。
+
+
+    火箭返回后，所储存的资源便可供殖民地使用。
   image_name: rocket_storage_solid
   base_decor_radius: 1
   category: rocketry
@@ -530,6 +694,15 @@
   - buildable_raw
   - steel
 - name: cargo_bay_cluster
+  desc: 比常规的货舱能携带更多东西。
+  effect: >-
+    允许复制人储存在太空任务中找到的大部分固体资源。
+
+
+    火箭返回后，所储存的资源便可供殖民地使用。
+
+
+    必须通过火箭平台建造。
   image_name: rocket_cluster_storage_solid
   base_decor_radius: 1
   construction_time: 60
@@ -547,6 +720,12 @@
   materials:
   - steel
 - name: carpet_tile
+  desc: 复制人走在上面软软的。
+  effect: >-
+    用来建造房间的墙体和地面。
+
+
+    提高装饰度，从而提升士气。
   image_name: floor_carpet
   base_decor: 20
   base_decor_radius: 4
@@ -564,6 +743,12 @@
   - buildable_raw
   - building_fiber
 - name: ceiling_light
+  desc: 光照可以减少复制人的压力，并且是某些植物生长的必备条件。
+  effect: >-
+    通电时提供光照。
+
+
+    在光线范围内复制人工作速度加快。
   image_name: ceilinglight
   base_decor_radius: 1
   category: furniture
@@ -583,6 +768,12 @@
   materials:
   - metal
 - name: checkpoint
+  desc: 检查站可连接自动化传感器，从而确定何时可以安全进入。
+  effect: >-
+    当接收到绿色信号时，允许复制人通过。
+
+
+    当接收到红色信号时，阻止复制人通过。
   image_name: checkpoint
   base_decor: 10
   base_decor_radius: 2
@@ -602,6 +793,8 @@
   materials:
   - refined_metal
 - name: chlorinator
+  desc: 漂白石可用于卫生和地质调谐。
+  effect: 使用盐和金生产漂白石。
   image_name: chlorinator
   base_decor: -15
   base_decor_radius: 3
@@ -622,6 +815,12 @@
   materials:
   - refined_metal
 - name: clothing_alteration_station
+  desc: 允许熟练的复制人为自己的衣柜加一些个性化风格。
+  effect: >-
+    将新潮时装升级为精致装束。
+
+
+    只有在队列中安排配方复制人才会进行制作。
   image_name: super_snazzy_suit_alteration_station
   base_decor_radius: 1
   category: equipment
@@ -629,7 +828,7 @@
   entombable: true
   floodable: true
   replaceable: true
-  is_industrial_machinery: true
+  is_industrial_machinery: false
   overheatable: true
   overheat_temperature: 75
   heat_generate: 0
@@ -641,6 +840,12 @@
   materials:
   - refined_metal
 - name: clothing_fabricator
+  desc: 纺织机可以将芦苇纤维织成复制人的服装。
+  effect: >-
+    为复制人裁剪服装。
+
+
+    只有在队列中安排配方复制人才会进行制作。
   image_name: clothingfactory
   base_decor_radius: 1
   category: equipment
@@ -648,7 +853,7 @@
   entombable: true
   floodable: true
   replaceable: true
-  is_industrial_machinery: true
+  is_industrial_machinery: false
   overheatable: true
   overheat_temperature: 75
   heat_generate: 0
@@ -660,6 +865,15 @@
   materials:
   - refined_metal
 - name: cluster_telescope
+  desc: 望远镜是研究太空的必要工具，允许火箭探索其他星球。
+  effect: >-
+    揭示太空中可前往的小行星。
+
+
+    分配的复制人必须具有天文学技能。
+
+
+    建筑必须暴露在太空中才能运作。
   image_name: telescope_low
   base_decor_radius: 1
   category: rocketry
@@ -679,6 +893,18 @@
   materials:
   - metal
 - name: cluster_telescope_enclosed
+  desc: 望远镜是研究太空的必要工具，允许火箭探索其他星球。
+  effect: >-
+    揭示太空中可前往的小行星……以更舒服的方式！
+
+
+    分配的复制人必须具有天文学技能。
+
+
+    优良晒伤保护（100%），部分辐射保护（50%）。
+
+
+    建筑必须暴露在太空中才能运作。
   image_name: telescope
   base_decor_radius: 1
   category: rocketry
@@ -698,6 +924,18 @@
   materials:
   - metal
 - name: co2_engine
+  desc: 火箭可用来将复制人送入太空，以便获取稀有资源。
+  effect: >-
+    使用加压的二氧化碳以推动火箭进行太空探索。
+
+
+    二氧化碳引擎由于不大所以速度较快，但高度很受限。
+
+
+    引擎必须通过火箭平台建造。
+
+
+    建好引擎后，可以添加更多的火箭舱块。
   image_name: rocket_co2_engine
   base_decor_radius: 1
   construction_time: 30
@@ -715,6 +953,8 @@
   materials:
   - metal
 - name: co2_scrubber
+  desc: 脱离器可以移除大量的二氧化碳，但不会产生可呼吸的空气。
+  effect: 使用水来过滤空气中的二氧化碳。
   image_name: co2scrubber
   base_decor: -10
   base_decor_radius: 2
@@ -735,6 +975,12 @@
   materials:
   - metal
 - name: comet_detector
+  desc: 相比单独一台扫描仪，许多扫描仪组成的网络可以更有效地进行扫描。
+  effect: >-
+    当探测到太空来袭的物体时向自动化电路输出绿色信号。
+
+
+    可以用于探测来袭的流星雨或返回的太空火箭。
   image_name: meteor_detector
   base_decor: -5
   base_decor_radius: 1
@@ -754,6 +1000,12 @@
   materials:
   - refined_metal
 - name: command_module
+  desc: 必须分配至少一名宇航员到指挥舱去驾驶火箭。
+  effect: >-
+    包括供复制人宇航员使用的乘员座位。
+
+
+    指挥舱必须是安装在火箭顶部的最后一个舱块。
   image_name: rocket_command_module
   base_decor_radius: 1
   category: rocketry
@@ -772,6 +1024,8 @@
   materials:
   - steel
 - name: compost
+  desc: 堆肥堆可以安全地处理生物废物，产生新鲜泥土。
+  effect: 将污染土和其他可堆肥物降解成泥土。
   image_name: compost
   base_decor: -20
   base_decor_radius: 4
@@ -790,6 +1044,15 @@
   materials:
   - buildable_raw
 - name: contact_conductive_pipe_bridge
+  desc: 即使没有液体通过，导热板也能有效地传导热量。
+  effect: >-
+    输送液体，允许对与之重叠的建筑进行大幅热量交换。
+
+
+    可在真空中生效。
+
+
+    可穿过墙体和地面。
   image_name: contactconductivepipebridge
   base_decor_radius: 1
   category: plumbing
@@ -805,6 +1068,12 @@
   materials:
   - refined_metal
 - name: cooking_station
+  desc: 适当的烹饪可以消除通过食物传播的疾病，并带来减压的美味食物。
+  effect: >-
+    烹饪种类繁多的改良食物。
+
+
+    只有在队列中安排配方复制人才会进行制作。
   image_name: cookstation
   base_decor_radius: 1
   category: food
@@ -825,6 +1094,12 @@
   materials:
   - metal
 - name: corner_moulding
+  desc: 角落饰物是天花板角落的纯装饰性增添物。
+  effect: >-
+    用来装饰房间的天花板角落。
+
+
+    提高装饰度，从而提升士气。
   image_name: corner_tile
   base_decor: 5
   base_decor_radius: 3
@@ -842,6 +1117,15 @@
   materials:
   - buildable_raw
 - name: cosmic_research_center
+  desc: 天象仪可以模拟望远镜发现的地点。
+  effect: >-
+    执行星际研究以解锁新技术。
+
+
+    消耗来自研究舱的数据。
+
+
+    分配的复制人必须具有天文学技能。
   image_name: research_space
   base_decor_radius: 1
   category: equipment
@@ -861,6 +1145,12 @@
   materials:
   - metal
 - name: crafting_table
+  desc: 工作台可以让复制人制作在低氧区域穿戴的氧气面罩。
+  effect: >-
+    为复制人生产可供使用的物品和装备。
+
+
+    只有在队列中安排配方复制人才会进行制作。
   image_name: craftingstation
   base_decor_radius: 1
   category: equipment
@@ -868,7 +1158,7 @@
   entombable: true
   floodable: true
   replaceable: true
-  is_industrial_machinery: true
+  is_industrial_machinery: false
   overheatable: true
   overheat_temperature: 75
   heat_generate: 0
@@ -880,6 +1170,12 @@
   materials:
   - metal
 - name: creature_air_trap
+  desc: 陷阱使用前需要布置。
+  effect: >-
+    吸引并捕捉飞行小动物。
+
+
+    只有具有小动物养殖 I技能的复制人才能布置陷阱。可重复使用！
   image_name: critter_trap_air
   base_decor: -15
   base_decor_radius: 3
@@ -899,6 +1195,12 @@
   materials:
   - metal
 - name: creature_delivery_point
+  desc: 复制人会自动将捕获的小动物带到这些放生点放生。
+  effect: >-
+    将捕捉的小动物放回到世界中。
+
+
+    可重复使用。
   image_name: relocator_dropoff
   base_decor: -15
   base_decor_radius: 3
@@ -918,6 +1220,8 @@
   materials:
   - metal
 - name: creature_feeder
+  desc: 小动物倾向于靠近食物源，提供喂食器后小动物不容易乱跑。
+  effect: 自动为饥饿的小动物提供食物。
   image_name: feeder
   base_decor: -15
   base_decor_radius: 3
@@ -937,6 +1241,12 @@
   materials:
   - metal
 - name: creature_ground_trap
+  desc: 这是为陆地小动物设计的，但有时挣扎的鱼也会误入其中。
+  effect: >-
+    活捉一只小动物以便运输。
+
+
+    只有具有小动物养殖 I技能的复制人才能布置陷阱。可重复使用！
   image_name: critter_trap_ground
   base_decor: -15
   base_decor_radius: 3
@@ -955,6 +1265,12 @@
   materials:
   - metal
 - name: creature_trap
+  desc: 小动物陷阱无法捕捉水中或空中的小动物。
+  effect: >-
+    活捉一只小动物以便运输。
+
+
+    一次性使用。
   image_name: creaturetrap
   base_decor: -15
   base_decor_radius: 3
@@ -988,7 +1304,35 @@
   generator_base_capacity: 0
   materials:
   - steel
+- name: critter_condo
+  desc: 拥有美好的东西真不错。
+  effect: 提供放松的休息区以提升小动物的幸福度。
+  image_name: critter_condo
+  base_decor: 20
+  base_decor_radius: 4
+  category: food
+  construction_time: 120
+  entombable: true
+  floodable: true
+  replaceable: true
+  is_industrial_machinery: false
+  overheatable: true
+  overheat_temperature: 75
+  heat_generate: 0
+  height_in_cells: 3
+  width_in_cells: 3
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - buildable_raw
+  - building_fiber
 - name: crown_moulding
+  desc: 天花板饰件是头顶区域的纯装饰性增添物。
+  effect: >-
+    用来装饰房间的天花板。
+
+
+    提高装饰度，从而提升士气。
   image_name: crown_moulding
   base_decor: 5
   base_decor_radius: 3
@@ -1006,6 +1350,12 @@
   materials:
   - buildable_raw
 - name: decontamination_shower
+  desc: 别忘了清理耳朵后面。
+  effect: >-
+    使用水移除病菌和辐射。
+
+
+    复制人和其衣物都会被净化。
   image_name: decontamination_shower
   base_decor: -20
   base_decor_radius: 4
@@ -1026,6 +1376,8 @@
   - metal
   - lead
 - name: desalinator
+  desc: 盐可以提炼为食盐，用于在进餐时提升士气。
+  effect: 从浓盐水或盐水中移除盐，产生水。
   image_name: desalinator
   base_decor: -5
   base_decor_radius: 1
@@ -1045,6 +1397,8 @@
   materials:
   - metal
 - name: dev_generator
+  desc: 来杯咖啡就能用。
+  effect: 全天生成用于测试的电力。
   image_name: dev_generator
   base_decor: -15
   base_decor_radius: 3
@@ -1063,6 +1417,8 @@
   materials:
   - metal
 - name: dev_hepspawner
+  desc: 辐射粒子对于材料科学研究是十分必要的。
+  effect: 生成辐射粒子。
   image_name: dev_radbolt_generator
   base_decor: -10
   base_decor_radius: 2
@@ -1079,6 +1435,8 @@
   materials:
   - buildable_raw
 - name: dev_life_support
+  desc: 保持复制人呼吸顺畅。
+  effect: 生成温和富氧的空气。
   image_name: dev_life_support
   base_decor: -20
   base_decor_radius: 4
@@ -1095,7 +1453,33 @@
   generator_base_capacity: 0
   materials:
   - buildable_raw
+- name: dev_light_generator
+  desc: 照亮开发者最黑暗的时刻。
+  effect: 按需产生可调光。
+  image_name: dev_generator
+  base_decor: -15
+  base_decor_radius: 3
+  category: furniture
+  construction_time: 3
+  entombable: true
+  replaceable: true
+  is_industrial_machinery: false
+  overheatable: true
+  overheat_temperature: 75
+  heat_generate: 0
+  height_in_cells: 1
+  width_in_cells: 1
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - metal
 - name: dev_pump_gas
+  desc: 用管道将泵的输出口和另一个建筑的输入口连接，气体就会被送到那个建筑中。
+  effect: >-
+    抽取气体并通过管道输送。
+
+
+    必须浸没在气体中。
   image_name: dev_pump_gas
   base_decor: -10
   base_decor_radius: 2
@@ -1112,6 +1496,12 @@
   materials:
   - metal
 - name: dev_pump_liquid
+  desc: 用管道将泵的输出口和另一个建筑的输入口连接，液体就会被送到那个建筑中。
+  effect: >-
+    抽取液体并通过管道输送。
+
+
+    必须浸没在液体中。
   image_name: dev_pump_liquid
   base_decor: -10
   base_decor_radius: 2
@@ -1128,6 +1518,8 @@
   materials:
   - metal
 - name: dev_pump_solid
+  desc: 用轨道将泵的输出口和另一个建筑的输入口连接，固体就会被送到那个建筑中。
+  effect: 生成选定的固体材料并将其送入运输轨道
   image_name: dev_pump_solid
   base_decor: -10
   base_decor_radius: 2
@@ -1144,6 +1536,8 @@
   materials:
   - metal
 - name: dev_radiation_generator
+  desc: 这种咖啡，<b>浓</b>。
+  effect: 按需生成辐射，非常轻松。
   image_name: dev_generator
   base_decor: -15
   base_decor_radius: 3
@@ -1161,6 +1555,12 @@
   materials:
   - metal
 - name: diamond_press
+  desc: 将精炼碳挤压成钻石。
+  effect: >-
+    使用电力和辐射粒子将精炼碳挤压成钻石。
+
+
+    只有在队列中安排配方且已发现精炼碳，复制人才会进行制作。
   image_name: diamond_press
   base_decor: -15
   base_decor_radius: 3
@@ -1169,7 +1569,7 @@
   entombable: true
   floodable: true
   replaceable: true
-  is_industrial_machinery: false
+  is_industrial_machinery: true
   overheatable: true
   overheat_temperature: 75
   heat_generate: 16
@@ -1181,6 +1581,12 @@
   materials:
   - metal
 - name: dining_table
+  desc: 复制人更喜欢坐在餐桌旁吃饭，而不是坐在地上吃饭。
+  effect: >-
+    为复制人提供吃饭的地方。
+
+
+    饿了的复制人会自动来到分配给他们的餐桌旁吃饭。
   image_name: diningtable
   base_decor: 10
   base_decor_radius: 2
@@ -1199,6 +1605,12 @@
   materials:
   - metal
 - name: dlc1_cosmic_research_center
+  desc: 天象仪可以模拟数据磁盘中记录的探索地点。
+  effect: >-
+    进行数据分析研究以解锁新技术。
+
+
+    消耗探索产生的数据磁盘。
   image_name: research_space
   base_decor_radius: 1
   category: equipment
@@ -1218,6 +1630,12 @@
   materials:
   - metal
 - name: doctor_station
+  desc: 医务站可以放置于医院中以降低疾病传播的可能性。
+  effect: >-
+    允许复制人向生病的复制人施用基础药物。
+
+
+    复制人必须具有病床礼仪技能才能治疗同伴。
   image_name: treatment_chair
   base_decor_radius: 1
   category: medical
@@ -1235,6 +1653,12 @@
   materials:
   - buildable_raw
 - name: door
+  desc: 门控系统可以用于阻止复制人进入受限区域。
+  effect: >-
+    封闭区域，但不能阻挡液体或气体流动。
+
+
+    野生小动物无法通过门。
   image_name: door_internal
   base_decor_radius: 1
   category: base
@@ -1252,6 +1676,15 @@
   materials:
   - metal
 - name: egg_cracker
+  desc: 生蛋是某些高品质食品配方中的原料。
+  effect: >-
+    将可孵化的小动物蛋转化为烹饪原料。
+
+
+    破裂的蛋无法孵化。
+
+
+    只有在队列中安排配方复制人才会进行打蛋。
   image_name: egg_cracker
   base_decor: 5
   base_decor_radius: 1
@@ -1271,6 +1704,12 @@
   materials:
   - metal
 - name: egg_incubator
+  desc: 孵化器可以为几种小动物蛋提供理想的孵化环境。
+  effect: >-
+    温育小动物蛋直至孵化。
+
+
+    分配的复制人必须具有小动物养殖特质。
   image_name: incubator
   base_decor: 5
   base_decor_radius: 1
@@ -1291,6 +1730,12 @@
   materials:
   - refined_metal
 - name: electrolyzer
+  desc: 一端进水，另一端出来维持生命的氧气。
+  effect: >-
+    将水转化为氧气和氢气。
+
+
+    当区域的气压达到最大时将会闲置。
   image_name: electrolyzer
   base_decor: -10
   base_decor_radius: 2
@@ -1311,6 +1756,12 @@
   materials:
   - metal
 - name: espresso_machine
+  desc: 一杯浓缩咖啡可以帮助复制人在度过漫长的一天后放松下来。
+  effect: >-
+    在休息时间为复制人提神。
+
+
+    提升复制人的士气。
   image_name: espresso_machine
   base_decor: 10
   base_decor_radius: 2
@@ -1331,6 +1782,8 @@
   materials:
   - refined_metal
 - name: ethanol_distillery
+  desc: 乙醇蒸馏器将木料转化为可燃的乙醇燃料。
+  effect: 将木料提炼为乙醇。
   image_name: ethanoldistillery
   base_decor: -10
   base_decor_radius: 2
@@ -1350,6 +1803,12 @@
   materials:
   - metal
 - name: exobase_headquarters
+  desc: 一个快速且简易的替代品，然而它从未达到过原品水准。
+  effect: >-
+    一种便携式的生物打印机，能生产新复制人或包含资源的补给包裹。
+
+
+    每颗小行星只允许有一个打印舱或迷你舱。
   image_name: porta_pod_y
   base_decor: 30
   base_decor_radius: 6
@@ -1367,6 +1826,12 @@
   materials:
   - buildable_raw
 - name: exterior_wall
+  desc: 干板墙可以与砖块一同使用，用于在地表建造密闭空间。
+  effect: >-
+    防止空间中的气体和液体流失。
+
+
+    在建筑后面建造隔离背景墙。
   image_name: walls
   base_decor: 10
   category: base
@@ -1382,6 +1847,8 @@
   materials:
   - buildable_raw
 - name: facility_back_wall_window
+  desc: ''
+  effect: 一扇高而薄的窗户。
   image_name: gravitas_window
   base_decor: 25
   base_decor_radius: 4
@@ -1398,6 +1865,15 @@
   materials:
   - glass
 - name: farm_station
+  desc: 这个站只对种在同一个房间里的农作物有影响。
+  effect: >-
+    生产微肥以提升植物生长速度。
+
+
+    分配的复制人必须具有作物照料特质。
+
+
+    这个建筑是温室的必要组成部分。
   image_name: planttender
   base_decor_radius: 1
   category: equipment
@@ -1415,6 +1891,12 @@
   materials:
   - metal
 - name: farm_tile
+  desc: 复制人可以搬运养料和液体到土培砖，加速植物生长。
+  effect: >-
+    将种子培育成植物。
+
+
+    可用作地砖，建造前可旋转。
   image_name: farmtilerotating
   base_decor_radius: 1
   category: food
@@ -1430,6 +1912,8 @@
   materials:
   - farmable
 - name: fertilizer_maker
+  desc: 肥料合成器可将污染水变成肥料以便培育植物。
+  effect: 使用污染水和磷矿生产肥料。
   image_name: fertilizer_maker
   base_decor: -15
   base_decor_radius: 3
@@ -1450,6 +1934,12 @@
   materials:
   - metal
 - name: fire_pole
+  desc: 将其与梯子造在一起以便更高效地上下移动。
+  effect: >-
+    供复制人快速向下滑行。
+
+
+    会显著降低向上爬行的速度。
   image_name: firepole
   base_decor: -5
   base_decor_radius: 1
@@ -1466,6 +1956,12 @@
   materials:
   - metal
 - name: fish_delivery_point
+  desc: 鱼类放生点必须建在液体上方，以防止鱼类窒息。
+  effect: >-
+    将陷阱捉到的的帕库鱼放回世界中。
+
+
+    可重复使用。
   image_name: fishrelocator
   base_decor: -15
   base_decor_radius: 3
@@ -1485,6 +1981,12 @@
   materials:
   - metal
 - name: fish_feeder
+  desc: 在水上搭建喂食器，以喂养水中的鱼类。
+  effect: >-
+    自动将储存的小动物食物投入下方。
+
+
+    食物消耗后会持续投放。
   image_name: fishfeeder
   base_decor: -15
   base_decor_radius: 3
@@ -1504,6 +2006,12 @@
   materials:
   - metal
 - name: fish_trap
+  desc: 自动打包捕获的鱼类，以便运输。
+  effect: >-
+    吸引并捕获游动的帕库鱼。
+
+
+    一次性使用。
   image_name: fishtrap
   base_decor: -15
   base_decor_radius: 3
@@ -1521,6 +2029,12 @@
   materials:
   - plastic
 - name: floor_lamp
+  desc: 任何建筑的光照范围可在光照概览中查看。
+  effect: >-
+    通电时提供光照。
+
+
+    在光线范围内复制人工作速度加快。
   image_name: floorlamp
   base_decor: 10
   base_decor_radius: 2
@@ -1541,6 +2055,12 @@
   materials:
   - metal
 - name: floor_switch
+  desc: 压力板可以用于只有复制人通过的时候才开启的设备。
+  effect: >-
+    当上面有物体或复制人时，输出绿色信号。
+
+
+    不能由<link="ELEMENTSGAS">气体</link>或<link="ELEMENTSLIQUID">液体</link>触发。
   image_name: pressureswitch
   base_decor: -5
   base_decor_radius: 1
@@ -1557,6 +2077,12 @@
   materials:
   - refined_metal
 - name: flower_vase
+  desc: 可用花盆将装饰性植物移植到新的位置。
+  effect: >-
+    播下种子后，容纳单株植物生长。
+
+
+    可增加装饰度，提升士气。
   image_name: flowervase
   base_decor_radius: 1
   category: furniture
@@ -1573,6 +2099,15 @@
   materials:
   - buildable_raw
 - name: flower_vase_hanging
+  desc: 垂吊花盆可以给房间增加一些装饰度，而不会挡着地面上的建筑。
+  effect: >-
+    播下种子后，容纳单株植物生长。
+
+
+    提高装饰度，从而提升士气。
+
+
+    必须垂吊在天花板上。
   image_name: flowervase_hanging_basic
   base_decor_radius: 1
   category: furniture
@@ -1589,6 +2124,15 @@
   materials:
   - metal
 - name: flower_vase_hanging_fancy
+  desc: 透明花盆可垂吊在天花板上，具有极高的装饰度。
+  effect: >-
+    播下种子后，容纳单株植物生长。
+
+
+    提高装饰度，从而提升士气。
+
+
+    必须垂吊在天花板上。
   image_name: flowervase_hanging
   base_decor: 10
   base_decor_radius: 4
@@ -1606,6 +2150,15 @@
   materials:
   - transparent
 - name: flower_vase_wall
+  desc: 将植物放在挂盆中可为光秃秃的墙体增加一点装饰。
+  effect: >-
+    播下种子后，容纳单株植物生长。
+
+
+    提高装饰度，从而提升士气。
+
+
+    必须挂在墙体上。
   image_name: flowervase_wall
   base_decor_radius: 1
   category: furniture
@@ -1622,6 +2175,12 @@
   materials:
   - metal
 - name: flush_toilet
+  desc: 抽水马桶可以减少复制人通过皮肤接触到的病菌量，而且不用手动清空。
+  effect: >-
+    给予复制人一个解手的地方。
+
+
+    传播非常少的病菌。
   image_name: toiletflush
   base_decor: -10
   base_decor_radius: 2
@@ -1640,6 +2199,12 @@
   materials:
   - metal
 - name: flying_creature_bait
+  desc: 小动物诱饵吸引小动物的类型取决于建造的材料。
+  effect: >-
+    吸引一种飞行小动物。
+
+
+    一次性使用。
   image_name: airborne_critter_bait
   base_decor: -15
   base_decor_radius: 3
@@ -1658,7 +2223,61 @@
   materials:
   - metal
   - flying_critter_edible
+- name: food_dehydrator
+  desc: 一些脱除的液体不可避免地会洒在地上。
+  effect: >-
+    使用少量、均匀的热量除去符合条件的食物中的水分，并使其能稳定储存。
+
+
+    脱水的食物必须在充水机中处理才能食用。
+  image_name: dehydrator
+  base_decor_radius: 1
+  category: food
+  construction_time: 30
+  entombable: true
+  floodable: true
+  breakable: true
+  replaceable: true
+  is_industrial_machinery: true
+  overheatable: true
+  overheat_temperature: 75
+  heat_generate: 4
+  height_in_cells: 3
+  width_in_cells: 3
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - refined_metal
+  - plastic
+- name: food_rehydrator
+  desc: 再次充水的食物仍然营养丰富，但味道略差一点。
+  effect: 恢复包装食品的水分，使其转化为可食用的食物。
+  image_name: rehydrator
+  base_decor: 5
+  base_decor_radius: 1
+  category: food
+  construction_time: 120
+  entombable: true
+  replaceable: true
+  is_industrial_machinery: false
+  overheatable: true
+  overheat_temperature: 75
+  heat_generate: 0.5
+  height_in_cells: 2
+  width_in_cells: 1
+  power_consume: 60
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - refined_metal
+  - plastic
 - name: fossil_dig
+  desc: 它不是来自这里的。
+  effect: >-
+    含有一只巨型动物留下的化石。
+
+
+    研究完整骨架可以产生获得新有用资源的方法信息。
   image_name: fossil_dig
   base_decor: 10
   base_decor_radius: 2
@@ -1675,6 +2294,8 @@
   materials:
   - fossil
 - name: gantry
+  desc: 发射支架可以建造在无法使用梯子和砖块的火箭舱块之间。
+  effect: 提供跨越火箭舱块的脚手架，从而允许复制人通过。
   image_name: gantry
   base_decor_radius: 1
   category: rocketry
@@ -1694,6 +2315,8 @@
   materials:
   - steel
 - name: gas_bottler
+  desc: 气罐可以让复制人手动地运送气体。
+  effect: 将管道中的气体自动地灌入储气罐，以便人工运输。
   image_name: gas_bottler
   base_decor: -10
   base_decor_radius: 2
@@ -1712,6 +2335,12 @@
   materials:
   - metal
 - name: gas_cargo_bay
+  desc: 复制人会把他们在太空任务中找到的任何资源装入货舱。
+  effect: >-
+    允许复制人储存在太空任务中找到的任何气体资源。
+
+
+    火箭返回后，所储存的资源便可供殖民地使用。
   image_name: rocket_storage_gas
   base_decor_radius: 1
   category: rocketry
@@ -1730,6 +2359,15 @@
   materials:
   - steel
 - name: gas_cargo_bay_cluster
+  desc: 比常规的气罐货舱能携带更多东西。
+  effect: >-
+    允许复制人储存在太空任务中找到的大部分气体资源。
+
+
+    火箭返回后，所储存的资源便可供殖民地使用。
+
+
+    必须通过火箭平台建造。
   image_name: rocket_cluster_storage_gas
   base_decor_radius: 1
   construction_time: 60
@@ -1747,6 +2385,15 @@
   materials:
   - steel
 - name: gas_cargo_bay_small
+  desc: 复制人会把他们在太空任务中找到的任何资源装入货舱。
+  effect: >-
+    允许复制人储存在太空任务中找到的一些气体资源。
+
+
+    火箭返回后，所储存的资源便可供殖民地使用。
+
+
+    必须通过火箭平台建造。
   image_name: rocket_storage_gas_small
   base_decor_radius: 1
   construction_time: 30
@@ -1764,6 +2411,12 @@
   materials:
   - refined_metal
 - name: gas_conduit
+  desc: 气体管道可用来连接通风建筑的输入口和输出口。
+  effect: >-
+    在输出口和输入口之间输送气体。
+
+
+    可穿过墙体和地面。
   image_name: utilities_gas
   base_decor_radius: 1
   category: hvac
@@ -1779,6 +2432,12 @@
   materials:
   - buildable_raw
 - name: gas_conduit_bridge
+  desc: 分离管道系统可以防止建筑被混杂的内容物损坏。
+  effect: >-
+    让一条气体管道可以越过另一条气体管道，而不会连到一起。
+
+
+    可穿过墙体和地面。
   image_name: utilitygasbridge
   base_decor_radius: 1
   category: hvac
@@ -1794,6 +2453,8 @@
   materials:
   - buildable_raw
 - name: gas_conduit_disease_sensor
+  desc: 病菌传感器有助于检测病菌存在以控制自动化行为。
+  effect: 根据管内气体病菌数量，输出绿色信号或红色信号。
   image_name: gas_germs_sensor
   base_decor: -5
   base_decor_radius: 1
@@ -1811,6 +2472,8 @@
   - refined_metal
   - plastic
 - name: gas_conduit_element_sensor
+  desc: 元素传感器可用于探测管道内是否有特定气体存在。
+  effect: 当检测到管内有所选气体时，输出绿色信号。
   image_name: gas_element_sensor
   base_decor: -5
   base_decor_radius: 1
@@ -1827,6 +2490,8 @@
   materials:
   - refined_metal
 - name: gas_conduit_overflow
+  desc: 溢流阀可以用来选择优先让哪些建筑获得宝贵的资源。
+  effect: 仅当主输出口堵塞时，才用气体填充备用输出口。
   image_name: valvegas
   base_decor_radius: 1
   category: hvac
@@ -1843,6 +2508,8 @@
   materials:
   - buildable_raw
 - name: gas_conduit_preferential_flow
+  desc: 优先气流阀可确保先填充建筑群中的重要建筑。
+  effect: 当主输入口溢流时，将气体转向备用输入口。
   image_name: valvegas
   base_decor_radius: 1
   category: hvac
@@ -1859,6 +2526,12 @@
   materials:
   - buildable_raw
 - name: gas_conduit_radiant
+  desc: 泵入冷气体的导热管道可穿过炎热区域以帮助降温。
+  effect: >-
+    输送气体，允许与周围环境进行大幅热量交换。
+
+
+    可穿过墙体和地面。
   image_name: utilities_gas_radiant
   base_decor: -5
   base_decor_radius: 1
@@ -1875,6 +2548,8 @@
   materials:
   - metal
 - name: gas_conduit_temperature_sensor
+  desc: 温度传感器可在管道内容物达到特定温度时禁用某些建筑。
+  effect: 当管内气体温度达到选定范围内时，输出绿色信号或红色信号。
   image_name: gas_temperature_sensor
   base_decor: -5
   base_decor_radius: 1
@@ -1891,6 +2566,8 @@
   materials:
   - refined_metal
 - name: gas_filter
+  desc: 除所选的气体外，其他所有气体都会被送入输出管道。
+  effect: 从多种气体中分离出一种气体，将其送入专用管道。
   image_name: filter_gas
   base_decor: -5
   base_decor_radius: 1
@@ -1910,6 +2587,8 @@
   materials:
   - metal
 - name: gas_limit_valve
+  desc: 计量阀可以在通过精确量的气体后关闭。
+  effect: 连至自动化电路中，当特定量的气体通过后自动地阻断气体流通。
   image_name: limit_valve_gas
   base_decor: -5
   base_decor_radius: 1
@@ -1930,6 +2609,8 @@
   - refined_metal
   - plastic
 - name: gas_logic_valve
+  desc: 自动化管道免去了复制人的参与，从而可以节省电力和时间。
+  effect: 连至自动化电路中以自动地使气体流通或阻断。
   image_name: valvegas_logic
   base_decor: -5
   base_decor_radius: 1
@@ -1949,6 +2630,12 @@
   materials:
   - refined_metal
 - name: gas_mini_pump
+  desc: 小型气泵可以最少电力来抽取少量气体。
+  effect: >-
+    抽取少量气体并通过管道输送。
+
+
+    必须浸没在气体中。
   image_name: minigaspump
   base_decor: -10
   base_decor_radius: 2
@@ -1969,6 +2656,12 @@
   materials:
   - plastic
 - name: gas_permeable_membrane
+  desc: 建造透气砖可以为殖民地提供更好的空气流通性。
+  effect: >-
+    用来建造房间的墙体和地面。
+
+
+    阻挡液体流动而不阻挡气体流动。
   image_name: floor_gasperm
   base_decor: -5
   base_decor_radius: 1
@@ -1985,6 +2678,12 @@
   materials:
   - metal
 - name: gas_pump
+  desc: 用管道将泵的输出口和另一个建筑的输入口连接，气体就会被送到那个建筑中。
+  effect: >-
+    抽取气体并通过管道输送。
+
+
+    必须浸没在气体中。
   image_name: pumpgas
   base_decor: -10
   base_decor_radius: 2
@@ -2005,6 +2704,8 @@
   materials:
   - metal
 - name: gas_reservoir
+  desc: 储气库无法接收手动运送的资源。
+  effect: 储存任何经管道输送的气体资源。
   image_name: gasstorage
   base_decor: -10
   base_decor_radius: 2
@@ -2023,6 +2724,8 @@
   materials:
   - metal
 - name: gas_valve
+  desc: 阀门可以控制通过管道的气体量，避免浪费。
+  effect: 控制通过管道的气体量。
   image_name: valvegas
   base_decor: -5
   base_decor_radius: 1
@@ -2041,6 +2744,8 @@
   materials:
   - metal
 - name: gas_vent
+  desc: 排气口是通风系统的气体排出口。
+  effect: 排放气体管道中的气体。
   image_name: ventgas
   base_decor: -10
   base_decor_radius: 2
@@ -2058,6 +2763,8 @@
   materials:
   - metal
 - name: gas_vent_high_pressure
+  desc: 高压排气口可以在气压更高的环境下排出气体。
+  effect: 将气体管道中的气体排放到气压更高的位置。
   image_name: ventgas_powered
   base_decor: -10
   base_decor_radius: 2
@@ -2065,7 +2772,7 @@
   construction_time: 30
   entombable: true
   replaceable: true
-  is_industrial_machinery: false
+  is_industrial_machinery: true
   overheat_temperature: 75
   heat_generate: 0
   height_in_cells: 1
@@ -2076,6 +2783,12 @@
   - refined_metal
   - plastic
 - name: generator
+  desc: 燃煤能产生比人力发电机更多的电能，但会排放热量和废气。
+  effect: >-
+    将煤炭转化为电力。
+
+
+    产生二氧化碳。
   image_name: generatorphos
   base_decor: -15
   base_decor_radius: 3
@@ -2095,6 +2808,8 @@
   materials:
   - metal
 - name: generic_fabricator
+  desc: 全能打印机没有打印有机物的能力。
+  effect: 将矿物原料转化为独特的材料和物品。
   image_name: fabricator_generic
   base_decor: -15
   base_decor_radius: 3
@@ -2114,6 +2829,8 @@
   materials:
   - metal
 - name: genetic_analysis_station
+  desc: 变异的玫瑰还会芳香依旧吗？
+  effect: 鉴定新的种子亚种。
   image_name: genetic_analysisstation
   base_decor_radius: 1
   category: equipment
@@ -2134,6 +2851,12 @@
   materials:
   - metal
 - name: geo_tuner
+  desc: 目标间歇泉在喷发时会收到储存的放大数据。
+  effect: >-
+    提高已分析间歇泉的产出及其温度。
+
+
+    多个地质调谐仪可以指向小行星上的同一个间歇泉。
   image_name: geotuner
   base_decor_radius: 1
   category: equipment
@@ -2152,6 +2875,15 @@
   materials:
   - refined_metal
 - name: glass_forge
+  desc: 玻璃可用于建造窗户砖。
+  effect: >-
+    使用沙子原料生产熔融玻璃。
+
+
+    输出高温液体。
+
+
+    只有在队列中安排配方复制人才会进行制作。
   image_name: glassrefinery
   base_decor: -15
   base_decor_radius: 3
@@ -2172,6 +2904,12 @@
   materials:
   - buildable_raw
 - name: glass_tile
+  desc: 窗户砖可阻挡液体和气体，并且是完全透明的。
+  effect: >-
+    用来建造房间的墙体和地面。
+
+
+    可透过光线和装饰度。
   image_name: floor_glass
   base_decor: 5
   base_decor_radius: 1
@@ -2188,6 +2926,12 @@
   materials:
   - transparent
 - name: gourmet_cooking_station
+  desc: 奢侈的菜肴能提升复制人的士气并降低他们的压力。
+  effect: >-
+    烹饪种类繁多的高品质食物。
+
+
+    只有在队列中安排配方复制人才会进行制作。
   image_name: cookstation_gourmet
   base_decor_radius: 1
   category: food
@@ -2208,6 +2952,12 @@
   materials:
   - metal
 - name: grave
+  desc: 埋葬死去的复制人可降低殖民地的健康风险和压力。
+  effect: >-
+    为去世的复制人提供安息之所。
+
+
+    活着的复制人会自动将未埋葬的尸体置入其中。
   image_name: gravestone
   base_decor: -15
   base_decor_radius: 3
@@ -2225,6 +2975,12 @@
   materials:
   - buildable_raw
 - name: gravitas_container
+  desc: ''
+  effect: >-
+    一个储衣单元。
+
+
+    其中含有超柔软的睡衣。
   image_name: gravitas_container
   base_decor_radius: 1
   construction_time: 10
@@ -2240,6 +2996,12 @@
   materials:
   - metal
 - name: gravitas_creature_manipulator
+  desc: ''
+  effect: >-
+    一台实验性的DNA操纵器。
+
+
+    分析小动物以将其原始形态转化为随机的变种。
   image_name: gravitas_critter_manipulator
   base_decor: 15
   base_decor_radius: 3
@@ -2256,6 +3018,8 @@
   materials:
   - refined_metal
 - name: gravitas_door
+  desc: ''
+  effect: 一扇门，通往已经不存在的办公室。
   image_name: gravitas_door_internal
   base_decor_radius: 1
   construction_time: 10
@@ -2271,6 +3035,8 @@
   materials:
   - metal
 - name: gravitas_lab_light
+  desc: ''
+  effect: 一盏用于舒缓头脑的光疗灯。
   image_name: gravitas_lab_light
   base_decor_radius: 1
   construction_time: 10
@@ -2286,6 +3052,12 @@
   materials:
   - metal
 - name: gravitas_pedestal
+  desc: 一点体贴周到的展示就能彻底改变人们的看法。
+  effect: >-
+    展示单个物体，使装饰度加倍。
+
+
+    负装饰度的物体在展示时会获得一些正装饰度。
   image_name: gravitas_pedestal_nice
   base_decor: 5
   base_decor_radius: 1
@@ -2302,6 +3074,18 @@
   materials:
   - buildable_raw
 - name: habitat_module_medium
+  desc: 能够让复制人在太空旅行中生存下来……希望吧。
+  effect: >-
+    与指挥舱的作用一致。
+
+
+    能容纳最多十名复制人。
+
+
+    每个火箭可安装一个指挥舱。
+
+
+    必须通过火箭平台建造。
   image_name: rocket_habitat_medium_module
   base_decor_radius: 1
   construction_time: 60
@@ -2319,6 +3103,21 @@
   materials:
   - metal
 - name: habitat_module_small
+  desc: 一个幸运的复制人能够得到整个火箭最好的视野。
+  effect: >-
+    与指挥舱和前锥的作用一致。
+
+
+    能容纳一名复制人。
+
+
+    每个火箭可安装一个指挥舱。
+
+
+    必须通过火箭平台建造。
+
+
+    必须建在火箭的最顶端。
   image_name: rocket_nosecone
   base_decor_radius: 1
   construction_time: 60
@@ -2336,6 +3135,12 @@
   materials:
   - metal
 - name: hand_sanitizer
+  desc: 手部消毒站能比洗手盆更高效地杀死病菌。
+  effect: >-
+    移除复制人身上的大部分病菌。
+
+
+    当携带病菌的复制人通过选定方向时才会使用手部消毒站。
   image_name: handsanitizer
   base_decor: 10
   base_decor_radius: 2
@@ -2355,6 +3160,12 @@
   materials:
   - metal
 - name: headquarters
+  desc: 新复制人会从这里出来，但谢天谢地，他们永远都不会回去。
+  effect: >-
+    一种起源未知、超级先进的生物打印机。
+
+
+    它会定期产生新复制人或包含资源的补给包裹。
   image_name: hqbase
   base_decor: 30
   base_decor_radius: 6
@@ -2371,6 +3182,8 @@
   materials:
   - metal
 - name: heat_compressor
+  desc: “室温”是相对的，真的。
+  effect: 根据环境的空气温度相应地将液体加热或冷却。
   image_name: hqbase
   base_decor: 30
   base_decor_radius: 6
@@ -2388,6 +3201,15 @@
   materials:
   - metal
 - name: hepbattery
+  desc: 粒子就绪，准备发射。
+  effect: >-
+    储存高能量状态的辐射粒子以便传输。
+
+
+    当达到辐射粒子阈值时，需要绿色信号释放存储中的辐射粒子。
+
+
+    储存的辐射粒子在建筑禁用时会快速衰减。
   image_name: radbolt_battery
   base_decor: -15
   base_decor_radius: 3
@@ -2406,6 +3228,8 @@
   materials:
   - refined_metal
 - name: hepbridge_tile
+  desc: 允许辐射粒子穿墙而过。
+  effect: 接收来自辐射粒子发生器的辐射粒子并使其穿墙而过。其他材料和元素会被挡住。
   image_name: radbolt_joint_plate
   base_decor: -25
   base_decor_radius: 6
@@ -2422,6 +3246,18 @@
   materials:
   - plastic
 - name: hepengine
+  desc: 辐射粒子燃料火箭能支撑的舱块很少，但可以前往极远的地方。
+  effect: >-
+    向反应室注入辐射粒子以推动火箭进行太空探索。
+
+
+    辐射粒子引擎比液氢引擎更快，但高度较受限。
+
+
+    引擎必须通过火箭平台建造。
+
+
+    建好引擎后，可以添加更多的火箭舱块。
   image_name: rocket_hep_engine
   base_decor_radius: 1
   construction_time: 60
@@ -2439,6 +3275,8 @@
   materials:
   - steel
 - name: high_energy_particle_redirector
+  desc: 我们没有反射镜了。
+  effect: 将辐射粒子发生器产生的辐射粒子接收并变向。
   image_name: orb_transporter
   base_decor: -10
   base_decor_radius: 2
@@ -2456,6 +3294,15 @@
   materials:
   - buildable_raw
 - name: high_energy_particle_spawner
+  desc: 辐射粒子对于材料科学研究是十分必要的。
+  effect: >-
+    吸收附近的辐射以生成辐射粒子。
+
+
+    向你选择的方向释放生成的辐射粒子。
+
+
+    储存的辐射粒子在建筑禁用时会快速衰减。
   image_name: radiation_collector
   base_decor: -10
   base_decor_radius: 2
@@ -2474,6 +3321,12 @@
   materials:
   - buildable_raw
 - name: high_wattage_wire
+  desc: 高负荷电线可以避免电路过载，特别是对于大功率发电机。
+  effect: >-
+    可以运载比普通电线更高的功率而不会过载。
+
+
+    无法穿过墙体和地面。
   image_name: utilities_electric_insulated
   base_decor: -25
   base_decor_radius: 6
@@ -2490,6 +3343,15 @@
   materials:
   - metal
 - name: hot_tub
+  desc: 用热水来让复制人放松一下。
+  effect: >-
+    需要管道连入与连出浴缸，需要电力使水流动。
+
+
+    水必须处于一个舒适的温度，而且会很快冷下来。
+
+
+    提升复制人的士气。
   image_name: hottub
   base_decor: 20
   base_decor_radius: 4
@@ -2511,6 +3373,15 @@
   - metal
   - building_wood
 - name: hydrogen_engine
+  desc: 相比蒸汽或石油引擎，液氢引擎能推动火箭到达更远的地方。
+  effect: >-
+    燃烧液态氢以推动火箭进行太空探索。
+
+
+    液氢引擎与石油引擎的高度限制一样，但要稍微快一点。
+
+
+    建好引擎后，可以添加更多的火箭舱块。
   image_name: rocket_hydrogen_engine
   base_decor_radius: 1
   category: rocketry
@@ -2529,6 +3400,18 @@
   materials:
   - steel
 - name: hydrogen_engine_cluster
+  desc: 相比蒸汽或石油引擎，液氢引擎能推动火箭到达更远的地方。
+  effect: >-
+    燃烧液态氢以推动火箭进行太空探索。
+
+
+    液氢引擎与石油引擎的高度限制一样，但要稍微快一点。
+
+
+    引擎必须通过火箭平台建造。
+
+
+    建好引擎后，可以添加更多的火箭舱块。
   image_name: rocket_cluster_hydrogen_engine
   base_decor_radius: 1
   construction_time: 60
@@ -2546,6 +3429,8 @@
   materials:
   - steel
 - name: hydrogen_generator
+  desc: 氢气发电机极其高效，而且几乎不产生任何废物。
+  effect: 将氢气转化为电力。
   image_name: generatormerc
   base_decor: -15
   base_decor_radius: 3
@@ -2565,6 +3450,15 @@
   materials:
   - metal
 - name: hydroponic_farm
+  desc: 液培砖能自动灌溉作物从而减少复制人的工作量。
+  effect: >-
+    将种子培育成植物。
+
+
+    可用作地砖，建造前可旋转。
+
+
+    必须通过液体管道灌溉。
   image_name: farmtilehydroponicrotating
   base_decor: -5
   base_decor_radius: 1
@@ -2581,6 +3475,8 @@
   materials:
   - metal
 - name: ice_cooled_fan
+  desc: 复制人可以操作冰冷风扇暂时使一小片所需区域降温。
+  effect: 使用冰驱散少量热量。
   image_name: fanice
   base_decor_radius: 1
   category: utilities
@@ -2598,6 +3494,8 @@
   materials:
   - metal
 - name: ice_machine
+  desc: 制冰机可用作冰的小型再生源。
+  effect: 将水转化为冰。
   image_name: freezerator
   base_decor_radius: 1
   category: utilities
@@ -2617,6 +3515,12 @@
   materials:
   - metal
 - name: ice_sculpture
+  desc: 易融化。
+  effect: >-
+    大幅增加装饰度，从而提升士气。
+
+
+    必须由复制人雕刻。
   image_name: icesculpture
   base_decor: 20
   base_decor_radius: 8
@@ -2634,6 +3538,12 @@
   materials:
   - ice
 - name: insulated_gas_conduit
+  desc: 管道隔热可以防止气体在运送过程中遭受剧烈的温度变化。
+  effect: >-
+    以极小的温度变化输送气体。
+
+
+    可穿过墙体和地面。
   image_name: utilities_gas_insulated
   base_decor: -5
   base_decor_radius: 1
@@ -2650,6 +3560,12 @@
   materials:
   - buildable_raw
 - name: insulated_liquid_conduit
+  desc: 管道隔热可以防止液体在运送过程中遭受剧烈的温度变化。
+  effect: >-
+    以极小的温度变化输送液体。
+
+
+    可穿过墙体和地面。
   image_name: utilities_liquid_insulated
   base_decor: -5
   base_decor_radius: 1
@@ -2666,6 +3582,12 @@
   materials:
   - plumbable
 - name: insulation_tile
+  desc: 隔热砖的热导率更低，可以减慢热量传递。
+  effect: >-
+    用来建造房间的墙体和地面。
+
+
+    减少墙体之间的热量传递，保持区域内的环境热量。
   image_name: floor_insulated
   base_decor: -5
   base_decor_radius: 1
@@ -2682,6 +3604,12 @@
   materials:
   - buildable_raw
 - name: item_pedestal
+  desc: 一点体贴周到的展示就能彻底改变人们的看法。
+  effect: >-
+    展示单个物体，使装饰度加倍。
+
+
+    负装饰度的物体在展示时会获得一些正装饰度。
   image_name: pedestal
   base_decor: 5
   base_decor_radius: 1
@@ -2699,6 +3627,15 @@
   materials:
   - buildable_raw
 - name: jet_suit_locker
+  desc: 喷气服存放柜可为喷气服补充资源，或清空喷气服中的废物。
+  effect: >-
+    存放喷气服并为其补充氧气和石油。
+
+
+    清空喷气服中的污染水。
+
+
+    建造在喷气服检查站旁，使复制人在路过时换上喷气服。
   image_name: changingarea_jetsuit
   base_decor: 10
   base_decor_radius: 2
@@ -2719,6 +3656,15 @@
   materials:
   - refined_metal
 - name: jet_suit_marker
+  desc: 每个检查站都必须配备至少一个建在箭头指向后面的相关存放柜。
+  effect: >-
+    标记复制人必须换上或换下喷气服的起点。
+
+
+    必须建在喷气服存放柜旁。
+
+
+    建造前可旋转。
   image_name: changingarea_jetsuit_arrow
   base_decor: 10
   base_decor_radius: 2
@@ -2738,6 +3684,12 @@
   materials:
   - refined_metal
 - name: juicer
+  desc: 水果汁可以点亮复制人的休息时间
+  effect: >-
+    在休息时间为复制人提神。
+
+
+    喝果汁可以提升复制人的士气。
   image_name: juicer
   base_decor: 10
   base_decor_radius: 2
@@ -2758,6 +3710,15 @@
   materials:
   - metal
 - name: kerosene_engine
+  desc: 火箭可用来将复制人送入太空，以便获取稀有资源。
+  effect: >-
+    燃烧石油以推动火箭进行太空探索。
+
+
+    石油引擎的高度限制较为宽松，可以带有很多舱块。
+
+
+    建好引擎后，可以添加更多的火箭舱块。
   image_name: rocket_petroleum_engine
   base_decor_radius: 1
   category: rocketry
@@ -2776,6 +3737,18 @@
   materials:
   - steel
 - name: kerosene_engine_cluster
+  desc: 更强大的火箭引擎能推动更重的负担。
+  effect: >-
+    燃烧石油以推动火箭进行太空探索。
+
+
+    石油引擎的高度限制较为宽松，可以带有很多舱块。
+
+
+    引擎必须通过火箭平台建造。
+
+
+    建好引擎后，可以添加更多的火箭舱块。
   image_name: rocket_cluster_petroleum_engine
   base_decor_radius: 1
   construction_time: 60
@@ -2793,6 +3766,18 @@
   materials:
   - steel
 - name: kerosene_engine_cluster_small
+  desc: 火箭可用来将复制人送入太空，以便获取稀有资源。
+  effect: >-
+    燃烧石油以推动火箭进行太空探索。
+
+
+    小型石油引擎与石油引擎速度一样，但高度限制更苛刻。
+
+
+    引擎必须通过火箭平台建造。
+
+
+    建好引擎后，可以添加更多的火箭舱块。
   image_name: rocket_petro_engine_small
   base_decor_radius: 1
   construction_time: 60
@@ -2810,6 +3795,12 @@
   materials:
   - refined_metal
 - name: kiln
+  desc: 窑炉还可用于将煤炭精炼为纯碳。
+  effect: >-
+    烧制粘土以生产陶瓷。
+
+
+    只有在队列中安排配方复制人才会进行制作。
   image_name: kiln
   base_decor: -10
   base_decor_radius: 2
@@ -2828,6 +3819,8 @@
   materials:
   - metal
 - name: ladder
+  desc: （那意味着他们能在上面攀爬。）
+  effect: 可使复制人上下移动。
   image_name: ladder
   base_decor: -5
   base_decor_radius: 1
@@ -2844,6 +3837,12 @@
   materials:
   - buildable_raw
 - name: ladder_bed
+  desc: 复制人在睡觉时，如果有另一个复制人使用梯子则睡眠会被打断。
+  effect: >-
+    为一名复制人提供睡眠区，同时充当梯子。
+
+
+    复制人晚上会自动在指定的床位上睡觉。
   image_name: ladder_bed
   base_decor_radius: 1
   category: furniture
@@ -2861,6 +3860,8 @@
   materials:
   - refined_metal
 - name: ladder_fast
+  desc: 塑料梯子具有轻度的抗菌性，有助于限制病菌在殖民地的传播。
+  effect: 可提高复制人的攀爬速度。
   image_name: ladder_plastic
   base_decor: -5
   base_decor_radius: 1
@@ -2877,6 +3878,12 @@
   materials:
   - plastic
 - name: landing_beacon
+  desc: 作为星际载货在小行星表面着陆的小型信标。
+  effect: >-
+    引导星际载货和环轨货舱在附近着陆。
+
+
+    星际载货必须在星际发射器发射。
   image_name: landing_beacon
   base_decor: -10
   base_decor_radius: 2
@@ -2897,6 +3904,15 @@
   materials:
   - refined_metal
 - name: launch_pad
+  desc: 一个平台，火箭能够在上面发射和着陆。
+  effect: >-
+    建造所有火箭舱块的前置建筑。
+
+
+    允许火箭在小行星上发射或着陆。
+
+
+    将建造的火箭端口与火箭平台的一侧自动相连。
   image_name: rocket_launchpad
   base_decor_radius: 1
   category: rocketry
@@ -2914,6 +3930,15 @@
   materials:
   - refined_metal
 - name: lead_suit_locker
+  desc: 铅服存放柜可为铅服补充资源，或清空铅服中的废物。
+  effect: >-
+    存放铅服并为其补充氧气。
+
+
+    清空铅服中的污染水。
+
+
+    建造在铅服检查站旁，使复制人在路过时换上铅服。
   image_name: changingarea_radiation
   base_decor: 10
   base_decor_radius: 2
@@ -2934,6 +3959,15 @@
   materials:
   - refined_metal
 - name: lead_suit_marker
+  desc: 每个检查站都必须配备至少一个建在箭头指向后面的相关存放柜。
+  effect: >-
+    标记复制人必须换上或换下铅服的起点。
+
+
+    必须建在铅服存放柜旁。
+
+
+    建造前可旋转。
   image_name: changingarea_radiation_arrow
   base_decor: 10
   base_decor_radius: 2
@@ -2953,6 +3987,12 @@
   materials:
   - refined_metal
 - name: liquid_cargo_bay
+  desc: 复制人会把他们在太空任务中找到的任何资源装入货舱。
+  effect: >-
+    允许复制人储存在太空任务中找到的任何液体资源。
+
+
+    待火箭返回后，所储存的资源便可供殖民地使用。
   image_name: rocket_storage_liquid
   base_decor_radius: 1
   category: rocketry
@@ -2971,6 +4011,15 @@
   materials:
   - steel
 - name: liquid_cargo_bay_cluster
+  desc: 比常规的液缸货舱能携带更多东西。
+  effect: >-
+    允许复制人储存在太空任务中找到的大部分液体资源。
+
+
+    火箭返回后，所储存的资源便可供殖民地使用。
+
+
+    必须通过火箭平台建造。
   image_name: rocket_cluster_storage_liquid
   base_decor_radius: 1
   construction_time: 60
@@ -2988,6 +4037,15 @@
   materials:
   - steel
 - name: liquid_cargo_bay_small
+  desc: 复制人会把他们在太空任务中找到的任何资源装入货舱。
+  effect: >-
+    允许复制人储存在太空任务中找到的一些液体资源。
+
+
+    待火箭返回后，所储存的资源便可供殖民地使用。
+
+
+    必须通过火箭平台建造。
   image_name: rocket_storage_liquid_small
   base_decor_radius: 1
   construction_time: 30
@@ -3005,6 +4063,8 @@
   materials:
   - refined_metal
 - name: liquid_conditioner
+  desc: 液温调节器可以冷却液体并把热量排放到其他地方。
+  effect: 冷却输入的液体，但向周围环境放出热量。
   image_name: liquidconditioner
   base_decor_radius: 1
   category: utilities
@@ -3024,6 +4084,12 @@
   materials:
   - metal
 - name: liquid_conduit
+  desc: 液体管道可用来连接建筑的输入口和输出口。
+  effect: >-
+    在输出口和输入口之间输送液体。
+
+
+    可穿过墙体和地面。
   image_name: utilities_liquid
   base_decor_radius: 1
   category: plumbing
@@ -3039,6 +4105,12 @@
   materials:
   - plumbable
 - name: liquid_conduit_bridge
+  desc: 分离管道系统可以防止建筑被混杂的内容物损坏。
+  effect: >-
+    让一条液体管道可以越过另一条液体管道，而不会连到一起。
+
+
+    可穿过墙体和地面。
   image_name: utilityliquidbridge
   base_decor_radius: 1
   category: plumbing
@@ -3054,6 +4126,8 @@
   materials:
   - buildable_raw
 - name: liquid_conduit_disease_sensor
+  desc: 病菌传感器有助于检测病菌存在以控制自动化行为。
+  effect: 根据管内液体病菌数量，输出绿色信号或红色信号。
   image_name: liquid_germs_sensor
   base_decor: -5
   base_decor_radius: 1
@@ -3071,6 +4145,8 @@
   - refined_metal
   - plastic
 - name: liquid_conduit_element_sensor
+  desc: 元素传感器可用于探测管道内是否有特定液体存在。
+  effect: 当检测到管内有所选液体时，输出绿色信号。
   image_name: liquid_element_sensor
   base_decor: -5
   base_decor_radius: 1
@@ -3087,6 +4163,8 @@
   materials:
   - refined_metal
 - name: liquid_conduit_overflow
+  desc: 溢流阀可以用来选择优先让哪些建筑获得宝贵的资源。
+  effect: 仅当主输出口堵塞时，才用液体填充备用输出口。
   image_name: valveliquid
   base_decor_radius: 1
   category: plumbing
@@ -3103,6 +4181,8 @@
   materials:
   - buildable_raw
 - name: liquid_conduit_preferential_flow
+  desc: 优先气流阀可确保先填充建筑群中的重要建筑。
+  effect: 当主输入口溢流时，将液体转向备用输入口。
   image_name: valveliquid
   base_decor_radius: 1
   category: plumbing
@@ -3119,6 +4199,12 @@
   materials:
   - buildable_raw
 - name: liquid_conduit_radiant
+  desc: 泵入冷液体的导热管道可穿过炎热区域以帮助降温。
+  effect: >-
+    输送液体，允许与周围环境进行大幅热量交换。
+
+
+    可穿过墙体和地面。
   image_name: utilities_liquid_radiant
   base_decor: -5
   base_decor_radius: 1
@@ -3135,6 +4221,8 @@
   materials:
   - refined_metal
 - name: liquid_conduit_temperature_sensor
+  desc: 温度传感器可在管道内容物达到特定温度时禁用某些建筑。
+  effect: 当管内液体温度达到选定范围内时，输出绿色信号或红色信号。
   image_name: liquid_temperature_sensor
   base_decor: -5
   base_decor_radius: 1
@@ -3151,6 +4239,8 @@
   materials:
   - refined_metal
 - name: liquid_cooled_fan
+  desc: 复制人可以根据需要操作水冷风扇，临时给小片区域降温。
+  effect: 驱散少量热量。
   image_name: fanliquid
   base_decor_radius: 1
   category: utilities
@@ -3168,6 +4258,12 @@
   materials:
   - metal
 - name: liquid_filter
+  desc: 除所选的液体外，其他所有液体都会被送入输出管道。
+  effect: >-
+    从多种液体中分离出一种液体，将其送入专用管道。
+
+
+    一次只能分离出一种液体。
   image_name: filter_liquid
   base_decor: -5
   base_decor_radius: 1
@@ -3187,6 +4283,12 @@
   materials:
   - metal
 - name: liquid_fuel_tank
+  desc: 储存更多燃料可让火箭在返回之前探索的距离更远。
+  effect: >-
+    储存经管道输送的液体燃料，为火箭引擎提供能源。
+
+
+    所储存的燃料类型取决于火箭引擎。
   image_name: rocket_liquid_fuel_tank
   base_decor_radius: 1
   category: rocketry
@@ -3205,6 +4307,15 @@
   materials:
   - steel
 - name: liquid_fuel_tank_cluster
+  desc: 储存更多燃料可让火箭在返回之前探索的距离更远。
+  effect: >-
+    储存经管道输送的液体燃料，为火箭引擎提供能源。
+
+
+    所储存的燃料类型取决于火箭引擎。
+
+
+    必须通过火箭平台建造。
   image_name: rocket_cluster_liquid_fuel_tank
   base_decor_radius: 1
   construction_time: 60
@@ -3222,6 +4333,12 @@
   materials:
   - steel
 - name: liquid_heater
+  desc: 加热器将液体加热以至可杀死其中的病菌。
+  effect: >-
+    加热大量的液体。
+
+
+    必须完全浸没。
   image_name: boiler
   base_decor: -10
   base_decor_radius: 2
@@ -3241,6 +4358,8 @@
   materials:
   - metal
 - name: liquid_limit_valve
+  desc: 计量阀可以在通过精确量的液体后关闭。
+  effect: 连至自动化电路中，当特定量的液体通过后自动地阻断液体流通。
   image_name: limit_valve_liquid
   base_decor: -5
   base_decor_radius: 1
@@ -3261,6 +4380,8 @@
   - refined_metal
   - plastic
 - name: liquid_logic_valve
+  desc: 自动化管道免去了复制人的参与，从而可以节省电力和时间。
+  effect: 连至自动化电路中以自动地使液体流通或阻断。
   image_name: valveliquid_logic
   base_decor: -5
   base_decor_radius: 1
@@ -3280,6 +4401,12 @@
   materials:
   - refined_metal
 - name: liquid_mini_pump
+  desc: 小型液泵可以最少电力来抽取少量液体。
+  effect: >-
+    抽取少量液体并通过管道输送。
+
+
+    必须浸没在液体中。
   image_name: miniwaterpump
   base_decor: -10
   base_decor_radius: 2
@@ -3299,6 +4426,12 @@
   materials:
   - plastic
 - name: liquid_pump
+  desc: 用管道将泵的输出口和另一个建筑的输入口连接，液体就会被送到那个建筑中。
+  effect: >-
+    抽取液体并通过管道输送。
+
+
+    必须浸没在液体中。
   image_name: pumpliquid
   base_decor: -10
   base_decor_radius: 2
@@ -3318,6 +4451,12 @@
   materials:
   - metal
 - name: liquid_pumping_station
+  desc: 手压泵允许复制人将液体装瓶并运送到其他地方。
+  effect: >-
+    用泵手动将液体抽入瓶中进行运输。
+
+
+    复制人只能携带瓶装液体。
   image_name: waterpump
   base_decor_radius: 1
   category: plumbing
@@ -3335,6 +4474,8 @@
   materials:
   - buildable_raw
 - name: liquid_reservoir
+  desc: 储液库无法接收手动运送的资源。
+  effect: 储存任何经管道输送的液体资源。
   image_name: liquidreservoir
   base_decor: -10
   base_decor_radius: 2
@@ -3353,6 +4494,8 @@
   materials:
   - metal
 - name: liquid_valve
+  desc: 阀门可以控制通过管道的液体量，避免浪费。
+  effect: 控制通过管道的液体量。
   image_name: valveliquid
   base_decor: -5
   base_decor_radius: 1
@@ -3371,6 +4514,8 @@
   materials:
   - metal
 - name: liquid_vent
+  desc: 排液口是管道系统的液体排出口。
+  effect: 排放液体管道中的液体。
   image_name: ventliquid
   base_decor: -10
   base_decor_radius: 2
@@ -3388,6 +4533,12 @@
   materials:
   - metal
 - name: logic_alarm
+  desc: 当接收到绿色信号时弹出一条通知。
+  effect: >-
+    与传感器一起使用，当满足特定条件时，弹出一条通知。
+
+
+    通知可自定义内容。
   image_name: alarm_sensor
   base_decor: -5
   base_decor_radius: 1
@@ -3404,6 +4555,8 @@
   materials:
   - refined_metal
 - name: logic_cluster_location_sensor
+  desc: 星图位置传感器能在火箭处于某个位置时发出信号
+  effect: 在选择的星图位置时输出绿色信号，在其他位置时输出红色信号。
   image_name: logic_location
   base_decor: -5
   base_decor_radius: 1
@@ -3420,6 +4573,12 @@
   materials:
   - refined_metal
 - name: logic_counter
+  desc: 对于高于十的数字，可将多个计数器连在一起实现。
+  effect: >-
+    记录接收到绿色信号的次数，直到达到选定的数字。
+
+
+    当达到选定数字后，输出绿色信号，直到接收到另一个绿色信号，它将自动重置并重新开始计数。
   image_name: logic_counter
   base_decor: -5
   base_decor_radius: 1
@@ -3436,6 +4595,8 @@
   materials:
   - refined_metal
 - name: logic_critter_count_sensor
+  desc: 检测小动物数量有助于调整它们的自动喂养和照料方案。
+  effect: 根据房间内蛋和小动物数量，输出绿色信号或红色信号。
   image_name: critter_sensor
   base_decor: -5
   base_decor_radius: 1
@@ -3452,6 +4613,8 @@
   materials:
   - refined_metal
 - name: logic_disease_sensor
+  desc: 检测病菌数量有助于封锁或清理危险区域。
+  effect: 根据环境病菌数量，输出绿色信号或红色信号。
   image_name: diseasesensor
   base_decor: -5
   base_decor_radius: 1
@@ -3469,6 +4632,8 @@
   - refined_metal
   - plastic
 - name: logic_duplicant_sensor
+  desc: 运动传感器只有复制人在附近时才会启用建筑，从而节省电力。
+  effect: 根据复制人是否在传感器范围内，输出绿色信号或红色信号。
   image_name: presence_sensor
   base_decor: -5
   base_decor_radius: 1
@@ -3485,6 +4650,12 @@
   materials:
   - refined_metal
 - name: logic_element_sensor_gas
+  desc: 这些传感器能探测是否有特定气体存在，并据此调整系统。
+  effect: >-
+    当传感器所在方格中探测到所选<link="ELEMENTSGAS">气体</link>时，输出绿色信号。
+
+
+    当未探测到选定<link="ELEMENTSGAS">气体</link>时，输出红色信号。
   image_name: world_element_sensor
   base_decor: -5
   base_decor_radius: 1
@@ -3503,6 +4674,12 @@
   materials:
   - refined_metal
 - name: logic_element_sensor_liquid
+  desc: 这些传感器能探测是否有特定液体存在，并据此调整系统。
+  effect: >-
+    当传感器所在方格中探测到所选<link="ELEMENTSLIQUID">液体</link>时，输出绿色信号。
+
+
+    当未探测到选定<link="ELEMENTSLIQUID">液体</link>时，输出红色信号。
   image_name: world_liquid_sensor
   base_decor: -5
   base_decor_radius: 1
@@ -3520,6 +4697,12 @@
   materials:
   - refined_metal
 - name: logic_gate_and
+  desc: 这种逻辑门在输入端同时接收到绿色信号时才输出绿色信号。
+  effect: >-
+    若输入端A<b>与</b>输入端B都接收到绿色信号，输出绿色信号。
+
+
+    若至少有一个输入端接收到红色信号，输出红色信号。
   image_name: logic_and
   base_decor: -5
   base_decor_radius: 1
@@ -3536,6 +4719,12 @@
   materials:
   - refined_metal
 - name: logic_gate_buffer
+  desc: 这种逻辑门在停止接收绿色信号后仍会在一段时间内继续输出绿色信号。
+  effect: >-
+    若输入端接收到绿色信号，输出绿色信号。
+
+
+    在输入端接收到红色信号后，在一定缓冲时间内继续输出绿色信号。
   image_name: logic_buffer
   base_decor: -5
   base_decor_radius: 1
@@ -3552,6 +4741,12 @@
   materials:
   - refined_metal
 - name: logic_gate_demultiplexer
+  desc: 信号分配器可以用于选择哪条电路能接收到给定的自动化信号。
+  effect: >-
+    由控制输入端选择，使输入的信号从四个可能的输出端中的其中一个进行输出。
+
+
+    将绿色信号或红色信号输出到两个控制输入端来决定选择哪个输出端。
   image_name: logic_demultiplexer
   base_decor: -5
   base_decor_radius: 1
@@ -3568,6 +4763,12 @@
   materials:
   - refined_metal
 - name: logic_gate_filter
+  desc: 这种逻辑门仅会输出持续时间长于选定过滤时间的绿色信号。
+  effect: >-
+    仅当输入端接收到持续时间长于选定过滤时间的绿色信号时才使其通过。
+
+
+    若绿色信号的持续时间不够，继续输出红色信号。
   image_name: logic_filter
   base_decor: -5
   base_decor_radius: 1
@@ -3584,6 +4785,12 @@
   materials:
   - refined_metal
 - name: logic_gate_multiplexer
+  desc: 信号选择器可以用于选择哪个自动化信号可以通过给定的电路
+  effect: >-
+    由控制输入端选择，使输入的四个信号中的其中一个输出到输出端。
+
+
+    将绿色信号或红色信号输出到两个控制输入端以决定选择哪个输入端。
   image_name: logic_multiplexer
   base_decor: -5
   base_decor_radius: 1
@@ -3600,6 +4807,12 @@
   materials:
   - refined_metal
 - name: logic_gate_not
+  desc: 这种逻辑门会反转自动化信号，将绿色信号变成红色信号，反之亦然。
+  effect: >-
+    若输入端接收到红色信号，输出绿色信号。
+
+
+    若输入端接收到绿色信号，输出红色信号。
   image_name: logic_not
   base_decor: -5
   base_decor_radius: 1
@@ -3616,6 +4829,12 @@
   materials:
   - refined_metal
 - name: logic_gate_or
+  desc: 这种逻辑门在接收到至少一个绿色信号时会输出绿色信号。
+  effect: >-
+    若输入端A<b>或</b>输入端B至少有一个接收到绿色信号，输出绿色信号。
+
+
+    若输入端A和输入端B都没接收到绿色信号，输出红色信号。
   image_name: logic_or
   base_decor: -5
   base_decor_radius: 1
@@ -3632,6 +4851,12 @@
   materials:
   - refined_metal
 - name: logic_gate_xor
+  desc: 这种逻辑门在只有一个输入端接收到绿色信号时才会输出绿色信号。
+  effect: >-
+    若输入端仅有一个接收到绿色信号，输出绿色信号。
+
+
+    若输入端全都或全没接收到绿色信号，输出红色信号。
   image_name: logic_xor
   base_decor: -5
   base_decor_radius: 1
@@ -3648,6 +4873,15 @@
   materials:
   - refined_metal
 - name: logic_hammer
+  desc: 敲击器敲击建筑时会发出悦耳的声音。
+  effect: >-
+    在默认方向下，当接收到绿色信号时，敲击左侧建筑。
+
+
+    敲击不同建筑会有各自独特的声音。
+
+
+    音槌敲击时不会对建筑造成伤害。
   image_name: hammer
   base_decor: -5
   base_decor_radius: 1
@@ -3665,6 +4899,8 @@
   materials:
   - refined_metal
 - name: logic_hepsensor
+  desc: 当辐射粒子经过时，辐射粒子传感器可以输出信号。
+  effect: 当检测到辐射粒子处于选定范围时，输出绿色信号或红色信号。
   image_name: radbolt_sensor
   base_decor: -5
   base_decor_radius: 1
@@ -3681,6 +4917,12 @@
   materials:
   - refined_metal
 - name: logic_interasteroid_receiver
+  desc: 接收来自太空的自动化信号。
+  effect: >-
+    在太空远距离接收来自信号播报器的绿色信号或红色信号。
+
+
+    信号接收器和信号播报器必须暴露在太空中才能运作。
   image_name: inter_asteroid_automation_signal_receiver
   base_decor: -5
   base_decor_radius: 1
@@ -3698,6 +4940,12 @@
   materials:
   - refined_metal
 - name: logic_interasteroid_sender
+  desc: 将自动化信号发送到太空。
+  effect: >-
+    在太空远距离发送绿色信号或红色信号至<link="LOGICINTERASTEROIDRECEIVER">信号接收器</link>。
+
+
+    信号接收器和信号播报器必须暴露在太空中才能运作。
   image_name: inter_asteroid_automation_signal_sender
   base_decor: -5
   base_decor_radius: 1
@@ -3714,7 +4962,38 @@
   generator_base_capacity: 0
   materials:
   - refined_metal
+- name: logic_light_sensor
+  desc: 光线传感器可以根据阳光等级告知地表太阳能板上方的地堡门开启或关闭。
+  effect: 当环境亮度达到选定范围时，输出绿色信号或红色信号。
+  image_name: logiclightsensor
+  base_decor: -5
+  base_decor_radius: 1
+  category: automation
+  construction_time: 30
+  replaceable: true
+  is_industrial_machinery: false
+  overheat_temperature: 75
+  heat_generate: 0
+  height_in_cells: 1
+  width_in_cells: 1
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - refined_metal
+  - transparent
 - name: logic_memory
+  desc: 内存可在置位端 (S) 接收到绿色信号后储存绿色信号，直到复位端 (R) 接收到绿色信号为止。
+  effect: >-
+    含有一个内存，输出任何储存在内存中的信号。
+
+
+    输入的信号<b>只会</b>影响到内存，不会通过输出传递。
+
+
+    发送绿色信号到置位端 (S) 会将内存设置为绿色信号。
+
+
+    发送绿色信号到复位端 (R) 会将内存重置为红色信号。
   image_name: logic_memory
   base_decor_radius: 1
   category: automation
@@ -3730,6 +5009,12 @@
   materials:
   - refined_metal
 - name: logic_power_relay
+  desc: 自动化系统免去了复制人的管理工作，从而可节省电力和时间。
+  effect: >-
+    连至自动化电路中以自动地接通或断开电力。
+
+
+    不会影响前于开关的电路。
   image_name: switchpowershutoff
   base_decor_radius: 1
   category: power
@@ -3745,6 +5030,8 @@
   materials:
   - metal
 - name: logic_pressure_sensor_gas
+  desc: 气压传感器可用于防止氧气过量生产和超压。
+  effect: 当气压处于选定范围内时，输出绿色信号或红色信号。
   image_name: switchgaspressure
   base_decor: -5
   base_decor_radius: 1
@@ -3761,6 +5048,12 @@
   materials:
   - refined_metal
 - name: logic_pressure_sensor_liquid
+  desc: 液体不多时，液压传感器就可以告知液泵补充液体。
+  effect: >-
+    当<link="ELEMENTSLIQUID">液压</link>处于选定范围时，输出绿色信号或红色信号。
+
+
+    必须浸没在<link="ELEMENTSLIQUID">液体</link>中。
   image_name: switchliquidpressure
   base_decor: -5
   base_decor_radius: 1
@@ -3777,6 +5070,8 @@
   materials:
   - refined_metal
 - name: logic_radiation_sensor
+  desc: 辐射传感器检测到危险等级的辐射时可以禁用建筑。
+  effect: 当环境辐射达到选定范围时，输出绿色信号或红色信号。
   image_name: radiation_sensor
   base_decor: -5
   base_decor_radius: 1
@@ -3793,6 +5088,12 @@
   materials:
   - refined_metal
 - name: logic_ribbon
+  desc: 信号线组可以运载多个自动化信号同时占地明显减少。
+  effect: >-
+    一条四位的信号线，可以运载至多四个自动化信号。
+
+
+    使用线组写入器输入多个位，线组读取器输出多个位。
   image_name: logic_ribbon
   base_decor: -5
   base_decor_radius: 1
@@ -3809,6 +5110,12 @@
   materials:
   - refined_metal
 - name: logic_ribbon_bridge
+  desc: 线桥可以让多个自动化电路存在于小面积的区域，而不会相互连接。
+  effect: >-
+    让一组信号线组可以越过另一组信号线组，而不会连到一起。
+
+
+    可穿过墙体和地面。
   image_name: logic_ribbon_bridge
   base_decor: -5
   base_decor_radius: 1
@@ -3825,6 +5132,8 @@
   materials:
   - refined_metal
 - name: logic_ribbon_reader
+  desc: 将信号线组单个位的信号输出到信号线。
+  effect: 读取来自<link="LOGICRIBBON">信号线组</link>特定位的绿色信号或红色信号并输出到<link="LOGICWIRE">信号线</link>。
   image_name: logic_ribbon_reader
   base_decor: -5
   base_decor_radius: 1
@@ -3841,6 +5150,12 @@
   materials:
   - refined_metal
 - name: logic_ribbon_writer
+  desc: 将信号线的信号转变到信号线组单个位上
+  effect: >-
+    将绿色信号或红色信号写入至<link="LOGICRIBBON">信号线组</link>的特定位。
+
+
+    输出必须用<link="LOGICRIBBON">信号线组</link>以免过载。
   image_name: logic_ribbon_writer
   base_decor: -5
   base_decor_radius: 1
@@ -3857,6 +5172,8 @@
   materials:
   - refined_metal
 - name: logic_switch
+  desc: 信号开关不会像电闸那样闭合和断开电路，而是添加额外的信号。
+  effect: 在自动化电路中输出绿色信号或红色信号。
   image_name: switchdupecontrolledpower
   base_decor_radius: 1
   category: automation
@@ -3872,6 +5189,8 @@
   materials:
   - refined_metal
 - name: logic_temperature_sensor
+  desc: 温度传感器可以在建筑接近危险的温度时停用建筑。
+  effect: 当环境温度达到选定范围时，输出绿色信号或红色信号。
   image_name: switchthermal
   base_decor: -5
   base_decor_radius: 1
@@ -3888,6 +5207,8 @@
   materials:
   - refined_metal
 - name: logic_time_of_day_sensor
+  desc: 周期传感器可确保在每个周期，系统总会在白天或晚上的同一时间开启。
+  effect: 设置一个在早晚一周期中绿色信号和红色信号的自动化安排。
   image_name: switchtimeofday
   base_decor: -5
   base_decor_radius: 1
@@ -3904,6 +5225,8 @@
   materials:
   - refined_metal
 - name: logic_timer_sensor
+  desc: 时间传感器可以创造非常短时间或长时间的自动化安排。
+  effect: 创造一个计时器，输出特定时长的绿色信号和红色信号。
   image_name: time_sensor
   base_decor: -5
   base_decor_radius: 1
@@ -3920,6 +5243,8 @@
   materials:
   - refined_metal
 - name: logic_wattage_sensor
+  desc: 当建筑开启或关闭时，功率传感器可以输出信号。
+  effect: 当耗电功率处于选定范围内时，输出绿色信号或红色信号。
   image_name: wattage_sensor
   base_decor: -5
   base_decor_radius: 1
@@ -3936,6 +5261,12 @@
   materials:
   - refined_metal
 - name: logic_wire
+  desc: 信号线用于将建筑的端口与逻辑门相连接。
+  effect: >-
+    将建筑与传感器相连。
+
+
+    可穿过墙体和地面。
   image_name: logic_wires
   base_decor: -5
   base_decor_radius: 1
@@ -3952,6 +5283,12 @@
   materials:
   - refined_metal
 - name: logic_wire_bridge
+  desc: 线桥可以让多个自动化电路存在于小面积的区域，而不会相互连接。
+  effect: >-
+    让一条信号线可以越过另一条信号线，而不会连在一起。
+
+
+    可穿过墙体和地面。
   image_name: logic_bridge
   base_decor: -5
   base_decor_radius: 1
@@ -3968,6 +5305,8 @@
   materials:
   - refined_metal
 - name: lonely_mail_box
+  desc: 没有什么比在邮箱中收到自制礼品更棒的了。
+  effect: 展示一个可食用物品。
   image_name: parcel_delivery
   base_decor: -15
   base_decor_radius: 3
@@ -3984,6 +5323,12 @@
   materials:
   - metal
 - name: lonely_minion_house
+  desc: 其中的居住者独居太久了，他已经忘了友谊是什么感觉了。
+  effect: >-
+    一种来自设施地下三层的大型运输单元。
+
+
+    它被改造成了一个简陋但实用的临时避难所。
   image_name: lonely_dupe_home
   base_decor: -25
   base_decor_radius: 6
@@ -4003,6 +5348,12 @@
   materials:
   - steel
 - name: luxury_bed
+  desc: 比起床铺，复制人更喜欢睡在舒适的床上，且睡醒后会感到更舒适。
+  effect: >-
+    为一名复制人提供睡眠区并恢复额外的体力。
+
+
+    复制人晚上会自动在指定的床位上睡觉。
   image_name: elegantbed
   base_decor: 15
   base_decor_radius: 3
@@ -4021,6 +5372,12 @@
   materials:
   - plastic
 - name: machine_shop
+  desc: 复制人只会为那些和这个站在同一个房间里的建筑提高效率。
+  effect: >-
+    让分配的工程师能够提高建筑生产效率。
+
+
+    这个建筑是机械车间的必要组成部分。
   image_name: machineshop
   base_decor_radius: 1
   construction_time: 30
@@ -4037,6 +5394,8 @@
   materials:
   - refined_metal
 - name: manual_generator
+  desc: 看复制人在上面跑步很好玩……电力只是额外的好处而已。
+  effect: 将人力转化为电力。
   image_name: generatormanual
   base_decor_radius: 1
   category: power
@@ -4056,6 +5415,12 @@
   materials:
   - metal
 - name: manual_high_energy_particle_spawner
+  desc: 辐射粒子对于材料科学研究是十分必要的。
+  effect: >-
+    将放射性矿石提炼以生成辐射粒子。
+
+
+    向选中方向释放生成的辐射粒子。
   image_name: manual_radbolt_generator
   base_decor: -10
   base_decor_radius: 2
@@ -4073,6 +5438,12 @@
   materials:
   - buildable_raw
 - name: manual_pressure_door
+  desc: 气闸可以隔绝危险区域并防止气体渗入殖民地。
+  effect: >-
+    阻挡液体和气体流动，维持各区域间的压力。
+
+
+    野生小动物无法通过门。
   image_name: door_manual
   base_decor: -15
   base_decor_radius: 3
@@ -4089,6 +5460,12 @@
   materials:
   - metal
 - name: marble_sculpture
+  desc: 习得艺术技能的复制人能制作出更有装饰性的艺术品。
+  effect: >-
+    大幅增加装饰度，从而提升士气。
+
+
+    必须由复制人雕刻。
   image_name: sculpture_marble
   base_decor: 20
   base_decor_radius: 8
@@ -4106,6 +5483,12 @@
   materials:
   - precious_rock
 - name: massage_table
+  desc: 按摩床可以快速降低压力，但会消耗一些电力。
+  effect: >-
+    快速降低复制人的压力。
+
+
+    当压力到达需要休息的范围时，复制人将自动寻找按摩床。
   image_name: masseur
   base_decor_radius: 1
   category: medical
@@ -4125,6 +5508,12 @@
   materials:
   - buildable_raw
 - name: massive_heat_sink
+  desc: ''
+  effect: >-
+    一种自我维持的机器，似乎是由精炼的中子质供能的。
+
+
+    用管道提供氢气可吸收并中和热量。
   image_name: massiveheatsink
   base_decor: 15
   base_decor_radius: 3
@@ -4142,6 +5531,12 @@
   materials:
   - metal
 - name: mechanical_surfboard
+  desc: 用机械海浪带来全新娱乐体验。
+  effect: >-
+    提升复制人的士气
+
+
+    使用的时候一些水会溅到地上。
   image_name: mechanical_surfboard
   base_decor: 10
   base_decor_radius: 2
@@ -4161,6 +5556,12 @@
   materials:
   - metal
 - name: medical_cot
+  desc: 复制人使用分诊床来从受伤中恢复，并接受同伴的医疗救助。
+  effect: >-
+    加速生命值恢复并治疗身体上的伤口。
+
+
+    使丧失行动能力的复制人苏醒。
   image_name: medical_cot
   base_decor_radius: 1
   category: medical
@@ -4178,6 +5579,15 @@
   materials:
   - buildable_raw
 - name: mega_brain_tank
+  desc: ''
+  effect: >-
+    一种由氧气供能的有机多皮层的知识储库与处理系统。
+
+
+    可以分析由穿着睡衣的复制人产生的梦境日志。
+
+
+    能够为整个殖民地的复制人提供可持续的技能和能力强化。
   image_name: gravitas_megabrain
   base_decor: -20
   base_decor_radius: 5
@@ -4194,6 +5604,12 @@
   materials:
   - metal
 - name: mesh_tile
+  desc: 网格砖可以用来在液体流动的区域建造道路。
+  effect: >-
+    用来建造房间的墙体和地面。
+
+
+    不会阻挡液体或气体流动。
   image_name: floor_mesh
   base_decor: -5
   base_decor_radius: 1
@@ -4210,6 +5626,15 @@
   materials:
   - metal
 - name: metal_refinery
+  desc: 精炼金属是制作先进的电子产品和技术产品所必需的材料。
+  effect: >-
+    使用金属矿石原料生产精炼金属。
+
+
+    将输入的液体大幅加热并将其输出。
+
+
+    只有在队列中安排配方复制人才会进行制作。
   image_name: metalrefinery
   base_decor: -15
   base_decor_radius: 3
@@ -4218,7 +5643,7 @@
   entombable: true
   floodable: true
   replaceable: true
-  is_industrial_machinery: false
+  is_industrial_machinery: true
   overheatable: true
   overheat_temperature: 75
   heat_generate: 16
@@ -4230,6 +5655,12 @@
   materials:
   - buildable_raw
 - name: metal_sculpture
+  desc: 习得艺术技能的复制人能制作出更有装饰性的艺术品。
+  effect: >-
+    大幅增加装饰度，从而提升士气。
+
+
+    必须由复制人雕刻。
   image_name: sculpture_metal
   base_decor: 20
   base_decor_radius: 8
@@ -4247,6 +5678,12 @@
   materials:
   - refined_metal
 - name: metal_tile
+  desc: 比起其他类型的砖块，金属砖传递热量的速度要快得多。
+  effect: >-
+    用来建造房间的墙体和地面。
+
+
+    显著提高复制人的行走速度。
   image_name: floor_metal
   base_decor: 15
   base_decor_radius: 3
@@ -4263,6 +5700,12 @@
   materials:
   - refined_metal
 - name: methane_generator
+  desc: 天然气发电机会排放污染水，最好建在废水池上方。
+  effect: >-
+    将天然气转化为电力。
+
+
+    产生二氧化碳和污染水。
   image_name: generatormethane
   base_decor: -15
   base_decor_radius: 3
@@ -4282,6 +5725,12 @@
   materials:
   - metal
 - name: microbe_musher
+  desc: 压制器的食谱能让复制人吃饱，但随着时间可能会影响健康和士气。
+  effect: >-
+    使用常见原料生产低质量食物。
+
+
+    只有在队列中安排配方复制人才会进行制作。
   image_name: microbemusher
   base_decor: -15
   base_decor_radius: 3
@@ -4302,6 +5751,8 @@
   materials:
   - metal
 - name: milk_fat_separator
+  desc: 复制人可以涂上一层咸乳蜡，以提高他们在运载管道中的前进速度。
+  effect: 将咸乳精炼为浓盐水和咸乳蜡，并释放二氧化碳。
   image_name: milk_separator
   base_decor: -15
   base_decor_radius: 3
@@ -4322,6 +5773,12 @@
   materials:
   - refined_metal
 - name: milk_feeder
+  desc: 当所有人都抢着喝咸乳时，就没人在意拥挤了。
+  effect: >-
+    为各种小动物分配咸乳。
+
+
+    直饮器可以显著改善小动物的心情。
   image_name: critter_milk_feeder
   base_decor: -15
   base_decor_radius: 3
@@ -4341,6 +5798,12 @@
   materials:
   - refined_metal
 - name: milk_press
+  desc: 为受不了给小动物挤奶的复制人准备的。
+  effect: >-
+    将冰霜麦粒或火椒粒粉碎以提制咸乳。
+
+
+    咸乳可用于补充小动物直饮器。
   image_name: milkpress
   base_decor: -10
   base_decor_radius: 2
@@ -4360,6 +5823,12 @@
   materials:
   - buildable_raw
 - name: milking_station
+  desc: 收获来的这种液体基本上相当于小动物的苏打水。
+  effect: >-
+    允许具有小动物养殖II技能的复制人为释气海牛挤奶以获取咸乳。
+
+
+    咸乳可用于补充小动物直饮器。
   image_name: milking_station
   base_decor: -15
   base_decor_radius: 3
@@ -4379,6 +5848,12 @@
   - refined_metal
   - plastic
 - name: mineral_deoxidizer
+  desc: 氧气扩散器效率不高，但输出的氧气也够维持殖民地呼吸。
+  effect: >-
+    将大量的藻类转化为氧气。
+
+
+    当区域达到最大气压时会闲置。
   image_name: mineraldeoxidizer
   base_decor: -10
   base_decor_radius: 2
@@ -4400,6 +5875,12 @@
   materials:
   - metal
 - name: missile_fabricator
+  desc: 爆破弹能高效防御来袭的流星雨。
+  effect: >-
+    将精炼金属与石油组合以生产爆破弹。
+
+
+    只有在队列中安排配方复制人才会进行制作。
   image_name: missile_fabricator
   base_decor: -15
   base_decor_radius: 3
@@ -4408,7 +5889,7 @@
   entombable: true
   floodable: true
   replaceable: true
-  is_industrial_machinery: false
+  is_industrial_machinery: true
   overheatable: true
   overheat_temperature: 75
   heat_generate: 8
@@ -4420,13 +5901,19 @@
   materials:
   - refined_metal
 - name: missile_launcher
+  desc: 炸成碎片的流星会留下可获得的资源。
+  effect: >-
+    在流星雨期间发射爆破弹以免受殖民地遭受撞击损坏。
+
+
+    范围：水平16格，垂直32格。
   image_name: missile_launcher
   base_decor_radius: 1
   category: rocketry
   construction_time: 30
   entombable: true
   replaceable: true
-  is_industrial_machinery: false
+  is_industrial_machinery: true
   overheat_temperature: 75
   heat_generate: 2
   height_in_cells: 5
@@ -4437,6 +5924,15 @@
   materials:
   - metal
 - name: mission_control
+  desc: 当局者迷，旁观者清。
+  effect: >-
+    为火箭驾驶员提供引导数据，以提高火箭速度。
+
+
+    进行操作的复制人必须具有天文学技能。
+
+
+    需要清晰的视野才能运作。
   image_name: mission_control_station
   base_decor: -5
   base_decor_radius: 1
@@ -4457,6 +5953,15 @@
   materials:
   - refined_metal
 - name: mission_control_cluster
+  desc: 就像局外者一样，他实际上知道的要更多。
+  effect: >-
+    为范围内的火箭驾驶员提供引导数据，以提高火箭的速度。
+
+
+    进行操作的复制人必须具有天文学技能。
+
+
+    需要清晰的视野才能运作。
   image_name: mission_control_station
   base_decor: -5
   base_decor_radius: 1
@@ -4476,7 +5981,34 @@
   generator_base_capacity: 0
   materials:
   - refined_metal
+- name: modular_launchpad_port_bridge
+  desc: 允许火箭平台建在更远的地方。
+  effect: 自动地与相邻的火箭平台或任何火箭端口相连。
+  image_name: rocket_loader_extension
+  base_decor_radius: 1
+  category: rocketry
+  construction_time: 60
+  replaceable: true
+  is_industrial_machinery: false
+  overheatable: true
+  overheat_temperature: 2000
+  heat_generate: 0
+  height_in_cells: 2
+  width_in_cells: 1
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - refined_metal
 - name: modular_launchpad_port_gas
+  desc: 火箭必须着陆才能装载或卸载资源。
+  effect: >-
+    向相连的火箭库存中装载气体。
+
+
+    自动地与相邻的火箭平台或另一个火箭端口相连。
+
+
+    可以在火箭的货舱上使用气体筛选项设定。
   image_name: conduit_port_gas_loader
   base_decor_radius: 1
   category: hvac
@@ -4495,6 +6027,15 @@
   materials:
   - refined_metal
 - name: modular_launchpad_port_gas_unloader
+  desc: 火箭必须着陆才能装载或卸载资源。
+  effect: >-
+    从相连的火箭库存中卸载气体。
+
+
+    自动地与相邻的火箭平台或另一个火箭端口相连。
+
+
+    可以在卸载器上使用气体筛选项设定。
   image_name: conduit_port_gas_unloader
   base_decor_radius: 1
   category: hvac
@@ -4513,6 +6054,15 @@
   materials:
   - refined_metal
 - name: modular_launchpad_port_liquid
+  desc: 火箭必须着陆才能装载或卸载资源。
+  effect: >-
+    向相连的火箭库存中装载液体。
+
+
+    自动地与相邻的火箭平台或另一个火箭端口相连。
+
+
+    可以在火箭的货舱上使用液体筛选项设定。
   image_name: conduit_port_liquid_loader
   base_decor_radius: 1
   category: plumbing
@@ -4531,6 +6081,15 @@
   materials:
   - refined_metal
 - name: modular_launchpad_port_liquid_unloader
+  desc: 火箭必须着陆才能装载或卸载资源。
+  effect: >-
+    从相连的火箭库存中卸载液体。
+
+
+    自动地与相邻的火箭平台或另一个火箭端口相连。
+
+
+    可以在卸载器上使用液体筛选项设定。
   image_name: conduit_port_liquid_unloader
   base_decor_radius: 1
   category: plumbing
@@ -4549,6 +6108,15 @@
   materials:
   - refined_metal
 - name: modular_launchpad_port_solid
+  desc: 火箭必须着陆才能装载或卸载资源。
+  effect: >-
+    向相连的火箭库存中装载固体。
+
+
+    自动地与相邻的火箭平台或另一个火箭端口相连。
+
+
+    可以在火箭的货舱上使用固体筛选项设定。
   image_name: conduit_port_solid_loader
   base_decor_radius: 1
   category: conveyance
@@ -4567,6 +6135,15 @@
   materials:
   - refined_metal
 - name: modular_launchpad_port_solid_unloader
+  desc: 火箭必须着陆才能装载或卸载资源。
+  effect: >-
+    从相连的火箭库存中卸载固体。
+
+
+    自动地与相邻的火箭平台或另一个火箭端口相连。
+
+
+    可以在卸载器上使用固体材料筛选项设定。
   image_name: conduit_port_solid_unloader
   base_decor_radius: 1
   category: conveyance
@@ -4585,6 +6162,15 @@
   materials:
   - refined_metal
 - name: monument_bottom
+  desc: 丰碑的底基必须最先建造。
+  effect: >-
+    建造丰碑的底部。
+
+
+    可以自定义外观。
+
+
+    实现殖民化使命必须建造丰碑。
   image_name: monument_base_a
   base_decor: 10
   base_decor_radius: 5
@@ -4605,6 +6191,15 @@
   - steel
   - obsidian
 - name: monument_middle
+  desc: 丰碑的每部分外观自定义后可以随意组合。
+  effect: >-
+    建造丰碑的中部。
+
+
+    可以自定义外观。
+
+
+    实现殖民化使命必须建造丰碑。
   image_name: monument_mid_a
   base_decor: 10
   base_decor_radius: 5
@@ -4626,6 +6221,15 @@
   - polypropylene
   - steel
 - name: monument_top
+  desc: 建造丰碑表明你向宇宙宣布这块大岩石是你自己的。
+  effect: >-
+    建造丰碑的顶部。
+
+
+    可以自定义外观。
+
+
+    实现殖民化使命必须建造丰碑。
   image_name: monument_upper_a
   base_decor: 10
   base_decor_radius: 5
@@ -4646,7 +6250,36 @@
   - glass
   - diamond
   - steel
+- name: morb_rover_maker
+  desc: 允许有相应技能的复制人稳定供应粘糊糊但很有效的机器人。
+  effect: >-
+    使用僵尸孢子和钢制造生物燃料机器，可以送至危险环境中。
+
+
+    失效的生物机器人会掉落可收集的钢。
+  image_name: gravitas_morb_tank
+  base_decor: 10
+  base_decor_radius: 2
+  construction_time: 120
+  entombable: true
+  floodable: true
+  replaceable: true
+  is_industrial_machinery: false
+  overheat_temperature: 75
+  heat_generate: 0
+  height_in_cells: 4
+  width_in_cells: 5
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - refined_metal
 - name: moulding_tile
+  desc: 镶边是用于墙体和建筑的纯装饰性衬垫。
+  effect: >-
+    用来建造房间的墙体和地面。
+
+
+    提高装饰度，从而提升士气。
   image_name: floor_moulding
   base_decor: 10
   base_decor_radius: 1
@@ -4662,6 +6295,15 @@
   materials:
   - buildable_raw
 - name: nosecone_basic
+  desc: 每个火箭都需要一个前锥才能飞起来。
+  effect: >-
+    在起飞和落地期间保护火箭，以实现太空旅行。
+
+
+    必须通过火箭平台建造。
+
+
+    必须建在火箭的最顶端。
   image_name: rocket_nosecone_default
   base_decor_radius: 1
   construction_time: 60
@@ -4680,6 +6322,15 @@
   - refined_metal
   - insulator
 - name: nosecone_harvest
+  desc: 从宇宙中收集资源。
+  effect: >-
+    使火箭能够钻取太空中的星际碎片并收集气体、液体和固体资源。
+
+
+    必须通过火箭平台建造。
+
+
+    必须建在火箭的最顶端，且含有能够储存相应资源的气体、液体或固体货舱。
   image_name: rocket_nosecone_gathering
   base_decor_radius: 1
   construction_time: 60
@@ -4698,6 +6349,12 @@
   - refined_metal
   - plastic
 - name: nuclear_reactor
+  desc: 辐射粒子发生器和变向器可使辐射用于其他建筑。
+  effect: >-
+    使用浓缩铀产生辐射以生成辐射粒子。
+
+
+    生成大量的热。过热会导致爆炸性熔毁。
   image_name: generatornuclear
   base_decor: -15
   base_decor_radius: 3
@@ -4714,6 +6371,15 @@
   materials:
   - refined_metal
 - name: nuclear_research_center
+  desc: 里面免费附带一些离子。
+  effect: >-
+    执行应用科学研究以解锁新技术。
+
+
+    消耗辐射粒子。
+
+
+    分配的复制人必须具有应用科学研究技能。
   image_name: material_research_centre
   base_decor_radius: 1
   category: equipment
@@ -4733,6 +6399,12 @@
   materials:
   - refined_metal
 - name: object_dispenser
+  desc: 自动卸物箱可以少量地储存或卸下资源。
+  effect: >-
+    储存任何由复制人搬运的固体材料。
+
+
+    当接收到绿色信号时，将所存的材料放回世界。
   image_name: object_dispenser
   base_decor: -10
   base_decor_radius: 2
@@ -4751,6 +6423,8 @@
   materials:
   - metal
 - name: oil_refinery
+  desc: 石油只能从原油中提炼获得。
+  effect: 将原油转化为石油和天然气。
   image_name: oilrefinery
   base_decor: -10
   base_decor_radius: 2
@@ -4771,6 +6445,12 @@
   materials:
   - metal
 - name: oil_well_cap
+  desc: 抽送到储油石的水无法回收。
+  effect: >-
+    使用干净的水提取原油。
+
+
+    必须建在储油石上。
   image_name: geyser_oil_cap
   base_decor_radius: 1
   category: utilities
@@ -4790,6 +6470,12 @@
   materials:
   - refined_metal
 - name: orbital_cargo_module
+  desc: 在探索未知星球时，打包一些补给通常是个好主意。
+  effect: >-
+    把货物送到还没有火箭平台的小行星表面。
+
+
+    必须通过火箭平台建造。
   image_name: rocket_orbital_deploy_cargo_module
   base_decor_radius: 1
   construction_time: 30
@@ -4807,6 +6493,12 @@
   materials:
   - metal
 - name: orbital_research_center
+  desc: 在小行星轨道上时，轨道数据收集实验仪可以记录数据，并将其写入数据磁盘。
+  effect: >-
+    产生可以在虚拟天象仪消耗的数据磁盘以解锁新技术。
+
+
+    消耗塑料和电力。
   image_name: orbital_research_station
   base_decor_radius: 1
   category: equipment
@@ -4826,6 +6518,8 @@
   materials:
   - plastic
 - name: ore_scrubber
+  desc: 洗涤器可以对新挖出来的材料在送到殖民地之前进行消毒。
+  effect: 杀死矿石上存在的大量病菌。
   image_name: orescrubber
   base_decor: 10
   base_decor_radius: 2
@@ -4845,6 +6539,15 @@
   materials:
   - metal
 - name: outhouse
+  desc: 一个一起吃饭，一起排泄的殖民地。
+  effect: >-
+    给复制人提供一个解手的地方。
+
+
+    不需要管道。
+
+
+    必须定期清空污染土。
   image_name: outhouse
   base_decor: -20
   base_decor_radius: 5
@@ -4863,6 +6566,8 @@
   materials:
   - buildable_raw
 - name: oxidizer_tank
+  desc: 固体氧化剂使火箭燃料能够在真空中有效燃烧。
+  effect: 储存氧石或其他氧化剂供燃烧火箭燃料使用。
   image_name: rocket_oxidizer_tank
   base_decor_radius: 1
   category: rocketry
@@ -4881,7 +6586,13 @@
   materials:
   - steel
 - name: oxidizer_tank_cluster
-  image_name: rocket_oxidizer_tank
+  desc: 固体氧化剂使火箭燃料能够在真空中有效燃烧。
+  effect: >-
+    储存氧石或其他氧化剂供燃烧火箭燃料使用。
+
+
+    必须通过火箭平台建造。
+  image_name: rocket_cluster_oxidizer_tank
   base_decor_radius: 1
   construction_time: 60
   entombable: true
@@ -4898,6 +6609,8 @@
   materials:
   - steel
 - name: oxidizer_tank_liquid
+  desc: 液态氧可提高火箭燃料的推重比。
+  effect: 储存液态氧供燃烧火箭燃料使用。
   image_name: rocket_oxidizer_tank_liquid
   base_decor_radius: 1
   category: rocketry
@@ -4916,6 +6629,12 @@
   materials:
   - steel
 - name: oxidizer_tank_liquid_cluster
+  desc: 液态氧可提高火箭燃料的推重比。
+  effect: >-
+    储存液态氧供燃烧火箭燃料使用。
+
+
+    必须通过火箭平台建造。
   image_name: rocket_cluster_oxidizer_tank_liquid
   base_decor_radius: 1
   construction_time: 60
@@ -4933,6 +6652,12 @@
   materials:
   - steel
 - name: oxygen_mask_locker
+  desc: 氧气面罩存放柜用于存放未使用的氧气面罩，并为其充氧。
+  effect: >-
+    存放氧气面罩并为其补充氧气。
+
+
+    建造在氧气面罩检查站旁，使复制人在路过时戴上氧气面罩。
   image_name: oxygen_mask_locker
   base_decor: 10
   base_decor_radius: 2
@@ -4952,6 +6677,15 @@
   materials:
   - metal
 - name: oxygen_mask_marker
+  desc: 每个检查站都必须配备至少一个建在箭头指向后面的相关存放柜。
+  effect: >-
+    标记复制人必须戴上或摘下氧气面罩的起点。
+
+
+    必须建在氧气面罩存放柜旁。
+
+
+    建造前可旋转。
   image_name: oxygen_checkpoint_arrow
   base_decor: 10
   base_decor_radius: 2
@@ -4971,6 +6705,18 @@
   materials:
   - metal
 - name: oxygen_mask_station
+  desc: 如果没有足够的氧气填充面罩，复制人就不能通过。
+  effect: >-
+    使用筛选项设定中指定的金属矿石制作氧气面罩。
+
+
+    自动从环境中抽取氧气以填充面罩。
+
+
+    标记复制人需要带上或摘下面罩的起点。
+
+
+    建造前可旋转。
   image_name: oxygen_mask_station
   base_decor: 10
   base_decor_radius: 2
@@ -4990,6 +6736,8 @@
   materials:
   - buildable_raw
 - name: oxylite_refinery
+  desc: 固体状的氧石是一种非常容易运输的氧气来源。
+  effect: 使用氧气和少量的金合成氧石。
   image_name: oxylite_refinery
   base_decor: -10
   base_decor_radius: 2
@@ -5010,6 +6758,8 @@
   - refined_metal
   - plastic
 - name: park_sign
+  desc: 经过公园会提升复制人的士气。
+  effect: 把一片区域定为公园或自然保护区。
   image_name: parksign
   base_decor_radius: 1
   category: furniture
@@ -5028,6 +6778,12 @@
   materials:
   - buildable_any
 - name: petroleum_generator
+  desc: 石油发电机发电量高，但会产生大量废物。
+  effect: >-
+    将液态石油或乙醇转化为电力。
+
+
+    产生二氧化碳和污染水。
   image_name: generatorpetrol
   base_decor: -15
   base_decor_radius: 3
@@ -5047,6 +6803,12 @@
   materials:
   - metal
 - name: phonobox
+  desc: 跳舞有助于复制人释放内心深处的情绪。
+  effect: >-
+    在复制人休息时播放音乐，让他们跟着音乐跳舞。
+
+
+    提升复制人的士气。
   image_name: jukebot
   base_decor: 10
   base_decor_radius: 2
@@ -5067,6 +6829,18 @@
   materials:
   - metal
 - name: pioneer_module
+  desc: 复制人的一小步。
+  effect: >-
+    能够前往还没有火箭平台的小行星。
+
+
+    能容纳一名复制人。
+
+
+    火箭在星图中小行星周围相邻一格时就可以部署。
+
+
+    必须通过火箭平台建造。
   image_name: rocket_pioneer_cargo_module
   base_decor_radius: 1
   construction_time: 30
@@ -5084,6 +6858,12 @@
   materials:
   - refined_metal
 - name: pixel_pack
+  desc: 四个像素块可分别设定成不同颜色。
+  effect: >-
+    像素屏可设定接收到绿色信号显示一组颜色，接收到红色信号显示另外一组。
+
+
+    从<link="LOGICWIRE">信号线</link>接收的信号控制整排，从<link="LOGICRIBBON">信号线组</link>接收的信号控制单个像素块。
   image_name: pixel_pack
   base_decor: 20
   base_decor_radius: 4
@@ -5101,6 +6881,8 @@
   - glass
   - refined_metal
 - name: planter_box
+  desc: 培育种植的种子比野生植物成熟得更快。
+  effect: 将种子培育成植物。
   image_name: planterbox
   base_decor: -10
   base_decor_radius: 2
@@ -5118,6 +6900,12 @@
   materials:
   - farmable
 - name: plastic_tile
+  desc: 塑料砖具有轻度的抗菌性，有助于限制病菌在殖民地的传播。
+  effect: >-
+    用来建造房间的墙体和地面。
+
+
+    显著提高复制人的行走速度。
   image_name: floor_plastic
   base_decor: 5
   base_decor_radius: 1
@@ -5134,6 +6922,8 @@
   materials:
   - plastic
 - name: poibunker_exterior_door
+  desc: ''
+  effect: 一扇牢固的门，配有复杂的基因锁。
   image_name: door_poi
   base_decor: -15
   base_decor_radius: 3
@@ -5149,6 +6939,8 @@
   materials:
   - metal
 - name: poidoor_internal
+  desc: ''
+  effect: 一扇牢固的门，配有复杂的基因锁。
   image_name: door_poi_internal
   base_decor_radius: 1
   construction_time: 10
@@ -5164,6 +6956,8 @@
   materials:
   - metal
 - name: poifacility_door
+  desc: ''
+  effect: 曾经是某个大型设施主入口的双开大门。
   image_name: door_facility
   base_decor: -15
   base_decor_radius: 3
@@ -5180,6 +6974,8 @@
   materials:
   - metal
 - name: polymerizer
+  desc: 塑料可用来建造特殊的建筑以及制作特殊的物品。
+  effect: 将石油转化为塑料。
   image_name: plasticrefinery
   base_decor_radius: 1
   category: refining
@@ -5200,6 +6996,15 @@
   materials:
   - metal
 - name: power_control_station
+  desc: 一次只能为一个电控站分配一名复制人。
+  effect: >-
+    生产微芯片以增加发电机输出的电力。
+
+
+    分配的复制人必须具有发电机的调整特质。
+
+
+    这个建筑是发电厂的必要组成部分。
   image_name: electricianworkdesk
   base_decor_radius: 1
   category: equipment
@@ -5207,7 +7012,7 @@
   entombable: true
   floodable: true
   replaceable: true
-  is_industrial_machinery: false
+  is_industrial_machinery: true
   overheat_temperature: 75
   heat_generate: 0
   height_in_cells: 4
@@ -5217,6 +7022,15 @@
   materials:
   - refined_metal
 - name: power_transformer
+  desc: 这是一个变压器，但更大一点。
+  effect: >-
+    限制流过变压器的电力为4千瓦。
+
+
+    在大的一端接上电池以作为一种调节阀，并防止电线获取电力超过4千瓦。
+
+
+    建造前可旋转。
   image_name: transformer
   base_decor: -10
   base_decor_radius: 2
@@ -5236,6 +7050,15 @@
   materials:
   - refined_metal
 - name: power_transformer_small
+  desc: 限制电线的电力以防止发生过载损坏。
+  effect: >-
+    限制流过变压器的电力为1000瓦。
+
+
+    在大的一端接上电池以作为一种调节阀，并防止电线获取电力超过1000瓦。
+
+
+    建造前可旋转。
   image_name: transformer_small
   base_decor: -10
   base_decor_radius: 2
@@ -5255,6 +7078,15 @@
   materials:
   - metal
 - name: pressure_door
+  desc: 机械气闸比其他种类的门开关更快。
+  effect: >-
+    阻挡液体和气体流动，维持各区域间的压力。
+
+
+    没有电力时作用与手动气闸一致。
+
+
+    野生小动物无法通过门。
   image_name: door_external
   base_decor: -10
   base_decor_radius: 2
@@ -5272,6 +7104,12 @@
   materials:
   - metal
 - name: pressure_switch_gas
+  desc: 气压电闸在周围气压超过设定阈值时会断开。
+  effect: >-
+    根据周围气压自动地接通或断开电力。
+
+
+    不影响开关前端的电路。
   image_name: switchgaspressure
   base_decor: -5
   base_decor_radius: 1
@@ -5290,6 +7128,15 @@
   materials:
   - metal
 - name: pressure_switch_liquid
+  desc: 液压电闸在周围液压超过设定阈值时会断开。
+  effect: >-
+    根据周围液压自动地接通或断开电力。
+
+
+    不影响开关前端的电路。
+
+
+    必须浸没在液体中。
   image_name: switchliquidpressure
   base_decor: -5
   base_decor_radius: 1
@@ -5307,6 +7154,8 @@
   materials:
   - metal
 - name: prop_gravitas_lab_wall
+  desc: ''
+  effect: 曾经存在于实验室的一面普通的墙。
   image_name: gravitas_lab_wall
   base_decor: 10
   base_decor_radius: 1
@@ -5322,6 +7171,8 @@
   materials:
   - buildable_raw
 - name: prop_gravitas_lab_window
+  desc: ''
+  effect: 一扇实验室窗户。以前是作为通往外部世界的通道。
   image_name: gravitas_lab_window
   base_decor: 10
   base_decor_radius: 1
@@ -5337,6 +7188,12 @@
   materials:
   - glass
 - name: prop_gravitas_lab_window_horizontal
+  desc: ''
+  effect: >-
+    一扇实验室窗户。
+
+
+    有人曾盯着它，苦思实验结果。
   image_name: gravitas_lab_window_horizontal
   base_decor: 10
   base_decor_radius: 1
@@ -5352,6 +7209,8 @@
   materials:
   - glass
 - name: prop_gravitas_wall
+  desc: ''
+  effect: 一面墙，属于曾经伟大的科研机构。
   image_name: gravitas_walls
   base_decor: 10
   base_decor_radius: 1
@@ -5367,6 +7226,8 @@
   materials:
   - buildable_raw
 - name: radiation_light
+  desc: 如果在没有保护的情况下暴露在辐射中，复制人就会生病。
+  effect: 通电时释放可由辐射粒子发生器聚集的辐射。
   image_name: radiation_lamp
   base_decor_radius: 1
   category: hep
@@ -5386,13 +7247,22 @@
   materials:
   - metal
 - name: rail_gun
+  desc: 尽管会很想爬进去，但相信我……别那么做。
+  effect: >-
+    将星际载货在小行星间发射。
+
+
+    载货可包含固体、液体和气体材料。
+
+
+    不能传送复制人。
   image_name: rail_gun
   base_decor_radius: 1
   category: rocketry
   construction_time: 30
   entombable: true
   replaceable: true
-  is_industrial_machinery: false
+  is_industrial_machinery: true
   overheat_temperature: 75
   heat_generate: 2
   height_in_cells: 6
@@ -5403,6 +7273,12 @@
   materials:
   - metal
 - name: rail_gun_payload_opener
+  desc: 载货拆包器可以与运输系统，水管系统，通风系统相连以便分类。
+  effect: >-
+    将由复制人运送来的星际载货拆包。
+
+
+    自动分离固体、液体和气体材料，并分配到相应的系统中。
   image_name: railgun_emptier
   base_decor_radius: 1
   category: rocketry
@@ -5420,6 +7296,12 @@
   materials:
   - metal
 - name: ranch_station
+  desc: 照料小动物以使它们干净漂亮、感到快乐，从而提高产出。
+  effect: >-
+    允许分配的养殖员照顾小动物。
+
+
+    分配的复制人必须具有小动物养殖特质。
   image_name: rancherstation
   base_decor_radius: 1
   category: equipment
@@ -5437,6 +7319,12 @@
   materials:
   - metal
 - name: ration_box
+  desc: 口粮箱可防止饥饿的小动物偷吃食物，但无法减缓食物变质。
+  effect: >-
+    储存少量食物。
+
+
+    食物必须由复制人送到箱里。
   image_name: rationbox
   base_decor: 5
   base_decor_radius: 1
@@ -5454,6 +7342,8 @@
   materials:
   - buildable_raw
 - name: refrigerator
+  desc: 可以借助环境条件或者冰箱减慢食物变质的速度。
+  effect: 将食物储存在理想的温度下以防变质。
   image_name: fridge
   base_decor: 10
   base_decor_radius: 2
@@ -5473,6 +7363,12 @@
   materials:
   - buildable_raw
 - name: research_center
+  desc: 研究站对于解锁所有等级的研究是必不可少的。
+  effect: >-
+    进行基础研究以解锁新技术。
+
+
+    消耗泥土。
   image_name: research_center
   base_decor_radius: 1
   category: equipment
@@ -5492,6 +7388,15 @@
   materials:
   - metal
 - name: research_module
+  desc: 数据磁盘可用于虚拟天象仪来进行额外的研究。
+  effect: >-
+    在每次太空任务中完成一项研究任务。
+
+
+    无论目的地在哪，都会产生少量数据磁盘。
+
+
+    所生成的研究点在火箭返回后可供使用。
   image_name: rocket_research_module
   base_decor_radius: 1
   category: rocketry
@@ -5510,6 +7415,12 @@
   materials:
   - steel
 - name: reset_skills_station
+  desc: 抹除复制人头脑中的技能，将其恢复到只有初始能力的状态。
+  effect: >-
+    退还复制人的技能点以供重新分配。
+
+
+    这个过程中复制人会失去所有分配的技能。
   image_name: respeccer
   base_decor_radius: 1
   category: equipment
@@ -5529,6 +7440,12 @@
   materials:
   - metal
 - name: rock_crusher
+  desc: 碎石机可以使原矿松散成小块，能够处理许多不同的资源。
+  effect: >-
+    低效地从原材料中生产精炼材料。
+
+
+    只有在队列中安排配方复制人才会进行制作。
   image_name: rockrefinery
   base_decor: -15
   base_decor_radius: 3
@@ -5537,7 +7454,7 @@
   entombable: true
   floodable: true
   replaceable: true
-  is_industrial_machinery: false
+  is_industrial_machinery: true
   overheatable: true
   overheat_temperature: 75
   heat_generate: 16
@@ -5549,6 +7466,12 @@
   materials:
   - metal
 - name: rocket_control_station
+  desc: 当屏幕保护程序启动时，需要有人来晃动一下控制杆。
+  effect: >-
+    允许复制人操作火箭并控制内部建筑的使用许可。
+
+
+    必须具有火箭驾驶技能的复制人才能使用。
   image_name: rocket_control_station
   base_decor: 15
   base_decor_radius: 3
@@ -5566,6 +7489,8 @@
   materials:
   - metal
 - name: rocket_envelope_window_tile
+  desc: 在这里我能看到我的小行星！
+  effect: 火箭的窗户。
   image_name: floor_glass
   base_decor: 5
   base_decor_radius: 1
@@ -5580,6 +7505,15 @@
   materials:
   - transparent
 - name: rocket_interior_gas_input
+  desc: 基本上就是个中央吸尘系统。
+  effect: >-
+    允许气体通过管道送入火箭库存。
+
+
+    将气体送到第一个有可用空间的火箭舱块。
+
+
+    必须建在火箭舱块内部。
   image_name: rocket_floor_plug_gas
   base_decor: -15
   base_decor_radius: 3
@@ -5596,6 +7530,11 @@
   materials:
   - metal
 - name: rocket_interior_gas_input_port
+  desc: 一个附加装置，能直接连到火箭外的输出端口。
+  effect: >-
+    允许火箭内的管道直接连到太空员舱外。
+
+    飞行时可以将气体排入太空。
   image_name: rocket_interior_port_gas_in
   base_decor: 5
   base_decor_radius: 1
@@ -5610,6 +7549,15 @@
   materials:
   - refined_metal
 - name: rocket_interior_gas_output
+  desc: 清爽微风，按需分配。
+  effect: >-
+    允许气体通过管道从火箭库存中取出。
+
+
+    从第一个有需求材料的火箭舱块中将气体取出。
+
+
+    必须建在火箭舱块内部。
   image_name: rocket_floor_plug_gas_out
   base_decor: -15
   base_decor_radius: 3
@@ -5627,6 +7575,8 @@
   materials:
   - metal
 - name: rocket_interior_gas_output_port
+  desc: 一个附加装置，能直接连到火箭外的输入端口。
+  effect: 允许火箭外的管道直接连到太空员舱内。
   image_name: rocket_interior_port_gas_out
   base_decor: 5
   base_decor_radius: 1
@@ -5641,6 +7591,15 @@
   materials:
   - refined_metal
 - name: rocket_interior_liquid_input
+  desc: 脏水走开！
+  effect: >-
+    允许液体通过管道送入火箭库存。
+
+
+    将液体送入第一个有可用空间的火箭舱块。
+
+
+    必须建在火箭舱块内部。
   image_name: rocket_floor_plug_liquid
   base_decor: -15
   base_decor_radius: 3
@@ -5657,6 +7616,11 @@
   materials:
   - metal
 - name: rocket_interior_liquid_input_port
+  desc: 一个附加装置，能直接连到火箭外的输出端口。
+  effect: >-
+    允许火箭内的管道直接连到太空员舱外。
+
+    飞行时可以将液体排入太空。
   image_name: rocket_interior_port_liquid_in
   base_decor: 5
   base_decor_radius: 1
@@ -5671,6 +7635,15 @@
   materials:
   - refined_metal
 - name: rocket_interior_liquid_output
+  desc: 要是我们有一些水气球就好了……
+  effect: >-
+    允许液体通过管道从火箭库存中取出。
+
+
+    从第一个有需求材料的火箭舱块中将液体取出。
+
+
+    必须建在火箭舱块内部。
   image_name: rocket_floor_plug_liquid_out
   base_decor: -15
   base_decor_radius: 3
@@ -5688,6 +7661,8 @@
   materials:
   - metal
 - name: rocket_interior_liquid_output_port
+  desc: 一个附加装置，能直接连到火箭外的输入端口。
+  effect: 允许火箭外的管道直接连到太空员舱内。
   image_name: rocket_interior_port_liquid_out
   base_decor: 5
   base_decor_radius: 1
@@ -5702,6 +7677,15 @@
   materials:
   - refined_metal
 - name: rocket_interior_power_plug
+  desc: 插座使用火箭储存的电力为指挥舱中的建筑提供方便的电力。
+  effect: >-
+    为相连的建筑提供电力。
+
+
+    从电池舱和火箭引擎中获取电力。
+
+
+    必须建在火箭舱块内部。
   image_name: rocket_floor_plug
   base_decor: -15
   base_decor_radius: 3
@@ -5718,6 +7702,15 @@
   materials:
   - metal
 - name: rocket_interior_solid_input
+  desc: 当你能把所有东西都塞到里面时，为什么还要整理你的货架？
+  effect: >-
+    允许固体材料通过运输轨道送入火箭库存。
+
+
+    将固体材料送入第一个有可用空间的火箭舱块。
+
+
+    必须建在火箭舱块内部。
   image_name: rocket_floor_plug_solid
   base_decor: -15
   base_decor_radius: 3
@@ -5734,6 +7727,15 @@
   materials:
   - metal
 - name: rocket_interior_solid_output
+  desc: 飞行途中就可以拿出你的行李了。
+  effect: >-
+    允许固体材料通过运输轨道从火箭库存中取出。
+
+
+    从第一个有需求材料的火箭舱块中将固体材料取出。
+
+
+    必须建在火箭舱块内部。
   image_name: rocket_floor_plug_solid_out
   base_decor: -15
   base_decor_radius: 3
@@ -5751,6 +7753,8 @@
   materials:
   - metal
 - name: rocket_wall_tile
+  desc: 将太空隔在外面。
+  effect: 火箭的墙体。
   image_name: floor_rocket
   base_decor: 5
   base_decor_radius: 1
@@ -5765,6 +7769,8 @@
   materials:
   - steel
 - name: role_station
+  desc: 技能公示板可以教复制人他们没法自己学会的特殊技能。
+  effect: 允许复制人花费技能点学习新技能。
   image_name: job_station
   base_decor_radius: 1
   category: equipment
@@ -5783,6 +7789,12 @@
   materials:
   - metal
 - name: rust_deoxidizer
+  desc: 一端进入铁锈和盐，另一端出来氧气。
+  effect: >-
+    将铁锈转化为氧气和氯气。
+
+
+    当区域的气压达到最大时将会闲置。
   image_name: rust_deoxidizer
   base_decor: -10
   base_decor_radius: 2
@@ -5803,6 +7815,12 @@
   materials:
   - metal
 - name: sauna
+  desc: 一次热气腾腾的桑拿可以缓解一切身体疼痛。
+  effect: >-
+    使用蒸汽创造一个放松的氛围。
+
+
+    提升复制人的士气。
   image_name: sauna
   base_decor: 15
   base_decor_radius: 3
@@ -5824,6 +7842,12 @@
   - metal
   - building_wood
 - name: scanner_module
+  desc: 允许复制人大胆地前往其他复制人还没去过的地方。
+  effect: >-
+    前行时自动分析相邻空间。
+
+
+    必须通过火箭平台建造。
   image_name: rocket_scanner_module
   base_decor_radius: 1
   construction_time: 120
@@ -5842,6 +7866,15 @@
   - steel
   - polypropylene
 - name: scout_module
+  desc: 侦察者可以在没有火箭平台的小行星上进行探索。
+  effect: >-
+    部署一个侦察者以进行远程小行星探索。
+
+
+    火箭在星图中小行星周围相邻一格时就可以部署。
+
+
+    必须通过火箭平台建造。
   image_name: rocket_scout_cargo_module
   base_decor_radius: 1
   construction_time: 30
@@ -5859,6 +7892,12 @@
   materials:
   - metal
 - name: sculpture
+  desc: 习得艺术技能的复制人能制作出更有装饰性的艺术品。
+  effect: >-
+    适度提高装饰度，从而提升士气。
+
+
+    必须由复制人雕刻。
   image_name: sculpture
   base_decor: 10
   base_decor_radius: 8
@@ -5876,6 +7915,8 @@
   materials:
   - buildable_raw
 - name: shearing_station
+  desc: 那些小动物可不会自己修剪自己。
+  effect: 修剪站可安全地对毛鳞壁虎和珍馐田鼠进行修剪，从而获得有用的原材料。
   image_name: shearing_station
   base_decor_radius: 1
   category: equipment
@@ -5895,6 +7936,8 @@
   materials:
   - buildable_raw
 - name: shower
+  desc: 经常洗浴可以避免复制人将病菌传播到他们接触的东西上。
+  effect: 提升复制人的士气并去除病菌。
   image_name: shower
   base_decor: 10
   base_decor_radius: 2
@@ -5913,6 +7956,12 @@
   materials:
   - metal
 - name: sludge_press
+  desc: 哪个复制人不喜欢玩泥巴？
+  effect: >-
+    将泥巴和其他泥浆分离成其基本的元素。
+
+
+    只有在队列中安排配方复制人才会进行制作。
   image_name: sludge_press
   base_decor: -10
   base_decor_radius: 2
@@ -5921,7 +7970,7 @@
   entombable: true
   floodable: true
   replaceable: true
-  is_industrial_machinery: false
+  is_industrial_machinery: true
   overheatable: true
   overheat_temperature: 75
   heat_generate: 4
@@ -5933,6 +7982,12 @@
   materials:
   - buildable_raw
 - name: small_oxidizer_tank
+  desc: 固体氧化剂使火箭燃料能够在真空中有效燃烧。
+  effect: >-
+    储存肥料和氧石以供燃烧火箭燃料使用。
+
+
+    必须通过火箭平台建造。
   image_name: rocket_oxidizer_tank_small
   base_decor_radius: 1
   construction_time: 30
@@ -5950,6 +8005,12 @@
   materials:
   - metal
 - name: small_sculpture
+  desc: 习得艺术技能的复制人能制作出更有装饰性的艺术品。
+  effect: >-
+    略微提高装饰度，从而提升士气。
+
+
+    必须由复制人雕刻。
   image_name: sculpture_1x2
   base_decor: 5
   base_decor_radius: 4
@@ -5967,6 +8028,12 @@
   materials:
   - buildable_raw
 - name: soda_fountain
+  desc: 冒泡的水可以让复制人的眼睛闪闪发光。
+  effect: >-
+    用水和二氧化碳制造汽水。
+
+
+    饮用汽水可提升复制人的士气。
   image_name: sodamaker
   base_decor: 10
   base_decor_radius: 2
@@ -5987,6 +8054,12 @@
   materials:
   - refined_metal
 - name: solar_panel
+  desc: 太阳能板可以将高强度阳光转化为可用的电力并且不产生任何废物。
+  effect: >-
+    将阳光转化为电力。
+
+
+    必须暴露在太空中。
   image_name: solar_panel
   base_decor: -15
   base_decor_radius: 3
@@ -6006,6 +8079,15 @@
   materials:
   - glass
 - name: solar_panel_module
+  desc: 在火箭起飞前和飞行时收集太阳能。
+  effect: >-
+    将阳光转化为电力供火箭使用。
+
+
+    必须通过火箭平台建造。
+
+
+    必须暴露在太空中。
   image_name: rocket_solar_panel_module
   base_decor_radius: 1
   construction_time: 30
@@ -6023,6 +8105,8 @@
   materials:
   - glass
 - name: solid_booster
+  desc: 额外的推进器使火箭能够到达更遥远的太空目的地。
+  effect: 燃烧铁和氧石以增加火箭探索距离。
   image_name: rocket_solid_booster
   base_decor_radius: 1
   category: rocketry
@@ -6041,6 +8125,15 @@
   materials:
   - steel
 - name: solid_cargo_bay_small
+  desc: 复制人会把他们在太空任务中找到的任何资源装入货舱。
+  effect: >-
+    允许复制人储存在太空任务中找到的一些固体材料。
+
+
+    火箭返回后，所储存的资源便可供殖民地使用。
+
+
+    必须通过火箭平台建造。
   image_name: rocket_storage_solid_small
   base_decor_radius: 1
   construction_time: 30
@@ -6058,6 +8151,12 @@
   materials:
   - refined_metal
 - name: solid_conduit
+  desc: 运输轨道可以将材料运输到最需要的地方，节省了复制人的行走时间。
+  effect: >-
+    在运输装载器和运输存放器之间的轨道上输送固体材料。
+
+
+    可穿过墙体和地面。
   image_name: utilities_conveyor
   base_decor_radius: 1
   category: conveyance
@@ -6073,6 +8172,12 @@
   materials:
   - metal
 - name: solid_conduit_bridge
+  desc: 分开的轨道系统有助于确保材料到达预期地点。
+  effect: >-
+    让一段运输轨道可以越过另一段运输轨道，而不会连在一起。
+
+
+    可穿过墙体和地面。
   image_name: utilities_conveyorbridge
   base_decor_radius: 1
   category: conveyance
@@ -6088,6 +8193,8 @@
   materials:
   - metal
 - name: solid_conduit_disease_sensor
+  desc: 病菌传感器有助于检测病菌存在以控制自动化行为。
+  effect: 根据轨上物品病菌数量，输出绿色信号或红色信号。
   image_name: conveyor_germs_sensor
   base_decor: -5
   base_decor_radius: 1
@@ -6105,6 +8212,8 @@
   - refined_metal
   - plastic
 - name: solid_conduit_element_sensor
+  desc: 元素传感器可用于探测轨道上是否有特定物品存在。
+  effect: 若检测到轨上有所选物品，输出绿色信号。
   image_name: conveyor_element_sensor
   base_decor: -5
   base_decor_radius: 1
@@ -6121,6 +8230,12 @@
   materials:
   - refined_metal
 - name: solid_conduit_inbox
+  desc: 材料筛选项可用于决定哪些材料会被送到轨道上。
+  effect: >-
+    将固体材料装载到运输轨道上进行运输。
+
+
+    只装载所选资源。
   image_name: conveyorin
   base_decor: -10
   base_decor_radius: 2
@@ -6140,6 +8255,8 @@
   materials:
   - refined_metal
 - name: solid_conduit_outbox
+  desc: 材料在到达轨道的末端时会进入可由复制人使用的存放器中。
+  effect: 将运输轨道上的固体材料卸载到库存中。
   image_name: conveyorout
   base_decor: -10
   base_decor_radius: 2
@@ -6157,6 +8274,8 @@
   materials:
   - metal
 - name: solid_conduit_temperature_sensor
+  desc: 温度传感器可在轨道上的物品达到特定温度时禁用某些建筑。
+  effect: 当轨上物品温度达到选定范围内时，输出绿色信号或红色信号。
   image_name: conveyor_temperature_sensor
   base_decor: -5
   base_decor_radius: 1
@@ -6173,6 +8292,8 @@
   materials:
   - refined_metal
 - name: solid_filter
+  desc: 除所选的固体外，其他所有固体都会被送入输出运输轨道。
+  effect: 从运输轨道中分离出一种固体材料，将其送入专用运输轨道。
   image_name: filter_material_conveyor
   base_decor: -5
   base_decor_radius: 1
@@ -6192,6 +8313,8 @@
   materials:
   - metal
 - name: solid_limit_valve
+  desc: 轨道计量器可以在通过精确量的材料后关闭。
+  effect: 连至自动化电路中，当特定量的材料通过后会自动地阻断运输。
   image_name: limit_valve_solid
   base_decor: -5
   base_decor_radius: 1
@@ -6210,6 +8333,8 @@
   - refined_metal
   - plastic
 - name: solid_logic_valve
+  desc: 自动化轨道免去了复制人的参与，从而可以节省电力和时间。
+  effect: 连至自动化电路中以自动地使固体材料的运输进行或阻断。
   image_name: conveyor_shutoff
   base_decor: -5
   base_decor_radius: 1
@@ -6227,6 +8352,12 @@
   materials:
   - refined_metal
 - name: solid_transfer_arm
+  desc: 自动清扫器的范围可以通过(ClickType/clicking)建筑查看。
+  effect: >-
+    通过抽吸附近所有的杂物来自动完成清扫和供应任务。
+
+
+    材料会自动地传送到范围内的任何运输装载器、运输存放器、存储点或建筑。
   image_name: conveyor_transferarm
   base_decor: -15
   base_decor_radius: 3
@@ -6246,6 +8377,8 @@
   materials:
   - refined_metal
 - name: solid_vent
+  desc: 材料在到达轨道的末端时会掉回世界。
+  effect: 将运输轨道上的固体材料卸载到地面上。
   image_name: conveyer_dropper
   base_decor: -10
   base_decor_radius: 2
@@ -6263,6 +8396,8 @@
   materials:
   - metal
 - name: space_heater
+  desc: 空间加热器在通电状态下会不断释放热量。
+  effect: 放出适度的热量。
   image_name: spaceheater
   base_decor: 10
   base_decor_radius: 2
@@ -6283,6 +8418,12 @@
   materials:
   - metal
 - name: special_cargo_bay
+  desc: 生物货舱允许复制人从太空中获取外星植物和野生动物。
+  effect: >-
+    允许复制人储存在太空任务中找到的不寻常的资源或有机资源。
+
+
+    火箭返回后，所储存的资源便可供殖民地使用。
   image_name: rocket_storage_live
   base_decor_radius: 1
   category: rocketry
@@ -6300,7 +8441,35 @@
   generator_base_capacity: 0
   materials:
   - steel
+- name: special_cargo_bay_cluster
+  desc: 在运输时，小动物不需要喂食。
+  effect: >-
+    允许复制人在太空中运输小动物。
+
+
+    火箭返回后，储存的样本可释放到殖民地中。
+
+
+    必须通过火箭平台建造。
+  image_name: rocket_storage_live_small
+  base_decor_radius: 1
+  construction_time: 60
+  entombable: true
+  breakable: true
+  replaceable: true
+  is_industrial_machinery: true
+  overheatable: true
+  overheat_temperature: 2000
+  heat_generate: 0
+  height_in_cells: 1
+  width_in_cells: 3
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - refined_metal
 - name: spice_grinder
+  desc: 将种子和其他可食用物碾碎以制成强化菜肴的优良添加剂。
+  effect: 生产能够加强由需要技能的烹饪台制备的食物的原料。
   image_name: spice_grinder
   base_decor_radius: 1
   category: food
@@ -6363,6 +8532,12 @@
   materials:
   - metal
 - name: steam_engine
+  desc: 火箭可用来将复制人送入太空，并获取稀有资源。
+  effect: >-
+    利用蒸汽以推动火箭进行太空探索。
+
+
+    必须首先建造火箭的引擎，然后才能安装更多火箭舱块。
   image_name: rocket_steam_engine
   base_decor_radius: 1
   category: rocketry
@@ -6381,6 +8556,15 @@
   materials:
   - steel
 - name: steam_engine_cluster
+  desc: 火箭可用来将复制人送入太空，并获取稀有资源。
+  effect: >-
+    利用蒸汽以推动火箭进行太空探索。
+
+
+    引擎必须通过火箭平台建造。
+
+
+    建好引擎后，可以添加更多的火箭舱块。
   image_name: rocket_cluster_steam_engine
   base_decor_radius: 1
   construction_time: 60
@@ -6398,6 +8582,18 @@
   materials:
   - refined_metal
 - name: steam_turbine
+  desc: 用于将岩浆的地热能转化为可用的电力。
+  effect: >-
+    这个建筑已被弃用，无法建造。
+
+
+    使用滚烫的高压蒸汽以产生大量电力。
+
+
+    输出温度大幅降低的蒸汽。
+
+
+    建筑下方的气压要高于上方。
   image_name: steamturbine
   base_decor_radius: 1
   category: power
@@ -6417,6 +8613,12 @@
   - refined_metal
   - plastic
 - name: steam_turbine2
+  desc: 用于将地热能转化为可用的电力。
+  effect: >-
+    直接从机器地基的下方吸入蒸汽并产生电力。
+
+
+    输出水。
   image_name: steamturbine2
   base_decor_radius: 1
   category: power
@@ -6424,7 +8626,7 @@
   entombable: true
   floodable: true
   replaceable: true
-  is_industrial_machinery: false
+  is_industrial_machinery: true
   overheatable: true
   overheat_temperature: 1000
   heat_generate: 4
@@ -6436,6 +8638,8 @@
   - refined_metal
   - plastic
 - name: storage_locker
+  desc: 地面上的资源若不及时移走，会变成“杂物”并降低装饰度。
+  effect: 储存你所选的固体材料。
   image_name: storagelocker
   base_decor: -10
   base_decor_radius: 2
@@ -6453,6 +8657,12 @@
   materials:
   - buildable_raw
 - name: storage_locker_smart
+  desc: 智能存储箱可以根据类型和质量使组织资源自动化。
+  effect: >-
+    储存你所选的固体材料。
+
+
+    当箱子充满时，输出绿色信号。
   image_name: smartstoragelocker
   base_decor: -10
   base_decor_radius: 2
@@ -6470,7 +8680,36 @@
   generator_base_capacity: 0
   materials:
   - refined_metal
+- name: storage_tile
+  desc: 存储砖可以让选择的不可食用固体不挡路。
+  effect: >-
+    用来建造房间的墙体和地面。
+
+
+    为狭小空间提供内置存储区。
+  image_name: storagetile
+  base_decor: -10
+  base_decor_radius: 2
+  category: base
+  construction_time: 30
+  replaceable: true
+  is_industrial_machinery: false
+  overheat_temperature: 75
+  heat_generate: 0
+  height_in_cells: 1
+  width_in_cells: 1
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - refined_metal
+  - glass
 - name: sublimation_station
+  desc: 升华是将固体直接转化为气体的过程。
+  effect: >-
+    加快污染土转换成污染氧的速率。
+
+
+    当区域的气压达到最大时将会闲置。
   image_name: sublimation_station
   base_decor: -10
   base_decor_radius: 2
@@ -6492,6 +8731,18 @@
   materials:
   - metal
 - name: sugar_engine
+  desc: 不是最时髦的太空旅行方式，但一定是最美味的。
+  effect: >-
+    燃烧蔗糖以推动火箭进行太空探索。
+
+
+    糖素引擎的高度限制比二氧化碳引擎更宽松，但移动更慢。
+
+
+    引擎必须通过火箭平台建造。
+
+
+    建好引擎后，可以添加更多的火箭舱块。
   image_name: rocket_sugar_engine
   base_decor_radius: 1
   construction_time: 30
@@ -6509,6 +8760,12 @@
   materials:
   - metal
 - name: suit_fabricator
+  desc: 复制人穿上充满氧气的太空服后可进入危险区域。
+  effect: >-
+    为复制人制造可供穿戴的防护性太空服。
+
+
+    只有在队列中安排配方复制人才会进行制作。
   image_name: suit_maker
   base_decor_radius: 1
   category: equipment
@@ -6528,6 +8785,15 @@
   materials:
   - refined_metal
 - name: suit_locker
+  desc: 气压服存放柜可为气压服排出废物，但是一次只能处理一件气压服。
+  effect: >-
+    存放气压服并为其补充氧气。
+
+
+    清空气压服中的污染水。
+
+
+    建在气压服检查站旁，使复制人在路过时换上气压服。
   image_name: changingarea
   base_decor: 10
   base_decor_radius: 2
@@ -6548,6 +8814,15 @@
   materials:
   - refined_metal
 - name: suit_marker
+  desc: 每个检查站都必须配备至少一个建在箭头指向后面的相关存放柜。
+  effect: >-
+    标记复制人必须换上或换下气压服的起点。
+
+
+    必须建在气压服存放柜旁。
+
+
+    建造前可旋转。
   image_name: changingarea_arrow
   base_decor: 10
   base_decor_radius: 2
@@ -6567,6 +8842,12 @@
   materials:
   - refined_metal
 - name: sun_lamp
+  desc: 一种人造阳光。
+  effect: >-
+    发出日光级的光。
+
+
+    可以与沙滩椅配合使用。
   image_name: sun_lamp
   base_decor: -20
   base_decor_radius: 4
@@ -6588,6 +8869,15 @@
   - refined_metal
   - glass
 - name: supermaterial_refinery
+  desc: 通过火箭执行太空任务可以获得稀有材料。
+  effect: >-
+    将稀有材料加工成高级工业产品。
+
+
+    稀有材料可以通过太空任务获得。
+
+
+    只有在队列中安排配方复制人才会进行制作。
   image_name: supermaterial_refinery
   base_decor: -15
   base_decor_radius: 3
@@ -6608,6 +8898,18 @@
   materials:
   - metal
 - name: sweep_bot_station
+  desc: 这可爱的小脸是预先装好的。
+  effect: >-
+    部署一个扫扫机以自动清扫固体杂物和洒出的液体。
+
+
+    基站可以储存扫扫机收集的液体和固体。
+
+
+    使用电力为扫扫机充能。
+
+
+    复制人会将基站库存清理到可用的存储箱中。
   image_name: sweep_bot_base_station
   base_decor: -10
   base_decor_radius: 2
@@ -6627,6 +8929,12 @@
   materials:
   - refined_metal
 - name: switch
+  desc: 电闸只能影响电路中紧随其后的建筑。
+  effect: >-
+    接通或断开电力。
+
+
+    不会影响前于开关的电路。
   image_name: switchpower
   base_decor_radius: 1
   category: power
@@ -6643,6 +8951,12 @@
   materials:
   - metal
 - name: telephone
+  desc: 你永远不会知道对面会是谁来接电话。
+  effect: >-
+    可以由复制人使用来与自己或不同地点的朋友聊天。
+
+
+    聊天可以提升复制人的士气。
   image_name: telephone
   base_decor: 10
   base_decor_radius: 2
@@ -6663,6 +8977,8 @@
   materials:
   - metal
 - name: teleportal_pad
+  desc: 就传送台而言，复制人只是原子而已。
+  effect: 将复制人和物品即时传送到传送代码相同的另一个传送台。
   image_name: hqbase
   base_decor: 30
   base_decor_radius: 6
@@ -6680,6 +8996,15 @@
   materials:
   - metal
 - name: telescope
+  desc: 望远镜是学习星图和执行火箭任务的必要工具。
+  effect: >-
+    绘制星图目的地。
+
+
+    分配的复制人必须具有实地研究技能。
+
+
+    建筑必须暴露在太空中才能运作。
   image_name: telescope
   base_decor_radius: 1
   category: equipment
@@ -6699,6 +9024,12 @@
   materials:
   - metal
 - name: temperature_controlled_switch
+  desc: 自动化开关可以用来管理复制人无法进入的区域的电路。
+  effect: >-
+    根据周围温度自动接通或断开电力。
+
+
+    不影响开关前端的电路。
   image_name: switchthermal
   base_decor: -5
   base_decor_radius: 1
@@ -6716,6 +9047,8 @@
   materials:
   - metal
 - name: temporal_tear_opener
+  desc: 蕴含无限可能，附赠流星雨。
+  effect: 一台强大的机械装置，能够撕裂现实的结构。
   image_name: temporal_tear_opener
   base_decor: 15
   base_decor_radius: 3
@@ -6733,6 +9066,12 @@
   materials:
   - metal
 - name: thermal_block
+  desc: 建筑材料的热学性质决定了它们对热量的维持状况。
+  effect: >-
+    根据使用的建筑材料，可加速或减缓热量散发。
+
+
+    作用于小范围区域。
   image_name: thermalblock
   category: utilities
   construction_time: 120
@@ -6748,6 +9087,12 @@
   materials:
   - buildable_any
 - name: tile
+  desc: 砖块可用来连接缺口，到达无法到达的区域。
+  effect: >-
+    用来建造房间的墙体和地面。
+
+
+    提高复制人的行走速度。
   image_name: floor_basic
   base_decor: 5
   base_decor_radius: 1
@@ -6764,6 +9109,8 @@
   materials:
   - buildable_raw
 - name: tile_poi
+  desc: ''
+  effect: 用来建造房间的墙体和地面。
   image_name: floor_mesh
   base_decor: 10
   base_decor_radius: 2
@@ -6778,6 +9125,12 @@
   materials:
   - buildable_raw
 - name: tourist_module
+  desc: 乘坐火箭的观光复制人必须要有宇航员陪同。
+  effect: >-
+    允许一名非宇航员复制人进入太空。
+
+
+    观光火箭飞行可降低压力。
   image_name: rocket_tourist
   base_decor_radius: 1
   category: rocketry
@@ -6796,6 +9149,12 @@
   materials:
   - steel
 - name: travel_tube
+  desc: 只有在运载管道下方有安全着陆区域时，复制人才会从运载管道中出来。
+  effect: >-
+    通过运载管道入口快速将复制人运输到运载管道末端。
+
+
+    仅能运输复制人。
   image_name: travel_tube
   base_decor: 5
   base_decor_radius: 1
@@ -6812,6 +9171,12 @@
   materials:
   - plastic
 - name: travel_tube_entrance
+  desc: 复制人需要入口来进入运载管道，但离开时不必要。
+  effect: >-
+    允许复制人进入相连的运载管道系统。
+
+
+    充满电后就不再抽取电力。
   image_name: tube_launcher
   base_decor: -10
   base_decor_radius: 2
@@ -6831,6 +9196,12 @@
   materials:
   - refined_metal
 - name: travel_tube_wall_bridge
+  desc: 运载管道渡口可以让运载管道穿墙而过，而不会泄漏气体和液体。
+  effect: >-
+    允许运载管道穿过墙体和地面。
+
+
+    本身可作为常规砖块使用。
   image_name: tube_tile_bridge
   base_decor_radius: 1
   category: base
@@ -6845,7 +9216,33 @@
   generator_base_capacity: 0
   materials:
   - plastic
+- name: underwater_critter_condo
+  desc: 即使是野生小动物，在短暂休息与娱乐后也会更开心。
+  effect: 一个别致的休息区，用于成年的抛壳蟹和帕库鱼。
+  image_name: underwater_critter_condo
+  base_decor: 20
+  base_decor_radius: 4
+  category: food
+  construction_time: 120
+  entombable: true
+  replaceable: true
+  is_industrial_machinery: false
+  overheatable: true
+  overheat_temperature: 75
+  heat_generate: 0
+  height_in_cells: 3
+  width_in_cells: 3
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - plastic
 - name: uranium_centrifuge
+  desc: 浓缩铀是一种特殊的物质，可用作强大的研究性反应堆的燃料。
+  effect: >-
+    从铀矿中提取浓缩铀。
+
+
+    输出熔融的贫铀。
   image_name: enrichmentcentrifuge
   base_decor: -10
   base_decor_radius: 2
@@ -6866,6 +9263,12 @@
   - refined_metal
   - plastic
 - name: vertical_wind_tunnel
+  desc: 复制人喜欢强风吹过他们的头发。
+  effect: >-
+    必须置于开放空间上并连至电源。为正常工作，这个建筑的下方区域必须留空。
+
+
+    提升复制人的士气。
   image_name: wind_tunnel
   base_decor: 10
   base_decor_radius: 2
@@ -6886,6 +9289,12 @@
   materials:
   - plastic
 - name: wall_toilet
+  desc: 墙排马桶可以减少复制人接触到的病菌量，而且不用手动清空。
+  effect: >-
+    给予复制人一个解手的地方。直接将废物排到墙的另一侧。
+
+
+    传播非常少的病菌。
   image_name: toilet_wall
   base_decor: -10
   base_decor_radius: 2
@@ -6904,6 +9313,15 @@
   materials:
   - plastic
 - name: warp_conduit_receiver
+  desc: 后面的管道不知去哪里了。
+  effect: >-
+    一台可以将液体、固体和气体资源传送到其他小行星的机器。
+
+
+    可以由具有实地研究技能的复制人激活。
+
+
+    这个是接收端。
   image_name: warp_conduit_receiver
   base_decor_radius: 1
   construction_time: 10
@@ -6919,6 +9337,15 @@
   materials:
   - metal
 - name: warp_conduit_sender
+  desc: 后面的管道不知去哪里了。
+  effect: >-
+    一台可以将液体、固体和气体资源传送到其他小行星的机器。
+
+
+    可以由具有实地研究技能的复制人激活。
+
+
+    这个是发送端。
   image_name: warp_conduit_sender
   base_decor_radius: 1
   construction_time: 30
@@ -6934,6 +9361,12 @@
   materials:
   - metal
 - name: wash_basin
+  desc: 在复制人可能会被弄脏的地方建造洗手盆可抑制病菌传播。
+  effect: >-
+    除去复制人身上的一些病菌。
+
+
+    带有病菌的复制人在按选定方向经过时会使用洗手盆。
   image_name: wash_basin
   base_decor: 10
   base_decor_radius: 2
@@ -6953,6 +9386,12 @@
   materials:
   - buildable_raw
 - name: wash_sink
+  desc: 洗手池已铺设水管，因此无需手动注水或放水。
+  effect: >-
+    除去复制人身上的病菌。
+
+
+    带有病菌的复制人在按选定方向经过时会使用洗手池。
   image_name: wash_sink
   base_decor: 10
   base_decor_radius: 2
@@ -6972,6 +9411,12 @@
   materials:
   - metal
 - name: water_cooler
+  desc: 跟朋友聊天可改善复制人的情绪并降低他们的压力。
+  effect: >-
+    为复制人提供休息时的聚集场所。
+
+
+    提升复制人的士气。
   image_name: watercooler
   base_decor: 10
   base_decor_radius: 2
@@ -6989,6 +9434,12 @@
   materials:
   - buildable_raw
 - name: water_purifier
+  desc: 净水器不能杀菌，所以全部病菌都会转至产生的废物和输出的水中。
+  effect: >-
+    使用沙子将污染水过滤为干净的水。
+
+
+    产生污染土。
   image_name: waterpurifier
   base_decor: -15
   base_decor_radius: 3
@@ -7009,6 +9460,12 @@
   materials:
   - metal
 - name: water_trap
+  desc: 自动打包捕获的鱼类，以便运输。
+  effect: >-
+    吸引并捕捉游泳的帕库鱼。
+
+
+    只有具有小动物养殖 I技能的复制人才能布置陷阱。可重复使用！
   image_name: critter_trap_water
   base_decor: -15
   base_decor_radius: 3
@@ -7027,6 +9484,12 @@
   materials:
   - metal
 - name: wire
+  desc: 电线可以用来连接发电机、电池和建筑。
+  effect: >-
+    连接建筑物和电源。
+
+
+    可穿过墙体和地面。
   image_name: utilities_electric
   base_decor: -5
   base_decor_radius: 1
@@ -7043,6 +9506,12 @@
   materials:
   - metal
 - name: wire_bridge
+  desc: 将发电机分散到不同的电路可以避免过载和电力浪费。
+  effect: >-
+    让一条电线可以越过另一条电线，而不会连在一起。
+
+
+    可穿过墙体和地面。
   image_name: utilityelectricbridge
   base_decor: -5
   base_decor_radius: 1
@@ -7059,6 +9528,12 @@
   materials:
   - metal
 - name: wire_bridge_high_wattage
+  desc: 接合板可让高负荷电线穿墙而过，而不会泄露气体和液体。
+  effect: >-
+    可让高负荷电线穿过墙体和地面。
+
+
+    可作为常规砖块使用。
   image_name: heavywatttile
   base_decor: -25
   base_decor_radius: 6
@@ -7075,6 +9550,12 @@
   materials:
   - metal
 - name: wire_refined
+  desc: 比起破破烂烂的普通电线，我的复制人更喜欢导线的外观。
+  effect: >-
+    连接建筑物和电源。
+
+
+    可穿过墙体和地面。
   image_name: utilities_electric_conduct
   base_decor_radius: 1
   category: power
@@ -7090,6 +9571,15 @@
   materials:
   - refined_metal
 - name: wire_refined_bridge
+  desc: 将发电机分散到不同的系统可以避免过载和电力浪费。
+  effect: >-
+    可以运载比普通电线桥更高的功率而不会过载。
+
+
+    让一条电线可以越过另一条电线，而不会连在一起。
+
+
+    可穿过墙体和地面。
   image_name: utilityelectricbridgeconductive
   base_decor: -5
   base_decor_radius: 1
@@ -7106,6 +9596,12 @@
   materials:
   - refined_metal
 - name: wire_refined_bridge_high_wattage
+  desc: 接合板可让高负荷电线穿墙而过，而不会泄露气体和液体。
+  effect: >-
+    可以运载比普通高负荷接合板更高的功率而不会过载。
+
+
+    允许高负荷电线通过墙体和地面。
   image_name: heavywatttile_conductive
   base_decor: -25
   base_decor_radius: 6
@@ -7122,6 +9618,12 @@
   materials:
   - refined_metal
 - name: wire_refined_high_wattage
+  desc: 高负荷电线可以避免电路过载，特别是对于大功率发电机。
+  effect: >-
+    可以运载比普通电线更高的功率而不会过载。
+
+
+    无法穿过墙体和地面。
   image_name: utilities_electric_conduct_hiwatt
   base_decor: -20
   base_decor_radius: 4
@@ -7138,6 +9640,12 @@
   materials:
   - refined_metal
 - name: wood_gas_generator
+  desc: 木料燃烧器很小而且很容易维护，但会产生相当多的热量。
+  effect: >-
+    燃烧木料以产生电力。
+
+
+    产生二氧化碳和热量。
   image_name: generatorwood
   base_decor: -15
   base_decor_radius: 3
