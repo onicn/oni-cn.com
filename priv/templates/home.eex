@@ -13,7 +13,7 @@
     </fieldset>
 
     <div class="layui-text" style="margin: 5px 5px">
-      玩家使用上帝视角操作一队由打印舱产生的复制人，一开始玩家可以拥有三人，并采用无限随机方式决定三人的各项技能值，进入游戏后每隔三周前能产生一个复制人队员或选择一项随机的物品，玩家可以从每次提供的四个选项选择一个或是全部放弃，然而游戏中的生成队员不能再用无限骰子方式，若是不满意可以选择放弃并等待三周期。
+      玩家使用上帝视角操作一队由打印舱产生的复制人，一开始玩家可以拥有三人，并采用随机方式决定三人的各项技能值，进入游戏后每隔三周前能产生一个复制人队员或选择一项随机的物品，玩家可以从每次提供的四个选项选择一个或是全部放弃，然而游戏中的生成队员不能再用无限骰子方式，若是不满意可以选择放弃并等待三周期。
     </div>
     <div class="layui-text" style="margin: 5px 5px">
       进入游戏后玩家队伍出现在一个未知的行星地下基地内部的打印舱前，基地未完工且多数房间已经坍方解体散落在各处成为遗迹，必须利用队员手上的裂解炮在地下开挖创造新的房间和利用矿物建立各种设施，有时能连通遗迹并发现一些有用设备，但基本上要靠玩家自立存活，游戏可以选择星球剧情并达成成就任务，玩家在其中有无限制的延长存活时间、解开科技并增加人数，乐趣在于建造过程，基本上游戏没有结束。
@@ -43,15 +43,11 @@
       <a href="https://forums.kleientertainment.com/forums/forum/118-oxygen-not-included/" target="_blank">官方论坛（英文）</a>
       <span>/</span>
       <a href="https://oni-db.com" target="_blank">缺氧数据库（英文）</a>
-      <span>/</span>
-      <a href="https://oni-assistant.com/" target="_blank">缺氧计算器（英文）</a>
     </div>
     <div class="layui-text" style="margin: 5px 5px">
       <a href="https://store.steampowered.com/app/457140/Oxygen_Not_Included/" target="_blank">Steam 页面</a>
       <span>/</span>
-      <a href="https://oxygennotincluded.gamepedia.com/Oxygen_Not_Included_Wiki/zh" target="_blank">Gamepedia Wiki</a>
-      <span>/</span>
-      <a href="https://toolsnotincluded.net/map-tools/map-browser" target="_blank">工具不足（地图/种子搜寻）</a>
+      <a href="https://oxygennotincluded.fandom.com/zh/wiki" target="_blank">Wiki</a>
       <span>/</span>
       <a href="https://aizhuzi.com/oni-rocket/" target="_blank">火箭计算</a>
     </div>
