@@ -1403,6 +1403,14 @@
     produce: toxic_sand
     kcal_per_kg: 100
     produced_conversion_rate: 0.5
+  - consume: bean_plant_seed
+    produce: toxic_sand
+    kcal_per_kg: 100
+    produced_conversion_rate: 0.5
+  - consume: cold_wheat_seed
+    produce: toxic_sand
+    kcal_per_kg: 100
+    produced_conversion_rate: 0.5
   - consume: gas_grass_seed
     produce: toxic_sand
     kcal_per_kg: 100
@@ -1480,6 +1488,14 @@
     produce: toxic_sand
     kcal_per_kg: 100
     produced_conversion_rate: 0.5
+  - consume: bean_plant_seed
+    produce: toxic_sand
+    kcal_per_kg: 100
+    produced_conversion_rate: 0.5
+  - consume: cold_wheat_seed
+    produce: toxic_sand
+    kcal_per_kg: 100
+    produced_conversion_rate: 0.5
   - consume: gas_grass_seed
     produce: toxic_sand
     kcal_per_kg: 100
@@ -1554,6 +1570,14 @@
     kcal_per_kg: 100
     produced_conversion_rate: 0.5
   - consume: basic_single_harvest_plant_seed
+    produce: toxic_sand
+    kcal_per_kg: 100
+    produced_conversion_rate: 0.5
+  - consume: bean_plant_seed
+    produce: toxic_sand
+    kcal_per_kg: 100
+    produced_conversion_rate: 0.5
+  - consume: cold_wheat_seed
     produce: toxic_sand
     kcal_per_kg: 100
     produced_conversion_rate: 0.5

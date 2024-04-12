@@ -77,6 +77,27 @@
   generator_base_capacity: 0
   materials:
   - metal
+- name: air_borne_critter_condo
+  desc: 能触发天然的筑巢本能，改善小动物的心情。
+  effect: 一个悬挂的休息区，用于成年的喷浮飞鱼、释气海牛和发光虫。
+  image_name: critter_condo_airborne
+  base_decor: 20
+  base_decor_radius: 4
+  category: food
+  construction_time: 120
+  entombable: true
+  floodable: true
+  replaceable: true
+  is_industrial_machinery: false
+  overheatable: true
+  overheat_temperature: 75
+  heat_generate: 0
+  height_in_cells: 3
+  width_in_cells: 3
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - plastic
 - name: air_conditioner
   desc: 温度调节器不能减少热量，只能把热量转到其他地方。
   effect: 冷却通入的气体，但会向周围环境散发热量。
@@ -1094,7 +1115,7 @@
   materials:
   - metal
 - name: corner_moulding
-  desc: 角落饰物是天花板角落的纯装饰性增添物。
+  desc: 边角饰件是天花板角落的纯装饰性增添物。
   effect: >-
     用来装饰房间的天花板角落。
 
@@ -1326,6 +1347,56 @@
   materials:
   - buildable_raw
   - building_fiber
+- name: critter_drop_off
+  desc: 复制人会自动将捕获的小动物带到这些放生点放生。
+  effect: >-
+    将捕捉的小动物放回到世界中。
+
+
+    仅监测与放生指定物种。
+  image_name: relocator_dropoff_02
+  base_decor: -15
+  base_decor_radius: 3
+  category: food
+  construction_time: 10
+  entombable: true
+  floodable: true
+  replaceable: true
+  is_industrial_machinery: false
+  overheatable: true
+  overheat_temperature: 75
+  heat_generate: 0
+  height_in_cells: 3
+  width_in_cells: 1
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - metal
+- name: critter_pick_up
+  desc: 复制人会自动地捕捉过量的小动物。
+  effect: >-
+    确保及时地移走超过设定数量的小动物。
+
+
+    仅监测与移取指定物种。
+  image_name: relocator_pickup
+  base_decor: -15
+  base_decor_radius: 3
+  category: food
+  construction_time: 10
+  entombable: true
+  floodable: true
+  replaceable: true
+  is_industrial_machinery: false
+  overheatable: true
+  overheat_temperature: 75
+  heat_generate: 0
+  height_in_cells: 3
+  width_in_cells: 1
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - metal
 - name: crown_moulding
   desc: 天花板饰件是头顶区域的纯装饰性增添物。
   effect: >-
@@ -2294,7 +2365,7 @@
   materials:
   - fossil
 - name: gantry
-  desc: 发射支架可以建造在无法使用梯子和砖块的火箭舱块之间。
+  desc: 通行支架可以建造在无法使用梯子和砖块的火箭舱块之间。
   effect: 提供跨越火箭舱块的脚手架，从而允许复制人通过。
   image_name: gantry
   base_decor_radius: 1
@@ -2959,8 +3030,8 @@
 
     活着的复制人会自动将未埋葬的尸体置入其中。
   image_name: gravestone
-  base_decor: -15
-  base_decor_radius: 3
+  base_decor: 10
+  base_decor_radius: 2
   category: medical
   construction_time: 120
   entombable: true
@@ -9066,9 +9137,9 @@
   materials:
   - metal
 - name: thermal_block
-  desc: 建筑材料的热学性质决定了它们对热量的维持状况。
+  desc: 建造材料的热学性质决定了它们对热量的维持状况。
   effect: >-
-    根据使用的建筑材料，可加速或减缓热量散发。
+    根据使用的建造材料，可加速或减缓热量散发。
 
 
     作用于小范围区域。
