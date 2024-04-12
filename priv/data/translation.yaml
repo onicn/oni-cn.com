@@ -1,6 +1,7 @@
 advanced_apothecary: 核能配药桌
 advanced_doctor_station: 病诊站
 advanced_research_center: 超级计算机
+air_borne_critter_condo: 飞行小动物公寓
 air_conditioner: 温度调节器
 air_filter: 空气净化器
 airborne_creature_lure: 飞行小动物诱惑器
@@ -53,6 +54,8 @@ creature_delivery_point: 小动物放生点
 creature_feeder: 小动物喂食器
 creature_trap: 小动物陷阱
 critter_condo: 小动物公寓
+critter_drop_off: 小动物放生点
+critter_pick_up: 小动物移取点
 crown_moulding: 天花板饰件
 dlc1_cosmic_research_center: 虚拟天象仪
 decontamination_shower: 除污淋浴隔间
@@ -94,7 +97,7 @@ flying_creature_bait: 飞行小动物诱饵
 food_dehydrator: 脱水机
 food_rehydrator: 充水机
 fossil_dig: 远古标本
-gantry: 发射支架
+gantry: 通行支架
 gas_bottler: 气体罐装器
 gas_cargo_bay_cluster: 大型气罐货舱
 gas_cargo_bay: 气罐货舱
@@ -1050,7 +1053,7 @@ puft_oxylite_baby: 厚壳飞鱼幼体
 squirrel_hug_baby: 毛绒树鼠幼崽
 puft_baby: 喷浮飞鱼幼体
 puft_bleachstone_baby: 洁净飞鱼幼体
-staterpillar_baby: 电弧蛞蝓幼虫
+staterpillar_baby: 电弧蛞蝓幼体
 puft_alpha_baby: 贵族飞鱼幼体
 pacu_tropical_baby: 热带帕库鱼苗
 pacu_baby: 帕库鱼苗
