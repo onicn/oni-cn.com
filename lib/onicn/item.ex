@@ -2,15 +2,16 @@ alias Onicn.Categories.{Solid, Liquid, Gas, Building, Critter, Plant, Food, Geys
 
 defmodule Onicn.Item do
   @skiplist [
-    "溺水",
-    "被水淹没",
-    "离水之鱼",
+    "水下",
+    "水中",
     "水域",
     "水温",
-    "水中",
-    "水下",
-    "金属",
-    "眼冒金星"
+    "溺水",
+    "眼冒金星",
+    "离水之鱼",
+    "补水",
+    "被水淹没",
+    "金属"
   ]
 
   def replace_link(string, escape) do
