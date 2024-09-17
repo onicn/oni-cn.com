@@ -1,6 +1,5 @@
 defmodule Onicn.Buildings.AlgaeHabitat do
   use Onicn.Categories.Building
-
   section "简介" do
     "藻类箱能够产生氧气并清除少量二氧化碳。产出40g/s氧气（光照下44g/s）。吸收0.3 g/s二氧化碳。"
     "藻类箱需要定期供给藻类和水。"
@@ -15,7 +14,7 @@ defmodule Onicn.Buildings.AlgaeHabitat do
   end
 
   section "小技巧" do
-    "灯、屋顶光照、发光虫、印刷舱都可以作为光照来源。"
+    "电灯、吸顶灯、发光虫、印刷舱都可以作为光照来源。"
     "每两个复制人需要5个藻类箱供氧，7个藻类箱才能完全吸收二氧化碳。"
   end
 end
