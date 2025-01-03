@@ -89,6 +89,35 @@
   - 乙醇
   require_liquid_per_cycle:
   - 20
+- name: blue_grass
+  image_name: bluegrass
+  min_temp: -80
+  max_temp: 0
+  pressure_sensitive: true
+  pressure_warning_low: 0
+  pressure_warning_high: 10
+  pressure_lethal_low: 0
+  pressure_lethal_high: 30
+  required_element:
+  - carbon_dioxide
+  required_element_cn:
+  - 二氧化碳
+  decor: 15
+  decor_radius: 2
+  max_cycles: 2
+  produce_crop: oxy_rock
+  produce_crop_cn: 氧石
+  produce_crop_num: 36
+  seed: blue_grass_seed
+  seed_image_name: seed_bluegrass
+  can_drown: true
+  can_tinker: true
+  require_fertilizer:
+  - ice
+  require_fertilizer_cn:
+  - 冰
+  require_fertilizer_per_cycle:
+  - 20
 - name: bulb_plant
   image_name: potted_bulb
   min_temp: 20
@@ -120,6 +149,39 @@
   seed: cactus_plant_seed
   seed_image_name: seed_potted_cactus
   can_drown: true
+- name: carrot_plant
+  image_name: purpleroot
+  min_temp: -55
+  max_temp: -14
+  pressure_sensitive: true
+  pressure_warning_low: 0.15
+  pressure_warning_high: 10
+  pressure_lethal_low: 0
+  pressure_lethal_high: 30
+  required_element:
+  - oxygen
+  - contaminated_oxygen
+  - carbon_dioxide
+  required_element_cn:
+  - 氧气
+  - 污染氧
+  - 二氧化碳
+  decor: -10
+  decor_radius: 2
+  max_cycles: 9
+  produce_crop: carrot
+  produce_crop_cn: Carrot
+  produce_crop_num: 1
+  seed: carrot_plant_seed
+  seed_image_name: seed_purpleroot
+  can_drown: true
+  can_tinker: true
+  require_liquid:
+  - ethanol
+  require_liquid_cn:
+  - 乙醇
+  require_liquid_per_cycle:
+  - 15
 - name: cold_breather
   image_name: coldbreather
   min_temp: -60
@@ -287,7 +349,7 @@
   decor_radius: 2
   max_cycles: 4.5
   produce_crop: wood_log
-  produce_crop_cn: 木料
+  produce_crop_cn: 木材
   produce_crop_num: 300
   seed: forest_tree_seed
   seed_image_name: seed_tree
@@ -318,7 +380,7 @@
   decor_radius: 2
   max_cycles: 4.5
   produce_crop: wood_log
-  produce_crop_cn: 木料
+  produce_crop_cn: 木材
   produce_crop_num: 300
   can_drown: true
   can_tinker: true
@@ -348,6 +410,71 @@
   - 液态氯
   require_liquid_per_cycle:
   - 0.5
+- name: hard_skin_berry_plant
+  image_name: ice_berry_bush
+  min_temp: -55
+  max_temp: -14
+  pressure_sensitive: true
+  pressure_warning_low: 0.15
+  pressure_warning_high: 10
+  pressure_lethal_low: 0
+  pressure_lethal_high: 30
+  required_element:
+  - oxygen
+  - contaminated_oxygen
+  - carbon_dioxide
+  required_element_cn:
+  - 氧气
+  - 污染氧
+  - 二氧化碳
+  decor: -10
+  decor_radius: 2
+  max_cycles: 3
+  produce_crop: hard_skin_berry
+  produce_crop_cn: 刺壳果
+  produce_crop_num: 1
+  seed: hard_skin_berry_plant_seed
+  seed_image_name: seed_ice_berry
+  can_drown: true
+  can_tinker: true
+  require_fertilizer:
+  - phosphorite
+  require_fertilizer_cn:
+  - 磷矿
+  require_fertilizer_per_cycle:
+  - 5
+- name: ice_caves_forage_plant_planted
+  image_name: frozenberries
+  decor: 15
+  decor_radius: 2
+  can_drown: true
+  hanging: true
+- name: ice_flower
+  image_name: potted_ice_flower
+  min_temp: -70
+  max_temp: 5
+  pressure_sensitive: true
+  pressure_warning_low: 0.15
+  pressure_warning_high: 10
+  pressure_lethal_low: 0
+  pressure_lethal_high: 30
+  required_element:
+  - oxygen
+  - contaminated_oxygen
+  - carbon_dioxide
+  - chlorine_gas
+  - hydrogen
+  required_element_cn:
+  - 氧气
+  - 污染氧
+  - 二氧化碳
+  - 氯气
+  - 氢气
+  decor: 25
+  decor_radius: 4
+  seed: ice_flower_seed
+  seed_image_name: seed_ice_flower
+  can_drown: true
 - name: leafy_plant
   image_name: potted_leafy
   min_temp: 20
@@ -544,6 +671,37 @@
   - 盐水
   require_liquid_per_cycle:
   - 5
+- name: space_tree
+  image_name: syrup_tree
+  min_temp: -75
+  max_temp: -15
+  decor: -10
+  decor_radius: 2
+  max_cycles: 0.25
+  produce_crop: sugar_water
+  produce_crop_cn: 花蜜
+  produce_crop_num: 20
+  seed: space_tree_seed
+  seed_image_name: seed_syrup_tree
+  can_drown: true
+  require_fertilizer:
+  - snow
+  require_fertilizer_cn:
+  - 雪
+  require_fertilizer_per_cycle:
+  - 100
+- name: space_tree_branch
+  image_name: syrup_tree
+  min_temp: -75
+  max_temp: -15
+  decor: 15
+  decor_radius: 2
+  max_cycles: 4.5
+  produce_crop: wood_log
+  produce_crop_cn: 木材
+  produce_crop_num: 75
+  can_drown: true
+  can_tinker: true
 - name: spice_vine
   image_name: vinespicenut
   min_temp: 35

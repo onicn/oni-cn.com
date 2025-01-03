@@ -82,6 +82,8 @@ elements:
     radiationAbsorptionFactor: 0.8
     radiationPer1000Mass: 0
     tags:
+    - Slippery
+    - LubricatingOil
     isDisabled: false
     state: Liquid
     localizationID: STRINGS.ELEMENTS.CRUDEOIL.NAME
@@ -151,6 +153,37 @@ elements:
     localizationID: STRINGS.ELEMENTS.LIQUIDCARBONDIOXIDE.NAME
     dlcId: ""
   
+  - elementId: LiquidGunk
+    maxMass: 870
+    liquidCompression: 1.01
+    speed: 50
+    minHorizontalFlow: 0.1
+    minVerticalFlow: 0.1
+    specificHeatCapacity: 1.2
+    thermalConductivity: 1.5
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 25
+    gasSurfaceAreaMultiplier: 1
+    lowTemp: 265
+    highTemp: 721
+    lowTempTransitionTarget: Gunk
+    highTempTransitionTarget: Petroleum
+    highTempTransitionOreId: Sulfur
+    highTempTransitionOreMassConversion: 0.08
+    defaultTemperature: 310
+    defaultMass: 870
+    molarMass: 550
+    toxicity: 0
+    lightAbsorptionFactor: 1
+    radiationAbsorptionFactor: 0.9
+    radiationPer1000Mass: 0
+    tags:
+    - Slippery
+    isDisabled: false
+    state: Liquid
+    localizationID: STRINGS.ELEMENTS.LIQUIDGUNK.NAME
+    dlcId: ""
+
   - elementId: LiquidHelium
     maxMass: 1000
     liquidCompression: 1.01
@@ -314,6 +347,8 @@ elements:
     radiationAbsorptionFactor: 0.75
     radiationPer1000Mass: 0
     tags:
+      - HideFromSpawnTool
+      - HideFromCodex
     isDisabled: false
     state: Liquid
     localizationID: STRINGS.ELEMENTS.LIQUIDPROPANE.NAME
@@ -429,8 +464,8 @@ elements:
     radiationAbsorptionFactor: 0.25
     radiationPer1000Mass: 0
     tags:
-    - Metal
-    isDisabled: true
+    - RefinedMetal
+    isDisabled: false
     state: Liquid
     localizationID: STRINGS.ELEMENTS.MERCURY.NAME
     dlcId: ""
@@ -911,6 +946,7 @@ elements:
     radiationPer1000Mass: 0
     tags:
     - CombustibleLiquid
+    - PlastifiableLiquid
     isDisabled: false
     state: Liquid
     localizationID: STRINGS.ELEMENTS.PETROLEUM.NAME
@@ -976,6 +1012,39 @@ elements:
     isDisabled: false
     state: Liquid
     localizationID: STRINGS.ELEMENTS.SALTWATER.NAME
+    dlcId: ""
+
+  - elementId: SugarWater
+    maxMass: 1100
+    liquidCompression: 1.01
+    speed: 100
+    minHorizontalFlow: 0.01
+    minVerticalFlow: 0.01
+    specificHeatCapacity: 4.1
+    thermalConductivity: 0.609
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 25
+    gasSurfaceAreaMultiplier: 1
+    lowTemp: 190.65
+    highTemp: 433.15
+    lowTempTransitionTarget: Ice
+    highTempTransitionTarget: Steam
+    lowTempTransitionOreId: Sucrose
+    lowTempTransitionOreMassConversion: 0.77
+    highTempTransitionOreId: Sucrose
+    highTempTransitionOreMassConversion: 0.77
+    defaultTemperature: 233.15
+    defaultMass: 1100
+    molarMass: 21
+    toxicity: 0
+    lightAbsorptionFactor: 0.5
+    radiationAbsorptionFactor: 0.9
+    radiationPer1000Mass: 0
+    tags:
+    - PlastifiableLiquid
+    isDisabled: false
+    state: Liquid
+    localizationID: STRINGS.ELEMENTS.SUGARWATER.NAME
     dlcId: ""
 
   - elementId: SuperCoolant
@@ -1118,6 +1187,38 @@ elements:
     state: Liquid
     localizationID: STRINGS.ELEMENTS.MOLTENSYNGAS.NAME
     dlcId: ""
+
+  - elementId: PhytoOil
+    maxMass: 870
+    liquidCompression: 1
+    speed: 100
+    minHorizontalFlow: 0.1
+    minVerticalFlow: 0.1
+    specificHeatCapacity: 0.9
+    thermalConductivity: 2
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 25
+    gasSurfaceAreaMultiplier: 1
+    lowTemp: 240
+    highTemp: 348.15
+    lowTempTransitionTarget: FrozenPhytoOil
+    highTempTransitionTarget: CarbonDioxide
+    highTempTransitionOreId: Algae
+    highTempTransitionOreMassConversion: 0.6666
+    defaultTemperature: 293
+    defaultMass: 800
+    molarMass: 450
+    toxicity: 0
+    lightAbsorptionFactor: 0.3
+    radiationAbsorptionFactor: 0.9
+    radiationPer1000Mass: 0
+    tags:
+    - Slippery
+    - LubricatingOil
+    isDisabled: false
+    state: Liquid
+    localizationID: STRINGS.ELEMENTS.PHYTOOIL.NAME
+    dlcId: ""
     
   - elementId: MoltenSucrose
     maxMass: 740
@@ -1145,4 +1246,6 @@ elements:
     isDisabled: false
     state: Liquid
     localizationID: STRINGS.ELEMENTS.MOLTENSUCROSE.NAME
-    dlcId: EXPANSION1_ID
+    dlcId: ""
+    
+ 

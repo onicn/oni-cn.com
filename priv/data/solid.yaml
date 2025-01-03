@@ -67,6 +67,7 @@ elements:
     materialCategory: RefinedMetal
     tags:
     - BuildableAny
+    - StartingRefinedMetalOre
     buildMenuSort: 2
     isDisabled: false
     state: Solid
@@ -94,6 +95,7 @@ elements:
     tags:
     - Ore
     - BuildableAny
+    - StartingMetalOre
     buildMenuSort: 1
     isDisabled: false
     state: Solid
@@ -119,6 +121,9 @@ elements:
     radiationPer1000Mass: 0
     buildMenuSort: 1
     isDisabled: false
+    tags:
+      - HideFromSpawnTool
+      - HideFromCodex
     state: Solid
     localizationID: STRINGS.ELEMENTS.BITUMEN.NAME
     dlcId: ""
@@ -140,7 +145,7 @@ elements:
     lightAbsorptionFactor: 1
     radiationAbsorptionFactor: 0.73
     radiationPer1000Mass: 0
-    materialCategory: ConsumableOre
+    materialCategory: Sublimating
     buildMenuSort: 3
     isDisabled: false
     state: Solid
@@ -194,6 +199,7 @@ elements:
     radiationPer1000Mass: 0
     materialCategory: Liquifiable
     tags:
+    - Slippery
     - IceOre
     - BuildableAny
     buildMenuSort: 5
@@ -221,6 +227,7 @@ elements:
     radiationPer1000Mass: 0
     materialCategory: Liquifiable
     tags:
+    - Slippery
     - IceOre
     - BuildableAny
     buildMenuSort: 5
@@ -409,6 +416,7 @@ elements:
     materialCategory: RefinedMetal
     tags:
     - BuildableAny
+    - StartingRefinedMetalOre
     buildMenuSort: 1
     isDisabled: false
     state: Solid
@@ -433,6 +441,8 @@ elements:
     radiationAbsorptionFactor: 0.25
     radiationPer1000Mass: 0
     buildMenuSort: 1
+    tags: 
+     - HideFromSpawnTool
     isDisabled: false
     state: Solid
     localizationID: STRINGS.ELEMENTS.CREATURE.NAME
@@ -514,6 +524,7 @@ elements:
     tags:
     - Ore
     - BuildableAny
+    - StartingMetalOre
     buildMenuSort: 1
     isDisabled: false
     state: Solid
@@ -620,6 +631,7 @@ elements:
     radiationPer1000Mass: 0
     materialCategory: Liquifiable
     tags:
+    - Slippery
     - IceOre
     - Mixture
     - BuildableAny
@@ -756,6 +768,32 @@ elements:
     isDisabled: false
     state: Solid
     localizationID: STRINGS.ELEMENTS.FOSSIL.NAME
+    dlcId: ""
+
+  - elementId: FrozenPhytoOil
+    specificHeatCapacity: 0.9
+    thermalConductivity: 2
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 0.2
+    highTemp: 240
+    highTempTransitionTarget: PhytoOil
+    defaultTemperature: 220
+    defaultMass: 800
+    maxMass: 870
+    hardness: 2
+    molarMass: 4
+    lightAbsorptionFactor: 1
+    radiationAbsorptionFactor: 0.9
+    radiationPer1000Mass: 0
+    materialCategory: 
+    buildMenuSort: 3
+    isDisabled: false
+    state: Solid
+    tags:
+    - Slippery
+    localizationID: STRINGS.ELEMENTS.FROZENPHYTOOIL.NAME
     dlcId: ""
   
   - elementId: Fullerene
@@ -909,6 +947,7 @@ elements:
     radiationPer1000Mass: 0
     materialCategory: Liquifiable
     tags:
+    - Slippery
     - IceOre
     - BuildableAny
     buildMenuSort: 5
@@ -1018,6 +1057,7 @@ elements:
     materialCategory: RefinedMetal
     tags:
     - BuildableAny
+    - StartingRefinedMetalOre
     buildMenuSort: 2
     isDisabled: false
     state: Solid
@@ -1045,6 +1085,7 @@ elements:
     tags:
     - Ore
     - BuildableAny
+    - StartingMetalOre
     buildMenuSort: 2
     isDisabled: false
     state: Solid
@@ -1169,6 +1210,7 @@ elements:
     radiationPer1000Mass: 0
     materialCategory: ConsumableOre
     tags:
+    - Slippery
     buildMenuSort: 10
     isDisabled: false
     state: Solid
@@ -1309,7 +1351,7 @@ elements:
     lightAbsorptionFactor: 1
     radiationAbsorptionFactor: 0.82
     radiationPer1000Mass: 0
-    materialCategory: ConsumableOre
+    materialCategory: Sublimating
     buildMenuSort: 5
     isDisabled: false
     state: Solid
@@ -1747,7 +1789,7 @@ elements:
     localizationID: STRINGS.ELEMENTS.SLIMEMOLD.NAME
     dlcId: ""
   
-  - elementId: Snow
+  - elementId: Snow # if you are modifying this element do also modify the StableSnow element so they are the same 
     specificHeatCapacity: 2.05
     thermalConductivity: 0.545
     solidSurfaceAreaMultiplier: 1
@@ -1773,6 +1815,35 @@ elements:
     isDisabled: false
     state: Solid
     localizationID: STRINGS.ELEMENTS.SNOW.NAME
+    dlcId: ""
+
+  - elementId: StableSnow #this element Must be update with the Snow element and follow all its settings except for the 'unstable' tag
+    specificHeatCapacity: 2.05
+    thermalConductivity: 0.545
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1000
+    strength: 0.3
+    highTemp: 272.5
+    highTempTransitionTarget: Water
+    defaultTemperature: 242.15
+    defaultMass: 10
+    maxMass: 20
+    hardness: 10
+    molarMass: 18.01528
+    lightAbsorptionFactor: 1
+    radiationAbsorptionFactor: 0.7
+    radiationPer1000Mass: 0
+    minHorizontalFlow: 50
+    materialCategory: Liquifiable
+    tags:
+    - IceOre
+    - HideFromSpawnTool
+    - HideFromCodex
+    buildMenuSort: 5
+    isDisabled: false
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.STABLESNOW.NAME
     dlcId: ""
   
   - elementId: SolidCarbonDioxide
@@ -1890,12 +1961,11 @@ elements:
     lightAbsorptionFactor: 1
     radiationAbsorptionFactor: 0.25
     radiationPer1000Mass: 0
-    materialCategory: Liquifiable
+    materialCategory: RefinedMetal
     tags:
-    - Metal
     - BuildableAny
     buildMenuSort: 1
-    isDisabled: true
+    isDisabled: false
     state: Solid
     localizationID: STRINGS.ELEMENTS.SOLIDMERCURY.NAME
     dlcId: ""
@@ -2017,6 +2087,8 @@ elements:
     materialCategory: Liquifiable
     tags:
     - BuildableAny
+    - HideFromSpawnTool
+    - HideFromCodex
     buildMenuSort: 1
     isDisabled: false
     state: Solid
@@ -2518,7 +2590,7 @@ elements:
     isDisabled: false
     state: Solid
     localizationID: STRINGS.ELEMENTS.SUCROSE.NAME
-    dlcId: EXPANSION1_ID
+    dlcId: ""
 
   - elementId: Graphite
     specificHeatCapacity: 0.71
@@ -2567,3 +2639,112 @@ elements:
     state: Solid
     localizationID: STRINGS.ELEMENTS.SOLIDNUCLEARWASTE.NAME
     dlcId: EXPANSION1_ID
+
+  - elementId: Cinnabar
+    specificHeatCapacity: 0.386
+    thermalConductivity: 4.5
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 0.7
+    highTemp: 856.65
+    highTempTransitionTarget: MercuryGas
+    defaultTemperature: 300
+    defaultMass: 800
+    maxMass: 1840
+    hardness: 25
+    molarMass: 232.66
+    lightAbsorptionFactor: 1
+    radiationAbsorptionFactor: 0.47
+    radiationPer1000Mass: 0
+    materialCategory: Metal
+    tags:
+    - Ore
+    - BuildableAny
+    - StartingMetalOre
+    buildMenuSort: 1
+    isDisabled: false
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.CINNABAR.NAME
+    dlcId: ""
+
+  - elementId: WoodLog
+    specificHeatCapacity: 2.3
+    thermalConductivity: 0.22 # can be in between 0.22 and 0.16 
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 0.7
+    highTemp: 873.15 # 600 celcius
+    highTempTransitionTarget: CarbonDioxide
+    defaultTemperature: 300
+    defaultMass: 1000
+    maxMass: 1840
+    hardness: 18
+    molarMass: 217.8529
+    lightAbsorptionFactor: 1
+    radiationAbsorptionFactor: 0.6
+    radiationPer1000Mass: 0
+    materialCategory: Organics
+    tags:
+    - HideFromSpawnTool
+    - BuildingWood
+    - IndustrialIngredient
+    buildMenuSort: 1
+    isDisabled: false
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.WOODLOG.NAME
+    dlcId: ""
+
+  - elementId: Tallow
+    specificHeatCapacity: 2.19
+    thermalConductivity: 10
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 1
+    highTemp: 353.15
+    highTempTransitionTarget: CrudeOil
+    defaultTemperature: 300
+    defaultMass: 1000
+    maxMass: 2500
+    hardness: 15
+    molarMass: 850.92
+    lightAbsorptionFactor: 1
+    radiationAbsorptionFactor: 0.7
+    radiationPer1000Mass: 0
+    materialCategory: Liquifiable
+    tags:
+    - Slippery
+    buildMenuSort: 1
+    isDisabled: false
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.TALLOW.NAME
+    dlcId: ""
+
+  - elementId: Gunk
+    specificHeatCapacity: 1.2
+    thermalConductivity: 1.5
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    strength: 0.25
+    highTemp: 265
+    highTempTransitionTarget: LiquidGunk
+    defaultTemperature: 300
+    defaultMass: 1000
+    maxMass: 2500
+    hardness: 10
+    molarMass: 850.92
+    lightAbsorptionFactor: 1
+    radiationAbsorptionFactor: 0.9
+    radiationPer1000Mass: 0
+    materialCategory: Organics
+    tags:
+    - Slippery
+    - Unstable
+    buildMenuSort: 1
+    isDisabled: false
+    state: Solid
+    localizationID: STRINGS.ELEMENTS.GUNK.NAME
+    dlcId: ""

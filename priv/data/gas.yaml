@@ -312,8 +312,8 @@ elements:
     radiationPer1000Mass: 0
     materialCategory: Unbreathable
     tags:
-    - Metal
-    isDisabled: true
+    - RefinedMetal
+    isDisabled: false
     state: Gas
     localizationID: STRINGS.ELEMENTS.MERCURYGAS.NAME
     dlcId: ""
@@ -456,6 +456,8 @@ elements:
     radiationPer1000Mass: 0
     materialCategory: Unbreathable
     tags:
+      - HideFromSpawnTool
+      - HideFromCodex
     isDisabled: true
     state: Gas
     localizationID: STRINGS.ELEMENTS.PROPANE.NAME
@@ -696,3 +698,5 @@ elements:
     state: Gas
     localizationID: STRINGS.ELEMENTS.SYNGAS.NAME
     dlcId: ""
+
+ 

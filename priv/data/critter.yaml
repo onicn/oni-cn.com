@@ -5,12 +5,8 @@
   hp: 5
   age_max: 5
   space_required: 4
-  can_drown: true
+  can_drown: false
   entombable: true
-  temperature_max_comfort: -9
-  temperature_max_liveable: 0
-  temperature_min_comfort: -89
-  temperature_min_liveable: -99
 - name: bee_hive
   image_name: beehive
   decor: 5
@@ -37,12 +33,8 @@
   kcal_per_cycle: 100
   kcal_stomach_size: 1000
   space_required: 12
-  can_drown: true
+  can_drown: false
   entombable: false
-  temperature_max_comfort: 70
-  temperature_max_liveable: 100
-  temperature_min_comfort: 15
-  temperature_min_liveable: -29
   base_lay_egg_chances:
   - name: crab_egg
     weight: 0.97
@@ -74,12 +66,8 @@
   kcal_per_cycle: 100
   kcal_stomach_size: 1000
   space_required: 12
-  can_drown: true
+  can_drown: false
   entombable: false
-  temperature_max_comfort: 70
-  temperature_max_liveable: 100
-  temperature_min_comfort: 15
-  temperature_min_liveable: -29
   base_lay_egg_chances:
   - name: crab_egg
     weight: 0.32
@@ -115,12 +103,8 @@
   kcal_per_cycle: 100
   kcal_stomach_size: 1000
   space_required: 12
-  can_drown: true
+  can_drown: false
   entombable: false
-  temperature_max_comfort: 70
-  temperature_max_liveable: 100
-  temperature_min_comfort: 15
-  temperature_min_liveable: -29
   base_lay_egg_chances:
   - name: crab_egg
     weight: 0.32
@@ -156,12 +140,8 @@
   kcal_per_cycle: 700
   kcal_stomach_size: 7000
   space_required: 12
-  can_drown: true
+  can_drown: false
   entombable: false
-  temperature_max_comfort: 20
-  temperature_max_liveable: 70
-  temperature_min_comfort: 10
-  temperature_min_liveable: -29
   base_lay_egg_chances:
   - name: divergent_beetle_egg
     weight: 0.98
@@ -186,12 +166,8 @@
   kcal_per_cycle: 700
   kcal_stomach_size: 7000
   space_required: 16
-  can_drown: true
+  can_drown: false
   entombable: false
-  temperature_max_comfort: 20
-  temperature_max_liveable: 70
-  temperature_min_comfort: 10
-  temperature_min_liveable: -29
   base_lay_egg_chances:
   - name: divergent_beetle_egg
     weight: 0.33
@@ -220,12 +196,8 @@
   kcal_per_cycle: 2000
   kcal_stomach_size: 10000
   space_required: 12
-  can_drown: true
+  can_drown: false
   entombable: false
-  temperature_max_comfort: 90
-  temperature_max_liveable: 110
-  temperature_min_comfort: 35
-  temperature_min_liveable: 15
   base_lay_egg_chances:
   - name: drecko_egg
     weight: 0.98
@@ -237,17 +209,14 @@
     produce: phosphorite
     kcal_per_kg: 2666.7
     produced_conversion_rate: 13.33
-    eats_plants_directly: true
   - consume: swamp_lily
     produce: phosphorite
     kcal_per_kg: 2666.7
     produced_conversion_rate: 13.33
-    eats_plants_directly: true
   - consume: basic_single_harvest_plant
     produce: phosphorite
     kcal_per_kg: 2666.7
     produced_conversion_rate: 13.33
-    eats_plants_directly: true
 - name: drecko_plastic
   image_name: drecko
   decor: 10
@@ -261,12 +230,8 @@
   kcal_per_cycle: 2000
   kcal_stomach_size: 10000
   space_required: 12
-  can_drown: true
+  can_drown: false
   entombable: false
-  temperature_max_comfort: 60
-  temperature_max_liveable: 80
-  temperature_min_comfort: 25
-  temperature_min_liveable: 5
   base_lay_egg_chances:
   - name: drecko_egg
     weight: 0.35
@@ -278,23 +243,63 @@
     produce: phosphorite
     kcal_per_kg: 2000
     produced_conversion_rate: 9
-    eats_plants_directly: true
   - consume: prickle_flower
     produce: phosphorite
     kcal_per_kg: 2000
     produced_conversion_rate: 9
-    eats_plants_directly: true
+- name: fetch_drone
+  image_name: swoopy_bot
+  hp: 100
+  can_drown: false
+  entombable: true
 - name: glom
   image_name: glom
   decor: 10
   decor_radius: 1
   hp: 25
-  can_drown: true
+  can_drown: false
   entombable: true
-  temperature_max_comfort: 120
-  temperature_max_liveable: 150
-  temperature_min_comfort: 20
-  temperature_min_liveable: 0
+- name: gold_belly
+  image_name: ice_belly_king
+  decor: 10
+  decor_radius: 1
+  hp: 25
+  age_max: 200
+  base_incubation_rate_per_cycle: 2.5
+  base_lay_egg_cycles: 120
+  death_drop_item: Meat
+  death_drop_item_amount: 14
+  kcal_per_cycle: 1778
+  kcal_stomach_size: 17777
+  space_required: 16
+  can_drown: false
+  entombable: false
+  base_lay_egg_chances:
+  - name: ice_belly_egg
+    weight: 0.02
+  - name: gold_belly_egg
+    weight: 0.98
+  diet:
+  - consume: carrot_plant
+    produce: ice_belly_poop
+    kcal_per_kg: 444.4
+    produced_conversion_rate: 7.497111
+  - consume: carrot
+    produce: ice_belly_poop
+    kcal_per_kg: 4000
+    produced_conversion_rate: 67.474
+  - consume: fries_carrot
+    produce: ice_belly_poop
+    kcal_per_kg: 7112
+    produced_conversion_rate: 120.01
+  - consume: bean_plant
+    produce: ice_belly_poop
+    kcal_per_kg: 597.4
+    produced_conversion_rate: 10.07676
+  - consume: bean_plant_seed
+    produce: ice_belly_poop
+    kcal_per_kg: 1100
+    produced_conversion_rate: 18.571
 - name: hatch
   image_name: hatch
   decor: 10
@@ -308,12 +313,8 @@
   kcal_per_cycle: 700
   kcal_stomach_size: 7000
   space_required: 12
-  can_drown: true
+  can_drown: false
   entombable: false
-  temperature_max_comfort: 20
-  temperature_max_liveable: 70
-  temperature_min_comfort: 10
-  temperature_min_liveable: -29
   base_lay_egg_chances:
   - name: hatch_egg
     weight: 0.98
@@ -372,6 +373,10 @@
     produce: carbon
     kcal_per_kg: 2400
     produced_conversion_rate: 0.75
+  - consume: ice_caves_forage_plant
+    produce: carbon
+    kcal_per_kg: 800
+    produced_conversion_rate: 0.75
   - consume: mushroom
     produce: carbon
     kcal_per_kg: 2400
@@ -416,6 +421,38 @@
     produce: carbon
     kcal_per_kg: 250
     produced_conversion_rate: 0.75
+  - consume: hard_skin_berry
+    produce: carbon
+    kcal_per_kg: 800
+    produced_conversion_rate: 0.75
+  - consume: carrot
+    produce: carbon
+    kcal_per_kg: 4000
+    produced_conversion_rate: 0.75
+  - consume: pemmican
+    produce: carbon
+    kcal_per_kg: 2600
+    produced_conversion_rate: 0.75
+  - consume: fries_carrot
+    produce: carbon
+    kcal_per_kg: 5400
+    produced_conversion_rate: 0.75
+  - consume: deep_fried_meat
+    produce: carbon
+    kcal_per_kg: 4000
+    produced_conversion_rate: 0.75
+  - consume: deep_fried_nosh
+    produce: carbon
+    kcal_per_kg: 5000
+    produced_conversion_rate: 0.75
+  - consume: deep_fried_fish
+    produce: carbon
+    kcal_per_kg: 4200
+    produced_conversion_rate: 0.75
+  - consume: deep_fried_shellfish
+    produce: carbon
+    kcal_per_kg: 4200
+    produced_conversion_rate: 0.75
   - consume: pickled_meal
     produce: carbon
     kcal_per_kg: 1800
@@ -443,6 +480,10 @@
   - consume: fried_mushroom
     produce: carbon
     kcal_per_kg: 2800
+    produced_conversion_rate: 0.75
+  - consume: cooked_pikeapple
+    produce: carbon
+    kcal_per_kg: 1200
     produced_conversion_rate: 0.75
   - consume: cold_wheat_bread
     produce: carbon
@@ -529,12 +570,8 @@
   kcal_per_cycle: 700
   kcal_stomach_size: 7000
   space_required: 12
-  can_drown: true
+  can_drown: false
   entombable: false
-  temperature_max_comfort: 20
-  temperature_max_liveable: 70
-  temperature_min_comfort: 10
-  temperature_min_liveable: -29
   base_lay_egg_chances:
   - name: hatch_egg
     weight: 0.32
@@ -598,12 +635,8 @@
   kcal_per_cycle: 700
   kcal_stomach_size: 7000
   space_required: 12
-  can_drown: true
+  can_drown: false
   entombable: false
-  temperature_max_comfort: 20
-  temperature_max_liveable: 70
-  temperature_min_comfort: 10
-  temperature_min_liveable: -29
   base_lay_egg_chances:
   - name: hatch_egg
     weight: 0.11
@@ -651,12 +684,8 @@
   kcal_per_cycle: 700
   kcal_stomach_size: 7000
   space_required: 12
-  can_drown: true
+  can_drown: false
   entombable: false
-  temperature_max_comfort: 20
-  temperature_max_liveable: 70
-  temperature_min_comfort: 10
-  temperature_min_liveable: -29
   base_lay_egg_chances:
   - name: hatch_egg
     weight: 0.33
@@ -708,6 +737,10 @@
     produce: carbon
     kcal_per_kg: 2400
     produced_conversion_rate: 1
+  - consume: ice_caves_forage_plant
+    produce: carbon
+    kcal_per_kg: 800
+    produced_conversion_rate: 1
   - consume: mushroom
     produce: carbon
     kcal_per_kg: 2400
@@ -752,6 +785,38 @@
     produce: carbon
     kcal_per_kg: 250
     produced_conversion_rate: 1
+  - consume: hard_skin_berry
+    produce: carbon
+    kcal_per_kg: 800
+    produced_conversion_rate: 1
+  - consume: carrot
+    produce: carbon
+    kcal_per_kg: 4000
+    produced_conversion_rate: 1
+  - consume: pemmican
+    produce: carbon
+    kcal_per_kg: 2600
+    produced_conversion_rate: 1
+  - consume: fries_carrot
+    produce: carbon
+    kcal_per_kg: 5400
+    produced_conversion_rate: 1
+  - consume: deep_fried_meat
+    produce: carbon
+    kcal_per_kg: 4000
+    produced_conversion_rate: 1
+  - consume: deep_fried_nosh
+    produce: carbon
+    kcal_per_kg: 5000
+    produced_conversion_rate: 1
+  - consume: deep_fried_fish
+    produce: carbon
+    kcal_per_kg: 4200
+    produced_conversion_rate: 1
+  - consume: deep_fried_shellfish
+    produce: carbon
+    kcal_per_kg: 4200
+    produced_conversion_rate: 1
   - consume: pickled_meal
     produce: carbon
     kcal_per_kg: 1800
@@ -779,6 +844,10 @@
   - consume: fried_mushroom
     produce: carbon
     kcal_per_kg: 2800
+    produced_conversion_rate: 1
+  - consume: cooked_pikeapple
+    produce: carbon
+    kcal_per_kg: 1200
     produced_conversion_rate: 1
   - consume: cold_wheat_bread
     produce: carbon
@@ -852,6 +921,47 @@
     produce: carbon
     kcal_per_kg: 6000
     produced_conversion_rate: 1
+- name: ice_belly
+  image_name: ice_belly
+  decor: 10
+  decor_radius: 1
+  hp: 25
+  age_max: 200
+  base_incubation_rate_per_cycle: 2.5
+  base_lay_egg_cycles: 120
+  death_drop_item: Meat
+  death_drop_item_amount: 14
+  kcal_per_cycle: 1778
+  kcal_stomach_size: 17777
+  space_required: 16
+  can_drown: false
+  entombable: false
+  base_lay_egg_chances:
+  - name: ice_belly_egg
+    weight: 1
+  - name: gold_belly_egg
+    weight: 0
+  diet:
+  - consume: carrot_plant
+    produce: ice_belly_poop
+    kcal_per_kg: 444.4
+    produced_conversion_rate: 7.497111
+  - consume: carrot
+    produce: ice_belly_poop
+    kcal_per_kg: 4000
+    produced_conversion_rate: 67.474
+  - consume: fries_carrot
+    produce: ice_belly_poop
+    kcal_per_kg: 7112
+    produced_conversion_rate: 120.01
+  - consume: bean_plant
+    produce: ice_belly_poop
+    kcal_per_kg: 597.4
+    produced_conversion_rate: 10.07676
+  - consume: bean_plant_seed
+    produce: ice_belly_poop
+    kcal_per_kg: 1100
+    produced_conversion_rate: 18.571
 - name: light_bug
   image_name: lightbug
   decor: 30
@@ -863,12 +973,8 @@
   kcal_per_cycle: 40
   kcal_stomach_size: 320
   space_required: 12
-  can_drown: true
+  can_drown: false
   entombable: true
-  temperature_max_comfort: 40
-  temperature_max_liveable: 50
-  temperature_min_comfort: -9
-  temperature_min_liveable: -19
   base_lay_egg_chances:
   - name: light_bug_egg
     weight: 0.98
@@ -881,6 +987,14 @@
     kcal_per_kg: 241
     produced_conversion_rate: 1
   - consume: grilled_prickle_fruit
+    produce: 0
+    kcal_per_kg: 241
+    produced_conversion_rate: 1
+  - consume: hard_skin_berry
+    produce: 0
+    kcal_per_kg: 241
+    produced_conversion_rate: 1
+  - consume: cooked_pikeapple
     produce: 0
     kcal_per_kg: 241
     produced_conversion_rate: 1
@@ -899,12 +1013,8 @@
   kcal_per_cycle: 40
   kcal_stomach_size: 320
   space_required: 12
-  can_drown: true
+  can_drown: false
   entombable: true
-  temperature_max_comfort: 40
-  temperature_max_liveable: 50
-  temperature_min_comfort: -9
-  temperature_min_liveable: -19
   base_lay_egg_chances:
   - name: light_bug_blue_egg
     weight: 0.33
@@ -947,12 +1057,8 @@
   kcal_per_cycle: 40
   kcal_stomach_size: 320
   space_required: 12
-  can_drown: true
+  can_drown: false
   entombable: true
-  temperature_max_comfort: 40
-  temperature_max_liveable: 50
-  temperature_min_comfort: -9
-  temperature_min_liveable: -19
   base_lay_egg_chances:
   - name: light_bug_pink_egg
     weight: 0.33
@@ -991,12 +1097,8 @@
   kcal_per_cycle: 40
   kcal_stomach_size: 320
   space_required: 12
-  can_drown: true
+  can_drown: false
   entombable: true
-  temperature_max_comfort: 40
-  temperature_max_liveable: 50
-  temperature_min_comfort: -9
-  temperature_min_liveable: -19
   base_lay_egg_chances:
   - name: light_bug_crystal_egg
     weight: 0.98
@@ -1023,12 +1125,8 @@
   kcal_per_cycle: 40
   kcal_stomach_size: 320
   space_required: 12
-  can_drown: true
+  can_drown: false
   entombable: true
-  temperature_max_comfort: 40
-  temperature_max_liveable: 50
-  temperature_min_comfort: -9
-  temperature_min_liveable: -19
   base_lay_egg_chances:
   - name: light_bug_egg
     weight: 0.33
@@ -1051,6 +1149,10 @@
     produce: 0
     kcal_per_kg: 160
     produced_conversion_rate: 1
+  - consume: cooked_pikeapple
+    produce: 0
+    kcal_per_kg: 160
+    produced_conversion_rate: 1
   - consume: phosphorite
     produce: 0
     kcal_per_kg: 160
@@ -1066,12 +1168,8 @@
   kcal_per_cycle: 40
   kcal_stomach_size: 320
   space_required: 12
-  can_drown: true
+  can_drown: false
   entombable: true
-  temperature_max_comfort: 40
-  temperature_max_liveable: 50
-  temperature_min_comfort: -9
-  temperature_min_liveable: -19
   base_lay_egg_chances:
   - name: light_bug_purple_egg
     weight: 0.33
@@ -1099,6 +1197,10 @@
     produce: 0
     kcal_per_kg: 40
     produced_conversion_rate: 1
+  - consume: cooked_pikeapple
+    produce: 0
+    kcal_per_kg: 40
+    produced_conversion_rate: 1
   - consume: salsa
     produce: 0
     kcal_per_kg: 40
@@ -1118,12 +1220,8 @@
   kcal_per_cycle: 40
   kcal_stomach_size: 320
   space_required: 12
-  can_drown: true
+  can_drown: false
   entombable: true
-  temperature_max_comfort: 40
-  temperature_max_liveable: 50
-  temperature_min_comfort: -9
-  temperature_min_liveable: -19
   base_lay_egg_chances:
   - name: light_bug_orange_egg
     weight: 0.33
@@ -1140,6 +1238,10 @@
     kcal_per_kg: 40
     produced_conversion_rate: 1
   - consume: grilled_prickle_fruit
+    produce: 0
+    kcal_per_kg: 40
+    produced_conversion_rate: 1
+  - consume: cooked_pikeapple
     produce: 0
     kcal_per_kg: 40
     produced_conversion_rate: 1
@@ -1167,12 +1269,8 @@
   death_drop_item_amount: 10
   kcal_per_cycle: 4800
   kcal_stomach_size: 48000
-  can_drown: true
+  can_drown: false
   entombable: false
-  temperature_max_comfort: 400
-  temperature_max_liveable: 500
-  temperature_min_comfort: -149
-  temperature_min_liveable: -199
   base_lay_egg_chances:
   - name: mole_egg
     weight: 0.98
@@ -1207,12 +1305,8 @@
   death_drop_item_amount: 5
   kcal_per_cycle: 4800
   kcal_stomach_size: 24000
-  can_drown: true
+  can_drown: false
   entombable: false
-  temperature_max_comfort: 400
-  temperature_max_liveable: 500
-  temperature_min_comfort: -149
-  temperature_min_liveable: -199
   base_lay_egg_chances:
   - name: mole_egg
     weight: 0.32
@@ -1246,18 +1340,13 @@
   kcal_per_cycle: 200
   kcal_stomach_size: 1200
   space_required: 16
-  can_drown: true
+  can_drown: false
   entombable: true
-  temperature_max_comfort: 150
-  temperature_max_liveable: 200
-  temperature_min_comfort: -149
-  temperature_min_liveable: -199
   diet:
   - consume: gas_grass
     produce: methane
     kcal_per_kg: 100
     produced_conversion_rate: 5
-    eats_plants_directly: true
 - name: morb_rover
   image_name: morbrover
   hp: 100
@@ -1276,12 +1365,8 @@
   kcal_per_cycle: 120
   kcal_stomach_size: 600
   space_required: 12
-  can_drown: true
+  can_drown: false
   entombable: false
-  temperature_max_comfort: 140
-  temperature_max_liveable: 160
-  temperature_min_comfort: 50
-  temperature_min_liveable: 35
   base_lay_egg_chances:
   - name: oilfloater_egg
     weight: 0.98
@@ -1309,12 +1394,8 @@
   kcal_per_cycle: 120
   kcal_stomach_size: 600
   space_required: 12
-  can_drown: true
+  can_drown: false
   entombable: false
-  temperature_max_comfort: 70
-  temperature_max_liveable: 90
-  temperature_min_comfort: 10
-  temperature_min_liveable: -4
   base_lay_egg_chances:
   - name: oilfloater_egg
     weight: 0.33
@@ -1342,12 +1423,8 @@
   kcal_per_cycle: 120
   kcal_stomach_size: 600
   space_required: 12
-  can_drown: true
+  can_drown: false
   entombable: false
-  temperature_max_comfort: 250
-  temperature_max_liveable: 270
-  temperature_min_comfort: 90
-  temperature_min_liveable: 75
   base_lay_egg_chances:
   - name: oilfloater_egg
     weight: 0.33
@@ -1375,12 +1452,8 @@
   kcal_per_cycle: 100
   kcal_stomach_size: 500
   space_required: 8
-  can_drown: true
+  can_drown: false
   entombable: false
-  temperature_max_comfort: 60
-  temperature_max_liveable: 80
-  temperature_min_comfort: 0
-  temperature_min_liveable: -19
   base_lay_egg_chances:
   - name: pacu_egg
     weight: 0.98
@@ -1395,15 +1468,19 @@
     produce: toxic_sand
     kcal_per_kg: 13.3
     produced_conversion_rate: 0.5
-  - consume: basic_fabric_material_plant_seed
-    produce: toxic_sand
-    kcal_per_kg: 100
-    produced_conversion_rate: 0.5
   - consume: basic_single_harvest_plant_seed
     produce: toxic_sand
     kcal_per_kg: 100
     produced_conversion_rate: 0.5
   - consume: bean_plant_seed
+    produce: toxic_sand
+    kcal_per_kg: 100
+    produced_conversion_rate: 0.5
+  - consume: blue_grass_seed
+    produce: toxic_sand
+    kcal_per_kg: 100
+    produced_conversion_rate: 0.5
+  - consume: carrot_plant_seed
     produce: toxic_sand
     kcal_per_kg: 100
     produced_conversion_rate: 0.5
@@ -1415,19 +1492,15 @@
     produce: toxic_sand
     kcal_per_kg: 100
     produced_conversion_rate: 0.5
-  - consume: salt_plant_seed
+  - consume: hard_skin_berry_plant_seed
     produce: toxic_sand
     kcal_per_kg: 100
     produced_conversion_rate: 0.5
-  - consume: prickle_flower_seed
+  - consume: basic_fabric_material_plant_seed
     produce: toxic_sand
     kcal_per_kg: 100
     produced_conversion_rate: 0.5
-  - consume: sea_lettuce_seed
-    produce: toxic_sand
-    kcal_per_kg: 100
-    produced_conversion_rate: 0.5
-  - consume: spice_vine_seed
+  - consume: swamp_lily_seed
     produce: toxic_sand
     kcal_per_kg: 100
     produced_conversion_rate: 0.5
@@ -1435,7 +1508,23 @@
     produce: toxic_sand
     kcal_per_kg: 100
     produced_conversion_rate: 0.5
-  - consume: swamp_lily_seed
+  - consume: prickle_flower_seed
+    produce: toxic_sand
+    kcal_per_kg: 100
+    produced_conversion_rate: 0.5
+  - consume: spice_vine_seed
+    produce: toxic_sand
+    kcal_per_kg: 100
+    produced_conversion_rate: 0.5
+  - consume: space_tree_seed
+    produce: toxic_sand
+    kcal_per_kg: 100
+    produced_conversion_rate: 0.5
+  - consume: sea_lettuce_seed
+    produce: toxic_sand
+    kcal_per_kg: 100
+    produced_conversion_rate: 0.5
+  - consume: salt_plant_seed
     produce: toxic_sand
     kcal_per_kg: 100
     produced_conversion_rate: 0.5
@@ -1460,12 +1549,8 @@
   kcal_per_cycle: 100
   kcal_stomach_size: 500
   space_required: 8
-  can_drown: true
+  can_drown: false
   entombable: false
-  temperature_max_comfort: 5
-  temperature_max_liveable: 25
-  temperature_min_comfort: -29
-  temperature_min_liveable: -49
   base_lay_egg_chances:
   - name: pacu_egg
     weight: 0.32
@@ -1480,15 +1565,19 @@
     produce: toxic_sand
     kcal_per_kg: 13.3
     produced_conversion_rate: 0.5
-  - consume: basic_fabric_material_plant_seed
-    produce: toxic_sand
-    kcal_per_kg: 100
-    produced_conversion_rate: 0.5
   - consume: basic_single_harvest_plant_seed
     produce: toxic_sand
     kcal_per_kg: 100
     produced_conversion_rate: 0.5
   - consume: bean_plant_seed
+    produce: toxic_sand
+    kcal_per_kg: 100
+    produced_conversion_rate: 0.5
+  - consume: blue_grass_seed
+    produce: toxic_sand
+    kcal_per_kg: 100
+    produced_conversion_rate: 0.5
+  - consume: carrot_plant_seed
     produce: toxic_sand
     kcal_per_kg: 100
     produced_conversion_rate: 0.5
@@ -1500,19 +1589,15 @@
     produce: toxic_sand
     kcal_per_kg: 100
     produced_conversion_rate: 0.5
-  - consume: salt_plant_seed
+  - consume: hard_skin_berry_plant_seed
     produce: toxic_sand
     kcal_per_kg: 100
     produced_conversion_rate: 0.5
-  - consume: prickle_flower_seed
+  - consume: basic_fabric_material_plant_seed
     produce: toxic_sand
     kcal_per_kg: 100
     produced_conversion_rate: 0.5
-  - consume: sea_lettuce_seed
-    produce: toxic_sand
-    kcal_per_kg: 100
-    produced_conversion_rate: 0.5
-  - consume: spice_vine_seed
+  - consume: swamp_lily_seed
     produce: toxic_sand
     kcal_per_kg: 100
     produced_conversion_rate: 0.5
@@ -1520,7 +1605,23 @@
     produce: toxic_sand
     kcal_per_kg: 100
     produced_conversion_rate: 0.5
-  - consume: swamp_lily_seed
+  - consume: prickle_flower_seed
+    produce: toxic_sand
+    kcal_per_kg: 100
+    produced_conversion_rate: 0.5
+  - consume: spice_vine_seed
+    produce: toxic_sand
+    kcal_per_kg: 100
+    produced_conversion_rate: 0.5
+  - consume: space_tree_seed
+    produce: toxic_sand
+    kcal_per_kg: 100
+    produced_conversion_rate: 0.5
+  - consume: sea_lettuce_seed
+    produce: toxic_sand
+    kcal_per_kg: 100
+    produced_conversion_rate: 0.5
+  - consume: salt_plant_seed
     produce: toxic_sand
     kcal_per_kg: 100
     produced_conversion_rate: 0.5
@@ -1545,12 +1646,8 @@
   kcal_per_cycle: 100
   kcal_stomach_size: 500
   space_required: 8
-  can_drown: true
+  can_drown: false
   entombable: false
-  temperature_max_comfort: 80
-  temperature_max_liveable: 100
-  temperature_min_comfort: 30
-  temperature_min_liveable: 10
   base_lay_egg_chances:
   - name: pacu_egg
     weight: 0.32
@@ -1565,15 +1662,19 @@
     produce: toxic_sand
     kcal_per_kg: 13.3
     produced_conversion_rate: 0.5
-  - consume: basic_fabric_material_plant_seed
-    produce: toxic_sand
-    kcal_per_kg: 100
-    produced_conversion_rate: 0.5
   - consume: basic_single_harvest_plant_seed
     produce: toxic_sand
     kcal_per_kg: 100
     produced_conversion_rate: 0.5
   - consume: bean_plant_seed
+    produce: toxic_sand
+    kcal_per_kg: 100
+    produced_conversion_rate: 0.5
+  - consume: blue_grass_seed
+    produce: toxic_sand
+    kcal_per_kg: 100
+    produced_conversion_rate: 0.5
+  - consume: carrot_plant_seed
     produce: toxic_sand
     kcal_per_kg: 100
     produced_conversion_rate: 0.5
@@ -1585,19 +1686,15 @@
     produce: toxic_sand
     kcal_per_kg: 100
     produced_conversion_rate: 0.5
-  - consume: salt_plant_seed
+  - consume: hard_skin_berry_plant_seed
     produce: toxic_sand
     kcal_per_kg: 100
     produced_conversion_rate: 0.5
-  - consume: prickle_flower_seed
+  - consume: basic_fabric_material_plant_seed
     produce: toxic_sand
     kcal_per_kg: 100
     produced_conversion_rate: 0.5
-  - consume: sea_lettuce_seed
-    produce: toxic_sand
-    kcal_per_kg: 100
-    produced_conversion_rate: 0.5
-  - consume: spice_vine_seed
+  - consume: swamp_lily_seed
     produce: toxic_sand
     kcal_per_kg: 100
     produced_conversion_rate: 0.5
@@ -1605,7 +1702,23 @@
     produce: toxic_sand
     kcal_per_kg: 100
     produced_conversion_rate: 0.5
-  - consume: swamp_lily_seed
+  - consume: prickle_flower_seed
+    produce: toxic_sand
+    kcal_per_kg: 100
+    produced_conversion_rate: 0.5
+  - consume: spice_vine_seed
+    produce: toxic_sand
+    kcal_per_kg: 100
+    produced_conversion_rate: 0.5
+  - consume: space_tree_seed
+    produce: toxic_sand
+    kcal_per_kg: 100
+    produced_conversion_rate: 0.5
+  - consume: sea_lettuce_seed
+    produce: toxic_sand
+    kcal_per_kg: 100
+    produced_conversion_rate: 0.5
+  - consume: salt_plant_seed
     produce: toxic_sand
     kcal_per_kg: 100
     produced_conversion_rate: 0.5
@@ -1630,12 +1743,8 @@
   kcal_per_cycle: 200
   kcal_stomach_size: 1200
   space_required: 16
-  can_drown: true
+  can_drown: false
   entombable: true
-  temperature_max_comfort: 55
-  temperature_max_liveable: 105
-  temperature_min_comfort: 15
-  temperature_min_liveable: -29
   base_lay_egg_chances:
   - name: puft_egg
     weight: 0.98
@@ -1666,12 +1775,8 @@
   kcal_per_cycle: 200
   kcal_stomach_size: 1200
   space_required: 16
-  can_drown: true
+  can_drown: false
   entombable: true
-  temperature_max_comfort: 65
-  temperature_max_liveable: 115
-  temperature_min_comfort: -14
-  temperature_min_liveable: -59
   base_lay_egg_chances:
   - name: puft_egg
     weight: 0.98
@@ -1704,12 +1809,8 @@
   kcal_per_cycle: 200
   kcal_stomach_size: 1200
   space_required: 16
-  can_drown: true
+  can_drown: false
   entombable: true
-  temperature_max_comfort: 35
-  temperature_max_liveable: 85
-  temperature_min_comfort: -14
-  temperature_min_liveable: -59
   base_lay_egg_chances:
   - name: puft_egg
     weight: 0.31
@@ -1737,12 +1838,8 @@
   kcal_per_cycle: 200
   kcal_stomach_size: 1200
   space_required: 16
-  can_drown: true
+  can_drown: false
   entombable: true
-  temperature_max_comfort: 65
-  temperature_max_liveable: 115
-  temperature_min_comfort: 30
-  temperature_min_liveable: -14
   base_lay_egg_chances:
   - name: puft_egg
     weight: 0.31
@@ -1757,6 +1854,33 @@
     produce: oxy_rock
     kcal_per_kg: 4
     produced_conversion_rate: 0.95
+- name: seal
+  image_name: seal
+  decor: 10
+  decor_radius: 1
+  hp: 25
+  age_max: 100
+  base_incubation_rate_per_cycle: 5
+  base_lay_egg_cycles: 60
+  death_drop_item: Tallow
+  death_drop_item_amount: 50
+  kcal_per_cycle: 100
+  kcal_stomach_size: 1000
+  space_required: 12
+  can_drown: false
+  entombable: false
+  base_lay_egg_chances:
+  - name: seal_egg
+    weight: 1
+  diet:
+  - consume: space_tree
+    produce: ethanol
+    kcal_per_kg: 2.5
+    produced_conversion_rate: 1
+  - consume: sucrose
+    produce: ethanol
+    kcal_per_kg: 3.2
+    produced_conversion_rate: 1.298701
 - name: squirrel
   image_name: squirrel
   decor: 10
@@ -1770,12 +1894,8 @@
   kcal_per_cycle: 100
   kcal_stomach_size: 1000
   space_required: 12
-  can_drown: true
+  can_drown: false
   entombable: false
-  temperature_max_comfort: 20
-  temperature_max_liveable: 70
-  temperature_min_comfort: 10
-  temperature_min_liveable: -29
   base_lay_egg_chances:
   - name: squirrel_egg
     weight: 0.98
@@ -1787,12 +1907,14 @@
     produce: dirt
     kcal_per_kg: 250
     produced_conversion_rate: 50
-    eats_plants_directly: true
   - consume: basic_fabric_plant
     produce: dirt
     kcal_per_kg: 250
     produced_conversion_rate: 50
-    eats_plants_directly: true
+  - consume: space_tree
+    produce: dirt
+    kcal_per_kg: 250
+    produced_conversion_rate: 50
 - name: squirrel_hug
   image_name: squirrel_hug
   decor: 25
@@ -1806,12 +1928,8 @@
   kcal_per_cycle: 100
   kcal_stomach_size: 1000
   space_required: 4
-  can_drown: true
+  can_drown: false
   entombable: false
-  temperature_max_comfort: 20
-  temperature_max_liveable: 70
-  temperature_min_comfort: 10
-  temperature_min_liveable: -29
   base_lay_egg_chances:
   - name: squirrel_egg
     weight: 0.35
@@ -1823,12 +1941,14 @@
     produce: dirt
     kcal_per_kg: 200
     produced_conversion_rate: 25
-    eats_plants_directly: true
   - consume: basic_fabric_plant
     produce: dirt
     kcal_per_kg: 200
     produced_conversion_rate: 25
-    eats_plants_directly: true
+  - consume: space_tree
+    produce: dirt
+    kcal_per_kg: 200
+    produced_conversion_rate: 25
 - name: staterpillar
   image_name: caterpillar
   decor: 10
@@ -1842,12 +1962,8 @@
   kcal_per_cycle: 2000
   kcal_stomach_size: 10000
   space_required: 12
-  can_drown: true
+  can_drown: false
   entombable: false
-  temperature_max_comfort: 20
-  temperature_max_liveable: 70
-  temperature_min_comfort: 10
-  temperature_min_liveable: -29
   base_lay_egg_chances:
   - name: staterpillar_egg
     weight: 0.98
@@ -1878,6 +1994,10 @@
     produce: hydrogen
     kcal_per_kg: 33.3
     produced_conversion_rate: 0.05
+  - consume: cinnabar
+    produce: hydrogen
+    kcal_per_kg: 33.3
+    produced_conversion_rate: 0.05
   - consume: copper
     produce: hydrogen
     kcal_per_kg: 33.3
@@ -1887,6 +2007,10 @@
     kcal_per_kg: 33.3
     produced_conversion_rate: 0.05
   - consume: lead
+    produce: hydrogen
+    kcal_per_kg: 33.3
+    produced_conversion_rate: 0.05
+  - consume: solid_mercury
     produce: hydrogen
     kcal_per_kg: 33.3
     produced_conversion_rate: 0.05
@@ -1923,12 +2047,8 @@
   kcal_per_cycle: 2000
   kcal_stomach_size: 10000
   space_required: 12
-  can_drown: true
+  can_drown: false
   entombable: false
-  temperature_max_comfort: 70
-  temperature_max_liveable: 90
-  temperature_min_comfort: -9
-  temperature_min_liveable: -29
   base_lay_egg_chances:
   - name: staterpillar_egg
     weight: 0.32
@@ -1959,6 +2079,10 @@
     produce: hydrogen
     kcal_per_kg: 66.7
     produced_conversion_rate: 0.05
+  - consume: cinnabar
+    produce: hydrogen
+    kcal_per_kg: 66.7
+    produced_conversion_rate: 0.05
   - consume: copper
     produce: hydrogen
     kcal_per_kg: 66.7
@@ -1968,6 +2092,10 @@
     kcal_per_kg: 66.7
     produced_conversion_rate: 0.05
   - consume: lead
+    produce: hydrogen
+    kcal_per_kg: 66.7
+    produced_conversion_rate: 0.05
+  - consume: solid_mercury
     produce: hydrogen
     kcal_per_kg: 66.7
     produced_conversion_rate: 0.05
@@ -2004,12 +2132,8 @@
   kcal_per_cycle: 2000
   kcal_stomach_size: 10000
   space_required: 12
-  can_drown: true
+  can_drown: false
   entombable: false
-  temperature_max_comfort: 70
-  temperature_max_liveable: 90
-  temperature_min_comfort: -9
-  temperature_min_liveable: -29
   base_lay_egg_chances:
   - name: staterpillar_egg
     weight: 0.32
@@ -2040,6 +2164,10 @@
     produce: hydrogen
     kcal_per_kg: 66.7
     produced_conversion_rate: 0.05
+  - consume: cinnabar
+    produce: hydrogen
+    kcal_per_kg: 66.7
+    produced_conversion_rate: 0.05
   - consume: copper
     produce: hydrogen
     kcal_per_kg: 66.7
@@ -2049,6 +2177,10 @@
     kcal_per_kg: 66.7
     produced_conversion_rate: 0.05
   - consume: lead
+    produce: hydrogen
+    kcal_per_kg: 66.7
+    produced_conversion_rate: 0.05
+  - consume: solid_mercury
     produce: hydrogen
     kcal_per_kg: 66.7
     produced_conversion_rate: 0.05
@@ -2072,3 +2204,38 @@
     produce: hydrogen
     kcal_per_kg: 66.7
     produced_conversion_rate: 0.05
+- name: wood_deer
+  image_name: ice_floof
+  decor: 10
+  decor_radius: 1
+  hp: 25
+  age_max: 100
+  base_incubation_rate_per_cycle: 5
+  base_lay_egg_cycles: 60
+  death_drop_item: Meat
+  death_drop_item_amount: 1
+  kcal_per_cycle: 100
+  kcal_stomach_size: 1000
+  space_required: 12
+  can_drown: false
+  entombable: false
+  base_lay_egg_chances:
+  - name: wood_deer_egg
+    weight: 1
+  diet:
+  - consume: hard_skin_berry_plant
+    produce: dirt
+    kcal_per_kg: 166.7
+    produced_conversion_rate: 8.333334
+  - consume: hard_skin_berry
+    produce: dirt
+    kcal_per_kg: 500
+    produced_conversion_rate: 25
+  - consume: prickle_flower
+    produce: dirt
+    kcal_per_kg: 166.7
+    produced_conversion_rate: 8.333334
+  - consume: prickle_fruit
+    produce: dirt
+    kcal_per_kg: 1000
+    produced_conversion_rate: 50

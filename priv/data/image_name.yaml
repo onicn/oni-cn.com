@@ -100,6 +100,9 @@
 - name: liquid_carbon_dioxide
   color: RGBA(135, 142, 183, 255)
   is_liquid: true
+- name: liquid_gunk
+  color: RGBA(81, 35, 96, 255)
+  is_liquid: true
 - name: liquid_helium
   color: RGBA(148, 138, 183, 255)
   is_liquid: true
@@ -184,6 +187,9 @@
 - name: salt_water
   color: RGBA(206, 210, 236, 255)
   is_liquid: true
+- name: sugar_water
+  color: RGBA(255, 255, 255, 255)
+  is_liquid: true
 - name: super_coolant
   color: RGBA(55, 173, 147, 255)
   is_liquid: true
@@ -198,6 +204,9 @@
   is_liquid: true
 - name: molten_syngas
   color: RGBA(0, 255, 116, 255)
+  is_liquid: true
+- name: phyto_oil
+  color: RGBA(152, 168, 47, 255)
   is_liquid: true
 - name: molten_sucrose
   color: RGBA(255, 255, 255, 255)
@@ -288,6 +297,9 @@
   is_solid: true
 - name: fossil
   image_name: fossil
+  is_solid: true
+- name: frozen_phyto_oil
+  image_name: frozen_brine
   is_solid: true
 - name: fullerene
   image_name: fullerene
@@ -403,6 +415,9 @@
 - name: snow
   image_name: snow
   is_solid: true
+- name: stable_snow
+  image_name: snow
+  is_solid: true
 - name: solid_carbon_dioxide
   image_name: solid_carbon_dioxide
   is_solid: true
@@ -416,7 +431,7 @@
   image_name: solid_hydrogen
   is_solid: true
 - name: solid_mercury
-  image_name: solid_mercury
+  image_name: mercury_refined
   is_solid: true
 - name: solid_methane
   image_name: solid_methane
@@ -492,6 +507,18 @@
   is_solid: true
 - name: solid_nuclear_waste
   image_name: radium
+  is_solid: true
+- name: cinnabar
+  image_name: cinnabar
+  is_solid: true
+- name: wood_log
+  image_name: wood
+  is_solid: true
+- name: tallow
+  image_name: tallow
+  is_solid: true
+- name: gunk
+  image_name: gunk
   is_solid: true
 - name: vacuum
   color: RGBA(120, 91, 137, 255)

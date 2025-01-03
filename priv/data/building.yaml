@@ -24,6 +24,31 @@
   generator_base_capacity: 0
   materials:
   - refined_metal
+- name: advanced_crafting_table
+  desc: 焊接台允许复制人制造寻回机器人飞寻机。
+  effect: >-
+    生产高级电子产品和仿生增幅块。
+
+
+    只有在队列中安排配方复制人才会进行制作。
+  image_name: advanced_crafting_table
+  base_decor_radius: 1
+  category: equipment
+  construction_time: 30
+  entombable: true
+  floodable: true
+  replaceable: true
+  is_industrial_machinery: false
+  overheatable: true
+  overheat_temperature: 75
+  heat_generate: 0
+  height_in_cells: 3
+  width_in_cells: 3
+  power_consume: 480
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - metal
 - name: advanced_doctor_station
   desc: 病诊站需要电力，但能治疗比医务站更严重的疾病。
   effect: >-
@@ -232,7 +257,6 @@
   heat_generate: 0.5
   height_in_cells: 3
   width_in_cells: 2
-  power_consume: 240
   generator_wattage_rating: 0
   generator_base_capacity: 0
   materials:
@@ -380,7 +404,7 @@
   materials:
   - refined_metal
 - name: battery
-  desc: 电池可以将发电机产生的电量储存起来供以后使用。
+  desc: 蓄电池可以将发电机产生的电量储存起来供以后使用。
   effect: >-
     储存发电机产生的电力，然后向建筑提供电力。
 
@@ -405,7 +429,7 @@
   materials:
   - metal
 - name: battery_medium
-  desc: 更大的电池可以保存更多电量，并且供电时间更长。
+  desc: 更大的蓄电池可以保存更多电量，并且供电时间更长。
   effect: >-
     储存发电机产生的电力，然后向建筑提供电力。
 
@@ -429,7 +453,7 @@
   materials:
   - metal
 - name: battery_module
-  desc: 在起飞前为电池舱充电，在飞行过程中就更容易为建筑供电了。
+  desc: 在起飞前为蓄电池舱充电，在飞行过程中就更容易为建筑供电了。
   effect: >-
     储存由火箭引擎生成的或来自火箭平台的额外电力。
 
@@ -458,7 +482,7 @@
   materials:
   - metal
 - name: battery_smart
-  desc: 需要充电时，智能电池会输出绿色信号。
+  desc: 需要充电时，智能蓄电池会输出绿色信号。
   effect: >-
     储存发电机产生的电力，然后向建筑提供电力。
 
@@ -532,10 +556,10 @@
   generator_wattage_rating: 0
   generator_base_capacity: 0
   materials:
-  - buildable_raw
+  - buildable_raw&_building_wood
 - name: bottle_emptier
-  desc: 使用空瓶器的元素筛选项，可在特定区域存储指定液体。
-  effect: 将瓶装液体倒回世界中。
+  desc: 使用液桶排倒器的元素筛选项，可在特定区域存储指定液体。
+  effect: 将桶装液体倒回世界中。
   image_name: liquidator
   base_decor: -10
   base_decor_radius: 2
@@ -552,9 +576,47 @@
   generator_base_capacity: 0
   materials:
   - buildable_raw
+- name: bottle_emptier_conduit_gas
+  desc: 使用气罐抽出器的元素筛选项，可在特定区域存储指定气体。
+  effect: 将气罐中的气体抽到气体管道中。
+  image_name: bottle_emptier_gas_conduit
+  base_decor: -15
+  base_decor_radius: 3
+  category: hvac
+  construction_time: 60
+  entombable: true
+  replaceable: true
+  is_industrial_machinery: true
+  overheat_temperature: 75
+  heat_generate: 0
+  height_in_cells: 2
+  width_in_cells: 1
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - refined_metal
+- name: bottle_emptier_conduit_liquid
+  desc: 使用液桶抽出器的元素筛选项，可在特定区域存储指定液体。
+  effect: 将桶装液体抽到液体管道中。
+  image_name: bottle_emptier_liquid_conduit
+  base_decor: -15
+  base_decor_radius: 3
+  category: plumbing
+  construction_time: 60
+  entombable: true
+  replaceable: true
+  is_industrial_machinery: true
+  overheat_temperature: 75
+  heat_generate: 0
+  height_in_cells: 2
+  width_in_cells: 1
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - refined_metal
 - name: bottle_emptier_gas
-  desc: 使用空罐器的元素筛选项，可在特定区域存储指定气体。
-  effect: 将储气罐中的气体倒回世界中。
+  desc: 使用气罐排倒器的元素筛选项，可在特定区域存储指定气体。
+  effect: 将气罐中的气体倒回世界中。
   image_name: gas_emptying_station
   base_decor: -15
   base_decor_radius: 3
@@ -617,6 +679,26 @@
   generator_base_capacity: 0
   materials:
   - steel
+- name: campfire
+  desc: 柴火炉能烘干湿透的双脚，并帮助复制人暂时忘掉自己有多冷。
+  effect: 消耗木材以加热寒冷的环境。
+  image_name: campfire_small
+  base_decor: 20
+  base_decor_radius: 4
+  category: utilities
+  construction_time: 10
+  entombable: true
+  floodable: true
+  replaceable: true
+  is_industrial_machinery: false
+  overheat_temperature: 9726.85
+  heat_generate: 0
+  height_in_cells: 2
+  width_in_cells: 1
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - metal
 - name: canvas
   desc: 建好后，复制人可以在空白画布上绘制装饰画。
   effect: >-
@@ -689,31 +771,6 @@
   materials:
   - metal
   - building_fiber
-- name: cargo_bay
-  desc: 复制人会把他们在太空任务中找到的任何资源装入货舱。
-  effect: >-
-    允许复制人储存在太空任务中找到的任何固体资源。
-
-
-    火箭返回后，所储存的资源便可供殖民地使用。
-  image_name: rocket_storage_solid
-  base_decor_radius: 1
-  category: rocketry
-  construction_time: 60
-  entombable: true
-  breakable: true
-  replaceable: true
-  is_industrial_machinery: true
-  overheatable: true
-  overheat_temperature: 2000
-  heat_generate: 0
-  height_in_cells: 5
-  width_in_cells: 5
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
-  materials:
-  - buildable_raw
-  - steel
 - name: cargo_bay_cluster
   desc: 比常规的货舱能携带更多东西。
   effect: >-
@@ -1020,30 +1077,6 @@
   generator_base_capacity: 0
   materials:
   - refined_metal
-- name: command_module
-  desc: 必须分配至少一名宇航员到指挥舱去驾驶火箭。
-  effect: >-
-    包括供复制人宇航员使用的乘员座位。
-
-
-    指挥舱必须是安装在火箭顶部的最后一个舱块。
-  image_name: rocket_command_module
-  base_decor_radius: 1
-  category: rocketry
-  construction_time: 60
-  entombable: true
-  breakable: true
-  replaceable: true
-  is_industrial_machinery: true
-  overheatable: true
-  overheat_temperature: 2000
-  heat_generate: 0
-  height_in_cells: 5
-  width_in_cells: 5
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
-  materials:
-  - steel
 - name: compost
   desc: 堆肥堆可以安全地处理生物废物，产生新鲜泥土。
   effect: 将污染土和其他可堆肥物降解成泥土。
@@ -1137,34 +1170,6 @@
   generator_base_capacity: 0
   materials:
   - buildable_raw
-- name: cosmic_research_center
-  desc: 天象仪可以模拟望远镜发现的地点。
-  effect: >-
-    执行星际研究以解锁新技术。
-
-
-    消耗来自研究舱的数据。
-
-
-    分配的复制人必须具有天文学技能。
-  image_name: research_space
-  base_decor_radius: 1
-  category: equipment
-  construction_time: 30
-  entombable: true
-  floodable: true
-  replaceable: true
-  is_industrial_machinery: false
-  overheatable: true
-  overheat_temperature: 75
-  heat_generate: 4
-  height_in_cells: 4
-  width_in_cells: 4
-  power_consume: 120
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
-  materials:
-  - metal
 - name: crafting_table
   desc: 工作台可以让复制人制作在低氧区域穿戴的氧气面罩。
   effect: >-
@@ -1420,6 +1425,31 @@
   generator_base_capacity: 0
   materials:
   - buildable_raw
+- name: data_miner
+  desc: 数据磁盘还可以用于火箭的机器驾驶舱的编程。
+  effect: >-
+    批量生产可处理成数据分析研究点数的数据磁盘。
+
+
+    只有在队列中安排配方复制人才会进行制作。
+  image_name: data_miner
+  base_decor_radius: 1
+  category: equipment
+  construction_time: 30
+  entombable: true
+  floodable: true
+  replaceable: true
+  is_industrial_machinery: true
+  overheatable: true
+  overheat_temperature: 75
+  heat_generate: 3
+  height_in_cells: 2
+  width_in_cells: 3
+  power_consume: 1000
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - metal
 - name: decontamination_shower
   desc: 别忘了清理耳朵后面。
   effect: >-
@@ -1446,6 +1476,32 @@
   materials:
   - metal
   - lead
+- name: deepfryer
+  desc: 油炸的东西味道更好。
+  effect: >-
+    使用动物油脂烹饪种类繁多的改良食物。
+
+
+    只有在队列中安排配方复制人才会进行制作。
+  image_name: deepfryer
+  base_decor_radius: 1
+  category: food
+  construction_time: 30
+  entombable: true
+  floodable: true
+  breakable: true
+  replaceable: true
+  is_industrial_machinery: false
+  overheatable: true
+  overheat_temperature: 75
+  heat_generate: 8
+  height_in_cells: 2
+  width_in_cells: 2
+  power_consume: 480
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - metal
 - name: desalinator
   desc: 盐可以提炼为食盐，用于在进餐时提升士气。
   effect: 从浓盐水或盐水中移除盐，产生水。
@@ -1484,7 +1540,26 @@
   height_in_cells: 1
   width_in_cells: 1
   generator_wattage_rating: 100000
-  generator_base_capacity: 200000
+  generator_base_capacity: 100000
+  materials:
+  - metal
+- name: dev_heater
+  desc: 有人摸了恒温器了吗？
+  effect: 按需生成热量，以测试温暖度。
+  image_name: dev_generator
+  base_decor: -15
+  base_decor_radius: 3
+  category: utilities
+  construction_time: 3
+  entombable: true
+  replaceable: true
+  is_industrial_machinery: false
+  overheat_temperature: 75
+  heat_generate: 0
+  height_in_cells: 1
+  width_in_cells: 1
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
   materials:
   - metal
 - name: dev_hepspawner
@@ -1607,7 +1682,7 @@
   materials:
   - metal
 - name: dev_radiation_generator
-  desc: 这种咖啡，<b>浓</b>。
+  desc: 这种咖啡，<i>浓</i>。
   effect: 按需生成辐射，非常轻松。
   image_name: dev_generator
   base_decor: -15
@@ -1800,6 +1875,28 @@
   generator_base_capacity: 0
   materials:
   - refined_metal
+- name: electrobank_charger
+  desc: 仿生复制人需要稳定的电力供应才能运作。
+  effect: 将没电的复用移动电源完全充能，以便重复使用。
+  image_name: electrobank_charger_small
+  base_decor: -10
+  base_decor_radius: 2
+  category: power
+  construction_time: 30
+  entombable: true
+  floodable: true
+  replaceable: true
+  is_industrial_machinery: true
+  overheatable: true
+  overheat_temperature: 75
+  heat_generate: 1
+  height_in_cells: 2
+  width_in_cells: 2
+  power_consume: 480
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - refined_metal
 - name: electrolyzer
   desc: 一端进水，另一端出来维持生命的氧气。
   effect: >-
@@ -1853,8 +1950,8 @@
   materials:
   - refined_metal
 - name: ethanol_distillery
-  desc: 乙醇蒸馏器将木料转化为可燃的乙醇燃料。
-  effect: 将木料提炼为乙醇。
+  desc: 乙醇蒸馏器将木材转化为可燃的乙醇燃料。
+  effect: 将木材提炼为乙醇。
   image_name: ethanoldistillery
   base_decor: -10
   base_decor_radius: 2
@@ -1916,7 +2013,7 @@
   generator_wattage_rating: 0
   generator_base_capacity: 0
   materials:
-  - buildable_raw
+  - buildable_raw&_building_wood
 - name: facility_back_wall_window
   desc: ''
   effect: 一扇高而薄的窗户。
@@ -2387,7 +2484,7 @@
   - steel
 - name: gas_bottler
   desc: 气罐可以让复制人手动地运送气体。
-  effect: 将管道中的气体自动地灌入储气罐，以便人工运输。
+  effect: 将管道中的气体自动地存入气罐，以便人工运输。
   image_name: gas_bottler
   base_decor: -10
   base_decor_radius: 2
@@ -2405,30 +2502,6 @@
   generator_base_capacity: 0
   materials:
   - metal
-- name: gas_cargo_bay
-  desc: 复制人会把他们在太空任务中找到的任何资源装入货舱。
-  effect: >-
-    允许复制人储存在太空任务中找到的任何气体资源。
-
-
-    火箭返回后，所储存的资源便可供殖民地使用。
-  image_name: rocket_storage_gas
-  base_decor_radius: 1
-  category: rocketry
-  construction_time: 60
-  entombable: true
-  breakable: true
-  replaceable: true
-  is_industrial_machinery: true
-  overheatable: true
-  overheat_temperature: 2000
-  heat_generate: 0
-  height_in_cells: 5
-  width_in_cells: 5
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
-  materials:
-  - steel
 - name: gas_cargo_bay_cluster
   desc: 比常规的气罐货舱能携带更多东西。
   effect: >-
@@ -2501,7 +2574,7 @@
   generator_wattage_rating: 0
   generator_base_capacity: 0
   materials:
-  - buildable_raw
+  - buildable_raw&_metal
 - name: gas_conduit_bridge
   desc: 分离管道系统可以防止建筑被混杂的内容物损坏。
   effect: >-
@@ -2875,7 +2948,7 @@
   height_in_cells: 3
   width_in_cells: 3
   generator_wattage_rating: 600
-  generator_base_capacity: 20000
+  generator_base_capacity: 600
   materials:
   - metal
 - name: generic_fabricator
@@ -3144,6 +3217,26 @@
   generator_base_capacity: 0
   materials:
   - buildable_raw
+- name: gunk_emptier
+  desc: 仿生复制人在光顾粘渣油提取器后会轻松很多。
+  effect: 清除复制人的仿生部件上堆积的陈旧粘渣油。
+  image_name: gunkdump_station
+  base_decor: -15
+  base_decor_radius: 3
+  category: plumbing
+  construction_time: 60
+  entombable: true
+  floodable: true
+  replaceable: true
+  is_industrial_machinery: false
+  overheat_temperature: 75
+  heat_generate: 0
+  height_in_cells: 3
+  width_in_cells: 3
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - metal
 - name: habitat_module_medium
   desc: 能够让复制人在太空旅行中生存下来……希望吧。
   effect: >-
@@ -3422,7 +3515,7 @@
     水必须处于一个舒适的温度，而且会很快冷下来。
 
 
-    提升复制人的士气。
+    提升复制人的士气，并提供持续存留的微暖感。
   image_name: hottub
   base_decor: 20
   base_decor_radius: 4
@@ -3443,33 +3536,6 @@
   materials:
   - metal
   - building_wood
-- name: hydrogen_engine
-  desc: 相比蒸汽或石油引擎，液氢引擎能推动火箭到达更远的地方。
-  effect: >-
-    燃烧液态氢以推动火箭进行太空探索。
-
-
-    液氢引擎与石油引擎的高度限制一样，但要稍微快一点。
-
-
-    建好引擎后，可以添加更多的火箭舱块。
-  image_name: rocket_hydrogen_engine
-  base_decor_radius: 1
-  category: rocketry
-  construction_time: 60
-  entombable: true
-  breakable: true
-  replaceable: true
-  is_industrial_machinery: true
-  overheatable: true
-  overheat_temperature: 2000
-  heat_generate: 0
-  height_in_cells: 5
-  width_in_cells: 7
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
-  materials:
-  - steel
 - name: hydrogen_engine_cluster
   desc: 相比蒸汽或石油引擎，液氢引擎能推动火箭到达更远的地方。
   effect: >-
@@ -3496,7 +3562,7 @@
   height_in_cells: 5
   width_in_cells: 7
   generator_wattage_rating: 600
-  generator_base_capacity: 40000
+  generator_base_capacity: 600
   materials:
   - steel
 - name: hydrogen_generator
@@ -3517,7 +3583,7 @@
   height_in_cells: 3
   width_in_cells: 4
   generator_wattage_rating: 800
-  generator_base_capacity: 1000
+  generator_base_capacity: 800
   materials:
   - metal
 - name: hydroponic_farm
@@ -3564,9 +3630,28 @@
   generator_base_capacity: 0
   materials:
   - metal
+- name: ice_kettle
+  desc: 水永远不会热到烫伤舌头。
+  effect: 消耗木材将冰融化成水，并将其桶装以便运输。
+  image_name: icemelter_kettle
+  base_decor_radius: 1
+  category: utilities
+  construction_time: 10
+  entombable: true
+  replaceable: true
+  is_industrial_machinery: false
+  overheatable: true
+  overheat_temperature: 75
+  heat_generate: 1.5
+  height_in_cells: 2
+  width_in_cells: 2
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - metal
 - name: ice_machine
-  desc: 制冰机可用作冰的小型再生源。
-  effect: 将水转化为冰。
+  desc: 制冰机可用作冰和雪的小型再生源。
+  effect: 将水转化为冰或雪。
   image_name: freezerator
   base_decor_radius: 1
   category: utilities
@@ -3580,7 +3665,7 @@
   heat_generate: 12
   height_in_cells: 3
   width_in_cells: 2
-  power_consume: 60
+  power_consume: 240
   generator_wattage_rating: 0
   generator_base_capacity: 0
   materials:
@@ -3593,7 +3678,7 @@
 
     必须由复制人雕刻。
   image_name: icesculpture
-  base_decor: 20
+  base_decor: 35
   base_decor_radius: 8
   category: furniture
   construction_time: 120
@@ -3780,33 +3865,6 @@
   generator_base_capacity: 0
   materials:
   - metal
-- name: kerosene_engine
-  desc: 火箭可用来将复制人送入太空，以便获取稀有资源。
-  effect: >-
-    燃烧石油以推动火箭进行太空探索。
-
-
-    石油引擎的高度限制较为宽松，可以带有很多舱块。
-
-
-    建好引擎后，可以添加更多的火箭舱块。
-  image_name: rocket_petroleum_engine
-  base_decor_radius: 1
-  category: rocketry
-  construction_time: 60
-  entombable: true
-  breakable: true
-  replaceable: true
-  is_industrial_machinery: true
-  overheatable: true
-  overheat_temperature: 2000
-  heat_generate: 0
-  height_in_cells: 5
-  width_in_cells: 7
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
-  materials:
-  - steel
 - name: kerosene_engine_cluster
   desc: 更强大的火箭引擎能推动更重的负担。
   effect: >-
@@ -3833,7 +3891,7 @@
   height_in_cells: 5
   width_in_cells: 7
   generator_wattage_rating: 480
-  generator_base_capacity: 20000
+  generator_base_capacity: 480
   materials:
   - steel
 - name: kerosene_engine_cluster_small
@@ -3862,7 +3920,7 @@
   height_in_cells: 4
   width_in_cells: 3
   generator_wattage_rating: 240
-  generator_base_capacity: 4000
+  generator_base_capacity: 240
   materials:
   - refined_metal
 - name: kiln
@@ -3906,9 +3964,9 @@
   generator_wattage_rating: 0
   generator_base_capacity: 0
   materials:
-  - buildable_raw
+  - buildable_raw&_building_wood
 - name: ladder_bed
-  desc: 复制人在睡觉时，如果有另一个复制人使用梯子则睡眠会被打断。
+  desc: 复制人在睡觉时，如果有另一名复制人使用梯子则睡眠会被打断。
   effect: >-
     为一名复制人提供睡眠区，同时充当梯子。
 
@@ -3972,6 +4030,27 @@
   power_consume: 60
   generator_wattage_rating: 0
   generator_base_capacity: 0
+  materials:
+  - refined_metal
+- name: large_electrobank_discharger
+  desc: 它基本上是它自己的电网。
+  effect: 高效地将移动电源中储存的能量转化为电力以供相连的建筑使用。
+  image_name: electrobank_discharger_large
+  base_decor: -15
+  base_decor_radius: 3
+  category: power
+  construction_time: 60
+  entombable: true
+  floodable: true
+  replaceable: true
+  is_industrial_machinery: true
+  overheatable: true
+  overheat_temperature: 75
+  heat_generate: 1
+  height_in_cells: 2
+  width_in_cells: 2
+  generator_wattage_rating: 480
+  generator_base_capacity: 480
   materials:
   - refined_metal
 - name: launch_pad
@@ -4057,30 +4136,26 @@
   generator_base_capacity: 0
   materials:
   - refined_metal
-- name: liquid_cargo_bay
-  desc: 复制人会把他们在太空任务中找到的任何资源装入货舱。
-  effect: >-
-    允许复制人储存在太空任务中找到的任何液体资源。
-
-
-    待火箭返回后，所储存的资源便可供殖民地使用。
-  image_name: rocket_storage_liquid
-  base_decor_radius: 1
-  category: rocketry
-  construction_time: 60
+- name: liquid_bottler
+  desc: 液体装桶器可以让复制人手动地运送液体。
+  effect: 将管道中的液体自动地存入桶中，以便人工运输。
+  image_name: liquid_bottler
+  base_decor: -10
+  base_decor_radius: 2
+  category: plumbing
+  construction_time: 120
   entombable: true
-  breakable: true
   replaceable: true
-  is_industrial_machinery: true
+  is_industrial_machinery: false
   overheatable: true
-  overheat_temperature: 2000
+  overheat_temperature: 75
   heat_generate: 0
-  height_in_cells: 5
-  width_in_cells: 5
+  height_in_cells: 2
+  width_in_cells: 3
   generator_wattage_rating: 0
   generator_base_capacity: 0
   materials:
-  - steel
+  - metal
 - name: liquid_cargo_bay_cluster
   desc: 比常规的液缸货舱能携带更多东西。
   effect: >-
@@ -4174,7 +4249,7 @@
   generator_wattage_rating: 0
   generator_base_capacity: 0
   materials:
-  - plumbable
+  - plumbable&_metal
 - name: liquid_conduit_bridge
   desc: 分离管道系统可以防止建筑被混杂的内容物损坏。
   effect: >-
@@ -4353,30 +4428,6 @@
   generator_base_capacity: 0
   materials:
   - metal
-- name: liquid_fuel_tank
-  desc: 储存更多燃料可让火箭在返回之前探索的距离更远。
-  effect: >-
-    储存经管道输送的液体燃料，为火箭引擎提供能源。
-
-
-    所储存的燃料类型取决于火箭引擎。
-  image_name: rocket_liquid_fuel_tank
-  base_decor_radius: 1
-  category: rocketry
-  construction_time: 60
-  entombable: true
-  breakable: true
-  replaceable: true
-  is_industrial_machinery: true
-  overheatable: true
-  overheat_temperature: 2000
-  heat_generate: 0
-  height_in_cells: 5
-  width_in_cells: 5
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
-  materials:
-  - steel
 - name: liquid_fuel_tank_cluster
   desc: 储存更多燃料可让火箭在返回之前探索的距离更远。
   effect: >-
@@ -4522,12 +4573,12 @@
   materials:
   - metal
 - name: liquid_pumping_station
-  desc: 手压泵允许复制人将液体装瓶并运送到其他地方。
+  desc: 手压泵允许复制人将液体桶装并运送到其他地方。
   effect: >-
-    用泵手动将液体抽入瓶中进行运输。
+    手动将液体泵入桶中进行运输。
 
 
-    复制人只能携带瓶装液体。
+    复制人只能携带桶装液体。
   image_name: waterpump
   base_decor_radius: 1
   category: plumbing
@@ -4944,7 +4995,7 @@
   materials:
   - refined_metal
 - name: logic_hammer
-  desc: 敲击器敲击建筑时会发出悦耳的声音。
+  desc: 音槌敲击建筑时会发出悦耳的声音。
   effect: >-
     在默认方向下，当接收到绿色信号时，敲击左侧建筑。
 
@@ -5058,7 +5109,7 @@
     含有一个内存，输出任何储存在内存中的信号。
 
 
-    输入的信号<b>只会</b>影响到内存，不会通过输出传递。
+    输入的信号<i>只会</i>影响到内存，不会通过输出传递。
 
 
     发送绿色信号到置位端 (S) 会将内存设置为绿色信号。
@@ -5482,7 +5533,7 @@
   height_in_cells: 2
   width_in_cells: 2
   generator_wattage_rating: 400
-  generator_base_capacity: 10000
+  generator_base_capacity: 400
   materials:
   - metal
 - name: manual_high_energy_particle_spawner
@@ -5674,6 +5725,31 @@
   generator_base_capacity: 0
   materials:
   - metal
+- name: mercury_ceiling_light
+  desc: 汞吸顶灯需要一会才能达到最大亮度，但一旦完成……倍儿棒！
+  effect: >-
+    使用汞和电力产生光。
+
+
+    光可以降低复制人压力，并且是某些植物生长所需的。
+  image_name: mercurylight
+  base_decor_radius: 1
+  category: furniture
+  construction_time: 30
+  entombable: true
+  floodable: true
+  replaceable: true
+  is_industrial_machinery: false
+  overheatable: true
+  overheat_temperature: 75
+  heat_generate: 1
+  height_in_cells: 1
+  width_in_cells: 3
+  power_consume: 60
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - metal
 - name: mesh_tile
   desc: 网格砖可以用来在液体流动的区域建造道路。
   effect: >-
@@ -5792,7 +5868,7 @@
   height_in_cells: 3
   width_in_cells: 4
   generator_wattage_rating: 800
-  generator_base_capacity: 1000
+  generator_base_capacity: 800
   materials:
   - metal
 - name: microbe_musher
@@ -5896,7 +5972,7 @@
 - name: milking_station
   desc: 收获来的这种液体基本上相当于小动物的苏打水。
   effect: >-
-    允许具有小动物养殖II技能的复制人为释气海牛挤奶以获取咸乳。
+    允许具有小动物养殖 II技能的复制人为释气海牛挤奶以获取咸乳。
 
 
     咸乳可用于补充小动物直饮器。
@@ -5994,35 +6070,6 @@
   generator_base_capacity: 0
   materials:
   - metal
-- name: mission_control
-  desc: 当局者迷，旁观者清。
-  effect: >-
-    为火箭驾驶员提供引导数据，以提高火箭速度。
-
-
-    进行操作的复制人必须具有天文学技能。
-
-
-    需要清晰的视野才能运作。
-  image_name: mission_control_station
-  base_decor: -5
-  base_decor_radius: 1
-  category: rocketry
-  construction_time: 30
-  entombable: true
-  floodable: true
-  replaceable: true
-  is_industrial_machinery: false
-  overheatable: true
-  overheat_temperature: 75
-  heat_generate: 2
-  height_in_cells: 3
-  width_in_cells: 3
-  power_consume: 960
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
-  materials:
-  - refined_metal
 - name: mission_control_cluster
   desc: 就像局外者一样，他实际上知道的要更多。
   effect: >-
@@ -6438,7 +6485,7 @@
   height_in_cells: 6
   width_in_cells: 5
   generator_wattage_rating: 0
-  generator_base_capacity: 10000
+  generator_base_capacity: 0
   materials:
   - refined_metal
 - name: nuclear_research_center
@@ -6489,6 +6536,27 @@
   height_in_cells: 2
   width_in_cells: 1
   power_consume: 60
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - metal
+- name: oil_changer
+  desc: 供应新的润滑油可以避免老关节吱吱作响。
+  effect: 使用植物润滑油或原油保持复制人的仿生部件平稳运作。
+  image_name: oilchange_station
+  base_decor: -15
+  base_decor_radius: 3
+  category: medical
+  construction_time: 60
+  entombable: true
+  floodable: true
+  replaceable: true
+  is_industrial_machinery: false
+  overheat_temperature: 75
+  heat_generate: 0
+  height_in_cells: 3
+  width_in_cells: 3
+  power_consume: 120
   generator_wattage_rating: 0
   generator_base_capacity: 0
   materials:
@@ -6635,27 +6703,7 @@
   generator_wattage_rating: 0
   generator_base_capacity: 0
   materials:
-  - buildable_raw
-- name: oxidizer_tank
-  desc: 固体氧化剂使火箭燃料能够在真空中有效燃烧。
-  effect: 储存氧石或其他氧化剂供燃烧火箭燃料使用。
-  image_name: rocket_oxidizer_tank
-  base_decor_radius: 1
-  category: rocketry
-  construction_time: 60
-  entombable: true
-  breakable: true
-  replaceable: true
-  is_industrial_machinery: true
-  overheatable: true
-  overheat_temperature: 2000
-  heat_generate: 0
-  height_in_cells: 5
-  width_in_cells: 5
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
-  materials:
-  - steel
+  - buildable_raw&_building_wood
 - name: oxidizer_tank_cluster
   desc: 固体氧化剂使火箭燃料能够在真空中有效燃烧。
   effect: >-
@@ -6665,26 +6713,6 @@
     必须通过火箭平台建造。
   image_name: rocket_cluster_oxidizer_tank
   base_decor_radius: 1
-  construction_time: 60
-  entombable: true
-  breakable: true
-  replaceable: true
-  is_industrial_machinery: true
-  overheatable: true
-  overheat_temperature: 2000
-  heat_generate: 0
-  height_in_cells: 5
-  width_in_cells: 5
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
-  materials:
-  - steel
-- name: oxidizer_tank_liquid
-  desc: 液态氧可提高火箭燃料的推重比。
-  effect: 储存液态氧供燃烧火箭燃料使用。
-  image_name: rocket_oxidizer_tank_liquid
-  base_decor_radius: 1
-  category: rocketry
   construction_time: 60
   entombable: true
   breakable: true
@@ -6828,6 +6856,28 @@
   materials:
   - refined_metal
   - plastic
+- name: oxysconce
+  desc: 烛台可避免可扩散的氧气浪费在存储箱中。
+  effect: 储存少量氧石，逐渐向环境释放氧气。
+  image_name: oxy_sconce
+  base_decor: 5
+  base_decor_radius: 1
+  category: oxygen
+  construction_time: 3
+  entombable: true
+  floodable: true
+  breakable: true
+  replaceable: true
+  is_industrial_machinery: false
+  overheatable: true
+  overheat_temperature: 75
+  heat_generate: 0
+  height_in_cells: 1
+  width_in_cells: 1
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - metal
 - name: park_sign
   desc: 经过公园会提升复制人的士气。
   effect: 把一片区域定为公园或自然保护区。
@@ -6851,7 +6901,7 @@
 - name: petroleum_generator
   desc: 石油发电机发电量高，但会产生大量废物。
   effect: >-
-    将液态石油或乙醇转化为电力。
+    将石油或乙醇转化为电力。
 
 
     产生二氧化碳和污染水。
@@ -6900,7 +6950,7 @@
   materials:
   - metal
 - name: pioneer_module
-  desc: 复制人的一小步。
+  desc: 这是复制人的一小步。
   effect: >-
     能够前往还没有火箭平台的小行星。
 
@@ -7009,6 +7059,24 @@
   generator_base_capacity: 0
   materials:
   - metal
+- name: poidlc2_showroom_door
+  desc: ''
+  effect: 大型双开大门，与你在一个大型设施的主入口看到的门一样。
+  image_name: door_facility
+  base_decor: -15
+  base_decor_radius: 3
+  construction_time: 60
+  entombable: true
+  replaceable: true
+  is_industrial_machinery: false
+  overheat_temperature: 75
+  heat_generate: 0
+  height_in_cells: 3
+  width_in_cells: 2
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - metal
 - name: poidoor_internal
   desc: ''
   effect: 一扇牢固的门，配有复杂的基因锁。
@@ -7046,7 +7114,7 @@
   - metal
 - name: polymerizer
   desc: 塑料可用来建造特殊的建筑以及制作特殊的物品。
-  effect: 将石油转化为塑料。
+  effect: 将石油或花蜜转化为塑料。
   image_name: plasticrefinery
   base_decor_radius: 1
   category: refining
@@ -7072,7 +7140,7 @@
     生产微芯片以增加发电机输出的电力。
 
 
-    分配的复制人必须具有发电机的调整特质。
+    分配的复制人必须具有调校特质。
 
 
     这个建筑是发电厂的必要组成部分。
@@ -7098,7 +7166,7 @@
     限制流过变压器的电力为4千瓦。
 
 
-    在大的一端接上电池以作为一种调节阀，并防止电线获取电力超过4千瓦。
+    在大的一端接上蓄电池以作为一种调节阀，并防止电线获取电力超过4千瓦。
 
 
     建造前可旋转。
@@ -7126,7 +7194,7 @@
     限制流过变压器的电力为1000瓦。
 
 
-    在大的一端接上电池以作为一种调节阀，并防止电线获取电力超过1000瓦。
+    在大的一端接上蓄电池以作为一种调节阀，并防止电线获取电力超过1000瓦。
 
 
     建造前可旋转。
@@ -7296,6 +7364,40 @@
   generator_base_capacity: 0
   materials:
   - buildable_raw
+- name: prop_gravitas_wall_purple
+  desc: ''
+  effect: 雄心勃勃的研究和开发部的墙面。
+  image_name: walls_gravitas_purple
+  base_decor: 10
+  base_decor_radius: 1
+  construction_time: 30
+  replaceable: true
+  is_industrial_machinery: false
+  overheat_temperature: 75
+  heat_generate: 0
+  height_in_cells: 1
+  width_in_cells: 1
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - buildable_raw
+- name: prop_gravitas_wall_purple_white_diagonal
+  desc: ''
+  effect: 雄心勃勃的研究和开发部的墙面。
+  image_name: walls_diagonal_gravitas_purple_white
+  base_decor: 10
+  base_decor_radius: 1
+  construction_time: 30
+  replaceable: true
+  is_industrial_machinery: false
+  overheat_temperature: 75
+  heat_generate: 0
+  height_in_cells: 1
+  width_in_cells: 1
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - buildable_raw
 - name: radiation_light
   desc: 如果在没有保护的情况下暴露在辐射中，复制人就会生病。
   effect: 通电时释放可由辐射粒子发生器聚集的辐射。
@@ -7367,7 +7469,7 @@
   materials:
   - metal
 - name: ranch_station
-  desc: 照料小动物以使它们干净漂亮、感到快乐，从而提高产出。
+  desc: 精心打扮的小动物是快乐、健康、多产的小动物。
   effect: >-
     允许分配的养殖员照顾小动物。
 
@@ -7433,6 +7535,53 @@
   generator_base_capacity: 0
   materials:
   - buildable_raw
+- name: remote_work_terminal
+  desc: 远程控制器减少了殖民地的通勤时间。
+  effect: 允许复制人通过相连的远程作业坞远程操作机器。
+  image_name: remote_work_terminal
+  base_decor: 15
+  base_decor_radius: 3
+  category: equipment
+  construction_time: 60
+  entombable: true
+  floodable: true
+  replaceable: true
+  is_industrial_machinery: false
+  overheatable: true
+  overheat_temperature: 75
+  heat_generate: 2
+  height_in_cells: 3
+  width_in_cells: 3
+  power_consume: 120
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - metal
+- name: remote_worker_dock
+  desc: 这是复制人的复制人的作业坞。
+  effect: >-
+    远程作业坞可部署作业机，能根据从相连的远程控制器接收的指令操作机械。
+
+
+    必须建在目标建筑的范围内。
+  image_name: remote_work_dock
+  base_decor: -10
+  base_decor_radius: 2
+  category: equipment
+  construction_time: 60
+  entombable: true
+  floodable: true
+  replaceable: true
+  is_industrial_machinery: false
+  overheat_temperature: 75
+  heat_generate: 2
+  height_in_cells: 2
+  width_in_cells: 1
+  power_consume: 120
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - plastic
 - name: research_center
   desc: 研究站对于解锁所有等级的研究是必不可少的。
   effect: >-
@@ -7458,33 +7607,6 @@
   generator_base_capacity: 0
   materials:
   - metal
-- name: research_module
-  desc: 数据磁盘可用于虚拟天象仪来进行额外的研究。
-  effect: >-
-    在每次太空任务中完成一项研究任务。
-
-
-    无论目的地在哪，都会产生少量数据磁盘。
-
-
-    所生成的研究点在火箭返回后可供使用。
-  image_name: rocket_research_module
-  base_decor_radius: 1
-  category: rocketry
-  construction_time: 60
-  entombable: true
-  breakable: true
-  replaceable: true
-  is_industrial_machinery: true
-  overheatable: true
-  overheat_temperature: 2000
-  heat_generate: 0
-  height_in_cells: 5
-  width_in_cells: 5
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
-  materials:
-  - steel
 - name: reset_skills_station
   desc: 抹除复制人头脑中的技能，将其恢复到只有初始能力的状态。
   effect: >-
@@ -7510,6 +7632,29 @@
   generator_base_capacity: 0
   materials:
   - metal
+- name: robo_pilot_module
+  desc: 有了机器驾驶舱就不需要复制人宇航员了。
+  effect: >-
+    允许火箭在没有火箭控制台的情况下快速飞行。
+
+
+    必须通过火箭平台建造。
+  image_name: robot_rocket_control_station
+  base_decor_radius: 1
+  construction_time: 30
+  entombable: true
+  breakable: true
+  replaceable: true
+  is_industrial_machinery: true
+  overheatable: true
+  overheat_temperature: 2000
+  heat_generate: 0
+  height_in_cells: 4
+  width_in_cells: 3
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - steel
 - name: rock_crusher
   desc: 碎石机可以使原矿松散成小块，能够处理许多不同的资源。
   effect: >-
@@ -7753,7 +7898,7 @@
     为相连的建筑提供电力。
 
 
-    从电池舱和火箭引擎中获取电力。
+    从蓄电池舱和火箭引擎中获取电力。
 
 
     必须建在火箭舱块内部。
@@ -7891,7 +8036,7 @@
     使用蒸汽创造一个放松的氛围。
 
 
-    提升复制人的士气。
+    提升复制人的士气，并提供持续存留的微暖感。
   image_name: sauna
   base_decor: 15
   base_decor_radius: 3
@@ -7987,7 +8132,11 @@
   - buildable_raw
 - name: shearing_station
   desc: 那些小动物可不会自己修剪自己。
-  effect: 修剪站可安全地对毛鳞壁虎和珍馐田鼠进行修剪，从而获得有用的原材料。
+  effect: >-
+    修剪站可安全地对符合条件的小动物进行修剪，从而获得有用的原材料。
+
+
+    在这个建筑修剪可以恢复小动物的身心健康。
   image_name: shearing_station
   base_decor_radius: 1
   category: equipment
@@ -8005,7 +8154,7 @@
   generator_wattage_rating: 0
   generator_base_capacity: 0
   materials:
-  - buildable_raw
+  - metal
 - name: shower
   desc: 经常洗浴可以避免复制人将病菌传播到他们接触的东西上。
   effect: 提升复制人的士气并去除病菌。
@@ -8052,6 +8201,27 @@
   generator_base_capacity: 0
   materials:
   - buildable_raw
+- name: small_electrobank_discharger
+  desc: 一种小型独立电力中心，可以装在地面或墙体上。
+  effect: 将移动电源中储存的能量转化为电力以供相连的建筑使用。
+  image_name: electrobank_discharger_small
+  base_decor: -10
+  base_decor_radius: 2
+  category: power
+  construction_time: 10
+  entombable: true
+  floodable: true
+  replaceable: true
+  is_industrial_machinery: false
+  overheatable: true
+  overheat_temperature: 75
+  heat_generate: 0.5
+  height_in_cells: 1
+  width_in_cells: 1
+  generator_wattage_rating: 60
+  generator_base_capacity: 60
+  materials:
+  - metal
 - name: small_oxidizer_tank
   desc: 固体氧化剂使火箭燃料能够在真空中有效燃烧。
   effect: >-
@@ -8098,6 +8268,27 @@
   generator_base_capacity: 0
   materials:
   - buildable_raw
+- name: snow_tile
+  desc: 雪砖热导率较低，但温度过高就会融化。
+  effect: >-
+    用来建造房间的墙体和地面。
+
+
+    将房间隔热，降低在寒冷环境中的热量散失。
+  image_name: floor_snow
+  base_decor_radius: 1
+  category: base
+  construction_time: 3
+  replaceable: true
+  is_industrial_machinery: false
+  overheat_temperature: 75
+  heat_generate: 0
+  height_in_cells: 1
+  width_in_cells: 1
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - snow
 - name: soda_fountain
   desc: 冒泡的水可以让复制人的眼睛闪闪发光。
   effect: >-
@@ -8175,26 +8366,6 @@
   generator_base_capacity: 60
   materials:
   - glass
-- name: solid_booster
-  desc: 额外的推进器使火箭能够到达更遥远的太空目的地。
-  effect: 燃烧铁和氧石以增加火箭探索距离。
-  image_name: rocket_solid_booster
-  base_decor_radius: 1
-  category: rocketry
-  construction_time: 480
-  entombable: true
-  breakable: true
-  replaceable: true
-  is_industrial_machinery: true
-  overheatable: true
-  overheat_temperature: 2000
-  heat_generate: 0
-  height_in_cells: 5
-  width_in_cells: 7
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
-  materials:
-  - steel
 - name: solid_cargo_bay_small
   desc: 复制人会把他们在太空任务中找到的任何资源装入货舱。
   effect: >-
@@ -8467,8 +8638,12 @@
   materials:
   - metal
 - name: space_heater
-  desc: 空间加热器在通电状态下会不断释放热量。
-  effect: 放出适度的热量。
+  desc: 空间加热器是解决寒冷湿脚的好方法。
+  effect: >-
+    放出适度的热量。
+
+
+    需要电力才能运作。
   image_name: spaceheater
   base_decor: 10
   base_decor_radius: 2
@@ -8480,38 +8655,14 @@
   is_industrial_machinery: false
   overheatable: true
   overheat_temperature: 125
-  heat_generate: 16
+  heat_generate: 0
   height_in_cells: 2
   width_in_cells: 2
-  power_consume: 120
+  power_consume: 240
   generator_wattage_rating: 0
   generator_base_capacity: 0
   materials:
   - metal
-- name: special_cargo_bay
-  desc: 生物货舱允许复制人从太空中获取外星植物和野生动物。
-  effect: >-
-    允许复制人储存在太空任务中找到的不寻常的资源或有机资源。
-
-
-    火箭返回后，所储存的资源便可供殖民地使用。
-  image_name: rocket_storage_live
-  base_decor_radius: 1
-  category: rocketry
-  construction_time: 480
-  entombable: true
-  breakable: true
-  replaceable: true
-  is_industrial_machinery: true
-  overheatable: true
-  overheat_temperature: 2000
-  heat_generate: 0
-  height_in_cells: 5
-  width_in_cells: 5
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
-  materials:
-  - steel
 - name: special_cargo_bay_cluster
   desc: 在运输时，小动物不需要喂食。
   effect: >-
@@ -8584,7 +8735,7 @@
   height_in_cells: 2
   width_in_cells: 1
   generator_wattage_rating: 1600
-  generator_base_capacity: 5000
+  generator_base_capacity: 1600
   materials:
   - metal
 - name: staterpillar_liquid_connector
@@ -8602,30 +8753,6 @@
   generator_base_capacity: 0
   materials:
   - metal
-- name: steam_engine
-  desc: 火箭可用来将复制人送入太空，并获取稀有资源。
-  effect: >-
-    利用蒸汽以推动火箭进行太空探索。
-
-
-    必须首先建造火箭的引擎，然后才能安装更多火箭舱块。
-  image_name: rocket_steam_engine
-  base_decor_radius: 1
-  category: rocketry
-  construction_time: 480
-  entombable: true
-  breakable: true
-  replaceable: true
-  is_industrial_machinery: true
-  overheatable: true
-  overheat_temperature: 2000
-  heat_generate: 0
-  height_in_cells: 5
-  width_in_cells: 7
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
-  materials:
-  - steel
 - name: steam_engine_cluster
   desc: 火箭可用来将复制人送入太空，并获取稀有资源。
   effect: >-
@@ -8649,7 +8776,7 @@
   height_in_cells: 5
   width_in_cells: 7
   generator_wattage_rating: 600
-  generator_base_capacity: 20000
+  generator_base_capacity: 600
   materials:
   - refined_metal
 - name: steam_turbine
@@ -8726,7 +8853,7 @@
   generator_wattage_rating: 0
   generator_base_capacity: 0
   materials:
-  - buildable_raw
+  - buildable_raw&_metal
 - name: storage_locker_smart
   desc: 智能存储箱可以根据类型和质量使组织资源自动化。
   effect: >-
@@ -8827,7 +8954,7 @@
   height_in_cells: 3
   width_in_cells: 3
   generator_wattage_rating: 60
-  generator_base_capacity: 2000
+  generator_base_capacity: 60
   materials:
   - metal
 - name: suit_fabricator
@@ -9066,34 +9193,6 @@
   generator_base_capacity: 0
   materials:
   - metal
-- name: telescope
-  desc: 望远镜是学习星图和执行火箭任务的必要工具。
-  effect: >-
-    绘制星图目的地。
-
-
-    分配的复制人必须具有实地研究技能。
-
-
-    建筑必须暴露在太空中才能运作。
-  image_name: telescope
-  base_decor_radius: 1
-  category: equipment
-  construction_time: 30
-  entombable: true
-  floodable: true
-  replaceable: true
-  is_industrial_machinery: false
-  overheatable: true
-  overheat_temperature: 75
-  heat_generate: 0
-  height_in_cells: 6
-  width_in_cells: 4
-  power_consume: 120
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
-  materials:
-  - metal
 - name: temperature_controlled_switch
   desc: 自动化开关可以用来管理复制人无法进入的区域的电路。
   effect: >-
@@ -9146,7 +9245,6 @@
   image_name: thermalblock
   category: utilities
   construction_time: 120
-  entombable: true
   replaceable: true
   is_industrial_machinery: false
   overheat_temperature: 75
@@ -9195,30 +9293,6 @@
   generator_base_capacity: 0
   materials:
   - buildable_raw
-- name: tourist_module
-  desc: 乘坐火箭的观光复制人必须要有宇航员陪同。
-  effect: >-
-    允许一名非宇航员复制人进入太空。
-
-
-    观光火箭飞行可降低压力。
-  image_name: rocket_tourist
-  base_decor_radius: 1
-  category: rocketry
-  construction_time: 60
-  entombable: true
-  breakable: true
-  replaceable: true
-  is_industrial_machinery: true
-  overheatable: true
-  overheat_temperature: 2000
-  heat_generate: 0
-  height_in_cells: 5
-  width_in_cells: 5
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
-  materials:
-  - steel
 - name: travel_tube
   desc: 只有在运载管道下方有安全着陆区域时，复制人才会从运载管道中出来。
   effect: >-
@@ -9455,7 +9529,7 @@
   generator_wattage_rating: 0
   generator_base_capacity: 0
   materials:
-  - buildable_raw
+  - buildable_raw&_metal
 - name: wash_sink
   desc: 洗手池已铺设水管，因此无需手动注水或放水。
   effect: >-
@@ -9555,7 +9629,7 @@
   materials:
   - metal
 - name: wire
-  desc: 电线可以用来连接发电机、电池和建筑。
+  desc: 电线可以用来连接发电机、蓄电池和建筑。
   effect: >-
     连接建筑物和电源。
 
@@ -9711,9 +9785,9 @@
   materials:
   - refined_metal
 - name: wood_gas_generator
-  desc: 木料燃烧器很小而且很容易维护，但会产生相当多的热量。
+  desc: 木材燃烧器很小而且很容易维护，但会产生相当多的热量。
   effect: >-
-    燃烧木料以产生电力。
+    燃烧木材以产生电力。
 
 
     产生二氧化碳和热量。
@@ -9732,6 +9806,69 @@
   height_in_cells: 2
   width_in_cells: 2
   generator_wattage_rating: 300
-  generator_base_capacity: 20000
+  generator_base_capacity: 300
   materials:
   - metal
+- name: wood_sculpture
+  desc: 非常适合更小的空间。
+  effect: >-
+    适度提高装饰度，从而提升士气。
+
+
+    必须由复制人雕刻。
+  image_name: sculpture_wood
+  base_decor: 4
+  base_decor_radius: 4
+  category: furniture
+  construction_time: 120
+  entombable: true
+  replaceable: true
+  is_industrial_machinery: false
+  overheat_temperature: 75
+  heat_generate: 0
+  height_in_cells: 1
+  width_in_cells: 1
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - building_wood
+- name: wood_storage
+  desc: 空了之后就没用了。
+  effect: 储存有限的木材供应，可以用于建造或产生热量。
+  image_name: storagewood
+  base_decor: 10
+  base_decor_radius: 2
+  construction_time: 10
+  entombable: true
+  replaceable: true
+  is_industrial_machinery: false
+  overheat_temperature: 75
+  heat_generate: 0
+  height_in_cells: 2
+  width_in_cells: 3
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - building_wood
+- name: wood_tile
+  desc: 用木砖建造的房间舒适宜人。
+  effect: >-
+    用来建造房间的墙体和地面。
+
+
+    提供良好的隔热并提高装饰度，从而提升士气。
+  image_name: floor_wood
+  base_decor: 15
+  base_decor_radius: 3
+  category: base
+  construction_time: 3
+  replaceable: true
+  is_industrial_machinery: false
+  overheat_temperature: 75
+  heat_generate: 0
+  height_in_cells: 1
+  width_in_cells: 1
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - wood_log

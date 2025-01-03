@@ -49,6 +49,14 @@
   effects:
   - good_eats
   - seafood_radiation_resistance
+- name: carrot
+  image_name: purplerootvegetable
+  calories: 4000
+  quality: 0
+  preserve_temperature: -18
+  rot_temperature: 4
+  spoil_time: 16
+  stale_time: 8
 - name: cold_wheat_bread
   image_name: frostbread
   calories: 1200
@@ -91,6 +99,14 @@
   rot_temperature: 4
   spoil_time: 4
   stale_time: 2
+- name: cooked_pikeapple
+  image_name: iceberry_cooked
+  calories: 1200
+  quality: 1
+  preserve_temperature: -18
+  rot_temperature: 4
+  spoil_time: 8
+  stale_time: 4
 - name: curry
   image_name: curried_beans
   calories: 5000
@@ -101,6 +117,43 @@
   stale_time: 8
   effects:
   - hot_stuff
+  - warm_touch_food
+- name: deep_fried_fish
+  image_name: deepfried_fish
+  calories: 4200
+  quality: 4
+  preserve_temperature: -18
+  rot_temperature: 4
+  spoil_time: 4
+  stale_time: 2
+  effects:
+  - seafood_radiation_resistance
+- name: deep_fried_meat
+  image_name: deepfried_meat
+  calories: 4000
+  quality: 3
+  preserve_temperature: -18
+  rot_temperature: 4
+  spoil_time: 4
+  stale_time: 2
+- name: deep_fried_nosh
+  image_name: deepfried_nosh_beans
+  calories: 5000
+  quality: 3
+  preserve_temperature: -18
+  rot_temperature: 4
+  spoil_time: 8
+  stale_time: 4
+- name: deep_fried_shellfish
+  image_name: deepfried_shellfish
+  calories: 4200
+  quality: 4
+  preserve_temperature: -18
+  rot_temperature: 4
+  spoil_time: 4
+  stale_time: 2
+  effects:
+  - seafood_radiation_resistance
 - name: field_ration
   image_name: fieldration
   calories: 800
@@ -143,6 +196,14 @@
   rot_temperature: 4
   spoil_time: 8
   stale_time: 4
+- name: fries_carrot
+  image_name: rootfries
+  calories: 5400
+  quality: 3
+  preserve_temperature: -18
+  rot_temperature: 4
+  spoil_time: 4
+  stale_time: 2
 - name: fruit_cake
   image_name: fruitcake
   calories: 4000
@@ -163,6 +224,22 @@
   image_name: gristleberry
   calories: 2000
   quality: 1
+  preserve_temperature: -18
+  rot_temperature: 4
+  spoil_time: 8
+  stale_time: 4
+- name: hard_skin_berry
+  image_name: iceberry
+  calories: 800
+  quality: -1
+  preserve_temperature: -18
+  rot_temperature: 4
+  spoil_time: 16
+  stale_time: 8
+- name: ice_caves_forage_plant
+  image_name: frozenberries_fruit
+  calories: 800
+  quality: -1
   preserve_temperature: -18
   rot_temperature: 4
   spoil_time: 8
@@ -219,6 +296,14 @@
   rot_temperature: 4
   spoil_time: 8
   stale_time: 4
+- name: pemmican
+  image_name: pemmican
+  calories: 2600
+  quality: 2
+  preserve_temperature: -18
+  rot_temperature: 4
+  spoil_time: 32
+  stale_time: 16
 - name: pickled_meal
   image_name: pickledmeal
   calories: 1800
@@ -303,6 +388,8 @@
   rot_temperature: 4
   spoil_time: 4
   stale_time: 2
+  effects:
+  - warm_touch_food
 - name: surf_and_turf
   image_name: surfnturf
   calories: 6000
