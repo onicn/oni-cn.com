@@ -5,6 +5,8 @@ defmodule Mix.Tasks.Onicn.Init do
 
   def run(_args) do
     do_init("building")
+    do_init("food")
+    do_init("plant")
   end
 
   def do_init(category) do
@@ -21,9 +23,7 @@ defmodule Mix.Tasks.Onicn.Init do
     |> File.ls!()
     |> Enum.map(fn filename ->
       image_name = Path.basename(filename, ".png")
-      name = Map.get(image_map, image_name)
-      if is_nil(name), do: Logger.warning("missing #{category} for image #{image_name}")
-      name
+      Map.get(image_map, image_name)
     end)
     |> Enum.reject(&is_nil/1)
     |> Enum.map(fn name ->
