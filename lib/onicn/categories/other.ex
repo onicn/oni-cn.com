@@ -11,7 +11,6 @@ defmodule Onicn.Categories.Other do
     Others.BasicCure,
     Others.BasicFabric,
     Others.Beta,
-    Others.CoolVest,
     Others.CrabShell,
     Others.EggShell,
     Others.FunkyVest,
