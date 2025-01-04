@@ -15,6 +15,11 @@ defmodule Mix.Tasks.Onicn.Init do
       |> :code.priv_dir()
       |> Path.join("data/#{category}.yaml")
       |> YamlElixir.read_from_file!()
+      |> Enum.filter(fn
+        %{"desc" => _} -> true
+        _ when category != "building" -> true
+        _ -> false
+      end)
       |> Map.new(fn %{"name" => name, "image_name" => image_name} -> {image_name, name} end)
 
     :onicn
