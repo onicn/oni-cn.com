@@ -380,7 +380,7 @@ defmodule Onicn.Categories.Critter do
     icon = ~s|<i class="layui-icon layui-icon-subtraction"></i>|
 
     @species
-    |> Enum.map(& &1.__critters__)
+    |> Enum.map(& &1.__critters__())
     |> Enum.concat()
     |> Enum.map(fn module ->
       a = module.__attributes__()

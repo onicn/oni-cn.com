@@ -37,7 +37,7 @@ defmodule Onicn.Item do
 
     critters =
       Critter.__species__()
-      |> Enum.map(& &1.__critters__)
+      |> Enum.map(& &1.__critters__())
       |> Enum.concat()
       |> Enum.map(fn module ->
         a = module.__attributes__()
@@ -108,7 +108,7 @@ defmodule Onicn.Item do
     ]
     |> Enum.concat()
     |> Enum.map(fn module ->
-      cn_name = module.__attributes__[:cn_name]
+      cn_name = module.__attributes__()[:cn_name]
       {cn_name, hash(cn_name), module.output(:link_name_icon)}
     end)
     |> Enum.concat(critters)

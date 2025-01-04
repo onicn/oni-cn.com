@@ -118,7 +118,7 @@ defmodule Onicn do
     name = String.trim_trailing(str, "_egg")
 
     Onicn.Categories.Critter.__species__()
-    |> Enum.map(& &1.__critters__)
+    |> Enum.map(& &1.__critters__())
     |> Enum.concat()
     |> Enum.find(fn module -> module.__attributes__()[:name] == name end)
     |> case do

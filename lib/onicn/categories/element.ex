@@ -123,7 +123,7 @@ defmodule Onicn.Categories.Element do
 
       def output(:json_elements) do
         Enum.map(__element_modules__(), fn module ->
-          module.__attributes__
+          module.__attributes__()
           |> Enum.filter(fn {field, _} -> field in unquote(fields) end)
           |> Keyword.put(:cn_name, module.output(:link_name_icon))
           |> Onicn.Categories.Element.attributes_to_json()
