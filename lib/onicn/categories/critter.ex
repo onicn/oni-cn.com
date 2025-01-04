@@ -10,14 +10,17 @@ defmodule Onicn.Categories.Critter do
     Critters.DreckoSpecies,
     Critters.GlomSpecies,
     Critters.HatchSpecies,
+    Critters.IceBellySpecies,
     Critters.LightBugSpecies,
     Critters.MoleSpecies,
     Critters.MooSpecies,
     Critters.OilfloaterSpecies,
     Critters.PacuSpecies,
     Critters.PuftSpecies,
+    Critters.SealSpecies,
     Critters.SquirrelSpecies,
-    Critters.StaterpillarSpecies
+    Critters.StaterpillarSpecies,
+    Critters.WoodDeerSpecies
   ]
 
   section "小动物状态信息" do
