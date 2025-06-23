@@ -20,6 +20,40 @@
   temperature_max_liveable: 0
   temperature_min_comfort: -89
   temperature_min_liveable: -99
+- name: butterfly
+  image_name: pollinator
+  decor: 10
+  decor_radius: 1
+  hp: 5
+  age_max: 5
+  death_drop_item: ButterflyPlantSeed
+  death_drop_item_amount: 1
+  space_required: 8
+  can_drown: false
+  entombable: true
+- name: chameleon
+  image_name: chameleo
+  decor: 10
+  decor_radius: 1
+  hp: 25
+  age_max: 50
+  base_incubation_rate_per_cycle: 10
+  base_lay_egg_cycles: 30
+  death_drop_item: Meat
+  death_drop_item_amount: 0.5
+  kcal_per_cycle: 2000
+  kcal_stomach_size: 10000
+  space_required: 4
+  can_drown: false
+  entombable: false
+  base_lay_egg_chances:
+  - name: chameleon_egg
+    weight: 0.98
+  diet:
+  - consume: dew_drip
+    produce: bleach_stone
+    kcal_per_kg: 2000
+    produced_conversion_rate: 10
 - name: crab
   image_name: pincher
   decor: 10
@@ -29,7 +63,7 @@
   base_incubation_rate_per_cycle: 5
   base_lay_egg_cycles: 60
   death_drop_item: CrabShell
-  death_drop_item_amount: 1
+  death_drop_item_amount: 10
   kcal_per_cycle: 100
   kcal_stomach_size: 1000
   space_required: 12
@@ -99,7 +133,7 @@
   base_incubation_rate_per_cycle: 5
   base_lay_egg_cycles: 60
   death_drop_item: CrabWoodShell
-  death_drop_item_amount: 5
+  death_drop_item_amount: 500
   kcal_per_cycle: 100
   kcal_stomach_size: 1000
   space_required: 12
@@ -263,7 +297,7 @@
   image_name: ice_belly_king
   decor: 10
   decor_radius: 1
-  hp: 25
+  hp: 50
   age_max: 200
   base_incubation_rate_per_cycle: 2.5
   base_lay_egg_cycles: 120
@@ -349,6 +383,10 @@
     produce: carbon
     kcal_per_kg: 5
     produced_conversion_rate: 0.5
+  - consume: shale
+    produce: carbon
+    kcal_per_kg: 5
+    produced_conversion_rate: 0.5
   - consume: field_ration
     produce: carbon
     kcal_per_kg: 800
@@ -360,6 +398,10 @@
   - consume: basic_plant_food
     produce: carbon
     kcal_per_kg: 600
+    produced_conversion_rate: 0.75
+  - consume: vine_fruit
+    produce: carbon
+    kcal_per_kg: 325
     produced_conversion_rate: 0.75
   - consume: basic_forage_plant
     produce: carbon
@@ -413,6 +455,10 @@
     produce: carbon
     kcal_per_kg: 1000
     produced_conversion_rate: 0.75
+  - consume: prehistoric_pacu_fillet
+    produce: carbon
+    kcal_per_kg: 1000
+    produced_conversion_rate: 0.75
   - consume: worm_basic_fruit
     produce: carbon
     kcal_per_kg: 800
@@ -437,6 +483,10 @@
     produce: carbon
     kcal_per_kg: 5400
     produced_conversion_rate: 0.75
+  - consume: butterfly_food
+    produce: carbon
+    kcal_per_kg: 1500
+    produced_conversion_rate: 0.75
   - consume: deep_fried_meat
     produce: carbon
     kcal_per_kg: 4000
@@ -452,6 +502,14 @@
   - consume: deep_fried_shellfish
     produce: carbon
     kcal_per_kg: 4200
+    produced_conversion_rate: 0.75
+  - consume: garden_food_plant_food
+    produce: carbon
+    kcal_per_kg: 800
+    produced_conversion_rate: 0.75
+  - consume: garden_forage_plant
+    produce: carbon
+    kcal_per_kg: 800
     produced_conversion_rate: 0.75
   - consume: pickled_meal
     produce: carbon
@@ -497,13 +555,25 @@
     produce: carbon
     kcal_per_kg: 1600
     produced_conversion_rate: 0.75
-  - consume: cooked_meat
+  - consume: smoked_vegetables
     produce: carbon
-    kcal_per_kg: 4000
+    kcal_per_kg: 2862.5
     produced_conversion_rate: 0.75
   - consume: pancakes
     produce: carbon
     kcal_per_kg: 3600
+    produced_conversion_rate: 0.75
+  - consume: smoked_fish
+    produce: carbon
+    kcal_per_kg: 2800
+    produced_conversion_rate: 0.75
+  - consume: cooked_meat
+    produce: carbon
+    kcal_per_kg: 4000
+    produced_conversion_rate: 0.75
+  - consume: smoked_dinosaur_meat
+    produce: carbon
+    kcal_per_kg: 5000
     produced_conversion_rate: 0.75
   - consume: worm_basic_food
     produce: carbon
@@ -580,7 +650,7 @@
     increase_weight: '食用: 沉积岩'
   - name: hatch_metal_egg
     weight: 0.02
-    increase_weight: '食用: 铜矿, 金汞齐, 铁矿, 黑钨矿, 铝矿, 钴矿'
+    increase_weight: '食用: 铜矿, 钴矿, 铝矿, 镍矿, 朱砂矿, 铁矿, 金汞齐, 黑钨矿'
   diet:
   - consume: sedimentary_rock
     produce: carbon
@@ -602,15 +672,7 @@
     produce: carbon
     kcal_per_kg: 5
     produced_conversion_rate: 0.25
-  - consume: gold_amalgam
-    produce: carbon
-    kcal_per_kg: 5
-    produced_conversion_rate: 0.25
-  - consume: iron_ore
-    produce: carbon
-    kcal_per_kg: 5
-    produced_conversion_rate: 0.25
-  - consume: wolframite
+  - consume: cobaltite
     produce: carbon
     kcal_per_kg: 5
     produced_conversion_rate: 0.25
@@ -618,7 +680,23 @@
     produce: carbon
     kcal_per_kg: 5
     produced_conversion_rate: 0.25
-  - consume: cobaltite
+  - consume: nickel_ore
+    produce: carbon
+    kcal_per_kg: 5
+    produced_conversion_rate: 0.25
+  - consume: cinnabar
+    produce: carbon
+    kcal_per_kg: 5
+    produced_conversion_rate: 0.25
+  - consume: iron_ore
+    produce: carbon
+    kcal_per_kg: 5
+    produced_conversion_rate: 0.25
+  - consume: gold_amalgam
+    produce: carbon
+    kcal_per_kg: 5
+    produced_conversion_rate: 0.25
+  - consume: wolframite
     produce: carbon
     kcal_per_kg: 5
     produced_conversion_rate: 0.25
@@ -645,30 +723,38 @@
     increase_weight: '食用: 沉积岩'
   - name: hatch_metal_egg
     weight: 0.67
-    increase_weight: '食用: 铜矿, 金汞齐, 铁矿, 黑钨矿, 铝矿, 钴矿'
+    increase_weight: '食用: 铜矿, 钴矿, 铝矿, 镍矿, 朱砂矿, 铁矿, 金汞齐, 黑钨矿'
   diet:
   - consume: cuprite
     produce: copper
     kcal_per_kg: 7
     produced_conversion_rate: 0.75
-  - consume: gold_amalgam
-    produce: gold
-    kcal_per_kg: 7
-    produced_conversion_rate: 0.75
-  - consume: iron_ore
-    produce: iron
-    kcal_per_kg: 7
-    produced_conversion_rate: 0.75
-  - consume: wolframite
-    produce: tungsten
+  - consume: cobaltite
+    produce: cobalt
     kcal_per_kg: 7
     produced_conversion_rate: 0.75
   - consume: aluminum_ore
     produce: aluminum
     kcal_per_kg: 7
     produced_conversion_rate: 0.75
-  - consume: cobaltite
-    produce: cobalt
+  - consume: nickel_ore
+    produce: nickel
+    kcal_per_kg: 7
+    produced_conversion_rate: 0.75
+  - consume: cinnabar
+    produce: solid_mercury
+    kcal_per_kg: 7
+    produced_conversion_rate: 0.75
+  - consume: iron_ore
+    produce: iron
+    kcal_per_kg: 7
+    produced_conversion_rate: 0.75
+  - consume: gold_amalgam
+    produce: gold
+    kcal_per_kg: 7
+    produced_conversion_rate: 0.75
+  - consume: wolframite
+    produce: tungsten
     kcal_per_kg: 7
     produced_conversion_rate: 0.75
 - name: hatch_veggie
@@ -725,6 +811,10 @@
     produce: carbon
     kcal_per_kg: 600
     produced_conversion_rate: 1
+  - consume: vine_fruit
+    produce: carbon
+    kcal_per_kg: 325
+    produced_conversion_rate: 1
   - consume: basic_forage_plant
     produce: carbon
     kcal_per_kg: 800
@@ -777,6 +867,10 @@
     produce: carbon
     kcal_per_kg: 1000
     produced_conversion_rate: 1
+  - consume: prehistoric_pacu_fillet
+    produce: carbon
+    kcal_per_kg: 1000
+    produced_conversion_rate: 1
   - consume: worm_basic_fruit
     produce: carbon
     kcal_per_kg: 800
@@ -801,6 +895,10 @@
     produce: carbon
     kcal_per_kg: 5400
     produced_conversion_rate: 1
+  - consume: butterfly_food
+    produce: carbon
+    kcal_per_kg: 1500
+    produced_conversion_rate: 1
   - consume: deep_fried_meat
     produce: carbon
     kcal_per_kg: 4000
@@ -816,6 +914,14 @@
   - consume: deep_fried_shellfish
     produce: carbon
     kcal_per_kg: 4200
+    produced_conversion_rate: 1
+  - consume: garden_food_plant_food
+    produce: carbon
+    kcal_per_kg: 800
+    produced_conversion_rate: 1
+  - consume: garden_forage_plant
+    produce: carbon
+    kcal_per_kg: 800
     produced_conversion_rate: 1
   - consume: pickled_meal
     produce: carbon
@@ -861,13 +967,25 @@
     produce: carbon
     kcal_per_kg: 1600
     produced_conversion_rate: 1
-  - consume: cooked_meat
+  - consume: smoked_vegetables
     produce: carbon
-    kcal_per_kg: 4000
+    kcal_per_kg: 2862.5
     produced_conversion_rate: 1
   - consume: pancakes
     produce: carbon
     kcal_per_kg: 3600
+    produced_conversion_rate: 1
+  - consume: smoked_fish
+    produce: carbon
+    kcal_per_kg: 2800
+    produced_conversion_rate: 1
+  - consume: cooked_meat
+    produce: carbon
+    kcal_per_kg: 4000
+    produced_conversion_rate: 1
+  - consume: smoked_dinosaur_meat
+    produce: carbon
+    kcal_per_kg: 5000
     produced_conversion_rate: 1
   - consume: worm_basic_food
     produce: carbon
@@ -1333,7 +1451,7 @@
   image_name: gassy_moo
   decor: 10
   decor_radius: 1
-  hp: 25
+  hp: 50
   age_max: 75
   death_drop_item: Meat
   death_drop_item_amount: 10
@@ -1352,6 +1470,20 @@
   hp: 100
   can_drown: false
   entombable: false
+- name: mosquito
+  image_name: mosquito
+  decor: -5
+  decor_radius: 1
+  hp: 5
+  age_max: 10
+  base_incubation_rate_per_cycle: 50
+  base_lay_egg_cycles: 4.5
+  space_required: 4
+  can_drown: false
+  entombable: true
+  base_lay_egg_chances:
+  - name: mosquito_egg
+    weight: 1
 - name: oilfloater
   image_name: oilfloater
   decor: 15
@@ -1468,11 +1600,19 @@
     produce: toxic_sand
     kcal_per_kg: 13.3
     produced_conversion_rate: 0.5
-  - consume: basic_single_harvest_plant_seed
+  - consume: kelp
+    produce: toxic_sand
+    kcal_per_kg: 5
+    produced_conversion_rate: 0.5
+  - consume: kelp_plant
+    produce: toxic_sand
+    kcal_per_kg: 50
+    produced_conversion_rate: 5
+  - consume: carrot_plant_seed
     produce: toxic_sand
     kcal_per_kg: 100
     produced_conversion_rate: 0.5
-  - consume: bean_plant_seed
+  - consume: butterfly_plant_seed
     produce: toxic_sand
     kcal_per_kg: 100
     produced_conversion_rate: 0.5
@@ -1480,19 +1620,7 @@
     produce: toxic_sand
     kcal_per_kg: 100
     produced_conversion_rate: 0.5
-  - consume: carrot_plant_seed
-    produce: toxic_sand
-    kcal_per_kg: 100
-    produced_conversion_rate: 0.5
-  - consume: cold_wheat_seed
-    produce: toxic_sand
-    kcal_per_kg: 100
-    produced_conversion_rate: 0.5
-  - consume: gas_grass_seed
-    produce: toxic_sand
-    kcal_per_kg: 100
-    produced_conversion_rate: 0.5
-  - consume: hard_skin_berry_plant_seed
+  - consume: bean_plant_seed
     produce: toxic_sand
     kcal_per_kg: 100
     produced_conversion_rate: 0.5
@@ -1500,15 +1628,27 @@
     produce: toxic_sand
     kcal_per_kg: 100
     produced_conversion_rate: 0.5
-  - consume: swamp_lily_seed
+  - consume: basic_single_harvest_plant_seed
     produce: toxic_sand
     kcal_per_kg: 100
     produced_conversion_rate: 0.5
-  - consume: swamp_harvest_plant_seed
+  - consume: cold_wheat_seed
     produce: toxic_sand
     kcal_per_kg: 100
     produced_conversion_rate: 0.5
-  - consume: prickle_flower_seed
+  - consume: garden_food_plant_seed
+    produce: toxic_sand
+    kcal_per_kg: 100
+    produced_conversion_rate: 0.5
+  - consume: dew_dripper_plant_seed
+    produce: toxic_sand
+    kcal_per_kg: 100
+    produced_conversion_rate: 0.5
+  - consume: fly_trap_plant_seed
+    produce: toxic_sand
+    kcal_per_kg: 100
+    produced_conversion_rate: 0.5
+  - consume: gas_grass_seed
     produce: toxic_sand
     kcal_per_kg: 100
     produced_conversion_rate: 0.5
@@ -1528,11 +1668,27 @@
     produce: toxic_sand
     kcal_per_kg: 100
     produced_conversion_rate: 0.5
-  - consume: worm_plant_seed
+  - consume: prickle_flower_seed
     produce: toxic_sand
     kcal_per_kg: 100
     produced_conversion_rate: 0.5
   - consume: mushroom_seed
+    produce: toxic_sand
+    kcal_per_kg: 100
+    produced_conversion_rate: 0.5
+  - consume: swamp_harvest_plant_seed
+    produce: toxic_sand
+    kcal_per_kg: 100
+    produced_conversion_rate: 0.5
+  - consume: swamp_lily_seed
+    produce: toxic_sand
+    kcal_per_kg: 100
+    produced_conversion_rate: 0.5
+  - consume: worm_plant_seed
+    produce: toxic_sand
+    kcal_per_kg: 100
+    produced_conversion_rate: 0.5
+  - consume: hard_skin_berry_plant_seed
     produce: toxic_sand
     kcal_per_kg: 100
     produced_conversion_rate: 0.5
@@ -1565,11 +1721,19 @@
     produce: toxic_sand
     kcal_per_kg: 13.3
     produced_conversion_rate: 0.5
-  - consume: basic_single_harvest_plant_seed
+  - consume: kelp
+    produce: toxic_sand
+    kcal_per_kg: 5
+    produced_conversion_rate: 0.5
+  - consume: kelp_plant
+    produce: toxic_sand
+    kcal_per_kg: 50
+    produced_conversion_rate: 5
+  - consume: carrot_plant_seed
     produce: toxic_sand
     kcal_per_kg: 100
     produced_conversion_rate: 0.5
-  - consume: bean_plant_seed
+  - consume: butterfly_plant_seed
     produce: toxic_sand
     kcal_per_kg: 100
     produced_conversion_rate: 0.5
@@ -1577,19 +1741,7 @@
     produce: toxic_sand
     kcal_per_kg: 100
     produced_conversion_rate: 0.5
-  - consume: carrot_plant_seed
-    produce: toxic_sand
-    kcal_per_kg: 100
-    produced_conversion_rate: 0.5
-  - consume: cold_wheat_seed
-    produce: toxic_sand
-    kcal_per_kg: 100
-    produced_conversion_rate: 0.5
-  - consume: gas_grass_seed
-    produce: toxic_sand
-    kcal_per_kg: 100
-    produced_conversion_rate: 0.5
-  - consume: hard_skin_berry_plant_seed
+  - consume: bean_plant_seed
     produce: toxic_sand
     kcal_per_kg: 100
     produced_conversion_rate: 0.5
@@ -1597,15 +1749,27 @@
     produce: toxic_sand
     kcal_per_kg: 100
     produced_conversion_rate: 0.5
-  - consume: swamp_lily_seed
+  - consume: basic_single_harvest_plant_seed
     produce: toxic_sand
     kcal_per_kg: 100
     produced_conversion_rate: 0.5
-  - consume: swamp_harvest_plant_seed
+  - consume: cold_wheat_seed
     produce: toxic_sand
     kcal_per_kg: 100
     produced_conversion_rate: 0.5
-  - consume: prickle_flower_seed
+  - consume: garden_food_plant_seed
+    produce: toxic_sand
+    kcal_per_kg: 100
+    produced_conversion_rate: 0.5
+  - consume: dew_dripper_plant_seed
+    produce: toxic_sand
+    kcal_per_kg: 100
+    produced_conversion_rate: 0.5
+  - consume: fly_trap_plant_seed
+    produce: toxic_sand
+    kcal_per_kg: 100
+    produced_conversion_rate: 0.5
+  - consume: gas_grass_seed
     produce: toxic_sand
     kcal_per_kg: 100
     produced_conversion_rate: 0.5
@@ -1625,11 +1789,27 @@
     produce: toxic_sand
     kcal_per_kg: 100
     produced_conversion_rate: 0.5
-  - consume: worm_plant_seed
+  - consume: prickle_flower_seed
     produce: toxic_sand
     kcal_per_kg: 100
     produced_conversion_rate: 0.5
   - consume: mushroom_seed
+    produce: toxic_sand
+    kcal_per_kg: 100
+    produced_conversion_rate: 0.5
+  - consume: swamp_harvest_plant_seed
+    produce: toxic_sand
+    kcal_per_kg: 100
+    produced_conversion_rate: 0.5
+  - consume: swamp_lily_seed
+    produce: toxic_sand
+    kcal_per_kg: 100
+    produced_conversion_rate: 0.5
+  - consume: worm_plant_seed
+    produce: toxic_sand
+    kcal_per_kg: 100
+    produced_conversion_rate: 0.5
+  - consume: hard_skin_berry_plant_seed
     produce: toxic_sand
     kcal_per_kg: 100
     produced_conversion_rate: 0.5
@@ -1662,11 +1842,19 @@
     produce: toxic_sand
     kcal_per_kg: 13.3
     produced_conversion_rate: 0.5
-  - consume: basic_single_harvest_plant_seed
+  - consume: kelp
+    produce: toxic_sand
+    kcal_per_kg: 5
+    produced_conversion_rate: 0.5
+  - consume: kelp_plant
+    produce: toxic_sand
+    kcal_per_kg: 50
+    produced_conversion_rate: 5
+  - consume: carrot_plant_seed
     produce: toxic_sand
     kcal_per_kg: 100
     produced_conversion_rate: 0.5
-  - consume: bean_plant_seed
+  - consume: butterfly_plant_seed
     produce: toxic_sand
     kcal_per_kg: 100
     produced_conversion_rate: 0.5
@@ -1674,19 +1862,7 @@
     produce: toxic_sand
     kcal_per_kg: 100
     produced_conversion_rate: 0.5
-  - consume: carrot_plant_seed
-    produce: toxic_sand
-    kcal_per_kg: 100
-    produced_conversion_rate: 0.5
-  - consume: cold_wheat_seed
-    produce: toxic_sand
-    kcal_per_kg: 100
-    produced_conversion_rate: 0.5
-  - consume: gas_grass_seed
-    produce: toxic_sand
-    kcal_per_kg: 100
-    produced_conversion_rate: 0.5
-  - consume: hard_skin_berry_plant_seed
+  - consume: bean_plant_seed
     produce: toxic_sand
     kcal_per_kg: 100
     produced_conversion_rate: 0.5
@@ -1694,15 +1870,27 @@
     produce: toxic_sand
     kcal_per_kg: 100
     produced_conversion_rate: 0.5
-  - consume: swamp_lily_seed
+  - consume: basic_single_harvest_plant_seed
     produce: toxic_sand
     kcal_per_kg: 100
     produced_conversion_rate: 0.5
-  - consume: swamp_harvest_plant_seed
+  - consume: cold_wheat_seed
     produce: toxic_sand
     kcal_per_kg: 100
     produced_conversion_rate: 0.5
-  - consume: prickle_flower_seed
+  - consume: garden_food_plant_seed
+    produce: toxic_sand
+    kcal_per_kg: 100
+    produced_conversion_rate: 0.5
+  - consume: dew_dripper_plant_seed
+    produce: toxic_sand
+    kcal_per_kg: 100
+    produced_conversion_rate: 0.5
+  - consume: fly_trap_plant_seed
+    produce: toxic_sand
+    kcal_per_kg: 100
+    produced_conversion_rate: 0.5
+  - consume: gas_grass_seed
     produce: toxic_sand
     kcal_per_kg: 100
     produced_conversion_rate: 0.5
@@ -1722,7 +1910,7 @@
     produce: toxic_sand
     kcal_per_kg: 100
     produced_conversion_rate: 0.5
-  - consume: worm_plant_seed
+  - consume: prickle_flower_seed
     produce: toxic_sand
     kcal_per_kg: 100
     produced_conversion_rate: 0.5
@@ -1730,6 +1918,57 @@
     produce: toxic_sand
     kcal_per_kg: 100
     produced_conversion_rate: 0.5
+  - consume: swamp_harvest_plant_seed
+    produce: toxic_sand
+    kcal_per_kg: 100
+    produced_conversion_rate: 0.5
+  - consume: swamp_lily_seed
+    produce: toxic_sand
+    kcal_per_kg: 100
+    produced_conversion_rate: 0.5
+  - consume: worm_plant_seed
+    produce: toxic_sand
+    kcal_per_kg: 100
+    produced_conversion_rate: 0.5
+  - consume: hard_skin_berry_plant_seed
+    produce: toxic_sand
+    kcal_per_kg: 100
+    produced_conversion_rate: 0.5
+- name: prehistoric_pacu
+  image_name: paculacanth
+  decor: 10
+  decor_radius: 1
+  hp: 25
+  age_max: 100
+  base_incubation_rate_per_cycle: 5
+  base_lay_egg_cycles: 60
+  death_drop_item: PrehistoricPacuFillet
+  death_drop_item_amount: 12
+  kcal_per_cycle: 100
+  kcal_stomach_size: 500
+  space_required: 12
+  can_drown: false
+  entombable: false
+  base_lay_egg_chances:
+  - name: prehistoric_pacu_egg
+    weight: 1
+  diet:
+  - consume: pacu
+    produce: rust
+    kcal_per_kg: 0.5
+    produced_conversion_rate: 0.3
+  - consume: pacu_cleaner
+    produce: rust
+    kcal_per_kg: 0.5
+    produced_conversion_rate: 0.3
+  - consume: pacu_tropical
+    produce: rust
+    kcal_per_kg: 0.5
+    produced_conversion_rate: 0.3
+  - consume: fish_meat
+    produce: rust
+    kcal_per_kg: 100
+    produced_conversion_rate: 60
 - name: puft
   image_name: puft
   decor: 10
@@ -1854,6 +2093,205 @@
     produce: oxy_rock
     kcal_per_kg: 4
     produced_conversion_rate: 0.95
+- name: raptor
+  image_name: raptor
+  decor: 10
+  decor_radius: 1
+  hp: 50
+  age_max: 200
+  base_incubation_rate_per_cycle: 2.5
+  base_lay_egg_cycles: 120
+  death_drop_item: DinosaurMeat
+  death_drop_item_amount: 5
+  kcal_per_cycle: 800
+  kcal_stomach_size: 8000
+  space_required: 16
+  can_drown: false
+  entombable: false
+  base_lay_egg_chances:
+  - name: raptor_egg
+    weight: 1
+  diet:
+  - consume: dinosaur_meat
+    produce: brine_ice
+    kcal_per_kg: 1600
+    produced_conversion_rate: 128
+  - consume: meat
+    produce: brine_ice
+    kcal_per_kg: 1600
+    produced_conversion_rate: 128
+  - consume: hatch
+    produce: brine_ice
+    kcal_per_kg: 1600
+    produced_conversion_rate: 256
+  - consume: hatch_baby
+    produce: brine_ice
+    kcal_per_kg: 1600
+    produced_conversion_rate: 256
+  - consume: hatch_veggie
+    produce: brine_ice
+    kcal_per_kg: 1600
+    produced_conversion_rate: 256
+  - consume: hatch_veggie_baby
+    produce: brine_ice
+    kcal_per_kg: 1600
+    produced_conversion_rate: 256
+  - consume: hatch_metal
+    produce: brine_ice
+    kcal_per_kg: 1600
+    produced_conversion_rate: 256
+  - consume: hatch_metal_baby
+    produce: brine_ice
+    kcal_per_kg: 1600
+    produced_conversion_rate: 256
+  - consume: hatch_hard
+    produce: brine_ice
+    kcal_per_kg: 1600
+    produced_conversion_rate: 256
+  - consume: hatch_hard_baby
+    produce: brine_ice
+    kcal_per_kg: 1600
+    produced_conversion_rate: 256
+  - consume: squirrel
+    produce: brine_ice
+    kcal_per_kg: 1600
+    produced_conversion_rate: 256
+  - consume: squirrel_baby
+    produce: brine_ice
+    kcal_per_kg: 1600
+    produced_conversion_rate: 256
+  - consume: squirrel_hug
+    produce: brine_ice
+    kcal_per_kg: 1600
+    produced_conversion_rate: 256
+  - consume: squirrel_hug_baby
+    produce: brine_ice
+    kcal_per_kg: 1600
+    produced_conversion_rate: 256
+  - consume: mole
+    produce: brine_ice
+    kcal_per_kg: 1600
+    produced_conversion_rate: 256
+  - consume: mole_baby
+    produce: brine_ice
+    kcal_per_kg: 1600
+    produced_conversion_rate: 256
+  - consume: mole_delicacy
+    produce: brine_ice
+    kcal_per_kg: 1600
+    produced_conversion_rate: 256
+  - consume: mole_delicacy_baby
+    produce: brine_ice
+    kcal_per_kg: 1600
+    produced_conversion_rate: 256
+  - consume: oilfloater
+    produce: brine_ice
+    kcal_per_kg: 1600
+    produced_conversion_rate: 256
+  - consume: oilfloater_baby
+    produce: brine_ice
+    kcal_per_kg: 1600
+    produced_conversion_rate: 256
+  - consume: oilfloater_decor
+    produce: brine_ice
+    kcal_per_kg: 1600
+    produced_conversion_rate: 256
+  - consume: oilfloater_decor_baby
+    produce: brine_ice
+    kcal_per_kg: 1600
+    produced_conversion_rate: 256
+  - consume: oilfloater_high_temp
+    produce: brine_ice
+    kcal_per_kg: 1600
+    produced_conversion_rate: 256
+  - consume: oilfloater_high_temp_baby
+    produce: brine_ice
+    kcal_per_kg: 1600
+    produced_conversion_rate: 256
+  - consume: drecko
+    produce: brine_ice
+    kcal_per_kg: 1600
+    produced_conversion_rate: 256
+  - consume: drecko_baby
+    produce: brine_ice
+    kcal_per_kg: 1600
+    produced_conversion_rate: 256
+  - consume: drecko_plastic
+    produce: brine_ice
+    kcal_per_kg: 1600
+    produced_conversion_rate: 256
+  - consume: drecko_plastic_baby
+    produce: brine_ice
+    kcal_per_kg: 1600
+    produced_conversion_rate: 256
+  - consume: stego_baby
+    produce: brine_ice
+    kcal_per_kg: 1600
+    produced_conversion_rate: 256
+  - consume: chameleon
+    produce: brine_ice
+    kcal_per_kg: 1600
+    produced_conversion_rate: 256
+  - consume: chameleon_baby
+    produce: brine_ice
+    kcal_per_kg: 1600
+    produced_conversion_rate: 256
+  - consume: divergent_worm
+    produce: brine_ice
+    kcal_per_kg: 1600
+    produced_conversion_rate: 256
+  - consume: divergent_worm_baby
+    produce: brine_ice
+    kcal_per_kg: 1600
+    produced_conversion_rate: 256
+  - consume: divergent_beetle
+    produce: brine_ice
+    kcal_per_kg: 1600
+    produced_conversion_rate: 256
+  - consume: divergent_beetle_baby
+    produce: brine_ice
+    kcal_per_kg: 1600
+    produced_conversion_rate: 256
+  - consume: staterpillar
+    produce: brine_ice
+    kcal_per_kg: 1600
+    produced_conversion_rate: 256
+  - consume: staterpillar_baby
+    produce: brine_ice
+    kcal_per_kg: 1600
+    produced_conversion_rate: 256
+  - consume: staterpillar_gas
+    produce: brine_ice
+    kcal_per_kg: 1600
+    produced_conversion_rate: 256
+  - consume: staterpillar_gas_baby
+    produce: brine_ice
+    kcal_per_kg: 1600
+    produced_conversion_rate: 256
+  - consume: staterpillar_liquid
+    produce: brine_ice
+    kcal_per_kg: 1600
+    produced_conversion_rate: 256
+  - consume: staterpillar_liquid_baby
+    produce: brine_ice
+    kcal_per_kg: 1600
+    produced_conversion_rate: 256
+  - consume: ice_belly_baby
+    produce: brine_ice
+    kcal_per_kg: 1600
+    produced_conversion_rate: 256
+  - consume: gold_belly_baby
+    produce: brine_ice
+    kcal_per_kg: 1600
+    produced_conversion_rate: 256
+  - consume: wood_deer
+    produce: brine_ice
+    kcal_per_kg: 1600
+    produced_conversion_rate: 256
+  - consume: wood_deer_baby
+    produce: brine_ice
+    kcal_per_kg: 1600
+    produced_conversion_rate: 256
 - name: seal
   image_name: seal
   decor: 10
@@ -1990,11 +2428,19 @@
     produce: hydrogen
     kcal_per_kg: 33.3
     produced_conversion_rate: 0.05
+  - consume: nickel_ore
+    produce: hydrogen
+    kcal_per_kg: 33.3
+    produced_conversion_rate: 0.05
   - consume: iron_ore
     produce: hydrogen
     kcal_per_kg: 33.3
     produced_conversion_rate: 0.05
   - consume: cinnabar
+    produce: hydrogen
+    kcal_per_kg: 33.3
+    produced_conversion_rate: 0.05
+  - consume: nickel
     produce: hydrogen
     kcal_per_kg: 33.3
     produced_conversion_rate: 0.05
@@ -2015,6 +2461,10 @@
     kcal_per_kg: 33.3
     produced_conversion_rate: 0.05
   - consume: gold
+    produce: hydrogen
+    kcal_per_kg: 33.3
+    produced_conversion_rate: 0.05
+  - consume: iridium
     produce: hydrogen
     kcal_per_kg: 33.3
     produced_conversion_rate: 0.05
@@ -2075,11 +2525,19 @@
     produce: hydrogen
     kcal_per_kg: 66.7
     produced_conversion_rate: 0.05
+  - consume: nickel_ore
+    produce: hydrogen
+    kcal_per_kg: 66.7
+    produced_conversion_rate: 0.05
   - consume: iron_ore
     produce: hydrogen
     kcal_per_kg: 66.7
     produced_conversion_rate: 0.05
   - consume: cinnabar
+    produce: hydrogen
+    kcal_per_kg: 66.7
+    produced_conversion_rate: 0.05
+  - consume: nickel
     produce: hydrogen
     kcal_per_kg: 66.7
     produced_conversion_rate: 0.05
@@ -2100,6 +2558,10 @@
     kcal_per_kg: 66.7
     produced_conversion_rate: 0.05
   - consume: gold
+    produce: hydrogen
+    kcal_per_kg: 66.7
+    produced_conversion_rate: 0.05
+  - consume: iridium
     produce: hydrogen
     kcal_per_kg: 66.7
     produced_conversion_rate: 0.05
@@ -2160,11 +2622,19 @@
     produce: hydrogen
     kcal_per_kg: 66.7
     produced_conversion_rate: 0.05
+  - consume: nickel_ore
+    produce: hydrogen
+    kcal_per_kg: 66.7
+    produced_conversion_rate: 0.05
   - consume: iron_ore
     produce: hydrogen
     kcal_per_kg: 66.7
     produced_conversion_rate: 0.05
   - consume: cinnabar
+    produce: hydrogen
+    kcal_per_kg: 66.7
+    produced_conversion_rate: 0.05
+  - consume: nickel
     produce: hydrogen
     kcal_per_kg: 66.7
     produced_conversion_rate: 0.05
@@ -2188,6 +2658,10 @@
     produce: hydrogen
     kcal_per_kg: 66.7
     produced_conversion_rate: 0.05
+  - consume: iridium
+    produce: hydrogen
+    kcal_per_kg: 66.7
+    produced_conversion_rate: 0.05
   - consume: cobalt
     produce: hydrogen
     kcal_per_kg: 66.7
@@ -2204,6 +2678,37 @@
     produce: hydrogen
     kcal_per_kg: 66.7
     produced_conversion_rate: 0.05
+- name: stego
+  image_name: stego
+  decor: 10
+  decor_radius: 1
+  hp: 50
+  age_max: 200
+  base_incubation_rate_per_cycle: 2.5
+  base_lay_egg_cycles: 120
+  death_drop_item: DinosaurMeat
+  death_drop_item_amount: 12
+  kcal_per_cycle: 1300
+  kcal_stomach_size: 13000
+  space_required: 16
+  can_drown: false
+  entombable: false
+  base_lay_egg_chances:
+  - name: stego_egg
+    weight: 1
+  diet:
+  - consume: vine_fruit
+    produce: peat
+    kcal_per_kg: 325
+    produced_conversion_rate: 50
+  - consume: prickle_fruit
+    produce: peat
+    kcal_per_kg: 1600
+    produced_conversion_rate: 246.1539
+  - consume: swamp_fruit
+    produce: peat
+    kcal_per_kg: 1840
+    produced_conversion_rate: 424.6154
 - name: wood_deer
   image_name: ice_floof
   decor: 10

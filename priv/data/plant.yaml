@@ -6,7 +6,6 @@
   decor_radius: 1
   max_cycles: 2
   produce_crop: basic_fabric
-  produce_crop_cn: 芦苇纤维
   produce_crop_num: 1
   seed: basic_fabric_material_plant_seed
   seed_image_name: seed_swampreed
@@ -43,7 +42,6 @@
   decor_radius: 2
   max_cycles: 3
   produce_crop: basic_plant_food
-  produce_crop_cn: BasicPlantFood
   produce_crop_num: 1
   seed: basic_single_harvest_plant_seed
   seed_image_name: seed_meallice
@@ -71,7 +69,6 @@
   decor_radius: 2
   max_cycles: 21
   produce_crop: bean_plant_seed
-  produce_crop_cn: 小吃豆
   produce_crop_num: 12
   seed: bean_plant_seed
   seed_image_name: seed_beanplant
@@ -106,7 +103,6 @@
   decor_radius: 2
   max_cycles: 2
   produce_crop: oxy_rock
-  produce_crop_cn: 氧石
   produce_crop_num: 36
   seed: blue_grass_seed
   seed_image_name: seed_bluegrass
@@ -140,6 +136,40 @@
   seed: bulb_plant_seed
   seed_image_name: seed_potted_bulb
   can_drown: true
+- name: butterfly_plant
+  image_name: pollinator_plant
+  min_temp: 10
+  max_temp: 45
+  pressure_sensitive: true
+  pressure_warning_low: 0.15
+  pressure_warning_high: 10
+  pressure_lethal_low: 0
+  pressure_lethal_high: 30
+  required_element:
+  - oxygen
+  - contaminated_oxygen
+  - carbon_dioxide
+  - chlorine_gas
+  required_element_cn:
+  - 氧气
+  - 污染氧
+  - 二氧化碳
+  - 氯气
+  decor: 15
+  decor_radius: 2
+  max_cycles: 5
+  produce_crop: butterfly
+  produce_crop_num: 1
+  seed: butterfly_plant_seed
+  seed_image_name: seed_pollinator_plant
+  can_drown: true
+  can_tinker: true
+  require_fertilizer:
+  - dirt
+  require_fertilizer_cn:
+  - 泥土
+  require_fertilizer_per_cycle:
+  - 10
 - name: cactus_plant
   image_name: potted_cactus
   min_temp: 0
@@ -170,7 +200,6 @@
   decor_radius: 2
   max_cycles: 9
   produce_crop: carrot
-  produce_crop_cn: Carrot
   produce_crop_num: 1
   seed: carrot_plant_seed
   seed_image_name: seed_purpleroot
@@ -218,7 +247,6 @@
   decor_radius: 2
   max_cycles: 18
   produce_crop: cold_wheat_seed
-  produce_crop_cn: 冰霜麦粒
   produce_crop_num: 18
   seed: cold_wheat_seed
   seed_image_name: seed_coldwheat
@@ -244,7 +272,6 @@
   decor_radius: 2
   max_cycles: 30
   produce_crop: plant_meat
-  produce_crop_cn: PlantMeat
   produce_crop_num: 10
   seed: critter_trap_plant_seed
   seed_image_name: seed_critter_trap
@@ -277,6 +304,51 @@
   decor_radius: 4
   seed: cylindrica_seed
   seed_image_name: seed_potted_cylindricafan
+  can_drown: true
+- name: dew_dripper_plant
+  image_name: brackwood
+  min_temp: -35
+  max_temp: 5
+  pressure_sensitive: true
+  pressure_warning_low: 0.25
+  pressure_warning_high: 2
+  pressure_lethal_low: 0
+  pressure_lethal_high: 10
+  decor: 10
+  decor_radius: 1
+  max_cycles: 2
+  produce_crop: dew_drip
+  produce_crop_num: 1
+  seed: dew_dripper_plant_seed
+  seed_image_name: seed_brackwood
+  can_drown: true
+  hanging: true
+  require_fertilizer:
+  - brine_ice
+  require_fertilizer_cn:
+  - 浓盐冰
+  require_fertilizer_per_cycle:
+  - 10
+- name: dinofern
+  image_name: prehistoric_fern
+  min_temp: -45
+  max_temp: 15
+  pressure_sensitive: true
+  pressure_warning_low: 0.5
+  pressure_warning_high: 10
+  pressure_lethal_low: 0
+  pressure_lethal_high: 30
+  required_element:
+  - chlorine_gas
+  required_element_cn:
+  - 氯气
+  decor: -10
+  decor_radius: 2
+  max_cycles: 9
+  produce_crop: fern_food
+  produce_crop_num: 36
+  seed: dinofern_seed
+  seed_image_name: seed_megafrond
   can_drown: true
 - name: evil_flower
   image_name: potted_evilflower
@@ -313,7 +385,6 @@
   decor_radius: 2
   max_cycles: 10
   produce_crop: water
-  produce_crop_cn: 水
   produce_crop_num: 350
   seed: filter_plant_seed
   seed_image_name: seed_cactus
@@ -331,6 +402,25 @@
   - 污染水
   require_liquid_per_cycle:
   - 65
+- name: fly_trap_plant
+  image_name: ceiling_carnie
+  min_temp: 10
+  max_temp: 55
+  pressure_sensitive: true
+  pressure_warning_low: 0.15
+  pressure_warning_high: 10
+  pressure_lethal_low: 0
+  pressure_lethal_high: 30
+  decor: 15
+  decor_radius: 2
+  max_cycles: 12
+  produce_crop: amber
+  produce_crop_num: 264
+  seed: fly_trap_plant_seed
+  seed_image_name: seed_ceiling_carnie
+  can_drown: true
+  can_tinker: true
+  hanging: true
 - name: forest_forage_plant_planted
   image_name: podmelon
   decor: 15
@@ -349,7 +439,6 @@
   decor_radius: 2
   max_cycles: 4.5
   produce_crop: wood_log
-  produce_crop_cn: 木材
   produce_crop_num: 300
   seed: forest_tree_seed
   seed_image_name: seed_tree
@@ -380,10 +469,55 @@
   decor_radius: 2
   max_cycles: 4.5
   produce_crop: wood_log
-  produce_crop_cn: 木材
   produce_crop_num: 300
   can_drown: true
   can_tinker: true
+- name: garden_decor_plant
+  image_name: discplant
+  min_temp: -5
+  max_temp: 40
+  decor: 25
+  decor_radius: 4
+  seed: garden_decor_plant_seed
+  seed_image_name: seed_discplant
+  can_drown: true
+- name: garden_food_plant
+  image_name: spike_fruit
+  min_temp: -5
+  max_temp: 40
+  pressure_sensitive: true
+  pressure_warning_low: 0.15
+  pressure_warning_high: 10
+  pressure_lethal_low: 0
+  pressure_lethal_high: 30
+  required_element:
+  - oxygen
+  - contaminated_oxygen
+  - carbon_dioxide
+  required_element_cn:
+  - 氧气
+  - 污染氧
+  - 二氧化碳
+  decor: -10
+  decor_radius: 2
+  max_cycles: 3
+  produce_crop: garden_food_plant_food
+  produce_crop_num: 1
+  seed: garden_food_plant_seed
+  seed_image_name: seed_spikefruit
+  can_drown: true
+  can_tinker: true
+  require_fertilizer:
+  - peat
+  require_fertilizer_cn:
+  - 泥炭
+  require_fertilizer_per_cycle:
+  - 10
+- name: garden_forage_plant_planted
+  image_name: fatplant
+  decor: 15
+  decor_radius: 2
+  can_drown: true
 - name: gas_grass
   image_name: gassygrass
   min_temp: -273.15
@@ -392,7 +526,6 @@
   decor_radius: 4
   max_cycles: 4
   produce_crop: gas_grass_harvested
-  produce_crop_cn: 释气草
   produce_crop_num: 1
   seed: gas_grass_seed
   seed_image_name: seed_gassygrass
@@ -431,7 +564,6 @@
   decor_radius: 2
   max_cycles: 3
   produce_crop: hard_skin_berry
-  produce_crop_cn: 刺壳果
   produce_crop_num: 1
   seed: hard_skin_berry_plant_seed
   seed_image_name: seed_ice_berry
@@ -475,6 +607,25 @@
   seed: ice_flower_seed
   seed_image_name: seed_ice_flower
   can_drown: true
+- name: kelp_plant
+  image_name: kelp
+  min_temp: -10
+  max_temp: 85
+  decor: 15
+  decor_radius: 2
+  max_cycles: 5
+  produce_crop: kelp
+  produce_crop_num: 50
+  seed: kelp_plant_seed
+  seed_image_name: seed_kelp
+  can_tinker: true
+  hanging: true
+  require_fertilizer:
+  - toxic_sand
+  require_fertilizer_cn:
+  - 污染土
+  require_fertilizer_per_cycle:
+  - 10
 - name: leafy_plant
   image_name: potted_leafy
   min_temp: 20
@@ -518,7 +669,6 @@
   decor_radius: 2
   max_cycles: 7.5
   produce_crop: mushroom
-  produce_crop_cn: 蘑菇
   produce_crop_num: 1
   seed: mushroom_seed
   seed_image_name: seed_fungusplant
@@ -581,7 +731,6 @@
   decor_radius: 2
   max_cycles: 6
   produce_crop: prickle_fruit
-  produce_crop_cn: 毛刺浆果
   produce_crop_num: 1
   seed: prickle_flower_seed
   seed_image_name: seed_bristleblossom
@@ -632,7 +781,6 @@
   decor_radius: 2
   max_cycles: 6
   produce_crop: salt
-  produce_crop_cn: 盐
   produce_crop_num: 65
   seed: salt_plant_seed
   seed_image_name: seed_saltplant
@@ -653,7 +801,6 @@
   decor_radius: 1
   max_cycles: 12
   produce_crop: lettuce
-  produce_crop_cn: 海生菜
   produce_crop_num: 12
   seed: sea_lettuce_seed
   seed_image_name: seed_sealettuce
@@ -679,7 +826,6 @@
   decor_radius: 2
   max_cycles: 0.25
   produce_crop: sugar_water
-  produce_crop_cn: 花蜜
   produce_crop_num: 20
   seed: space_tree_seed
   seed_image_name: seed_syrup_tree
@@ -698,7 +844,6 @@
   decor_radius: 2
   max_cycles: 4.5
   produce_crop: wood_log
-  produce_crop_cn: 木材
   produce_crop_num: 75
   can_drown: true
   can_tinker: true
@@ -715,7 +860,6 @@
   decor_radius: 2
   max_cycles: 8
   produce_crop: spice_nut
-  produce_crop_cn: 火椒粒
   produce_crop_num: 4
   seed: spice_vine_seed
   seed_image_name: seed_spicenut
@@ -755,7 +899,6 @@
   decor_radius: 2
   max_cycles: 8
   produce_crop: worm_super_fruit
-  produce_crop_cn: 虫果
   produce_crop_num: 8
   seed: worm_plant_seed
   seed_image_name: seed_wormwood
@@ -792,7 +935,6 @@
   decor_radius: 2
   max_cycles: 6.6
   produce_crop: swamp_fruit
-  produce_crop_cn: 沼浆果冻
   produce_crop_num: 1
   seed: swamp_harvest_plant_seed
   seed_image_name: seed_swampcrop
@@ -821,7 +963,6 @@
   decor_radius: 2
   max_cycles: 12
   produce_crop: swamp_lily_flower
-  produce_crop_cn: 芳香百合花
   produce_crop_num: 2
   seed: swamp_lily_seed
   seed_image_name: seed_swamplily
@@ -849,6 +990,34 @@
   seed: toe_plant_seed
   seed_image_name: seed_potted_toes
   can_drown: true
+- name: vine_branch
+  image_name: vine
+  min_temp: 25
+  max_temp: 45
+  decor: 10
+  decor_radius: 1
+  max_cycles: 3
+  produce_crop: vine_fruit
+  produce_crop_num: 1
+  seed: vine_mother_seed
+  seed_image_name: seed_vine
+  can_drown: true
+  can_tinker: true
+- name: vine_mother
+  image_name: vine_mother
+  min_temp: 25
+  max_temp: 45
+  decor: 15
+  decor_radius: 2
+  seed: vine_mother_seed
+  seed_image_name: seed_vine
+  can_drown: true
+  require_liquid:
+  - water
+  require_liquid_cn:
+  - 水
+  require_liquid_per_cycle:
+  - 90
 - name: wine_cups
   image_name: potted_cups
   min_temp: 10
@@ -892,7 +1061,6 @@
   decor_radius: 1
   max_cycles: 4
   produce_crop: worm_basic_fruit
-  produce_crop_cn: 贫瘠虫果
   produce_crop_num: 1
   seed: worm_plant_seed
   seed_image_name: seed_wormwood

@@ -820,6 +820,29 @@
   materials:
   - buildable_raw
   - building_fiber
+- name: ceiling_fossil_sculpture
+  desc: 习得艺术技能的复制人能制作出更有装饰性的天花板雕塑。
+  effect: >-
+    大幅增加装饰度，从而提升士气。
+
+
+    必须由复制人雕刻。
+  image_name: fossilsculpture_hanging
+  base_decor: 35
+  base_decor_radius: 6
+  category: furniture
+  construction_time: 240
+  entombable: true
+  replaceable: true
+  is_industrial_machinery: false
+  overheat_temperature: 75
+  heat_generate: 0
+  height_in_cells: 2
+  width_in_cells: 3
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - fossils
 - name: ceiling_light
   desc: 光照可以减少复制人的压力，并且是某些植物生长的必备条件。
   effect: >-
@@ -870,6 +893,33 @@
   generator_base_capacity: 0
   materials:
   - refined_metal
+- name: chemical_refinery
+  desc: 就像一个搅拌器，但效果更好。
+  effect: >-
+    将液体和其他输入组合为流体混合物。
+
+
+    只有在队列中安排配方复制人才会进行制作。
+  image_name: chemistry_lab
+  base_decor: -10
+  base_decor_radius: 2
+  category: refining
+  construction_time: 60
+  entombable: true
+  floodable: true
+  replaceable: true
+  is_industrial_machinery: false
+  overheatable: true
+  overheat_temperature: 75
+  heat_generate: 1
+  height_in_cells: 3
+  width_in_cells: 4
+  power_consume: 480
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - refined_metal
+  - glass
 - name: chlorinator
   desc: 漂白石可用于卫生和地质调谐。
   effect: 使用盐和金生产漂白石。
@@ -1079,7 +1129,7 @@
   - refined_metal
 - name: compost
   desc: 堆肥堆可以安全地处理生物废物，产生新鲜泥土。
-  effect: 将污染土和其他可堆肥物降解成泥土。
+  effect: 将污染土、腐烂的食物和其他可堆肥物降解成泥土。
   image_name: compost
   base_decor: -20
   base_decor_radius: 4
@@ -1267,7 +1317,7 @@
   materials:
   - metal
 - name: creature_ground_trap
-  desc: 这是为陆地小动物设计的，但有时挣扎的鱼也会误入其中。
+  desc: 这是为陆生小动物设计的，但有时挣扎的鱼也会误入其中。
   effect: >-
     活捉一只小动物以便运输。
 
@@ -2124,7 +2174,7 @@
   materials:
   - metal
 - name: fish_delivery_point
-  desc: 鱼类放生点必须建在液体上方，以防止鱼类窒息。
+  desc: 鱼类放生点必须建在液体中，以防止鱼类窒息。
   effect: >-
     将陷阱捉到的的帕库鱼放回世界中。
 
@@ -2461,6 +2511,29 @@
   generator_base_capacity: 0
   materials:
   - fossil
+- name: fossil_sculpture
+  desc: 习得艺术技能的复制人能制作出更有装饰性的艺术品。
+  effect: >-
+    大幅增加装饰度，从而提升士气。
+
+
+    必须由复制人雕刻。
+  image_name: fossilsculpture
+  base_decor: 35
+  base_decor_radius: 6
+  category: furniture
+  construction_time: 240
+  entombable: true
+  replaceable: true
+  is_industrial_machinery: false
+  overheat_temperature: 75
+  heat_generate: 0
+  height_in_cells: 3
+  width_in_cells: 3
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - fossils
 - name: gantry
   desc: 通行支架可以建造在无法使用梯子和砖块的火箭舱块之间。
   effect: 提供跨越火箭舱块的脚手架，从而允许复制人通过。
@@ -3924,9 +3997,9 @@
   materials:
   - refined_metal
 - name: kiln
-  desc: 窑炉还可用于将煤炭精炼为纯碳。
+  desc: 温度会变得相当高。
   effect: >-
-    烧制粘土以生产陶瓷。
+    烧制粘土以生产陶瓷，煤炭或木材以生产精炼碳。
 
 
     只有在队列中安排配方复制人才会进行制作。
@@ -5947,7 +6020,7 @@
 - name: milk_press
   desc: 为受不了给小动物挤奶的复制人准备的。
   effect: >-
-    将冰霜麦粒或火椒粒粉碎以提制咸乳。
+    将有机材料粉碎以提取液体，比如咸乳或植物润滑油。
 
 
     咸乳可用于补充小动物直饮器。
@@ -6048,9 +6121,12 @@
   materials:
   - refined_metal
 - name: missile_launcher
-  desc: 炸成碎片的流星会留下可获得的资源。
+  desc: 一些被炸成碎片的流星会留下可收集的资源。
   effect: >-
-    在流星雨期间发射爆破弹以免受殖民地遭受撞击损坏。
+    向来袭太空物体发射爆炸性投射物以免受殖民地遭受撞击损坏。
+
+
+    投射物必须在爆破弹组装机制造。
 
 
     范围：水平16格，垂直32格。
@@ -6136,7 +6212,7 @@
   is_industrial_machinery: true
   overheatable: true
   overheat_temperature: 2000
-  heat_generate: 1
+  heat_generate: 0
   height_in_cells: 2
   width_in_cells: 2
   power_consume: 240
@@ -6163,7 +6239,7 @@
   is_industrial_machinery: true
   overheatable: true
   overheat_temperature: 2000
-  heat_generate: 1
+  heat_generate: 0
   height_in_cells: 3
   width_in_cells: 2
   power_consume: 240
@@ -6190,7 +6266,7 @@
   is_industrial_machinery: true
   overheatable: true
   overheat_temperature: 2000
-  heat_generate: 1
+  heat_generate: 0
   height_in_cells: 2
   width_in_cells: 2
   power_consume: 240
@@ -6217,7 +6293,7 @@
   is_industrial_machinery: true
   overheatable: true
   overheat_temperature: 2000
-  heat_generate: 1
+  heat_generate: 0
   height_in_cells: 3
   width_in_cells: 2
   power_consume: 240
@@ -6244,7 +6320,7 @@
   is_industrial_machinery: true
   overheatable: true
   overheat_temperature: 2000
-  heat_generate: 1
+  heat_generate: 0
   height_in_cells: 2
   width_in_cells: 2
   power_consume: 240
@@ -6271,7 +6347,7 @@
   is_industrial_machinery: true
   overheatable: true
   overheat_temperature: 2000
-  heat_generate: 1
+  heat_generate: 0
   height_in_cells: 3
   width_in_cells: 2
   power_consume: 240
@@ -6542,7 +6618,7 @@
   - metal
 - name: oil_changer
   desc: 供应新的润滑油可以避免老关节吱吱作响。
-  effect: 使用植物润滑油或原油保持复制人的仿生部件平稳运作。
+  effect: 使用齿轮油保持复制人的仿生部件平稳运作。
   image_name: oilchange_station
   base_decor: -15
   base_decor_radius: 3
@@ -6898,10 +6974,35 @@
   generator_base_capacity: 0
   materials:
   - buildable_any
+- name: peat_generator
+  desc: 它散发出一些复制人莫名感到怀念的香味。
+  effect: >-
+    燃烧泥炭以产生电力。
+
+
+    产生少量二氧化碳和污染水。
+  image_name: generatorpeat
+  base_decor: -15
+  base_decor_radius: 3
+  category: power
+  construction_time: 120
+  entombable: true
+  floodable: true
+  replaceable: true
+  is_industrial_machinery: true
+  overheatable: true
+  overheat_temperature: 75
+  heat_generate: 0.5
+  height_in_cells: 2
+  width_in_cells: 3
+  generator_wattage_rating: 480
+  generator_base_capacity: 480
+  materials:
+  - metal
 - name: petroleum_generator
   desc: 石油发电机发电量高，但会产生大量废物。
   effect: >-
-    将石油或乙醇转化为电力。
+    将石油、乙醇或生物柴油转化为电力。
 
 
     产生二氧化碳和污染水。
@@ -7114,7 +7215,7 @@
   - metal
 - name: polymerizer
   desc: 塑料可用来建造特殊的建筑以及制作特殊的物品。
-  effect: 将石油或花蜜转化为塑料。
+  effect: 将塑料单体转化为塑料。
   image_name: plasticrefinery
   base_decor_radius: 1
   category: refining
@@ -7141,9 +7242,6 @@
 
 
     分配的复制人必须具有调校特质。
-
-
-    这个建筑是发电厂的必要组成部分。
   image_name: electricianworkdesk
   base_decor_radius: 1
   category: equipment
@@ -8268,6 +8366,30 @@
   generator_base_capacity: 0
   materials:
   - buildable_raw
+- name: smoker
+  desc: 只要有耐心，即使是硬肉也可以变得美味可口。
+  effect: >-
+    慢火烹饪改良食物。
+
+
+    只有在队列中安排配方复制人才会进行制作。
+  image_name: smoker
+  base_decor_radius: 1
+  category: food
+  construction_time: 30
+  entombable: true
+  floodable: true
+  replaceable: true
+  is_industrial_machinery: false
+  overheatable: true
+  overheat_temperature: 75
+  heat_generate: 8
+  height_in_cells: 3
+  width_in_cells: 4
+  generator_wattage_rating: 0
+  generator_base_capacity: 0
+  materials:
+  - metal
 - name: snow_tile
   desc: 雪砖热导率较低，但温度过高就会融化。
   effect: >-

@@ -84,6 +84,7 @@ elements:
     tags:
     - Slippery
     - LubricatingOil
+    - UnrefinedOil
     isDisabled: false
     state: Liquid
     localizationID: STRINGS.ELEMENTS.CRUDEOIL.NAME
@@ -680,7 +681,7 @@ elements:
     isDisabled: false
     state: Liquid
     localizationID: STRINGS.ELEMENTS.MOLTENCOBALT.NAME
-    dlcId: EXPANSION1_ID
+    dlcId: ""
   
   - elementId: MoltenLead
     maxMass: 9970
@@ -952,6 +953,37 @@ elements:
     localizationID: STRINGS.ELEMENTS.PETROLEUM.NAME
     dlcId: ""
 
+  - elementId: NaturalResin
+    maxMass: 920
+    liquidCompression: 1.01
+    speed: 1.1
+    minHorizontalFlow: 1.1
+    minVerticalFlow: 0.01
+    specificHeatCapacity: 1.11
+    thermalConductivity: 0.15
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 25
+    gasSurfaceAreaMultiplier: 1
+    lowTemp: 293.15
+    highTemp: 398.15
+    lowTempTransitionTarget: NaturalSolidResin
+    highTempTransitionTarget: Steam
+    highTempTransitionOreId: RefinedCarbon
+    highTempTransitionOreMassConversion: 0.25
+    defaultTemperature: 300
+    defaultMass: 920
+    molarMass: 52.5
+    toxicity: 0
+    lightAbsorptionFactor: 0.8
+    radiationAbsorptionFactor: 0.75
+    radiationPer1000Mass: 0
+    isDisabled: false
+    state: Liquid
+    tags:
+    - PlastifiableLiquid
+    localizationID: STRINGS.ELEMENTS.NATURALRESIN.NAME
+    dlcId: ""
+
   - elementId: Resin
     maxMass: 920
     liquidCompression: 1.01
@@ -979,7 +1011,7 @@ elements:
     isDisabled: false
     state: Liquid
     localizationID: STRINGS.ELEMENTS.RESIN.NAME
-    dlcId: EXPANSION1_ID
+    dlcId: ""
   
   - elementId: SaltWater # approx 7% solution -- keep in sync with desalinator
     maxMass: 1100
@@ -1215,9 +1247,40 @@ elements:
     tags:
     - Slippery
     - LubricatingOil
+    - UnrefinedOil
     isDisabled: false
     state: Liquid
     localizationID: STRINGS.ELEMENTS.PHYTOOIL.NAME
+    dlcId: ""
+    
+  - elementId: RefinedLipid
+    maxMass: 870
+    liquidCompression: 1
+    speed: 100
+    minHorizontalFlow: 0.1
+    minVerticalFlow: 0.1
+    specificHeatCapacity: 2.19
+    thermalConductivity: 2
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 25
+    gasSurfaceAreaMultiplier: 1
+    lowTemp: 263.15
+    highTemp: 453.15
+    lowTempTransitionTarget: Tallow
+    highTempTransitionTarget: CarbonDioxide
+    defaultTemperature: 293
+    defaultMass: 800
+    molarMass: 450
+    toxicity: 0
+    lightAbsorptionFactor: 0.3
+    radiationAbsorptionFactor: 0.7
+    radiationPer1000Mass: 0
+    tags:
+    - Slippery
+    - CombustibleLiquid
+    isDisabled: false
+    state: Liquid
+    localizationID: STRINGS.ELEMENTS.REFINEDLIPID.NAME
     dlcId: ""
     
   - elementId: MoltenSucrose
@@ -1248,4 +1311,64 @@ elements:
     localizationID: STRINGS.ELEMENTS.MOLTENSUCROSE.NAME
     dlcId: ""
     
- 
+  - elementId: MoltenNickel
+    maxMass: 7870
+    liquidCompression: 1.01
+    speed: 100
+    minHorizontalFlow: 15
+    minVerticalFlow: 2
+    specificHeatCapacity: 0.44
+    thermalConductivity: 30
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 25
+    gasSurfaceAreaMultiplier: 1
+    lowTemp: 1728
+    highTemp: 3003
+    lowTempTransitionTarget: Nickel
+    highTempTransitionTarget: NickelGas
+    defaultTemperature: 1800
+    defaultMass: 900
+    molarMass: 58.69
+    toxicity: 0
+    lightAbsorptionFactor: 1
+    radiationAbsorptionFactor: 0.7
+    radiationPer1000Mass: 0
+    tags:
+    - Metal
+    - RefinedMetal
+    - EmitsLight
+    isDisabled: false
+    state: Liquid
+    localizationID: STRINGS.ELEMENTS.MOLTENNICKEL.NAME
+    dlcId: ""
+    
+  - elementId: MoltenIridium
+    maxMass: 3870
+    liquidCompression: 1.01
+    speed: 100
+    minHorizontalFlow: 20
+    minVerticalFlow: 10
+    specificHeatCapacity: 0.131
+    thermalConductivity: 170
+    solidSurfaceAreaMultiplier: 1
+    liquidSurfaceAreaMultiplier: 25
+    gasSurfaceAreaMultiplier: 1
+    lowTemp: 2719
+    highTemp: 4403
+    lowTempTransitionTarget: Iridium
+    highTempTransitionTarget: IridiumGas
+    defaultTemperature: 3500
+    defaultMass: 900
+    molarMass: 183.84
+    toxicity: 0
+    lightAbsorptionFactor: 1
+    radiationAbsorptionFactor: 0.88
+    radiationPer1000Mass: 0
+    tags:
+    - Metal
+    - RefinedMetal
+    isDisabled: false
+    state: Liquid
+    localizationID: STRINGS.ELEMENTS.MOLTENIRIDIUM.NAME
+    dlcId: ""
+    

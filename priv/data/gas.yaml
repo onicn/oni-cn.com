@@ -266,7 +266,7 @@ elements:
     isDisabled: false
     state: Gas
     localizationID: STRINGS.ELEMENTS.COBALTGAS.NAME
-    dlcId: EXPANSION1_ID
+    dlcId: ""
   
   - elementId: LeadGas
     specificHeatCapacity: 0.128
@@ -699,4 +699,54 @@ elements:
     localizationID: STRINGS.ELEMENTS.SYNGAS.NAME
     dlcId: ""
 
- 
+  - elementId: NickelGas
+    specificHeatCapacity: 0.44
+    thermalConductivity: 1
+    solidSurfaceAreaMultiplier: 25
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    flow: 0.1
+    lowTemp: 3003
+    lowTempTransitionTarget: MoltenNickel
+    defaultTemperature: 3200
+    defaultPressure: 202
+    molarMass: 58.69
+    toxicity: 0
+    lightAbsorptionFactor: 0.5
+    radiationAbsorptionFactor: 0.05
+    radiationPer1000Mass: 0
+    materialCategory: Unbreathable
+    tags:
+    - Metal
+    - RefinedMetal
+    - EmitsLight
+    isDisabled: false
+    state: Gas
+    localizationID: STRINGS.ELEMENTS.NICKELGAS.NAME
+    dlcId: ""  
+
+  - elementId: IridiumGas
+    specificHeatCapacity: 0.131
+    thermalConductivity: 1
+    solidSurfaceAreaMultiplier: 25
+    liquidSurfaceAreaMultiplier: 1
+    gasSurfaceAreaMultiplier: 1
+    flow: 0.1
+    lowTemp: 4403
+    lowTempTransitionTarget: MoltenIridium
+    defaultTemperature: 4500
+    defaultPressure: 1076
+    molarMass: 183.84
+    toxicity: 0
+    lightAbsorptionFactor: 0.5
+    radiationAbsorptionFactor: 0.88
+    radiationPer1000Mass: 0
+    materialCategory: Unbreathable
+    tags:
+    - Metal
+    - RefinedMetal
+    isDisabled: false
+    state: Gas
+    localizationID: STRINGS.ELEMENTS.IRIDIUMGAS.NAME
+    dlcId: ""
+    
