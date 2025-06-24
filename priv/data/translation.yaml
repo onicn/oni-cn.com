@@ -1226,7 +1226,7 @@ staterpillar_liquid_egg: 海绵蛞蝓蛋
 staterpillar_species: 电弧蛞蝓
 steam: 蒸汽
 steam_engine_cluster: 蒸汽引擎
-steam_turbine: [弃用] 蒸汽涡轮机
+steam_turbine: \[弃用\] 蒸汽涡轮机
 steam_turbine2: 蒸汽涡轮机
 steel: 钢
 steel_gas: 气态钢
