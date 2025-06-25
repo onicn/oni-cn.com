@@ -1,4 +1,4 @@
-alias Onicn.{Critters, Translation}
+alias Onicn.{Critters, Item, Translation}
 
 defmodule Onicn.Categories.Critter do
   use Onicn.Content
@@ -108,7 +108,8 @@ defmodule Onicn.Categories.Critter do
                 space_required: {"需求空间", "#{a[:space_required]}"},
                 decor: {"装饰度", "#{a[:decor]}（#{a[:decor_radius]}格）"},
                 death_drop_item:
-                  {"死亡掉落", "#{a[:death_drop_item]} #{a[:death_drop_item_amount]} 千克"},
+                  {"死亡掉落",
+                   "#{Item.name_to_link(a[:death_drop_item])} #{a[:death_drop_item_amount]} 千克"},
                 base_incubation_rate_per_cycle:
                   {"自然孵化度", "#{a[:base_incubation_rate_per_cycle]}% 每周期"},
                 base_lay_egg_cycles: {"产蛋周期", "#{a[:base_lay_egg_cycles]} 周期"},
@@ -192,7 +193,9 @@ defmodule Onicn.Categories.Critter do
               {"舒适温度", "#{a[:temperature_min_comfort]} #{icon} #{a[:temperature_max_comfort]} °C"},
             space_required: {"需求空间", "#{a[:space_required]}"},
             decor: {"装饰度", "#{a[:decor]}（#{a[:decor_radius]}格）"},
-            death_drop_item: {"死亡掉落", "#{a[:death_drop_item]} #{a[:death_drop_item_amount]} 千克"},
+            death_drop_item:
+              {"死亡掉落",
+               "#{Item.name_to_link(a[:death_drop_item])} #{a[:death_drop_item_amount]} 千克"},
             base_incubation_rate_per_cycle:
               {"自然孵化度", "#{a[:base_incubation_rate_per_cycle]}% 每周期"},
             base_lay_egg_cycles: {"产蛋周期", "#{a[:base_lay_egg_cycles]} 周期"},

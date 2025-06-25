@@ -6,7 +6,7 @@
   <%= for {content_tupe, content, options} <- contents do %>
     <%= if content_tupe === :content do %>
       <% content = options[:markdown] && Earmark.as_html!(content) || content %>
-      <% content = options[:link_name_icon] && Onicn.Item.replace_link(content, escape) || content %>
+      <% content = options[:link_name_icon] && Onicn.Item.text_to_link(content, escape) || content %>
 
       <div class="layui-text" style="margin: 5px 5px">
 

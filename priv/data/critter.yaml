@@ -26,7 +26,7 @@
   decor_radius: 1
   hp: 5
   age_max: 5
-  death_drop_item: ButterflyPlantSeed
+  death_drop_item: butterfly_plant_seed
   death_drop_item_amount: 1
   space_required: 8
   can_drown: false
@@ -39,7 +39,7 @@
   age_max: 50
   base_incubation_rate_per_cycle: 10
   base_lay_egg_cycles: 30
-  death_drop_item: Meat
+  death_drop_item: meat
   death_drop_item_amount: 0.5
   kcal_per_cycle: 2000
   kcal_stomach_size: 10000
@@ -62,7 +62,7 @@
   age_max: 100
   base_incubation_rate_per_cycle: 5
   base_lay_egg_cycles: 60
-  death_drop_item: CrabShell
+  death_drop_item: crab_shell
   death_drop_item_amount: 10
   kcal_per_cycle: 100
   kcal_stomach_size: 1000
@@ -95,7 +95,7 @@
   age_max: 100
   base_incubation_rate_per_cycle: 5
   base_lay_egg_cycles: 60
-  death_drop_item: ShellfishMeat
+  death_drop_item: shellfish_meat
   death_drop_item_amount: 4
   kcal_per_cycle: 100
   kcal_stomach_size: 1000
@@ -132,7 +132,7 @@
   age_max: 100
   base_incubation_rate_per_cycle: 5
   base_lay_egg_cycles: 60
-  death_drop_item: CrabWoodShell
+  death_drop_item: crab_wood_shell
   death_drop_item_amount: 500
   kcal_per_cycle: 100
   kcal_stomach_size: 1000
@@ -169,7 +169,7 @@
   age_max: 75
   base_incubation_rate_per_cycle: 6.666667
   base_lay_egg_cycles: 45
-  death_drop_item: Meat
+  death_drop_item: meat
   death_drop_item_amount: 1
   kcal_per_cycle: 700
   kcal_stomach_size: 7000
@@ -195,7 +195,7 @@
   age_max: 150
   base_incubation_rate_per_cycle: 3.333333
   base_lay_egg_cycles: 90
-  death_drop_item: Meat
+  death_drop_item: meat
   death_drop_item_amount: 3
   kcal_per_cycle: 700
   kcal_stomach_size: 7000
@@ -225,7 +225,7 @@
   age_max: 150
   base_incubation_rate_per_cycle: 3.333333
   base_lay_egg_cycles: 90
-  death_drop_item: Meat
+  death_drop_item: meat
   death_drop_item_amount: 2
   kcal_per_cycle: 2000
   kcal_stomach_size: 10000
@@ -259,7 +259,7 @@
   age_max: 150
   base_incubation_rate_per_cycle: 3.333333
   base_lay_egg_cycles: 90
-  death_drop_item: Meat
+  death_drop_item: meat
   death_drop_item_amount: 2
   kcal_per_cycle: 2000
   kcal_stomach_size: 10000
@@ -301,7 +301,7 @@
   age_max: 200
   base_incubation_rate_per_cycle: 2.5
   base_lay_egg_cycles: 120
-  death_drop_item: Meat
+  death_drop_item: meat
   death_drop_item_amount: 14
   kcal_per_cycle: 1778
   kcal_stomach_size: 17777
@@ -342,7 +342,7 @@
   age_max: 100
   base_incubation_rate_per_cycle: 5
   base_lay_egg_cycles: 60
-  death_drop_item: Meat
+  death_drop_item: meat
   death_drop_item_amount: 2
   kcal_per_cycle: 700
   kcal_stomach_size: 7000
@@ -635,7 +635,7 @@
   age_max: 100
   base_incubation_rate_per_cycle: 5
   base_lay_egg_cycles: 60
-  death_drop_item: Meat
+  death_drop_item: meat
   death_drop_item_amount: 2
   kcal_per_cycle: 700
   kcal_stomach_size: 7000
@@ -708,7 +708,7 @@
   age_max: 100
   base_incubation_rate_per_cycle: 5
   base_lay_egg_cycles: 60
-  death_drop_item: Meat
+  death_drop_item: meat
   death_drop_item_amount: 2
   kcal_per_cycle: 700
   kcal_stomach_size: 7000
@@ -765,7 +765,7 @@
   age_max: 100
   base_incubation_rate_per_cycle: 5
   base_lay_egg_cycles: 60
-  death_drop_item: Meat
+  death_drop_item: meat
   death_drop_item_amount: 2
   kcal_per_cycle: 700
   kcal_stomach_size: 7000
@@ -1047,7 +1047,7 @@
   age_max: 200
   base_incubation_rate_per_cycle: 2.5
   base_lay_egg_cycles: 120
-  death_drop_item: Meat
+  death_drop_item: meat
   death_drop_item_amount: 14
   kcal_per_cycle: 1778
   kcal_stomach_size: 17777
@@ -1383,7 +1383,7 @@
   age_max: 100
   base_incubation_rate_per_cycle: 5
   base_lay_egg_cycles: 60
-  death_drop_item: Meat
+  death_drop_item: meat
   death_drop_item_amount: 10
   kcal_per_cycle: 4800
   kcal_stomach_size: 48000
@@ -1419,7 +1419,7 @@
   age_max: 100
   base_incubation_rate_per_cycle: 5
   base_lay_egg_cycles: 60
-  death_drop_item: Meat
+  death_drop_item: meat
   death_drop_item_amount: 5
   kcal_per_cycle: 4800
   kcal_stomach_size: 24000
@@ -1453,7 +1453,7 @@
   decor_radius: 1
   hp: 50
   age_max: 75
-  death_drop_item: Meat
+  death_drop_item: meat
   death_drop_item_amount: 10
   kcal_per_cycle: 200
   kcal_stomach_size: 1200
@@ -1492,7 +1492,7 @@
   age_max: 100
   base_incubation_rate_per_cycle: 5
   base_lay_egg_cycles: 60
-  death_drop_item: Meat
+  death_drop_item: meat
   death_drop_item_amount: 2
   kcal_per_cycle: 120
   kcal_stomach_size: 600
@@ -1521,7 +1521,7 @@
   age_max: 150
   base_incubation_rate_per_cycle: 3.333333
   base_lay_egg_cycles: 90
-  death_drop_item: Meat
+  death_drop_item: meat
   death_drop_item_amount: 2
   kcal_per_cycle: 120
   kcal_stomach_size: 600
@@ -1550,7 +1550,7 @@
   age_max: 100
   base_incubation_rate_per_cycle: 5
   base_lay_egg_cycles: 60
-  death_drop_item: Meat
+  death_drop_item: meat
   death_drop_item_amount: 2
   kcal_per_cycle: 120
   kcal_stomach_size: 600
@@ -1579,7 +1579,7 @@
   age_max: 25
   base_incubation_rate_per_cycle: 20
   base_lay_egg_cycles: 15
-  death_drop_item: FishMeat
+  death_drop_item: fish_meat
   death_drop_item_amount: 1
   kcal_per_cycle: 100
   kcal_stomach_size: 500
@@ -1700,7 +1700,7 @@
   age_max: 25
   base_incubation_rate_per_cycle: 20
   base_lay_egg_cycles: 15
-  death_drop_item: FishMeat
+  death_drop_item: fish_meat
   death_drop_item_amount: 1
   kcal_per_cycle: 100
   kcal_stomach_size: 500
@@ -1821,7 +1821,7 @@
   age_max: 25
   base_incubation_rate_per_cycle: 20
   base_lay_egg_cycles: 15
-  death_drop_item: FishMeat
+  death_drop_item: fish_meat
   death_drop_item_amount: 1
   kcal_per_cycle: 100
   kcal_stomach_size: 500
@@ -1942,7 +1942,7 @@
   age_max: 100
   base_incubation_rate_per_cycle: 5
   base_lay_egg_cycles: 60
-  death_drop_item: PrehistoricPacuFillet
+  death_drop_item: prehistoric_pacu_fillet
   death_drop_item_amount: 12
   kcal_per_cycle: 100
   kcal_stomach_size: 500
@@ -1977,7 +1977,7 @@
   age_max: 75
   base_incubation_rate_per_cycle: 6.666667
   base_lay_egg_cycles: 45
-  death_drop_item: Meat
+  death_drop_item: meat
   death_drop_item_amount: 1
   kcal_per_cycle: 200
   kcal_stomach_size: 1200
@@ -2009,7 +2009,7 @@
   age_max: 75
   base_incubation_rate_per_cycle: 6.666667
   base_lay_egg_cycles: 45
-  death_drop_item: Meat
+  death_drop_item: meat
   death_drop_item_amount: 1
   kcal_per_cycle: 200
   kcal_stomach_size: 1200
@@ -2043,7 +2043,7 @@
   age_max: 75
   base_incubation_rate_per_cycle: 6.666667
   base_lay_egg_cycles: 45
-  death_drop_item: Meat
+  death_drop_item: meat
   death_drop_item_amount: 1
   kcal_per_cycle: 200
   kcal_stomach_size: 1200
@@ -2072,7 +2072,7 @@
   age_max: 75
   base_incubation_rate_per_cycle: 6.666667
   base_lay_egg_cycles: 45
-  death_drop_item: Meat
+  death_drop_item: meat
   death_drop_item_amount: 1
   kcal_per_cycle: 200
   kcal_stomach_size: 1200
@@ -2101,7 +2101,7 @@
   age_max: 200
   base_incubation_rate_per_cycle: 2.5
   base_lay_egg_cycles: 120
-  death_drop_item: DinosaurMeat
+  death_drop_item: dinosaur_meat
   death_drop_item_amount: 5
   kcal_per_cycle: 800
   kcal_stomach_size: 8000
@@ -2300,7 +2300,7 @@
   age_max: 100
   base_incubation_rate_per_cycle: 5
   base_lay_egg_cycles: 60
-  death_drop_item: Tallow
+  death_drop_item: tallow
   death_drop_item_amount: 50
   kcal_per_cycle: 100
   kcal_stomach_size: 1000
@@ -2327,7 +2327,7 @@
   age_max: 100
   base_incubation_rate_per_cycle: 5
   base_lay_egg_cycles: 60
-  death_drop_item: Meat
+  death_drop_item: meat
   death_drop_item_amount: 1
   kcal_per_cycle: 100
   kcal_stomach_size: 1000
@@ -2361,7 +2361,7 @@
   age_max: 100
   base_incubation_rate_per_cycle: 5
   base_lay_egg_cycles: 60
-  death_drop_item: Meat
+  death_drop_item: meat
   death_drop_item_amount: 1
   kcal_per_cycle: 100
   kcal_stomach_size: 1000
@@ -2395,7 +2395,7 @@
   age_max: 100
   base_incubation_rate_per_cycle: 5
   base_lay_egg_cycles: 60
-  death_drop_item: Meat
+  death_drop_item: meat
   death_drop_item_amount: 2
   kcal_per_cycle: 2000
   kcal_stomach_size: 10000
@@ -2492,7 +2492,7 @@
   age_max: 100
   base_incubation_rate_per_cycle: 5
   base_lay_egg_cycles: 60
-  death_drop_item: Meat
+  death_drop_item: meat
   death_drop_item_amount: 2
   kcal_per_cycle: 2000
   kcal_stomach_size: 10000
@@ -2589,7 +2589,7 @@
   age_max: 100
   base_incubation_rate_per_cycle: 5
   base_lay_egg_cycles: 60
-  death_drop_item: Meat
+  death_drop_item: meat
   death_drop_item_amount: 2
   kcal_per_cycle: 2000
   kcal_stomach_size: 10000
@@ -2686,7 +2686,7 @@
   age_max: 200
   base_incubation_rate_per_cycle: 2.5
   base_lay_egg_cycles: 120
-  death_drop_item: DinosaurMeat
+  death_drop_item: dinosaur_meat
   death_drop_item_amount: 12
   kcal_per_cycle: 1300
   kcal_stomach_size: 13000
@@ -2717,7 +2717,7 @@
   age_max: 100
   base_incubation_rate_per_cycle: 5
   base_lay_egg_cycles: 60
-  death_drop_item: Meat
+  death_drop_item: meat
   death_drop_item_amount: 1
   kcal_per_cycle: 100
   kcal_stomach_size: 1000
