@@ -5,21 +5,29 @@ defmodule Onicn.Categories.Critter do
 
   @species [
     Critters.BeeSpecies,
+    Critters.ButterflySpecies,
+    Critters.ChameleonSpecies,
     Critters.CrabSpecies,
     Critters.DivergentSpecies,
     Critters.DreckoSpecies,
+    Critters.FetchSpecies,
     Critters.GlomSpecies,
     Critters.HatchSpecies,
     Critters.IceBellySpecies,
     Critters.LightBugSpecies,
     Critters.MoleSpecies,
     Critters.MooSpecies,
+    Critters.MorbSpecies,
+    Critters.MosquitoSpecies,
     Critters.OilfloaterSpecies,
     Critters.PacuSpecies,
+    Critters.PrehistoricSpecies,
     Critters.PuftSpecies,
+    Critters.RaptorSpecies,
     Critters.SealSpecies,
     Critters.SquirrelSpecies,
     Critters.StaterpillarSpecies,
+    Critters.StegoSpecies,
     Critters.WoodDeerSpecies
   ]
 
