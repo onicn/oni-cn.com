@@ -22,6 +22,8 @@ defmodule Onicn.Categories.Other do
     Others.JetSuit,
     Others.LeadSuit,
     Others.MissileBasic,
+    Others.MissileLongRange,
+    Others.OrbitalResearchDatabank,
     Others.ResearchDatabank,
     Others.RotPile,
     Others.SwampLilyFlower,
