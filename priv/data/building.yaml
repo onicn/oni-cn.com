@@ -1,29 +1,3 @@
-- name: advanced_apothecary
-  desc: 有些药物有助于预防疾病，有些则用于缓解现有的疾病。
-  effect: >-
-    生产药物以治疗大多数基本疾病。
-
-
-    复制人必须具有药物配制技能才能制作药物。
-
-
-    只有在队列中安排配方复制人才会进行制作。
-  image_name: medicine_nuclear
-  base_decor_radius: 1
-  construction_time: 240
-  entombable: true
-  floodable: true
-  replaceable: true
-  is_industrial_machinery: false
-  overheatable: true
-  overheat_temperature: 75
-  heat_generate: 2
-  height_in_cells: 3
-  width_in_cells: 3
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
-  materials:
-  - refined_metal
 - name: advanced_crafting_table
   desc: 焊接台允许复制人制造寻回机器人飞寻机。
   effect: >-
@@ -165,30 +139,6 @@
   generator_base_capacity: 0
   materials:
   - buildable_raw
-- name: airborne_creature_lure
-  desc: 诱惑器可以将喷浮飞鱼或发光虫移至我的基地的特定位置。
-  effect: >-
-    一次吸引一种类型的飞行小动物。
-
-
-    必须以菌泥或磷矿为诱饵。
-  image_name: airbornecreaturetrap
-  base_decor: -15
-  base_decor_radius: 3
-  construction_time: 10
-  entombable: true
-  floodable: true
-  replaceable: true
-  is_industrial_machinery: false
-  overheatable: true
-  overheat_temperature: 75
-  heat_generate: 0
-  height_in_cells: 4
-  width_in_cells: 1
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
-  materials:
-  - plastic
 - name: algae_distillery
   desc: 藻类蒸馏器将容易致病的菌泥变成藻类，以供氧气生产。
   effect: 将菌泥提炼为藻类。
@@ -338,50 +288,6 @@
   generator_base_capacity: 0
   materials:
   - refined_metal
-- name: astronaut_training_center
-  desc: 复制人必须完成宇航员训练才能驾驶太空火箭。
-  effect: >-
-    训练复制人成为宇航员。
-
-
-    复制人必须具有宇航员特质才能接受训练。
-  image_name: centrifuge
-  base_decor_radius: 1
-  category: equipment
-  construction_time: 30
-  entombable: true
-  floodable: true
-  replaceable: true
-  is_industrial_machinery: false
-  overheatable: true
-  overheat_temperature: 75
-  heat_generate: 4
-  height_in_cells: 5
-  width_in_cells: 5
-  power_consume: 480
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
-  materials:
-  - metal
-- name: atomic_garden
-  image_name: fertilizer_maker
-  base_decor: -15
-  base_decor_radius: 3
-  construction_time: 30
-  entombable: true
-  floodable: true
-  replaceable: true
-  is_industrial_machinery: true
-  overheatable: true
-  overheat_temperature: 75
-  heat_generate: 2
-  height_in_cells: 3
-  width_in_cells: 4
-  power_consume: 120
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
-  materials:
-  - metal
 - name: auto_miner
   desc: 选择建筑即可随时查看自动采矿机的工作范围。
   effect: 自动挖掘一定范围内的所有材料。
@@ -1270,31 +1176,6 @@
   generator_base_capacity: 0
   materials:
   - metal
-- name: creature_delivery_point
-  desc: 复制人会自动将捕获的小动物带到这些放生点放生。
-  effect: >-
-    将捕捉的小动物放回到世界中。
-
-
-    可重复使用。
-  image_name: relocator_dropoff
-  base_decor: -15
-  base_decor_radius: 3
-  category: food
-  construction_time: 10
-  entombable: true
-  floodable: true
-  replaceable: true
-  is_industrial_machinery: false
-  overheatable: true
-  overheat_temperature: 75
-  heat_generate: 0
-  height_in_cells: 3
-  width_in_cells: 1
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
-  materials:
-  - metal
 - name: creature_feeder
   desc: 小动物倾向于靠近食物源，提供喂食器后小动物不容易乱跑。
   effect: 自动为饥饿的小动物提供食物。
@@ -1340,46 +1221,6 @@
   generator_base_capacity: 0
   materials:
   - metal
-- name: creature_trap
-  desc: 小动物陷阱无法捕捉水中或空中的小动物。
-  effect: >-
-    活捉一只小动物以便运输。
-
-
-    一次性使用。
-  image_name: creaturetrap
-  base_decor: -15
-  base_decor_radius: 3
-  construction_time: 10
-  entombable: true
-  replaceable: true
-  is_industrial_machinery: false
-  overheatable: true
-  overheat_temperature: 75
-  heat_generate: 0
-  height_in_cells: 1
-  width_in_cells: 2
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
-  materials:
-  - plastic
-- name: crew_capsule
-  image_name: rocket_small_steam
-  base_decor_radius: 1
-  construction_time: 480
-  entombable: true
-  replaceable: true
-  is_industrial_machinery: true
-  overheatable: true
-  overheat_temperature: 2000
-  heat_generate: 0
-  height_in_cells: 19
-  width_in_cells: 5
-  power_consume: 10
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
-  materials:
-  - steel
 - name: critter_condo
   desc: 拥有美好的东西真不错。
   effect: 提供放松的休息区以提升小动物的幸福度。
@@ -2223,29 +2064,6 @@
   generator_base_capacity: 0
   materials:
   - metal
-- name: fish_trap
-  desc: 自动打包捕获的鱼类，以便运输。
-  effect: >-
-    吸引并捕获游动的帕库鱼。
-
-
-    一次性使用。
-  image_name: fishtrap
-  base_decor: -15
-  base_decor_radius: 3
-  construction_time: 10
-  entombable: true
-  replaceable: true
-  is_industrial_machinery: false
-  overheatable: true
-  overheat_temperature: 75
-  heat_generate: 0
-  height_in_cells: 2
-  width_in_cells: 1
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
-  materials:
-  - plastic
 - name: floor_lamp
   desc: 任何建筑的光照范围可在光照概览中查看。
   effect: >-
@@ -2416,31 +2234,6 @@
   generator_base_capacity: 0
   materials:
   - metal
-- name: flying_creature_bait
-  desc: 小动物诱饵吸引小动物的类型取决于建造的材料。
-  effect: >-
-    吸引一种飞行小动物。
-
-
-    一次性使用。
-  image_name: airborne_critter_bait
-  base_decor: -15
-  base_decor_radius: 3
-  construction_time: 10
-  entombable: true
-  floodable: true
-  replaceable: true
-  is_industrial_machinery: false
-  overheatable: true
-  overheat_temperature: 75
-  heat_generate: 0
-  height_in_cells: 2
-  width_in_cells: 1
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
-  materials:
-  - metal
-  - flying_critter_edible
 - name: food_dehydrator
   desc: 一些脱除的液体不可避免地会洒在地上。
   effect: >-
@@ -2706,42 +2499,6 @@
   generator_base_capacity: 0
   materials:
   - refined_metal
-- name: gas_conduit_overflow
-  desc: 溢流阀可以用来选择优先让哪些建筑获得宝贵的资源。
-  effect: 仅当主输出口堵塞时，才用气体填充备用输出口。
-  image_name: valvegas
-  base_decor_radius: 1
-  category: hvac
-  construction_time: 3
-  replaceable: true
-  is_industrial_machinery: false
-  overheatable: true
-  overheat_temperature: 75
-  heat_generate: 0
-  height_in_cells: 2
-  width_in_cells: 2
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
-  materials:
-  - buildable_raw
-- name: gas_conduit_preferential_flow
-  desc: 优先气流阀可确保先填充建筑群中的重要建筑。
-  effect: 当主输入口溢流时，将气体转向备用输入口。
-  image_name: valvegas
-  base_decor_radius: 1
-  category: hvac
-  construction_time: 3
-  replaceable: true
-  is_industrial_machinery: false
-  overheatable: true
-  overheat_temperature: 75
-  heat_generate: 0
-  height_in_cells: 2
-  width_in_cells: 2
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
-  materials:
-  - buildable_raw
 - name: gas_conduit_radiant
   desc: 泵入冷气体的导热管道可穿过炎热区域以帮助降温。
   effect: >-
@@ -3022,27 +2779,6 @@
   width_in_cells: 3
   generator_wattage_rating: 600
   generator_base_capacity: 600
-  materials:
-  - metal
-- name: generic_fabricator
-  desc: 全能打印机没有打印有机物的能力。
-  effect: 将矿物原料转化为独特的材料和物品。
-  image_name: fabricator_generic
-  base_decor: -15
-  base_decor_radius: 3
-  construction_time: 30
-  entombable: true
-  floodable: true
-  replaceable: true
-  is_industrial_machinery: false
-  overheatable: true
-  overheat_temperature: 75
-  heat_generate: 2
-  height_in_cells: 3
-  width_in_cells: 3
-  power_consume: 240
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
   materials:
   - metal
 - name: genetic_analysis_station
@@ -3414,25 +3150,6 @@
   heat_generate: 0
   height_in_cells: 4
   width_in_cells: 4
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
-  materials:
-  - metal
-- name: heat_compressor
-  desc: “室温”是相对的，真的。
-  effect: 根据环境的空气温度相应地将液体加热或冷却。
-  image_name: hqbase
-  base_decor: 30
-  base_decor_radius: 6
-  construction_time: 30
-  entombable: true
-  replaceable: true
-  is_industrial_machinery: false
-  overheat_temperature: 75
-  heat_generate: 0
-  height_in_cells: 4
-  width_in_cells: 4
-  power_consume: 1600
   generator_wattage_rating: 0
   generator_base_capacity: 0
   materials:
@@ -4381,42 +4098,6 @@
   generator_base_capacity: 0
   materials:
   - refined_metal
-- name: liquid_conduit_overflow
-  desc: 溢流阀可以用来选择优先让哪些建筑获得宝贵的资源。
-  effect: 仅当主输出口堵塞时，才用液体填充备用输出口。
-  image_name: valveliquid
-  base_decor_radius: 1
-  category: plumbing
-  construction_time: 3
-  replaceable: true
-  is_industrial_machinery: false
-  overheatable: true
-  overheat_temperature: 75
-  heat_generate: 0
-  height_in_cells: 2
-  width_in_cells: 2
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
-  materials:
-  - buildable_raw
-- name: liquid_conduit_preferential_flow
-  desc: 优先气流阀可确保先填充建筑群中的重要建筑。
-  effect: 当主输入口溢流时，将液体转向备用输入口。
-  image_name: valveliquid
-  base_decor_radius: 1
-  category: plumbing
-  construction_time: 3
-  replaceable: true
-  is_industrial_machinery: false
-  overheatable: true
-  overheat_temperature: 75
-  heat_generate: 0
-  height_in_cells: 2
-  width_in_cells: 2
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
-  materials:
-  - buildable_raw
 - name: liquid_conduit_radiant
   desc: 泵入冷液体的导热管道可穿过炎热区域以帮助降温。
   effect: >-
@@ -4457,25 +4138,6 @@
   generator_base_capacity: 0
   materials:
   - refined_metal
-- name: liquid_cooled_fan
-  desc: 复制人可以根据需要操作水冷风扇，临时给小片区域降温。
-  effect: 驱散少量热量。
-  image_name: fanliquid
-  base_decor_radius: 1
-  category: utilities
-  construction_time: 10
-  entombable: true
-  floodable: true
-  replaceable: true
-  is_industrial_machinery: false
-  overheat_temperature: 75
-  heat_generate: 0
-  height_in_cells: 2
-  width_in_cells: 2
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
-  materials:
-  - metal
 - name: liquid_filter
   desc: 除所选的液体外，其他所有液体都会被送入输出管道。
   effect: >-
@@ -5566,28 +5228,6 @@
   generator_base_capacity: 0
   materials:
   - plastic
-- name: machine_shop
-  desc: 复制人只会为那些和这个站在同一个房间里的建筑提高效率。
-  effect: >-
-    让分配的工程师能够提高建筑生产效率。
-
-
-    这个建筑是机械车间的必要组成部分。
-  image_name: machineshop
-  base_decor_radius: 1
-  construction_time: 30
-  entombable: true
-  floodable: true
-  replaceable: true
-  is_industrial_machinery: false
-  overheat_temperature: 75
-  heat_generate: 0
-  height_in_cells: 2
-  width_in_cells: 4
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
-  materials:
-  - refined_metal
 - name: manual_generator
   desc: 看复制人在上面跑步很好玩……电力只是额外的好处而已。
   effect: 将人力转化为电力。
@@ -6467,27 +6107,6 @@
   generator_base_capacity: 0
   materials:
   - refined_metal
-- name: moulding_tile
-  desc: 镶边是用于墙体和建筑的纯装饰性衬垫。
-  effect: >-
-    用来建造房间的墙体和地面。
-
-
-    提高装饰度，从而提升士气。
-  image_name: floor_moulding
-  base_decor: 10
-  base_decor_radius: 1
-  construction_time: 30
-  replaceable: true
-  is_industrial_machinery: false
-  overheat_temperature: 75
-  heat_generate: 0
-  height_in_cells: 1
-  width_in_cells: 1
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
-  materials:
-  - buildable_raw
 - name: nosecone_basic
   desc: 每个火箭都需要一个前锥才能飞起来。
   effect: >-
@@ -6879,37 +6498,6 @@
   generator_base_capacity: 0
   materials:
   - metal
-- name: oxygen_mask_station
-  desc: 如果没有足够的氧气填充面罩，复制人就不能通过。
-  effect: >-
-    使用筛选项设定中指定的金属矿石制作氧气面罩。
-
-
-    自动从环境中抽取氧气以填充面罩。
-
-
-    标记复制人需要带上或摘下面罩的起点。
-
-
-    建造前可旋转。
-  image_name: oxygen_mask_station
-  base_decor: 10
-  base_decor_radius: 2
-  construction_time: 30
-  entombable: true
-  floodable: true
-  replaceable: true
-  is_industrial_machinery: false
-  overheatable: true
-  overheat_temperature: 75
-  heat_generate: 1
-  height_in_cells: 3
-  width_in_cells: 2
-  power_consume: 60
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
-  materials:
-  - buildable_raw
 - name: oxylite_refinery
   desc: 固体状的氧石是一种非常容易运输的氧气来源。
   effect: 使用氧气和少量的金合成氧石。
@@ -7336,56 +6924,6 @@
   height_in_cells: 2
   width_in_cells: 1
   power_consume: 120
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
-  materials:
-  - metal
-- name: pressure_switch_gas
-  desc: 气压电闸在周围气压超过设定阈值时会断开。
-  effect: >-
-    根据周围气压自动地接通或断开电力。
-
-
-    不影响开关前端的电路。
-  image_name: switchgaspressure
-  base_decor: -5
-  base_decor_radius: 1
-  category: power
-  construction_time: 30
-  entombable: true
-  floodable: true
-  replaceable: true
-  is_industrial_machinery: false
-  overheat_temperature: 75
-  heat_generate: 0
-  height_in_cells: 1
-  width_in_cells: 1
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
-  materials:
-  - metal
-- name: pressure_switch_liquid
-  desc: 液压电闸在周围液压超过设定阈值时会断开。
-  effect: >-
-    根据周围液压自动地接通或断开电力。
-
-
-    不影响开关前端的电路。
-
-
-    必须浸没在液体中。
-  image_name: switchliquidpressure
-  base_decor: -5
-  base_decor_radius: 1
-  category: power
-  construction_time: 30
-  entombable: true
-  replaceable: true
-  is_industrial_machinery: false
-  overheat_temperature: 75
-  heat_generate: 0
-  height_in_cells: 1
-  width_in_cells: 1
   generator_wattage_rating: 0
   generator_base_capacity: 0
   materials:
@@ -8082,26 +7620,6 @@
   generator_base_capacity: 0
   materials:
   - steel
-- name: role_station
-  desc: 技能公示板可以教复制人他们没法自己学会的特殊技能。
-  effect: 允许复制人花费技能点学习新技能。
-  image_name: job_station
-  base_decor_radius: 1
-  category: equipment
-  construction_time: 30
-  entombable: true
-  floodable: true
-  replaceable: true
-  is_industrial_machinery: false
-  overheatable: true
-  overheat_temperature: 75
-  heat_generate: 0
-  height_in_cells: 2
-  width_in_cells: 2
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
-  materials:
-  - metal
 - name: rust_deoxidizer
   desc: 一端进入铁锈和盐，另一端出来氧气。
   effect: >-
@@ -8901,37 +8419,6 @@
   generator_base_capacity: 600
   materials:
   - refined_metal
-- name: steam_turbine
-  desc: 用于将岩浆的地热能转化为可用的电力。
-  effect: >-
-    这个建筑已被弃用，无法建造。
-
-
-    使用滚烫的高压蒸汽以产生大量电力。
-
-
-    输出温度大幅降低的蒸汽。
-
-
-    建筑下方的气压要高于上方。
-  image_name: steamturbine
-  base_decor_radius: 1
-  category: power
-  construction_time: 60
-  entombable: true
-  floodable: true
-  replaceable: true
-  is_industrial_machinery: false
-  overheatable: true
-  overheat_temperature: 1000
-  heat_generate: 0
-  height_in_cells: 4
-  width_in_cells: 5
-  generator_wattage_rating: 2000
-  generator_base_capacity: 2000
-  materials:
-  - refined_metal
-  - plastic
 - name: steam_turbine2
   desc: 用于将地热能转化为可用的电力。
   effect: >-
@@ -9311,29 +8798,6 @@
   height_in_cells: 4
   width_in_cells: 4
   power_consume: 1600
-  generator_wattage_rating: 0
-  generator_base_capacity: 0
-  materials:
-  - metal
-- name: temperature_controlled_switch
-  desc: 自动化开关可以用来管理复制人无法进入的区域的电路。
-  effect: >-
-    根据周围温度自动接通或断开电力。
-
-
-    不影响开关前端的电路。
-  image_name: switchthermal
-  base_decor: -5
-  base_decor_radius: 1
-  category: power
-  construction_time: 30
-  entombable: true
-  replaceable: true
-  is_industrial_machinery: false
-  overheat_temperature: 75
-  heat_generate: 0
-  height_in_cells: 1
-  width_in_cells: 1
   generator_wattage_rating: 0
   generator_base_capacity: 0
   materials:
