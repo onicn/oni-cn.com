@@ -6,7 +6,6 @@ defmodule Onicn.Categories.Other do
     Others.Alpha,
     Others.Antihistamine,
     Others.AtmoSuit,
-    Others.BabyCrabShell,
     Others.BasicBooster,
     Others.BasicCure,
     Others.BasicFabric,
