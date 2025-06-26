@@ -85,6 +85,12 @@
 - name: syngas
   color: RGBA(243, 255, 0, 255)
   is_gas: true
+- name: nickel_gas
+  color: RGBA(162, 241, 208, 255)
+  is_gas: true
+- name: iridium_gas
+  color: RGBA(176, 160, 186, 255)
+  is_gas: true
 - name: brine
   color: RGBA(173, 233, 229, 255)
   is_liquid: true
@@ -181,6 +187,9 @@
 - name: petroleum
   color: RGBA(255, 195, 37, 255)
   is_liquid: true
+- name: natural_resin
+  color: RGBA(204, 139, 24, 255)
+  is_liquid: true
 - name: resin
   color: RGBA(204, 139, 24, 255)
   is_liquid: true
@@ -208,8 +217,17 @@
 - name: phyto_oil
   color: RGBA(152, 168, 47, 255)
   is_liquid: true
+- name: refined_lipid
+  color: RGBA(225, 203, 105, 255)
+  is_liquid: true
 - name: molten_sucrose
   color: RGBA(255, 255, 255, 255)
+  is_liquid: true
+- name: molten_nickel
+  color: RGBA(191, 217, 204, 255)
+  is_liquid: true
+- name: molten_iridium
+  color: RGBA(204, 120, 142, 255)
   is_liquid: true
 - name: aerogel
   image_name: algae
@@ -233,13 +251,16 @@
   image_name: granite
   is_solid: true
 - name: brine_ice
-  image_name: ice
+  image_name: frozen_brine
   is_solid: true
 - name: milk_ice
   image_name: milk
   is_solid: true
 - name: carbon
   image_name: carbon
+  is_solid: true
+- name: peat
+  image_name: peat
   is_solid: true
 - name: carbon_fibre
   image_name: algae
@@ -406,6 +427,9 @@
 - name: sedimentary_rock
   image_name: sedimentary_rock
   is_solid: true
+- name: shale
+  image_name: shale
+  is_solid: true
 - name: slabs
   image_name: granite
   is_solid: true
@@ -425,7 +449,7 @@
   image_name: solid_chlorine
   is_solid: true
 - name: solid_crude_oil
-  image_name: wolframite
+  image_name: frozen_crude_oil
   is_solid: true
 - name: solid_hydrogen
   image_name: solid_hydrogen
@@ -450,6 +474,12 @@
   is_solid: true
 - name: solid_resin
   image_name: resin_solid
+  is_solid: true
+- name: natural_solid_resin
+  image_name: resin_solid
+  is_solid: true
+- name: amber
+  image_name: amber
   is_solid: true
 - name: solid_super_coolant
   image_name: super_coolant
@@ -519,6 +549,15 @@
   is_solid: true
 - name: gunk
   image_name: gunk
+  is_solid: true
+- name: nickel_ore
+  image_name: nickel_ore
+  is_solid: true
+- name: nickel
+  image_name: nickel
+  is_solid: true
+- name: iridium
+  image_name: iridium
   is_solid: true
 - name: vacuum
   color: RGBA(120, 91, 137, 255)

@@ -1,25 +1,33 @@
-alias Onicn.{Critters, Translation}
+alias Onicn.{Critters, Item, Translation}
 
 defmodule Onicn.Categories.Critter do
   use Onicn.Content
 
   @species [
     Critters.BeeSpecies,
+    Critters.ButterflySpecies,
+    Critters.ChameleonSpecies,
     Critters.CrabSpecies,
     Critters.DivergentSpecies,
     Critters.DreckoSpecies,
+    Critters.FetchSpecies,
     Critters.GlomSpecies,
     Critters.HatchSpecies,
     Critters.IceBellySpecies,
     Critters.LightBugSpecies,
     Critters.MoleSpecies,
     Critters.MooSpecies,
+    Critters.MorbSpecies,
+    Critters.MosquitoSpecies,
     Critters.OilfloaterSpecies,
     Critters.PacuSpecies,
+    Critters.PrehistoricSpecies,
     Critters.PuftSpecies,
+    Critters.RaptorSpecies,
     Critters.SealSpecies,
     Critters.SquirrelSpecies,
     Critters.StaterpillarSpecies,
+    Critters.StegoSpecies,
     Critters.WoodDeerSpecies
   ]
 
@@ -34,7 +42,7 @@ defmodule Onicn.Categories.Critter do
     | 闲置           | 无影响                                                         | 享受生活，懂吗？                            |
     | 野性           | 野性 +5%，代谢 -75%，鳞片生长 -75%                               | 地图生成/打印门打印的动物                    |
     | 温顺           | 幸福度 -1                                                      | 通过打扮或喂鱼使野性降低到 0%                |
-    | 打扮           | 幸福度 +5，野性 -55%/周期                                       | 被复制人在照料站照料                         |
+    | 打扮           | 幸福度 +5，野性 -55%/周期                                       | 被复制人在梳理站照料                         |
     | 从喂食器进食    | 幸福度 +5，野性 -20%/周期                                       | 从喂鱼器进食                                |
     | 补水           | 幸福度 +5                                                      | 从小动物直饮器喝了咸乳                       |
     | 舒适           | 幸福度 +1                                                      | 小动物使用小动物公寓/水中城堡/飞行小动物公寓   |
@@ -100,7 +108,8 @@ defmodule Onicn.Categories.Critter do
                 space_required: {"需求空间", "#{a[:space_required]}"},
                 decor: {"装饰度", "#{a[:decor]}（#{a[:decor_radius]}格）"},
                 death_drop_item:
-                  {"死亡掉落", "#{a[:death_drop_item]} #{a[:death_drop_item_amount]} 千克"},
+                  {"死亡掉落",
+                   "#{Item.name_to_link(a[:death_drop_item])} #{a[:death_drop_item_amount]} 千克"},
                 base_incubation_rate_per_cycle:
                   {"自然孵化度", "#{a[:base_incubation_rate_per_cycle]}% 每周期"},
                 base_lay_egg_cycles: {"产蛋周期", "#{a[:base_lay_egg_cycles]} 周期"},
@@ -184,7 +193,9 @@ defmodule Onicn.Categories.Critter do
               {"舒适温度", "#{a[:temperature_min_comfort]} #{icon} #{a[:temperature_max_comfort]} °C"},
             space_required: {"需求空间", "#{a[:space_required]}"},
             decor: {"装饰度", "#{a[:decor]}（#{a[:decor_radius]}格）"},
-            death_drop_item: {"死亡掉落", "#{a[:death_drop_item]} #{a[:death_drop_item_amount]} 千克"},
+            death_drop_item:
+              {"死亡掉落",
+               "#{Item.name_to_link(a[:death_drop_item])} #{a[:death_drop_item_amount]} 千克"},
             base_incubation_rate_per_cycle:
               {"自然孵化度", "#{a[:base_incubation_rate_per_cycle]}% 每周期"},
             base_lay_egg_cycles: {"产蛋周期", "#{a[:base_lay_egg_cycles]} 周期"},

@@ -1,4 +1,5 @@
 alias Onicn.Categories.{Solid, Liquid, Gas, Building, Critter, Plant, Food, Geyser, Other}
+alias Onicn.Translation
 
 defmodule Onicn.Item do
   @skiplist [
@@ -14,7 +15,19 @@ defmodule Onicn.Item do
     "金属"
   ]
 
-  def replace_link(string, escape) do
+  def name_to_link(string, escape \\ [])
+
+  def name_to_link(string, escape) when is_binary(string) do
+    string
+    |> Translation.get()
+    |> text_to_link(escape)
+  end
+
+  def name_to_link(_other, _escape), do: ""
+
+  def text_to_link(string, escape \\ [])
+
+  def text_to_link(string, escape) when is_binary(string) do
     index = index()
 
     hashed_string =
@@ -31,6 +44,8 @@ defmodule Onicn.Item do
       end
     end)
   end
+
+  def text_to_link(_other, _escape), do: ""
 
   defp index do
     skiplist = Enum.map(@skiplist, &{&1, hash(&1), ""})

@@ -11,29 +11,73 @@ defmodule Onicn.Recipe do
       %{
         name: Onicn.guess_name(building["name"]),
         recipes:
-          Enum.map(building["recipes"], fn recipe ->
-            %{
-              produce:
-                recipe
-                |> Map.get("produce", [])
-                |> Enum.map(fn p ->
-                  Map.new(p, fn
-                    {"material_id", value} -> {:material_id, Onicn.guess_name(value)}
-                    {key, value} -> {String.to_atom(key), value}
+          building["recipes"]
+          |> Enum.flat_map(fn recipe ->
+            expanded_require =
+              recipe
+              |> Map.get("require", [])
+              |> Enum.map(fn item ->
+                material_id = item["material_id"]
+                amount = item["amount"]
+                material_ids = String.split(material_id, ";", trim: true)
+
+                if amount do
+                  amounts = amount |> to_string |> String.split(";", trim: true)
+
+                  Enum.zip(material_ids, amounts)
+                  |> Enum.map(fn {mat_id, amt} ->
+                    parsed_amount =
+                      if String.contains?(amt, ".") do
+                        String.to_float(amt)
+                      else
+                        String.to_integer(amt)
+                      end
+
+                    item
+                    |> Map.put("material_id", String.trim(mat_id))
+                    |> Map.put("amount", parsed_amount)
                   end)
-                end)
-                |> Enum.reject(fn p -> is_nil(p[:material_id]) end),
-              require:
-                recipe
-                |> Map.get("require", [])
-                |> Enum.map(fn p ->
-                  Map.new(p, fn
-                    {"material_id", value} -> {:material_id, Onicn.guess_name(value)}
-                    {key, value} -> {String.to_atom(key), value}
+                else
+                  Enum.map(material_ids, fn mat_id ->
+                    Map.put(item, "material_id", String.trim(mat_id))
                   end)
-                end)
-                |> Enum.reject(fn p -> is_nil(p[:material_id]) end)
-            }
+                end
+              end)
+              |> then(fn
+                [] ->
+                  [[]]
+
+                [head | tail] ->
+                  Enum.reduce(tail, Enum.map(head, &[&1]), fn current, acc ->
+                    for combo <- acc, item <- current do
+                      combo ++ [item]
+                    end
+                  end)
+              end)
+
+            for require_combo <- expanded_require do
+              %{
+                require:
+                  require_combo
+                  |> Enum.map(fn p ->
+                    Map.new(p, fn
+                      {"material_id", value} -> {:material_id, Onicn.guess_name(value)}
+                      {key, value} -> {String.to_atom(key), value}
+                    end)
+                  end)
+                  |> Enum.reject(fn p -> is_nil(p[:material_id]) end),
+                produce:
+                  recipe
+                  |> Map.get("produce", [])
+                  |> Enum.map(fn p ->
+                    Map.new(p, fn
+                      {"material_id", value} -> {:material_id, Onicn.guess_name(value)}
+                      {key, value} -> {String.to_atom(key), value}
+                    end)
+                  end)
+                  |> Enum.reject(fn p -> is_nil(p[:material_id]) end)
+              }
+            end
           end)
       }
     end)

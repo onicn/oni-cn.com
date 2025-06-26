@@ -41,7 +41,7 @@ defmodule Onicn.Categories.Plant do
             min_temp: {"温度范围", "#{a[:min_temp]} #{icon} #{a[:max_temp]} °C"},
             pressure_warning_low:
               {"气压范围", "#{a[:pressure_warning_low]} #{icon} #{a[:pressure_warning_high]} 千克"},
-            produce_crop_cn: {"产出", a[:produce_crop_cn]},
+            produce_crop_cn: {"产出", Translation.get(a[:produce_crop])},
             produce_crop_num: {"产量", a[:produce_crop_num]},
             seed_cn_name: {"种子", a[:seed_cn_name]},
             can_drown: {"会溺死", (a[:can_drown] && "是") || "否"},

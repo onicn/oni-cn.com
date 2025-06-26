@@ -1,8 +1,12 @@
 defmodule Onicn.Translation do
+  @translation_file :onicn
+                    |> :code.priv_dir()
+                    |> Path.join("data/translation.yaml")
+
+  @external_resource @translation_file
+
   translations =
-    :onicn
-    |> :code.priv_dir()
-    |> Path.join("data/translation.yaml")
+    @translation_file
     |> YamlElixir.read_from_file!()
     |> Macro.escape()
 

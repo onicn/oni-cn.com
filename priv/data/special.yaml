@@ -71,6 +71,8 @@ elements:
     materialCategory: Special
     buildMenuSort: 1
     isDisabled: false
+    tags:
+      - HideFromSpawnTool
     state: Vacuum
     localizationID: STRINGS.ELEMENTS.COMPOSITION.NAME
-    dlcId: EXPANSION1_ID
+    dlcId: ""

@@ -49,6 +49,22 @@
   effects:
   - good_eats
   - seafood_radiation_resistance
+- name: butterfly_food
+  image_name: fried_mimillet
+  calories: 1500
+  quality: 1
+  preserve_temperature: -18
+  rot_temperature: 4
+  spoil_time: 8
+  stale_time: 4
+- name: butterfly_plant_seed
+  image_name: seed_pollinator_plant
+  calories: 0
+  quality: 2
+  preserve_temperature: -18
+  rot_temperature: 4
+  spoil_time: 8
+  stale_time: 4
 - name: carrot
   image_name: purplerootvegetable
   calories: 4000
@@ -154,6 +170,22 @@
   stale_time: 2
   effects:
   - seafood_radiation_resistance
+- name: dinosaur_meat
+  image_name: dinomeat_raw
+  calories: 0
+  quality: -1
+  preserve_temperature: -18
+  rot_temperature: 4
+  spoil_time: 4
+  stale_time: 2
+- name: fern_food
+  image_name: megafrond_grain
+  calories: 0
+  quality: 2
+  preserve_temperature: -18
+  rot_temperature: 4
+  spoil_time: 16
+  stale_time: 8
 - name: field_ration
   image_name: fieldration
   calories: 800
@@ -220,6 +252,22 @@
   rot_temperature: 4
   spoil_time: 4
   stale_time: 2
+- name: garden_food_plant_food
+  image_name: spikefruit
+  calories: 800
+  quality: -1
+  preserve_temperature: -18
+  rot_temperature: 4
+  spoil_time: 16
+  stale_time: 8
+- name: garden_forage_plant
+  image_name: fatplantfood
+  calories: 800
+  quality: -1
+  preserve_temperature: -18
+  rot_temperature: 4
+  spoil_time: 8
+  stale_time: 4
 - name: grilled_prickle_fruit
   image_name: gristleberry
   calories: 2000
@@ -320,6 +368,14 @@
   rot_temperature: 4
   spoil_time: 4
   stale_time: 2
+- name: prehistoric_pacu_fillet
+  image_name: jawbofillet
+  calories: 1000
+  quality: 3
+  preserve_temperature: -18
+  rot_temperature: 4
+  spoil_time: 4
+  stale_time: 2
 - name: prickle_fruit
   image_name: bristleberry
   calories: 1600
@@ -364,6 +420,32 @@
   stale_time: 2
   effects:
   - seafood_radiation_resistance
+- name: smoked_dinosaur_meat
+  image_name: dinobrisket
+  calories: 5000
+  quality: 3
+  preserve_temperature: -18
+  rot_temperature: 4
+  spoil_time: 8
+  stale_time: 4
+- name: smoked_fish
+  image_name: smokedfish
+  calories: 2800
+  quality: 3
+  preserve_temperature: -18
+  rot_temperature: 4
+  spoil_time: 32
+  stale_time: 16
+  effects:
+  - seafood_radiation_resistance
+- name: smoked_vegetables
+  image_name: smokedvegetables
+  calories: 2862.5
+  quality: 2
+  preserve_temperature: -18
+  rot_temperature: 4
+  spoil_time: 16
+  stale_time: 8
 - name: spice_bread
   image_name: pepperbread
   calories: 4000
@@ -432,6 +514,14 @@
   rot_temperature: 4
   spoil_time: 4
   stale_time: 2
+- name: vine_fruit
+  image_name: ova_melon
+  calories: 325
+  quality: 0
+  preserve_temperature: -18
+  rot_temperature: 4
+  spoil_time: 8
+  stale_time: 4
 - name: worm_basic_food
   image_name: wormwood_roast_nuts
   calories: 1200
