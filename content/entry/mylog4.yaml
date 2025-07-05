@@ -1,0 +1,28 @@
+id: MYLOG4
+name: 周期3
+title: STRINGS.CODEX.MYLOG.BODY.LOG2.TITLE
+disabled: False
+search_only: False
+category: MYLOG
+sort_string: A2
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 周期3
+    style: Title
+  - widget_type: CodexText
+    text: >+
+      我马上就要合成足够多的生物软泥以打印一名新的复制人，我现在需要做的一切就是选择一个蓝图。
+
+
+      在殖民地中添加一双干活的手是很有帮助的，但拥有另一名复制人也同样意味着另一张吃东西的嘴。
+
+
+      当然，我也可以一直打印补给来帮助我现存的复制人。我相信他们会很感激的。
+
+    style: Body
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical
+  lock_id: log2

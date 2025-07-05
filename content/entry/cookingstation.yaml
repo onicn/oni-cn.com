@@ -1,0 +1,597 @@
+id: COOKINGSTATION
+parent_id: BUILDCATEGORYFOOD
+name: 电动烤炉
+disabled: False
+search_only: False
+category: BUILDCATEGORYFOOD
+sort_string: 电动烤炉
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="COOKINGSTATION">电动烤炉</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 食物制备
+    style: Body
+    image: research_type_alpha_icon
+    link_id: finedining
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: cookstation_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      烹饪种类繁多的改良<link="FOOD">食物</link>。
+
+
+      只有在队列中安排配方复制人才会进行制作。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="POWER">电力</link>：60瓦'
+    tooltip: 必须与至少有<style="consumed">60瓦</style>可用<style="KKeyword">电力</style>的电路相连
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    复制人的操作'
+    tooltip: 必须有复制人来才能使这个建筑运行
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    需要技能的复制人的操作'
+    tooltip: 只有具有<link="COOKING1">烧烤</link>技能或<link="BOOSTERCOOK1">烧烤增幅块</link>的复制人才能使用这个建筑
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：3格宽x2格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：30秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="METAL">金属矿石</link>400千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    精制：'
+    tooltip: 将原材料加工成精制材料
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="FRIEDMUSHBAR">煎泥膏</link>'
+    tooltip: >
+      原料：
+
+      • 1单位<link="MUSHBAR">软泥膏</link>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="COOKEDEGG">煎蛋卷</link>'
+    tooltip: >
+      原料：
+
+      • 1单位<link="RAWEGG">生蛋</link>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="BUTTERFLYFOOD">烘烤拟种</link>'
+    tooltip: >
+      原料：
+
+      • 1单位<link="BUTTERFLYPLANT">拟种</link>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="COOKEDPIKEAPPLE">刺壳果烤串</link>'
+    tooltip: >
+      原料：
+
+      • 1单位<link="HARDSKINBERRY">刺壳果</link>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="FRIEDMUSHROOM">煎蘑菇</link>'
+    tooltip: >
+      原料：
+
+      • 1单位<link="MUSHROOM">蘑菇</link>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="GRILLEDPRICKLEFRUIT">炙烤刺果</link>'
+    tooltip: >
+      原料：
+
+      • 1单位<link="PRICKLEFRUIT">毛刺浆果</link>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="PANCAKES">蛋奶酥煎饼</link>'
+    tooltip: >
+      原料：
+
+      • 1单位<link="RAWEGG">生蛋</link>
+
+      • 2单位<link="COLDWHEAT">冰霜麦粒</link>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="PANCAKES">蛋奶酥煎饼</link>'
+    tooltip: >
+      原料：
+
+      • 1单位<link="RAWEGG">生蛋</link>
+
+      • 2单位<link="FERNFOOD">巨蕨谷粒</link>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="SWAMPDELIGHTS">沼泽欢愉</link>'
+    tooltip: >
+      原料：
+
+      • 1单位<link="SWAMPFRUIT">沼浆果冻</link>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="WORMBASICFOOD">烤虫果仁</link>'
+    tooltip: >
+      原料：
+
+      • 1单位<link="WORMBASICFRUIT">贫瘠虫果</link>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="WORMSUPERFOOD">虫果果酱</link>'
+    tooltip: >
+      原料：
+
+      • 8单位<link="WORMSUPERFRUIT">虫果</link>
+
+      • 4单位<link="SUCROSE">蔗糖</link>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="PICKLEDMEAL">腌制米虱</link>'
+    tooltip: >
+      原料：
+
+      • 3单位<link="BASICPLANTFOOD">米虱</link>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="COOKEDMEAT">烤肉串</link>'
+    tooltip: >
+      原料：
+
+      • 2单位<link="MEAT">肉</link>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="COOKEDFISH">烤海鲜</link>'
+    tooltip: >
+      原料：
+
+      • 1单位<link="FISHMEAT">帕库鱼片</link>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="COOKEDFISH">烤海鲜</link>'
+    tooltip: >
+      原料：
+
+      • 1单位<link="SHELLFISHMEAT">生蟹肉</link>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="COLDWHEATBREAD">冰霜面包</link>'
+    tooltip: >
+      原料：
+
+      • 3单位<link="COLDWHEAT">冰霜麦粒</link>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="COLDWHEATBREAD">冰霜面包</link>'
+    tooltip: >
+      原料：
+
+      • 3单位<link="FERNFOOD">巨蕨谷粒</link>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    杀死病菌'
+    tooltip: 烹饪过程能杀死所有存在于食物原料上的<style="KKeyword">病菌</style>，从而防止吃东西时产生<style="KKeyword">疾病</style>风险
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="HEAT">热量</link>：+4.5千复制热/秒'
+    tooltip: >-
+      每秒产生<style="produced">4.5千复制热</style>
+
+
+      总<style="KKeyword">温度</style>变化受到加热物质的材料属性影响：
+          • 质量
+          • 比热容
+          • 表面积
+          • 隔热厚度
+          • 热导率
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    过热<link="HEAT">温度</link>：75ºC'
+    tooltip: 达到<b>75ºC</b>时开始过热
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LOGIC">信号输入端</link>'
+    tooltip: 当接收到信号时，输入端会使这个建筑一种状态发生变化
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    启用/禁用'
+    tooltip: >-
+      输入端行为：
+
+      • <b><style="logic_on">绿色信号</style></b>：启用建筑
+
+      • <b><style="logic_off">红色信号</style></b>：禁用建筑
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>类别</b>
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    <link="REQUIREMENTCLASSCOOKTOP">烹饪站</link>'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>适当的烹饪可以消除通过食物传播的疾病，并带来减压的美味食物。</i>
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 所有配方
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 煎泥膏
+    require:
+    - image: mushbar_0__ui
+      text1: 软泥膏
+      text2: 800千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: mushbar
+    produce:
+    - image: mushbarfried_0__ui
+      text1: 煎泥膏
+      text2: 1,050千卡
+      tooltip: 品质：糟糕 [0]
+      link_id: friedmushbar
+    fabricator:
+      image: cookstation_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 电动烤炉
+      text2: 50秒
+      link_id: cookingstation
+  - widget_type: CodexRecipePanel
+    text: 煎蛋卷
+    require:
+    - image: rawegg_0__ui
+      text1: 生蛋
+      text2: 1,600千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: rawegg
+    produce:
+    - image: cookedegg_0__ui
+      text1: 煎蛋卷
+      text2: 2,800千卡
+      tooltip: 品质：标准 [+2]
+      link_id: cookedegg
+    fabricator:
+      image: cookstation_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 电动烤炉
+      text2: 50秒
+      link_id: cookingstation
+  - widget_type: CodexRecipePanel
+    text: 烘烤拟种
+    require:
+    - image: seed_pollinator_plant_0__ui
+      text1: 拟种
+      text2: 1单位
+      link_id: butterflyplant
+    produce:
+    - image: fried_mimillet_0__ui
+      text1: 烘烤拟种
+      text2: 1,500千卡
+      tooltip: 品质：低劣 [+1]
+      link_id: butterflyfood
+    fabricator:
+      image: cookstation_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 电动烤炉
+      text2: 50秒
+      link_id: cookingstation
+  - widget_type: CodexRecipePanel
+    text: 刺壳果烤串
+    require:
+    - image: iceberry_0__ui
+      text1: 刺壳果
+      text2: 800千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: hardskinberry
+    produce:
+    - image: iceberry_cooked_0__ui
+      text1: 刺壳果烤串
+      text2: 1,200千卡
+      tooltip: 品质：低劣 [+1]
+      link_id: cookedpikeapple
+    fabricator:
+      image: cookstation_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 电动烤炉
+      text2: 50秒
+      link_id: cookingstation
+  - widget_type: CodexRecipePanel
+    text: 煎蘑菇
+    require:
+    - image: funguscap_0__ui
+      text1: 蘑菇
+      text2: 2,400千卡
+      tooltip: 品质：糟糕 [0]
+      link_id: mushroom
+    produce:
+    - image: funguscapfried_0__ui
+      text1: 煎蘑菇
+      text2: 2,800千卡
+      tooltip: 品质：低劣 [+1]
+      link_id: friedmushroom
+    fabricator:
+      image: cookstation_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 电动烤炉
+      text2: 50秒
+      link_id: cookingstation
+  - widget_type: CodexRecipePanel
+    text: 炙烤刺果
+    require:
+    - image: bristleberry_0__ui
+      text1: 毛刺浆果
+      text2: 1,600千卡
+      tooltip: 品质：糟糕 [0]
+      link_id: pricklefruit
+    produce:
+    - image: gristleberry_0__ui
+      text1: 炙烤刺果
+      text2: 2,000千卡
+      tooltip: 品质：低劣 [+1]
+      link_id: grilledpricklefruit
+    fabricator:
+      image: cookstation_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 电动烤炉
+      text2: 50秒
+      link_id: cookingstation
+  - widget_type: CodexRecipePanel
+    text: 蛋奶酥煎饼
+    require:
+    - image: rawegg_0__ui
+      text1: 生蛋
+      text2: 1,600千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: rawegg
+    - image: seed_coldwheat_0__ui
+      text1: 冰霜麦粒
+      text2: 2单位
+      link_id: coldwheat
+    produce:
+    - image: stackedpancakes_0__ui
+      text1: 蛋奶酥煎饼
+      text2: 3,600千卡
+      tooltip: 品质：良好 [+3]
+      link_id: pancakes
+    fabricator:
+      image: cookstation_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 电动烤炉
+      text2: 50秒
+      link_id: cookingstation
+  - widget_type: CodexRecipePanel
+    text: 蛋奶酥煎饼
+    require:
+    - image: rawegg_0__ui
+      text1: 生蛋
+      text2: 1,600千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: rawegg
+    - image: megafrond_grain_0__ui
+      text1: 巨蕨谷粒
+      text2: 2单位
+      link_id: fernfood
+    produce:
+    - image: stackedpancakes_0__ui
+      text1: 蛋奶酥煎饼
+      text2: 3,600千卡
+      tooltip: 品质：良好 [+3]
+      link_id: pancakes
+    fabricator:
+      image: cookstation_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 电动烤炉
+      text2: 50秒
+      link_id: cookingstation
+  - widget_type: CodexRecipePanel
+    text: 沼泽欢愉
+    require:
+    - image: swampcrop_fruit_0__ui
+      text1: 沼浆果冻
+      text2: 1,840千卡
+      tooltip: 品质：糟糕 [0]
+      link_id: swampfruit
+    produce:
+    - image: swamp_delights_0__ui
+      text1: 沼泽欢愉
+      text2: 2,240千卡
+      tooltip: 品质：低劣 [+1]
+      link_id: swampdelights
+    fabricator:
+      image: cookstation_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 电动烤炉
+      text2: 50秒
+      link_id: cookingstation
+  - widget_type: CodexRecipePanel
+    text: 烤虫果仁
+    require:
+    - image: wormwood_basic_fruit_0__ui
+      text1: 贫瘠虫果
+      text2: 800千卡
+      tooltip: 品质：糟糕 [0]
+      link_id: wormbasicfruit
+    produce:
+    - image: wormwood_roast_nuts_0__ui
+      text1: 烤虫果仁
+      text2: 1,200千卡
+      tooltip: 品质：低劣 [+1]
+      link_id: wormbasicfood
+    fabricator:
+      image: cookstation_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 电动烤炉
+      text2: 50秒
+      link_id: cookingstation
+  - widget_type: CodexRecipePanel
+    text: 虫果果酱
+    require:
+    - image: wormwood_super_fruits_0__ui
+      text1: 虫果
+      text2: 2,000千卡
+      tooltip: 品质：低劣 [+1]
+      link_id: wormsuperfruit
+    - image: sucrose_0__ui
+      text1: 蔗糖
+      text2: 4000克
+      link_id: sucrose
+    produce:
+    - image: wormwood_preserved_berries_0__ui
+      text1: 虫果果酱
+      text2: 2,400千卡
+      tooltip: 品质：良好 [+3]
+      link_id: wormsuperfood
+    fabricator:
+      image: cookstation_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 电动烤炉
+      text2: 50秒
+      link_id: cookingstation
+  - widget_type: CodexRecipePanel
+    text: 腌制米虱
+    require:
+    - image: meallicegrain_0__ui
+      text1: 米虱
+      text2: 1,800千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: basicplantfood
+    produce:
+    - image: pickledmeal_0__ui
+      text1: 腌制米虱
+      text2: 1,800千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: pickledmeal
+    fabricator:
+      image: cookstation_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 电动烤炉
+      text2: 30秒
+      link_id: cookingstation
+  - widget_type: CodexRecipePanel
+    text: 烤肉串
+    require:
+    - image: creaturemeat_0__ui
+      text1: 肉
+      text2: 3,200千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: meat
+    produce:
+    - image: barbeque_0__ui
+      text1: 烤肉串
+      text2: 4,000千卡
+      tooltip: 品质：良好 [+3]
+      link_id: cookedmeat
+    fabricator:
+      image: cookstation_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 电动烤炉
+      text2: 50秒
+      link_id: cookingstation
+  - widget_type: CodexRecipePanel
+    text: 烤海鲜
+    require:
+    - image: pacufillet_0__ui
+      text1: 帕库鱼片
+      text2: 1,000千卡
+      tooltip: 品质：标准 [+2]
+      link_id: fishmeat
+    produce:
+    - image: grilled_pacu_0__ui
+      text1: 烤海鲜
+      text2: 1,600千卡
+      tooltip: 品质：良好 [+3]
+      link_id: cookedfish
+    fabricator:
+      image: cookstation_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 电动烤炉
+      text2: 50秒
+      link_id: cookingstation
+  - widget_type: CodexRecipePanel
+    text: 烤海鲜
+    require:
+    - image: shellfish_0__ui
+      text1: 生蟹肉
+      text2: 1,000千卡
+      tooltip: 品质：标准 [+2]
+      link_id: shellfishmeat
+    produce:
+    - image: grilled_pacu_0__ui
+      text1: 烤海鲜
+      text2: 1,600千卡
+      tooltip: 品质：良好 [+3]
+      link_id: cookedfish
+    fabricator:
+      image: cookstation_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 电动烤炉
+      text2: 50秒
+      link_id: cookingstation
+  - widget_type: CodexRecipePanel
+    text: 冰霜面包
+    require:
+    - image: seed_coldwheat_0__ui
+      text1: 冰霜麦粒
+      text2: 3单位
+      link_id: coldwheat
+    produce:
+    - image: frostbread_0__ui
+      text1: 冰霜面包
+      text2: 1,200千卡
+      tooltip: 品质：标准 [+2]
+      link_id: coldwheatbread
+    fabricator:
+      image: cookstation_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 电动烤炉
+      text2: 50秒
+      link_id: cookingstation
+  - widget_type: CodexRecipePanel
+    text: 冰霜面包
+    require:
+    - image: megafrond_grain_0__ui
+      text1: 巨蕨谷粒
+      text2: 3单位
+      link_id: fernfood
+    produce:
+    - image: frostbread_0__ui
+      text1: 冰霜面包
+      text2: 1,200千卡
+      tooltip: 品质：标准 [+2]
+      link_id: coldwheatbread
+    fabricator:
+      image: cookstation_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 电动烤炉
+      text2: 50秒
+      link_id: cookingstation
+  layout: Vertical

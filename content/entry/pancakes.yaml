@@ -1,0 +1,138 @@
+id: PANCAKES
+parent_id: FOOD
+name: 蛋奶酥煎饼
+disabled: False
+search_only: False
+category: FOOD
+sort_string: 蛋奶酥煎饼
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="PANCAKES">蛋奶酥煎饼</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: stackedpancakes_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      由<link="RAWEGG">生蛋</link>和<link="COLDWHEATSEED">冰霜麦粒</link>制成的甜品。
+
+
+      有点太厚了！
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 品质：良好 [+3]
+    style: Body
+  - widget_type: CodexText
+    text: 卡路里：3,600千卡
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      冷藏温度：4ºC
+
+      深度冷冻温度：-18ºC
+
+      腐烂时间：8.0周期
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: stackedpancakes_0__ui
+      text1: 蛋奶酥煎饼
+      text2: 700千卡/周期
+      tooltip: 品质：良好 [+3]
+      link_id: pancakes
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 145.8克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__ui
+      text1: 好吃哈奇
+      link_id: HATCH
+  - widget_type: CodexConversionPanel
+    require:
+    - image: stackedpancakes_0__ui
+      text1: 蛋奶酥煎饼
+      text2: 700千卡/周期
+      tooltip: 品质：良好 [+3]
+      link_id: pancakes
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 194.4克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__veg_ui
+      text1: 草质哈奇
+      link_id: HATCHVEGGIE
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 电动烤炉
+    require:
+    - image: rawegg_0__ui
+      text1: 生蛋
+      text2: 1,600千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: rawegg
+    - image: seed_coldwheat_0__ui
+      text1: 冰霜麦粒
+      text2: 2单位
+      link_id: coldwheat
+    produce:
+    - image: stackedpancakes_0__ui
+      text1: 蛋奶酥煎饼
+      text2: 3,600千卡
+      tooltip: 品质：良好 [+3]
+      link_id: pancakes
+    fabricator:
+      image: cookstation_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 电动烤炉
+      text2: 50秒
+      link_id: cookingstation
+  - widget_type: CodexRecipePanel
+    text: 电动烤炉
+    require:
+    - image: rawegg_0__ui
+      text1: 生蛋
+      text2: 1,600千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: rawegg
+    - image: megafrond_grain_0__ui
+      text1: 巨蕨谷粒
+      text2: 2单位
+      link_id: fernfood
+    produce:
+    - image: stackedpancakes_0__ui
+      text1: 蛋奶酥煎饼
+      text2: 3,600千卡
+      tooltip: 品质：良好 [+3]
+      link_id: pancakes
+    fabricator:
+      image: cookstation_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 电动烤炉
+      text2: 50秒
+      link_id: cookingstation
+  layout: Vertical

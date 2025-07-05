@@ -1,0 +1,177 @@
+id: CHAMELEONSPECIES
+parent_id: CREATURES
+name: 逸蜥
+disabled: False
+search_only: False
+category: CREATURES
+sort_string: <link="CHAMELEONSPECIES">逸蜥</link>
+required_dlc_ids:
+- DLC4_ID
+sub_entries:
+- id: Chameleon
+  parent_id: ChameleonSpecies
+  name: <link="CHAMELEON">逸蜥</link>
+  disabled: False
+  sort_string: 逸蜥
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 逸蜥
+    style: Title
+  - widget_type: CodexText
+    text: 可驯化的小动物
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      逸蜥是一种温顺的爬行类生物，其生存哲学以能量消耗最小化为核心。
+
+
+      这种物种曾被誉为现存速度最快的陆生小动物。但如今，它们对体力消耗的极度厌恶已超越了逃避天敌的本能。研究人员至今无法确定逸蜥储存能量，如果真有的话，究竟意欲何为。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: chameleo_0__ui
+  - widget_type: CodexImage
+    image: baby_chameleo_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexText
+    text: >-
+      逸蜥是一种没有敌意的小动物，以<link="DEWDRIP">露珠</link>为食并排出<link="BLEACHSTONE">漂白石</link>和<link="CHLORINEGAS">氯气</link>。
+
+
+      逸蜥是<link="RAPTOR">霸王鹦</link>的猎物。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 理想温度
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 舒适范围：<b>-40ºC</b>至<b>20ºC</b>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 存活范围：<b>-100ºC</b>至<b>100ºC</b>'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 寿命
+    style: Subtitle
+  - widget_type: CodexText
+    text: 这种小动物特征<link="CREATURES__GUIDE__FERTILITY">寿命</link>为<b>50周期</b>。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 所需空间
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 当房间空间对每只小动物平均少于<b>4格</b>时会感到<link="CREATURES__GUIDE__MOOD">拥挤</link>。'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 当房间小于<b>4格</b>时会感到<link="CREATURES__GUIDE__MOOD">封闭</link>。'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 掉落物
+    style: Subtitle
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 肉
+    image: creaturemeat_0__ui
+    link_id: meat
+  - widget_type: CodexText
+    text: 	800千卡
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 食物
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: brackorb_0__ui
+      text1: 露珠
+      text2: 1单位/周期
+      link_id: dewdrip
+    produce:
+    - image: bleach_stone_0__ui
+      text1: 漂白石
+      text2: 10千克/周期
+      link_id: bleachstone
+    fabricator:
+      image: chameleo_0__ui
+      text1: 逸蜥
+      link_id: CHAMELEON
+  - widget_type: CodexConversionPanel
+    require:
+    - image: brackorb_0__ui
+      text1: 露珠
+      text2: 1单位/周期
+      link_id: dewdrip
+    produce:
+    - image: element_gas
+      color: 04A778FF
+      text1: 氯气
+      text2: 10千克/周期
+      link_id: chlorinegas
+    fabricator:
+      image: chameleo_0__ui
+      text1: 逸蜥
+      link_id: CHAMELEON
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require: []
+    produce:
+    - image: creaturemeat_0__ui
+      text1: 肉
+      text2: 800千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: meat
+    fabricator:
+      image: chameleo_0__ui
+      text1: 逸蜥
+      link_id: CHAMELEON
+  - widget_type: CodexConversionPanel
+    require:
+    - image: chameleo_0__ui
+      text1: 逸蜥
+      text2: 1单位/周期
+      link_id: chameleon
+    produce:
+    - image: frozen_brine_0__ui
+      text1: 浓盐冰
+      text2: 128千克/周期
+      link_id: brine
+    fabricator:
+      image: raptor_0__ui
+      text1: 霸王鹦
+      link_id: RAPTOR
+  layout: Vertical

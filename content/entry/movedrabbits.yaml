@@ -1,0 +1,65 @@
+id: MOVEDRABBITS
+name: 被清理的兔子
+title: STRINGS.CODEX.B3_MOVEDRABBITS.TITLE
+disabled: False
+search_only: False
+category: JOURNALS
+sort_string: 被清理的兔子
+required_dlc_ids:
+- EXPANSION1_ID
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 被清理的兔子
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：一
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+  lock_id: journal_movedrabbits
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <smallcaps>[声纹识别系统初始化完成]
+
+      [识别编号：A001、B111]</smallcaps>
+
+
+      [录音开始]
+
+
+      布鲁萨德：主管，你知道他们把我的兔子弄到哪儿去了吗？我问过生物工程部的人，他们让我来问你。
+
+
+      主管：嗯？哦，是的，它们已经被清理了。
+
+
+      布鲁萨德：“清理”？
+
+
+      主管：就是拿去丢了。不好意思，你还需要它们吗？报告显示你跟它们的实验已经完成了。
+
+
+      布鲁萨德：不是，我-我……我已经收集了所有需要的数据，我只是——
+
+
+      主管：——博士，你不会是拿实验对象当宠物养吧？
+
+
+      布鲁萨德：别开玩笑了，我——
+
+
+      主管：——那就好。它们看起来真的很可怕，全都红着眼睛瞪着我。
+
+
+      布鲁萨德：以后拜托不要乱动我的东西，这会……扰乱我的工作。
+
+
+      主管：下次我会事先通知你的，博士。
+
+
+      [录音结束]
+    style: Body
+  layout: Vertical
+  lock_id: journal_movedrabbits

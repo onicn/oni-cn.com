@@ -1,0 +1,118 @@
+id: ROOMSPARK
+parent_id: ROOMS
+name: 公园
+disabled: False
+search_only: False
+category: ROOMS
+sort_string: 公园
+sub_entries:
+- id: NatureReserve
+  parent_id: ROOMSPark
+  name: 自然保护区
+  disabled: False
+  sort_string: 自然保护区
+- id: Park
+  parent_id: ROOMSPark
+  name: 公园
+  disabled: False
+  sort_string: 公园
+content_container:
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 条目（2/2）
+    style: Subtitle
+  - widget_type: CodexText
+    text: <link="NATURERESERVE">自然保护区</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="PARK">公园</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: ui_room_park
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 自然保护区
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      大量的绿色植物更能产生更深远影响。
+
+
+      自然保护区为复制人提供的士气加成比公园更多。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 详情
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <b>效果：</b>
+          • <style="KKeyword">士气</style>：+6
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>需求：</b>
+    style: Body
+  - widget_type: CodexText
+    text: >2-
+          • <link="PARKSIGN">Park Sign</link>
+          • Four wild plants
+          • No <link="REQUIREMENTCLASSINDUSTRIALMACHINERY">industrial machinery</link>
+          • Minimum size: 32 tiles
+          • Maximum size: 120 tiles
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 公园
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      一点点的绿色植物也能产生深远影响。
+
+
+      一天当中经过自然区域会增加复制人的士气。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 详情
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <b>效果：</b>
+          • <style="KKeyword">士气</style>：+3
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>需求：</b>
+    style: Body
+  - widget_type: CodexText
+    text: >2-
+          • <link="PARKSIGN">Park Sign</link>
+          • Two wild plants
+          • No <link="REQUIREMENTCLASSINDUSTRIALMACHINERY">industrial machinery</link>
+          • Minimum size: 12 tiles
+          • Maximum size: 64 tiles
+    style: Body
+  layout: Vertical

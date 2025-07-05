@@ -1,0 +1,28 @@
+id: MYLOG10
+name: 没蓝图了
+title: STRINGS.CODEX.MYLOG.BODY.FULLDUPECOLONY.TITLE
+disabled: False
+search_only: False
+category: MYLOG
+sort_string: 没蓝图了
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 没蓝图了
+    style: Title
+  - widget_type: CodexText
+    text: >+
+      我完全用光了打印新复制人所需的独特蓝图。
+
+
+      如果我想进一步发展殖民地，我除了打印一样的个体之外别无选择。希望和另一个自己一起生活不会使任何人陷入到生存危机中。
+
+
+      也许我可以给新复制人起一个绰号以减少混乱。
+
+    style: Body
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical
+  lock_id: fulldupecolony

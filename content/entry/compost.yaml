@@ -1,0 +1,90 @@
+id: COMPOST
+parent_id: BUILDCATEGORYREFINING
+name: 堆肥堆
+disabled: False
+search_only: False
+category: BUILDCATEGORYREFINING
+sort_string: 堆肥堆
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="COMPOST">堆肥堆</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 基础耕种
+    style: Body
+    image: research_type_alpha_icon
+    link_id: farmingtech
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: compost_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 将<link="TOXICSAND">污染土</link>、腐烂的<link="FOOD">食物</link>和其他可堆肥物降解成<link="DIRT">泥土</link>。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="COMPOSTABLE">可堆肥物</link>：100克/秒'
+    tooltip: 使用时消耗<style="consumed">100克/秒</style><style="KKeyword"><link="COMPOSTABLE">可堆肥物</link></style>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    复制人的操作'
+    tooltip: 必须有复制人来才能使这个建筑运行
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：2格宽x2格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：30秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="BUILDABLERAW">矿物原料</link>800千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DIRT">泥土</link>：100克/秒'
+    tooltip: >-
+      使用时产生<style="produced">100克/秒</style><style="KKeyword"><link="DIRT">泥土</link></style>
+
+
+      输出温度至少为<b>75ºC</b>，如果输入材料的温度更高输出也会随之更高。
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="HEAT">热量</link>：+1.13千复制热/秒'
+    tooltip: >-
+      每秒产生<style="produced">1.13千复制热</style>
+
+
+      总<style="KKeyword">温度</style>变化受到加热物质的材料属性影响：
+          • 质量
+          • 比热容
+          • 表面积
+          • 隔热厚度
+          • 热导率
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    存储<link="HEAT">温度</link>：75ºC'
+    tooltip: 储存的物体<style="KKeyword">温度</style>会逐渐达到<b>75ºC</b>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：-20（范围：4格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>4</b>格内降低<b><b>-20</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>堆肥堆可以安全地处理生物废物，产生新鲜泥土。</i>
+    style: Body
+  layout: Vertical

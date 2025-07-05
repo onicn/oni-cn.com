@@ -1,0 +1,39 @@
+id: FIRSTCOLONY
+name: 主管的笔记
+title: STRINGS.CODEX.C7_FIRSTCOLONY.TITLE
+disabled: False
+search_only: False
+category: INVESTIGATIONS
+sort_string: 主管的笔记
+required_dlc_ids:
+- EXPANSION1_ID
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 主管的笔记
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：三
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+  lock_id: notes_firstcolony
+- contents:
+  - widget_type: CodexText
+    text: >-
+      首次在外星建立殖民地的实验简直是一场不折不扣的灾难。在没有外部帮助的情况下，我们当前的人工智能完全无法做出应对不可预见的状况的自发决策。此外，殖民地的实验体缺乏主观能动力，即使反复把自己弄脏也不知道建造厕所设施。
+
+
+      虽然最初在实验室环境中的实验很成功，但我们上一次在非类地土壤上的实验揭示了我们的系统存在一些巨大的缺陷。我们如果仍想继续这个计划，要么对人工智能进行大规模的调整以指导实验体，要么改进我们复制人的大脑，使他们拥有更高的认知能力。
+
+
+      如果我们的复制人做成更主动的，那么我能预见到未来会引发灾难性的问题，所以我更倾向于提高我们人工智能的水平。
+
+
+      同时，我们不得不派出清理人员来摧毁我们在谷神星地表之下做实验的证据。我们不能冒风险让其他人发现我们失败殖民地的遗迹，即使这种事情在至少几十年内都几乎不可能发生。
+
+
+      （有时我会感到困惑，世界的剩余部分离庄严科技有多远呢。）
+    style: Body
+  layout: Vertical
+  lock_id: notes_firstcolony

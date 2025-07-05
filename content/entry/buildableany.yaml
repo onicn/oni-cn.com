@@ -1,0 +1,240 @@
+id: BUILDABLEANY
+parent_id: BUILDINGMATERIALCLASSES
+name: 一般建造材料
+disabled: False
+search_only: False
+category: BUILDINGMATERIALCLASSES
+sort_string: 一般建造材料
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="BUILDABLEANY">一般建造材料</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 钻石
+    image: diamond_0__ui
+    link_id: diamond
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 泥炭
+    image: peat_0__ui
+    link_id: peat
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 铌
+    image: niobium_0__ui
+    link_id: niobium
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 镍
+    image: nickel_0__ui
+    link_id: nickel
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 凝冻咸乳
+    image: milk_0__ui
+    link_id: milkice
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 铜矿
+    image: cuprite_0__ui
+    link_id: cuprite
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 铜
+    image: copper_refined_0__ui
+    link_id: copper
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 隔热质
+    image: super_insulator_0__ui
+    link_id: superinsulator
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 页岩
+    image: shale_0__ui
+    link_id: shale
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 浓盐冰
+    image: frozen_brine_0__ui
+    link_id: brine
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 陶瓷
+    image: ceramic_0__ui
+    link_id: ceramic
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 钴矿
+    image: cobalt_ore_0__ui
+    link_id: cobaltite
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 黑钨矿
+    image: wolframite_0__ui
+    link_id: wolframite
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 塑料
+    image: polypropylene_0__ui
+    link_id: polypropylene
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 琥珀
+    image: amber_0__ui
+    link_id: amber
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 钨
+    image: tungsten_refined_0__ui
+    link_id: tungsten
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 钢
+    image: steel_0__ui
+    link_id: steel
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 铅
+    image: lead_0__ui
+    link_id: lead
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 固态汞
+    image: mercury_refined_0__ui
+    link_id: solidmercury
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 黑曜石
+    image: obsidian_0__ui
+    link_id: obsidian
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 火成岩
+    image: igneous_rock_0__ui
+    link_id: igneousrock
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 金
+    image: gold_refined_0__ui
+    link_id: gold
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 铱
+    image: iridium_0__ui
+    link_id: iridium
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 花岗岩
+    image: granite_0__ui
+    link_id: granite
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 钴
+    image: cobalt_refined_0__ui
+    link_id: cobalt
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 铀矿
+    image: radium_0__ui
+    link_id: uraniumore
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 固态丙烷
+    image: solid_propane_0__ui
+    link_id: solidpropane
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 铝矿
+    image: aluminum_ore_0__ui
+    link_id: aluminumore
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 沉积岩
+    image: sedimentary_rock_0__ui
+    link_id: sedimentaryrock
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 金汞齐
+    image: gold_amalgam_0__ui
+    link_id: goldamalgam
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 砂岩
+    image: sand_stone_0__ui
+    link_id: sandstone
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 玻璃
+    image: glass_0__ui
+    link_id: glass
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 粘土
+    image: clay_0__ui
+    link_id: clay
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 冰
+    image: ice_0__ui
+    link_id: ice
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 煤炭
+    image: carbon_0__ui
+    link_id: carbon
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 贫铀
+    image: depleted_uranium_0__ui
+    link_id: depleteduranium
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 塑料质
+    image: hardplastic_0__ui
+    link_id: hardpolypropylene
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 固态树脂
+    image: resin_solid_0__ui
+    link_id: naturalsolidresin
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 镁铁质岩
+    image: igneous_rock_0__ui
+    link_id: maficrock
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 铁
+    image: iron_refined_0__ui
+    link_id: iron
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 固态树液
+    image: resin_solid_0__ui
+    link_id: solidresin
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 镍矿
+    image: nickel_ore_0__ui
+    link_id: nickelore
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 导热质
+    image: temp_conductor_0__ui
+    link_id: tempconductorsolid
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 铁矿
+    image: hematite_0__ui
+    link_id: ironore
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 泥土
+    image: dirt_0__ui
+    link_id: dirt
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 污染冰
+    image: dirty_ice_0__ui
+    link_id: dirtyice
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 朱砂矿
+    image: cinnabar_0__ui
+    link_id: cinnabar
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 固态乙醇
+    image: ethanol_0__ui
+    link_id: solidethanol
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 黄铁矿
+    image: fools_gold_0__ui
+    link_id: foolsgold
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 铝
+    image: aluminum_0__ui
+    link_id: aluminum
+  layout: Grid
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建造用处
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 公园标识
+    image: parksign_0__ui
+    link_id: parksign
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 变温板
+    image: thermalblock_0__ui
+    link_id: thermalblock
+  layout: Grid

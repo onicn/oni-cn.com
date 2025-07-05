@@ -1,0 +1,111 @@
+id: ROOMSAGRICULTURAL
+parent_id: ROOMS
+name: 农业
+disabled: False
+search_only: False
+category: ROOMS
+sort_string: 农业
+sub_entries:
+- id: Farm
+  parent_id: ROOMSAgricultural
+  name: 温室
+  disabled: False
+  sort_string: 温室
+- id: CreaturePen
+  parent_id: ROOMSAgricultural
+  name: 畜舍
+  disabled: False
+  sort_string: 畜舍
+content_container:
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 条目（2/2）
+    style: Subtitle
+  - widget_type: CodexText
+    text: <link="FARM">温室</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="CREATUREPEN">畜舍</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: ui_room_agricultural
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 温室
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      一个封闭的农业空间，最适合有作物照料技能的复制人使用。
+
+
+      可以用农业站的肥料加快在温室中的作物的生长速度。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 详情
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>需求：</b>
+    style: Body
+  - widget_type: CodexText
+    text: >2-
+          • <link="FARMSTATION">Farm Station</link>
+          • Minimum size: 12 tiles
+          • Maximum size: 96 tiles
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 畜舍
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      小动物不介意在这里，只要不太拥挤即可。
+
+
+      围养的小动物可以在梳理站照料以加速驯化并提高产量。
+
+
+      启用梳理站、修剪站、小动物公寓、小动物直饮器和挤奶站的使用。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 详情
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>需求：</b>
+    style: Body
+  - widget_type: CodexText
+    text: >2-
+          • <link="REQUIREMENTCLASSRANCHSTATIONTYPE">Ranching building</link>
+          • Minimum size: 12 tiles
+          • Maximum size: 96 tiles
+    style: Body
+  layout: Vertical

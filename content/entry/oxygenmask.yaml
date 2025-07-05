@@ -1,0 +1,31 @@
+id: OXYGENMASK
+parent_id: EQUIPMENT
+name: 氧气面罩
+disabled: False
+search_only: False
+category: EQUIPMENT
+sort_string: 氧气面罩
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="OXYGENMASK">氧气面罩</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: oxygen_mask_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 在有毒和难以呼吸的环境中为复制人供给<style="oxygen">氧气</style>。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    • <style="KKeyword">运动</style>：-2'
+    tooltip: 决定了复制人的默认行走速度。
+    style: Body
+  layout: Vertical

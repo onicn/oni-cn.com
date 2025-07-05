@@ -1,0 +1,55 @@
+id: GARDENFORAGEPLANTPLANTED
+parent_id: PLANTS
+name: 菌斑根
+disabled: False
+search_only: False
+category: PLANTS
+sort_string: 菌斑根
+required_dlc_ids:
+- DLC4_ID
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 菌斑根
+    style: Title
+  - widget_type: CodexText
+    text: 食用性植物
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      菌斑根是一种结果实的多肉植物，其DNA显示其曾与某种非自然形态的真菌在很久以前发生过杂交。
+
+
+      这种寄生现象既不致命也不具传染性，但会导致茎干出现明显的变色斑点，并让果实变得异常坚硬，甚至能硌碎牙。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: fatplant_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 成长自
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: fatplantfood_0__ui
+  - widget_type: CodexText
+    text: <link="GARDENFORAGEPLANT">菌斑果</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 详情
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexText
+    text: 菌斑根无法繁育，但可以收获作为一次性<link="FOOD">食物</link>。
+    style: Body
+  layout: Vertical

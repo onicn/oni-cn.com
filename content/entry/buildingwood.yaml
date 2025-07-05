@@ -1,0 +1,64 @@
+id: BUILDINGWOOD
+parent_id: BUILDINGMATERIALCLASSES
+name: 木材
+disabled: False
+search_only: False
+category: BUILDINGMATERIALCLASSES
+sort_string: 木材
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="BUILDINGWOOD">木材</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 木材是可再生的建造材料，也可作为珍贵燃料，在<link="WOODGASGENERATOR">木材燃烧器</link>中产生电力，或在<link="ETHANOLDISTILLERY">乙醇蒸馏器</link>中精炼。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 木材
+    image: wood_0__ui
+    link_id: woodlog
+  layout: Grid
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建造用处
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 床铺
+    image: bedlg_0__ui
+    link_id: bed
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 干板墙
+    image: walls_0__ui
+    link_id: exteriorwall
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 热水浴缸
+    image: hottub_0__ui
+    link_id: hottub
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 梯子
+    image: ladder_0__ui
+    link_id: ladder
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 户外厕所
+    image: outhouse_0__ui
+    link_id: outhouse
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 桑拿房
+    image: sauna_0__ui
+    link_id: sauna
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 木雕塑块
+    image: sculpture_wood_0__ui
+    link_id: woodsculpture
+  layout: Grid

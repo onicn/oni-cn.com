@@ -1,0 +1,170 @@
+id: CHLORINE
+parent_id: ELEMENTSLIQUID
+name: 液态氯
+disabled: False
+search_only: False
+icon_color: 3AC330FF
+category: ELEMENTSLIQUID
+sort_string: 液态氯
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="CHLORINE">液态氯</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    color: 3AC330FF
+    image: element_liquid
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: 3AC330FF
+      text1: 液态氯
+      text2: 1000克
+      link_id: chlorine
+    produce:
+    - image: element_gas
+      color: 04A778FF
+      text1: 氯气
+      text2: 1000克
+      link_id: chlorinegas
+    fabricator:
+      image: crew_state_temp_up
+      text1: -34.6ºC
+      tooltip: 温度高于-34.6ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: 3AC330FF
+      text1: 液态氯
+      text2: 1000克
+      link_id: chlorine
+    produce:
+    - image: solid_chlorine_0__ui
+      text1: 固态氯
+      text2: 1000克
+      link_id: solidchlorine
+    fabricator:
+      image: crew_state_temp_down
+      text1: -101ºC
+      tooltip: 温度低于-101ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换于
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: bleach_stone_0__ui
+      text1: 漂白石
+      text2: 1000克
+      link_id: bleachstone
+    produce:
+    - image: element_liquid
+      color: 3AC330FF
+      text1: 液态氯
+      text2: 1000克
+      link_id: chlorine
+    fabricator:
+      image: crew_state_temp_up
+      text1: 668.9ºC
+      tooltip: 温度高于668.9ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: solid_chlorine_0__ui
+      text1: 固态氯
+      text2: 1000克
+      link_id: solidchlorine
+    produce:
+    - image: element_liquid
+      color: 3AC330FF
+      text1: 液态氯
+      text2: 1000克
+      link_id: chlorine
+    fabricator:
+      image: crew_state_temp_up
+      text1: -101ºC
+      tooltip: 温度高于-101ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_gas
+      color: 04A778FF
+      text1: 氯气
+      text2: 1000克
+      link_id: chlorinegas
+    produce:
+    - image: element_liquid
+      color: 3AC330FF
+      text1: 液态氯
+      text2: 1000克
+      link_id: chlorine
+    fabricator:
+      image: crew_state_temp_down
+      text1: -34.6ºC
+      tooltip: 温度低于-34.6ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: 3AC330FF
+      text1: 液态氯
+      text2: 500克/周期
+      link_id: chlorine
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 25千克/周期
+      link_id: dirt
+    produce:
+    - image: harvested_gassygrass_0__ui
+      text1: 释气草
+      text2: 250克/周期
+      link_id: gasgrass
+    fabricator:
+      image: gassygrass_0__ui
+      text1: 释气草
+      link_id: GASGRASS
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      (Cl) 液态氯是一种<link="ELEMENTSLIQUID">液态</link>的天然杀<link="DISEASE">菌</link>元素。
+
+
+      资源种类：<link="ELEMENTSLIQUID">液体</link>
+
+      冰点：-101ºC
+
+      沸点：-34.6ºC
+
+
+      比热容：0.480 (DTU/g)/ºC
+
+      热导率：0.008 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.73
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：<link="ELEMENTSLIQUID">液体</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

@@ -1,0 +1,124 @@
+id: SHOWER
+parent_id: BUILDCATEGORYPLUMBING
+name: 淋浴隔间
+disabled: False
+search_only: False
+category: BUILDCATEGORYPLUMBING
+sort_string: 淋浴隔间
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="SHOWER">淋浴隔间</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 卫生设备
+    style: Body
+    image: research_type_alpha_icon
+    link_id: sanitationsciences
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: shower_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 提升复制人的<link="MORALE">士气</link>并去除<link="DISEASE">病菌</link>。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="WATER">水</link>：1000克/秒'
+    tooltip: 使用时消耗<style="consumed">1000克/秒</style><style="KKeyword"><link="WATER">水</link></style>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LIQUIDPIPING">液体输入管道</link>'
+    tooltip: 必须从<link="LIQUIDCONDUIT">液体管道</link>系统中接收<style="KKeyword">液体</style>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LIQUIDPIPING">液体输出管道</link>'
+    tooltip: 必须通过<link="LIQUIDCONDUIT">液体管道</link>系统排出<style="KKeyword">液体</style>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：2格宽x4格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：30秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="METAL">金属矿石</link>400千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DIRTYWATER">污染水</link>：1000克/秒'
+    tooltip: >-
+      使用时产生<style="produced">1000克/秒</style><style="KKeyword"><link="DIRTYWATER">污染水</link></style>
+
+
+      输出温度为输入材料的混合<style="KKeyword">温度</style>。
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    治疗'
+    tooltip: 使用这个建筑将移除所列效果
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    • 浑身湿透'
+    tooltip: 因被液体浸没而获得
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    • 双脚湿透'
+    tooltip: 由蹚过液体而获得
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    • 轻微眼部刺激'
+    tooltip: 因接触有害液体或气体而获得
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    • 严重眼部刺激'
+    tooltip: 因接触有害液体或气体而获得
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    士气: +3'
+    tooltip: ''
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="HEAT">热量</link>：+250复制热/秒'
+    tooltip: >-
+      每秒产生<style="produced">250复制热</style>
+
+
+      总<style="KKeyword">温度</style>变化受到加热物质的材料属性影响：
+          • 质量
+          • 比热容
+          • 表面积
+          • 隔热厚度
+          • 热导率
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：+10（范围：2格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>2</b>格内提高<b><b>+10</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>类别</b>
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    <link="REQUIREMENTCLASSWASHSTATION">洗手站</link>'
+    style: Body
+  - widget_type: CodexText
+    text: '    <link="REQUIREMENTCLASSWASHSTATION">铺设管道的洗手站</link>'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>经常洗浴可以避免复制人将病菌传播到他们接触的东西上。</i>
+    style: Body
+  layout: Vertical

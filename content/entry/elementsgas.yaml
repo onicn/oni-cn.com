@@ -1,0 +1,186 @@
+id: ELEMENTSGAS
+parent_id: ELEMENTS
+name: 气体
+disabled: False
+search_only: False
+category: ELEMENTS
+sort_string: 气体
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="ELEMENTSGAS">气体</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexLabelWithLargeIcon
+    text: 二氧化碳
+    style: BodyWhite
+    color: 000000FF
+    image: element_gas
+    link_id: carbondioxide
+  - widget_type: CodexLabelWithLargeIcon
+    text: 天然气
+    style: BodyWhite
+    color: FF6E0FFF
+    image: element_gas
+    link_id: methane
+  - widget_type: CodexLabelWithLargeIcon
+    text: 核尘埃
+    style: BodyWhite
+    color: 00FF2CFF
+    image: element_gas
+    link_id: fallout
+  - widget_type: CodexLabelWithLargeIcon
+    text: 气态乙醇
+    style: BodyWhite
+    color: 00FF6AFF
+    image: element_gas
+    link_id: ethanolgas
+  - widget_type: CodexLabelWithLargeIcon
+    text: 气态岩
+    style: BodyWhite
+    color: B2B2B2FF
+    image: element_gas
+    link_id: rockgas
+  - widget_type: CodexLabelWithLargeIcon
+    text: 气态盐
+    style: BodyWhite
+    image: element_gas
+    link_id: saltgas
+  - widget_type: CodexLabelWithLargeIcon
+    text: 气态碳
+    style: BodyWhite
+    color: BAA2C6FF
+    image: element_gas
+    link_id: carbongas
+  - widget_type: CodexLabelWithLargeIcon
+    text: 气态磷
+    style: BodyWhite
+    color: A64F79FF
+    image: element_gas
+    link_id: phosphorusgas
+  - widget_type: CodexLabelWithLargeIcon
+    text: 气态超级冷却剂
+    style: BodyWhite
+    color: 37AD93FF
+    image: element_gas
+    link_id: supercoolantgas
+  - widget_type: CodexLabelWithLargeIcon
+    text: 气态金
+    style: BodyWhite
+    color: FFE28DFF
+    image: element_gas
+    link_id: goldgas
+  - widget_type: CodexLabelWithLargeIcon
+    text: 气态钢
+    style: BodyWhite
+    color: CB9EB2FF
+    image: element_gas
+    link_id: steelgas
+  - widget_type: CodexLabelWithLargeIcon
+    text: 气态钨
+    style: BodyWhite
+    color: FF007DFF
+    image: element_gas
+    link_id: tungstengas
+  - widget_type: CodexLabelWithLargeIcon
+    text: 气态钴
+    style: BodyWhite
+    color: 0021ECFF
+    image: element_gas
+    link_id: cobaltgas
+  - widget_type: CodexLabelWithLargeIcon
+    text: 气态铁
+    style: BodyWhite
+    color: CC4324FF
+    image: element_gas
+    link_id: irongas
+  - widget_type: CodexLabelWithLargeIcon
+    text: 气态铅
+    style: BodyWhite
+    color: FFE28DFF
+    image: element_gas
+    link_id: leadgas
+  - widget_type: CodexLabelWithLargeIcon
+    text: 气态铌
+    style: BodyWhite
+    color: 5EFDADFF
+    image: element_gas
+    link_id: niobiumgas
+  - widget_type: CodexLabelWithLargeIcon
+    text: 气态铜
+    style: BodyWhite
+    color: FF9C08FF
+    image: element_gas
+    link_id: coppergas
+  - widget_type: CodexLabelWithLargeIcon
+    text: 气态铝
+    style: BodyWhite
+    color: D1EDF8FF
+    image: element_gas
+    link_id: aluminumgas
+  - widget_type: CodexLabelWithLargeIcon
+    text: 气态铱
+    style: BodyWhite
+    color: B0A0BAFF
+    image: element_gas
+    link_id: iridiumgas
+  - widget_type: CodexLabelWithLargeIcon
+    text: 气态镍
+    style: BodyWhite
+    color: A2F1D0FF
+    image: element_gas
+    link_id: nickelgas
+  - widget_type: CodexLabelWithLargeIcon
+    text: 氢气
+    style: BodyWhite
+    color: C51F8BFF
+    image: element_gas
+    link_id: hydrogen
+  - widget_type: CodexLabelWithLargeIcon
+    text: 氧气
+    style: BodyWhite
+    color: B7FFFFFF
+    image: element_gas
+    link_id: oxygen
+  - widget_type: CodexLabelWithLargeIcon
+    text: 氯气
+    style: BodyWhite
+    color: 04A778FF
+    image: element_gas
+    link_id: chlorinegas
+  - widget_type: CodexLabelWithLargeIcon
+    text: 汞蒸气
+    style: BodyWhite
+    color: 4D6DCAFF
+    image: element_gas
+    link_id: mercurygas
+  - widget_type: CodexLabelWithLargeIcon
+    text: 污染氧
+    style: BodyWhite
+    color: 224F40FF
+    image: element_gas
+    link_id: contaminatedoxygen
+  - widget_type: CodexLabelWithLargeIcon
+    text: 硫蒸气
+    style: BodyWhite
+    color: FFFF00FF
+    image: element_gas
+    link_id: sulfurgas
+  - widget_type: CodexLabelWithLargeIcon
+    text: 蒸汽
+    style: BodyWhite
+    color: 85C9E3FF
+    image: element_gas
+    link_id: steam
+  - widget_type: CodexLabelWithLargeIcon
+    text: 高硫天然气
+    style: BodyWhite
+    color: 76245DFF
+    image: element_gas
+    link_id: sourgas
+  layout: Grid
+- contents:
+  - widget_type: CodexSpacer
+  layout: Vertical

@@ -1,0 +1,292 @@
+id: BERRYPIE
+parent_id: FOOD
+name: 混合浆果派
+disabled: False
+search_only: False
+category: FOOD
+sort_string: 混合浆果派
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="BERRYPIE">混合浆果派</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: wormwood_berry_pie_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      主要由<link="WORMSUPERFRUIT">虫果</link>和<link="PRICKLEFRUIT">毛刺浆果</link>制成的馅饼。
+
+
+      浆果的混合制成了一种芳香而五颜六色的馅料，充满了甜蜜的味道。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 品质：杰出 [+5]
+    style: Body
+  - widget_type: CodexText
+    text: 卡路里：4,200千卡
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      冷藏温度：4ºC
+
+      深度冷冻温度：-18ºC
+
+      腐烂时间：4.0周期
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 干燥的浆果派
+    require:
+    - image: wormwood_berry_pie_0__ui
+      text1: 混合浆果派
+      text2: 6,000千卡
+      tooltip: 品质：杰出 [+5]
+      link_id: berrypie
+    - image: polypropylene_0__ui
+      text1: 塑料
+      text2: 12千克
+      link_id: polypropylene
+    produce:
+    - image: dehydrated_food_berry_pie_0__ui
+      text1: 干燥的浆果派
+      text2: 6单位
+      link_id: 干燥的浆果派
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 6千克
+      link_id: water
+    fabricator:
+      image: dehydrator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 脱水机
+      text2: 250秒
+      link_id: fooddehydrator
+  - widget_type: CodexConversionPanel
+    require:
+    - image: wormwood_berry_pie_0__ui
+      text1: 混合浆果派
+      text2: 700千卡/周期
+      tooltip: 品质：杰出 [+5]
+      link_id: berrypie
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 125克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__ui
+      text1: 好吃哈奇
+      link_id: HATCH
+  - widget_type: CodexConversionPanel
+    require:
+    - image: wormwood_berry_pie_0__ui
+      text1: 混合浆果派
+      text2: 700千卡/周期
+      tooltip: 品质：杰出 [+5]
+      link_id: berrypie
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 166.7克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__veg_ui
+      text1: 草质哈奇
+      link_id: HATCHVEGGIE
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 燃气灶
+    require:
+    - image: seed_coldwheat_0__ui
+      text1: 冰霜麦粒
+      text2: 3单位
+      link_id: coldwheat
+    - image: wormwood_super_fruits_0__ui
+      text1: 虫果
+      text2: 1,000千卡
+      tooltip: 品质：低劣 [+1]
+      link_id: wormsuperfruit
+    - image: gristleberry_0__ui
+      text1: 炙烤刺果
+      text2: 2,000千卡
+      tooltip: 品质：低劣 [+1]
+      link_id: grilledpricklefruit
+    produce:
+    - image: wormwood_berry_pie_0__ui
+      text1: 混合浆果派
+      text2: 4,200千卡
+      tooltip: 品质：杰出 [+5]
+      link_id: berrypie
+    fabricator:
+      image: cookstation_gourmet_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 燃气灶
+      text2: 50秒
+      link_id: gourmetcookingstation
+  - widget_type: CodexRecipePanel
+    text: 燃气灶
+    require:
+    - image: seed_coldwheat_0__ui
+      text1: 冰霜麦粒
+      text2: 3单位
+      link_id: coldwheat
+    - image: wormwood_super_fruits_0__ui
+      text1: 虫果
+      text2: 1,000千卡
+      tooltip: 品质：低劣 [+1]
+      link_id: wormsuperfruit
+    - image: iceberry_cooked_0__ui
+      text1: 刺壳果烤串
+      text2: 2,000千卡
+      tooltip: 品质：低劣 [+1]
+      link_id: cookedpikeapple
+    produce:
+    - image: wormwood_berry_pie_0__ui
+      text1: 混合浆果派
+      text2: 4,200千卡
+      tooltip: 品质：杰出 [+5]
+      link_id: berrypie
+    fabricator:
+      image: cookstation_gourmet_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 燃气灶
+      text2: 50秒
+      link_id: gourmetcookingstation
+  - widget_type: CodexRecipePanel
+    text: 燃气灶
+    require:
+    - image: seed_coldwheat_0__ui
+      text1: 冰霜麦粒
+      text2: 3单位
+      link_id: coldwheat
+    - image: wormwood_super_fruits_0__ui
+      text1: 虫果
+      text2: 1,000千卡
+      tooltip: 品质：低劣 [+1]
+      link_id: wormsuperfruit
+    - image: ova_melon_0__ui
+      text1: 漫花果
+      text2: 2,000千卡
+      tooltip: 品质：糟糕 [0]
+      link_id: vinefruit
+    produce:
+    - image: wormwood_berry_pie_0__ui
+      text1: 混合浆果派
+      text2: 4,200千卡
+      tooltip: 品质：杰出 [+5]
+      link_id: berrypie
+    fabricator:
+      image: cookstation_gourmet_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 燃气灶
+      text2: 50秒
+      link_id: gourmetcookingstation
+  - widget_type: CodexRecipePanel
+    text: 燃气灶
+    require:
+    - image: megafrond_grain_0__ui
+      text1: 巨蕨谷粒
+      text2: 3单位
+      link_id: fernfood
+    - image: wormwood_super_fruits_0__ui
+      text1: 虫果
+      text2: 1,000千卡
+      tooltip: 品质：低劣 [+1]
+      link_id: wormsuperfruit
+    - image: gristleberry_0__ui
+      text1: 炙烤刺果
+      text2: 2,000千卡
+      tooltip: 品质：低劣 [+1]
+      link_id: grilledpricklefruit
+    produce:
+    - image: wormwood_berry_pie_0__ui
+      text1: 混合浆果派
+      text2: 4,200千卡
+      tooltip: 品质：杰出 [+5]
+      link_id: berrypie
+    fabricator:
+      image: cookstation_gourmet_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 燃气灶
+      text2: 50秒
+      link_id: gourmetcookingstation
+  - widget_type: CodexRecipePanel
+    text: 燃气灶
+    require:
+    - image: megafrond_grain_0__ui
+      text1: 巨蕨谷粒
+      text2: 3单位
+      link_id: fernfood
+    - image: wormwood_super_fruits_0__ui
+      text1: 虫果
+      text2: 1,000千卡
+      tooltip: 品质：低劣 [+1]
+      link_id: wormsuperfruit
+    - image: iceberry_cooked_0__ui
+      text1: 刺壳果烤串
+      text2: 2,000千卡
+      tooltip: 品质：低劣 [+1]
+      link_id: cookedpikeapple
+    produce:
+    - image: wormwood_berry_pie_0__ui
+      text1: 混合浆果派
+      text2: 4,200千卡
+      tooltip: 品质：杰出 [+5]
+      link_id: berrypie
+    fabricator:
+      image: cookstation_gourmet_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 燃气灶
+      text2: 50秒
+      link_id: gourmetcookingstation
+  - widget_type: CodexRecipePanel
+    text: 燃气灶
+    require:
+    - image: megafrond_grain_0__ui
+      text1: 巨蕨谷粒
+      text2: 3单位
+      link_id: fernfood
+    - image: wormwood_super_fruits_0__ui
+      text1: 虫果
+      text2: 1,000千卡
+      tooltip: 品质：低劣 [+1]
+      link_id: wormsuperfruit
+    - image: ova_melon_0__ui
+      text1: 漫花果
+      text2: 2,000千卡
+      tooltip: 品质：糟糕 [0]
+      link_id: vinefruit
+    produce:
+    - image: wormwood_berry_pie_0__ui
+      text1: 混合浆果派
+      text2: 4,200千卡
+      tooltip: 品质：杰出 [+5]
+      link_id: berrypie
+    fabricator:
+      image: cookstation_gourmet_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 燃气灶
+      text2: 50秒
+      link_id: gourmetcookingstation
+  layout: Vertical

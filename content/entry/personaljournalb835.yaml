@@ -1,0 +1,63 @@
+id: PERSONALJOURNALB835
+name: 个人日志：B835
+title: STRINGS.CODEX.A4_B835.TITLE
+disabled: False
+search_only: False
+category: JOURNALS
+sort_string: 个人日志：B835
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 个人日志：B835
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：无
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+  lock_id: journal_B835_1
+- contents:
+  - widget_type: CodexText
+    text: >
+      今天，我开始在一家名为“庄严科技”的新公司上班了！一开始的时候，我很紧张，害怕得不到这份工作，因为我刚从学校毕业，没有任何经验，而且我在面试中表现得太急于求成，不过主管似乎很喜欢我关于北极蜥蜴生理热调节的论文。今后，我将与一些杰出的遗传学家、生物工程师在一起工作，一起前往恶劣的环境开启太空之旅！感觉就像美梦成真一样。我就要在一个没有人认识我的地方开始新研究了，想想就兴奋！
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: journal_B835_1
+- contents:
+  - widget_type: CodexText
+    text: >
+      不不不不不！我一定是弄错了！班妮·安萨里居然也在这，在机器人实验室里从事航天飞机推进器的工作！她一看到我，就叫我“泡泡”，告诉大家我之前在实验室里不小心吸入了一堆真菌孢子，从鼻子里吹出一个巨大的鼻涕泡泡，然后对着埃弗里教授打喷嚏！现在大家都叫我“泡泡”而不是“博士”！他们中的一些人甚至不知道这是一个绰号，但我不想纠正他们，我不想让他们觉得我是一个粗鲁或者怎么样的人。啊！真不敢相信这个故事一直跟着我到了这里！是班妮毁了这一切！
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: journal_B835_2
+- contents:
+  - widget_type: CodexText
+    text: >
+      过去几天里，我一直埋头工作，这让我感觉好多了。最终，我们完善了一种控制老鼠热敏感度的基因操作。现在，我们的实验对象即使处于零下温度也几乎不会哆嗦。明天，我们可能会与机器人实验室一起做一次试运行，看看老鼠在我们正在开发的航天飞机原型中的表现。
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: journal_B835_3
+- contents:
+  - widget_type: CodexText
+    text: >
+      哈哈哈哈哈！生物工程部和机器人实验室今天联合完成了试运行。期间，当班妮正在锁紧活物货舱时，突然有一只老鼠冲着她吱吱叫，她吓坏了，摔了个屁股着地，在众人面前出了洋相！现在大家都叫她“尖叫怪”，这样比较起来，被人叫“泡泡”似乎也没那么糟糕。不过，尖叫怪是一个很好的玩笑呢，甚至她自己当时都笑了。我想，可能现在我们已经是朋友了？这太奇怪了。
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: journal_B835_4
+- contents:
+  - widget_type: CodexText
+    text: >
+      我错了，班妮和我不仅仅是朋友——而是最好的朋友！她甚至还教我怎么做头发。我们要预定在下班后一起去风洞，然后一起在热敏鼠火箭上做实验！哈哈！
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: journal_B835_5

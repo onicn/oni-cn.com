@@ -1,0 +1,140 @@
+id: FLOWERVASE
+parent_id: BUILDCATEGORYFURNITURE
+name: 花盆
+disabled: False
+search_only: False
+category: BUILDCATEGORYFURNITURE
+sort_string: 花盆
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="FLOWERVASE">花盆</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 室内装潢
+    style: Body
+    image: research_type_alpha_icon
+    link_id: interiordecor
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: flowervase_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      播下<link="PLANTS">种子</link>后，容纳单株<link="PLANTS">植物</link>生长。
+
+
+      可增加<link="DECOR">装饰度</link>，提升<link="MORALE">士气</link>。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：1格宽x1格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：10秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="BUILDABLERAW">矿物原料</link>50千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    允许<link="PLANTS">植物培育</link>'
+    tooltip: 加速<style="KKeyword">植物</style>生长和成熟
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>类别</b>
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    <link="REQUIREMENTCLASSDECORATION">装饰物</link>'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>可用花盆将装饰性植物移植到新的位置。</i>
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 可耕种的植物
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: seed_potted_cactus_0__ui
+  - widget_type: CodexText
+    text: <link="CACTUSPLANT">雀跃掌种子</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: seed_potted_bulb_0__ui
+  - widget_type: CodexText
+    text: <link="BULBPLANT">同伴芽种子</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: seed_potted_cylindricafan_0__ui
+  - widget_type: CodexText
+    text: <link="CYLINDRICA">极乐刺种子</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: seed_discplant_0__ui
+  - widget_type: CodexText
+    text: <link="GARDENDECORPLANT">环玫花种子</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: seed_potted_evilflower_0__ui
+  - widget_type: CodexText
+    text: <link="EVILFLOWER">孢子兰种子</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: seed_bristlebriar_0__ui
+  - widget_type: CodexText
+    text: <link="PRICKLEGRASS">诱人荆棘种子</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: seed_potted_leafy_0__ui
+  - widget_type: CodexText
+    text: <link="LEAFYPLANT">欢乐叶种子</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: seed_potted_toes_0__ui
+  - widget_type: CodexText
+    text: <link="TOEPLANT">安宁芷种子</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: seed_ice_flower_0__ui
+  - widget_type: CodexText
+    text: <link="ICEFLOWER">恬静花种子</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: seed_potted_cups_0__ui
+  - widget_type: CodexText
+    text: <link="WINECUPS">锦醇菇种子</link>
+    style: Body
+  layout: Horizontal

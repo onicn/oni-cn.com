@@ -1,0 +1,48 @@
+id: INSULATOR
+parent_id: BUILDINGMATERIALCLASSES
+name: 隔热体
+disabled: False
+search_only: False
+category: BUILDINGMATERIALCLASSES
+sort_string: 隔热体
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="INSULATOR">隔热体</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 隔热体有着低热导率，能有效地降低<link="HEAT">热量</link>传导速度。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 隔热质
+    image: super_insulator_0__ui
+    link_id: superinsulator
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 陶瓷
+    image: ceramic_0__ui
+    link_id: ceramic
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 精炼碳
+    image: carbon_0__ui
+    link_id: refinedcarbon
+  layout: Grid
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建造用处
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 基础前锥
+    image: rocket_nosecone_default_0__ui
+    link_id: noseconebasic
+  layout: Grid

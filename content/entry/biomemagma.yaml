@@ -1,0 +1,87 @@
+id: BIOMEMAGMA
+parent_id: BIOMES
+name: 岩浆生态
+disabled: False
+search_only: False
+category: BIOMES
+sort_string: BIOMEMAGMA
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 岩浆生态
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 岩浆生态的温度高达1526度，这是很可靠的极端热来源，可以用于产生<link="POWER">电力</link>和燃料。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      <link="MAGMA">岩浆</link>是极端<link="HEAT">热量</link>的来源，可以用于将<link="WATER">水</link>转化为<link="STEAM">蒸汽</link>，或者将<link="CRUDEOIL">原油</link>转化为<link="PETROLEUM">石油</link>。为了防止极端的高温侵入我的基地的其他部分，必须使用高熔点的材料，比如用<link="CERAMIC">陶瓷</link>或<link="OBSIDIAN">黑曜石</link>，建造适当的隔热层。
+
+
+      尽管<link="ATMOSUIT">气压服</link>和<link="JETSUIT">喷气服</link>等太空服能为我的复制人提供一些保护，但长时间在这种生态中还是有过热的危险。我应该确保在附近建立适当的医疗设施，以应对任何紧急医疗情况。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 元素
+    style: Subtitle
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 真空
+    color: 000000FF
+    image: unknown_far
+    link_id: vacuum
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 火成岩
+    image: igneous_rock_0__ui
+    link_id: igneousrock
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 中子质
+    image: neutronium_0__ui
+    link_id: unobtanium
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 黑曜石
+    image: obsidian_0__ui
+    link_id: obsidian
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 岩浆
+    color: AE0000FF
+    image: element_liquid
+    link_id: magma
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 植物
+    style: Subtitle
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 无
+    color: FF0000FF
+    image: inspectorUI_cannot_build
+    link_id: 无
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 小动物
+    style: Subtitle
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 无
+    color: FF0000FF
+    image: inspectorUI_cannot_build
+    link_id: 无
+  layout: Vertical

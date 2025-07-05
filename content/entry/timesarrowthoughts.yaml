@@ -1,0 +1,34 @@
+id: TIMESARROWTHOUGHTS
+name: 关于时间箭的想法
+title: STRINGS.CODEX.B7_TIMESARROWTHOUGHTS.TITLE
+disabled: False
+search_only: False
+category: INVESTIGATIONS
+sort_string: 关于时间箭的想法
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 关于时间箭的想法
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：三
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+  lock_id: journal_timesarrowthoughts
+- contents:
+  - widget_type: CodexText
+    text: >-
+      我一直无法摆脱时间之弓的念头。
+
+
+      它的结构思想实在是太神秘了，我只能梦想这种装置会给整个世界留下的印记。想象一下，这可是一种取之不尽的能源！
+
+
+      人类面临的许多问题都可以借助这项发明得到解决，包括家庭能源、环境污染、<i>燃料战争</i>等等。
+
+
+      不管怎样，我必须努力让这个梦想实现。
+    style: Body
+  layout: Vertical
+  lock_id: journal_timesarrowthoughts

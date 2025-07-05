@@ -1,0 +1,79 @@
+id: PERSONALJOURNALB556
+name: 个人日志：B556
+title: STRINGS.CODEX.A3_B556.TITLE
+disabled: False
+search_only: False
+category: JOURNALS
+sort_string: 个人日志：B556
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 个人日志：B556
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：无
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+  lock_id: journal_B556_1
+- contents:
+  - widget_type: CodexText
+    text: >
+      最近好累。过去3个晚上我都是趴在办公桌上睡觉的，而且这个月我已经用实验室的安全淋浴洗了两次澡了。
+
+
+      确切地说，我们确实是按时工作的，但出于某种原因斯特恩主管一直盯着我看，想让我把这些新产品尽快推向市场。
+
+
+      虽然通常我会对这种额外施加的工作压力感到气愤，但主管字里行间里听起来确实是很在意时间问题。
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: journal_B556_1
+- contents:
+  - widget_type: CodexText
+    text: >
+      我发现自己只是一直盯着电脑屏幕，完全不记得要做什么。
+
+
+      我逼自己写一些记录或者做一些数据分析，但我的大脑好像瘫痪了，什么也做不了。
+
+
+      我得晚一点下班，才能把浪费的这些时间补回来。
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: journal_B556_2
+- contents:
+  - widget_type: CodexText
+    text: >
+      布鲁萨德博士说我看起来累坏了，让我今天回家休息。虽然我觉得她没有权力这样做，但我还是照她说的做了。她没有在胡闹，如果你懂我的意思。
+
+
+      不管怎样，我今天可以在家给论文开个头。
+
+
+      我想到一个关于电路配置的想法，可以将我们所有技术的电池寿命提高整整2.3%。
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: journal_B556_3
+- contents:
+  - widget_type: CodexText
+    text: >-
+      昨天在布鲁萨德让我回家后，我本来打算回家写论文，但一进门，我就倒在枕头上睡着了，再也没起来，就这样睡了<i>连续12个小时</i>。
+
+
+      我不知道我这么需要休息。今天早上到实验室后，我看了看自己过去几个星期的工作，意识到我所做的完全没有一点用处。
+
+
+      我得花好几个小时纠正我在过去几个月内犯下的所有错误。这就是我拼尽全力的结果吗？我真是个土包子，我欠布鲁萨德一个大大的感谢。
+
+
+      从现在开始，我要养成更规律的作息时间……另外，我还在考虑养一只狗。
+    style: Body
+  layout: Vertical
+  lock_id: journal_B556_4

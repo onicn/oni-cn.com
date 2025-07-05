@@ -1,0 +1,493 @@
+id: MISCELLANEOUSTIPS
+name: 提示
+disabled: False
+search_only: False
+category: MISCELLANEOUSTIPS
+sort_string: 提示
+sub_entries:
+- id: MISCELLANEOUSTIPS0
+  parent_id: MISCELLANEOUSTIPS
+  name: 教程：基础控制
+  disabled: False
+  sort_string: 教程：基础控制
+- id: MISCELLANEOUSTIPS21
+  parent_id: MISCELLANEOUSTIPS
+  name: 教程：厕所堵塞粘渣油
+  disabled: False
+  sort_string: 教程：厕所堵塞粘渣油
+- id: MISCELLANEOUSTIPS20
+  parent_id: MISCELLANEOUSTIPS
+  name: 教程：仿生复制人充电
+  disabled: False
+  sort_string: 教程：仿生复制人充电
+- id: MISCELLANEOUSTIPS19
+  parent_id: MISCELLANEOUSTIPS
+  name: 教程：辐射
+  disabled: False
+  sort_string: 教程：辐射
+- id: MISCELLANEOUSTIPS14
+  parent_id: MISCELLANEOUSTIPS
+  name: 教程：日程安排
+  disabled: False
+  sort_string: 教程：日程安排
+- id: MISCELLANEOUSTIPS12
+  parent_id: MISCELLANEOUSTIPS
+  name: 教程：气压服
+  disabled: False
+  sort_string: 教程：气压服
+- id: MISCELLANEOUSTIPS11
+  parent_id: MISCELLANEOUSTIPS
+  name: 教程：食品安全
+  disabled: False
+  sort_string: 教程：食品安全
+- id: MISCELLANEOUSTIPS22
+  parent_id: MISCELLANEOUSTIPS
+  name: 教程：湿表面
+  disabled: False
+  sort_string: 教程：湿表面
+- id: MISCELLANEOUSTIPS10
+  parent_id: MISCELLANEOUSTIPS
+  name: 教程：病菌和疾病
+  disabled: False
+  sort_string: 教程：病菌和疾病
+- id: MISCELLANEOUSTIPS8
+  parent_id: MISCELLANEOUSTIPS
+  name: 教程：复制人温度
+  disabled: False
+  sort_string: 教程：复制人温度
+- id: MISCELLANEOUSTIPS7
+  parent_id: MISCELLANEOUSTIPS
+  name: 教程：取水
+  disabled: False
+  sort_string: 教程：取水
+- id: MISCELLANEOUSTIPS6
+  parent_id: MISCELLANEOUSTIPS
+  name: 教程：任务优先度
+  disabled: False
+  sort_string: 教程：任务优先度
+- id: MISCELLANEOUSTIPS4
+  parent_id: MISCELLANEOUSTIPS
+  name: 教程：污染水
+  disabled: False
+  sort_string: 教程：污染水
+- id: MISCELLANEOUSTIPS2
+  parent_id: MISCELLANEOUSTIPS
+  name: 教程：压力管理
+  disabled: False
+  sort_string: 教程：压力管理
+- id: MISCELLANEOUSTIPS1
+  parent_id: MISCELLANEOUSTIPS
+  name: 教程：殖民地管理
+  disabled: False
+  sort_string: 教程：殖民地管理
+- id: MISCELLANEOUSTIPS9
+  parent_id: MISCELLANEOUSTIPS
+  name: 教程：建筑温度
+  disabled: False
+  sort_string: 教程：建筑温度
+- id: MISCELLANEOUSTIPS23
+  parent_id: MISCELLANEOUSTIPS
+  name: 教程：仿生复制人上油
+  disabled: False
+  sort_string: 教程：仿生复制人上油
+content_container:
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 条目（17/17）
+    style: Subtitle
+  - widget_type: CodexText
+    text: <link="MISCELLANEOUSTIPS0">教程：基础控制</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="MISCELLANEOUSTIPS21">教程：厕所堵塞粘渣油</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="MISCELLANEOUSTIPS20">教程：仿生复制人充电</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="MISCELLANEOUSTIPS19">教程：辐射</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="MISCELLANEOUSTIPS14">教程：日程安排</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="MISCELLANEOUSTIPS12">教程：气压服</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="MISCELLANEOUSTIPS11">教程：食品安全</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="MISCELLANEOUSTIPS22">教程：湿表面</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="MISCELLANEOUSTIPS10">教程：病菌和疾病</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="MISCELLANEOUSTIPS8">教程：复制人温度</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="MISCELLANEOUSTIPS7">教程：取水</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="MISCELLANEOUSTIPS6">教程：任务优先度</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="MISCELLANEOUSTIPS4">教程：污染水</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="MISCELLANEOUSTIPS2">教程：压力管理</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="MISCELLANEOUSTIPS1">教程：殖民地管理</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="MISCELLANEOUSTIPS9">教程：建筑温度</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="MISCELLANEOUSTIPS23">教程：仿生复制人上油</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 教程：基础控制
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      • 我可以使用 {Hotkey/PanLeft} 和 {Hotkey/PanRight} 左右移动我的视角，{Hotkey/PanUp} 和 {Hotkey/PanDown} 上下移动视角。
+
+
+      • 使用 {Hotkey/ZoomIn} 放大画面，{Hotkey/ZoomOut} 缩小画面。
+
+
+      • {Hotkey/CameraHome} 会将我的视角返回到打印舱。
+
+
+      • 我可以使用左上角的按钮，或按 {Hotkey/SpeedUp}/{Hotkey/SlowDown} 加快或减慢我所感知的时间流逝。按 {Hotkey/TogglePause} 会完全暂停时间流逝。
+
+
+      • 我会在我的个人数据库 {Hotkey/ManageDatabase} 中记录发现的所有东西，以便在忘记了重要的东西时有东西可以参考。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 教程：厕所堵塞粘渣油
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      如果别无选择，仿生复制人可以将堆积的<link="LIQUIDGUNK">粘渣油</link>排到<link="REQUIREMENTCLASSTOILETTYPE">厕所</link>中。然而这会堵塞管道，必须在其他复制人使用设备前将其移除。
+
+
+      在<b>水管栏</b> {Hotkey/Plan5} 建造<link="GUNKEMPTIER">粘渣油提取器</link>，确保仿生复制人能适当地处理废物。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 教程：仿生复制人充电
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      仿生复制人需要<link="ELECTROBANK">移动电源</link>才能运行。耗尽<link="POWER">电力</link>的仿生复制人会失去行动能力，需要另一名复制人过来为其重启。
+
+
+      基础移动电源可以在<link="CRAFTINGTABLE">工作台</link>制作。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 教程：辐射
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      像<link="URANIUMORE">铀矿</link>和<link="BEE">辐射蜂巢</link>的物体会释放<link="RADIOACTIVE">放射性</link>能量，而这种能量对我的复制人来说是有毒性的。
+
+
+      我可以使用<b>辐射概览</b> {Hotkey/Overlay15} 查看辐射场的范围。在辐射释放源周围建立厚墙可以抑制辐射场，并保护我的复制人而不会患得<link="RADIATIONSICKNESS">辐射病</link>。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 教程：日程安排
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      我的复制人只会按照我分配的用餐、睡眠、工作或洗浴时间从事这些活动。
+
+
+      为了充分利用他们的时间，我可以打开<b>日程表栏</b> {Hotkey/ManageSchedule} 来调整殖民地的日程表，并为复制人如何利用他们的一天设定计划。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 教程：气压服
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      可以装备<link="ATMOSUIT">气压服</link>保护我的复制人免受环境危害，如极端的<link="HEAT">高温</link>、通过空气传播的<link="DISEASE">病菌</link>或不适于呼吸的<link="ELEMENTSGAS">气体</link>。为了使用这些太空服，我需要为<link="SUITMARKER">气压服检查站</link>连接一个<link="SUITLOCKER">气压服存放柜</link>，然后在其中存放一件气压服。
+
+
+      按选定的方向通过检查站时，复制人会装备气压服，按相反方向通过时会脱下气压服。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 教程：食品安全
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      我的复制人所烹饪<link="FOOD">食物</link>的干净程度与用来制作食物的原料有直接关系。将食物储存在防腐或<link="REFRIGERATOR">冷藏</link>环境中可避免食物染上<link="DISEASE">病菌</link>，同时谨慎设置的卫生站（如<link="WASHBASIN">洗手盆</link>或<link="SHOWER">淋浴隔间</link>）可防止厨师在处理食物的过程中污染食物。
+
+
+      (ClickType/clicking)选定物品上的<b>堆肥</b>按钮，可将被污染且有危险的食物送去堆肥。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 教程：湿表面
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      我的复制人可能会在湿表面上滑倒，具有仿生系统的复制人可能会遭到故障。
+
+
+      我可以用<b>擦拭工具</b> {Hotkey/Mop} 清理液体以避免我的殖民地<link="STRESS">压力</link>过大，或遭受潜在伤害。建造<link="REQUIREMENTCLASSTOILETTYPE">厕所</link>和<link="GUNKEMPTIER">粘渣油提取器</link>可以最大程度减少洒出液体的情况。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 教程：病菌和疾病
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <link="DISEASE">病菌</link>，例如<link="FOODSICKNESS">食物中毒</link>病菌和<link="SLIMESICKNESS">粘液肺</link>病菌，是一种造成我的复制人<link="DISEASE">生病</link>的不可见威胁。<b>病菌概览</b> {Hotkey/Overlay9} 允许我查看殖民地中的所有病菌浓度和产生病菌来源。
+
+
+      我可以在脏区域旁建造<b>医疗栏</b> {Hotkey/Plan8} 中的洗手盆来告诉复制人清洗自己。
+
+
+      相关<link="VIDEOS18">视频：水管及通风</link>
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 教程：复制人温度
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      极<link="HEAT">热</link>或极<link="HEAT">冷</link>环境会影响我的复制人的体温并导致<link="STRESS">压力</link>过大。
+
+
+      打开<b>温度概览</b> {Hotkey/Overlay3} 并选中<b>热忍耐</b>选项以查看我的复制人感觉不适并且无法调节自身体温的所有区域。
+
+
+      相关<link="VIDEOS17">视频：隔热</link>
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 教程：取水
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 通过从<b>水管栏</b> {Hotkey/Plan5} 在液体池上方建造<link="LIQUIDPUMPINGSTATION">手压泵</link>，我的复制人将能够把液体装桶，然后手动运送到目的地。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 教程：任务优先度
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 复制人将根据我分配给他们的优先级来选择去哪里工作。我可以打开<b>优先级界面</b> {Hotkey/ManagePriorities} 设定<style="KKeyword">复制人优先级</style>，并使用<b>优先度工具</b> {Hotkey/Prioritize} 微调<style="KKeyword">任务优先度</style>。许多建筑在被选中时也允许我修改其优先度。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 教程：污染水
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <link="DIRTYWATER">污染水</link>会慢慢释放<link="CONTAMINATEDOXYGEN">污染氧</link>，这会加速<link="DISEASE">疾病</link>的传播。
+
+
+      走过污染水还会使复制人产生<link="STRESS">压力</link>，所以我应该(ClickType/clicking)并拖动<b>擦拭工具</b> {Hotkey/Mop}，让我的复制人将溢出物清理干净
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 教程：压力管理
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <link="STRESS">压力</link>达到100%后，复制人会精神崩溃，无法工作。
+
+
+      精神崩溃的复制人会以各种方式对殖民地造成威胁，例如毁坏建筑或暴饮暴食。
+
+
+      我可以选择一名复制人，通过将鼠标悬停在其状态栏中的<link="STRESS">压力</link>上查看各个<link="STRESS">压力因素</link>，希望可以在这些因素造成问题之前使影响最小化。
+
+
+      相关<link="VIDEOS13">视频：复制人士气</link>
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 教程：殖民地管理
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      我可以使用<b>挖掘工具</b> {Hotkey/Dig} 和屏幕左下方的<b>建造菜单</b>开始安排第一个建造任务。
+
+
+      布置任务后，我的复制人将自动开始工作，不需要我单独指导他们。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 教程：建筑温度
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      建造建筑时，我始终应注意它们的<link="HEAT">过热温度</link>并相应地规划其位置。为殖民地保持较低的环境温度和良好的通风条件还有助于降低建筑的温度。
+
+
+      <b>温度概览</b> {Hotkey/Overlay3} 中的<b>相对温度</b>滑块工具能让我以特定温度范围对概览的颜色编排进行调整。
+
+
+      如果我让建筑超过过热温度，那么建筑将会受损，如果不加处理，它们就会损坏，必须维修后才能继续使用。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 教程：仿生复制人上油
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <link="LUBRICATINGOIL">齿轮油</link>不足的仿生复制人会大幅减速以避免磨碎身上的齿轮。
+
+
+      我可以通过供应<link="LUBRICATIONSTICK">齿轮膏</link>，或在<b>医疗栏</b> {Hotkey/Plan8} 建造<link="OILCHANGER">润滑站</link>以保持其平稳运作。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical

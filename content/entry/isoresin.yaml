@@ -1,0 +1,182 @@
+id: ISORESIN
+parent_id: ELEMENTSSOLID
+name: 异构树液
+disabled: False
+search_only: False
+category: ELEMENTSSOLID
+sort_string: 异构树液
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="ISORESIN">异构树液</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: isoresin_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: isoresin_0__ui
+      text1: 异构树液
+      text2: 1000克
+      link_id: isoresin
+    produce:
+    - image: element_liquid
+      color: B000FFFF
+      text1: 液态石脑油
+      text2: 1000克
+      link_id: naphtha
+    fabricator:
+      image: crew_state_temp_up
+      text1: 200ºC
+      tooltip: 温度高于200ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换于
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: CC8B18FF
+      text1: 树液
+      text2: 1000克
+      link_id: resin
+    produce:
+    - image: element_gas
+      color: 85C9E3FF
+      text1: 蒸汽
+      text2: 750克
+      link_id: steam
+    - image: isoresin_0__ui
+      text1: 异构树液
+      text2: 250克
+      link_id: isoresin
+    fabricator:
+      image: crew_state_temp_up
+      text1: 125ºC
+      tooltip: 温度高于125ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 粘性凝胶流体
+    require:
+    - image: isoresin_0__ui
+      text1: 异构树液
+      text2: 35千克
+      link_id: isoresin
+    - image: element_liquid
+      color: FFC325FF
+      text1: 石油
+      text2: 65千克
+      link_id: petroleum
+    produce:
+    - image: element_liquid
+      color: 4F10B7FF
+      text1: 粘性凝胶流体
+      text2: 100千克
+      link_id: viscogel
+    fabricator:
+      image: chemistry_lab_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 乳化器
+      text2: 80秒
+      link_id: chemicalrefinery
+  - widget_type: CodexRecipePanel
+    text: 隔热质
+    require:
+    - image: isoresin_0__ui
+      text1: 异构树液
+      text2: 15千克
+      link_id: isoresin
+    - image: katairite_0__ui
+      text1: 深渊晶石
+      text2: 80千克
+      link_id: katairite
+    - image: swampreedwool_0__ui
+      text1: 芦苇纤维
+      text2: 5单位
+      link_id: basicfabric
+    produce:
+    - image: super_insulator_0__ui
+      text1: 隔热质
+      text2: 100千克
+      link_id: superinsulator
+    fabricator:
+      image: supermaterial_refinery_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 分子熔炉
+      text2: 80秒
+      link_id: supermaterialrefinery
+  - widget_type: CodexRecipePanel
+    text: 隔热质
+    require:
+    - image: isoresin_0__ui
+      text1: 异构树液
+      text2: 15千克
+      link_id: isoresin
+    - image: katairite_0__ui
+      text1: 深渊晶石
+      text2: 80千克
+      link_id: katairite
+    - image: feather_0__ui
+      text1: 羽毛纤维
+      text2: 5单位
+      link_id: featherfabric
+    produce:
+    - image: super_insulator_0__ui
+      text1: 隔热质
+      text2: 100千克
+      link_id: superinsulator
+    fabricator:
+      image: supermaterial_refinery_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 分子熔炉
+      text2: 80秒
+      link_id: supermaterialrefinery
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      异构树液是一种由长链聚合物构成的结晶树液。
+
+
+      它可用于生产稀有的高级材料。
+
+
+      资源种类：稀有资源
+
+      熔点：200ºC
+
+      硬度：<color=#6D7BC1FF>10（柔软）</color>
+
+
+      比热容：1.300 (DTU/g)/ºC
+
+      热导率：0.170 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.75
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：<link="BUILDABLERAW">矿物原料</link>, <link="ELEMENTSSOLID">固体</link>, 稀有资源
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

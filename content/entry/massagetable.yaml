@@ -1,0 +1,113 @@
+id: MASSAGETABLE
+parent_id: BUILDCATEGORYMEDICAL
+name: 按摩床
+disabled: False
+search_only: False
+category: BUILDCATEGORYMEDICAL
+sort_string: 按摩床
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="MASSAGETABLE">按摩床</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: masseur_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      快速降低复制人的<link="STRESS">压力</link>。
+
+
+      当<link="STRESS">压力</link>到达需要休息的范围时，复制人将自动寻找按摩床。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    复制人分配'
+    tooltip: 只有分配的复制人才可使用这个设备
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="POWER">电力</link>：240瓦'
+    tooltip: 必须与至少有<style="consumed">240瓦</style>可用<style="KKeyword">电力</style>的电路相连
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    优选房间：按摩诊所'
+    tooltip: 建造在<style="KKeyword">按摩诊所</style>内时，这个建筑会获得额外的效果或功能
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：2格宽x2格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：10秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="BUILDABLERAW">矿物原料</link>200千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="STRESS">压力</link>：每分钟-3%'
+    tooltip: 使用这个设备每分钟可消除复制人<b>-3%</b>的<style="KKeyword">压力</style>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    治疗'
+    tooltip: 使用这个建筑将移除所列效果
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    • 背部酸痛'
+    tooltip: 因睡在地上而获得
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="HEAT">热量</link>：+625复制热/秒'
+    tooltip: >-
+      每秒产生<style="produced">625复制热</style>
+
+
+      总<style="KKeyword">温度</style>变化受到加热物质的材料属性影响：
+          • 质量
+          • 比热容
+          • 表面积
+          • 隔热厚度
+          • 热导率
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    过热<link="HEAT">温度</link>：75ºC'
+    tooltip: 达到<b>75ºC</b>时开始过热
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LOGIC">信号输入端</link>'
+    tooltip: 当接收到信号时，输入端会使这个建筑一种状态发生变化
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    启用/禁用'
+    tooltip: >-
+      输入端行为：
+
+      • <b><style="logic_on">绿色信号</style></b>：启用建筑
+
+      • <b><style="logic_off">红色信号</style></b>：禁用建筑
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>类别</b>
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    <link="MASSAGETABLE">减压建筑</link>'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>按摩床可以快速降低压力，但会消耗一些电力。</i>
+    style: Body
+  layout: Vertical

@@ -1,0 +1,175 @@
+id: MOLTENURANIUM
+parent_id: ELEMENTSLIQUID
+name: 熔融铀
+disabled: False
+search_only: False
+icon_color: A2DD10FF
+category: ELEMENTSLIQUID
+sort_string: 熔融铀
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="MOLTENURANIUM">熔融铀</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    color: A2DD10FF
+    image: element_liquid
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: A2DD10FF
+      text1: 熔融铀
+      text2: 1000克
+      link_id: moltenuranium
+    produce:
+    - image: element_gas
+      color: B2B2B2FF
+      text1: 气态岩
+      text2: 1000克
+      link_id: rockgas
+    fabricator:
+      image: crew_state_temp_up
+      text1: 4131.9ºC
+      tooltip: 温度高于4131.9ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: A2DD10FF
+      text1: 熔融铀
+      text2: 1000克
+      link_id: moltenuranium
+    produce:
+    - image: depleted_uranium_0__ui
+      text1: 贫铀
+      text2: 1000克
+      link_id: depleteduranium
+    fabricator:
+      image: crew_state_temp_down
+      text1: 132.9ºC
+      tooltip: 温度低于132.9ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换于
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: enriched_uranium_0__ui
+      text1: 浓缩铀
+      text2: 1000克
+      link_id: enricheduranium
+    produce:
+    - image: element_liquid
+      color: A2DD10FF
+      text1: 熔融铀
+      text2: 1000克
+      link_id: moltenuranium
+    fabricator:
+      image: crew_state_temp_up
+      text1: 858.9ºC
+      tooltip: 温度高于858.9ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: radium_0__ui
+      text1: 铀矿
+      text2: 1000克
+      link_id: uraniumore
+    produce:
+    - image: element_liquid
+      color: A2DD10FF
+      text1: 熔融铀
+      text2: 1000克
+      link_id: moltenuranium
+    fabricator:
+      image: crew_state_temp_up
+      text1: 132.9ºC
+      tooltip: 温度高于132.9ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: depleted_uranium_0__ui
+      text1: 贫铀
+      text2: 1000克
+      link_id: depleteduranium
+    produce:
+    - image: element_liquid
+      color: A2DD10FF
+      text1: 熔融铀
+      text2: 1000克
+      link_id: moltenuranium
+    fabricator:
+      image: crew_state_temp_up
+      text1: 132.9ºC
+      tooltip: 温度高于132.9ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 铀素离心机
+    require:
+    - image: radium_0__ui
+      text1: 铀矿
+      text2: 10千克
+      link_id: uraniumore
+    produce:
+    - image: enriched_uranium_0__ui
+      text1: 浓缩铀
+      text2: 2000克
+      link_id: enricheduranium
+    - image: element_liquid
+      color: A2DD10FF
+      text1: 熔融铀
+      text2: 8千克
+      link_id: moltenuranium
+    fabricator:
+      image: enrichmentcentrifuge_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 铀素离心机
+      text2: 40秒
+      link_id: uraniumcentrifuge
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      (U) 熔融铀是一种被加热成危险的<link="ELEMENTSLIQUID">液态</link>的高<link="RADIATION">放射性</link>物质。
+
+
+      它是<link="ENRICHEDURANIUM">浓缩铀</link>的副产品。
+
+
+      资源种类：<link="ELEMENTSLIQUID">液体</link>
+
+      冰点：132.9ºC
+
+      沸点：4131.9ºC
+
+
+      比热容：1.690 (DTU/g)/ºC
+
+      热导率：2.000 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.3
+
+      辐射释放量/1000千克：165拉德/周期
+
+
+      属性：<link="METAL">金属矿石</link>, <link="REFINEDMETAL">精炼金属</link>, <link="LIGHT">光源</link>, <link="ELEMENTSLIQUID">液体</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

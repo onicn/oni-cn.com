@@ -1,0 +1,154 @@
+id: SPICEGRINDER
+parent_id: BUILDCATEGORYFOOD
+name: 香料研磨器
+disabled: False
+search_only: False
+category: BUILDCATEGORYFOOD
+sort_string: 香料研磨器
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="SPICEGRINDER">香料研磨器</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 食物再利用
+    style: Body
+    image: research_type_alpha_icon
+    link_id: foodrepurposing
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: spice_grinder_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 生产能够加强由需要技能的烹饪台制备的<link="FOOD">食物</link>的原料。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    需要技能的复制人的操作'
+    tooltip: 只有具有<link="COOKING2">烧烤 II</link>技能或<link="BOOSTERCOOK1">烧烤增幅块</link>的复制人才能使用这个建筑
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    专用房间：厨房'
+    tooltip: >-
+      必须建在专用<style="KKeyword">房间</style>内
+
+
+      建成后，<style="KKeyword">房间</style>将变为<style="KKeyword">厨房</style>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：2格宽x3格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：30秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="METAL">金属矿石</link>400千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    库存容量：1000克'
+    tooltip: 最多容纳<b>1000克</b>材料
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    库存容量：20吨'
+    tooltip: 最多容纳<b>20吨</b>材料
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LOGIC">信号输入端</link>'
+    tooltip: 当接收到信号时，输入端会使这个建筑一种状态发生变化
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    启用/禁用'
+    tooltip: >-
+      输入端行为：
+
+      • <b><style="logic_on">绿色信号</style></b>：启用建筑
+
+      • <b><style="logic_off">红色信号</style></b>：禁用建筑
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>类别</b>
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    <link="SPICEGRINDER">香料研磨器</link>'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>将种子和其他可食用物碾碎以制成强化菜肴的优良添加剂。</i>
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 所有配方
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexConfigurableConsumerRecipePanel
+    text: 清新香料
+    tooltip: 减缓食物的分解速度。
+    image: spice_recipe1
+    require:
+    - image: seed_meallice_0__ui
+      text1: 米虱木种子
+      text2: 0.1单位
+      link_id: basicsingleharvestplant
+    - image: salt_0__ui
+      text1: 盐
+      text2: 3000克
+      link_id: salt
+  - widget_type: CodexConfigurableConsumerRecipePanel
+    text: 火箭手香料
+    tooltip: 提高驾驶能力。
+    image: spice_recipe2
+    require:
+    - image: seed_fungusplant_0__ui
+      text1: 夜幕菇孢子
+      text2: 0.1单位
+      link_id: mushroomplant
+    - image: sucrose_0__ui
+      text1: 蔗糖
+      text2: 3000克
+      link_id: sucrose
+  - widget_type: CodexConfigurableConsumerRecipePanel
+    text: 强壮香料
+    tooltip: 即使是最弱的肌肉也能增强。
+    image: spice_recipe3
+    require:
+    - image: seed_sealettuce_0__ui
+      text1: 水草种子
+      text2: 0.1单位
+      link_id: sealettuce
+    - image: iron_refined_0__ui
+      text1: 铁
+      text2: 3000克
+      link_id: iron
+  - widget_type: CodexConfigurableConsumerRecipePanel
+    text: 机械师香料
+    tooltip: 摄入后提高操作技能。
+    image: spice_recipe4
+    require:
+    - image: seed_bristleblossom_0__ui
+      text1: 毛刺花种子
+      text2: 0.1单位
+      link_id: prickleflower
+    - image: slime_mold_0__ui
+      text1: 菌泥
+      text2: 3000克
+      link_id: slimemold
+  layout: Vertical

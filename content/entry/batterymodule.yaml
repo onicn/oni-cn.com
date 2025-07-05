@@ -1,0 +1,102 @@
+id: BATTERYMODULE
+parent_id: BUILDCATEGORYROCKETRY
+name: 蓄电池舱
+disabled: False
+search_only: False
+category: BUILDCATEGORYROCKETRY
+sort_string: 蓄电池舱
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="BATTERYMODULE">蓄电池舱</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 太空电力
+    style: Body
+    image: research_type_alpha_icon
+    link_id: spacepower
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: rocket_battery_pack_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      储存由火箭引擎生成的或来自<link="LAUNCHPAD">火箭平台</link>的额外<link="POWER">电力</link>。
+
+
+      将储存的电力提供给<link="ROCKETINTERIORPOWERPLUG">内部火箭插座</link>。
+
+
+      电量会随着时间流失。
+
+
+      必须通过火箭平台建造。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    发<link="POWER">电</link>机'
+    tooltip: 必须与<style="KKeyword">发电机</style>相连才能运作
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：3格宽x2格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：30秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="METAL">金属矿石</link>400千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="POWER">电力</link>容量：100千焦'
+    tooltip: 与<style="KKeyword">发电机</style>连接后，可储存<b>100千焦</b>的<style="KKeyword">电力</style>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="POWER">电力</link>泄露：400.0焦/周期'
+    tooltip: 这个蓄电池<style="consumed">400.0焦/周期</style>的电量会作为<style="KKeyword">热量</style>散失
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    过热<link="HEAT">温度</link>：2000ºC'
+    tooltip: 达到<b>2000ºC</b>时开始过热
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>类别</b>
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    <link="REQUIREMENTCLASSINDUSTRIALMACHINERY">工业机械</link>'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>在起飞前为蓄电池舱充电，在飞行过程中就更容易为建筑供电了。</i>
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 舱块统计
+    style: Subtitle
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>火箭速度</b>等于<b>引擎功率</b>除以<b>负担</b>
+    style: Body
+  - widget_type: CodexText
+    text: '    • 高度：2'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 舱块负担：2'
+    style: Body
+  layout: Vertical

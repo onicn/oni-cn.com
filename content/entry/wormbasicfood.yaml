@@ -1,0 +1,110 @@
+id: WORMBASICFOOD
+parent_id: FOOD
+name: 烤虫果仁
+disabled: False
+search_only: False
+category: FOOD
+sort_string: 烤虫果仁
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="WORMBASICFOOD">烤虫果仁</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: wormwood_roast_nuts_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      慢烤的<link="WORMBASICFRUIT">贫瘠虫果</link>。
+
+
+      它有着烟熏香味和令人舒适的口感。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 品质：低劣 [+1]
+    style: Body
+  - widget_type: CodexText
+    text: 卡路里：1,200千卡
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      冷藏温度：4ºC
+
+      深度冷冻温度：-18ºC
+
+      腐烂时间：8.0周期
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: wormwood_roast_nuts_0__ui
+      text1: 烤虫果仁
+      text2: 700千卡/周期
+      tooltip: 品质：低劣 [+1]
+      link_id: wormbasicfood
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 437.5克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__ui
+      text1: 好吃哈奇
+      link_id: HATCH
+  - widget_type: CodexConversionPanel
+    require:
+    - image: wormwood_roast_nuts_0__ui
+      text1: 烤虫果仁
+      text2: 700千卡/周期
+      tooltip: 品质：低劣 [+1]
+      link_id: wormbasicfood
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 583.3克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__veg_ui
+      text1: 草质哈奇
+      link_id: HATCHVEGGIE
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 电动烤炉
+    require:
+    - image: wormwood_basic_fruit_0__ui
+      text1: 贫瘠虫果
+      text2: 800千卡
+      tooltip: 品质：糟糕 [0]
+      link_id: wormbasicfruit
+    produce:
+    - image: wormwood_roast_nuts_0__ui
+      text1: 烤虫果仁
+      text2: 1,200千卡
+      tooltip: 品质：低劣 [+1]
+      link_id: wormbasicfood
+    fabricator:
+      image: cookstation_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 电动烤炉
+      text2: 50秒
+      link_id: cookingstation
+  layout: Vertical

@@ -1,0 +1,734 @@
+id: BOOSTER
+parent_id: EQUIPMENT
+name: 增幅块
+disabled: False
+search_only: False
+category: INDUSTRIALINGREDIENTS
+sort_string: 增幅块
+required_dlc_ids:
+- DLC3_ID
+sub_entries:
+- id: BOOSTERDIG1
+  parent_id: BOOSTER
+  name: <link="BOOSTERDIG1">挖掘增幅块</link>
+  disabled: False
+  sort_string: 挖掘增幅块
+- id: BOOSTERTIDY1
+  parent_id: BOOSTER
+  name: <link="BOOSTERTIDY1">整理增幅块</link>
+  disabled: False
+  sort_string: 整理增幅块
+- id: BOOSTERSUITS1
+  parent_id: BOOSTER
+  name: <link="BOOSTERSUITS1">太空服训练增幅块</link>
+  disabled: False
+  sort_string: 太空服训练增幅块
+- id: BOOSTERPILOT1
+  parent_id: BOOSTER
+  name: <link="BOOSTERPILOT1">驾驶增幅块</link>
+  disabled: False
+  sort_string: 驾驶增幅块
+- id: BOOSTERRESEARCH3
+  parent_id: BOOSTER
+  name: <link="BOOSTERRESEARCH3">应用科学增幅块</link>
+  disabled: False
+  sort_string: 应用科学增幅块
+- id: BOOSTERRESEARCH2
+  parent_id: BOOSTER
+  name: <link="BOOSTERRESEARCH2">天文学增幅块</link>
+  disabled: False
+  sort_string: 天文学增幅块
+- id: BOOSTERART1
+  parent_id: BOOSTER
+  name: <link="BOOSTERART1">大师技艺增幅块</link>
+  disabled: False
+  sort_string: 大师技艺增幅块
+- id: BOOSTEROP1
+  parent_id: BOOSTER
+  name: <link="BOOSTEROP1">电气工程增幅块</link>
+  disabled: False
+  sort_string: 电气工程增幅块
+- id: BOOSTERCOOK1
+  parent_id: BOOSTER
+  name: <link="BOOSTERCOOK1">烧烤增幅块</link>
+  disabled: False
+  sort_string: 烧烤增幅块
+- id: BOOSTERFARM1
+  parent_id: BOOSTER
+  name: <link="BOOSTERFARM1">作物照料增幅块</link>
+  disabled: False
+  sort_string: 作物照料增幅块
+- id: BOOSTERDIG2
+  parent_id: BOOSTER
+  name: <link="BOOSTERDIG2">极硬挖掘增幅块</link>
+  disabled: False
+  sort_string: 极硬挖掘增幅块
+- id: BOOSTERMEDICINE1
+  parent_id: BOOSTER
+  name: <link="BOOSTERMEDICINE1">高级医疗增幅块</link>
+  disabled: False
+  sort_string: 高级医疗增幅块
+- id: BOOSTERRESEARCH1
+  parent_id: BOOSTER
+  name: <link="BOOSTERRESEARCH1">研究增幅块</link>
+  disabled: False
+  sort_string: 研究增幅块
+- id: BOOSTERCARRY1
+  parent_id: BOOSTER
+  name: <link="BOOSTERCARRY1">力量增幅块</link>
+  disabled: False
+  sort_string: 力量增幅块
+- id: BOOSTERCONSTRUCT1
+  parent_id: BOOSTER
+  name: <link="BOOSTERCONSTRUCT1">建造增幅块</link>
+  disabled: False
+  sort_string: 建造增幅块
+- id: BOOSTERRANCH1
+  parent_id: BOOSTER
+  name: <link="BOOSTERRANCH1">养殖增幅块</link>
+  disabled: False
+  sort_string: 养殖增幅块
+- id: BOOSTEROP2
+  parent_id: BOOSTER
+  name: <link="BOOSTEROP2">机电工程增幅块</link>
+  disabled: False
+  sort_string: 机电工程增幅块
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 增幅块
+    style: Title
+  - widget_type: CodexText
+    text: 仿生系统
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexImage
+    image: upgrade_disc_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      增幅块是用于改进和扩展仿生复制人能力的编程模块。
+
+
+      增幅块在使用时会消耗大量处理算力。仿生复制人可通过积累技能点扩展增幅块安装容量。
+
+
+      增幅块可以相互组合从而获得更广泛的技能，也可以抵消原始编程中可能存在的仿生漏洞。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 条目（17/17）
+    style: Subtitle
+  - widget_type: CodexText
+    text: <link="BOOSTERDIG1">挖掘增幅块</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="BOOSTERTIDY1">整理增幅块</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="BOOSTERSUITS1">太空服训练增幅块</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="BOOSTERPILOT1">驾驶增幅块</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="BOOSTERRESEARCH3">应用科学增幅块</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="BOOSTERRESEARCH2">天文学增幅块</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="BOOSTERART1">大师技艺增幅块</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="BOOSTEROP1">电气工程增幅块</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="BOOSTERCOOK1">烧烤增幅块</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="BOOSTERFARM1">作物照料增幅块</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="BOOSTERDIG2">极硬挖掘增幅块</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="BOOSTERMEDICINE1">高级医疗增幅块</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="BOOSTERRESEARCH1">研究增幅块</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="BOOSTERCARRY1">力量增幅块</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="BOOSTERCONSTRUCT1">建造增幅块</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="BOOSTERRANCH1">养殖增幅块</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="BOOSTEROP2">机电工程增幅块</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: <link="BOOSTERDIG1">挖掘增幅块</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: upgrade_disc_0__ui_basic_excavation_0
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <b>能力：</b>
+
+      <link="HARDNESS">非常坚硬的材料</link>的开采
+
+
+      <b>增幅：</b>
+
+      挖掘: +5
+
+      运动: +2
+
+
+      这种增幅块可以在<link="CRAFTINGTABLE">工作台</link>制造。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: <link="BOOSTERTIDY1">整理增幅块</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: upgrade_disc_0__ui_tidy_0
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <b>能力：</b>
+
+      管道的清空
+
+      <link="MISSILEFABRICATOR">爆破弹组装机</link>的使用
+
+
+      <b>增幅：</b>
+
+      力量: +5
+
+      运动: +2
+
+
+      这种增幅块可以在<link="ADVANCEDCRAFTINGTABLE">焊接台</link>制造。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: <link="BOOSTERSUITS1">太空服训练增幅块</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: upgrade_disc_0__ui_suits_0
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <b>能力：</b>
+
+      减缓<link="EQUIPMENT">太空服</link>耐久损失
+
+      减轻<link="EQUIPMENT">太空服</link>速度惩罚
+
+
+      <b>增幅：</b>
+
+      运动: +5
+
+
+      这种增幅块可以在<link="ADVANCEDCRAFTINGTABLE">焊接台</link>制造。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: <link="BOOSTERPILOT1">驾驶增幅块</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: upgrade_disc_0__ui_piloting_0
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <b>能力：</b>
+
+      <link="ROCKETCONTROLSTATION">火箭控制台</link>的使用
+
+
+      <b>增幅：</b>
+
+      驾驶: +5
+
+      运动: +2
+
+
+      这种增幅块可以在<link="ADVANCEDCRAFTINGTABLE">焊接台</link>制造。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: <link="BOOSTERRESEARCH3">应用科学增幅块</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: upgrade_disc_0__ui_science_3
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <b>能力：</b>
+
+      <link="NUCLEARRESEARCHCENTER">材料研究终端</link>的使用
+
+
+      <b>增幅：</b>
+
+      科学: +5
+
+      运动: +2
+
+
+      这种增幅块可以在<link="ADVANCEDCRAFTINGTABLE">焊接台</link>制造。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: <link="BOOSTERRESEARCH2">天文学增幅块</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: upgrade_disc_0__ui_science_2
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <b>能力：</b>
+
+      <link="MISSIONCONTROLCLUSTER">航天指挥站</link>的使用
+
+      <link="ORBITALRESEARCHCENTER">轨道数据收集实验仪</link>的使用
+
+      <link="CLUSTERTELESCOPE">望远镜</link>的使用
+
+      <link="DLC1COSMICRESEARCHCENTER">虚拟天象仪</link>的使用
+
+
+      <b>增幅：</b>
+
+      科学: +5
+
+      运动: +2
+
+
+      这种增幅块可以在<link="ADVANCEDCRAFTINGTABLE">焊接台</link>制造。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: <link="BOOSTERART1">大师技艺增幅块</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: upgrade_disc_0__ui_creativity_0
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <b>能力：</b>
+
+      <link="CANVAS">空白画布</link>的使用
+
+      <link="CANVASTALL">肖像画布</link>的使用
+
+      <link="CANVASWIDE">风景画布</link>的使用
+
+      <link="ICESCULPTURE">冰雕塑块</link>的使用
+
+      <link="MARBLESCULPTURE">大理石雕塑块</link>的使用
+
+      <link="METALSCULPTURE">金属雕塑块</link>的使用
+
+      <link="SCULPTURE">大型雕塑块</link>的使用
+
+      <link="SMALLSCULPTURE">雕塑块</link>的使用
+
+      <link="WOODSCULPTURE">木雕塑块</link>的使用
+
+      <link="CLOTHINGALTERATIONSTATION">时装翻新器</link>的使用
+
+      <link="CEILINGFOSSILSCULPTURE">垂吊化石雕塑块</link>的使用
+
+      <link="FOSSILSCULPTURE">化石雕塑块</link>的使用
+
+      <link="ARTIFACTANALYSISSTATION">工艺品分析站</link>的使用
+
+
+      <b>增幅：</b>
+
+      创作: +5
+
+      运动: +2
+
+
+      这种增幅块可以在<link="ADVANCEDCRAFTINGTABLE">焊接台</link>制造。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: <link="BOOSTEROP1">电气工程增幅块</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: upgrade_disc_0__ui_machinery_0
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <b>能力：</b>
+
+      <link="POWER">发电机的调校</link>和<link="POWERSTATIONTOOLS">微芯片</link>的制作
+
+      <link="ADVANCEDCRAFTINGTABLE">焊接台</link>的使用
+
+
+      <b>增幅：</b>
+
+      机械: +5
+
+      运动: +2
+
+
+      这种增幅块可以在<link="ADVANCEDCRAFTINGTABLE">焊接台</link>制造。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: <link="BOOSTERCOOK1">烧烤增幅块</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: upgrade_disc_0__ui_cooking_0
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <b>能力：</b>
+
+      <link="COOKINGSTATION">电动烤炉</link>的使用
+
+      <link="DEEPFRYER">油炸锅</link>的使用
+
+      <link="GOURMETCOOKINGSTATION">燃气灶</link>的使用
+
+      <link="SMOKER">熏炉</link>的使用
+
+      <link="SPICEGRINDER">香料研磨器</link>的使用
+
+
+      <b>增幅：</b>
+
+      烹饪: +5
+
+      运动: +2
+
+
+      这种增幅块可以在<link="ADVANCEDCRAFTINGTABLE">焊接台</link>制造。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: <link="BOOSTERFARM1">作物照料增幅块</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: upgrade_disc_0__ui_agriculture_0
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <b>能力：</b>
+
+      <link="PLANTS">作物照料</link>
+
+      <link="FARMSTATION">农业站</link>的使用
+
+      <link="GENETICANALYSISSTATION">植物分析仪</link>的使用
+
+
+      <b>增幅：</b>
+
+      农业: +5
+
+      运动: +2
+
+
+      这种增幅块可以在<link="ADVANCEDCRAFTINGTABLE">焊接台</link>制造。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: <link="BOOSTERDIG2">极硬挖掘增幅块</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: upgrade_disc_0__ui_excavation_1
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <b>能力：</b>
+
+      <link="KATAIRITE">深渊晶石</link>的开采
+
+      <link="DIAMOND">钻石</link>和<link="OBSIDIAN">黑曜石</link>的开采
+
+      <link="CORIUM">堆芯熔融物</link>的开采
+
+
+      <b>增幅：</b>
+
+      挖掘: +5
+
+      运动: +2
+
+
+      这种增幅块可以在<link="ADVANCEDCRAFTINGTABLE">焊接台</link>制造。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: <link="BOOSTERMEDICINE1">高级医疗增幅块</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: upgrade_disc_0__ui_medicine_0
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <b>能力：</b>
+
+      <link="APOTHECARY">配药桌</link>的使用
+
+      <link="DOCTORSTATION">医务站</link>的使用
+
+      <link="ADVANCEDDOCTORSTATION">病诊站</link>的使用
+
+
+      <b>增幅：</b>
+
+      医疗: +5
+
+      运动: +2
+
+
+      这种增幅块可以在<link="CRAFTINGTABLE">工作台</link>制造。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: <link="BOOSTERRESEARCH1">研究增幅块</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: upgrade_disc_0__ui_science_4
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <b>能力：</b>
+
+      <link="ADVANCEDRESEARCHCENTER">超级计算机</link>的使用
+
+      地理分析
+
+      <link="GEOTUNER">地质调谐仪</link>的使用
+
+      <link="CHEMICALREFINERY">乳化器</link>的使用
+
+
+      <b>增幅：</b>
+
+      科学: +5
+
+      运动: +2
+
+
+      这种增幅块可以在<link="CRAFTINGTABLE">工作台</link>制造。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: <link="BOOSTERCARRY1">力量增幅块</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: upgrade_disc_0__ui_basic_strength_0
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <b>能力：</b>
+
+      <b>+400千克</b><style="KKeyword">承载能力</style>
+
+
+      <b>增幅：</b>
+
+      力量: +5
+
+      运动: +2
+
+
+      这种增幅块可以在<link="CRAFTINGTABLE">工作台</link>制造。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: <link="BOOSTERCONSTRUCT1">建造增幅块</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: upgrade_disc_0__ui_basic_construction_0
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <b>能力：</b>
+
+      拆毁庄严科技建筑
+
+
+      <b>增幅：</b>
+
+      建造: +5
+
+      运动: +2
+
+
+      这种增幅块可以在<link="CRAFTINGTABLE">工作台</link>制造。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: <link="BOOSTERRANCH1">养殖增幅块</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: upgrade_disc_0__ui_ranching_0
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <b>能力：</b>
+
+      <link="EGGINCUBATOR">孵化器</link>的使用
+
+      <link="RANCHSTATION">梳理站</link>的使用
+
+      <link="MILKINGSTATION">挤奶站</link>的使用
+
+
+      <b>增幅：</b>
+
+      畜牧: +5
+
+      运动: +2
+
+
+      这种增幅块可以在<link="ADVANCEDCRAFTINGTABLE">焊接台</link>制造。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: <link="BOOSTEROP2">机电工程增幅块</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: upgrade_disc_0__ui_machinery_1
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <b>能力：</b>
+
+      <link="SOLIDCONDUIT">运输轨道系统</link>的建造
+
+
+      <b>增幅：</b>
+
+      机械: +5
+
+      运动: +2
+
+
+      这种增幅块可以在<link="ADVANCEDCRAFTINGTABLE">焊接台</link>制造。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

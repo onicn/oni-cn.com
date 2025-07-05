@@ -1,0 +1,74 @@
+id: COLDBREATHER
+parent_id: PLANTS
+name: 冰息萝卜
+disabled: False
+search_only: False
+category: PLANTS
+sort_string: 冰息萝卜
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 冰息萝卜
+    style: Title
+  - widget_type: CodexText
+    text: 植物？
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      冰息萝卜以其改变周围环境温度的能力而闻名，它能直接吸收热量以维持身体代谢。
+
+
+      这种环境管理能力也有助于实现一种自我诱导的休眠，从而减慢冰息萝卜的新陈代谢，以减少较长时间内所需的营养。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      这种刺细胞动物门的成员在外观上是具有欺骗性的，它实际上是一种动物，而不是植物。
+
+
+      冰息萝卜的细胞不含叶绿体、液泡或细胞壁，且不能进行光合作用。
+
+
+      相反，冰息萝卜的呼吸方式是最近进化的类似于两栖动物的方法，即利用其膜状皮肤进行皮肤呼吸。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: coldbreather_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 成长自
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: seed_coldbreather_0__ui
+  - widget_type: CodexText
+    text: <link="COLDBREATHER">冰息萝卜种子</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 详情
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexText
+    text: 冰息萝卜可以种在<link="PLANTERBOX">种植箱</link>、<link="FARMTILE">土培砖</link>或<link="HYDROPONICFARM">液培砖</link>中，通过其多孔外膜呼吸来吸收<link="HEAT">热量</link>。
+    style: Body
+  - widget_type: CodexText
+    text: >-
+      <b>生长需求</b>：
+          • 气体的供给
+          • <link="HEAT">温度</link>：-60至95ºC
+          • <link="PHOSPHORITE">磷矿</link>：-4000克/周期
+          • 农地
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

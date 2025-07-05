@@ -1,0 +1,78 @@
+id: GASVENT
+parent_id: BUILDCATEGORYHVAC
+name: 排气口
+disabled: False
+search_only: False
+category: BUILDCATEGORYHVAC
+sort_string: 排气口
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="GASVENT">排气口</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 通风
+    style: Body
+    image: research_type_alpha_icon
+    link_id: gaspiping
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: ventgas_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 排放<link="GASPIPING">气体管道</link>中的<link="ELEMENTSGAS">气体</link>。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="GASPIPING">气体输入管道</link>'
+    tooltip: 必须从<link="GASCONDUIT">气体管道</link>系统中接收<style="KKeyword">气体</style>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：1格宽x1格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：30秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="METAL">金属矿石</link>50千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    超压：2000克'
+    tooltip: 当周围环境的质量大于<b>2000克</b>时停止运作
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LOGIC">信号输入端</link>'
+    tooltip: 当接收到信号时，输入端会使这个建筑一种状态发生变化
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    启用/禁用'
+    tooltip: >-
+      输入端行为：
+
+      • <b><style="logic_on">绿色信号</style></b>：启用建筑
+
+      • <b><style="logic_off">红色信号</style></b>：禁用建筑
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：-10（范围：2格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>2</b>格内降低<b><b>-10</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>排气口是通风系统的气体排出口。</i>
+    style: Body
+  layout: Vertical

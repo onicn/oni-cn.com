@@ -1,0 +1,37 @@
+id: COMPOSITION
+parent_id: ELEMENTSOTHER
+name: 复合物
+disabled: False
+search_only: False
+icon_color: 000000FF
+category: ELEMENTSOTHER
+sort_string: 复合物
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="COMPOSITION">复合物</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    color: 000000FF
+    image: unknown_far
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      一种由两种或以上元素组成的混合物。
+
+
+      比热容：0.000 (DTU/g)/ºC
+
+      热导率：0.000 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.5
+
+      辐射释放量/1000千克：0拉德/周期
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

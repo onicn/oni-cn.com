@@ -1,0 +1,59 @@
+id: ROBOTICTOOLS
+parent_id: TECH
+name: 机器人工具
+disabled: False
+search_only: False
+category: TECH
+sort_string: 机器人工具
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="ROBOTICTOOLS">机器人工具</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 每个伟大文明的目标都是有朝一日把自己淘汰。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="ARTIFICIALFRIENDS">人工伙伴</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: auto_miner_0__ui
+  - widget_type: CodexText
+    text: <link="AUTOMINER">自动采矿机</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: railgun_emptier_0__ui
+  - widget_type: CodexText
+    text: <link="RAILGUNPAYLOADOPENER">载货拆包器</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: robot_rocket_control_station_0__ui
+  - widget_type: CodexText
+    text: <link="ROBOPILOTMODULE">机器驾驶舱</link>
+    style: Body
+  layout: Horizontal

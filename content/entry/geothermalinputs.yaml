@@ -1,0 +1,114 @@
+id: GEOTHERMALINPUTS
+name: 技术员笔记
+title: STRINGS.CODEX.INVESTIGATIONS.DLC2_GEOTHERMALTESTING.TITLE
+disabled: False
+search_only: False
+category: RESEARCHNOTES
+sort_string: 技术员笔记
+required_dlc_ids:
+- DLC2_ID
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 技术员笔记
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：三
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+  lock_id: notes_geoinputs
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <smallcaps>[声纹识别系统初始化完成]
+
+      [识别编号：B224]</smallcaps>
+
+
+      [录音开始]
+
+
+      （清嗓子）
+
+
+      你好？这东西开了吗？
+
+
+      （敲击麦克风的声音）
+
+
+      开始吧。嗯哼。测试按预期进行，结果超出了我们的预期，尤其是在热阈值方面。
+
+
+      正如我们过去所说的那样，“热”翻天！
+
+
+      （咳嗽）
+
+
+      无论如何。
+
+
+      首先我们引入了十二吨冷却至六十五度的地下层盐水。
+
+
+      这产生了清洁蒸汽，以及土壤、盐和微量矿物质。和预期一样。
+
+
+      好的，那么现在我们刷新系统……提高水箱的温度，在两百度下运行。
+
+
+      （液体流过管道的声音）
+
+
+      清空蒸汽，这样一来我们就可以——
+
+
+      （轻微的叮当声）
+
+
+      等等，里面有某些杂物……
+
+
+      我们得小心点，这个系统中稍有堵塞就是灾——
+
+
+      等下，那些是……<i>氧化铁</i>碎块？
+
+
+      但怎么会……
+
+
+      我只是改了温——
+
+
+      给我十二吨……噢，是油！
+
+
+      快！
+
+
+      <i>真是</i>，对不起。
+
+
+      [录音结束]
+
+      ------------------
+
+      [录音开始]
+
+
+      （长时间的沉默）
+
+
+      （机器断电的声音）
+
+
+      ……难以置信。
+
+
+      [录音结束]
+    style: Body
+  layout: Vertical
+  lock_id: notes_geoinputs

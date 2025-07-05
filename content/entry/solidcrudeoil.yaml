@@ -1,0 +1,90 @@
+id: SOLIDCRUDEOIL
+parent_id: ELEMENTSSOLID
+name: 固态原油
+disabled: False
+search_only: False
+category: ELEMENTSSOLID
+sort_string: 固态原油
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="SOLIDCRUDEOIL">固态原油</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: frozen_crude_oil_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: frozen_crude_oil_0__ui
+      text1: 固态原油
+      text2: 1000克
+      link_id: solidcrudeoil
+    produce:
+    - image: element_liquid
+      color: 301265FF
+      text1: 原油
+      text2: 1000克
+      link_id: crudeoil
+    fabricator:
+      image: crew_state_temp_up
+      text1: -40.1ºC
+      tooltip: 温度高于-40.1ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换于
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: 301265FF
+      text1: 原油
+      text2: 1000克
+      link_id: crudeoil
+    produce:
+    - image: frozen_crude_oil_0__ui
+      text1: 固态原油
+      text2: 1000克
+      link_id: solidcrudeoil
+    fabricator:
+      image: crew_state_temp_down
+      text1: -40.1ºC
+      tooltip: 温度低于-40.1ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >2-
+
+
+      资源种类：可液化物
+
+      熔点：-40.1ºC
+
+      硬度：<color=#71ABCFFF>2（非常柔软）</color>
+
+
+      比热容：1.690 (DTU/g)/ºC
+
+      热导率：2.000 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.8
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：<link="ELEMENTSSOLID">固体</link>, 可液化物
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

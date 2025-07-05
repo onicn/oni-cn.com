@@ -1,0 +1,57 @@
+id: GASCONDUITRADIANT
+parent_id: BUILDCATEGORYHVAC
+name: 导热气体管道
+disabled: False
+search_only: False
+category: BUILDCATEGORYHVAC
+sort_string: 导热气体管道
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="GASCONDUITRADIANT">导热气体管道</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 暖通空调
+    style: Body
+    image: research_type_alpha_icon
+    link_id: hvac
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: utilities_gas_radiant_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      输送<link="ELEMENTSGAS">气体</link>，允许与周围环境进行大幅<link="HEAT">热量</link>交换。
+
+
+      可穿过墙体和地面。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：1格宽x1格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：10秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="METAL">金属矿石</link>25千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：-5（范围：1格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>1</b>格内降低<b><b>-5</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>泵入冷气体的导热管道可穿过炎热区域以帮助降温。</i>
+    style: Body
+  layout: Vertical

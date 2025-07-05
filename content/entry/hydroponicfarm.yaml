@@ -1,0 +1,288 @@
+id: HYDROPONICFARM
+parent_id: BUILDCATEGORYFOOD
+name: 液培砖
+disabled: False
+search_only: False
+category: BUILDCATEGORYFOOD
+sort_string: 液培砖
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="HYDROPONICFARM">液培砖</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 农业
+    style: Body
+    image: research_type_alpha_icon
+    link_id: agriculture
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: farmtilehydroponicrotating_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      将<link="PLANTS">种子</link>培育成<link="PLANTS">植物</link>。
+
+
+      可用作地砖，建造前可旋转。
+
+
+      必须通过<link="LIQUIDPIPING">液体管道</link>灌溉。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LIQUIDPIPING">液体输入管道</link>'
+    tooltip: 必须从<link="LIQUIDCONDUIT">液体管道</link>系统中接收<style="KKeyword">液体</style>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：1格宽x1格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：30秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="METAL">金属矿石</link>100千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    允许<link="PLANTS">植物培育</link>'
+    tooltip: 加速<style="KKeyword">植物</style>生长和成熟
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：-5（范围：1格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>1</b>格内降低<b><b>-5</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>类别</b>
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    <link="GROUPFARMBUILDING">农业建筑</link>'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>液培砖能自动灌溉作物从而减少复制人的工作量。</i>
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 可耕种的植物
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: seed_purpleroot_0__ui
+  - widget_type: CodexText
+    text: <link="CARROTPLANT">羽叶果薯种子</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: seed_pollinator_plant_0__ui
+  - widget_type: CodexText
+    text: <link="BUTTERFLYPLANT">拟种</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: seed_bluegrass_0__ui
+  - widget_type: CodexText
+    text: <link="BLUEGRASS">气囊芦荟种子</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: seed_coldbreather_0__ui
+  - widget_type: CodexText
+    text: <link="COLDBREATHER">冰息萝卜种子</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: seed_beanplant_0__ui
+  - widget_type: CodexText
+    text: <link="BEAN">小吃豆</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: seed_meallice_0__ui
+  - widget_type: CodexText
+    text: <link="BASICSINGLEHARVESTPLANT">米虱木种子</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: seed_coldwheat_0__ui
+  - widget_type: CodexText
+    text: <link="COLDWHEAT">冰霜麦粒</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: seed_spikefruit_0__ui
+  - widget_type: CodexText
+    text: <link="GARDENFOODPLANT">汗甜玉米种子</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: seed_tree_0__ui
+  - widget_type: CodexText
+    text: <link="FORESTTREE">乔木橡实</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: seed_critter_trap_0__ui
+  - widget_type: CodexText
+    text: <link="CRITTERTRAPPLANT">土星动物捕草种子</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: seed_cactus_0__ui
+  - widget_type: CodexText
+    text: <link="FILTERPLANT">仙水掌种子</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: seed_megafrond_0__ui
+  - widget_type: CodexText
+    text: <link="DINOFERN">巨蕨孢子</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: seed_brackwood_0__ui
+  - widget_type: CodexText
+    text: <link="DEWDRIPPERPLANT">露珠藤种子</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: seed_ceiling_carnie_0__ui
+  - widget_type: CodexText
+    text: <link="FLYTRAPPLANT">露饵花种子</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: seed_gassygrass_0__ui
+  - widget_type: CodexText
+    text: <link="GASGRASS">释气草种子</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: seed_spicenut_0__ui
+  - widget_type: CodexText
+    text: <link="SPICEVINE">火椒种子</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: seed_syrup_tree_0__ui
+  - widget_type: CodexText
+    text: <link="SPACETREE">糖心树种子</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: seed_kelp_0__ui
+  - widget_type: CodexText
+    text: <link="KELPPLANT">海梳蕨种子</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: seed_saltplant_0__ui
+  - widget_type: CodexText
+    text: <link="SALTPLANT">沙盐藤种子</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: seed_bristleblossom_0__ui
+  - widget_type: CodexText
+    text: <link="PRICKLEFLOWER">毛刺花种子</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: seed_oxyfern_0__ui
+  - widget_type: CodexText
+    text: <link="OXYFERN">氧齿蕨种子</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: seed_fungusplant_0__ui
+  - widget_type: CodexText
+    text: <link="MUSHROOMPLANT">夜幕菇孢子</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: seed_swampcrop_0__ui
+  - widget_type: CodexText
+    text: <link="SWAMPHARVESTPLANT">沼浆笼种子</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: seed_swamplily_0__ui
+  - widget_type: CodexText
+    text: <link="SWAMPLILY">芳香百合种子</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: seed_vine_0__ui
+  - widget_type: CodexText
+    text: <link="VINEMOTHER">漫殖藤主干种子</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: seed_wormwood_0__ui
+  - widget_type: CodexText
+    text: <link="WORMPLANT">虫果种子</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: seed_ice_berry_0__ui
+  - widget_type: CodexText
+    text: <link="HARDSKINBERRYPLANT">刺壳果灌木种子</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: seed_swampreed_0__ui
+  - widget_type: CodexText
+    text: <link="BASICFABRICPLANT">顶针芦苇种子</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: seed_sealettuce_0__ui
+  - widget_type: CodexText
+    text: <link="SEALETTUCE">水草种子</link>
+    style: Body
+  layout: Horizontal

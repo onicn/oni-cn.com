@@ -1,0 +1,43 @@
+id: STORYTRAITS
+name: 故事特质
+disabled: False
+search_only: False
+category: Root
+sort_string: 故事特质
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="STORYTRAITS">故事特质</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexLabelWithLargeIcon
+    text: 小动物衍变器
+    style: BodyWhite
+    image: critter_manipulator_codex_icon
+    link_id: storytraitcrittermanipulator
+  - widget_type: CodexLabelWithLargeIcon
+    text: 梦境合成仪
+    style: BodyWhite
+    image: mega_brain_tank_codex_icon
+    link_id: storytraitmegabraintank
+  - widget_type: CodexLabelWithLargeIcon
+    text: 生机组构仪
+    style: BodyWhite
+    image: MorbRover_codex_icon
+    link_id: storytraitmorbrover
+  - widget_type: CodexLabelWithLargeIcon
+    text: 神秘隐士
+    style: BodyWhite
+    image: lonelyminion_codex_icon
+    link_id: storytraitlonelyminion
+  - widget_type: CodexLabelWithLargeIcon
+    text: 远古标本
+    style: BodyWhite
+    image: fossil_dig_codex_icon
+    link_id: storytraitfossilhunt
+  layout: Grid
+- contents:
+  - widget_type: CodexSpacer
+  layout: Vertical

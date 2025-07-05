@@ -1,0 +1,49 @@
+id: FILTER
+parent_id: ELEMENTTYPES
+name: 过滤介质
+title: STRINGS.MISC.TAGS.FILTER
+disabled: False
+search_only: False
+category: ELEMENTTYPES
+sort_string: <link="FILTER">过滤介质</link>
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="FILTER">过滤介质</link>
+    style: Title
+  - widget_type: CodexText
+    text: <link="FILTER">过滤介质</link>
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexImage
+    image: sand_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      过滤介质是用于将污染状态的<link="ELEMENTSGASSES">气体</link>或<link="ELEMENTSLIQUID">液体</link>分离净化的材料。
+
+
+      过滤介质会在过滤过程中被消耗并转化。比如，过滤污染水后<link="SAND">沙子</link>会变成<link="TOXICSAND">污染土</link>。
+    style: Body
+  - widget_type: CodexElementCategoryList
+    require:
+    - image: sand_0__ui
+      text1: 沙子
+      link_id: sand
+    - image: sand_0__ui
+      text1: 浮土
+      link_id: regolith
+    - image: meteor_sand_0__ui
+      text1: 尘埃流星
+      link_id: 尘埃流星
+    - image: meteor_rock_0__ui
+      text1: 岩石流星
+      link_id: 岩石流星
+    - image: meteor_dust_0__ui
+      text1: 浮尘流星
+      link_id: 浮尘流星
+    - image: unknown
+      text1: 岩石流星
+      link_id: 岩石流星
+  layout: Vertical

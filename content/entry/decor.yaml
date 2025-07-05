@@ -1,0 +1,32 @@
+id: DECOR
+name: 装饰度
+title: STRINGS.CODEX.DECORSYSTEM.TITLE
+disabled: False
+search_only: False
+category: SYSTEMS
+sort_string: <link="DECOR">装饰度</link>
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 装饰度
+    style: Subtitle
+  - widget_type: CodexText
+    text: >+
+      低装饰度会增加复制人的<link="STRESS">压力</link>。幸好，漂亮的东西会给周围区域增加装饰度。每名复制人对于多么高的装饰度算高有着不同的看法。如果复制人在一周期内经历的平均装饰度低于他们的期望，他们就会遭受压力惩罚。
+
+    style: Body
+  - widget_type: CodexText
+    text: 计算装饰度
+    style: Subtitle
+  - widget_type: CodexText
+    text: >-
+      许多东西对周围的装饰度都有影响。建筑的影响以值和范围来表示。经常这种影响是正面的，但有些建筑也会降低环境的装饰度。<link="PLANTS">植物</link>、<link="CREATURES">小动物</link>、<link="BUILDCATEGORYFURNITURE">家具</link>通常会提高装饰度，而工业建筑、杂物和腐烂物通常会降低装饰度。复制人感受到的装饰度是所有影响到这一格的物品装饰度总和。
+
+
+      <link="PRICKLEGRASS">诱人荆棘</link>装饰度为25，范围为4格。
+
+      <link="MICROBEMUSHER">食物压制器</link>装饰度为-15，范围为3格。
+
+      将<link="MICROBEMUSHER">食物压制器</link>放到<link="PRICKLEGRASS">诱人荆棘</link>旁边的装饰度总和是10。
+    style: Body
+  layout: Vertical

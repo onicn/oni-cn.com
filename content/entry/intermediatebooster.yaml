@@ -1,0 +1,51 @@
+id: INTERMEDIATEBOOSTER
+name: 免疫增补剂
+title: STRINGS.CODEX.INTERMEDIATEBOOSTER.TITLE
+disabled: False
+search_only: False
+category: MEDICINES
+sort_string: 免疫增补剂
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 免疫增补剂
+    style: Title
+  - widget_type: CodexText
+    text: 保健品
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      一种强大的增补剂，服用后可以明显降低患上由<style="KKeyword">病菌</style>引起的<link="DISEASE">疾病</link>的可能性。
+
+
+      必须每日服用。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 配药桌
+    require:
+    - image: spicenut_0__ui
+      text1: 火椒粒
+      text2: 1000克
+      link_id: spicenut
+    produce:
+    - image: pill_3_0__ui
+      text1: 免疫增补剂
+      text2: 1单位
+      link_id: intermediatebooster
+    fabricator:
+      image: apothecary_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 配药桌
+      text2: 100秒
+      link_id: apothecary
+  layout: Vertical

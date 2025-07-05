@@ -1,0 +1,69 @@
+id: THERMALSUITS
+parent_id: ROLES
+name: 太空服耐久训练
+disabled: False
+search_only: False
+category: ROLES
+sort_string: 太空服耐久训练
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="SUITDURABILITY">太空服耐久训练</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: hat_role_suits1
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 这名复制人穿的太空服耐久度损失减慢25%。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 工作培训
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexText
+    text: 工作培训会自动提供永久的特质和属性提升，即使复制人更换工作，这些特质和属性提升也会保留下来。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>+2</b><style="KKeyword">运动</style>
+    style: Body
+  - widget_type: CodexText
+    text: 减缓<link="EQUIPMENT">太空服</link>耐久损失
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提工作
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="HAULING1">改良携带 I</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="ROCKETPILOTING1">火箭驾驶</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 升职机会
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexText
+    text: 晋升会在现有工作培训的基础上带来更多属性提升和特质。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="SUITS1">太空服训练</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

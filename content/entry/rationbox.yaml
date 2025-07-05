@@ -1,0 +1,61 @@
+id: RATIONBOX
+parent_id: BUILDCATEGORYFOOD
+name: 口粮箱
+disabled: False
+search_only: False
+category: BUILDCATEGORYFOOD
+sort_string: 口粮箱
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="RATIONBOX">口粮箱</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 基础耕种
+    style: Body
+    image: research_type_alpha_icon
+    link_id: farmingtech
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: rationbox_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      储存少量<link="FOOD">食物</link>。
+
+
+      食物必须由复制人送到箱里。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：2格宽x2格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：10秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="BUILDABLERAW">矿物原料</link>400千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    库存容量：150千克'
+    tooltip: 最多容纳<b>150千克</b>材料
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：+5（范围：1格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>1</b>格内提高<b><b>+5</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>口粮箱可防止饥饿的小动物偷吃食物，但无法减缓食物变质。</i>
+    style: Body
+  layout: Vertical

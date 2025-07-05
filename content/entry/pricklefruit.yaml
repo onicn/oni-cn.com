@@ -1,0 +1,227 @@
+id: PRICKLEFRUIT
+parent_id: FOOD
+name: 毛刺浆果
+disabled: False
+search_only: False
+category: FOOD
+sort_string: 毛刺浆果
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="PRICKLEFRUIT">毛刺浆果</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: bristleberry_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 一种甜美好吃的水果，覆满多刺的钩毛。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 品质：糟糕 [0]
+    style: Body
+  - widget_type: CodexText
+    text: 卡路里：1,600千卡
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      冷藏温度：4ºC
+
+      深度冷冻温度：-18ºC
+
+      腐烂时间：8.0周期
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 炙烤刺果
+    require:
+    - image: bristleberry_0__ui
+      text1: 毛刺浆果
+      text2: 1,600千卡
+      tooltip: 品质：糟糕 [0]
+      link_id: pricklefruit
+    produce:
+    - image: gristleberry_0__ui
+      text1: 炙烤刺果
+      text2: 2,000千卡
+      tooltip: 品质：低劣 [+1]
+      link_id: grilledpricklefruit
+    fabricator:
+      image: cookstation_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 电动烤炉
+      text2: 50秒
+      link_id: cookingstation
+  - widget_type: CodexRecipePanel
+    text: 浆果糕
+    require:
+    - image: seed_coldwheat_0__ui
+      text1: 冰霜麦粒
+      text2: 5单位
+      link_id: coldwheat
+    - image: bristleberry_0__ui
+      text1: 毛刺浆果
+      text2: 1,600千卡
+      tooltip: 品质：糟糕 [0]
+      link_id: pricklefruit
+    produce:
+    - image: fruitcake_0__ui
+      text1: 浆果糕
+      text2: 4,000千卡
+      tooltip: 品质：良好 [+3]
+      link_id: fruitcake
+    fabricator:
+      image: microbemusher_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 食物压制器
+      text2: 50秒
+      link_id: microbemusher
+  - widget_type: CodexRecipePanel
+    text: 浆果糕
+    require:
+    - image: megafrond_grain_0__ui
+      text1: 巨蕨谷粒
+      text2: 5单位
+      link_id: fernfood
+    - image: bristleberry_0__ui
+      text1: 毛刺浆果
+      text2: 1,600千卡
+      tooltip: 品质：糟糕 [0]
+      link_id: pricklefruit
+    produce:
+    - image: fruitcake_0__ui
+      text1: 浆果糕
+      text2: 4,000千卡
+      tooltip: 品质：良好 [+3]
+      link_id: fruitcake
+    fabricator:
+      image: microbemusher_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 食物压制器
+      text2: 50秒
+      link_id: microbemusher
+  - widget_type: CodexConversionPanel
+    require:
+    - image: bristleberry_0__ui
+      text1: 毛刺浆果
+      text2: 160千卡/周期
+      tooltip: 品质：糟糕 [0]
+      link_id: pricklefruit
+    produce:
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 5千克/周期
+      link_id: dirt
+    fabricator:
+      image: ice_floof_0__ui
+      text1: 狐鹿
+      link_id: WOODDEER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: bristleberry_0__ui
+      text1: 毛刺浆果
+      text2: 266千卡/周期
+      tooltip: 品质：糟糕 [0]
+      link_id: pricklefruit
+    produce: []
+    fabricator:
+      image: lightbug_0__ui
+      text1: 发光虫
+      link_id: LIGHTBUG
+  - widget_type: CodexConversionPanel
+    require:
+    - image: bristleberry_0__ui
+      text1: 毛刺浆果
+      text2: 1,600千卡/周期
+      tooltip: 品质：糟糕 [0]
+      link_id: pricklefruit
+    produce: []
+    fabricator:
+      image: lightbug_0__pnk_ui
+      text1: 珊瑚虫
+      link_id: LIGHTBUGPINK
+  - widget_type: CodexConversionPanel
+    require:
+    - image: bristleberry_0__ui
+      text1: 毛刺浆果
+      text2: 700千卡/周期
+      tooltip: 品质：糟糕 [0]
+      link_id: pricklefruit
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 328.1克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__ui
+      text1: 好吃哈奇
+      link_id: HATCH
+  - widget_type: CodexConversionPanel
+    require:
+    - image: bristleberry_0__ui
+      text1: 毛刺浆果
+      text2: 700千卡/周期
+      tooltip: 品质：糟糕 [0]
+      link_id: pricklefruit
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 437.5克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__veg_ui
+      text1: 草质哈奇
+      link_id: HATCHVEGGIE
+  - widget_type: CodexConversionPanel
+    require:
+    - image: bristleberry_0__ui
+      text1: 毛刺浆果
+      text2: 1,300千卡/周期
+      tooltip: 品质：糟糕 [0]
+      link_id: pricklefruit
+    produce:
+    - image: peat_0__ui
+      text1: 泥炭
+      text2: 200千克/周期
+      link_id: peat
+    fabricator:
+      image: stego_0__ui
+      text1: 尖块兽
+      link_id: STEGO
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 20千克/周期
+      link_id: water
+    produce:
+    - image: bristleberry_0__ui
+      text1: 毛刺浆果
+      text2: 267千卡/周期
+      tooltip: 品质：糟糕 [0]
+      link_id: pricklefruit
+    fabricator:
+      image: bristleblossom_0__ui
+      text1: 毛刺花
+      link_id: PRICKLEFLOWER
+  layout: Vertical

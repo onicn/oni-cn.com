@@ -1,0 +1,127 @@
+id: MOLTENIRIDIUM
+parent_id: ELEMENTSLIQUID
+name: 熔融铱
+disabled: False
+search_only: False
+icon_color: CC788EFF
+category: ELEMENTSLIQUID
+sort_string: 熔融铱
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="MOLTENIRIDIUM">熔融铱</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    color: CC788EFF
+    image: element_liquid
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: CC788EFF
+      text1: 熔融铱
+      text2: 1000克
+      link_id: molteniridium
+    produce:
+    - image: element_gas
+      color: B0A0BAFF
+      text1: 气态铱
+      text2: 1000克
+      link_id: iridiumgas
+    fabricator:
+      image: crew_state_temp_up
+      text1: 4129.9ºC
+      tooltip: 温度高于4129.9ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: CC788EFF
+      text1: 熔融铱
+      text2: 1000克
+      link_id: molteniridium
+    produce:
+    - image: iridium_0__ui
+      text1: 铱
+      text2: 1000克
+      link_id: iridium
+    fabricator:
+      image: crew_state_temp_down
+      text1: 2445.9ºC
+      tooltip: 温度低于2445.9ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换于
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: iridium_0__ui
+      text1: 铱
+      text2: 1000克
+      link_id: iridium
+    produce:
+    - image: element_liquid
+      color: CC788EFF
+      text1: 熔融铱
+      text2: 1000克
+      link_id: molteniridium
+    fabricator:
+      image: crew_state_temp_up
+      text1: 2445.9ºC
+      tooltip: 温度高于2445.9ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_gas
+      color: B0A0BAFF
+      text1: 气态铱
+      text2: 1000克
+      link_id: iridiumgas
+    produce:
+    - image: element_liquid
+      color: CC788EFF
+      text1: 熔融铱
+      text2: 1000克
+      link_id: molteniridium
+    fabricator:
+      image: crew_state_temp_down
+      text1: 4129.9ºC
+      tooltip: 温度低于4129.9ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      (Ir) 熔融铱是一种被加热成<link="ELEMENTSLIQUID">液态</link>的高导性<link="RAWMETAL">金属</link>。
+
+
+      资源种类：<link="ELEMENTSLIQUID">液体</link>
+
+      冰点：2445.9ºC
+
+      沸点：4129.9ºC
+
+
+      比热容：0.131 (DTU/g)/ºC
+
+      热导率：170.000 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.88
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：<link="METAL">金属矿石</link>, <link="REFINEDMETAL">精炼金属</link>, <link="ELEMENTSLIQUID">液体</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

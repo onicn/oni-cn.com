@@ -1,0 +1,66 @@
+id: IMPROVEDGASPIPING
+parent_id: TECH
+name: 改良通风
+disabled: False
+search_only: False
+category: TECH
+sort_string: 改良通风
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="IMPROVEDGASPIPING">改良通风</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: <link="ELEMENTSGAS">气体</link>管道建设有了能在更严酷的环境下工作的能力，比如<link="HEAT">高温</link>和高压。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="PRESSUREMANAGEMENT">气压管理</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: utilities_gas_insulated_0__ui
+  - widget_type: CodexText
+    text: <link="INSULATEDGASCONDUIT">隔热气体管道</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: switchgaspressure_0__ui
+  - widget_type: CodexText
+    text: <link="LOGICPRESSURESENSORGAS">气压传感器</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: valvegas_logic_0__ui
+  - widget_type: CodexText
+    text: <link="GASLOGICVALVE">气体截断阀</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: ventgas_powered_0__ui
+  - widget_type: CodexText
+    text: <link="GASVENTHIGHPRESSURE">高压排气口</link>
+    style: Body
+  layout: Horizontal

@@ -1,0 +1,158 @@
+id: COLDWHEATBREAD
+parent_id: FOOD
+name: 冰霜面包
+disabled: False
+search_only: False
+category: FOOD
+sort_string: 冰霜面包
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="COLDWHEATBREAD">冰霜面包</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: frostbread_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      以<link="COLDWHEATSEED">冰霜麦粒</link>为原料烘焙而成的简单圆面包。
+
+
+      即使面包本身是暖的，但每咬一口都会在口中留下淡淡的清凉感。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 品质：标准 [+2]
+    style: Body
+  - widget_type: CodexText
+    text: 卡路里：1,200千卡
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      冷藏温度：4ºC
+
+      深度冷冻温度：-18ºC
+
+      腐烂时间：8.0周期
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 冰霜汉堡
+    require:
+    - image: frostbread_0__ui
+      text1: 冰霜面包
+      text2: 1,200千卡
+      tooltip: 品质：标准 [+2]
+      link_id: coldwheatbread
+    - image: sea_lettuce_leaves_0__ui
+      text1: 海生菜
+      text2: 400千卡
+      tooltip: 品质：糟糕 [0]
+      link_id: lettuce
+    - image: barbeque_0__ui
+      text1: 烤肉串
+      text2: 4,000千卡
+      tooltip: 品质：良好 [+3]
+      link_id: cookedmeat
+    produce:
+    - image: frost_burger_0__ui
+      text1: 冰霜汉堡
+      text2: 6,000千卡
+      tooltip: 品质：极佳 [+6]
+      link_id: burger
+    fabricator:
+      image: cookstation_gourmet_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 燃气灶
+      text2: 50秒
+      link_id: gourmetcookingstation
+  - widget_type: CodexConversionPanel
+    require:
+    - image: frostbread_0__ui
+      text1: 冰霜面包
+      text2: 700千卡/周期
+      tooltip: 品质：标准 [+2]
+      link_id: coldwheatbread
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 437.5克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__ui
+      text1: 好吃哈奇
+      link_id: HATCH
+  - widget_type: CodexConversionPanel
+    require:
+    - image: frostbread_0__ui
+      text1: 冰霜面包
+      text2: 700千卡/周期
+      tooltip: 品质：标准 [+2]
+      link_id: coldwheatbread
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 583.3克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__veg_ui
+      text1: 草质哈奇
+      link_id: HATCHVEGGIE
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 电动烤炉
+    require:
+    - image: seed_coldwheat_0__ui
+      text1: 冰霜麦粒
+      text2: 3单位
+      link_id: coldwheat
+    produce:
+    - image: frostbread_0__ui
+      text1: 冰霜面包
+      text2: 1,200千卡
+      tooltip: 品质：标准 [+2]
+      link_id: coldwheatbread
+    fabricator:
+      image: cookstation_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 电动烤炉
+      text2: 50秒
+      link_id: cookingstation
+  - widget_type: CodexRecipePanel
+    text: 电动烤炉
+    require:
+    - image: megafrond_grain_0__ui
+      text1: 巨蕨谷粒
+      text2: 3单位
+      link_id: fernfood
+    produce:
+    - image: frostbread_0__ui
+      text1: 冰霜面包
+      text2: 1,200千卡
+      tooltip: 品质：标准 [+2]
+      link_id: coldwheatbread
+    fabricator:
+      image: cookstation_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 电动烤炉
+      text2: 50秒
+      link_id: cookingstation
+  layout: Vertical

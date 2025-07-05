@@ -1,0 +1,202 @@
+id: LETTUCE
+parent_id: FOOD
+name: 海生菜
+disabled: False
+search_only: False
+category: FOOD
+sort_string: 海生菜
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="LETTUCE">海生菜</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: sea_lettuce_leaves_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: <link="SEALETTUCE">水草</link>上的松脆叶子，略咸。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 品质：糟糕 [0]
+    style: Body
+  - widget_type: CodexText
+    text: 卡路里：400千卡
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      冷藏温度：4ºC
+
+      深度冷冻温度：-18ºC
+
+      腐烂时间：4.0周期
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: '营养作用:'
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    • <link="IDFOODEFFECTS__SEAFOODRADIATIONRESISTANCE">辐射抗性：水产食品</link>'
+    tooltip: >-
+      吃这种食物能提高<style="KKeyword">辐射</style>抗性
+          • 辐射抗性: +20%
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 蘑菇卷
+    require:
+    - image: funguscapfried_0__ui
+      text1: 煎蘑菇
+      text2: 2,800千卡
+      tooltip: 品质：低劣 [+1]
+      link_id: friedmushroom
+    - image: sea_lettuce_leaves_0__ui
+      text1: 海生菜
+      text2: 1,600千卡
+      tooltip: 品质：糟糕 [0]
+      link_id: lettuce
+    produce:
+    - image: mushroom_wrap_0__ui
+      text1: 蘑菇卷
+      text2: 4,800千卡
+      tooltip: 品质：优秀 [+4]
+      link_id: mushroomwrap
+    fabricator:
+      image: cookstation_gourmet_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 燃气灶
+      text2: 50秒
+      link_id: gourmetcookingstation
+  - widget_type: CodexRecipePanel
+    text: 蘑菇乳蛋饼
+    require:
+    - image: cookedegg_0__ui
+      text1: 煎蛋卷
+      text2: 2,800千卡
+      tooltip: 品质：标准 [+2]
+      link_id: cookedegg
+    - image: sea_lettuce_leaves_0__ui
+      text1: 海生菜
+      text2: 400千卡
+      tooltip: 品质：糟糕 [0]
+      link_id: lettuce
+    - image: funguscapfried_0__ui
+      text1: 煎蘑菇
+      text2: 2,800千卡
+      tooltip: 品质：低劣 [+1]
+      link_id: friedmushroom
+    produce:
+    - image: quiche_0__ui
+      text1: 蘑菇乳蛋饼
+      text2: 6,400千卡
+      tooltip: 品质：杰出 [+5]
+      link_id: quiche
+    fabricator:
+      image: cookstation_gourmet_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 燃气灶
+      text2: 50秒
+      link_id: gourmetcookingstation
+  - widget_type: CodexRecipePanel
+    text: 冰霜汉堡
+    require:
+    - image: frostbread_0__ui
+      text1: 冰霜面包
+      text2: 1,200千卡
+      tooltip: 品质：标准 [+2]
+      link_id: coldwheatbread
+    - image: sea_lettuce_leaves_0__ui
+      text1: 海生菜
+      text2: 400千卡
+      tooltip: 品质：糟糕 [0]
+      link_id: lettuce
+    - image: barbeque_0__ui
+      text1: 烤肉串
+      text2: 4,000千卡
+      tooltip: 品质：良好 [+3]
+      link_id: cookedmeat
+    produce:
+    - image: frost_burger_0__ui
+      text1: 冰霜汉堡
+      text2: 6,000千卡
+      tooltip: 品质：极佳 [+6]
+      link_id: burger
+    fabricator:
+      image: cookstation_gourmet_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 燃气灶
+      text2: 50秒
+      link_id: gourmetcookingstation
+  - widget_type: CodexConversionPanel
+    require:
+    - image: sea_lettuce_leaves_0__ui
+      text1: 海生菜
+      text2: 700千卡/周期
+      tooltip: 品质：糟糕 [0]
+      link_id: lettuce
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 1312.5克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__ui
+      text1: 好吃哈奇
+      link_id: HATCH
+  - widget_type: CodexConversionPanel
+    require:
+    - image: sea_lettuce_leaves_0__ui
+      text1: 海生菜
+      text2: 700千卡/周期
+      tooltip: 品质：糟糕 [0]
+      link_id: lettuce
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 1750克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__veg_ui
+      text1: 草质哈奇
+      link_id: HATCHVEGGIE
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: CED2ECFF
+      text1: 盐水
+      text2: 5千克/周期
+      link_id: saltwater
+    - image: bleach_stone_0__ui
+      text1: 漂白石
+      text2: 500克/周期
+      link_id: bleachstone
+    produce:
+    - image: sea_lettuce_leaves_0__ui
+      text1: 海生菜
+      text2: 400千卡/周期
+      tooltip: 品质：糟糕 [0]
+      link_id: lettuce
+    fabricator:
+      image: sea_lettuce_0__ui
+      text1: 水草
+      link_id: SEALETTUCE
+  layout: Vertical

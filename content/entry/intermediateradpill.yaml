@@ -1,0 +1,51 @@
+id: INTERMEDIATERADPILL
+name: 中级辐射药丸
+title: STRINGS.CODEX.INTERMEDIATERADPILL.TITLE
+disabled: False
+search_only: False
+category: MEDICINES
+sort_string: 中级辐射药丸
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 中级辐射药丸
+    style: Title
+  - widget_type: CodexText
+    text: 加速辐射恢复
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      一种可以加快复制人身体中和辐射的增补剂，从而能让复制人承受更高的辐射暴露。
+
+
+      必须每日服用。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 核能配药桌
+    require:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 1000克
+      link_id: carbon
+    produce:
+    - image: vial_radiation_0__ui
+      text1: 中级辐射药丸
+      text2: 1单位
+      link_id: intermediateradpill
+    fabricator:
+      image: medicine_nuclear_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 核能配药桌
+      text2: 50秒
+      link_id: advancedapothecary
+  layout: Vertical

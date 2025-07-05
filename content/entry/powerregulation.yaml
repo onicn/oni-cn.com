@@ -1,0 +1,55 @@
+id: POWERREGULATION
+parent_id: TECH
+name: 电力调节
+disabled: False
+search_only: False
+category: TECH
+sort_string: 电力调节
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="POWERREGULATION">电力调节</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 用改进的电力工具防止<link="POWER">电力</link>浪费。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: batterymed_0__ui
+  - widget_type: CodexText
+    text: <link="BATTERYMEDIUM">巨型蓄电池</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: switchpower_0__ui
+  - widget_type: CodexText
+    text: <link="SWITCH">电闸</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: utilityelectricbridge_0__ui
+  - widget_type: CodexText
+    text: <link="WIREBRIDGE">电线桥</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: electrobank_discharger_small_0__ui
+  - widget_type: CodexText
+    text: <link="SMALLELECTROBANKDISCHARGER">袖珍放电器</link>
+    style: Body
+  layout: Horizontal

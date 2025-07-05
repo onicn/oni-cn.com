@@ -1,0 +1,40 @@
+id: PIPEDREAM
+name: 白日梦
+title: STRINGS.CODEX.A9_PIPEDREAM.TITLE
+disabled: False
+search_only: False
+category: JOURNALS
+sort_string: 白日梦
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 白日梦
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：零
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+  lock_id: journal_pipedream
+- contents:
+  - widget_type: CodexText
+    text: >-
+      [录音开始]
+
+
+      主管建议在打印期间植入人工记忆，但尽管在她的指导下我们的研究取得了巨大进步，这种事情仍不过是一个白日梦。
+
+
+      目前，我们的工作重心仍是解决系统中的其余小毛病，并为打印实验体开发有效的教育和培训程序。
+
+
+      建议：为欧米伽3号提供营养剂和神经活化剂，并对其培养舱保持长期监控。
+
+
+      布鲁萨德博士，实验记录结束。
+
+
+      [录音结束]
+    style: Body
+  layout: Vertical
+  lock_id: journal_pipedream

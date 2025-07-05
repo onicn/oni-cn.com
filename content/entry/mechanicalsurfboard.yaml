@@ -1,0 +1,126 @@
+id: MECHANICALSURFBOARD
+parent_id: BUILDCATEGORYFURNITURE
+name: 机械冲浪板
+disabled: False
+search_only: False
+category: BUILDCATEGORYFURNITURE
+sort_string: 机械冲浪板
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="MECHANICALSURFBOARD">机械冲浪板</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 流动重导
+    style: Body
+    image: research_type_alpha_icon
+    link_id: flowredirection
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: mechanical_surfboard_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      提升复制人的<link="MORALE">士气</link>
+
+
+      使用的时候一些<link="WATER">水</link>会溅到地上。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="POWER">电力</link>：480瓦'
+    tooltip: 必须与至少有<style="consumed">480瓦</style>可用<style="KKeyword">电力</style>的电路相连
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LIQUIDPIPING">液体输入管道</link>'
+    tooltip: 必须从<link="LIQUIDCONDUIT">液体管道</link>系统中接收<style="KKeyword">液体</style>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    优选房间：娱乐室'
+    tooltip: 建造在<style="KKeyword">娱乐室</style>内时，这个建筑会获得额外的效果或功能
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="WATER">水</link>：2000克'
+    tooltip: 这个建筑需要补充2000克<link="WATER">水</link>才能运作。
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    溢出量：50克/秒'
+    tooltip: 这个建筑在使用时会溢出内容物50克/秒，这一部分必须重新补充。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：2格宽x3格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：60秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="METAL">金属矿石</link>400千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="HEAT">热量</link>：+1000复制热/秒'
+    tooltip: >-
+      每秒产生<style="produced">1000复制热</style>
+
+
+      总<style="KKeyword">温度</style>变化受到加热物质的材料属性影响：
+          • 质量
+          • 比热容
+          • 表面积
+          • 隔热厚度
+          • 热导率
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    娱乐'
+    tooltip: 在<style="KKeyword">休息时间</style>提升复制人的<style="KKeyword">士气</style>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    士气: +2'
+    tooltip: ''
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    过热<link="HEAT">温度</link>：75ºC'
+    tooltip: 达到<b>75ºC</b>时开始过热
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LOGIC">信号输入端</link>'
+    tooltip: 当接收到信号时，输入端会使这个建筑一种状态发生变化
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    启用/禁用'
+    tooltip: >-
+      输入端行为：
+
+      • <b><style="logic_on">绿色信号</style></b>：启用建筑
+
+      • <b><style="logic_off">红色信号</style></b>：禁用建筑
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：+10（范围：2格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>2</b>格内提高<b><b>+10</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>类别</b>
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    <link="REQUIREMENTCLASSRECBUILDING">娱乐建筑</link>'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>用机械海浪带来全新娱乐体验。</i>
+    style: Body
+  layout: Vertical

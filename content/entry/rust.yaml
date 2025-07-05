@@ -1,0 +1,175 @@
+id: RUST
+parent_id: ELEMENTSSOLID
+name: 铁锈
+disabled: False
+search_only: False
+category: ELEMENTSSOLID
+sort_string: 铁锈
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="RUST">铁锈</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: iron_oxide_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: iron_oxide_0__ui
+      text1: 铁锈
+      text2: 1000克
+      link_id: rust
+    produce:
+    - image: element_liquid
+      color: 5F98ADFF
+      text1: 熔融铁
+      text2: 1000克
+      link_id: molteniron
+    fabricator:
+      image: crew_state_temp_up
+      text1: 1534.9ºC
+      tooltip: 温度高于1534.9ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: iron_oxide_0__ui
+      text1: 铁锈
+      text2: 450千克/周期
+      link_id: rust
+    - image: salt_0__ui
+      text1: 盐
+      text2: 150千克/周期
+      link_id: salt
+    produce:
+    - image: element_gas
+      color: B7FFFFFF
+      text1: 氧气
+      text2: 342千克/周期
+      link_id: oxygen
+    - image: element_gas
+      color: 04A778FF
+      text1: 氯气
+      text2: 18千克/周期
+      link_id: chlorinegas
+    - image: hematite_0__ui
+      text1: 铁矿
+      text2: 240千克/周期
+      link_id: ironore
+    fabricator:
+      image: rust_deoxidizer_0__ui
+      text1: 铁锈脱氧机
+      link_id: RUSTDEOXIDIZER
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: pacu_0__ui
+      text1: 帕库鱼
+      text2: 1单位/周期
+      link_id: pacu
+    produce:
+    - image: iron_oxide_0__ui
+      text1: 铁锈
+      text2: 60千克/周期
+      link_id: rust
+    fabricator:
+      image: paculacanth_0__ui
+      text1: 颚鱼
+      link_id: PREHISTORICPACU
+  - widget_type: CodexConversionPanel
+    require:
+    - image: pacu_0__glp_ui
+      text1: 大嘴鱼
+      text2: 1单位/周期
+      link_id: pacucleaner
+    produce:
+    - image: iron_oxide_0__ui
+      text1: 铁锈
+      text2: 60千克/周期
+      link_id: rust
+    fabricator:
+      image: paculacanth_0__ui
+      text1: 颚鱼
+      link_id: PREHISTORICPACU
+  - widget_type: CodexConversionPanel
+    require:
+    - image: pacu_0__trp_ui
+      text1: 热带帕库鱼
+      text2: 1单位/周期
+      link_id: pacutropical
+    produce:
+    - image: iron_oxide_0__ui
+      text1: 铁锈
+      text2: 60千克/周期
+      link_id: rust
+    fabricator:
+      image: paculacanth_0__ui
+      text1: 颚鱼
+      link_id: PREHISTORICPACU
+  - widget_type: CodexConversionPanel
+    require:
+    - image: pacufillet_0__ui
+      text1: 帕库鱼片
+      text2: 1,000千卡/周期
+      tooltip: 品质：标准 [+2]
+      link_id: fishmeat
+    produce:
+    - image: iron_oxide_0__ui
+      text1: 铁锈
+      text2: 60千克/周期
+      link_id: rust
+    fabricator:
+      image: paculacanth_0__ui
+      text1: 颚鱼
+      link_id: PREHISTORICPACU
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      铁锈是一种氧化铁，由<link="IRON">铁</link>分解形成。
+
+
+      它可用于生产<link="OXYGEN">氧气</link>。
+
+
+      资源种类：消耗性矿石
+
+      熔点：1534.9ºC
+
+      硬度：<color=#866BA5FF>25（坚硬）</color>
+
+
+      比热容：0.449 (DTU/g)/ºC
+
+      热导率：4.000 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.7
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：<link="ELEMENTSSOLID">固体</link>, 消耗性矿石
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

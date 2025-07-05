@@ -1,0 +1,59 @@
+id: IMPROVEDCOMBUSTION
+parent_id: TECH
+name: 化石燃料
+disabled: False
+search_only: False
+category: TECH
+sort_string: 化石燃料
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="IMPROVEDCOMBUSTION">化石燃料</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 燃烧脏燃料以生产丰富的<link="POWER">电力</link>。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="COMBUSTION">内燃机</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: generatormethane_0__ui
+  - widget_type: CodexText
+    text: <link="METHANEGENERATOR">天然气发电机</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: oilrefinery_0__ui
+  - widget_type: CodexText
+    text: <link="OILREFINERY">原油精炼器</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: generatorpetrol_0__ui
+  - widget_type: CodexText
+    text: <link="PETROLEUMGENERATOR">石油发电机</link>
+    style: Body
+  layout: Horizontal

@@ -1,0 +1,226 @@
+id: DEERSPECIES
+parent_id: CREATURES
+name: 狐鹿
+disabled: False
+search_only: False
+category: CREATURES
+sort_string: <link="DEERSPECIES">狐鹿</link>
+required_dlc_ids:
+- DLC2_ID
+sub_entries:
+- id: WoodDeer
+  parent_id: DeerSpecies
+  name: <link="WOODDEER">狐鹿</link>
+  disabled: False
+  sort_string: 狐鹿
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 狐鹿
+    style: Title
+  - widget_type: CodexText
+    text: 可驯化的小动物
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      狐鹿的浓密外层毛均匀分布着无数触须般的毛发，能够传递关于环境的感官信息，
+
+
+      狐鹿通过甩尾巴来释放积压的能量以避免过度刺激。由于这些触觉毛发非常敏感，所以不能安全地剪掉。
+
+
+      然而，狐鹿角没有神经连接并且很笨重。帮忙卸下头角负担的饲养员常常能获得这种小动物因满足而长久而缓慢的眨眼作为奖励。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: ice_floof_0__ui
+  - widget_type: CodexImage
+    image: baby_ice_floof_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexText
+    text: >-
+      狐鹿是没有敌意的小动物，吃<link="PRICKLEFLOWER">毛刺花</link>和<link="HARDSKINBERRY">刺壳果</link>。
+
+
+      狐鹿的角长成时，会硬化为可修剪的<link="WOOD">木材</link>。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 理想温度
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 舒适范围：<b>-30ºC</b>至<b>10ºC</b>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 存活范围：<b>-60ºC</b>至<b>100ºC</b>'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 寿命
+    style: Subtitle
+  - widget_type: CodexText
+    text: 这种小动物特征<link="CREATURES__GUIDE__FERTILITY">寿命</link>为<b>100周期</b>。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 所需空间
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 当房间空间对每只小动物平均少于<b>12格</b>时会感到<link="CREATURES__GUIDE__MOOD">拥挤</link>。'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 当房间小于<b>12格</b>时会感到<link="CREATURES__GUIDE__MOOD">封闭</link>。'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 掉落物
+    style: Subtitle
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 肉
+    image: creaturemeat_0__ui
+    link_id: meat
+  - widget_type: CodexText
+    text: 	1,600千卡
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 食物
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: ice_berry_bush_0__ui
+      text1: 刺壳果灌木
+      text2: 20% 生长进度/周期
+      link_id: hardskinberryplant
+    produce:
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 5千克/周期
+      link_id: dirt
+    fabricator:
+      image: ice_floof_0__ui
+      text1: 狐鹿
+      link_id: WOODDEER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: iceberry_0__ui
+      text1: 刺壳果
+      text2: 160千卡/周期
+      tooltip: 品质：恶心 [-1]
+      link_id: hardskinberry
+    produce:
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 5千克/周期
+      link_id: dirt
+    fabricator:
+      image: ice_floof_0__ui
+      text1: 狐鹿
+      link_id: WOODDEER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: bristleblossom_0__ui
+      text1: 毛刺花
+      text2: 10% 生长进度/周期
+      link_id: prickleflower
+    produce:
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 5千克/周期
+      link_id: dirt
+    fabricator:
+      image: ice_floof_0__ui
+      text1: 狐鹿
+      link_id: WOODDEER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: bristleberry_0__ui
+      text1: 毛刺浆果
+      text2: 160千卡/周期
+      tooltip: 品质：糟糕 [0]
+      link_id: pricklefruit
+    produce:
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 5千克/周期
+      link_id: dirt
+    fabricator:
+      image: ice_floof_0__ui
+      text1: 狐鹿
+      link_id: WOODDEER
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: ice_floof_0__ui
+      text1: 狐鹿
+      text2: 1单位
+      link_id: wooddeer
+    produce:
+    - image: wood_0__ui
+      text1: 木材
+      text2: 360千克
+      link_id: woodlog
+    fabricator:
+      image: shearing_station_0__ui
+      text1: 修剪站
+      link_id: SHEARINGSTATION
+  - widget_type: CodexConversionPanel
+    require: []
+    produce:
+    - image: creaturemeat_0__ui
+      text1: 肉
+      text2: 1,600千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: meat
+    fabricator:
+      image: ice_floof_0__ui
+      text1: 狐鹿
+      link_id: WOODDEER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: ice_floof_0__ui
+      text1: 狐鹿
+      text2: 0.5单位/周期
+      link_id: wooddeer
+    produce:
+    - image: frozen_brine_0__ui
+      text1: 浓盐冰
+      text2: 128千克/周期
+      link_id: brine
+    fabricator:
+      image: raptor_0__ui
+      text1: 霸王鹦
+      link_id: RAPTOR
+  layout: Vertical

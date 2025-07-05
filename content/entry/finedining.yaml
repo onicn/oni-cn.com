@@ -1,0 +1,66 @@
+id: FINEDINING
+parent_id: TECH
+name: 食物制备
+disabled: False
+search_only: False
+category: TECH
+sort_string: 食物制备
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="FINEDINING">食物制备</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 制作更有营养的<link="FOOD">食物</link>，并在变质前将其储存更长时间。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="FARMINGTECH">基础耕种</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: cookstation_0__ui
+  - widget_type: CodexText
+    text: <link="COOKINGSTATION">电动烤炉</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: egg_cracker_0__ui
+  - widget_type: CodexText
+    text: <link="EGGCRACKER">敲蛋桌</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: diningtable_0__ui
+  - widget_type: CodexText
+    text: <link="DININGTABLE">餐桌</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: farmtilerotating_0__ui
+  - widget_type: CodexText
+    text: <link="FARMTILE">土培砖</link>
+    style: Body
+  layout: Horizontal

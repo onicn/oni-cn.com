@@ -1,0 +1,28 @@
+id: VIDEOS18
+name: 视频：水管及通风
+disabled: False
+search_only: False
+category: Videos
+sort_string: 视频：水管及通风
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 视频：水管及通风
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexVideo
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      连接管道的时候最好选中水管概览 {Hotkey/Overlay6}。每个需要接入管道的建筑都必须将它们的输入口连接到一条输出管道上，后者应当从一个液体源（比如液泵）上引出。液泵必须要浸没在液体中并通电才能运作。
+
+
+      建筑经常会输出污染水，必须通过管道流出建筑物。然后这些水可以通过排液口排出，或者通过净水器再次使用。
+
+
+      通风系统与其原理类似。选择通风概览 {Hotkey/Overlay7} 以查看气体是如何在殖民地中被移动的。
+    style: Body
+  layout: Vertical

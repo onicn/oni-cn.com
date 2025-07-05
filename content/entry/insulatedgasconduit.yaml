@@ -1,0 +1,57 @@
+id: INSULATEDGASCONDUIT
+parent_id: BUILDCATEGORYHVAC
+name: 隔热气体管道
+disabled: False
+search_only: False
+category: BUILDCATEGORYHVAC
+sort_string: 隔热气体管道
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="INSULATEDGASCONDUIT">隔热气体管道</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 改良通风
+    style: Body
+    image: research_type_alpha_icon
+    link_id: improvedgaspiping
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: utilities_gas_insulated_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      以极小的<link="HEAT">温度</link>变化输送<link="ELEMENTSGAS">气体</link>。
+
+
+      可穿过墙体和地面。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：1格宽x1格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：10秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="BUILDABLERAW">矿物原料</link>400千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：-5（范围：1格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>1</b>格内降低<b><b>-5</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>管道隔热可以防止气体在运送过程中遭受剧烈的温度变化。</i>
+    style: Body
+  layout: Vertical

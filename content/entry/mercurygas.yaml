@@ -1,0 +1,109 @@
+id: MERCURYGAS
+parent_id: ELEMENTSGAS
+name: 汞蒸气
+disabled: False
+search_only: False
+icon_color: 4D6DCAFF
+category: ELEMENTSGAS
+sort_string: 汞蒸气
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="MERCURYGAS">汞蒸气</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    color: 4D6DCAFF
+    image: element_gas
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_gas
+      color: 4D6DCAFF
+      text1: 汞蒸气
+      text2: 1000克
+      link_id: mercurygas
+    produce:
+    - image: element_liquid
+      color: 7393B4FF
+      text1: 汞
+      text2: 1000克
+      link_id: mercury
+    fabricator:
+      image: crew_state_temp_down
+      text1: 356.8ºC
+      tooltip: 温度低于356.8ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换于
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: cinnabar_0__ui
+      text1: 朱砂矿
+      text2: 1000克
+      link_id: cinnabar
+    produce:
+    - image: element_gas
+      color: 4D6DCAFF
+      text1: 汞蒸气
+      text2: 1000克
+      link_id: mercurygas
+    fabricator:
+      image: crew_state_temp_up
+      text1: 583.5ºC
+      tooltip: 温度高于583.5ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: 7393B4FF
+      text1: 汞
+      text2: 1000克
+      link_id: mercury
+    produce:
+    - image: element_gas
+      color: 4D6DCAFF
+      text1: 汞蒸气
+      text2: 1000克
+      link_id: mercurygas
+    fabricator:
+      image: crew_state_temp_up
+      text1: 356.8ºC
+      tooltip: 温度高于356.8ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      (Hg) 汞蒸气是一种被加热成<link="ELEMENTSGAS">气态</link>的<link="RAWMETAL">金属</link>。
+
+
+      资源种类：不可呼吸的气体
+
+      凝点：356.8ºC
+
+
+      比热容：0.140 (DTU/g)/ºC
+
+      热导率：8.300 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.02
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：<link="REFINEDMETAL">精炼金属</link>, 气体, 不可呼吸的气体
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

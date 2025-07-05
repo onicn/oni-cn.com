@@ -1,0 +1,118 @@
+id: LESSONS
+name: 教程
+disabled: False
+search_only: False
+category: SYSTEMS
+sort_string: 教程
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="VIDEOS">视频</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexLabelWithLargeIcon
+    text: 视频：复制人士气
+    style: BodyWhite
+    image: codexVideo
+    link_id: videos13
+  - widget_type: CodexLabelWithLargeIcon
+    text: 视频：复制人移动
+    style: BodyWhite
+    image: codexVideo
+    link_id: videos5
+  - widget_type: CodexLabelWithLargeIcon
+    text: 视频：挖掘资源
+    style: BodyWhite
+    image: codexVideo
+    link_id: videos15
+  - widget_type: CodexLabelWithLargeIcon
+    text: 视频：水管及通风
+    style: BodyWhite
+    image: codexVideo
+    link_id: videos18
+  - widget_type: CodexLabelWithLargeIcon
+    text: 视频：电路
+    style: BodyWhite
+    image: codexVideo
+    link_id: videos16
+  - widget_type: CodexLabelWithLargeIcon
+    text: 视频：隔热
+    style: BodyWhite
+    image: codexVideo
+    link_id: videos17
+  layout: Grid
+- contents:
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 系统
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexLabelWithLargeIcon
+    text: 电力
+    style: BodyWhite
+    image: icon_category_electrical
+    link_id: power
+  - widget_type: CodexLabelWithLargeIcon
+    text: 研究
+    style: BodyWhite
+    image: research_type_icon
+    link_id: research
+  - widget_type: CodexLabelWithLargeIcon
+    text: 士气
+    style: BodyWhite
+    image: icon_category_morale
+    link_id: morale
+  - widget_type: CodexLabelWithLargeIcon
+    text: 压力
+    style: BodyWhite
+    image: hud_stress
+    link_id: stress
+  - widget_type: CodexLabelWithLargeIcon
+    text: 优先度
+    style: BodyWhite
+    image: OverviewUI_priority_icon
+    link_id: priority
+  - widget_type: CodexLabelWithLargeIcon
+    text: 装饰度
+    style: BodyWhite
+    image: icon_category_decor
+    link_id: decor
+  - widget_type: CodexLabelWithLargeIcon
+    text: 热量
+    style: BodyWhite
+    image: icon_category_utilities
+    link_id: heat
+  - widget_type: CodexLabelWithLargeIcon
+    text: 照明
+    style: BodyWhite
+    image: icon_category_lights
+    link_id: light
+  - widget_type: CodexLabelWithLargeIcon
+    text: 自动化
+    style: BodyWhite
+    image: icon_category_automation
+    link_id: logic
+  - widget_type: CodexLabelWithLargeIcon
+    text: 生命值
+    style: BodyWhite
+    image: icon_category_medical
+    link_id: health
+  - widget_type: CodexLabelWithLargeIcon
+    text: 太空旅行
+    style: BodyWhite
+    image: icon_category_rocketry
+    link_id: exobases
+  - widget_type: CodexLabelWithLargeIcon
+    text: 提示
+    style: BodyWhite
+    image: icon_category_medical
+    link_id: miscellaneoustips
+  - widget_type: CodexSpacer
+  layout: Grid

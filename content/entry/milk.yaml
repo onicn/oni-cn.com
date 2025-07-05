@@ -1,0 +1,264 @@
+id: MILK
+parent_id: ELEMENTSLIQUID
+name: 咸乳
+disabled: False
+search_only: False
+icon_color: CCEEE8FF
+category: ELEMENTSLIQUID
+sort_string: 咸乳
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="MILK">咸乳</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    color: CCEEE8FF
+    image: element_liquid
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: CCEEE8FF
+      text1: 咸乳
+      text2: 1000克
+      link_id: milk
+    produce:
+    - image: element_liquid
+      color: ADE9E5FF
+      text1: 浓盐水
+      text2: 900克
+      link_id: brine
+    - image: milkfat_0__ui
+      text1: 咸乳蜡
+      text2: 100克
+      link_id: milkfat
+    fabricator:
+      image: crew_state_temp_up
+      text1: 80ºC
+      tooltip: 温度高于80ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: CCEEE8FF
+      text1: 咸乳
+      text2: 1000克
+      link_id: milk
+    produce:
+    - image: milk_0__ui
+      text1: 凝冻咸乳
+      text2: 1000克
+      link_id: milkice
+    fabricator:
+      image: crew_state_temp_down
+      text1: -16.5ºC
+      tooltip: 温度低于-16.5ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换于
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: milk_0__ui
+      text1: 凝冻咸乳
+      text2: 1000克
+      link_id: milkice
+    produce:
+    - image: element_liquid
+      color: CCEEE8FF
+      text1: 咸乳
+      text2: 1000克
+      link_id: milk
+    fabricator:
+      image: crew_state_temp_up
+      text1: -16.5ºC
+      tooltip: 温度高于-16.5ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: CCEEE8FF
+      text1: 咸乳
+      text2: 600千克/周期
+      link_id: milk
+    produce:
+    - image: milkfat_0__ui
+      text1: 咸乳蜡
+      text2: 54千克/周期
+      link_id: milkfat
+    - image: element_liquid
+      color: ADE9E5FF
+      text1: 浓盐水
+      text2: 486千克/周期
+      link_id: brine
+    - image: element_gas
+      color: 000000FF
+      text1: 二氧化碳
+      text2: 60千克/周期
+      link_id: carbondioxide
+    fabricator:
+      image: milk_separator_0__ui
+      text1: 咸乳蜡收集器
+      link_id: MILKFATSEPARATOR
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 植物粉碎机
+    require:
+    - image: seed_coldwheat_0__ui
+      text1: 冰霜麦粒
+      text2: 10单位
+      link_id: coldwheat
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 15千克
+      link_id: water
+    produce:
+    - image: element_liquid
+      color: CCEEE8FF
+      text1: 咸乳
+      text2: 20千克
+      link_id: milk
+    fabricator:
+      image: milkpress_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 植物粉碎机
+      text2: 40秒
+      link_id: milkpress
+  - widget_type: CodexRecipePanel
+    text: 植物粉碎机
+    require:
+    - image: spicenut_0__ui
+      text1: 火椒粒
+      text2: 3000克
+      link_id: spicenut
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 17千克
+      link_id: water
+    produce:
+    - image: element_liquid
+      color: CCEEE8FF
+      text1: 咸乳
+      text2: 20千克
+      link_id: milk
+    fabricator:
+      image: milkpress_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 植物粉碎机
+      text2: 40秒
+      link_id: milkpress
+  - widget_type: CodexRecipePanel
+    text: 植物粉碎机
+    require:
+    - image: seed_beanplant_0__ui
+      text1: 小吃豆
+      text2: 2单位
+      link_id: bean
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 18千克
+      link_id: water
+    produce:
+    - image: element_liquid
+      color: CCEEE8FF
+      text1: 咸乳
+      text2: 20千克
+      link_id: milk
+    fabricator:
+      image: milkpress_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 植物粉碎机
+      text2: 40秒
+      link_id: milkpress
+  - widget_type: CodexRecipePanel
+    text: 植物粉碎机
+    require:
+    - image: brackorb_0__ui
+      text1: 露珠
+      text2: 2单位
+      link_id: dewdrip
+    produce:
+    - image: element_liquid
+      color: CCEEE8FF
+      text1: 咸乳
+      text2: 20千克
+      link_id: milk
+    fabricator:
+      image: milkpress_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 植物粉碎机
+      text2: 40秒
+      link_id: milkpress
+  - widget_type: CodexConversionPanel
+    require:
+    - image: gassygrass_0__ui
+      text1: 释气草
+      text2: 2单位
+      link_id: gasgrass
+    produce:
+    - image: element_liquid
+      color: CCEEE8FF
+      text1: 咸乳
+      text2: 50千克
+      link_id: milk
+    fabricator:
+      image: gassy_moo_0__ui
+      text1: 释气海牛
+      link_id: MOO
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      咸乳是一种富含钠的<link="ELEMENTSLIQUID">液体</link>。
+
+
+      它可用于<link="RANCHING">养殖</link>。
+
+
+      资源种类：<link="ELEMENTSLIQUID">液体</link>
+
+      冰点：-16.5ºC
+
+      沸点：80ºC
+
+
+      比热容：4.100 (DTU/g)/ºC
+
+      热导率：0.609 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.8
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：<link="ELEMENTSLIQUID">液体</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

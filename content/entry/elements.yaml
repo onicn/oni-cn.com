@@ -1,0 +1,43 @@
+id: ELEMENTS
+name: 元素
+disabled: False
+search_only: False
+category: Root
+sort_string: 元素
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="ELEMENTS">元素</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexLabelWithLargeIcon
+    text: 固体
+    style: BodyWhite
+    image: ui_elements-solid
+    link_id: elementssolid
+  - widget_type: CodexLabelWithLargeIcon
+    text: 液体
+    style: BodyWhite
+    image: ui_elements-liquids
+    link_id: elementsliquid
+  - widget_type: CodexLabelWithLargeIcon
+    text: 气体
+    style: BodyWhite
+    image: ui_elements-gases
+    link_id: elementsgas
+  - widget_type: CodexLabelWithLargeIcon
+    text: 其他
+    style: BodyWhite
+    image: ui_elements-other
+    link_id: elementsother
+  - widget_type: CodexLabelWithLargeIcon
+    text: 元素属性
+    style: BodyWhite
+    image: ui_elements-other
+    link_id: elementtypes
+  layout: Grid
+- contents:
+  - widget_type: CodexSpacer
+  layout: Vertical

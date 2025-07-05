@@ -1,0 +1,43 @@
+id: COMBUSTIBLELIQUID
+parent_id: ELEMENTTYPES
+name: 可燃液体
+title: STRINGS.MISC.TAGS.COMBUSTIBLELIQUID
+disabled: False
+search_only: False
+category: ELEMENTTYPES
+sort_string: <link="COMBUSTIBLELIQUID">可燃液体</link>
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="COMBUSTIBLELIQUID">可燃液体</link>
+    style: Title
+  - widget_type: CodexText
+    text: <link="COMBUSTIBLELIQUID">可燃液体</link>
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexImage
+    image: liquid_jerrycan_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      可燃液体可作为燃料用于能量生产，比如用于<link="PETROLEUMGENERATOR">石油发电机</link>或<link="KEROSENEENGINECLUSTER">石油引擎</link>中。
+
+
+      尽管这些液体也有其他用途，比如作为<link="BEANPLANTSEED">小吃豆</link>生长的养料，但它们最主要的用途还是当燃料<link="POWER">发电</link>。
+    style: Body
+  - widget_type: CodexElementCategoryList
+    require:
+    - image: element_liquid
+      color: E1CB69FF
+      text1: 生物柴油
+      link_id: refinedlipid
+    - image: element_liquid
+      color: FFC325FF
+      text1: 石油
+      link_id: petroleum
+    - image: element_liquid
+      color: 00FF6AFF
+      text1: 乙醇
+      link_id: ethanol
+  layout: Vertical

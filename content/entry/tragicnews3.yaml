@@ -1,0 +1,42 @@
+id: TRAGICNEWS3
+name: 悲剧避免
+title: STRINGS.CODEX.INVESTIGATIONS.DLC2_RADIOCLIP3.TITLE
+disabled: False
+search_only: False
+category: RESEARCHNOTES
+sort_string: 悲剧避免
+required_dlc_ids:
+- DLC2_ID
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 悲剧避免
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：无
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+  lock_id: notes_tragicnews3
+- contents:
+  - widget_type: CodexText
+    text: "<smallcaps><b>[检测到文件片段]</b></smallcaps>\n\n……\n\n[无线电静电音。]\n\n……一次近乎悲惨的意外成为了历史性的胜利……      \n\n……旗舰人工智能项目……\n\n     ……晴空涡流……     ……破纪录的风暴……\n\n……飞行员失去意识……    ……自动系统代行……\n\n     ……安然无恙……      ……顶点研究所所长表示感谢……[无法识别]上校代表了……\n\n      ……延长了资金期限，未指定数额……\n\n……研究界欢呼雀跃……     竞争对手庄严科技发表声明……要求回应……关于公司间谍活动的指控……\n\n      ……拒绝发表评论……\n\n……继续关注……\n\n"
+    style: Body
+  layout: Vertical
+  lock_id: notes_tragicnews3
+- contents:
+  - widget_type: CodexText
+    text: >
+      ……
+
+
+      [无线电静电音。]
+
+
+      <smallcaps><b>[录音结束]</b></smallcaps>
+
+
+      -----------
+    style: Body
+  layout: Vertical
+  lock_id: notes_tragicnews3

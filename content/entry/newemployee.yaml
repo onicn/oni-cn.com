@@ -1,0 +1,58 @@
+id: NEWEMPLOYEE
+name: 欢迎，新员工
+title: STRINGS.CODEX.A7_NEWEMPLOYEE.TITLE
+disabled: False
+search_only: False
+category: EMAILS
+sort_string: 欢迎，新员工
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 欢迎，新员工
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：无
+    style: Subtitle
+  layout: Vertical
+  lock_id: email_newemployee
+- contents:
+  - widget_type: CodexText
+    text: >
+      <smallcaps>收件人：<b>全体</b>
+
+      发件人：<b>[受屏蔽]</b></smallcaps>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_newemployee
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <indent=5%>所有庄严科技工作人员请注意；
+
+
+      请欢迎我们的新成员，奥莉维亚·布鲁萨德博士。
+
+
+      布鲁萨德博士已在我们的生物工程部正式就职，并负责领导即将开展的一个基因项目。
+
+
+      请务必致以我们最热烈的欢迎。</indent>
+    style: Body
+  layout: Vertical
+  lock_id: email_newemployee
+- contents:
+  - widget_type: CodexText
+    text: >2
+
+      [受屏蔽]
+
+      <size=11>人事协调员
+
+      庄严科技</indent>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_newemployee

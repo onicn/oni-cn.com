@@ -1,0 +1,93 @@
+id: ETHANOLGAS
+parent_id: ELEMENTSGAS
+name: 气态乙醇
+disabled: False
+search_only: False
+icon_color: 00FF6AFF
+category: ELEMENTSGAS
+sort_string: 气态乙醇
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="ETHANOLGAS">气态乙醇</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    color: 00FF6AFF
+    image: element_gas
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_gas
+      color: 00FF6AFF
+      text1: 气态乙醇
+      text2: 1000克
+      link_id: ethanolgas
+    produce:
+    - image: element_liquid
+      color: 00FF6AFF
+      text1: 乙醇
+      text2: 1000克
+      link_id: ethanol
+    fabricator:
+      image: crew_state_temp_down
+      text1: 78.4ºC
+      tooltip: 温度低于78.4ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换于
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: 00FF6AFF
+      text1: 乙醇
+      text2: 1000克
+      link_id: ethanol
+    produce:
+    - image: element_gas
+      color: 00FF6AFF
+      text1: 气态乙醇
+      text2: 1000克
+      link_id: ethanolgas
+    fabricator:
+      image: crew_state_temp_up
+      text1: 78.4ºC
+      tooltip: 温度高于78.4ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      (C<sub>2</sub>H<sub>6</sub>O) 气态乙醇是一种被加热成<link="ELEMENTSGAS">气态</link>的高级化合物。
+
+
+      资源种类：不可呼吸的气体
+
+      凝点：78.4ºC
+
+
+      比热容：2.148 (DTU/g)/ºC
+
+      热导率：0.167 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.07
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：气体, 不可呼吸的气体
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

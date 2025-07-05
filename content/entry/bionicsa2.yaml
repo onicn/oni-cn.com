@@ -1,0 +1,66 @@
+id: BIONICSA2
+parent_id: ROLES
+name: 增幅块数据处理 II
+disabled: False
+search_only: False
+category: ROLES
+sort_string: 增幅块数据处理 II
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="BIONICSA2">增幅块数据处理 II</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: hat_role_gainingboosters2
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 允许仿生复制人额外安装一个增幅块，并提高行走速度。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 增幅块安装
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexText
+    text: 安装增幅块可立即赋予仿生复制人属性和技能升级。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>+1</b><style="KKeyword">增幅块槽位</style>
+    style: Body
+  - widget_type: CodexText
+    text: <b>+2</b><style="KKeyword">运动</style>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提工作
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="BIONICSA1">增幅块数据处理 I</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 系统优化
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexText
+    text: 优化是策略性地组合和叠加安装的仿生增幅块的结果。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="BIONICSA3">复杂数据处理</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

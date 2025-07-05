@@ -1,0 +1,690 @@
+id: PETROLEUM
+parent_id: ELEMENTSLIQUID
+name: 石油
+disabled: False
+search_only: False
+icon_color: FFC325FF
+category: ELEMENTSLIQUID
+sort_string: 石油
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="PETROLEUM">石油</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    color: FFC325FF
+    image: element_liquid
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: FFC325FF
+      text1: 石油
+      text2: 1000克
+      link_id: petroleum
+    produce:
+    - image: element_gas
+      color: 76245DFF
+      text1: 高硫天然气
+      text2: 1000克
+      link_id: sourgas
+    fabricator:
+      image: crew_state_temp_up
+      text1: 538.9ºC
+      tooltip: 温度高于538.9ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: FFC325FF
+      text1: 石油
+      text2: 1000克
+      link_id: petroleum
+    produce:
+    - image: wolframite_0__ui
+      text1: 固态石油
+      text2: 1000克
+      link_id: solidpetroleum
+    fabricator:
+      image: crew_state_temp_down
+      text1: -57.1ºC
+      tooltip: 温度低于-57.1ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换于
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: wolframite_0__ui
+      text1: 固态石油
+      text2: 1000克
+      link_id: solidpetroleum
+    produce:
+    - image: element_liquid
+      color: FFC325FF
+      text1: 石油
+      text2: 1000克
+      link_id: petroleum
+    fabricator:
+      image: crew_state_temp_up
+      text1: -57.1ºC
+      tooltip: 温度高于-57.1ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: 301265FF
+      text1: 原油
+      text2: 1000克
+      link_id: crudeoil
+    produce:
+    - image: element_liquid
+      color: FFC325FF
+      text1: 石油
+      text2: 1000克
+      link_id: petroleum
+    fabricator:
+      image: crew_state_temp_up
+      text1: 399.9ºC
+      tooltip: 温度高于399.9ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: 512360FF
+      text1: 粘渣油
+      text2: 1000克
+      link_id: liquidgunk
+    produce:
+    - image: element_liquid
+      color: FFC325FF
+      text1: 石油
+      text2: 920克
+      link_id: petroleum
+    - image: sulfur_0__ui
+      text1: 硫
+      text2: 80克
+      link_id: sulfur
+    fabricator:
+      image: crew_state_temp_up
+      text1: 447.9ºC
+      tooltip: 温度高于447.9ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 超级冷却剂
+    require:
+    - image: fullerene_0__ui
+      text1: 富勒烯
+      text2: 1000克
+      link_id: fullerene
+    - image: gold_refined_0__ui
+      text1: 金
+      text2: 49.5千克
+      link_id: gold
+    - image: element_liquid
+      color: FFC325FF
+      text1: 石油
+      text2: 49.5千克
+      link_id: petroleum
+    produce:
+    - image: element_liquid
+      color: 37AD93FF
+      text1: 超级冷却剂
+      text2: 100千克
+      link_id: supercoolant
+    fabricator:
+      image: chemistry_lab_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 乳化器
+      text2: 80秒
+      link_id: chemicalrefinery
+  - widget_type: CodexRecipePanel
+    text: 粘性凝胶流体
+    require:
+    - image: isoresin_0__ui
+      text1: 异构树液
+      text2: 35千克
+      link_id: isoresin
+    - image: element_liquid
+      color: FFC325FF
+      text1: 石油
+      text2: 65千克
+      link_id: petroleum
+    produce:
+    - image: element_liquid
+      color: 4F10B7FF
+      text1: 粘性凝胶流体
+      text2: 100千克
+      link_id: viscogel
+    fabricator:
+      image: chemistry_lab_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 乳化器
+      text2: 80秒
+      link_id: chemicalrefinery
+  - widget_type: CodexRecipePanel
+    text: 爆破弹
+    require:
+    - image: nickel_0__ui
+      text1: 镍
+      text2: 25千克
+      link_id: nickel
+    - image: element_liquid
+      color: FFC325FF
+      text1: 石油
+      text2: 50千克
+      link_id: petroleum
+    produce:
+    - image: missile_0__ui
+      text1: 爆破弹
+      text2: 5单位
+      link_id: missilelauncher
+    fabricator:
+      image: missile_fabricator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 爆破弹组装机
+      text2: 80秒
+      link_id: missilefabricator
+  - widget_type: CodexRecipePanel
+    text: 爆破弹
+    require:
+    - image: copper_refined_0__ui
+      text1: 铜
+      text2: 25千克
+      link_id: copper
+    - image: element_liquid
+      color: FFC325FF
+      text1: 石油
+      text2: 50千克
+      link_id: petroleum
+    produce:
+    - image: missile_0__ui
+      text1: 爆破弹
+      text2: 5单位
+      link_id: missilelauncher
+    fabricator:
+      image: missile_fabricator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 爆破弹组装机
+      text2: 80秒
+      link_id: missilefabricator
+  - widget_type: CodexRecipePanel
+    text: 爆破弹
+    require:
+    - image: cobalt_refined_0__ui
+      text1: 钴
+      text2: 25千克
+      link_id: cobalt
+    - image: element_liquid
+      color: FFC325FF
+      text1: 石油
+      text2: 50千克
+      link_id: petroleum
+    produce:
+    - image: missile_0__ui
+      text1: 爆破弹
+      text2: 5单位
+      link_id: missilelauncher
+    fabricator:
+      image: missile_fabricator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 爆破弹组装机
+      text2: 80秒
+      link_id: missilefabricator
+  - widget_type: CodexRecipePanel
+    text: 爆破弹
+    require:
+    - image: aluminum_0__ui
+      text1: 铝
+      text2: 25千克
+      link_id: aluminum
+    - image: element_liquid
+      color: FFC325FF
+      text1: 石油
+      text2: 50千克
+      link_id: petroleum
+    produce:
+    - image: missile_0__ui
+      text1: 爆破弹
+      text2: 5单位
+      link_id: missilelauncher
+    fabricator:
+      image: missile_fabricator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 爆破弹组装机
+      text2: 80秒
+      link_id: missilefabricator
+  - widget_type: CodexRecipePanel
+    text: 爆破弹
+    require:
+    - image: iron_refined_0__ui
+      text1: 铁
+      text2: 25千克
+      link_id: iron
+    - image: element_liquid
+      color: FFC325FF
+      text1: 石油
+      text2: 50千克
+      link_id: petroleum
+    produce:
+    - image: missile_0__ui
+      text1: 爆破弹
+      text2: 5单位
+      link_id: missilelauncher
+    fabricator:
+      image: missile_fabricator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 爆破弹组装机
+      text2: 80秒
+      link_id: missilefabricator
+  - widget_type: CodexRecipePanel
+    text: 宇宙内爆破弹
+    require:
+    - image: nickel_0__ui
+      text1: 镍
+      text2: 50千克
+      link_id: nickel
+    - image: fertilizer_0__ui
+      text1: 肥料
+      text2: 100千克
+      link_id: fertilizer
+    - image: element_liquid
+      color: FFC325FF
+      text1: 石油
+      text2: 200千克
+      link_id: petroleum
+    produce:
+    - image: longrange_missile_0__ui
+      text1: 宇宙内爆破弹
+      text2: 1单位
+      link_id: missilelauncher
+    fabricator:
+      image: missile_fabricator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 爆破弹组装机
+      text2: 80秒
+      link_id: missilefabricator
+  - widget_type: CodexRecipePanel
+    text: 宇宙内爆破弹
+    require:
+    - image: nickel_0__ui
+      text1: 镍
+      text2: 50千克
+      link_id: nickel
+    - image: peat_0__ui
+      text1: 泥炭
+      text2: 100千克
+      link_id: peat
+    - image: element_liquid
+      color: FFC325FF
+      text1: 石油
+      text2: 200千克
+      link_id: petroleum
+    produce:
+    - image: longrange_missile_0__ui
+      text1: 宇宙内爆破弹
+      text2: 1单位
+      link_id: missilelauncher
+    fabricator:
+      image: missile_fabricator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 爆破弹组装机
+      text2: 80秒
+      link_id: missilefabricator
+  - widget_type: CodexRecipePanel
+    text: 宇宙内爆破弹
+    require:
+    - image: copper_refined_0__ui
+      text1: 铜
+      text2: 50千克
+      link_id: copper
+    - image: fertilizer_0__ui
+      text1: 肥料
+      text2: 100千克
+      link_id: fertilizer
+    - image: element_liquid
+      color: FFC325FF
+      text1: 石油
+      text2: 200千克
+      link_id: petroleum
+    produce:
+    - image: longrange_missile_0__ui
+      text1: 宇宙内爆破弹
+      text2: 1单位
+      link_id: missilelauncher
+    fabricator:
+      image: missile_fabricator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 爆破弹组装机
+      text2: 80秒
+      link_id: missilefabricator
+  - widget_type: CodexRecipePanel
+    text: 宇宙内爆破弹
+    require:
+    - image: copper_refined_0__ui
+      text1: 铜
+      text2: 50千克
+      link_id: copper
+    - image: peat_0__ui
+      text1: 泥炭
+      text2: 100千克
+      link_id: peat
+    - image: element_liquid
+      color: FFC325FF
+      text1: 石油
+      text2: 200千克
+      link_id: petroleum
+    produce:
+    - image: longrange_missile_0__ui
+      text1: 宇宙内爆破弹
+      text2: 1单位
+      link_id: missilelauncher
+    fabricator:
+      image: missile_fabricator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 爆破弹组装机
+      text2: 80秒
+      link_id: missilefabricator
+  - widget_type: CodexRecipePanel
+    text: 宇宙内爆破弹
+    require:
+    - image: cobalt_refined_0__ui
+      text1: 钴
+      text2: 50千克
+      link_id: cobalt
+    - image: fertilizer_0__ui
+      text1: 肥料
+      text2: 100千克
+      link_id: fertilizer
+    - image: element_liquid
+      color: FFC325FF
+      text1: 石油
+      text2: 200千克
+      link_id: petroleum
+    produce:
+    - image: longrange_missile_0__ui
+      text1: 宇宙内爆破弹
+      text2: 1单位
+      link_id: missilelauncher
+    fabricator:
+      image: missile_fabricator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 爆破弹组装机
+      text2: 80秒
+      link_id: missilefabricator
+  - widget_type: CodexRecipePanel
+    text: 宇宙内爆破弹
+    require:
+    - image: cobalt_refined_0__ui
+      text1: 钴
+      text2: 50千克
+      link_id: cobalt
+    - image: peat_0__ui
+      text1: 泥炭
+      text2: 100千克
+      link_id: peat
+    - image: element_liquid
+      color: FFC325FF
+      text1: 石油
+      text2: 200千克
+      link_id: petroleum
+    produce:
+    - image: longrange_missile_0__ui
+      text1: 宇宙内爆破弹
+      text2: 1单位
+      link_id: missilelauncher
+    fabricator:
+      image: missile_fabricator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 爆破弹组装机
+      text2: 80秒
+      link_id: missilefabricator
+  - widget_type: CodexRecipePanel
+    text: 宇宙内爆破弹
+    require:
+    - image: aluminum_0__ui
+      text1: 铝
+      text2: 50千克
+      link_id: aluminum
+    - image: fertilizer_0__ui
+      text1: 肥料
+      text2: 100千克
+      link_id: fertilizer
+    - image: element_liquid
+      color: FFC325FF
+      text1: 石油
+      text2: 200千克
+      link_id: petroleum
+    produce:
+    - image: longrange_missile_0__ui
+      text1: 宇宙内爆破弹
+      text2: 1单位
+      link_id: missilelauncher
+    fabricator:
+      image: missile_fabricator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 爆破弹组装机
+      text2: 80秒
+      link_id: missilefabricator
+  - widget_type: CodexRecipePanel
+    text: 宇宙内爆破弹
+    require:
+    - image: aluminum_0__ui
+      text1: 铝
+      text2: 50千克
+      link_id: aluminum
+    - image: peat_0__ui
+      text1: 泥炭
+      text2: 100千克
+      link_id: peat
+    - image: element_liquid
+      color: FFC325FF
+      text1: 石油
+      text2: 200千克
+      link_id: petroleum
+    produce:
+    - image: longrange_missile_0__ui
+      text1: 宇宙内爆破弹
+      text2: 1单位
+      link_id: missilelauncher
+    fabricator:
+      image: missile_fabricator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 爆破弹组装机
+      text2: 80秒
+      link_id: missilefabricator
+  - widget_type: CodexRecipePanel
+    text: 宇宙内爆破弹
+    require:
+    - image: iron_refined_0__ui
+      text1: 铁
+      text2: 50千克
+      link_id: iron
+    - image: fertilizer_0__ui
+      text1: 肥料
+      text2: 100千克
+      link_id: fertilizer
+    - image: element_liquid
+      color: FFC325FF
+      text1: 石油
+      text2: 200千克
+      link_id: petroleum
+    produce:
+    - image: longrange_missile_0__ui
+      text1: 宇宙内爆破弹
+      text2: 1单位
+      link_id: missilelauncher
+    fabricator:
+      image: missile_fabricator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 爆破弹组装机
+      text2: 80秒
+      link_id: missilefabricator
+  - widget_type: CodexRecipePanel
+    text: 宇宙内爆破弹
+    require:
+    - image: iron_refined_0__ui
+      text1: 铁
+      text2: 50千克
+      link_id: iron
+    - image: peat_0__ui
+      text1: 泥炭
+      text2: 100千克
+      link_id: peat
+    - image: element_liquid
+      color: FFC325FF
+      text1: 石油
+      text2: 200千克
+      link_id: petroleum
+    produce:
+    - image: longrange_missile_0__ui
+      text1: 宇宙内爆破弹
+      text2: 1单位
+      link_id: missilelauncher
+    fabricator:
+      image: missile_fabricator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 爆破弹组装机
+      text2: 80秒
+      link_id: missilefabricator
+  - widget_type: CodexRecipePanel
+    text: 喷气服
+    require:
+    - image: steel_0__ui
+      text1: 钢
+      text2: 200千克
+      link_id: steel
+    - image: element_liquid
+      color: FFC325FF
+      text1: 石油
+      text2: 25千克
+      link_id: petroleum
+    produce:
+    - image: suit_jetpack_0__ui
+      text1: 喷气服
+      text2: 1单位
+      link_id: jetsuit
+    fabricator:
+      image: suit_maker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 太空服锻造台
+      text2: 40秒
+      link_id: suitfabricator
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: FFC325FF
+      text1: 石油
+      text2: 500千克/周期
+      link_id: petroleum
+    produce:
+    - image: polypropylene_0__ui
+      text1: 塑料
+      text2: 300千克/周期
+      link_id: polypropylene
+    - image: element_gas
+      color: 85C9E3FF
+      text1: 蒸汽
+      text2: 5千克/周期
+      link_id: steam
+    - image: element_gas
+      color: 000000FF
+      text1: 二氧化碳
+      text2: 5千克/周期
+      link_id: carbondioxide
+    fabricator:
+      image: plasticrefinery_0__ui
+      text1: 聚合物压塑器
+      link_id: POLYMERIZER
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: 301265FF
+      text1: 原油
+      text2: 6吨/周期
+      link_id: crudeoil
+    produce:
+    - image: element_liquid
+      color: FFC325FF
+      text1: 石油
+      text2: 3000千克/周期
+      link_id: petroleum
+    - image: element_gas
+      color: FF6E0FFF
+      text1: 天然气
+      text2: 54千克/周期
+      link_id: methane
+    fabricator:
+      image: oilrefinery_0__ui
+      text1: 原油精炼器
+      link_id: OILREFINERY
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_gas
+      color: 000000FF
+      text1: 二氧化碳
+      text2: 20千克/周期
+      link_id: carbondioxide
+    produce:
+    - image: element_liquid
+      color: FFC325FF
+      text1: 石油
+      text2: 10千克/周期
+      link_id: petroleum
+    fabricator:
+      image: oilfloater_0__hot_ui
+      text1: 熔岩浮油生物
+      link_id: OILFLOATERHIGHTEMP
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      石油是一种<link="POWER">电力</link>来源，通过提炼<link="CRUDEOIL">原油</link>获得。
+
+
+      它也是生产<link="POLYPROPYLENE">塑料</link>所需的重要原料。
+
+
+      资源种类：<link="ELEMENTSLIQUID">液体</link>
+
+      冰点：-57.1ºC
+
+      沸点：538.9ºC
+
+
+      比热容：1.760 (DTU/g)/ºC
+
+      热导率：2.000 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.8
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：<link="COMBUSTIBLELIQUID">可燃液体</link>, <link="PLASTIFIABLELIQUID">塑料单体</link>, <link="ELEMENTSLIQUID">液体</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

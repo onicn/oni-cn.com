@@ -1,0 +1,94 @@
+id: ROCKETINTERIORSOLIDOUTPUT
+parent_id: BUILDCATEGORYROCKETRY
+name: 运输装载配件
+disabled: False
+search_only: False
+category: BUILDCATEGORYROCKETRY
+sort_string: 运输装载配件
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="ROCKETINTERIORSOLIDOUTPUT">运输装载配件</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 固体控制
+    style: Body
+    image: research_type_alpha_icon
+    link_id: solidspace
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: rocket_floor_plug_solid_out_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      允许<link="ELEMENTSSOLID">固体材料</link>通过<link="SOLIDCONDUIT">运输轨道</link>从火箭库存中取出。
+
+
+      从第一个有需求材料的火箭舱块中将固体材料取出。
+
+
+      必须建在火箭舱块内部。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="POWER">电力</link>：60瓦'
+    tooltip: 必须与至少有<style="consumed">60瓦</style>可用<style="KKeyword">电力</style>的电路相连
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：1格宽x1格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：3秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="METAL">金属矿石</link>25千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="HEAT">热量</link>：+500复制热/秒'
+    tooltip: >-
+      每秒产生<style="produced">500复制热</style>
+
+
+      总<style="KKeyword">温度</style>变化受到加热物质的材料属性影响：
+          • 质量
+          • 比热容
+          • 表面积
+          • 隔热厚度
+          • 热导率
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LOGIC">信号输入端</link>'
+    tooltip: 当接收到信号时，输入端会使这个建筑一种状态发生变化
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    启用/禁用'
+    tooltip: >-
+      输入端行为：
+
+      • <b><style="logic_on">绿色信号</style></b>：启用建筑
+
+      • <b><style="logic_off">红色信号</style></b>：禁用建筑
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：-15（范围：3格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>3</b>格内降低<b><b>-15</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>飞行途中就可以拿出你的行李了。</i>
+    style: Body
+  layout: Vertical

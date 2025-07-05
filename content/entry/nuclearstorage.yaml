@@ -1,0 +1,45 @@
+id: NUCLEARSTORAGE
+parent_id: TECH
+name: 辐射粒子控制
+disabled: False
+search_only: False
+category: TECH
+sort_string: 辐射粒子控制
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="NUCLEARSTORAGE">辐射粒子控制</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 建造一个高质量辐射粒子缓存装置。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="ADVANCEDNUCLEARRESEARCH">进阶材料科学研究</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: radbolt_battery_0__ui
+  - widget_type: CodexText
+    text: <link="HEPBATTERY">辐射粒子蓄存器</link>
+    style: Body
+  layout: Horizontal

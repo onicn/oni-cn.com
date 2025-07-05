@@ -1,0 +1,132 @@
+id: GASGRASS
+parent_id: PLANTS
+name: 释气草
+disabled: False
+search_only: False
+category: PLANTS
+sort_string: 释气草
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 释气草
+    style: Title
+  - widget_type: CodexText
+    text: 小动物饲料
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      释气草是最近才在外太空任务中找到的一种类似植物的生命形式，目前关于它的生理习性还有许多未解之谜。
+
+
+      不过，它似乎以来自太空的环境辐射为能源，在充满<link="CHLORINE">液态氯</link>的适当环境中能快速生长。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: gassygrass_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 成长自
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: seed_gassygrass_0__ui
+  - widget_type: CodexText
+    text: <link="GASGRASS">释气草种子</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 详情
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexText
+    text: 释气草是一种暂时归类为“植物”的外星生命，是<link="MOO">释气海牛</link>的唯一食物。
+    style: Body
+  - widget_type: CodexText
+    text: >-
+      <b>生长需求</b>：
+          • 最大<link="RADIATION">辐射</link>：12,200拉德/周期
+          • 生长周期：4.0周期
+          • <link="LIGHT">照明</link>：10000勒克斯
+          • <link="HEAT">温度</link>：-273.2至75ºC
+          • <link="DIRT">泥土</link>：-25千克/周期
+          • <link="CHLORINE">液态氯</link>：-500克/周期
+          • 农地
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      <b>效果</b>：
+          • <link="GASGRASS">释气草</link>：1000克
+          • 基础<link="PLANTS">种子</link>收获几率：10%
+          • <link="DECOR">装饰度</link>：+25（范围：4格）
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: 3AC330FF
+      text1: 液态氯
+      text2: 500克/周期
+      link_id: chlorine
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 25千克/周期
+      link_id: dirt
+    produce:
+    - image: harvested_gassygrass_0__ui
+      text1: 释气草
+      text2: 250克/周期
+      link_id: gasgrass
+    fabricator:
+      image: gassygrass_0__ui
+      text1: 释气草
+      link_id: GASGRASS
+  - widget_type: CodexConversionPanel
+    require:
+    - image: gassygrass_0__ui
+      text1: 释气草
+      text2: 2单位
+      link_id: gasgrass
+    produce:
+    - image: element_liquid
+      color: CCEEE8FF
+      text1: 咸乳
+      text2: 50千克
+      link_id: milk
+    fabricator:
+      image: gassy_moo_0__ui
+      text1: 释气海牛
+      link_id: MOO
+  - widget_type: CodexConversionPanel
+    require:
+    - image: gassygrass_0__ui
+      text1: 释气草
+      text2: 50% 生长进度/周期
+      link_id: gasgrass
+    produce:
+    - image: element_gas
+      color: FF6E0FFF
+      text1: 天然气
+      text2: 10千克/周期
+      link_id: methane
+    fabricator:
+      image: gassy_moo_0__ui
+      text1: 释气海牛
+      link_id: MOO
+  layout: Vertical

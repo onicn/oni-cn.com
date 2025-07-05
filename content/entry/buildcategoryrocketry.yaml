@@ -1,0 +1,264 @@
+id: BUILDCATEGORYROCKETRY
+parent_id: BUILDINGS
+name: 火箭
+disabled: False
+search_only: False
+category: BUILDINGS
+sort_string: 火箭
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="BUILDCATEGORYROCKETRY">火箭</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexLabelWithLargeIcon
+    text: 二氧化碳引擎
+    style: BodyWhite
+    image: rocket_co2_engine_0__ui
+    link_id: co2engine
+  - widget_type: CodexLabelWithLargeIcon
+    text: 侦察舱
+    style: BodyWhite
+    image: rocket_scout_cargo_module_0__ui
+    link_id: scoutmodule
+  - widget_type: CodexLabelWithLargeIcon
+    text: 先锋舱
+    style: BodyWhite
+    image: rocket_pioneer_cargo_module_0__ui
+    link_id: pioneermodule
+  - widget_type: CodexLabelWithLargeIcon
+    text: 制图舱
+    style: BodyWhite
+    image: rocket_scanner_module_0__ui
+    link_id: scannermodule
+  - widget_type: CodexLabelWithLargeIcon
+    text: 单太空员前锥
+    style: BodyWhite
+    image: rocket_nosecone_0__ui
+    link_id: habitatmodulesmall
+  - widget_type: CodexLabelWithLargeIcon
+    text: 基础前锥
+    style: BodyWhite
+    image: rocket_nosecone_default_0__ui
+    link_id: noseconebasic
+  - widget_type: CodexLabelWithLargeIcon
+    text: 大型固体氧化剂舱
+    style: BodyWhite
+    image: rocket_cluster_oxidizer_tank_0__ui
+    link_id: oxidizertankcluster
+  - widget_type: CodexLabelWithLargeIcon
+    text: 大型气罐货舱
+    style: BodyWhite
+    image: rocket_cluster_storage_gas_0__ui
+    link_id: gascargobaycluster
+  - widget_type: CodexLabelWithLargeIcon
+    text: 大型液缸燃料舱
+    style: BodyWhite
+    image: rocket_cluster_liquid_fuel_tank_0__ui
+    link_id: liquidfueltankcluster
+  - widget_type: CodexLabelWithLargeIcon
+    text: 大型液缸货舱
+    style: BodyWhite
+    image: rocket_cluster_storage_liquid_0__ui
+    link_id: liquidcargobaycluster
+  - widget_type: CodexLabelWithLargeIcon
+    text: 大型货舱
+    style: BodyWhite
+    image: rocket_cluster_storage_solid_0__ui
+    link_id: cargobaycluster
+  - widget_type: CodexLabelWithLargeIcon
+    text: 太空员舱
+    style: BodyWhite
+    image: rocket_habitat_medium_module_0__ui
+    link_id: habitatmodulemedium
+  - widget_type: CodexLabelWithLargeIcon
+    text: 太阳能舱
+    style: BodyWhite
+    image: rocket_solar_panel_module_0__ui
+    link_id: solarpanelmodule
+  - widget_type: CodexLabelWithLargeIcon
+    text: 定位信标
+    style: BodyWhite
+    image: landing_beacon_0__ui
+    link_id: landingbeacon
+  - widget_type: CodexLabelWithLargeIcon
+    text: 小动物货舱
+    style: BodyWhite
+    image: rocket_storage_live_small_0__ui
+    link_id: specialcargobaycluster
+  - widget_type: CodexLabelWithLargeIcon
+    text: 小型固体氧化剂舱
+    style: BodyWhite
+    image: rocket_oxidizer_tank_small_0__ui
+    link_id: smalloxidizertank
+  - widget_type: CodexLabelWithLargeIcon
+    text: 小型石油引擎
+    style: BodyWhite
+    image: rocket_petro_engine_small_0__ui
+    link_id: keroseneengineclustersmall
+  - widget_type: CodexLabelWithLargeIcon
+    text: 工艺品运输舱
+    style: BodyWhite
+    image: artifact_transport_module_0__ui
+    link_id: artifactcargobay
+  - widget_type: CodexLabelWithLargeIcon
+    text: 星图位置传感器
+    style: BodyWhite
+    image: logic_location_0__ui
+    link_id: logicclusterlocationsensor
+  - widget_type: CodexLabelWithLargeIcon
+    text: 星际发射器
+    style: BodyWhite
+    image: rail_gun_0__ui
+    link_id: railgun
+  - widget_type: CodexLabelWithLargeIcon
+    text: 望远镜
+    style: BodyWhite
+    image: telescope_low_0__ui
+    link_id: clustertelescope
+  - widget_type: CodexLabelWithLargeIcon
+    text: 机器驾驶舱
+    style: BodyWhite
+    image: robot_rocket_control_station_0__ui
+    link_id: robopilotmodule
+  - widget_type: CodexLabelWithLargeIcon
+    text: 气体输入配件
+    style: BodyWhite
+    image: rocket_floor_plug_gas_0__ui
+    link_id: rocketinteriorgasinput
+  - widget_type: CodexLabelWithLargeIcon
+    text: 气体输出配件
+    style: BodyWhite
+    image: rocket_floor_plug_gas_out_0__ui
+    link_id: rocketinteriorgasoutput
+  - widget_type: CodexLabelWithLargeIcon
+    text: 气罐货舱
+    style: BodyWhite
+    image: rocket_storage_gas_small_0__ui
+    link_id: gascargobaysmall
+  - widget_type: CodexLabelWithLargeIcon
+    text: 流星爆破炮
+    style: BodyWhite
+    image: missile_launcher_0__ui
+    link_id: missilelauncher
+  - widget_type: CodexLabelWithLargeIcon
+    text: 液体氧化剂舱
+    style: BodyWhite
+    image: rocket_cluster_oxidizer_tank_liquid_0__ui
+    link_id: oxidizertankliquidcluster
+  - widget_type: CodexLabelWithLargeIcon
+    text: 液体输入配件
+    style: BodyWhite
+    image: rocket_floor_plug_liquid_0__ui
+    link_id: rocketinteriorliquidinput
+  - widget_type: CodexLabelWithLargeIcon
+    text: 液体输出配件
+    style: BodyWhite
+    image: rocket_floor_plug_liquid_out_0__ui
+    link_id: rocketinteriorliquidoutput
+  - widget_type: CodexLabelWithLargeIcon
+    text: 液氢引擎
+    style: BodyWhite
+    image: rocket_cluster_hydrogen_engine_0__ui
+    link_id: hydrogenenginecluster
+  - widget_type: CodexLabelWithLargeIcon
+    text: 液缸货舱
+    style: BodyWhite
+    image: rocket_storage_liquid_small_0__ui
+    link_id: liquidcargobaysmall
+  - widget_type: CodexLabelWithLargeIcon
+    text: 火箭平台
+    style: BodyWhite
+    image: rocket_launchpad_0__ui
+    link_id: launchpad
+  - widget_type: CodexLabelWithLargeIcon
+    text: 火箭控制台
+    style: BodyWhite
+    image: rocket_control_station_0__ui
+    link_id: rocketcontrolstation
+  - widget_type: CodexLabelWithLargeIcon
+    text: 火箭端口延伸桥
+    style: BodyWhite
+    image: rocket_loader_extension_0__ui
+    link_id: modularlaunchpadportbridge
+  - widget_type: CodexLabelWithLargeIcon
+    text: 环轨货舱
+    style: BodyWhite
+    image: rocket_orbital_deploy_cargo_module_0__ui
+    link_id: orbitalcargomodule
+  - widget_type: CodexLabelWithLargeIcon
+    text: 电源插座配件
+    style: BodyWhite
+    image: rocket_floor_plug_0__ui
+    link_id: rocketinteriorpowerplug
+  - widget_type: CodexLabelWithLargeIcon
+    text: 石油引擎
+    style: BodyWhite
+    image: rocket_cluster_petroleum_engine_0__ui
+    link_id: keroseneenginecluster
+  - widget_type: CodexLabelWithLargeIcon
+    text: 糖素引擎
+    style: BodyWhite
+    image: rocket_sugar_engine_0__ui
+    link_id: sugarengine
+  - widget_type: CodexLabelWithLargeIcon
+    text: 航天指挥站
+    style: BodyWhite
+    image: mission_control_station_0__ui
+    link_id: missioncontrolcluster
+  - widget_type: CodexLabelWithLargeIcon
+    text: 蒸汽引擎
+    style: BodyWhite
+    image: rocket_cluster_steam_engine_0__ui
+    link_id: steamenginecluster
+  - widget_type: CodexLabelWithLargeIcon
+    text: 蓄电池舱
+    style: BodyWhite
+    image: rocket_battery_pack_0__ui
+    link_id: batterymodule
+  - widget_type: CodexLabelWithLargeIcon
+    text: 货舱
+    style: BodyWhite
+    image: rocket_storage_solid_small_0__ui
+    link_id: solidcargobaysmall
+  - widget_type: CodexLabelWithLargeIcon
+    text: 载货拆包器
+    style: BodyWhite
+    image: railgun_emptier_0__ui
+    link_id: railgunpayloadopener
+  - widget_type: CodexLabelWithLargeIcon
+    text: 辐射粒子引擎
+    style: BodyWhite
+    image: rocket_hep_engine_0__ui
+    link_id: hepengine
+  - widget_type: CodexLabelWithLargeIcon
+    text: 运输存放配件
+    style: BodyWhite
+    image: rocket_floor_plug_solid_0__ui
+    link_id: rocketinteriorsolidinput
+  - widget_type: CodexLabelWithLargeIcon
+    text: 运输装载配件
+    style: BodyWhite
+    image: rocket_floor_plug_solid_out_0__ui
+    link_id: rocketinteriorsolidoutput
+  - widget_type: CodexLabelWithLargeIcon
+    text: 通行支架
+    style: BodyWhite
+    image: gantry_0__ui
+    link_id: gantry
+  - widget_type: CodexLabelWithLargeIcon
+    text: 钻头前锥
+    style: BodyWhite
+    image: rocket_nosecone_gathering_0__ui
+    link_id: noseconeharvest
+  - widget_type: CodexLabelWithLargeIcon
+    text: 隔绝式望远镜
+    style: BodyWhite
+    image: telescope_0__ui
+    link_id: clustertelescopeenclosed
+  layout: Grid
+- contents:
+  - widget_type: CodexSpacer
+  layout: Vertical

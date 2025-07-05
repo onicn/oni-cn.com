@@ -1,0 +1,155 @@
+id: HUSBANDRYNOTES
+name: 畜牧业笔记
+title: STRINGS.CODEX.A3_HUSBANDRYNOTES.TITLE
+disabled: False
+search_only: False
+category: RESEARCHNOTES
+sort_string: 畜牧业笔记
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 畜牧业笔记
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：三
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+  lock_id: notes_husbandry1
+- contents:
+  - widget_type: CodexText
+    text: >
+      <smallcaps>[检测到录音片段]
+
+      [声纹识别系统不可用]</smallcaps>
+
+
+      [录音开始]
+
+
+      ……好吃哈奇天生拥有广泛的潜在食物来源，因此获选用于进行基因开发。
+
+
+      虽然能源生产是我们的首要目标，但对它进行强化，使它可以摄取非有机物质是更容易实现的第一步，而且对废物处置也有益处……
+
+
+      [录音结束]
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: notes_husbandry1
+- contents:
+  - widget_type: CodexText
+    text: >
+      [录音开始]
+
+
+      ……疫病章鱼能够执行健康生态系统中典型的多种废物分解功能，因此获选用于进行基因开发。
+
+
+      设计应该关注消除完全成熟的疫病章鱼标本带来的疾病风险……
+
+
+      [录音结束]
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: notes_husbandry1
+- contents:
+  - widget_type: CodexText
+    text: >
+      [录音开始]
+
+
+      ……喷浮飞鱼可能适合用来实现可持续的净化作用。
+
+
+      潜在的设计必须关注这些作用的效率……
+
+
+      [录音结束]
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: notes_husbandry2
+- contents:
+  - widget_type: CodexText
+    text: >
+      [录音开始]
+
+
+      ……冰息萝卜具有低营养需求和天然的土地改造能力，是基因开发的理想选择。
+
+
+      在设计这类生物时，应该关注提高它们对环境温度的自然影响……
+
+
+      [录音结束]
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: notes_husbandry2
+- contents:
+  - widget_type: CodexText
+    text: >
+      [录音开始]
+
+
+      ……初步引入的好吃哈奇基因非常成功。
+
+
+      作为该物种的典型特征，大量的粘液排泄物现在正以难以置信的速度产生烃类物质。
+
+
+      这类生物基本上已经成为了免费的可燃石油来源……
+
+
+      [录音结束]
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: notes_husbandry3
+- contents:
+  - widget_type: CodexText
+    text: >
+      [录音开始]
+
+
+      ……生物发光一直都是新奇现象，但从现在开始，我们不应该花太多时间来完善这些昆虫。
+
+
+      该项目比光源问题更加紧迫，尤其是在低光植被问题已经解决的情况下……
+
+
+      [录音结束]
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: notes_husbandry3
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <smallcaps>[声纹识别系统初始化完成]
+
+      [识别编号：B363]</smallcaps>
+
+
+      [录音开始]
+
+
+      遗传学家：这个项目的主要问题是，殖民地居民可能不得不去应对各种环境变化。随同定居组一同前往的生物将没有时间进化和适应新环境，但我们选择的每一种生物都在殖民地的维持中扮演着至关重要的角色，它们太宝贵，我们不能冒着失去它们的风险。
+
+
+      遗传学家：因此，我们设计的每一种生物都必须配备相应的工具，以便在我们所能想到的尽可能多的不稳定环境中存活下来。我们不应该仅仅依靠打印舱来补充生物的数量。
+
+
+      [录音结束]
+    style: Body
+  layout: Vertical
+  lock_id: notes_husbandry4

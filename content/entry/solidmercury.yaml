@@ -1,0 +1,168 @@
+id: SOLIDMERCURY
+parent_id: ELEMENTSSOLID
+name: 固态汞
+disabled: False
+search_only: False
+category: ELEMENTSSOLID
+sort_string: 固态汞
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="SOLIDMERCURY">固态汞</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: mercury_refined_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: mercury_refined_0__ui
+      text1: 固态汞
+      text2: 1000克
+      link_id: solidmercury
+    produce:
+    - image: element_liquid
+      color: 7393B4FF
+      text1: 汞
+      text2: 1000克
+      link_id: mercury
+    fabricator:
+      image: crew_state_temp_up
+      text1: -38.8ºC
+      tooltip: 温度高于-38.8ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换于
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: 7393B4FF
+      text1: 汞
+      text2: 1000克
+      link_id: mercury
+    produce:
+    - image: mercury_refined_0__ui
+      text1: 固态汞
+      text2: 1000克
+      link_id: solidmercury
+    fabricator:
+      image: crew_state_temp_down
+      text1: -38.8ºC
+      tooltip: 温度低于-38.8ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: mercury_refined_0__ui
+      text1: 固态汞
+      text2: 30千克/周期
+      link_id: solidmercury
+    produce:
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 1500克/周期
+      link_id: hydrogen
+    fabricator:
+      image: caterpillar_0__wtr_ui
+      text1: 海绵蛞蝓
+      link_id: STATERPILLAR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: mercury_refined_0__ui
+      text1: 固态汞
+      text2: 30千克/周期
+      link_id: solidmercury
+    produce:
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 1500克/周期
+      link_id: hydrogen
+    fabricator:
+      image: caterpillar_0__gas_ui
+      text1: 烟雾蛞蝓
+      link_id: STATERPILLAR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: mercury_refined_0__ui
+      text1: 固态汞
+      text2: 60千克/周期
+      link_id: solidmercury
+    produce:
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 3000克/周期
+      link_id: hydrogen
+    fabricator:
+      image: caterpillar_0__ui
+      text1: 电弧蛞蝓
+      link_id: STATERPILLAR
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: cinnabar_0__ui
+      text1: 朱砂矿
+      text2: 100千克/周期
+      link_id: cinnabar
+    produce:
+    - image: mercury_refined_0__ui
+      text1: 固态汞
+      text2: 75千克/周期
+      link_id: solidmercury
+    fabricator:
+      image: hatch_0__mtl_ui
+      text1: 光滑哈奇
+      link_id: HATCHMETAL
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      (Hg) 固态汞是一种<link="ELEMENTSSOLID">固态</link>的罕见<link="RAWMETAL">金属</link>。
+
+
+      资源种类：<link="REFINEDMETAL">精炼金属</link>
+
+      熔点：-38.8ºC
+
+      硬度：<color=#71ABCFFF>2（非常柔软）</color>
+
+
+      比热容：0.140 (DTU/g)/ºC
+
+      热导率：8.300 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.25
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：<link="BUILDABLEANY">一般建造材料</link>, <link="ELEMENTSSOLID">固体</link>, <link="REFINEDMETAL">精炼金属</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

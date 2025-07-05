@@ -1,0 +1,79 @@
+id: GAMMAMUSH
+parent_id: FOOD
+name: 伽马泥膏
+disabled: False
+search_only: False
+category: FOOD
+sort_string: 伽马泥膏
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="GAMMAMUSH">伽马泥膏</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: mushbarfried_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 辐照过的泥土和水组成的混合物，令人不安但很美味。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 品质：低劣 [+1]
+    style: Body
+  - widget_type: CodexText
+    text: 卡路里：1,050千卡
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      冷藏温度：4ºC
+
+      深度冷冻温度：-18ºC
+
+      腐烂时间：4.0周期
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: mushbarfried_0__ui
+      text1: 伽马泥膏
+      text2: 700千卡/周期
+      tooltip: 品质：低劣 [+1]
+      link_id: gammamush
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 500克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__ui
+      text1: 好吃哈奇
+      link_id: HATCH
+  - widget_type: CodexConversionPanel
+    require:
+    - image: mushbarfried_0__ui
+      text1: 伽马泥膏
+      text2: 700千卡/周期
+      tooltip: 品质：低劣 [+1]
+      link_id: gammamush
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 666.7克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__veg_ui
+      text1: 草质哈奇
+      link_id: HATCHVEGGIE
+  layout: Vertical

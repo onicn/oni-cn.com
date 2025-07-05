@@ -1,0 +1,63 @@
+id: ROOMS
+name: 房间
+disabled: False
+search_only: False
+category: Root
+sort_string: 房间
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="ROOMS">房间</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexLabelWithLargeIcon
+    text: 公园
+    style: BodyWhite
+    image: ui_room_park
+    link_id: roomspark
+  - widget_type: CodexLabelWithLargeIcon
+    text: 农业
+    style: BodyWhite
+    image: ui_room_agricultural
+    link_id: roomsagricultural
+  - widget_type: CodexLabelWithLargeIcon
+    text: 医疗
+    style: BodyWhite
+    image: ui_room_hospital
+    link_id: roomshospital
+  - widget_type: CodexLabelWithLargeIcon
+    text: 厕所
+    style: BodyWhite
+    image: ui_room_bathroom
+    link_id: roomsbathroom
+  - widget_type: CodexLabelWithLargeIcon
+    text: 娱乐
+    style: BodyWhite
+    image: ui_room_recreational
+    link_id: roomsrecreation
+  - widget_type: CodexLabelWithLargeIcon
+    text: 工业
+    style: BodyWhite
+    image: ui_room_industrial
+    link_id: roomsindustrial
+  - widget_type: CodexLabelWithLargeIcon
+    text: 睡眠
+    style: BodyWhite
+    image: ui_room_sleep
+    link_id: roomssleep
+  - widget_type: CodexLabelWithLargeIcon
+    text: 科学
+    style: BodyWhite
+    image: ui_room_science
+    link_id: roomsscience
+  - widget_type: CodexLabelWithLargeIcon
+    text: 饮食
+    style: BodyWhite
+    image: ui_room_food
+    link_id: roomsfood
+  layout: Grid
+- contents:
+  - widget_type: CodexSpacer
+  layout: Vertical

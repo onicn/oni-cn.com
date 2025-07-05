@@ -1,0 +1,99 @@
+id: OUTHOUSE
+parent_id: BUILDCATEGORYPLUMBING
+name: 户外厕所
+disabled: False
+search_only: False
+category: BUILDCATEGORYPLUMBING
+sort_string: 户外厕所
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="OUTHOUSE">户外厕所</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: outhouse_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      给复制人提供一个解手的地方。
+
+
+      不需要<link="LIQUIDPIPING">管道</link>。
+
+
+      必须定期清空<link="TOXICSAND">污染土</link>。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DIRT">泥土</link>：每次消耗13千克'
+    tooltip: 每次使用消耗<style="consumed">13千克</style><style="KKeyword"><link="DIRT">泥土</link></style>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    复制人分配'
+    tooltip: 只有分配的复制人才可使用这个设备
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：2格宽x3格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：30秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="BUILDABLERAW">矿物原料</link>或<link="BUILDINGWOOD">木材</link>200千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="TOXICSAND">污染土</link>：每次产生19.7千克'
+    tooltip: >-
+      使用时产生<style="produced">19.7千克</style><style="KKeyword"><link="TOXICSAND">污染土</link></style>
+
+
+      复制人的废物以<b>37ºC</b>释放。
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="FOODPOISONING">食物中毒</link>：每次产生200,000个病菌'
+    tooltip: 每次使用产生<style="produced">200,000个病菌</style>个<style="KKeyword"><link="FOODPOISONING">食物中毒</link></style>病菌
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="HEAT">热量</link>：+250复制热/秒'
+    tooltip: >-
+      每秒产生<style="produced">250复制热</style>
+
+
+      总<style="KKeyword">温度</style>变化受到加热物质的材料属性影响：
+          • 质量
+          • 比热容
+          • 表面积
+          • 隔热厚度
+          • 热导率
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：-20（范围：5格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>5</b>格内降低<b><b>-20</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>类别</b>
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    <link="REQUIREMENTCLASSTOILETTYPE">厕所</link>'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>一个一起吃饭，一起排泄的殖民地。</i>
+    style: Body
+  layout: Vertical

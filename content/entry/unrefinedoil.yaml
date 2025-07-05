@@ -1,0 +1,34 @@
+id: UNREFINEDOIL
+name: 未精炼油
+title: STRINGS.MISC.TAGS.UNREFINEDOIL
+disabled: False
+search_only: False
+category: INDUSTRIALINGREDIENTS
+sort_string: <link="UNREFINEDOIL">未精炼油</link>
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="UNREFINEDOIL">未精炼油</link>
+    style: Title
+  - widget_type: CodexText
+    text: <link="UNREFINEDOIL">未精炼油</link>
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexImage
+    image: liquid_jerrycan_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 未经加工的油。可以用于工业润滑油，或精炼后在特定建筑进行其他应用。
+    style: Body
+  - widget_type: CodexElementCategoryList
+    require:
+    - image: element_liquid
+      color: 301265FF
+      text1: 原油
+      link_id: crudeoil
+    - image: element_liquid
+      color: 98A82FFF
+      text1: 植物润滑油
+      link_id: phytooil
+  layout: Vertical

@@ -1,0 +1,42 @@
+id: PLASTIFIABLELIQUID
+parent_id: ELEMENTTYPES
+name: 塑料单体
+title: STRINGS.MISC.TAGS.PLASTIFIABLELIQUID
+disabled: False
+search_only: False
+category: ELEMENTTYPES
+sort_string: <link="PLASTIFIABLELIQUID">塑料单体</link>
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="PLASTIFIABLELIQUID">塑料单体</link>
+    style: Title
+  - widget_type: CodexText
+    text: <link="PLASTIFIABLELIQUID">塑料单体</link>
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexImage
+    image: liquid_syrup_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      塑料单体是可以加工成塑料聚合物的有机化合物，加工成的<link="PLASTIC">塑料</link>在高级建筑材料中有宝贵应用。
+
+
+      由这些单体衍生的塑料也可以用于包装材料以进行<link="FOOD">食物</link>保存。
+    style: Body
+  - widget_type: CodexElementCategoryList
+    require:
+    - image: element_liquid
+      color: FFC325FF
+      text1: 石油
+      link_id: petroleum
+    - image: element_liquid
+      text1: 花蜜
+      link_id: sugarwater
+    - image: element_liquid
+      color: CC8B18FF
+      text1: 树脂
+      link_id: naturalresin
+  layout: Vertical

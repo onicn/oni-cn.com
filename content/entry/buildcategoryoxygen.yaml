@@ -1,0 +1,59 @@
+id: BUILDCATEGORYOXYGEN
+parent_id: BUILDINGS
+name: 氧气
+disabled: False
+search_only: False
+category: BUILDINGS
+sort_string: 氧气
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="BUILDCATEGORYOXYGEN">氧气</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexLabelWithLargeIcon
+    text: 升华站
+    style: BodyWhite
+    image: sublimation_station_0__ui
+    link_id: sublimationstation
+  - widget_type: CodexLabelWithLargeIcon
+    text: 氧气扩散器
+    style: BodyWhite
+    image: mineraldeoxidizer_0__ui
+    link_id: mineraldeoxidizer
+  - widget_type: CodexLabelWithLargeIcon
+    text: 氧石烛台
+    style: BodyWhite
+    image: oxy_sconce_0__ui
+    link_id: oxysconce
+  - widget_type: CodexLabelWithLargeIcon
+    text: 电解器
+    style: BodyWhite
+    image: electrolyzer_0__ui
+    link_id: electrolyzer
+  - widget_type: CodexLabelWithLargeIcon
+    text: 碳素脱离器
+    style: BodyWhite
+    image: co2scrubber_0__ui
+    link_id: co2scrubber
+  - widget_type: CodexLabelWithLargeIcon
+    text: 空气净化器
+    style: BodyWhite
+    image: co2filter_0__ui
+    link_id: airfilter
+  - widget_type: CodexLabelWithLargeIcon
+    text: 藻类箱
+    style: BodyWhite
+    image: algaefarm_0__ui
+    link_id: algaehabitat
+  - widget_type: CodexLabelWithLargeIcon
+    text: 铁锈脱氧机
+    style: BodyWhite
+    image: rust_deoxidizer_0__ui
+    link_id: rustdeoxidizer
+  layout: Grid
+- contents:
+  - widget_type: CodexSpacer
+  layout: Vertical

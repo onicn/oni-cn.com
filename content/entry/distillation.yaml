@@ -1,0 +1,59 @@
+id: DISTILLATION
+parent_id: TECH
+name: 精馏
+disabled: False
+search_only: False
+category: TECH
+sort_string: 精馏
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="DISTILLATION">精馏</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 从复杂的混合物中提炼出最有用的成分。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="ADVANCEDFILTRATION">分离</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: algae_distillery_0__ui
+  - widget_type: CodexText
+    text: <link="ALGAEDISTILLERY">藻类蒸馏器</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: ethanoldistillery_0__ui
+  - widget_type: CodexText
+    text: <link="ETHANOLDISTILLERY">乙醇蒸馏器</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: waterpurifier_0__ui
+  - widget_type: CodexText
+    text: <link="WATERPURIFIER">净水器</link>
+    style: Body
+  layout: Horizontal

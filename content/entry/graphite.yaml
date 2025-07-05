@@ -1,0 +1,132 @@
+id: GRAPHITE
+parent_id: ELEMENTSSOLID
+name: 石墨
+disabled: False
+search_only: False
+category: ELEMENTSSOLID
+sort_string: 石墨
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="GRAPHITE">石墨</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: graphite_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: graphite_0__ui
+      text1: 石墨
+      text2: 1000克
+      link_id: graphite
+    produce:
+    - image: carbon_0__ui
+      text1: 精炼碳
+      text2: 1000克
+      link_id: refinedcarbon
+    fabricator:
+      image: crew_state_temp_up
+      text1: 276.9ºC
+      tooltip: 温度高于276.9ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 富勒烯
+    require:
+    - image: graphite_0__ui
+      text1: 石墨
+      text2: 90千克
+      link_id: graphite
+    - image: sulfur_0__ui
+      text1: 硫
+      text2: 5千克
+      link_id: sulfur
+    - image: aluminum_0__ui
+      text1: 铝
+      text2: 5千克
+      link_id: aluminum
+    produce:
+    - image: fullerene_0__ui
+      text1: 富勒烯
+      text2: 100千克
+      link_id: fullerene
+    fabricator:
+      image: supermaterial_refinery_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 分子熔炉
+      text2: 80秒
+      link_id: supermaterialrefinery
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 碎石机
+    require:
+    - image: fullerene_0__ui
+      text1: 富勒烯
+      text2: 100千克
+      link_id: fullerene
+    produce:
+    - image: graphite_0__ui
+      text1: 石墨
+      text2: 90千克
+      link_id: graphite
+    - image: sand_0__ui
+      text1: 沙子
+      text2: 10千克
+      link_id: sand
+    fabricator:
+      image: rockrefinery_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 碎石机
+      text2: 40秒
+      link_id: rockcrusher
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      (C) 石墨是碳最稳定的形式。
+
+
+      它可用作<b>建造材料</b>，有着高热导率。
+
+
+      资源种类：<link="BUILDABLERAW">矿物原料</link>
+
+      熔点：276.9ºC
+
+      硬度：<color=#71ABCFFF>0（非常柔软）</color>
+
+
+      比热容：0.710 (DTU/g)/ºC
+
+      热导率：8.000 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.85
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：<link="ELEMENTSSOLID">固体</link>, <link="BUILDABLERAW">矿物原料</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

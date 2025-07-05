@@ -1,0 +1,85 @@
+id: COMETDETECTOR
+parent_id: BUILDCATEGORYAUTOMATION
+name: 太空扫描仪
+disabled: False
+search_only: False
+category: BUILDCATEGORYAUTOMATION
+sort_string: 太空扫描仪
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="COMETDETECTOR">太空扫描仪</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 天体探测
+    style: Body
+    image: research_type_alpha_icon
+    link_id: skydetectors
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: meteor_detector_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      当探测到太空来袭的物体时向自动化电路输出<b><style="logic_on">绿色信号</style></b>。
+
+
+      可以用于探测来袭的流星雨或返回的太空火箭。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="POWER">电力</link>：120瓦'
+    tooltip: 必须与至少有<style="consumed">120瓦</style>可用<style="KKeyword">电力</style>的电路相连
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：2格宽x4格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：30秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="REFINEDMETAL">精炼金属</link>25千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LOGIC">信号输出端</link>'
+    tooltip: 当这个建筑状态发生变化时，输出端会输出一个信号
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    信号开关'
+    tooltip: >-
+      输出端行为：
+
+      • 若开启，输出<b><style="logic_on">绿色信号</style></b>
+
+      • 若关闭，输出<b><style="logic_off">红色信号</style></b>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：-5（范围：1格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>1</b>格内降低<b><b>-5</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>类别</b>
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    <link="REQUIREMENTCLASSINDUSTRIALMACHINERY">工业机械</link>'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>相比单独一台扫描仪，许多扫描仪组成的网络可以更有效地进行扫描。</i>
+    style: Body
+  layout: Vertical

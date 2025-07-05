@@ -1,0 +1,35 @@
+id: FUNKYVEST
+parent_id: EQUIPMENT
+name: 新潮时装
+disabled: False
+search_only: False
+category: EQUIPMENT
+sort_string: 新潮时装
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="FUNKYVEST">新潮时装</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: shirt_decor01_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 提高穿戴者身边小范围内的装饰度。可以用<link="CLOTHINGALTERATIONSTATION">时装翻新器</link>升级为<link="CUSTOMCLOTHING">精致装束</link>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    • 隔热厚度: 0.3 cm'
+    tooltip: '隔热厚度: 0.3 cm'
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    • 装饰: 30'
+    tooltip: '装饰: 30'
+    style: Body
+  layout: Vertical

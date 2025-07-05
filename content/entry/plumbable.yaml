@@ -1,0 +1,84 @@
+id: PLUMBABLE
+parent_id: BUILDINGMATERIALCLASSES
+name: 可做水管的物质
+disabled: False
+search_only: False
+category: BUILDINGMATERIALCLASSES
+sort_string: 可做水管的物质
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="PLUMBABLE">可做水管的物质</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 隔热质
+    image: super_insulator_0__ui
+    link_id: superinsulator
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 页岩
+    image: shale_0__ui
+    link_id: shale
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 陶瓷
+    image: ceramic_0__ui
+    link_id: ceramic
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 黑钨矿
+    image: wolframite_0__ui
+    link_id: wolframite
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 钨
+    image: tungsten_refined_0__ui
+    link_id: tungsten
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 黑曜石
+    image: obsidian_0__ui
+    link_id: obsidian
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 火成岩
+    image: igneous_rock_0__ui
+    link_id: igneousrock
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 花岗岩
+    image: granite_0__ui
+    link_id: granite
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 沉积岩
+    image: sedimentary_rock_0__ui
+    link_id: sedimentaryrock
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 砂岩
+    image: sand_stone_0__ui
+    link_id: sandstone
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 导热质
+    image: temp_conductor_0__ui
+    link_id: tempconductorsolid
+  layout: Grid
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建造用处
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 隔热液体管道
+    image: utilities_liquid_insulated_0__ui
+    link_id: insulatedliquidconduit
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 液体管道
+    image: utilities_liquid_0__ui
+    link_id: liquidconduit
+  layout: Grid

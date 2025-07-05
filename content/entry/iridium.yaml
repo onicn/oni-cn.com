@@ -1,0 +1,150 @@
+id: IRIDIUM
+parent_id: ELEMENTSSOLID
+name: 铱
+disabled: False
+search_only: False
+category: ELEMENTSSOLID
+sort_string: 铱
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="IRIDIUM">铱</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: iridium_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: iridium_0__ui
+      text1: 铱
+      text2: 1000克
+      link_id: iridium
+    produce:
+    - image: element_liquid
+      color: CC788EFF
+      text1: 熔融铱
+      text2: 1000克
+      link_id: molteniridium
+    fabricator:
+      image: crew_state_temp_up
+      text1: 2445.9ºC
+      tooltip: 温度高于2445.9ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换于
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: CC788EFF
+      text1: 熔融铱
+      text2: 1000克
+      link_id: molteniridium
+    produce:
+    - image: iridium_0__ui
+      text1: 铱
+      text2: 1000克
+      link_id: iridium
+    fabricator:
+      image: crew_state_temp_down
+      text1: 2445.9ºC
+      tooltip: 温度低于2445.9ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: iridium_0__ui
+      text1: 铱
+      text2: 30千克/周期
+      link_id: iridium
+    produce:
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 1500克/周期
+      link_id: hydrogen
+    fabricator:
+      image: caterpillar_0__wtr_ui
+      text1: 海绵蛞蝓
+      link_id: STATERPILLAR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: iridium_0__ui
+      text1: 铱
+      text2: 30千克/周期
+      link_id: iridium
+    produce:
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 1500克/周期
+      link_id: hydrogen
+    fabricator:
+      image: caterpillar_0__gas_ui
+      text1: 烟雾蛞蝓
+      link_id: STATERPILLAR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: iridium_0__ui
+      text1: 铱
+      text2: 60千克/周期
+      link_id: iridium
+    produce:
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 3000克/周期
+      link_id: hydrogen
+    fabricator:
+      image: caterpillar_0__ui
+      text1: 电弧蛞蝓
+      link_id: STATERPILLAR
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      (Ir) 铱是一种坚硬的高导性<link="RAWMETAL">金属</link>，可承受极高的<link="HEAT">温度</link>。
+
+
+      资源种类：<link="REFINEDMETAL">精炼金属</link>
+
+      熔点：2445.9ºC
+
+      硬度：<color=#BD597FFF>200（几乎坚不可摧）</color>
+
+
+      比热容：0.131 (DTU/g)/ºC
+
+      热导率：170.000 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.88
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：<link="METAL">金属矿石</link>, <link="REFINEDMETAL">精炼金属</link>, <link="BUILDABLEANY">一般建造材料</link>, <link="ELEMENTSSOLID">固体</link>
+
+      <style="KKeyword">装饰</style>：+20%
+
+      <style="KKeyword">过热温度</style>：+500ºC
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

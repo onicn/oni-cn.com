@@ -1,0 +1,17 @@
+id: PAGENOTFOUND
+name: 未发现数据
+disabled: False
+search_only: True
+sort_string: 未发现数据
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 未发现数据
+    style: Title
+  - widget_type: CodexText
+    text: 此数据库条目正在构建或不可用
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexImage
+    image: outhouseMessage
+  layout: Vertical

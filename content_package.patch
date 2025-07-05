@@ -1,0 +1,8 @@
+       2304      const bigColumnName = fields[bigColumnIndex];
+       2305      if (typeof biggestColumn === "string") {
+       2306        let sliceIndex = SLICE_SIZE;
+       2307 -      values[bigColumnIndex] = `${biggestColumn.slice(0, sliceIndex)}'`;
+       2307 +      values[bigColumnIndex] = biggestColumn.slice(0, sliceIndex) + (biggestColumn.endsWith("'") ? "" : "'");
+       2308        index = 0;
+       2309        const bigValueSliceWithHash = [...values.slice(0, -1), `'${valuesHash}-${sliceIndex}'`];
+       2310        const SQLQueries = [

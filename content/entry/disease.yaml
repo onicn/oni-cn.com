@@ -1,0 +1,40 @@
+id: DISEASE
+name: 疾病
+disabled: False
+search_only: False
+category: Root
+sort_string: 疾病
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="DISEASE">疾病</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexLabelWithIcon
+    text: 僵尸孢子
+    style: Body
+    image: overlay_disease
+    link_id: zombiespores
+  - widget_type: CodexLabelWithIcon
+    text: 放射性污染物
+    style: Body
+    image: overlay_disease
+    link_id: radiationsickness
+  - widget_type: CodexLabelWithIcon
+    text: 粘液肺
+    style: Body
+    image: overlay_disease
+    link_id: slimelung
+  - widget_type: CodexLabelWithIcon
+    text: 花香
+    style: Body
+    image: overlay_disease
+    link_id: pollengerms
+  - widget_type: CodexLabelWithIcon
+    text: 食物中毒
+    style: Body
+    image: overlay_disease
+    link_id: foodpoisoning
+  layout: Vertical

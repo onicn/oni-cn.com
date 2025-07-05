@@ -1,0 +1,54 @@
+id: PRELIMINARYCALCULATIONS
+name: 初步计算
+title: STRINGS.CODEX.A0_PRELIMINARYCALCULATIONS.TITLE
+disabled: False
+search_only: False
+category: EMAILS
+sort_string: 初步计算
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 初步计算
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：无
+    style: Subtitle
+  layout: Vertical
+  lock_id: email_preliminarycalculations
+- contents:
+  - widget_type: CodexText
+    text: >
+      <smallcaps>收件人：<b>[受屏蔽]</b>
+
+      发件人：<b>[受屏蔽]</b></color></smallcaps>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_preliminarycalculations
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <indent=5%>主管，
+
+
+      即使大幅优化，我们的资源数量也无法让哪怕一颗殖民地种子进行非常短的星际旅行。
+
+
+      如果想要计划成功，我们就必须做出重大改变。</indent>
+    style: Body
+  - widget_type: CodexText
+    text: >2
+
+      祝好，
+
+      [受屏蔽]
+
+      <size=11>信息统计部
+
+      庄严科技</size>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_preliminarycalculations

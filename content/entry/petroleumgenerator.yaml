@@ -1,0 +1,135 @@
+id: PETROLEUMGENERATOR
+parent_id: BUILDCATEGORYPOWER
+name: 石油发电机
+disabled: False
+search_only: False
+category: BUILDCATEGORYPOWER
+sort_string: 石油发电机
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="PETROLEUMGENERATOR">石油发电机</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 化石燃料
+    style: Body
+    image: research_type_alpha_icon
+    link_id: improvedcombustion
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: generatorpetrol_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      将<link="PETROLEUM">石油</link>、<link="ETHANOL">乙醇</link>或<link="REFINEDLIPID">生物柴油</link>转化为<link="POWER">电力</link>。
+
+
+      产生<link="CARBONDIOXIDE">二氧化碳</link>和<link="DIRTYWATER">污染水</link>。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="COMBUSTIBLELIQUID">可燃液体</link>：2000克/秒'
+    tooltip: 使用时消耗<style="consumed">2000克/秒</style><style="KKeyword"><link="COMBUSTIBLELIQUID">可燃液体</link></style>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LIQUIDPIPING">液体输入管道</link>'
+    tooltip: 必须从<link="LIQUIDCONDUIT">液体管道</link>系统中接收<style="KKeyword">液体</style>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：3格宽x4格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：480秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="METAL">金属矿石</link>800千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="CARBONDIOXIDE">二氧化碳</link>：500克/秒'
+    tooltip: >-
+      使用时产生<style="produced">500克/秒</style><style="KKeyword"><link="CARBONDIOXIDE">二氧化碳</link></style>
+
+
+      输出温度至少为<b>110ºC</b>，如果建筑的温度更高输出也会随之更高。
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DIRTYWATER">污染水</link>：750克/秒'
+    tooltip: >-
+      使用时产生<style="produced">750克/秒</style><style="KKeyword"><link="DIRTYWATER">污染水</link></style>
+
+
+      输出温度至少为<b>40ºC</b>，如果建筑的温度更高输出也会随之更高。
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="POWER">电力</link>：+2千瓦'
+    tooltip: 为相连的<style="KKeyword">电路</style>产生<style="produced">2千瓦</style>电力
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="HEAT">热量</link>：+20千复制热/秒'
+    tooltip: >-
+      每秒产生<style="produced">20千复制热</style>
+
+
+      总<style="KKeyword">温度</style>变化受到加热物质的材料属性影响：
+          • 质量
+          • 比热容
+          • 表面积
+          • 隔热厚度
+          • 热导率
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    过热<link="HEAT">温度</link>：75ºC'
+    tooltip: 达到<b>75ºC</b>时开始过热
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LOGIC">信号输入端</link>'
+    tooltip: 当接收到信号时，输入端会使这个建筑一种状态发生变化
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    启用/禁用'
+    tooltip: >-
+      输入端行为：
+
+      • <b><style="logic_on">绿色信号</style></b>：启用建筑
+
+      • <b><style="logic_off">红色信号</style></b>：禁用建筑
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：-15（范围：3格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>3</b>格内降低<b><b>-15</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>类别</b>
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    <link="REQUIREMENTCLASSINDUSTRIALMACHINERY">工业机械</link>'
+    style: Body
+  - widget_type: CodexText
+    text: '    <link="REQUIREMENTCLASSPOWERBUILDING">电力建筑</link>'
+    style: Body
+  - widget_type: CodexText
+    text: '    <link="REQUIREMENTCLASSGENERATORTYPE">发电机</link>'
+    style: Body
+  - widget_type: CodexText
+    text: '    <link="REQUIREMENTCLASSGENERATORTYPE">重型发电机</link>'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>石油发电机发电量高，但会产生大量废物。</i>
+    style: Body
+  layout: Vertical

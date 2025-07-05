@@ -1,0 +1,60 @@
+id: ROCKETINTERIORPOWERPLUG
+parent_id: BUILDCATEGORYROCKETRY
+name: 电源插座配件
+disabled: False
+search_only: False
+category: BUILDCATEGORYROCKETRY
+sort_string: 电源插座配件
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="ROCKETINTERIORPOWERPLUG">电源插座配件</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 太空电力
+    style: Body
+    image: research_type_alpha_icon
+    link_id: spacepower
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: rocket_floor_plug_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      为相连的建筑提供<link="POWER">电力</link>。
+
+
+      从<link="BATTERYMODULE">蓄电池舱</link>和火箭引擎中获取电力。
+
+
+      必须建在火箭舱块内部。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：1格宽x1格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：3秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="METAL">金属矿石</link>25千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：-15（范围：3格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>3</b>格内降低<b><b>-15</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>插座使用火箭储存的电力为指挥舱中的建筑提供方便的电力。</i>
+    style: Body
+  layout: Vertical

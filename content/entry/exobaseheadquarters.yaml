@@ -1,0 +1,80 @@
+id: EXOBASEHEADQUARTERS
+parent_id: BUILDCATEGORYBASE
+name: 迷你舱
+disabled: False
+search_only: False
+category: BUILDCATEGORYBASE
+sort_string: 迷你舱
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="EXOBASEHEADQUARTERS">迷你舱</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 高级研究
+    style: Body
+    image: research_type_alpha_icon
+    link_id: advancedresearch
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: porta_pod_y_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      一种便携式的生物打印机，能生产新复制人或包含资源的补给包裹。
+
+
+      每颗小行星只允许有一个打印舱或迷你舱。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：3格宽x3格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：30秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="BUILDABLERAW">矿物原料</link>50千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LIGHT">照明范围</link>：5格'
+    tooltip: >-
+      发<style="KKeyword">光</style>
+
+
+      当建筑有光照后，复制人就能更快地操作建筑
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LIGHT">亮度</link>：1000勒克斯'
+    tooltip: >-
+      发<style="KKeyword">光</style>
+
+
+      当建筑有光照后，复制人就能更快地操作建筑
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：+30（范围：6格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>6</b>格内提高<b><b>+30</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>类别</b>
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    <link="REQUIREMENTCLASSLIGHTSOURCE">光源</link>'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>一个快速且简易的替代品，然而它从未达到过原品水准。</i>
+    style: Body
+  layout: Vertical

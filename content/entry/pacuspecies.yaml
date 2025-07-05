@@ -1,0 +1,1513 @@
+id: PACUSPECIES
+parent_id: CREATURES
+name: 帕库鱼
+disabled: False
+search_only: False
+category: CREATURES
+sort_string: <link="PACUSPECIES">帕库鱼</link>
+sub_entries:
+- id: Pacu
+  parent_id: PacuSpecies
+  name: <link="PACU">帕库鱼</link>
+  disabled: False
+  sort_string: 帕库鱼
+- id: PacuTropical
+  parent_id: PacuSpecies
+  name: <link="PACUTROPICAL">热带帕库鱼</link>
+  disabled: False
+  sort_string: 热带帕库鱼
+- id: PacuCleaner
+  parent_id: PacuSpecies
+  name: <link="PACUCLEANER">大嘴鱼</link>
+  disabled: False
+  sort_string: 大嘴鱼
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 帕库鱼
+    style: Title
+  - widget_type: CodexText
+    text: 小动物物种
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 帕库鱼眼睛一眨不眨的，因此往往被认为目光呆滞，不过这种生物还是极为聪明、友善。
+    style: Body
+  - widget_type: CodexText
+    text: 虽然是从帕库鱼演变而来，但无论在遗传学还是行为学上，大嘴鱼都是独一无二的，足以视为一种独特的亚种。
+    style: Body
+  - widget_type: CodexText
+    text: 有记录显示，帕库鱼的平均智商与狗相当，它们能够记住和分辨超过20张人脸。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 条目（3/3）
+    style: Subtitle
+  - widget_type: CodexText
+    text: <link="PACU">帕库鱼</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="PACUTROPICAL">热带帕库鱼</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="PACUCLEANER">大嘴鱼</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 帕库鱼
+    style: Title
+  - widget_type: CodexText
+    text: 水生小动物
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: pacu_0__ui
+  - widget_type: CodexImage
+    image: baby_pacu_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexText
+    text: >-
+      帕库鱼是水生生物，可以在任何液体中生活，比如<link="WATER">水</link>或<link="DIRTYWATER">污染水</link>。
+
+
+      全宇宙都知道帕库鱼超好吃。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 理想温度
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 舒适范围：<b>0ºC</b>至<b>60ºC</b>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 存活范围：<b>-20ºC</b>至<b>100ºC</b>'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 寿命
+    style: Subtitle
+  - widget_type: CodexText
+    text: 这种小动物特征<link="CREATURES__GUIDE__FERTILITY">寿命</link>为<b>25周期</b>。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 所需空间
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 当房间空间对每只小动物平均少于<b>8格</b>时会感到<link="CREATURES__GUIDE__MOOD">拥挤</link>。'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 当房间小于<b>8格</b>时会感到<link="CREATURES__GUIDE__MOOD">封闭</link>。'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 掉落物
+    style: Subtitle
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 帕库鱼片
+    image: pacufillet_0__ui
+    link_id: fishmeat
+  - widget_type: CodexText
+    text: 	1,000千卡
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 食物
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: algae_0__ui
+      text1: 藻类
+      text2: 7.5千克/周期
+      link_id: algae
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 3750克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__ui
+      text1: 帕库鱼
+      link_id: PACU
+  - widget_type: CodexConversionPanel
+    require:
+    - image: kelp_leaf_0__ui
+      text1: 海梳蕨叶
+      text2: 20千克/周期
+      link_id: kelp
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 10千克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__ui
+      text1: 帕库鱼
+      link_id: PACU
+  - widget_type: CodexConversionPanel
+    require:
+    - image: kelp_0__ui
+      text1: 海梳蕨
+      text2: 40% 生长进度/周期
+      link_id: kelpplant
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 10千克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__ui
+      text1: 帕库鱼
+      link_id: PACU
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_purpleroot_0__ui
+      text1: 羽叶果薯种子
+      text2: 1单位/周期
+      link_id: carrotplant
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 500克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__ui
+      text1: 帕库鱼
+      link_id: PACU
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_pollinator_plant_0__ui
+      text1: 拟种
+      text2: 1单位/周期
+      link_id: butterflyplant
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 500克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__ui
+      text1: 帕库鱼
+      link_id: PACU
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_bluegrass_0__ui
+      text1: 气囊芦荟种子
+      text2: 1单位/周期
+      link_id: bluegrass
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 500克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__ui
+      text1: 帕库鱼
+      link_id: PACU
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_beanplant_0__ui
+      text1: 小吃豆
+      text2: 1单位/周期
+      link_id: bean
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 500克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__ui
+      text1: 帕库鱼
+      link_id: PACU
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_swampreed_0__ui
+      text1: 顶针芦苇种子
+      text2: 1单位/周期
+      link_id: basicfabricplant
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 500克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__ui
+      text1: 帕库鱼
+      link_id: PACU
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_meallice_0__ui
+      text1: 米虱木种子
+      text2: 1单位/周期
+      link_id: basicsingleharvestplant
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 500克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__ui
+      text1: 帕库鱼
+      link_id: PACU
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_coldwheat_0__ui
+      text1: 冰霜麦粒
+      text2: 1单位/周期
+      link_id: coldwheat
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 500克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__ui
+      text1: 帕库鱼
+      link_id: PACU
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_spikefruit_0__ui
+      text1: 汗甜玉米种子
+      text2: 1单位/周期
+      link_id: gardenfoodplant
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 500克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__ui
+      text1: 帕库鱼
+      link_id: PACU
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_brackwood_0__ui
+      text1: 露珠藤种子
+      text2: 1单位/周期
+      link_id: dewdripperplant
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 500克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__ui
+      text1: 帕库鱼
+      link_id: PACU
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_ceiling_carnie_0__ui
+      text1: 露饵花种子
+      text2: 1单位/周期
+      link_id: flytrapplant
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 500克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__ui
+      text1: 帕库鱼
+      link_id: PACU
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_gassygrass_0__ui
+      text1: 释气草种子
+      text2: 1单位/周期
+      link_id: gasgrass
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 500克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__ui
+      text1: 帕库鱼
+      link_id: PACU
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_spicenut_0__ui
+      text1: 火椒种子
+      text2: 1单位/周期
+      link_id: spicevine
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 500克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__ui
+      text1: 帕库鱼
+      link_id: PACU
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_syrup_tree_0__ui
+      text1: 糖心树种子
+      text2: 1单位/周期
+      link_id: spacetree
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 500克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__ui
+      text1: 帕库鱼
+      link_id: PACU
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_sealettuce_0__ui
+      text1: 水草种子
+      text2: 1单位/周期
+      link_id: sealettuce
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 500克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__ui
+      text1: 帕库鱼
+      link_id: PACU
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_saltplant_0__ui
+      text1: 沙盐藤种子
+      text2: 1单位/周期
+      link_id: saltplant
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 500克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__ui
+      text1: 帕库鱼
+      link_id: PACU
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_bristleblossom_0__ui
+      text1: 毛刺花种子
+      text2: 1单位/周期
+      link_id: prickleflower
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 500克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__ui
+      text1: 帕库鱼
+      link_id: PACU
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_fungusplant_0__ui
+      text1: 夜幕菇孢子
+      text2: 1单位/周期
+      link_id: mushroomplant
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 500克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__ui
+      text1: 帕库鱼
+      link_id: PACU
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_swampcrop_0__ui
+      text1: 沼浆笼种子
+      text2: 1单位/周期
+      link_id: swampharvestplant
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 500克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__ui
+      text1: 帕库鱼
+      link_id: PACU
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_swamplily_0__ui
+      text1: 芳香百合种子
+      text2: 1单位/周期
+      link_id: swamplily
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 500克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__ui
+      text1: 帕库鱼
+      link_id: PACU
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_wormwood_0__ui
+      text1: 虫果种子
+      text2: 1单位/周期
+      link_id: wormplant
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 500克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__ui
+      text1: 帕库鱼
+      link_id: PACU
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_ice_berry_0__ui
+      text1: 刺壳果灌木种子
+      text2: 1单位/周期
+      link_id: hardskinberryplant
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 500克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__ui
+      text1: 帕库鱼
+      link_id: PACU
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require: []
+    produce:
+    - image: pacufillet_0__ui
+      text1: 帕库鱼片
+      text2: 1,000千卡
+      tooltip: 品质：标准 [+2]
+      link_id: fishmeat
+    fabricator:
+      image: pacu_0__ui
+      text1: 帕库鱼
+      link_id: PACU
+  - widget_type: CodexConversionPanel
+    require:
+    - image: pacu_0__ui
+      text1: 帕库鱼
+      text2: 1单位/周期
+      link_id: pacu
+    produce:
+    - image: iron_oxide_0__ui
+      text1: 铁锈
+      text2: 60千克/周期
+      link_id: rust
+    fabricator:
+      image: paculacanth_0__ui
+      text1: 颚鱼
+      link_id: PREHISTORICPACU
+  layout: Vertical
+- contents:
+  - widget_type: CodexLargeSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 热带帕库鱼
+    style: Title
+  - widget_type: CodexText
+    text: 小动物变种
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: pacu_0__trp_ui
+  - widget_type: CodexImage
+    image: baby_pacu_0__trp_ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexText
+    text: 全宇宙都知道帕库鱼超好吃。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 理想温度
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 舒适范围：<b>30ºC</b>至<b>80ºC</b>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 存活范围：<b>10ºC</b>至<b>100ºC</b>'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 寿命
+    style: Subtitle
+  - widget_type: CodexText
+    text: 这种小动物特征<link="CREATURES__GUIDE__FERTILITY">寿命</link>为<b>25周期</b>。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 所需空间
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 当房间空间对每只小动物平均少于<b>8格</b>时会感到<link="CREATURES__GUIDE__MOOD">拥挤</link>。'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 当房间小于<b>8格</b>时会感到<link="CREATURES__GUIDE__MOOD">封闭</link>。'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 掉落物
+    style: Subtitle
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 帕库鱼片
+    image: pacufillet_0__ui
+    link_id: fishmeat
+  - widget_type: CodexText
+    text: 	1,000千卡
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 食物
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: algae_0__ui
+      text1: 藻类
+      text2: 7.5千克/周期
+      link_id: algae
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 3750克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__trp_ui
+      text1: 热带帕库鱼
+      link_id: PACUTROPICAL
+  - widget_type: CodexConversionPanel
+    require:
+    - image: kelp_leaf_0__ui
+      text1: 海梳蕨叶
+      text2: 20千克/周期
+      link_id: kelp
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 10千克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__trp_ui
+      text1: 热带帕库鱼
+      link_id: PACUTROPICAL
+  - widget_type: CodexConversionPanel
+    require:
+    - image: kelp_0__ui
+      text1: 海梳蕨
+      text2: 40% 生长进度/周期
+      link_id: kelpplant
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 10千克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__trp_ui
+      text1: 热带帕库鱼
+      link_id: PACUTROPICAL
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_purpleroot_0__ui
+      text1: 羽叶果薯种子
+      text2: 1单位/周期
+      link_id: carrotplant
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 500克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__trp_ui
+      text1: 热带帕库鱼
+      link_id: PACUTROPICAL
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_pollinator_plant_0__ui
+      text1: 拟种
+      text2: 1单位/周期
+      link_id: butterflyplant
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 500克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__trp_ui
+      text1: 热带帕库鱼
+      link_id: PACUTROPICAL
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_bluegrass_0__ui
+      text1: 气囊芦荟种子
+      text2: 1单位/周期
+      link_id: bluegrass
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 500克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__trp_ui
+      text1: 热带帕库鱼
+      link_id: PACUTROPICAL
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_beanplant_0__ui
+      text1: 小吃豆
+      text2: 1单位/周期
+      link_id: bean
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 500克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__trp_ui
+      text1: 热带帕库鱼
+      link_id: PACUTROPICAL
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_swampreed_0__ui
+      text1: 顶针芦苇种子
+      text2: 1单位/周期
+      link_id: basicfabricplant
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 500克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__trp_ui
+      text1: 热带帕库鱼
+      link_id: PACUTROPICAL
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_meallice_0__ui
+      text1: 米虱木种子
+      text2: 1单位/周期
+      link_id: basicsingleharvestplant
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 500克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__trp_ui
+      text1: 热带帕库鱼
+      link_id: PACUTROPICAL
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_coldwheat_0__ui
+      text1: 冰霜麦粒
+      text2: 1单位/周期
+      link_id: coldwheat
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 500克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__trp_ui
+      text1: 热带帕库鱼
+      link_id: PACUTROPICAL
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_spikefruit_0__ui
+      text1: 汗甜玉米种子
+      text2: 1单位/周期
+      link_id: gardenfoodplant
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 500克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__trp_ui
+      text1: 热带帕库鱼
+      link_id: PACUTROPICAL
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_brackwood_0__ui
+      text1: 露珠藤种子
+      text2: 1单位/周期
+      link_id: dewdripperplant
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 500克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__trp_ui
+      text1: 热带帕库鱼
+      link_id: PACUTROPICAL
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_ceiling_carnie_0__ui
+      text1: 露饵花种子
+      text2: 1单位/周期
+      link_id: flytrapplant
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 500克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__trp_ui
+      text1: 热带帕库鱼
+      link_id: PACUTROPICAL
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_gassygrass_0__ui
+      text1: 释气草种子
+      text2: 1单位/周期
+      link_id: gasgrass
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 500克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__trp_ui
+      text1: 热带帕库鱼
+      link_id: PACUTROPICAL
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_spicenut_0__ui
+      text1: 火椒种子
+      text2: 1单位/周期
+      link_id: spicevine
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 500克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__trp_ui
+      text1: 热带帕库鱼
+      link_id: PACUTROPICAL
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_syrup_tree_0__ui
+      text1: 糖心树种子
+      text2: 1单位/周期
+      link_id: spacetree
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 500克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__trp_ui
+      text1: 热带帕库鱼
+      link_id: PACUTROPICAL
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_sealettuce_0__ui
+      text1: 水草种子
+      text2: 1单位/周期
+      link_id: sealettuce
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 500克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__trp_ui
+      text1: 热带帕库鱼
+      link_id: PACUTROPICAL
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_saltplant_0__ui
+      text1: 沙盐藤种子
+      text2: 1单位/周期
+      link_id: saltplant
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 500克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__trp_ui
+      text1: 热带帕库鱼
+      link_id: PACUTROPICAL
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_bristleblossom_0__ui
+      text1: 毛刺花种子
+      text2: 1单位/周期
+      link_id: prickleflower
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 500克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__trp_ui
+      text1: 热带帕库鱼
+      link_id: PACUTROPICAL
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_fungusplant_0__ui
+      text1: 夜幕菇孢子
+      text2: 1单位/周期
+      link_id: mushroomplant
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 500克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__trp_ui
+      text1: 热带帕库鱼
+      link_id: PACUTROPICAL
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_swampcrop_0__ui
+      text1: 沼浆笼种子
+      text2: 1单位/周期
+      link_id: swampharvestplant
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 500克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__trp_ui
+      text1: 热带帕库鱼
+      link_id: PACUTROPICAL
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_swamplily_0__ui
+      text1: 芳香百合种子
+      text2: 1单位/周期
+      link_id: swamplily
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 500克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__trp_ui
+      text1: 热带帕库鱼
+      link_id: PACUTROPICAL
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_wormwood_0__ui
+      text1: 虫果种子
+      text2: 1单位/周期
+      link_id: wormplant
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 500克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__trp_ui
+      text1: 热带帕库鱼
+      link_id: PACUTROPICAL
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_ice_berry_0__ui
+      text1: 刺壳果灌木种子
+      text2: 1单位/周期
+      link_id: hardskinberryplant
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 500克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__trp_ui
+      text1: 热带帕库鱼
+      link_id: PACUTROPICAL
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require: []
+    produce:
+    - image: pacufillet_0__ui
+      text1: 帕库鱼片
+      text2: 1,000千卡
+      tooltip: 品质：标准 [+2]
+      link_id: fishmeat
+    fabricator:
+      image: pacu_0__trp_ui
+      text1: 热带帕库鱼
+      link_id: PACUTROPICAL
+  - widget_type: CodexConversionPanel
+    require:
+    - image: pacu_0__trp_ui
+      text1: 热带帕库鱼
+      text2: 1单位/周期
+      link_id: pacutropical
+    produce:
+    - image: iron_oxide_0__ui
+      text1: 铁锈
+      text2: 60千克/周期
+      link_id: rust
+    fabricator:
+      image: paculacanth_0__ui
+      text1: 颚鱼
+      link_id: PREHISTORICPACU
+  layout: Vertical
+- contents:
+  - widget_type: CodexLargeSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 大嘴鱼
+    style: Title
+  - widget_type: CodexText
+    text: 小动物变种
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: pacu_0__glp_ui
+  - widget_type: CodexImage
+    image: baby_pacu_0__glp_ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexText
+    text: 全宇宙都知道帕库鱼超好吃。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 理想温度
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 舒适范围：<b>-30ºC</b>至<b>5ºC</b>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 存活范围：<b>-50ºC</b>至<b>25ºC</b>'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 寿命
+    style: Subtitle
+  - widget_type: CodexText
+    text: 这种小动物特征<link="CREATURES__GUIDE__FERTILITY">寿命</link>为<b>25周期</b>。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 所需空间
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 当房间空间对每只小动物平均少于<b>8格</b>时会感到<link="CREATURES__GUIDE__MOOD">拥挤</link>。'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 当房间小于<b>8格</b>时会感到<link="CREATURES__GUIDE__MOOD">封闭</link>。'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 掉落物
+    style: Subtitle
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 帕库鱼片
+    image: pacufillet_0__ui
+    link_id: fishmeat
+  - widget_type: CodexText
+    text: 	1,000千卡
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 食物
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: algae_0__ui
+      text1: 藻类
+      text2: 7.5千克/周期
+      link_id: algae
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 3750克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__glp_ui
+      text1: 大嘴鱼
+      link_id: PACUCLEANER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: kelp_leaf_0__ui
+      text1: 海梳蕨叶
+      text2: 20千克/周期
+      link_id: kelp
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 10千克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__glp_ui
+      text1: 大嘴鱼
+      link_id: PACUCLEANER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: kelp_0__ui
+      text1: 海梳蕨
+      text2: 40% 生长进度/周期
+      link_id: kelpplant
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 10千克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__glp_ui
+      text1: 大嘴鱼
+      link_id: PACUCLEANER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_purpleroot_0__ui
+      text1: 羽叶果薯种子
+      text2: 1单位/周期
+      link_id: carrotplant
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 500克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__glp_ui
+      text1: 大嘴鱼
+      link_id: PACUCLEANER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_pollinator_plant_0__ui
+      text1: 拟种
+      text2: 1单位/周期
+      link_id: butterflyplant
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 500克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__glp_ui
+      text1: 大嘴鱼
+      link_id: PACUCLEANER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_bluegrass_0__ui
+      text1: 气囊芦荟种子
+      text2: 1单位/周期
+      link_id: bluegrass
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 500克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__glp_ui
+      text1: 大嘴鱼
+      link_id: PACUCLEANER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_beanplant_0__ui
+      text1: 小吃豆
+      text2: 1单位/周期
+      link_id: bean
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 500克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__glp_ui
+      text1: 大嘴鱼
+      link_id: PACUCLEANER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_swampreed_0__ui
+      text1: 顶针芦苇种子
+      text2: 1单位/周期
+      link_id: basicfabricplant
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 500克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__glp_ui
+      text1: 大嘴鱼
+      link_id: PACUCLEANER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_meallice_0__ui
+      text1: 米虱木种子
+      text2: 1单位/周期
+      link_id: basicsingleharvestplant
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 500克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__glp_ui
+      text1: 大嘴鱼
+      link_id: PACUCLEANER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_coldwheat_0__ui
+      text1: 冰霜麦粒
+      text2: 1单位/周期
+      link_id: coldwheat
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 500克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__glp_ui
+      text1: 大嘴鱼
+      link_id: PACUCLEANER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_spikefruit_0__ui
+      text1: 汗甜玉米种子
+      text2: 1单位/周期
+      link_id: gardenfoodplant
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 500克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__glp_ui
+      text1: 大嘴鱼
+      link_id: PACUCLEANER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_brackwood_0__ui
+      text1: 露珠藤种子
+      text2: 1单位/周期
+      link_id: dewdripperplant
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 500克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__glp_ui
+      text1: 大嘴鱼
+      link_id: PACUCLEANER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_ceiling_carnie_0__ui
+      text1: 露饵花种子
+      text2: 1单位/周期
+      link_id: flytrapplant
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 500克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__glp_ui
+      text1: 大嘴鱼
+      link_id: PACUCLEANER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_gassygrass_0__ui
+      text1: 释气草种子
+      text2: 1单位/周期
+      link_id: gasgrass
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 500克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__glp_ui
+      text1: 大嘴鱼
+      link_id: PACUCLEANER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_spicenut_0__ui
+      text1: 火椒种子
+      text2: 1单位/周期
+      link_id: spicevine
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 500克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__glp_ui
+      text1: 大嘴鱼
+      link_id: PACUCLEANER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_syrup_tree_0__ui
+      text1: 糖心树种子
+      text2: 1单位/周期
+      link_id: spacetree
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 500克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__glp_ui
+      text1: 大嘴鱼
+      link_id: PACUCLEANER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_sealettuce_0__ui
+      text1: 水草种子
+      text2: 1单位/周期
+      link_id: sealettuce
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 500克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__glp_ui
+      text1: 大嘴鱼
+      link_id: PACUCLEANER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_saltplant_0__ui
+      text1: 沙盐藤种子
+      text2: 1单位/周期
+      link_id: saltplant
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 500克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__glp_ui
+      text1: 大嘴鱼
+      link_id: PACUCLEANER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_bristleblossom_0__ui
+      text1: 毛刺花种子
+      text2: 1单位/周期
+      link_id: prickleflower
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 500克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__glp_ui
+      text1: 大嘴鱼
+      link_id: PACUCLEANER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_fungusplant_0__ui
+      text1: 夜幕菇孢子
+      text2: 1单位/周期
+      link_id: mushroomplant
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 500克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__glp_ui
+      text1: 大嘴鱼
+      link_id: PACUCLEANER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_swampcrop_0__ui
+      text1: 沼浆笼种子
+      text2: 1单位/周期
+      link_id: swampharvestplant
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 500克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__glp_ui
+      text1: 大嘴鱼
+      link_id: PACUCLEANER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_swamplily_0__ui
+      text1: 芳香百合种子
+      text2: 1单位/周期
+      link_id: swamplily
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 500克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__glp_ui
+      text1: 大嘴鱼
+      link_id: PACUCLEANER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_wormwood_0__ui
+      text1: 虫果种子
+      text2: 1单位/周期
+      link_id: wormplant
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 500克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__glp_ui
+      text1: 大嘴鱼
+      link_id: PACUCLEANER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_ice_berry_0__ui
+      text1: 刺壳果灌木种子
+      text2: 1单位/周期
+      link_id: hardskinberryplant
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 500克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__glp_ui
+      text1: 大嘴鱼
+      link_id: PACUCLEANER
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: 474506FF
+      text1: 污染水
+      text2: 120千克/周期
+      link_id: dirtywater
+    produce:
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 120千克/周期
+      link_id: water
+    fabricator:
+      image: pacu_0__glp_ui
+      text1: 大嘴鱼
+      link_id: PACUCLEANER
+  - widget_type: CodexConversionPanel
+    require: []
+    produce:
+    - image: pacufillet_0__ui
+      text1: 帕库鱼片
+      text2: 1,000千卡
+      tooltip: 品质：标准 [+2]
+      link_id: fishmeat
+    fabricator:
+      image: pacu_0__glp_ui
+      text1: 大嘴鱼
+      link_id: PACUCLEANER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: pacu_0__glp_ui
+      text1: 大嘴鱼
+      text2: 1单位/周期
+      link_id: pacucleaner
+    produce:
+    - image: iron_oxide_0__ui
+      text1: 铁锈
+      text2: 60千克/周期
+      link_id: rust
+    fabricator:
+      image: paculacanth_0__ui
+      text1: 颚鱼
+      link_id: PREHISTORICPACU
+  layout: Vertical
+- contents:
+  - widget_type: CodexLargeSpacer
+  layout: Vertical

@@ -1,0 +1,20 @@
+id: MYLOG18
+name: 殖民地的希望
+title: STRINGS.COLONY_ACHIEVEMENTS.DISTANT_PLANET_REACHED.MYLOGNAME
+disabled: False
+search_only: False
+category: MYLOG
+sort_string: 殖民地的希望
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 殖民地的希望
+    style: Title
+  - widget_type: CodexText
+    text: 我们的家园在这个宇宙中已经消失了，取而代之的是行星的残架和天空中的残迹……但我仍怀有希望：其他世界还是存在的，就隐藏在其他维度中。我派出了我的复制人，他肩负着这份希望，通过了时间裂口……也许有一天他能找到一个地方联络回来，并开创一个他自己的繁荣殖民地。
+    style: Body
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical
+  lock_id: temporaltear

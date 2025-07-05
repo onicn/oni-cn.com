@@ -1,0 +1,20 @@
+id: SOLAUNCHTRAILER
+name: 眼冒金星宣传片
+title: STRINGS.CODEX.SO_LAUNCH_TRAILER.TITLE
+disabled: False
+search_only: False
+category: MEDIA
+sort_string: 眼冒金星宣传片
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 眼冒金星宣传片
+    style: Title
+  - widget_type: CodexText
+    text: ''
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexVideo
+  layout: Vertical

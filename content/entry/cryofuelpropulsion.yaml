@@ -1,0 +1,55 @@
+id: CRYOFUELPROPULSION
+parent_id: TECH
+name: 低温燃料推进
+disabled: False
+search_only: False
+category: TECH
+sort_string: 低温燃料推进
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="CRYOFUELPROPULSION">低温燃料推进</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 一个半强力的引擎，能推动你进入银河系更深处。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="NUCLEARPROPULSION">辐射粒子推进</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="BETTERHYDROCARBONPROPULSION">改良烃类燃料推进</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: rocket_cluster_hydrogen_engine_0__ui
+  - widget_type: CodexText
+    text: <link="HYDROGENENGINECLUSTER">液氢引擎</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: rocket_cluster_oxidizer_tank_liquid_0__ui
+  - widget_type: CodexText
+    text: <link="OXIDIZERTANKLIQUIDCLUSTER">液体氧化剂舱</link>
+    style: Body
+  layout: Horizontal

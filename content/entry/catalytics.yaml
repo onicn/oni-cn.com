@@ -1,0 +1,80 @@
+id: CATALYTICS
+parent_id: TECH
+name: 催化剂
+disabled: False
+search_only: False
+category: TECH
+sort_string: 催化剂
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="CATALYTICS">催化剂</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 使用独特的催化剂进行高级气体操纵。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="HVAC">暖通空调</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: oxylite_refinery_0__ui
+  - widget_type: CodexText
+    text: <link="OXYLITEREFINERY">氧石精炼炉</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: chlorinator_0__ui
+  - widget_type: CodexText
+    text: <link="CHLORINATOR">漂白石料斗</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: supermaterial_refinery_0__ui
+  - widget_type: CodexText
+    text: <link="SUPERMATERIALREFINERY">分子熔炉</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: element_liquid
+  - widget_type: CodexText
+    text: <style="KKeyword">高级化工生产</style>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: sodamaker_0__ui
+  - widget_type: CodexText
+    text: <link="SODAFOUNTAIN">汽水机</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: rocket_cluster_storage_gas_0__ui
+  - widget_type: CodexText
+    text: <link="GASCARGOBAY">大型气罐货舱</link>
+    style: Body
+  layout: Horizontal

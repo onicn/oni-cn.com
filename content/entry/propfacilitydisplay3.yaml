@@ -1,0 +1,46 @@
+id: PROPFACILITYDISPLAY3
+name: 热量中和器宣传广告
+title: STRINGS.CODEX.A0_PROPFACILITYDISPLAY3.TITLE
+disabled: False
+search_only: False
+category: NOTICES
+sort_string: 热量中和器宣传广告
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 热量中和器宣传广告
+    style: Title
+  - widget_type: CodexText
+    text: 公开发布
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+  lock_id: display_prop3
+- contents:
+  - widget_type: CodexText
+    text: >-
+      厌倦了由于季节性的热浪导致运营停机？希望削减与天气相关的运营成本？
+
+
+      不要再等了：庄严科技的革命性产品反熵热量中和器就是你想要的，不仅是消除运营停机的新方法，而且价格实惠。
+
+
+      反熵热量中和器由我们专有的可再生能源提供能量，可以冷却一整个办公楼，而不会产生像其他降温系统一样产生环境附加费。
+
+
+      初始安设包括氢气管道的安装，以及对每月维护的折扣，维护将由我们受过专门培训的承包商组成的精英团队进行。
+
+
+      现在已经可以预购了！
+    style: Body
+  layout: Vertical
+  lock_id: display_prop3
+- contents:
+  - widget_type: CodexText
+    text: >-
+      庄严科技出品。
+
+      <smallcaps>专利申请中</smallcaps>
+    style: Body
+  layout: Vertical
+  lock_id: display_prop3

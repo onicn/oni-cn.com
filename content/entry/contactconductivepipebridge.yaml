@@ -1,0 +1,64 @@
+id: CONTACTCONDUCTIVEPIPEBRIDGE
+parent_id: BUILDCATEGORYPLUMBING
+name: 导热板
+disabled: False
+search_only: False
+category: BUILDCATEGORYPLUMBING
+sort_string: 导热板
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="CONTACTCONDUCTIVEPIPEBRIDGE">导热板</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 液体微调
+    style: Body
+    image: research_type_alpha_icon
+    link_id: liquidtemperature
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: contactconductivepipebridge_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      输送<link="ELEMENTSLIQUID">液体</link>，允许对与之重叠的建筑进行大幅<link="HEAT">热量</link>交换。
+
+
+      可在真空中生效。
+
+
+      可穿过墙体和地面。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LIQUIDPIPING">液体输入管道</link>'
+    tooltip: 必须从<link="LIQUIDCONDUIT">液体管道</link>系统中接收<style="KKeyword">液体</style>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LIQUIDPIPING">液体输出管道</link>'
+    tooltip: 必须通过<link="LIQUIDCONDUIT">液体管道</link>系统排出<style="KKeyword">液体</style>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：3格宽x1格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：10秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="REFINEDMETAL">精炼金属</link>100千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>即使没有液体通过，导热板也能有效地传导热量。</i>
+    style: Body
+  layout: Vertical

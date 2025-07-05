@@ -1,0 +1,71 @@
+id: MAFICROCK
+parent_id: ELEMENTSSOLID
+name: 镁铁质岩
+disabled: False
+search_only: False
+category: ELEMENTSSOLID
+sort_string: 镁铁质岩
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="MAFICROCK">镁铁质岩</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: igneous_rock_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: igneous_rock_0__ui
+      text1: 镁铁质岩
+      text2: 1000克
+      link_id: maficrock
+    produce:
+    - image: element_liquid
+      color: AE0000FF
+      text1: 岩浆
+      text2: 1000克
+      link_id: magma
+    fabricator:
+      image: crew_state_temp_up
+      text1: 1409.9ºC
+      tooltip: 温度高于1409.9ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      镁铁质岩是一种<link="IGNEOUSROCK">火成岩</link>的富含<link="IRON">铁</link>的变体。
+
+
+      它可用作<b>建造材料</b>。
+
+
+      资源种类：<link="BUILDABLERAW">矿物原料</link>
+
+      熔点：1409.9ºC
+
+      硬度：<color=#71ABCFFF>2（非常柔软）</color>
+
+
+      比热容：0.200 (DTU/g)/ºC
+
+      热导率：1.000 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.65
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：<link="BUILDABLEANY">一般建造材料</link>, <link="ELEMENTSSOLID">固体</link>, <link="BUILDABLERAW">矿物原料</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

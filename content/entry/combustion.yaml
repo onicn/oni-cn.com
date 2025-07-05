@@ -1,0 +1,59 @@
+id: COMBUSTION
+parent_id: TECH
+name: 内燃机
+disabled: False
+search_only: False
+category: TECH
+sort_string: 内燃机
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="COMBUSTION">内燃机</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 用燃料发电机以粗产大量<link="POWER">电力</link>。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="POWERREGULATION">电力调节</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: generatorphos_0__ui
+  - widget_type: CodexText
+    text: <link="GENERATOR">煤炭发电机</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: generatorwood_0__ui
+  - widget_type: CodexText
+    text: <link="WOODGASGENERATOR">木材燃烧器</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: generatorpeat_0__ui
+  - widget_type: CodexText
+    text: <link="PEATGENERATOR">泥炭燃烧器</link>
+    style: Body
+  layout: Horizontal

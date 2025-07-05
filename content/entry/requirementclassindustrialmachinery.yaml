@@ -1,0 +1,322 @@
+id: REQUIREMENTCLASSINDUSTRIALMACHINERY
+parent_id: BUILDCATEGORYCATEGORY
+name: 工业机械
+disabled: False
+search_only: False
+category: BUILDCATEGORYCATEGORY
+sort_string: 工业机械
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 工业机械
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 能发电、制造装备、精炼资源以及满足殖民地其他基本需求的建筑。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 此类别的建筑：
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 碳素脱离器'
+    image: co2scrubber_0__ui
+    link_id: co2scrubber
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 电解器'
+    image: electrolyzer_0__ui
+    link_id: electrolyzer
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 铁锈脱氧机'
+    image: rust_deoxidizer_0__ui
+    link_id: rustdeoxidizer
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 人力发电机'
+    image: generatormanual_0__ui
+    link_id: manualgenerator
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 煤炭发电机'
+    image: generatorphos_0__ui
+    link_id: generator
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 木材燃烧器'
+    image: generatorwood_0__ui
+    link_id: woodgasgenerator
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 泥炭燃烧器'
+    image: generatorpeat_0__ui
+    link_id: peatgenerator
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 氢气发电机'
+    image: generatormerc_0__ui
+    link_id: hydrogengenerator
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 天然气发电机'
+    image: generatormethane_0__ui
+    link_id: methanegenerator
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 石油发电机'
+    image: generatorpetrol_0__ui
+    link_id: petroleumgenerator
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 蒸汽涡轮机'
+    image: steamturbine2_0__ui
+    link_id: steamturbine2
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 太阳能板'
+    image: solar_panel_0__ui
+    link_id: solarpanel
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 移动电源充电机'
+    image: electrobank_charger_small_0__ui
+    link_id: electrobankcharger
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 大型放电器'
+    image: electrobank_discharger_large_0__ui
+    link_id: largeelectrobankdischarger
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 变压器'
+    image: transformer_small_0__ui
+    link_id: powertransformersmall
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 大型变压器'
+    image: transformer_0__ui
+    link_id: powertransformer
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 脱水机'
+    image: dehydrator_0__ui
+    link_id: fooddehydrator
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 液桶抽出器'
+    image: bottle_emptier_liquid_conduit_0__ui
+    link_id: bottleemptierconduitliquid
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 液泵'
+    image: pumpliquid_0__ui
+    link_id: liquidpump
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 小型液泵'
+    image: miniwaterpump_0__ui
+    link_id: liquidminipump
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 液体筛选器'
+    image: filter_liquid_0__ui
+    link_id: liquidfilter
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 火箭端口液体装载器'
+    image: conduit_port_liquid_loader_0__ui
+    link_id: modularlaunchpadportliquid
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 火箭端口液体卸载器'
+    image: conduit_port_liquid_unloader_0__ui
+    link_id: modularlaunchpadportliquidunloader
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 气泵'
+    image: pumpgas_0__ui
+    link_id: gaspump
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 小型气泵'
+    image: minigaspump_0__ui
+    link_id: gasminipump
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 高压排气口'
+    image: ventgas_powered_0__ui
+    link_id: gasventhighpressure
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 气体筛选器'
+    image: filter_gas_0__ui
+    link_id: gasfilter
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 气罐抽出器'
+    image: bottle_emptier_gas_conduit_0__ui
+    link_id: bottleemptierconduitgas
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 火箭端口气体装载器'
+    image: conduit_port_gas_loader_0__ui
+    link_id: modularlaunchpadportgas
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 火箭端口气体卸载器'
+    image: conduit_port_gas_unloader_0__ui
+    link_id: modularlaunchpadportgasunloader
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 净水器'
+    image: waterpurifier_0__ui
+    link_id: waterpurifier
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 脱盐器'
+    image: desalinator_0__ui
+    link_id: desalinator
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 肥料合成器'
+    image: fertilizer_maker_0__ui
+    link_id: fertilizermaker
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 藻类蒸馏器'
+    image: algae_distillery_0__ui
+    link_id: algaedistillery
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 乙醇蒸馏器'
+    image: ethanoldistillery_0__ui
+    link_id: ethanoldistillery
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 碎石机'
+    image: rockrefinery_0__ui
+    link_id: rockcrusher
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 窑炉'
+    image: kiln_0__ui
+    link_id: kiln
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 泥浆分离器'
+    image: sludge_press_0__ui
+    link_id: sludgepress
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 金属精炼器'
+    image: metalrefinery_0__ui
+    link_id: metalrefinery
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 原油精炼器'
+    image: oilrefinery_0__ui
+    link_id: oilrefinery
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 聚合物压塑器'
+    image: plasticrefinery_0__ui
+    link_id: polymerizer
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 氧石精炼炉'
+    image: oxylite_refinery_0__ui
+    link_id: oxyliterefinery
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 漂白石料斗'
+    image: chlorinator_0__ui
+    link_id: chlorinator
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 钻石压机'
+    image: diamond_press_0__ui
+    link_id: diamondpress
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 咸乳蜡收集器'
+    image: milk_separator_0__ui
+    link_id: milkfatseparator
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 数据挖掘仪'
+    image: data_miner_0__ui
+    link_id: dataminer
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 电控站'
+    image: electricianworkdesk_0__ui
+    link_id: powercontrolstation
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 技能涤除器'
+    image: respeccer_0__ui
+    link_id: resetskillsstation
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 爆破弹组装机'
+    image: missile_fabricator_0__ui
+    link_id: missilefabricator
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 太空服锻造台'
+    image: suit_maker_0__ui
+    link_id: suitfabricator
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 矿石洗涤器'
+    image: orescrubber_0__ui
+    link_id: orescrubber
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 太空扫描仪'
+    image: meteor_detector_0__ui
+    link_id: cometdetector
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 固体筛选器'
+    image: filter_material_conveyor_0__ui
+    link_id: solidfilter
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 自动采矿机'
+    image: auto_miner_0__ui
+    link_id: autominer
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 火箭端口固体装载器'
+    image: conduit_port_solid_loader_0__ui
+    link_id: modularlaunchpadportsolid
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 火箭端口固体卸载器'
+    image: conduit_port_solid_unloader_0__ui
+    link_id: modularlaunchpadportsolidunloader
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 火箭平台'
+    image: rocket_launchpad_0__ui
+    link_id: launchpad
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 星际发射器'
+    image: rail_gun_0__ui
+    link_id: railgun
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 定位信标'
+    image: landing_beacon_0__ui
+    link_id: landingbeacon
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 流星爆破炮'
+    image: missile_launcher_0__ui
+    link_id: missilelauncher
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 研究性反应堆'
+    image: generatornuclear_0__ui
+    link_id: nuclearreactor
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 铀素离心机'
+    image: enrichmentcentrifuge_0__ui
+    link_id: uraniumcentrifuge
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 与下列冲突：
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: '    • <link="LATRINE">公共厕所</link>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • <link="PLUMBEDBATHROOM">卫生间</link>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • <link="BARRACKS">宿舍</link>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • <link="BEDROOM">豪华宿舍</link>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • <link="PRIVATE BEDROOM">私人卧室</link>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • <link="MESSHALL">食堂</link>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • <link="GREATHALL">高档餐厅</link>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • <link="MASSAGECLINIC">按摩诊所</link>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • <link="HOSPITAL">医院</link>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • <link="LABORATORY">实验室</link>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • <link="RECROOM">娱乐室</link>'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical

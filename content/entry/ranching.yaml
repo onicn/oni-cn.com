@@ -1,0 +1,87 @@
+id: RANCHING
+parent_id: TECH
+name: 养殖
+disabled: False
+search_only: False
+category: TECH
+sort_string: 养殖
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="RANCHING">养殖</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 管理和照料野生小动物。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="FINEDINING">食物制备</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: rancherstation_0__ui
+  - widget_type: CodexText
+    text: <link="RANCHSTATION">梳理站</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: shearing_station_0__ui
+  - widget_type: CodexText
+    text: <link="SHEARINGSTATION">修剪站</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: feeder_0__ui
+  - widget_type: CodexText
+    text: <link="CREATUREFEEDER">小动物喂食器</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: fishrelocator_0__ui
+  - widget_type: CodexText
+    text: <link="FISHDELIVERYPOINT">鱼类放生点</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: fishfeeder_0__ui
+  - widget_type: CodexText
+    text: <link="FISHFEEDER">喂鱼器</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: relocator_pickup_0__ui
+  - widget_type: CodexText
+    text: <link="CRITTERPICKUP">小动物移取点</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: relocator_dropoff_02_0__ui
+  - widget_type: CodexText
+    text: <link="CRITTERDROPOFF">小动物放生点</link>
+    style: Body
+  layout: Horizontal

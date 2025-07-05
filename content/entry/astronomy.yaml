@@ -1,0 +1,75 @@
+id: ASTRONOMY
+parent_id: ROLES
+name: 天文学
+disabled: False
+search_only: False
+category: ROLES
+sort_string: 天文学
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="ASTRONOMY">天文学</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: hat_role_research3
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 允许复制人使用<link="CLUSTERTELESCOPE">望远镜</link>进一步研究外太空
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 工作培训
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexText
+    text: 工作培训会自动提供永久的特质和属性提升，即使复制人更换工作，这些特质和属性提升也会保留下来。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="CLUSTERTELESCOPE">望远镜</link>的使用
+    style: Body
+  - widget_type: CodexText
+    text: <link="CLUSTERTELESCOPEENCLOSED">隔绝式望远镜</link>的使用
+    style: Body
+  - widget_type: CodexText
+    text: >-
+      <link="MISSIONCONTROLCLUSTER">航天指挥站</link>的使用
+
+      <link="ORBITALRESEARCHCENTER">轨道数据收集实验仪</link>的使用
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提工作
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="RESEARCHING1">高级研究</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 升职机会
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexText
+    text: 晋升会在现有工作培训的基础上带来更多属性提升和特质。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="SPACERESEARCH">数据分析研究</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="ROCKETPILOTING2">火箭驾驶 II</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

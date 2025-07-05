@@ -1,0 +1,357 @@
+id: COMPOSTABLE
+parent_id: ELEMENTTYPES
+name: 可堆肥物
+title: STRINGS.MISC.TAGS.COMPOSTABLE
+disabled: False
+search_only: False
+category: ELEMENTTYPES
+sort_string: <link="COMPOSTABLE">可堆肥物</link>
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="COMPOSTABLE">可堆肥物</link>
+    style: Title
+  - widget_type: CodexText
+    text: 可回收有机物
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexImage
+    image: compost_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      可堆肥物是一类生物材料，能够放入<link="COMPOST">堆肥堆</link>以产生干净的<link="DIRT">泥土</link>。
+
+
+      堆肥过程也会产生少量的<link="HEAT">热量</link>。
+
+
+      一旦被污染，可食用的食物就应该拿去堆肥以避免<link="FOODSICKNESS">食物中毒</link>。
+    style: Body
+  - widget_type: CodexElementCategoryList
+    require:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      link_id: toxicsand
+    - image: loafu_0__ui
+      text1: 豆腐
+      link_id: tofu
+    - image: swamplilyflower_0__ui
+      text1: 芳香百合花
+      link_id: swamplilyflower
+    - image: swampcrop_fruit_0__ui
+      text1: 沼浆果冻
+      link_id: swampfruit
+    - image: swamp_delights_0__ui
+      text1: 沼泽欢愉
+      link_id: swampdelights
+    - image: surfnturf_0__ui
+      text1: 海陆双拼
+      link_id: surfandturf
+    - image: spicey_tofu_0__ui
+      text1: 麻婆豆腐
+      link_id: spicytofu
+    - image: spicenut_0__ui
+      text1: 火椒粒
+      link_id: spicenut
+    - image: ova_melon_0__ui
+      text1: 漫花果
+      link_id: vinefruit
+    - image: smokedvegetables_0__ui
+      text1: 爆米花
+      link_id: smokedvegetables
+    - image: smokedfish_0__ui
+      text1: 熏鱼
+      link_id: smokedfish
+    - image: dinobrisket_0__ui
+      text1: 嫩肋排
+      link_id: smokeddinosaurmeat
+    - image: shellfish_0__ui
+      text1: 生蟹肉
+      link_id: shellfishmeat
+    - image: zestysalsa_0__ui
+      text1: 浆果酿
+      link_id: salsa
+    - image: rotfood_0__ui
+      text1: 腐烂物
+      link_id: compost
+    - image: rawegg_0__ui
+      text1: 生蛋
+      link_id: rawegg
+    - image: quiche_0__ui
+      text1: 蘑菇乳蛋饼
+      link_id: quiche
+    - image: pepperbread_0__ui
+      text1: 火椒面包
+      link_id: spicebread
+    - image: wormwood_roast_nuts_0__ui
+      text1: 烤虫果仁
+      link_id: wormbasicfood
+    - image: wormwood_basic_fruit_0__ui
+      text1: 贫瘠虫果
+      link_id: wormbasicfruit
+    - image: wormwood_preserved_berries_0__ui
+      text1: 虫果果酱
+      link_id: wormsuperfood
+    - image: eggshells_0__ui
+      text1: 蛋壳
+      link_id: eggshell
+    - image: woodcrabshell_0__ui
+      text1: 木蟹壳
+      link_id: crabwoodshell
+    - image: crabshell_0__ui
+      text1: 蟹壳
+      link_id: crabshell
+    - image: wormwood_super_fruits_0__ui
+      text1: 虫果
+      link_id: wormsuperfruit
+    - image: bristleberry_0__ui
+      text1: 毛刺浆果
+      link_id: pricklefruit
+    - image: jawbofillet_0__ui
+      text1: 颚鱼片
+      link_id: prehistoricpacufillet
+    - image: critter_trap_fruit_0__ui
+      text1: 植物肉
+      link_id: plantmeat
+    - image: pickledmeal_0__ui
+      text1: 腌制米虱
+      link_id: pickledmeal
+    - image: seed_purpleroot_0__ui
+      text1: 羽叶果薯种子
+      link_id: carrotplant
+    - image: seed_potted_cactus_0__ui
+      text1: 雀跃掌种子
+      link_id: cactusplant
+    - image: seed_pollinator_plant_0__ui
+      text1: 拟种
+      link_id: butterflyplant
+    - image: seed_potted_bulb_0__ui
+      text1: 同伴芽种子
+      link_id: bulbplant
+    - image: seed_bluegrass_0__ui
+      text1: 气囊芦荟种子
+      link_id: bluegrass
+    - image: seed_coldbreather_0__ui
+      text1: 冰息萝卜种子
+      link_id: coldbreather
+    - image: seed_beanplant_0__ui
+      text1: 小吃豆
+      link_id: bean
+    - image: seed_swampreed_0__ui
+      text1: 顶针芦苇种子
+      link_id: basicfabricplant
+    - image: seed_meallice_0__ui
+      text1: 米虱木种子
+      link_id: basicsingleharvestplant
+    - image: seed_coldwheat_0__ui
+      text1: 冰霜麦粒
+      link_id: coldwheat
+    - image: seed_potted_cylindricafan_0__ui
+      text1: 极乐刺种子
+      link_id: cylindrica
+    - image: spikefruit_0__ui
+      text1: 汗甜玉米
+      link_id: gardenfoodplantfood
+    - image: seed_spikefruit_0__ui
+      text1: 汗甜玉米种子
+      link_id: gardenfoodplant
+    - image: seed_discplant_0__ui
+      text1: 环玫花种子
+      link_id: gardendecorplant
+    - image: seed_tree_0__ui
+      text1: 乔木橡实
+      link_id: foresttree
+    - image: seed_critter_trap_0__ui
+      text1: 土星动物捕草种子
+      link_id: crittertrapplant
+    - image: seed_cactus_0__ui
+      text1: 仙水掌种子
+      link_id: filterplant
+    - image: seed_potted_evilflower_0__ui
+      text1: 孢子兰种子
+      link_id: evilflower
+    - image: seed_megafrond_0__ui
+      text1: 巨蕨孢子
+      link_id: dinofern
+    - image: seed_brackwood_0__ui
+      text1: 露珠藤种子
+      link_id: dewdripperplant
+    - image: seed_ceiling_carnie_0__ui
+      text1: 露饵花种子
+      link_id: flytrapplant
+    - image: deepfried_nosh_beans_0__ui
+      text1: 炸豆小吃
+      link_id: deepfriednosh
+    - image: deepfried_meat_0__ui
+      text1: 炸肉块
+      link_id: deepfriedmeat
+    - image: deepfried_fish_0__ui
+      text1: 鱼肉卷
+      link_id: deepfriedfish
+    - image: seed_gassygrass_0__ui
+      text1: 释气草种子
+      link_id: gasgrass
+    - image: curried_beans_0__ui
+      text1: 咖喱豆
+      link_id: curry
+    - image: iceberry_cooked_0__ui
+      text1: 刺壳果烤串
+      link_id: cookedpikeapple
+    - image: barbeque_0__ui
+      text1: 烤肉串
+      link_id: cookedmeat
+    - image: grilled_pacu_0__ui
+      text1: 烤海鲜
+      link_id: cookedfish
+    - image: cookedegg_0__ui
+      text1: 煎蛋卷
+      link_id: cookedegg
+    - image: frostbread_0__ui
+      text1: 冰霜面包
+      link_id: coldwheatbread
+    - image: purplerootvegetable_0__ui
+      text1: 羽叶果薯
+      link_id: carrot
+    - image: fried_mimillet_0__ui
+      text1: 烘烤拟种
+      link_id: butterflyfood
+    - image: frost_burger_0__ui
+      text1: 冰霜汉堡
+      link_id: burger
+    - image: deepfried_shellfish_0__ui
+      text1: 蟹肉天妇罗
+      link_id: deepfriedshellfish
+    - image: dinomeat_raw_0__ui
+      text1: 硬肉
+      link_id: dinosaurmeat
+    - image: megafrond_grain_0__ui
+      text1: 巨蕨谷粒
+      link_id: fernfood
+    - image: stackedpancakes_0__ui
+      text1: 蛋奶酥煎饼
+      link_id: pancakes
+    - image: mushroom_wrap_0__ui
+      text1: 蘑菇卷
+      link_id: mushroomwrap
+    - image: funguscap_0__ui
+      text1: 蘑菇
+      link_id: mushroom
+    - image: mushbar_0__ui
+      text1: 软泥膏
+      link_id: mushbar
+    - image: creaturemeat_0__ui
+      text1: 肉
+      link_id: meat
+    - image: sea_lettuce_leaves_0__ui
+      text1: 海生菜
+      link_id: lettuce
+    - image: gristleberry_0__ui
+      text1: 炙烤刺果
+      link_id: grilledpricklefruit
+    - image: mushbarfried_0__ui
+      text1: 伽马泥膏
+      link_id: gammamush
+    - image: rootfries_0__ui
+      text1: 果薯条
+      link_id: friescarrot
+    - image: funguscapfried_0__ui
+      text1: 煎蘑菇
+      link_id: friedmushroom
+    - image: mushbarfried_0__ui
+      text1: 煎泥膏
+      link_id: friedmushbar
+    - image: pacufillet_0__ui
+      text1: 帕库鱼片
+      link_id: fishmeat
+    - image: wormwood_berry_pie_0__ui
+      text1: 混合浆果派
+      link_id: berrypie
+    - image: seed_bristlebriar_0__ui
+      text1: 诱人荆棘种子
+      link_id: pricklegrass
+    - image: seed_spicenut_0__ui
+      text1: 火椒种子
+      link_id: spicevine
+    - image: seed_syrup_tree_0__ui
+      text1: 糖心树种子
+      link_id: spacetree
+    - image: seed_sealettuce_0__ui
+      text1: 水草种子
+      link_id: sealettuce
+    - image: seed_kelp_0__ui
+      text1: 海梳蕨种子
+      link_id: kelpplant
+    - image: seed_saltplant_0__ui
+      text1: 沙盐藤种子
+      link_id: saltplant
+    - image: seed_potted_leafy_0__ui
+      text1: 欢乐叶种子
+      link_id: leafyplant
+    - image: meallicegrain_0__ui
+      text1: 米虱
+      link_id: basicplantfood
+    - image: seed_bristleblossom_0__ui
+      text1: 毛刺花种子
+      link_id: prickleflower
+    - image: seed_oxyfern_0__ui
+      text1: 氧齿蕨种子
+      link_id: oxyfern
+    - image: seed_fungusplant_0__ui
+      text1: 夜幕菇孢子
+      link_id: mushroomplant
+    - image: seed_swampcrop_0__ui
+      text1: 沼浆笼种子
+      link_id: swampharvestplant
+    - image: seed_swamplily_0__ui
+      text1: 芳香百合种子
+      link_id: swamplily
+    - image: seed_vine_0__ui
+      text1: 漫殖藤主干种子
+      link_id: vinemother
+    - image: seed_potted_toes_0__ui
+      text1: 安宁芷种子
+      link_id: toeplant
+    - image: seed_wormwood_0__ui
+      text1: 虫果种子
+      link_id: wormplant
+    - image: seed_ice_flower_0__ui
+      text1: 恬静花种子
+      link_id: iceflower
+    - image: liceloaf_0__ui
+      text1: 米虱糕
+      link_id: basicplantbar
+    - image: seed_potted_cups_0__ui
+      text1: 锦醇菇种子
+      link_id: winecups
+    - image: iceberry_0__ui
+      text1: 刺壳果
+      link_id: hardskinberry
+    - image: seed_ice_berry_0__ui
+      text1: 刺壳果灌木种子
+      link_id: hardskinberryplant
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: unknown
+      color: 7F7F7FFF
+      text1: 可堆肥物
+      text2: 60单位/周期
+      link_id: compostable
+    produce:
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 60千克/周期
+      link_id: dirt
+    fabricator:
+      image: compost_0__ui
+      text1: 堆肥堆
+      link_id: COMPOST
+  layout: Vertical

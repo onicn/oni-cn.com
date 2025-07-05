@@ -1,0 +1,28 @@
+id: MYLOG7
+name: 奇怪的遗物
+title: STRINGS.CODEX.MYLOG.BODY.STRANGERELICS.TITLE
+disabled: False
+search_only: False
+category: MYLOG
+sort_string: 奇怪的遗物
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 奇怪的遗物
+    style: Title
+  - widget_type: CodexText
+    text: >+
+      我的复制人在最近的调查任务中发现了一台完好的电脑。这根本是不可能的事。
+
+
+      目标地点不应该有我们之外的任何智慧生命存在，况且，我们发现的设备都是来自于庄严科技的。
+
+
+      这次发现激起了许多问题，但也同样是一个小线索，我们发现的机器是嵌入到这颗行星中的，就像我的舱一样。
+
+    style: Body
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical
+  lock_id: email_thermodynamiclaws

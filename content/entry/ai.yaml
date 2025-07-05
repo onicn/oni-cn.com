@@ -1,0 +1,60 @@
+id: AI
+name: 悖论
+title: STRINGS.CODEX.B10_AI.TITLE
+disabled: False
+search_only: False
+category: RESEARCHNOTES
+sort_string: 悖论
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 悖论
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：三
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+  lock_id: notes_AI
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <smallcaps>[声纹识别系统初始化完成]
+
+      [识别编号：B111-1]</smallcaps>
+
+
+      [录音开始]
+
+
+      今天我在人工智能编程工作时发现了一件可怕的事。似乎阿利博士将程序上传到原始机器人上时弄混了一个文件，然后我发现那台设备显示了他“几周前在传送实验中丢失的小狗”的特征。
+
+
+      这难以置信！杰姬对我隐藏了传送实验的本质。更糟的是我从之前的对话中了解到她知道我绝不会赞成这种实验的。先撇下传送对社会的好处不谈，你<i>不能</i>每次要将活物传送到其他空间就把它们杀死啊。无论是道德上还是伦理上都是很可怕的。
+
+
+      我知道她会对我隐瞒这些信息。我查阅庄严科技数据库时，我找不出这与传送实验的相关性。要不是阿利的人工智能论文中提到了，我永远都发现不了发生了什么。
+
+
+      必须得阻止杰姬。
+
+
+      但我知道没法和她进行合理的讨论。我希望仅有此事是她隐瞒我的，但恐怕并不是这样的。
+
+
+      [录音结束]
+
+
+      [录音开始]
+
+
+      尽管是我自己，我也忍不住去想这对人工智能发展有着神秘的可能性。这很困扰我。
+
+
+      我担心我可能会走下坡路，而尽头是杰姬张开双臂等待着我。
+
+
+      [录音结束]
+    style: Body
+  layout: Vertical
+  lock_id: notes_AI

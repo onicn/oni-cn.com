@@ -1,0 +1,94 @@
+id: NATURALSOLIDRESIN
+parent_id: ELEMENTSSOLID
+name: 固态树脂
+disabled: False
+search_only: False
+category: ELEMENTSSOLID
+sort_string: 固态树脂
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="NATURALSOLIDRESIN">固态树脂</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: resin_solid_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: resin_solid_0__ui
+      text1: 固态树脂
+      text2: 1000克
+      link_id: naturalsolidresin
+    produce:
+    - image: element_liquid
+      color: CC8B18FF
+      text1: 树脂
+      text2: 1000克
+      link_id: naturalresin
+    fabricator:
+      image: crew_state_temp_up
+      text1: 20ºC
+      tooltip: 温度高于20ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换于
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: CC8B18FF
+      text1: 树脂
+      text2: 1000克
+      link_id: naturalresin
+    produce:
+    - image: resin_solid_0__ui
+      text1: 固态树脂
+      text2: 1000克
+      link_id: naturalsolidresin
+    fabricator:
+      image: crew_state_temp_down
+      text1: 20ºC
+      tooltip: 温度低于20ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      冷却至<link="ELEMENTSSOLID">固态</link>的树脂。
+
+
+      它可以在<link="POLYMERIZER">聚合物压塑器</link>中处理成<link="POLYPROPYLENE">塑料</link>。
+
+
+      资源种类：有机物
+
+      熔点：20ºC
+
+      硬度：<color=#6D7BC1FF>10（柔软）</color>
+
+
+      比热容：1.300 (DTU/g)/ºC
+
+      热导率：0.170 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.75
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：<link="BUILDABLEANY">一般建造材料</link>, <link="TRANSPARENT">透明体</link>, <link="ELEMENTSSOLID">固体</link>, 有机物
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

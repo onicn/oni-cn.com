@@ -1,0 +1,66 @@
+id: REFINEDOBJECTS
+parent_id: TECH
+name: 精致翻修
+disabled: False
+search_only: False
+category: TECH
+sort_string: 精致翻修
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="REFINEDOBJECTS">精致翻修</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 用由<link="REFINEDMETAL">精炼金属</link>制作的新物品来改进基地的基础建设。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="BASICREFINEMENT">蛮力精炼</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: firepole_0__ui
+  - widget_type: CodexText
+    text: <link="FIREPOLE">消防滑杆</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: thermalblock_0__ui
+  - widget_type: CodexText
+    text: <link="THERMALBLOCK">变温板</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: ladder_bed_0__ui
+  - widget_type: CodexText
+    text: <link="LADDER">梯床</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: rocket_loader_extension_0__ui
+  - widget_type: CodexText
+    text: <link="MODULARLAUNCHPADPORTSOLID">火箭端口延伸桥</link>
+    style: Body
+  layout: Horizontal

@@ -1,0 +1,48 @@
+id: NUCLEARPROPULSION
+parent_id: TECH
+name: 辐射粒子推进
+disabled: False
+search_only: False
+category: TECH
+sort_string: 辐射粒子推进
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="NUCLEARPROPULSION">辐射粒子推进</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 使用全新的辐射技术让你飞向另一颗星。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="JETPACKS">投射物</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="NUCLEAR">辐射精炼</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: rocket_hep_engine_0__ui
+  - widget_type: CodexText
+    text: <link="HEPENGINE">辐射粒子引擎</link>
+    style: Body
+  layout: Horizontal

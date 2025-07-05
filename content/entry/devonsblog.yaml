@@ -1,0 +1,119 @@
+id: DEVONSBLOG
+name: 回复：德文的博客
+title: STRINGS.CODEX.A3_DEVONSBLOG.TITLE
+disabled: False
+search_only: False
+category: EMAILS
+sort_string: 回复：德文的博客
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 回复：德文的博客
+    style: Title
+  - widget_type: CodexText
+    text: 未加密
+    style: Subtitle
+  layout: Vertical
+  lock_id: email_devonsblog
+- contents:
+  - widget_type: CodexText
+    text: >
+      <smallcaps>收件人：<b>苏梅尔斯博士</b><alpha=#AA><size=12> <jsummers@gravitas.nova></size></color>
+
+      发件人：<b>琼斯博士</b><alpha=#AA><size=12> <ejones@gravitas.nova></size></color></smallcaps>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_devonsblog
+- contents:
+  - widget_type: CodexText
+    text: <indent=5%>等一下，约书亚，你读德文的博客了？？</indent>
+    style: Body
+  - widget_type: CodexText
+    text: >2
+
+      祝好，
+
+      琼斯博士
+
+      <size=11>信息统计部
+
+      庄严科技</size>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_devonsblog
+- contents:
+  - widget_type: CodexText
+    text: 标题：德文的博客
+    style: Subtitle
+  - widget_type: CodexText
+    text: >
+      <smallcaps>收件人：<b>琼斯博士</b><alpha=#AA><size=12> <ejones@gravitas.nova></size></color>
+
+      发件人：<b>苏梅尔斯博士</b><alpha=#AA><size=12> <jsummers@gravitas.nova></size></color></smallcaps>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_devonsblog
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <indent=5%>真酷，德文在<i>“小镇名流”</i>上写了一篇新贴子？我想跟上去看看，正所谓“刨根寻底”，哈哈。
+
+
+      一会儿见！:)</indent>
+    style: Body
+  - widget_type: CodexText
+    text: >2
+
+      - 苏梅尔斯博士
+
+      <size=11>信息统计部
+
+      庄严科技</size>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_devonsblog
+- contents:
+  - widget_type: CodexText
+    text: 标题：德文的博客
+    style: Subtitle
+  - widget_type: CodexText
+    text: >
+      <smallcaps>收件人：<b>苏梅尔斯博士</b><alpha=#AA><size=12> <jsummers@gravitas.nova></size></color>
+
+      发件人：<b>琼斯博士</b><alpha=#AA><size=12> <ejones@gravitas.nova></size></color></smallcaps>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_devonsblog
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <indent=5%>老天，我发现德文也是那种把所有食物拍下来上传到博客的人。
+
+
+      你一定要和我们一起吃午饭，看看他们花这么长时间拍照，然后食物都凉了，只能让服务员把食物再热一下，这太搞笑了。</indent>
+    style: Body
+  - widget_type: CodexText
+    text: >2
+
+      祝好，
+
+      琼斯博士
+
+      <size=11>信息统计部
+
+      庄严科技</size>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_devonsblog

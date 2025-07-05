@@ -1,0 +1,76 @@
+id: DURABLELIFESUPPORT
+parent_id: TECH
+name: 持久生命维持
+disabled: False
+search_only: False
+category: TECH
+sort_string: 持久生命维持
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="DURABLELIFESUPPORT">持久生命维持</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 改进的设备，用于更广泛的太空任务。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="SMELTING">熔炼</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="CRASHPLAN">撞击计划</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: rocket_nosecone_default_0__ui
+  - widget_type: CodexText
+    text: <link="NOSECONEBASIC">基础前锥</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: rocket_habitat_medium_module_0__ui
+  - widget_type: CodexText
+    text: <link="HABITATMODULEMEDIUM">太空员舱</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: artifact_analysis_0__ui
+  - widget_type: CodexText
+    text: <link="ARTIFACTANALYSISSTATION">工艺品分析站</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: artifact_transport_module_0__ui
+  - widget_type: CodexText
+    text: <link="ARTIFACTCARGOBAY">工艺品运输舱</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: rocket_storage_live_small_0__ui
+  - widget_type: CodexText
+    text: <link="SPECIALCARGOBAY">小动物货舱</link>
+    style: Body
+  layout: Horizontal

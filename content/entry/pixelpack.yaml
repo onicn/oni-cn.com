@@ -1,0 +1,78 @@
+id: PIXELPACK
+parent_id: BUILDCATEGORYFURNITURE
+name: 像素屏
+disabled: False
+search_only: False
+category: BUILDCATEGORYFURNITURE
+sort_string: 像素屏
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="PIXELPACK">像素屏</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 新媒体
+    style: Body
+    image: research_type_alpha_icon
+    link_id: screens
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: pixel_pack_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      像素屏可设定接收到<b><style="logic_on">绿色信号</style></b>显示一组颜色，接收到<b><style="logic_off">红色信号</style></b>显示另外一组。
+
+
+      从<link="LOGICWIRE">信号线</link>接收的信号控制整排，从<link="LOGICRIBBON">信号线组</link>接收的信号控制单个像素块。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="POWER">电力</link>：10瓦'
+    tooltip: 必须与至少有<style="consumed">10瓦</style>可用<style="KKeyword">电力</style>的电路相连
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：4格宽x1格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：10秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="GLASS">玻璃</link>100千克, <link="REFINEDMETAL">精炼金属</link>25千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LOGIC">信号输入端</link>'
+    tooltip: 当接收到信号时，输入端会使这个建筑一种状态发生变化
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    颜色选择'
+    tooltip: >-
+      输入端行为：
+
+      • <b><style="logic_on">绿色信号</style></b>：显示设定的<b><style="logic_on">绿色信号</style></b>像素块
+
+      • <b><style="logic_off">红色信号</style></b>：显示设定的<b><style="logic_off">红色信号</style></b>像素块
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：+20（范围：4格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>4</b>格内提高<b><b>+20</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>四个像素块可分别设定成不同颜色。</i>
+    style: Body
+  layout: Vertical

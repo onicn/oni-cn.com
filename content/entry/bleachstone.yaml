@@ -1,0 +1,214 @@
+id: BLEACHSTONE
+parent_id: ELEMENTSSOLID
+name: 漂白石
+disabled: False
+search_only: False
+category: ELEMENTSSOLID
+sort_string: 漂白石
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="BLEACHSTONE">漂白石</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: bleach_stone_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: bleach_stone_0__ui
+      text1: 漂白石
+      text2: 1000克
+      link_id: bleachstone
+    produce:
+    - image: element_liquid
+      color: 3AC330FF
+      text1: 液态氯
+      text2: 1000克
+      link_id: chlorine
+    fabricator:
+      image: crew_state_temp_up
+      text1: 668.9ºC
+      tooltip: 温度高于668.9ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 生物柴油
+    require:
+    - image: element_liquid
+      color: 98A82FFF
+      text1: 植物润滑油
+      text2: 160千克
+      link_id: phytooil
+    - image: bleach_stone_0__ui
+      text1: 漂白石
+      text2: 40千克
+      link_id: bleachstone
+    produce:
+    - image: element_liquid
+      color: E1CB69FF
+      text1: 生物柴油
+      text2: 200千克
+      link_id: refinedlipid
+    fabricator:
+      image: chemistry_lab_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 乳化器
+      text2: 40秒
+      link_id: chemicalrefinery
+  - widget_type: CodexConversionPanel
+    require:
+    - image: bleach_stone_0__ui
+      text1: 漂白石
+      text2: 70克
+      link_id: bleachstone
+    produce: []
+    fabricator:
+      image: handsanitizer_0__ui
+      text1: 手部消毒站
+      link_id: HANDSANITIZER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: CED2ECFF
+      text1: 盐水
+      text2: 5千克/周期
+      link_id: saltwater
+    - image: bleach_stone_0__ui
+      text1: 漂白石
+      text2: 500克/周期
+      link_id: bleachstone
+    produce:
+    - image: sea_lettuce_leaves_0__ui
+      text1: 海生菜
+      text2: 400千卡/周期
+      tooltip: 品质：糟糕 [0]
+      link_id: lettuce
+    fabricator:
+      image: sea_lettuce_0__ui
+      text1: 水草
+      link_id: SEALETTUCE
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 漂白石料斗
+    require:
+    - image: salt_0__ui
+      text1: 盐
+      text2: 30千克
+      link_id: salt
+    - image: gold_refined_0__ui
+      text1: 金
+      text2: 500克
+      link_id: gold
+    produce:
+    - image: bleach_stone_0__ui
+      text1: 漂白石
+      text2: 10千克
+      link_id: bleachstone
+    - image: sand_0__ui
+      text1: 沙子
+      text2: 20千克
+      link_id: sand
+    fabricator:
+      image: chlorinator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 漂白石料斗
+      text2: 40秒
+      link_id: chlorinator
+  - widget_type: CodexConversionPanel
+    require:
+    - image: brackorb_0__ui
+      text1: 露珠
+      text2: 1单位/周期
+      link_id: dewdrip
+    produce:
+    - image: bleach_stone_0__ui
+      text1: 漂白石
+      text2: 10千克/周期
+      link_id: bleachstone
+    fabricator:
+      image: chameleo_0__ui
+      text1: 逸蜥
+      link_id: CHAMELEON
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_gas
+      color: 04A778FF
+      text1: 氯气
+      text2: 30千克/周期
+      link_id: chlorinegas
+    produce:
+    - image: bleach_stone_0__ui
+      text1: 漂白石
+      text2: 28.5千克/周期
+      link_id: bleachstone
+    fabricator:
+      image: puft_0__anti_ui
+      text1: 洁净飞鱼
+      link_id: PUFTBLEACHSTONE
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_gas
+      color: 04A778FF
+      text1: 氯气
+      text2: 30千克/周期
+      link_id: chlorinegas
+    produce:
+    - image: bleach_stone_0__ui
+      text1: 漂白石
+      text2: 3000克/周期
+      link_id: bleachstone
+    fabricator:
+      image: puft_0__alp_ui
+      text1: 贵族飞鱼
+      link_id: PUFTALPHA
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      漂白石是一种不稳定的化合物，会释放出不可呼吸的<link="CHLORINEGAS">氯气</link>。
+
+
+      通常用于<link="HANDSANITIZER">卫生</link>处理。
+
+
+      资源种类：<link="SUBLIMATES">升华物</link>
+
+      熔点：668.9ºC
+
+      硬度：<color=#A3649AFF>50（非常坚硬）</color>
+
+
+      比热容：0.500 (DTU/g)/ºC
+
+      热导率：4.000 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.73
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：<link="FLYINGCRITTEREDIBLE">诱饵</link>, <link="ELEMENTSSOLID">固体</link>, <link="SUBLIMATES">升华物</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

@@ -1,0 +1,94 @@
+id: EXPEDITION
+name: 个人日志：B214
+title: STRINGS.CODEX.INVESTIGATIONS.DLC4_EXPEDITION.TITLE
+disabled: False
+search_only: False
+category: JOURNALS
+sort_string: 个人日志：B214
+required_dlc_ids:
+- DLC4_ID
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 个人日志：B214
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：无
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+  lock_id: journal_expedition1
+- contents:
+  - widget_type: CodexText
+    text: >+
+      今天早上收到了任务：我正式领导庄严科技澄空联盟（CSC）支部。
+
+
+      我请求希格比和戈斯曼同行。戈斯曼可能因她的蜂群飞行器传感项目又被降级了有点不爽，但她向来分得清轻重。
+
+
+      结果主管直接否决了戈斯曼。第三成员是去年提出最佳近地轨道残骸清理方案的CSC竞赛获胜者。我大概没藏住表情，因为主管当时就挑眉问我是不是有什么意见。
+
+
+      不敢，长官。更麻烦的新人我都带过，无非就是多备几套预案。
+
+
+      我们的太空旅行项目需要穿越近地轨道甚至更远，而这还只是星际移民任务的预演。
+
+
+      但眼下这两项都希望渺茫，毕竟现在只有我能避开轨道上那些太空垃圾。人类需要的星际高速公路，而不是玩宇宙版“青蛙过河”。
+
+
+      ------------------
+
+    style: Body
+  layout: Vertical
+  lock_id: journal_expedition1
+- contents:
+  - widget_type: CodexText
+    text: >+
+      这位“新人”可一点都不新。玛雅·塔耶博士，身负多重学位的商业太空通信卫星专家，如今已是她第三次重大职业转型。姓名后缀那串缩写头衔的长度，都快赶上希格比了。
+
+
+      目前她担任某巨头企业的顾问，带着私营企业特有的那种傲气。不过她研发的短波激光网残骸气化装置，确实比派人工回收小队高效得多。
+
+
+      她管这装置叫“太空套索”。希格比已经即兴创作起太空牛仔主题曲了。
+
+
+      刚收到指挥中心对残骸护盾的反馈意见。幸好通讯接入前希格比已经没在唱了。
+
+
+      ------------------
+
+    style: Body
+  layout: Vertical
+  lock_id: journal_expedition2
+- contents:
+  - widget_type: CodexText
+    text: >
+      已派希格比和塔耶去检查残骸护盾传感器异常报告。一切正常，问题应该出在地面站那边。
+
+
+      通话尾声时戈斯曼突然接入通讯。情绪<i>极度糟糕</i>。她被派了单人任务，去了一个“比主管心还冷”的地方。我从来没见过有什么事能<i>真正</i>让她不舒服。当初空间站被困将近一年时，她还有心情开玩笑呢。
+
+
+      无论是什么任务，肯定都比不上参与CSC计划。这可是三大航天巨头首次联手，我们正在创造历——
+
+
+      -稍等，轨道控制系统出现故——
+
+
+      -这到底是什——
+
+
+      -我的天——
+
+
+      希格比！
+
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: journal_expedition3

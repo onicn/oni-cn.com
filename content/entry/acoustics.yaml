@@ -1,0 +1,73 @@
+id: ACOUSTICS
+parent_id: TECH
+name: 扩音器
+disabled: False
+search_only: False
+category: TECH
+sort_string: 扩音器
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="ACOUSTICS">扩音器</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 精确控制的声谱可以让复制人跟着节奏跳舞。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="COMBUSTION">内燃机</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: smartbattery_0__ui
+  - widget_type: CodexText
+    text: <link="BATTERYSMART">智能蓄电池</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: jukebot_0__ui
+  - widget_type: CodexText
+    text: <link="PHONOBOX">点唱机器人</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: electricianworkdesk_0__ui
+  - widget_type: CodexText
+    text: <link="POWERCONTROLSTATION">电控站</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: electrobank_charger_small_0__ui
+  - widget_type: CodexText
+    text: <link="ELECTROBANKCHARGER">移动电源充电机</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: electrobank_large_0__ui
+  - widget_type: CodexText
+    text: <style="KKeyword">复用移动电源</style>模型
+    style: Body
+  layout: Horizontal

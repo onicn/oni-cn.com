@@ -1,0 +1,75 @@
+id: ARTING1
+parent_id: ROLES
+name: 艺术基础
+disabled: False
+search_only: False
+category: ROLES
+sort_string: 艺术基础
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="ARTING1">艺术基础</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: hat_role_art1
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 教导最基本的艺术技能
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 工作培训
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexText
+    text: 工作培训会自动提供永久的特质和属性提升，即使复制人更换工作，这些特质和属性提升也会保留下来。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      <link="CANVAS">空白画布</link>的使用
+
+      <link="CANVASTALL">肖像画布</link>的使用
+
+      <link="CANVASWIDE">风景画布</link>的使用
+
+      <link="ICESCULPTURE">冰雕塑块</link>的使用
+
+      <link="MARBLESCULPTURE">大理石雕塑块</link>的使用
+
+      <link="METALSCULPTURE">金属雕塑块</link>的使用
+
+      <link="SCULPTURE">大型雕塑块</link>的使用
+
+      <link="SMALLSCULPTURE">雕塑块</link>的使用
+
+      <link="WOODSCULPTURE">木雕塑块</link>的使用
+    style: Body
+  - widget_type: CodexText
+    text: <style="KKeyword">简略</style>艺术质量
+    style: Body
+  - widget_type: CodexText
+    text: <b>+2</b><style="KKeyword">创作</style>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 升职机会
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexText
+    text: 晋升会在现有工作培训的基础上带来更多属性提升和特质。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="ARTING2">美学设计</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

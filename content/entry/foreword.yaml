@@ -1,0 +1,100 @@
+id: FOREWORD
+name: 遗著
+title: STRINGS.CODEX.INVESTIGATIONS.DLC4_FOREWORD.TITLE
+disabled: False
+search_only: False
+category: NOTICES
+sort_string: 遗著
+required_dlc_ids:
+- DLC4_ID
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 遗著
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：无
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+  lock_id: notices_foreword
+- contents:
+  - widget_type: CodexText
+    text: >+
+      <b><i>《逐星客》</i>赞誉摘录：</b>
+
+
+      “难以言喻的美。”
+
+
+      <indent=10%>——付立，<i>《此刻与明日之间》</i>作者</indent>
+
+
+      “世界顶级科学巨匠谱写的震撼诗篇。”
+
+
+      <indent=10%>——奎恩·凯利，吹擂书评</indent>
+
+
+      “读过此书若不为之振奋，我甘愿认输。”
+
+
+      <indent=10%>——多洛雷斯·格林，新平面出版社</indent>
+
+
+      ------------------
+
+    style: Body
+  layout: Vertical
+  lock_id: notices_foreword
+- contents:
+  - widget_type: CodexText
+    text: <b>前言</b>
+    style: Subtitle
+  layout: Vertical
+  lock_id: notices_foreword
+- contents:
+  - widget_type: CodexText
+    text: >-
+      “人类文明的进步从不是孤岛。我们站在前人的肩头，他们的探索、思想、希冀与突破照亮我们的道路，赋予我们前进的勇气。科学是我们的载具，而人才是目的——无论是挚友、陌客还是对手。”
+
+
+      这段独白，是奥斯汀·希格比博士每周至少要说一次的浓缩版。
+
+
+      希格比博士是协作研究的坚定倡导者。他将天体生物学推向全新领域的壮举，总归功于各学科合作者的贡献。他对艺术亦怀有深切热忱，许多同事，包括我自己，人生中看的第一部话剧，都是受他邀请观看的。
+
+
+      在庄严科技轮值期间，我曾问他是如何兼顾这一切的。他大笑：“是它找到了<i>我</i>！”
+
+
+      三个月后，他与“星逐二号”的全体成员执行澄空联盟那项如今臭名昭著的任务时，消失于茫茫太空，至今杳无踪迹。
+
+
+      后来，人们从希格比博士的私人档案中发现了这些文字。数十篇诗歌与散文，深邃得让读者恍若置身某个......既熟悉又完全陌生的时空。
+
+
+      <i>《逐星客》</i>凝结了无数友人、同事、学生与书迷的心血，他们孜孜不倦地整理编纂希格比的遗作。
+
+
+      经希格比家族授权，本版特别收录他生前为未及发表的退休演说所撰告的告别演讲。
+
+
+      希格比想必会骄傲与窘迫。
+
+
+      老友，我怀念你。愿某日重逢时，再听你讲述宇宙尽头的所见所闻。
+
+
+      此书为你而编。为我们所有人。
+
+
+      永远铭记，
+
+      <indent=10%>艾米丽G.</indent>
+
+
+      <i>奥斯汀·希格比博士遗产（含本书版税）将全额捐赠予“希格比纪念奖学金”，资助科学与艺术跨学科研究的学子。</i>
+    style: Body
+  layout: Vertical
+  lock_id: notices_foreword

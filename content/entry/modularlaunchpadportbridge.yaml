@@ -1,0 +1,53 @@
+id: MODULARLAUNCHPADPORTBRIDGE
+parent_id: BUILDCATEGORYROCKETRY
+name: 火箭端口延伸桥
+disabled: False
+search_only: False
+category: BUILDCATEGORYROCKETRY
+sort_string: 火箭端口延伸桥
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="MODULARLAUNCHPADPORTSOLID">火箭端口延伸桥</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 精致翻修
+    style: Body
+    image: research_type_alpha_icon
+    link_id: refinedobjects
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: rocket_loader_extension_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 自动地与相邻的<link="LAUNCHPAD">火箭平台</link>或任何<link="MODULARLAUNCHPADPORTSOLID">火箭端口</link>相连。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：1格宽x2格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：60秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="REFINEDMETAL">精炼金属</link>200千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    过热<link="HEAT">温度</link>：2000ºC'
+    tooltip: 达到<b>2000ºC</b>时开始过热
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>允许火箭平台建在更远的地方。</i>
+    style: Body
+  layout: Vertical

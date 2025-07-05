@@ -1,0 +1,165 @@
+id: BURGER
+parent_id: FOOD
+name: 冰霜汉堡
+disabled: False
+search_only: False
+category: FOOD
+sort_string: 冰霜汉堡
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="BURGER">冰霜汉堡</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: frost_burger_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <link="MEAT">肉</link>和<link="LETTUCE">海生菜</link>，夹在冰凉的<link="COLDWHEATBREAD">冰霜面包</link>中。
+
+
+      这是唯一一种最好趁冷端上来的汉堡。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 品质：极佳 [+6]
+    style: Body
+  - widget_type: CodexText
+    text: 卡路里：6,000千卡
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      冷藏温度：4ºC
+
+      深度冷冻温度：-18ºC
+
+      腐烂时间：4.0周期
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: '营养作用:'
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    • <link="IDFOODEFFECTS__GOODEATS">灵魂食物</link>'
+    tooltip: >-
+      复制人发现这种家常饭能安慰情绪
+          • 运动: -2
+          • 压力: -15%/周期
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    • <link="IDFOODEFFECTS__SEAFOODRADIATIONRESISTANCE">辐射抗性：水产食品</link>'
+    tooltip: >-
+      吃这种食物能提高<style="KKeyword">辐射</style>抗性
+          • 辐射抗性: +20%
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 干燥的冰霜汉堡
+    require:
+    - image: frost_burger_0__ui
+      text1: 冰霜汉堡
+      text2: 6,000千卡
+      tooltip: 品质：极佳 [+6]
+      link_id: burger
+    - image: polypropylene_0__ui
+      text1: 塑料
+      text2: 12千克
+      link_id: polypropylene
+    produce:
+    - image: dehydrated_food_burger_0__ui
+      text1: 干燥的冰霜汉堡
+      text2: 6单位
+      link_id: 干燥的冰霜汉堡
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 6千克
+      link_id: water
+    fabricator:
+      image: dehydrator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 脱水机
+      text2: 250秒
+      link_id: fooddehydrator
+  - widget_type: CodexConversionPanel
+    require:
+    - image: frost_burger_0__ui
+      text1: 冰霜汉堡
+      text2: 700千卡/周期
+      tooltip: 品质：极佳 [+6]
+      link_id: burger
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 87.5克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__ui
+      text1: 好吃哈奇
+      link_id: HATCH
+  - widget_type: CodexConversionPanel
+    require:
+    - image: frost_burger_0__ui
+      text1: 冰霜汉堡
+      text2: 700千卡/周期
+      tooltip: 品质：极佳 [+6]
+      link_id: burger
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 116.7克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__veg_ui
+      text1: 草质哈奇
+      link_id: HATCHVEGGIE
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 燃气灶
+    require:
+    - image: frostbread_0__ui
+      text1: 冰霜面包
+      text2: 1,200千卡
+      tooltip: 品质：标准 [+2]
+      link_id: coldwheatbread
+    - image: sea_lettuce_leaves_0__ui
+      text1: 海生菜
+      text2: 400千卡
+      tooltip: 品质：糟糕 [0]
+      link_id: lettuce
+    - image: barbeque_0__ui
+      text1: 烤肉串
+      text2: 4,000千卡
+      tooltip: 品质：良好 [+3]
+      link_id: cookedmeat
+    produce:
+    - image: frost_burger_0__ui
+      text1: 冰霜汉堡
+      text2: 6,000千卡
+      tooltip: 品质：极佳 [+6]
+      link_id: burger
+    fabricator:
+      image: cookstation_gourmet_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 燃气灶
+      text2: 50秒
+      link_id: gourmetcookingstation
+  layout: Vertical

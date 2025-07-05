@@ -1,0 +1,148 @@
+id: GEYSERS
+name: 间歇泉
+disabled: False
+search_only: False
+category: Root
+sort_string: 间歇泉
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="GEYSERS">间歇泉</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexLabelWithLargeIcon
+    text: 二氧化碳喷孔
+    style: BodyWhite
+    image: geyser_gas_co2_hot_0__ui
+    link_id: geysergenerichotco2
+  - widget_type: CodexLabelWithLargeIcon
+    text: 二氧化碳泉
+    style: BodyWhite
+    image: geyser_liquid_co2_0__ui
+    link_id: geysergenericliquidco2
+  - widget_type: CodexLabelWithLargeIcon
+    text: 低温氯气喷孔
+    style: BodyWhite
+    image: geyser_gas_chlorine_0__ui
+    link_id: geysergenericchlorinegascool
+  - widget_type: CodexLabelWithLargeIcon
+    text: 低温泥浆泉
+    style: BodyWhite
+    image: geyser_liquid_water_slush_0__ui
+    link_id: geysergenericslushwater
+  - widget_type: CodexLabelWithLargeIcon
+    text: 低温盐泥泉
+    style: BodyWhite
+    image: geyser_liquid_salt_water_cool_slush_0__ui
+    link_id: geysergenericslushsaltwater
+  - widget_type: CodexLabelWithLargeIcon
+    text: 低温蒸汽喷孔
+    style: BodyWhite
+    image: geyser_gas_steam_0__ui
+    link_id: geysergenericsteam
+  - widget_type: CodexLabelWithLargeIcon
+    text: 含菌污氧喷孔
+    style: BodyWhite
+    image: geyser_gas_po2_slimy_0__ui
+    link_id: geysergenericslimypo2
+  - widget_type: CodexLabelWithLargeIcon
+    text: 天然气喷孔
+    style: BodyWhite
+    image: geyser_gas_methane_0__ui
+    link_id: geysergenericmethane
+  - widget_type: CodexLabelWithLargeIcon
+    text: 小型火山
+    style: BodyWhite
+    image: geyser_molten_volcano_small_0__ui
+    link_id: geysergenericsmallvolcano
+  - widget_type: CodexLabelWithLargeIcon
+    text: 氢气喷孔
+    style: BodyWhite
+    image: geyser_gas_hydrogen_hot_0__ui
+    link_id: geysergenerichothydrogen
+  - widget_type: CodexLabelWithLargeIcon
+    text: 氯气喷孔
+    style: BodyWhite
+    image: geyser_gas_chlorine_0__ui
+    link_id: geysergenericchlorinegas
+  - widget_type: CodexLabelWithLargeIcon
+    text: 污水泉
+    style: BodyWhite
+    image: geyser_liquid_water_filthy_0__ui
+    link_id: geysergenericfilthywater
+  - widget_type: CodexLabelWithLargeIcon
+    text: 液硫泉
+    style: BodyWhite
+    image: geyser_liquid_sulfur_0__ui
+    link_id: geysergenericliquidsulfur
+  - widget_type: CodexLabelWithLargeIcon
+    text: 清水泉
+    style: BodyWhite
+    image: geyser_liquid_water_hot_0__ui
+    link_id: geysergenerichotwater
+  - widget_type: CodexLabelWithLargeIcon
+    text: 渗油裂缝
+    style: BodyWhite
+    image: geyser_liquid_oil_0__ui
+    link_id: geysergenericoildrip
+  - widget_type: CodexLabelWithLargeIcon
+    text: 火山
+    style: BodyWhite
+    image: geyser_molten_volcano_big_0__ui
+    link_id: geysergenericbigvolcano
+  - widget_type: CodexLabelWithLargeIcon
+    text: 盐水泉
+    style: BodyWhite
+    image: geyser_liquid_salt_water_0__ui
+    link_id: geysergenericsaltwater
+  - widget_type: CodexLabelWithLargeIcon
+    text: 蒸汽喷孔
+    style: BodyWhite
+    image: geyser_gas_steam_hot_0__ui
+    link_id: geysergenerichotsteam
+  - widget_type: CodexLabelWithLargeIcon
+    text: 金火山
+    style: BodyWhite
+    image: geyser_molten_gold_0__ui
+    link_id: geysergenericmoltengold
+  - widget_type: CodexLabelWithLargeIcon
+    text: 钨火山
+    style: BodyWhite
+    image: geyser_molten_tungsten_0__ui
+    link_id: geysergenericmoltentungsten
+  - widget_type: CodexLabelWithLargeIcon
+    text: 钴火山
+    style: BodyWhite
+    image: geyser_molten_cobalt_0__ui
+    link_id: geysergenericmoltencobalt
+  - widget_type: CodexLabelWithLargeIcon
+    text: 铁火山
+    style: BodyWhite
+    image: geyser_molten_iron_0__ui
+    link_id: geysergenericmolteniron
+  - widget_type: CodexLabelWithLargeIcon
+    text: 铌火山
+    style: BodyWhite
+    image: geyser_molten_niobium_0__ui
+    link_id: geysergenericmoltenniobium
+  - widget_type: CodexLabelWithLargeIcon
+    text: 铜火山
+    style: BodyWhite
+    image: geyser_molten_copper_0__ui
+    link_id: geysergenericmoltencopper
+  - widget_type: CodexLabelWithLargeIcon
+    text: 铝火山
+    style: BodyWhite
+    image: geyser_molten_aluminum_0__ui
+    link_id: geysergenericmoltenaluminum
+  - widget_type: CodexLabelWithLargeIcon
+    text: 高温污氧喷孔
+    style: BodyWhite
+    image: geyser_gas_po2_hot_0__ui
+    link_id: geysergenerichotpo2
+  layout: Grid
+- contents:
+  - widget_type: CodexSpacer
+  layout: Vertical

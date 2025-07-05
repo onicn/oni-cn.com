@@ -1,0 +1,55 @@
+id: ROOMSINDUSTRIAL
+parent_id: ROOMS
+name: 工业
+disabled: False
+search_only: False
+category: ROOMS
+sort_string: 工业
+sub_entries:
+- id: PowerPlant
+  parent_id: ROOMSIndustrial
+  name: 发电厂
+  disabled: False
+  sort_string: 发电厂
+content_container:
+- contents:
+  - widget_type: CodexImage
+    image: ui_room_industrial
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 发电厂
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      复制人施展电气工程技能的理想场所。
+
+
+      建在发电厂中的重型发电机可以用电控站的微芯片进行调校来提高<link="POWER">电力</link>生产。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 详情
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>需求：</b>
+    style: Body
+  - widget_type: CodexText
+    text: >2-
+          • <link="REQUIREMENTCLASSGENERATORTYPE">Heavy-Duty Generator</link>
+          • Two or more <link="REQUIREMENTCLASSPOWERBUILDING">Power Buildings</link>
+          • Minimum size: 12 tiles
+          • Maximum size: 120 tiles
+    style: Body
+  layout: Vertical

@@ -1,0 +1,66 @@
+id: LOGICPOWERRELAY
+parent_id: BUILDCATEGORYPOWER
+name: 电力截断器
+disabled: False
+search_only: False
+category: BUILDCATEGORYPOWER
+sort_string: 电力截断器
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="LOGICPOWERRELAY">电力截断器</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 高级电力调节
+    style: Body
+    image: research_type_alpha_icon
+    link_id: advancedpowerregulation
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: switchpowershutoff_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      连至<link="LOGIC">自动化</link>电路中以自动地接通或断开<link="Power">电力</link>。
+
+
+      不会影响前于开关的电路。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：1格宽x1格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：30秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="METAL">金属矿石</link>100千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LOGIC">信号输入端</link>'
+    tooltip: 当接收到信号时，输入端会使这个建筑一种状态发生变化
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    断电'
+    tooltip: >-
+      输入端行为：
+
+      • <b><style="logic_on">绿色信号</style></b>：允许<style="KKeyword">电力</style>通过电路
+
+      • <b><style="logic_off">红色信号</style></b>：阻止<style="KKeyword">电力</style>通过电路
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>自动化系统免去了复制人的管理工作，从而可节省电力和时间。</i>
+    style: Body
+  layout: Vertical

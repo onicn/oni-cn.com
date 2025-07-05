@@ -1,0 +1,74 @@
+id: SOLIDLOGICVALVE
+parent_id: BUILDCATEGORYCONVEYANCE
+name: 轨道截断器
+disabled: False
+search_only: False
+category: BUILDCATEGORYCONVEYANCE
+sort_string: 轨道截断器
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="SOLIDLOGICVALVE">轨道截断器</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 固体控制
+    style: Body
+    image: research_type_alpha_icon
+    link_id: solidspace
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: conveyor_shutoff_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 连至<link="LOGIC">自动化</link>电路中以自动地使<link="ELEMENTSSOLID">固体材料</link>的运输进行或阻断。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="POWER">电力</link>：10瓦'
+    tooltip: 必须与至少有<style="consumed">10瓦</style>可用<style="KKeyword">电力</style>的电路相连
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：1格宽x2格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：10秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="REFINEDMETAL">精炼金属</link>100千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LOGIC">信号输入端</link>'
+    tooltip: 当接收到信号时，输入端会使这个建筑一种状态发生变化
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    开启/关闭'
+    tooltip: >-
+      输入端行为：
+
+      • <b><style="logic_on">绿色信号</style></b>：允许材料运输
+
+      • <b><style="logic_off">红色信号</style></b>：阻止材料运输
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：-5（范围：1格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>1</b>格内降低<b><b>-5</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>自动化轨道免去了复制人的参与，从而可以节省电力和时间。</i>
+    style: Body
+  layout: Vertical

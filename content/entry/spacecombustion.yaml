@@ -1,0 +1,52 @@
+id: SPACECOMBUSTION
+parent_id: TECH
+name: 高级内燃机
+disabled: False
+search_only: False
+category: TECH
+sort_string: 高级内燃机
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="SPACECOMBUSTION">高级内燃机</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 火箭引擎的甜蜜进步。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="COMBUSTION">内燃机</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: rocket_sugar_engine_0__ui
+  - widget_type: CodexText
+    text: <link="SUGARENGINE">糖素引擎</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: rocket_oxidizer_tank_small_0__ui
+  - widget_type: CodexText
+    text: <link="SMALLOXIDIZERTANK">小型固体氧化剂舱</link>
+    style: Body
+  layout: Horizontal

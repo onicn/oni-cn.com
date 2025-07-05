@@ -1,0 +1,79 @@
+id: DEEPFRIEDMEAT
+parent_id: FOOD
+name: 炸肉块
+disabled: False
+search_only: False
+category: FOOD
+sort_string: 炸肉块
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="DEEPFRIEDMEAT">炸肉块</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: deepfried_meat_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 一份多汁的肉块，上层油炸地很酥脆。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 品质：良好 [+3]
+    style: Body
+  - widget_type: CodexText
+    text: 卡路里：4,000千卡
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      冷藏温度：4ºC
+
+      深度冷冻温度：-18ºC
+
+      腐烂时间：4.0周期
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: deepfried_meat_0__ui
+      text1: 炸肉块
+      text2: 700千卡/周期
+      tooltip: 品质：良好 [+3]
+      link_id: deepfriedmeat
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 131.3克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__ui
+      text1: 好吃哈奇
+      link_id: HATCH
+  - widget_type: CodexConversionPanel
+    require:
+    - image: deepfried_meat_0__ui
+      text1: 炸肉块
+      text2: 700千卡/周期
+      tooltip: 品质：良好 [+3]
+      link_id: deepfriedmeat
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 175克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__veg_ui
+      text1: 草质哈奇
+      link_id: HATCHVEGGIE
+  layout: Vertical

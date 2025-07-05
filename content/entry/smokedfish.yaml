@@ -1,0 +1,196 @@
+id: SMOKEDFISH
+parent_id: FOOD
+name: 熏鱼
+disabled: False
+search_only: False
+category: FOOD
+sort_string: 熏鱼
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="SMOKEDFISH">熏鱼</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: smokedfish_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      黄油熏鱼片。
+
+
+      用叉子拉开时很好剥下。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 品质：良好 [+3]
+    style: Body
+  - widget_type: CodexText
+    text: 卡路里：2,800千卡
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      冷藏温度：4ºC
+
+      深度冷冻温度：-18ºC
+
+      腐烂时间：32.0周期
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: '营养作用:'
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    • <link="IDFOODEFFECTS__SEAFOODRADIATIONRESISTANCE">辐射抗性：水产食品</link>'
+    tooltip: >-
+      吃这种食物能提高<style="KKeyword">辐射</style>抗性
+          • 辐射抗性: +20%
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: smokedfish_0__ui
+      text1: 熏鱼
+      text2: 700千卡/周期
+      tooltip: 品质：良好 [+3]
+      link_id: smokedfish
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 187.5克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__ui
+      text1: 好吃哈奇
+      link_id: HATCH
+  - widget_type: CodexConversionPanel
+    require:
+    - image: smokedfish_0__ui
+      text1: 熏鱼
+      text2: 700千卡/周期
+      tooltip: 品质：良好 [+3]
+      link_id: smokedfish
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 250克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__veg_ui
+      text1: 草质哈奇
+      link_id: HATCHVEGGIE
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 熏炉
+    require:
+    - image: pacufillet_0__ui
+      text1: 帕库鱼片
+      text2: 6,000千卡
+      tooltip: 品质：标准 [+2]
+      link_id: fishmeat
+    - image: wood_0__ui
+      text1: 木材
+      text2: 100千克
+      link_id: wood
+    produce:
+    - image: smokedfish_0__ui
+      text1: 熏鱼
+      text2: 11,200千卡
+      tooltip: 品质：良好 [+3]
+      link_id: smokedfish
+    fabricator:
+      image: smoker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 熏炉
+      text2: 600秒
+      link_id: smoker
+  - widget_type: CodexRecipePanel
+    text: 熏炉
+    require:
+    - image: pacufillet_0__ui
+      text1: 帕库鱼片
+      text2: 6,000千卡
+      tooltip: 品质：标准 [+2]
+      link_id: fishmeat
+    - image: peat_0__ui
+      text1: 泥炭
+      text2: 100千克
+      link_id: peat
+    produce:
+    - image: smokedfish_0__ui
+      text1: 熏鱼
+      text2: 11,200千卡
+      tooltip: 品质：良好 [+3]
+      link_id: smokedfish
+    fabricator:
+      image: smoker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 熏炉
+      text2: 600秒
+      link_id: smoker
+  - widget_type: CodexRecipePanel
+    text: 熏炉
+    require:
+    - image: jawbofillet_0__ui
+      text1: 颚鱼片
+      text2: 6,000千卡
+      tooltip: 品质：良好 [+3]
+      link_id: prehistoricpacufillet
+    - image: wood_0__ui
+      text1: 木材
+      text2: 100千克
+      link_id: wood
+    produce:
+    - image: smokedfish_0__ui
+      text1: 熏鱼
+      text2: 11,200千卡
+      tooltip: 品质：良好 [+3]
+      link_id: smokedfish
+    fabricator:
+      image: smoker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 熏炉
+      text2: 600秒
+      link_id: smoker
+  - widget_type: CodexRecipePanel
+    text: 熏炉
+    require:
+    - image: jawbofillet_0__ui
+      text1: 颚鱼片
+      text2: 6,000千卡
+      tooltip: 品质：良好 [+3]
+      link_id: prehistoricpacufillet
+    - image: peat_0__ui
+      text1: 泥炭
+      text2: 100千克
+      link_id: peat
+    produce:
+    - image: smokedfish_0__ui
+      text1: 熏鱼
+      text2: 11,200千卡
+      tooltip: 品质：良好 [+3]
+      link_id: smokedfish
+    fabricator:
+      image: smoker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 熏炉
+      text2: 600秒
+      link_id: smoker
+  layout: Vertical

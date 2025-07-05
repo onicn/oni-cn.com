@@ -1,0 +1,45 @@
+id: MYLOG26
+name: 周期4001
+title: STRINGS.CODEX.MYLOG.BODY.LOG8.TITLE
+disabled: False
+search_only: False
+category: MYLOG
+sort_string: A8
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 周期4001
+    style: Title
+  - widget_type: CodexText
+    text: >+
+      <smallcaps>>>搜索数据库 ["舱_脑谱图.AI"]
+
+      >…启动睡眠模式…
+
+      >…正在关闭…
+
+      >……………………
+
+      >……………………
+
+      >……………………
+
+      >……………………
+
+      >……………………
+
+      晚安
+
+      >……………………
+
+      >……………………
+
+      >……………………
+
+
+    style: Body
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical
+  lock_id: log8

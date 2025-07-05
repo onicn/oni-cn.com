@@ -1,0 +1,68 @@
+id: TRANSPARENT
+parent_id: BUILDINGMATERIALCLASSES
+name: 透明体
+disabled: False
+search_only: False
+category: BUILDINGMATERIALCLASSES
+sort_string: 透明体
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 透明体
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      透明材料能够让<link="LIGHT">光</link>通过。照明可以提高复制人的工作效率，但会破坏睡眠质量。
+
+
+      透明体也是需要清晰视野的建筑能正确运作的重要材料，比如<link="COMETDETECTOR">太空扫描仪</link>。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 钻石
+    image: diamond_0__ui
+    link_id: diamond
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 琥珀
+    image: amber_0__ui
+    link_id: amber
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 玻璃
+    image: glass_0__ui
+    link_id: glass
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 固态树脂
+    image: resin_solid_0__ui
+    link_id: naturalsolidresin
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 固态树液
+    image: resin_solid_0__ui
+    link_id: solidresin
+  layout: Grid
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建造用处
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 透明花盆
+    image: flowervase_hanging_0__ui
+    link_id: flowervasehangingfancy
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 窗户砖
+    image: floor_glass_0__ui
+    link_id: glasstile
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 光线传感器
+    image: logiclightsensor_0__ui
+    link_id: logiclightsensor
+  layout: Grid

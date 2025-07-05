@@ -1,0 +1,52 @@
+id: BUILDING3
+parent_id: ROLES
+name: 拆毁
+disabled: False
+search_only: False
+category: ROLES
+sort_string: 拆毁
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="BUILDING3">拆毁</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: hat_role_building3
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 允许复制人拆除庄严科技建筑
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 工作培训
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexText
+    text: 工作培训会自动提供永久的特质和属性提升，即使复制人更换工作，这些特质和属性提升也会保留下来。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>+2</b><style="KKeyword">建造</style>
+    style: Body
+  - widget_type: CodexText
+    text: 拆毁庄严科技建筑
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提工作
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="BUILDING2">改良建造 II</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

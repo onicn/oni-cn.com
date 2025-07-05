@@ -1,0 +1,29 @@
+id: MYLOG30
+name: 泄漏的维度
+title: STRINGS.CODEX.MYLOG.BODY.OTHERDIMENSIONS.TITLE
+disabled: False
+search_only: False
+category: MYLOG
+sort_string: 泄漏的维度
+required_dlc_ids:
+- EXPANSION1_ID
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 泄漏的维度
+    style: Title
+  - widget_type: CodexText
+    text: >-
+      仔细分析了我的复制人搜索工艺品时遇到的文档后，我发现了有几个条目之间有着奇怪的相似之处。它们太相似了，绝对不是巧合，因为有着足以让人提出疑问的差异。
+
+
+      最合乎逻辑的结论是，这些工艺品来自不同的维度。即，同时存在不同的独立宇宙，但在其历史上有微小的差异。
+
+
+      最可能的解释是，来自多个维度的这些材料和物质是通过时间裂口泄漏到我们当前时间线的。需要进一步分析。
+    style: Body
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical
+  lock_id: log9

@@ -1,0 +1,51 @@
+id: EARTHQUAKE
+name: 故障
+title: STRINGS.CODEX.INVESTIGATIONS.DLC2_EARTHQUAKE.TITLE
+disabled: False
+search_only: False
+category: INVESTIGATIONS
+sort_string: 故障
+required_dlc_ids:
+- DLC2_ID
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 故障
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：无
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+  lock_id: notes_earthquake
+- contents:
+  - widget_type: CodexText
+    text: >-
+      今天早上的地震不同寻常。地面本身移动量很小，但空气嗡嗡作响，拍打着墙壁，好像液体一样。因为太短了，以至于我差点怀疑我是不是做梦梦到的。然后我注意到了时间之弓。
+
+
+      到目前为止，它完全没有受到地震干扰的影响，但就过去的几个小时内，其机械装置的声音显著提升，产出下降了0.19%。我已经派一名技术员去调查了。在目前阶段，哪怕是失去一丁点电力我们都负担不起。
+
+
+      除了阿利博士外，似乎没有其他人注意到了。他说远程研究信息访问点项目也受到了影响。看起来这次干扰重启了整个传送系统。尽管目标建筑现在还在离港码头，监视器上却显示着多条运输确认消息。报告显示，数量不明的访问点蓝图已被分发。幸运的是，有一批货物似乎已经到达谷神星了，尽管离着陆点很远。
+
+
+      阿利博士的整个团队都在努力确认还有多少其他存在，并确定其地理和时间位置。
+
+
+      我并不乐观。
+
+
+      地址学家坚持表明其装备已经好几天都没有记录地震活动了。
+
+
+      这就引出了一个问题：如果不是地震的话，<i>那会是什么</i>？这个事件起源于哪儿？
+
+
+      阿利博士说笑道，可能是时间之弓在另一个时间线出故障了，这很荒谬。
+
+
+      不是吗？
+    style: Body
+  layout: Vertical
+  lock_id: notes_earthquake

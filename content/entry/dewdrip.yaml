@@ -1,0 +1,93 @@
+id: DEWDRIP
+name: 露珠
+title: STRINGS.CODEX.DEWDRIP.TITLE
+disabled: False
+search_only: False
+category: INDUSTRIALINGREDIENTS
+sort_string: 露珠
+required_dlc_ids:
+- DLC4_ID
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 露珠
+    style: Title
+  - widget_type: CodexText
+    text: 植物副产品
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexImage
+    image: brackorb_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      一种长在<link="DEWDRIPPERPLANT">露珠藤</link>上的<link="MILK">咸乳</link>结晶液珠。
+
+
+      必须在<link="MILKPRESS">植物粉碎机</link>处理以释放其内容物。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 咸乳
+    require:
+    - image: brackorb_0__ui
+      text1: 露珠
+      text2: 2单位
+      link_id: dewdrip
+    produce:
+    - image: element_liquid
+      color: CCEEE8FF
+      text1: 咸乳
+      text2: 20千克
+      link_id: milk
+    fabricator:
+      image: milkpress_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 植物粉碎机
+      text2: 40秒
+      link_id: milkpress
+  - widget_type: CodexConversionPanel
+    require:
+    - image: brackorb_0__ui
+      text1: 露珠
+      text2: 1单位/周期
+      link_id: dewdrip
+    produce:
+    - image: bleach_stone_0__ui
+      text1: 漂白石
+      text2: 10千克/周期
+      link_id: bleachstone
+    fabricator:
+      image: chameleo_0__ui
+      text1: 逸蜥
+      link_id: CHAMELEON
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: frozen_brine_0__ui
+      text1: 浓盐冰
+      text2: 10千克/周期
+      link_id: brine
+    produce:
+    - image: brackorb_0__ui
+      text1: 露珠
+      text2: 0.5单位/周期
+      link_id: dewdrip
+    fabricator:
+      image: brackwood_0__ui
+      text1: 露珠藤
+      link_id: DEWDRIPPERPLANT
+  layout: Vertical

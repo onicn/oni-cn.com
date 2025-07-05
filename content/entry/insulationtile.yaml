@@ -1,0 +1,57 @@
+id: INSULATIONTILE
+parent_id: BUILDCATEGORYBASE
+name: 隔热砖
+disabled: False
+search_only: False
+category: BUILDCATEGORYBASE
+sort_string: 隔热砖
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="INSULATIONTILE">隔热砖</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 温度调节
+    style: Body
+    image: research_type_alpha_icon
+    link_id: temperaturemodulation
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: floor_insulated_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      用来建造房间的墙体和地面。
+
+
+      减少墙体之间的<link="HEAT">热量</link>传递，保持区域内的环境热量。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：1格宽x1格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：30秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="BUILDABLERAW">矿物原料</link>400千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：-5（范围：1格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>1</b>格内降低<b><b>-5</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>隔热砖的热导率更低，可以减慢热量传递。</i>
+    style: Body
+  layout: Vertical

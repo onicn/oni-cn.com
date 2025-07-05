@@ -1,0 +1,55 @@
+id: BIONICSC1
+parent_id: ROLES
+name: 原理图
+disabled: False
+search_only: False
+category: ROLES
+sort_string: 原理图
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="BIONICSC1">原理图</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: hat_role_craftingboosters1
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 允许仿生复制人使用<link="ADVANCEDRESEARCHCENTER">超级计算机</link>进行研究，并在<link="ADVANCEDCRAFTINGTABLE">焊接台</link>制造物品。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 增幅块安装
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexText
+    text: 安装增幅块可立即赋予仿生复制人属性和技能升级。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="ADVANCEDCRAFTINGTABLE">焊接台</link>的使用
+    style: Body
+  - widget_type: CodexText
+    text: <b>+2</b><style="KKeyword">运动</style>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 系统优化
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexText
+    text: 优化是策略性地组合和叠加安装的仿生增幅块的结果。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="BIONICSC2">高级原理图</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

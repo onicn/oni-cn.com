@@ -1,0 +1,68 @@
+id: ROCKETINTERIORGASINPUT
+parent_id: BUILDCATEGORYROCKETRY
+name: 气体输入配件
+disabled: False
+search_only: False
+category: BUILDCATEGORYROCKETRY
+sort_string: 气体输入配件
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="ROCKETINTERIORGASINPUT">气体输入配件</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 气体分配
+    style: Body
+    image: research_type_alpha_icon
+    link_id: gasdistribution
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: rocket_floor_plug_gas_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      允许<link="ELEMENTSGAS">气体</link>通过<link="GASCONDUIT">管道</link>送入火箭库存。
+
+
+      将气体送到第一个有可用空间的火箭舱块。
+
+
+      必须建在火箭舱块内部。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="GASPIPING">气体输入管道</link>'
+    tooltip: 必须从<link="GASCONDUIT">气体管道</link>系统中接收<style="KKeyword">气体</style>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：1格宽x1格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：3秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="METAL">金属矿石</link>25千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：-15（范围：3格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>3</b>格内降低<b><b>-15</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>基本上就是个中央吸尘系统。</i>
+    style: Body
+  layout: Vertical

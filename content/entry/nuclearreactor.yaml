@@ -1,0 +1,85 @@
+id: NUCLEARREACTOR
+parent_id: BUILDCATEGORYHEP
+name: 研究性反应堆
+disabled: False
+search_only: False
+category: BUILDCATEGORYHEP
+sort_string: 研究性反应堆
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="NUCLEARREACTOR">研究性反应堆</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 辐射精炼
+    style: Body
+    image: research_type_alpha_icon
+    link_id: nuclear
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: generatornuclear_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      使用<link="ENRICHEDURANIUM">浓缩铀</link>产生<link="RADIATION">辐射</link>以生成辐射粒子。
+
+
+      生成大量的<link="HEAT">热</link>。过热会导致爆炸性熔毁。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LIQUIDPIPING">液体输入管道</link>'
+    tooltip: 必须从<link="LIQUIDCONDUIT">液体管道</link>系统中接收<style="KKeyword">液体</style>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：5格宽x6格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：480秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="REFINEDMETAL">精炼金属</link>800千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LOGIC">信号输入端</link>'
+    tooltip: 当接收到信号时，输入端会使这个建筑一种状态发生变化
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    燃料运送控制'
+    tooltip: >-
+      输入端行为：
+
+      • 燃料运送启用
+
+      • 燃料运送禁用
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：-15（范围：3格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>3</b>格内降低<b><b>-15</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>类别</b>
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    <link="REQUIREMENTCLASSINDUSTRIALMACHINERY">工业机械</link>'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>辐射粒子发生器和变向器可使辐射用于其他建筑。</i>
+    style: Body
+  layout: Vertical

@@ -1,0 +1,83 @@
+id: LOGICRIBBONWRITER
+parent_id: BUILDCATEGORYAUTOMATION
+name: 线组写入器
+disabled: False
+search_only: False
+category: BUILDCATEGORYAUTOMATION
+sort_string: 线组写入器
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="LOGICRIBBONWRITER">线组写入器</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 并行自动化
+    style: Body
+    image: research_type_alpha_icon
+    link_id: parallelautomation
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: logic_ribbon_writer_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      将<b><style="logic_on">绿色信号</style></b>或<b><style="logic_off">红色信号</style></b>写入至<link="LOGICRIBBON">信号线组</link>的特定位。
+
+
+      输出必须用<link="LOGICRIBBON">信号线组</link>以免过载。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：2格宽x1格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：30秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="REFINEDMETAL">精炼金属</link>25千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LOGIC">信号输入端</link>'
+    tooltip: 当接收到信号时，输入端会使这个建筑一种状态发生变化
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    一位输入端'
+    tooltip: >-
+      输入端行为：
+
+      • <b><style="logic_on">绿色信号</style></b>：接收要写至选定位的<b><style="logic_on">绿色信号</style></b>
+
+      • <b><style="logic_off">红色信号</style></b>：接收要写至选定位的<b><style="logic_off">红色信号</style></b>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LOGIC">信号输出端</link>'
+    tooltip: 当这个建筑状态发生变化时，输出端会输出一个信号
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    位写入'
+    tooltip: >-
+      输出端行为：
+
+      • <b><style="logic_on">绿色信号</style></b>：将<b><style="logic_on">绿色信号</style></b>写至<link="LOGICRIBBON">信号线组</link>的选定位
+
+      • <b><style="logic_off">红色信号</style></b>：将<b><style="logic_off">红色信号</style></b>写至<link="LOGICRIBBON">信号线组</link>的选定位
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：-5（范围：1格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>1</b>格内降低<b><b>-5</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>将<link="LOGICWIRE">信号线</link>的信号转变到<link="LOGICRIBBON">信号线组</link>单个位上</i>
+    style: Body
+  layout: Vertical

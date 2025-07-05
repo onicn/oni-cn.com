@@ -1,0 +1,31 @@
+id: MYLOG23
+name: 周期3000
+title: STRINGS.CODEX.MYLOG.BODY.LOG6.TITLE
+disabled: False
+search_only: False
+category: MYLOG
+sort_string: A6
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 周期3000
+    style: Title
+  - widget_type: CodexText
+    text: >+
+      我有时会感受到过去生活的短暂闪现。
+
+
+      办公室的钟发出干扰人的滴答声。
+
+
+      清洁产品和人造柠檬的强烈气味。
+
+
+      带有神秘姜饼味道的厚眼镜女士。
+
+    style: Body
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical
+  lock_id: log6

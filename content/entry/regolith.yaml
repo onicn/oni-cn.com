@@ -1,0 +1,145 @@
+id: REGOLITH
+parent_id: ELEMENTSSOLID
+name: 浮土
+disabled: False
+search_only: False
+category: ELEMENTSSOLID
+sort_string: 浮土
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="REGOLITH">浮土</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: sand_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: sand_0__ui
+      text1: 浮土
+      text2: 1000克
+      link_id: regolith
+    produce:
+    - image: element_liquid
+      color: AE0000FF
+      text1: 岩浆
+      text2: 1000克
+      link_id: magma
+    fabricator:
+      image: crew_state_temp_up
+      text1: 1409.9ºC
+      tooltip: 温度高于1409.9ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: sand_0__ui
+      text1: 浮土
+      text2: 4800千克/周期
+      link_id: regolith
+    produce:
+    - image: sand_0__ui
+      text1: 浮土
+      text2: 2400千克/周期
+      link_id: regolith
+    fabricator:
+      image: driller_0__ui
+      text1: 锹环田鼠
+      link_id: MOLE
+  - widget_type: CodexConversionPanel
+    require:
+    - image: sand_0__ui
+      text1: 浮土
+      text2: 4800千克/周期
+      link_id: regolith
+    produce:
+    - image: sand_0__ui
+      text1: 浮土
+      text2: 2400千克/周期
+      link_id: regolith
+    fabricator:
+      image: driller_0__del_ui
+      text1: 珍馐田鼠
+      link_id: MOLEDELICACY
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: sand_0__ui
+      text1: 浮土
+      text2: 4800千克/周期
+      link_id: regolith
+    produce:
+    - image: sand_0__ui
+      text1: 浮土
+      text2: 2400千克/周期
+      link_id: regolith
+    fabricator:
+      image: driller_0__ui
+      text1: 锹环田鼠
+      link_id: MOLE
+  - widget_type: CodexConversionPanel
+    require:
+    - image: sand_0__ui
+      text1: 浮土
+      text2: 4800千克/周期
+      link_id: regolith
+    produce:
+    - image: sand_0__ui
+      text1: 浮土
+      text2: 2400千克/周期
+      link_id: regolith
+    fabricator:
+      image: driller_0__del_ui
+      text1: 珍馐田鼠
+      link_id: MOLEDELICACY
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      浮土是一种由在陆地上物体获集到的各种微粒组成的沙状物质。
+
+
+      它可用作<link="FILTER">过滤介质</link>。
+
+
+      资源种类：<link="FILTER">过滤介质</link>
+
+      熔点：1409.9ºC
+
+      硬度：<color=#71ABCFFF>2（非常柔软）</color>
+
+
+      比热容：0.200 (DTU/g)/ºC
+
+      热导率：1.000 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.6
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：不稳定, <link="ELEMENTSSOLID">固体</link>, <link="FILTER">过滤介质</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

@@ -1,0 +1,601 @@
+id: DIRTYWATER
+parent_id: ELEMENTSLIQUID
+name: 污染水
+disabled: False
+search_only: False
+icon_color: 474506FF
+category: ELEMENTSLIQUID
+sort_string: 污染水
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="DIRTYWATER">污染水</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    color: 474506FF
+    image: element_liquid
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: 474506FF
+      text1: 污染水
+      text2: 1000克
+      link_id: dirtywater
+    produce:
+    - image: element_gas
+      color: 85C9E3FF
+      text1: 蒸汽
+      text2: 990克
+      link_id: steam
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 10克
+      link_id: dirt
+    fabricator:
+      image: crew_state_temp_up
+      text1: 119.4ºC
+      tooltip: 温度高于119.4ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: 474506FF
+      text1: 污染水
+      text2: 1000克
+      link_id: dirtywater
+    produce:
+    - image: dirty_ice_0__ui
+      text1: 污染冰
+      text2: 1000克
+      link_id: dirtyice
+    fabricator:
+      image: crew_state_temp_down
+      text1: -20.6ºC
+      tooltip: 温度低于-20.6ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换于
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: dirty_ice_0__ui
+      text1: 污染冰
+      text2: 1000克
+      link_id: dirtyice
+    produce:
+    - image: element_liquid
+      color: 474506FF
+      text1: 污染水
+      text2: 1000克
+      link_id: dirtywater
+    fabricator:
+      image: crew_state_temp_up
+      text1: -20.6ºC
+      tooltip: 温度高于-20.6ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: unknown
+      color: 7F7F7FFF
+      text1: 过滤介质
+      text2: 600千克/周期
+      link_id: filter
+    - image: element_liquid
+      color: 474506FF
+      text1: 污染水
+      text2: 3000千克/周期
+      link_id: dirtywater
+    produce:
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 3000千克/周期
+      link_id: water
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 120千克/周期
+      link_id: toxicsand
+    fabricator:
+      image: waterpurifier_0__ui
+      text1: 净水器
+      link_id: WATERPURIFIER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: 474506FF
+      text1: 污染水
+      text2: 23.4千克/周期
+      link_id: dirtywater
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 39千克/周期
+      link_id: dirt
+    - image: phosphorite_0__ui
+      text1: 磷矿
+      text2: 15.6千克/周期
+      link_id: phosphorite
+    produce:
+    - image: fertilizer_0__ui
+      text1: 肥料
+      text2: 72千克/周期
+      link_id: fertilizer
+    fabricator:
+      image: fertilizer_maker_0__ui
+      text1: 肥料合成器
+      link_id: FERTILIZERMAKER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: 474506FF
+      text1: 污染水
+      text2: 160千克/周期
+      link_id: dirtywater
+    produce:
+    - image: swampreedwool_0__ui
+      text1: 芦苇纤维
+      text2: 0.5单位/周期
+      link_id: basicfabric
+    fabricator:
+      image: swampreed_0__ui
+      text1: 顶针芦苇
+      link_id: BASICFABRICPLANT
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: 474506FF
+      text1: 污染水
+      text2: 10千克/周期
+      link_id: dirtywater
+    produce: []
+    fabricator:
+      image: venus_critter_trap_0__ui
+      text1: 土星动物捕草
+      link_id: CRITTERTRAPPLANT
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_gas
+      color: B7FFFFFF
+      text1: 氧气
+      text2: 5千克/周期
+      link_id: oxygen
+    - image: element_liquid
+      color: 474506FF
+      text1: 污染水
+      text2: 65千克/周期
+      link_id: dirtywater
+    - image: sand_0__ui
+      text1: 沙子
+      text2: 5千克/周期
+      link_id: sand
+    produce:
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 35千克/周期
+      link_id: water
+    fabricator:
+      image: cactus_0__ui
+      text1: 仙水掌
+      link_id: FILTERPLANT
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: 474506FF
+      text1: 污染水
+      text2: 35千克/周期
+      link_id: dirtywater
+    - image: phosphorite_0__ui
+      text1: 磷矿
+      text2: 1000克/周期
+      link_id: phosphorite
+    produce:
+    - image: spicenut_0__ui
+      text1: 火椒粒
+      text2: 500克/周期
+      link_id: spicenut
+    fabricator:
+      image: vinespicenut_0__ui
+      text1: 火椒藤
+      link_id: SPICEVINE
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: 474506FF
+      text1: 污染水
+      text2: 40千克/周期
+      link_id: dirtywater
+    produce:
+    - image: swampcrop_fruit_0__ui
+      text1: 沼浆果冻
+      text2: 279千卡/周期
+      tooltip: 品质：糟糕 [0]
+      link_id: swampfruit
+    fabricator:
+      image: swampcrop_0__ui
+      text1: 沼浆笼
+      link_id: SWAMPHARVESTPLANT
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: 474506FF
+      text1: 污染水
+      text2: 70千克/周期
+      link_id: dirtywater
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 10千克/周期
+      link_id: dirt
+    produce:
+    - image: wood_0__ui
+      text1: 木材
+      text2: 66.7千克/周期
+      link_id: woodlog
+    fabricator:
+      image: tree_0__ui
+      text1: 乔木树
+      link_id: FORESTTREE
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: 474506FF
+      text1: 污染水
+      text2: 120千克/周期
+      link_id: dirtywater
+    produce:
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 120千克/周期
+      link_id: water
+    fabricator:
+      image: pacu_0__glp_ui
+      text1: 大嘴鱼
+      link_id: PACUCLEANER
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 泥浆分离器
+    require:
+    - image: polluted_sludge_0__ui
+      text1: 污染泥
+      text2: 150千克
+      link_id: toxicmud
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 60千克
+      link_id: toxicsand
+    - image: element_liquid
+      color: 474506FF
+      text1: 污染水
+      text2: 90千克
+      link_id: dirtywater
+    fabricator:
+      image: sludge_press_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 泥浆分离器
+      text2: 20秒
+      link_id: sludgepress
+  - widget_type: CodexRecipePanel
+    text: 配药桌
+    require:
+    - image: element_liquid
+      color: 512360FF
+      text1: 粘渣油
+      text2: 80千克
+      link_id: liquidgunk
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 200千克
+      link_id: water
+    produce:
+    - image: lubricant_applicator_0__ui
+      text1: 齿轮膏
+      text2: 1单位
+      link_id: lubricationstick
+    - image: element_liquid
+      color: 474506FF
+      text1: 污染水
+      text2: 200千克
+      link_id: dirtywater
+    fabricator:
+      image: apothecary_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 配药桌
+      text2: 100秒
+      link_id: apothecary
+  - widget_type: CodexConversionPanel
+    require:
+    - image: algae_0__ui
+      text1: 藻类
+      text2: 18千克/周期
+      link_id: algae
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 180千克/周期
+      link_id: water
+    - image: element_gas
+      color: 000000FF
+      text1: 二氧化碳
+      text2: 200克/周期
+      link_id: carbondioxide
+    produce:
+    - image: element_gas
+      color: B7FFFFFF
+      text1: 氧气
+      text2: 24千克/周期
+      link_id: oxygen
+    - image: element_liquid
+      color: 474506FF
+      text1: 污染水
+      text2: 174.2千克/周期
+      link_id: dirtywater
+    fabricator:
+      image: algaefarm_0__ui
+      text1: 藻类箱
+      link_id: ALGAEHABITAT
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 600千克/周期
+      link_id: water
+    - image: element_gas
+      color: 000000FF
+      text1: 二氧化碳
+      text2: 180千克/周期
+      link_id: carbondioxide
+    produce:
+    - image: element_liquid
+      color: 474506FF
+      text1: 污染水
+      text2: 600千克/周期
+      link_id: dirtywater
+    fabricator:
+      image: co2scrubber_0__ui
+      text1: 碳素脱离器
+      link_id: CO2SCRUBBER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: peat_0__ui
+      text1: 泥炭
+      text2: 600千克/周期
+      link_id: peat
+    produce:
+    - image: element_gas
+      color: 000000FF
+      text1: 二氧化碳
+      text2: 24千克/周期
+      link_id: carbondioxide
+    - image: element_liquid
+      color: 474506FF
+      text1: 污染水
+      text2: 120千克/周期
+      link_id: dirtywater
+    fabricator:
+      image: generatorpeat_0__ui
+      text1: 泥炭燃烧器
+      link_id: PEATGENERATOR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_gas
+      color: FF6E0FFF
+      text1: 天然气
+      text2: 54千克/周期
+      link_id: methane
+    produce:
+    - image: element_liquid
+      color: 474506FF
+      text1: 污染水
+      text2: 40.5千克/周期
+      link_id: dirtywater
+    - image: element_gas
+      color: 000000FF
+      text1: 二氧化碳
+      text2: 13.5千克/周期
+      link_id: carbondioxide
+    fabricator:
+      image: generatormethane_0__ui
+      text1: 天然气发电机
+      link_id: METHANEGENERATOR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: unknown
+      color: 7F7F7FFF
+      text1: 可燃液体
+      text2: 1200千克/周期
+      link_id: combustibleliquid
+    produce:
+    - image: element_gas
+      color: 000000FF
+      text1: 二氧化碳
+      text2: 300千克/周期
+      link_id: carbondioxide
+    - image: element_liquid
+      color: 474506FF
+      text1: 污染水
+      text2: 450千克/周期
+      link_id: dirtywater
+    fabricator:
+      image: generatorpetrol_0__ui
+      text1: 石油发电机
+      link_id: PETROLEUMGENERATOR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 5千克
+      link_id: water
+    produce:
+    - image: element_liquid
+      color: 474506FF
+      text1: 污染水
+      text2: 11.7千克
+      link_id: dirtywater
+    fabricator:
+      image: toiletflush_0__ui
+      text1: 抽水马桶
+      link_id: FLUSHTOILET
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 2500克
+      link_id: water
+    produce:
+    - image: element_liquid
+      color: 474506FF
+      text1: 污染水
+      text2: 9.2千克
+      link_id: dirtywater
+    fabricator:
+      image: toilet_wall_0__ui
+      text1: 墙排马桶
+      link_id: WALLTOILET
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 600千克/周期
+      link_id: water
+    produce:
+    - image: element_liquid
+      color: 474506FF
+      text1: 污染水
+      text2: 600千克/周期
+      link_id: dirtywater
+    fabricator:
+      image: shower_0__ui
+      text1: 淋浴隔间
+      link_id: SHOWER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: slime_mold_0__ui
+      text1: 菌泥
+      text2: 360千克/周期
+      link_id: slimemold
+    produce:
+    - image: algae_0__ui
+      text1: 藻类
+      text2: 120千克/周期
+      link_id: algae
+    - image: element_liquid
+      color: 474506FF
+      text1: 污染水
+      text2: 240千克/周期
+      link_id: dirtywater
+    fabricator:
+      image: algae_distillery_0__ui
+      text1: 藻类蒸馏器
+      link_id: ALGAEDISTILLERY
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 5千克
+      link_id: water
+    produce:
+    - image: element_liquid
+      color: 474506FF
+      text1: 污染水
+      text2: 5千克
+      link_id: dirtywater
+    fabricator:
+      image: wash_basin_0__ui
+      text1: 洗手盆
+      link_id: WASHBASIN
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 5千克
+      link_id: water
+    produce:
+    - image: element_liquid
+      color: 474506FF
+      text1: 污染水
+      text2: 5千克
+      link_id: dirtywater
+    fabricator:
+      image: wash_sink_0__ui
+      text1: 洗手池
+      link_id: WASHSINK
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 100千克
+      link_id: water
+    produce:
+    - image: element_liquid
+      color: 474506FF
+      text1: 污染水
+      text2: 100千克
+      link_id: dirtywater
+    fabricator:
+      image: decontamination_shower_0__ui
+      text1: 除污淋浴隔间
+      link_id: DECONTAMINATIONSHOWER
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      污染水是脏的、未经过滤的<link="WATER">水</link>。
+
+
+      不适合饮用。
+
+
+      资源种类：<link="ELEMENTSLIQUID">液体</link>
+
+      冰点：-20.6ºC
+
+      沸点：119.4ºC
+
+
+      比热容：4.179 (DTU/g)/ºC
+
+      热导率：0.580 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.8
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：混合物, 水基物, <link="ELEMENTSLIQUID">液体</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

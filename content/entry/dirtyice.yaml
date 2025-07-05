@@ -1,0 +1,91 @@
+id: DIRTYICE
+parent_id: ELEMENTSSOLID
+name: 污染冰
+disabled: False
+search_only: False
+category: ELEMENTSSOLID
+sort_string: 污染冰
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="DIRTYICE">污染冰</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: dirty_ice_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: dirty_ice_0__ui
+      text1: 污染冰
+      text2: 1000克
+      link_id: dirtyice
+    produce:
+    - image: element_liquid
+      color: 474506FF
+      text1: 污染水
+      text2: 1000克
+      link_id: dirtywater
+    fabricator:
+      image: crew_state_temp_up
+      text1: -20.6ºC
+      tooltip: 温度高于-20.6ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换于
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: 474506FF
+      text1: 污染水
+      text2: 1000克
+      link_id: dirtywater
+    produce:
+    - image: dirty_ice_0__ui
+      text1: 污染冰
+      text2: 1000克
+      link_id: dirtyice
+    fabricator:
+      image: crew_state_temp_down
+      text1: -20.6ºC
+      tooltip: 温度低于-20.6ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      污染冰是脏的、未经过滤的水冻结成的<link="ELEMENTSSOLID">固体</link>。
+
+
+      资源种类：可液化物
+
+      熔点：-20.6ºC
+
+      硬度：<color=#6D7BC1FF>10（柔软）</color>
+
+
+      比热容：3.050 (DTU/g)/ºC
+
+      热导率：1.000 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.75
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：溜滑, <link="ICEORE">冰</link>, 混合物, <link="BUILDABLEANY">一般建造材料</link>, <link="ELEMENTSSOLID">固体</link>, 可液化物
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

@@ -1,0 +1,132 @@
+id: CARROTPLANT
+parent_id: PLANTS
+name: 羽叶果薯植株
+disabled: False
+search_only: False
+category: PLANTS
+sort_string: 羽叶果薯植株
+required_dlc_ids:
+- DLC2_ID
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 羽叶果薯植株
+    style: Title
+  - widget_type: CodexText
+    text: 食用性植物
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      羽叶果薯含有十几种高度稳定的花青素，数量是其他植物的两倍。如此高浓度的类黄酮不仅造就了块茎鲜艳的色泽，还赋予其极强的耐寒性。
+
+
+      羽叶果薯的整个块茎，包括外皮，都可以安全食用。顶部羽毛状的部分还可以用来在餐后掸去下巴上的食物碎屑。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: purpleroot_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 成长自
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: seed_purpleroot_0__ui
+  - widget_type: CodexText
+    text: <link="CARROTPLANT">羽叶果薯种子</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 详情
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexText
+    text: 羽叶果薯是一种营养丰富的甜块茎，可以收获作为<link="FOOD">食物</link>。
+    style: Body
+  - widget_type: CodexText
+    text: >-
+      <b>生长需求</b>：
+          • 最大<link="RADIATION">辐射</link>：4,600拉德/周期
+          • 生长周期：9.0周期
+          • <link="HEAT">温度</link>：-55至-14ºC
+          • <link="ATMOSPHERE">气压</link>：最低150克
+          • <link="ATMOSPHERE">环境</link>：
+              • <link="OXYGEN">氧气</link>
+              • <link="CONTAMINATEDOXYGEN">污染氧</link>
+              • <link="CARBONDIOXIDE">二氧化碳</link>
+          • <link="ETHANOL">乙醇</link>：-15千克/周期
+          • 农地
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      <b>效果</b>：
+          • <link="CARROT">羽叶果薯</link>：4,000千卡
+          • 基础<link="PLANTS">种子</link>收获几率：10%
+          • <link="DECOR">装饰度</link>：-10（范围：2格）
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: 00FF6AFF
+      text1: 乙醇
+      text2: 15千克/周期
+      link_id: ethanol
+    produce:
+    - image: purplerootvegetable_0__ui
+      text1: 羽叶果薯
+      text2: 444千卡/周期
+      tooltip: 品质：糟糕 [0]
+      link_id: carrot
+    fabricator:
+      image: purpleroot_0__ui
+      text1: 羽叶果薯植株
+      link_id: CARROTPLANT
+  - widget_type: CodexConversionPanel
+    require:
+    - image: purpleroot_0__ui
+      text1: 羽叶果薯植株
+      text2: 44% 生长进度/周期
+      link_id: carrotplant
+    produce:
+    - image: bammoth_poop_0__ui
+      text1: 绒犸兔碎糜
+      text2: 30千克/周期
+      link_id: icebellypoop
+    fabricator:
+      image: ice_belly_0__king_ui
+      text1: 皇犸兔
+      link_id: GOLDBELLY
+  - widget_type: CodexConversionPanel
+    require:
+    - image: purpleroot_0__ui
+      text1: 羽叶果薯植株
+      text2: 44% 生长进度/周期
+      link_id: carrotplant
+    produce:
+    - image: bammoth_poop_0__ui
+      text1: 绒犸兔碎糜
+      text2: 30千克/周期
+      link_id: icebellypoop
+    fabricator:
+      image: ice_belly_0__ui
+      text1: 绒犸兔
+      link_id: ICEBELLY
+  layout: Vertical

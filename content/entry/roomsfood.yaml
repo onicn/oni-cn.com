@@ -1,0 +1,165 @@
+id: ROOMSFOOD
+parent_id: ROOMS
+name: 饮食
+disabled: False
+search_only: False
+category: ROOMS
+sort_string: 饮食
+sub_entries:
+- id: GreatHall
+  parent_id: ROOMSFood
+  name: 高档餐厅
+  disabled: False
+  sort_string: 高档餐厅
+- id: MessHall
+  parent_id: ROOMSFood
+  name: 食堂
+  disabled: False
+  sort_string: 食堂
+- id: Kitchen
+  parent_id: ROOMSFood
+  name: 厨房
+  disabled: False
+  sort_string: 厨房
+content_container:
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 条目（3/3）
+    style: Subtitle
+  - widget_type: CodexText
+    text: <link="GREATHALL">高档餐厅</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="MESSHALL">食堂</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="KITCHEN">厨房</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: ui_room_food
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 高档餐厅
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      一个吃饭的绝佳之地，既有绝佳的装饰，又有绝佳的伙伴。绝佳！
+
+
+      在高档餐厅用餐会大大提升复制人的士气。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 详情
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <b>效果：</b>
+          • <style="KKeyword">士气</style>：+6
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>需求：</b>
+    style: Body
+  - widget_type: CodexText
+    text: >2-
+          • <link="DININGTABLE">Mess Table</link>
+          • No <link="REQUIREMENTCLASSINDUSTRIALMACHINERY">industrial machinery</link>
+          • Minimum size: 32 tiles
+          • Maximum size: 120 tiles
+          • <link="REQUIREMENTCLASSDECORATION">Fancy decor item</link>
+          • <link="REQUIREMENTCLASSRECBUILDING">Recreational building</link>
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 食堂
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      一个简单的餐厅配置，很容易改进。
+
+
+      在食堂的餐桌前用餐会提升复制人的士气。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 详情
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <b>效果：</b>
+          • <style="KKeyword">士气</style>：+3
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>需求：</b>
+    style: Body
+  - widget_type: CodexText
+    text: >2-
+          • <link="DININGTABLE">Mess Table</link>
+          • No <link="REQUIREMENTCLASSINDUSTRIALMACHINERY">industrial machinery</link>
+          • Minimum size: 12 tiles
+          • Maximum size: 64 tiles
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 厨房
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      一个配备齐全的烹饪区域，能够将菜肴提升到新的水平。
+
+
+      为电动烤炉或燃气灶烹饪的食物添加香料可以提供各种积极效果。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 详情
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>需求：</b>
+    style: Body
+  - widget_type: CodexText
+    text: >2-
+          • <link="SPICEGRINDER">Spice Grinder</link>
+          • <link="REQUIREMENTCLASSCOOKTOP">Cooking station</link>
+          • <link="REFRIGERATOR">Refrigerator</link>
+          • No <link="DININGTABLE">Mess Table</link>
+          • Minimum size: 12 tiles
+          • Maximum size: 96 tiles
+    style: Body
+  layout: Vertical

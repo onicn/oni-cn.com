@@ -1,0 +1,59 @@
+id: BUILDCATEGORYHEP
+parent_id: BUILDINGS
+name: 辐射
+disabled: False
+search_only: False
+category: BUILDINGS
+sort_string: 辐射
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="BUILDCATEGORYHEP">辐射</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexLabelWithLargeIcon
+    text: 人力辐射粒子发生器
+    style: BodyWhite
+    image: manual_radbolt_generator_0__ui
+    link_id: manualhighenergyparticlespawner
+  - widget_type: CodexLabelWithLargeIcon
+    text: 研究性反应堆
+    style: BodyWhite
+    image: generatornuclear_0__ui
+    link_id: nuclearreactor
+  - widget_type: CodexLabelWithLargeIcon
+    text: 辐射灯
+    style: BodyWhite
+    image: radiation_lamp_0__ui
+    link_id: radiationlight
+  - widget_type: CodexLabelWithLargeIcon
+    text: 辐射粒子发生器
+    style: BodyWhite
+    image: radiation_collector_0__ui
+    link_id: highenergyparticlespawner
+  - widget_type: CodexLabelWithLargeIcon
+    text: 辐射粒子变向器
+    style: BodyWhite
+    image: orb_transporter_0__ui
+    link_id: highenergyparticleredirector
+  - widget_type: CodexLabelWithLargeIcon
+    text: 辐射粒子接合板
+    style: BodyWhite
+    image: radbolt_joint_plate_0__ui
+    link_id: hepbridgetile
+  - widget_type: CodexLabelWithLargeIcon
+    text: 辐射粒子蓄存器
+    style: BodyWhite
+    image: radbolt_battery_0__ui
+    link_id: hepbattery
+  - widget_type: CodexLabelWithLargeIcon
+    text: 铀素离心机
+    style: BodyWhite
+    image: enrichmentcentrifuge_0__ui
+    link_id: uraniumcentrifuge
+  layout: Grid
+- contents:
+  - widget_type: CodexSpacer
+  layout: Vertical

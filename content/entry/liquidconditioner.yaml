@@ -1,0 +1,94 @@
+id: LIQUIDCONDITIONER
+parent_id: BUILDCATEGORYUTILITIES
+name: 液温调节器
+disabled: False
+search_only: False
+category: BUILDCATEGORYUTILITIES
+sort_string: 液温调节器
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="LIQUIDCONDITIONER">液温调节器</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 液体微调
+    style: Body
+    image: research_type_alpha_icon
+    link_id: liquidtemperature
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: liquidconditioner_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 冷却输入的<link="ELEMENTSLIQUID">液体</link>，但向周围环境放出<link="HEAT">热量</link>。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="POWER">电力</link>：1.2千瓦'
+    tooltip: 必须与至少有<style="consumed">1.2千瓦</style>可用<style="KKeyword">电力</style>的电路相连
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LIQUIDPIPING">液体输入管道</link>'
+    tooltip: 必须从<link="LIQUIDCONDUIT">液体管道</link>系统中接收<style="KKeyword">液体</style>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LIQUIDPIPING">液体输出管道</link>'
+    tooltip: 必须通过<link="LIQUIDCONDUIT">液体管道</link>系统排出<style="KKeyword">液体</style>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：2格宽x2格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：120秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="METAL">金属矿石</link>1200千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="HEAT">热量</link>：+585.06千复制热（近似值）'
+    tooltip: >-
+      基于抽取<style="KKeyword">液体</style>的<style="KKeyword">量</style>和<style="KKeyword">比热容</style>产生<style="KKeyword">热量</style>
+
+
+      使10千克的<link="WATER">水</link>完全冷却<b>14ºC</b>会放出<style="consumed">585.06千复制热</style>热量
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="HEAT">冷却因子</link>：-14ºC'
+    tooltip: 降低管内<style="KKeyword">液体</style><style="KKeyword">温度</style><b>-14ºC</b>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    过热<link="HEAT">温度</link>：125ºC'
+    tooltip: 达到<b>125ºC</b>时开始过热
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LOGIC">信号输入端</link>'
+    tooltip: 当接收到信号时，输入端会使这个建筑一种状态发生变化
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    启用/禁用'
+    tooltip: >-
+      输入端行为：
+
+      • <b><style="logic_on">绿色信号</style></b>：启用建筑
+
+      • <b><style="logic_off">红色信号</style></b>：禁用建筑
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>液温调节器可以冷却液体并把热量排放到其他地方。</i>
+    style: Body
+  layout: Vertical

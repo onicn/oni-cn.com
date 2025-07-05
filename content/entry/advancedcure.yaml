@@ -1,0 +1,55 @@
+id: ADVANCEDCURE
+name: 血清瓶
+title: STRINGS.CODEX.ADVANCEDCURE.TITLE
+disabled: False
+search_only: False
+category: MEDICINES
+sort_string: 血清瓶
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 血清瓶
+    style: Title
+  - widget_type: CodexText
+    text: 药学监护
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      一种极其有效的药物，用于治疗严重<link="DISEASE">疾病</link>。<link="ADVANCEDCURE">血清瓶</link>抵抗<link="ZOMBIESPORES">僵尸孢子</link>非常有效。
+
+
+      必须由具有<link="MEDICINE3">高级医疗护理</link>技能的复制人施用。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 配药桌
+    require:
+    - image: steel_0__ui
+      text1: 钢
+      text2: 1000克
+      link_id: steel
+    - image: egg_lightbug_0__org_ui
+      text1: 阳光虫卵
+      text2: 1单位
+      link_id: lightbugorange
+    produce:
+    - image: vial_spore_0__ui
+      text1: 血清瓶
+      text2: 1单位
+      link_id: advancedcure
+    fabricator:
+      image: apothecary_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 配药桌
+      text2: 200秒
+      link_id: apothecary
+  layout: Vertical

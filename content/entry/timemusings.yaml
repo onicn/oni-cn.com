@@ -1,0 +1,34 @@
+id: TIMEMUSINGS
+name: 主管的笔记
+title: STRINGS.CODEX.B6_TIMEMUSINGS.TITLE
+disabled: False
+search_only: False
+category: INVESTIGATIONS
+sort_string: 主管的笔记
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 主管的笔记
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：三
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+  lock_id: journal_timemusings
+- contents:
+  - widget_type: CodexText
+    text: >-
+      我们在讨论时间作为宇宙的一个具体方面，而不是时钟上的指针或大脑的感知时，首先必须确定，我们讨论的是在三个空间物理维度（即，长度、宽度、深度）之上的一个独特维度。
+
+
+      我们认为真实的时间是一条一维的直线，没有弯曲，并且会无限延伸。这就是所谓的“时间箭”。
+
+
+      从逻辑上讲，这个箭只能前行，永远不能逆转，因为这样的逆转会打破宇宙的自然法则。结果将先于原因，第二定律将被公然违反，宇宙熵将消失。
+
+
+      尽管如此，人们总是禁不住去想，如果箭的轨迹被弯曲了呢？如果它可以被重定向、引导或释放呢？如果我们可以创造出时间弓呢？
+    style: Body
+  layout: Vertical
+  lock_id: journal_timemusings

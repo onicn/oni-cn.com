@@ -1,0 +1,199 @@
+id: PHYTOOIL
+parent_id: ELEMENTSLIQUID
+name: 植物润滑油
+disabled: False
+search_only: False
+icon_color: 98A82FFF
+category: ELEMENTSLIQUID
+sort_string: 植物润滑油
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="PHYTOOIL">植物润滑油</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    color: 98A82FFF
+    image: element_liquid
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: 98A82FFF
+      text1: 植物润滑油
+      text2: 1000克
+      link_id: phytooil
+    produce:
+    - image: element_gas
+      color: 000000FF
+      text1: 二氧化碳
+      text2: 333.4克
+      link_id: carbondioxide
+    - image: algae_0__ui
+      text1: 藻类
+      text2: 666.6克
+      link_id: algae
+    fabricator:
+      image: crew_state_temp_up
+      text1: 75ºC
+      tooltip: 温度高于75ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: 98A82FFF
+      text1: 植物润滑油
+      text2: 1000克
+      link_id: phytooil
+    produce:
+    - image: frozen_brine_0__ui
+      text1: 凝冻植物润滑油
+      text2: 1000克
+      link_id: frozenphytooil
+    fabricator:
+      image: crew_state_temp_down
+      text1: -33.1ºC
+      tooltip: 温度低于-33.1ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换于
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: frozen_brine_0__ui
+      text1: 凝冻植物润滑油
+      text2: 1000克
+      link_id: frozenphytooil
+    produce:
+    - image: element_liquid
+      color: 98A82FFF
+      text1: 植物润滑油
+      text2: 1000克
+      link_id: phytooil
+    fabricator:
+      image: crew_state_temp_up
+      text1: -33.1ºC
+      tooltip: 温度高于-33.1ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 生物柴油
+    require:
+    - image: element_liquid
+      color: 98A82FFF
+      text1: 植物润滑油
+      text2: 160千克
+      link_id: phytooil
+    - image: bleach_stone_0__ui
+      text1: 漂白石
+      text2: 40千克
+      link_id: bleachstone
+    produce:
+    - image: element_liquid
+      color: E1CB69FF
+      text1: 生物柴油
+      text2: 200千克
+      link_id: refinedlipid
+    fabricator:
+      image: chemistry_lab_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 乳化器
+      text2: 40秒
+      link_id: chemicalrefinery
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 植物粉碎机
+    require:
+    - image: slime_mold_0__ui
+      text1: 菌泥
+      text2: 100千克
+      link_id: slimemold
+    produce:
+    - image: element_liquid
+      color: 98A82FFF
+      text1: 植物润滑油
+      text2: 70千克
+      link_id: phytooil
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 30千克
+      link_id: dirt
+    fabricator:
+      image: milkpress_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 植物粉碎机
+      text2: 40秒
+      link_id: milkpress
+  - widget_type: CodexRecipePanel
+    text: 植物粉碎机
+    require:
+    - image: kelp_leaf_0__ui
+      text1: 海梳蕨叶
+      text2: 25千克
+      link_id: kelp
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 75千克
+      link_id: water
+    produce:
+    - image: element_liquid
+      color: 98A82FFF
+      text1: 植物润滑油
+      text2: 100千克
+      link_id: phytooil
+    fabricator:
+      image: milkpress_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 植物粉碎机
+      text2: 40秒
+      link_id: milkpress
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      植物润滑油是从<link="SLIME">菌泥</link>中提取的浓而滑的<link="ELEMENTSLIQUID">液体</link>。
+
+
+      资源种类：<link="ELEMENTSLIQUID">液体</link>
+
+      冰点：-33.1ºC
+
+      沸点：75ºC
+
+
+      比热容：0.900 (DTU/g)/ºC
+
+      热导率：2.000 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.9
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：溜滑, <link="LUBRICATINGOIL">齿轮油</link>, <link="UNREFINEDOIL">未精炼油</link>, <link="ELEMENTSLIQUID">液体</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

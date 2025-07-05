@@ -1,0 +1,53 @@
+id: STRAWBERRIES
+name: 草莓
+title: STRINGS.CODEX.A5_STRAWBERRIES.TITLE
+disabled: False
+search_only: False
+category: JOURNALS
+sort_string: 草莓
+required_dlc_ids:
+- EXPANSION1_ID
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 草莓
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：零
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+  lock_id: journal_strawberries
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <smallcaps>[声纹识别系统初始化完成]
+
+      [识别编号：B111]</smallcaps>
+
+
+      [录音开始]
+
+
+      "活-活泼的小动物们，你们今天过得怎么样？
+
+
+      （唧唧声）
+
+
+      看！我买了草莓。你们最喜欢的！饿了没？
+
+
+      （兴奋的唧唧声）
+
+
+      哦，等一下，我宝贵的小伙伴们。我忘了关录音机了——
+
+
+      （沙沙声）"
+
+
+      [录音结束]
+    style: Body
+  layout: Vertical
+  lock_id: journal_strawberries

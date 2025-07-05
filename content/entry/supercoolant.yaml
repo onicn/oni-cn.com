@@ -1,0 +1,165 @@
+id: SUPERCOOLANT
+parent_id: ELEMENTSLIQUID
+name: 超级冷却剂
+disabled: False
+search_only: False
+icon_color: 37AD93FF
+category: ELEMENTSLIQUID
+sort_string: 超级冷却剂
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="SUPERCOOLANT">超级冷却剂</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    color: 37AD93FF
+    image: element_liquid
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: 37AD93FF
+      text1: 超级冷却剂
+      text2: 1000克
+      link_id: supercoolant
+    produce:
+    - image: element_gas
+      color: 37AD93FF
+      text1: 气态超级冷却剂
+      text2: 1000克
+      link_id: supercoolantgas
+    fabricator:
+      image: crew_state_temp_up
+      text1: 436.9ºC
+      tooltip: 温度高于436.9ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: 37AD93FF
+      text1: 超级冷却剂
+      text2: 1000克
+      link_id: supercoolant
+    produce:
+    - image: super_coolant_0__ui
+      text1: 固态超级冷却剂
+      text2: 1000克
+      link_id: solidsupercoolant
+    fabricator:
+      image: crew_state_temp_down
+      text1: -271.2ºC
+      tooltip: 温度低于-271.2ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换于
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: super_coolant_0__ui
+      text1: 固态超级冷却剂
+      text2: 1000克
+      link_id: solidsupercoolant
+    produce:
+    - image: element_liquid
+      color: 37AD93FF
+      text1: 超级冷却剂
+      text2: 1000克
+      link_id: supercoolant
+    fabricator:
+      image: crew_state_temp_up
+      text1: -271.2ºC
+      tooltip: 温度高于-271.2ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_gas
+      color: 37AD93FF
+      text1: 气态超级冷却剂
+      text2: 1000克
+      link_id: supercoolantgas
+    produce:
+    - image: element_liquid
+      color: 37AD93FF
+      text1: 超级冷却剂
+      text2: 1000克
+      link_id: supercoolant
+    fabricator:
+      image: crew_state_temp_down
+      text1: 436.9ºC
+      tooltip: 温度低于436.9ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 乳化器
+    require:
+    - image: fullerene_0__ui
+      text1: 富勒烯
+      text2: 1000克
+      link_id: fullerene
+    - image: gold_refined_0__ui
+      text1: 金
+      text2: 49.5千克
+      link_id: gold
+    - image: element_liquid
+      color: FFC325FF
+      text1: 石油
+      text2: 49.5千克
+      link_id: petroleum
+    produce:
+    - image: element_liquid
+      color: 37AD93FF
+      text1: 超级冷却剂
+      text2: 100千克
+      link_id: supercoolant
+    fabricator:
+      image: chemistry_lab_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 乳化器
+      text2: 80秒
+      link_id: chemicalrefinery
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      超级冷却剂是一种工业级<link="FULLERENE">富勒烯</link>冷却剂。
+
+
+      当前选中的处于<link="ELEMENTSLIQUID">液态</link>。
+
+
+      资源种类：<link="ELEMENTSLIQUID">液体</link>
+
+      冰点：-271.2ºC
+
+      沸点：436.9ºC
+
+
+      比热容：8.440 (DTU/g)/ºC
+
+      热导率：9.460 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.6
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：<link="ELEMENTSLIQUID">液体</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

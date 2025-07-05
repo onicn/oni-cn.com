@@ -1,0 +1,106 @@
+id: FILTERPLANT
+parent_id: PLANTS
+name: 仙水掌
+disabled: False
+search_only: False
+category: PLANTS
+sort_string: 仙水掌
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 仙水掌
+    style: Title
+  - widget_type: CodexText
+    text: 植物
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: cactus_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 成长自
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: seed_cactus_0__ui
+  - widget_type: CodexText
+    text: <link="FILTERPLANT">仙水掌种子</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 详情
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexText
+    text: 仙水掌在<link="SAND">沙子</link>的帮助下可作为天然的<link="WATER">水</link>过滤器。
+    style: Body
+  - widget_type: CodexText
+    text: >-
+      <b>生长需求</b>：
+          • 最大<link="RADIATION">辐射</link>：2,200拉德/周期
+          • <link="OXYGEN">氧气</link>的供给
+          • 生长周期：10.0周期
+          • <link="HEAT">温度</link>：20至110ºC
+          • <link="ATMOSPHERE">气压</link>：最低25克
+          • <link="ATMOSPHERE">环境</link>：
+              • <link="OXYGEN">氧气</link>
+          • <link="SAND">沙子</link>：-5千克/周期
+          • <link="DIRTYWATER">污染水</link>：-65千克/周期
+          • 农地
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      <b>效果</b>：
+          • <link="OXYGEN">氧气</link>：8.33克/秒
+          • <link="WATER">水</link>：350千克
+          • 基础<link="PLANTS">种子</link>收获几率：10%
+          • <link="DECOR">装饰度</link>：-10（范围：2格）
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_gas
+      color: B7FFFFFF
+      text1: 氧气
+      text2: 5千克/周期
+      link_id: oxygen
+    - image: element_liquid
+      color: 474506FF
+      text1: 污染水
+      text2: 65千克/周期
+      link_id: dirtywater
+    - image: sand_0__ui
+      text1: 沙子
+      text2: 5千克/周期
+      link_id: sand
+    produce:
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 35千克/周期
+      link_id: water
+    fabricator:
+      image: cactus_0__ui
+      text1: 仙水掌
+      link_id: FILTERPLANT
+  layout: Vertical

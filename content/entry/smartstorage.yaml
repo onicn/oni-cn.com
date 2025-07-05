@@ -1,0 +1,66 @@
+id: SMARTSTORAGE
+parent_id: TECH
+name: 智能存储
+disabled: False
+search_only: False
+category: TECH
+sort_string: 智能存储
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="SMARTSTORAGE">智能存储</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 使固体材料的存储完全自动化。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="BASICREFINEMENT">蛮力精炼</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: overlay_conveyor
+  - widget_type: CodexText
+    text: <b>运输概览</b>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: conveyor_transferarm_0__ui
+  - widget_type: CodexText
+    text: <link="SOLIDTRANSFERARM">自动清扫器</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: smartstoragelocker_0__ui
+  - widget_type: CodexText
+    text: <link="STORAGELOCKERSMART">智能存储箱</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: object_dispenser_0__ui
+  - widget_type: CodexText
+    text: <link="OBJECTDISPENSER">自动卸物箱</link>
+    style: Body
+  layout: Horizontal

@@ -1,0 +1,504 @@
+id: ELEMENTSSOLID
+parent_id: ELEMENTS
+name: 固体
+disabled: False
+search_only: False
+category: ELEMENTS
+sort_string: 固体
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="ELEMENTSSOLID">固体</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexLabelWithLargeIcon
+    text: 中子质
+    style: BodyWhite
+    image: neutronium_0__ui
+    link_id: unobtanium
+  - widget_type: CodexLabelWithLargeIcon
+    text: 冰
+    style: BodyWhite
+    image: ice_0__ui
+    link_id: ice
+  - widget_type: CodexLabelWithLargeIcon
+    text: 凝冻咸乳
+    style: BodyWhite
+    image: milk_0__ui
+    link_id: milkice
+  - widget_type: CodexLabelWithLargeIcon
+    text: 凝冻植物润滑油
+    style: BodyWhite
+    image: frozen_brine_0__ui
+    link_id: frozenphytooil
+  - widget_type: CodexLabelWithLargeIcon
+    text: 动物油脂
+    style: BodyWhite
+    image: tallow_0__ui
+    link_id: tallow
+  - widget_type: CodexLabelWithLargeIcon
+    text: 化石
+    style: BodyWhite
+    image: fossil_0__ui
+    link_id: fossil
+  - widget_type: CodexLabelWithLargeIcon
+    text: 咸乳蜡
+    style: BodyWhite
+    image: milkfat_0__ui
+    link_id: milkfat
+  - widget_type: CodexLabelWithLargeIcon
+    text: 固态乙醇
+    style: BodyWhite
+    image: ethanol_0__ui
+    link_id: solidethanol
+  - widget_type: CodexLabelWithLargeIcon
+    text: 固态二氧化碳
+    style: BodyWhite
+    image: solid_carbon_dioxide_0__ui
+    link_id: solidcarbondioxide
+  - widget_type: CodexLabelWithLargeIcon
+    text: 固态原油
+    style: BodyWhite
+    image: frozen_crude_oil_0__ui
+    link_id: solidcrudeoil
+  - widget_type: CodexLabelWithLargeIcon
+    text: 固态树液
+    style: BodyWhite
+    image: resin_solid_0__ui
+    link_id: solidresin
+  - widget_type: CodexLabelWithLargeIcon
+    text: 固态树脂
+    style: BodyWhite
+    image: resin_solid_0__ui
+    link_id: naturalsolidresin
+  - widget_type: CodexLabelWithLargeIcon
+    text: 固态核废料
+    style: BodyWhite
+    image: radium_0__ui
+    link_id: solidnuclearwaste
+  - widget_type: CodexLabelWithLargeIcon
+    text: 固态氢
+    style: BodyWhite
+    image: solid_hydrogen_0__ui
+    link_id: solidhydrogen
+  - widget_type: CodexLabelWithLargeIcon
+    text: 固态氧
+    style: BodyWhite
+    image: solid_oxygen_0__ui
+    link_id: solidoxygen
+  - widget_type: CodexLabelWithLargeIcon
+    text: 固态氯
+    style: BodyWhite
+    image: solid_chlorine_0__ui
+    link_id: solidchlorine
+  - widget_type: CodexLabelWithLargeIcon
+    text: 固态汞
+    style: BodyWhite
+    image: mercury_refined_0__ui
+    link_id: solidmercury
+  - widget_type: CodexLabelWithLargeIcon
+    text: 固态甲烷
+    style: BodyWhite
+    image: solid_methane_0__ui
+    link_id: solidmethane
+  - widget_type: CodexLabelWithLargeIcon
+    text: 固态石油
+    style: BodyWhite
+    image: wolframite_0__ui
+    link_id: solidpetroleum
+  - widget_type: CodexLabelWithLargeIcon
+    text: 固态石脑油
+    style: BodyWhite
+    image: wolframite_0__ui
+    link_id: solidnaphtha
+  - widget_type: CodexLabelWithLargeIcon
+    text: 固态粘性凝胶
+    style: BodyWhite
+    image: viscogel_0__ui
+    link_id: solidviscogel
+  - widget_type: CodexLabelWithLargeIcon
+    text: 固态粘渣油
+    style: BodyWhite
+    image: gunk_0__ui
+    link_id: gunk
+  - widget_type: CodexLabelWithLargeIcon
+    text: 固态超级冷却剂
+    style: BodyWhite
+    image: super_coolant_0__ui
+    link_id: solidsupercoolant
+  - widget_type: CodexLabelWithLargeIcon
+    text: 堆芯熔融物
+    style: BodyWhite
+    image: radium_0__ui
+    link_id: corium
+  - widget_type: CodexLabelWithLargeIcon
+    text: 塑料
+    style: BodyWhite
+    image: polypropylene_0__ui
+    link_id: polypropylene
+  - widget_type: CodexLabelWithLargeIcon
+    text: 塑料质
+    style: BodyWhite
+    image: hardplastic_0__ui
+    link_id: hardpolypropylene
+  - widget_type: CodexLabelWithLargeIcon
+    text: 富勒烯
+    style: BodyWhite
+    image: fullerene_0__ui
+    link_id: fullerene
+  - widget_type: CodexLabelWithLargeIcon
+    text: 导热质
+    style: BodyWhite
+    image: temp_conductor_0__ui
+    link_id: tempconductorsolid
+  - widget_type: CodexLabelWithLargeIcon
+    text: 异构树液
+    style: BodyWhite
+    image: isoresin_0__ui
+    link_id: isoresin
+  - widget_type: CodexLabelWithLargeIcon
+    text: 木材
+    style: BodyWhite
+    image: wood_0__ui
+    link_id: woodlog
+  - widget_type: CodexLabelWithLargeIcon
+    text: 朱砂矿
+    style: BodyWhite
+    image: cinnabar_0__ui
+    link_id: cinnabar
+  - widget_type: CodexLabelWithLargeIcon
+    text: 氧石
+    style: BodyWhite
+    image: oxyrock_0__ui
+    link_id: oxyrock
+  - widget_type: CodexLabelWithLargeIcon
+    text: 污染冰
+    style: BodyWhite
+    image: dirty_ice_0__ui
+    link_id: dirtyice
+  - widget_type: CodexLabelWithLargeIcon
+    text: 污染土
+    style: BodyWhite
+    image: toxic_sand_0__ui
+    link_id: toxicsand
+  - widget_type: CodexLabelWithLargeIcon
+    text: 污染泥
+    style: BodyWhite
+    image: polluted_sludge_0__ui
+    link_id: toxicmud
+  - widget_type: CodexLabelWithLargeIcon
+    text: 沉积岩
+    style: BodyWhite
+    image: sedimentary_rock_0__ui
+    link_id: sedimentaryrock
+  - widget_type: CodexLabelWithLargeIcon
+    text: 沙子
+    style: BodyWhite
+    image: sand_0__ui
+    link_id: sand
+  - widget_type: CodexLabelWithLargeIcon
+    text: 泥土
+    style: BodyWhite
+    image: dirt_0__ui
+    link_id: dirt
+  - widget_type: CodexLabelWithLargeIcon
+    text: 泥巴
+    style: BodyWhite
+    image: sludge_0__ui
+    link_id: mud
+  - widget_type: CodexLabelWithLargeIcon
+    text: 泥炭
+    style: BodyWhite
+    image: peat_0__ui
+    link_id: peat
+  - widget_type: CodexLabelWithLargeIcon
+    text: 浓盐冰
+    style: BodyWhite
+    image: frozen_brine_0__ui
+    link_id: brineice
+  - widget_type: CodexLabelWithLargeIcon
+    text: 浓缩铀
+    style: BodyWhite
+    image: enriched_uranium_0__ui
+    link_id: enricheduranium
+  - widget_type: CodexLabelWithLargeIcon
+    text: 浮土
+    style: BodyWhite
+    image: sand_0__ui
+    link_id: regolith
+  - widget_type: CodexLabelWithLargeIcon
+    text: 深渊晶石
+    style: BodyWhite
+    image: katairite_0__ui
+    link_id: katairite
+  - widget_type: CodexLabelWithLargeIcon
+    text: 漂白石
+    style: BodyWhite
+    image: bleach_stone_0__ui
+    link_id: bleachstone
+  - widget_type: CodexLabelWithLargeIcon
+    text: 火成岩
+    style: BodyWhite
+    image: igneous_rock_0__ui
+    link_id: igneousrock
+  - widget_type: CodexLabelWithLargeIcon
+    text: 煤炭
+    style: BodyWhite
+    image: carbon_0__ui
+    link_id: carbon
+  - widget_type: CodexLabelWithLargeIcon
+    text: 玻璃
+    style: BodyWhite
+    image: glass_0__ui
+    link_id: glass
+  - widget_type: CodexLabelWithLargeIcon
+    text: 琥珀
+    style: BodyWhite
+    image: amber_0__ui
+    link_id: amber
+  - widget_type: CodexLabelWithLargeIcon
+    text: 盐
+    style: BodyWhite
+    image: salt_0__ui
+    link_id: salt
+  - widget_type: CodexLabelWithLargeIcon
+    text: 石墨
+    style: BodyWhite
+    image: graphite_0__ui
+    link_id: graphite
+  - widget_type: CodexLabelWithLargeIcon
+    text: 石灰
+    style: BodyWhite
+    image: limestone_0__ui
+    link_id: lime
+  - widget_type: CodexLabelWithLargeIcon
+    text: 砂岩
+    style: BodyWhite
+    image: sand_stone_0__ui
+    link_id: sandstone
+  - widget_type: CodexLabelWithLargeIcon
+    text: 硫
+    style: BodyWhite
+    image: sulfur_0__ui
+    link_id: sulfur
+  - widget_type: CodexLabelWithLargeIcon
+    text: 碎冰
+    style: BodyWhite
+    image: crushed_ice_0__ui
+    link_id: crushedice
+  - widget_type: CodexLabelWithLargeIcon
+    text: 碎岩
+    style: BodyWhite
+    image: crushed_rock_0__ui
+    link_id: crushedrock
+  - widget_type: CodexLabelWithLargeIcon
+    text: 磷矿
+    style: BodyWhite
+    image: phosphorite_0__ui
+    link_id: phosphorite
+  - widget_type: CodexLabelWithLargeIcon
+    text: 粘土
+    style: BodyWhite
+    image: clay_0__ui
+    link_id: clay
+  - widget_type: CodexLabelWithLargeIcon
+    text: 精炼碳
+    style: BodyWhite
+    image: carbon_0__ui
+    link_id: refinedcarbon
+  - widget_type: CodexLabelWithLargeIcon
+    text: 精炼磷
+    style: BodyWhite
+    image: phosphorus_0__ui
+    link_id: phosphorus
+  - widget_type: CodexLabelWithLargeIcon
+    text: 绒犸兔碎糜
+    style: BodyWhite
+    image: bammoth_poop_0__ui
+    link_id: icebellypoop
+  - widget_type: CodexLabelWithLargeIcon
+    text: 肥料
+    style: BodyWhite
+    image: fertilizer_0__ui
+    link_id: fertilizer
+  - widget_type: CodexLabelWithLargeIcon
+    text: 花岗岩
+    style: BodyWhite
+    image: granite_0__ui
+    link_id: granite
+  - widget_type: CodexLabelWithLargeIcon
+    text: 菌泥
+    style: BodyWhite
+    image: slime_mold_0__ui
+    link_id: slimemold
+  - widget_type: CodexLabelWithLargeIcon
+    text: 蔗糖
+    style: BodyWhite
+    image: sucrose_0__ui
+    link_id: sucrose
+  - widget_type: CodexLabelWithLargeIcon
+    text: 藻类
+    style: BodyWhite
+    image: algae_0__ui
+    link_id: algae
+  - widget_type: CodexLabelWithLargeIcon
+    text: 贫铀
+    style: BodyWhite
+    image: depleted_uranium_0__ui
+    link_id: depleteduranium
+  - widget_type: CodexLabelWithLargeIcon
+    text: 遗传生物软泥
+    style: BodyWhite
+    image: algae_0__ui
+    link_id: creature
+  - widget_type: CodexLabelWithLargeIcon
+    text: 金
+    style: BodyWhite
+    image: gold_refined_0__ui
+    link_id: gold
+  - widget_type: CodexLabelWithLargeIcon
+    text: 金汞齐
+    style: BodyWhite
+    image: gold_amalgam_0__ui
+    link_id: goldamalgam
+  - widget_type: CodexLabelWithLargeIcon
+    text: 钢
+    style: BodyWhite
+    image: steel_0__ui
+    link_id: steel
+  - widget_type: CodexLabelWithLargeIcon
+    text: 钨
+    style: BodyWhite
+    image: tungsten_refined_0__ui
+    link_id: tungsten
+  - widget_type: CodexLabelWithLargeIcon
+    text: 钴
+    style: BodyWhite
+    image: cobalt_refined_0__ui
+    link_id: cobalt
+  - widget_type: CodexLabelWithLargeIcon
+    text: 钴矿
+    style: BodyWhite
+    image: cobalt_ore_0__ui
+    link_id: cobaltite
+  - widget_type: CodexLabelWithLargeIcon
+    text: 钻石
+    style: BodyWhite
+    image: diamond_0__ui
+    link_id: diamond
+  - widget_type: CodexLabelWithLargeIcon
+    text: 铀矿
+    style: BodyWhite
+    image: radium_0__ui
+    link_id: uraniumore
+  - widget_type: CodexLabelWithLargeIcon
+    text: 铁
+    style: BodyWhite
+    image: iron_refined_0__ui
+    link_id: iron
+  - widget_type: CodexLabelWithLargeIcon
+    text: 铁矿
+    style: BodyWhite
+    image: hematite_0__ui
+    link_id: ironore
+  - widget_type: CodexLabelWithLargeIcon
+    text: 铁锈
+    style: BodyWhite
+    image: iron_oxide_0__ui
+    link_id: rust
+  - widget_type: CodexLabelWithLargeIcon
+    text: 铅
+    style: BodyWhite
+    image: lead_0__ui
+    link_id: lead
+  - widget_type: CodexLabelWithLargeIcon
+    text: 铌
+    style: BodyWhite
+    image: niobium_0__ui
+    link_id: niobium
+  - widget_type: CodexLabelWithLargeIcon
+    text: 铜
+    style: BodyWhite
+    image: copper_refined_0__ui
+    link_id: copper
+  - widget_type: CodexLabelWithLargeIcon
+    text: 铜矿
+    style: BodyWhite
+    image: cuprite_0__ui
+    link_id: cuprite
+  - widget_type: CodexLabelWithLargeIcon
+    text: 铝
+    style: BodyWhite
+    image: aluminum_0__ui
+    link_id: aluminum
+  - widget_type: CodexLabelWithLargeIcon
+    text: 铝矿
+    style: BodyWhite
+    image: aluminum_ore_0__ui
+    link_id: aluminumore
+  - widget_type: CodexLabelWithLargeIcon
+    text: 铱
+    style: BodyWhite
+    image: iridium_0__ui
+    link_id: iridium
+  - widget_type: CodexLabelWithLargeIcon
+    text: 镁铁质岩
+    style: BodyWhite
+    image: igneous_rock_0__ui
+    link_id: maficrock
+  - widget_type: CodexLabelWithLargeIcon
+    text: 镍
+    style: BodyWhite
+    image: nickel_0__ui
+    link_id: nickel
+  - widget_type: CodexLabelWithLargeIcon
+    text: 镍矿
+    style: BodyWhite
+    image: nickel_ore_0__ui
+    link_id: nickelore
+  - widget_type: CodexLabelWithLargeIcon
+    text: 镭
+    style: BodyWhite
+    image: radium_0__ui
+    link_id: radium
+  - widget_type: CodexLabelWithLargeIcon
+    text: 陶瓷
+    style: BodyWhite
+    image: ceramic_0__ui
+    link_id: ceramic
+  - widget_type: CodexLabelWithLargeIcon
+    text: 隔热质
+    style: BodyWhite
+    image: super_insulator_0__ui
+    link_id: superinsulator
+  - widget_type: CodexLabelWithLargeIcon
+    text: 雪
+    style: BodyWhite
+    image: snow_0__ui
+    link_id: snow
+  - widget_type: CodexLabelWithLargeIcon
+    text: 页岩
+    style: BodyWhite
+    image: shale_0__ui
+    link_id: shale
+  - widget_type: CodexLabelWithLargeIcon
+    text: 黄铁矿
+    style: BodyWhite
+    image: fools_gold_0__ui
+    link_id: foolsgold
+  - widget_type: CodexLabelWithLargeIcon
+    text: 黑曜石
+    style: BodyWhite
+    image: obsidian_0__ui
+    link_id: obsidian
+  - widget_type: CodexLabelWithLargeIcon
+    text: 黑钨矿
+    style: BodyWhite
+    image: wolframite_0__ui
+    link_id: wolframite
+  layout: Grid
+- contents:
+  - widget_type: CodexSpacer
+  layout: Vertical

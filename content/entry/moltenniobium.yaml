@@ -1,0 +1,147 @@
+id: MOLTENNIOBIUM
+parent_id: ELEMENTSLIQUID
+name: 熔融铌
+disabled: False
+search_only: False
+icon_color: 5EFDADFF
+category: ELEMENTSLIQUID
+sort_string: 熔融铌
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="MOLTENNIOBIUM">熔融铌</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    color: 5EFDADFF
+    image: element_liquid
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: 5EFDADFF
+      text1: 熔融铌
+      text2: 1000克
+      link_id: moltenniobium
+    produce:
+    - image: element_gas
+      color: 5EFDADFF
+      text1: 气态铌
+      text2: 1000克
+      link_id: niobiumgas
+    fabricator:
+      image: crew_state_temp_up
+      text1: 4743.9ºC
+      tooltip: 温度高于4743.9ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: 5EFDADFF
+      text1: 熔融铌
+      text2: 1000克
+      link_id: moltenniobium
+    produce:
+    - image: niobium_0__ui
+      text1: 铌
+      text2: 1000克
+      link_id: niobium
+    fabricator:
+      image: crew_state_temp_down
+      text1: 2476.9ºC
+      tooltip: 温度低于2476.9ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换于
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: niobium_0__ui
+      text1: 铌
+      text2: 1000克
+      link_id: niobium
+    produce:
+    - image: element_liquid
+      color: 5EFDADFF
+      text1: 熔融铌
+      text2: 1000克
+      link_id: moltenniobium
+    fabricator:
+      image: crew_state_temp_up
+      text1: 2476.9ºC
+      tooltip: 温度高于2476.9ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: temp_conductor_0__ui
+      text1: 导热质
+      text2: 1000克
+      link_id: tempconductorsolid
+    produce:
+    - image: element_liquid
+      color: 5EFDADFF
+      text1: 熔融铌
+      text2: 50克
+      link_id: moltenniobium
+    - image: tungsten_refined_0__ui
+      text1: 钨
+      text2: 950克
+      link_id: tungsten
+    fabricator:
+      image: crew_state_temp_up
+      text1: 2676.9ºC
+      tooltip: 温度高于2676.9ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_gas
+      color: 5EFDADFF
+      text1: 气态铌
+      text2: 1000克
+      link_id: niobiumgas
+    produce:
+    - image: element_liquid
+      color: 5EFDADFF
+      text1: 熔融铌
+      text2: 1000克
+      link_id: moltenniobium
+    fabricator:
+      image: crew_state_temp_down
+      text1: 4743.9ºC
+      tooltip: 温度低于4743.9ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      (Nb) 熔融铌是一种被加热成<link="ELEMENTSLIQUID">液态</link>的稀有金属。
+
+
+      资源种类：<link="ELEMENTSLIQUID">液体</link>
+
+      冰点：2476.9ºC
+
+      沸点：4743.9ºC
+
+
+      比热容：0.265 (DTU/g)/ºC
+
+      热导率：54.000 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.49
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：<link="METAL">金属矿石</link>, <link="REFINEDMETAL">精炼金属</link>, <link="LIGHT">光源</link>, <link="ELEMENTSLIQUID">液体</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

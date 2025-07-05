@@ -1,0 +1,61 @@
+id: MEMORYIMPLANTATION
+name: 记忆机能障碍记录
+title: STRINGS.CODEX.A6_MEMORYIMPLANTATION.TITLE
+disabled: False
+search_only: False
+category: RESEARCHNOTES
+sort_string: 记忆机能障碍记录
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 记忆机能障碍记录
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：二
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+  lock_id: notes_memoryimplantation
+- contents:
+  - widget_type: CodexText
+    text: >-
+      [录音开始]
+
+
+      从传统角度来说，克隆会产生基因上与提供体相同但独立发展的实验体，形成一个具有自我特征的独一无二的存在。
+
+
+      相反，打印舱则试图打印精确的原子拷贝。理论上，所有神经通路应原封不动并与原始实验体完全相同。
+
+
+      考虑到这一点，记忆并未变成我们实验体的与生俱来之物，这真是非常奇妙，但是，截至目前为止，克隆的实验体在初次接触熟悉的刺激因素，如提供体的常用物品时，均未显示出任何认识的迹象。
+
+
+
+      参考实验7D。
+
+
+      参考实验7F。
+    style: Body
+  layout: Vertical
+  lock_id: notes_memoryimplantation
+- contents:
+  - widget_type: CodexText
+    text: >2-
+
+      记忆<i>肯定</i>是嵌入在我们实验体的物理脑谱图内。剩下的唯一问题就是如何激活它们。荷尔蒙？化学补充剂？情境诱发因素？
+
+
+      主管似乎急切地想解决这个问题，而我担心她甚至不惜避开研究开发过程的必要阶段。
+
+
+      在核心流程尽善尽美之前（现在还没有到达这个程度），我们不能迈入打印系统的最后完善阶段。
+
+
+      布鲁萨德博士，实验记录完成。
+
+
+      [录音结束]
+    style: Body
+  layout: Vertical
+  lock_id: notes_memoryimplantation

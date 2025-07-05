@@ -1,0 +1,72 @@
+id: NUCLEARREFINEMENT
+parent_id: TECH
+name: 辐射精炼
+disabled: False
+search_only: False
+category: TECH
+sort_string: 辐射精炼
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="NUCLEAR">辐射精炼</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 精炼铀并产生辐射。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="HIGHTEMPFORGING">超热锻造</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="RADIATIONPROTECTION">辐射防护</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="NUCLEARSTORAGE">辐射粒子控制</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: generatornuclear_0__ui
+  - widget_type: CodexText
+    text: <link="NUCLEARREACTOR">研究性反应堆</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: enrichmentcentrifuge_0__ui
+  - widget_type: CodexText
+    text: <link="URANIUMCENTRIFUGE">铀素离心机</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: radbolt_joint_plate_0__ui
+  - widget_type: CodexText
+    text: <link="HEPBRIDGETILE">辐射粒子接合板</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: electrobank_large_uranium_0__ui
+  - widget_type: CodexText
+    text: <style="KKeyword">原子能移动电源</style>模型
+    style: Body
+  layout: Horizontal

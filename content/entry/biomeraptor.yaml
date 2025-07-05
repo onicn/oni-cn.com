@@ -1,0 +1,121 @@
+id: BIOMERAPTOR
+parent_id: BIOMES
+name: 寒羽生态
+disabled: False
+search_only: False
+category: BIOMES
+sort_string: BIOMERAPTOR
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 寒羽生态
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 寒冷的<link="FEATHERFABRIC">寒羽</link>生态是巨大而不会飞的<link="RAPTORSPECIES">霸王鹦</link>的家园，它们可以修剪羽毛用于<link="CLOTHING">纺织生产</link>。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      <link="RAPTORSPECIES">霸王鹦</link>是一种以<link="CHAMELEONSPECIES">逸蜥</link>为主要猎物的食肉小动物。这两种小动物都可以作为<link="FOOD">食物</link>，但<link="RAPTORSPECIES">霸王鹦</link>的肉太韧了，没法生吃。
+
+
+      这种生态的植物包括偏爱<link="CHLORINEGAS">氯气</link>环境的巨大<link="DINOFERN">巨蕨</link>，能加工出<link="MILK">咸乳</link>的<link="DEWDRIPPERPLANT">露珠藤</link>，以及凉爽的<link="COLDBREATHER">冰息萝卜</link>。
+
+
+      在这种环境中工作与生活的复制人需要防护性<link="EQUIPMENT">装备</link>。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 元素
+    style: Subtitle
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 花岗岩
+    image: granite_0__ui
+    link_id: granite
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 深渊晶石
+    image: katairite_0__ui
+    link_id: katairite
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 磷矿
+    image: phosphorite_0__ui
+    link_id: phosphorite
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 浓盐冰
+    image: frozen_brine_0__ui
+    link_id: brine
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 液态氯
+    color: 3AC330FF
+    image: element_liquid
+    link_id: chlorine
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 火成岩
+    image: igneous_rock_0__ui
+    link_id: igneousrock
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 氧气
+    color: B7FFFFFF
+    image: element_gas
+    link_id: oxygen
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 漂白石
+    image: bleach_stone_0__ui
+    link_id: bleachstone
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 铁矿
+    image: hematite_0__ui
+    link_id: ironore
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 氯气
+    color: 04A778FF
+    image: element_gas
+    link_id: chlorinegas
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 植物
+    style: Subtitle
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 露珠藤
+    image: brackwood_0__ui
+    link_id: dewdripperplant
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 巨蕨
+    image: prehistoric_fern_0__ui
+    link_id: dinofern
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 冰息萝卜
+    image: coldbreather_0__ui
+    link_id: coldbreather
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 小动物
+    style: Subtitle
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 霸王鹦
+    image: raptor_0__ui
+    link_id: raptor
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 逸蜥
+    image: chameleo_0__ui
+    link_id: chameleon
+  layout: Vertical

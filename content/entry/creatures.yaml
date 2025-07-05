@@ -1,0 +1,138 @@
+id: CREATURES
+name: 小动物
+disabled: False
+search_only: False
+category: Root
+sort_string: 小动物
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="CREATURES">小动物</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexLabelWithLargeIcon
+    text: 生物指南
+    style: BodyWhite
+    image: codex_critter_emotions
+    link_id: creatures__guide
+  - widget_type: CodexLabelWithLargeIcon
+    text: 发光虫
+    style: BodyWhite
+    image: lightbug_0__ui
+    link_id: lightbugspecies
+  - widget_type: CodexLabelWithLargeIcon
+    text: 喷浮飞鱼
+    style: BodyWhite
+    image: puft_0__ui
+    link_id: puftspecies
+  - widget_type: CodexLabelWithLargeIcon
+    text: 好吃哈奇
+    style: BodyWhite
+    image: hatch_0__ui
+    link_id: hatchspecies
+  - widget_type: CodexLabelWithLargeIcon
+    text: 尖块兽
+    style: BodyWhite
+    image: stego_0__ui
+    link_id: stegospecies
+  - widget_type: CodexLabelWithLargeIcon
+    text: 帕库鱼
+    style: BodyWhite
+    image: pacu_0__ui
+    link_id: pacuspecies
+  - widget_type: CodexLabelWithLargeIcon
+    text: 异化虫
+    style: BodyWhite
+    image: critter_0__ui
+    link_id: divergentspecies
+  - widget_type: CodexLabelWithLargeIcon
+    text: 抛壳蟹
+    style: BodyWhite
+    image: pincher_0__ui
+    link_id: crabspecies
+  - widget_type: CodexLabelWithLargeIcon
+    text: 拟蛾
+    style: BodyWhite
+    image: pollinator_0__ui
+    link_id: butterflyspecies
+  - widget_type: CodexLabelWithLargeIcon
+    text: 树鼠
+    style: BodyWhite
+    image: squirrel_0__hug_ui
+    link_id: squirrelspecies
+  - widget_type: CodexLabelWithLargeIcon
+    text: 栓角海豹
+    style: BodyWhite
+    image: seal_0__ui
+    link_id: sealspecies
+  - widget_type: CodexLabelWithLargeIcon
+    text: 毛鳞壁虎
+    style: BodyWhite
+    image: drecko_0__fbr_ui
+    link_id: dreckospecies
+  - widget_type: CodexLabelWithLargeIcon
+    text: 浮油生物
+    style: BodyWhite
+    image: oilfloater_0__ui
+    link_id: oilfloaterspecies
+  - widget_type: CodexLabelWithLargeIcon
+    text: 狐鹿
+    style: BodyWhite
+    image: ice_floof_0__ui
+    link_id: deerspecies
+  - widget_type: CodexLabelWithLargeIcon
+    text: 电弧蛞蝓
+    style: BodyWhite
+    image: caterpillar_0__wtr_ui
+    link_id: staterpillarspecies
+  - widget_type: CodexLabelWithLargeIcon
+    text: 疫病章鱼
+    style: BodyWhite
+    image: glom_0__ui
+    link_id: glomspecies
+  - widget_type: CodexLabelWithLargeIcon
+    text: 绒犸兔
+    style: BodyWhite
+    image: ice_belly_0__king_ui
+    link_id: bellyspecies
+  - widget_type: CodexLabelWithLargeIcon
+    text: 蚋虱
+    style: BodyWhite
+    image: mosquito_0__ui
+    link_id: mosquitospecies
+  - widget_type: CodexLabelWithLargeIcon
+    text: 辐射蜂
+    style: BodyWhite
+    image: bee_0__ui
+    link_id: beetaspecies
+  - widget_type: CodexLabelWithLargeIcon
+    text: 逸蜥
+    style: BodyWhite
+    image: chameleo_0__ui
+    link_id: chameleonspecies
+  - widget_type: CodexLabelWithLargeIcon
+    text: 释气海牛
+    style: BodyWhite
+    image: gassy_moo_0__ui
+    link_id: moospecies
+  - widget_type: CodexLabelWithLargeIcon
+    text: 锹环田鼠
+    style: BodyWhite
+    image: driller_0__ui
+    link_id: molespecies
+  - widget_type: CodexLabelWithLargeIcon
+    text: 霸王鹦
+    style: BodyWhite
+    image: raptor_0__ui
+    link_id: raptorspecies
+  - widget_type: CodexLabelWithLargeIcon
+    text: 颚鱼
+    style: BodyWhite
+    image: paculacanth_0__ui
+    link_id: prehistoricpacuspecies
+  layout: Grid
+- contents:
+  - widget_type: CodexSpacer
+  layout: Vertical

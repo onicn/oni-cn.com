@@ -1,0 +1,1152 @@
+id: WATER
+parent_id: ELEMENTSLIQUID
+name: 水
+disabled: False
+search_only: False
+icon_color: 0063FFFF
+category: ELEMENTSLIQUID
+sort_string: 水
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="WATER">水</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    color: 0063FFFF
+    image: element_liquid
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 1000克
+      link_id: water
+    produce:
+    - image: element_gas
+      color: 85C9E3FF
+      text1: 蒸汽
+      text2: 1000克
+      link_id: steam
+    fabricator:
+      image: crew_state_temp_up
+      text1: 99.4ºC
+      tooltip: 温度高于99.4ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 1000克
+      link_id: water
+    produce:
+    - image: ice_0__ui
+      text1: 冰
+      text2: 1000克
+      link_id: ice
+    fabricator:
+      image: crew_state_temp_down
+      text1: -0.6ºC
+      tooltip: 温度低于-0.6ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换于
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: crushed_ice_0__ui
+      text1: 碎冰
+      text2: 1000克
+      link_id: crushedice
+    produce:
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 1000克
+      link_id: water
+    fabricator:
+      image: crew_state_temp_up
+      text1: -0.6ºC
+      tooltip: 温度高于-0.6ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: snow_0__ui
+      text1: 雪
+      text2: 1000克
+      link_id: snow
+    produce:
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 1000克
+      link_id: water
+    fabricator:
+      image: crew_state_temp_up
+      text1: -0.6ºC
+      tooltip: 温度高于-0.6ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: ice_0__ui
+      text1: 冰
+      text2: 1000克
+      link_id: ice
+    produce:
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 1000克
+      link_id: water
+    fabricator:
+      image: crew_state_temp_up
+      text1: -0.6ºC
+      tooltip: 温度高于-0.6ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: snow_0__ui
+      text1: 紧压雪
+      text2: 1000克
+      link_id: snow
+    produce:
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 1000克
+      link_id: water
+    fabricator:
+      image: crew_state_temp_up
+      text1: -0.6ºC
+      tooltip: 温度高于-0.6ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_gas
+      color: 85C9E3FF
+      text1: 蒸汽
+      text2: 1000克
+      link_id: steam
+    produce:
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 1000克
+      link_id: water
+    fabricator:
+      image: crew_state_temp_down
+      text1: 99.4ºC
+      tooltip: 温度低于99.4ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 盐水
+    require:
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 93千克
+      link_id: water
+    - image: salt_0__ui
+      text1: 盐
+      text2: 7千克
+      link_id: salt
+    produce:
+    - image: element_liquid
+      color: CED2ECFF
+      text1: 盐水
+      text2: 100千克
+      link_id: saltwater
+    fabricator:
+      image: chemistry_lab_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 乳化器
+      text2: 40秒
+      link_id: chemicalrefinery
+  - widget_type: CodexRecipePanel
+    text: 软泥膏
+    require:
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 75千克
+      link_id: dirt
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 75千克
+      link_id: water
+    produce:
+    - image: mushbar_0__ui
+      text1: 软泥膏
+      text2: 800千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: mushbar
+    fabricator:
+      image: microbemusher_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 食物压制器
+      text2: 40秒
+      link_id: microbemusher
+  - widget_type: CodexRecipePanel
+    text: 米虱糕
+    require:
+    - image: meallicegrain_0__ui
+      text1: 米虱
+      text2: 1,200千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: basicplantfood
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 50千克
+      link_id: water
+    produce:
+    - image: liceloaf_0__ui
+      text1: 米虱糕
+      text2: 1,700千卡
+      tooltip: 品质：糟糕 [0]
+      link_id: basicplantbar
+    fabricator:
+      image: microbemusher_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 食物压制器
+      text2: 50秒
+      link_id: microbemusher
+  - widget_type: CodexRecipePanel
+    text: 豆腐
+    require:
+    - image: seed_beanplant_0__ui
+      text1: 小吃豆
+      text2: 6单位
+      link_id: bean
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 50千克
+      link_id: water
+    produce:
+    - image: loafu_0__ui
+      text1: 豆腐
+      text2: 3,600千卡
+      tooltip: 品质：标准 [+2]
+      link_id: tofu
+    fabricator:
+      image: microbemusher_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 食物压制器
+      text2: 50秒
+      link_id: microbemusher
+  - widget_type: CodexRecipePanel
+    text: 咸乳
+    require:
+    - image: seed_coldwheat_0__ui
+      text1: 冰霜麦粒
+      text2: 10单位
+      link_id: coldwheat
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 15千克
+      link_id: water
+    produce:
+    - image: element_liquid
+      color: CCEEE8FF
+      text1: 咸乳
+      text2: 20千克
+      link_id: milk
+    fabricator:
+      image: milkpress_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 植物粉碎机
+      text2: 40秒
+      link_id: milkpress
+  - widget_type: CodexRecipePanel
+    text: 咸乳
+    require:
+    - image: spicenut_0__ui
+      text1: 火椒粒
+      text2: 3000克
+      link_id: spicenut
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 17千克
+      link_id: water
+    produce:
+    - image: element_liquid
+      color: CCEEE8FF
+      text1: 咸乳
+      text2: 20千克
+      link_id: milk
+    fabricator:
+      image: milkpress_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 植物粉碎机
+      text2: 40秒
+      link_id: milkpress
+  - widget_type: CodexRecipePanel
+    text: 咸乳
+    require:
+    - image: seed_beanplant_0__ui
+      text1: 小吃豆
+      text2: 2单位
+      link_id: bean
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 18千克
+      link_id: water
+    produce:
+    - image: element_liquid
+      color: CCEEE8FF
+      text1: 咸乳
+      text2: 20千克
+      link_id: milk
+    fabricator:
+      image: milkpress_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 植物粉碎机
+      text2: 40秒
+      link_id: milkpress
+  - widget_type: CodexRecipePanel
+    text: 植物润滑油
+    require:
+    - image: kelp_leaf_0__ui
+      text1: 海梳蕨叶
+      text2: 25千克
+      link_id: kelp
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 75千克
+      link_id: water
+    produce:
+    - image: element_liquid
+      color: 98A82FFF
+      text1: 植物润滑油
+      text2: 100千克
+      link_id: phytooil
+    fabricator:
+      image: milkpress_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 植物粉碎机
+      text2: 40秒
+      link_id: milkpress
+  - widget_type: CodexRecipePanel
+    text: 动物油脂齿轮膏
+    require:
+    - image: tallow_0__ui
+      text1: 动物油脂
+      text2: 10千克
+      link_id: tallow
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 70千克
+      link_id: water
+    produce:
+    - image: lubricant_applicator_tallow_0__ui
+      text1: 动物油脂齿轮膏
+      text2: 1单位
+      link_id: lubricationstick
+    fabricator:
+      image: apothecary_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 配药桌
+      text2: 100秒
+      link_id: apothecary
+  - widget_type: CodexRecipePanel
+    text: 齿轮膏
+    require:
+    - image: element_liquid
+      color: 512360FF
+      text1: 粘渣油
+      text2: 80千克
+      link_id: liquidgunk
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 200千克
+      link_id: water
+    produce:
+    - image: lubricant_applicator_0__ui
+      text1: 齿轮膏
+      text2: 1单位
+      link_id: lubricationstick
+    - image: element_liquid
+      color: 474506FF
+      text1: 污染水
+      text2: 200千克
+      link_id: dirtywater
+    fabricator:
+      image: apothecary_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 配药桌
+      text2: 100秒
+      link_id: apothecary
+  - widget_type: CodexRecipePanel
+    text: 治疗药片
+    require:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 1000克
+      link_id: carbon
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 1000克
+      link_id: water
+    produce:
+    - image: pill_foodpoisoning_0__ui
+      text1: 治疗药片
+      text2: 1单位
+      link_id: basiccure
+    fabricator:
+      image: apothecary_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 配药桌
+      text2: 50秒
+      link_id: apothecary
+  - widget_type: CodexConversionPanel
+    require:
+    - image: algae_0__ui
+      text1: 藻类
+      text2: 18千克/周期
+      link_id: algae
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 180千克/周期
+      link_id: water
+    - image: element_gas
+      color: 000000FF
+      text1: 二氧化碳
+      text2: 200克/周期
+      link_id: carbondioxide
+    produce:
+    - image: element_gas
+      color: B7FFFFFF
+      text1: 氧气
+      text2: 24千克/周期
+      link_id: oxygen
+    - image: element_liquid
+      color: 474506FF
+      text1: 污染水
+      text2: 174.2千克/周期
+      link_id: dirtywater
+    fabricator:
+      image: algaefarm_0__ui
+      text1: 藻类箱
+      link_id: ALGAEHABITAT
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 600千克/周期
+      link_id: water
+    - image: element_gas
+      color: 000000FF
+      text1: 二氧化碳
+      text2: 180千克/周期
+      link_id: carbondioxide
+    produce:
+    - image: element_liquid
+      color: 474506FF
+      text1: 污染水
+      text2: 600千克/周期
+      link_id: dirtywater
+    fabricator:
+      image: co2scrubber_0__ui
+      text1: 碳素脱离器
+      link_id: CO2SCRUBBER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 600千克/周期
+      link_id: water
+    produce:
+    - image: element_gas
+      color: B7FFFFFF
+      text1: 氧气
+      text2: 532.8千克/周期
+      link_id: oxygen
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 67.2千克/周期
+      link_id: hydrogen
+    fabricator:
+      image: electrolyzer_0__ui
+      text1: 电解器
+      link_id: ELECTROLYZER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 5千克
+      link_id: water
+    produce:
+    - image: element_liquid
+      color: 474506FF
+      text1: 污染水
+      text2: 11.7千克
+      link_id: dirtywater
+    fabricator:
+      image: toiletflush_0__ui
+      text1: 抽水马桶
+      link_id: FLUSHTOILET
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 2500克
+      link_id: water
+    produce:
+    - image: element_liquid
+      color: 474506FF
+      text1: 污染水
+      text2: 9.2千克
+      link_id: dirtywater
+    fabricator:
+      image: toilet_wall_0__ui
+      text1: 墙排马桶
+      link_id: WALLTOILET
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 600千克/周期
+      link_id: water
+    produce:
+    - image: element_liquid
+      color: 474506FF
+      text1: 污染水
+      text2: 600千克/周期
+      link_id: dirtywater
+    fabricator:
+      image: shower_0__ui
+      text1: 淋浴隔间
+      link_id: SHOWER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 5千克
+      link_id: water
+    produce:
+    - image: element_liquid
+      color: 474506FF
+      text1: 污染水
+      text2: 5千克
+      link_id: dirtywater
+    fabricator:
+      image: wash_basin_0__ui
+      text1: 洗手盆
+      link_id: WASHBASIN
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 5千克
+      link_id: water
+    produce:
+    - image: element_liquid
+      color: 474506FF
+      text1: 污染水
+      text2: 5千克
+      link_id: dirtywater
+    fabricator:
+      image: wash_sink_0__ui
+      text1: 洗手池
+      link_id: WASHSINK
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 100千克
+      link_id: water
+    produce:
+    - image: element_liquid
+      color: 474506FF
+      text1: 污染水
+      text2: 100千克
+      link_id: dirtywater
+    fabricator:
+      image: decontamination_shower_0__ui
+      text1: 除污淋浴隔间
+      link_id: DECONTAMINATIONSHOWER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 500千克/周期
+      link_id: water
+    produce: []
+    fabricator:
+      image: research_center2_0__ui
+      text1: 超级计算机
+      link_id: ADVANCEDRESEARCHCENTER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 600千克/周期
+      link_id: water
+    produce:
+    - image: element_liquid
+      color: 301265FF
+      text1: 原油
+      text2: 2000千克/周期
+      link_id: crudeoil
+    fabricator:
+      image: geyser_oil_cap_0__ui
+      text1: 油井
+      link_id: OILWELLCAP
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 20千克/周期
+      link_id: water
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 5千克/周期
+      link_id: dirt
+    produce:
+    - image: seed_coldwheat_0__ui
+      text1: 冰霜麦粒
+      text2: 1单位/周期
+      link_id: coldwheat
+    fabricator:
+      image: coldwheat_0__ui
+      text1: 冰霜小麦
+      link_id: COLDWHEAT
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 20千克/周期
+      link_id: water
+    produce:
+    - image: bristleberry_0__ui
+      text1: 毛刺浆果
+      text2: 267千卡/周期
+      tooltip: 品质：糟糕 [0]
+      link_id: pricklefruit
+    fabricator:
+      image: bristleblossom_0__ui
+      text1: 毛刺花
+      link_id: PRICKLEFLOWER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_gas
+      color: 000000FF
+      text1: 二氧化碳
+      text2: 375克/周期
+      link_id: carbondioxide
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 19千克/周期
+      link_id: water
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 4000克/周期
+      link_id: dirt
+    produce:
+    - image: element_gas
+      color: B7FFFFFF
+      text1: 氧气
+      text2: 18.8千克/周期
+      link_id: oxygen
+    fabricator:
+      image: oxy_fern_0__ui
+      text1: 氧齿蕨
+      link_id: OXYFERN
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 90千克/周期
+      link_id: water
+    produce: []
+    fabricator:
+      image: vine_mother_0__ui
+      text1: 漫殖藤主干
+      link_id: VINEMOTHER
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 脱水机
+    require:
+    - image: zestysalsa_0__ui
+      text1: 浆果酿
+      text2: 6,000千卡
+      tooltip: 品质：优秀 [+4]
+      link_id: salsa
+    - image: polypropylene_0__ui
+      text1: 塑料
+      text2: 12千克
+      link_id: polypropylene
+    produce:
+    - image: dehydrated_food_salsa_0__ui
+      text1: 干燥的浆果酿
+      text2: 6单位
+      link_id: 干燥的浆果酿
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 6千克
+      link_id: water
+    fabricator:
+      image: dehydrator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 脱水机
+      text2: 250秒
+      link_id: fooddehydrator
+  - widget_type: CodexRecipePanel
+    text: 脱水机
+    require:
+    - image: mushroom_wrap_0__ui
+      text1: 蘑菇卷
+      text2: 6,000千卡
+      tooltip: 品质：优秀 [+4]
+      link_id: mushroomwrap
+    - image: polypropylene_0__ui
+      text1: 塑料
+      text2: 12千克
+      link_id: polypropylene
+    produce:
+    - image: dehydrated_food_mushroom_wrap_0__ui
+      text1: 干燥的蘑菇卷
+      text2: 6单位
+      link_id: 干燥的蘑菇卷
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 6千克
+      link_id: water
+    fabricator:
+      image: dehydrator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 脱水机
+      text2: 250秒
+      link_id: fooddehydrator
+  - widget_type: CodexRecipePanel
+    text: 脱水机
+    require:
+    - image: surfnturf_0__ui
+      text1: 海陆双拼
+      text2: 6,000千卡
+      tooltip: 品质：优秀 [+4]
+      link_id: surfandturf
+    - image: polypropylene_0__ui
+      text1: 塑料
+      text2: 12千克
+      link_id: polypropylene
+    produce:
+    - image: dehydrated_food_surf_and_turf_0__ui
+      text1: 干燥的海陆双拼
+      text2: 6单位
+      link_id: 干燥的海陆双拼
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 6千克
+      link_id: water
+    fabricator:
+      image: dehydrator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 脱水机
+      text2: 250秒
+      link_id: fooddehydrator
+  - widget_type: CodexRecipePanel
+    text: 脱水机
+    require:
+    - image: pepperbread_0__ui
+      text1: 火椒面包
+      text2: 6,000千卡
+      tooltip: 品质：杰出 [+5]
+      link_id: spicebread
+    - image: polypropylene_0__ui
+      text1: 塑料
+      text2: 12千克
+      link_id: polypropylene
+    produce:
+    - image: dehydrated_food_spicebread_0__ui
+      text1: 干燥的火椒面包
+      text2: 6单位
+      link_id: 干燥的火椒面包
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 6千克
+      link_id: water
+    fabricator:
+      image: dehydrator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 脱水机
+      text2: 250秒
+      link_id: fooddehydrator
+  - widget_type: CodexRecipePanel
+    text: 脱水机
+    require:
+    - image: quiche_0__ui
+      text1: 蘑菇乳蛋饼
+      text2: 6,000千卡
+      tooltip: 品质：杰出 [+5]
+      link_id: quiche
+    - image: polypropylene_0__ui
+      text1: 塑料
+      text2: 12千克
+      link_id: polypropylene
+    produce:
+    - image: dehydrated_food_quiche_0__ui
+      text1: 干燥的蘑菇乳蛋饼
+      text2: 6单位
+      link_id: 干燥的蘑菇乳蛋饼
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 6千克
+      link_id: water
+    fabricator:
+      image: dehydrator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 脱水机
+      text2: 250秒
+      link_id: fooddehydrator
+  - widget_type: CodexRecipePanel
+    text: 脱水机
+    require:
+    - image: curried_beans_0__ui
+      text1: 咖喱豆
+      text2: 6,000千卡
+      tooltip: 品质：优秀 [+4]
+      link_id: curry
+    - image: polypropylene_0__ui
+      text1: 塑料
+      text2: 12千克
+      link_id: polypropylene
+    produce:
+    - image: dehydrated_food_curry_0__ui
+      text1: 干燥的咖喱豆
+      text2: 6单位
+      link_id: 干燥的咖喱豆
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 6千克
+      link_id: water
+    fabricator:
+      image: dehydrator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 脱水机
+      text2: 250秒
+      link_id: fooddehydrator
+  - widget_type: CodexRecipePanel
+    text: 脱水机
+    require:
+    - image: spicey_tofu_0__ui
+      text1: 麻婆豆腐
+      text2: 6,000千卡
+      tooltip: 品质：杰出 [+5]
+      link_id: spicytofu
+    - image: polypropylene_0__ui
+      text1: 塑料
+      text2: 12千克
+      link_id: polypropylene
+    produce:
+    - image: dehydrated_food_spicy_tofu_0__ui
+      text1: 干燥的麻婆豆腐
+      text2: 6单位
+      link_id: 干燥的麻婆豆腐
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 6千克
+      link_id: water
+    fabricator:
+      image: dehydrator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 脱水机
+      text2: 250秒
+      link_id: fooddehydrator
+  - widget_type: CodexRecipePanel
+    text: 脱水机
+    require:
+    - image: frost_burger_0__ui
+      text1: 冰霜汉堡
+      text2: 6,000千卡
+      tooltip: 品质：极佳 [+6]
+      link_id: burger
+    - image: polypropylene_0__ui
+      text1: 塑料
+      text2: 12千克
+      link_id: polypropylene
+    produce:
+    - image: dehydrated_food_burger_0__ui
+      text1: 干燥的冰霜汉堡
+      text2: 6单位
+      link_id: 干燥的冰霜汉堡
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 6千克
+      link_id: water
+    fabricator:
+      image: dehydrator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 脱水机
+      text2: 250秒
+      link_id: fooddehydrator
+  - widget_type: CodexRecipePanel
+    text: 脱水机
+    require:
+    - image: wormwood_berry_pie_0__ui
+      text1: 混合浆果派
+      text2: 6,000千卡
+      tooltip: 品质：杰出 [+5]
+      link_id: berrypie
+    - image: polypropylene_0__ui
+      text1: 塑料
+      text2: 12千克
+      link_id: polypropylene
+    produce:
+    - image: dehydrated_food_berry_pie_0__ui
+      text1: 干燥的浆果派
+      text2: 6单位
+      link_id: 干燥的浆果派
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 6千克
+      link_id: water
+    fabricator:
+      image: dehydrator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 脱水机
+      text2: 250秒
+      link_id: fooddehydrator
+  - widget_type: CodexRecipePanel
+    text: 泥浆分离器
+    require:
+    - image: sludge_0__ui
+      text1: 泥巴
+      text2: 150千克
+      link_id: mud
+    produce:
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 60千克
+      link_id: dirt
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 90千克
+      link_id: water
+    fabricator:
+      image: sludge_press_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 泥浆分离器
+      text2: 20秒
+      link_id: sludgepress
+  - widget_type: CodexConversionPanel
+    require:
+    - image: unknown
+      color: 7F7F7FFF
+      text1: 过滤介质
+      text2: 600千克/周期
+      link_id: filter
+    - image: element_liquid
+      color: 474506FF
+      text1: 污染水
+      text2: 3000千克/周期
+      link_id: dirtywater
+    produce:
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 3000千克/周期
+      link_id: water
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 120千克/周期
+      link_id: toxicsand
+    fabricator:
+      image: waterpurifier_0__ui
+      text1: 净水器
+      link_id: WATERPURIFIER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: CED2ECFF
+      text1: 盐水
+      text2: 3000千克/周期
+      link_id: saltwater
+    - image: element_liquid
+      color: ADE9E5FF
+      text1: 浓盐水
+      text2: 3000千克/周期
+      link_id: brine
+    produce:
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 2790千克/周期
+      link_id: water
+    - image: salt_0__ui
+      text1: 盐
+      text2: 210千克/周期
+      link_id: salt
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 2100千克/周期
+      link_id: water
+    - image: salt_0__ui
+      text1: 盐
+      text2: 900千克/周期
+      link_id: salt
+    fabricator:
+      image: desalinator_0__ui
+      text1: 脱盐器
+      link_id: DESALINATOR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: CED2ECFF
+      text1: 盐水
+      text2: 3000千克/周期
+      link_id: saltwater
+    - image: element_liquid
+      color: ADE9E5FF
+      text1: 浓盐水
+      text2: 3000千克/周期
+      link_id: brine
+    produce:
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 2790千克/周期
+      link_id: water
+    - image: salt_0__ui
+      text1: 盐
+      text2: 210千克/周期
+      link_id: salt
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 2100千克/周期
+      link_id: water
+    - image: salt_0__ui
+      text1: 盐
+      text2: 900千克/周期
+      link_id: salt
+    fabricator:
+      image: desalinator_0__ui
+      text1: 脱盐器
+      link_id: DESALINATOR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_gas
+      color: B7FFFFFF
+      text1: 氧气
+      text2: 5千克/周期
+      link_id: oxygen
+    - image: element_liquid
+      color: 474506FF
+      text1: 污染水
+      text2: 65千克/周期
+      link_id: dirtywater
+    - image: sand_0__ui
+      text1: 沙子
+      text2: 5千克/周期
+      link_id: sand
+    produce:
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 35千克/周期
+      link_id: water
+    fabricator:
+      image: cactus_0__ui
+      text1: 仙水掌
+      link_id: FILTERPLANT
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: 474506FF
+      text1: 污染水
+      text2: 120千克/周期
+      link_id: dirtywater
+    produce:
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 120千克/周期
+      link_id: water
+    fabricator:
+      image: pacu_0__glp_ui
+      text1: 大嘴鱼
+      link_id: PACUCLEANER
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      (H<sub>2</sub>O) 干净的<link="WATER">水</link>，适合饮用。
+
+
+      资源种类：<link="ELEMENTSLIQUID">液体</link>
+
+      冰点：-0.6ºC
+
+      沸点：99.4ºC
+
+
+      比热容：4.179 (DTU/g)/ºC
+
+      热导率：0.609 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.8
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：水基物, <link="ELEMENTSLIQUID">液体</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

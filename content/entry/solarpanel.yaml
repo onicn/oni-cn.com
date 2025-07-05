@@ -1,0 +1,81 @@
+id: SOLARPANEL
+parent_id: BUILDCATEGORYPOWER
+name: 太阳能板
+disabled: False
+search_only: False
+category: BUILDCATEGORYPOWER
+sort_string: 太阳能板
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="SOLARPANEL">太阳能板</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 可再生能源
+    style: Body
+    image: research_type_alpha_icon
+    link_id: renewableenergy
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: solar_panel_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      将<link="LIGHT">阳光</link>转化为<link="POWER">电力</link>。
+
+
+      必须暴露在太空中。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：7格宽x3格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：120秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="GLASS">玻璃</link>200千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="POWER">电力</link>：+380瓦'
+    tooltip: 为相连的<style="KKeyword">电路</style>产生<style="produced">380瓦</style>电力
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    过热<link="HEAT">温度</link>：75ºC'
+    tooltip: 达到<b>75ºC</b>时开始过热
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：-15（范围：3格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>3</b>格内降低<b><b>-15</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>类别</b>
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    <link="REQUIREMENTCLASSINDUSTRIALMACHINERY">工业机械</link>'
+    style: Body
+  - widget_type: CodexText
+    text: '    <link="REQUIREMENTCLASSPOWERBUILDING">电力建筑</link>'
+    style: Body
+  - widget_type: CodexText
+    text: '    <link="REQUIREMENTCLASSGENERATORTYPE">发电机</link>'
+    style: Body
+  - widget_type: CodexText
+    text: '    <link="REQUIREMENTCLASSGENERATORTYPE">重型发电机</link>'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>太阳能板可以将高强度阳光转化为可用的电力并且不产生任何废物。</i>
+    style: Body
+  layout: Vertical

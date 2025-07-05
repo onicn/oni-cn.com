@@ -1,0 +1,125 @@
+id: MOLTENSALT
+parent_id: ELEMENTSLIQUID
+name: 熔融盐
+disabled: False
+search_only: False
+icon_color: F58970FF
+category: ELEMENTSLIQUID
+sort_string: 熔融盐
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="MOLTENSALT">熔融盐</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    color: F58970FF
+    image: element_liquid
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: F58970FF
+      text1: 熔融盐
+      text2: 1000克
+      link_id: moltensalt
+    produce:
+    - image: element_gas
+      text1: 气态盐
+      text2: 1000克
+      link_id: saltgas
+    fabricator:
+      image: crew_state_temp_up
+      text1: 1464.9ºC
+      tooltip: 温度高于1464.9ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: F58970FF
+      text1: 熔融盐
+      text2: 1000克
+      link_id: moltensalt
+    produce:
+    - image: salt_0__ui
+      text1: 盐
+      text2: 1000克
+      link_id: salt
+    fabricator:
+      image: crew_state_temp_down
+      text1: 799.9ºC
+      tooltip: 温度低于799.9ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换于
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: salt_0__ui
+      text1: 盐
+      text2: 1000克
+      link_id: salt
+    produce:
+    - image: element_liquid
+      color: F58970FF
+      text1: 熔融盐
+      text2: 1000克
+      link_id: moltensalt
+    fabricator:
+      image: crew_state_temp_up
+      text1: 799.9ºC
+      tooltip: 温度高于799.9ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_gas
+      text1: 气态盐
+      text2: 1000克
+      link_id: saltgas
+    produce:
+    - image: element_liquid
+      color: F58970FF
+      text1: 熔融盐
+      text2: 1000克
+      link_id: moltensalt
+    fabricator:
+      image: crew_state_temp_down
+      text1: 1464.9ºC
+      tooltip: 温度低于1464.9ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      (NaCl) 熔融盐是一种被加热成<link="ELEMENTSLIQUID">液态</link>的可食用化合物。
+
+
+      资源种类：<link="ELEMENTSLIQUID">液体</link>
+
+      冰点：799.9ºC
+
+      沸点：1464.9ºC
+
+
+      比热容：0.700 (DTU/g)/ºC
+
+      热导率：0.444 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.75
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：<link="ELEMENTSLIQUID">液体</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

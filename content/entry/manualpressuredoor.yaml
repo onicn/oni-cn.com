@@ -1,0 +1,61 @@
+id: MANUALPRESSUREDOOR
+parent_id: BUILDCATEGORYBASE
+name: 手动气闸
+disabled: False
+search_only: False
+category: BUILDCATEGORYBASE
+sort_string: 手动气闸
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="MANUALPRESSUREDOOR">手动气闸</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 气压管理
+    style: Body
+    image: research_type_alpha_icon
+    link_id: pressuremanagement
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: door_manual_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      阻挡<link="ELEMENTSLIQUID">液体</link>和<link="ELEMENTSGAS">气体</link>流动，维持各区域间的压力。
+
+
+      野生<link="CREATURES">小动物</link>无法通过门。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：1格宽x2格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：60秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="METAL">金属矿石</link>200千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    复制人通行权限'
+    tooltip: 设置允许或限制复制人通过门。
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：-15（范围：3格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>3</b>格内降低<b><b>-15</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>气闸可以隔绝危险区域并防止气体渗入殖民地。</i>
+    style: Body
+  layout: Vertical

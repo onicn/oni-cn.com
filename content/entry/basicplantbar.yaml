@@ -1,0 +1,111 @@
+id: BASICPLANTBAR
+parent_id: FOOD
+name: 米虱糕
+disabled: False
+search_only: False
+category: FOOD
+sort_string: 米虱糕
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="BASICPLANTBAR">米虱糕</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: liceloaf_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 不再蠕动的密实硬糕，由<link="BASICPLANTFOOD">米虱</link>压制而成。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 品质：糟糕 [0]
+    style: Body
+  - widget_type: CodexText
+    text: 卡路里：1,700千卡
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      冷藏温度：4ºC
+
+      深度冷冻温度：-18ºC
+
+      腐烂时间：8.0周期
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: liceloaf_0__ui
+      text1: 米虱糕
+      text2: 700千卡/周期
+      tooltip: 品质：糟糕 [0]
+      link_id: basicplantbar
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 308.8克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__ui
+      text1: 好吃哈奇
+      link_id: HATCH
+  - widget_type: CodexConversionPanel
+    require:
+    - image: liceloaf_0__ui
+      text1: 米虱糕
+      text2: 700千卡/周期
+      tooltip: 品质：糟糕 [0]
+      link_id: basicplantbar
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 411.8克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__veg_ui
+      text1: 草质哈奇
+      link_id: HATCHVEGGIE
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 食物压制器
+    require:
+    - image: meallicegrain_0__ui
+      text1: 米虱
+      text2: 1,200千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: basicplantfood
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 50千克
+      link_id: water
+    produce:
+    - image: liceloaf_0__ui
+      text1: 米虱糕
+      text2: 1,700千卡
+      tooltip: 品质：糟糕 [0]
+      link_id: basicplantbar
+    fabricator:
+      image: microbemusher_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 食物压制器
+      text2: 50秒
+      link_id: microbemusher
+  layout: Vertical

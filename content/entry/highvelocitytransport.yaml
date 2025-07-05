@@ -1,0 +1,52 @@
+id: HIGHVELOCITYTRANSPORT
+parent_id: TECH
+name: 高速运输
+disabled: False
+search_only: False
+category: TECH
+sort_string: 高速运输
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="HIGHVELOCITY">高速运输</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 把东西投向太空。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="SOLIDSPACE">固体控制</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: rail_gun_0__ui
+  - widget_type: CodexText
+    text: <link="RAILGUN">星际发射器</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: landing_beacon_0__ui
+  - widget_type: CodexText
+    text: <link="LANDINGBEACON">定位信标</link>
+    style: Body
+  layout: Horizontal

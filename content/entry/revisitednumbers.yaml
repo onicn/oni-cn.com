@@ -1,0 +1,86 @@
+id: REVISITEDNUMBERS
+name: 重新审视数字
+title: STRINGS.CODEX.B4_REVISITEDNUMBERS.TITLE
+disabled: False
+search_only: False
+category: JOURNALS
+sort_string: 重新审视数字
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 重新审视数字
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：三
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+  lock_id: journal_revisitednumbers
+- contents:
+  - widget_type: CodexText
+    text: >
+      <smallcaps>[声纹识别系统初始化完成]
+
+      [识别编号：A001、A435]</smallcaps>
+
+
+      [录音开始]
+
+
+      主管：不可接受。
+
+
+      琼斯：这些数字不是我弄出来的，主管，我只是告诉你而已。
+
+
+      主管：在之前的电子邮件中，你说这个问题可以用舱来解决。
+
+
+      琼斯：没错，当时说的是重量问题，它确实已经解决了。现在我们的问题是，这个大东西每打印一个殖民者，就会消耗大量的能量。
+
+
+      主管：那么你认为我们要如何达到这些目标量？化石燃料已经耗尽，核能禁用，而太阳能在这种烟雾缭绕的环境中几乎是不可能的。
+
+
+      琼斯：我不知道。这应该是研究人员的工作，我只是一个处理数字的。不过你们应该避免使用化石燃料和核能。如果你要在火箭中装载几吨燃料，那我们就又回到了最初的重量问题上。应该有比这更好的办法。
+
+
+      主管：谢谢你，琼斯博士，你可以走了。
+
+
+      [录音结束]
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: journal_revisitednumbers
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <smallcaps>[声纹识别系统初始化完成]
+
+      [识别编号：A001、B111]</smallcaps>
+
+
+      [录音开始]
+
+
+      杰姬：琼斯博士预计，传统燃料不足以让舱飞行。
+
+
+      奥莉维亚：我们需要调整它的规格，尽可能使用更轻的材料，减轻它的重量，在整个项目中进行更广泛的优化。
+
+
+      杰姬：我们已经别无选择了。
+
+
+      奥莉维亚：不，绝对不行。你需要我，于是我-我回来了，但如果你打算恢复我们的研究的话——
+
+
+      杰姬：无论如何，这个世界注定要这样，奥莉维亚。我们需要使用我们获得的优势……想想看吧！要是我们在舱中运用[受屏蔽]技术，不仅能修正舱的飞行问题，而且还能让它运行数千年，甚至更久。
+
+
+      [录音结束]
+    style: Body
+  layout: Vertical
+  lock_id: journal_revisitednumbers2

@@ -1,0 +1,220 @@
+id: FARMSTATION
+parent_id: BUILDCATEGORYEQUIPMENT
+name: 农业站
+disabled: False
+search_only: False
+category: BUILDCATEGORYEQUIPMENT
+sort_string: 农业站
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="FARMSTATION">农业站</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 农业
+    style: Body
+    image: research_type_alpha_icon
+    link_id: agriculture
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: planttender_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      生产<link="FARMSTATIONTOOLS">微肥</link>以提升<link="PLANTS">植物</link>生长速度。
+
+
+      分配的复制人必须具有<link="FARMING2">作物照料</link>特质。
+
+
+      这个建筑是温室的必要组成部分。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="FERTILIZER">肥料</link>：每次消耗5千克'
+    tooltip: 每次使用消耗<style="consumed">5千克</style><style="KKeyword"><link="FERTILIZER">肥料</link></style>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    需要技能的复制人的操作'
+    tooltip: 只有具有<link="FARMING2">作物照料</link>技能或<link="BOOSTERFARM1">作物照料增幅块</link>的复制人才能使用这个建筑
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    专用房间：温室'
+    tooltip: >-
+      必须建在专用<style="KKeyword">房间</style>内
+
+
+      建成后，<style="KKeyword">房间</style>将变为<style="KKeyword">温室</style>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：2格宽x3格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：30秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="METAL">金属矿石</link>400千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    附加效果：农民的呵护'
+    tooltip: >-
+      施加的效果：
+
+
+      农民的呵护
+
+      <b>效果：</b>
+          • <style="KKeyword">生长速度</style>：+100%
+
+      持续时间：1.0周期
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    改善植物'
+    tooltip: <style="KKeyword">作物照料</style>可以改善这些植物的生长时间：
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="CARROTPLANT">羽叶果薯植株</link>'
+    tooltip: <link="CARROTPLANT">羽叶果薯植株</link>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="BUTTERFLYPLANT">拟芽</link>'
+    tooltip: <link="BUTTERFLYPLANT">拟芽</link>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="BLUEGRASS">气囊芦荟</link>'
+    tooltip: <link="BLUEGRASS">气囊芦荟</link>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="BEANPLANT">小吃芽</link>'
+    tooltip: <link="BEANPLANT">小吃芽</link>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="BASICFABRICPLANT">顶针芦苇</link>'
+    tooltip: <link="BASICFABRICPLANT">顶针芦苇</link>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="COLDWHEAT">冰霜小麦</link>'
+    tooltip: <link="COLDWHEAT">冰霜小麦</link>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="GARDENFOODPLANT">汗甜玉米秆</link>'
+    tooltip: <link="GARDENFOODPLANT">汗甜玉米秆</link>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="FORESTTREE">乔木树</link>'
+    tooltip: <link="FORESTTREE">乔木树</link>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="FORESTTREE">乔木树</link>'
+    tooltip: <link="FORESTTREE">乔木树</link>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="CRITTERTRAPPLANT">土星动物捕草</link>'
+    tooltip: <link="CRITTERTRAPPLANT">土星动物捕草</link>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="FILTERPLANT">仙水掌</link>'
+    tooltip: <link="FILTERPLANT">仙水掌</link>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="FLYTRAPPLANT">露饵花</link>'
+    tooltip: <link="FLYTRAPPLANT">露饵花</link>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="GASGRASS">释气草</link>'
+    tooltip: <link="GASGRASS">释气草</link>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="WORMPLANT">虫果芽</link>'
+    tooltip: <link="WORMPLANT">虫果芽</link>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="SPICEVINE">火椒藤</link>'
+    tooltip: <link="SPICEVINE">火椒藤</link>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="SPACETREE">糖心树</link>'
+    tooltip: <link="SPACETREE">糖心树</link>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="SEALETTUCE">水草</link>'
+    tooltip: <link="SEALETTUCE">水草</link>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="KELPPLANT">海梳蕨</link>'
+    tooltip: <link="KELPPLANT">海梳蕨</link>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="SALTPLANT">沙盐藤</link>'
+    tooltip: <link="SALTPLANT">沙盐藤</link>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="PRICKLEFLOWER">毛刺花</link>'
+    tooltip: <link="PRICKLEFLOWER">毛刺花</link>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="MUSHROOMPLANT">夜幕菇</link>'
+    tooltip: <link="MUSHROOMPLANT">夜幕菇</link>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="SWAMPHARVESTPLANT">沼浆笼</link>'
+    tooltip: <link="SWAMPHARVESTPLANT">沼浆笼</link>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="SWAMPLILY">芳香百合</link>'
+    tooltip: <link="SWAMPLILY">芳香百合</link>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="WORMPLANT">贫瘠虫果芽</link>'
+    tooltip: <link="WORMPLANT">贫瘠虫果芽</link>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="VINEMOTHER">漫殖藤</link>'
+    tooltip: <link="VINEMOTHER">漫殖藤</link>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="HARDSKINBERRYPLANT">刺壳果灌木</link>'
+    tooltip: <link="HARDSKINBERRYPLANT">刺壳果灌木</link>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LOGIC">信号输入端</link>'
+    tooltip: 当接收到信号时，输入端会使这个建筑一种状态发生变化
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    启用/禁用'
+    tooltip: >-
+      输入端行为：
+
+      • <b><style="logic_on">绿色信号</style></b>：启用建筑
+
+      • <b><style="logic_off">红色信号</style></b>：禁用建筑
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>类别</b>
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    <link="FARMSTATION">农业站</link>'
+    style: Body
+  - widget_type: CodexText
+    text: '    <link="GROUPFARMBUILDING">农业建筑</link>'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>这个站只对种在同一个房间里的农作物有影响。</i>
+    style: Body
+  layout: Vertical

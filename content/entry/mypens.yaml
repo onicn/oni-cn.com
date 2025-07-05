@@ -1,0 +1,87 @@
+id: MYPENS
+name: 回复：我的钢笔
+title: STRINGS.CODEX.B4_REMYPENS.TITLE
+disabled: False
+search_only: False
+category: EMAILS
+sort_string: 回复：我的钢笔
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 回复：我的钢笔
+    style: Title
+  - widget_type: CodexText
+    text: 未加密
+    style: Subtitle
+  layout: Vertical
+  lock_id: email_pens2
+- contents:
+  - widget_type: CodexText
+    text: >
+      <smallcaps>收件人：<b>全体</b>
+
+      发件人：<b>管理员</b><size=12><alpha=#AA> <admin@gravitas.nova></color></size></smallcaps>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_pens2
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <indent=5%>我们想要提醒所有员工：与办公室内部问题有关的任何邮件，都请不要抄送给他人。
+
+
+      如果研究所内部的工作中出现了纠纷或者争吵，请直接联系人力资源部解决。
+
+
+      感谢您的配合。</indent>
+    style: Body
+  - widget_type: CodexText
+    text: >2
+
+      - 管理员
+
+      <size=11>庄严科技</size>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_pens2
+- contents:
+  - widget_type: CodexText
+    text: 标题：我的钢笔
+    style: Subtitle
+  - widget_type: CodexText
+    text: >
+      <smallcaps>收件人：<b>全体</b>
+
+      发件人：<b>[受屏蔽]</b></color></smallcaps>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_pens
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <indent=5%>那个拿走我光彩夺目的钢笔的小贼给我听好了：
+
+
+      <i>这是我对你最后的警告！</i></indent>
+    style: Body
+  - widget_type: CodexText
+    text: >2
+
+      祝好，
+
+      [受屏蔽]
+
+      <size=11>信息统计部
+
+      庄严科技</size>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_pens

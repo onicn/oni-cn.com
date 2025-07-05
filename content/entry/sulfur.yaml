@@ -1,0 +1,231 @@
+id: SULFUR
+parent_id: ELEMENTSSOLID
+name: 硫
+disabled: False
+search_only: False
+category: ELEMENTSSOLID
+sort_string: 硫
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="SULFUR">硫</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: sulfur_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: sulfur_0__ui
+      text1: 硫
+      text2: 1000克
+      link_id: sulfur
+    produce:
+    - image: element_liquid
+      color: FFFF00FF
+      text1: 液态硫
+      text2: 1000克
+      link_id: liquidsulfur
+    fabricator:
+      image: crew_state_temp_up
+      text1: 115.2ºC
+      tooltip: 温度高于115.2ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换于
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: FFFF00FF
+      text1: 液态硫
+      text2: 1000克
+      link_id: liquidsulfur
+    produce:
+    - image: sulfur_0__ui
+      text1: 硫
+      text2: 1000克
+      link_id: sulfur
+    fabricator:
+      image: crew_state_temp_down
+      text1: 115.2ºC
+      tooltip: 温度低于115.2ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: 512360FF
+      text1: 粘渣油
+      text2: 1000克
+      link_id: liquidgunk
+    produce:
+    - image: element_liquid
+      color: FFC325FF
+      text1: 石油
+      text2: 920克
+      link_id: petroleum
+    - image: sulfur_0__ui
+      text1: 硫
+      text2: 80克
+      link_id: sulfur
+    fabricator:
+      image: crew_state_temp_up
+      text1: 447.9ºC
+      tooltip: 温度高于447.9ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_gas
+      color: 76245DFF
+      text1: 高硫天然气
+      text2: 1000克
+      link_id: sourgas
+    produce:
+    - image: element_liquid
+      color: FF9D00FF
+      text1: 液态甲烷
+      text2: 670克
+      link_id: liquidmethane
+    - image: sulfur_0__ui
+      text1: 硫
+      text2: 330克
+      link_id: sulfur
+    fabricator:
+      image: crew_state_temp_down
+      text1: -161.5ºC
+      tooltip: 温度低于-161.5ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 富勒烯
+    require:
+    - image: graphite_0__ui
+      text1: 石墨
+      text2: 90千克
+      link_id: graphite
+    - image: sulfur_0__ui
+      text1: 硫
+      text2: 5千克
+      link_id: sulfur
+    - image: aluminum_0__ui
+      text1: 铝
+      text2: 5千克
+      link_id: aluminum
+    produce:
+    - image: fullerene_0__ui
+      text1: 富勒烯
+      text2: 100千克
+      link_id: fullerene
+    fabricator:
+      image: supermaterial_refinery_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 分子熔炉
+      text2: 80秒
+      link_id: supermaterialrefinery
+  - widget_type: CodexConversionPanel
+    require:
+    - image: sulfur_0__ui
+      text1: 硫
+      text2: 10千克/周期
+      link_id: sulfur
+    produce:
+    - image: wormwood_super_fruits_0__ui
+      text1: 虫果
+      text2: 250千卡/周期
+      tooltip: 品质：低劣 [+1]
+      link_id: wormsuperfruit
+    fabricator:
+      image: wormwood_0__ui
+      text1: 虫果芽
+      link_id: WORMPLANT
+  - widget_type: CodexConversionPanel
+    require:
+    - image: sulfur_0__ui
+      text1: 硫
+      text2: 10千克/周期
+      link_id: sulfur
+    produce:
+    - image: wormwood_basic_fruit_0__ui
+      text1: 贫瘠虫果
+      text2: 200千卡/周期
+      tooltip: 品质：糟糕 [0]
+      link_id: wormbasicfruit
+    fabricator:
+      image: wormwood_0__ui
+      text1: 贫瘠虫果芽
+      link_id: WORMPLANT
+  - widget_type: CodexConversionPanel
+    require:
+    - image: sulfur_0__ui
+      text1: 硫
+      text2: 20千克/周期
+      link_id: sulfur
+    produce:
+    - image: sucrose_0__ui
+      text1: 蔗糖
+      text2: 10千克/周期
+      link_id: sucrose
+    fabricator:
+      image: critter_0__ui
+      text1: 甜素甲虫
+      link_id: DIVERGENTBEETLE
+  - widget_type: CodexConversionPanel
+    require:
+    - image: sulfur_0__ui
+      text1: 硫
+      text2: 50千克/周期
+      link_id: sulfur
+    produce:
+    - image: sludge_0__ui
+      text1: 泥巴
+      text2: 5000克/周期
+      link_id: mud
+    fabricator:
+      image: worm_head_0__ui
+      text1: 虫果果虫
+      link_id: DIVERGENTWORM
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      (S) 硫是一种常见的化学元素，通常作为<link="METHANE">天然气</link>生产的副产物出现。
+
+
+      当前选中的处于<link="ELEMENTSSOLID">固态</link>。
+
+
+      资源种类：其他
+
+      熔点：115.2ºC
+
+      硬度：<color=#71ABCFFF>5（非常柔软）</color>
+
+
+      比热容：0.700 (DTU/g)/ºC
+
+      热导率：0.200 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.74
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：<link="ELEMENTSSOLID">固体</link>, 其他
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

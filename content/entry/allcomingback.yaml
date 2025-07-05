@@ -1,0 +1,139 @@
+id: ALLCOMINGBACK
+name: 科学家之歌
+title: STRINGS.CODEX.INVESTIGATIONS.DLC4_ALLCOMINGBACK.TITLE
+disabled: False
+search_only: False
+category: RESEARCHNOTES
+sort_string: 科学家之歌
+required_dlc_ids:
+- DLC4_ID
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 科学家之歌
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：三
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+  lock_id: notes_HigbySong
+- contents:
+  - widget_type: CodexText
+    text: >+
+      <smallcaps>[检测到录音片段]
+
+      [声纹识别系统不可用]</smallcaps>
+
+
+      [录音开始]
+
+
+      （清嗓子声）
+
+
+      曾有那么几次，我们的实验如此接近成功
+
+      我的样本甚至挥动了爪子
+
+      也许没能存活太久，但那已是突破
+
+
+      数据曾为我们提供强有力的线索
+
+      而后经年累月，信任逐渐消磨
+
+      我们终于明白，我们对克隆的希望永远消没……消没……
+
+
+      （地面震动声）
+
+
+      ……我们耗尽了所有合作与资金
+
+      搜集了能到手的每一块化石
+
+      却始终无法重现白垩纪生灵……
+
+
+      但当我迫降于此
+
+      看见……它们……在近处啃草
+
+      这奇迹般的景象，万物竟重新郁郁葱葱
+
+
+      当它们从蕨叶间窥探
+
+      晴空如洗的苍穹之下
+
+      难以置信，但大地确已重披绿装
+
+      生机蔓延，生机正重新蔓延
+
+
+      这里有令人敬畏的瞬间
+
+      也有冲突与争斗
+
+      有我从未见过的植物
+
+      它们似乎无需光照
+
+      兽足类与蛩蠊目
+
+      这已超越任何实验室的幻想
+
+
+      或许
+
+
+      或许
+
+
+      如果我在这里有间实验室
+
+      一台质谱仪
+
+      我就能向故土证明
+
+      这片土地正重焕生机……
+
+
+      （树枝断裂声）
+
+
+      ……谁在哪儿？
+
+
+      [录音结束]
+
+
+      ------------------
+
+    style: Body
+  layout: Vertical
+  lock_id: notes_HigbySong
+- contents:
+  - widget_type: CodexText
+    text: >+
+      [录音开始]
+
+
+      不可思议……
+
+
+      ……它们似乎还残存着被歌声抚慰的远古记忆。
+
+
+      或许，它们与我们自己的生物有着超乎想象的共通之处。
+
+
+      [录音结束]
+
+
+      ------------------
+
+    style: Body
+  layout: Vertical
+  lock_id: notes_HigbySong

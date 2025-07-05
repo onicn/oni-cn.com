@@ -1,0 +1,83 @@
+id: GASCARGOBAYCLUSTER
+parent_id: BUILDCATEGORYROCKETRY
+name: 大型气罐货舱
+disabled: False
+search_only: False
+category: BUILDCATEGORYROCKETRY
+sort_string: 大型气罐货舱
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="GASCARGOBAY">大型气罐货舱</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 催化剂
+    style: Body
+    image: research_type_alpha_icon
+    link_id: catalytics
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: rocket_cluster_storage_gas_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      允许复制人储存在太空任务中找到的大部分<link="ELEMENTSGAS">气体</link>资源。
+
+
+      火箭返回后，所储存的资源便可供殖民地使用。
+
+
+      必须通过<link="LAUNCHPAD">火箭平台</link>建造。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：5格宽x5格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：60秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="STEEL">钢</link>1000千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    过热<link="HEAT">温度</link>：2000ºC'
+    tooltip: 达到<b>2000ºC</b>时开始过热
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>类别</b>
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    <link="REQUIREMENTCLASSINDUSTRIALMACHINERY">工业机械</link>'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>比常规的气罐货舱能携带更多东西。</i>
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 舱块统计
+    style: Subtitle
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>火箭速度</b>等于<b>引擎功率</b>除以<b>负担</b>
+    style: Body
+  - widget_type: CodexText
+    text: '    • 高度：5'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 舱块负担：4'
+    style: Body
+  layout: Vertical

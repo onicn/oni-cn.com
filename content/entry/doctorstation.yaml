@@ -1,0 +1,68 @@
+id: DOCTORSTATION
+parent_id: BUILDCATEGORYMEDICAL
+name: 医务站
+disabled: False
+search_only: False
+category: BUILDCATEGORYMEDICAL
+sort_string: 医务站
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="DOCTORSTATION">医务站</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 医疗设备
+    style: Body
+    image: research_type_alpha_icon
+    link_id: medicineii
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: treatment_chair_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      允许复制人向生病的复制人施用基础药物。
+
+
+      复制人必须具有病床礼仪<link="ROLES">技能</link>才能治疗同伴。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    需要技能的复制人的操作'
+    tooltip: 只有具有<link="MEDICINE2">病床礼仪</link>技能或<link="BOOSTERMEDICINE1">高级医疗增幅块</link>的复制人才能使用这个建筑
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    优选房间：医院'
+    tooltip: 建造在<style="KKeyword">医院</style>内时，这个建筑会获得额外的效果或功能
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：3格宽x2格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：10秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="BUILDABLERAW">矿物原料</link>200千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>类别</b>
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    <link="REQUIREMENTCLASSCLINIC">医疗设备</link>'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>医务站可以放置于医院中以降低疾病传播的可能性。</i>
+    style: Body
+  layout: Vertical

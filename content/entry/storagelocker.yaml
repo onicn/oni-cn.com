@@ -1,0 +1,52 @@
+id: STORAGELOCKER
+parent_id: BUILDCATEGORYBASE
+name: 存储箱
+disabled: False
+search_only: False
+category: BUILDCATEGORYBASE
+sort_string: 存储箱
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="STORAGELOCKER">存储箱</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: storagelocker_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 储存你所选的<link="ELEMENTSSOLID">固体材料</link>。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：1格宽x2格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：10秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="BUILDABLERAW">矿物原料</link>或<link="METAL">金属矿石</link>400千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    库存容量：20吨'
+    tooltip: 最多容纳<b>20吨</b>材料
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：-10（范围：2格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>2</b>格内降低<b><b>-10</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>地面上的资源若不及时移走，会变成“杂物”并降低装饰度。</i>
+    style: Body
+  layout: Vertical

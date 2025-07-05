@@ -1,0 +1,341 @@
+id: SALT
+parent_id: ELEMENTSSOLID
+name: 盐
+disabled: False
+search_only: False
+category: ELEMENTSSOLID
+sort_string: 盐
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="SALT">盐</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: salt_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: salt_0__ui
+      text1: 盐
+      text2: 1000克
+      link_id: salt
+    produce:
+    - image: element_liquid
+      color: F58970FF
+      text1: 熔融盐
+      text2: 1000克
+      link_id: moltensalt
+    fabricator:
+      image: crew_state_temp_up
+      text1: 799.9ºC
+      tooltip: 温度高于799.9ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换于
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: F58970FF
+      text1: 熔融盐
+      text2: 1000克
+      link_id: moltensalt
+    produce:
+    - image: salt_0__ui
+      text1: 盐
+      text2: 1000克
+      link_id: salt
+    fabricator:
+      image: crew_state_temp_down
+      text1: 799.9ºC
+      tooltip: 温度低于799.9ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: ADE9E5FF
+      text1: 浓盐水
+      text2: 1000克
+      link_id: brine
+    produce:
+    - image: element_gas
+      color: 85C9E3FF
+      text1: 蒸汽
+      text2: 700克
+      link_id: steam
+    - image: salt_0__ui
+      text1: 盐
+      text2: 300克
+      link_id: salt
+    fabricator:
+      image: crew_state_temp_up
+      text1: 102.8ºC
+      tooltip: 温度高于102.8ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: CED2ECFF
+      text1: 盐水
+      text2: 1000克
+      link_id: saltwater
+    produce:
+    - image: element_gas
+      color: 85C9E3FF
+      text1: 蒸汽
+      text2: 930克
+      link_id: steam
+    - image: salt_0__ui
+      text1: 盐
+      text2: 70克
+      link_id: salt
+    fabricator:
+      image: crew_state_temp_up
+      text1: 99.7ºC
+      tooltip: 温度高于99.7ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 盐水
+    require:
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 93千克
+      link_id: water
+    - image: salt_0__ui
+      text1: 盐
+      text2: 7千克
+      link_id: salt
+    produce:
+    - image: element_liquid
+      color: CED2ECFF
+      text1: 盐水
+      text2: 100千克
+      link_id: saltwater
+    fabricator:
+      image: chemistry_lab_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 乳化器
+      text2: 40秒
+      link_id: chemicalrefinery
+  - widget_type: CodexRecipePanel
+    text: 漂白石
+    require:
+    - image: salt_0__ui
+      text1: 盐
+      text2: 30千克
+      link_id: salt
+    - image: gold_refined_0__ui
+      text1: 金
+      text2: 500克
+      link_id: gold
+    produce:
+    - image: bleach_stone_0__ui
+      text1: 漂白石
+      text2: 10千克
+      link_id: bleachstone
+    - image: sand_0__ui
+      text1: 沙子
+      text2: 20千克
+      link_id: sand
+    fabricator:
+      image: chlorinator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 漂白石料斗
+      text2: 40秒
+      link_id: chlorinator
+  - widget_type: CodexRecipePanel
+    text: 食盐
+    require:
+    - image: salt_0__ui
+      text1: 盐
+      text2: 100千克
+      link_id: salt
+    produce:
+    - image: seed_saltplant_0__ui
+      text1: 食盐
+      text2: 5克
+      link_id: 食盐
+    - image: sand_0__ui
+      text1: 沙子
+      text2: 100千克
+      link_id: sand
+    fabricator:
+      image: rockrefinery_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 碎石机
+      text2: 40秒
+      link_id: rockcrusher
+  - widget_type: CodexConversionPanel
+    require:
+    - image: iron_oxide_0__ui
+      text1: 铁锈
+      text2: 450千克/周期
+      link_id: rust
+    - image: salt_0__ui
+      text1: 盐
+      text2: 150千克/周期
+      link_id: salt
+    produce:
+    - image: element_gas
+      color: B7FFFFFF
+      text1: 氧气
+      text2: 342千克/周期
+      link_id: oxygen
+    - image: element_gas
+      color: 04A778FF
+      text1: 氯气
+      text2: 18千克/周期
+      link_id: chlorinegas
+    - image: hematite_0__ui
+      text1: 铁矿
+      text2: 240千克/周期
+      link_id: ironore
+    fabricator:
+      image: rust_deoxidizer_0__ui
+      text1: 铁锈脱氧机
+      link_id: RUSTDEOXIDIZER
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: CED2ECFF
+      text1: 盐水
+      text2: 3000千克/周期
+      link_id: saltwater
+    - image: element_liquid
+      color: ADE9E5FF
+      text1: 浓盐水
+      text2: 3000千克/周期
+      link_id: brine
+    produce:
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 2790千克/周期
+      link_id: water
+    - image: salt_0__ui
+      text1: 盐
+      text2: 210千克/周期
+      link_id: salt
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 2100千克/周期
+      link_id: water
+    - image: salt_0__ui
+      text1: 盐
+      text2: 900千克/周期
+      link_id: salt
+    fabricator:
+      image: desalinator_0__ui
+      text1: 脱盐器
+      link_id: DESALINATOR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: CED2ECFF
+      text1: 盐水
+      text2: 3000千克/周期
+      link_id: saltwater
+    - image: element_liquid
+      color: ADE9E5FF
+      text1: 浓盐水
+      text2: 3000千克/周期
+      link_id: brine
+    produce:
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 2790千克/周期
+      link_id: water
+    - image: salt_0__ui
+      text1: 盐
+      text2: 210千克/周期
+      link_id: salt
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 2100千克/周期
+      link_id: water
+    - image: salt_0__ui
+      text1: 盐
+      text2: 900千克/周期
+      link_id: salt
+    fabricator:
+      image: desalinator_0__ui
+      text1: 脱盐器
+      link_id: DESALINATOR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_gas
+      color: 04A778FF
+      text1: 氯气
+      text2: 3600克/周期
+      link_id: chlorinegas
+    - image: sand_0__ui
+      text1: 沙子
+      text2: 7千克/周期
+      link_id: sand
+    produce:
+    - image: salt_0__ui
+      text1: 盐
+      text2: 10.8千克/周期
+      link_id: salt
+    fabricator:
+      image: saltplant_0__ui
+      text1: 沙盐藤
+      link_id: SALTPLANT
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      (NaCl) 盐，又名氯化钠，是一种可食用化合物。
+
+
+      精制后可与菜肴一起食用，以增加复制人的<link="MORALE">士气</link>。
+
+
+      资源种类：消耗性矿石
+
+      熔点：799.9ºC
+
+      硬度：<color=#71ABCFFF>5（非常柔软）</color>
+
+
+      比热容：0.700 (DTU/g)/ºC
+
+      热导率：0.444 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.75
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：<link="ELEMENTSSOLID">固体</link>, 消耗性矿石
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

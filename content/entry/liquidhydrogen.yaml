@@ -1,0 +1,130 @@
+id: LIQUIDHYDROGEN
+parent_id: ELEMENTSLIQUID
+name: 液态氢
+disabled: False
+search_only: False
+icon_color: FF006EFF
+category: ELEMENTSLIQUID
+sort_string: 液态氢
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="LIQUIDHYDROGEN">液态氢</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    color: FF006EFF
+    image: element_liquid
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: FF006EFF
+      text1: 液态氢
+      text2: 1000克
+      link_id: liquidhydrogen
+    produce:
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 1000克
+      link_id: hydrogen
+    fabricator:
+      image: crew_state_temp_up
+      text1: -252.2ºC
+      tooltip: 温度高于-252.2ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: FF006EFF
+      text1: 液态氢
+      text2: 1000克
+      link_id: liquidhydrogen
+    produce:
+    - image: solid_hydrogen_0__ui
+      text1: 固态氢
+      text2: 1000克
+      link_id: solidhydrogen
+    fabricator:
+      image: crew_state_temp_down
+      text1: -259.2ºC
+      tooltip: 温度低于-259.2ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换于
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: solid_hydrogen_0__ui
+      text1: 固态氢
+      text2: 1000克
+      link_id: solidhydrogen
+    produce:
+    - image: element_liquid
+      color: FF006EFF
+      text1: 液态氢
+      text2: 1000克
+      link_id: liquidhydrogen
+    fabricator:
+      image: crew_state_temp_up
+      text1: -259.2ºC
+      tooltip: 温度高于-259.2ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 1000克
+      link_id: hydrogen
+    produce:
+    - image: element_liquid
+      color: FF006EFF
+      text1: 液态氢
+      text2: 1000克
+      link_id: liquidhydrogen
+    fabricator:
+      image: crew_state_temp_down
+      text1: -252.2ºC
+      tooltip: 温度低于-252.2ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      (H) <link="ELEMENTSLIQUID">液态</link>的氢。
+
+
+      它能冻结大多数与其接触的物质。
+
+
+      资源种类：<link="ELEMENTSLIQUID">液体</link>
+
+      冰点：-259.2ºC
+
+      沸点：-252.2ºC
+
+
+      比热容：2.400 (DTU/g)/ºC
+
+      热导率：0.100 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.9
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：<link="ELEMENTSLIQUID">液体</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

@@ -1,0 +1,158 @@
+id: FULLERENE
+parent_id: ELEMENTSSOLID
+name: 富勒烯
+disabled: False
+search_only: False
+category: ELEMENTSSOLID
+sort_string: 富勒烯
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="FULLERENE">富勒烯</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: fullerene_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: fullerene_0__ui
+      text1: 富勒烯
+      text2: 1000克
+      link_id: fullerene
+    produce:
+    - image: element_liquid
+      color: 808080FF
+      text1: 熔融碳
+      text2: 1000克
+      link_id: moltencarbon
+    fabricator:
+      image: crew_state_temp_up
+      text1: 3926.9ºC
+      tooltip: 温度高于3926.9ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 超级冷却剂
+    require:
+    - image: fullerene_0__ui
+      text1: 富勒烯
+      text2: 1000克
+      link_id: fullerene
+    - image: gold_refined_0__ui
+      text1: 金
+      text2: 49.5千克
+      link_id: gold
+    - image: element_liquid
+      color: FFC325FF
+      text1: 石油
+      text2: 49.5千克
+      link_id: petroleum
+    produce:
+    - image: element_liquid
+      color: 37AD93FF
+      text1: 超级冷却剂
+      text2: 100千克
+      link_id: supercoolant
+    fabricator:
+      image: chemistry_lab_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 乳化器
+      text2: 80秒
+      link_id: chemicalrefinery
+  - widget_type: CodexRecipePanel
+    text: 石墨
+    require:
+    - image: fullerene_0__ui
+      text1: 富勒烯
+      text2: 100千克
+      link_id: fullerene
+    produce:
+    - image: graphite_0__ui
+      text1: 石墨
+      text2: 90千克
+      link_id: graphite
+    - image: sand_0__ui
+      text1: 沙子
+      text2: 10千克
+      link_id: sand
+    fabricator:
+      image: rockrefinery_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 碎石机
+      text2: 40秒
+      link_id: rockcrusher
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 分子熔炉
+    require:
+    - image: graphite_0__ui
+      text1: 石墨
+      text2: 90千克
+      link_id: graphite
+    - image: sulfur_0__ui
+      text1: 硫
+      text2: 5千克
+      link_id: sulfur
+    - image: aluminum_0__ui
+      text1: 铝
+      text2: 5千克
+      link_id: aluminum
+    produce:
+    - image: fullerene_0__ui
+      text1: 富勒烯
+      text2: 100千克
+      link_id: fullerene
+    fabricator:
+      image: supermaterial_refinery_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 分子熔炉
+      text2: 80秒
+      link_id: supermaterialrefinery
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      (C<sub>60</sub>) 富勒烯是由球形分子组成的<link="CARBON">煤炭</link>。
+
+
+      资源种类：稀有资源
+
+      熔点：3926.9ºC
+
+      硬度：<color=#BD597FFF>250（几乎坚不可摧）</color>
+
+
+      比热容：0.950 (DTU/g)/ºC
+
+      热导率：50.000 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.6
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：<link="ELEMENTSSOLID">固体</link>, 稀有资源
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

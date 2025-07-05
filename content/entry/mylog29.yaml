@@ -1,0 +1,25 @@
+id: MYLOG29
+name: 复制人传送
+title: STRINGS.CODEX.MYLOG.BODY.TELEPORT.TITLE
+disabled: False
+search_only: False
+category: MYLOG
+sort_string: 复制人传送
+required_dlc_ids:
+- EXPANSION1_ID
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 复制人传送
+    style: Title
+  - widget_type: CodexText
+    text: >-
+      我的复制人发现了一个奇怪的新设备，似乎是之前庄严科技的残余物。激活设备后，我的复制人被某个未知的高科技设备扫描了，随后我就检测到一次巨量的信息传输！
+
+
+      值得注意的是，我的复制人在另一个完全不同的遥远星球上重新出现了！我现在可以访问临近小行星上的另一个废弃的庄严科技设施了！要弄明白这件事我必须进一步分析，但同时，我必须保持警惕，时刻追踪我的两个殖民地。
+    style: Body
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical

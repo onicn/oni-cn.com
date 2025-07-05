@@ -1,0 +1,37 @@
+id: ELEMENTSOTHER
+parent_id: ELEMENTS
+name: 其他
+disabled: False
+search_only: False
+category: ELEMENTS
+sort_string: 其他
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="ELEMENTSOTHER">其他</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexLabelWithLargeIcon
+    text: 复合物
+    style: BodyWhite
+    color: 000000FF
+    image: unknown_far
+    link_id: composition
+  - widget_type: CodexLabelWithLargeIcon
+    text: 真空
+    style: BodyWhite
+    color: 000000FF
+    image: unknown_far
+    link_id: vacuum
+  - widget_type: CodexLabelWithLargeIcon
+    text: 虚空
+    style: BodyWhite
+    color: 000000FF
+    image: unknown_far
+    link_id: void
+  layout: Grid
+- contents:
+  - widget_type: CodexSpacer
+  layout: Vertical

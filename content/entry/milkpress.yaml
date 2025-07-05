@@ -1,0 +1,273 @@
+id: MILKPRESS
+parent_id: BUILDCATEGORYREFINING
+name: 植物粉碎机
+disabled: False
+search_only: False
+category: BUILDCATEGORYREFINING
+sort_string: 植物粉碎机
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="MILKPRESS">植物粉碎机</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 食物再利用
+    style: Body
+    image: research_type_alpha_icon
+    link_id: foodrepurposing
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: milkpress_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      将有机材料粉碎以提取液体，比如<link="MILK">咸乳</link>或<link="PHYTOOIL">植物润滑油</link>。
+
+
+      <link="MILK">咸乳</link>可用于补充<link="MILKFEEDER">小动物直饮器</link>。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LIQUIDPIPING">液体输出管道</link>'
+    tooltip: 必须通过<link="LIQUIDCONDUIT">液体管道</link>系统排出<style="KKeyword">液体</style>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    复制人的操作'
+    tooltip: 必须有复制人来才能使这个建筑运行
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：2格宽x3格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：30秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="BUILDABLERAW">矿物原料</link>400千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="HEAT">热量</link>：+2千复制热/秒'
+    tooltip: >-
+      每秒产生<style="produced">2千复制热</style>
+
+
+      总<style="KKeyword">温度</style>变化受到加热物质的材料属性影响：
+          • 质量
+          • 比热容
+          • 表面积
+          • 隔热厚度
+          • 热导率
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    过热<link="HEAT">温度</link>：75ºC'
+    tooltip: 达到<b>75ºC</b>时开始过热
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LOGIC">信号输入端</link>'
+    tooltip: 当接收到信号时，输入端会使这个建筑一种状态发生变化
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    启用/禁用'
+    tooltip: >-
+      输入端行为：
+
+      • <b><style="logic_on">绿色信号</style></b>：启用建筑
+
+      • <b><style="logic_off">红色信号</style></b>：禁用建筑
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：-10（范围：2格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>2</b>格内降低<b><b>-10</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>为受不了给小动物挤奶的复制人准备的。</i>
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 所有配方
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 咸乳
+    require:
+    - image: seed_beanplant_0__ui
+      text1: 小吃豆
+      text2: 2单位
+      link_id: bean
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 18千克
+      link_id: water
+    produce:
+    - image: element_liquid
+      color: CCEEE8FF
+      text1: 咸乳
+      text2: 20千克
+      link_id: milk
+    fabricator:
+      image: milkpress_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 植物粉碎机
+      text2: 40秒
+      link_id: milkpress
+  - widget_type: CodexRecipePanel
+    text: 咸乳
+    require:
+    - image: seed_coldwheat_0__ui
+      text1: 冰霜麦粒
+      text2: 10单位
+      link_id: coldwheat
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 15千克
+      link_id: water
+    produce:
+    - image: element_liquid
+      color: CCEEE8FF
+      text1: 咸乳
+      text2: 20千克
+      link_id: milk
+    fabricator:
+      image: milkpress_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 植物粉碎机
+      text2: 40秒
+      link_id: milkpress
+  - widget_type: CodexRecipePanel
+    text: 咸乳
+    require:
+    - image: spicenut_0__ui
+      text1: 火椒粒
+      text2: 3000克
+      link_id: spicenut
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 17千克
+      link_id: water
+    produce:
+    - image: element_liquid
+      color: CCEEE8FF
+      text1: 咸乳
+      text2: 20千克
+      link_id: milk
+    fabricator:
+      image: milkpress_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 植物粉碎机
+      text2: 40秒
+      link_id: milkpress
+  - widget_type: CodexRecipePanel
+    text: 咸乳
+    require:
+    - image: brackorb_0__ui
+      text1: 露珠
+      text2: 2单位
+      link_id: dewdrip
+    produce:
+    - image: element_liquid
+      color: CCEEE8FF
+      text1: 咸乳
+      text2: 20千克
+      link_id: milk
+    fabricator:
+      image: milkpress_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 植物粉碎机
+      text2: 40秒
+      link_id: milkpress
+  - widget_type: CodexRecipePanel
+    text: 植物润滑油
+    require:
+    - image: kelp_leaf_0__ui
+      text1: 海梳蕨叶
+      text2: 25千克
+      link_id: kelp
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 75千克
+      link_id: water
+    produce:
+    - image: element_liquid
+      color: 98A82FFF
+      text1: 植物润滑油
+      text2: 100千克
+      link_id: phytooil
+    fabricator:
+      image: milkpress_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 植物粉碎机
+      text2: 40秒
+      link_id: milkpress
+  - widget_type: CodexRecipePanel
+    text: 植物润滑油
+    require:
+    - image: slime_mold_0__ui
+      text1: 菌泥
+      text2: 100千克
+      link_id: slimemold
+    produce:
+    - image: element_liquid
+      color: 98A82FFF
+      text1: 植物润滑油
+      text2: 70千克
+      link_id: phytooil
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 30千克
+      link_id: dirt
+    fabricator:
+      image: milkpress_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 植物粉碎机
+      text2: 40秒
+      link_id: milkpress
+  - widget_type: CodexRecipePanel
+    text: 树脂
+    require:
+    - image: amber_0__ui
+      text1: 琥珀
+      text2: 100千克
+      link_id: amber
+    produce:
+    - image: element_liquid
+      color: CC8B18FF
+      text1: 树脂
+      text2: 50千克
+      link_id: naturalresin
+    - image: fossil_0__ui
+      text1: 化石
+      text2: 25千克
+      link_id: fossil
+    - image: sand_0__ui
+      text1: 沙子
+      text2: 25千克
+      link_id: sand
+    fabricator:
+      image: milkpress_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 植物粉碎机
+      text2: 40秒
+      link_id: milkpress
+  layout: Vertical

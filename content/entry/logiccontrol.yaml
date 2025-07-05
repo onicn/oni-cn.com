@@ -1,0 +1,73 @@
+id: LOGICCONTROL
+parent_id: TECH
+name: 智能家居
+disabled: False
+search_only: False
+category: TECH
+sort_string: 智能家居
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="LOGICCONTROL">智能家居</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 开关可以完全控制殖民地中的建筑运作。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="INTERIORDECOR">室内装潢</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: overlay_logic
+  - widget_type: CodexText
+    text: <b>自动化概览</b>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: switchdupecontrolledpower_0__ui
+  - widget_type: CodexText
+    text: <link="LOGICSWITCH">信号开关</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: logic_wires_0__ui
+  - widget_type: CodexText
+    text: <link="LOGICWIRE">信号线</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: logic_bridge_0__ui
+  - widget_type: CodexText
+    text: <link="LOGICWIREBRIDGE">信号线桥</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: presence_sensor_0__ui
+  - widget_type: CodexText
+    text: <link="DUPLICANTSENSOR">复制人运动传感器</link>
+    style: Body
+  layout: Horizontal

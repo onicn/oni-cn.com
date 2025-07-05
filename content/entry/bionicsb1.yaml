@@ -1,0 +1,52 @@
+id: BIONICSB1
+parent_id: ROLES
+name: 改良齿轮 I
+disabled: False
+search_only: False
+category: ROLES
+sort_string: 改良齿轮 I
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="BIONICSB1">改良齿轮 I</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: hat_role_innerworkings1
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 显著降低<link="LUBRICATINGOIL">齿轮油</link>不足时带来的负面影响。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 增幅块安装
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexText
+    text: 安装增幅块可立即赋予仿生复制人属性和技能升级。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 磨损齿轮惩罚降低50%
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 系统优化
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexText
+    text: 优化是策略性地组合和叠加安装的仿生增幅块的结果。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="BIONICSB2">改良齿轮 II</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

@@ -1,0 +1,57 @@
+id: EXTERIORWALL
+parent_id: BUILDCATEGORYBASE
+name: 干板墙
+disabled: False
+search_only: False
+category: BUILDCATEGORYBASE
+sort_string: 干板墙
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="EXTERIORWALL">干板墙</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 纺织生产
+    style: Body
+    image: research_type_alpha_icon
+    link_id: clothing
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: walls_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      防止空间中的<link="ELEMENTSGAS">气体</link>和<link="ELEMENTSLIQUID">液体</link>流失。
+
+
+      在建筑后面建造隔离背景墙。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：1格宽x1格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：3秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="BUILDABLERAW">矿物原料</link>或<link="BUILDINGWOOD">木材</link>100千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：+10（范围：0格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>0</b>格内提高<b><b>+10</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>干板墙可以与砖块一同使用，用于在地表建造密闭空间。</i>
+    style: Body
+  layout: Vertical

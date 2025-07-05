@@ -1,0 +1,93 @@
+id: BIOMEAQUATIC
+parent_id: BIOMES
+name: 水域生态
+disabled: False
+search_only: False
+category: BIOMES
+sort_string: BIOMEAQUATIC
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 水域生态
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 水域生态充满了大量珍贵的<link="WATER">水</link>。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      一开始这里几乎没有地面来建立一个临时基地，但是在能建立起将水域生态的<link="WATER">水</link>运向其他殖民地的运输网络后，其他的需求就都是小事了。
+
+
+      <link="SANDSTONE">砂岩</link>、<link="MAFICROCK">镁铁质岩</link>、<link="SAND">沙子</link>、<link="SEDIMENTARYROCK">沉积岩</link>可作为建立基础设施的可靠建造材料。<link="OXYROCK">氧石</link>可以提供宝贵的<link="OXYGEN">氧气</link>，通过仔细的规划，就能在这个区域维持复制人工作一段时间。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 元素
+    style: Subtitle
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 石墨
+    image: graphite_0__ui
+    link_id: graphite
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 火成岩
+    image: igneous_rock_0__ui
+    link_id: igneousrock
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 真空
+    color: 000000FF
+    image: unknown_far
+    link_id: vacuum
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 氧气
+    color: B7FFFFFF
+    image: element_gas
+    link_id: oxygen
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 二氧化碳
+    color: 000000FF
+    image: element_gas
+    link_id: carbondioxide
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 水
+    color: 0063FFFF
+    image: element_liquid
+    link_id: water
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 植物
+    style: Subtitle
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 无
+    color: FF0000FF
+    image: inspectorUI_cannot_build
+    link_id: 无
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 小动物
+    style: Subtitle
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 无
+    color: FF0000FF
+    image: inspectorUI_cannot_build
+    link_id: 无
+  layout: Vertical

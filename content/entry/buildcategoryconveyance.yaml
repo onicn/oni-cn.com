@@ -1,0 +1,94 @@
+id: BUILDCATEGORYCONVEYANCE
+parent_id: BUILDINGS
+name: 运输
+disabled: False
+search_only: False
+category: BUILDINGS
+sort_string: 运输
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="BUILDCATEGORYCONVEYANCE">运输</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexLabelWithLargeIcon
+    text: 固体筛选器
+    style: BodyWhite
+    image: filter_material_conveyor_0__ui
+    link_id: solidfilter
+  - widget_type: CodexLabelWithLargeIcon
+    text: 火箭端口固体卸载器
+    style: BodyWhite
+    image: conduit_port_solid_unloader_0__ui
+    link_id: modularlaunchpadportsolidunloader
+  - widget_type: CodexLabelWithLargeIcon
+    text: 火箭端口固体装载器
+    style: BodyWhite
+    image: conduit_port_solid_loader_0__ui
+    link_id: modularlaunchpadportsolid
+  - widget_type: CodexLabelWithLargeIcon
+    text: 自动清扫器
+    style: BodyWhite
+    image: conveyor_transferarm_0__ui
+    link_id: solidtransferarm
+  - widget_type: CodexLabelWithLargeIcon
+    text: 自动采矿机
+    style: BodyWhite
+    image: auto_miner_0__ui
+    link_id: autominer
+  - widget_type: CodexLabelWithLargeIcon
+    text: 轨道截断器
+    style: BodyWhite
+    image: conveyor_shutoff_0__ui
+    link_id: solidlogicvalve
+  - widget_type: CodexLabelWithLargeIcon
+    text: 轨道滑槽
+    style: BodyWhite
+    image: conveyer_dropper_0__ui
+    link_id: solidvent
+  - widget_type: CodexLabelWithLargeIcon
+    text: 轨道计量器
+    style: BodyWhite
+    image: limit_valve_solid_0__ui
+    link_id: solidlimitvalve
+  - widget_type: CodexLabelWithLargeIcon
+    text: 运输存放器
+    style: BodyWhite
+    image: conveyorout_0__ui
+    link_id: solidconduitoutbox
+  - widget_type: CodexLabelWithLargeIcon
+    text: 运输装载器
+    style: BodyWhite
+    image: conveyorin_0__ui
+    link_id: solidconduitinbox
+  - widget_type: CodexLabelWithLargeIcon
+    text: 运输轨桥
+    style: BodyWhite
+    image: utilities_conveyorbridge_0__ui
+    link_id: solidconduitbridge
+  - widget_type: CodexLabelWithLargeIcon
+    text: 运输轨道
+    style: BodyWhite
+    image: utilities_conveyor_0__ui
+    link_id: solidconduit
+  - widget_type: CodexLabelWithLargeIcon
+    text: 运输轨道元素传感器
+    style: BodyWhite
+    image: conveyor_element_sensor_0__ui
+    link_id: solidconduitelementsensor
+  - widget_type: CodexLabelWithLargeIcon
+    text: 运输轨道温度传感器
+    style: BodyWhite
+    image: conveyor_temperature_sensor_0__ui
+    link_id: solidconduittemperaturesensor
+  - widget_type: CodexLabelWithLargeIcon
+    text: 运输轨道病菌传感器
+    style: BodyWhite
+    image: conveyor_germs_sensor_0__ui
+    link_id: solidconduitdiseasesensor
+  layout: Grid
+- contents:
+  - widget_type: CodexSpacer
+  layout: Vertical

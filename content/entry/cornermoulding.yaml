@@ -1,0 +1,64 @@
+id: CORNERMOULDING
+parent_id: BUILDCATEGORYFURNITURE
+name: 边角饰件
+disabled: False
+search_only: False
+category: BUILDCATEGORYFURNITURE
+sort_string: 边角饰件
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="CORNERMOULDING">边角饰件</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 艺术表达
+    style: Body
+    image: research_type_alpha_icon
+    link_id: artistry
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: corner_tile_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      用来装饰房间的天花板角落。
+
+
+      提高<link="DECOR">装饰度</link>，从而提升<link="MORALE">士气</link>。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：1格宽x1格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：30秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="BUILDABLERAW">矿物原料</link>100千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：+5（范围：3格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>3</b>格内提高<b><b>+5</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>类别</b>
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    <link="REQUIREMENTCLASSDECORATION">装饰物</link>'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>边角饰件是天花板角落的纯装饰性增添物。</i>
+    style: Body
+  layout: Vertical

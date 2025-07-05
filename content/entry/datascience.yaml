@@ -1,0 +1,59 @@
+id: DATASCIENCE
+parent_id: TECH
+name: 数据科学
+disabled: False
+search_only: False
+category: TECH
+sort_string: 数据科学
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="DATASCIENCE">数据科学</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 这是让数据为我的复制人工作的科学，而非反之。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="ADVANCEDSCANNERS">敏感微成像</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: data_miner_0__ui
+  - widget_type: CodexText
+    text: <link="DATAMINER">数据挖掘仪</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: remote_work_dock_0__ui
+  - widget_type: CodexText
+    text: <link="REMOTEWORKERDOCK">远程作业坞</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: remote_work_terminal_0__ui
+  - widget_type: CodexText
+    text: <link="REMOTEWORKTERMINAL">远程控制器</link>
+    style: Body
+  layout: Horizontal

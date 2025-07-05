@@ -1,0 +1,28 @@
+id: MYLOG8
+name: 殖民地中的死亡
+title: STRINGS.CODEX.MYLOG.BODY.DUPLICANTDEATH.TITLE
+disabled: False
+search_only: False
+category: MYLOG
+sort_string: ZZZ
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 殖民地中的死亡
+    style: Title
+  - widget_type: CodexText
+    text: >+
+      今天我失去了我的第一名复制人。复制人互相之间有着强烈的感情，我预测之后的几个周期中复制人士气会降低，需要给他们一些时间从悲伤中恢复过来。
+
+
+      我发现我自己也很悲伤。我的任务是保护这些复制人，但我失败了。现在我能做的就是继续前行，更好地保护其他还在殖民地中的复制人。
+
+
+      安息吧，我亲爱的小友。
+
+    style: Body
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical
+  lock_id: duplicantdeath

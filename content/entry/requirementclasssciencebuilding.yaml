@@ -1,0 +1,84 @@
+id: REQUIREMENTCLASSSCIENCEBUILDING
+parent_id: BUILDCATEGORYCATEGORY
+name: 科学建筑
+disabled: False
+search_only: False
+category: BUILDCATEGORYCATEGORY
+sort_string: 科学建筑
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 科学建筑
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 让复制人了解周围的世界，以及更远之处的建筑。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 此类别的建筑：
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 研究站'
+    image: research_center_0__ui
+    link_id: researchcenter
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 超级计算机'
+    image: research_center2_0__ui
+    link_id: advancedresearchcenter
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 材料研究终端'
+    image: material_research_centre_0__ui
+    link_id: nuclearresearchcenter
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 轨道数据收集实验仪'
+    image: orbital_research_station_0__ui
+    link_id: orbitalresearchcenter
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 虚拟天象仪'
+    image: research_space_0__ui
+    link_id: dlc1cosmicresearchcenter
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 地质调谐仪'
+    image: geotuner_0__ui
+    link_id: geotuner
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 植物分析仪'
+    image: genetic_analysisstation_0__ui
+    link_id: geneticanalysisstation
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 望远镜'
+    image: telescope_low_0__ui
+    link_id: clustertelescope
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 隔绝式望远镜'
+    image: telescope_0__ui
+    link_id: clustertelescopeenclosed
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 航天指挥站'
+    image: mission_control_station_0__ui
+    link_id: missioncontrolcluster
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 需求于：
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: '    • <link="LABORATORY">实验室</link>'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical

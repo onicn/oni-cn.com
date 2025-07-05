@@ -1,0 +1,92 @@
+id: BIOMEREGOLITH
+parent_id: BIOMES
+name: 浮土生态
+disabled: False
+search_only: False
+category: BIOMES
+sort_string: BIOMEREGOLITH
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 浮土生态
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 浮土生态中含有大量<link="REGOLITH">浮土</link>，可用作过滤材料。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      在浮土层中徘徊的是有害的<link="MOLESPECIES">锹环田鼠</link>，它们会吃掉宝贵的资源并排出一半质量的原物质。
+
+
+      幸运的是，这些害兽可以抓起来作为我的复制人的食物来源。然而必须要额外注意，想要围住这些小动物就需要双倍厚墙或者<link="REFINEDMETAL">精炼金属</link>，因为它们有挖穿大多数材料的能力。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 元素
+    style: Subtitle
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 冰
+    image: ice_0__ui
+    link_id: ice
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 氧气
+    color: B7FFFFFF
+    image: element_gas
+    link_id: oxygen
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 铁矿
+    image: hematite_0__ui
+    link_id: ironore
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 铁锈
+    image: iron_oxide_0__ui
+    link_id: rust
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 碎冰
+    image: crushed_ice_0__ui
+    link_id: crushedice
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 浮土
+    image: sand_0__ui
+    link_id: regolith
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 镁铁质岩
+    image: igneous_rock_0__ui
+    link_id: maficrock
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 植物
+    style: Subtitle
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 冰息萝卜
+    image: coldbreather_0__ui
+    link_id: coldbreather
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 小动物
+    style: Subtitle
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 锹环田鼠
+    image: driller_0__ui
+    link_id: mole
+  layout: Vertical

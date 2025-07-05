@@ -1,0 +1,87 @@
+id: HVAC
+parent_id: TECH
+name: 暖通空调
+disabled: False
+search_only: False
+category: TECH
+sort_string: 暖通空调
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="HVAC">暖通空调</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 调节殖民地的<link="HEAT">温度</link>以满足<link="PLANTS">植物</link>种植和复制人舒适居住的需求。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="TEMPERATUREMODULATION">温度调节</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: airconditioner_0__ui
+  - widget_type: CodexText
+    text: <link="AIRCONDITIONER">温度调节器</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: switchthermal_0__ui
+  - widget_type: CodexText
+    text: <link="LOGICTEMPERATURESENSOR">温度传感器</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: gas_temperature_sensor_0__ui
+  - widget_type: CodexText
+    text: <link="GASCONDUITTEMPERATURESENSOR">气体管道温度传感器</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: gas_element_sensor_0__ui
+  - widget_type: CodexText
+    text: <link="GASCONDUITELEMENTSENSOR">气体管道元素传感器</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: utilities_gas_radiant_0__ui
+  - widget_type: CodexText
+    text: <link="GASCONDUITRADIANT">导热气体管道</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: gasstorage_0__ui
+  - widget_type: CodexText
+    text: <link="GASRESERVOIR">储气库</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: limit_valve_gas_0__ui
+  - widget_type: CodexText
+    text: <link="GASLIMITVALVE">气体计量阀</link>
+    style: Body
+  layout: Horizontal

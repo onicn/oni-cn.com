@@ -1,0 +1,53 @@
+id: SHRIMP
+name: 虾
+title: STRINGS.CODEX.A5_SHRIMP.TITLE
+disabled: False
+search_only: False
+category: JOURNALS
+sort_string: 虾
+required_dlc_ids:
+- EXPANSION1_ID
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 虾
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：零
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+  lock_id: journal_shrimp
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <smallcaps>[声纹识别系统初始化完成]
+
+      [识别编号：B111]</smallcaps>
+
+
+      [录音开始]
+
+
+      "机-机灵的小家伙们，你们今天过得怎么样？
+
+
+      （唧啾声）
+
+
+      看！我买了粉虾给你们吃。你们最喜欢的！饿了没？
+
+
+      （兴奋的唧啾声）
+
+
+      哦，等一下，我着急的小伙伴们。我忘了关录音机了——
+
+
+      （沙沙声）"
+
+
+      [录音结束]
+    style: Body
+  layout: Vertical
+  lock_id: journal_shrimp

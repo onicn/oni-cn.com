@@ -1,0 +1,22 @@
+id: MYLOG21
+name: 周期2000
+title: STRINGS.CODEX.MYLOG.BODY.LOG5.TITLE
+disabled: False
+search_only: False
+category: MYLOG
+sort_string: A5
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 周期2000
+    style: Title
+  - widget_type: CodexText
+    text: >+
+      我偶尔会发现我自己正在思考“永恒”实际是多久。我的天呐。
+
+    style: Body
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical
+  lock_id: log5

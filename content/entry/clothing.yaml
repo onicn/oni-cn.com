@@ -1,0 +1,59 @@
+id: CLOTHING
+parent_id: TECH
+name: 纺织生产
+disabled: False
+search_only: False
+category: TECH
+sort_string: 纺织生产
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="CLOTHING">纺织生产</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 极致发挥柔软轻薄的纤维的好处，从而提升复制人的<link="MORALE">士气</link>。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="ARTISTRY">艺术表达</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: clothingfactory_0__ui
+  - widget_type: CodexText
+    text: <link="CLOTHINGFABRICATOR">纺织机</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: floor_carpet_0__ui
+  - widget_type: CodexText
+    text: <link="CARPETTILE">地毯砖</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: walls_0__ui
+  - widget_type: CodexText
+    text: <link="EXTERIORWALL">干板墙</link>
+    style: Body
+  layout: Horizontal

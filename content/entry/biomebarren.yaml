@@ -1,0 +1,129 @@
+id: BIOMEBARREN
+parent_id: BIOMES
+name: 岩漠生态
+disabled: False
+search_only: False
+category: BIOMES
+sort_string: BIOMEBARREN
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 岩漠生态
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 初步扫描表明，这片生态没有<link="PLANTS">植物</link>或<link="CREATURES">小动物</link>。这里缺乏<link="ELEMENTSLIQUID">液体</link>，只有极少的<link="ELEMENTSGAS">气体</link>存在。这些干而充满尘土的平地可以挖来做建造材料，但对于一个殖民地来说，维持生存的资源很少。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      沉积岩层主要由<link="GRANITE">花岗岩</link>的沉积物组成，但也有<link="OBSIDIAN">黑曜石</link>和<link="IGNEOUSROCK">火成岩</link>存在。这表明了历史上火山的活动，尽管现在这里已经没有火山了。
+
+
+      在初步扫描中也可以看出这里<link="IRON">铁矿</link>和<link="CARBON">煤炭</link>矿床很丰富。这两者对于建立殖民地的电力基础很有帮助。
+
+
+      这里虽然缺少维持殖民地的关键的必要资源，但也没有什么危险能够伤害到我的复制人。这里对于探索来说足够安全。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 元素
+    style: Subtitle
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 铝矿
+    image: aluminum_ore_0__ui
+    link_id: aluminumore
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 泥土
+    image: dirt_0__ui
+    link_id: dirt
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 氧气
+    color: B7FFFFFF
+    image: element_gas
+    link_id: oxygen
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 二氧化碳
+    color: 000000FF
+    image: element_gas
+    link_id: carbondioxide
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 黑曜石
+    image: obsidian_0__ui
+    link_id: obsidian
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 火成岩
+    image: igneous_rock_0__ui
+    link_id: igneousrock
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 真空
+    color: 000000FF
+    image: unknown_far
+    link_id: vacuum
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 铁
+    image: iron_refined_0__ui
+    link_id: iron
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 铁矿
+    image: hematite_0__ui
+    link_id: ironore
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 煤炭
+    image: carbon_0__ui
+    link_id: carbon
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 花岗岩
+    image: granite_0__ui
+    link_id: granite
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 植物
+    style: Subtitle
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 氧齿蕨
+    image: oxy_fern_0__ui
+    link_id: oxyfern
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 乔木树
+    image: tree_0__ui
+    link_id: foresttree
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 米虱木
+    image: meallice_0__ui
+    link_id: basicsingleharvestplant
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 六角根
+    image: podmelon_0__ui
+    link_id: forestforageplantplanted
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 欢乐叶
+    image: potted_leafy_0__ui
+    link_id: leafyplant
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 小动物
+    style: Subtitle
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 树鼠
+    image: squirrel_0__ui
+    link_id: squirrel
+  layout: Vertical

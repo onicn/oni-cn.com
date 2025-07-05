@@ -1,0 +1,164 @@
+id: MOOSPECIES
+parent_id: CREATURES
+name: 释气海牛
+disabled: False
+search_only: False
+category: CREATURES
+sort_string: <link="MOOSPECIES">释气海牛</link>
+sub_entries:
+- id: Moo
+  parent_id: MooSpecies
+  name: <link="MOO">释气海牛</link>
+  disabled: False
+  sort_string: 释气海牛
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 释气海牛
+    style: Title
+  - widget_type: CodexText
+    text: 可驯化的小动物
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      由于其外星性质和起源，目前人们对释气海牛知之甚少。
+
+
+      它能够在没有空气的零重力环境中生存，而且依赖于另一种外星物种<link="GASGRASS">释气草</link>以维持生存。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 释气海牛性情温和，可以饲养以获得天然气，但它们的繁殖方式尚未被发现。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: gassy_moo_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      释气海牛是一种以<link="GASGRASS">释气草</link>为食的外星小动物，会排泄<link="METHANE">天然气</link>。
+
+
+      当驯化并喂食后，为其挤奶可获得<link="MILK">咸乳</link>。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 理想温度
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 舒适范围：<b>-50ºC</b>至<b>50ºC</b>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 存活范围：<b>-200ºC</b>至<b>200ºC</b>'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 寿命
+    style: Subtitle
+  - widget_type: CodexText
+    text: 这种小动物特征<link="CREATURES__GUIDE__FERTILITY">寿命</link>为<b>75周期</b>。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 所需空间
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 当房间空间对每只小动物平均少于<b>16格</b>时会感到<link="CREATURES__GUIDE__MOOD">拥挤</link>。'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 当房间小于<b>16格</b>时会感到<link="CREATURES__GUIDE__MOOD">封闭</link>。'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 掉落物
+    style: Subtitle
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 肉
+    image: creaturemeat_0__ui
+    link_id: meat
+  - widget_type: CodexText
+    text: 	16,000千卡
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 食物
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: gassygrass_0__ui
+      text1: 释气草
+      text2: 50% 生长进度/周期
+      link_id: gasgrass
+    produce:
+    - image: element_gas
+      color: FF6E0FFF
+      text1: 天然气
+      text2: 10千克/周期
+      link_id: methane
+    fabricator:
+      image: gassy_moo_0__ui
+      text1: 释气海牛
+      link_id: MOO
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: gassygrass_0__ui
+      text1: 释气草
+      text2: 2单位
+      link_id: gasgrass
+    produce:
+    - image: element_liquid
+      color: CCEEE8FF
+      text1: 咸乳
+      text2: 50千克
+      link_id: milk
+    fabricator:
+      image: gassy_moo_0__ui
+      text1: 释气海牛
+      link_id: MOO
+  - widget_type: CodexConversionPanel
+    require: []
+    produce:
+    - image: creaturemeat_0__ui
+      text1: 肉
+      text2: 16,000千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: meat
+    fabricator:
+      image: gassy_moo_0__ui
+      text1: 释气海牛
+      link_id: MOO
+  layout: Vertical

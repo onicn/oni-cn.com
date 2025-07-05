@@ -1,0 +1,142 @@
+id: GLASS
+parent_id: ELEMENTSSOLID
+name: 玻璃
+disabled: False
+search_only: False
+category: ELEMENTSSOLID
+sort_string: 玻璃
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="GLASS">玻璃</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: glass_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: glass_0__ui
+      text1: 玻璃
+      text2: 1000克
+      link_id: glass
+    produce:
+    - image: element_liquid
+      color: 79E6FFFF
+      text1: 熔融玻璃
+      text2: 1000克
+      link_id: moltenglass
+    fabricator:
+      image: crew_state_temp_up
+      text1: 1426.9ºC
+      tooltip: 温度高于1426.9ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换于
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: 79E6FFFF
+      text1: 熔融玻璃
+      text2: 1000克
+      link_id: moltenglass
+    produce:
+    - image: glass_0__ui
+      text1: 玻璃
+      text2: 1000克
+      link_id: glass
+    fabricator:
+      image: crew_state_temp_down
+      text1: 1126.9ºC
+      tooltip: 温度低于1126.9ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 铅服
+    require:
+    - image: lead_0__ui
+      text1: 铅
+      text2: 200千克
+      link_id: lead
+    - image: glass_0__ui
+      text1: 玻璃
+      text2: 10千克
+      link_id: glass
+    produce:
+    - image: suit_leadsuit_0__ui
+      text1: 铅服
+      text2: 1单位
+      link_id: leadsuit
+    fabricator:
+      image: suit_maker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 太空服锻造台
+      text2: 40秒
+      link_id: suitfabricator
+  - widget_type: CodexRecipePanel
+    text: 铅服
+    require:
+    - image: suit_leadsuit_0__ui
+      text1: 磨损的铅服
+      text2: 1单位
+      link_id: leadsuit
+    - image: glass_0__ui
+      text1: 玻璃
+      text2: 5千克
+      link_id: glass
+    produce:
+    - image: suit_leadsuit_0__ui
+      text1: 铅服
+      text2: 1单位
+      link_id: leadsuit
+    fabricator:
+      image: suit_maker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 太空服锻造台
+      text2: 40秒
+      link_id: suitfabricator
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      玻璃是一种脆性透明物质，由<link="SAND">沙子</link>经高温烧制而成。
+
+
+      资源种类：人造材料
+
+      熔点：1426.9ºC
+
+      硬度：<color=#6D7BC1FF>10（柔软）</color>
+
+
+      比热容：0.840 (DTU/g)/ºC
+
+      热导率：1.110 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.65
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：<link="BUILDABLEANY">一般建造材料</link>, <link="TRANSPARENT">透明体</link>, <link="ELEMENTSSOLID">固体</link>, 人造材料
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

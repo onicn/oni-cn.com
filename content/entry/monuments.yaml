@@ -1,0 +1,62 @@
+id: MONUMENTS
+parent_id: TECH
+name: 丰碑
+disabled: False
+search_only: False
+category: TECH
+sort_string: 丰碑
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="MONUMENTS">丰碑</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 丰碑工程。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="SCREENS">新媒体</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="ENVIRONMENTALAPPRECIATION">环境鉴赏</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: monument_base_a_0__ui
+  - widget_type: CodexText
+    text: <link="MONUMENTBOTTOM">丰碑底基</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: monument_mid_a_0__ui
+  - widget_type: CodexText
+    text: <link="MONUMENTMIDDLE">丰碑中段</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: monument_upper_a_0__ui
+  - widget_type: CodexText
+    text: <link="MONUMENTTOP">丰碑顶部</link>
+    style: Body
+  layout: Horizontal

@@ -1,0 +1,61 @@
+id: WIREBRIDGEHIGHWATTAGE
+parent_id: BUILDCATEGORYPOWER
+name: 高负荷电线接合板
+disabled: False
+search_only: False
+category: BUILDCATEGORYPOWER
+sort_string: 高负荷电线接合板
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="WIREBRIDGEHIGHWATTAGE">高负荷电线接合板</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 高级电力调节
+    style: Body
+    image: research_type_alpha_icon
+    link_id: advancedpowerregulation
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: heavywatttile_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      可让<link="HIGHWATTAGEWIRE">高负荷电线</link>穿过墙体和地面。
+
+
+      可作为常规砖块使用。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：1格宽x1格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：3秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="METAL">金属矿石</link>200千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    行走速度：-50%'
+    tooltip: 复制人在这种砖块上能够加速<b>-50%</b>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：-25（范围：6格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>6</b>格内降低<b><b>-25</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>接合板可让高负荷电线穿墙而过，而不会泄露气体和液体。</i>
+    style: Body
+  layout: Vertical

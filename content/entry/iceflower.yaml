@@ -1,0 +1,74 @@
+id: ICEFLOWER
+parent_id: PLANTS
+name: 恬静花
+disabled: False
+search_only: False
+category: PLANTS
+sort_string: 恬静花
+required_dlc_ids:
+- DLC2_ID
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 恬静花
+    style: Title
+  - widget_type: CodexText
+    text: 装饰性植物
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      恬静花是一种常开花的稀有物种，只需要非常少的照顾就能健康成长，使其常年成为新手园丁的最爱。
+
+
+      其富有活力的花可以轻轻地“跳博普舞”以带来感官的娱乐，但之后应该立即洗手，因为花瓣残留物能永久弄脏大多数纺织品。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: potted_ice_flower_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 成长自
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: seed_ice_flower_0__ui
+  - widget_type: CodexText
+    text: <link="ICEFLOWER">恬静花种子</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 详情
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexText
+    text: >-
+      恬静花是一种<link="DECOR">装饰性</link><link="PLANTS">植物</link>，绒球形状的花朵十分柔软。
+
+
+      出神地盯着它看对<link="MORALE">士气</link>有积极效果。
+    style: Body
+  - widget_type: CodexText
+    text: >-
+      <b>生长需求</b>：
+          • 最大<link="RADIATION">辐射</link>：2,200拉德/周期
+          • <link="HEAT">温度</link>：-70至5ºC
+          • <link="ATMOSPHERE">气压</link>：最低150克
+          • <link="ATMOSPHERE">环境</link>：
+              • <link="OXYGEN">氧气</link>
+              • <link="CONTAMINATEDOXYGEN">污染氧</link>
+              • <link="CARBONDIOXIDE">二氧化碳</link>
+              • <link="CHLORINEGAS">氯气</link>
+              • <link="HYDROGEN">氢气</link>
+          • 农地
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

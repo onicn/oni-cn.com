@@ -1,0 +1,151 @@
+id: KELPPLANT
+parent_id: PLANTS
+name: 海梳蕨
+disabled: False
+search_only: False
+category: PLANTS
+sort_string: 海梳蕨
+required_dlc_ids:
+- DLC4_ID
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 海梳蕨
+    style: Title
+  - widget_type: CodexText
+    text: 水生植物
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      海梳蕨是超高效的光合作用植物。尽管大多数植物向光生长，但这种水生蕨类的能量需求很低，使其能够优先考虑其他生存需求。
+
+
+      它生长在充满液体的洞穴的顶部，卷须向下垂悬，轻拂经过的小动物。这种接触可鼓励小动物食用这种植物，并排出有利于其持续生长的肥料。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: kelp_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 成长自
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: seed_kelp_0__ui
+  - widget_type: CodexText
+    text: <link="KELPPLANT">海梳蕨种子</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 详情
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexText
+    text: >-
+      海梳蕨会消耗<link="TOXICSAND">污染土</link>。
+
+
+      其叶子可以加工提取出<link="PHYTOOIL">植物润滑油</link>。
+    style: Body
+  - widget_type: CodexText
+    text: >-
+      <b>生长需求</b>：
+          • 最大<link="RADIATION">辐射</link>：7,400拉德/周期
+          • 生长周期：5.0周期
+          • <link="HEAT">温度</link>：-10至85ºC
+          • <link="ATMOSPHERE">环境</link>：
+              • <link="WATER">水</link>
+              • <link="DIRTYWATER">污染水</link>
+              • <link="SALTWATER">盐水</link>
+              • <link="BRINE">浓盐水</link>
+              • <link="PHYTOOIL">植物润滑油</link>
+              • <link="NATURALRESIN">树脂</link>
+          • <link="TOXICSAND">污染土</link>：-10千克/周期
+          • 农地
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      <b>效果</b>：
+          • <link="KELP">海梳蕨叶</link>：50千克
+          • 基础<link="PLANTS">种子</link>收获几率：10%
+          • <link="DECOR">装饰度</link>：+15（范围：2格）
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 10千克/周期
+      link_id: toxicsand
+    produce:
+    - image: kelp_leaf_0__ui
+      text1: 海梳蕨叶
+      text2: 10千克/周期
+      link_id: kelp
+    fabricator:
+      image: kelp_0__ui
+      text1: 海梳蕨
+      link_id: KELPPLANT
+  - widget_type: CodexConversionPanel
+    require:
+    - image: kelp_0__ui
+      text1: 海梳蕨
+      text2: 40% 生长进度/周期
+      link_id: kelpplant
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 10千克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__trp_ui
+      text1: 热带帕库鱼
+      link_id: PACUTROPICAL
+  - widget_type: CodexConversionPanel
+    require:
+    - image: kelp_0__ui
+      text1: 海梳蕨
+      text2: 40% 生长进度/周期
+      link_id: kelpplant
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 10千克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__ui
+      text1: 帕库鱼
+      link_id: PACU
+  - widget_type: CodexConversionPanel
+    require:
+    - image: kelp_0__ui
+      text1: 海梳蕨
+      text2: 40% 生长进度/周期
+      link_id: kelpplant
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 10千克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__glp_ui
+      text1: 大嘴鱼
+      link_id: PACUCLEANER
+  layout: Vertical

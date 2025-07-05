@@ -1,0 +1,393 @@
+id: FERTILIZER
+parent_id: ELEMENTSSOLID
+name: 肥料
+disabled: False
+search_only: False
+category: ELEMENTSSOLID
+sort_string: 肥料
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="FERTILIZER">肥料</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: fertilizer_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: fertilizer_0__ui
+      text1: 肥料
+      text2: 1000克
+      link_id: fertilizer
+    produce:
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 1000克
+      link_id: dirt
+    fabricator:
+      image: crew_state_temp_up
+      text1: 125ºC
+      tooltip: 温度高于125ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 宇宙内爆破弹
+    require:
+    - image: nickel_0__ui
+      text1: 镍
+      text2: 50千克
+      link_id: nickel
+    - image: fertilizer_0__ui
+      text1: 肥料
+      text2: 100千克
+      link_id: fertilizer
+    - image: element_liquid
+      color: FFC325FF
+      text1: 石油
+      text2: 200千克
+      link_id: petroleum
+    produce:
+    - image: longrange_missile_0__ui
+      text1: 宇宙内爆破弹
+      text2: 1单位
+      link_id: missilelauncher
+    fabricator:
+      image: missile_fabricator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 爆破弹组装机
+      text2: 80秒
+      link_id: missilefabricator
+  - widget_type: CodexRecipePanel
+    text: 宇宙内爆破弹
+    require:
+    - image: nickel_0__ui
+      text1: 镍
+      text2: 50千克
+      link_id: nickel
+    - image: fertilizer_0__ui
+      text1: 肥料
+      text2: 100千克
+      link_id: fertilizer
+    - image: element_liquid
+      color: E1CB69FF
+      text1: 生物柴油
+      text2: 200千克
+      link_id: refinedlipid
+    produce:
+    - image: longrange_missile_0__ui
+      text1: 宇宙内爆破弹
+      text2: 1单位
+      link_id: missilelauncher
+    fabricator:
+      image: missile_fabricator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 爆破弹组装机
+      text2: 80秒
+      link_id: missilefabricator
+  - widget_type: CodexRecipePanel
+    text: 宇宙内爆破弹
+    require:
+    - image: copper_refined_0__ui
+      text1: 铜
+      text2: 50千克
+      link_id: copper
+    - image: fertilizer_0__ui
+      text1: 肥料
+      text2: 100千克
+      link_id: fertilizer
+    - image: element_liquid
+      color: FFC325FF
+      text1: 石油
+      text2: 200千克
+      link_id: petroleum
+    produce:
+    - image: longrange_missile_0__ui
+      text1: 宇宙内爆破弹
+      text2: 1单位
+      link_id: missilelauncher
+    fabricator:
+      image: missile_fabricator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 爆破弹组装机
+      text2: 80秒
+      link_id: missilefabricator
+  - widget_type: CodexRecipePanel
+    text: 宇宙内爆破弹
+    require:
+    - image: copper_refined_0__ui
+      text1: 铜
+      text2: 50千克
+      link_id: copper
+    - image: fertilizer_0__ui
+      text1: 肥料
+      text2: 100千克
+      link_id: fertilizer
+    - image: element_liquid
+      color: E1CB69FF
+      text1: 生物柴油
+      text2: 200千克
+      link_id: refinedlipid
+    produce:
+    - image: longrange_missile_0__ui
+      text1: 宇宙内爆破弹
+      text2: 1单位
+      link_id: missilelauncher
+    fabricator:
+      image: missile_fabricator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 爆破弹组装机
+      text2: 80秒
+      link_id: missilefabricator
+  - widget_type: CodexRecipePanel
+    text: 宇宙内爆破弹
+    require:
+    - image: cobalt_refined_0__ui
+      text1: 钴
+      text2: 50千克
+      link_id: cobalt
+    - image: fertilizer_0__ui
+      text1: 肥料
+      text2: 100千克
+      link_id: fertilizer
+    - image: element_liquid
+      color: FFC325FF
+      text1: 石油
+      text2: 200千克
+      link_id: petroleum
+    produce:
+    - image: longrange_missile_0__ui
+      text1: 宇宙内爆破弹
+      text2: 1单位
+      link_id: missilelauncher
+    fabricator:
+      image: missile_fabricator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 爆破弹组装机
+      text2: 80秒
+      link_id: missilefabricator
+  - widget_type: CodexRecipePanel
+    text: 宇宙内爆破弹
+    require:
+    - image: cobalt_refined_0__ui
+      text1: 钴
+      text2: 50千克
+      link_id: cobalt
+    - image: fertilizer_0__ui
+      text1: 肥料
+      text2: 100千克
+      link_id: fertilizer
+    - image: element_liquid
+      color: E1CB69FF
+      text1: 生物柴油
+      text2: 200千克
+      link_id: refinedlipid
+    produce:
+    - image: longrange_missile_0__ui
+      text1: 宇宙内爆破弹
+      text2: 1单位
+      link_id: missilelauncher
+    fabricator:
+      image: missile_fabricator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 爆破弹组装机
+      text2: 80秒
+      link_id: missilefabricator
+  - widget_type: CodexRecipePanel
+    text: 宇宙内爆破弹
+    require:
+    - image: aluminum_0__ui
+      text1: 铝
+      text2: 50千克
+      link_id: aluminum
+    - image: fertilizer_0__ui
+      text1: 肥料
+      text2: 100千克
+      link_id: fertilizer
+    - image: element_liquid
+      color: FFC325FF
+      text1: 石油
+      text2: 200千克
+      link_id: petroleum
+    produce:
+    - image: longrange_missile_0__ui
+      text1: 宇宙内爆破弹
+      text2: 1单位
+      link_id: missilelauncher
+    fabricator:
+      image: missile_fabricator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 爆破弹组装机
+      text2: 80秒
+      link_id: missilefabricator
+  - widget_type: CodexRecipePanel
+    text: 宇宙内爆破弹
+    require:
+    - image: aluminum_0__ui
+      text1: 铝
+      text2: 50千克
+      link_id: aluminum
+    - image: fertilizer_0__ui
+      text1: 肥料
+      text2: 100千克
+      link_id: fertilizer
+    - image: element_liquid
+      color: E1CB69FF
+      text1: 生物柴油
+      text2: 200千克
+      link_id: refinedlipid
+    produce:
+    - image: longrange_missile_0__ui
+      text1: 宇宙内爆破弹
+      text2: 1单位
+      link_id: missilelauncher
+    fabricator:
+      image: missile_fabricator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 爆破弹组装机
+      text2: 80秒
+      link_id: missilefabricator
+  - widget_type: CodexRecipePanel
+    text: 宇宙内爆破弹
+    require:
+    - image: iron_refined_0__ui
+      text1: 铁
+      text2: 50千克
+      link_id: iron
+    - image: fertilizer_0__ui
+      text1: 肥料
+      text2: 100千克
+      link_id: fertilizer
+    - image: element_liquid
+      color: FFC325FF
+      text1: 石油
+      text2: 200千克
+      link_id: petroleum
+    produce:
+    - image: longrange_missile_0__ui
+      text1: 宇宙内爆破弹
+      text2: 1单位
+      link_id: missilelauncher
+    fabricator:
+      image: missile_fabricator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 爆破弹组装机
+      text2: 80秒
+      link_id: missilefabricator
+  - widget_type: CodexRecipePanel
+    text: 宇宙内爆破弹
+    require:
+    - image: iron_refined_0__ui
+      text1: 铁
+      text2: 50千克
+      link_id: iron
+    - image: fertilizer_0__ui
+      text1: 肥料
+      text2: 100千克
+      link_id: fertilizer
+    - image: element_liquid
+      color: E1CB69FF
+      text1: 生物柴油
+      text2: 200千克
+      link_id: refinedlipid
+    produce:
+    - image: longrange_missile_0__ui
+      text1: 宇宙内爆破弹
+      text2: 1单位
+      link_id: missilelauncher
+    fabricator:
+      image: missile_fabricator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 爆破弹组装机
+      text2: 80秒
+      link_id: missilefabricator
+  - widget_type: CodexConversionPanel
+    require:
+    - image: fertilizer_0__ui
+      text1: 肥料
+      text2: 140千克/周期
+      link_id: fertilizer
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 140千克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__veg_ui
+      text1: 草质哈奇
+      link_id: HATCHVEGGIE
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: 474506FF
+      text1: 污染水
+      text2: 23.4千克/周期
+      link_id: dirtywater
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 39千克/周期
+      link_id: dirt
+    - image: phosphorite_0__ui
+      text1: 磷矿
+      text2: 15.6千克/周期
+      link_id: phosphorite
+    produce:
+    - image: fertilizer_0__ui
+      text1: 肥料
+      text2: 72千克/周期
+      link_id: fertilizer
+    fabricator:
+      image: fertilizer_maker_0__ui
+      text1: 肥料合成器
+      link_id: FERTILIZERMAKER
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      肥料是一种经过处理的生物营养混合物。
+
+
+      它有助于某些<link="PLANTS">植物</link>的生长。
+
+
+      资源种类：<link="AGRICULTURE">农业</link>
+
+      熔点：125ºC
+
+      硬度：<color=#71ABCFFF>2（非常柔软）</color>
+
+
+      比热容：0.830 (DTU/g)/ºC
+
+      热导率：2.000 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.7
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：氧化剂, <link="ELEMENTSSOLID">固体</link>, <link="AGRICULTURE">农业</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

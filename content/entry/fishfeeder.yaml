@@ -1,0 +1,69 @@
+id: FISHFEEDER
+parent_id: BUILDCATEGORYFOOD
+name: 喂鱼器
+disabled: False
+search_only: False
+category: BUILDCATEGORYFOOD
+sort_string: 喂鱼器
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="FISHFEEDER">喂鱼器</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 养殖
+    style: Body
+    image: research_type_alpha_icon
+    link_id: ranching
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: fishfeeder_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      自动将储存的<link="CREATURES">小动物</link>食物投入下方。
+
+
+      食物消耗后会持续投放。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：1格宽x3格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：120秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="METAL">金属矿石</link>200千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    库存容量：200千克'
+    tooltip: 最多容纳<b>200千克</b>材料
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    库存容量：200千克'
+    tooltip: 最多容纳<b>200千克</b>材料
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    过热<link="HEAT">温度</link>：75ºC'
+    tooltip: 达到<b>75ºC</b>时开始过热
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：-15（范围：3格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>3</b>格内降低<b><b>-15</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>在水上搭建喂食器，以喂养水中的鱼类。</i>
+    style: Body
+  layout: Vertical

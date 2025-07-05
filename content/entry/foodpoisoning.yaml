@@ -1,0 +1,77 @@
+id: FOODPOISONING
+parent_id: DISEASE
+name: 食物中毒
+disabled: False
+search_only: False
+category: DISEASE
+sort_string: 食物中毒
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="FOODPOISONING">食物中毒</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 被食物中毒病菌污染的食物和饮品是不安全的，因为它们会导致呕吐和其他……身体不适。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 温度范围：-25ºC至75ºC
+    style: Body
+  - widget_type: CodexText
+    text: >
+      气压范围：0千克到1000千克
+    style: Body
+  - widget_type: CodexText
+    text: 繁殖于：
+    style: Body
+  - widget_type: CodexText
+    text: '    • <link="DIRTYWATER">污染水</link>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 可食用物'
+    style: Body
+  - widget_type: CodexText
+    text: 存活于：
+    style: Body
+  - widget_type: CodexText
+    text: '    • <link="TOXICSAND">污染土</link>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • <link="CREATURE">遗传生物软泥</link>'
+    style: Body
+  - widget_type: CodexText
+    text: 抑菌物：
+    style: Body
+  - widget_type: CodexText
+    text: '    • <link="CONTAMINATEDOXYGEN">污染氧</link>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 液体'
+    style: Body
+  - widget_type: CodexText
+    text: 抗菌物：
+    style: Body
+  - widget_type: CodexText
+    text: '    • 气体'
+    style: Body
+  - widget_type: CodexText
+    text: 灭菌物：
+    style: Body
+  - widget_type: CodexText
+    text: '    • 固体'
+    style: Body
+  - widget_type: CodexText
+    text: '    • <link="BLEACHSTONE">漂白石</link>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • <link="CHLORINEGAS">氯气</link>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 腌制物'
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

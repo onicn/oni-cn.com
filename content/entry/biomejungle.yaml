@@ -1,0 +1,126 @@
+id: BIOMEJUNGLE
+parent_id: BIOMES
+name: 丛林生态
+disabled: False
+search_only: False
+category: BIOMES
+sort_string: BIOMEJUNGLE
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 丛林生态
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 对丛林生态的初步调查发现，这片生态充满了独特的植物群，但中央被<link="CHLORINE">氯气</link>和<link="HYDROGEN">氢气</link>环绕，这些气体对复制人来说是有毒的。当探索这里时，值得先建立一个良好的系统。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      <link="DRECKOSPECIES">毛鳞壁虎</link>是一种相对温和的小动物，有助于纺织和食物的生产。
+
+
+      <link="GLOMSPECIES">疫病章鱼</link>唯一的作用就是产生<link="POLLUTEDOXYGEN">污染氧</link>，与其他小动物一起建立可持续的生产循环时可能会有用。
+
+
+      <link="SWAMPLILY">芳香百合</link>用于生产关键的医疗材料。
+
+
+      <link="SPICEVINE">火椒藤</link>会大大改善殖民地食物供应的营养和满足感。由于它们与重力的独特关系，这种植物必须倒置才能正常生长。可以使用<link="FARMTILE">土培砖</link>实现这个效果。
+
+
+      对于毒性气体，我可以建造合适的<link="BUILDCATEGORYHVAC">通风</link>系统来保护我的复制人同时提供本地植物和小动物所需的最佳环境。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 元素
+    style: Subtitle
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 藻类
+    image: algae_0__ui
+    link_id: algae
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 沙子
+    image: sand_0__ui
+    link_id: sand
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 铁矿
+    image: hematite_0__ui
+    link_id: ironore
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 氢气
+    color: C51F8BFF
+    image: element_gas
+    link_id: hydrogen
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 漂白石
+    image: bleach_stone_0__ui
+    link_id: bleachstone
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 砂岩
+    image: sand_stone_0__ui
+    link_id: sandstone
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 煤炭
+    image: carbon_0__ui
+    link_id: carbon
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 氯气
+    color: 04A778FF
+    image: element_gas
+    link_id: chlorinegas
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 磷矿
+    image: phosphorite_0__ui
+    link_id: phosphorite
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 火成岩
+    image: igneous_rock_0__ui
+    link_id: igneousrock
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 植物
+    style: Subtitle
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 芳香百合
+    image: swamplily_0__ui
+    link_id: swamplily
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 火椒藤
+    image: vinespicenut_0__ui
+    link_id: spicevine
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 欢乐叶
+    image: potted_leafy_0__ui
+    link_id: leafyplant
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 小动物
+    style: Subtitle
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 疫病章鱼
+    image: glom_0__ui
+    link_id: glom
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 毛鳞壁虎
+    image: drecko_0__fbr_ui
+    link_id: drecko
+  layout: Vertical

@@ -1,0 +1,137 @@
+id: POWERCONTROLSTATION
+parent_id: BUILDCATEGORYEQUIPMENT
+name: 电控站
+disabled: False
+search_only: False
+category: BUILDCATEGORYEQUIPMENT
+sort_string: 电控站
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="POWERCONTROLSTATION">电控站</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 扩音器
+    style: Body
+    image: research_type_alpha_icon
+    link_id: acoustics
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: electricianworkdesk_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      生产<link="POWERSTATIONTOOLS">微芯片</link>以增加发电机输出的<link="POWER">电力</link>。
+
+
+      分配的复制人必须具有<link="TECHNICALS2">调校</link>特质。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="REFINEDMETAL">精炼金属</link>：每次消耗5千克'
+    tooltip: 每次使用消耗<style="consumed">5千克</style><style="KKeyword"><link="REFINEDMETAL">精炼金属</link></style>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    专用房间：发电厂'
+    tooltip: >-
+      必须建在专用<style="KKeyword">房间</style>内
+
+
+      建成后，<style="KKeyword">房间</style>将变为<style="KKeyword">发电厂</style>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：2格宽x4格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：30秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="REFINEDMETAL">精炼金属</link>200千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    附加效果：工程师的调校'
+    tooltip: >-
+      施加的效果：
+
+
+      工程师的调校
+
+      <b>效果：</b>
+          • <style="KKeyword">电力输出</style>：+50%
+
+      持续时间：3.0周期
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    改善建筑'
+    tooltip: <style="KKeyword">调校</style>可以改善这些建筑：
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="GENERATOR">煤炭发电机</link>'
+    tooltip: <link="GENERATOR">煤炭发电机</link>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="HYDROGENGENERATOR">氢气发电机</link>'
+    tooltip: <link="HYDROGENGENERATOR">氢气发电机</link>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="METHANEGENERATOR">天然气发电机</link>'
+    tooltip: <link="METHANEGENERATOR">天然气发电机</link>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="PEATGENERATOR">泥炭燃烧器</link>'
+    tooltip: <link="PEATGENERATOR">泥炭燃烧器</link>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="PETROLEUMGENERATOR">石油发电机</link>'
+    tooltip: <link="PETROLEUMGENERATOR">石油发电机</link>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="STEAMTURBINE2">蒸汽涡轮机</link>'
+    tooltip: <link="STEAMTURBINE2">蒸汽涡轮机</link>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="WOODGASGENERATOR">木材燃烧器</link>'
+    tooltip: <link="WOODGASGENERATOR">木材燃烧器</link>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LOGIC">信号输入端</link>'
+    tooltip: 当接收到信号时，输入端会使这个建筑一种状态发生变化
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    启用/禁用'
+    tooltip: >-
+      输入端行为：
+
+      • <b><style="logic_on">绿色信号</style></b>：启用建筑
+
+      • <b><style="logic_off">红色信号</style></b>：禁用建筑
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>类别</b>
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    <link="REQUIREMENTCLASSINDUSTRIALMACHINERY">工业机械</link>'
+    style: Body
+  - widget_type: CodexText
+    text: '    <link="REQUIREMENTCLASSPOWERBUILDING">电力建筑</link>'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>一次只能为一个电控站分配一名复制人。</i>
+    style: Body
+  layout: Vertical

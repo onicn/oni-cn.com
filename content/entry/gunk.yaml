@@ -1,0 +1,91 @@
+id: GUNK
+parent_id: ELEMENTSSOLID
+name: 固态粘渣油
+disabled: False
+search_only: False
+category: ELEMENTSSOLID
+sort_string: 固态粘渣油
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="GUNK">固态粘渣油</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: gunk_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: gunk_0__ui
+      text1: 固态粘渣油
+      text2: 1000克
+      link_id: gunk
+    produce:
+    - image: element_liquid
+      color: 512360FF
+      text1: 粘渣油
+      text2: 1000克
+      link_id: liquidgunk
+    fabricator:
+      image: crew_state_temp_up
+      text1: -8.1ºC
+      tooltip: 温度高于-8.1ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换于
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: 512360FF
+      text1: 粘渣油
+      text2: 1000克
+      link_id: liquidgunk
+    produce:
+    - image: gunk_0__ui
+      text1: 固态粘渣油
+      text2: 1000克
+      link_id: gunk
+    fabricator:
+      image: crew_state_temp_down
+      text1: -8.1ºC
+      tooltip: 温度低于-8.1ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      固态粘渣油是由复制人的仿生机械产生而堆积的，冻结成<link="ELEMENTSSOLID">固态</link>的污垢和砂砾。
+
+
+      资源种类：有机物
+
+      熔点：-8.1ºC
+
+      硬度：<color=#6D7BC1FF>10（柔软）</color>
+
+
+      比热容：1.200 (DTU/g)/ºC
+
+      热导率：1.500 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.9
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：溜滑, 不稳定, <link="ELEMENTSSOLID">固体</link>, 有机物
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

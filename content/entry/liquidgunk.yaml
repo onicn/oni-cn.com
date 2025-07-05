@@ -1,0 +1,153 @@
+id: LIQUIDGUNK
+parent_id: ELEMENTSLIQUID
+name: 粘渣油
+disabled: False
+search_only: False
+icon_color: 512360FF
+category: ELEMENTSLIQUID
+sort_string: 粘渣油
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="LIQUIDGUNK">粘渣油</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    color: 512360FF
+    image: element_liquid
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: 512360FF
+      text1: 粘渣油
+      text2: 1000克
+      link_id: liquidgunk
+    produce:
+    - image: element_liquid
+      color: FFC325FF
+      text1: 石油
+      text2: 920克
+      link_id: petroleum
+    - image: sulfur_0__ui
+      text1: 硫
+      text2: 80克
+      link_id: sulfur
+    fabricator:
+      image: crew_state_temp_up
+      text1: 447.9ºC
+      tooltip: 温度高于447.9ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: 512360FF
+      text1: 粘渣油
+      text2: 1000克
+      link_id: liquidgunk
+    produce:
+    - image: gunk_0__ui
+      text1: 固态粘渣油
+      text2: 1000克
+      link_id: gunk
+    fabricator:
+      image: crew_state_temp_down
+      text1: -8.1ºC
+      tooltip: 温度低于-8.1ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换于
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: gunk_0__ui
+      text1: 固态粘渣油
+      text2: 1000克
+      link_id: gunk
+    produce:
+    - image: element_liquid
+      color: 512360FF
+      text1: 粘渣油
+      text2: 1000克
+      link_id: liquidgunk
+    fabricator:
+      image: crew_state_temp_up
+      text1: -8.1ºC
+      tooltip: 温度高于-8.1ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 齿轮膏
+    require:
+    - image: element_liquid
+      color: 512360FF
+      text1: 粘渣油
+      text2: 80千克
+      link_id: liquidgunk
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 200千克
+      link_id: water
+    produce:
+    - image: lubricant_applicator_0__ui
+      text1: 齿轮膏
+      text2: 1单位
+      link_id: lubricationstick
+    - image: element_liquid
+      color: 474506FF
+      text1: 污染水
+      text2: 200千克
+      link_id: dirtywater
+    fabricator:
+      image: apothecary_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 配药桌
+      text2: 100秒
+      link_id: apothecary
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      粘渣油是由复制人的仿生机械产生而堆积的污垢和砂砾。
+
+
+      粘度令人不快。
+
+
+      资源种类：<link="ELEMENTSLIQUID">液体</link>
+
+      冰点：-8.1ºC
+
+      沸点：447.9ºC
+
+
+      比热容：1.200 (DTU/g)/ºC
+
+      热导率：1.500 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.9
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：溜滑, <link="ELEMENTSLIQUID">液体</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

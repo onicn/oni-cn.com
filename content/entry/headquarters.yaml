@@ -1,0 +1,34 @@
+id: HEADQUARTERS
+name: 打印舱
+title: STRINGS.CODEX.HEADQUARTERS.TITLE
+disabled: False
+search_only: False
+category: BUILDINGS
+sort_string: 打印舱
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 打印舱
+    style: Title
+  - widget_type: CodexDividerLine
+  - widget_type: CodexImage
+    image: hqbase
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      庄严科技开发的一种先进3D打印机。
+
+
+      这款打印舱的最大特点是能够依据生物蓝图打印活的有机材料。
+
+
+      该产品能够合成专用的有机打印材料，并且储存了多到几乎不可思议的能量，每3周期可以自动打印一次。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical
+  lock_id: printingpod

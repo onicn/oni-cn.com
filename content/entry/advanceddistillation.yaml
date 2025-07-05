@@ -1,0 +1,45 @@
+id: ADVANCEDDISTILLATION
+parent_id: TECH
+name: 乳化
+disabled: False
+search_only: False
+category: TECH
+sort_string: 乳化
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="ADVANCEDDISTILLATION">乳化</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 专门生产<link="ELEMENTSLIQUID">液体</link>混合物。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="DISTILLATION">精馏</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: chemistry_lab_0__ui
+  - widget_type: CodexText
+    text: <link="CHEMICALREFINERY">乳化器</link>
+    style: Body
+  layout: Horizontal

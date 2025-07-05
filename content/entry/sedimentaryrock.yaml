@@ -1,0 +1,155 @@
+id: SEDIMENTARYROCK
+parent_id: ELEMENTSSOLID
+name: 沉积岩
+disabled: False
+search_only: False
+category: ELEMENTSSOLID
+sort_string: 沉积岩
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="SEDIMENTARYROCK">沉积岩</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: sedimentary_rock_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: sedimentary_rock_0__ui
+      text1: 沉积岩
+      text2: 1000克
+      link_id: sedimentaryrock
+    produce:
+    - image: element_liquid
+      color: AE0000FF
+      text1: 岩浆
+      text2: 1000克
+      link_id: magma
+    fabricator:
+      image: crew_state_temp_up
+      text1: 926.9ºC
+      tooltip: 温度高于926.9ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 沙子
+    require:
+    - image: sedimentary_rock_0__ui
+      text1: 沉积岩
+      text2: 100千克
+      link_id: sedimentaryrock
+    produce:
+    - image: sand_0__ui
+      text1: 沙子
+      text2: 100千克
+      link_id: sand
+    fabricator:
+      image: rockrefinery_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 碎石机
+      text2: 40秒
+      link_id: rockcrusher
+  - widget_type: CodexConversionPanel
+    require:
+    - image: sedimentary_rock_0__ui
+      text1: 沉积岩
+      text2: 140千克/周期
+      link_id: sedimentaryrock
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 70千克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__ui
+      text1: 好吃哈奇
+      link_id: HATCH
+  - widget_type: CodexConversionPanel
+    require:
+    - image: sedimentary_rock_0__ui
+      text1: 沉积岩
+      text2: 140千克/周期
+      link_id: sedimentaryrock
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 70千克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__hvy_ui
+      text1: 石壳哈奇
+      link_id: HATCHHARD
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 碎石机
+    require:
+    - image: fossil_0__ui
+      text1: 化石
+      text2: 100千克
+      link_id: fossil
+    produce:
+    - image: limestone_0__ui
+      text1: 石灰
+      text2: 5千克
+      link_id: lime
+    - image: sedimentary_rock_0__ui
+      text1: 沉积岩
+      text2: 95千克
+      link_id: sedimentaryrock
+    fabricator:
+      image: rockrefinery_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 碎石机
+      text2: 40秒
+      link_id: rockcrusher
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      沉积岩是一种多个沉积层的硬化混合物。
+
+
+      它可用作<b>建造材料</b>。
+
+
+      资源种类：<link="BUILDABLERAW">矿物原料</link>
+
+      熔点：926.9ºC
+
+      硬度：<color=#71ABCFFF>2（非常柔软）</color>
+
+
+      比热容：0.200 (DTU/g)/ºC
+
+      热导率：2.000 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.7
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：<link="PLUMBABLE">可做水管的物质</link>, 可粉碎物, <link="BUILDABLEANY">一般建造材料</link>, <link="ELEMENTSSOLID">固体</link>, <link="BUILDABLERAW">矿物原料</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

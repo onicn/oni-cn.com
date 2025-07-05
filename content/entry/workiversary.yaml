@@ -1,0 +1,34 @@
+id: WORKIVERSARY
+name: 拜伦的哈奇的解剖
+title: STRINGS.CODEX.STORY_TRAITS.CRITTER_MANIPULATOR.WORKIVERSARY.TITLE
+disabled: False
+search_only: False
+category: RESEARCHNOTES
+sort_string: 拜伦的哈奇的解剖
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 拜伦的哈奇的解剖
+    style: Title
+  - widget_type: CodexText
+    text: ' '
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+  lock_id: storytrait_crittermanipulator_workiversary
+- contents:
+  - widget_type: CodexText
+    text: >-
+      第三次工作纪念日快乐，阿达！
+
+
+      我画这个是为了填补储物柜旁边的空间，你那贪吃的小动物上周把那片墙撕坏了。希望这够大了！
+
+
+      我仍然无法相信它们居然能消化钢铁——还得是你知道怎么繁殖它们！
+
+
+      - 利亚姆
+    style: Body
+  layout: Vertical
+  lock_id: storytrait_crittermanipulator_workiversary

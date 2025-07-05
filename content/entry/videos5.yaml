@@ -1,0 +1,25 @@
+id: VIDEOS5
+name: 视频：复制人移动
+disabled: False
+search_only: False
+category: Videos
+sort_string: 视频：复制人移动
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 视频：复制人移动
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexVideo
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      当设定任务时，我应该时刻记住，复制人只能爬两格高并且他们自己也是两格高的。
+
+
+      为了查看我放置的任务是否是可前往的，我可以选择一名复制人并(ClickType/click)<b>显示可行路径</b>以查看他们能到达的所有区域。
+    style: Body
+  layout: Vertical

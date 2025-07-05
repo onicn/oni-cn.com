@@ -1,0 +1,105 @@
+id: TOXICMUD
+parent_id: ELEMENTSSOLID
+name: 污染泥
+disabled: False
+search_only: False
+category: ELEMENTSSOLID
+sort_string: 污染泥
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="TOXICMUD">污染泥</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: polluted_sludge_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: polluted_sludge_0__ui
+      text1: 污染泥
+      text2: 1000克
+      link_id: toxicmud
+    produce:
+    - image: element_gas
+      color: 85C9E3FF
+      text1: 蒸汽
+      text2: 600克
+      link_id: steam
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 400克
+      link_id: toxicsand
+    fabricator:
+      image: crew_state_temp_up
+      text1: 99.7ºC
+      tooltip: 温度高于99.7ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 污染土
+    require:
+    - image: polluted_sludge_0__ui
+      text1: 污染泥
+      text2: 150千克
+      link_id: toxicmud
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 60千克
+      link_id: toxicsand
+    - image: element_liquid
+      color: 474506FF
+      text1: 污染水
+      text2: 90千克
+      link_id: dirtywater
+    fabricator:
+      image: sludge_press_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 泥浆分离器
+      text2: 20秒
+      link_id: sludgepress
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      一种<link="TOXICSAND">污染土</link>和<link="DIRTYWATER">污染水</link>的混合物。
+
+
+      可以使用<link="SLUDGEPRESS">泥浆分离器</link>将其分离成基本元素。
+
+
+      资源种类：有机物
+
+      熔点：99.7ºC
+
+      硬度：<color=#6D7BC1FF>10（柔软）</color>
+
+
+      比热容：0.830 (DTU/g)/ºC
+
+      热导率：2.000 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.7
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：不稳定, <link="ELEMENTSSOLID">固体</link>, 有机物
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

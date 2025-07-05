@@ -1,0 +1,350 @@
+id: OXYGEN
+parent_id: ELEMENTSGAS
+name: 氧气
+disabled: False
+search_only: False
+icon_color: B7FFFFFF
+category: ELEMENTSGAS
+sort_string: 氧气
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="OXYGEN">氧气</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    color: B7FFFFFF
+    image: element_gas
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_gas
+      color: B7FFFFFF
+      text1: 氧气
+      text2: 1000克
+      link_id: oxygen
+    produce:
+    - image: element_liquid
+      color: 579AA9FF
+      text1: 液态氧
+      text2: 1000克
+      link_id: liquidoxygen
+    fabricator:
+      image: crew_state_temp_down
+      text1: -183ºC
+      tooltip: 温度低于-183ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换于
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: 579AA9FF
+      text1: 液态氧
+      text2: 1000克
+      link_id: liquidoxygen
+    produce:
+    - image: element_gas
+      color: B7FFFFFF
+      text1: 氧气
+      text2: 1000克
+      link_id: oxygen
+    fabricator:
+      image: crew_state_temp_up
+      text1: -183ºC
+      tooltip: 温度高于-183ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_gas
+      color: B7FFFFFF
+      text1: 氧气
+      text2: 360千克/周期
+      link_id: oxygen
+    - image: gold_refined_0__ui
+      text1: 金
+      text2: 1800克/周期
+      link_id: gold
+    produce:
+    - image: oxyrock_0__ui
+      text1: 氧石
+      text2: 360千克/周期
+      link_id: oxyrock
+    fabricator:
+      image: oxylite_refinery_0__ui
+      text1: 氧石精炼炉
+      link_id: OXYLITEREFINERY
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_gas
+      color: B7FFFFFF
+      text1: 氧气
+      text2: 5千克/周期
+      link_id: oxygen
+    - image: element_liquid
+      color: 474506FF
+      text1: 污染水
+      text2: 65千克/周期
+      link_id: dirtywater
+    - image: sand_0__ui
+      text1: 沙子
+      text2: 5千克/周期
+      link_id: sand
+    produce:
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 35千克/周期
+      link_id: water
+    fabricator:
+      image: cactus_0__ui
+      text1: 仙水掌
+      link_id: FILTERPLANT
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_gas
+      color: B7FFFFFF
+      text1: 氧气
+      text2: 50千克/周期
+      link_id: oxygen
+    produce:
+    - image: oxyrock_0__ui
+      text1: 氧石
+      text2: 47.5千克/周期
+      link_id: oxyrock
+    fabricator:
+      image: puft_0__com_ui
+      text1: 厚壳飞鱼
+      link_id: PUFTOXYLITE
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_gas
+      color: B7FFFFFF
+      text1: 氧气
+      text2: 30千克/周期
+      link_id: oxygen
+    produce:
+    - image: oxyrock_0__ui
+      text1: 氧石
+      text2: 3000克/周期
+      link_id: oxyrock
+    fabricator:
+      image: puft_0__alp_ui
+      text1: 贵族飞鱼
+      link_id: PUFTALPHA
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_gas
+      color: B7FFFFFF
+      text1: 氧气
+      text2: 30千克/周期
+      link_id: oxygen
+    produce: []
+    fabricator:
+      image: oilfloater_0__oxy_ui
+      text1: 长毛浮油生物
+      link_id: OILFLOATERDECOR
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: algae_0__ui
+      text1: 藻类
+      text2: 330千克/周期
+      link_id: algae
+    produce:
+    - image: element_gas
+      color: B7FFFFFF
+      text1: 氧气
+      text2: 300千克/周期
+      link_id: oxygen
+    fabricator:
+      image: mineraldeoxidizer_0__ui
+      text1: 氧气扩散器
+      link_id: MINERALDEOXIDIZER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: algae_0__ui
+      text1: 藻类
+      text2: 18千克/周期
+      link_id: algae
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 180千克/周期
+      link_id: water
+    - image: element_gas
+      color: 000000FF
+      text1: 二氧化碳
+      text2: 200克/周期
+      link_id: carbondioxide
+    produce:
+    - image: element_gas
+      color: B7FFFFFF
+      text1: 氧气
+      text2: 24千克/周期
+      link_id: oxygen
+    - image: element_liquid
+      color: 474506FF
+      text1: 污染水
+      text2: 174.2千克/周期
+      link_id: dirtywater
+    fabricator:
+      image: algaefarm_0__ui
+      text1: 藻类箱
+      link_id: ALGAEHABITAT
+  - widget_type: CodexConversionPanel
+    require:
+    - image: unknown
+      color: 7F7F7FFF
+      text1: 过滤介质
+      text2: 80千克/周期
+      link_id: filter
+    - image: element_gas
+      color: 224F40FF
+      text1: 污染氧
+      text2: 60千克/周期
+      link_id: contaminatedoxygen
+    produce:
+    - image: clay_0__ui
+      text1: 粘土
+      text2: 86千克/周期
+      link_id: clay
+    - image: element_gas
+      color: B7FFFFFF
+      text1: 氧气
+      text2: 54千克/周期
+      link_id: oxygen
+    fabricator:
+      image: co2filter_0__ui
+      text1: 空气净化器
+      link_id: AIRFILTER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 600千克/周期
+      link_id: water
+    produce:
+    - image: element_gas
+      color: B7FFFFFF
+      text1: 氧气
+      text2: 532.8千克/周期
+      link_id: oxygen
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 67.2千克/周期
+      link_id: hydrogen
+    fabricator:
+      image: electrolyzer_0__ui
+      text1: 电解器
+      link_id: ELECTROLYZER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: iron_oxide_0__ui
+      text1: 铁锈
+      text2: 450千克/周期
+      link_id: rust
+    - image: salt_0__ui
+      text1: 盐
+      text2: 150千克/周期
+      link_id: salt
+    produce:
+    - image: element_gas
+      color: B7FFFFFF
+      text1: 氧气
+      text2: 342千克/周期
+      link_id: oxygen
+    - image: element_gas
+      color: 04A778FF
+      text1: 氯气
+      text2: 18千克/周期
+      link_id: chlorinegas
+    - image: hematite_0__ui
+      text1: 铁矿
+      text2: 240千克/周期
+      link_id: ironore
+    fabricator:
+      image: rust_deoxidizer_0__ui
+      text1: 铁锈脱氧机
+      link_id: RUSTDEOXIDIZER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_gas
+      color: 000000FF
+      text1: 二氧化碳
+      text2: 375克/周期
+      link_id: carbondioxide
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 19千克/周期
+      link_id: water
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 4000克/周期
+      link_id: dirt
+    produce:
+    - image: element_gas
+      color: B7FFFFFF
+      text1: 氧气
+      text2: 18.8千克/周期
+      link_id: oxygen
+    fabricator:
+      image: oxy_fern_0__ui
+      text1: 氧齿蕨
+      link_id: OXYFERN
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      (O<sub>2</sub>) 氧气是一种维持生命的可呼吸<link="ELEMENTSGAS">气体</link>。
+
+
+      它通常会浮在其他气体之上。
+
+
+      资源种类：可呼吸的气体
+
+      凝点：-183ºC
+
+
+      比热容：1.005 (DTU/g)/ºC
+
+      热导率：0.024 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.08
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：气体, 可呼吸的气体
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

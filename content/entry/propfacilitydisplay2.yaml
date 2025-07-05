@@ -1,0 +1,37 @@
+id: PROPFACILITYDISPLAY2
+name: 采矿枪宣传广告
+title: STRINGS.CODEX.A0_PROPFACILITYDISPLAY2.TITLE
+disabled: False
+search_only: False
+category: NOTICES
+sort_string: 采矿枪宣传广告
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 采矿枪宣传广告
+    style: Title
+  - widget_type: CodexText
+    text: 公开发布
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+  lock_id: display_prop2
+- contents:
+  - widget_type: CodexText
+    text: >-
+      利用庄严科技新推出的个人挖掘器，让您的采矿作业步入二十三世纪。
+
+
+      经过改进的颗粒冷凝器可以减小原始体积，实现更高效的产品运输，给您带来更丰厚的利润。
+
+
+      根据《全球复兴法》，庄严科技设备仅供工业使用，转售可能会被处以最高$200,000的罚金。
+    style: Body
+  layout: Vertical
+  lock_id: display_prop2
+- contents:
+  - widget_type: CodexText
+    text: 庄严科技出品。
+    style: Body
+  layout: Vertical
+  lock_id: display_prop2

@@ -1,0 +1,94 @@
+id: GENERICSENSORS
+parent_id: TECH
+name: 通用传感器
+disabled: False
+search_only: False
+category: TECH
+sort_string: 通用传感器
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="GENERICSENSORS">通用传感器</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 以创造性的崭新方式推进自动化发展。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="LOGICCONTROL">智能家居</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: pressureswitch_0__ui
+  - widget_type: CodexText
+    text: <link="FLOORSWITCH">压力板</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: world_element_sensor_0__ui
+  - widget_type: CodexText
+    text: <link="LOGICELEMENTSENSORGAS">气体元素传感器</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: world_liquid_sensor_0__ui
+  - widget_type: CodexText
+    text: <link="LOGICELEMENTSENSORLIQUID">液体元素传感器</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: logic_not_0__ui
+  - widget_type: CodexText
+    text: <link="LOGICGATENOT">非门</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: switchtimeofday_0__ui
+  - widget_type: CodexText
+    text: <link="LOGICTIMEOFDAYSENSOR">周期传感器</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: time_sensor_0__ui
+  - widget_type: CodexText
+    text: <link="LOGICTIMERSENSOR">时间传感器</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: logiclightsensor_0__ui
+  - widget_type: CodexText
+    text: <link="LOGICLIGHTSENSOR">光线传感器</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: logic_location_0__ui
+  - widget_type: CodexText
+    text: <link="LOGICCLUSTERLOCATIONSENSOR">星图位置传感器</link>
+    style: Body
+  layout: Horizontal

@@ -1,0 +1,83 @@
+id: NOSECONEBASIC
+parent_id: BUILDCATEGORYROCKETRY
+name: 基础前锥
+disabled: False
+search_only: False
+category: BUILDCATEGORYROCKETRY
+sort_string: 基础前锥
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="NOSECONEBASIC">基础前锥</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 持久生命维持
+    style: Body
+    image: research_type_alpha_icon
+    link_id: durablelifesupport
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: rocket_nosecone_default_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      在起飞和落地期间保护火箭，以实现太空旅行。
+
+
+      必须通过<link="LAUNCHPAD">火箭平台</link>建造。
+
+
+      必须建在火箭的最顶端。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：5格宽x2格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：60秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="REFINEDMETAL">精炼金属</link>400千克, <link="INSULATOR">隔热体</link>200千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    过热<link="HEAT">温度</link>：2000ºC'
+    tooltip: 达到<b>2000ºC</b>时开始过热
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>类别</b>
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    <link="REQUIREMENTCLASSINDUSTRIALMACHINERY">工业机械</link>'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>每个火箭都需要一个前锥才能飞起来。</i>
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 舱块统计
+    style: Subtitle
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>火箭速度</b>等于<b>引擎功率</b>除以<b>负担</b>
+    style: Body
+  - widget_type: CodexText
+    text: '    • 高度：2'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 舱块负担：2'
+    style: Body
+  layout: Vertical

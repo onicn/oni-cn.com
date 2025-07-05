@@ -1,0 +1,60 @@
+id: REQUIREMENTCLASSWASHSTATION
+parent_id: BUILDCATEGORYCATEGORY
+name: 洗手站
+disabled: False
+search_only: False
+category: BUILDCATEGORYCATEGORY
+sort_string: 洗手站
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 洗手站
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 能移除复制人身上传播<link="DISEASE">疾病</link>的病菌的建筑。不是所有洗手站都需要管道铺设。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 此类别的建筑：
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 淋浴隔间'
+    image: shower_0__ui
+    link_id: shower
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 洗手盆'
+    image: wash_basin_0__ui
+    link_id: washbasin
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 洗手池'
+    image: wash_sink_0__ui
+    link_id: washsink
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 手部消毒站'
+    image: handsanitizer_0__ui
+    link_id: handsanitizer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 需求于：
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: '    • <link="LATRINE">公共厕所</link>'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical

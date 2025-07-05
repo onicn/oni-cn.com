@@ -1,0 +1,73 @@
+id: ANTIHISTAMINE
+name: 抗敏药
+title: STRINGS.CODEX.ANTIHISTAMINE.TITLE
+disabled: False
+search_only: False
+category: MEDICINES
+sort_string: 抗敏药
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 抗敏药
+    style: Title
+  - widget_type: CodexText
+    text: 抗组胺药
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 一种强力的抗组胺药，复制人服用后可停止过敏反应。每一剂也会短时间防止过敏反应。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 配药桌
+    require:
+    - image: seed_bristleblossom_0__ui
+      text1: 毛刺花种子
+      text2: 1单位
+      link_id: prickleflower
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 1000克
+      link_id: dirt
+    produce:
+    - image: pill_allergies_0__ui
+      text1: 抗敏药
+      text2: 10单位
+      link_id: antihistamine
+    fabricator:
+      image: apothecary_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 配药桌
+      text2: 100秒
+      link_id: apothecary
+  - widget_type: CodexRecipePanel
+    text: 配药桌
+    require:
+    - image: kelp_leaf_0__ui
+      text1: 海梳蕨叶
+      text2: 10千克
+      link_id: kelp
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 1000克
+      link_id: dirt
+    produce:
+    - image: pill_allergies_0__ui
+      text1: 抗敏药
+      text2: 10单位
+      link_id: antihistamine
+    fabricator:
+      image: apothecary_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 配药桌
+      text2: 100秒
+      link_id: apothecary
+  layout: Vertical

@@ -1,0 +1,113 @@
+id: BATTERYSMART
+parent_id: BUILDCATEGORYPOWER
+name: 智能蓄电池
+disabled: False
+search_only: False
+category: BUILDCATEGORYPOWER
+sort_string: 智能蓄电池
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="BATTERYSMART">智能蓄电池</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 扩音器
+    style: Body
+    image: research_type_alpha_icon
+    link_id: acoustics
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: smartbattery_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      储存发电机产生的<link="POWER">电力</link>，然后向建筑提供电力。
+
+
+      根据逻辑激活参数的设定，输出<b><style="logic_on">绿色信号</style></b>或<b><style="logic_off">红色信号</style></b>。
+
+
+      电量会随着时间极少量流失。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    发<link="POWER">电</link>机'
+    tooltip: 必须与<style="KKeyword">发电机</style>相连才能运作
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：2格宽x2格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：60秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="REFINEDMETAL">精炼金属</link>200千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="HEAT">热量</link>：+500复制热/秒'
+    tooltip: >-
+      每秒产生<style="produced">500复制热</style>
+
+
+      总<style="KKeyword">温度</style>变化受到加热物质的材料属性影响：
+          • 质量
+          • 比热容
+          • 表面积
+          • 隔热厚度
+          • 热导率
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="POWER">电力</link>容量：20千焦'
+    tooltip: 与<style="KKeyword">发电机</style>连接后，可储存<b>20千焦</b>的<style="KKeyword">电力</style>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="POWER">电力</link>泄露：400.0焦/周期'
+    tooltip: 这个蓄电池<style="consumed">400.0焦/周期</style>的电量会作为<style="KKeyword">热量</style>散失
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    过热<link="HEAT">温度</link>：75ºC'
+    tooltip: 达到<b>75ºC</b>时开始过热
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LOGIC">信号输出端</link>'
+    tooltip: 当这个建筑状态发生变化时，输出端会输出一个信号
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    充电参数'
+    tooltip: >-
+      输出端行为：
+
+      • 当蓄电池储电低于<b>下限阈值</b>时输出<b><style="logic_on">绿色信号</style></b>，直到再次到达<b>上限阈值</b>为止
+
+      • 当蓄电池储电超过<b>上限阈值</b>时输出<b><style="logic_off">红色信号</style></b>，直到再次到达<b>下限阈值</b>为止
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：-15（范围：3格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>3</b>格内降低<b><b>-15</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>类别</b>
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    <link="REQUIREMENTCLASSPOWERBUILDING">电力建筑</link>'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>需要充电时，智能蓄电池会输出<b><style="logic_on">绿色信号</style></b>。</i>
+    style: Body
+  layout: Vertical

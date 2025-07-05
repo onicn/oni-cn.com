@@ -1,0 +1,37 @@
+id: EVACUATION
+name: ！疏散通知  ！
+title: STRINGS.CODEX.EVACUATION.TITLE
+disabled: False
+search_only: False
+category: INVESTIGATIONS
+sort_string: ！疏散通知  ！
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: ！疏散通知  ！
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：无
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+  lock_id: pod_evacuation
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <smallcaps>庄严科技所有人员请注意
+
+
+      撤离方案实施中
+
+
+      生物工程部中的反应堆即将熔毁
+
+
+      请保持冷静并前往紧急出口
+
+
+      请勿尝试使用电梯</smallcaps>
+    style: Body
+  layout: Vertical
+  lock_id: pod_evacuation

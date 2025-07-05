@@ -1,0 +1,62 @@
+id: MEDICINEIII
+parent_id: TECH
+name: 病原体诊断
+disabled: False
+search_only: False
+category: TECH
+sort_string: 病原体诊断
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="MEDICINEIII">病原体诊断</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 用特殊的医疗自动化技术从根源阻止病菌产生。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="MEDICINEII">医疗设备</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="ADVANCEDRESEARCH">高级研究</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: gas_germs_sensor_0__ui
+  - widget_type: CodexText
+    text: <link="GASCONDUITDISEASESENSOR">气体管道病菌传感器</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: liquid_germs_sensor_0__ui
+  - widget_type: CodexText
+    text: <link="LIQUIDCONDUITDISEASESENSOR">液体管道病菌传感器</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: diseasesensor_0__ui
+  - widget_type: CodexText
+    text: <link="LOGICDISEASESENSOR">病菌传感器</link>
+    style: Body
+  layout: Horizontal

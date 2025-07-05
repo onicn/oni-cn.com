@@ -1,0 +1,55 @@
+id: JOBS
+parent_id: TECH
+name: 职业管理
+disabled: False
+search_only: False
+category: TECH
+sort_string: 职业管理
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="JOBS">职业管理</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 将复制人获得的技能点换成新特质和能力。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: watercooler_0__ui
+  - widget_type: CodexText
+    text: <link="WATERCOOLER">饮水机</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: craftingstation_0__ui
+  - widget_type: CodexText
+    text: <link="CRAFTINGTABLE">工作台</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: electrobank_popcan_0__ui
+  - widget_type: CodexText
+    text: <style="KKeyword">金属移动电源</style>模型
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: campfire_small_0__ui
+  - widget_type: CodexText
+    text: <link="CAMPFIRE">柴火炉</link>
+    style: Body
+  layout: Horizontal

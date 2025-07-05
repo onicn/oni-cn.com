@@ -1,0 +1,55 @@
+id: PLASTICS
+parent_id: TECH
+name: 塑料制造
+disabled: False
+search_only: False
+category: TECH
+sort_string: 塑料制造
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="PLASTICS">塑料制造</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 稳定、轻质、耐用。塑料的用途非常广泛。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="IMPROVEDCOMBUSTION">化石燃料</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="SPACECOMBUSTION">高级内燃机</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: plasticrefinery_0__ui
+  - widget_type: CodexText
+    text: <link="POLYMERIZER">聚合物压塑器</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: geyser_oil_cap_0__ui
+  - widget_type: CodexText
+    text: <link="OILWELLCAP">油井</link>
+    style: Body
+  layout: Horizontal

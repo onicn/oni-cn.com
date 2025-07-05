@@ -1,0 +1,1255 @@
+id: STATERPILLARSPECIES
+parent_id: CREATURES
+name: 电弧蛞蝓
+disabled: False
+search_only: False
+category: CREATURES
+sort_string: <link="STATERPILLARSPECIES">电弧蛞蝓</link>
+required_dlc_ids:
+- EXPANSION1_ID
+sub_entries:
+- id: StaterpillarLiquid
+  parent_id: StaterpillarSpecies
+  name: <link="STATERPILLAR">海绵蛞蝓</link>
+  disabled: False
+  sort_string: 海绵蛞蝓
+- id: StaterpillarGas
+  parent_id: StaterpillarSpecies
+  name: <link="STATERPILLAR">烟雾蛞蝓</link>
+  disabled: False
+  sort_string: 烟雾蛞蝓
+- id: Staterpillar
+  parent_id: StaterpillarSpecies
+  name: <link="STATERPILLAR">电弧蛞蝓</link>
+  disabled: False
+  sort_string: 电弧蛞蝓
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 电弧蛞蝓
+    style: Title
+  - widget_type: CodexText
+    text: 可驯化的小动物
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      电弧蛞蝓是毛茸茸的腹足动物，通过皮毛与各种表面的摩擦产生的极端摩擦起电效应，它们能够粘在墙壁和天花板上。
+
+
+      这种现象使得电弧蛞蝓生成大量的静电，并能够转化成电能。
+
+
+      驯化的电弧蛞蝓由于内部颤动，或者说满足的“嗡嗡声”，能够提高产生静电的量，当所有需求都被满足时就会表现出来。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 条目（3/3）
+    style: Subtitle
+  - widget_type: CodexText
+    text: <link="STATERPILLARLIQUID">海绵蛞蝓</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="STATERPILLARGAS">烟雾蛞蝓</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="STATERPILLAR">电弧蛞蝓</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: caterpillar_0__wtr_ui
+  - widget_type: CodexImage
+    image: baby_caterpillar_0__wtr_ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexText
+    text: >-
+      海绵蛞蝓是一种缺水生物，能够在白天吸收<link="ELEMENTSLIQUID">液体</link>。
+
+
+      在晚上睡觉时，它们会将保存的<link="ELEMENTSLIQUID">液体</link>存放到其附近的<link="LIQUIDCONDUIT">液体管道</link>中。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 理想温度
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 舒适范围：<b>-10ºC</b>至<b>40ºC</b>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 存活范围：<b>-100ºC</b>至<b>100ºC</b>'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 寿命
+    style: Subtitle
+  - widget_type: CodexText
+    text: 这种小动物特征<link="CREATURES__GUIDE__FERTILITY">寿命</link>为<b>100周期</b>。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 所需空间
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 当房间空间对每只小动物平均少于<b>12格</b>时会感到<link="CREATURES__GUIDE__MOOD">拥挤</link>。'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 当房间小于<b>12格</b>时会感到<link="CREATURES__GUIDE__MOOD">封闭</link>。'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 掉落物
+    style: Subtitle
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 肉
+    image: creaturemeat_0__ui
+    link_id: meat
+  - widget_type: CodexText
+    text: 	3,200千卡
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 食物
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: cuprite_0__ui
+      text1: 铜矿
+      text2: 30千克/周期
+      link_id: cuprite
+    produce:
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 1500克/周期
+      link_id: hydrogen
+    fabricator:
+      image: caterpillar_0__wtr_ui
+      text1: 海绵蛞蝓
+      link_id: STATERPILLAR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: cobalt_ore_0__ui
+      text1: 钴矿
+      text2: 30千克/周期
+      link_id: cobaltite
+    produce:
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 1500克/周期
+      link_id: hydrogen
+    fabricator:
+      image: caterpillar_0__wtr_ui
+      text1: 海绵蛞蝓
+      link_id: STATERPILLAR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: aluminum_ore_0__ui
+      text1: 铝矿
+      text2: 30千克/周期
+      link_id: aluminumore
+    produce:
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 1500克/周期
+      link_id: hydrogen
+    fabricator:
+      image: caterpillar_0__wtr_ui
+      text1: 海绵蛞蝓
+      link_id: STATERPILLAR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: gold_amalgam_0__ui
+      text1: 金汞齐
+      text2: 30千克/周期
+      link_id: goldamalgam
+    produce:
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 1500克/周期
+      link_id: hydrogen
+    fabricator:
+      image: caterpillar_0__wtr_ui
+      text1: 海绵蛞蝓
+      link_id: STATERPILLAR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: nickel_ore_0__ui
+      text1: 镍矿
+      text2: 30千克/周期
+      link_id: nickelore
+    produce:
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 1500克/周期
+      link_id: hydrogen
+    fabricator:
+      image: caterpillar_0__wtr_ui
+      text1: 海绵蛞蝓
+      link_id: STATERPILLAR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: hematite_0__ui
+      text1: 铁矿
+      text2: 30千克/周期
+      link_id: ironore
+    produce:
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 1500克/周期
+      link_id: hydrogen
+    fabricator:
+      image: caterpillar_0__wtr_ui
+      text1: 海绵蛞蝓
+      link_id: STATERPILLAR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: cinnabar_0__ui
+      text1: 朱砂矿
+      text2: 30千克/周期
+      link_id: cinnabar
+    produce:
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 1500克/周期
+      link_id: hydrogen
+    fabricator:
+      image: caterpillar_0__wtr_ui
+      text1: 海绵蛞蝓
+      link_id: STATERPILLAR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: nickel_0__ui
+      text1: 镍
+      text2: 30千克/周期
+      link_id: nickel
+    produce:
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 1500克/周期
+      link_id: hydrogen
+    fabricator:
+      image: caterpillar_0__wtr_ui
+      text1: 海绵蛞蝓
+      link_id: STATERPILLAR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: copper_refined_0__ui
+      text1: 铜
+      text2: 30千克/周期
+      link_id: copper
+    produce:
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 1500克/周期
+      link_id: hydrogen
+    fabricator:
+      image: caterpillar_0__wtr_ui
+      text1: 海绵蛞蝓
+      link_id: STATERPILLAR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: tungsten_refined_0__ui
+      text1: 钨
+      text2: 30千克/周期
+      link_id: tungsten
+    produce:
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 1500克/周期
+      link_id: hydrogen
+    fabricator:
+      image: caterpillar_0__wtr_ui
+      text1: 海绵蛞蝓
+      link_id: STATERPILLAR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: lead_0__ui
+      text1: 铅
+      text2: 30千克/周期
+      link_id: lead
+    produce:
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 1500克/周期
+      link_id: hydrogen
+    fabricator:
+      image: caterpillar_0__wtr_ui
+      text1: 海绵蛞蝓
+      link_id: STATERPILLAR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: mercury_refined_0__ui
+      text1: 固态汞
+      text2: 30千克/周期
+      link_id: solidmercury
+    produce:
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 1500克/周期
+      link_id: hydrogen
+    fabricator:
+      image: caterpillar_0__wtr_ui
+      text1: 海绵蛞蝓
+      link_id: STATERPILLAR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: gold_refined_0__ui
+      text1: 金
+      text2: 30千克/周期
+      link_id: gold
+    produce:
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 1500克/周期
+      link_id: hydrogen
+    fabricator:
+      image: caterpillar_0__wtr_ui
+      text1: 海绵蛞蝓
+      link_id: STATERPILLAR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: iridium_0__ui
+      text1: 铱
+      text2: 30千克/周期
+      link_id: iridium
+    produce:
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 1500克/周期
+      link_id: hydrogen
+    fabricator:
+      image: caterpillar_0__wtr_ui
+      text1: 海绵蛞蝓
+      link_id: STATERPILLAR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: cobalt_refined_0__ui
+      text1: 钴
+      text2: 30千克/周期
+      link_id: cobalt
+    produce:
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 1500克/周期
+      link_id: hydrogen
+    fabricator:
+      image: caterpillar_0__wtr_ui
+      text1: 海绵蛞蝓
+      link_id: STATERPILLAR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: depleted_uranium_0__ui
+      text1: 贫铀
+      text2: 30千克/周期
+      link_id: depleteduranium
+    produce:
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 1500克/周期
+      link_id: hydrogen
+    fabricator:
+      image: caterpillar_0__wtr_ui
+      text1: 海绵蛞蝓
+      link_id: STATERPILLAR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: iron_refined_0__ui
+      text1: 铁
+      text2: 30千克/周期
+      link_id: iron
+    produce:
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 1500克/周期
+      link_id: hydrogen
+    fabricator:
+      image: caterpillar_0__wtr_ui
+      text1: 海绵蛞蝓
+      link_id: STATERPILLAR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: aluminum_0__ui
+      text1: 铝
+      text2: 30千克/周期
+      link_id: aluminum
+    produce:
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 1500克/周期
+      link_id: hydrogen
+    fabricator:
+      image: caterpillar_0__wtr_ui
+      text1: 海绵蛞蝓
+      link_id: STATERPILLAR
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require: []
+    produce:
+    - image: creaturemeat_0__ui
+      text1: 肉
+      text2: 3,200千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: meat
+    fabricator:
+      image: caterpillar_0__wtr_ui
+      text1: 海绵蛞蝓
+      link_id: STATERPILLAR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: caterpillar_0__wtr_ui
+      text1: 海绵蛞蝓
+      text2: 0.25单位/周期
+      link_id: staterpillar
+    produce:
+    - image: frozen_brine_0__ui
+      text1: 浓盐冰
+      text2: 128千克/周期
+      link_id: brine
+    fabricator:
+      image: raptor_0__ui
+      text1: 霸王鹦
+      link_id: RAPTOR
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: caterpillar_0__gas_ui
+  - widget_type: CodexImage
+    image: baby_caterpillar_0__gas_ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexText
+    text: >-
+      烟雾蛞蝓是一种多孔生物，能够在白天吸入不可呼吸的<link="ELEMENTSGAS">气体</link>。
+
+
+      在晚上，它们会睡在<link="GASCONDUIT">气体管道</link>附近，并向管道中存放其吸收物。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 理想温度
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 舒适范围：<b>-10ºC</b>至<b>40ºC</b>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 存活范围：<b>-100ºC</b>至<b>100ºC</b>'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 寿命
+    style: Subtitle
+  - widget_type: CodexText
+    text: 这种小动物特征<link="CREATURES__GUIDE__FERTILITY">寿命</link>为<b>100周期</b>。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 所需空间
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 当房间空间对每只小动物平均少于<b>12格</b>时会感到<link="CREATURES__GUIDE__MOOD">拥挤</link>。'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 当房间小于<b>12格</b>时会感到<link="CREATURES__GUIDE__MOOD">封闭</link>。'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 掉落物
+    style: Subtitle
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 肉
+    image: creaturemeat_0__ui
+    link_id: meat
+  - widget_type: CodexText
+    text: 	3,200千卡
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 食物
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: cuprite_0__ui
+      text1: 铜矿
+      text2: 30千克/周期
+      link_id: cuprite
+    produce:
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 1500克/周期
+      link_id: hydrogen
+    fabricator:
+      image: caterpillar_0__gas_ui
+      text1: 烟雾蛞蝓
+      link_id: STATERPILLAR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: cobalt_ore_0__ui
+      text1: 钴矿
+      text2: 30千克/周期
+      link_id: cobaltite
+    produce:
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 1500克/周期
+      link_id: hydrogen
+    fabricator:
+      image: caterpillar_0__gas_ui
+      text1: 烟雾蛞蝓
+      link_id: STATERPILLAR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: aluminum_ore_0__ui
+      text1: 铝矿
+      text2: 30千克/周期
+      link_id: aluminumore
+    produce:
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 1500克/周期
+      link_id: hydrogen
+    fabricator:
+      image: caterpillar_0__gas_ui
+      text1: 烟雾蛞蝓
+      link_id: STATERPILLAR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: gold_amalgam_0__ui
+      text1: 金汞齐
+      text2: 30千克/周期
+      link_id: goldamalgam
+    produce:
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 1500克/周期
+      link_id: hydrogen
+    fabricator:
+      image: caterpillar_0__gas_ui
+      text1: 烟雾蛞蝓
+      link_id: STATERPILLAR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: nickel_ore_0__ui
+      text1: 镍矿
+      text2: 30千克/周期
+      link_id: nickelore
+    produce:
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 1500克/周期
+      link_id: hydrogen
+    fabricator:
+      image: caterpillar_0__gas_ui
+      text1: 烟雾蛞蝓
+      link_id: STATERPILLAR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: hematite_0__ui
+      text1: 铁矿
+      text2: 30千克/周期
+      link_id: ironore
+    produce:
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 1500克/周期
+      link_id: hydrogen
+    fabricator:
+      image: caterpillar_0__gas_ui
+      text1: 烟雾蛞蝓
+      link_id: STATERPILLAR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: cinnabar_0__ui
+      text1: 朱砂矿
+      text2: 30千克/周期
+      link_id: cinnabar
+    produce:
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 1500克/周期
+      link_id: hydrogen
+    fabricator:
+      image: caterpillar_0__gas_ui
+      text1: 烟雾蛞蝓
+      link_id: STATERPILLAR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: nickel_0__ui
+      text1: 镍
+      text2: 30千克/周期
+      link_id: nickel
+    produce:
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 1500克/周期
+      link_id: hydrogen
+    fabricator:
+      image: caterpillar_0__gas_ui
+      text1: 烟雾蛞蝓
+      link_id: STATERPILLAR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: copper_refined_0__ui
+      text1: 铜
+      text2: 30千克/周期
+      link_id: copper
+    produce:
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 1500克/周期
+      link_id: hydrogen
+    fabricator:
+      image: caterpillar_0__gas_ui
+      text1: 烟雾蛞蝓
+      link_id: STATERPILLAR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: tungsten_refined_0__ui
+      text1: 钨
+      text2: 30千克/周期
+      link_id: tungsten
+    produce:
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 1500克/周期
+      link_id: hydrogen
+    fabricator:
+      image: caterpillar_0__gas_ui
+      text1: 烟雾蛞蝓
+      link_id: STATERPILLAR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: lead_0__ui
+      text1: 铅
+      text2: 30千克/周期
+      link_id: lead
+    produce:
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 1500克/周期
+      link_id: hydrogen
+    fabricator:
+      image: caterpillar_0__gas_ui
+      text1: 烟雾蛞蝓
+      link_id: STATERPILLAR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: mercury_refined_0__ui
+      text1: 固态汞
+      text2: 30千克/周期
+      link_id: solidmercury
+    produce:
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 1500克/周期
+      link_id: hydrogen
+    fabricator:
+      image: caterpillar_0__gas_ui
+      text1: 烟雾蛞蝓
+      link_id: STATERPILLAR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: gold_refined_0__ui
+      text1: 金
+      text2: 30千克/周期
+      link_id: gold
+    produce:
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 1500克/周期
+      link_id: hydrogen
+    fabricator:
+      image: caterpillar_0__gas_ui
+      text1: 烟雾蛞蝓
+      link_id: STATERPILLAR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: iridium_0__ui
+      text1: 铱
+      text2: 30千克/周期
+      link_id: iridium
+    produce:
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 1500克/周期
+      link_id: hydrogen
+    fabricator:
+      image: caterpillar_0__gas_ui
+      text1: 烟雾蛞蝓
+      link_id: STATERPILLAR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: cobalt_refined_0__ui
+      text1: 钴
+      text2: 30千克/周期
+      link_id: cobalt
+    produce:
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 1500克/周期
+      link_id: hydrogen
+    fabricator:
+      image: caterpillar_0__gas_ui
+      text1: 烟雾蛞蝓
+      link_id: STATERPILLAR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: depleted_uranium_0__ui
+      text1: 贫铀
+      text2: 30千克/周期
+      link_id: depleteduranium
+    produce:
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 1500克/周期
+      link_id: hydrogen
+    fabricator:
+      image: caterpillar_0__gas_ui
+      text1: 烟雾蛞蝓
+      link_id: STATERPILLAR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: iron_refined_0__ui
+      text1: 铁
+      text2: 30千克/周期
+      link_id: iron
+    produce:
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 1500克/周期
+      link_id: hydrogen
+    fabricator:
+      image: caterpillar_0__gas_ui
+      text1: 烟雾蛞蝓
+      link_id: STATERPILLAR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: aluminum_0__ui
+      text1: 铝
+      text2: 30千克/周期
+      link_id: aluminum
+    produce:
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 1500克/周期
+      link_id: hydrogen
+    fabricator:
+      image: caterpillar_0__gas_ui
+      text1: 烟雾蛞蝓
+      link_id: STATERPILLAR
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require: []
+    produce:
+    - image: creaturemeat_0__ui
+      text1: 肉
+      text2: 3,200千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: meat
+    fabricator:
+      image: caterpillar_0__gas_ui
+      text1: 烟雾蛞蝓
+      link_id: STATERPILLAR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: caterpillar_0__gas_ui
+      text1: 烟雾蛞蝓
+      text2: 0.25单位/周期
+      link_id: staterpillar
+    produce:
+    - image: frozen_brine_0__ui
+      text1: 浓盐冰
+      text2: 128千克/周期
+      link_id: brine
+    fabricator:
+      image: raptor_0__ui
+      text1: 霸王鹦
+      link_id: RAPTOR
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: caterpillar_0__ui
+  - widget_type: CodexImage
+    image: baby_caterpillar_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexText
+    text: >-
+      电弧蛞蝓是一种充满活力的小动物，可以在晚上生成<link="POWER">电力</link>。
+
+
+      可以在其喜欢睡觉的地方放置裸露的电线来收获这些电力。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 理想温度
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 舒适范围：<b>10ºC</b>至<b>40ºC</b>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 存活范围：<b>-100ºC</b>至<b>100ºC</b>'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 寿命
+    style: Subtitle
+  - widget_type: CodexText
+    text: 这种小动物特征<link="CREATURES__GUIDE__FERTILITY">寿命</link>为<b>100周期</b>。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 所需空间
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 当房间空间对每只小动物平均少于<b>12格</b>时会感到<link="CREATURES__GUIDE__MOOD">拥挤</link>。'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 当房间小于<b>12格</b>时会感到<link="CREATURES__GUIDE__MOOD">封闭</link>。'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 掉落物
+    style: Subtitle
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 肉
+    image: creaturemeat_0__ui
+    link_id: meat
+  - widget_type: CodexText
+    text: 	3,200千卡
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 食物
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: cuprite_0__ui
+      text1: 铜矿
+      text2: 60千克/周期
+      link_id: cuprite
+    produce:
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 3000克/周期
+      link_id: hydrogen
+    fabricator:
+      image: caterpillar_0__ui
+      text1: 电弧蛞蝓
+      link_id: STATERPILLAR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: cobalt_ore_0__ui
+      text1: 钴矿
+      text2: 60千克/周期
+      link_id: cobaltite
+    produce:
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 3000克/周期
+      link_id: hydrogen
+    fabricator:
+      image: caterpillar_0__ui
+      text1: 电弧蛞蝓
+      link_id: STATERPILLAR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: aluminum_ore_0__ui
+      text1: 铝矿
+      text2: 60千克/周期
+      link_id: aluminumore
+    produce:
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 3000克/周期
+      link_id: hydrogen
+    fabricator:
+      image: caterpillar_0__ui
+      text1: 电弧蛞蝓
+      link_id: STATERPILLAR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: gold_amalgam_0__ui
+      text1: 金汞齐
+      text2: 60千克/周期
+      link_id: goldamalgam
+    produce:
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 3000克/周期
+      link_id: hydrogen
+    fabricator:
+      image: caterpillar_0__ui
+      text1: 电弧蛞蝓
+      link_id: STATERPILLAR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: nickel_ore_0__ui
+      text1: 镍矿
+      text2: 60千克/周期
+      link_id: nickelore
+    produce:
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 3000克/周期
+      link_id: hydrogen
+    fabricator:
+      image: caterpillar_0__ui
+      text1: 电弧蛞蝓
+      link_id: STATERPILLAR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: hematite_0__ui
+      text1: 铁矿
+      text2: 60千克/周期
+      link_id: ironore
+    produce:
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 3000克/周期
+      link_id: hydrogen
+    fabricator:
+      image: caterpillar_0__ui
+      text1: 电弧蛞蝓
+      link_id: STATERPILLAR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: cinnabar_0__ui
+      text1: 朱砂矿
+      text2: 60千克/周期
+      link_id: cinnabar
+    produce:
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 3000克/周期
+      link_id: hydrogen
+    fabricator:
+      image: caterpillar_0__ui
+      text1: 电弧蛞蝓
+      link_id: STATERPILLAR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: nickel_0__ui
+      text1: 镍
+      text2: 60千克/周期
+      link_id: nickel
+    produce:
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 3000克/周期
+      link_id: hydrogen
+    fabricator:
+      image: caterpillar_0__ui
+      text1: 电弧蛞蝓
+      link_id: STATERPILLAR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: copper_refined_0__ui
+      text1: 铜
+      text2: 60千克/周期
+      link_id: copper
+    produce:
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 3000克/周期
+      link_id: hydrogen
+    fabricator:
+      image: caterpillar_0__ui
+      text1: 电弧蛞蝓
+      link_id: STATERPILLAR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: tungsten_refined_0__ui
+      text1: 钨
+      text2: 60千克/周期
+      link_id: tungsten
+    produce:
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 3000克/周期
+      link_id: hydrogen
+    fabricator:
+      image: caterpillar_0__ui
+      text1: 电弧蛞蝓
+      link_id: STATERPILLAR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: lead_0__ui
+      text1: 铅
+      text2: 60千克/周期
+      link_id: lead
+    produce:
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 3000克/周期
+      link_id: hydrogen
+    fabricator:
+      image: caterpillar_0__ui
+      text1: 电弧蛞蝓
+      link_id: STATERPILLAR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: mercury_refined_0__ui
+      text1: 固态汞
+      text2: 60千克/周期
+      link_id: solidmercury
+    produce:
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 3000克/周期
+      link_id: hydrogen
+    fabricator:
+      image: caterpillar_0__ui
+      text1: 电弧蛞蝓
+      link_id: STATERPILLAR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: gold_refined_0__ui
+      text1: 金
+      text2: 60千克/周期
+      link_id: gold
+    produce:
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 3000克/周期
+      link_id: hydrogen
+    fabricator:
+      image: caterpillar_0__ui
+      text1: 电弧蛞蝓
+      link_id: STATERPILLAR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: iridium_0__ui
+      text1: 铱
+      text2: 60千克/周期
+      link_id: iridium
+    produce:
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 3000克/周期
+      link_id: hydrogen
+    fabricator:
+      image: caterpillar_0__ui
+      text1: 电弧蛞蝓
+      link_id: STATERPILLAR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: cobalt_refined_0__ui
+      text1: 钴
+      text2: 60千克/周期
+      link_id: cobalt
+    produce:
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 3000克/周期
+      link_id: hydrogen
+    fabricator:
+      image: caterpillar_0__ui
+      text1: 电弧蛞蝓
+      link_id: STATERPILLAR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: depleted_uranium_0__ui
+      text1: 贫铀
+      text2: 60千克/周期
+      link_id: depleteduranium
+    produce:
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 3000克/周期
+      link_id: hydrogen
+    fabricator:
+      image: caterpillar_0__ui
+      text1: 电弧蛞蝓
+      link_id: STATERPILLAR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: iron_refined_0__ui
+      text1: 铁
+      text2: 60千克/周期
+      link_id: iron
+    produce:
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 3000克/周期
+      link_id: hydrogen
+    fabricator:
+      image: caterpillar_0__ui
+      text1: 电弧蛞蝓
+      link_id: STATERPILLAR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: aluminum_0__ui
+      text1: 铝
+      text2: 60千克/周期
+      link_id: aluminum
+    produce:
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 3000克/周期
+      link_id: hydrogen
+    fabricator:
+      image: caterpillar_0__ui
+      text1: 电弧蛞蝓
+      link_id: STATERPILLAR
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require: []
+    produce:
+    - image: creaturemeat_0__ui
+      text1: 肉
+      text2: 3,200千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: meat
+    fabricator:
+      image: caterpillar_0__ui
+      text1: 电弧蛞蝓
+      link_id: STATERPILLAR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: caterpillar_0__ui
+      text1: 电弧蛞蝓
+      text2: 0.25单位/周期
+      link_id: staterpillar
+    produce:
+    - image: frozen_brine_0__ui
+      text1: 浓盐冰
+      text2: 128千克/周期
+      link_id: brine
+    fabricator:
+      image: raptor_0__ui
+      text1: 霸王鹦
+      link_id: RAPTOR
+  layout: Vertical

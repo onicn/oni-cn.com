@@ -1,0 +1,99 @@
+id: HOME
+name: 索引
+disabled: False
+search_only: False
+category: Root
+sort_string: 索引
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="HOME">索引</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexLabelWithLargeIcon
+    text: 教程
+    style: BodyWhite
+    image: codexIconLessons
+    link_id: lessons
+  - widget_type: CodexLabelWithLargeIcon
+    text: 元素
+    style: BodyWhite
+    image: codexIconElements
+    link_id: elements
+  - widget_type: CodexLabelWithLargeIcon
+    text: 复制人
+    style: BodyWhite
+    image: codexIconDupes
+    link_id: duplicantscategory
+  - widget_type: CodexLabelWithLargeIcon
+    text: 复制人技能
+    style: BodyWhite
+    image: codexIconSkills
+    link_id: roles
+  - widget_type: CodexLabelWithLargeIcon
+    text: 小动物
+    style: BodyWhite
+    image: codexIconCritters
+    link_id: creatures
+  - widget_type: CodexLabelWithLargeIcon
+    text: 建筑
+    style: BodyWhite
+    image: codexIconBuildings
+    link_id: buildings
+  - widget_type: CodexLabelWithLargeIcon
+    text: 建造材料
+    style: BodyWhite
+    image: ui_elements_classes
+    link_id: buildingmaterialclasses
+  - widget_type: CodexLabelWithLargeIcon
+    text: 房间
+    style: BodyWhite
+    image: codexIconRooms
+    link_id: rooms
+  - widget_type: CodexLabelWithLargeIcon
+    text: 故事特质
+    style: BodyWhite
+    image: codexIconStoryTraits
+    link_id: storytraits
+  - widget_type: CodexLabelWithLargeIcon
+    text: 植物
+    style: BodyWhite
+    image: purpleroot_0__ui
+    link_id: plants
+  - widget_type: CodexLabelWithLargeIcon
+    text: 生态
+    style: BodyWhite
+    image: codexIconGeysers
+    link_id: biomes
+  - widget_type: CodexLabelWithLargeIcon
+    text: 疾病
+    style: BodyWhite
+    image: codexIconDisease
+    link_id: disease
+  - widget_type: CodexLabelWithLargeIcon
+    text: 研究
+    style: BodyWhite
+    image: codexIconResearch
+    link_id: tech
+  - widget_type: CodexLabelWithLargeIcon
+    text: 装备
+    style: BodyWhite
+    image: codexIconEquipment
+    link_id: equipment
+  - widget_type: CodexLabelWithLargeIcon
+    text: 间歇泉
+    style: BodyWhite
+    image: codexIconGeysers
+    link_id: geysers
+  - widget_type: CodexLabelWithLargeIcon
+    text: 食物
+    style: BodyWhite
+    image: codexIconFood
+    link_id: food
+  layout: Grid
+- contents:
+  - widget_type: CodexSpacer
+  layout: Vertical
+- layout: Vertical

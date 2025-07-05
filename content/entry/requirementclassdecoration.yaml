@@ -1,0 +1,136 @@
+id: REQUIREMENTCLASSDECORATION
+parent_id: BUILDCATEGORYCATEGORY
+name: 装饰物
+disabled: False
+search_only: False
+category: BUILDCATEGORYCATEGORY
+sort_string: 装饰物
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 装饰物
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      为殖民地带来宝贵的美感提升，并能让复制人创造性地表达自己的建筑。
+
+
+      一些房间需要豪华装饰物，有助于提高美感。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 此类别的建筑：
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 花盆'
+    image: flowervase_0__ui
+    link_id: flowervase
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 墙壁花盆'
+    image: flowervase_wall_0__ui
+    link_id: flowervasewall
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 垂吊花盆'
+    image: flowervase_hanging_basic_0__ui
+    link_id: flowervasehanging
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 透明花盆'
+    image: flowervase_hanging_0__ui
+    link_id: flowervasehangingfancy
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 雕塑块'
+    image: sculpture_1x2_0__ui
+    link_id: smallsculpture
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 大型雕塑块'
+    image: sculpture_0__ui
+    link_id: sculpture
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 冰雕塑块'
+    image: icesculpture_0__ui
+    link_id: icesculpture
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 木雕塑块'
+    image: sculpture_wood_0__ui
+    link_id: woodsculpture
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 大理石雕塑块'
+    image: sculpture_marble_0__ui
+    link_id: marblesculpture
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 金属雕塑块'
+    image: sculpture_metal_0__ui
+    link_id: metalsculpture
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 化石雕塑块'
+    image: fossilsculpture_0__ui
+    link_id: fossilsculpture
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 垂吊化石雕塑块'
+    image: fossilsculpture_hanging_0__ui
+    link_id: ceilingfossilsculpture
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 天花板饰件'
+    image: crown_moulding_0__ui
+    link_id: crownmoulding
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 边角饰件'
+    image: corner_tile_0__ui
+    link_id: cornermoulding
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 空白画布'
+    image: painting_off_0__ui
+    link_id: canvas
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 风景画布'
+    image: painting_wide_off_0__ui
+    link_id: canvaswide
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 肖像画布'
+    image: painting_tall_off_0__ui
+    link_id: canvastall
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 基座'
+    image: pedestal_0__ui
+    link_id: itempedestal
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 柴火炉'
+    image: campfire_small_0__ui
+    link_id: campfire
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 需求于：
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: '    • <link="BEDROOM">豪华宿舍</link>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • <link="PRIVATE BEDROOM">私人卧室</link>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • <link="MESSHALL">食堂</link>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • <link="MASSAGECLINIC">按摩诊所</link>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • <link="RECROOM">娱乐室</link>'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical

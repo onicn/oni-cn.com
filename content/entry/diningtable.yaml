@@ -1,0 +1,72 @@
+id: DININGTABLE
+parent_id: BUILDCATEGORYFURNITURE
+name: 餐桌
+disabled: False
+search_only: False
+category: BUILDCATEGORYFURNITURE
+sort_string: 餐桌
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="DININGTABLE">餐桌</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 食物制备
+    style: Body
+    image: research_type_alpha_icon
+    link_id: finedining
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: diningtable_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      为复制人提供吃饭的地方。
+
+
+      饿了的复制人会自动来到分配给他们的餐桌旁吃饭。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    复制人分配'
+    tooltip: 只有分配的复制人才可使用这个设备
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：1格宽x1格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：10秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="METAL">金属矿石</link>200千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：+10（范围：2格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>2</b>格内提高<b><b>+10</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>类别</b>
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    <link="DININGTABLE">餐桌</link>'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>复制人更喜欢坐在餐桌旁吃饭，而不是坐在地上吃饭。</i>
+    style: Body
+  layout: Vertical

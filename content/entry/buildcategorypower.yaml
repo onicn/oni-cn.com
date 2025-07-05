@@ -1,0 +1,154 @@
+id: BUILDCATEGORYPOWER
+parent_id: BUILDINGS
+name: 电力
+disabled: False
+search_only: False
+category: BUILDINGS
+sort_string: 电力
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="BUILDCATEGORYPOWER">电力</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexLabelWithLargeIcon
+    text: 人力发电机
+    style: BodyWhite
+    image: generatormanual_0__ui
+    link_id: manualgenerator
+  - widget_type: CodexLabelWithLargeIcon
+    text: 变压器
+    style: BodyWhite
+    image: transformer_small_0__ui
+    link_id: powertransformersmall
+  - widget_type: CodexLabelWithLargeIcon
+    text: 大型变压器
+    style: BodyWhite
+    image: transformer_0__ui
+    link_id: powertransformer
+  - widget_type: CodexLabelWithLargeIcon
+    text: 大型放电器
+    style: BodyWhite
+    image: electrobank_discharger_large_0__ui
+    link_id: largeelectrobankdischarger
+  - widget_type: CodexLabelWithLargeIcon
+    text: 天然气发电机
+    style: BodyWhite
+    image: generatormethane_0__ui
+    link_id: methanegenerator
+  - widget_type: CodexLabelWithLargeIcon
+    text: 太阳能板
+    style: BodyWhite
+    image: solar_panel_0__ui
+    link_id: solarpanel
+  - widget_type: CodexLabelWithLargeIcon
+    text: 导线
+    style: BodyWhite
+    image: utilities_electric_conduct_0__ui
+    link_id: wirerefined
+  - widget_type: CodexLabelWithLargeIcon
+    text: 导线桥
+    style: BodyWhite
+    image: utilityelectricbridgeconductive_0__ui
+    link_id: wirerefinedbridge
+  - widget_type: CodexLabelWithLargeIcon
+    text: 巨型蓄电池
+    style: BodyWhite
+    image: batterymed_0__ui
+    link_id: batterymedium
+  - widget_type: CodexLabelWithLargeIcon
+    text: 智能蓄电池
+    style: BodyWhite
+    image: smartbattery_0__ui
+    link_id: batterysmart
+  - widget_type: CodexLabelWithLargeIcon
+    text: 木材燃烧器
+    style: BodyWhite
+    image: generatorwood_0__ui
+    link_id: woodgasgenerator
+  - widget_type: CodexLabelWithLargeIcon
+    text: 氢气发电机
+    style: BodyWhite
+    image: generatormerc_0__ui
+    link_id: hydrogengenerator
+  - widget_type: CodexLabelWithLargeIcon
+    text: 泥炭燃烧器
+    style: BodyWhite
+    image: generatorpeat_0__ui
+    link_id: peatgenerator
+  - widget_type: CodexLabelWithLargeIcon
+    text: 煤炭发电机
+    style: BodyWhite
+    image: generatorphos_0__ui
+    link_id: generator
+  - widget_type: CodexLabelWithLargeIcon
+    text: 电力截断器
+    style: BodyWhite
+    image: switchpowershutoff_0__ui
+    link_id: logicpowerrelay
+  - widget_type: CodexLabelWithLargeIcon
+    text: 电线
+    style: BodyWhite
+    image: utilities_electric_0__ui
+    link_id: wire
+  - widget_type: CodexLabelWithLargeIcon
+    text: 电线桥
+    style: BodyWhite
+    image: utilityelectricbridge_0__ui
+    link_id: wirebridge
+  - widget_type: CodexLabelWithLargeIcon
+    text: 电闸
+    style: BodyWhite
+    image: switchpower_0__ui
+    link_id: switch
+  - widget_type: CodexLabelWithLargeIcon
+    text: 石油发电机
+    style: BodyWhite
+    image: generatorpetrol_0__ui
+    link_id: petroleumgenerator
+  - widget_type: CodexLabelWithLargeIcon
+    text: 移动电源充电机
+    style: BodyWhite
+    image: electrobank_charger_small_0__ui
+    link_id: electrobankcharger
+  - widget_type: CodexLabelWithLargeIcon
+    text: 蒸汽涡轮机
+    style: BodyWhite
+    image: steamturbine2_0__ui
+    link_id: steamturbine2
+  - widget_type: CodexLabelWithLargeIcon
+    text: 蓄电池
+    style: BodyWhite
+    image: batterysm_0__ui
+    link_id: battery
+  - widget_type: CodexLabelWithLargeIcon
+    text: 袖珍放电器
+    style: BodyWhite
+    image: electrobank_discharger_small_0__ui
+    link_id: smallelectrobankdischarger
+  - widget_type: CodexLabelWithLargeIcon
+    text: 高负荷导线
+    style: BodyWhite
+    image: utilities_electric_conduct_hiwatt_0__ui
+    link_id: wirerefinedhighwattage
+  - widget_type: CodexLabelWithLargeIcon
+    text: 高负荷导线接合板
+    style: BodyWhite
+    image: heavywatttile_conductive_0__ui
+    link_id: wirerefinedbridgehighwattage
+  - widget_type: CodexLabelWithLargeIcon
+    text: 高负荷电线
+    style: BodyWhite
+    image: utilities_electric_insulated_0__ui
+    link_id: highwattagewire
+  - widget_type: CodexLabelWithLargeIcon
+    text: 高负荷电线接合板
+    style: BodyWhite
+    image: heavywatttile_0__ui
+    link_id: wirebridgehighwattage
+  layout: Grid
+- contents:
+  - widget_type: CodexSpacer
+  layout: Vertical

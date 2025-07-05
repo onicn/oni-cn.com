@@ -1,0 +1,118 @@
+id: SUNLAMP
+parent_id: BUILDCATEGORYFURNITURE
+name: 日光灯
+disabled: False
+search_only: False
+category: BUILDCATEGORYFURNITURE
+sort_string: 日光灯
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="SUNLAMP">日光灯</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 玻璃吹制
+    style: Body
+    image: research_type_alpha_icon
+    link_id: glassfurnishings
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: sun_lamp_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      发出<link="LIGHT">日光</link>级的光。
+
+
+      可以与<link="BEACHCHAIR">沙滩椅</link>配合使用。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="POWER">电力</link>：960瓦'
+    tooltip: 必须与至少有<style="consumed">960瓦</style>可用<style="KKeyword">电力</style>的电路相连
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：2格宽x4格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：60秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="REFINEDMETAL">精炼金属</link>200千克, <link="GLASS">玻璃</link>50千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="HEAT">热量</link>：+5千复制热/秒'
+    tooltip: >-
+      每秒产生<style="produced">5千复制热</style>
+
+
+      总<style="KKeyword">温度</style>变化受到加热物质的材料属性影响：
+          • 质量
+          • 比热容
+          • 表面积
+          • 隔热厚度
+          • 热导率
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    过热<link="HEAT">温度</link>：75ºC'
+    tooltip: 达到<b>75ºC</b>时开始过热
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LIGHT">照明范围</link>：16格'
+    tooltip: >-
+      发<style="KKeyword">光</style>
+
+
+      当建筑有光照后，复制人就能更快地操作建筑
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LIGHT">亮度</link>：40000勒克斯'
+    tooltip: >-
+      发<style="KKeyword">光</style>
+
+
+      当建筑有光照后，复制人就能更快地操作建筑
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LOGIC">信号输入端</link>'
+    tooltip: 当接收到信号时，输入端会使这个建筑一种状态发生变化
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    启用/禁用'
+    tooltip: >-
+      输入端行为：
+
+      • <b><style="logic_on">绿色信号</style></b>：启用建筑
+
+      • <b><style="logic_off">红色信号</style></b>：禁用建筑
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：-20（范围：4格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>4</b>格内降低<b><b>-20</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>类别</b>
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    <link="REQUIREMENTCLASSLIGHTSOURCE">光源</link>'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>一种人造阳光。</i>
+    style: Body
+  layout: Vertical

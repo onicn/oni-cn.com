@@ -1,0 +1,132 @@
+id: FORESTTREE
+parent_id: PLANTS
+name: 乔木树
+disabled: False
+search_only: False
+category: PLANTS
+sort_string: 乔木树
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 乔木树
+    style: Title
+  - widget_type: CodexText
+    text: 木材树
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      乔木树生长时会水平扩展，如此就可以在狭窄的垂直空间中产生大量的木料。
+
+
+      乔木树与橡树有亲缘关系，特别是日本常青树，尽管很明显这些树在基因上是杂交的。
+
+
+      尽管乔木树有着结实而又均匀分布的枝杈，但由于矮小，使得攀爬运动与它完全不相干。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: tree_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 成长自
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: seed_tree_0__ui
+  - widget_type: CodexText
+    text: <link="FORESTTREE">乔木橡实</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 详情
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexText
+    text: 乔木树可以长出可收获为木材的<link="FORESTTREE">乔木树枝杈</link>，可收获以获得<link="WOOD">木材</link>。
+    style: Body
+  - widget_type: CodexText
+    text: >-
+      <b>生长需求</b>：
+          • 最大<link="RADIATION">辐射</link>：9,800拉德/周期
+          • 生长周期：4.5周期
+          • <link="HEAT">温度</link>：15至40ºC
+          • <link="ATMOSPHERE">气压</link>：最低150克
+          • <link="DIRT">泥土</link>：-10千克/周期
+          • <link="DIRTYWATER">污染水</link>：-70千克/周期
+          • 农地
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      <b>效果</b>：
+          • <link="WOOD">木材</link>：300千克
+          • <link="DECOR">装饰度</link>：+15（范围：2格）
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: 474506FF
+      text1: 污染水
+      text2: 70千克/周期
+      link_id: dirtywater
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 10千克/周期
+      link_id: dirt
+    produce:
+    - image: wood_0__ui
+      text1: 木材
+      text2: 66.7千克/周期
+      link_id: woodlog
+    fabricator:
+      image: tree_0__ui
+      text1: 乔木树
+      link_id: FORESTTREE
+  - widget_type: CodexConversionPanel
+    require:
+    - image: tree_0__ui
+      text1: 乔木树
+      text2: 11% 生长进度/周期
+      link_id: foresttree
+    produce:
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 12.5千克/周期
+      link_id: dirt
+    fabricator:
+      image: squirrel_0__hug_ui
+      text1: 毛绒树鼠
+      link_id: SQUIRREL
+  - widget_type: CodexConversionPanel
+    require:
+    - image: tree_0__ui
+      text1: 乔木树
+      text2: 9% 生长进度/周期
+      link_id: foresttree
+    produce:
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 20千克/周期
+      link_id: dirt
+    fabricator:
+      image: squirrel_0__ui
+      text1: 树鼠
+      link_id: SQUIRREL
+  layout: Vertical

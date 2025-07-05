@@ -1,0 +1,241 @@
+id: STORYTRAITLONELYMINION
+parent_id: STORYTRAITS
+name: 神秘隐士
+title: STRINGS.CODEX.STORY_TRAITS.LONELYMINION.NAME
+disabled: False
+search_only: False
+icon_asset_name: lonelyminion_codex_icon
+category: STORYTRAITS
+sort_string: 神秘隐士
+content_container:
+- contents:
+  - widget_type: CodexImage
+    image: LonelyMinion_image
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 神秘隐士
+    style: Title
+  - widget_type: CodexText
+    text: >-
+      找到一个住在庄严科技遗迹中的隐居的复制人，并说服他加入殖民地。
+
+
+      他过去的秘闻可能会对我的复制人产生深远的影响。
+
+
+      甚至他的临时庇护所也可能有一些用处……
+    style: Body
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 初遇
+    style: Subtitle
+  - widget_type: CodexText
+    text: >-
+      我在我的殖民地中发现了一个陌生的建筑。里面有动静，但里面的居住者似乎对我们保持警惕。
+
+
+      如果我们能说服他我们没有恶意，我们很可能最终可以招募到一名新成员<i>以及</i>获得一个有用的新建筑。
+    style: Body
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical
+  lock_id: story_trait_lonelyminion_initial
+- contents:
+  - widget_type: CodexText
+    text: 恢复的舱条目#022
+    style: Subtitle
+  - widget_type: CodexText
+    text: >-
+      <smallcaps>天数：11/80</smallcaps>
+
+      <smallcaps>当地时间：7/9小时</smallcaps>
+    style: Body
+  - widget_type: CodexText
+    text: >
+      <indent=%5>对营养保留的明显改善：参与最近饮食摄入的受试者表现出轻微的肠胃不适症状。
+
+
+      隧道壁破裂事件解决后，乌拉瓦拉陨石坑的矿井挖掘工作恢复。以当前状况估计盐水储层渗透时间：当地时间41天。已开始检测矿井东侧壁的水分渗透情况。
+
+
+      注：初步的地下温度数据明显低于程序估计值。</indent>
+
+      ------------------
+    style: Body
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical
+  lock_id: story_trait_lonelyminion_foodquest
+- contents:
+  - widget_type: CodexText
+    text: 杂物分析
+    style: Subtitle
+  - widget_type: CodexText
+    text: 加密级别：三
+    style: Body
+  - widget_type: CodexText
+    text: >
+      <smallcaps>[声纹识别系统初始化完成]
+
+      [识别编号：B577、B997、B083、A216]</smallcaps>
+
+
+      [录音开始]
+
+
+      A216：主管说你们工作组应该有三个人的。基因学家呢？
+
+
+      B083：他去厕——
+
+
+      B997：他回家了。
+
+
+      [长时间的停顿]
+
+
+      B997：今天是假期。他也有家庭。
+
+
+      A216：我们都有。这就是为什么这个项目如此急迫的确切原因。
+
+
+      B997：这东西放深海里一年，又花了一年才带回到地球，这又不是我们的错！微生物样本在途中表现不佳，大多数机器人部件被完全腐蚀。没什么好做——
+
+
+      B083：——我们正在完全分析它，尽我们所能，吉……猿桥博士。
+
+
+      A216：好。之后把这些可笑的小灯泡拿下来吧。这里是实验室，又不是复古的“购物中心”。
+
+
+      [录音结束]
+
+      ------------------
+
+      [录音开始]
+
+
+      B577：多谢你把这些杂物打包处理。
+
+
+      B997：我以为你做过了。
+
+
+      B577：不，我——
+
+
+      B083：谁拿了我的三明治？
+
+
+      B997：哎呀又来了。
+
+
+      B577：莲，你装好运输集装箱了吗？
+
+
+      B083：讲真的，我已经13个小时没吃东西了。这不好笑。
+
+
+      B997：有点好笑。
+
+
+      B577：我们能不能专心一下？
+
+
+      B997：没人拿了你的三明治，“石头”博士。
+
+
+      B083：那么为什么我的食物总是失踪？
+
+
+      B997：也许是给实验室鬼拿走了。或者你就不应该放这一晚上。冈德森可能把它当垃圾带走了。
+
+
+      B083：他不会到这下面打扫的！
+
+
+      B997：对。因为如果是这样，我就不用继续清理<i>某人</i>在换班的时候留下的一路的硫酸镁沉积物了。
+
+
+      B083：那不是我干的！
+
+
+      B577：听着，我知道我们都很累，而且事情有点怪。但我们越快把它送到发射台上去，它就能越快开始前往太阳的旅程，我们也就可以离开这个阴森的地下三层了。
+
+
+      B083：好吧。
+
+
+      B997：好的。
+
+
+      B083：好吧！
+
+
+      [录音结束]
+
+      ------------------
+    style: Body
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical
+  lock_id: story_trait_lonelyminion_pluggedin
+- contents:
+  - widget_type: CodexText
+    text: 布丁杯
+    style: Subtitle
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  - widget_type: CodexText
+    text: >
+      嘿小伙子，
+
+
+      在上周末你没来参加你表兄的婚礼，我们真是太想念你了。礼物都很好，但舞池里没有你总感觉空荡荡的。
+
+
+      达里仕也送出了他的祝福。自从他开始吃你送他的那些粘糊糊的布丁一类的东西之后，他的情况真的好多了。但你有没有机会发一些闻起来不像脚的布丁啊？
+
+
+      等你不忙的时候就回家看看吧。
+
+
+      - 巴巴
+
+      ------------------
+    style: Body
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical
+  lock_id: story_trait_lonelyminion_highdecor
+- contents:
+  - widget_type: CodexText
+    text: 挑战完成
+    style: Subtitle
+  - widget_type: CodexText
+    text: >-
+      我善良的复制人的努力得到了回报！我们隐居的邻居同意加入殖民地了。
+
+
+      他坚持要随身带的纪念品是一个工具箱，虽然上面锈迹斑斑，但似乎有很大的情感价值。
+
+
+      现在他会和我们一起住，他之前的房子可以拆掉或者作为储藏室使用。
+    style: Body
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical
+  lock_id: story_trait_lonelyminion_complete

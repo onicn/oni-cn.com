@@ -1,0 +1,66 @@
+id: NUCLEARRESEARCH
+parent_id: TECH
+name: 材料科学研究
+disabled: False
+search_only: False
+category: TECH
+sort_string: 材料科学研究
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="NUCLEARRESEARCH">材料科学研究</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 利用亚原子粒子研究物质的特性。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="ADVANCEDRESEARCH">高级研究</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: research_type_delta_icon
+  - widget_type: CodexText
+    text: <style="KKeyword">材料科学研究</style>能力
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: material_research_centre_0__ui
+  - widget_type: CodexText
+    text: <link="NUCLEARRESEARCHCENTER">材料研究终端</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: manual_radbolt_generator_0__ui
+  - widget_type: CodexText
+    text: <link="HIGHENERGYPARTICLESPAWNER">人力辐射粒子发生器</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: electrobank_uranium_0__ui
+  - widget_type: CodexText
+    text: <style="KKeyword">铀矿移动电源</style>模型
+    style: Body
+  layout: Horizontal

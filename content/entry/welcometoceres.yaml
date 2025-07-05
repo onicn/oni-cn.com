@@ -1,0 +1,49 @@
+id: WELCOMETOCERES
+name: 欢迎来到谷神星！
+title: STRINGS.CODEX.INVESTIGATIONS.DLC2_THEARCHIVE.TITLE
+disabled: False
+search_only: False
+category: INVESTIGATIONS
+sort_string: 欢迎来到谷神星！
+required_dlc_ids:
+- DLC2_ID
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 欢迎来到谷神星！
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：无
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+  lock_id: notes_welcometoceres
+- contents:
+  - widget_type: CodexText
+    text: >-
+      欢迎！欢迎！欢迎！
+
+      一切都在掌控之中！
+
+
+      <b>您的VIP礼包包括：</b><indent=5%>
+
+
+      - 一套独家定制的生存维持技术！
+
+      - 一本全面的租户手册，内含您在新家居住维持体内平衡所需的一切！<alpha=#AA>[附件丢失]</color></indent>
+
+
+      当你生活不如意时，大家通常会说抬头看看！这是不对的！请把您的注意力往下放！
+
+
+      这能确保紧张的颈部肌肉得到放松。这还能帮助你定位地上绘制的颜色编码线，引导你前往下方的可持续供暖的舒适区。
+
+
+      然后记住：生存就是成功！
+
+
+      <smallcaps><size=11><i>庄严科技对租户居住期间可能发生的死亡、残疾、人身伤害或情感和心理伤害不承担任何责任。请咨询您的预订代理获取详情。</i></size></smallcaps>
+    style: Body
+  layout: Vertical
+  lock_id: notes_welcometoceres

@@ -1,0 +1,188 @@
+id: AMBER
+parent_id: ELEMENTSSOLID
+name: 琥珀
+disabled: False
+search_only: False
+category: ELEMENTSSOLID
+sort_string: 琥珀
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="AMBER">琥珀</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: amber_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: amber_0__ui
+      text1: 琥珀
+      text2: 1000克
+      link_id: amber
+    produce:
+    - image: element_liquid
+      color: CC8B18FF
+      text1: 树脂
+      text2: 800克
+      link_id: naturalresin
+    - image: fossil_0__ui
+      text1: 化石
+      text2: 200克
+      link_id: fossil
+    fabricator:
+      image: crew_state_temp_up
+      text1: 95ºC
+      tooltip: 温度高于95ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 树脂
+    require:
+    - image: amber_0__ui
+      text1: 琥珀
+      text2: 100千克
+      link_id: amber
+    produce:
+    - image: element_liquid
+      color: CC8B18FF
+      text1: 树脂
+      text2: 50千克
+      link_id: naturalresin
+    - image: fossil_0__ui
+      text1: 化石
+      text2: 25千克
+      link_id: fossil
+    - image: sand_0__ui
+      text1: 沙子
+      text2: 25千克
+      link_id: sand
+    fabricator:
+      image: milkpress_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 植物粉碎机
+      text2: 40秒
+      link_id: milkpress
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: lightbug_0__ui
+      text1: 发光虫
+      text2: 0.08单位/周期
+      link_id: lightbugspecies
+    produce:
+    - image: amber_0__ui
+      text1: 琥珀
+      text2: 22千克/周期
+      link_id: amber
+    fabricator:
+      image: ceiling_carnie_0__ui
+      text1: 露饵花
+      link_id: FLYTRAPPLANT
+  - widget_type: CodexConversionPanel
+    require:
+    - image: bee_0__ui
+      text1: 辐射蜂
+      text2: 0.08单位/周期
+      link_id: beetaspecies
+    produce:
+    - image: amber_0__ui
+      text1: 琥珀
+      text2: 22千克/周期
+      link_id: amber
+    fabricator:
+      image: ceiling_carnie_0__ui
+      text1: 露饵花
+      link_id: FLYTRAPPLANT
+  - widget_type: CodexConversionPanel
+    require:
+    - image: puft_0__ui
+      text1: 喷浮飞鱼
+      text2: 0.08单位/周期
+      link_id: puftspecies
+    produce:
+    - image: amber_0__ui
+      text1: 琥珀
+      text2: 22千克/周期
+      link_id: amber
+    fabricator:
+      image: ceiling_carnie_0__ui
+      text1: 露饵花
+      link_id: FLYTRAPPLANT
+  - widget_type: CodexConversionPanel
+    require:
+    - image: pollinator_0__ui
+      text1: 拟蛾
+      text2: 0.08单位/周期
+      link_id: butterflyspecies
+    produce:
+    - image: amber_0__ui
+      text1: 琥珀
+      text2: 22千克/周期
+      link_id: amber
+    fabricator:
+      image: ceiling_carnie_0__ui
+      text1: 露饵花
+      link_id: FLYTRAPPLANT
+  - widget_type: CodexConversionPanel
+    require:
+    - image: mosquito_0__ui
+      text1: 蚋虱
+      text2: 0.08单位/周期
+      link_id: mosquitospecies
+    produce:
+    - image: amber_0__ui
+      text1: 琥珀
+      text2: 22千克/周期
+      link_id: amber
+    fabricator:
+      image: ceiling_carnie_0__ui
+      text1: 露饵花
+      link_id: FLYTRAPPLANT
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      琥珀是一种由<link="NATURALRESIN">树脂</link>和<link="FOSSIL">化石</link>组成的有机物。
+
+
+      资源种类：有机物
+
+      熔点：95ºC
+
+      硬度：<color=#6D7BC1FF>12（柔软）</color>
+
+
+      比热容：1.300 (DTU/g)/ºC
+
+      热导率：0.170 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.75
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：<link="BUILDABLEANY">一般建造材料</link>, <link="TRANSPARENT">透明体</link>, <link="FOSSILS">化石</link>, <link="ELEMENTSSOLID">固体</link>, 有机物
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

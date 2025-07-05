@@ -1,0 +1,78 @@
+id: SWAMPLILYFLOWER
+name: 芳香百合花
+title: STRINGS.CODEX.SWAMPLILYFLOWER.TITLE
+disabled: False
+search_only: False
+category: INDUSTRIALINGREDIENTS
+sort_string: 芳香百合花
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 芳香百合花
+    style: Title
+  - widget_type: CodexText
+    text: 药用性植物
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexImage
+    image: swamplilyflower_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      芳香百合花开在<link="SWAMPLILY">芳香百合</link>上。
+
+
+      这种花有着广泛的医学应用，且已被证实是呼吸道疾病的特效药。
+
+
+      其鲜艳的花瓣会散发出强烈的香味，对此的最佳描述是“香晕”。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 医疗包
+    require:
+    - image: swamplilyflower_0__ui
+      text1: 芳香百合花
+      text2: 1000克
+      link_id: swamplilyflower
+    - image: phosphorite_0__ui
+      text1: 磷矿
+      text2: 1000克
+      link_id: phosphorite
+    produce:
+    - image: iv_slimelung_0__ui
+      text1: 医疗包
+      text2: 1单位
+      link_id: intermediatecure
+    fabricator:
+      image: apothecary_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 配药桌
+      text2: 100秒
+      link_id: apothecary
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require: []
+    produce:
+    - image: swamplilyflower_0__ui
+      text1: 芳香百合花
+      text2: 166.7克/周期
+      link_id: swamplilyflower
+    fabricator:
+      image: swamplily_0__ui
+      text1: 芳香百合
+      link_id: SWAMPLILY
+  layout: Vertical

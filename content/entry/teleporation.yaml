@@ -1,0 +1,42 @@
+id: TELEPORATION
+name: 记忆突破
+title: STRINGS.CODEX.B9_TELEPORTATION.TITLE
+disabled: False
+search_only: False
+category: RESEARCHNOTES
+sort_string: 记忆突破
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 记忆突破
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：三
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+  lock_id: notes_teleportation
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <smallcaps>[声纹识别系统初始化完成]
+
+      [识别编号：A001]</smallcaps>
+
+
+      [录音开始]
+
+
+      特切纳博士的关于复制人记忆的最新日志揭示了一些有趣的发现。似乎记忆</b>能</b>转移到克隆对象但需要主体对象进入能执行极详细的微分析的机器中。对对象的深度解剖产生了我们需要的结果，但我们需要付出毁掉主体的代价。
+
+
+      当然，这不是我们当前最理想的情况。如果我们不除掉这些用来实验的人，那么招聘庄严科技的训练有素的员工所需的时间和精力可能都会被浪费了。但可能我们也可以使用我们的复制人来当实验的对象，直到我们使整个过程完美，并开始找未来的志愿者来获得理想的样品。我需要和特切纳博士一起讨论一下这个问题，但我很确定，他对于这个能让他继续工作的机会肯定会热情地把握住的。
+
+
+      我对这个事情带来的商机也非常感兴趣。在我的脑海中，我能想到遗传学的应用、人工智能的发展和传送科技。这可能可以为公司带来一笔巨大财富。
+
+
+      [录音结束]
+    style: Body
+  layout: Vertical
+  lock_id: notes_teleportation

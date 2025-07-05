@@ -1,0 +1,84 @@
+id: CRABSHELL
+name: 蟹壳
+title: STRINGS.CODEX.CRAB_SHELL.TITLE
+disabled: False
+search_only: False
+category: INDUSTRIALINGREDIENTS
+sort_string: 蟹壳
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 蟹壳
+    style: Title
+  - widget_type: CodexText
+    text: 小动物副产品
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexImage
+    image: crabshell_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >+
+      由水生小动物丢弃的外骨骼。
+
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 小蟹壳
+    style: Title
+  - widget_type: CodexText
+    text: 小动物副产品
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexImage
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 由水生小动物幼崽丢弃的可爱的小型外骨骼。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 石灰
+    require:
+    - image: crabshell_0__ui
+      text1: 蟹壳
+      text2: 10千克
+      link_id: crabshell
+    produce:
+    - image: limestone_0__ui
+      text1: 石灰
+      text2: 10千克
+      link_id: lime
+    fabricator:
+      image: rockrefinery_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 碎石机
+      text2: 40秒
+      link_id: rockcrusher
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require: []
+    produce:
+    - image: crabshell_0__ui
+      text1: 蟹壳
+      text2: 10千克
+      link_id: crabshell
+    fabricator:
+      image: pincher_0__ui
+      text1: 抛壳蟹
+      link_id: CRAB
+  layout: Vertical

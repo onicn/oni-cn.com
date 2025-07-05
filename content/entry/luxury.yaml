@@ -1,0 +1,73 @@
+id: LUXURY
+parent_id: TECH
+name: 豪华家装
+disabled: False
+search_only: False
+category: TECH
+sort_string: 豪华家装
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="LUXURY">豪华家装</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 奢华先进的<link="STRESS">压力</link>缓解设施。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="CLOTHING">纺织生产</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: elegantbed_0__ui
+  - widget_type: CodexText
+    text: <link="LUXURYBED">舒适的床</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: ladder_plastic_0__ui
+  - widget_type: CodexText
+    text: <link="LADDERFAST">塑料梯子</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: floor_plastic_0__ui
+  - widget_type: CodexText
+    text: <link="PLASTICTILE">塑料砖</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: super_snazzy_suit_alteration_station_0__ui
+  - widget_type: CodexText
+    text: <link="CLOTHINGALTERATIONSTATION">时装翻新器</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: floor_wood_0__ui
+  - widget_type: CodexText
+    text: 木砖
+    style: Body
+  layout: Horizontal

@@ -1,0 +1,53 @@
+id: LOGIC
+name: 自动化
+title: STRINGS.CODEX.AUTOMATION.TITLE
+disabled: False
+search_only: False
+category: SYSTEMS
+sort_string: <link="LOGIC">自动化</link>
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 自动化
+    style: Subtitle
+  - widget_type: CodexText
+    text: >+
+      自动化是一种根据传感器检测到的信息控制建筑运行的工具。
+
+
+      当<link="DUPLICANTSENSOR">复制人运动传感器</link>检测到复制人在房间中时<link="CEILINGLIGHT">吸顶灯</link>会自动地开启。
+
+
+      只有当<link="LOGICELEMENTSENSORLIQUID">液体元素传感器</link>检测到水时才启用<link="LIQUIDPUMP">液泵</link>。
+
+
+      只有当<link="LOGICTEMPERATURESENSOR">温度传感器</link>检测到太热时才会启用<link="AIRCONDITIONER">温度调节器</link>。
+
+    style: Body
+  - widget_type: CodexText
+    text: 信号线
+    style: Subtitle
+  - widget_type: CodexText
+    text: >+
+      除<link="WIRE">电线</link>外，大多数通电建筑同样也可以连接<link="LOGICWIRE">信号线</link>，这种线可以向建筑发送信号使之开启或关闭。如果<link="LOGICWIRE">信号线</link>的末端连到一个传感器上，那么建筑就会根据传感器输出的信号决定开关。
+
+    style: Body
+  - widget_type: CodexText
+    text: 信号
+    style: Subtitle
+  - widget_type: CodexText
+    text: >+
+      <link="LOGICWIRE">信号线</link>可传递两种信号：绿色和红色。绿色信号会启用建筑，红色信号会禁用建筑。传感器可以设定在一定条件下输出绿色信号，比如，将<link="LOGICTEMPERATURESENSOR">温度传感器</link>设定为只当检测到的温度高于选定值时输出绿色信号。
+
+    style: Body
+  - widget_type: CodexText
+    text: 逻辑门
+    style: Subtitle
+  - widget_type: CodexText
+    text: >+
+      信号线可以与特殊建筑“逻辑门”结合使用，以创造更复杂的激活条件。
+
+      <link="LOGICGATEAND">与门</link>的输入端可连入两条信号线，输出端可连一条。只有当输入端接收到的信号都是“绿色”信号时，它才会将“绿色”信号输出到输出端。这可用于只当多个传感器同时满足条件时才开启建筑的情况。
+
+    style: Body
+  layout: Vertical

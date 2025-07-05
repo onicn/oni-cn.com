@@ -1,0 +1,49 @@
+id: THERMALBLOCK
+parent_id: BUILDCATEGORYUTILITIES
+name: 变温板
+disabled: False
+search_only: False
+category: BUILDCATEGORYUTILITIES
+sort_string: 变温板
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="THERMALBLOCK">变温板</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 精致翻修
+    style: Body
+    image: research_type_alpha_icon
+    link_id: refinedobjects
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: thermalblock_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      根据使用的建造材料，可加速或减缓<link="HEAT">热量</link>散发。
+
+
+      作用于小范围区域。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：1格宽x1格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：120秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="BUILDABLEANY">一般建造材料</link>800千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>建造材料的热学性质决定了它们对热量的维持状况。</i>
+    style: Body
+  layout: Vertical

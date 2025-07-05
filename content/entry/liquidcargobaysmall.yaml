@@ -1,0 +1,83 @@
+id: LIQUIDCARGOBAYSMALL
+parent_id: BUILDCATEGORYROCKETRY
+name: 液缸货舱
+disabled: False
+search_only: False
+category: BUILDCATEGORYROCKETRY
+sort_string: 液缸货舱
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="LIQUIDCARGOBAYSMALL">液缸货舱</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 流动重导
+    style: Body
+    image: research_type_alpha_icon
+    link_id: flowredirection
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: rocket_storage_liquid_small_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      允许复制人储存在太空任务中找到的一些<link="ELEMENTSLIQUID">液体</link>资源。
+
+
+      待火箭返回后，所储存的资源便可供殖民地使用。
+
+
+      必须通过<link="LAUNCHPAD">火箭平台</link>建造。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：3格宽x3格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：30秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="REFINEDMETAL">精炼金属</link>200千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    过热<link="HEAT">温度</link>：2000ºC'
+    tooltip: 达到<b>2000ºC</b>时开始过热
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>类别</b>
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    <link="REQUIREMENTCLASSINDUSTRIALMACHINERY">工业机械</link>'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>复制人会把他们在太空任务中找到的任何资源装入货舱。</i>
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 舱块统计
+    style: Subtitle
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>火箭速度</b>等于<b>引擎功率</b>除以<b>负担</b>
+    style: Body
+  - widget_type: CodexText
+    text: '    • 高度：3'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 舱块负担：3'
+    style: Body
+  layout: Vertical

@@ -1,0 +1,52 @@
+id: HYDROCARBONPROPULSION
+parent_id: TECH
+name: 烃类燃料推进
+disabled: False
+search_only: False
+category: TECH
+sort_string: 烃类燃料推进
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="HYDROCARBONPROPULSION">烃类燃料推进</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 烟雾弥漫的小范围火箭引擎。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="VALVEMINIATURIZATION">泵小型化</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: rocket_petro_engine_small_0__ui
+  - widget_type: CodexText
+    text: <link="KEROSENEENGINECLUSTERSMALL">小型石油引擎</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: mission_control_station_0__ui
+  - widget_type: CodexText
+    text: <link="MISSIONCONTROLCLUSTER">航天指挥站</link>
+    style: Body
+  layout: Horizontal

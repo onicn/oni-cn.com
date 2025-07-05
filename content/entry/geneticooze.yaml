@@ -1,0 +1,40 @@
+id: GENETICOOZE
+name: 生物流体
+title: STRINGS.CODEX.A5_GENETICOOZE.TITLE
+disabled: False
+search_only: False
+category: RESEARCHNOTES
+sort_string: 生物流体
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 生物流体
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：二
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+  lock_id: notes_geneticooze
+- contents:
+  - widget_type: CodexText
+    text: >-
+      [录音开始]
+
+
+      打印舱由一种技术员称作“生物软泥”的人工合成生物有机调制物填装，这种专业混合物由水、碳和几十种创造生命所必需的微量元素组成。
+
+
+      打印舱使用我们馈入的蓝图将这些元素重构为活的有机体，最终赋予之生命。
+
+
+      它就像别的3D打印机一样。我们只是使用不同的油墨。
+
+
+      布鲁萨德博士，实验记录完成。
+
+
+      [录音结束]
+    style: Body
+  layout: Vertical
+  lock_id: notes_geneticooze

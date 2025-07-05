@@ -1,0 +1,95 @@
+id: STORAGELOCKERSMART
+parent_id: BUILDCATEGORYBASE
+name: 智能存储箱
+disabled: False
+search_only: False
+category: BUILDCATEGORYBASE
+sort_string: 智能存储箱
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="STORAGELOCKERSMART">智能存储箱</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 智能存储
+    style: Body
+    image: research_type_alpha_icon
+    link_id: smartstorage
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: smartstoragelocker_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      储存你所选的<link="ELEMENTSSOLID">固体材料</link>。
+
+
+      当箱子充满时，输出<b><style="logic_on">绿色信号</style></b>。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="POWER">电力</link>：60瓦'
+    tooltip: 必须与至少有<style="consumed">60瓦</style>可用<style="KKeyword">电力</style>的电路相连
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：1格宽x2格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：60秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="REFINEDMETAL">精炼金属</link>200千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    库存容量：20吨'
+    tooltip: 最多容纳<b>20吨</b>材料
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="HEAT">热量</link>：+125复制热/秒'
+    tooltip: >-
+      每秒产生<style="produced">125复制热</style>
+
+
+      总<style="KKeyword">温度</style>变化受到加热物质的材料属性影响：
+          • 质量
+          • 比热容
+          • 表面积
+          • 隔热厚度
+          • 热导率
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LOGIC">信号输出端</link>'
+    tooltip: 当这个建筑状态发生变化时，输出端会输出一个信号
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    满/未满'
+    tooltip: >-
+      输出端行为：
+
+      • 当充满时，输出<b><style="logic_on">绿色信号</style></b>
+
+      • 否则，输出<b><style="logic_off">红色信号</style></b>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：-10（范围：2格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>2</b>格内降低<b><b>-10</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>智能存储箱可以根据类型和质量使组织资源自动化。</i>
+    style: Body
+  layout: Vertical

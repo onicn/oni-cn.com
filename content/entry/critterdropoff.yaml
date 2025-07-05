@@ -1,0 +1,85 @@
+id: CRITTERDROPOFF
+parent_id: BUILDCATEGORYFOOD
+name: 小动物放生点
+disabled: False
+search_only: False
+category: BUILDCATEGORYFOOD
+sort_string: 小动物放生点
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="CRITTERDROPOFF">小动物放生点</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 养殖
+    style: Body
+    image: research_type_alpha_icon
+    link_id: ranching
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: relocator_dropoff_02_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      将捕捉的<link="CREATURES">小动物</link>放回到世界中。
+
+
+      仅监测与放生指定物种。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：1格宽x3格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：10秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="METAL">金属矿石</link>50千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    库存容量：20吨'
+    tooltip: 最多容纳<b>20吨</b>材料
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    过热<link="HEAT">温度</link>：75ºC'
+    tooltip: 达到<b>75ºC</b>时开始过热
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LOGIC">信号输入端</link>'
+    tooltip: 当接收到信号时，输入端会使这个建筑一种状态发生变化
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    启用/禁用'
+    tooltip: >-
+      输入端行为：
+
+      • <b><style="logic_on">绿色信号</style></b>：启用小动物放生
+
+      • <b><style="logic_off">红色信号</style></b>：禁用小动物放生
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：-15（范围：3格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>3</b>格内降低<b><b>-15</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>类别</b>
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    <link="GROUPCREATURERELOCATOR">小动物搬迁建筑</link>'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>复制人会自动将捕获的小动物带到这些放生点放生。</i>
+    style: Body
+  layout: Vertical

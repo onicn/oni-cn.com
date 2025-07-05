@@ -1,0 +1,55 @@
+id: REMOTEWORKSTATION
+name: 独家机会
+title: STRINGS.CODEX.INVESTIGATIONS.DLC3_REMOTEWORK.TITLE
+disabled: False
+search_only: False
+category: INVESTIGATIONS
+sort_string: 独家机会
+required_dlc_ids:
+- DLC3_ID
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 独家机会
+    style: Title
+  - widget_type: CodexText
+    text: 公开发布
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+  lock_id: notes_remoteworkstation
+- contents:
+  - widget_type: CodexText
+    text: >+
+      健康世界自豪地正式宣布与庄严科技建立独家合作伙伴关系！
+
+
+      这使得我们成为第一个，也是唯一的为客户提供庄严科技的创新远达网络的完备健康中心……<i>真正体现</i>远程训练和治疗的最佳方式。
+
+
+      我们新的VIP订阅级别包含月租远程控制器的折扣*，以及进行专业的家庭安装所需的额外少量费用。
+
+
+      庄严科技的技术无需穿着不舒服的套装或穿戴设备即可捕捉到你的移动，并在健康世界专门建造的远程健身室中完美地再现移动。
+
+
+      借助专业讲师，零延迟流媒体和360度反射表面，让您真正感觉身临其境。
+
+
+      非常适合希望隐匿锻炼的高端用户！
+
+
+      会员还可以选择安装远程作业坞以接受我们精英物理治疗师和按摩师团队的深度个性化实操护理。
+
+
+      健康世界……现在<i>真正</i>世界化了！
+
+    style: Body
+  layout: Vertical
+  lock_id: notes_remoteworkstation
+- contents:
+  - widget_type: CodexText
+    text: <size=11><i>*折扣仅适用于新会员。收取标准入会费。</size></i>
+    style: Body
+  layout: Vertical
+  lock_id: notes_remoteworkstation

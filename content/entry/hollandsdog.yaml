@@ -1,0 +1,128 @@
+id: HOLLANDSDOG
+name: 回复：霍兰博士的狗
+title: STRINGS.CODEX.B1_HOLLANDSDOG.TITLE
+disabled: False
+search_only: False
+category: EMAILS
+sort_string: 回复：霍兰博士的狗
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 回复：霍兰博士的狗
+    style: Title
+  - widget_type: CodexText
+    text: 未加密
+    style: Subtitle
+  layout: Vertical
+  lock_id: email_hollandsdog
+- contents:
+  - widget_type: CodexText
+    text: >
+      <smallcaps>收件人：<b>苏梅尔斯博士</b><size=10><alpha=#AA> <jsummers@gravitas.nova></size></color>
+
+      发件人：<b>琼斯博士</b><alpha=#AA><size=10> <ejones@gravitas.nova></size></color></smallcaps>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_hollandsdog
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <indent=5%><i><b>呃啊啊啊！</b></i>
+
+      你最坏了！</indent>
+    style: Body
+  - widget_type: CodexText
+    text: >2
+
+      祝好，
+
+      琼斯博士
+
+      <size=11>信息统计部
+
+      庄严科技</size>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_hollandsdog
+- contents:
+  - widget_type: CodexText
+    text: 回复：霍兰博士的狗
+    style: Subtitle
+  - widget_type: CodexText
+    text: >
+      <smallcaps>收件人：<b>琼斯博士</b><alpha=#AA><size=10> <ejones@gravitas.nova></size></color>
+
+      发件人：<b>苏梅尔斯博士</b><size=10><alpha=#AA> <jsummers@gravitas.nova></size></color></smallcaps>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_hollandsdog
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <indent=5%>哈哈，我觉得挺好啊，他真的很爱他的狗狗。对了！我给你讲过我的猫昨晚做的事了吗？她总是在我的床上睡着，但这一次，她四肢摊开仰面躺着，然后伸出了她的小舌头！太可爱了。
+
+
+
+      <color=#F44A47>>[失效图片]</color>
+
+      <alpha=#AA>[121个附件丢失]</color></indent>
+    style: Body
+  - widget_type: CodexText
+    text: >2
+
+      - 苏梅尔斯博士
+
+      <size=11>信息统计部
+
+      庄严科技</size>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_hollandsdog
+- contents:
+  - widget_type: CodexText
+    text: 霍兰博士的狗
+    style: Subtitle
+  - widget_type: CodexText
+    text: >
+      <smallcaps>收件人：<b>苏梅尔斯博士</b><size=10><alpha=#AA> <jsummers@gravitas.nova></size></color>
+
+      发件人：<b>琼斯博士</b><alpha=#AA><size=10> <ejones@gravitas.nova></size></color></smallcaps>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_hollandsdog
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <indent=5%>我的天哪，现在我每次进休息室，都会遭到霍兰博士的伏击，他可以拉着我聊他新养的狗，一聊就是20分钟。
+
+
+      就像这种，我明白了！你的小狗很可爱！但为什么你的手机上有400张不同的狗狗照片，还全都是同一个角度？！
+
+
+      太烦人了。</indent>
+    style: Body
+  - widget_type: CodexText
+    text: >2
+
+      祝好，
+
+      琼斯博士
+
+      <size=11>信息统计部
+
+      庄严科技</size>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_hollandsdog

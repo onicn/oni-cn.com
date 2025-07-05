@@ -1,0 +1,45 @@
+id: DISHBOT
+name: 洗碗机器人
+title: STRINGS.CODEX.A6_DISHBOT.TITLE
+disabled: False
+search_only: False
+category: NOTICES
+sort_string: 洗碗机器人
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 洗碗机器人
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：二
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+  lock_id: misc_dishbot
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <smallcaps><b>请认领您的机器人</b>
+
+      发件人：<b>管理员</b> <alpha=#AA><admin@gravitas.nova></color>
+
+      收件人：<b>全体</b></smallcaps>
+
+      ------------------
+
+
+      <indent=5%>我们很感激您致力于办公室维护工作，但特此通知在食堂安装洗碗机器人的同事：我们发现您的原型严重滥用洗洁精，现已将其强行终止。
+
+
+      请前往安保B区领取原型的残骸。
+
+
+      对此造成的不便，我们深感抱歉，并感谢您及时认领此原型。
+
+
+      - 管理员
+
+      庄严科技</indent>
+    style: Body
+  layout: Vertical
+  lock_id: misc_dishbot

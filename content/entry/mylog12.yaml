@@ -1,0 +1,25 @@
+id: MYLOG12
+name: 极热危险
+title: STRINGS.CODEX.MYLOG.BODY.NEARINGMAGMA.TITLE
+disabled: False
+search_only: False
+category: MYLOG
+sort_string: 极热危险
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 极热危险
+    style: Title
+  - widget_type: CodexText
+    text: >+
+      从我的复制人感官收集到的读数告诉我，他们挖得越深，就越接近一个极端且有潜在危险的热源。
+
+
+      我确信他们正接近熔融的核心，这意味着会有岩浆以及致命的高温。我应该先让我的复制人装备好再接近。
+
+    style: Body
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical
+  lock_id: nearingmagma

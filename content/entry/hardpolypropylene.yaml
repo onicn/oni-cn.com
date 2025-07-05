@@ -1,0 +1,131 @@
+id: HARDPOLYPROPYLENE
+parent_id: ELEMENTSSOLID
+name: 塑料质
+disabled: False
+search_only: False
+category: ELEMENTSSOLID
+sort_string: 塑料质
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="HARDPOLYPROPYLENE">塑料质</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: hardplastic_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: hardplastic_0__ui
+      text1: 塑料质
+      text2: 1000克
+      link_id: hardpolypropylene
+    produce:
+    - image: element_gas
+      color: 76245DFF
+      text1: 高硫天然气
+      text2: 1000克
+      link_id: sourgas
+    fabricator:
+      image: crew_state_temp_up
+      text1: 1826.9ºC
+      tooltip: 温度高于1826.9ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 飞寻机
+    require:
+    - image: hardplastic_0__ui
+      text1: 塑料质
+      text2: 200千克
+      link_id: hardpolypropylene
+    produce:
+    - image: swoopy_bot_0__ui
+      text1: 飞寻机
+      text2: 1单位
+      link_id: fetchdrone
+    fabricator:
+      image: advanced_crafting_table_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 焊接台
+      text2: 120秒
+      link_id: advancedcraftingtable
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 分子熔炉
+    require:
+    - image: temp_conductor_0__ui
+      text1: 导热质
+      text2: 15千克
+      link_id: tempconductorsolid
+    - image: polypropylene_0__ui
+      text1: 塑料
+      text2: 70千克
+      link_id: polypropylene
+    - image: milkfat_0__ui
+      text1: 咸乳蜡
+      text2: 15千克
+      link_id: milkfat
+    produce:
+    - image: hardplastic_0__ui
+      text1: 塑料质
+      text2: 100千克
+      link_id: hardpolypropylene
+    fabricator:
+      image: supermaterial_refinery_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 分子熔炉
+      text2: 80秒
+      link_id: supermaterialrefinery
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      <link="HARDPOLYPROPYLENE">塑料质</link>是一种高级热塑性聚合物，由<link="TEMPCONDUCTORSOLID">导热质</link>、<link="POLYPROPYLENE">塑料</link>和<link="MILKFAT">咸乳蜡</link>制成。
+
+
+      它具有很强的耐热性，适合在太空建筑上运用。
+
+
+      资源种类：人造材料
+
+      熔点：1826.9ºC
+
+      硬度：<color=#71ABCFFF>1（非常柔软）</color>
+
+
+      比热容：1.500 (DTU/g)/ºC
+
+      热导率：0.250 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.85
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：抗菌物, <link="PLASTIC">塑料</link>, <link="BUILDABLEANY">一般建造材料</link>, <link="ELEMENTSSOLID">固体</link>, 人造材料
+
+      <style="KKeyword">过热温度</style>：+900ºC
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

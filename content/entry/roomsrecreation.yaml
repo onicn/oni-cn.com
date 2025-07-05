@@ -1,0 +1,56 @@
+id: ROOMSRECREATION
+parent_id: ROOMS
+name: 娱乐
+disabled: False
+search_only: False
+category: ROOMS
+sort_string: 娱乐
+sub_entries:
+- id: RecRoom
+  parent_id: ROOMSRecreation
+  name: 娱乐室
+  disabled: False
+  sort_string: 娱乐室
+content_container:
+- contents:
+  - widget_type: CodexImage
+    image: ui_room_recreational
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 娱乐室
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      复制人和其他下班的同伴交往并沉浸在休息放松之中的地方。
+
+
+      安排休息时间会进一步提升进入娱乐室的复制人的士气。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 详情
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>需求：</b>
+    style: Body
+  - widget_type: CodexText
+    text: >2-
+          • <link="REQUIREMENTCLASSRECBUILDING">Recreational building</link>
+          • No <link="REQUIREMENTCLASSINDUSTRIALMACHINERY">industrial machinery</link>
+          • <link="REQUIREMENTCLASSDECORATION">Decor item</link> (1)
+          • Minimum size: 12 tiles
+          • Maximum size: 96 tiles
+    style: Body
+  layout: Vertical

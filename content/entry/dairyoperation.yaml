@@ -1,0 +1,62 @@
+id: DAIRYOPERATION
+parent_id: TECH
+name: 咸乳供应
+disabled: False
+search_only: False
+category: TECH
+sort_string: 咸乳供应
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="DAIRYOPERATION">咸乳供应</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 这种液体资源的生产、处理和分配的高级方法。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="VALVEMINIATURIZATION">泵小型化</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="FINERDINING">美食制备</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: critter_milk_feeder_0__ui
+  - widget_type: CodexText
+    text: <link="MILKFEEDER">小动物直饮器</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: milk_separator_0__ui
+  - widget_type: CodexText
+    text: <link="MILKFATSEPARATOR">咸乳蜡收集器</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: milking_station_0__ui
+  - widget_type: CodexText
+    text: <link="MILKINGSTATION">挤奶站</link>
+    style: Body
+  layout: Horizontal

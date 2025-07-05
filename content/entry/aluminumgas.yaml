@@ -1,0 +1,93 @@
+id: ALUMINUMGAS
+parent_id: ELEMENTSGAS
+name: 气态铝
+disabled: False
+search_only: False
+icon_color: D1EDF8FF
+category: ELEMENTSGAS
+sort_string: 气态铝
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="ALUMINUMGAS">气态铝</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    color: D1EDF8FF
+    image: element_gas
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_gas
+      color: D1EDF8FF
+      text1: 气态铝
+      text2: 1000克
+      link_id: aluminumgas
+    produce:
+    - image: element_liquid
+      color: 5F98ADFF
+      text1: 熔融铝
+      text2: 1000克
+      link_id: moltenaluminum
+    fabricator:
+      image: crew_state_temp_down
+      text1: 2470ºC
+      tooltip: 温度低于2470ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换于
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: 5F98ADFF
+      text1: 熔融铝
+      text2: 1000克
+      link_id: moltenaluminum
+    produce:
+    - image: element_gas
+      color: D1EDF8FF
+      text1: 气态铝
+      text2: 1000克
+      link_id: aluminumgas
+    fabricator:
+      image: crew_state_temp_up
+      text1: 2470ºC
+      tooltip: 温度高于2470ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      (Al) 气态铝是一种被加热成<link="ELEMENTSGAS">气态</link>的低密度<link="RAWMETAL">金属</link>。
+
+
+      资源种类：不可呼吸的气体
+
+      凝点：2470ºC
+
+
+      比热容：0.910 (DTU/g)/ºC
+
+      热导率：2.500 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.07
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：<link="METAL">金属矿石</link>, <link="REFINEDMETAL">精炼金属</link>, <link="LIGHT">光源</link>, 气体, 不可呼吸的气体
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

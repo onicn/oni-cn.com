@@ -1,0 +1,408 @@
+id: DRECKOSPECIES
+parent_id: CREATURES
+name: 毛鳞壁虎
+disabled: False
+search_only: False
+category: CREATURES
+sort_string: <link="DRECKOSPECIES">毛鳞壁虎</link>
+sub_entries:
+- id: Drecko
+  parent_id: DreckoSpecies
+  name: <link="DRECKO">毛鳞壁虎</link>
+  disabled: False
+  sort_string: 毛鳞壁虎
+- id: DreckoPlastic
+  parent_id: DreckoSpecies
+  name: <link="DRECKOPLASTIC">滑鳞壁虎</link>
+  disabled: False
+  sort_string: 滑鳞壁虎
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 毛鳞壁虎
+    style: Title
+  - widget_type: CodexText
+    text: 小动物物种
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 毛鳞壁虎是一种爬行生物，脚上长有大量纤毛，从而能够粘贴和攀爬大多数表面。
+    style: Body
+  - widget_type: CodexText
+    text: >-
+      毛鳞壁虎的尾巴称为“拖尾”，只有装饰作用，即使失去或被剪下也不会对本体造成伤害。
+
+
+      因此，人们常常养殖毛鳞壁虎，收集其纤毛用于制造纺织品。
+
+
+      由于毛鳞壁虎友善的性格，照顾毛鳞壁虎是一件很有成就感的事情。
+
+
+      一些驯养的毛鳞壁虎在听到叫自己的名字时甚至会做出反应。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 条目（2/2）
+    style: Subtitle
+  - widget_type: CodexText
+    text: <link="DRECKO">毛鳞壁虎</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="DRECKOPLASTIC">滑鳞壁虎</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 毛鳞壁虎
+    style: Title
+  - widget_type: CodexText
+    text: 可驯化的小动物
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: drecko_0__fbr_ui
+  - widget_type: CodexImage
+    image: baby_drecko_0__fbr_ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexText
+    text: >-
+      毛鳞壁虎是一种没有敌意的小动物，吃活的<link="SPICEVINE">火椒藤</link>、<link="SWAMPLILY">芳香百合</link>和<link="BASICSINGLEHARVESTPLANT">米虱木</link>。
+
+
+      其背部覆盖厚厚的纤毛，这些纤毛只有在<link="HYDROGEN">氢气</link>环境中才能生长。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 理想温度
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 舒适范围：<b>10ºC</b>至<b>60ºC</b>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 存活范围：<b>-30ºC</b>至<b>100ºC</b>'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 寿命
+    style: Subtitle
+  - widget_type: CodexText
+    text: 这种小动物特征<link="CREATURES__GUIDE__FERTILITY">寿命</link>为<b>150周期</b>。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 所需空间
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 当房间空间对每只小动物平均少于<b>12格</b>时会感到<link="CREATURES__GUIDE__MOOD">拥挤</link>。'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 当房间小于<b>12格</b>时会感到<link="CREATURES__GUIDE__MOOD">封闭</link>。'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 掉落物
+    style: Subtitle
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 肉
+    image: creaturemeat_0__ui
+    link_id: meat
+  - widget_type: CodexText
+    text: 	3,200千卡
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 食物
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: vinespicenut_0__ui
+      text1: 火椒藤
+      text2: 9% 生长进度/周期
+      link_id: spicevine
+    produce:
+    - image: phosphorite_0__ui
+      text1: 磷矿
+      text2: 10千克/周期
+      link_id: phosphorite
+    fabricator:
+      image: drecko_0__fbr_ui
+      text1: 毛鳞壁虎
+      link_id: DRECKO
+  - widget_type: CodexConversionPanel
+    require:
+    - image: swamplily_0__ui
+      text1: 芳香百合
+      text2: 6% 生长进度/周期
+      link_id: swamplily
+    produce:
+    - image: phosphorite_0__ui
+      text1: 磷矿
+      text2: 10千克/周期
+      link_id: phosphorite
+    fabricator:
+      image: drecko_0__fbr_ui
+      text1: 毛鳞壁虎
+      link_id: DRECKO
+  - widget_type: CodexConversionPanel
+    require:
+    - image: meallice_0__ui
+      text1: 米虱木
+      text2: 25% 生长进度/周期
+      link_id: basicsingleharvestplant
+    produce:
+    - image: phosphorite_0__ui
+      text1: 磷矿
+      text2: 10千克/周期
+      link_id: phosphorite
+    fabricator:
+      image: drecko_0__fbr_ui
+      text1: 毛鳞壁虎
+      link_id: DRECKO
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: drecko_0__fbr_ui
+      text1: 毛鳞壁虎
+      text2: 1单位
+      link_id: drecko
+    produce:
+    - image: swampreedwool_0__ui
+      text1: 芦苇纤维
+      text2: 2单位
+      link_id: basicfabric
+    fabricator:
+      image: shearing_station_0__ui
+      text1: 修剪站
+      link_id: SHEARINGSTATION
+  - widget_type: CodexConversionPanel
+    require: []
+    produce:
+    - image: creaturemeat_0__ui
+      text1: 肉
+      text2: 3,200千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: meat
+    fabricator:
+      image: drecko_0__fbr_ui
+      text1: 毛鳞壁虎
+      link_id: DRECKO
+  - widget_type: CodexConversionPanel
+    require:
+    - image: drecko_0__fbr_ui
+      text1: 毛鳞壁虎
+      text2: 0.25单位/周期
+      link_id: drecko
+    produce:
+    - image: frozen_brine_0__ui
+      text1: 浓盐冰
+      text2: 128千克/周期
+      link_id: brine
+    fabricator:
+      image: raptor_0__ui
+      text1: 霸王鹦
+      link_id: RAPTOR
+  layout: Vertical
+- contents:
+  - widget_type: CodexLargeSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 滑鳞壁虎
+    style: Title
+  - widget_type: CodexText
+    text: 小动物变种
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: drecko_0__ui
+  - widget_type: CodexImage
+    image: baby_drecko_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexText
+    text: >-
+      滑鳞壁虎是一种没有敌意的小动物，只吃活的<link="BASICSINGLEHARVESTPLANT">米虱木</link>和<link="PRICKLEFLOWER">毛刺花</link>。
+
+
+      其背部覆盖有生物塑料鳞片，这些鳞片只有在<link="HYDROGEN">氢气</link>环境中才能生长。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 理想温度
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 舒适范围：<b>20ºC</b>至<b>50ºC</b>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 存活范围：<b>-30ºC</b>至<b>100ºC</b>'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 寿命
+    style: Subtitle
+  - widget_type: CodexText
+    text: 这种小动物特征<link="CREATURES__GUIDE__FERTILITY">寿命</link>为<b>150周期</b>。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 所需空间
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 当房间空间对每只小动物平均少于<b>12格</b>时会感到<link="CREATURES__GUIDE__MOOD">拥挤</link>。'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 当房间小于<b>12格</b>时会感到<link="CREATURES__GUIDE__MOOD">封闭</link>。'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 掉落物
+    style: Subtitle
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 肉
+    image: creaturemeat_0__ui
+    link_id: meat
+  - widget_type: CodexText
+    text: 	3,200千卡
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 食物
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: meallice_0__ui
+      text1: 米虱木
+      text2: 33% 生长进度/周期
+      link_id: basicsingleharvestplant
+    produce:
+    - image: phosphorite_0__ui
+      text1: 磷矿
+      text2: 9千克/周期
+      link_id: phosphorite
+    fabricator:
+      image: drecko_0__ui
+      text1: 滑鳞壁虎
+      link_id: DRECKOPLASTIC
+  - widget_type: CodexConversionPanel
+    require:
+    - image: bristleblossom_0__ui
+      text1: 毛刺花
+      text2: 17% 生长进度/周期
+      link_id: prickleflower
+    produce:
+    - image: phosphorite_0__ui
+      text1: 磷矿
+      text2: 9千克/周期
+      link_id: phosphorite
+    fabricator:
+      image: drecko_0__ui
+      text1: 滑鳞壁虎
+      link_id: DRECKOPLASTIC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: drecko_0__ui
+      text1: 滑鳞壁虎
+      text2: 1单位
+      link_id: dreckoplastic
+    produce:
+    - image: polypropylene_0__ui
+      text1: 塑料
+      text2: 150千克
+      link_id: polypropylene
+    fabricator:
+      image: shearing_station_0__ui
+      text1: 修剪站
+      link_id: SHEARINGSTATION
+  - widget_type: CodexConversionPanel
+    require: []
+    produce:
+    - image: creaturemeat_0__ui
+      text1: 肉
+      text2: 3,200千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: meat
+    fabricator:
+      image: drecko_0__ui
+      text1: 滑鳞壁虎
+      link_id: DRECKOPLASTIC
+  - widget_type: CodexConversionPanel
+    require:
+    - image: drecko_0__ui
+      text1: 滑鳞壁虎
+      text2: 0.25单位/周期
+      link_id: dreckoplastic
+    produce:
+    - image: frozen_brine_0__ui
+      text1: 浓盐冰
+      text2: 128千克/周期
+      link_id: brine
+    fabricator:
+      image: raptor_0__ui
+      text1: 霸王鹦
+      link_id: RAPTOR
+  layout: Vertical
+- contents:
+  - widget_type: CodexLargeSpacer
+  layout: Vertical

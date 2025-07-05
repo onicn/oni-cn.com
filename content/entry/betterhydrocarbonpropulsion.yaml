@@ -1,0 +1,48 @@
+id: BETTERHYDROCARBONPROPULSION
+parent_id: TECH
+name: 改良烃类燃料推进
+disabled: False
+search_only: False
+category: TECH
+sort_string: 改良烃类燃料推进
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="BETTERHYDROCARBONPROPULSION">改良烃类燃料推进</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 烟雾弥漫的大型火箭引擎。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="RENEWABLEENERGY">可再生能源</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="HYDROCARBONPROPULSION">烃类燃料推进</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: rocket_cluster_petroleum_engine_0__ui
+  - widget_type: CodexText
+    text: <link="KEROSENEENGINECLUSTER">石油引擎</link>
+    style: Body
+  layout: Horizontal

@@ -1,0 +1,80 @@
+id: AGRICULTURE
+parent_id: TECH
+name: 农业
+disabled: False
+search_only: False
+category: TECH
+sort_string: 农业
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="AGRICULTURE">农业</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 掌握种植农作物的农业技术。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="FINEDINING">食物制备</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: planttender_0__ui
+  - widget_type: CodexText
+    text: <link="FARMSTATION">农业站</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: fertilizer_maker_0__ui
+  - widget_type: CodexText
+    text: <link="FERTILIZERMAKER">肥料合成器</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: fridge_0__ui
+  - widget_type: CodexText
+    text: <link="REFRIGERATOR">冰箱</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: farmtilehydroponicrotating_0__ui
+  - widget_type: CodexText
+    text: <link="HYDROPONICFARM">液培砖</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: parksign_0__ui
+  - widget_type: CodexText
+    text: <link="PARKSIGN">公园标识</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: radiation_lamp_0__ui
+  - widget_type: CodexText
+    text: <link="RADIATIONLIGHT">辐射灯</link>
+    style: Body
+  layout: Horizontal

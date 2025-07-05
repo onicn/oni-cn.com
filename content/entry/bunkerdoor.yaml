@@ -1,0 +1,78 @@
+id: BUNKERDOOR
+parent_id: BUILDCATEGORYBASE
+name: 地堡门
+disabled: False
+search_only: False
+category: BUILDCATEGORYBASE
+sort_string: 地堡门
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="BUNKERDOOR">地堡门</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 超热锻造
+    style: Body
+    image: research_type_alpha_icon
+    link_id: hightempforging
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: door_bunker_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      阻挡<link="ELEMENTSLIQUID">液体</link>和<link="ELEMENTSGAS">气体</link>流动，维持各区域间的压力。
+
+
+      可承受极高的压力和冲击。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="POWER">电力</link>：120瓦'
+    tooltip: 必须与至少有<style="consumed">120瓦</style>可用<style="KKeyword">电力</style>的电路相连
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：4格宽x1格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：120秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="STEEL">钢</link>500千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    过热<link="HEAT">温度</link>：1000ºC'
+    tooltip: 达到<b>1000ºC</b>时开始过热
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LOGIC">信号输入端</link>'
+    tooltip: 当接收到信号时，输入端会使这个建筑一种状态发生变化
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    开启/关闭'
+    tooltip: >-
+      输入端行为：
+
+      • <b><style="logic_on">绿色信号</style></b>：开启
+
+      • <b><style="logic_off">红色信号</style></b>：关闭并锁定
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>一扇移动缓慢但相当结实的大门，几乎坚不可摧。</i>
+    style: Body
+  layout: Vertical

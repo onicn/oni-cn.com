@@ -1,0 +1,51 @@
+id: CASUALFRIDAY
+name: 周五便装日！
+title: STRINGS.CODEX.A4_CASUALFRIDAY.TITLE
+disabled: False
+search_only: False
+category: NOTICES
+sort_string: 周五便装日！
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 周五便装日！
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：无
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+  lock_id: misc_casualfriday
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <smallcaps><b>周五便装日！</b>
+
+      发件人：<b>管理员</b> <alpha=#AA><admin@gravitas.nova></color>
+
+      收件人：<b>全体</b></smallcaps>
+
+      ------------------
+
+
+      <indent=5%>致所有员工；
+
+
+      研究所很高兴地通知大家，从本周开始，所有星期五都将是便装日！
+
+
+      临床证明，便装有减压的好处，所以请穿上你们最喜欢的衬衫开始享受吧。
+
+
+      <b>请注意：如果我们发现有人没有全身防护，将立即通告批评。</b>
+
+
+      谢谢大家！祝大家开心！
+
+
+      - 管理员
+
+      庄严科技</indent>
+    style: Body
+  layout: Vertical
+  lock_id: misc_casualfriday

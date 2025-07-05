@@ -1,0 +1,29 @@
+id: RADIATIONSICKNESS
+parent_id: DISEASE
+name: 放射性污染物
+disabled: False
+search_only: False
+category: DISEASE
+sort_string: 放射性污染物
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="RADIATIONSICKNESS">放射性污染物</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 被放射性污染物污染的物体会释放低等级的<link="RADIATION">辐射</link>，可能会引发<link="RADIATIONSICKNESS">辐射病</link>。它们不受压力或温度的影响，但会随时间减少。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 温度范围：InfinityºC至InfinityºC
+    style: Body
+  - widget_type: CodexText
+    text: >
+      气压范围：无穷大吨到无穷大吨
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

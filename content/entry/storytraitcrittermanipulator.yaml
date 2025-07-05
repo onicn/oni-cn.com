@@ -1,0 +1,430 @@
+id: STORYTRAITCRITTERMANIPULATOR
+parent_id: STORYTRAITS
+name: 小动物衍变器
+title: STRINGS.CODEX.STORY_TRAITS.CRITTER_MANIPULATOR.NAME
+disabled: False
+search_only: False
+icon_asset_name: critter_manipulator_codex_icon
+category: STORYTRAITS
+sort_string: 小动物衍变器
+content_container:
+- contents:
+  - widget_type: CodexImage
+    image: CritterManipulator_image
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 小动物衍变器
+    style: Title
+  - widget_type: CodexText
+    text: >-
+      为小动物设计的革命性基因操纵设备。
+
+
+      它曾经是否用于非小动物项目尚不清楚。其中的DNA数据库已被清除干净了。
+    style: Body
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 陶瓷疫病章鱼
+    style: Subtitle
+  - widget_type: CodexText
+    text: >-
+      一份陶制品，制作于一次人力资源部授权的艺术疗法课程。
+
+
+      它由一种特殊物质上釉，这种物质曾经把一名好奇心旺盛的实验室技术人员送进急诊室。
+    style: Body
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical
+  lock_id: story_trait_critter_manipulator_complete
+- contents:
+  - widget_type: CodexText
+    text: 初遇
+    style: Subtitle
+  - widget_type: CodexText
+    text: >-
+      我发现了一个用于分析小动物变异进化动态的实验设备。
+
+
+      收集到足够的数据后，它就能提供极其有用的基因操纵功能。
+    style: Body
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical
+  lock_id: story_trait_critter_manipulator_initial
+- contents:
+  - widget_type: CodexText
+    text: <link="HATCHSPECIES">好吃哈奇</link>
+    style: Subtitle
+  - widget_type: CodexText
+    text: >-
+      样品试图在口腔拭子上来上一口。取样涂片可用，但设备可能有些损坏。
+
+
+      原子力显微镜的咬痕上留有针铁矿，这是一种因特殊强度而闻名的矿物。
+    style: Body
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical
+  lock_id: story_trait_critter_manipulator_hatchspecies
+- contents:
+  - widget_type: CodexText
+    text: <link="LIGHTBUGSPECIES">发光虫</link>
+    style: Subtitle
+  - widget_type: CodexText
+    text: >-
+      这只小动物一直试图与扫描仪内部的反射镜交朋友。
+
+
+      在检查过程中，它在循环执行以下模式：四次快速闪光，一次短暂停顿，两次闪光，然后是一次更长的停顿。
+
+
+      其细胞含有变异的氧化荧光素变种，类似于类别为陆基生物发光的动物。
+    style: Body
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical
+  lock_id: story_trait_critter_manipulator_lightbugspecies
+- contents:
+  - widget_type: CodexText
+    text: <link="OILFLOATERSPECIES">浮油生物</link>
+    style: Subtitle
+  - widget_type: CodexText
+    text: 不停的扭动使这种小动物很难扫描。难，但不是不可能。
+    style: Body
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical
+  lock_id: story_trait_critter_manipulator_oilfloaterspecies
+- contents:
+  - widget_type: CodexText
+    text: <link="DRECKOSPECIES">毛鳞壁虎</link>
+    style: Subtitle
+  - widget_type: CodexText
+    text: >-
+      这只小动物几乎完全没有注意到自己在被检查。
+
+
+      内置的电子显微镜已确定，这种小动物身上的纤维以一种三位一体缝合图案生长，让人联想到精心制作的毛衣。
+
+
+      然而，这种小动物的粗糙皮肤仍能保持凉爽干燥，可能是缺乏汗腺导致的。
+    style: Body
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical
+  lock_id: story_trait_critter_manipulator_dreckospecies
+- contents:
+  - widget_type: CodexText
+    text: <link="GLOMSPECIES">疫病章鱼</link>
+    style: Subtitle
+  - widget_type: CodexText
+    text: DNA结果表明：这个物种正是“粘糊”的科学定义。
+    style: Body
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical
+  lock_id: story_trait_critter_manipulator_glomspecies
+- contents:
+  - widget_type: CodexText
+    text: <link="PUFTSPECIES">喷浮飞鱼</link>
+    style: Subtitle
+  - widget_type: CodexText
+    text: >-
+      这只小动物在扫描的过程中一直重复撞击建筑的内部。尽管如此，它的皮肤仍未伤分毫。
+
+
+      荧光成像表明这种小动物的神经元活性极低。这小动物是在分析的时候睡着了吗？
+    style: Body
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical
+  lock_id: story_trait_critter_manipulator_puftspecies
+- contents:
+  - widget_type: CodexText
+    text: <link="PACUSPECIES">帕库鱼</link>
+    style: Subtitle
+  - widget_type: CodexText
+    text: >-
+      这个物种在分析过程中扑腾个不停。现在与其鳞片接触的表面出现了一层薄的粘性浮沫。似乎不具有腐蚀性。
+
+
+      启动熏蒸程序以中和鱼腥味。
+    style: Body
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical
+  lock_id: story_trait_critter_manipulator_pacuspecies
+- contents:
+  - widget_type: CodexText
+    text: <link="MOOSPECIES">释气海牛</link>
+    style: Subtitle
+  - widget_type: CodexText
+    text: >-
+      警告：甲烷超负荷。由于气体产生过多导致过热，扫描仪无法分析这个样本。
+
+
+      这种生物的基因组成仍然是个谜。
+    style: Body
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical
+  lock_id: story_trait_critter_manipulator_moospecies
+- contents:
+  - widget_type: CodexText
+    text: <link="MOLESPECIES">锹环田鼠</link>
+    style: Subtitle
+  - widget_type: CodexText
+    text: 这种小动物在狭窄的扫描床上感觉很自在。甚至还想再来一次！
+    style: Body
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical
+  lock_id: story_trait_critter_manipulator_molespecies
+- contents:
+  - widget_type: CodexText
+    text: <link="SQUIRRELSPECIES">树鼠</link>
+    style: Subtitle
+  - widget_type: CodexText
+    text: >-
+      这个物种有二级透明的内眼皮，似乎可以防止眼部被小碎片伤害。
+
+
+      这些二级眼皮是半透明蓝色的，并显示出一种浅色的交叉阴影纹理。
+
+
+      这对这种小动物的视觉有很广泛的影响，值得进一步研究。
+    style: Body
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical
+  lock_id: story_trait_critter_manipulator_squirrelspecies
+- contents:
+  - widget_type: CodexText
+    text: <link="CRABSPECIES">抛壳蟹</link>
+    style: Subtitle
+  - widget_type: CodexText
+    text: >-
+      这个物种通过挥舞钳子来回应扫描器的嗡嗡声，这些姿势很像是在模仿迪斯科舞时代的标志性动作。
+
+
+      是否有可能它在进化的某个阶段接触过音乐？
+    style: Body
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical
+  lock_id: story_trait_critter_manipulator_crabspecies
+- contents:
+  - widget_type: CodexText
+    text: <link="DRECKOSPECIES">异化虫</link>
+    style: Subtitle
+  - widget_type: CodexText
+    text: >-
+      样品对检测仪器的反应十分温和，好像不想造成损坏而如此小心似的。
+
+
+      在分析过程中，它还产生了一系列有节奏的强振动。可能是想尝试与传感器交流？
+    style: Body
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical
+  lock_id: story_trait_critter_manipulator_divergentspecies
+- contents:
+  - widget_type: CodexText
+    text: <link="STATERPILLARSPECIES">电弧蛞蝓</link>
+    style: Subtitle
+  - widget_type: CodexText
+    text: 警告：该实例释放的电荷几乎使这台仪器短路。
+    style: Body
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical
+  lock_id: story_trait_critter_manipulator_staterpillarspecies
+- contents:
+  - widget_type: CodexText
+    text: <link="BEETASPECIES">辐射蜂</link>
+    style: Subtitle
+  - widget_type: CodexText
+    text: >-
+      这个物种可能没有完整的知觉，但有很强的集体意识。
+
+
+      目前尚不清楚这个物种之间是如何传递信息的。但很清楚的是，它们之间会传递知识，并代代相传。
+
+
+      请保持密切观察。
+    style: Body
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical
+  lock_id: story_trait_critter_manipulator_beetaspecies
+- contents:
+  - widget_type: CodexText
+    text: <link="SEALSPECIES">栓角海豹</link>
+    style: Subtitle
+  - widget_type: CodexText
+    text: >-
+      这只小动物的瞳孔似乎永久收缩了，可能是长期暴露在过量的光照下导致的。
+
+
+      然而，其嗅觉极其发达：它能立即分辨出先前物种接触过的区域，并用一小滩液态乙醇标记每个区域。
+    style: Body
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical
+  lock_id: story_trait_critter_manipulator_sealspecies
+- contents:
+  - widget_type: CodexText
+    text: <link="BELLYSPECIES">绒犸兔</link>
+    style: Subtitle
+  - widget_type: CodexText
+    text: >-
+      样品直接在扫描床上产生了大量粪便样本。
+
+
+      值得注意的是，其白色绒毛仍保持洁净。纤维分析显示，每根毛囊均覆有聚四氟乙烯密封层，具备极强的抗污性。
+    style: Body
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical
+  lock_id: story_trait_critter_manipulator_bellyspecies
+- contents:
+  - widget_type: CodexText
+    text: <link="DEERSPECIES">狐鹿</link>
+    style: Subtitle
+  - widget_type: CodexText
+    text: >-
+      这只小动物在极其仔细观察扫描过程的每一步的过程中，不停地咧嘴笑，笑得越来越剧烈。
+
+
+      行为分析表明，其有恶作剧的倾向。建议对其进行密切监督，并减少与先进机械的接触。
+    style: Body
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical
+  lock_id: story_trait_critter_manipulator_deerspecies
+- contents:
+  - widget_type: CodexText
+    text: <link="RAPTORSPECIES">霸王鹦</link>
+    style: Subtitle
+  - widget_type: CodexText
+    text: >-
+      这只小动物的X光成像表明，它的颅骨突起可能根本不是角。
+
+
+      这种突起不是由角蛋白与蛋白质外壳围绕的活骨组成，而是一种神经化的钙质结构。一颗位置不合逻辑牙齿，或是一个喙？
+
+
+      有趣。
+    style: Body
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical
+  lock_id: story_trait_critter_manipulator_raptorspecies
+- contents:
+  - widget_type: CodexText
+    text: <link="CHAMELEONSPECIES">逸蜥</link>
+    style: Subtitle
+  - widget_type: CodexText
+    text: >-
+      由于样品舌部抓取导致器械移位，扫描中止。
+
+
+      样品舌面沟壑残留纹路与庄严科技人员数据库中某组未标记指纹的匹配度达72%。
+    style: Body
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical
+  lock_id: story_trait_critter_manipulator_chameleonspecies
+- contents:
+  - widget_type: CodexText
+    text: <link="STEGOSPECIES">尖块兽</link>
+    style: Subtitle
+  - widget_type: CodexText
+    text: >-
+      这只小动物由于体型刚刚暂时被困在了扫描区域。它似乎很喜欢在传送带移动过程中前后晃动的体验。
+
+
+      最终到达出口时，这只小动物似乎对旅程为什么结束而感到困惑。
+    style: Body
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical
+  lock_id: story_trait_critter_manipulator_stegospecies
+- contents:
+  - widget_type: CodexText
+    text: <link="MOSQUITOSPECIES">蚋虱</link>
+    style: Subtitle
+  - widget_type: CodexText
+    text: 这种小动物翅膀表面分布着数千个微型孔洞，这些结构似乎起到声学衬层的作用，使蚋虱在接近目标时，不会因高频振翅声暴露行踪。
+    style: Body
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical
+  lock_id: story_trait_critter_manipulator_mosquitospecies
+- contents:
+  - widget_type: CodexText
+    text: <link="PREHISTORICPACUSPECIES">颚鱼</link>
+    style: Subtitle
+  - widget_type: CodexText
+    text: >-
+      这只小动物攻击了换能器。
+
+
+      当被吞入的组件被反刍出来时，其表面覆盖的微生物群落比当前殖民时代还要古老数千年。
+
+
+      可惜的是，在分析完成前，该组件又被重新吞了回去。
+    style: Body
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical
+  lock_id: story_trait_critter_manipulator_prehistoricpacuspecies
+- contents:
+  - widget_type: CodexText
+    text: 挑战完成
+    style: Subtitle
+  - widget_type: CodexText
+    text: >-
+      成功了！已经收集了足够的样本。
+
+
+      现在我可以通过将原始形态的小动物送到扫描器处以激发它们的基因偏差。
+
+
+      已经存在的变种也可以扫描，但它们的基因组成不太稳定，无法接受进一步的操纵。
+    style: Body
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical
+  lock_id: story_trait_critter_manipulator_complete

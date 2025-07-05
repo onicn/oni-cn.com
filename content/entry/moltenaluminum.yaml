@@ -1,0 +1,143 @@
+id: MOLTENALUMINUM
+parent_id: ELEMENTSLIQUID
+name: 熔融铝
+disabled: False
+search_only: False
+icon_color: 5F98ADFF
+category: ELEMENTSLIQUID
+sort_string: 熔融铝
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="MOLTENALUMINUM">熔融铝</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    color: 5F98ADFF
+    image: element_liquid
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: 5F98ADFF
+      text1: 熔融铝
+      text2: 1000克
+      link_id: moltenaluminum
+    produce:
+    - image: element_gas
+      color: D1EDF8FF
+      text1: 气态铝
+      text2: 1000克
+      link_id: aluminumgas
+    fabricator:
+      image: crew_state_temp_up
+      text1: 2470ºC
+      tooltip: 温度高于2470ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: 5F98ADFF
+      text1: 熔融铝
+      text2: 1000克
+      link_id: moltenaluminum
+    produce:
+    - image: aluminum_0__ui
+      text1: 铝
+      text2: 1000克
+      link_id: aluminum
+    fabricator:
+      image: crew_state_temp_down
+      text1: 660.3ºC
+      tooltip: 温度低于660.3ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换于
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: aluminum_ore_0__ui
+      text1: 铝矿
+      text2: 1000克
+      link_id: aluminumore
+    produce:
+    - image: element_liquid
+      color: 5F98ADFF
+      text1: 熔融铝
+      text2: 1000克
+      link_id: moltenaluminum
+    fabricator:
+      image: crew_state_temp_up
+      text1: 1083.9ºC
+      tooltip: 温度高于1083.9ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: aluminum_0__ui
+      text1: 铝
+      text2: 1000克
+      link_id: aluminum
+    produce:
+    - image: element_liquid
+      color: 5F98ADFF
+      text1: 熔融铝
+      text2: 1000克
+      link_id: moltenaluminum
+    fabricator:
+      image: crew_state_temp_up
+      text1: 660.3ºC
+      tooltip: 温度高于660.3ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_gas
+      color: D1EDF8FF
+      text1: 气态铝
+      text2: 1000克
+      link_id: aluminumgas
+    produce:
+    - image: element_liquid
+      color: 5F98ADFF
+      text1: 熔融铝
+      text2: 1000克
+      link_id: moltenaluminum
+    fabricator:
+      image: crew_state_temp_down
+      text1: 2470ºC
+      tooltip: 温度低于2470ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      (Al) 熔融铝是一种被加热成<link="ELEMENTSLIQUID">液态</link>的低密度<link="REFINEDMETAL">金属</link>。
+
+
+      资源种类：<link="ELEMENTSLIQUID">液体</link>
+
+      冰点：660.3ºC
+
+      沸点：2470ºC
+
+
+      比热容：0.910 (DTU/g)/ºC
+
+      热导率：20.500 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.77
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：<link="METAL">金属矿石</link>, <link="REFINEDMETAL">精炼金属</link>, <link="LIGHT">光源</link>, <link="ELEMENTSLIQUID">液体</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

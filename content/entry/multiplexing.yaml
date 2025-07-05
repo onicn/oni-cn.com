@@ -1,0 +1,52 @@
+id: MULTIPLEXING
+parent_id: TECH
+name: 多路传输
+disabled: False
+search_only: False
+category: TECH
+sort_string: 多路传输
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="MULTIPLEXING">多路传输</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 自动化信号分配的更多选择。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="DUPETRAFFICCONTROL">信息处理</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: logic_multiplexer_0__ui
+  - widget_type: CodexText
+    text: <link="LOGICGATEMULTIPLEXER">信号选择器</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: logic_demultiplexer_0__ui
+  - widget_type: CodexText
+    text: <link="ALGAEDISTILLERY">信号分配器</link>
+    style: Body
+  layout: Horizontal

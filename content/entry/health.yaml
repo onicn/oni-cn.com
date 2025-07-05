@@ -1,0 +1,43 @@
+id: HEALTH
+name: 生命值
+title: STRINGS.CODEX.HEALTH.TITLE
+disabled: False
+search_only: False
+category: SYSTEMS
+sort_string: <link="HEALTH">生命值</link>
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 生命值
+    style: Subtitle
+  - widget_type: CodexText
+    text: >+
+      复制人会在一些罕见情况下受伤，比如极端<link="HEAT">高温</link>或有敌意的<link="CREATURES">小动物</link>。受伤的复制人的运动能力会大幅下降，过于严重时甚至会有丧失行动能力的危险。
+
+    style: Body
+  - widget_type: CodexText
+    text: 丧失行动能力和死亡
+    style: Subtitle
+  - widget_type: CodexText
+    text: >+
+      丧失行动能力的复制人不能移动或执行任务，他们必须在生命值降为零之前由其他复制人营救。如果复制人的生命值达到零，他们就会死去。
+
+
+      生命值可以随着时间慢慢恢复，在<link="MEDICALCOT">分诊床</link>上休养可以恢复得更快。
+
+
+      与受伤相比，复制人更容易受到<link="DISEASE">疾病</link>的侵害。
+
+    style: Body
+  - widget_type: CodexText
+    text: 睡眠和体力
+    style: Subtitle
+  - widget_type: CodexText
+    text: >+
+      睡眠不足会增加<link="STRESS">压力</link>与耗尽体力。当体力为零时，疲惫的复制人会因体力不支而昏倒。
+
+
+      每名复制人都应该分配一个自己的<link="BED">床位</link>，并<link="MISCELLANEOUSTIPS14">安排</link>充足的就寝时间。
+
+    style: Body
+  layout: Vertical

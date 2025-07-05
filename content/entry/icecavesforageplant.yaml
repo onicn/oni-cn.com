@@ -1,0 +1,78 @@
+id: ICECAVESFORAGEPLANT
+parent_id: FOOD
+name: 雪莓
+disabled: False
+search_only: False
+category: FOOD
+sort_string: 雪莓
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="ICECAVESFORAGEPLANT">雪莓</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: frozenberries_fruit_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      一种会引起轻度冷食头痛的无籽水果。
+
+
+      无法再种植。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 品质：恶心 [-1]
+    style: Body
+  - widget_type: CodexText
+    text: 卡路里：800千卡
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 腐烂时间：永不腐烂
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: frozenberries_fruit_0__ui
+      text1: 雪莓
+      text2: 700千卡/周期
+      tooltip: 品质：恶心 [-1]
+      link_id: icecavesforageplant
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 656.3克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__ui
+      text1: 好吃哈奇
+      link_id: HATCH
+  - widget_type: CodexConversionPanel
+    require:
+    - image: frozenberries_fruit_0__ui
+      text1: 雪莓
+      text2: 700千卡/周期
+      tooltip: 品质：恶心 [-1]
+      link_id: icecavesforageplant
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 875克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__veg_ui
+      text1: 草质哈奇
+      link_id: HATCHVEGGIE
+  layout: Vertical

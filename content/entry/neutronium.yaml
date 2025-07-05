@@ -1,0 +1,37 @@
+id: NEUTRONIUM
+name: 副产物笔记
+title: STRINGS.CODEX.A7_NEUTRONIUM.TITLE
+disabled: False
+search_only: False
+category: INVESTIGATIONS
+sort_string: 副产物笔记
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 副产物笔记
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：三
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+  lock_id: notes_neutronium
+- contents:
+  - widget_type: CodexText
+    text: >-
+      [录音开始]
+
+
+      主管：我已经确定这种物质的本质是金属。虽然它形成的确切原因还不清楚，但我相信它是自然宇宙的一种自身免疫反应，一种隔离外来物质以防时间污染的反应。
+
+
+      主管：目前还没有办法可以成功地从受影响物体中去除这种物质，而且更大的影响在于，两个在分子构成上、时间上完全相同的物体不能在某一个时间点共存，这对所有时间操纵技术研究都具有可怕的影响，不仅仅是时间之弓。
+
+
+      主管：目前我把这种物质命名为“中子质”，并在元素表中为它分配了一个理论位置。研究仍在继续。
+
+
+      [录音结束]
+    style: Body
+  layout: Vertical
+  lock_id: notes_neutronium

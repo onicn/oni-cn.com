@@ -1,0 +1,25 @@
+id: MYLOG6
+name: 周期15
+title: STRINGS.CODEX.MYLOG.BODY.LOG3.TITLE
+disabled: False
+search_only: False
+category: MYLOG
+sort_string: A3
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 周期15
+    style: Title
+  - widget_type: CodexText
+    text: >+
+      据我所知，我们处于这个星球表面的数百英里以下。挖通一条出去的路需要花些时间。
+
+
+      我的复制人会活下去的，但他们活着可不是为了维持地下的生计。使我的舱到达这里的原因到底是什么？
+
+    style: Body
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical
+  lock_id: log3

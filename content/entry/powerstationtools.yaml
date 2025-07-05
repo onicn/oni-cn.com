@@ -1,0 +1,339 @@
+id: POWERSTATIONTOOLS
+name: 微芯片
+title: STRINGS.CODEX.POWER_STATION_TOOLS.TITLE
+disabled: False
+search_only: False
+category: INDUSTRIALINGREDIENTS
+sort_string: 微芯片
+required_dlc_ids:
+- DLC3_ID
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 微芯片
+    style: Title
+  - widget_type: CodexText
+    text: 专用设备
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexImage
+    image: kit_electrician_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 微芯片是含有无数行专用代码的工程工具。新的应用仍待发现。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 挖掘增幅块
+    require:
+    - image: kit_electrician_0__ui
+      text1: 微芯片
+      text2: 2单位
+      link_id: powerstationtools
+    produce:
+    - image: upgrade_disc_0__ui_basic_excavation_0
+      text1: 挖掘增幅块
+      text2: 1单位
+      link_id: boosterdig1
+    fabricator:
+      image: craftingstation_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 工作台
+      text2: 60秒
+      link_id: craftingtable
+  - widget_type: CodexRecipePanel
+    text: 建造增幅块
+    require:
+    - image: kit_electrician_0__ui
+      text1: 微芯片
+      text2: 2单位
+      link_id: powerstationtools
+    produce:
+    - image: upgrade_disc_0__ui_basic_construction_0
+      text1: 建造增幅块
+      text2: 1单位
+      link_id: boosterconstruct1
+    fabricator:
+      image: craftingstation_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 工作台
+      text2: 60秒
+      link_id: craftingtable
+  - widget_type: CodexRecipePanel
+    text: 力量增幅块
+    require:
+    - image: kit_electrician_0__ui
+      text1: 微芯片
+      text2: 2单位
+      link_id: powerstationtools
+    produce:
+    - image: upgrade_disc_0__ui_basic_strength_0
+      text1: 力量增幅块
+      text2: 1单位
+      link_id: boostercarry1
+    fabricator:
+      image: craftingstation_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 工作台
+      text2: 60秒
+      link_id: craftingtable
+  - widget_type: CodexRecipePanel
+    text: 研究增幅块
+    require:
+    - image: kit_electrician_0__ui
+      text1: 微芯片
+      text2: 2单位
+      link_id: powerstationtools
+    produce:
+    - image: upgrade_disc_0__ui_science_4
+      text1: 研究增幅块
+      text2: 1单位
+      link_id: boosterresearch1
+    fabricator:
+      image: craftingstation_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 工作台
+      text2: 60秒
+      link_id: craftingtable
+  - widget_type: CodexRecipePanel
+    text: 高级医疗增幅块
+    require:
+    - image: kit_electrician_0__ui
+      text1: 微芯片
+      text2: 2单位
+      link_id: powerstationtools
+    produce:
+    - image: upgrade_disc_0__ui_medicine_0
+      text1: 高级医疗增幅块
+      text2: 1单位
+      link_id: boostermedicine1
+    fabricator:
+      image: craftingstation_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 工作台
+      text2: 60秒
+      link_id: craftingtable
+  - widget_type: CodexRecipePanel
+    text: 极硬挖掘增幅块
+    require:
+    - image: kit_electrician_0__ui
+      text1: 微芯片
+      text2: 8单位
+      link_id: powerstationtools
+    produce:
+    - image: upgrade_disc_0__ui_excavation_1
+      text1: 极硬挖掘增幅块
+      text2: 1单位
+      link_id: boosterdig2
+    fabricator:
+      image: advanced_crafting_table_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 焊接台
+      text2: 30秒
+      link_id: advancedcraftingtable
+  - widget_type: CodexRecipePanel
+    text: 作物照料增幅块
+    require:
+    - image: kit_electrician_0__ui
+      text1: 微芯片
+      text2: 8单位
+      link_id: powerstationtools
+    produce:
+    - image: upgrade_disc_0__ui_agriculture_0
+      text1: 作物照料增幅块
+      text2: 1单位
+      link_id: boosterfarm1
+    fabricator:
+      image: advanced_crafting_table_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 焊接台
+      text2: 30秒
+      link_id: advancedcraftingtable
+  - widget_type: CodexRecipePanel
+    text: 养殖增幅块
+    require:
+    - image: kit_electrician_0__ui
+      text1: 微芯片
+      text2: 8单位
+      link_id: powerstationtools
+    produce:
+    - image: upgrade_disc_0__ui_ranching_0
+      text1: 养殖增幅块
+      text2: 1单位
+      link_id: boosterranch1
+    fabricator:
+      image: advanced_crafting_table_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 焊接台
+      text2: 30秒
+      link_id: advancedcraftingtable
+  - widget_type: CodexRecipePanel
+    text: 烧烤增幅块
+    require:
+    - image: kit_electrician_0__ui
+      text1: 微芯片
+      text2: 8单位
+      link_id: powerstationtools
+    produce:
+    - image: upgrade_disc_0__ui_cooking_0
+      text1: 烧烤增幅块
+      text2: 1单位
+      link_id: boostercook1
+    fabricator:
+      image: advanced_crafting_table_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 焊接台
+      text2: 30秒
+      link_id: advancedcraftingtable
+  - widget_type: CodexRecipePanel
+    text: 大师技艺增幅块
+    require:
+    - image: kit_electrician_0__ui
+      text1: 微芯片
+      text2: 8单位
+      link_id: powerstationtools
+    produce:
+    - image: upgrade_disc_0__ui_creativity_0
+      text1: 大师技艺增幅块
+      text2: 1单位
+      link_id: boosterart1
+    fabricator:
+      image: advanced_crafting_table_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 焊接台
+      text2: 30秒
+      link_id: advancedcraftingtable
+  - widget_type: CodexRecipePanel
+    text: 天文学增幅块
+    require:
+    - image: kit_electrician_0__ui
+      text1: 微芯片
+      text2: 8单位
+      link_id: powerstationtools
+    produce:
+    - image: upgrade_disc_0__ui_science_2
+      text1: 天文学增幅块
+      text2: 1单位
+      link_id: boosterresearch2
+    fabricator:
+      image: advanced_crafting_table_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 焊接台
+      text2: 30秒
+      link_id: advancedcraftingtable
+  - widget_type: CodexRecipePanel
+    text: 应用科学增幅块
+    require:
+    - image: kit_electrician_0__ui
+      text1: 微芯片
+      text2: 8单位
+      link_id: powerstationtools
+    produce:
+    - image: upgrade_disc_0__ui_science_3
+      text1: 应用科学增幅块
+      text2: 1单位
+      link_id: boosterresearch3
+    fabricator:
+      image: advanced_crafting_table_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 焊接台
+      text2: 30秒
+      link_id: advancedcraftingtable
+  - widget_type: CodexRecipePanel
+    text: 驾驶增幅块
+    require:
+    - image: kit_electrician_0__ui
+      text1: 微芯片
+      text2: 8单位
+      link_id: powerstationtools
+    produce:
+    - image: upgrade_disc_0__ui_piloting_0
+      text1: 驾驶增幅块
+      text2: 1单位
+      link_id: boosterpilot1
+    fabricator:
+      image: advanced_crafting_table_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 焊接台
+      text2: 30秒
+      link_id: advancedcraftingtable
+  - widget_type: CodexRecipePanel
+    text: 太空服训练增幅块
+    require:
+    - image: kit_electrician_0__ui
+      text1: 微芯片
+      text2: 8单位
+      link_id: powerstationtools
+    produce:
+    - image: upgrade_disc_0__ui_suits_0
+      text1: 太空服训练增幅块
+      text2: 1单位
+      link_id: boostersuits1
+    fabricator:
+      image: advanced_crafting_table_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 焊接台
+      text2: 30秒
+      link_id: advancedcraftingtable
+  - widget_type: CodexRecipePanel
+    text: 整理增幅块
+    require:
+    - image: kit_electrician_0__ui
+      text1: 微芯片
+      text2: 8单位
+      link_id: powerstationtools
+    produce:
+    - image: upgrade_disc_0__ui_tidy_0
+      text1: 整理增幅块
+      text2: 1单位
+      link_id: boostertidy1
+    fabricator:
+      image: advanced_crafting_table_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 焊接台
+      text2: 30秒
+      link_id: advancedcraftingtable
+  - widget_type: CodexRecipePanel
+    text: 电气工程增幅块
+    require:
+    - image: kit_electrician_0__ui
+      text1: 微芯片
+      text2: 8单位
+      link_id: powerstationtools
+    produce:
+    - image: upgrade_disc_0__ui_machinery_0
+      text1: 电气工程增幅块
+      text2: 1单位
+      link_id: boosterop1
+    fabricator:
+      image: advanced_crafting_table_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 焊接台
+      text2: 30秒
+      link_id: advancedcraftingtable
+  - widget_type: CodexRecipePanel
+    text: 机电工程增幅块
+    require:
+    - image: kit_electrician_0__ui
+      text1: 微芯片
+      text2: 8单位
+      link_id: powerstationtools
+    produce:
+    - image: upgrade_disc_0__ui_machinery_1
+      text1: 机电工程增幅块
+      text2: 1单位
+      link_id: boosterop2
+    fabricator:
+      image: advanced_crafting_table_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 焊接台
+      text2: 30秒
+      link_id: advancedcraftingtable
+  layout: Vertical

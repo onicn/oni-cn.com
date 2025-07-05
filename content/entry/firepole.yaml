@@ -1,0 +1,61 @@
+id: FIREPOLE
+parent_id: BUILDCATEGORYBASE
+name: 消防滑杆
+disabled: False
+search_only: False
+category: BUILDCATEGORYBASE
+sort_string: 消防滑杆
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="FIREPOLE">消防滑杆</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 精致翻修
+    style: Body
+    image: research_type_alpha_icon
+    link_id: refinedobjects
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: firepole_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      供复制人快速向下滑行。
+
+
+      会显著降低向上爬行的速度。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：1格宽x1格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：10秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="METAL">金属矿石</link>100千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    行走速度：-75%'
+    tooltip: 复制人在这种砖块上能够加速<b>-75%</b>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：-5（范围：1格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>1</b>格内降低<b><b>-5</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>将其与梯子造在一起以便更高效地上下移动。</i>
+    style: Body
+  layout: Vertical

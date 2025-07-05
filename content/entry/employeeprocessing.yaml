@@ -1,0 +1,84 @@
+id: EMPLOYEEPROCESSING
+name: 员工安全系统录入
+title: STRINGS.CODEX.A7_EMPLOYEEPROCESSING.TITLE
+disabled: False
+search_only: False
+category: JOURNALS
+sort_string: 员工安全系统录入
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 员工安全系统录入
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：一
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+  lock_id: journal_employeeprocessing
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <smallcaps>[声纹识别系统初始化完成]
+
+      [识别编号：A001、A435、B111]</smallcaps>
+
+
+      [录音开始]
+
+
+      技术员：感谢你提供的指纹，博士。现在只需要一次快速的语音采样，然后你就可以过去了。
+
+
+      布鲁萨德博士：哇哦，杰姬，你们的安保工作挺认真的。
+
+
+      主管：在研究所的时候，请称呼我为“主管”。
+
+
+      布鲁萨德博士：……好-好的。
+
+
+      （咔嗒声）
+
+
+      技术员：这只需要片刻时间。清楚地说话，系统将为你提取一个声音签名。
+
+
+      技术员：你准备好就可以开始了。
+
+
+      （清嗓子）
+
+
+      布鲁萨德博士：安全代码B111，奥莉维亚·布鲁萨德博士。庄严科技生物工程部。
+
+
+      （暂停声）
+
+
+      技术员：非常好。
+
+
+      布鲁萨德博士：刚刚那道光是什么？
+
+
+      主管：基本的安全扫描。不必担心。
+
+
+      （机器打印声）
+
+
+      技术员：这是你的证件。你现在应该可以通行研究所内的所有门了，布鲁萨德博士。
+
+
+      布鲁萨德博士：谢谢。
+
+
+      主管：来吧，博士。
+
+
+      [录音结束]
+    style: Body
+  layout: Vertical
+  lock_id: journal_employeeprocessing

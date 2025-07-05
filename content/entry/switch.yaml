@@ -1,0 +1,49 @@
+id: SWITCH
+parent_id: BUILDCATEGORYPOWER
+name: 电闸
+disabled: False
+search_only: False
+category: BUILDCATEGORYPOWER
+sort_string: 电闸
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="SWITCH">电闸</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 电力调节
+    style: Body
+    image: research_type_alpha_icon
+    link_id: powerregulation
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: switchpower_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      接通或断开<link="POWER">电力</link>。
+
+
+      不会影响前于开关的电路。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：1格宽x1格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：30秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="METAL">金属矿石</link>100千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>电闸只能影响电路中紧随其后的建筑。</i>
+    style: Body
+  layout: Vertical

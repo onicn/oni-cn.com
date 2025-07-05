@@ -1,0 +1,66 @@
+id: IMPROVEDLIQUIDPIPING
+parent_id: TECH
+name: 改良水管
+disabled: False
+search_only: False
+category: TECH
+sort_string: 改良水管
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="IMPROVEDLIQUIDPIPING">改良水管</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: <link="ELEMENTSLIQUID">液体</link>管道建设有了能在更严酷的环境下工作的能力，比如<link="HEAT">高温</link>和高压。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="ADVANCEDFILTRATION">分离</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: utilities_liquid_insulated_0__ui
+  - widget_type: CodexText
+    text: <link="INSULATEDLIQUIDCONDUIT">隔热液体管道</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: switchliquidpressure_0__ui
+  - widget_type: CodexText
+    text: <link="LOGICPRESSURESENSORLIQUID">液压传感器</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: valveliquid_logic_0__ui
+  - widget_type: CodexText
+    text: <link="LIQUIDLOGICVALVE">液体截断阀</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: liquidreservoir_0__ui
+  - widget_type: CodexText
+    text: <link="LIQUIDRESERVOIR">储液库</link>
+    style: Body
+  layout: Horizontal

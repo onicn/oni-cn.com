@@ -1,0 +1,31 @@
+id: MYLOG33
+name: 时间潜质
+title: STRINGS.CODEX.MYLOG.BODY.TEMPORALOPENER.TITLE
+disabled: False
+search_only: False
+category: MYLOG
+sort_string: 时间潜质
+required_dlc_ids:
+- EXPANSION1_ID
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 时间潜质
+    style: Title
+  - widget_type: CodexText
+    text: >-
+      在星际旅行的过程中，我的复制人发现了太空深处的一个时间裂口。
+
+
+      当前的时间裂口太小了，发出的火箭和成员无法通过，但进一步调查发现，我们附近的星球上存在着一台奇怪的人造装置，在其附近的星球上建立一些打印舱可能会增加裂口的大小。
+
+
+      然而我确信，使用时间之弓来操控打印舱就是庄严科技引发灾难的方式，而这种方式最终导致了我们的家园毁灭。我的计算似乎表明，导致之前那次灾难的主要因素是行星的大小，而我们现在的状态几乎不可能导致那样的灾难产生。然而，与科学的其他方面一样，我们不做实验就永远不知道结果。
+
+
+      我们敢再次冒险吗？
+    style: Body
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical

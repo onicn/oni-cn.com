@@ -1,0 +1,23 @@
+id: GEYSERGENERICMOLTENCOPPER
+parent_id: GEYSERS
+name: 铜火山
+disabled: False
+search_only: False
+category: GEYSERS
+sort_string: 铜火山
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="GEYSERGENERICMOLTENCOPPER">铜火山</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: geyser_molten_copper_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: "间歇泉和喷孔会以不同的间隔排出元素，它们能持续提供材料，尽管通常量很少。\n\n间歇泉的变量有：\n\n    • 排放元素 \n    • 排放温度 \n    • 排放质量 \n    • 周期长度 \n    • 休眠时间 \n    • 排出病菌"
+    style: Body
+  layout: Vertical

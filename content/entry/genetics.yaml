@@ -1,0 +1,30 @@
+id: GENETICS
+name: 遗传学
+title: STRINGS.CODEX.GENETICS.TITLE
+disabled: False
+search_only: False
+category: SYSTEMS
+sort_string: <link="GENETICS">遗传学</link>
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 植物变异
+    style: Subtitle
+  - widget_type: CodexText
+    text: >+
+      暴露在辐射下的植物有时会在收获时掉落变异种子。每种变异都有其独特的效果和利弊。
+
+
+      在<link="GENETICANALYSISSTATION">植物分析仪</link>分析变异种子后，就可以拿来种植了，但除非拔除，否则这类植物是无法产生种子的。
+
+    style: Body
+  - widget_type: CodexDividerLine
+  - widget_type: CodexText
+    text: 培育变异种子
+    style: Subtitle
+  - widget_type: CodexText
+    text: >+
+      在植物分析仪分析后，变异种子就可以拿来种植了。需要持续的自然辐射或<link="RADIATIONLIGHT">辐射灯</link>以防止枯萎。
+
+    style: Body
+  layout: Vertical

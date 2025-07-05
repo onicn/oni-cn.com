@@ -1,0 +1,49 @@
+id: PYROTECHNICS
+parent_id: ROLES
+name: 火工技艺
+disabled: False
+search_only: False
+category: ROLES
+sort_string: 火工技艺
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="PYROTECHNICS">火工技艺</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: hat_role_pyrotechnics
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 允许复制人为<style="KKeyword">流星爆破炮</style>制作<style="KKeyword">爆破弹</style>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 工作培训
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexText
+    text: 工作培训会自动提供永久的特质和属性提升，即使复制人更换工作，这些特质和属性提升也会保留下来。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="MISSILEFABRICATOR">爆破弹组装机</link>的使用
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提工作
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="BASEKEEPING2">管路工作</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

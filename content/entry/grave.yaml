@@ -1,0 +1,52 @@
+id: GRAVE
+parent_id: BUILDCATEGORYMEDICAL
+name: 雅致的纪念碑
+disabled: False
+search_only: False
+category: BUILDCATEGORYMEDICAL
+sort_string: 雅致的纪念碑
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="GRAVE">雅致的纪念碑</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: gravestone_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      为去世的复制人提供安息之所。
+
+
+      活着的复制人会自动将未埋葬的尸体置入其中。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：1格宽x2格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：120秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="BUILDABLERAW">矿物原料</link>800千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：+10（范围：2格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>2</b>格内提高<b><b>+10</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>埋葬死去的复制人可降低殖民地的健康风险和压力。</i>
+    style: Body
+  layout: Vertical

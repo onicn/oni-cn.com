@@ -1,0 +1,89 @@
+id: NEWBABY
+name: 转发：重大消息
+title: STRINGS.CODEX.INVESTIGATIONS.DLC2_NEWBABY.TITLE
+disabled: False
+search_only: False
+category: EMAILS
+sort_string: 转发：重大消息
+required_dlc_ids:
+- DLC2_ID
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 转发：重大消息
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：无
+    style: Subtitle
+  layout: Vertical
+  lock_id: journal_newbaby
+- contents:
+  - widget_type: CodexText
+    text: >
+      <smallcaps>收件人：<b>斯特恩主管</b><alpha=#AA><size=12> <jstern@gravitas.nova></size></color>
+
+      发件人：<b>[受屏蔽]</b></smallcaps>
+
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_newbaby
+- contents:
+  - widget_type: CodexText
+    text: >-
+      主管，以下内容已发送到了常规收件箱。
+
+
+      -----------------------------------------------------------------------------------------------------
+
+      <indent=35%>~ * ~</indent>
+
+
+      <indent=12%>约瑟芬·卡诺上校，以及阿兰·斯特恩博士</indent>
+
+      <indent=35%>与</indent>
+
+      <indent=12%>文京旻博士，以及陈秀彬博士</indent>
+
+
+      <indent=20%><i>非常高兴地宣布
+
+      <indent=15%>他们第一个孙子的到来：</i></indent>
+
+
+      <smallcaps><indent=20%><b><size=17>吉赛尔·杰基林·斯特恩</size></b></indent></smallcaps>
+
+
+      <indent=15%><i>并祝贺他们幸福的父母</i></indent>
+
+
+      <indent=20%>乔纳森·斯特恩与陈文林</indent>
+
+
+      <indent=18%><i>度过了安全且健康的孵化时间。</i></indent>
+
+
+      <indent=35%>~ * ~</indent>
+
+
+      </indent><indent=18%><i>婴儿送礼会邀请如下。</i></indent>
+
+      -----------------------------------------------------------------------------------------------------
+
+
+      需要我将其发给其他人吗？
+    style: Body
+  layout: Vertical
+  lock_id: email_newbaby
+- contents:
+  - widget_type: CodexText
+    text: >
+      - 管理员<size=11>
+
+      庄严科技</size>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_newbaby

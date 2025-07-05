@@ -1,0 +1,51 @@
+id: BASICBOOSTER
+name: 维生素咀嚼胶囊
+title: STRINGS.CODEX.BASICBOOSTER.TITLE
+disabled: False
+search_only: False
+category: MEDICINES
+sort_string: 维生素咀嚼胶囊
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 维生素咀嚼胶囊
+    style: Title
+  - widget_type: CodexText
+    text: 保健品
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      一种增补剂，服用后可以稍微降低患上由<style="KKeyword">病菌</style>引起的<link="DISEASE">疾病</link>的可能性。
+
+
+      必须每日服用。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 配药桌
+    require:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 1000克
+      link_id: carbon
+    produce:
+    - image: pill_2_0__ui
+      text1: 维生素咀嚼胶囊
+      text2: 1单位
+      link_id: basicbooster
+    fabricator:
+      image: apothecary_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 配药桌
+      text2: 50秒
+      link_id: apothecary
+  layout: Vertical

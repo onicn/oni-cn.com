@@ -1,0 +1,791 @@
+id: SAND
+parent_id: ELEMENTSSOLID
+name: 沙子
+disabled: False
+search_only: False
+category: ELEMENTSSOLID
+sort_string: 沙子
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="SAND">沙子</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: sand_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: sand_0__ui
+      text1: 沙子
+      text2: 1000克
+      link_id: sand
+    produce:
+    - image: element_liquid
+      color: 79E6FFFF
+      text1: 熔融玻璃
+      text2: 1000克
+      link_id: moltenglass
+    fabricator:
+      image: crew_state_temp_up
+      text1: 1712.9ºC
+      tooltip: 温度高于1712.9ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换于
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 1000克
+      link_id: dirt
+    produce:
+    - image: sand_0__ui
+      text1: 沙子
+      text2: 1000克
+      link_id: sand
+    fabricator:
+      image: crew_state_temp_up
+      text1: 326.9ºC
+      tooltip: 温度高于326.9ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 熔融玻璃
+    require:
+    - image: sand_0__ui
+      text1: 沙子
+      text2: 100千克
+      link_id: sand
+    produce:
+    - image: element_liquid
+      color: 79E6FFFF
+      text1: 熔融玻璃
+      text2: 25千克
+      link_id: moltenglass
+    fabricator:
+      image: glassrefinery_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 玻璃熔炉
+      text2: 40秒
+      link_id: glassforge
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_gas
+      color: B7FFFFFF
+      text1: 氧气
+      text2: 5千克/周期
+      link_id: oxygen
+    - image: element_liquid
+      color: 474506FF
+      text1: 污染水
+      text2: 65千克/周期
+      link_id: dirtywater
+    - image: sand_0__ui
+      text1: 沙子
+      text2: 5千克/周期
+      link_id: sand
+    produce:
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 35千克/周期
+      link_id: water
+    fabricator:
+      image: cactus_0__ui
+      text1: 仙水掌
+      link_id: FILTERPLANT
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_gas
+      color: 04A778FF
+      text1: 氯气
+      text2: 3600克/周期
+      link_id: chlorinegas
+    - image: sand_0__ui
+      text1: 沙子
+      text2: 7千克/周期
+      link_id: sand
+    produce:
+    - image: salt_0__ui
+      text1: 盐
+      text2: 10.8千克/周期
+      link_id: salt
+    fabricator:
+      image: saltplant_0__ui
+      text1: 沙盐藤
+      link_id: SALTPLANT
+  - widget_type: CodexConversionPanel
+    require:
+    - image: sand_0__ui
+      text1: 沙子
+      text2: 140千克/周期
+      link_id: sand
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 70千克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__ui
+      text1: 好吃哈奇
+      link_id: HATCH
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 漂白石料斗
+    require:
+    - image: salt_0__ui
+      text1: 盐
+      text2: 30千克
+      link_id: salt
+    - image: gold_refined_0__ui
+      text1: 金
+      text2: 500克
+      link_id: gold
+    produce:
+    - image: bleach_stone_0__ui
+      text1: 漂白石
+      text2: 10千克
+      link_id: bleachstone
+    - image: sand_0__ui
+      text1: 沙子
+      text2: 20千克
+      link_id: sand
+    fabricator:
+      image: chlorinator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 漂白石料斗
+      text2: 40秒
+      link_id: chlorinator
+  - widget_type: CodexRecipePanel
+    text: 植物粉碎机
+    require:
+    - image: amber_0__ui
+      text1: 琥珀
+      text2: 100千克
+      link_id: amber
+    produce:
+    - image: element_liquid
+      color: CC8B18FF
+      text1: 树脂
+      text2: 50千克
+      link_id: naturalresin
+    - image: fossil_0__ui
+      text1: 化石
+      text2: 25千克
+      link_id: fossil
+    - image: sand_0__ui
+      text1: 沙子
+      text2: 25千克
+      link_id: sand
+    fabricator:
+      image: milkpress_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 植物粉碎机
+      text2: 40秒
+      link_id: milkpress
+  - widget_type: CodexRecipePanel
+    text: 碎石机
+    require:
+    - image: super_insulator_0__ui
+      text1: 隔热质
+      text2: 100千克
+      link_id: superinsulator
+    produce:
+    - image: sand_0__ui
+      text1: 沙子
+      text2: 100千克
+      link_id: sand
+    fabricator:
+      image: rockrefinery_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 碎石机
+      text2: 40秒
+      link_id: rockcrusher
+  - widget_type: CodexRecipePanel
+    text: 碎石机
+    require:
+    - image: shale_0__ui
+      text1: 页岩
+      text2: 100千克
+      link_id: shale
+    produce:
+    - image: sand_0__ui
+      text1: 沙子
+      text2: 100千克
+      link_id: sand
+    fabricator:
+      image: rockrefinery_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 碎石机
+      text2: 40秒
+      link_id: rockcrusher
+  - widget_type: CodexRecipePanel
+    text: 碎石机
+    require:
+    - image: ceramic_0__ui
+      text1: 陶瓷
+      text2: 100千克
+      link_id: ceramic
+    produce:
+    - image: sand_0__ui
+      text1: 沙子
+      text2: 100千克
+      link_id: sand
+    fabricator:
+      image: rockrefinery_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 碎石机
+      text2: 40秒
+      link_id: rockcrusher
+  - widget_type: CodexRecipePanel
+    text: 碎石机
+    require:
+    - image: obsidian_0__ui
+      text1: 黑曜石
+      text2: 100千克
+      link_id: obsidian
+    produce:
+    - image: sand_0__ui
+      text1: 沙子
+      text2: 100千克
+      link_id: sand
+    fabricator:
+      image: rockrefinery_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 碎石机
+      text2: 40秒
+      link_id: rockcrusher
+  - widget_type: CodexRecipePanel
+    text: 碎石机
+    require:
+    - image: igneous_rock_0__ui
+      text1: 火成岩
+      text2: 100千克
+      link_id: igneousrock
+    produce:
+    - image: sand_0__ui
+      text1: 沙子
+      text2: 100千克
+      link_id: sand
+    fabricator:
+      image: rockrefinery_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 碎石机
+      text2: 40秒
+      link_id: rockcrusher
+  - widget_type: CodexRecipePanel
+    text: 碎石机
+    require:
+    - image: granite_0__ui
+      text1: 花岗岩
+      text2: 100千克
+      link_id: granite
+    produce:
+    - image: sand_0__ui
+      text1: 沙子
+      text2: 100千克
+      link_id: sand
+    fabricator:
+      image: rockrefinery_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 碎石机
+      text2: 40秒
+      link_id: rockcrusher
+  - widget_type: CodexRecipePanel
+    text: 碎石机
+    require:
+    - image: sedimentary_rock_0__ui
+      text1: 沉积岩
+      text2: 100千克
+      link_id: sedimentaryrock
+    produce:
+    - image: sand_0__ui
+      text1: 沙子
+      text2: 100千克
+      link_id: sand
+    fabricator:
+      image: rockrefinery_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 碎石机
+      text2: 40秒
+      link_id: rockcrusher
+  - widget_type: CodexRecipePanel
+    text: 碎石机
+    require:
+    - image: sand_stone_0__ui
+      text1: 砂岩
+      text2: 100千克
+      link_id: sandstone
+    produce:
+    - image: sand_0__ui
+      text1: 沙子
+      text2: 100千克
+      link_id: sand
+    fabricator:
+      image: rockrefinery_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 碎石机
+      text2: 40秒
+      link_id: rockcrusher
+  - widget_type: CodexRecipePanel
+    text: 碎石机
+    require:
+    - image: cuprite_0__ui
+      text1: 铜矿
+      text2: 100千克
+      link_id: cuprite
+    produce:
+    - image: copper_refined_0__ui
+      text1: 铜
+      text2: 50千克
+      link_id: copper
+    - image: sand_0__ui
+      text1: 沙子
+      text2: 50千克
+      link_id: sand
+    fabricator:
+      image: rockrefinery_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 碎石机
+      text2: 40秒
+      link_id: rockcrusher
+  - widget_type: CodexRecipePanel
+    text: 碎石机
+    require:
+    - image: cobalt_ore_0__ui
+      text1: 钴矿
+      text2: 100千克
+      link_id: cobaltite
+    produce:
+    - image: cobalt_refined_0__ui
+      text1: 钴
+      text2: 50千克
+      link_id: cobalt
+    - image: sand_0__ui
+      text1: 沙子
+      text2: 50千克
+      link_id: sand
+    fabricator:
+      image: rockrefinery_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 碎石机
+      text2: 40秒
+      link_id: rockcrusher
+  - widget_type: CodexRecipePanel
+    text: 碎石机
+    require:
+    - image: wolframite_0__ui
+      text1: 黑钨矿
+      text2: 100千克
+      link_id: wolframite
+    produce:
+    - image: tungsten_refined_0__ui
+      text1: 钨
+      text2: 50千克
+      link_id: tungsten
+    - image: sand_0__ui
+      text1: 沙子
+      text2: 50千克
+      link_id: sand
+    fabricator:
+      image: rockrefinery_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 碎石机
+      text2: 40秒
+      link_id: rockcrusher
+  - widget_type: CodexRecipePanel
+    text: 碎石机
+    require:
+    - image: electrum_0__ui
+      text1: 银金矿
+      text2: 100千克
+      link_id: electrum
+    produce:
+    - image: gold_refined_0__ui
+      text1: 金
+      text2: 50千克
+      link_id: gold
+    - image: sand_0__ui
+      text1: 沙子
+      text2: 50千克
+      link_id: sand
+    fabricator:
+      image: rockrefinery_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 碎石机
+      text2: 40秒
+      link_id: rockcrusher
+  - widget_type: CodexRecipePanel
+    text: 碎石机
+    require:
+    - image: aluminum_ore_0__ui
+      text1: 铝矿
+      text2: 100千克
+      link_id: aluminumore
+    produce:
+    - image: aluminum_0__ui
+      text1: 铝
+      text2: 50千克
+      link_id: aluminum
+    - image: sand_0__ui
+      text1: 沙子
+      text2: 50千克
+      link_id: sand
+    fabricator:
+      image: rockrefinery_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 碎石机
+      text2: 40秒
+      link_id: rockcrusher
+  - widget_type: CodexRecipePanel
+    text: 碎石机
+    require:
+    - image: gold_amalgam_0__ui
+      text1: 金汞齐
+      text2: 100千克
+      link_id: goldamalgam
+    produce:
+    - image: gold_refined_0__ui
+      text1: 金
+      text2: 50千克
+      link_id: gold
+    - image: sand_0__ui
+      text1: 沙子
+      text2: 50千克
+      link_id: sand
+    fabricator:
+      image: rockrefinery_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 碎石机
+      text2: 40秒
+      link_id: rockcrusher
+  - widget_type: CodexRecipePanel
+    text: 碎石机
+    require:
+    - image: nickel_ore_0__ui
+      text1: 镍矿
+      text2: 100千克
+      link_id: nickelore
+    produce:
+    - image: nickel_0__ui
+      text1: 镍
+      text2: 50千克
+      link_id: nickel
+    - image: sand_0__ui
+      text1: 沙子
+      text2: 50千克
+      link_id: sand
+    fabricator:
+      image: rockrefinery_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 碎石机
+      text2: 40秒
+      link_id: rockcrusher
+  - widget_type: CodexRecipePanel
+    text: 碎石机
+    require:
+    - image: temp_conductor_0__ui
+      text1: 导热质
+      text2: 100千克
+      link_id: tempconductorsolid
+    produce:
+    - image: niobium_0__ui
+      text1: 铌
+      text2: 50千克
+      link_id: niobium
+    - image: sand_0__ui
+      text1: 沙子
+      text2: 50千克
+      link_id: sand
+    fabricator:
+      image: rockrefinery_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 碎石机
+      text2: 40秒
+      link_id: rockcrusher
+  - widget_type: CodexRecipePanel
+    text: 碎石机
+    require:
+    - image: hematite_0__ui
+      text1: 铁矿
+      text2: 100千克
+      link_id: ironore
+    produce:
+    - image: iron_refined_0__ui
+      text1: 铁
+      text2: 50千克
+      link_id: iron
+    - image: sand_0__ui
+      text1: 沙子
+      text2: 50千克
+      link_id: sand
+    fabricator:
+      image: rockrefinery_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 碎石机
+      text2: 40秒
+      link_id: rockcrusher
+  - widget_type: CodexRecipePanel
+    text: 碎石机
+    require:
+    - image: cinnabar_0__ui
+      text1: 朱砂矿
+      text2: 100千克
+      link_id: cinnabar
+    produce:
+    - image: element_liquid
+      color: 7393B4FF
+      text1: 汞
+      text2: 50千克
+      link_id: mercury
+    - image: sand_0__ui
+      text1: 沙子
+      text2: 50千克
+      link_id: sand
+    fabricator:
+      image: rockrefinery_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 碎石机
+      text2: 40秒
+      link_id: rockcrusher
+  - widget_type: CodexRecipePanel
+    text: 碎石机
+    require:
+    - image: fools_gold_0__ui
+      text1: 黄铁矿
+      text2: 100千克
+      link_id: foolsgold
+    produce:
+    - image: iron_refined_0__ui
+      text1: 铁
+      text2: 50千克
+      link_id: iron
+    - image: sand_0__ui
+      text1: 沙子
+      text2: 50千克
+      link_id: sand
+    fabricator:
+      image: rockrefinery_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 碎石机
+      text2: 40秒
+      link_id: rockcrusher
+  - widget_type: CodexRecipePanel
+    text: 碎石机
+    require:
+    - image: salt_0__ui
+      text1: 盐
+      text2: 100千克
+      link_id: salt
+    produce:
+    - image: seed_saltplant_0__ui
+      text1: 食盐
+      text2: 5克
+      link_id: 食盐
+    - image: sand_0__ui
+      text1: 沙子
+      text2: 100千克
+      link_id: sand
+    fabricator:
+      image: rockrefinery_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 碎石机
+      text2: 40秒
+      link_id: rockcrusher
+  - widget_type: CodexRecipePanel
+    text: 碎石机
+    require:
+    - image: fullerene_0__ui
+      text1: 富勒烯
+      text2: 100千克
+      link_id: fullerene
+    produce:
+    - image: graphite_0__ui
+      text1: 石墨
+      text2: 90千克
+      link_id: graphite
+    - image: sand_0__ui
+      text1: 沙子
+      text2: 10千克
+      link_id: sand
+    fabricator:
+      image: rockrefinery_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 碎石机
+      text2: 40秒
+      link_id: rockcrusher
+  - widget_type: CodexConversionPanel
+    require:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 70千克/周期
+      link_id: toxicsand
+    produce:
+    - image: sand_0__ui
+      text1: 沙子
+      text2: 35千克/周期
+      link_id: sand
+    fabricator:
+      image: pincher_0__ui
+      text1: 抛壳蟹
+      link_id: CRAB
+  - widget_type: CodexConversionPanel
+    require:
+    - image: rotfood_0__ui
+      text1: 腐烂物
+      text2: 70千克/周期
+      link_id: compost
+    produce:
+    - image: sand_0__ui
+      text1: 沙子
+      text2: 35千克/周期
+      link_id: sand
+    fabricator:
+      image: pincher_0__ui
+      text1: 抛壳蟹
+      link_id: CRAB
+  - widget_type: CodexConversionPanel
+    require:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 70千克/周期
+      link_id: toxicsand
+    produce:
+    - image: sand_0__ui
+      text1: 沙子
+      text2: 35千克/周期
+      link_id: sand
+    fabricator:
+      image: pincher_0__fresh_ui
+      text1: 沙泥蟹
+      link_id: CRABFRESHWATER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: rotfood_0__ui
+      text1: 腐烂物
+      text2: 70千克/周期
+      link_id: compost
+    produce:
+    - image: sand_0__ui
+      text1: 沙子
+      text2: 35千克/周期
+      link_id: sand
+    fabricator:
+      image: pincher_0__fresh_ui
+      text1: 沙泥蟹
+      link_id: CRABFRESHWATER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: slime_mold_0__ui
+      text1: 菌泥
+      text2: 70千克/周期
+      link_id: slimemold
+    produce:
+    - image: sand_0__ui
+      text1: 沙子
+      text2: 35千克/周期
+      link_id: sand
+    fabricator:
+      image: pincher_0__fresh_ui
+      text1: 沙泥蟹
+      link_id: CRABFRESHWATER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 70千克/周期
+      link_id: toxicsand
+    produce:
+    - image: sand_0__ui
+      text1: 沙子
+      text2: 17.5千克/周期
+      link_id: sand
+    fabricator:
+      image: pincher_0__wood_ui
+      text1: 木壳蟹
+      link_id: CRABWOOD
+  - widget_type: CodexConversionPanel
+    require:
+    - image: rotfood_0__ui
+      text1: 腐烂物
+      text2: 70千克/周期
+      link_id: compost
+    produce:
+    - image: sand_0__ui
+      text1: 沙子
+      text2: 17.5千克/周期
+      link_id: sand
+    fabricator:
+      image: pincher_0__wood_ui
+      text1: 木壳蟹
+      link_id: CRABWOOD
+  - widget_type: CodexConversionPanel
+    require:
+    - image: slime_mold_0__ui
+      text1: 菌泥
+      text2: 70千克/周期
+      link_id: slimemold
+    produce:
+    - image: sand_0__ui
+      text1: 沙子
+      text2: 17.5千克/周期
+      link_id: sand
+    fabricator:
+      image: pincher_0__wood_ui
+      text1: 木壳蟹
+      link_id: CRABWOOD
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      沙子是一种粒状岩石的混合物。
+
+
+      它可用作<link="FILTER">过滤介质</link>。
+
+
+      资源种类：<link="FILTER">过滤介质</link>
+
+      熔点：1712.9ºC
+
+      硬度：<color=#6D7BC1FF>10（柔软）</color>
+
+
+      比热容：0.830 (DTU/g)/ºC
+
+      热导率：2.000 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.7
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：不稳定, <link="ELEMENTSSOLID">固体</link>, <link="FILTER">过滤介质</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

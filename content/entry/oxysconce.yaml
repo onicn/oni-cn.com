@@ -1,0 +1,57 @@
+id: OXYSCONCE
+parent_id: BUILDCATEGORYOXYGEN
+name: 氧石烛台
+disabled: False
+search_only: False
+category: BUILDCATEGORYOXYGEN
+sort_string: 氧石烛台
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="OXYSCONCE">氧石烛台</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 便携气体
+    style: Body
+    image: research_type_alpha_icon
+    link_id: portablegasses
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: oxy_sconce_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 储存少量<link="OXYROCK">氧石</link>，逐渐向环境释放<link="OXYGEN">氧气</link>。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：1格宽x1格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：3秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="METAL">金属矿石</link>25千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    过热<link="HEAT">温度</link>：75ºC'
+    tooltip: 达到<b>75ºC</b>时开始过热
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：+5（范围：1格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>1</b>格内提高<b><b>+5</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>烛台可避免可扩散的氧气浪费在存储箱中。</i>
+    style: Body
+  layout: Vertical

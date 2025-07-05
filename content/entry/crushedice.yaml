@@ -1,0 +1,68 @@
+id: CRUSHEDICE
+parent_id: ELEMENTSSOLID
+name: 碎冰
+disabled: False
+search_only: False
+category: ELEMENTSSOLID
+sort_string: 碎冰
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="CRUSHEDICE">碎冰</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: crushed_ice_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: crushed_ice_0__ui
+      text1: 碎冰
+      text2: 1000克
+      link_id: crushedice
+    produce:
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 1000克
+      link_id: water
+    fabricator:
+      image: crew_state_temp_up
+      text1: -0.6ºC
+      tooltip: 温度高于-0.6ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      (H<sub>2</sub>O) 一坨粉碎、半固态的冰。
+
+
+      资源种类：可液化物
+
+      熔点：-0.6ºC
+
+      硬度：<color=#6D7BC1FF>10（柔软）</color>
+
+
+      比热容：2.050 (DTU/g)/ºC
+
+      热导率：2.180 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.7
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：<link="ICEORE">冰</link>, 不稳定, <link="ELEMENTSSOLID">固体</link>, 可液化物
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

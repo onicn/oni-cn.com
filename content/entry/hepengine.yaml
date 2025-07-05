@@ -1,0 +1,113 @@
+id: HEPENGINE
+parent_id: BUILDCATEGORYROCKETRY
+name: 辐射粒子引擎
+disabled: False
+search_only: False
+category: BUILDCATEGORYROCKETRY
+sort_string: 辐射粒子引擎
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="HEPENGINE">辐射粒子引擎</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 辐射粒子推进
+    style: Body
+    image: research_type_alpha_icon
+    link_id: nuclearpropulsion
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: rocket_hep_engine_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      向反应室注入<link="RADIATION">辐射粒子</link>以推动火箭进行太空探索。
+
+
+      辐射粒子引擎比<link="HYDROGENENGINE">液氢引擎</link>更快，但高度较受限。
+
+
+      引擎必须通过<link="LAUNCHPAD">火箭平台</link>建造。
+
+
+      建好引擎后，可以添加更多的火箭舱块。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    辐射粒子输入口'
+    tooltip: 这个建筑上的辐射粒子端口允许其接收<style="KKeyword">辐射粒子</style>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：5格宽x5格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：60秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="STEEL">钢</link>500千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    过热<link="HEAT">温度</link>：2000ºC'
+    tooltip: 达到<b>2000ºC</b>时开始过热
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LOGIC">信号输出端</link>'
+    tooltip: 当这个建筑状态发生变化时，输出端会输出一个信号
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    辐射粒子库存'
+    tooltip: >-
+      输出端行为：
+
+      • 当库存充满辐射粒子时，输出<b><style="logic_on">绿色信号</style></b>
+
+      • 否则，输出<b><style="logic_off">红色信号</style></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>类别</b>
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    <link="REQUIREMENTCLASSINDUSTRIALMACHINERY">工业机械</link>'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>辐射粒子燃料火箭能支撑的舱块很少，但可以前往极远的地方。</i>
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 舱块统计
+    style: Subtitle
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>火箭速度</b>等于<b>引擎功率</b>除以<b>负担</b>
+    style: Body
+  - widget_type: CodexText
+    text: '    • 火箭支持的最大高度：20'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 高度：5'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 舱块负担：5'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 舱块引擎功率：34'
+    style: Body
+  layout: Vertical

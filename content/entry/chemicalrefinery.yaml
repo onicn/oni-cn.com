@@ -1,0 +1,216 @@
+id: CHEMICALREFINERY
+parent_id: BUILDCATEGORYREFINING
+name: 乳化器
+disabled: False
+search_only: False
+category: BUILDCATEGORYREFINING
+sort_string: 乳化器
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="CHEMICALREFINERY">乳化器</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 乳化
+    style: Body
+    image: research_type_alpha_icon
+    link_id: advanceddistillation
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: chemistry_lab_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      将<link="ELEMENTSLIQUID">液体</link>和其他输入组合为流体混合物。
+
+
+      只有在队列中安排配方复制人才会进行制作。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="POWER">电力</link>：480瓦'
+    tooltip: 必须与至少有<style="consumed">480瓦</style>可用<style="KKeyword">电力</style>的电路相连
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LIQUIDPIPING">液体输入管道</link>'
+    tooltip: 必须从<link="LIQUIDCONDUIT">液体管道</link>系统中接收<style="KKeyword">液体</style>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LIQUIDPIPING">液体输出管道</link>'
+    tooltip: 必须通过<link="LIQUIDCONDUIT">液体管道</link>系统排出<style="KKeyword">液体</style>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    复制人的操作'
+    tooltip: 必须有复制人来才能使这个建筑运行
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：4格宽x3格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：60秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="REFINEDMETAL">精炼金属</link>200千克, <link="GLASS">玻璃</link>100千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="HEAT">热量</link>：+1000复制热/秒'
+    tooltip: >-
+      每秒产生<style="produced">1000复制热</style>
+
+
+      总<style="KKeyword">温度</style>变化受到加热物质的材料属性影响：
+          • 质量
+          • 比热容
+          • 表面积
+          • 隔热厚度
+          • 热导率
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    过热<link="HEAT">温度</link>：75ºC'
+    tooltip: 达到<b>75ºC</b>时开始过热
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LOGIC">信号输入端</link>'
+    tooltip: 当接收到信号时，输入端会使这个建筑一种状态发生变化
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    启用/禁用'
+    tooltip: >-
+      输入端行为：
+
+      • <b><style="logic_on">绿色信号</style></b>：启用建筑
+
+      • <b><style="logic_off">红色信号</style></b>：禁用建筑
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：-10（范围：2格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>2</b>格内降低<b><b>-10</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>就像一个搅拌器，但效果更好。</i>
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 所有配方
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 超级冷却剂
+    require:
+    - image: fullerene_0__ui
+      text1: 富勒烯
+      text2: 1000克
+      link_id: fullerene
+    - image: gold_refined_0__ui
+      text1: 金
+      text2: 49.5千克
+      link_id: gold
+    - image: element_liquid
+      color: FFC325FF
+      text1: 石油
+      text2: 49.5千克
+      link_id: petroleum
+    produce:
+    - image: element_liquid
+      color: 37AD93FF
+      text1: 超级冷却剂
+      text2: 100千克
+      link_id: supercoolant
+    fabricator:
+      image: chemistry_lab_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 乳化器
+      text2: 80秒
+      link_id: chemicalrefinery
+  - widget_type: CodexRecipePanel
+    text: 粘性凝胶流体
+    require:
+    - image: isoresin_0__ui
+      text1: 异构树液
+      text2: 35千克
+      link_id: isoresin
+    - image: element_liquid
+      color: FFC325FF
+      text1: 石油
+      text2: 65千克
+      link_id: petroleum
+    produce:
+    - image: element_liquid
+      color: 4F10B7FF
+      text1: 粘性凝胶流体
+      text2: 100千克
+      link_id: viscogel
+    fabricator:
+      image: chemistry_lab_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 乳化器
+      text2: 80秒
+      link_id: chemicalrefinery
+  - widget_type: CodexRecipePanel
+    text: 生物柴油
+    require:
+    - image: element_liquid
+      color: 98A82FFF
+      text1: 植物润滑油
+      text2: 160千克
+      link_id: phytooil
+    - image: bleach_stone_0__ui
+      text1: 漂白石
+      text2: 40千克
+      link_id: bleachstone
+    produce:
+    - image: element_liquid
+      color: E1CB69FF
+      text1: 生物柴油
+      text2: 200千克
+      link_id: refinedlipid
+    fabricator:
+      image: chemistry_lab_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 乳化器
+      text2: 40秒
+      link_id: chemicalrefinery
+  - widget_type: CodexRecipePanel
+    text: 盐水
+    require:
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 93千克
+      link_id: water
+    - image: salt_0__ui
+      text1: 盐
+      text2: 7千克
+      link_id: salt
+    produce:
+    - image: element_liquid
+      color: CED2ECFF
+      text1: 盐水
+      text2: 100千克
+      link_id: saltwater
+    fabricator:
+      image: chemistry_lab_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 乳化器
+      text2: 40秒
+      link_id: chemicalrefinery
+  layout: Vertical

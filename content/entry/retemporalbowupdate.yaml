@@ -1,0 +1,86 @@
+id: RETEMPORALBOWUPDATE
+name: 回复：致奥托（规格修改）
+title: STRINGS.CODEX.B3_RETEMPORALBOWUPDATE.TITLE
+disabled: False
+search_only: False
+category: EMAILS
+sort_string: 回复：致奥托（规格修改）
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 回复：致奥托（规格修改）
+    style: Title
+  - widget_type: CodexText
+    text: 未加密
+    style: Subtitle
+  layout: Vertical
+  lock_id: email_retemporalbowupdate
+- contents:
+  - widget_type: CodexText
+    text: >
+      <smallcaps>收件人：<b>斯克洛多夫斯卡博士</b><size=10><alpha=#AA> <msklodowska@gravitas.nova></size></color>
+
+      发件人：<b>克劳斯先生</b><alpha=#AA><size=10> <okraus@gravitas.nova></size></color></smallcaps>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_retemporalbowupdate
+- contents:
+  - widget_type: CodexText
+    text: >
+      谢谢博士。
+
+
+      附言：如果你点击“回复”按钮而不是写新邮件，人们会更容易知道你在回复什么。:)
+
+
+      感激不尽！
+
+
+      克劳斯先生
+
+      <size=11>物理部
+
+      庄严科技</size>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_retemporalbowupdate
+- contents:
+  - widget_type: CodexText
+    text: 致奥托（规格修改）
+    style: Subtitle
+  - widget_type: CodexText
+    text: >
+      <smallcaps>收件人：<b>克劳斯先生</b><alpha=#AA><size=10> <okraus@gravitas.nova></size></color>
+
+      发件人：<b>斯克洛多夫斯卡博士</b><size=10><alpha=#AA> <msklodowska@gravitas.nova></size></color></smallcaps>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_retemporalbowupdate
+- contents:
+  - widget_type: CodexText
+    text: >
+      不要太往心里去，可能只是压力造成的。
+
+
+      在你来之前不久，研究所就开始大检修了，所以我想，主管应该花了很长时间才把事情弄清楚。
+
+
+      一旦所有新部门都安顿下来，事情就会平息。
+
+
+      斯克洛多夫斯卡博士
+
+      <size=11>物理部
+
+      庄严科技</size>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_retemporalbowupdate

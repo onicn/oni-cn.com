@@ -1,0 +1,93 @@
+id: SNOW
+parent_id: ELEMENTSSOLID
+name: 雪
+disabled: False
+search_only: False
+category: ELEMENTSSOLID
+sort_string: 雪
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="SNOW">雪</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: snow_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: snow_0__ui
+      text1: 雪
+      text2: 1000克
+      link_id: snow
+    produce:
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 1000克
+      link_id: water
+    fabricator:
+      image: crew_state_temp_up
+      text1: -0.6ºC
+      tooltip: 温度高于-0.6ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: snow_0__ui
+      text1: 雪
+      text2: 100千克/周期
+      link_id: snow
+    produce:
+    - image: element_liquid
+      text1: 花蜜
+      text2: 80千克/周期
+      link_id: sugarwater
+    fabricator:
+      image: syrup_tree_0__ui
+      text1: 糖心树
+      link_id: SPACETREE
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      (H<sub>2</sub>O) 雪是一团松散的结晶冰粒。
+
+
+      雪融化后变成<link="WATER">水</link>。
+
+
+      资源种类：可液化物
+
+      熔点：-0.6ºC
+
+      硬度：<color=#6D7BC1FF>10（柔软）</color>
+
+
+      比热容：2.050 (DTU/g)/ºC
+
+      热导率：0.545 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.7
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：<link="ICEORE">冰</link>, 不稳定, <link="ELEMENTSSOLID">固体</link>, 可液化物
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

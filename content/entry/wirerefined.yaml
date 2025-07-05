@@ -1,0 +1,57 @@
+id: WIREREFINED
+parent_id: BUILDCATEGORYPOWER
+name: 导线
+disabled: False
+search_only: False
+category: BUILDCATEGORYPOWER
+sort_string: 导线
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="WIREREFINED">导线</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 低阻导体
+    style: Body
+    image: research_type_alpha_icon
+    link_id: prettygoodconductors
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: utilities_electric_conduct_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      连接建筑物和<link="POWER">电</link>源。
+
+
+      可穿过墙体和地面。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：1格宽x1格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：3秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="REFINEDMETAL">精炼金属</link>25千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    最大<link="POWER">电力</link>：2千瓦'
+    tooltip: 若耗电<style="KKeyword">功率</style>超出上限则会导致电路损坏
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>比起破破烂烂的普通电线，我的复制人更喜欢导线的外观。</i>
+    style: Body
+  layout: Vertical

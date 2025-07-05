@@ -1,0 +1,100 @@
+id: DATABANK
+name: 数据磁盘
+title: STRINGS.CODEX.DATABANK.TITLE
+disabled: False
+search_only: False
+category: INDUSTRIALINGREDIENTS
+sort_string: 数据磁盘
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 数据磁盘
+    style: Title
+  - widget_type: CodexText
+    text: 信息技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexImage
+    image: floppy_disc_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      数据磁盘是一种便携式存储介质。其因非易失性、稳健性和实际研究应用而备受推崇。
+
+
+      磁盘不可折叠。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: floppy_disc_0__ui
+      text1: 数据磁盘
+      text2: 12单位/周期
+      link_id: databank
+    produce: []
+    fabricator:
+      image: research_space_0__ui
+      text1: 虚拟天象仪
+      link_id: DLC1COSMICRESEARCHCENTER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: floppy_disc_0__ui
+      text1: 数据磁盘
+      text2: 8单位/周期
+      link_id: databank
+    produce: []
+    fabricator:
+      image: remote_work_terminal_0__ui
+      text1: 远程控制器
+      link_id: REMOTEWORKTERMINAL
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 数据挖掘仪
+    require:
+    - image: polypropylene_0__ui
+      text1: 塑料
+      text2: 5千克
+      link_id: polypropylene
+    produce:
+    - image: floppy_disc_0__ui
+      text1: 数据磁盘
+      text2: 1单位
+      link_id: databank
+    fabricator:
+      image: data_miner_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 数据挖掘仪
+      text2: 200秒
+      link_id: dataminer
+  - widget_type: CodexRecipePanel
+    text: 轨道数据收集实验仪
+    require:
+    - image: polypropylene_0__ui
+      text1: 塑料
+      text2: 5千克
+      link_id: polypropylene
+    produce:
+    - image: floppy_disc_0__ui
+      text1: 数据磁盘
+      text2: 1单位
+      link_id: databank
+    fabricator:
+      image: orbital_research_station_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 轨道数据收集实验仪
+      text2: 33秒
+      link_id: orbitalresearchcenter
+  layout: Vertical

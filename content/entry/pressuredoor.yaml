@@ -1,0 +1,85 @@
+id: PRESSUREDOOR
+parent_id: BUILDCATEGORYBASE
+name: 机械气闸
+disabled: False
+search_only: False
+category: BUILDCATEGORYBASE
+sort_string: 机械气闸
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="PRESSUREDOOR">机械气闸</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 除污
+    style: Body
+    image: research_type_alpha_icon
+    link_id: directedairstreams
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: door_external_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      阻挡<link="ELEMENTSLIQUID">液体</link>和<link="ELEMENTSGAS">气体</link>流动，维持各区域间的压力。
+
+
+      没有<link="POWER">电力</link>时作用与<link="MANUALPRESSUREDOOR">手动气闸</link>一致。
+
+
+      野生<link="CREATURES">小动物</link>无法通过门。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="POWER">电力</link>：120瓦'
+    tooltip: 必须与至少有<style="consumed">120瓦</style>可用<style="KKeyword">电力</style>的电路相连
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：1格宽x2格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：60秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="METAL">金属矿石</link>400千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    复制人通行权限'
+    tooltip: 设置允许或限制复制人通过门。
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LOGIC">信号输入端</link>'
+    tooltip: 当接收到信号时，输入端会使这个建筑一种状态发生变化
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    开启/关闭'
+    tooltip: >-
+      输入端行为：
+
+      • <b><style="logic_on">绿色信号</style></b>：开启
+
+      • <b><style="logic_off">红色信号</style></b>：关闭并锁定
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：-10（范围：2格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>2</b>格内降低<b><b>-10</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>机械气闸比其他种类的门开关更快。</i>
+    style: Body
+  layout: Vertical

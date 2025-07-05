@@ -1,0 +1,60 @@
+id: WIREREFINEDBRIDGE
+parent_id: BUILDCATEGORYPOWER
+name: 导线桥
+disabled: False
+search_only: False
+category: BUILDCATEGORYPOWER
+sort_string: 导线桥
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="WIREREFINEDBRIDGE">导线桥</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 低阻导体
+    style: Body
+    image: research_type_alpha_icon
+    link_id: prettygoodconductors
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: utilityelectricbridgeconductive_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      可以运载比普通<link="WIREBRIDGE">电线桥</link>更高的<link="POWER">功率</link>而不会过载。
+
+
+      让一条电线可以越过另一条电线，而不会连在一起。
+
+
+      可穿过墙体和地面。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：3格宽x1格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：3秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="REFINEDMETAL">精炼金属</link>25千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：-5（范围：1格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>1</b>格内降低<b><b>-5</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>将发电机分散到不同的系统可以避免过载和电力浪费。</i>
+    style: Body
+  layout: Vertical

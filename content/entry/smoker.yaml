@@ -1,0 +1,396 @@
+id: SMOKER
+parent_id: BUILDCATEGORYFOOD
+name: 熏炉
+disabled: False
+search_only: False
+category: BUILDCATEGORYFOOD
+sort_string: 熏炉
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="SMOKER">熏炉</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 食物再利用
+    style: Body
+    image: research_type_alpha_icon
+    link_id: foodrepurposing
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: smoker_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      慢火烹饪改良<link="FOOD">食物</link>。
+
+
+      只有在队列中安排配方复制人才会进行制作。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="GASPIPING">气体输出管道</link>'
+    tooltip: 必须通过<link="GASCONDUIT">气体管道</link>系统排出<style="KKeyword">气体</style>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    复制人的操作'
+    tooltip: 必须有复制人来才能使这个建筑运行
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    需要技能的复制人的操作'
+    tooltip: 只有具有<link="COOKING1">烧烤</link>技能或<link="BOOSTERCOOK1">烧烤增幅块</link>的复制人才能使用这个建筑
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：4格宽x3格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：30秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="METAL">金属矿石</link>400千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="CARBONDIOXIDE">二氧化碳</link>：20克/秒'
+    tooltip: >-
+      使用时产生<style="produced">20克/秒</style><style="KKeyword"><link="CARBONDIOXIDE">二氧化碳</link></style>
+
+
+      输出温度至少为<b>75ºC</b>，如果输入材料的温度更高输出也会随之更高。
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="HEAT">热量</link>：+9千复制热/秒'
+    tooltip: >-
+      每秒产生<style="produced">9千复制热</style>
+
+
+      总<style="KKeyword">温度</style>变化受到加热物质的材料属性影响：
+          • 质量
+          • 比热容
+          • 表面积
+          • 隔热厚度
+          • 热导率
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    过热<link="HEAT">温度</link>：75ºC'
+    tooltip: 达到<b>75ºC</b>时开始过热
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>类别</b>
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    <link="REQUIREMENTCLASSCOOKTOP">烹饪站</link>'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>只要有耐心，即使是硬肉也可以变得美味可口。</i>
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 所有配方
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 嫩肋排
+    require:
+    - image: dinomeat_raw_0__ui
+      text1: 硬肉
+      text2: 6千克
+      link_id: dinosaurmeat
+    - image: peat_0__ui
+      text1: 泥炭
+      text2: 100千克
+      link_id: peat
+    produce:
+    - image: dinobrisket_0__ui
+      text1: 嫩肋排
+      text2: 16,000千卡
+      tooltip: 品质：良好 [+3]
+      link_id: smokeddinosaurmeat
+    fabricator:
+      image: smoker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 熏炉
+      text2: 600秒
+      link_id: smoker
+  - widget_type: CodexRecipePanel
+    text: 嫩肋排
+    require:
+    - image: dinomeat_raw_0__ui
+      text1: 硬肉
+      text2: 6千克
+      link_id: dinosaurmeat
+    - image: wood_0__ui
+      text1: 木材
+      text2: 100千克
+      link_id: wood
+    produce:
+    - image: dinobrisket_0__ui
+      text1: 嫩肋排
+      text2: 16,000千卡
+      tooltip: 品质：良好 [+3]
+      link_id: smokeddinosaurmeat
+    fabricator:
+      image: smoker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 熏炉
+      text2: 600秒
+      link_id: smoker
+  - widget_type: CodexRecipePanel
+    text: 熏鱼
+    require:
+    - image: pacufillet_0__ui
+      text1: 帕库鱼片
+      text2: 6,000千卡
+      tooltip: 品质：标准 [+2]
+      link_id: fishmeat
+    - image: peat_0__ui
+      text1: 泥炭
+      text2: 100千克
+      link_id: peat
+    produce:
+    - image: smokedfish_0__ui
+      text1: 熏鱼
+      text2: 11,200千卡
+      tooltip: 品质：良好 [+3]
+      link_id: smokedfish
+    fabricator:
+      image: smoker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 熏炉
+      text2: 600秒
+      link_id: smoker
+  - widget_type: CodexRecipePanel
+    text: 熏鱼
+    require:
+    - image: pacufillet_0__ui
+      text1: 帕库鱼片
+      text2: 6,000千卡
+      tooltip: 品质：标准 [+2]
+      link_id: fishmeat
+    - image: wood_0__ui
+      text1: 木材
+      text2: 100千克
+      link_id: wood
+    produce:
+    - image: smokedfish_0__ui
+      text1: 熏鱼
+      text2: 11,200千卡
+      tooltip: 品质：良好 [+3]
+      link_id: smokedfish
+    fabricator:
+      image: smoker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 熏炉
+      text2: 600秒
+      link_id: smoker
+  - widget_type: CodexRecipePanel
+    text: 爆米花
+    require:
+    - image: spikefruit_0__ui
+      text1: 汗甜玉米
+      text2: 5,600千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: gardenfoodplantfood
+    - image: peat_0__ui
+      text1: 泥炭
+      text2: 100千克
+      link_id: peat
+    produce:
+    - image: smokedvegetables_0__ui
+      text1: 爆米花
+      text2: 11,450千卡
+      tooltip: 品质：标准 [+2]
+      link_id: smokedvegetables
+    fabricator:
+      image: smoker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 熏炉
+      text2: 600秒
+      link_id: smoker
+  - widget_type: CodexRecipePanel
+    text: 爆米花
+    require:
+    - image: spikefruit_0__ui
+      text1: 汗甜玉米
+      text2: 5,600千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: gardenfoodplantfood
+    - image: wood_0__ui
+      text1: 木材
+      text2: 100千克
+      link_id: wood
+    produce:
+    - image: smokedvegetables_0__ui
+      text1: 爆米花
+      text2: 11,450千卡
+      tooltip: 品质：标准 [+2]
+      link_id: smokedvegetables
+    fabricator:
+      image: smoker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 熏炉
+      text2: 600秒
+      link_id: smoker
+  - widget_type: CodexRecipePanel
+    text: 爆米花
+    require:
+    - image: iceberry_0__ui
+      text1: 刺壳果
+      text2: 5,600千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: hardskinberry
+    - image: peat_0__ui
+      text1: 泥炭
+      text2: 100千克
+      link_id: peat
+    produce:
+    - image: smokedvegetables_0__ui
+      text1: 爆米花
+      text2: 11,450千卡
+      tooltip: 品质：标准 [+2]
+      link_id: smokedvegetables
+    fabricator:
+      image: smoker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 熏炉
+      text2: 600秒
+      link_id: smoker
+  - widget_type: CodexRecipePanel
+    text: 爆米花
+    require:
+    - image: iceberry_0__ui
+      text1: 刺壳果
+      text2: 5,600千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: hardskinberry
+    - image: wood_0__ui
+      text1: 木材
+      text2: 100千克
+      link_id: wood
+    produce:
+    - image: smokedvegetables_0__ui
+      text1: 爆米花
+      text2: 11,450千卡
+      tooltip: 品质：标准 [+2]
+      link_id: smokedvegetables
+    fabricator:
+      image: smoker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 熏炉
+      text2: 600秒
+      link_id: smoker
+  - widget_type: CodexRecipePanel
+    text: 熏鱼
+    require:
+    - image: jawbofillet_0__ui
+      text1: 颚鱼片
+      text2: 6,000千卡
+      tooltip: 品质：良好 [+3]
+      link_id: prehistoricpacufillet
+    - image: peat_0__ui
+      text1: 泥炭
+      text2: 100千克
+      link_id: peat
+    produce:
+    - image: smokedfish_0__ui
+      text1: 熏鱼
+      text2: 11,200千卡
+      tooltip: 品质：良好 [+3]
+      link_id: smokedfish
+    fabricator:
+      image: smoker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 熏炉
+      text2: 600秒
+      link_id: smoker
+  - widget_type: CodexRecipePanel
+    text: 熏鱼
+    require:
+    - image: jawbofillet_0__ui
+      text1: 颚鱼片
+      text2: 6,000千卡
+      tooltip: 品质：良好 [+3]
+      link_id: prehistoricpacufillet
+    - image: wood_0__ui
+      text1: 木材
+      text2: 100千克
+      link_id: wood
+    produce:
+    - image: smokedfish_0__ui
+      text1: 熏鱼
+      text2: 11,200千卡
+      tooltip: 品质：良好 [+3]
+      link_id: smokedfish
+    fabricator:
+      image: smoker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 熏炉
+      text2: 600秒
+      link_id: smoker
+  - widget_type: CodexRecipePanel
+    text: 爆米花
+    require:
+    - image: wormwood_basic_fruit_0__ui
+      text1: 贫瘠虫果
+      text2: 5,600千卡
+      tooltip: 品质：糟糕 [0]
+      link_id: wormbasicfruit
+    - image: peat_0__ui
+      text1: 泥炭
+      text2: 100千克
+      link_id: peat
+    produce:
+    - image: smokedvegetables_0__ui
+      text1: 爆米花
+      text2: 11,450千卡
+      tooltip: 品质：标准 [+2]
+      link_id: smokedvegetables
+    fabricator:
+      image: smoker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 熏炉
+      text2: 600秒
+      link_id: smoker
+  - widget_type: CodexRecipePanel
+    text: 爆米花
+    require:
+    - image: wormwood_basic_fruit_0__ui
+      text1: 贫瘠虫果
+      text2: 5,600千卡
+      tooltip: 品质：糟糕 [0]
+      link_id: wormbasicfruit
+    - image: wood_0__ui
+      text1: 木材
+      text2: 100千克
+      link_id: wood
+    produce:
+    - image: smokedvegetables_0__ui
+      text1: 爆米花
+      text2: 11,450千卡
+      tooltip: 品质：标准 [+2]
+      link_id: smokedvegetables
+    fabricator:
+      image: smoker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 熏炉
+      text2: 600秒
+      link_id: smoker
+  layout: Vertical

@@ -1,0 +1,180 @@
+id: MOLTENTUNGSTEN
+parent_id: ELEMENTSLIQUID
+name: 熔融钨
+disabled: False
+search_only: False
+icon_color: E5290EFF
+category: ELEMENTSLIQUID
+sort_string: 熔融钨
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="MOLTENTUNGSTEN">熔融钨</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    color: E5290EFF
+    image: element_liquid
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: E5290EFF
+      text1: 熔融钨
+      text2: 1000克
+      link_id: moltentungsten
+    produce:
+    - image: element_gas
+      color: FF007DFF
+      text1: 气态钨
+      text2: 1000克
+      link_id: tungstengas
+    fabricator:
+      image: crew_state_temp_up
+      text1: 5929.9ºC
+      tooltip: 温度高于5929.9ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: E5290EFF
+      text1: 熔融钨
+      text2: 1000克
+      link_id: moltentungsten
+    produce:
+    - image: tungsten_refined_0__ui
+      text1: 钨
+      text2: 1000克
+      link_id: tungsten
+    fabricator:
+      image: crew_state_temp_down
+      text1: 3421.9ºC
+      tooltip: 温度低于3421.9ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换于
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: super_insulator_0__ui
+      text1: 隔热质
+      text2: 1000克
+      link_id: superinsulator
+    produce:
+    - image: element_liquid
+      color: E5290EFF
+      text1: 熔融钨
+      text2: 850克
+      link_id: moltentungsten
+    - image: element_gas
+      color: 76245DFF
+      text1: 高硫天然气
+      text2: 150克
+      link_id: sourgas
+    fabricator:
+      image: crew_state_temp_up
+      text1: 3621.9ºC
+      tooltip: 温度高于3621.9ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: wolframite_0__ui
+      text1: 黑钨矿
+      text2: 1000克
+      link_id: wolframite
+    produce:
+    - image: element_liquid
+      color: E5290EFF
+      text1: 熔融钨
+      text2: 1000克
+      link_id: moltentungsten
+    fabricator:
+      image: crew_state_temp_up
+      text1: 2926.9ºC
+      tooltip: 温度高于2926.9ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: tungsten_refined_0__ui
+      text1: 钨
+      text2: 1000克
+      link_id: tungsten
+    produce:
+    - image: element_liquid
+      color: E5290EFF
+      text1: 熔融钨
+      text2: 1000克
+      link_id: moltentungsten
+    fabricator:
+      image: crew_state_temp_up
+      text1: 3421.9ºC
+      tooltip: 温度高于3421.9ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: katairite_0__ui
+      text1: 深渊晶石
+      text2: 1000克
+      link_id: katairite
+    produce:
+    - image: element_liquid
+      color: E5290EFF
+      text1: 熔融钨
+      text2: 1000克
+      link_id: moltentungsten
+    fabricator:
+      image: crew_state_temp_up
+      text1: 3421.9ºC
+      tooltip: 温度高于3421.9ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_gas
+      color: FF007DFF
+      text1: 气态钨
+      text2: 1000克
+      link_id: tungstengas
+    produce:
+    - image: element_liquid
+      color: E5290EFF
+      text1: 熔融钨
+      text2: 1000克
+      link_id: moltentungsten
+    fabricator:
+      image: crew_state_temp_down
+      text1: 5929.9ºC
+      tooltip: 温度低于5929.9ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      (W) 熔融钨是一种被加热成<link="ELEMENTSLIQUID">液态</link>的结晶<link="RAWMETAL">金属</link>。
+
+
+      资源种类：<link="ELEMENTSLIQUID">液体</link>
+
+      冰点：3421.9ºC
+
+      沸点：5929.9ºC
+
+
+      比热容：0.134 (DTU/g)/ºC
+
+      热导率：4.000 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.35
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：<link="METAL">金属矿石</link>, <link="REFINEDMETAL">精炼金属</link>, <link="ELEMENTSLIQUID">液体</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

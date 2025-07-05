@@ -1,0 +1,141 @@
+id: DINOSAURMEAT
+parent_id: FOOD
+name: 硬肉
+disabled: False
+search_only: False
+category: FOOD
+sort_string: 硬肉
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="DINOSAURMEAT">硬肉</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: dinomeat_raw_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      从死去的小动物身上弄来的生肉。
+
+
+      只有在<link="SMOKER">熏炉</link>中烹饪过才能吃。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 品质：恶心 [-1]
+    style: Body
+  - widget_type: CodexText
+    text: 卡路里：0千卡
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      冷藏温度：4ºC
+
+      深度冷冻温度：-18ºC
+
+      腐烂时间：4.0周期
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 嫩肋排
+    require:
+    - image: dinomeat_raw_0__ui
+      text1: 硬肉
+      text2: 6千克
+      link_id: dinosaurmeat
+    - image: wood_0__ui
+      text1: 木材
+      text2: 100千克
+      link_id: wood
+    produce:
+    - image: dinobrisket_0__ui
+      text1: 嫩肋排
+      text2: 16,000千卡
+      tooltip: 品质：良好 [+3]
+      link_id: smokeddinosaurmeat
+    fabricator:
+      image: smoker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 熏炉
+      text2: 600秒
+      link_id: smoker
+  - widget_type: CodexRecipePanel
+    text: 嫩肋排
+    require:
+    - image: dinomeat_raw_0__ui
+      text1: 硬肉
+      text2: 6千克
+      link_id: dinosaurmeat
+    - image: peat_0__ui
+      text1: 泥炭
+      text2: 100千克
+      link_id: peat
+    produce:
+    - image: dinobrisket_0__ui
+      text1: 嫩肋排
+      text2: 16,000千卡
+      tooltip: 品质：良好 [+3]
+      link_id: smokeddinosaurmeat
+    fabricator:
+      image: smoker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 熏炉
+      text2: 600秒
+      link_id: smoker
+  - widget_type: CodexConversionPanel
+    require:
+    - image: dinomeat_raw_0__ui
+      text1: 硬肉
+      text2: 500克/周期
+      link_id: dinosaurmeat
+    produce:
+    - image: frozen_brine_0__ui
+      text1: 浓盐冰
+      text2: 64千克/周期
+      link_id: brine
+    fabricator:
+      image: raptor_0__ui
+      text1: 霸王鹦
+      link_id: RAPTOR
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require: []
+    produce:
+    - image: dinomeat_raw_0__ui
+      text1: 硬肉
+      text2: 12千克
+      link_id: dinosaurmeat
+    fabricator:
+      image: stego_0__ui
+      text1: 尖块兽
+      link_id: STEGO
+  - widget_type: CodexConversionPanel
+    require: []
+    produce:
+    - image: dinomeat_raw_0__ui
+      text1: 硬肉
+      text2: 5千克
+      link_id: dinosaurmeat
+    fabricator:
+      image: raptor_0__ui
+      text1: 霸王鹦
+      link_id: RAPTOR
+  layout: Vertical

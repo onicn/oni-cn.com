@@ -1,0 +1,73 @@
+id: SANITATIONSCIENCES
+parent_id: TECH
+name: 卫生设备
+disabled: False
+search_only: False
+category: TECH
+sort_string: 卫生设备
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="SANITATIONSCIENCES">卫生设备</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 让每天的沐浴不再麻烦。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="LIQUIDPIPING">水管</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: toiletflush_0__ui
+  - widget_type: CodexText
+    text: <link="FLUSHTOILET">抽水马桶</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: wash_sink_0__ui
+  - widget_type: CodexText
+    text: <link="WASHSINK">洗手池</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: shower_0__ui
+  - widget_type: CodexText
+    text: <link="SHOWER">淋浴隔间</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: floor_mesh_0__ui
+  - widget_type: CodexText
+    text: <link="MESHTILE">网格砖</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: gunkdump_station_0__ui
+  - widget_type: CodexText
+    text: <link="GUNKEMPTIER">粘渣油提取器</link>
+    style: Body
+  layout: Horizontal

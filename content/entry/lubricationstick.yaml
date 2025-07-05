@@ -1,0 +1,32 @@
+id: LUBRICATIONSTICK
+name: 齿轮膏
+title: STRINGS.ITEMS.LUBRICATIONSTICK.NAME
+disabled: False
+search_only: False
+category: INDUSTRIALINGREDIENTS
+sort_string: <link="LUBRICATIONSTICK">齿轮膏</link>
+required_dlc_ids:
+- DLC3_ID
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="LUBRICATIONSTICK">齿轮膏</link>
+    style: Title
+  - widget_type: CodexText
+    text: 机械润滑剂
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexImage
+    image: lubricant_applicator_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      提供少量润滑<link="LUBRICATINGOIL">齿轮油</link>。
+
+
+      可以在<link="APOTHECARY">配药桌</link>生产。
+    style: Body
+  - widget_type: CodexElementCategoryList
+    require: []
+  layout: Vertical

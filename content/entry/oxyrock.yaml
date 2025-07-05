@@ -1,0 +1,150 @@
+id: OXYROCK
+parent_id: ELEMENTSSOLID
+name: 氧石
+disabled: False
+search_only: False
+category: ELEMENTSSOLID
+sort_string: 氧石
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="OXYROCK">氧石</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: oxyrock_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: oxyrock_0__ui
+      text1: 氧石
+      text2: 1000克
+      link_id: oxyrock
+    produce:
+    - image: element_liquid
+      color: AE0000FF
+      text1: 岩浆
+      text2: 1000克
+      link_id: magma
+    fabricator:
+      image: crew_state_temp_up
+      text1: 1409.9ºC
+      tooltip: 温度高于1409.9ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_gas
+      color: B7FFFFFF
+      text1: 氧气
+      text2: 360千克/周期
+      link_id: oxygen
+    - image: gold_refined_0__ui
+      text1: 金
+      text2: 1800克/周期
+      link_id: gold
+    produce:
+    - image: oxyrock_0__ui
+      text1: 氧石
+      text2: 360千克/周期
+      link_id: oxyrock
+    fabricator:
+      image: oxylite_refinery_0__ui
+      text1: 氧石精炼炉
+      link_id: OXYLITEREFINERY
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_gas
+      color: 000000FF
+      text1: 二氧化碳
+      text2: 300克/周期
+      link_id: carbondioxide
+    - image: ice_0__ui
+      text1: 冰
+      text2: 20千克/周期
+      link_id: ice
+    produce:
+    - image: oxyrock_0__ui
+      text1: 氧石
+      text2: 18千克/周期
+      link_id: oxyrock
+    fabricator:
+      image: bluegrass_0__ui
+      text1: 气囊芦荟
+      link_id: BLUEGRASS
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_gas
+      color: B7FFFFFF
+      text1: 氧气
+      text2: 50千克/周期
+      link_id: oxygen
+    produce:
+    - image: oxyrock_0__ui
+      text1: 氧石
+      text2: 47.5千克/周期
+      link_id: oxyrock
+    fabricator:
+      image: puft_0__com_ui
+      text1: 厚壳飞鱼
+      link_id: PUFTOXYLITE
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_gas
+      color: B7FFFFFF
+      text1: 氧气
+      text2: 30千克/周期
+      link_id: oxygen
+    produce:
+    - image: oxyrock_0__ui
+      text1: 氧石
+      text2: 3000克/周期
+      link_id: oxyrock
+    fabricator:
+      image: puft_0__alp_ui
+      text1: 贵族飞鱼
+      link_id: PUFTALPHA
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      (Ir<sub>3</sub>O<sub>2</sub>) 氧石是一种可缓慢释放可呼吸的<link="OXYGEN">氧气</link>的化合物。
+
+
+      将<link="OXYROCK">氧石</link>更多地显露出来会提高释放速率，但其本身也会被更快消耗。
+
+
+      资源种类：<link="SUBLIMATES">升华物</link>
+
+      熔点：1409.9ºC
+
+      硬度：<color=#6D7BC1FF>10（柔软）</color>
+
+
+      比热容：1.000 (DTU/g)/ºC
+
+      热导率：4.000 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.82
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：<link="FLYINGCRITTEREDIBLE">诱饵</link>, 氧化剂, <link="ELEMENTSSOLID">固体</link>, <link="SUBLIMATES">升华物</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

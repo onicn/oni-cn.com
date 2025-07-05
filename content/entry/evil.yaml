@@ -1,0 +1,62 @@
+id: EVIL
+name: 邪恶
+title: STRINGS.CODEX.C01_EVIL.TITLE
+disabled: False
+search_only: False
+category: JOURNALS
+sort_string: 邪恶
+required_dlc_ids:
+- EXPANSION1_ID
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 邪恶
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：无
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+  lock_id: journal_evil
+- contents:
+  - widget_type: CodexText
+    text: >
+      显然尼古拉很邪恶。他正在进行某种计划，对其他庄严科技的人保密，而且我也查不出是什么，因为他一直在他的电脑前而且还是离线的。每当我问他在做什么的时候，他总是说我不会明白的。噗！我们都上过同样的粒子物理课，老兄。不能因为你敲几下键盘我调几个旋钮就说我不知道时间遏制场是干什么的。
+
+
+      今天呢，我把扳手弄掉了，尼古拉在附近吓得心惊肉跳！他猛回头对我大喊不要再这么做了。然后我说，“哎呀，这也不是世界末日。”他说，“是啊，就算我把这个弄错了，世界似乎也不会爆炸吧。”像是在挖苦我一样。
+
+
+      但这在技术上是对的。如果时间遏制场被打破，时间之弓理论上可以摧毁世界，但这就是为什么有齐全的安全系统。以及安全系统的安全系统。以及在这之上的安全系统。但是安全系统都是他建立的，那么如果他想……
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: journal_evil
+- contents:
+  - widget_type: CodexText
+    text: >
+      我决定今天早点去上班，但我到了的时候尼古拉早就在那了，看上去整个周末都没回家。他在实验室里来回走动，自言自语，但看上去不像一个恶棍，倒像是一星期没睡觉的人。
+
+
+      “鲁比，”他说。“你得答应我，如果出了什么问题，你就打开这台机器。他们走得够远了，打印舱走得……够远了——够！远！了！有些什么东西就要炸了。我试过了……我试过拯救它。不是说地球，地球已经没希望了，一切都会……”然后他吼了起来，“是宇宙，是时间本身，一切都完了，你不明白吗？这台机器可以遏制它。它能在地球周围放置一个临时遏制场，这样时间本身就不会崩塌，然后……然后……”
+
+
+      突然这些安保人员就进来了。一些新的家伙，我之前从来都没看到过的，把他给带走了。然后他们把我逮到了一个房间里问了我各种问题，我都回答了他们，大概吧。我记不清了，因为我一直在想——如果我是错的呢？如果他不是邪恶的，而庄严科技是呢？
+
+
+      如果我是错的，而他是对的呢？
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: journal_evil
+- contents:
+  - widget_type: CodexText
+    text: >
+      就简单想想——如果他是对的呢？
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: journal_evil

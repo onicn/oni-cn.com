@@ -1,0 +1,26 @@
+id: MYLOG31
+name: 周期10
+title: STRINGS.CODEX.MYLOG.BODY.LOG3DLC1.TITLE
+disabled: False
+search_only: False
+category: MYLOG
+sort_string: 周期10
+required_dlc_ids:
+- EXPANSION1_ID
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 周期10
+    style: Title
+  - widget_type: CodexText
+    text: >+
+      如果我的复制人要前往周围星球，那么很有可能就会遇到有危害的环境，对于没有防备的复制人来说很危险。所以我需要谨慎行事，在复制人进入这些不利环境之前就开始研究防护设备并对复制人进行训练。
+
+
+      前几周期已经用来建设我的殖民地的基础部分，但现在是时候规划未来了。我们不能每天漫无目的地生活，如果我们想要长时间生存下去，我们必须为一个目标奋斗。
+
+    style: Body
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical

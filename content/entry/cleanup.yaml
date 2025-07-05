@@ -1,0 +1,77 @@
+id: CLEANUP
+name: 卫生指示
+title: STRINGS.CODEX.INVESTIGATIONS.DLC2_CLEANUP.TITLE
+disabled: False
+search_only: False
+category: RESEARCHNOTES
+sort_string: 卫生指示
+required_dlc_ids:
+- DLC2_ID
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 卫生指示
+    style: Title
+  - widget_type: CodexText
+    text: 状态：紧急
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+  lock_id: notes_cleanup
+- contents:
+  - widget_type: CodexText
+    text: >+
+      提交人：B.博松
+
+      员工编号：X002
+
+      部门：庄严科技知识产权管理部
+
+
+      工作详情：
+
+
+      需要一(1)名机器人工程师独自前往[受屏蔽]。工程师将打印、编程并维护一个八(8)个单位的P.E.G.G.Y.小队。
+
+
+      工程师将登记分类所有[受屏蔽]项目碎片。
+
+
+      所有专有装备应返还庄严科技场地进行调查。工程师可自行决定在现场处理有机碎片与生物危害性碎片。
+
+
+      候选人：E.戈斯曼博士
+
+
+      清理区域范围：[受屏蔽]平方英里。
+
+      *仅估计值。
+
+
+      期限：神谷星54天（相当于出发地6天）。
+
+
+      其他说明：
+
+      1. 责任豁免书、授权书和保密协议见附件。
+
+      2. 根据轨道定位，从[受屏蔽]进行信号传输时间最多0.5小时。
+
+      3. 所有相关通信直接发送至bboson@gipm.nova。
+
+
+      签名：[受屏蔽]
+
+    style: Body
+  layout: Vertical
+  lock_id: notes_cleanup
+- contents:
+  - widget_type: CodexText
+    text: >
+      <smallcaps><i>由J.斯特恩主管授权
+
+
+      -----------
+    style: Body
+  layout: Vertical
+  lock_id: notes_cleanup

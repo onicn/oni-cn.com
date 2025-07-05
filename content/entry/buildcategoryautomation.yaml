@@ -1,0 +1,209 @@
+id: BUILDCATEGORYAUTOMATION
+parent_id: BUILDINGS
+name: 信号
+disabled: False
+search_only: False
+category: BUILDINGS
+sort_string: 信号
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="BUILDCATEGORYAUTOMATION">信号</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexLabelWithLargeIcon
+    text: 与门
+    style: BodyWhite
+    image: logic_and_0__ui
+    link_id: logicgateand
+  - widget_type: CodexLabelWithLargeIcon
+    text: 信号分配器
+    style: BodyWhite
+    image: logic_demultiplexer_0__ui
+    link_id: logicgatedemultiplexer
+  - widget_type: CodexLabelWithLargeIcon
+    text: 信号开关
+    style: BodyWhite
+    image: switchdupecontrolledpower_0__ui
+    link_id: logicswitch
+  - widget_type: CodexLabelWithLargeIcon
+    text: 信号接收器
+    style: BodyWhite
+    image: inter_asteroid_automation_signal_receiver_0__ui
+    link_id: logicinterasteroidreceiver
+  - widget_type: CodexLabelWithLargeIcon
+    text: 信号播报器
+    style: BodyWhite
+    image: inter_asteroid_automation_signal_sender_0__ui
+    link_id: logicinterasteroidsender
+  - widget_type: CodexLabelWithLargeIcon
+    text: 信号线
+    style: BodyWhite
+    image: logic_wires_0__ui
+    link_id: logicwire
+  - widget_type: CodexLabelWithLargeIcon
+    text: 信号线桥
+    style: BodyWhite
+    image: logic_bridge_0__ui
+    link_id: logicwirebridge
+  - widget_type: CodexLabelWithLargeIcon
+    text: 信号线组
+    style: BodyWhite
+    image: logic_ribbon_0__ui
+    link_id: logicribbon
+  - widget_type: CodexLabelWithLargeIcon
+    text: 信号线组桥
+    style: BodyWhite
+    image: logic_ribbon_bridge_0__ui
+    link_id: logicribbonbridge
+  - widget_type: CodexLabelWithLargeIcon
+    text: 信号计数器
+    style: BodyWhite
+    image: logic_counter_0__ui
+    link_id: logiccounter
+  - widget_type: CodexLabelWithLargeIcon
+    text: 信号选择器
+    style: BodyWhite
+    image: logic_multiplexer_0__ui
+    link_id: logicgatemultiplexer
+  - widget_type: CodexLabelWithLargeIcon
+    text: 光线传感器
+    style: BodyWhite
+    image: logiclightsensor_0__ui
+    link_id: logiclightsensor
+  - widget_type: CodexLabelWithLargeIcon
+    text: 功率传感器
+    style: BodyWhite
+    image: wattage_sensor_0__ui
+    link_id: logicwattagesensor
+  - widget_type: CodexLabelWithLargeIcon
+    text: 压力板
+    style: BodyWhite
+    image: pressureswitch_0__ui
+    link_id: floorswitch
+  - widget_type: CodexLabelWithLargeIcon
+    text: 周期传感器
+    style: BodyWhite
+    image: switchtimeofday_0__ui
+    link_id: logictimeofdaysensor
+  - widget_type: CodexLabelWithLargeIcon
+    text: 复制人检查站
+    style: BodyWhite
+    image: checkpoint_0__ui
+    link_id: checkpoint
+  - widget_type: CodexLabelWithLargeIcon
+    text: 复制人运动传感器
+    style: BodyWhite
+    image: presence_sensor_0__ui
+    link_id: logicduplicantsensor
+  - widget_type: CodexLabelWithLargeIcon
+    text: 太空扫描仪
+    style: BodyWhite
+    image: meteor_detector_0__ui
+    link_id: cometdetector
+  - widget_type: CodexLabelWithLargeIcon
+    text: 小动物传感器
+    style: BodyWhite
+    image: critter_sensor_0__ui
+    link_id: logiccrittercountsensor
+  - widget_type: CodexLabelWithLargeIcon
+    text: 异或门
+    style: BodyWhite
+    image: logic_xor_0__ui
+    link_id: logicgatexor
+  - widget_type: CodexLabelWithLargeIcon
+    text: 或门
+    style: BodyWhite
+    image: logic_or_0__ui
+    link_id: logicgateor
+  - widget_type: CodexLabelWithLargeIcon
+    text: 时间传感器
+    style: BodyWhite
+    image: time_sensor_0__ui
+    link_id: logictimersensor
+  - widget_type: CodexLabelWithLargeIcon
+    text: 气体元素传感器
+    style: BodyWhite
+    image: world_element_sensor_0__ui
+    link_id: logicelementsensorgas
+  - widget_type: CodexLabelWithLargeIcon
+    text: 气压传感器
+    style: BodyWhite
+    image: switchgaspressure_0__ui
+    link_id: logicpressuresensorgas
+  - widget_type: CodexLabelWithLargeIcon
+    text: 液体元素传感器
+    style: BodyWhite
+    image: world_liquid_sensor_0__ui
+    link_id: logicelementsensorliquid
+  - widget_type: CodexLabelWithLargeIcon
+    text: 液压传感器
+    style: BodyWhite
+    image: switchliquidpressure_0__ui
+    link_id: logicpressuresensorliquid
+  - widget_type: CodexLabelWithLargeIcon
+    text: 温度传感器
+    style: BodyWhite
+    image: switchthermal_0__ui
+    link_id: logictemperaturesensor
+  - widget_type: CodexLabelWithLargeIcon
+    text: 病菌传感器
+    style: BodyWhite
+    image: diseasesensor_0__ui
+    link_id: logicdiseasesensor
+  - widget_type: CodexLabelWithLargeIcon
+    text: 线组写入器
+    style: BodyWhite
+    image: logic_ribbon_writer_0__ui
+    link_id: logicribbonwriter
+  - widget_type: CodexLabelWithLargeIcon
+    text: 线组读取器
+    style: BodyWhite
+    image: logic_ribbon_reader_0__ui
+    link_id: logicribbonreader
+  - widget_type: CodexLabelWithLargeIcon
+    text: 缓冲门
+    style: BodyWhite
+    image: logic_buffer_0__ui
+    link_id: logicgatebuffer
+  - widget_type: CodexLabelWithLargeIcon
+    text: 自动化通知器
+    style: BodyWhite
+    image: alarm_sensor_0__ui
+    link_id: logicalarm
+  - widget_type: CodexLabelWithLargeIcon
+    text: 辐射传感器
+    style: BodyWhite
+    image: radiation_sensor_0__ui
+    link_id: logicradiationsensor
+  - widget_type: CodexLabelWithLargeIcon
+    text: 辐射粒子传感器
+    style: BodyWhite
+    image: radbolt_sensor_0__ui
+    link_id: logichepsensor
+  - widget_type: CodexLabelWithLargeIcon
+    text: 过滤门
+    style: BodyWhite
+    image: logic_filter_0__ui
+    link_id: logicgatefilter
+  - widget_type: CodexLabelWithLargeIcon
+    text: 锁存器
+    style: BodyWhite
+    image: logic_memory_0__ui
+    link_id: logicmemory
+  - widget_type: CodexLabelWithLargeIcon
+    text: 非门
+    style: BodyWhite
+    image: logic_not_0__ui
+    link_id: logicgatenot
+  - widget_type: CodexLabelWithLargeIcon
+    text: 音槌
+    style: BodyWhite
+    image: hammer_0__ui
+    link_id: logichammer
+  layout: Grid
+- contents:
+  - widget_type: CodexSpacer
+  layout: Vertical

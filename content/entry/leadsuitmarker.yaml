@@ -1,0 +1,77 @@
+id: LEADSUITMARKER
+parent_id: BUILDCATEGORYEQUIPMENT
+name: 铅服检查站
+disabled: False
+search_only: False
+category: BUILDCATEGORYEQUIPMENT
+sort_string: 铅服检查站
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="LEADSUITMARKER">铅服检查站</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 辐射防护
+    style: Body
+    image: research_type_alpha_icon
+    link_id: radiationprotection
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: changingarea_radiation_arrow_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      标记复制人必须换上或换下<link="LEADSUIT">铅服</link>的起点。
+
+
+      必须建在<link="LEADSUITLOCKER">铅服存放柜</link>旁。
+
+
+      建造前可旋转。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：2格宽x4格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：30秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="REFINEDMETAL">精炼金属</link>100千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    过热<link="HEAT">温度</link>：75ºC'
+    tooltip: 达到<b>75ºC</b>时开始过热
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LOGIC">信号输入端</link>'
+    tooltip: 当接收到信号时，输入端会使这个建筑一种状态发生变化
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    启用/禁用'
+    tooltip: >-
+      输入端行为：
+
+      • <b><style="logic_on">绿色信号</style></b>：启用建筑
+
+      • <b><style="logic_off">红色信号</style></b>：禁用建筑
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：+10（范围：2格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>2</b>格内提高<b><b>+10</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>每个检查站都必须配备至少一个建在箭头指向后面的相关存放柜。</i>
+    style: Body
+  layout: Vertical

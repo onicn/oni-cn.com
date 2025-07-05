@@ -1,0 +1,81 @@
+id: INSPACE
+name: 在太空中
+title: STRINGS.CODEX.B7_INSPACE.TITLE
+disabled: False
+search_only: False
+category: JOURNALS
+sort_string: 在太空中
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 在太空中
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：二
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+  lock_id: journal_inspace
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <smallcaps>[声纹识别系统初始化完成]
+
+      [识别编号：B835、B997]</smallcaps>
+
+
+      [录音开始]
+
+
+      安萨里博士：嘘……
+
+
+      布贝尔博士：啊？我们要在这里做什么？
+
+
+      安萨里博士：一会就知道了，把你的声音放低。
+
+
+      布贝尔博士：我们允许在这里吗？
+
+
+      安萨里博士：不。但相信我，等我找到那个东西，一切都是值得的。
+
+
+      布贝尔博士：找什么？
+
+
+      安萨里博士：就那个！
+
+
+      布贝尔博士：鼠笼喂食的视频？那有什么好……等下，它们——？
+
+
+      安萨里博士：在漂浮！
+
+
+      布贝尔博士：你的意思是它们在——？
+
+
+      安萨里博士：在太空！
+
+
+      布贝尔博士：我们的热敏鼠在太空？！
+
+
+      安萨里博士：是的！是“苹果车”和“樱桃派”还有小“香蕉面包”。看看它们多开心啊。我们创造了航天鼠！
+
+
+      布贝尔博士：快乐的航天鼠。
+
+
+      安萨里博士：我们创造了快乐的航天鼠！
+
+
+      布贝尔博士：嘘……有人过来了。
+
+
+      [录音结束]
+    style: Body
+  layout: Vertical
+  lock_id: journal_inspace

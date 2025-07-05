@@ -1,0 +1,76 @@
+id: ICESCULPTURE
+parent_id: BUILDCATEGORYFURNITURE
+name: 冰雕塑块
+disabled: False
+search_only: False
+category: BUILDCATEGORYFURNITURE
+sort_string: 冰雕塑块
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="ICESCULPTURE">冰雕塑块</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 艺术表达
+    style: Body
+    image: research_type_alpha_icon
+    link_id: artistry
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: icesculpture_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      大幅增加<link="DECOR">装饰度</link>，从而提升<link="MORALE">士气</link>。
+
+
+      必须由复制人雕刻。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    需要技能的复制人的操作'
+    tooltip: 只有具有<link="ARTING1">艺术基础</link>技能或<link="BOOSTERART1">大师技艺增幅块</link>的复制人才能使用这个建筑
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    复制人的<link="ARTING1">创作</link>'
+    tooltip: 需要具有表现力的复制人对这个物体进行<style="KKeyword">艺术</style>创造
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：2格宽x2格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：120秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="ICE">冰</link>400千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：+35（范围：8格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>8</b>格内提高<b><b>+35</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>类别</b>
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    <link="REQUIREMENTCLASSDECORATION">装饰物</link>'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>易融化。</i>
+    style: Body
+  layout: Vertical

@@ -1,0 +1,28 @@
+id: MYLOG9
+name: 仅剩一人
+title: STRINGS.CODEX.MYLOG.BODY.ONEDUPELEFT.TITLE
+disabled: False
+search_only: False
+category: MYLOG
+sort_string: 仅剩一人
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 仅剩一人
+    style: Title
+  - widget_type: CodexText
+    text: >+
+      我的殖民地现在处于一个危急的状态中。我的复制人已经都死亡了，只剩下一个工作者来执行所有维持殖民地的任务。
+
+
+      如果有足够多的时间，我可以打印更多复制人来补充人口，但……要是在这之前那名复制人也死了，协议就会强迫我进入深度睡眠状态，以希望我再次醒来时周围会更适合居住。
+
+
+      我最好避免如此。
+
+    style: Body
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical
+  lock_id: onedupeleft

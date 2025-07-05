@@ -1,0 +1,171 @@
+id: NIOBIUM
+parent_id: ELEMENTSSOLID
+name: 铌
+disabled: False
+search_only: False
+category: ELEMENTSSOLID
+sort_string: 铌
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="NIOBIUM">铌</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: niobium_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: niobium_0__ui
+      text1: 铌
+      text2: 1000克
+      link_id: niobium
+    produce:
+    - image: element_liquid
+      color: 5EFDADFF
+      text1: 熔融铌
+      text2: 1000克
+      link_id: moltenniobium
+    fabricator:
+      image: crew_state_temp_up
+      text1: 2476.9ºC
+      tooltip: 温度高于2476.9ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换于
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: 5EFDADFF
+      text1: 熔融铌
+      text2: 1000克
+      link_id: moltenniobium
+    produce:
+    - image: niobium_0__ui
+      text1: 铌
+      text2: 1000克
+      link_id: niobium
+    fabricator:
+      image: crew_state_temp_down
+      text1: 2476.9ºC
+      tooltip: 温度低于2476.9ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 导热质
+    require:
+    - image: niobium_0__ui
+      text1: 铌
+      text2: 5千克
+      link_id: niobium
+    - image: tungsten_refined_0__ui
+      text1: 钨
+      text2: 95千克
+      link_id: tungsten
+    produce:
+    - image: temp_conductor_0__ui
+      text1: 导热质
+      text2: 100千克
+      link_id: tempconductorsolid
+    fabricator:
+      image: supermaterial_refinery_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 分子熔炉
+      text2: 80秒
+      link_id: supermaterialrefinery
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 金属精炼器
+    require:
+    - image: temp_conductor_0__ui
+      text1: 导热质
+      text2: 100千克
+      link_id: tempconductorsolid
+    produce:
+    - image: niobium_0__ui
+      text1: 铌
+      text2: 100千克
+      link_id: niobium
+    fabricator:
+      image: metalrefinery_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 金属精炼器
+      text2: 40秒
+      link_id: metalrefinery
+  - widget_type: CodexRecipePanel
+    text: 碎石机
+    require:
+    - image: temp_conductor_0__ui
+      text1: 导热质
+      text2: 100千克
+      link_id: tempconductorsolid
+    produce:
+    - image: niobium_0__ui
+      text1: 铌
+      text2: 50千克
+      link_id: niobium
+    - image: sand_0__ui
+      text1: 沙子
+      text2: 50千克
+      link_id: sand
+    fabricator:
+      image: rockrefinery_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 碎石机
+      text2: 40秒
+      link_id: rockcrusher
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      (Nb) 铌是一种稀有金属，在冶金和超导体<link="RESEARCH">研究</link>中有着广泛的应用。
+
+
+      资源种类：稀有资源
+
+      熔点：2476.9ºC
+
+      硬度：<color=#A3649AFF>50（非常坚硬）</color>
+
+
+      比热容：0.265 (DTU/g)/ºC
+
+      热导率：54.000 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.49
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：<link="METAL">金属矿石</link>, <link="REFINEDMETAL">精炼金属</link>, <link="BUILDABLEANY">一般建造材料</link>, <link="ELEMENTSSOLID">固体</link>, 稀有资源
+
+      <style="KKeyword">装饰</style>：+50%
+
+      <style="KKeyword">过热温度</style>：+500ºC
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

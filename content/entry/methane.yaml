@@ -1,0 +1,204 @@
+id: METHANE
+parent_id: ELEMENTSGAS
+name: 天然气
+disabled: False
+search_only: False
+icon_color: FF6E0FFF
+category: ELEMENTSGAS
+sort_string: 天然气
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="METHANE">天然气</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    color: FF6E0FFF
+    image: element_gas
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_gas
+      color: FF6E0FFF
+      text1: 天然气
+      text2: 1000克
+      link_id: methane
+    produce:
+    - image: element_liquid
+      color: FF9D00FF
+      text1: 液态甲烷
+      text2: 1000克
+      link_id: liquidmethane
+    fabricator:
+      image: crew_state_temp_down
+      text1: -161.5ºC
+      tooltip: 温度低于-161.5ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换于
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: FF9D00FF
+      text1: 液态甲烷
+      text2: 1000克
+      link_id: liquidmethane
+    produce:
+    - image: element_gas
+      color: FF6E0FFF
+      text1: 天然气
+      text2: 1000克
+      link_id: methane
+    fabricator:
+      image: crew_state_temp_up
+      text1: -161.5ºC
+      tooltip: 温度高于-161.5ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_gas
+      color: FF6E0FFF
+      text1: 天然气
+      text2: 54千克/周期
+      link_id: methane
+    produce:
+    - image: element_liquid
+      color: 474506FF
+      text1: 污染水
+      text2: 40.5千克/周期
+      link_id: dirtywater
+    - image: element_gas
+      color: 000000FF
+      text1: 二氧化碳
+      text2: 13.5千克/周期
+      link_id: carbondioxide
+    fabricator:
+      image: generatormethane_0__ui
+      text1: 天然气发电机
+      link_id: METHANEGENERATOR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_gas
+      color: FF6E0FFF
+      text1: 天然气
+      text2: 60千克/周期
+      link_id: methane
+    produce:
+    - image: element_gas
+      color: 000000FF
+      text1: 二氧化碳
+      text2: 15千克/周期
+      link_id: carbondioxide
+    fabricator:
+      image: cookstation_gourmet_0__ui
+      text1: 燃气灶
+      link_id: GOURMETCOOKINGSTATION
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_gas
+      color: FF6E0FFF
+      text1: 天然气
+      text2: 12千克/周期
+      link_id: methane
+    produce:
+    - image: element_gas
+      color: 000000FF
+      text1: 二氧化碳
+      text2: 3000克/周期
+      link_id: carbondioxide
+    fabricator:
+      image: dehydrator_0__ui
+      text1: 脱水机
+      link_id: FOODDEHYDRATOR
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: 301265FF
+      text1: 原油
+      text2: 6吨/周期
+      link_id: crudeoil
+    produce:
+    - image: element_liquid
+      color: FFC325FF
+      text1: 石油
+      text2: 3000千克/周期
+      link_id: petroleum
+    - image: element_gas
+      color: FF6E0FFF
+      text1: 天然气
+      text2: 54千克/周期
+      link_id: methane
+    fabricator:
+      image: oilrefinery_0__ui
+      text1: 原油精炼器
+      link_id: OILREFINERY
+  - widget_type: CodexConversionPanel
+    require:
+    - image: gassygrass_0__ui
+      text1: 释气草
+      text2: 50% 生长进度/周期
+      link_id: gasgrass
+    produce:
+    - image: element_gas
+      color: FF6E0FFF
+      text1: 天然气
+      text2: 10千克/周期
+      link_id: methane
+    fabricator:
+      image: gassy_moo_0__ui
+      text1: 释气海牛
+      link_id: MOO
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      天然气是各种<link="ELEMENTSGAS">气态</link>烷烃的混合物。
+
+
+      它可用于生产<link="POWER">电力</link>。
+
+
+      资源种类：不可呼吸的气体
+
+      凝点：-161.5ºC
+
+
+      比热容：2.191 (DTU/g)/ºC
+
+      热导率：0.035 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.07
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：<link="COMBUSTIBLEGAS">可燃气体</link>, 气体, 不可呼吸的气体
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

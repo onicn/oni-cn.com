@@ -1,0 +1,83 @@
+id: LUXURYBED
+parent_id: BUILDCATEGORYFURNITURE
+name: 舒适的床
+disabled: False
+search_only: False
+category: BUILDCATEGORYFURNITURE
+sort_string: 舒适的床
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="LUXURYBED">舒适的床</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 豪华家装
+    style: Body
+    image: research_type_alpha_icon
+    link_id: luxury
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: elegantbed_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      为一名复制人提供睡眠区并恢复额外的体力。
+
+
+      复制人晚上会自动在指定的床位上睡觉。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    复制人分配'
+    tooltip: 只有分配的复制人才可使用这个设备
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：4格宽x2格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：10秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="PLASTIC">塑料</link>200千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    体力: +200%/周期'
+    tooltip: ''
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="HEALTH">生命值</link>: +25/周期'
+    tooltip: ''
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：+15（范围：3格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>3</b>格内提高<b><b>+15</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>类别</b>
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    <link="REQUIREMENTCLASSBEDTYPE">床位</link>'
+    style: Body
+  - widget_type: CodexText
+    text: '    单个<link="LUXURYBED">舒适的床</link>'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>比起床铺，复制人更喜欢睡在舒适的床上，且睡醒后会感到更舒适。</i>
+    style: Body
+  layout: Vertical

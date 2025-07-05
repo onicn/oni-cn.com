@@ -1,0 +1,56 @@
+id: CLONEDRATS
+name: 初步成功
+title: STRINGS.CODEX.A1_CLONEDRATS.TITLE
+disabled: False
+search_only: False
+category: RESEARCHNOTES
+sort_string: 初步成功
+required_dlc_ids:
+- EXPANSION1_ID
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 初步成功
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：二
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+  lock_id: notes_clonedrats
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <smallcaps>[声纹识别系统初始化完成]
+
+      [识别编号：B111]</smallcaps>
+
+
+      [录音开始]
+
+
+      [清嗓子声。]
+
+
+      B111：我们目前正在可靠地打印健康的活的实验体，虽然所有实验体都因克隆过程而表现出异常特质。
+
+
+      [可以听到吱吱声。]
+
+
+      B111：到目前为止，我们在所有实验体中观察到了不同严重程度的异常发声、缓慢的成长或者缺少某些部位。这可能是由于复制过程中跳过或者加速了某些关键成长发育期所导致的。但值得高兴的是，所有的实验体的脑部状态都是相当完善的。
+
+
+      [吱吱声。]
+
+
+      B111：而且，他-他们看起来很快乐。
+
+
+      B111：布鲁萨德博士，实验记录完成。
+
+
+      [录音结束]
+    style: Body
+  layout: Vertical
+  lock_id: notes_clonedrats

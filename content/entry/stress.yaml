@@ -1,0 +1,26 @@
+id: STRESS
+name: 压力
+title: STRINGS.CODEX.STRESS.TITLE
+disabled: False
+search_only: False
+category: SYSTEMS
+sort_string: <link="STRESS">压力</link>
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 压力
+    style: Subtitle
+  - widget_type: CodexText
+    text: >+
+      复制人在殖民地中的经历影响他们的压力水平。当他们有负面经历或者未满足的期望时压力就会增加。如果<link="MORALE">士气</link>被满足，压力就会随时间降低。如果压力水平过高，复制人的行为就会变糟。
+
+    style: Body
+  - widget_type: CodexText
+    text: 压力反应
+    style: Subtitle
+  - widget_type: CodexText
+    text: >+
+      如果复制人有着非常高的压力，他们就会进行一次压力反应行为。每名复制人有着不同的压力反应行为——但所有的压力反应都不是好事。压力反应行为完成后，复制人的压力就会降低。然而，如果致压因素仍未解决，他们很有可能再来一次压力反应。
+
+    style: Body
+  layout: Vertical

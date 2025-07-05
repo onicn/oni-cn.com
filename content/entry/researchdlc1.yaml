@@ -1,0 +1,50 @@
+id: RESEARCHDLC1
+name: 研究
+title: STRINGS.CODEX.RESEARCHDLC1.TITLE
+disabled: False
+search_only: False
+category: SYSTEMS
+sort_string: <link="RESEARCHDLC1">研究</link>
+required_dlc_ids:
+- EXPANSION1_ID
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 研究
+    style: Subtitle
+  - widget_type: CodexText
+    text: >+
+      做研究可以为殖民地解锁新的建筑类型。复制人可在<link="RESEARCHCENTER">研究站</link>进行研究。
+
+    style: Body
+  - widget_type: CodexText
+    text: 研究任务
+    style: Subtitle
+  - widget_type: CodexText
+    text: >+
+      一旦殖民地的研究站有足够多的研究点，选中的研究任务就会完成。“科学”属性高的复制人会比其他低的复制人更快地产生研究点。
+
+    style: Body
+  - widget_type: CodexText
+    text: 研究类型
+    style: Subtitle
+  - widget_type: CodexText
+    text: >+
+      高级研究任务需要特殊研究站以生成正确种类的研究点。这些研究站通常会消耗更高级的资源。
+
+
+      使用更高等级的研究站同样也需要复制人习得更高等级的研究<link="ROLES">技能</link>。
+
+
+      基础研究可在<link="RESEARCHCENTER">研究站</link>进行
+
+      高级研究可在<link="ADVANCEDRESEARCHCENTER">超级计算机</link>进行
+
+      星际研究可在<link="COSMICRESEARCHCENTER">虚拟天象仪</link>进行
+
+      应用科学研究可在<link="NUCLEARRESEARCHCENTER">材料研究终端</link>进行
+
+      数据分析研究可在<link="ORBITALRESEARCHCENTER">轨道数据收集实验仪</link>进行
+
+    style: Body
+  layout: Vertical

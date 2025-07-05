@@ -1,0 +1,54 @@
+id: NEWSECURITY
+name: 新安保方案
+title: STRINGS.CODEX.A3_NEWSECURITY.TITLE
+disabled: False
+search_only: False
+category: NOTICES
+sort_string: 新安保方案
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 新安保方案
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：无
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+  lock_id: misc_newsecurity
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <smallcaps><b>标题：新安保方案</b>
+
+      发件人：<b>管理员</b> <alpha=#AA><admin@gravitas.nova></color>
+
+      收件人：<b>全体</b></smallcaps>
+
+      ------------------
+
+
+      <indent=5%>所有人员请注意
+
+
+      我们当前正在对研究所安保系统进行重大调整，可能会影响您的工作流程和通行权。
+
+
+      使用该系统时，您只需脱下所有手套并将手放在指定的扫描区域，然后等待系统验证您的员工身份。
+
+
+      请注意
+
+
+      所有电子门卡必须通过[受屏蔽]交还前台。如有疑问或需重新安排，请通过[受屏蔽]@GRAVITAS.NOVA联系安保部门。
+
+
+      谢谢。
+
+
+      - 管理员
+
+      庄严科技</indent>
+    style: Body
+  layout: Vertical
+  lock_id: misc_newsecurity

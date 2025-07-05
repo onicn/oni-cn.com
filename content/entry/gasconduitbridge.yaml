@@ -1,0 +1,61 @@
+id: GASCONDUITBRIDGE
+parent_id: BUILDCATEGORYHVAC
+name: 气体管桥
+disabled: False
+search_only: False
+category: BUILDCATEGORYHVAC
+sort_string: 气体管桥
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="GASCONDUITBRIDGE">气体管桥</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 通风
+    style: Body
+    image: research_type_alpha_icon
+    link_id: gaspiping
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: utilitygasbridge_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      让一条<link="GASPIPING">气体管道</link>可以越过另一条气体管道，而不会连到一起。
+
+
+      可穿过墙体和地面。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="GASPIPING">气体输入管道</link>'
+    tooltip: 必须从<link="GASCONDUIT">气体管道</link>系统中接收<style="KKeyword">气体</style>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="GASPIPING">气体输出管道</link>'
+    tooltip: 必须通过<link="GASCONDUIT">气体管道</link>系统排出<style="KKeyword">气体</style>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：3格宽x1格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：3秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="BUILDABLERAW">矿物原料</link>50千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>分离管道系统可以防止建筑被混杂的内容物损坏。</i>
+    style: Body
+  layout: Vertical

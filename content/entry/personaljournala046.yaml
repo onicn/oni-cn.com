@@ -1,0 +1,57 @@
+id: PERSONALJOURNALA046
+name: 个人日志：A046
+title: STRINGS.CODEX.A1_A046.TITLE
+disabled: False
+search_only: False
+category: JOURNALS
+sort_string: 个人日志：A046
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 个人日志：A046
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：无
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+  lock_id: journal_A046_1
+- contents:
+  - widget_type: CodexText
+    text: >
+      自我们的第一款产品上市以来，庄严科技一直处在飞速发展之中。我刚刚看了一些新员工，他们完全还是些孩子呢！虽然跟我期望的不太一样，不过我还从来没有指导过别人，这正好是一个机会，应该会很有趣！
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: journal_A046_1
+- contents:
+  - widget_type: CodexText
+    text: >
+      好吧，指导工作并没有像我预期的那样发展。事实证明，这些年轻的员工并不需要我向他们展示各种技巧。实际上，由于研究所不再使用刷卡进入的做法，我曾经被拦在了自己的实验室外面进不去，导致我不得不向一位好心的年轻人请教如何开门。我是不是看起来很愚蠢呢？
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: journal_A046_2
+- contents:
+  - widget_type: CodexText
+    text: >
+      好吧，那可能不是唯一令人尴尬的地方，对吧？其中一名新员工将在我的下一个项目中担任团队负责人。
+
+
+      当我刚开始的时候，亲手取样一整排试管样品的做法都是很寻常的事。但现在，一台机器可以在几秒钟之内完成数百支试管的取样工作。谁知道在下一个10年或20年之后，这份工作又会变成什么样子。那个时候，我还会在这里吗？
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: journal_A046_3
+- contents:
+  - widget_type: CodexText
+    text: >
+      那位曾在前几天帮我开门的好心年轻人，克劳斯先生，他绝对是一个天使。他人真的很好，帮我处理了这个麻烦的电子邮件系统，甚至还教会了我如何将研究笔记数字化。我从他那里学到了很多东西。结果，我并不是指导者，而是被指导者！如果不会被嘲笑的话，我愿意承认此事。不管怎样，多亏了克劳斯的帮助，我觉得现在的我能够更好地处理这里的事情。事实证明，活到老学到老！
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: journal_A046_4

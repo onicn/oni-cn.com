@@ -1,0 +1,105 @@
+id: RESEARCHCENTER
+parent_id: BUILDCATEGORYEQUIPMENT
+name: 研究站
+disabled: False
+search_only: False
+category: BUILDCATEGORYEQUIPMENT
+sort_string: 研究站
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="RESEARCHCENTER">研究站</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: research_center_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      进行<link="RESEARCH">基础研究</link>以解锁新技术。
+
+
+      消耗<link="DIRT">泥土</link>。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DIRT">泥土</link>：每<link="RESEARCH">研究</link>点消耗<style="consumed">50千克</style>'
+    tooltip: 这个研究站每生成一个<style="KKeyword">研究点</style>会消耗<style="consumed">50千克</style><style="KKeyword"><link="DIRT">泥土</link></style>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="POWER">电力</link>：60瓦'
+    tooltip: 必须与至少有<style="consumed">60瓦</style>可用<style="KKeyword">电力</style>的电路相连
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    复制人的操作'
+    tooltip: 必须有复制人来才能使这个建筑运行
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：2格宽x2格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：30秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="METAL">金属矿石</link>400千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    基础研究'
+    tooltip: 产生<style="KKeyword">基础研究</style>研究点
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="HEAT">热量</link>：+1.13千复制热/秒'
+    tooltip: >-
+      每秒产生<style="produced">1.13千复制热</style>
+
+
+      总<style="KKeyword">温度</style>变化受到加热物质的材料属性影响：
+          • 质量
+          • 比热容
+          • 表面积
+          • 隔热厚度
+          • 热导率
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    过热<link="HEAT">温度</link>：75ºC'
+    tooltip: 达到<b>75ºC</b>时开始过热
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LOGIC">信号输入端</link>'
+    tooltip: 当接收到信号时，输入端会使这个建筑一种状态发生变化
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    启用/禁用'
+    tooltip: >-
+      输入端行为：
+
+      • <b><style="logic_on">绿色信号</style></b>：启用建筑
+
+      • <b><style="logic_off">红色信号</style></b>：禁用建筑
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>类别</b>
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    <link="REQUIREMENTCLASSSCIENCEBUILDING">科学建筑</link>'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>研究站对于解锁所有等级的研究是必不可少的。</i>
+    style: Body
+  layout: Vertical

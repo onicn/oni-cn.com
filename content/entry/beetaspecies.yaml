@@ -1,0 +1,148 @@
+id: BEETASPECIES
+parent_id: CREATURES
+name: 辐射蜂
+disabled: False
+search_only: False
+category: CREATURES
+sort_string: <link="BEETASPECIES">辐射蜂</link>
+required_dlc_ids:
+- EXPANSION1_ID
+sub_entries:
+- id: Bee
+  parent_id: BeetaSpecies
+  name: <link="BEE">辐射蜂</link>
+  disabled: False
+  sort_string: 辐射蜂
+- id: BeeHive
+  parent_id: BeetaSpecies
+  name: <link="BEEHIVE">辐射蜂巢</link>
+  disabled: False
+  sort_string: 辐射蜂巢
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 辐射蜂
+    style: Title
+  - widget_type: CodexText
+    text: 攻击性小动物
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      辐射蜂是一种昆虫生物，与其生活的放射性环境之间有着共生关系。
+
+
+      就像蜜蜂收集花蜜并在蜂巢中将其加工成蜂蜜一样，辐射蜂通过在辐射蜂巢中进行同位素分离的复杂过程，将<link="URANIUMORE">铀矿</link>变为<link="ENRICHEDURANIUM">浓缩铀</link>。
+
+
+      当第一次观察辐射蜂的富集过程时，许多科学家惊讶地发现，就算与最先进的工业技术相比，这些昆虫与蜂巢的组合也要高效不少。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 条目（2/2）
+    style: Subtitle
+  - widget_type: CodexText
+    text: <link="BEE">辐射蜂</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="BEEHIVE">辐射蜂巢</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: bee_0__ui
+  - widget_type: CodexImage
+    image: baby_blarva_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexText
+    text: >-
+      辐射蜂是一种有敌意的小动物，在<link="RADIATION">放射性</link>环境中生长。
+
+
+      它们经常会为它们的<link="BEEHIVE">辐射蜂巢</link>收集<link="URANIUMORE">铀矿</link>以产生<link="ENRICHEDURANIUM">浓缩铀</link>。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 理想温度
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 舒适范围：<b>-50ºC</b>至<b>0ºC</b>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 存活范围：<b>-100ºC</b>至<b>10ºC</b>'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 寿命
+    style: Subtitle
+  - widget_type: CodexText
+    text: 这种小动物特征<link="CREATURES__GUIDE__FERTILITY">寿命</link>为<b>5周期</b>。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 所需空间
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 当房间空间对每只小动物平均少于<b>4格</b>时会感到<link="CREATURES__GUIDE__MOOD">拥挤</link>。'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 当房间小于<b>4格</b>时会感到<link="CREATURES__GUIDE__MOOD">封闭</link>。'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: beehive_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      由<link="BEE">辐射蜂</link>制成的巢，有适中的<link="RADIATION">放射性</link>。
+
+
+      当被辐射蜂使用时，将<link="URANIUMORE">铀矿</link>转化为<link="ENRICHEDURANIUM">浓缩铀</link>。
+
+      如果地面被摧毁则无法工作。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 食物
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: radium_0__ui
+      text1: 铀矿
+      text2: 10千克/周期
+      link_id: uraniumore
+    produce:
+    - image: enriched_uranium_0__ui
+      text1: 浓缩铀
+      text2: 9千克/周期
+      link_id: enricheduranium
+    fabricator:
+      image: beehive_0__ui
+      text1: 辐射蜂巢
+      link_id: BEEHIVE
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical

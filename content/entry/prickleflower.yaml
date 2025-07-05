@@ -1,0 +1,135 @@
+id: PRICKLEFLOWER
+parent_id: PLANTS
+name: 毛刺花
+disabled: False
+search_only: False
+category: PLANTS
+sort_string: 毛刺花
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 毛刺花
+    style: Title
+  - widget_type: CodexText
+    text: 食用性植物
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      毛刺浆果的卡路里含量高且生长速度相对较快，因此被广泛栽培。
+
+
+      由于其可食用果实外表包被着密集的倒刺，因此食用之前需要做特别处理。
+
+
+      实际上，“毛刺浆果”一词用词不当，因为它不是植物学定义的“浆果”，而是由许多小型果实组成的聚合果。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: bristleblossom_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 成长自
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: seed_bristleblossom_0__ui
+  - widget_type: CodexText
+    text: <link="PRICKLEFLOWER">毛刺花种子</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 详情
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexText
+    text: 毛刺花能产出<link="PRICKLEFRUIT">毛刺浆果</link>，一种可食用的多刺花苞。
+    style: Body
+  - widget_type: CodexText
+    text: >-
+      <b>生长需求</b>：
+          • 最大<link="RADIATION">辐射</link>：4,600拉德/周期
+          • 生长周期：6.0周期
+          • <link="LIGHT">照明</link>：200勒克斯
+          • <link="HEAT">温度</link>：5至30ºC
+          • <link="ATMOSPHERE">气压</link>：最低150克
+          • <link="ATMOSPHERE">环境</link>：
+              • <link="OXYGEN">氧气</link>
+              • <link="CONTAMINATEDOXYGEN">污染氧</link>
+              • <link="CARBONDIOXIDE">二氧化碳</link>
+          • <link="WATER">水</link>：-20千克/周期
+          • 农地
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      <b>效果</b>：
+          • <link="POLLENGERMS">花香</link>迸散：1,000,000个病菌
+          • <link="PRICKLEFRUIT">毛刺浆果</link>：1,600千卡
+          • 基础<link="PLANTS">种子</link>收获几率：10%
+          • <link="DECOR">装饰度</link>：+15（范围：2格）
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 20千克/周期
+      link_id: water
+    produce:
+    - image: bristleberry_0__ui
+      text1: 毛刺浆果
+      text2: 267千卡/周期
+      tooltip: 品质：糟糕 [0]
+      link_id: pricklefruit
+    fabricator:
+      image: bristleblossom_0__ui
+      text1: 毛刺花
+      link_id: PRICKLEFLOWER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: bristleblossom_0__ui
+      text1: 毛刺花
+      text2: 10% 生长进度/周期
+      link_id: prickleflower
+    produce:
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 5千克/周期
+      link_id: dirt
+    fabricator:
+      image: ice_floof_0__ui
+      text1: 狐鹿
+      link_id: WOODDEER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: bristleblossom_0__ui
+      text1: 毛刺花
+      text2: 17% 生长进度/周期
+      link_id: prickleflower
+    produce:
+    - image: phosphorite_0__ui
+      text1: 磷矿
+      text2: 9千克/周期
+      link_id: phosphorite
+    fabricator:
+      image: drecko_0__ui
+      text1: 滑鳞壁虎
+      link_id: DRECKOPLASTIC
+  layout: Vertical

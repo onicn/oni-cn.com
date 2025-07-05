@@ -1,0 +1,119 @@
+id: HARDSKINBERRYPLANT
+parent_id: PLANTS
+name: 刺壳果灌木
+disabled: False
+search_only: False
+category: PLANTS
+sort_string: 刺壳果灌木
+required_dlc_ids:
+- DLC2_ID
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 刺壳果灌木
+    style: Title
+  - widget_type: CodexText
+    text: 食用性植物
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      刺壳果灌木能产生一种营养丰富的果实，与榴莲属的关系较远。
+
+
+      那些发现刺壳果果肉的扑鼻香气的人应当站在植株附近将其吃完；灌木轻微摇曳能产生一种吹拂效果，促进空气流动。
+
+
+      建议穿不露脚趾的鞋，因为赤脚接触这种植物的尖锐种子会不可避免地导致感染。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: ice_berry_bush_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 成长自
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: seed_ice_berry_0__ui
+  - widget_type: CodexText
+    text: <link="HARDSKINBERRYPLANT">刺壳果灌木种子</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 详情
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexText
+    text: 刺壳果灌木可产出<link="HARDSKINBERRY">刺壳果</link>，一种有用但味道香到几乎难以忍受的<link="FOOD">食物</link>。
+    style: Body
+  - widget_type: CodexText
+    text: >-
+      <b>生长需求</b>：
+          • 最大<link="RADIATION">辐射</link>：4,600拉德/周期
+          • 生长周期：3.0周期
+          • <link="HEAT">温度</link>：-55至-14ºC
+          • <link="ATMOSPHERE">气压</link>：最低150克
+          • <link="ATMOSPHERE">环境</link>：
+              • <link="OXYGEN">氧气</link>
+              • <link="CONTAMINATEDOXYGEN">污染氧</link>
+              • <link="CARBONDIOXIDE">二氧化碳</link>
+          • <link="PHOSPHORITE">磷矿</link>：-5千克/周期
+          • 农地
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      <b>效果</b>：
+          • <link="HARDSKINBERRY">刺壳果</link>：800千卡
+          • 基础<link="PLANTS">种子</link>收获几率：10%
+          • <link="DECOR">装饰度</link>：-10（范围：2格）
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: phosphorite_0__ui
+      text1: 磷矿
+      text2: 5千克/周期
+      link_id: phosphorite
+    produce:
+    - image: iceberry_0__ui
+      text1: 刺壳果
+      text2: 267千卡/周期
+      tooltip: 品质：恶心 [-1]
+      link_id: hardskinberry
+    fabricator:
+      image: ice_berry_bush_0__ui
+      text1: 刺壳果灌木
+      link_id: HARDSKINBERRYPLANT
+  - widget_type: CodexConversionPanel
+    require:
+    - image: ice_berry_bush_0__ui
+      text1: 刺壳果灌木
+      text2: 20% 生长进度/周期
+      link_id: hardskinberryplant
+    produce:
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 5千克/周期
+      link_id: dirt
+    fabricator:
+      image: ice_floof_0__ui
+      text1: 狐鹿
+      link_id: WOODDEER
+  layout: Vertical

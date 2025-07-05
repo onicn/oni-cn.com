@@ -1,0 +1,49 @@
+id: GASCONDUIT
+parent_id: BUILDCATEGORYHVAC
+name: 气体管道
+disabled: False
+search_only: False
+category: BUILDCATEGORYHVAC
+sort_string: 气体管道
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="GASCONDUIT">气体管道</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 通风
+    style: Body
+    image: research_type_alpha_icon
+    link_id: gaspiping
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: utilities_gas_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      在<link="GASPIPING">输出口</link>和<link="GASPIPING">输入口</link>之间输送<link="ELEMENTSGAS">气体</link>。
+
+
+      可穿过墙体和地面。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：1格宽x1格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：3秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="BUILDABLERAW">矿物原料</link>或<link="METAL">金属矿石</link>25千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>气体管道可用来连接通风建筑的输入口和输出口。</i>
+    style: Body
+  layout: Vertical

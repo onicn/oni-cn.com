@@ -1,0 +1,56 @@
+id: ATOMICONRECRUITMENT
+name: 来自艾特密卡的结果
+title: STRINGS.CODEX.A4_ATOMICONRECRUITMENT.TITLE
+disabled: False
+search_only: False
+category: EMAILS
+sort_string: 来自艾特密卡的结果
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 来自艾特密卡的结果
+    style: Title
+  - widget_type: CodexText
+    text: 未加密
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+  lock_id: email_atomiconrecruitment
+- contents:
+  - widget_type: CodexText
+    text: >
+      <smallcaps>收件人：<b>斯特恩主管</b><alpha=#AA><size=12> <jstern@gravitas.nova></size></color>
+
+      发件人：<b>琼斯博士</b><alpha=#AA><size=12> <ejones@gravitas.nova></smallcaps>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_atomiconrecruitment
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <indent=5%>主管，
+
+
+      一切顺利。布鲁萨德一开始不愿意，但鉴于她的工作性质和最近发生的事，她没有选择的余地。
+
+
+      她可以在你方便的时候开始工作。</indent>
+    style: Body
+  - widget_type: CodexText
+    text: >2
+
+      祝好，
+
+      琼斯博士
+
+
+      <size=11>信息统计部
+
+      庄严科技</size>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_atomiconrecruitment

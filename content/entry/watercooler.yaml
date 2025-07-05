@@ -1,0 +1,88 @@
+id: WATERCOOLER
+parent_id: BUILDCATEGORYFURNITURE
+name: 饮水机
+disabled: False
+search_only: False
+category: BUILDCATEGORYFURNITURE
+sort_string: 饮水机
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="WATERCOOLER">饮水机</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 职业管理
+    style: Body
+    image: research_type_alpha_icon
+    link_id: jobs
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: watercooler_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      为复制人提供休息时的聚集场所。
+
+
+      提升复制人的<link="MORALE">士气</link>。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    优选房间：娱乐室'
+    tooltip: 建造在<style="KKeyword">娱乐室</style>内时，这个建筑会获得额外的效果或功能
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="WATER">水</link>：每次消耗1000克'
+    tooltip: 每次使用消耗<style="consumed">1000克</style><style="KKeyword"><link="WATER">水</link></style>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="MILK">咸乳</link>：每次消耗1000克'
+    tooltip: 每次使用消耗<style="consumed">1000克</style><style="KKeyword"><link="MILK">咸乳</link></style>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：2格宽x2格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：10秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="BUILDABLERAW">矿物原料</link>400千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    娱乐'
+    tooltip: 在<style="KKeyword">休息时间</style>提升复制人的<style="KKeyword">士气</style>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    士气: +1'
+    tooltip: ''
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：+10（范围：2格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>2</b>格内提高<b><b>+10</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>类别</b>
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    <link="REQUIREMENTCLASSRECBUILDING">娱乐建筑</link>'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>跟朋友聊天可改善复制人的情绪并降低他们的压力。</i>
+    style: Body
+  layout: Vertical

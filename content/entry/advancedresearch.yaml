@@ -1,0 +1,80 @@
+id: ADVANCEDRESEARCH
+parent_id: TECH
+name: 高级研究
+disabled: False
+search_only: False
+category: TECH
+sort_string: 高级研究
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="ADVANCEDRESEARCH">高级研究</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 我的殖民地要进行更进一步的深入研究时所需的工具。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="JOBS">职业管理</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: research_type_beta_icon
+  - widget_type: CodexText
+    text: <style="KKeyword">高级研究</style>能力
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: research_center2_0__ui
+  - widget_type: CodexText
+    text: <link="ADVANCEDRESEARCHCENTER">超级计算机</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: respeccer_0__ui
+  - widget_type: CodexText
+    text: <link="RESETSKILLSSTATION">技能涤除器</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: telescope_low_0__ui
+  - widget_type: CodexText
+    text: <link="CLUSTERTELESCOPE">望远镜</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: porta_pod_y_0__ui
+  - widget_type: CodexText
+    text: <link="EXOBASEHEADQUARTERS">迷你舱</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: advanced_crafting_table_0__ui
+  - widget_type: CodexText
+    text: <link="ADVANCEDCRAFTINGTABLE">焊接台</link>
+    style: Body
+  layout: Horizontal

@@ -1,0 +1,59 @@
+id: REFRACTIVEDECOR
+parent_id: TECH
+name: 高雅文化
+disabled: False
+search_only: False
+category: TECH
+sort_string: 高雅文化
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="REFRACTIVEDECOR">高雅文化</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 创造极高品质艺术的新方法。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="FINEART">艺术</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: painting_wide_off_0__ui
+  - widget_type: CodexText
+    text: <link="CANVASWIDE">风景画布</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: sculpture_metal_0__ui
+  - widget_type: CodexText
+    text: <link="METALSCULPTURE">金属雕塑块</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: sculpture_wood_0__ui
+  - widget_type: CodexText
+    text: <link="WOODSCULPTURE">木雕塑块</link>
+    style: Body
+  layout: Horizontal

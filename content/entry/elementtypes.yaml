@@ -1,0 +1,60 @@
+id: ELEMENTTYPES
+parent_id: ELEMENTS
+name: 元素属性
+disabled: False
+search_only: False
+category: ELEMENTTYPES
+sort_string: 元素属性
+content_container:
+- contents:
+  - widget_type: CodexLabelWithLargeIcon
+    text: 可燃液体
+    style: BodyWhite
+    image: icon_category_electrical
+    link_id: combustibleliquid
+  layout: Vertical
+- contents:
+  - widget_type: CodexLabelWithLargeIcon
+    text: 可堆肥物
+    style: BodyWhite
+    image: ui_compostable
+    link_id: compostable
+  layout: Vertical
+- contents:
+  - widget_type: CodexLabelWithLargeIcon
+    text: 齿轮油
+    style: BodyWhite
+    image: ui_compostable
+    link_id: lubricatingoil
+  layout: Vertical
+- contents:
+  - widget_type: CodexLabelWithLargeIcon
+    text: 塑料单体
+    style: BodyWhite
+    image: ui_compostable
+    link_id: plastifiableliquid
+  layout: Vertical
+- contents:
+  - widget_type: CodexLabelWithLargeIcon
+    text: 升华物
+    style: BodyWhite
+    image: ui_compostable
+    link_id: sublimating
+  layout: Vertical
+- contents:
+  - widget_type: CodexLabelWithLargeIcon
+    text: 过滤介质
+    style: BodyWhite
+    image: ui_compostable
+    link_id: filter
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: <link="ELEMENTTYPES">元素属性</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- layout: Grid
+- contents:
+  - widget_type: CodexSpacer
+  layout: Vertical

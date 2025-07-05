@@ -1,0 +1,62 @@
+id: SPACEPOWER
+parent_id: TECH
+name: 太空电力
+disabled: False
+search_only: False
+category: TECH
+sort_string: 太空电力
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="SPACEPOWER">太空电力</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 就像……太空能量一样！
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="PRETTYGOODCONDUCTORS">低阻导体</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="ACOUSTICS">扩音器</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: rocket_battery_pack_0__ui
+  - widget_type: CodexText
+    text: <link="BATTERYMODULE">蓄电池舱</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: rocket_solar_panel_module_0__ui
+  - widget_type: CodexText
+    text: <link="SOLARPANELMODULE">太阳能舱</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: rocket_floor_plug_0__ui
+  - widget_type: CodexText
+    text: <link="ROCKETINTERIORPOWERPLUG">电源插座配件</link>
+    style: Body
+  layout: Horizontal

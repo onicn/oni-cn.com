@@ -1,0 +1,70 @@
+id: LOGICPRESSURESENSORLIQUID
+parent_id: BUILDCATEGORYAUTOMATION
+name: 液压传感器
+disabled: False
+search_only: False
+category: BUILDCATEGORYAUTOMATION
+sort_string: 液压传感器
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="LOGICPRESSURESENSORLIQUID">液压传感器</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 改良水管
+    style: Body
+    image: research_type_alpha_icon
+    link_id: improvedliquidpiping
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: switchliquidpressure_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      当<link="ELEMENTSLIQUID">液压</link>处于选定范围时，输出<b><style="logic_on">绿色信号</style></b>或<b><style="logic_off">红色信号</style></b>。
+
+
+      必须浸没在<link="ELEMENTSLIQUID">液体</link>中。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：1格宽x1格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：30秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="REFINEDMETAL">精炼金属</link>25千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LOGIC">信号输出端</link>'
+    tooltip: 当这个建筑状态发生变化时，输出端会输出一个信号
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="ELEMENTSLIQUID">液压</link>'
+    tooltip: >-
+      输出端行为：
+
+      • 若液压处于选定范围内，输出<b><style="logic_on">绿色信号</style></b>
+
+      • 否则，输出<b><style="logic_off">红色信号</style></b>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：-5（范围：1格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>1</b>格内降低<b><b>-5</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>液体不多时，液压传感器就可以告知液泵补充液体。</i>
+    style: Body
+  layout: Vertical

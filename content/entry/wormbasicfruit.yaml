@@ -1,0 +1,174 @@
+id: WORMBASICFRUIT
+parent_id: FOOD
+name: 贫瘠虫果
+disabled: False
+search_only: False
+category: FOOD
+sort_string: 贫瘠虫果
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="WORMBASICFRUIT">贫瘠虫果</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: wormwood_basic_fruit_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      没能正常发育的<link="WORMSUPERFRUIT">虫果</link>。
+
+
+      尽管如此，它仍然可食用，而且略微可口。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 品质：糟糕 [0]
+    style: Body
+  - widget_type: CodexText
+    text: 卡路里：800千卡
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      冷藏温度：4ºC
+
+      深度冷冻温度：-18ºC
+
+      腐烂时间：8.0周期
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 烤虫果仁
+    require:
+    - image: wormwood_basic_fruit_0__ui
+      text1: 贫瘠虫果
+      text2: 800千卡
+      tooltip: 品质：糟糕 [0]
+      link_id: wormbasicfruit
+    produce:
+    - image: wormwood_roast_nuts_0__ui
+      text1: 烤虫果仁
+      text2: 1,200千卡
+      tooltip: 品质：低劣 [+1]
+      link_id: wormbasicfood
+    fabricator:
+      image: cookstation_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 电动烤炉
+      text2: 50秒
+      link_id: cookingstation
+  - widget_type: CodexRecipePanel
+    text: 爆米花
+    require:
+    - image: wormwood_basic_fruit_0__ui
+      text1: 贫瘠虫果
+      text2: 5,600千卡
+      tooltip: 品质：糟糕 [0]
+      link_id: wormbasicfruit
+    - image: wood_0__ui
+      text1: 木材
+      text2: 100千克
+      link_id: wood
+    produce:
+    - image: smokedvegetables_0__ui
+      text1: 爆米花
+      text2: 11,450千卡
+      tooltip: 品质：标准 [+2]
+      link_id: smokedvegetables
+    fabricator:
+      image: smoker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 熏炉
+      text2: 600秒
+      link_id: smoker
+  - widget_type: CodexRecipePanel
+    text: 爆米花
+    require:
+    - image: wormwood_basic_fruit_0__ui
+      text1: 贫瘠虫果
+      text2: 5,600千卡
+      tooltip: 品质：糟糕 [0]
+      link_id: wormbasicfruit
+    - image: peat_0__ui
+      text1: 泥炭
+      text2: 100千克
+      link_id: peat
+    produce:
+    - image: smokedvegetables_0__ui
+      text1: 爆米花
+      text2: 11,450千卡
+      tooltip: 品质：标准 [+2]
+      link_id: smokedvegetables
+    fabricator:
+      image: smoker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 熏炉
+      text2: 600秒
+      link_id: smoker
+  - widget_type: CodexConversionPanel
+    require:
+    - image: wormwood_basic_fruit_0__ui
+      text1: 贫瘠虫果
+      text2: 700千卡/周期
+      tooltip: 品质：糟糕 [0]
+      link_id: wormbasicfruit
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 656.3克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__ui
+      text1: 好吃哈奇
+      link_id: HATCH
+  - widget_type: CodexConversionPanel
+    require:
+    - image: wormwood_basic_fruit_0__ui
+      text1: 贫瘠虫果
+      text2: 700千卡/周期
+      tooltip: 品质：糟糕 [0]
+      link_id: wormbasicfruit
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 875克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__veg_ui
+      text1: 草质哈奇
+      link_id: HATCHVEGGIE
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: sulfur_0__ui
+      text1: 硫
+      text2: 10千克/周期
+      link_id: sulfur
+    produce:
+    - image: wormwood_basic_fruit_0__ui
+      text1: 贫瘠虫果
+      text2: 200千卡/周期
+      tooltip: 品质：糟糕 [0]
+      link_id: wormbasicfruit
+    fabricator:
+      image: wormwood_0__ui
+      text1: 贫瘠虫果芽
+      link_id: WORMPLANT
+  layout: Vertical

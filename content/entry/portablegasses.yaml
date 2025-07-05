@@ -1,0 +1,80 @@
+id: PORTABLEGASSES
+parent_id: TECH
+name: 便携气体
+disabled: False
+search_only: False
+category: TECH
+sort_string: 便携气体
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="PORTABLEGASSES">便携气体</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁能让你轻松移动殖民地中气体的技术。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="GASPIPING">通风</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: gas_bottler_0__ui
+  - widget_type: CodexText
+    text: <link="GASBOTTLER">气体装罐器</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: gas_emptying_station_0__ui
+  - widget_type: CodexText
+    text: <link="BOTTLEEMPTIERGAS">气罐排倒器</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: oxygen_mask_0__ui
+  - widget_type: CodexText
+    text: <style="KKeyword">氧气面罩</style>模型
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: oxygen_mask_locker_0__ui
+  - widget_type: CodexText
+    text: <link="OXYGENMASKLOCKER">氧气面罩存放柜</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: oxygen_checkpoint_arrow_0__ui
+  - widget_type: CodexText
+    text: <link="OXYGENMASKMARKER">氧气面罩检查站</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: oxy_sconce_0__ui
+  - widget_type: CodexText
+    text: <link="OXYSCONCE">氧石烛台</link>
+    style: Body
+  layout: Horizontal

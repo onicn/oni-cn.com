@@ -1,0 +1,66 @@
+id: PRICKLEGRASS
+parent_id: PLANTS
+name: 诱人荆棘
+disabled: False
+search_only: False
+category: PLANTS
+sort_string: 诱人荆棘
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 诱人荆棘
+    style: Title
+  - widget_type: CodexText
+    text: 装饰性植物
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      诱人荆棘与一个亲近的植物品种“<link="PRICKLEFLOWER">毛刺花</link>”形成了共生关系。
+
+
+      诱人荆棘通常在存在毛刺花的区域繁茂生长，因为毛刺花结出的浆果在腐败时会散发出一种稀有化学物质，而诱人荆棘能够吸收这种化学物质来为自己信息素的合成提供补充。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: bristlebriar_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 成长自
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: seed_bristlebriar_0__ui
+  - widget_type: CodexText
+    text: <link="PRICKLEGRASS">诱人荆棘种子</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 详情
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexText
+    text: 诱人荆棘释放出的信息素可让小动物将它们视作特别美丽的植物。
+    style: Body
+  - widget_type: CodexText
+    text: >-
+      <b>生长需求</b>：
+          • 最大<link="RADIATION">辐射</link>：900拉德/周期
+          • <link="HEAT">温度</link>：10至30ºC
+          • <link="ATMOSPHERE">气压</link>：最低150克
+          • <link="ATMOSPHERE">环境</link>：
+              • <link="OXYGEN">氧气</link>
+              • <link="CONTAMINATEDOXYGEN">污染氧</link>
+              • <link="CARBONDIOXIDE">二氧化碳</link>
+          • 农地
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

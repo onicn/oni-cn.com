@@ -1,0 +1,60 @@
+id: TALLOWLUBRICATIONSTICK
+name: 动物油脂齿轮膏
+title: STRINGS.ITEMS.TALLOWLUBRICATIONSTICK.NAME
+disabled: False
+search_only: False
+category: INDUSTRIALINGREDIENTS
+sort_string: <link="LUBRICATIONSTICK">动物油脂齿轮膏</link>
+required_dlc_ids:
+- DLC3_ID
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="LUBRICATIONSTICK">动物油脂齿轮膏</link>
+    style: Title
+  - widget_type: CodexText
+    text: 机械润滑剂
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexImage
+    image: lubricant_applicator_tallow_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      提供少量超丝滑的润滑<link="LUBRICATINGOIL">齿轮油</link>。
+
+
+      可以在<link="APOTHECARY">配药桌</link>生产。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 配药桌
+    require:
+    - image: tallow_0__ui
+      text1: 动物油脂
+      text2: 10千克
+      link_id: tallow
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 70千克
+      link_id: water
+    produce:
+    - image: lubricant_applicator_tallow_0__ui
+      text1: 动物油脂齿轮膏
+      text2: 1单位
+      link_id: lubricationstick
+    fabricator:
+      image: apothecary_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 配药桌
+      text2: 100秒
+      link_id: apothecary
+  layout: Vertical

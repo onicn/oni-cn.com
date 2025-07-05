@@ -1,0 +1,80 @@
+id: ORESCRUBBER
+parent_id: BUILDCATEGORYUTILITIES
+name: 矿石洗涤器
+disabled: False
+search_only: False
+category: BUILDCATEGORYUTILITIES
+sort_string: 矿石洗涤器
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="ORESCRUBBER">矿石洗涤器</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 基于液体的精炼工艺
+    style: Body
+    image: research_type_alpha_icon
+    link_id: liquidfiltering
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: orescrubber_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 杀死<link="RAWMINERAL">矿石</link>上存在的大量<link="DISEASE">病菌</link>。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="GASPIPING">气体输入管道</link>'
+    tooltip: 必须从<link="GASCONDUIT">气体管道</link>系统中接收<style="KKeyword">气体</style>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="CHLORINEGAS">氯气</link>：每次消耗70克'
+    tooltip: 每次使用消耗<style="consumed">70克</style><style="KKeyword"><link="CHLORINEGAS">氯气</link></style>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：3格宽x3格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：30秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="METAL">金属矿石</link>200千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    任意病菌：每次使用-480,000个病菌'
+    tooltip: 每次使用移除<style="consumed">480,000个病菌</style>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    过热<link="HEAT">温度</link>：75ºC'
+    tooltip: 达到<b>75ºC</b>时开始过热
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：+10（范围：2格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>2</b>格内提高<b><b>+10</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>类别</b>
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    <link="REQUIREMENTCLASSINDUSTRIALMACHINERY">工业机械</link>'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>洗涤器可以对新挖出来的材料在送到殖民地之前进行消毒。</i>
+    style: Body
+  layout: Vertical

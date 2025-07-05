@@ -1,0 +1,275 @@
+id: ELEMENTSLIQUID
+parent_id: ELEMENTS
+name: 液体
+disabled: False
+search_only: False
+category: ELEMENTS
+sort_string: 液体
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="ELEMENTSLIQUID">液体</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexLabelWithLargeIcon
+    text: 乙醇
+    style: BodyWhite
+    color: 00FF6AFF
+    image: element_liquid
+    link_id: ethanol
+  - widget_type: CodexLabelWithLargeIcon
+    text: 原油
+    style: BodyWhite
+    color: 301265FF
+    image: element_liquid
+    link_id: crudeoil
+  - widget_type: CodexLabelWithLargeIcon
+    text: 咸乳
+    style: BodyWhite
+    color: CCEEE8FF
+    image: element_liquid
+    link_id: milk
+  - widget_type: CodexLabelWithLargeIcon
+    text: 岩浆
+    style: BodyWhite
+    color: AE0000FF
+    image: element_liquid
+    link_id: magma
+  - widget_type: CodexLabelWithLargeIcon
+    text: 树液
+    style: BodyWhite
+    color: CC8B18FF
+    image: element_liquid
+    link_id: resin
+  - widget_type: CodexLabelWithLargeIcon
+    text: 树脂
+    style: BodyWhite
+    color: CC8B18FF
+    image: element_liquid
+    link_id: naturalresin
+  - widget_type: CodexLabelWithLargeIcon
+    text: 植物润滑油
+    style: BodyWhite
+    color: 98A82FFF
+    image: element_liquid
+    link_id: phytooil
+  - widget_type: CodexLabelWithLargeIcon
+    text: 水
+    style: BodyWhite
+    color: 0063FFFF
+    image: element_liquid
+    link_id: water
+  - widget_type: CodexLabelWithLargeIcon
+    text: 汞
+    style: BodyWhite
+    color: 7393B4FF
+    image: element_liquid
+    link_id: mercury
+  - widget_type: CodexLabelWithLargeIcon
+    text: 污染水
+    style: BodyWhite
+    color: 474506FF
+    image: element_liquid
+    link_id: dirtywater
+  - widget_type: CodexLabelWithLargeIcon
+    text: 浓盐水
+    style: BodyWhite
+    color: ADE9E5FF
+    image: element_liquid
+    link_id: brine
+  - widget_type: CodexLabelWithLargeIcon
+    text: 液态二氧化碳
+    style: BodyWhite
+    color: 878EB7FF
+    image: element_liquid
+    link_id: liquidcarbondioxide
+  - widget_type: CodexLabelWithLargeIcon
+    text: 液态核废料
+    style: BodyWhite
+    color: 81B000FF
+    image: element_liquid
+    link_id: nuclearwaste
+  - widget_type: CodexLabelWithLargeIcon
+    text: 液态氢
+    style: BodyWhite
+    color: FF006EFF
+    image: element_liquid
+    link_id: liquidhydrogen
+  - widget_type: CodexLabelWithLargeIcon
+    text: 液态氧
+    style: BodyWhite
+    color: 579AA9FF
+    image: element_liquid
+    link_id: liquidoxygen
+  - widget_type: CodexLabelWithLargeIcon
+    text: 液态氯
+    style: BodyWhite
+    color: 3AC330FF
+    image: element_liquid
+    link_id: chlorine
+  - widget_type: CodexLabelWithLargeIcon
+    text: 液态甲烷
+    style: BodyWhite
+    color: FF9D00FF
+    image: element_liquid
+    link_id: liquidmethane
+  - widget_type: CodexLabelWithLargeIcon
+    text: 液态石脑油
+    style: BodyWhite
+    color: B000FFFF
+    image: element_liquid
+    link_id: naphtha
+  - widget_type: CodexLabelWithLargeIcon
+    text: 液态硫
+    style: BodyWhite
+    color: FFFF00FF
+    image: element_liquid
+    link_id: liquidsulfur
+  - widget_type: CodexLabelWithLargeIcon
+    text: 液态磷
+    style: BodyWhite
+    color: 908BB7FF
+    image: element_liquid
+    link_id: liquidphosphorus
+  - widget_type: CodexLabelWithLargeIcon
+    text: 熔融玻璃
+    style: BodyWhite
+    color: 79E6FFFF
+    image: element_liquid
+    link_id: moltenglass
+  - widget_type: CodexLabelWithLargeIcon
+    text: 熔融盐
+    style: BodyWhite
+    color: F58970FF
+    image: element_liquid
+    link_id: moltensalt
+  - widget_type: CodexLabelWithLargeIcon
+    text: 熔融碳
+    style: BodyWhite
+    color: 808080FF
+    image: element_liquid
+    link_id: moltencarbon
+  - widget_type: CodexLabelWithLargeIcon
+    text: 熔融蔗糖
+    style: BodyWhite
+    image: element_liquid
+    link_id: moltensucrose
+  - widget_type: CodexLabelWithLargeIcon
+    text: 熔融金
+    style: BodyWhite
+    color: F15300FF
+    image: element_liquid
+    link_id: moltengold
+  - widget_type: CodexLabelWithLargeIcon
+    text: 熔融钢
+    style: BodyWhite
+    color: EE2C51FF
+    image: element_liquid
+    link_id: moltensteel
+  - widget_type: CodexLabelWithLargeIcon
+    text: 熔融钨
+    style: BodyWhite
+    color: E5290EFF
+    image: element_liquid
+    link_id: moltentungsten
+  - widget_type: CodexLabelWithLargeIcon
+    text: 熔融钴
+    style: BodyWhite
+    color: 001DCEFF
+    image: element_liquid
+    link_id: moltencobalt
+  - widget_type: CodexLabelWithLargeIcon
+    text: 熔融铀
+    style: BodyWhite
+    color: A2DD10FF
+    image: element_liquid
+    link_id: moltenuranium
+  - widget_type: CodexLabelWithLargeIcon
+    text: 熔融铁
+    style: BodyWhite
+    color: 5F98ADFF
+    image: element_liquid
+    link_id: molteniron
+  - widget_type: CodexLabelWithLargeIcon
+    text: 熔融铅
+    style: BodyWhite
+    color: F15300FF
+    image: element_liquid
+    link_id: moltenlead
+  - widget_type: CodexLabelWithLargeIcon
+    text: 熔融铌
+    style: BodyWhite
+    color: 5EFDADFF
+    image: element_liquid
+    link_id: moltenniobium
+  - widget_type: CodexLabelWithLargeIcon
+    text: 熔融铜
+    style: BodyWhite
+    color: E0390EFF
+    image: element_liquid
+    link_id: moltencopper
+  - widget_type: CodexLabelWithLargeIcon
+    text: 熔融铝
+    style: BodyWhite
+    color: 5F98ADFF
+    image: element_liquid
+    link_id: moltenaluminum
+  - widget_type: CodexLabelWithLargeIcon
+    text: 熔融铱
+    style: BodyWhite
+    color: CC788EFF
+    image: element_liquid
+    link_id: molteniridium
+  - widget_type: CodexLabelWithLargeIcon
+    text: 熔融镍
+    style: BodyWhite
+    color: BFD9CCFF
+    image: element_liquid
+    link_id: moltennickel
+  - widget_type: CodexLabelWithLargeIcon
+    text: 生物柴油
+    style: BodyWhite
+    color: E1CB69FF
+    image: element_liquid
+    link_id: refinedlipid
+  - widget_type: CodexLabelWithLargeIcon
+    text: 盐水
+    style: BodyWhite
+    color: CED2ECFF
+    image: element_liquid
+    link_id: saltwater
+  - widget_type: CodexLabelWithLargeIcon
+    text: 石油
+    style: BodyWhite
+    color: FFC325FF
+    image: element_liquid
+    link_id: petroleum
+  - widget_type: CodexLabelWithLargeIcon
+    text: 粘性凝胶流体
+    style: BodyWhite
+    color: 4F10B7FF
+    image: element_liquid
+    link_id: viscogel
+  - widget_type: CodexLabelWithLargeIcon
+    text: 粘渣油
+    style: BodyWhite
+    color: 512360FF
+    image: element_liquid
+    link_id: liquidgunk
+  - widget_type: CodexLabelWithLargeIcon
+    text: 花蜜
+    style: BodyWhite
+    image: element_liquid
+    link_id: sugarwater
+  - widget_type: CodexLabelWithLargeIcon
+    text: 超级冷却剂
+    style: BodyWhite
+    color: 37AD93FF
+    image: element_liquid
+    link_id: supercoolant
+  layout: Grid
+- contents:
+  - widget_type: CodexSpacer
+  layout: Vertical

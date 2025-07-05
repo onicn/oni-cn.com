@@ -1,0 +1,622 @@
+id: PEAT
+parent_id: ELEMENTSSOLID
+name: 泥炭
+disabled: False
+search_only: False
+category: ELEMENTSSOLID
+sort_string: 泥炭
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="PEAT">泥炭</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: peat_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: peat_0__ui
+      text1: 泥炭
+      text2: 1000克
+      link_id: peat
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 1000克
+      link_id: carbon
+    fabricator:
+      image: crew_state_temp_up
+      text1: 226.9ºC
+      tooltip: 温度高于226.9ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 陶瓷
+    require:
+    - image: clay_0__ui
+      text1: 粘土
+      text2: 100千克
+      link_id: clay
+    - image: peat_0__ui
+      text1: 泥炭
+      text2: 25千克
+      link_id: peat
+    produce:
+    - image: ceramic_0__ui
+      text1: 陶瓷
+      text2: 100千克
+      link_id: ceramic
+    fabricator:
+      image: kiln_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 窑炉
+      text2: 40秒
+      link_id: kiln
+  - widget_type: CodexRecipePanel
+    text: 精炼碳
+    require:
+    - image: peat_0__ui
+      text1: 泥炭
+      text2: 300千克
+      link_id: peat
+    produce:
+    - image: carbon_0__ui
+      text1: 精炼碳
+      text2: 100千克
+      link_id: refinedcarbon
+    fabricator:
+      image: kiln_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 窑炉
+      text2: 40秒
+      link_id: kiln
+  - widget_type: CodexRecipePanel
+    text: 宇宙内爆破弹
+    require:
+    - image: nickel_0__ui
+      text1: 镍
+      text2: 50千克
+      link_id: nickel
+    - image: peat_0__ui
+      text1: 泥炭
+      text2: 100千克
+      link_id: peat
+    - image: element_liquid
+      color: FFC325FF
+      text1: 石油
+      text2: 200千克
+      link_id: petroleum
+    produce:
+    - image: longrange_missile_0__ui
+      text1: 宇宙内爆破弹
+      text2: 1单位
+      link_id: missilelauncher
+    fabricator:
+      image: missile_fabricator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 爆破弹组装机
+      text2: 80秒
+      link_id: missilefabricator
+  - widget_type: CodexRecipePanel
+    text: 宇宙内爆破弹
+    require:
+    - image: nickel_0__ui
+      text1: 镍
+      text2: 50千克
+      link_id: nickel
+    - image: peat_0__ui
+      text1: 泥炭
+      text2: 100千克
+      link_id: peat
+    - image: element_liquid
+      color: E1CB69FF
+      text1: 生物柴油
+      text2: 200千克
+      link_id: refinedlipid
+    produce:
+    - image: longrange_missile_0__ui
+      text1: 宇宙内爆破弹
+      text2: 1单位
+      link_id: missilelauncher
+    fabricator:
+      image: missile_fabricator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 爆破弹组装机
+      text2: 80秒
+      link_id: missilefabricator
+  - widget_type: CodexRecipePanel
+    text: 宇宙内爆破弹
+    require:
+    - image: copper_refined_0__ui
+      text1: 铜
+      text2: 50千克
+      link_id: copper
+    - image: peat_0__ui
+      text1: 泥炭
+      text2: 100千克
+      link_id: peat
+    - image: element_liquid
+      color: FFC325FF
+      text1: 石油
+      text2: 200千克
+      link_id: petroleum
+    produce:
+    - image: longrange_missile_0__ui
+      text1: 宇宙内爆破弹
+      text2: 1单位
+      link_id: missilelauncher
+    fabricator:
+      image: missile_fabricator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 爆破弹组装机
+      text2: 80秒
+      link_id: missilefabricator
+  - widget_type: CodexRecipePanel
+    text: 宇宙内爆破弹
+    require:
+    - image: copper_refined_0__ui
+      text1: 铜
+      text2: 50千克
+      link_id: copper
+    - image: peat_0__ui
+      text1: 泥炭
+      text2: 100千克
+      link_id: peat
+    - image: element_liquid
+      color: E1CB69FF
+      text1: 生物柴油
+      text2: 200千克
+      link_id: refinedlipid
+    produce:
+    - image: longrange_missile_0__ui
+      text1: 宇宙内爆破弹
+      text2: 1单位
+      link_id: missilelauncher
+    fabricator:
+      image: missile_fabricator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 爆破弹组装机
+      text2: 80秒
+      link_id: missilefabricator
+  - widget_type: CodexRecipePanel
+    text: 宇宙内爆破弹
+    require:
+    - image: cobalt_refined_0__ui
+      text1: 钴
+      text2: 50千克
+      link_id: cobalt
+    - image: peat_0__ui
+      text1: 泥炭
+      text2: 100千克
+      link_id: peat
+    - image: element_liquid
+      color: FFC325FF
+      text1: 石油
+      text2: 200千克
+      link_id: petroleum
+    produce:
+    - image: longrange_missile_0__ui
+      text1: 宇宙内爆破弹
+      text2: 1单位
+      link_id: missilelauncher
+    fabricator:
+      image: missile_fabricator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 爆破弹组装机
+      text2: 80秒
+      link_id: missilefabricator
+  - widget_type: CodexRecipePanel
+    text: 宇宙内爆破弹
+    require:
+    - image: cobalt_refined_0__ui
+      text1: 钴
+      text2: 50千克
+      link_id: cobalt
+    - image: peat_0__ui
+      text1: 泥炭
+      text2: 100千克
+      link_id: peat
+    - image: element_liquid
+      color: E1CB69FF
+      text1: 生物柴油
+      text2: 200千克
+      link_id: refinedlipid
+    produce:
+    - image: longrange_missile_0__ui
+      text1: 宇宙内爆破弹
+      text2: 1单位
+      link_id: missilelauncher
+    fabricator:
+      image: missile_fabricator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 爆破弹组装机
+      text2: 80秒
+      link_id: missilefabricator
+  - widget_type: CodexRecipePanel
+    text: 宇宙内爆破弹
+    require:
+    - image: aluminum_0__ui
+      text1: 铝
+      text2: 50千克
+      link_id: aluminum
+    - image: peat_0__ui
+      text1: 泥炭
+      text2: 100千克
+      link_id: peat
+    - image: element_liquid
+      color: FFC325FF
+      text1: 石油
+      text2: 200千克
+      link_id: petroleum
+    produce:
+    - image: longrange_missile_0__ui
+      text1: 宇宙内爆破弹
+      text2: 1单位
+      link_id: missilelauncher
+    fabricator:
+      image: missile_fabricator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 爆破弹组装机
+      text2: 80秒
+      link_id: missilefabricator
+  - widget_type: CodexRecipePanel
+    text: 宇宙内爆破弹
+    require:
+    - image: aluminum_0__ui
+      text1: 铝
+      text2: 50千克
+      link_id: aluminum
+    - image: peat_0__ui
+      text1: 泥炭
+      text2: 100千克
+      link_id: peat
+    - image: element_liquid
+      color: E1CB69FF
+      text1: 生物柴油
+      text2: 200千克
+      link_id: refinedlipid
+    produce:
+    - image: longrange_missile_0__ui
+      text1: 宇宙内爆破弹
+      text2: 1单位
+      link_id: missilelauncher
+    fabricator:
+      image: missile_fabricator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 爆破弹组装机
+      text2: 80秒
+      link_id: missilefabricator
+  - widget_type: CodexRecipePanel
+    text: 宇宙内爆破弹
+    require:
+    - image: iron_refined_0__ui
+      text1: 铁
+      text2: 50千克
+      link_id: iron
+    - image: peat_0__ui
+      text1: 泥炭
+      text2: 100千克
+      link_id: peat
+    - image: element_liquid
+      color: FFC325FF
+      text1: 石油
+      text2: 200千克
+      link_id: petroleum
+    produce:
+    - image: longrange_missile_0__ui
+      text1: 宇宙内爆破弹
+      text2: 1单位
+      link_id: missilelauncher
+    fabricator:
+      image: missile_fabricator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 爆破弹组装机
+      text2: 80秒
+      link_id: missilefabricator
+  - widget_type: CodexRecipePanel
+    text: 宇宙内爆破弹
+    require:
+    - image: iron_refined_0__ui
+      text1: 铁
+      text2: 50千克
+      link_id: iron
+    - image: peat_0__ui
+      text1: 泥炭
+      text2: 100千克
+      link_id: peat
+    - image: element_liquid
+      color: E1CB69FF
+      text1: 生物柴油
+      text2: 200千克
+      link_id: refinedlipid
+    produce:
+    - image: longrange_missile_0__ui
+      text1: 宇宙内爆破弹
+      text2: 1单位
+      link_id: missilelauncher
+    fabricator:
+      image: missile_fabricator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 爆破弹组装机
+      text2: 80秒
+      link_id: missilefabricator
+  - widget_type: CodexRecipePanel
+    text: 嫩肋排
+    require:
+    - image: dinomeat_raw_0__ui
+      text1: 硬肉
+      text2: 6千克
+      link_id: dinosaurmeat
+    - image: peat_0__ui
+      text1: 泥炭
+      text2: 100千克
+      link_id: peat
+    produce:
+    - image: dinobrisket_0__ui
+      text1: 嫩肋排
+      text2: 16,000千卡
+      tooltip: 品质：良好 [+3]
+      link_id: smokeddinosaurmeat
+    fabricator:
+      image: smoker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 熏炉
+      text2: 600秒
+      link_id: smoker
+  - widget_type: CodexRecipePanel
+    text: 熏鱼
+    require:
+    - image: pacufillet_0__ui
+      text1: 帕库鱼片
+      text2: 6,000千卡
+      tooltip: 品质：标准 [+2]
+      link_id: fishmeat
+    - image: peat_0__ui
+      text1: 泥炭
+      text2: 100千克
+      link_id: peat
+    produce:
+    - image: smokedfish_0__ui
+      text1: 熏鱼
+      text2: 11,200千卡
+      tooltip: 品质：良好 [+3]
+      link_id: smokedfish
+    fabricator:
+      image: smoker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 熏炉
+      text2: 600秒
+      link_id: smoker
+  - widget_type: CodexRecipePanel
+    text: 熏鱼
+    require:
+    - image: jawbofillet_0__ui
+      text1: 颚鱼片
+      text2: 6,000千卡
+      tooltip: 品质：良好 [+3]
+      link_id: prehistoricpacufillet
+    - image: peat_0__ui
+      text1: 泥炭
+      text2: 100千克
+      link_id: peat
+    produce:
+    - image: smokedfish_0__ui
+      text1: 熏鱼
+      text2: 11,200千卡
+      tooltip: 品质：良好 [+3]
+      link_id: smokedfish
+    fabricator:
+      image: smoker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 熏炉
+      text2: 600秒
+      link_id: smoker
+  - widget_type: CodexRecipePanel
+    text: 爆米花
+    require:
+    - image: spikefruit_0__ui
+      text1: 汗甜玉米
+      text2: 5,600千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: gardenfoodplantfood
+    - image: peat_0__ui
+      text1: 泥炭
+      text2: 100千克
+      link_id: peat
+    produce:
+    - image: smokedvegetables_0__ui
+      text1: 爆米花
+      text2: 11,450千卡
+      tooltip: 品质：标准 [+2]
+      link_id: smokedvegetables
+    fabricator:
+      image: smoker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 熏炉
+      text2: 600秒
+      link_id: smoker
+  - widget_type: CodexRecipePanel
+    text: 爆米花
+    require:
+    - image: iceberry_0__ui
+      text1: 刺壳果
+      text2: 5,600千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: hardskinberry
+    - image: peat_0__ui
+      text1: 泥炭
+      text2: 100千克
+      link_id: peat
+    produce:
+    - image: smokedvegetables_0__ui
+      text1: 爆米花
+      text2: 11,450千卡
+      tooltip: 品质：标准 [+2]
+      link_id: smokedvegetables
+    fabricator:
+      image: smoker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 熏炉
+      text2: 600秒
+      link_id: smoker
+  - widget_type: CodexRecipePanel
+    text: 爆米花
+    require:
+    - image: wormwood_basic_fruit_0__ui
+      text1: 贫瘠虫果
+      text2: 5,600千卡
+      tooltip: 品质：糟糕 [0]
+      link_id: wormbasicfruit
+    - image: peat_0__ui
+      text1: 泥炭
+      text2: 100千克
+      link_id: peat
+    produce:
+    - image: smokedvegetables_0__ui
+      text1: 爆米花
+      text2: 11,450千卡
+      tooltip: 品质：标准 [+2]
+      link_id: smokedvegetables
+    fabricator:
+      image: smoker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 熏炉
+      text2: 600秒
+      link_id: smoker
+  - widget_type: CodexConversionPanel
+    require:
+    - image: peat_0__ui
+      text1: 泥炭
+      text2: 600千克/周期
+      link_id: peat
+    produce:
+    - image: element_gas
+      color: 000000FF
+      text1: 二氧化碳
+      text2: 24千克/周期
+      link_id: carbondioxide
+    - image: element_liquid
+      color: 474506FF
+      text1: 污染水
+      text2: 120千克/周期
+      link_id: dirtywater
+    fabricator:
+      image: generatorpeat_0__ui
+      text1: 泥炭燃烧器
+      link_id: PEATGENERATOR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: peat_0__ui
+      text1: 泥炭
+      text2: 10千克/周期
+      link_id: peat
+    produce:
+    - image: spikefruit_0__ui
+      text1: 汗甜玉米
+      text2: 267千卡/周期
+      tooltip: 品质：恶心 [-1]
+      link_id: gardenfoodplantfood
+    fabricator:
+      image: spike_fruit_0__ui
+      text1: 汗甜玉米秆
+      link_id: GARDENFOODPLANT
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: ova_melon_0__ui
+      text1: 漫花果
+      text2: 1,300千卡/周期
+      tooltip: 品质：糟糕 [0]
+      link_id: vinefruit
+    produce:
+    - image: peat_0__ui
+      text1: 泥炭
+      text2: 200千克/周期
+      link_id: peat
+    fabricator:
+      image: stego_0__ui
+      text1: 尖块兽
+      link_id: STEGO
+  - widget_type: CodexConversionPanel
+    require:
+    - image: bristleberry_0__ui
+      text1: 毛刺浆果
+      text2: 1,300千卡/周期
+      tooltip: 品质：糟糕 [0]
+      link_id: pricklefruit
+    produce:
+    - image: peat_0__ui
+      text1: 泥炭
+      text2: 200千克/周期
+      link_id: peat
+    fabricator:
+      image: stego_0__ui
+      text1: 尖块兽
+      link_id: STEGO
+  - widget_type: CodexConversionPanel
+    require:
+    - image: swampcrop_fruit_0__ui
+      text1: 沼浆果冻
+      text2: 1,300千卡/周期
+      tooltip: 品质：糟糕 [0]
+      link_id: swampfruit
+    produce:
+    - image: peat_0__ui
+      text1: 泥炭
+      text2: 300千克/周期
+      link_id: peat
+    fabricator:
+      image: stego_0__ui
+      text1: 尖块兽
+      link_id: STEGO
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      泥炭是一种由部分分解的有机物组成的致密堆积材料。
+
+
+      它是一种可燃燃料，可用于生产<link="POWER">电力</link>。
+
+
+      资源种类：消耗性矿石
+
+      熔点：226.9ºC
+
+      硬度：<color=#71ABCFFF>2（非常柔软）</color>
+
+
+      比热容：0.710 (DTU/g)/ºC
+
+      热导率：0.600 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.75
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：<link="BUILDABLEANY">一般建造材料</link>, <link="ELEMENTSSOLID">固体</link>, 消耗性矿石
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

@@ -1,0 +1,61 @@
+id: HIGHWATTAGEWIRE
+parent_id: BUILDCATEGORYPOWER
+name: 高负荷电线
+disabled: False
+search_only: False
+category: BUILDCATEGORYPOWER
+sort_string: 高负荷电线
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="HIGHWATTAGEWIRE">高负荷电线</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 高级电力调节
+    style: Body
+    image: research_type_alpha_icon
+    link_id: advancedpowerregulation
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: utilities_electric_insulated_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      可以运载比普通<link="WIRE">电线</link>更高的<link="POWER">功率</link>而不会过载。
+
+
+      无法穿过墙体和地面。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：1格宽x1格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：3秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="METAL">金属矿石</link>100千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    最大<link="POWER">电力</link>：20千瓦'
+    tooltip: 若耗电<style="KKeyword">功率</style>超出上限则会导致电路损坏
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：-25（范围：6格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>6</b>格内降低<b><b>-25</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>高负荷电线可以避免电路过载，特别是对于大功率发电机。</i>
+    style: Body
+  layout: Vertical

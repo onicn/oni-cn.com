@@ -1,0 +1,52 @@
+id: LIQUIDFILTERING
+parent_id: TECH
+name: 基于液体的精炼工艺
+disabled: False
+search_only: False
+category: TECH
+sort_string: 基于液体的精炼工艺
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="LIQUIDFILTERING">基于液体的精炼工艺</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 使用泵送的<link="ELEMENTSLIQUID">液体</link>过滤出不想要的元素。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="IMPROVEDOXYGEN">空气系统</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: orescrubber_0__ui
+  - widget_type: CodexText
+    text: <link="ORESCRUBBER">矿石洗涤器</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: desalinator_0__ui
+  - widget_type: CodexText
+    text: <link="DESALINATOR">脱盐器</link>
+    style: Body
+  layout: Horizontal

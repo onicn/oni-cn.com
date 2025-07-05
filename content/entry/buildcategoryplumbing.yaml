@@ -1,0 +1,149 @@
+id: BUILDCATEGORYPLUMBING
+parent_id: BUILDINGS
+name: 水管
+disabled: False
+search_only: False
+category: BUILDINGS
+sort_string: 水管
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="BUILDCATEGORYPLUMBING">水管</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexLabelWithLargeIcon
+    text: 墙排马桶
+    style: BodyWhite
+    image: toilet_wall_0__ui
+    link_id: walltoilet
+  - widget_type: CodexLabelWithLargeIcon
+    text: 导热板
+    style: BodyWhite
+    image: contactconductivepipebridge_0__ui
+    link_id: contactconductivepipebridge
+  - widget_type: CodexLabelWithLargeIcon
+    text: 导热液体管道
+    style: BodyWhite
+    image: utilities_liquid_radiant_0__ui
+    link_id: liquidconduitradiant
+  - widget_type: CodexLabelWithLargeIcon
+    text: 小型液泵
+    style: BodyWhite
+    image: miniwaterpump_0__ui
+    link_id: liquidminipump
+  - widget_type: CodexLabelWithLargeIcon
+    text: 户外厕所
+    style: BodyWhite
+    image: outhouse_0__ui
+    link_id: outhouse
+  - widget_type: CodexLabelWithLargeIcon
+    text: 手压泵
+    style: BodyWhite
+    image: waterpump_0__ui
+    link_id: liquidpumpingstation
+  - widget_type: CodexLabelWithLargeIcon
+    text: 抽水马桶
+    style: BodyWhite
+    image: toiletflush_0__ui
+    link_id: flushtoilet
+  - widget_type: CodexLabelWithLargeIcon
+    text: 排液口
+    style: BodyWhite
+    image: ventliquid_0__ui
+    link_id: liquidvent
+  - widget_type: CodexLabelWithLargeIcon
+    text: 液体截断阀
+    style: BodyWhite
+    image: valveliquid_logic_0__ui
+    link_id: liquidlogicvalve
+  - widget_type: CodexLabelWithLargeIcon
+    text: 液体筛选器
+    style: BodyWhite
+    image: filter_liquid_0__ui
+    link_id: liquidfilter
+  - widget_type: CodexLabelWithLargeIcon
+    text: 液体管桥
+    style: BodyWhite
+    image: utilityliquidbridge_0__ui
+    link_id: liquidconduitbridge
+  - widget_type: CodexLabelWithLargeIcon
+    text: 液体管道
+    style: BodyWhite
+    image: utilities_liquid_0__ui
+    link_id: liquidconduit
+  - widget_type: CodexLabelWithLargeIcon
+    text: 液体管道元素传感器
+    style: BodyWhite
+    image: liquid_element_sensor_0__ui
+    link_id: liquidconduitelementsensor
+  - widget_type: CodexLabelWithLargeIcon
+    text: 液体管道温度传感器
+    style: BodyWhite
+    image: liquid_temperature_sensor_0__ui
+    link_id: liquidconduittemperaturesensor
+  - widget_type: CodexLabelWithLargeIcon
+    text: 液体管道病菌传感器
+    style: BodyWhite
+    image: liquid_germs_sensor_0__ui
+    link_id: liquidconduitdiseasesensor
+  - widget_type: CodexLabelWithLargeIcon
+    text: 液体装桶器
+    style: BodyWhite
+    image: liquid_bottler_0__ui
+    link_id: liquidbottler
+  - widget_type: CodexLabelWithLargeIcon
+    text: 液体计量阀
+    style: BodyWhite
+    image: limit_valve_liquid_0__ui
+    link_id: liquidlimitvalve
+  - widget_type: CodexLabelWithLargeIcon
+    text: 液体调节阀
+    style: BodyWhite
+    image: valveliquid_0__ui
+    link_id: liquidvalve
+  - widget_type: CodexLabelWithLargeIcon
+    text: 液桶抽出器
+    style: BodyWhite
+    image: bottle_emptier_liquid_conduit_0__ui
+    link_id: bottleemptierconduitliquid
+  - widget_type: CodexLabelWithLargeIcon
+    text: 液桶排倒器
+    style: BodyWhite
+    image: liquidator_0__ui
+    link_id: bottleemptier
+  - widget_type: CodexLabelWithLargeIcon
+    text: 液泵
+    style: BodyWhite
+    image: pumpliquid_0__ui
+    link_id: liquidpump
+  - widget_type: CodexLabelWithLargeIcon
+    text: 淋浴隔间
+    style: BodyWhite
+    image: shower_0__ui
+    link_id: shower
+  - widget_type: CodexLabelWithLargeIcon
+    text: 火箭端口液体卸载器
+    style: BodyWhite
+    image: conduit_port_liquid_unloader_0__ui
+    link_id: modularlaunchpadportliquidunloader
+  - widget_type: CodexLabelWithLargeIcon
+    text: 火箭端口液体装载器
+    style: BodyWhite
+    image: conduit_port_liquid_loader_0__ui
+    link_id: modularlaunchpadportliquid
+  - widget_type: CodexLabelWithLargeIcon
+    text: 粘渣油提取器
+    style: BodyWhite
+    image: gunkdump_station_0__ui
+    link_id: gunkemptier
+  - widget_type: CodexLabelWithLargeIcon
+    text: 隔热液体管道
+    style: BodyWhite
+    image: utilities_liquid_insulated_0__ui
+    link_id: insulatedliquidconduit
+  layout: Grid
+- contents:
+  - widget_type: CodexSpacer
+  layout: Vertical

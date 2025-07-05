@@ -1,0 +1,168 @@
+id: SEALSPECIES
+parent_id: CREATURES
+name: 栓角海豹
+disabled: False
+search_only: False
+category: CREATURES
+sort_string: <link="SEALSPECIES">栓角海豹</link>
+required_dlc_ids:
+- DLC2_ID
+sub_entries:
+- id: Seal
+  parent_id: SealSpecies
+  name: <link="SEAL">栓角海豹</link>
+  disabled: False
+  sort_string: 栓角海豹
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 栓角海豹
+    style: Title
+  - widget_type: CodexText
+    text: 可驯化的小动物
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      栓角海豹因其中空的锥形眉间突起物而得名，这种结构能让它们直接从植物中吸取营养，流入位于锥形底部的消化囊中。
+
+
+      为了通过这根“吸管”吸取营养液，栓角海豹会压紧鼻腔，并将舌头反复抽入其软腭，形成真空。
+
+
+      进食结束时，通过快速舔食空气重新打开气道，从而防止发生意外窒息。
+
+
+      许多饲养员喜欢教这种小动物拍打脚蹼，却发现没有可靠办法限制这种行为的重复频率和声音大小。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: seal_0__ui
+  - widget_type: CodexImage
+    image: baby_seal_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexText
+    text: >-
+      栓角海豹是具有魅力的生物，能产生<link="ETHANOL">乙醇</link>。
+
+
+      它们能吃<link="SUCROSE">蔗糖</link>，也可以直接从<link="SPACETREE">糖心树</link>吸取<link="SUGARWATER">花蜜</link>。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 理想温度
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 舒适范围：<b>-75ºC</b>至<b>10ºC</b>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 存活范围：<b>-100ºC</b>至<b>100ºC</b>'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 寿命
+    style: Subtitle
+  - widget_type: CodexText
+    text: 这种小动物特征<link="CREATURES__GUIDE__FERTILITY">寿命</link>为<b>100周期</b>。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 所需空间
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 当房间空间对每只小动物平均少于<b>12格</b>时会感到<link="CREATURES__GUIDE__MOOD">拥挤</link>。'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 当房间小于<b>12格</b>时会感到<link="CREATURES__GUIDE__MOOD">封闭</link>。'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 掉落物
+    style: Subtitle
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 动物油脂
+    image: tallow_0__ui
+    link_id: tallow
+  - widget_type: CodexText
+    text: 	50千克
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 食物
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: syrup_tree_0__ui
+      text1: 糖心树
+      text2: 40千克/周期储存的<link="SUGARWATER">花蜜</link>
+      link_id: spacetree
+    produce:
+    - image: element_liquid
+      color: 00FF6AFF
+      text1: 乙醇
+      text2: 40千克/周期
+      link_id: ethanol
+    fabricator:
+      image: seal_0__ui
+      text1: 栓角海豹
+      link_id: SEAL
+  - widget_type: CodexConversionPanel
+    require:
+    - image: sucrose_0__ui
+      text1: 蔗糖
+      text2: 30.8千克/周期
+      link_id: sucrose
+    produce:
+    - image: element_liquid
+      color: 00FF6AFF
+      text1: 乙醇
+      text2: 40千克/周期
+      link_id: ethanol
+    fabricator:
+      image: seal_0__ui
+      text1: 栓角海豹
+      link_id: SEAL
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require: []
+    produce:
+    - image: tallow_0__ui
+      text1: 动物油脂
+      text2: 50千克
+      link_id: tallow
+    fabricator:
+      image: seal_0__ui
+      text1: 栓角海豹
+      link_id: SEAL
+  layout: Vertical

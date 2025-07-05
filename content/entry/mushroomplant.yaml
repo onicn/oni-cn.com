@@ -1,0 +1,98 @@
+id: MUSHROOMPLANT
+parent_id: PLANTS
+name: 夜幕菇
+disabled: False
+search_only: False
+category: PLANTS
+sort_string: 夜幕菇
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 夜幕菇
+    style: Title
+  - widget_type: CodexText
+    text: 食用性植物
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      与许多蘑菇种类一样，夜幕菇生长在不适合种植植物的黑暗地方。
+
+
+      作为典型叶绿素的代替，夜幕菇的底部长有成千上万个专门用来吸收二氧化碳以帮助生长的菌褶。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: fungusplant_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 成长自
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: seed_fungusplant_0__ui
+  - widget_type: CodexText
+    text: <link="MUSHROOMPLANT">夜幕菇孢子</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 详情
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexText
+    text: 夜幕菇可产出作为<link="FOOD">食物</link>的真菌<link="MUSHROOM">蘑菇</link>。
+    style: Body
+  - widget_type: CodexText
+    text: >-
+      <b>生长需求</b>：
+          • 最大<link="RADIATION">辐射</link>：4,600拉德/周期
+          • 生长周期：7.5周期
+          • <link="LIGHT">黑暗</link>
+          • <link="HEAT">温度</link>：5至35ºC
+          • <link="ATMOSPHERE">气压</link>：最低150克
+          • <link="ATMOSPHERE">环境</link>：
+              • <link="CARBONDIOXIDE">二氧化碳</link>
+          • <link="SLIMEMOLD">菌泥</link>：-4000克/周期
+          • 农地
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      <b>效果</b>：
+          • <link="MUSHROOM">蘑菇</link>：2,400千卡
+          • 基础<link="PLANTS">种子</link>收获几率：10%
+          • <link="DECOR">装饰度</link>：+15（范围：2格）
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: slime_mold_0__ui
+      text1: 菌泥
+      text2: 4000克/周期
+      link_id: slimemold
+    produce:
+    - image: funguscap_0__ui
+      text1: 蘑菇
+      text2: 320千卡/周期
+      tooltip: 品质：糟糕 [0]
+      link_id: mushroom
+    fabricator:
+      image: fungusplant_0__ui
+      text1: 夜幕菇
+      link_id: MUSHROOMPLANT
+  layout: Vertical

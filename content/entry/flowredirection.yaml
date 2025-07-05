@@ -1,0 +1,73 @@
+id: FLOWREDIRECTION
+parent_id: TECH
+name: 流动重导
+disabled: False
+search_only: False
+category: TECH
+sort_string: 流动重导
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="FLOWREDIRECTION">流动重导</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 用于<link="MORALE">士气</link>与工业的<link="ELEMENTSLIQUID">液体</link>管理。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="SANITATIONSCIENCES">卫生设备</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: mechanical_surfboard_0__ui
+  - widget_type: CodexText
+    text: <link="MECHANICALSURFBOARD">机械冲浪板</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: liquid_bottler_0__ui
+  - widget_type: CodexText
+    text: <link="LIQUIDBOTTLER">液体装桶器</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: conduit_port_liquid_loader_0__ui
+  - widget_type: CodexText
+    text: <link="MODULARLAUNCHPADPORTLIQUID">火箭端口液体装载器</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: conduit_port_liquid_unloader_0__ui
+  - widget_type: CodexText
+    text: <link="MODULARLAUNCHPADPORTLIQUIDUNLOADER">火箭端口液体卸载器</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: rocket_storage_liquid_small_0__ui
+  - widget_type: CodexText
+    text: <link="LIQUIDCARGOBAYSMALL">液缸货舱</link>
+    style: Body
+  layout: Horizontal

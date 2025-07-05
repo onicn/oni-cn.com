@@ -1,0 +1,52 @@
+id: SMELTING
+parent_id: TECH
+name: 熔炼
+disabled: False
+search_only: False
+category: TECH
+sort_string: 熔炼
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="SMELTING">熔炼</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 高温有助于生产特殊用途的纯金属资源。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="REFINEDOBJECTS">精致翻修</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: metalrefinery_0__ui
+  - widget_type: CodexText
+    text: <link="METALREFINERY">金属精炼器</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: floor_metal_0__ui
+  - widget_type: CodexText
+    text: <link="METALTILE">金属砖</link>
+    style: Body
+  layout: Horizontal

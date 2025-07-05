@@ -1,0 +1,52 @@
+id: ADVANCEDNUCLEARRESEARCH
+parent_id: TECH
+name: 进阶材料科学研究
+disabled: False
+search_only: False
+category: TECH
+sort_string: 进阶材料科学研究
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="ADVANCEDNUCLEARRESEARCH">进阶材料科学研究</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 更进一步利用亚原子粒子来研究物质的特性。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="NUCLEARRESEARCH">材料科学研究</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: radiation_collector_0__ui
+  - widget_type: CodexText
+    text: <link="HIGHENERGYPARTICLESPAWNER">辐射粒子发生器</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: orb_transporter_0__ui
+  - widget_type: CodexText
+    text: <link="HIGHENERGYPARTICLEREDIRECTOR">辐射粒子变向器</link>
+    style: Body
+  layout: Horizontal

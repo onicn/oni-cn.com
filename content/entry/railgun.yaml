@@ -1,0 +1,137 @@
+id: RAILGUN
+parent_id: BUILDCATEGORYROCKETRY
+name: 星际发射器
+disabled: False
+search_only: False
+category: BUILDCATEGORYROCKETRY
+sort_string: 星际发射器
+sub_entries:
+- id: RAILGUNPAYLOAD
+  parent_id: Railgun
+  title: STRINGS.ITEMS.RAILGUNPAYLOAD.NAME
+  disabled: False
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="RAILGUN">星际发射器</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 高速运输
+    style: Body
+    image: research_type_alpha_icon
+    link_id: highvelocity
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: rail_gun_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      将<link="RAILGUNPAYLOAD">星际载货</link>在小行星间发射。
+
+
+      载货可包含<link="ELEMENTSSOLID">固体</link>、<link="ELEMENTSLIQUID">液体</link>和<link="ELEMENTSGAS">气体</link>材料。
+
+
+      不能传送复制人。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="POWER">电力</link>：240瓦'
+    tooltip: 必须与至少有<style="consumed">240瓦</style>可用<style="KKeyword">电力</style>的电路相连
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    辐射粒子输入口'
+    tooltip: 这个建筑上的辐射粒子端口允许其接收<style="KKeyword">辐射粒子</style>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：5格宽x6格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：30秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="METAL">金属矿石</link>400千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="HEAT">热量</link>：+2.5千复制热/秒'
+    tooltip: >-
+      每秒产生<style="produced">2.5千复制热</style>
+
+
+      总<style="KKeyword">温度</style>变化受到加热物质的材料属性影响：
+          • 质量
+          • 比热容
+          • 表面积
+          • 隔热厚度
+          • 热导率
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LOGIC">信号输入端</link>'
+    tooltip: 当接收到信号时，输入端会使这个建筑一种状态发生变化
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    发射开关'
+    tooltip: >-
+      输入端行为：
+
+      • <b><style="logic_on">绿色信号</style></b>：启用载货发射。
+
+      • <b><style="logic_off">红色信号</style></b>：禁用载货发射。
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LOGIC">信号输出端</link>'
+    tooltip: 当这个建筑状态发生变化时，输出端会输出一个信号
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    辐射粒子库存'
+    tooltip: >-
+      输出端行为：
+
+      • 当库存充满辐射粒子时，输出<b><style="logic_on">绿色信号</style></b>
+
+      • 否则，输出<b><style="logic_off">红色信号</style></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>类别</b>
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    <link="REQUIREMENTCLASSINDUSTRIALMACHINERY">工业机械</link>'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>尽管会很想爬进去，但相信我……别那么做。</i>
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="RAILGUNPAYLOAD">星际载货</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  - widget_type: CodexImage
+    image: railgun_capsule
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      含有用于星际运输的打包资源。
+
+
+      可由<link="RAILGUN">星际发射器</link>发射，或者由<link="RAILGUNPAYLOADOPENER">载货拆包器</link>拆包。
+    style: Body
+  layout: Vertical

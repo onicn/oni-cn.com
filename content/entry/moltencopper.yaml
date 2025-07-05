@@ -1,0 +1,143 @@
+id: MOLTENCOPPER
+parent_id: ELEMENTSLIQUID
+name: 熔融铜
+disabled: False
+search_only: False
+icon_color: E0390EFF
+category: ELEMENTSLIQUID
+sort_string: 熔融铜
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="MOLTENCOPPER">熔融铜</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    color: E0390EFF
+    image: element_liquid
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: E0390EFF
+      text1: 熔融铜
+      text2: 1000克
+      link_id: moltencopper
+    produce:
+    - image: element_gas
+      color: FF9C08FF
+      text1: 气态铜
+      text2: 1000克
+      link_id: coppergas
+    fabricator:
+      image: crew_state_temp_up
+      text1: 2560.9ºC
+      tooltip: 温度高于2560.9ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: E0390EFF
+      text1: 熔融铜
+      text2: 1000克
+      link_id: moltencopper
+    produce:
+    - image: copper_refined_0__ui
+      text1: 铜
+      text2: 1000克
+      link_id: copper
+    fabricator:
+      image: crew_state_temp_down
+      text1: 1083.9ºC
+      tooltip: 温度低于1083.9ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换于
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: cuprite_0__ui
+      text1: 铜矿
+      text2: 1000克
+      link_id: cuprite
+    produce:
+    - image: element_liquid
+      color: E0390EFF
+      text1: 熔融铜
+      text2: 1000克
+      link_id: moltencopper
+    fabricator:
+      image: crew_state_temp_up
+      text1: 1083.9ºC
+      tooltip: 温度高于1083.9ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: copper_refined_0__ui
+      text1: 铜
+      text2: 1000克
+      link_id: copper
+    produce:
+    - image: element_liquid
+      color: E0390EFF
+      text1: 熔融铜
+      text2: 1000克
+      link_id: moltencopper
+    fabricator:
+      image: crew_state_temp_up
+      text1: 1083.9ºC
+      tooltip: 温度高于1083.9ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_gas
+      color: FF9C08FF
+      text1: 气态铜
+      text2: 1000克
+      link_id: coppergas
+    produce:
+    - image: element_liquid
+      color: E0390EFF
+      text1: 熔融铜
+      text2: 1000克
+      link_id: moltencopper
+    fabricator:
+      image: crew_state_temp_down
+      text1: 2560.9ºC
+      tooltip: 温度低于2560.9ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      (Cu) 熔融铜是一种被加热成<link="ELEMENTSLIQUID">液态</link>的导电<link="RAWMETAL">金属</link>。
+
+
+      资源种类：<link="ELEMENTSLIQUID">液体</link>
+
+      冰点：1083.9ºC
+
+      沸点：2560.9ºC
+
+
+      比热容：0.386 (DTU/g)/ºC
+
+      热导率：12.000 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.61
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：<link="METAL">金属矿石</link>, <link="REFINEDMETAL">精炼金属</link>, <link="LIGHT">光源</link>, <link="ELEMENTSLIQUID">液体</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

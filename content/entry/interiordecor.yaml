@@ -1,0 +1,48 @@
+id: INTERIORDECOR
+parent_id: TECH
+name: 室内装潢
+disabled: False
+search_only: False
+category: TECH
+sort_string: 室内装潢
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="INTERIORDECOR">室内装潢</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 提高<link="DECOR">装饰</link>的物品，可抵消地下生活的压抑感。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: flowervase_0__ui
+  - widget_type: CodexText
+    text: <link="FLOWERVASE">花盆</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: floorlamp_0__ui
+  - widget_type: CodexText
+    text: <link="FLOORLAMP">电灯</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: ceilinglight_0__ui
+  - widget_type: CodexText
+    text: <link="CEILINGLIGHT">吸顶灯</link>
+    style: Body
+  layout: Horizontal

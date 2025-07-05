@@ -1,0 +1,84 @@
+id: REQUIREMENTCLASSGENERATORTYPE
+parent_id: BUILDCATEGORYCATEGORY
+name: 发电机
+disabled: False
+search_only: False
+category: BUILDCATEGORYCATEGORY
+sort_string: 发电机
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 发电机
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      能产生我的殖民地机械运行所需<link="POWER">电力</link>的建筑。
+
+
+      入门级发电机可以满足基本需求，但重型发电机对殖民地发展至关重要。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 此类别的建筑：
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 人力发电机'
+    image: generatormanual_0__ui
+    link_id: manualgenerator
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 煤炭发电机'
+    image: generatorphos_0__ui
+    link_id: generator
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 木材燃烧器'
+    image: generatorwood_0__ui
+    link_id: woodgasgenerator
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 泥炭燃烧器'
+    image: generatorpeat_0__ui
+    link_id: peatgenerator
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 氢气发电机'
+    image: generatormerc_0__ui
+    link_id: hydrogengenerator
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 天然气发电机'
+    image: generatormethane_0__ui
+    link_id: methanegenerator
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 石油发电机'
+    image: generatorpetrol_0__ui
+    link_id: petroleumgenerator
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 蒸汽涡轮机'
+    image: steamturbine2_0__ui
+    link_id: steamturbine2
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 太阳能板'
+    image: solar_panel_0__ui
+    link_id: solarpanel
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 需求于：
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: '    • <link="POWERPLANT">发电厂</link>'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical

@@ -1,0 +1,152 @@
+id: DEEPFRIEDFISH
+parent_id: FOOD
+name: 鱼肉卷
+disabled: False
+search_only: False
+category: FOOD
+sort_string: 鱼肉卷
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="DEEPFRIEDFISH">鱼肉卷</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: deepfried_fish_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 油炸的鱼肉，包裹在酥脆的鱼鳍中。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 品质：优秀 [+4]
+    style: Body
+  - widget_type: CodexText
+    text: 卡路里：4,200千卡
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      冷藏温度：4ºC
+
+      深度冷冻温度：-18ºC
+
+      腐烂时间：4.0周期
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: '营养作用:'
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    • <link="IDFOODEFFECTS__SEAFOODRADIATIONRESISTANCE">辐射抗性：水产食品</link>'
+    tooltip: >-
+      吃这种食物能提高<style="KKeyword">辐射</style>抗性
+          • 辐射抗性: +20%
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: deepfried_fish_0__ui
+      text1: 鱼肉卷
+      text2: 700千卡/周期
+      tooltip: 品质：优秀 [+4]
+      link_id: deepfriedfish
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 125克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__ui
+      text1: 好吃哈奇
+      link_id: HATCH
+  - widget_type: CodexConversionPanel
+    require:
+    - image: deepfried_fish_0__ui
+      text1: 鱼肉卷
+      text2: 700千卡/周期
+      tooltip: 品质：优秀 [+4]
+      link_id: deepfriedfish
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 166.7克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__veg_ui
+      text1: 草质哈奇
+      link_id: HATCHVEGGIE
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 油炸锅
+    require:
+    - image: pacufillet_0__ui
+      text1: 帕库鱼片
+      text2: 1,000千卡
+      tooltip: 品质：标准 [+2]
+      link_id: fishmeat
+    - image: tallow_0__ui
+      text1: 动物油脂
+      text2: 2400克
+      link_id: tallow
+    - image: seed_coldwheat_0__ui
+      text1: 冰霜麦粒
+      text2: 2单位
+      link_id: coldwheat
+    produce:
+    - image: deepfried_fish_0__ui
+      text1: 鱼肉卷
+      text2: 4,200千卡
+      tooltip: 品质：优秀 [+4]
+      link_id: deepfriedfish
+    fabricator:
+      image: deepfryer_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 油炸锅
+      text2: 50秒
+      link_id: deepfryer
+  - widget_type: CodexRecipePanel
+    text: 油炸锅
+    require:
+    - image: pacufillet_0__ui
+      text1: 帕库鱼片
+      text2: 1,000千卡
+      tooltip: 品质：标准 [+2]
+      link_id: fishmeat
+    - image: tallow_0__ui
+      text1: 动物油脂
+      text2: 2400克
+      link_id: tallow
+    - image: megafrond_grain_0__ui
+      text1: 巨蕨谷粒
+      text2: 2单位
+      link_id: fernfood
+    produce:
+    - image: deepfried_fish_0__ui
+      text1: 鱼肉卷
+      text2: 4,200千卡
+      tooltip: 品质：优秀 [+4]
+      link_id: deepfriedfish
+    fabricator:
+      image: deepfryer_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 油炸锅
+      text2: 50秒
+      link_id: deepfryer
+  layout: Vertical

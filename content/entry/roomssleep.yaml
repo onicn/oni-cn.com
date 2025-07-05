@@ -1,0 +1,171 @@
+id: ROOMSSLEEP
+parent_id: ROOMS
+name: 睡眠
+disabled: False
+search_only: False
+category: ROOMS
+sort_string: 睡眠
+sub_entries:
+- id: Private Bedroom
+  parent_id: ROOMSSleep
+  name: 私人卧室
+  disabled: False
+  sort_string: 私人卧室
+- id: Bedroom
+  parent_id: ROOMSSleep
+  name: 豪华宿舍
+  disabled: False
+  sort_string: 豪华宿舍
+- id: Barracks
+  parent_id: ROOMSSleep
+  name: 宿舍
+  disabled: False
+  sort_string: 宿舍
+content_container:
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 条目（3/3）
+    style: Subtitle
+  - widget_type: CodexText
+    text: <link="PRIVATE BEDROOM">私人卧室</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="BEDROOM">豪华宿舍</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="BARRACKS">宿舍</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: ui_room_sleep
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 私人卧室
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      一个舒适而没有室友的僻静之地，疲惫的复制人可以在这里休息而不被吵醒。
+
+
+      睡在私人卧室能大大提升复制人的士气。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 详情
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <b>效果：</b>
+          • <style="KKeyword">士气</style>：+3
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>需求：</b>
+    style: Body
+  - widget_type: CodexText
+    text: >2-
+          • Single <link="LUXURYBED">Comfy Bed</link>
+          • No <link="BED">Cots</link>
+          • Minimum size: 24 tiles
+          • Maximum size: 64 tiles
+          • Minimum height: 4 tiles
+          • <link="REQUIREMENTCLASSDECORATION">Decor item</link> (2)
+          • No <link="REQUIREMENTCLASSINDUSTRIALMACHINERY">industrial machinery</link>
+          • Has backwall tiles
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 豪华宿舍
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      一个高档的公共睡眠区，充满了能大大提高睡眠质量的东西。
+
+
+      睡在豪华宿舍里会提升复制人的士气。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 详情
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <b>效果：</b>
+          • <style="KKeyword">士气</style>：+2
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>需求：</b>
+    style: Body
+  - widget_type: CodexText
+    text: >2-
+          • One or more <link="LUXURYBED">Comfy Beds</link>
+          • No <link="BED">Cots</link>
+          • No <link="REQUIREMENTCLASSINDUSTRIALMACHINERY">industrial machinery</link>
+          • Minimum size: 12 tiles
+          • Maximum size: 64 tiles
+          • <link="REQUIREMENTCLASSDECORATION">Decor item</link> (1)
+          • Minimum height: 4 tiles
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 宿舍
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      一个基本的公共睡眠区域，供新兴殖民地使用。
+
+
+      睡在宿舍里会提升复制人的士气。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 详情
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <b>效果：</b>
+          • <style="KKeyword">士气</style>：+1
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>需求：</b>
+    style: Body
+  - widget_type: CodexText
+    text: >2-
+          • One or more <link="REQUIREMENTCLASSBEDTYPE">beds</link>
+          • No <link="REQUIREMENTCLASSINDUSTRIALMACHINERY">industrial machinery</link>
+          • Minimum size: 12 tiles
+          • Maximum size: 64 tiles
+    style: Body
+  layout: Vertical

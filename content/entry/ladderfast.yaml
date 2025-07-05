@@ -1,0 +1,57 @@
+id: LADDERFAST
+parent_id: BUILDCATEGORYBASE
+name: 塑料梯子
+disabled: False
+search_only: False
+category: BUILDCATEGORYBASE
+sort_string: 塑料梯子
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="LADDERFAST">塑料梯子</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 豪华家装
+    style: Body
+    image: research_type_alpha_icon
+    link_id: luxury
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: ladder_plastic_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 可提高复制人的攀爬速度。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：1格宽x1格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：10秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="PLASTIC">塑料</link>50千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    行走速度：20%'
+    tooltip: 复制人在这种砖块上能够加速<b>20%</b>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：-5（范围：1格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>1</b>格内降低<b><b>-5</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>塑料梯子具有轻度的抗菌性，有助于限制病菌在殖民地的传播。</i>
+    style: Body
+  layout: Vertical

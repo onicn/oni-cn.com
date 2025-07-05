@@ -1,0 +1,135 @@
+id: PLANETARYECHOES
+name: 行星回声
+title: STRINGS.CODEX.PLANETARYECHOES.TITLE
+disabled: False
+search_only: False
+category: INVESTIGATIONS
+sort_string: 行星回声
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 行星回声
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：三
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+  lock_id: earth
+- contents:
+  - widget_type: CodexText
+    text: 回声其一
+    style: Subtitle
+  - widget_type: CodexText
+    text: >
+      奥莉维亚：我们已经再次检查了一遍我们的观测设备，而且电脑的启动马上就要完成了。出现任何故障我们的防备人员就会立刻关掉它。
+
+
+      奥莉维亚：是时候了。
+
+
+      杰姬：没错。
+
+
+      杰姬：让机器慢点起转吧，这样我们就可以检测到任何异常的动力波动了。数“3”就开始。
+
+
+      杰姬：“1”……“2”……
+
+
+      杰姬：“3”。
+
+
+      [有金属碰撞声，可以听到机器低沉的嗡嗡声。]
+
+
+      杰姬：有点不对劲。
+
+
+      奥莉维亚：是容器……原子振动得太快了。
+
+
+      [机器的嗡嗡声变为刺耳的声音了。]
+
+
+      奥莉维亚：我-我们必须要中止了！
+
+
+      杰姬：不，还不行。降低冷却系统的电力，用这部分电力维持容器的平衡，它会稳定下来的。
+
+
+      奥莉维亚：但没有冷却液的话——
+
+
+      杰姬：它会稳定的！
+
+
+      [有刺耳的电噼啪声。]
+
+
+      奥莉维亚：降低冷却系统的40%电力，将一切都调整到原子容器中去！
+
+
+      [嗡嗡声逐渐增强，然后降为稳定的杂声。]
+
+
+      奥莉维亚：做到了，容器稳定了。
+
+
+      [杰姬松了口气。]
+
+
+      奥莉维亚：但是……看看这些数字。
+
+
+      杰姬：我的天，这些都是真的吗？
+
+
+      奥莉维亚：是的，我很确信是真的。杰姬，我认为我们做到了。
+
+
+      奥莉维亚：我想我们创造出了无限能源。
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: earth
+- contents:
+  - widget_type: CodexText
+    text: 回声其二
+    style: Subtitle
+  - widget_type: CodexText
+    text: >
+      奥莉维亚：这到底是什么？
+
+
+      [一个张开的手掌将纸落猛摔在桌子上。]
+
+
+      奥莉维亚：这些读数表明每次转换后都会积累几百千克的中子质。你准备什么时候告诉我啊？
+
+
+      杰姬：我正在解决这个问题。
+
+
+      奥莉维亚：杰姬，要是安全无法保证，我们可没有走捷径的资本。
+
+
+      杰姬：我想我有能力监管我自己的安全。
+
+
+      奥莉维亚：我-我不仅仅是在关心<i>你的</i>安全！我们不知道我们在这里开发的东西长期下去会有什么影响……我们在这里总结的方法可能会导致全世界范围的涟漪效应，甚至全宇宙。
+
+
+      杰姬：不要危言耸听，这话不适合科学家。而且，我要提醒你，这项研究有可能停止能源战争的发展，结束成千上万人的痛苦。我们在这里每个月花在试验上的时间拖延了这个结果。
+
+
+      奥莉维亚：这真的很危险。
+
+
+      杰姬：我会注意你的关心的。
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: earth

@@ -1,0 +1,225 @@
+id: IDFOODEFFECTS
+parent_id: FOOD
+name: 营养作用
+disabled: False
+search_only: False
+category: FOOD
+sort_string: 营养作用
+sub_entries:
+- id: IDFOODEFFECTS__SEAFOODRADIATIONRESISTANCE
+  parent_id: IDFOODEFFECTS
+  name: 辐射抗性：水产食品
+  disabled: False
+  sort_string: 辐射抗性：水产食品
+- id: IDFOODEFFECTS__HOTSTUFF
+  parent_id: IDFOODEFFECTS
+  name: 热辣菜肴
+  disabled: False
+  sort_string: 热辣菜肴
+- id: IDFOODEFFECTS__WARMTOUCHFOOD
+  parent_id: IDFOODEFFECTS
+  name: 严寒抗性：辛辣饮食
+  disabled: False
+  sort_string: 严寒抗性：辛辣饮食
+- id: IDFOODEFFECTS__GOODEATS
+  parent_id: IDFOODEFFECTS
+  name: 灵魂食物
+  disabled: False
+  sort_string: 灵魂食物
+content_container:
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 条目（4/4）
+    style: Subtitle
+  - widget_type: CodexText
+    text: <link="IDFOODEFFECTS__SEAFOODRADIATIONRESISTANCE">辐射抗性：水产食品</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="IDFOODEFFECTS__HOTSTUFF">热辣菜肴</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="IDFOODEFFECTS__WARMTOUCHFOOD">严寒抗性：辛辣饮食</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="IDFOODEFFECTS__GOODEATS">灵魂食物</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 辐射抗性：水产食品
+    style: Title
+  - widget_type: CodexText
+    text: 吃这种食物能提高<style="KKeyword">辐射</style>抗性
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    • 辐射抗性: +20%'
+    tooltip: 决定了复制人抵抗<style="KKeyword">辐射病</style>的难易程度。
+    style: Body
+  - widget_type: CodexText
+    text: '有这种效果的食物: '
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    • <link="LETTUCE">海生菜</link>'
+    tooltip: <link="SEALETTUCE">水草</link>上的松脆叶子，略咸。
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    • <link="FISHMEAT">帕库鱼片</link>'
+    tooltip: 从死去的<link="PACU">帕库鱼</link>身上弄来的生鱼片，好吃！
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    • <link="SHELLFISHMEAT">生蟹肉</link>'
+    tooltip: 从死去的<link="CRABFRESHWATER">沙泥蟹</link>身上弄来的生肉块，好吃！
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    • <link="DEEPFRIEDFISH">鱼肉卷</link>'
+    tooltip: 油炸的鱼肉，包裹在酥脆的鱼鳍中。
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    • <link="DEEPFRIEDSHELLFISH">蟹肉天妇罗</link>'
+    tooltip: 一份酥脆的油炸小动物爪。
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    • <link="COOKEDFISH">烤海鲜</link>'
+    tooltip: >-
+      由新鲜捕获的水生小动物制成的的熟肉块。
+
+
+      不出所料，尝起来有一股鱼腥味。
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    • <link="SMOKEDFISH">熏鱼</link>'
+    tooltip: >-
+      黄油熏鱼片。
+
+
+      用叉子拉开时很好剥下。
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    • <link="SURFANDTURF">海陆双拼</link>'
+    tooltip: >-
+      地上的<link="MEAT">肉</link>和海里的<link="COOKEDFISH">烤海鲜</link>拼在一起。
+
+
+      丰盛又满足。
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    • <link="MUSHROOMWRAP">蘑菇卷</link>'
+    tooltip: >-
+      美味的<link="MUSHROOM">蘑菇</link>卷在<link="LETTUCE">海生菜</link>中。
+
+
+      不仅有泥土味，而且吃着嘎嘣脆。
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    • <link="QUICHE">蘑菇乳蛋饼</link>'
+    tooltip: >-
+      <link="COOKEDEGG">煎蛋卷</link>、<link="FRIEDMUSHROOM">煎蘑菇</link>和<link="LETTUCE">海生菜</link>都堆在了美味的饼皮上。
+
+
+      不知为何，吃起来既湿软<i>又</i>酥脆。
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    • <link="BURGER">冰霜汉堡</link>'
+    tooltip: >-
+      <link="MEAT">肉</link>和<link="LETTUCE">海生菜</link>，夹在冰凉的<link="COLDWHEATBREAD">冰霜面包</link>中。
+
+
+      这是唯一一种最好趁冷端上来的汉堡。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 热辣菜肴
+    style: Title
+  - widget_type: CodexText
+    text: 复制人觉得这种辛辣的菜肴很提神
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    • 运动: +3'
+    tooltip: 决定了复制人的默认行走速度。
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    • 力量: +3'
+    tooltip: 决定了复制人的<style="KKeyword">承载能力</style>和清洁速度。
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    • 喷嚏: +1'
+    tooltip: 决定了复制人打喷嚏的频率。
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    • 压力: +5%/周期'
+    tooltip: 决定了复制人<style="KKeyword">压力</style>上升或下降的速度
+    style: Body
+  - widget_type: CodexText
+    text: '有这种效果的食物: '
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    • <link="CURRY">咖喱豆</link>'
+    tooltip: >-
+      很有嚼劲的<link="BEANPLANTSEED">小吃豆</link>，与数块<link="GINGERCONFIG">滋补根</link>炖在一起。
+
+
+      真是太辣了！
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 严寒抗性：辛辣饮食
+    style: Title
+  - widget_type: CodexText
+    text: 使用这个食物可提供对<style="KKeyword">严寒环境</style>和<style="KKeyword">双脚湿透</style>的暂时免疫
+    style: Body
+  - widget_type: CodexText
+    text: '有这种效果的食物: '
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    • <link="CURRY">咖喱豆</link>'
+    tooltip: >-
+      很有嚼劲的<link="BEANPLANTSEED">小吃豆</link>，与数块<link="GINGERCONFIG">滋补根</link>炖在一起。
+
+
+      真是太辣了！
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    • <link="SPICYTOFU">麻婆豆腐</link>'
+    tooltip: >-
+      浸泡在美味<link="SPICENUT">火椒</link>酱里的<link="TOFU">豆腐</link>。
+
+
+      它有着强烈的辣味。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 灵魂食物
+    style: Title
+  - widget_type: CodexText
+    text: 复制人发现这种家常饭能安慰情绪
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    • 运动: -2'
+    tooltip: 决定了复制人的默认行走速度。
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    • 压力: -15%/周期'
+    tooltip: 决定了复制人<style="KKeyword">压力</style>上升或下降的速度
+    style: Body
+  - widget_type: CodexText
+    text: '有这种效果的食物: '
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    • <link="BURGER">冰霜汉堡</link>'
+    tooltip: >-
+      <link="MEAT">肉</link>和<link="LETTUCE">海生菜</link>，夹在冰凉的<link="COLDWHEATBREAD">冰霜面包</link>中。
+
+
+      这是唯一一种最好趁冷端上来的汉堡。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

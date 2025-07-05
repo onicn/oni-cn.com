@@ -1,0 +1,35 @@
+id: CUSTOMCLOTHING
+parent_id: EQUIPMENT
+name: 精致装束
+disabled: False
+search_only: False
+category: EQUIPMENT
+sort_string: 精致装束
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="CUSTOMCLOTHING">精致装束</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: shirt_decor01_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 提高穿戴者身边小范围内的装饰度
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    • 隔热厚度: 0.3 cm'
+    tooltip: '隔热厚度: 0.3 cm'
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    • 装饰: 40'
+    tooltip: '装饰: 40'
+    style: Body
+  layout: Vertical

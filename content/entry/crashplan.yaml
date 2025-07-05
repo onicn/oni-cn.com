@@ -1,0 +1,66 @@
+id: CRASHPLAN
+parent_id: TECH
+name: 撞击计划
+disabled: False
+search_only: False
+category: TECH
+sort_string: 撞击计划
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="CRASHPLAN">撞击计划</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 有起必有落。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="SPACEPROGRAM">太空计划</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: research_type_orbital_icon
+  - widget_type: CodexText
+    text: <style="KKeyword">数据分析研究</style>能力
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: rocket_pioneer_cargo_module_0__ui
+  - widget_type: CodexText
+    text: <link="PIONEERMODULE">先锋舱</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: orbital_research_station_0__ui
+  - widget_type: CodexText
+    text: <link="ORBITALRESEARCHCENTER">轨道数据收集实验仪</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: research_space_0__ui
+  - widget_type: CodexText
+    text: <link="DLC1COSMICRESEARCHCENTER">虚拟天象仪</link>
+    style: Body
+  layout: Horizontal

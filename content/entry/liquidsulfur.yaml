@@ -1,0 +1,130 @@
+id: LIQUIDSULFUR
+parent_id: ELEMENTSLIQUID
+name: 液态硫
+disabled: False
+search_only: False
+icon_color: FFFF00FF
+category: ELEMENTSLIQUID
+sort_string: 液态硫
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="LIQUIDSULFUR">液态硫</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    color: FFFF00FF
+    image: element_liquid
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: FFFF00FF
+      text1: 液态硫
+      text2: 1000克
+      link_id: liquidsulfur
+    produce:
+    - image: element_gas
+      color: FFFF00FF
+      text1: 硫蒸气
+      text2: 1000克
+      link_id: sulfurgas
+    fabricator:
+      image: crew_state_temp_up
+      text1: 337ºC
+      tooltip: 温度高于337ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: FFFF00FF
+      text1: 液态硫
+      text2: 1000克
+      link_id: liquidsulfur
+    produce:
+    - image: sulfur_0__ui
+      text1: 硫
+      text2: 1000克
+      link_id: sulfur
+    fabricator:
+      image: crew_state_temp_down
+      text1: 115.2ºC
+      tooltip: 温度低于115.2ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换于
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: sulfur_0__ui
+      text1: 硫
+      text2: 1000克
+      link_id: sulfur
+    produce:
+    - image: element_liquid
+      color: FFFF00FF
+      text1: 液态硫
+      text2: 1000克
+      link_id: liquidsulfur
+    fabricator:
+      image: crew_state_temp_up
+      text1: 115.2ºC
+      tooltip: 温度高于115.2ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_gas
+      color: FFFF00FF
+      text1: 硫蒸气
+      text2: 1000克
+      link_id: sulfurgas
+    produce:
+    - image: element_liquid
+      color: FFFF00FF
+      text1: 液态硫
+      text2: 1000克
+      link_id: liquidsulfur
+    fabricator:
+      image: crew_state_temp_down
+      text1: 337ºC
+      tooltip: 温度低于337ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      (S) 硫是一种常见的化学元素，通常作为<link="METHANE">天然气</link>生产的副产物出现。
+
+
+      当前选中的处于<link="ELEMENTSLIQUID">液态</link>。
+
+
+      资源种类：<link="ELEMENTSLIQUID">液体</link>
+
+      冰点：115.2ºC
+
+      沸点：337ºC
+
+
+      比热容：0.700 (DTU/g)/ºC
+
+      热导率：0.200 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.74
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：<link="ELEMENTSLIQUID">液体</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

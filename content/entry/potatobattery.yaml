@@ -1,0 +1,120 @@
+id: POTATOBATTERY
+name: 栽培的能量
+title: STRINGS.CODEX.INVESTIGATIONS.DLC3_POTATOBATTERY.TITLE
+disabled: False
+search_only: False
+category: JOURNALS
+sort_string: 栽培的能量
+required_dlc_ids:
+- DLC3_ID
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 栽培的能量
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：三
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+  lock_id: journal_potatobattery1
+- contents:
+  - widget_type: CodexText
+    text: >+
+      <smallcaps>[声纹识别系统初始化完成]
+
+      [识别编号：B577]</smallcaps>
+
+
+      [录音开始]
+
+
+      最近与我们电气工程部的同事进行了一次对话，强调了我们的作物令人兴奋的潜在应用。
+
+
+      他们正在为新的通用移动电源原型体寻找替代材料……
+
+
+      ……几个年轻人关于土豆电池的随口一谈，引发了大家对生物电池和细菌纳米导线的讨论
+
+
+      ……块茎植物是电化学电池最有可能的候选。我们实验室培育的样本在外观和质地上与普通的马铃薯不同，但其中一些仍可能起到酸性电解质的作用。
+
+
+      有太多调查的途径，但时间又少得可怜……
+
+
+      [录音结束]
+
+      ------------------
+
+    style: Body
+  layout: Vertical
+  lock_id: journal_potatobattery1
+- contents:
+  - widget_type: CodexText
+    text: >
+      <smallcaps>[检测到录音片段]
+
+      [声纹识别系统不可用]</smallcaps>
+
+
+      [录音开始]
+
+
+      ……要求饥饿的殖民地在将可食用作物用于维持生计和电力生产之间做出选择是否有悖人伦？当然不是。
+
+
+      我们的任务是提供尽可能多的生存选择，而不是规定哪些选择在道德上更优越。
+
+
+      真正的问题是人工智能的指导是否足够先进，能够告知他们选择是存在的……
+
+
+      ……以及由于极端热失控而蒸发的一次性生物移动电源是否真的会在成功的殖民地和……<i>没成功的</i>……殖民地之间有实际区别。
+
+
+      [录音结束]
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: journal_potatobattery2
+- contents:
+  - widget_type: CodexText
+    text: >
+      <smallcaps>[检测到录音片段]
+
+      [声纹识别系统不可用]</smallcaps>
+
+
+      [录音开始]
+
+
+      ……我们成果的消息已经传开了！
+
+
+      生物工程师报告说，他们的一些生物卵中含有磷光蛋白，只需要基本的处理就可以触发化学反应，产生可储存的能量。其与戈斯曼博士一直以来研究的假肢具有前所未有的生物相容性。
+
+
+      主管上周给我们分配了六名应届毕业生。他们上夜班——这代人真是从不睡觉！
+
+
+      还没人见过他们，但在早上，他们做的数据总是会整齐地汇总到我们这里。
+
+
+      他们似乎决定优先使用金属和放射性组分，而不基于植物或动物。
+
+
+      这大概是年轻人的理想主义？
+
+
+      我钦佩他们的勇气。
+
+
+      [录音结束]
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: journal_potatobattery3

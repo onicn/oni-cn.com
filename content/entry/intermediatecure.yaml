@@ -1,0 +1,55 @@
+id: INTERMEDIATECURE
+name: 医疗包
+title: STRINGS.CODEX.INTERMEDIATECURE.TITLE
+disabled: False
+search_only: False
+category: MEDICINES
+sort_string: 医疗包
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 医疗包
+    style: Title
+  - widget_type: CodexText
+    text: 药学监护
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      一种由医生施用的药物，用来治疗中度<link="DISEASE">疾病</link>。<link="INTERMEDIATECURE">医疗包</link>抵抗<link="SLIMESICKNESS">粘液肺</link>非常有效。
+
+
+      必须由具有<link="MEDICINE2">病床礼仪</link>技能的复制人施用。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 配药桌
+    require:
+    - image: swamplilyflower_0__ui
+      text1: 芳香百合花
+      text2: 1000克
+      link_id: swamplilyflower
+    - image: phosphorite_0__ui
+      text1: 磷矿
+      text2: 1000克
+      link_id: phosphorite
+    produce:
+    - image: iv_slimelung_0__ui
+      text1: 医疗包
+      text2: 1单位
+      link_id: intermediatecure
+    fabricator:
+      image: apothecary_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 配药桌
+      text2: 100秒
+      link_id: apothecary
+  layout: Vertical

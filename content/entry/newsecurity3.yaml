@@ -1,0 +1,53 @@
+id: NEWSECURITY3
+name: 他们窃取了我们的DNA
+title: STRINGS.CODEX.A8_NEWSECURITY3.TITLE
+disabled: False
+search_only: False
+category: EMAILS
+sort_string: 他们窃取了我们的DNA
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 他们窃取了我们的DNA
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：二
+    style: Subtitle
+  layout: Vertical
+  lock_id: email_security3
+- contents:
+  - widget_type: CodexText
+    text: >
+      <smallcaps>收件人：<b>[受屏蔽]</b>
+
+      发件人：<b>[受屏蔽]</b></smallcaps>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_security3
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <indent=5%>我现在几乎可以肯定研究所窃取了我们的基因信息。
+
+
+      四十多个员工就是再方便不过的小白鼠，即使我们发现庄严科技做了什么，我们也没有什么法律选择。鉴于我们的工作性质，我们不能公开此事。
+
+
+      我一直都在想他们可能会拿我的DNA做什么实验，但我不得不保持沉默。
+
+
+      我不能承受失业的风险。</indent>
+    style: Body
+  - widget_type: CodexText
+    text: >2
+
+      [受屏蔽]
+
+      <size=11>庄严科技</size>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_security3

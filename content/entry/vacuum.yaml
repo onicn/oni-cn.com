@@ -1,0 +1,78 @@
+id: VACUUM
+parent_id: ELEMENTSOTHER
+name: 真空
+disabled: False
+search_only: False
+icon_color: 000000FF
+category: ELEMENTSOTHER
+sort_string: 真空
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="VACUUM">真空</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    color: 000000FF
+    image: unknown_far
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: unknown_far
+      color: 000000FF
+      text1: 真空
+      text2: 1800千克/周期
+      link_id: vacuum
+    - image: unknown_far
+      color: 000000FF
+      text1: 真空
+      text2: 1800千克/周期
+      link_id: vacuum
+    produce: []
+    fabricator:
+      image: wind_tunnel_0__ui
+      text1: 垂直风洞
+      link_id: VERTICALWINDTUNNEL
+  - widget_type: CodexConversionPanel
+    require:
+    - image: unknown_far
+      color: 000000FF
+      text1: 真空
+      text2: 1800千克/周期
+      link_id: vacuum
+    - image: unknown_far
+      color: 000000FF
+      text1: 真空
+      text2: 1800千克/周期
+      link_id: vacuum
+    produce: []
+    fabricator:
+      image: wind_tunnel_0__ui
+      text1: 垂直风洞
+      link_id: VERTICALWINDTUNNEL
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      真空是没有任何物质的空间。
+
+
+      比热容：0.000 (DTU/g)/ºC
+
+      热导率：0.000 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0
+
+      辐射释放量/1000千克：0拉德/周期
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

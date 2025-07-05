@@ -1,0 +1,262 @@
+id: STORYTRAITFOSSILHUNT
+parent_id: STORYTRAITS
+name: 远古标本
+title: STRINGS.CODEX.STORY_TRAITS.FOSSILHUNT.NAME
+disabled: False
+search_only: False
+icon_asset_name: fossil_dig_codex_icon
+category: STORYTRAITS
+sort_string: 远古标本
+content_container:
+- contents:
+  - widget_type: CodexImage
+    image: FossilHunt_image
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 远古标本
+    style: Title
+  - widget_type: CodexText
+    text: >-
+      这颗小行星的地下有一些骨架。
+
+
+      搜寻一种远古小动物的化石碎片，以此收集庄严科技的历史并解锁新资源。
+    style: Body
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 初遇
+    style: Subtitle
+  - widget_type: CodexText
+    text: >-
+      我发现了一只化石化的小动物埋藏在我的殖民地中——至少是其中一部分碎片——但它与我们在这颗小行星上发现的任何物种都不一样。
+
+
+      它是从哪里来的？它是怎么到这里的？这些骨头藏着什么其他问题的解释呢？
+
+
+      只有一种方法可以找到答案。
+    style: Body
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical
+  lock_id: story_trait_fossilhunt_initial
+- contents:
+  - widget_type: CodexText
+    text: 生物体设计记录
+    style: Subtitle
+  - widget_type: CodexText
+    text: 加密级别：三
+    style: Body
+  - widget_type: CodexText
+    text: >
+      <smallcaps>[声纹识别系统初始化完成]
+
+      [识别编号：B363]</smallcaps>
+
+
+      [录音开始]
+
+
+      ……将我们的生物体设计做出特定目标的限制，使其在外行星极地气候中生存，以此大大缩小了我们的研究范围，使本项目的开发进度能迅速超过其他的项目。
+
+
+      我们已经成功优化了适应性特征，比如形成的脂肪组织超过了生物体总质量的40%。布贝尔博士之前担心肌肉质量降低的问题，但最终确定减少量处于可接受范围内。
+
+
+      我们的下一步是调整生物体的饮食。让这种大小的食肉生物加入新殖民地很不明智。
+
+
+      [录音结束]
+
+      ------------------
+
+      [录音开始]
+
+
+      ……当我独自一人在实验室时，我发现自己情不自禁地会去围栏听这种生物的旋律声。当我靠近时，它的音调有时会有稍微的变化。
+
+
+      我不清楚这是什么意思。
+
+
+      [录音结束]
+
+      ------------------
+    style: Body
+  - widget_type: CodexText
+    text: >
+      [录音开始]
+
+
+      ……其他部门的一些人把我们的工作称为“肉糕计划”。可以说是用词不当且十分粗鲁。这个物种的目标不是作为食物来源：它必须在谷神星的气候中生存足够长时间，建立稳定的种群，随后通过温斯洛博士革命性基因编码技术，安置组可以将储存在其DNA中的基本研究数据取出。
+
+
+      想象一下，无数尧字节量的科学文档就在新殖民地周围自由徘徊……能自我维护的终极档案，能提供稳定的数据存储，不需要任何技术维护。
+
+
+      它给予了“活的文档”新的含义。
+
+
+      [录音结束]
+
+      ------------------
+
+      [录音开始]
+
+
+      ……今天到日子了。我的“大嗓门”和她一小部分后代已准备好运送到新家了。它们计划三个月前到达，以确保在下周定居组到达前状态良好。
+
+
+      特切纳博士邀请我协助传送任务，我因为太忙就没接受，为此也松了一口气，因为我听人说以前的货物出了岔子，虽然这些闲言碎语并没有得到证实，就目前为止吧……
+
+
+      在我们任务的急迫性下有时还是得做一些不理想的妥协。
+
+
+      现在实验室真是非常非常安静啊。
+
+
+      [录音结束]
+
+      ------------------
+    style: Body
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical
+  lock_id: story_trait_fossilhunt_poi1
+- contents:
+  - widget_type: CodexText
+    text: 主题：重定居计划启动派对
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：三
+    style: Subtitle
+  layout: Vertical
+  lock_id: story_trait_fossilhunt_poi2
+- contents:
+  - widget_type: CodexText
+    text: >
+      <smallcaps>收件人：<b>[受屏蔽]</b><alpha=#AA><size=12></size></color>
+
+      发件人：<b>[受屏蔽]</b><alpha=#AA></smallcaps>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: story_trait_fossilhunt_poi2
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <indent=5%>亲爱的[受屏蔽]
+
+
+      我们很高兴地宣布，在皮亚齐行星行动（OPP）的研究目标已接近尾声。我们已经克服了这种开创性工作带来的前所未有的障碍，感谢大家的耐心。
+
+
+      我们知道有传言说[受屏蔽]博士的文件中泄露了一些文档。
+
+
+      请大家放心，所谓的“告密者”完全是捏造的——我们的技术远超一般水准，不允许出现OPP货物在目标日期前10,000年就到达其目的地的错误计算。
+
+
+      我们的IT安全团队目前正在调查这份文档的数字痕迹以确定其来源。
+
+
+      为了感谢大家的不断支持，我们想邀请主要利益相关者参加庄严科技举行的私人发布会。当晚将由奥莉维亚·布鲁萨德博士主持，她将展示我们开创性的原型体，以及用实验室制作的食材制成的五道菜。
+
+
+      由于我们工作的敏感性，我们很抱歉目前无法容纳更多客人，并存在饮食限制。
+
+
+      斯特恩主管在晚餐后将主持30分钟的问答环节。所有问题必须提前至少24小时提交。
+
+
+      有关[受屏蔽]文件的问题将不予解答。
+
+
+      请注意，此电子邮件的内容将在打开后3分钟后失效。</indent>
+    style: Body
+  - widget_type: CodexText
+    text: >2
+
+      谨上
+
+      [受屏蔽]
+
+      <size=11>庄严科技</size>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: story_trait_fossilhunt_poi2
+- contents:
+  - widget_type: CodexText
+    text: 未经授权的活动
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：无
+    style: Subtitle
+  layout: Vertical
+  lock_id: story_trait_fossilhunt_poi3
+- contents:
+  - widget_type: CodexText
+    text: >
+      <smallcaps>收件人：<b>全体</b><alpha=#AA><size=12></size></color>
+
+      发件人：<b>管理员</b><alpha=#AA> <admin@gravitas.nova></color></smallcaps>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: story_trait_fossilhunt_poi3
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <indent=5%>员工在未得到批准的申请表的情况下，严禁移除生物工程实验室中的生物体。
+
+
+      庄严科技的项目并非为运动设计。未经批准的活动导致的受伤不在公司健康福利的承保范围内。
+
+
+      请查看下方附件，即公司规定的综合摘要。
+
+
+      <alpha=#AA>[附件丢失]</indent>
+    style: Body
+  - widget_type: CodexText
+    text: >2
+
+      谢谢！
+
+      - 管理员
+
+      <size=11>庄严科技</size>
+    style: Body
+  layout: Vertical
+  lock_id: story_trait_fossilhunt_poi3
+- contents:
+  - widget_type: CodexText
+    text: 挑战完成
+    style: Subtitle
+  - widget_type: CodexText
+    text: >-
+      我的复制人已经找到这只巨型动物尽可能多的散落残骸，并进行了精心组装。
+
+
+      通过努力，他们在最大化石的挖掘地点下发掘了一个看似无底的化石采集场。
+
+
+      在最上方的骨头中间嵌着一个手工制作的小动物项圈。因为过大，它不应属于任何传统意义上的伴侣动物。
+    style: Body
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical
+  lock_id: story_trait_fossilhunt_complete

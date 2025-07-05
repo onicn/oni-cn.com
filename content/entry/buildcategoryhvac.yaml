@@ -1,0 +1,119 @@
+id: BUILDCATEGORYHVAC
+parent_id: BUILDINGS
+name: 通风
+disabled: False
+search_only: False
+category: BUILDINGS
+sort_string: 通风
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="BUILDCATEGORYHVAC">通风</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexLabelWithLargeIcon
+    text: 导热气体管道
+    style: BodyWhite
+    image: utilities_gas_radiant_0__ui
+    link_id: gasconduitradiant
+  - widget_type: CodexLabelWithLargeIcon
+    text: 小型气泵
+    style: BodyWhite
+    image: minigaspump_0__ui
+    link_id: gasminipump
+  - widget_type: CodexLabelWithLargeIcon
+    text: 排气口
+    style: BodyWhite
+    image: ventgas_0__ui
+    link_id: gasvent
+  - widget_type: CodexLabelWithLargeIcon
+    text: 气体截断阀
+    style: BodyWhite
+    image: valvegas_logic_0__ui
+    link_id: gaslogicvalve
+  - widget_type: CodexLabelWithLargeIcon
+    text: 气体筛选器
+    style: BodyWhite
+    image: filter_gas_0__ui
+    link_id: gasfilter
+  - widget_type: CodexLabelWithLargeIcon
+    text: 气体管桥
+    style: BodyWhite
+    image: utilitygasbridge_0__ui
+    link_id: gasconduitbridge
+  - widget_type: CodexLabelWithLargeIcon
+    text: 气体管道
+    style: BodyWhite
+    image: utilities_gas_0__ui
+    link_id: gasconduit
+  - widget_type: CodexLabelWithLargeIcon
+    text: 气体管道元素传感器
+    style: BodyWhite
+    image: gas_element_sensor_0__ui
+    link_id: gasconduitelementsensor
+  - widget_type: CodexLabelWithLargeIcon
+    text: 气体管道温度传感器
+    style: BodyWhite
+    image: gas_temperature_sensor_0__ui
+    link_id: gasconduittemperaturesensor
+  - widget_type: CodexLabelWithLargeIcon
+    text: 气体管道病菌传感器
+    style: BodyWhite
+    image: gas_germs_sensor_0__ui
+    link_id: gasconduitdiseasesensor
+  - widget_type: CodexLabelWithLargeIcon
+    text: 气体装罐器
+    style: BodyWhite
+    image: gas_bottler_0__ui
+    link_id: gasbottler
+  - widget_type: CodexLabelWithLargeIcon
+    text: 气体计量阀
+    style: BodyWhite
+    image: limit_valve_gas_0__ui
+    link_id: gaslimitvalve
+  - widget_type: CodexLabelWithLargeIcon
+    text: 气体调节阀
+    style: BodyWhite
+    image: valvegas_0__ui
+    link_id: gasvalve
+  - widget_type: CodexLabelWithLargeIcon
+    text: 气泵
+    style: BodyWhite
+    image: pumpgas_0__ui
+    link_id: gaspump
+  - widget_type: CodexLabelWithLargeIcon
+    text: 气罐抽出器
+    style: BodyWhite
+    image: bottle_emptier_gas_conduit_0__ui
+    link_id: bottleemptierconduitgas
+  - widget_type: CodexLabelWithLargeIcon
+    text: 气罐排倒器
+    style: BodyWhite
+    image: gas_emptying_station_0__ui
+    link_id: bottleemptiergas
+  - widget_type: CodexLabelWithLargeIcon
+    text: 火箭端口气体卸载器
+    style: BodyWhite
+    image: conduit_port_gas_unloader_0__ui
+    link_id: modularlaunchpadportgasunloader
+  - widget_type: CodexLabelWithLargeIcon
+    text: 火箭端口气体装载器
+    style: BodyWhite
+    image: conduit_port_gas_loader_0__ui
+    link_id: modularlaunchpadportgas
+  - widget_type: CodexLabelWithLargeIcon
+    text: 隔热气体管道
+    style: BodyWhite
+    image: utilities_gas_insulated_0__ui
+    link_id: insulatedgasconduit
+  - widget_type: CodexLabelWithLargeIcon
+    text: 高压排气口
+    style: BodyWhite
+    image: ventgas_powered_0__ui
+    link_id: gasventhighpressure
+  layout: Grid
+- contents:
+  - widget_type: CodexSpacer
+  layout: Vertical

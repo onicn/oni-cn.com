@@ -1,0 +1,33 @@
+id: MORALE
+name: 士气
+title: STRINGS.CODEX.MORALE.TITLE
+disabled: False
+search_only: False
+category: SYSTEMS
+sort_string: <link="MORALE">士气</link>
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 士气
+    style: Subtitle
+  - widget_type: CodexText
+    text: >
+      复制人士气描述了<link="ROLES">技能</link>和生活方式之间的关系。复制人的技能越多，他们的士气期望也将越大。士气低于期望的复制人会有<link="STRESS">压力</link>惩罚。好吃的<link="FOOD">食物</link>、好看的房间、娱乐等放松方式会提升士气。
+    style: Body
+  - widget_type: CodexText
+    text: 娱乐
+    style: Subtitle
+  - widget_type: CodexText
+    text: >+
+      娱乐建筑，比如<link="WATERCOOLER">饮水机</link>和<link="ESPRESSOMACHINE">浓缩咖啡机</link>，使用时可提升复制人的士气。复制人在日程表的休息时间会使用这些建筑。
+
+    style: Body
+  - widget_type: CodexText
+    text: 喜悦反应
+    style: Subtitle
+  - widget_type: CodexText
+    text: >+
+      如果复制人有高士气值，那么他们就会自发地表现出喜悦反应。每名复制人的喜悦反应各不相同——但所有喜悦反应都是好事。一些反应会正向影响建筑的<link="DECOR">装饰度</link>，有些则正向影响复制人的士气或生产力。
+
+    style: Body
+  layout: Vertical

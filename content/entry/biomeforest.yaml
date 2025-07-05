@@ -1,0 +1,137 @@
+id: BIOMEFOREST
+parent_id: BIOMES
+name: 森林生态
+disabled: False
+search_only: False
+category: BIOMES
+sort_string: BIOMEFOREST
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 森林生态
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 这片生态温和且充满了独特的<link="PLANTS">植物</link>，包含了维持生存的所有必需品，但数量不足以维持一个长期的殖民地。探索临近的生态应是优先要事。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      森林生态存在小面积的<link="OXYROCK">氧石</link>和<link="WATER">水</link>，但计算表明，它们只能维持殖民地的时间十分有限。
+
+
+      分析表明，两种当地的植物应当优先种植：<link="OXYFERN">氧齿蕨</link>，释放<link="OXYGEN">氧气</link>但需要<link="WATER">水</link>；<link="FORESTTREE">乔木树</link>，产生作为燃料的<link="WOOD">木材</link>。
+
+
+      当地的<link="SQUIRRELSPECIES">树鼠</link>与<link="FORESTTREE">乔木树</link>是共生关系，它们似乎是唯一能找到<link="PLANTS">乔木橡实</link>的小动物。
+
+
+      这片生态真的相当漂亮，我注意到了<link="LIGHTBUGSPECIES">发光虫</link>和<link="LEAFYPLANT">欢乐叶</link>会唤起复制人的宁静感。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 元素
+    style: Subtitle
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 雪
+    image: snow_0__ui
+    link_id: snow
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 冰
+    image: ice_0__ui
+    link_id: ice
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 污染水
+    color: 474506FF
+    image: element_liquid
+    link_id: dirtywater
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 磷矿
+    image: phosphorite_0__ui
+    link_id: phosphorite
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 氧石
+    image: oxyrock_0__ui
+    link_id: oxyrock
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 铝矿
+    image: aluminum_ore_0__ui
+    link_id: aluminumore
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 二氧化碳
+    color: 000000FF
+    image: element_gas
+    link_id: carbondioxide
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 水
+    color: 0063FFFF
+    image: element_liquid
+    link_id: water
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 泥土
+    image: dirt_0__ui
+    link_id: dirt
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 氧气
+    color: B7FFFFFF
+    image: element_gas
+    link_id: oxygen
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 火成岩
+    image: igneous_rock_0__ui
+    link_id: igneousrock
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 植物
+    style: Subtitle
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 乔木树
+    image: tree_0__ui
+    link_id: foresttree
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 欢乐叶
+    image: potted_leafy_0__ui
+    link_id: leafyplant
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 氧齿蕨
+    image: oxy_fern_0__ui
+    link_id: oxyfern
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 米虱木
+    image: meallice_0__ui
+    link_id: basicsingleharvestplant
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 六角根
+    image: podmelon_0__ui
+    link_id: forestforageplantplanted
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 小动物
+    style: Subtitle
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 发光虫
+    image: lightbug_0__ui
+    link_id: lightbug
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 树鼠
+    image: squirrel_0__ui
+    link_id: squirrel
+  layout: Vertical

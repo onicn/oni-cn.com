@@ -1,0 +1,66 @@
+id: GINGERCONFIG
+name: 滋补根
+title: STRINGS.CODEX.GINGER.TITLE
+disabled: False
+search_only: False
+category: PLANTS
+sort_string: 滋补根
+required_dlc_ids:
+- EXPANSION1_ID
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 滋补根
+    style: Title
+  - widget_type: CodexText
+    text: 食用性植物
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexImage
+    image: ginger_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 滋补根是姜科植物的近亲。其去节的嫩芽通常是浅褐色的，被一层浅浅的保护性可食用的外皮覆盖。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 除了作为一种香料使用，它还作为各种轻微消化疾病的传统补品。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 在咀嚼过程中，其丝状纤维会难以避免地塞牙。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 咖喱豆
+    require:
+    - image: ginger_0__ui
+      text1: 滋补根
+      text2: 4单位
+      link_id: gingerconfig
+    - image: seed_beanplant_0__ui
+      text1: 小吃豆
+      text2: 4单位
+      link_id: bean
+    produce:
+    - image: curried_beans_0__ui
+      text1: 咖喱豆
+      text2: 5,000千卡
+      tooltip: 品质：优秀 [+4]
+      link_id: curry
+    fabricator:
+      image: cookstation_gourmet_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 燃气灶
+      text2: 50秒
+      link_id: gourmetcookingstation
+  layout: Vertical

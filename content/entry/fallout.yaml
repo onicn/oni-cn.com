@@ -1,0 +1,109 @@
+id: FALLOUT
+parent_id: ELEMENTSGAS
+name: 核尘埃
+disabled: False
+search_only: False
+icon_color: 00FF2CFF
+category: ELEMENTSGAS
+sort_string: 核尘埃
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="FALLOUT">核尘埃</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    color: 00FF2CFF
+    image: element_gas
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_gas
+      color: 00FF2CFF
+      text1: 核尘埃
+      text2: 1000克
+      link_id: fallout
+    produce:
+    - image: element_liquid
+      color: 81B000FF
+      text1: 液态核废料
+      text2: 1000克
+      link_id: nuclearwaste
+    fabricator:
+      image: crew_state_temp_down
+      text1: 66.9ºC
+      tooltip: 温度低于66.9ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换于
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: radium_0__ui
+      text1: 堆芯熔融物
+      text2: 1000克
+      link_id: corium
+    produce:
+    - image: element_gas
+      color: 00FF2CFF
+      text1: 核尘埃
+      text2: 1000克
+      link_id: fallout
+    fabricator:
+      image: crew_state_temp_up
+      text1: 626.9ºC
+      tooltip: 温度高于626.9ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: 81B000FF
+      text1: 液态核废料
+      text2: 1000克
+      link_id: nuclearwaste
+    produce:
+    - image: element_gas
+      color: 00FF2CFF
+      text1: 核尘埃
+      text2: 1000克
+      link_id: fallout
+    fabricator:
+      image: crew_state_temp_up
+      text1: 526.9ºC
+      tooltip: 温度高于526.9ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      核尘埃是一种充满<link="RADIATION">放射性污染物</link>的剧毒气体。可凝结为<link="NUCLEARWASTE">液态核废料</link>。
+
+
+      资源种类：不可呼吸的气体
+
+      凝点：66.9ºC
+
+
+      比热容：0.265 (DTU/g)/ºC
+
+      热导率：1.000 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.03
+
+      辐射释放量/1000千克：17拉德/周期
+
+
+      属性：<link="LIGHT">光源</link>, 气体, 不可呼吸的气体
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

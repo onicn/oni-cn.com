@@ -1,0 +1,174 @@
+id: BUILDCATEGORYEQUIPMENT
+parent_id: BUILDINGS
+name: 站台
+disabled: False
+search_only: False
+category: BUILDINGS
+sort_string: 站台
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="BUILDCATEGORYEQUIPMENT">站台</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexLabelWithLargeIcon
+    text: 修剪站
+    style: BodyWhite
+    image: shearing_station_0__ui
+    link_id: shearingstation
+  - widget_type: CodexLabelWithLargeIcon
+    text: 农业站
+    style: BodyWhite
+    image: planttender_0__ui
+    link_id: farmstation
+  - widget_type: CodexLabelWithLargeIcon
+    text: 喷气服存放柜
+    style: BodyWhite
+    image: changingarea_jetsuit_0__ui
+    link_id: jetsuitlocker
+  - widget_type: CodexLabelWithLargeIcon
+    text: 喷气服检查站
+    style: BodyWhite
+    image: changingarea_jetsuit_arrow_0__ui
+    link_id: jetsuitmarker
+  - widget_type: CodexLabelWithLargeIcon
+    text: 地质调谐仪
+    style: BodyWhite
+    image: geotuner_0__ui
+    link_id: geotuner
+  - widget_type: CodexLabelWithLargeIcon
+    text: 太空服锻造台
+    style: BodyWhite
+    image: suit_maker_0__ui
+    link_id: suitfabricator
+  - widget_type: CodexLabelWithLargeIcon
+    text: 工作台
+    style: BodyWhite
+    image: craftingstation_0__ui
+    link_id: craftingtable
+  - widget_type: CodexLabelWithLargeIcon
+    text: 工艺品分析站
+    style: BodyWhite
+    image: artifact_analysis_0__ui
+    link_id: artifactanalysisstation
+  - widget_type: CodexLabelWithLargeIcon
+    text: 技能涤除器
+    style: BodyWhite
+    image: respeccer_0__ui
+    link_id: resetskillsstation
+  - widget_type: CodexLabelWithLargeIcon
+    text: 挤奶站
+    style: BodyWhite
+    image: milking_station_0__ui
+    link_id: milkingstation
+  - widget_type: CodexLabelWithLargeIcon
+    text: 数据挖掘仪
+    style: BodyWhite
+    image: data_miner_0__ui
+    link_id: dataminer
+  - widget_type: CodexLabelWithLargeIcon
+    text: 时装翻新器
+    style: BodyWhite
+    image: super_snazzy_suit_alteration_station_0__ui
+    link_id: clothingalterationstation
+  - widget_type: CodexLabelWithLargeIcon
+    text: 材料研究终端
+    style: BodyWhite
+    image: material_research_centre_0__ui
+    link_id: nuclearresearchcenter
+  - widget_type: CodexLabelWithLargeIcon
+    text: 梳理站
+    style: BodyWhite
+    image: rancherstation_0__ui
+    link_id: ranchstation
+  - widget_type: CodexLabelWithLargeIcon
+    text: 植物分析仪
+    style: BodyWhite
+    image: genetic_analysisstation_0__ui
+    link_id: geneticanalysisstation
+  - widget_type: CodexLabelWithLargeIcon
+    text: 气压服存放柜
+    style: BodyWhite
+    image: changingarea_0__ui
+    link_id: suitlocker
+  - widget_type: CodexLabelWithLargeIcon
+    text: 气压服检查站
+    style: BodyWhite
+    image: changingarea_arrow_0__ui
+    link_id: suitmarker
+  - widget_type: CodexLabelWithLargeIcon
+    text: 氧气面罩存放柜
+    style: BodyWhite
+    image: oxygen_mask_locker_0__ui
+    link_id: oxygenmasklocker
+  - widget_type: CodexLabelWithLargeIcon
+    text: 氧气面罩检查站
+    style: BodyWhite
+    image: oxygen_checkpoint_arrow_0__ui
+    link_id: oxygenmaskmarker
+  - widget_type: CodexLabelWithLargeIcon
+    text: 焊接台
+    style: BodyWhite
+    image: advanced_crafting_table_0__ui
+    link_id: advancedcraftingtable
+  - widget_type: CodexLabelWithLargeIcon
+    text: 爆破弹组装机
+    style: BodyWhite
+    image: missile_fabricator_0__ui
+    link_id: missilefabricator
+  - widget_type: CodexLabelWithLargeIcon
+    text: 电控站
+    style: BodyWhite
+    image: electricianworkdesk_0__ui
+    link_id: powercontrolstation
+  - widget_type: CodexLabelWithLargeIcon
+    text: 研究站
+    style: BodyWhite
+    image: research_center_0__ui
+    link_id: researchcenter
+  - widget_type: CodexLabelWithLargeIcon
+    text: 纺织机
+    style: BodyWhite
+    image: clothingfactory_0__ui
+    link_id: clothingfabricator
+  - widget_type: CodexLabelWithLargeIcon
+    text: 虚拟天象仪
+    style: BodyWhite
+    image: research_space_0__ui
+    link_id: dlc1cosmicresearchcenter
+  - widget_type: CodexLabelWithLargeIcon
+    text: 超级计算机
+    style: BodyWhite
+    image: research_center2_0__ui
+    link_id: advancedresearchcenter
+  - widget_type: CodexLabelWithLargeIcon
+    text: 轨道数据收集实验仪
+    style: BodyWhite
+    image: orbital_research_station_0__ui
+    link_id: orbitalresearchcenter
+  - widget_type: CodexLabelWithLargeIcon
+    text: 远程作业坞
+    style: BodyWhite
+    image: remote_work_dock_0__ui
+    link_id: remoteworkerdock
+  - widget_type: CodexLabelWithLargeIcon
+    text: 远程控制器
+    style: BodyWhite
+    image: remote_work_terminal_0__ui
+    link_id: remoteworkterminal
+  - widget_type: CodexLabelWithLargeIcon
+    text: 铅服存放柜
+    style: BodyWhite
+    image: changingarea_radiation_0__ui
+    link_id: leadsuitlocker
+  - widget_type: CodexLabelWithLargeIcon
+    text: 铅服检查站
+    style: BodyWhite
+    image: changingarea_radiation_arrow_0__ui
+    link_id: leadsuitmarker
+  layout: Grid
+- contents:
+  - widget_type: CodexSpacer
+  layout: Vertical

@@ -1,0 +1,71 @@
+id: TOEPLANT
+parent_id: PLANTS
+name: 安宁芷
+disabled: False
+search_only: False
+category: PLANTS
+sort_string: 安宁芷
+required_dlc_ids:
+- EXPANSION1_ID
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 安宁芷
+    style: Title
+  - widget_type: CodexText
+    text: 装饰性植物
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      安宁芷是一种装饰性的多肉植物，生长在放射性环境中。
+
+
+      尽管生活在这片严酷的放射性生态中的动植物群都具有一定的攻击性，但安宁芷却是一个例外。
+
+
+      人们普遍认为，这种植物有改善士气的能力是因为其外观与人们聚会时可能会戴的一种滑稽的帽子类似有关。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: potted_toes_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 成长自
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: seed_potted_toes_0__ui
+  - widget_type: CodexText
+    text: <link="TOEPLANT">安宁芷种子</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 详情
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexText
+    text: 安宁芷通过产生脚趾摩擦的视觉效果以提高<link="DECOR">装饰度</link>。
+    style: Body
+  - widget_type: CodexText
+    text: >-
+      <b>生长需求</b>：
+          • 最大<link="RADIATION">辐射</link>：2,200拉德/周期
+          • <link="HEAT">温度</link>：-90.1至-0.1ºC
+          • <link="ATMOSPHERE">气压</link>：最低150克
+          • <link="ATMOSPHERE">环境</link>：
+              • <link="OXYGEN">氧气</link>
+              • <link="CONTAMINATEDOXYGEN">污染氧</link>
+              • <link="CARBONDIOXIDE">二氧化碳</link>
+          • 农地
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

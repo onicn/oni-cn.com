@@ -1,0 +1,152 @@
+id: BIOMESANDSTONE
+parent_id: BIOMES
+name: 砂岩生态
+disabled: False
+search_only: False
+category: BIOMES
+sort_string: BIOMESANDSTONE
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 砂岩生态
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 砂岩生态是温和的宜人之地，几乎没有潜在的危险。这是一个能让你的殖民地建立并运作的理想地点。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      <link="OXYROCK">氧石</link>和<link="BASICFORAGEPLANTPLANTED">淤泥根</link>的量足够维持你的殖民地很长时间，你可以借此获得更多资源。
+
+
+      <link="DIRT">泥土</link>、<link="ALGAE">藻类</link>、<link="COPPER">铜</link>，当然还有<link="SANDSTONE">砂岩</link>，这些材料提供了建造殖民地基础必需品的所有材料。
+
+
+      随机出现的<link="LIGHTBUGSPECIES">发光虫</link>可以为我的复制人提供<link="MORALE">士气</link>加成，但不能作为可靠的光源。
+
+
+      <link="HATCHSPECIES">哈奇</link>可以驯化，作为食物和<link="CARBON">煤炭</link>来源，若使用<link="GENERATOR">煤炭发电机</link>发电将会很有帮助。
+
+
+      总之，这片生态是建立我的殖民地的完美起点，从这里开始复制人可以慢慢向外探索。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 元素
+    style: Subtitle
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 氧石
+    image: oxyrock_0__ui
+    link_id: oxyrock
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 雪
+    image: snow_0__ui
+    link_id: snow
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 冰
+    image: ice_0__ui
+    link_id: ice
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 磷矿
+    image: phosphorite_0__ui
+    link_id: phosphorite
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 真空
+    color: 000000FF
+    image: unknown_far
+    link_id: vacuum
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 肥料
+    image: fertilizer_0__ui
+    link_id: fertilizer
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 泥土
+    image: dirt_0__ui
+    link_id: dirt
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 藻类
+    image: algae_0__ui
+    link_id: algae
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 煤炭
+    image: carbon_0__ui
+    link_id: carbon
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 沙子
+    image: sand_0__ui
+    link_id: sand
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 水
+    color: 0063FFFF
+    image: element_liquid
+    link_id: water
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 二氧化碳
+    color: 000000FF
+    image: element_gas
+    link_id: carbondioxide
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 氧气
+    color: B7FFFFFF
+    image: element_gas
+    link_id: oxygen
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 铜矿
+    image: cuprite_0__ui
+    link_id: cuprite
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 砂岩
+    image: sand_stone_0__ui
+    link_id: sandstone
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 植物
+    style: Subtitle
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 毛刺花
+    image: bristleblossom_0__ui
+    link_id: prickleflower
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 诱人荆棘
+    image: bristlebriar_0__ui
+    link_id: pricklegrass
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 米虱木
+    image: meallice_0__ui
+    link_id: basicsingleharvestplant
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 掩埋的淤泥根
+    image: muckroot_0__ui
+    link_id: basicforageplantplanted
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 小动物
+    style: Subtitle
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 发光虫
+    image: lightbug_0__ui
+    link_id: lightbug
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 好吃哈奇
+    image: hatch_0__ui
+    link_id: hatch
+  layout: Vertical

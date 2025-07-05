@@ -1,0 +1,43 @@
+id: POLITEREQUEST
+name: 礼貌的请求
+title: STRINGS.CODEX.B8_POLITEREQUEST.TITLE
+disabled: False
+search_only: False
+category: EMAILS
+sort_string: 礼貌的请求
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 礼貌的请求
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：无
+    style: Subtitle
+  layout: Vertical
+  lock_id: misc_politerequest
+- contents:
+  - widget_type: CodexText
+    text: >
+      <smallcaps>收件人：<b>全体</b>
+
+      发件人：<b>管理员</b> <alpha=#AA><admin@gravitas.nova></color></smallcaps>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: misc_politerequest
+- contents:
+  - widget_type: CodexText
+    text: <indent=5%>无论那个进入了斯特恩主管的办公室把她的桌子上的东西向左移动了一英寸的人是谁，请你停止你的行为，你的行为让她觉得非常不安。</indent>
+    style: Body
+  - widget_type: CodexText
+    text: >2
+
+      谢谢！
+
+      - 管理员
+
+      <size=11>庄严科技</size>
+    style: Body
+  layout: Vertical
+  lock_id: misc_politerequest

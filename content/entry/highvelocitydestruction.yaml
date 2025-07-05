@@ -1,0 +1,45 @@
+id: HIGHVELOCITYDESTRUCTION
+parent_id: TECH
+name: 高速破坏
+disabled: False
+search_only: False
+category: TECH
+sort_string: 高速破坏
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="HIGHVELOCITYDESTRUCTION">高速破坏</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 挖掘天空。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="HIGHVELOCITY">高速运输</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: rocket_nosecone_gathering_0__ui
+  - widget_type: CodexText
+    text: <link="NOSECONEHARVEST">钻头前锥</link>
+    style: Body
+  layout: Horizontal

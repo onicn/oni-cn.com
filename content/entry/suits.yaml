@@ -1,0 +1,76 @@
+id: SUITS
+parent_id: TECH
+name: 危险防护
+disabled: False
+search_only: False
+category: TECH
+sort_string: 危险防护
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="SUITS">危险防护</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 在极端条件环境下生存所需的必要装备。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="CLOTHING">纺织生产</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="IMPROVEDGASPIPING">改良通风</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: overlay_suit
+  - widget_type: CodexText
+    text: <b>太空服概览</b>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: suit_oxygen_0__ui
+  - widget_type: CodexText
+    text: <style="KKeyword">气压服</style>模型
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: suit_maker_0__ui
+  - widget_type: CodexText
+    text: <link="SUITFABRICATOR">太空服锻造台</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: changingarea_arrow_0__ui
+  - widget_type: CodexText
+    text: <link="SUITMARKER">气压服检查站</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: changingarea_0__ui
+  - widget_type: CodexText
+    text: <link="SUITLOCKER">气压服存放柜</link>
+    style: Body
+  layout: Horizontal

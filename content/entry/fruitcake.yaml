@@ -1,0 +1,181 @@
+id: FRUITCAKE
+parent_id: FOOD
+name: 浆果糕
+disabled: False
+search_only: False
+category: FOOD
+sort_string: 浆果糕
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="FRUITCAKE">浆果糕</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: fruitcake_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      捣碎的<link="PRICKLEFRUIT">毛刺浆果</link>泥，保质期非常长。
+
+
+      它甜到难以忍受的味道能让舌头暂时麻木。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 品质：良好 [+3]
+    style: Body
+  - widget_type: CodexText
+    text: 卡路里：4,000千卡
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 腐烂时间：永不腐烂
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: fruitcake_0__ui
+      text1: 浆果糕
+      text2: 700千卡/周期
+      tooltip: 品质：良好 [+3]
+      link_id: fruitcake
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 131.3克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__ui
+      text1: 好吃哈奇
+      link_id: HATCH
+  - widget_type: CodexConversionPanel
+    require:
+    - image: fruitcake_0__ui
+      text1: 浆果糕
+      text2: 700千卡/周期
+      tooltip: 品质：良好 [+3]
+      link_id: fruitcake
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 175克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__veg_ui
+      text1: 草质哈奇
+      link_id: HATCHVEGGIE
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 食物压制器
+    require:
+    - image: seed_coldwheat_0__ui
+      text1: 冰霜麦粒
+      text2: 5单位
+      link_id: coldwheat
+    - image: bristleberry_0__ui
+      text1: 毛刺浆果
+      text2: 1,600千卡
+      tooltip: 品质：糟糕 [0]
+      link_id: pricklefruit
+    produce:
+    - image: fruitcake_0__ui
+      text1: 浆果糕
+      text2: 4,000千卡
+      tooltip: 品质：良好 [+3]
+      link_id: fruitcake
+    fabricator:
+      image: microbemusher_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 食物压制器
+      text2: 50秒
+      link_id: microbemusher
+  - widget_type: CodexRecipePanel
+    text: 食物压制器
+    require:
+    - image: seed_coldwheat_0__ui
+      text1: 冰霜麦粒
+      text2: 5单位
+      link_id: coldwheat
+    - image: iceberry_0__ui
+      text1: 刺壳果
+      text2: 1,600千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: hardskinberry
+    produce:
+    - image: fruitcake_0__ui
+      text1: 浆果糕
+      text2: 4,000千卡
+      tooltip: 品质：良好 [+3]
+      link_id: fruitcake
+    fabricator:
+      image: microbemusher_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 食物压制器
+      text2: 50秒
+      link_id: microbemusher
+  - widget_type: CodexRecipePanel
+    text: 食物压制器
+    require:
+    - image: megafrond_grain_0__ui
+      text1: 巨蕨谷粒
+      text2: 5单位
+      link_id: fernfood
+    - image: bristleberry_0__ui
+      text1: 毛刺浆果
+      text2: 1,600千卡
+      tooltip: 品质：糟糕 [0]
+      link_id: pricklefruit
+    produce:
+    - image: fruitcake_0__ui
+      text1: 浆果糕
+      text2: 4,000千卡
+      tooltip: 品质：良好 [+3]
+      link_id: fruitcake
+    fabricator:
+      image: microbemusher_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 食物压制器
+      text2: 50秒
+      link_id: microbemusher
+  - widget_type: CodexRecipePanel
+    text: 食物压制器
+    require:
+    - image: megafrond_grain_0__ui
+      text1: 巨蕨谷粒
+      text2: 5单位
+      link_id: fernfood
+    - image: iceberry_0__ui
+      text1: 刺壳果
+      text2: 1,600千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: hardskinberry
+    produce:
+    - image: fruitcake_0__ui
+      text1: 浆果糕
+      text2: 4,000千卡
+      tooltip: 品质：良好 [+3]
+      link_id: fruitcake
+    fabricator:
+      image: microbemusher_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 食物压制器
+      text2: 50秒
+      link_id: microbemusher
+  layout: Vertical

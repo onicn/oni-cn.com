@@ -1,0 +1,66 @@
+id: ADVANCEDFILTRATION
+parent_id: TECH
+name: 分离
+disabled: False
+search_only: False
+category: TECH
+sort_string: 分离
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="ADVANCEDFILTRATION">分离</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 筛选<link="ELEMENTSLIQUID">液体</link>和<link="ELEMENTSGAS">气体</link>的基础技术。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="LIQUIDPIPING">水管</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: filter_gas_0__ui
+  - widget_type: CodexText
+    text: <link="GASFILTER">气体筛选器</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: filter_liquid_0__ui
+  - widget_type: CodexText
+    text: <link="LIQUIDFILTER">液体筛选器</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: sludge_press_0__ui
+  - widget_type: CodexText
+    text: <link="SLUDGEPRESS">泥浆分离器</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: oilchange_station_0__ui
+  - widget_type: CodexText
+    text: <link="OILCHANGER">润滑站</link>
+    style: Body
+  layout: Horizontal

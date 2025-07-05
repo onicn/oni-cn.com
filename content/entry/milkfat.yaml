@@ -1,0 +1,162 @@
+id: MILKFAT
+parent_id: ELEMENTSSOLID
+name: 咸乳蜡
+disabled: False
+search_only: False
+category: ELEMENTSSOLID
+sort_string: 咸乳蜡
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="MILKFAT">咸乳蜡</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: milkfat_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: milkfat_0__ui
+      text1: 咸乳蜡
+      text2: 1000克
+      link_id: milkfat
+    produce:
+    - image: element_liquid
+      color: B000FFFF
+      text1: 液态石脑油
+      text2: 1000克
+      link_id: naphtha
+    fabricator:
+      image: crew_state_temp_up
+      text1: 159.9ºC
+      tooltip: 温度高于159.9ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换于
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: CCEEE8FF
+      text1: 咸乳
+      text2: 1000克
+      link_id: milk
+    produce:
+    - image: element_liquid
+      color: ADE9E5FF
+      text1: 浓盐水
+      text2: 900克
+      link_id: brine
+    - image: milkfat_0__ui
+      text1: 咸乳蜡
+      text2: 100克
+      link_id: milkfat
+    fabricator:
+      image: crew_state_temp_up
+      text1: 80ºC
+      tooltip: 温度高于80ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 塑料质
+    require:
+    - image: temp_conductor_0__ui
+      text1: 导热质
+      text2: 15千克
+      link_id: tempconductorsolid
+    - image: polypropylene_0__ui
+      text1: 塑料
+      text2: 70千克
+      link_id: polypropylene
+    - image: milkfat_0__ui
+      text1: 咸乳蜡
+      text2: 15千克
+      link_id: milkfat
+    produce:
+    - image: hardplastic_0__ui
+      text1: 塑料质
+      text2: 100千克
+      link_id: hardpolypropylene
+    fabricator:
+      image: supermaterial_refinery_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 分子熔炉
+      text2: 80秒
+      link_id: supermaterialrefinery
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: CCEEE8FF
+      text1: 咸乳
+      text2: 600千克/周期
+      link_id: milk
+    produce:
+    - image: milkfat_0__ui
+      text1: 咸乳蜡
+      text2: 54千克/周期
+      link_id: milkfat
+    - image: element_liquid
+      color: ADE9E5FF
+      text1: 浓盐水
+      text2: 486千克/周期
+      link_id: brine
+    - image: element_gas
+      color: 000000FF
+      text1: 二氧化碳
+      text2: 60千克/周期
+      link_id: carbondioxide
+    fabricator:
+      image: milk_separator_0__ui
+      text1: 咸乳蜡收集器
+      link_id: MILKFATSEPARATOR
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      咸乳蜡是一种<link="MILK">咸乳</link>的<link="ELEMENTSSOLID">固体</link>副产物。
+
+
+      资源种类：消耗性矿石
+
+      熔点：159.9ºC
+
+      硬度：<color=#71ABCFFF>1（非常柔软）</color>
+
+
+      比热容：1.920 (DTU/g)/ºC
+
+      热导率：0.150 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.85
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：溜滑, <link="ELEMENTSSOLID">固体</link>, 消耗性矿石
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

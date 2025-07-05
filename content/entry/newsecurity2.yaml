@@ -1,0 +1,50 @@
+id: NEWSECURITY2
+name: 新安保系统？
+title: STRINGS.CODEX.A6_NEWSECURITY2.TITLE
+disabled: False
+search_only: False
+category: EMAILS
+sort_string: 新安保系统？
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 新安保系统？
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：一
+    style: Subtitle
+  layout: Vertical
+  lock_id: email_security2
+- contents:
+  - widget_type: CodexText
+    text: >
+      <smallcaps>收件人：<b>[受屏蔽]</b>
+
+      发件人：<b>[受屏蔽]</b></color></smallcaps>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_security2
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <indent=5%>这么说，研究所正在引进这个新的安保系统，需要扫描我们的手来解锁门禁。我的问题是，他们扫描的到底是什么？
+
+
+      工程部的人说门禁设备看起来不像是指纹扫描仪，但在生物工程部工作的两人完全不肯发表意见。
+
+
+      我不喜欢这样。</indent>
+    style: Body
+  - widget_type: CodexText
+    text: >2
+
+      [受屏蔽]
+
+      <size=11>庄严科技</size>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_security2

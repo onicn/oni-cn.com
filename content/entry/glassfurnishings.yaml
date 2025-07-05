@@ -1,0 +1,59 @@
+id: GLASSFURNISHINGS
+parent_id: TECH
+name: 玻璃吹制
+disabled: False
+search_only: False
+category: TECH
+sort_string: 玻璃吹制
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="GLASSFURNISHINGS">玻璃吹制</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 玻璃的装饰效果是显而易见的。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="LUXURY">豪华家装</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: floor_glass_0__ui
+  - widget_type: CodexText
+    text: <link="GLASSTILE">窗户砖</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: flowervase_hanging_0__ui
+  - widget_type: CodexText
+    text: <link="FLOWERVASEHANGINGFANCY">透明花盆</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: sun_lamp_0__ui
+  - widget_type: CodexText
+    text: <link="SUNLAMP">日光灯</link>
+    style: Body
+  layout: Horizontal

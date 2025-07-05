@@ -1,0 +1,52 @@
+id: PROPFACILITYDISPLAY1
+name: 打印舱宣传广告
+title: STRINGS.CODEX.A0_PROPFACILITYDISPLAY1.TITLE
+disabled: False
+search_only: False
+category: NOTICES
+sort_string: 打印舱宣传广告
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 打印舱宣传广告
+    style: Title
+  - widget_type: CodexText
+    text: 公开发布
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+  lock_id: display_prop1
+- contents:
+  - widget_type: CodexText
+    text: >-
+      最新的3D打印技术现已推出：
+
+      庄严科技家用打印舱
+
+
+      我们很自豪地宣布，庄严科技改进了打印技术，很快，它将给您的现有家用打印舱带来新的生物有机材料打印功能。
+
+
+      这对普通家庭意味着什么？
+
+
+      您再也不必为晚餐发愁！只需选择打印舱5398种预编程食谱中的任意一种，您便可在0.87秒后开始享用美味的炖肉。
+
+
+      更喜欢独有的家庭食谱？您可以编写自己的食谱，即刻感受家的味道，或者走老派路线，打印新鲜美味的食材，自制美食。
+
+
+      晚餐就是这么容易！
+    style: Body
+  layout: Vertical
+  lock_id: display_prop1
+- contents:
+  - widget_type: CodexText
+    text: >2-
+
+      预计明年初上市销售。
+
+      庄严科技出品。
+    style: Body
+  layout: Vertical
+  lock_id: display_prop1

@@ -1,0 +1,91 @@
+id: SOLIDCHLORINE
+parent_id: ELEMENTSSOLID
+name: 固态氯
+disabled: False
+search_only: False
+category: ELEMENTSSOLID
+sort_string: 固态氯
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="SOLIDCHLORINE">固态氯</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: solid_chlorine_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: solid_chlorine_0__ui
+      text1: 固态氯
+      text2: 1000克
+      link_id: solidchlorine
+    produce:
+    - image: element_liquid
+      color: 3AC330FF
+      text1: 液态氯
+      text2: 1000克
+      link_id: chlorine
+    fabricator:
+      image: crew_state_temp_up
+      text1: -101ºC
+      tooltip: 温度高于-101ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换于
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: 3AC330FF
+      text1: 液态氯
+      text2: 1000克
+      link_id: chlorine
+    produce:
+    - image: solid_chlorine_0__ui
+      text1: 固态氯
+      text2: 1000克
+      link_id: solidchlorine
+    fabricator:
+      image: crew_state_temp_down
+      text1: -101ºC
+      tooltip: 温度低于-101ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      (Cl) 固态氯是一种<link="ELEMENTSSOLID">固态</link>的杀<link="DISEASE">菌</link>元素。
+
+
+      资源种类：可液化物
+
+      熔点：-101ºC
+
+      硬度：<color=#866BA5FF>25（坚硬）</color>
+
+
+      比热容：0.480 (DTU/g)/ºC
+
+      热导率：0.750 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.73
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：<link="ELEMENTSSOLID">固体</link>, 可液化物
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

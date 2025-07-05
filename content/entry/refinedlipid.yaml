@@ -1,0 +1,533 @@
+id: REFINEDLIPID
+parent_id: ELEMENTSLIQUID
+name: 生物柴油
+disabled: False
+search_only: False
+icon_color: E1CB69FF
+category: ELEMENTSLIQUID
+sort_string: 生物柴油
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="REFINEDLIPID">生物柴油</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    color: E1CB69FF
+    image: element_liquid
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: E1CB69FF
+      text1: 生物柴油
+      text2: 1000克
+      link_id: refinedlipid
+    produce:
+    - image: element_gas
+      color: 000000FF
+      text1: 二氧化碳
+      text2: 1000克
+      link_id: carbondioxide
+    fabricator:
+      image: crew_state_temp_up
+      text1: 180ºC
+      tooltip: 温度高于180ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: E1CB69FF
+      text1: 生物柴油
+      text2: 1000克
+      link_id: refinedlipid
+    produce:
+    - image: tallow_0__ui
+      text1: 动物油脂
+      text2: 1000克
+      link_id: tallow
+    fabricator:
+      image: crew_state_temp_down
+      text1: -10ºC
+      tooltip: 温度低于-10ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换于
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: tallow_0__ui
+      text1: 动物油脂
+      text2: 1000克
+      link_id: tallow
+    produce:
+    - image: element_liquid
+      color: E1CB69FF
+      text1: 生物柴油
+      text2: 1000克
+      link_id: refinedlipid
+    fabricator:
+      image: crew_state_temp_up
+      text1: 80ºC
+      tooltip: 温度高于80ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 爆破弹
+    require:
+    - image: nickel_0__ui
+      text1: 镍
+      text2: 25千克
+      link_id: nickel
+    - image: element_liquid
+      color: E1CB69FF
+      text1: 生物柴油
+      text2: 50千克
+      link_id: refinedlipid
+    produce:
+    - image: missile_0__ui
+      text1: 爆破弹
+      text2: 5单位
+      link_id: missilelauncher
+    fabricator:
+      image: missile_fabricator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 爆破弹组装机
+      text2: 80秒
+      link_id: missilefabricator
+  - widget_type: CodexRecipePanel
+    text: 爆破弹
+    require:
+    - image: copper_refined_0__ui
+      text1: 铜
+      text2: 25千克
+      link_id: copper
+    - image: element_liquid
+      color: E1CB69FF
+      text1: 生物柴油
+      text2: 50千克
+      link_id: refinedlipid
+    produce:
+    - image: missile_0__ui
+      text1: 爆破弹
+      text2: 5单位
+      link_id: missilelauncher
+    fabricator:
+      image: missile_fabricator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 爆破弹组装机
+      text2: 80秒
+      link_id: missilefabricator
+  - widget_type: CodexRecipePanel
+    text: 爆破弹
+    require:
+    - image: cobalt_refined_0__ui
+      text1: 钴
+      text2: 25千克
+      link_id: cobalt
+    - image: element_liquid
+      color: E1CB69FF
+      text1: 生物柴油
+      text2: 50千克
+      link_id: refinedlipid
+    produce:
+    - image: missile_0__ui
+      text1: 爆破弹
+      text2: 5单位
+      link_id: missilelauncher
+    fabricator:
+      image: missile_fabricator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 爆破弹组装机
+      text2: 80秒
+      link_id: missilefabricator
+  - widget_type: CodexRecipePanel
+    text: 爆破弹
+    require:
+    - image: aluminum_0__ui
+      text1: 铝
+      text2: 25千克
+      link_id: aluminum
+    - image: element_liquid
+      color: E1CB69FF
+      text1: 生物柴油
+      text2: 50千克
+      link_id: refinedlipid
+    produce:
+    - image: missile_0__ui
+      text1: 爆破弹
+      text2: 5单位
+      link_id: missilelauncher
+    fabricator:
+      image: missile_fabricator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 爆破弹组装机
+      text2: 80秒
+      link_id: missilefabricator
+  - widget_type: CodexRecipePanel
+    text: 爆破弹
+    require:
+    - image: iron_refined_0__ui
+      text1: 铁
+      text2: 25千克
+      link_id: iron
+    - image: element_liquid
+      color: E1CB69FF
+      text1: 生物柴油
+      text2: 50千克
+      link_id: refinedlipid
+    produce:
+    - image: missile_0__ui
+      text1: 爆破弹
+      text2: 5单位
+      link_id: missilelauncher
+    fabricator:
+      image: missile_fabricator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 爆破弹组装机
+      text2: 80秒
+      link_id: missilefabricator
+  - widget_type: CodexRecipePanel
+    text: 宇宙内爆破弹
+    require:
+    - image: nickel_0__ui
+      text1: 镍
+      text2: 50千克
+      link_id: nickel
+    - image: fertilizer_0__ui
+      text1: 肥料
+      text2: 100千克
+      link_id: fertilizer
+    - image: element_liquid
+      color: E1CB69FF
+      text1: 生物柴油
+      text2: 200千克
+      link_id: refinedlipid
+    produce:
+    - image: longrange_missile_0__ui
+      text1: 宇宙内爆破弹
+      text2: 1单位
+      link_id: missilelauncher
+    fabricator:
+      image: missile_fabricator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 爆破弹组装机
+      text2: 80秒
+      link_id: missilefabricator
+  - widget_type: CodexRecipePanel
+    text: 宇宙内爆破弹
+    require:
+    - image: nickel_0__ui
+      text1: 镍
+      text2: 50千克
+      link_id: nickel
+    - image: peat_0__ui
+      text1: 泥炭
+      text2: 100千克
+      link_id: peat
+    - image: element_liquid
+      color: E1CB69FF
+      text1: 生物柴油
+      text2: 200千克
+      link_id: refinedlipid
+    produce:
+    - image: longrange_missile_0__ui
+      text1: 宇宙内爆破弹
+      text2: 1单位
+      link_id: missilelauncher
+    fabricator:
+      image: missile_fabricator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 爆破弹组装机
+      text2: 80秒
+      link_id: missilefabricator
+  - widget_type: CodexRecipePanel
+    text: 宇宙内爆破弹
+    require:
+    - image: copper_refined_0__ui
+      text1: 铜
+      text2: 50千克
+      link_id: copper
+    - image: fertilizer_0__ui
+      text1: 肥料
+      text2: 100千克
+      link_id: fertilizer
+    - image: element_liquid
+      color: E1CB69FF
+      text1: 生物柴油
+      text2: 200千克
+      link_id: refinedlipid
+    produce:
+    - image: longrange_missile_0__ui
+      text1: 宇宙内爆破弹
+      text2: 1单位
+      link_id: missilelauncher
+    fabricator:
+      image: missile_fabricator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 爆破弹组装机
+      text2: 80秒
+      link_id: missilefabricator
+  - widget_type: CodexRecipePanel
+    text: 宇宙内爆破弹
+    require:
+    - image: copper_refined_0__ui
+      text1: 铜
+      text2: 50千克
+      link_id: copper
+    - image: peat_0__ui
+      text1: 泥炭
+      text2: 100千克
+      link_id: peat
+    - image: element_liquid
+      color: E1CB69FF
+      text1: 生物柴油
+      text2: 200千克
+      link_id: refinedlipid
+    produce:
+    - image: longrange_missile_0__ui
+      text1: 宇宙内爆破弹
+      text2: 1单位
+      link_id: missilelauncher
+    fabricator:
+      image: missile_fabricator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 爆破弹组装机
+      text2: 80秒
+      link_id: missilefabricator
+  - widget_type: CodexRecipePanel
+    text: 宇宙内爆破弹
+    require:
+    - image: cobalt_refined_0__ui
+      text1: 钴
+      text2: 50千克
+      link_id: cobalt
+    - image: fertilizer_0__ui
+      text1: 肥料
+      text2: 100千克
+      link_id: fertilizer
+    - image: element_liquid
+      color: E1CB69FF
+      text1: 生物柴油
+      text2: 200千克
+      link_id: refinedlipid
+    produce:
+    - image: longrange_missile_0__ui
+      text1: 宇宙内爆破弹
+      text2: 1单位
+      link_id: missilelauncher
+    fabricator:
+      image: missile_fabricator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 爆破弹组装机
+      text2: 80秒
+      link_id: missilefabricator
+  - widget_type: CodexRecipePanel
+    text: 宇宙内爆破弹
+    require:
+    - image: cobalt_refined_0__ui
+      text1: 钴
+      text2: 50千克
+      link_id: cobalt
+    - image: peat_0__ui
+      text1: 泥炭
+      text2: 100千克
+      link_id: peat
+    - image: element_liquid
+      color: E1CB69FF
+      text1: 生物柴油
+      text2: 200千克
+      link_id: refinedlipid
+    produce:
+    - image: longrange_missile_0__ui
+      text1: 宇宙内爆破弹
+      text2: 1单位
+      link_id: missilelauncher
+    fabricator:
+      image: missile_fabricator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 爆破弹组装机
+      text2: 80秒
+      link_id: missilefabricator
+  - widget_type: CodexRecipePanel
+    text: 宇宙内爆破弹
+    require:
+    - image: aluminum_0__ui
+      text1: 铝
+      text2: 50千克
+      link_id: aluminum
+    - image: fertilizer_0__ui
+      text1: 肥料
+      text2: 100千克
+      link_id: fertilizer
+    - image: element_liquid
+      color: E1CB69FF
+      text1: 生物柴油
+      text2: 200千克
+      link_id: refinedlipid
+    produce:
+    - image: longrange_missile_0__ui
+      text1: 宇宙内爆破弹
+      text2: 1单位
+      link_id: missilelauncher
+    fabricator:
+      image: missile_fabricator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 爆破弹组装机
+      text2: 80秒
+      link_id: missilefabricator
+  - widget_type: CodexRecipePanel
+    text: 宇宙内爆破弹
+    require:
+    - image: aluminum_0__ui
+      text1: 铝
+      text2: 50千克
+      link_id: aluminum
+    - image: peat_0__ui
+      text1: 泥炭
+      text2: 100千克
+      link_id: peat
+    - image: element_liquid
+      color: E1CB69FF
+      text1: 生物柴油
+      text2: 200千克
+      link_id: refinedlipid
+    produce:
+    - image: longrange_missile_0__ui
+      text1: 宇宙内爆破弹
+      text2: 1单位
+      link_id: missilelauncher
+    fabricator:
+      image: missile_fabricator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 爆破弹组装机
+      text2: 80秒
+      link_id: missilefabricator
+  - widget_type: CodexRecipePanel
+    text: 宇宙内爆破弹
+    require:
+    - image: iron_refined_0__ui
+      text1: 铁
+      text2: 50千克
+      link_id: iron
+    - image: fertilizer_0__ui
+      text1: 肥料
+      text2: 100千克
+      link_id: fertilizer
+    - image: element_liquid
+      color: E1CB69FF
+      text1: 生物柴油
+      text2: 200千克
+      link_id: refinedlipid
+    produce:
+    - image: longrange_missile_0__ui
+      text1: 宇宙内爆破弹
+      text2: 1单位
+      link_id: missilelauncher
+    fabricator:
+      image: missile_fabricator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 爆破弹组装机
+      text2: 80秒
+      link_id: missilefabricator
+  - widget_type: CodexRecipePanel
+    text: 宇宙内爆破弹
+    require:
+    - image: iron_refined_0__ui
+      text1: 铁
+      text2: 50千克
+      link_id: iron
+    - image: peat_0__ui
+      text1: 泥炭
+      text2: 100千克
+      link_id: peat
+    - image: element_liquid
+      color: E1CB69FF
+      text1: 生物柴油
+      text2: 200千克
+      link_id: refinedlipid
+    produce:
+    - image: longrange_missile_0__ui
+      text1: 宇宙内爆破弹
+      text2: 1单位
+      link_id: missilelauncher
+    fabricator:
+      image: missile_fabricator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 爆破弹组装机
+      text2: 80秒
+      link_id: missilefabricator
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 乳化器
+    require:
+    - image: element_liquid
+      color: 98A82FFF
+      text1: 植物润滑油
+      text2: 160千克
+      link_id: phytooil
+    - image: bleach_stone_0__ui
+      text1: 漂白石
+      text2: 40千克
+      link_id: bleachstone
+    produce:
+    - image: element_liquid
+      color: E1CB69FF
+      text1: 生物柴油
+      text2: 200千克
+      link_id: refinedlipid
+    fabricator:
+      image: chemistry_lab_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 乳化器
+      text2: 40秒
+      link_id: chemicalrefinery
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      Biodiesel is a a <link="ELEMENTSLIQUID">Liquid</link> composed of highly processed fatty acids derived from purified natural oils.
+
+
+      资源种类：<link="ELEMENTSLIQUID">液体</link>
+
+      冰点：-10ºC
+
+      沸点：180ºC
+
+
+      比热容：2.190 (DTU/g)/ºC
+
+      热导率：2.000 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.7
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：溜滑, <link="COMBUSTIBLELIQUID">可燃液体</link>, <link="ELEMENTSLIQUID">液体</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

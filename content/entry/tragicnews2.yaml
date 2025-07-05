@@ -1,0 +1,71 @@
+id: TRAGICNEWS2
+name: 悲惨消息
+title: STRINGS.CODEX.INVESTIGATIONS.DLC2_RADIOCLIP2.TITLE
+disabled: False
+search_only: False
+category: RESEARCHNOTES
+sort_string: 悲惨消息
+required_dlc_ids:
+- DLC2_ID
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 悲惨消息
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：无
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+  lock_id: notes_tragicnews2
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <smallcaps><b>[检测到文件片段]</b></smallcaps>
+
+
+      ……
+
+
+      [无线电静电音。]
+
+
+      ……悲惨的意外……  ……烟雾消散系统……
+
+           ……例行训练……
+
+      ……晴空涡流……    ……飞行员在重症监护室……
+
+
+      ……无法预计长期影响……
+
+               ……公共卫生秩序……
+
+        ……顶点研究所项目在调查完成前暂停……
+
+      ……研究界感到震惊……
+
+            ……曾经的对手庄严科技发表[无法识别]声明……
+
+      ……邀请受影响员工的应用……所有纪律……
+
+                   ……继续关注……
+    style: Body
+  layout: Vertical
+  lock_id: notes_tragicnews2
+- contents:
+  - widget_type: CodexText
+    text: >
+      ……
+
+
+      [无线电静电音。]
+
+
+      <smallcaps><b>[录音结束]</b></smallcaps>
+
+
+      -----------
+    style: Body
+  layout: Vertical
+  lock_id: notes_tragicnews2

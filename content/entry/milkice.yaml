@@ -1,0 +1,91 @@
+id: MILKICE
+parent_id: ELEMENTSSOLID
+name: 凝冻咸乳
+disabled: False
+search_only: False
+category: ELEMENTSSOLID
+sort_string: 凝冻咸乳
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="MILKICE">凝冻咸乳</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: milk_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: milk_0__ui
+      text1: 凝冻咸乳
+      text2: 1000克
+      link_id: milkice
+    produce:
+    - image: element_liquid
+      color: CCEEE8FF
+      text1: 咸乳
+      text2: 1000克
+      link_id: milk
+    fabricator:
+      image: crew_state_temp_up
+      text1: -16.5ºC
+      tooltip: 温度高于-16.5ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换于
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: CCEEE8FF
+      text1: 咸乳
+      text2: 1000克
+      link_id: milk
+    produce:
+    - image: milk_0__ui
+      text1: 凝冻咸乳
+      text2: 1000克
+      link_id: milkice
+    fabricator:
+      image: crew_state_temp_down
+      text1: -16.5ºC
+      tooltip: 温度低于-16.5ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      凝冻咸乳是一种冻结成<link="ELEMENTSSOLID">固态</link>的<link="MILK">咸乳</link>。
+
+
+      资源种类：可液化物
+
+      熔点：-16.5ºC
+
+      硬度：<color=#866BA5FF>25（坚硬）</color>
+
+
+      比热容：3.400 (DTU/g)/ºC
+
+      热导率：2.180 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.8
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：溜滑, <link="ICEORE">冰</link>, <link="BUILDABLEANY">一般建造材料</link>, <link="ELEMENTSSOLID">固体</link>, 可液化物
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

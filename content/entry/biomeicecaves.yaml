@@ -1,0 +1,128 @@
+id: BIOMEICECAVES
+parent_id: BIOMES
+name: 冰窟生态
+disabled: False
+search_only: False
+category: BIOMES
+sort_string: BIOMEICECAVES
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 冰窟生态
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 冰窟生态极低的温度使得温度调节成为重中之重。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      这种生态中零下环境使得一切都保持在冰冻状态，但只要殖民地具有了熔化丰富的<link="ICE">冰</link>沉积物所需的手段，就能生产足量的<link="WATER">水</link>，满足殖民地的需要。初步的扫描发现了<link="CINNABAR">朱砂矿</link>，可用于<link="POWER">电力</link>系统。
+
+
+      <link="STABLESNOW">雪</link>是一种现成的建造材料。要注意，如果周围环境很热，导致物态变化，建筑的完整性可能会受到破坏。
+
+
+      <link="HARDSKINBERRY">刺壳果灌木</link>既能让复制人吃饱，也能让当地的<link="WOODDEER">狐鹿</link>生存，后者的<link="WOOD">木质</link>角提供了一种可再生的燃料来源，以及温度稳定的吸引人的建筑材料。
+
+
+      尽管充满<link="OXYGEN">氧气</link>的洞穴能让复制人在这种生态开始殖民地的建设，但长期生存的关键是种植<link="BLUEGRASS">气囊芦荟</link>。气囊芦荟能产生可收获的<link="OXYROCK">氧石</link>，其外表的美丽——和梦幻的<link="ICEFLOWER">恬静花</link>类似——是缓解生存恐惧的绝妙灵药。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 元素
+    style: Subtitle
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 碎冰
+    image: crushed_ice_0__ui
+    link_id: crushedice
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 固态二氧化碳
+    image: solid_carbon_dioxide_0__ui
+    link_id: solidcarbondioxide
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 磷矿
+    image: phosphorite_0__ui
+    link_id: phosphorite
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 真空
+    color: 000000FF
+    image: unknown_far
+    link_id: vacuum
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 氧石
+    image: oxyrock_0__ui
+    link_id: oxyrock
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 朱砂矿
+    image: cinnabar_0__ui
+    link_id: cinnabar
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 泥土
+    image: dirt_0__ui
+    link_id: dirt
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 二氧化碳
+    color: 000000FF
+    image: element_gas
+    link_id: carbondioxide
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 雪
+    image: snow_0__ui
+    link_id: snow
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 氧气
+    color: B7FFFFFF
+    image: element_gas
+    link_id: oxygen
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 冰
+    image: ice_0__ui
+    link_id: ice
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 植物
+    style: Subtitle
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 雪莓藤
+    image: frozenberries_0__ui
+    link_id: icecavesforageplantplanted
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 恬静花
+    image: potted_ice_flower_0__ui
+    link_id: iceflower
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 气囊芦荟
+    image: bluegrass_0__ui
+    link_id: bluegrass
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 刺壳果灌木
+    image: ice_berry_bush_0__ui
+    link_id: hardskinberryplant
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 小动物
+    style: Subtitle
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 狐鹿
+    image: ice_floof_0__ui
+    link_id: wooddeer
+  layout: Vertical

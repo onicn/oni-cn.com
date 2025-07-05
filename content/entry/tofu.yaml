@@ -1,0 +1,138 @@
+id: TOFU
+parent_id: FOOD
+name: 豆腐
+disabled: False
+search_only: False
+category: FOOD
+sort_string: 豆腐
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="TOFU">豆腐</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: loafu_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      由<link="BEANPLANTSEED">小吃豆</link>做成的清淡豆腐。
+
+
+      它有着不寻常的稠度，但很吸引人。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 品质：标准 [+2]
+    style: Body
+  - widget_type: CodexText
+    text: 卡路里：3,600千卡
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      冷藏温度：4ºC
+
+      深度冷冻温度：-18ºC
+
+      腐烂时间：4.0周期
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 麻婆豆腐
+    require:
+    - image: loafu_0__ui
+      text1: 豆腐
+      text2: 3,600千卡
+      tooltip: 品质：标准 [+2]
+      link_id: tofu
+    - image: spicenut_0__ui
+      text1: 火椒粒
+      text2: 1000克
+      link_id: spicenut
+    produce:
+    - image: spicey_tofu_0__ui
+      text1: 麻婆豆腐
+      text2: 4,000千卡
+      tooltip: 品质：杰出 [+5]
+      link_id: spicytofu
+    fabricator:
+      image: cookstation_gourmet_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 燃气灶
+      text2: 50秒
+      link_id: gourmetcookingstation
+  - widget_type: CodexConversionPanel
+    require:
+    - image: loafu_0__ui
+      text1: 豆腐
+      text2: 700千卡/周期
+      tooltip: 品质：标准 [+2]
+      link_id: tofu
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 145.8克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__ui
+      text1: 好吃哈奇
+      link_id: HATCH
+  - widget_type: CodexConversionPanel
+    require:
+    - image: loafu_0__ui
+      text1: 豆腐
+      text2: 700千卡/周期
+      tooltip: 品质：标准 [+2]
+      link_id: tofu
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 194.4克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__veg_ui
+      text1: 草质哈奇
+      link_id: HATCHVEGGIE
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 食物压制器
+    require:
+    - image: seed_beanplant_0__ui
+      text1: 小吃豆
+      text2: 6单位
+      link_id: bean
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 50千克
+      link_id: water
+    produce:
+    - image: loafu_0__ui
+      text1: 豆腐
+      text2: 3,600千卡
+      tooltip: 品质：标准 [+2]
+      link_id: tofu
+    fabricator:
+      image: microbemusher_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 食物压制器
+      text2: 50秒
+      link_id: microbemusher
+  layout: Vertical

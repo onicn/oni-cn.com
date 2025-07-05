@@ -1,0 +1,296 @@
+id: MICROBEMUSHER
+parent_id: BUILDCATEGORYFOOD
+name: 食物压制器
+disabled: False
+search_only: False
+category: BUILDCATEGORYFOOD
+sort_string: 食物压制器
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="MICROBEMUSHER">食物压制器</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: microbemusher_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      使用常见原料生产低质量<link="FOOD">食物</link>。
+
+
+      只有在队列中安排配方复制人才会进行制作。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="POWER">电力</link>：240瓦'
+    tooltip: 必须与至少有<style="consumed">240瓦</style>可用<style="KKeyword">电力</style>的电路相连
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    复制人的操作'
+    tooltip: 必须有复制人来才能使这个建筑运行
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：2格宽x3格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：30秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="METAL">金属矿石</link>400千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="HEAT">热量</link>：+2.5千复制热/秒'
+    tooltip: >-
+      每秒产生<style="produced">2.5千复制热</style>
+
+
+      总<style="KKeyword">温度</style>变化受到加热物质的材料属性影响：
+          • 质量
+          • 比热容
+          • 表面积
+          • 隔热厚度
+          • 热导率
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    过热<link="HEAT">温度</link>：75ºC'
+    tooltip: 达到<b>75ºC</b>时开始过热
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LOGIC">信号输入端</link>'
+    tooltip: 当接收到信号时，输入端会使这个建筑一种状态发生变化
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    启用/禁用'
+    tooltip: >-
+      输入端行为：
+
+      • <b><style="logic_on">绿色信号</style></b>：启用建筑
+
+      • <b><style="logic_off">红色信号</style></b>：禁用建筑
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：-15（范围：3格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>3</b>格内降低<b><b>-15</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>压制器的食谱能让复制人吃饱，但随着时间可能会影响健康和士气。</i>
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 所有配方
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 软泥膏
+    require:
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 75千克
+      link_id: dirt
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 75千克
+      link_id: water
+    produce:
+    - image: mushbar_0__ui
+      text1: 软泥膏
+      text2: 800千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: mushbar
+    fabricator:
+      image: microbemusher_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 食物压制器
+      text2: 40秒
+      link_id: microbemusher
+  - widget_type: CodexRecipePanel
+    text: 米虱糕
+    require:
+    - image: meallicegrain_0__ui
+      text1: 米虱
+      text2: 1,200千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: basicplantfood
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 50千克
+      link_id: water
+    produce:
+    - image: liceloaf_0__ui
+      text1: 米虱糕
+      text2: 1,700千卡
+      tooltip: 品质：糟糕 [0]
+      link_id: basicplantbar
+    fabricator:
+      image: microbemusher_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 食物压制器
+      text2: 50秒
+      link_id: microbemusher
+  - widget_type: CodexRecipePanel
+    text: 豆腐
+    require:
+    - image: seed_beanplant_0__ui
+      text1: 小吃豆
+      text2: 6单位
+      link_id: bean
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 50千克
+      link_id: water
+    produce:
+    - image: loafu_0__ui
+      text1: 豆腐
+      text2: 3,600千卡
+      tooltip: 品质：标准 [+2]
+      link_id: tofu
+    fabricator:
+      image: microbemusher_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 食物压制器
+      text2: 50秒
+      link_id: microbemusher
+  - widget_type: CodexRecipePanel
+    text: 浆果糕
+    require:
+    - image: seed_coldwheat_0__ui
+      text1: 冰霜麦粒
+      text2: 5单位
+      link_id: coldwheat
+    - image: iceberry_0__ui
+      text1: 刺壳果
+      text2: 1,600千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: hardskinberry
+    produce:
+    - image: fruitcake_0__ui
+      text1: 浆果糕
+      text2: 4,000千卡
+      tooltip: 品质：良好 [+3]
+      link_id: fruitcake
+    fabricator:
+      image: microbemusher_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 食物压制器
+      text2: 50秒
+      link_id: microbemusher
+  - widget_type: CodexRecipePanel
+    text: 浆果糕
+    require:
+    - image: seed_coldwheat_0__ui
+      text1: 冰霜麦粒
+      text2: 5单位
+      link_id: coldwheat
+    - image: bristleberry_0__ui
+      text1: 毛刺浆果
+      text2: 1,600千卡
+      tooltip: 品质：糟糕 [0]
+      link_id: pricklefruit
+    produce:
+    - image: fruitcake_0__ui
+      text1: 浆果糕
+      text2: 4,000千卡
+      tooltip: 品质：良好 [+3]
+      link_id: fruitcake
+    fabricator:
+      image: microbemusher_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 食物压制器
+      text2: 50秒
+      link_id: microbemusher
+  - widget_type: CodexRecipePanel
+    text: 浆果糕
+    require:
+    - image: megafrond_grain_0__ui
+      text1: 巨蕨谷粒
+      text2: 5单位
+      link_id: fernfood
+    - image: iceberry_0__ui
+      text1: 刺壳果
+      text2: 1,600千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: hardskinberry
+    produce:
+    - image: fruitcake_0__ui
+      text1: 浆果糕
+      text2: 4,000千卡
+      tooltip: 品质：良好 [+3]
+      link_id: fruitcake
+    fabricator:
+      image: microbemusher_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 食物压制器
+      text2: 50秒
+      link_id: microbemusher
+  - widget_type: CodexRecipePanel
+    text: 浆果糕
+    require:
+    - image: megafrond_grain_0__ui
+      text1: 巨蕨谷粒
+      text2: 5单位
+      link_id: fernfood
+    - image: bristleberry_0__ui
+      text1: 毛刺浆果
+      text2: 1,600千卡
+      tooltip: 品质：糟糕 [0]
+      link_id: pricklefruit
+    produce:
+    - image: fruitcake_0__ui
+      text1: 浆果糕
+      text2: 4,000千卡
+      tooltip: 品质：良好 [+3]
+      link_id: fruitcake
+    fabricator:
+      image: microbemusher_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 食物压制器
+      text2: 50秒
+      link_id: microbemusher
+  - widget_type: CodexRecipePanel
+    text: 干肉饼
+    require:
+    - image: creaturemeat_0__ui
+      text1: 肉
+      text2: 1,600千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: meat
+    - image: tallow_0__ui
+      text1: 动物油脂
+      text2: 1000克
+      link_id: tallow
+    produce:
+    - image: pemmican_0__ui
+      text1: 干肉饼
+      text2: 2,600千卡
+      tooltip: 品质：标准 [+2]
+      link_id: pemmican
+    fabricator:
+      image: microbemusher_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 食物压制器
+      text2: 50秒
+      link_id: microbemusher
+  layout: Vertical

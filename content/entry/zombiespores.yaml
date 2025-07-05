@@ -1,0 +1,86 @@
+id: ZOMBIESPORES
+parent_id: DISEASE
+name: 僵尸孢子
+disabled: False
+search_only: False
+category: DISEASE
+sort_string: 僵尸孢子
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="ZOMBIESPORES">僵尸孢子</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 僵尸孢子是由<link="EVILFLOWER">孢子兰</link>释放的一种寄生性脑真菌。接触或吸入孢子的复制人有感染的风险，并会暂时失去行动控制力。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 温度范围：-105ºC至290ºC
+    style: Body
+  - widget_type: CodexText
+    text: >
+      气压范围：0千克到1000千克
+    style: Body
+  - widget_type: CodexText
+    text: 存活于：
+    style: Body
+  - widget_type: CodexText
+    text: '    • <link="CARBON">煤炭</link>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • <link="DIAMOND">钻石</link>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • <link="CARBONDIOXIDE">二氧化碳</link>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • <link="METHANE">天然气</link>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • <link="SOURGAS">高硫天然气</link>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • <link="CRUDEOIL">原油</link>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • <link="PETROLEUM">石油</link>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • <link="NAPHTHA">液态石脑油</link>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • <link="LIQUIDMETHANE">液态甲烷</link>'
+    style: Body
+  - widget_type: CodexText
+    text: 抑菌物：
+    style: Body
+  - widget_type: CodexText
+    text: '    • 气体'
+    style: Body
+  - widget_type: CodexText
+    text: 抗菌物：
+    style: Body
+  - widget_type: CodexText
+    text: '    • 固体'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 液体'
+    style: Body
+  - widget_type: CodexText
+    text: 灭菌物：
+    style: Body
+  - widget_type: CodexText
+    text: '    • <link="BLEACHSTONE">漂白石</link>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • <link="CHLORINEGAS">氯气</link>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • <link="CHLORINE">液态氯</link>'
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

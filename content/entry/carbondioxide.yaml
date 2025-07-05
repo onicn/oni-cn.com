@@ -1,0 +1,628 @@
+id: CARBONDIOXIDE
+parent_id: ELEMENTSGAS
+name: 二氧化碳
+disabled: False
+search_only: False
+icon_color: 000000FF
+category: ELEMENTSGAS
+sort_string: 二氧化碳
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="CARBONDIOXIDE">二氧化碳</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    color: 000000FF
+    image: element_gas
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_gas
+      color: 000000FF
+      text1: 二氧化碳
+      text2: 1000克
+      link_id: carbondioxide
+    produce:
+    - image: element_liquid
+      color: 878EB7FF
+      text1: 液态二氧化碳
+      text2: 1000克
+      link_id: liquidcarbondioxide
+    fabricator:
+      image: crew_state_temp_down
+      text1: -48.1ºC
+      tooltip: 温度低于-48.1ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换于
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: wood_0__ui
+      text1: 木材
+      text2: 1000克
+      link_id: woodlog
+    produce:
+    - image: element_gas
+      color: 000000FF
+      text1: 二氧化碳
+      text2: 1000克
+      link_id: carbondioxide
+    fabricator:
+      image: crew_state_temp_up
+      text1: 600ºC
+      tooltip: 温度高于600ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: carbon_0__ui
+      text1: 沥青
+      text2: 1000克
+      link_id: bitumen
+    produce:
+    - image: element_gas
+      color: 000000FF
+      text1: 二氧化碳
+      text2: 1000克
+      link_id: carbondioxide
+    fabricator:
+      image: crew_state_temp_up
+      text1: 538.9ºC
+      tooltip: 温度高于538.9ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: 878EB7FF
+      text1: 液态二氧化碳
+      text2: 1000克
+      link_id: liquidcarbondioxide
+    produce:
+    - image: element_gas
+      color: 000000FF
+      text1: 二氧化碳
+      text2: 1000克
+      link_id: carbondioxide
+    fabricator:
+      image: crew_state_temp_up
+      text1: -48.1ºC
+      tooltip: 温度高于-48.1ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: E1CB69FF
+      text1: 生物柴油
+      text2: 1000克
+      link_id: refinedlipid
+    produce:
+    - image: element_gas
+      color: 000000FF
+      text1: 二氧化碳
+      text2: 1000克
+      link_id: carbondioxide
+    fabricator:
+      image: crew_state_temp_up
+      text1: 180ºC
+      tooltip: 温度高于180ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: 98A82FFF
+      text1: 植物润滑油
+      text2: 1000克
+      link_id: phytooil
+    produce:
+    - image: element_gas
+      color: 000000FF
+      text1: 二氧化碳
+      text2: 333.4克
+      link_id: carbondioxide
+    - image: algae_0__ui
+      text1: 藻类
+      text2: 666.6克
+      link_id: algae
+    fabricator:
+      image: crew_state_temp_up
+      text1: 75ºC
+      tooltip: 温度高于75ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      text1: 熔融蔗糖
+      text2: 1000克
+      link_id: moltensucrose
+    produce:
+    - image: element_gas
+      color: 000000FF
+      text1: 二氧化碳
+      text2: 1000克
+      link_id: carbondioxide
+    fabricator:
+      image: crew_state_temp_up
+      text1: 230ºC
+      tooltip: 温度高于230ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: algae_0__ui
+      text1: 藻类
+      text2: 18千克/周期
+      link_id: algae
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 180千克/周期
+      link_id: water
+    - image: element_gas
+      color: 000000FF
+      text1: 二氧化碳
+      text2: 200克/周期
+      link_id: carbondioxide
+    produce:
+    - image: element_gas
+      color: B7FFFFFF
+      text1: 氧气
+      text2: 24千克/周期
+      link_id: oxygen
+    - image: element_liquid
+      color: 474506FF
+      text1: 污染水
+      text2: 174.2千克/周期
+      link_id: dirtywater
+    fabricator:
+      image: algaefarm_0__ui
+      text1: 藻类箱
+      link_id: ALGAEHABITAT
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 600千克/周期
+      link_id: water
+    - image: element_gas
+      color: 000000FF
+      text1: 二氧化碳
+      text2: 180千克/周期
+      link_id: carbondioxide
+    produce:
+    - image: element_liquid
+      color: 474506FF
+      text1: 污染水
+      text2: 600千克/周期
+      link_id: dirtywater
+    fabricator:
+      image: co2scrubber_0__ui
+      text1: 碳素脱离器
+      link_id: CO2SCRUBBER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_gas
+      color: 000000FF
+      text1: 二氧化碳
+      text2: 300克/周期
+      link_id: carbondioxide
+    - image: ice_0__ui
+      text1: 冰
+      text2: 20千克/周期
+      link_id: ice
+    produce:
+    - image: oxyrock_0__ui
+      text1: 氧石
+      text2: 18千克/周期
+      link_id: oxyrock
+    fabricator:
+      image: bluegrass_0__ui
+      text1: 气囊芦荟
+      link_id: BLUEGRASS
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_gas
+      color: 000000FF
+      text1: 二氧化碳
+      text2: 375克/周期
+      link_id: carbondioxide
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 19千克/周期
+      link_id: water
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 4000克/周期
+      link_id: dirt
+    produce:
+    - image: element_gas
+      color: B7FFFFFF
+      text1: 氧气
+      text2: 18.8千克/周期
+      link_id: oxygen
+    fabricator:
+      image: oxy_fern_0__ui
+      text1: 氧齿蕨
+      link_id: OXYFERN
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_gas
+      color: 000000FF
+      text1: 二氧化碳
+      text2: 60千克/周期
+      link_id: carbondioxide
+    produce: []
+    fabricator:
+      image: bee_0__ui
+      text1: 辐射蜂
+      link_id: BEE
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_gas
+      color: 000000FF
+      text1: 二氧化碳
+      text2: 20千克/周期
+      link_id: carbondioxide
+    produce:
+    - image: element_liquid
+      color: FFC325FF
+      text1: 石油
+      text2: 10千克/周期
+      link_id: petroleum
+    fabricator:
+      image: oilfloater_0__hot_ui
+      text1: 熔岩浮油生物
+      link_id: OILFLOATERHIGHTEMP
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_gas
+      color: 000000FF
+      text1: 二氧化碳
+      text2: 20千克/周期
+      link_id: carbondioxide
+    produce:
+    - image: element_liquid
+      color: 301265FF
+      text1: 原油
+      text2: 10千克/周期
+      link_id: crudeoil
+    fabricator:
+      image: oilfloater_0__ui
+      text1: 浮油生物
+      link_id: OILFLOATER
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 600千克/周期
+      link_id: carbon
+    produce:
+    - image: element_gas
+      color: 000000FF
+      text1: 二氧化碳
+      text2: 12千克/周期
+      link_id: carbondioxide
+    fabricator:
+      image: generatorphos_0__ui
+      text1: 煤炭发电机
+      link_id: GENERATOR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: wood_0__ui
+      text1: 木材
+      text2: 720千克/周期
+      link_id: woodlog
+    produce:
+    - image: element_gas
+      color: 000000FF
+      text1: 二氧化碳
+      text2: 102千克/周期
+      link_id: carbondioxide
+    fabricator:
+      image: generatorwood_0__ui
+      text1: 木材燃烧器
+      link_id: WOODGASGENERATOR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: peat_0__ui
+      text1: 泥炭
+      text2: 600千克/周期
+      link_id: peat
+    produce:
+    - image: element_gas
+      color: 000000FF
+      text1: 二氧化碳
+      text2: 24千克/周期
+      link_id: carbondioxide
+    - image: element_liquid
+      color: 474506FF
+      text1: 污染水
+      text2: 120千克/周期
+      link_id: dirtywater
+    fabricator:
+      image: generatorpeat_0__ui
+      text1: 泥炭燃烧器
+      link_id: PEATGENERATOR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_gas
+      color: FF6E0FFF
+      text1: 天然气
+      text2: 54千克/周期
+      link_id: methane
+    produce:
+    - image: element_liquid
+      color: 474506FF
+      text1: 污染水
+      text2: 40.5千克/周期
+      link_id: dirtywater
+    - image: element_gas
+      color: 000000FF
+      text1: 二氧化碳
+      text2: 13.5千克/周期
+      link_id: carbondioxide
+    fabricator:
+      image: generatormethane_0__ui
+      text1: 天然气发电机
+      link_id: METHANEGENERATOR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: unknown
+      color: 7F7F7FFF
+      text1: 可燃液体
+      text2: 1200千克/周期
+      link_id: combustibleliquid
+    produce:
+    - image: element_gas
+      color: 000000FF
+      text1: 二氧化碳
+      text2: 300千克/周期
+      link_id: carbondioxide
+    - image: element_liquid
+      color: 474506FF
+      text1: 污染水
+      text2: 450千克/周期
+      link_id: dirtywater
+    fabricator:
+      image: generatorpetrol_0__ui
+      text1: 石油发电机
+      link_id: PETROLEUMGENERATOR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_gas
+      color: FF6E0FFF
+      text1: 天然气
+      text2: 60千克/周期
+      link_id: methane
+    produce:
+    - image: element_gas
+      color: 000000FF
+      text1: 二氧化碳
+      text2: 15千克/周期
+      link_id: carbondioxide
+    fabricator:
+      image: cookstation_gourmet_0__ui
+      text1: 燃气灶
+      link_id: GOURMETCOOKINGSTATION
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_gas
+      color: FF6E0FFF
+      text1: 天然气
+      text2: 12千克/周期
+      link_id: methane
+    produce:
+    - image: element_gas
+      color: 000000FF
+      text1: 二氧化碳
+      text2: 3000克/周期
+      link_id: carbondioxide
+    fabricator:
+      image: dehydrator_0__ui
+      text1: 脱水机
+      link_id: FOODDEHYDRATOR
+  - widget_type: CodexConversionPanel
+    require: []
+    produce:
+    - image: element_gas
+      color: 000000FF
+      text1: 二氧化碳
+      text2: 12千克/周期
+      link_id: carbondioxide
+    fabricator:
+      image: smoker_0__ui
+      text1: 熏炉
+      link_id: SMOKER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: wood_0__ui
+      text1: 木材
+      text2: 600千克/周期
+      link_id: woodlog
+    produce:
+    - image: element_liquid
+      color: 00FF6AFF
+      text1: 乙醇
+      text2: 300千克/周期
+      link_id: ethanol
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 200千克/周期
+      link_id: toxicsand
+    - image: element_gas
+      color: 000000FF
+      text1: 二氧化碳
+      text2: 100千克/周期
+      link_id: carbondioxide
+    fabricator:
+      image: ethanoldistillery_0__ui
+      text1: 乙醇蒸馏器
+      link_id: ETHANOLDISTILLERY
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: FFC325FF
+      text1: 石油
+      text2: 500千克/周期
+      link_id: petroleum
+    produce:
+    - image: polypropylene_0__ui
+      text1: 塑料
+      text2: 300千克/周期
+      link_id: polypropylene
+    - image: element_gas
+      color: 85C9E3FF
+      text1: 蒸汽
+      text2: 5千克/周期
+      link_id: steam
+    - image: element_gas
+      color: 000000FF
+      text1: 二氧化碳
+      text2: 5千克/周期
+      link_id: carbondioxide
+    fabricator:
+      image: plasticrefinery_0__ui
+      text1: 聚合物压塑器
+      link_id: POLYMERIZER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: CC8B18FF
+      text1: 树脂
+      text2: 500千克/周期
+      link_id: naturalresin
+    produce:
+    - image: polypropylene_0__ui
+      text1: 塑料
+      text2: 300千克/周期
+      link_id: polypropylene
+    - image: element_gas
+      color: 85C9E3FF
+      text1: 蒸汽
+      text2: 5千克/周期
+      link_id: steam
+    - image: element_gas
+      color: 000000FF
+      text1: 二氧化碳
+      text2: 5千克/周期
+      link_id: carbondioxide
+    fabricator:
+      image: plasticrefinery_0__ui
+      text1: 聚合物压塑器
+      link_id: POLYMERIZER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      text1: 花蜜
+      text2: 500千克/周期
+      link_id: sugarwater
+    produce:
+    - image: polypropylene_0__ui
+      text1: 塑料
+      text2: 300千克/周期
+      link_id: polypropylene
+    - image: element_gas
+      color: 85C9E3FF
+      text1: 蒸汽
+      text2: 5千克/周期
+      link_id: steam
+    - image: element_gas
+      color: 000000FF
+      text1: 二氧化碳
+      text2: 5千克/周期
+      link_id: carbondioxide
+    fabricator:
+      image: plasticrefinery_0__ui
+      text1: 聚合物压塑器
+      link_id: POLYMERIZER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: CCEEE8FF
+      text1: 咸乳
+      text2: 600千克/周期
+      link_id: milk
+    produce:
+    - image: milkfat_0__ui
+      text1: 咸乳蜡
+      text2: 54千克/周期
+      link_id: milkfat
+    - image: element_liquid
+      color: ADE9E5FF
+      text1: 浓盐水
+      text2: 486千克/周期
+      link_id: brine
+    - image: element_gas
+      color: 000000FF
+      text1: 二氧化碳
+      text2: 60千克/周期
+      link_id: carbondioxide
+    fabricator:
+      image: milk_separator_0__ui
+      text1: 咸乳蜡收集器
+      link_id: MILKFATSEPARATOR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: wood_0__ui
+      text1: 木材
+      text2: 15千克/周期
+      link_id: woodlog
+    produce:
+    - image: element_gas
+      color: 000000FF
+      text1: 二氧化碳
+      text2: 2400克/周期
+      link_id: carbondioxide
+    fabricator:
+      image: campfire_small_0__ui
+      text1: 柴火炉
+      link_id: CAMPFIRE
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      (CO<sub>2</sub>) 二氧化碳是一种<link="ELEMENTSGAS">气态</link>的重化合物。
+
+
+      它通常会沉到其他气体之下。
+
+
+      资源种类：不可呼吸的气体
+
+      凝点：-48.1ºC
+
+
+      比热容：0.846 (DTU/g)/ºC
+
+      热导率：0.015 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.08
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：气体, 不可呼吸的气体
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

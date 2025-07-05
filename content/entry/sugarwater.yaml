@@ -1,0 +1,145 @@
+id: SUGARWATER
+parent_id: ELEMENTSLIQUID
+name: 花蜜
+disabled: False
+search_only: False
+category: ELEMENTSLIQUID
+sort_string: 花蜜
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="SUGARWATER">花蜜</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: element_liquid
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      text1: 花蜜
+      text2: 1000克
+      link_id: sugarwater
+    produce:
+    - image: element_gas
+      color: 85C9E3FF
+      text1: 蒸汽
+      text2: 230克
+      link_id: steam
+    - image: sucrose_0__ui
+      text1: 蔗糖
+      text2: 770克
+      link_id: sucrose
+    fabricator:
+      image: crew_state_temp_up
+      text1: 160ºC
+      tooltip: 温度高于160ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      text1: 花蜜
+      text2: 1000克
+      link_id: sugarwater
+    produce:
+    - image: ice_0__ui
+      text1: 冰
+      text2: 230克
+      link_id: ice
+    - image: sucrose_0__ui
+      text1: 蔗糖
+      text2: 770克
+      link_id: sucrose
+    fabricator:
+      image: crew_state_temp_down
+      text1: -82.5ºC
+      tooltip: 温度低于-82.5ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      text1: 花蜜
+      text2: 500千克/周期
+      link_id: sugarwater
+    produce:
+    - image: polypropylene_0__ui
+      text1: 塑料
+      text2: 300千克/周期
+      link_id: polypropylene
+    - image: element_gas
+      color: 85C9E3FF
+      text1: 蒸汽
+      text2: 5千克/周期
+      link_id: steam
+    - image: element_gas
+      color: 000000FF
+      text1: 二氧化碳
+      text2: 5千克/周期
+      link_id: carbondioxide
+    fabricator:
+      image: plasticrefinery_0__ui
+      text1: 聚合物压塑器
+      link_id: POLYMERIZER
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: snow_0__ui
+      text1: 雪
+      text2: 100千克/周期
+      link_id: snow
+    produce:
+    - image: element_liquid
+      text1: 花蜜
+      text2: 80千克/周期
+      link_id: sugarwater
+    fabricator:
+      image: syrup_tree_0__ui
+      text1: 糖心树
+      link_id: SPACETREE
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      花蜜是一种天然的，由<link="SUCROSE">蔗糖</link>溶解在<link="WATER">水</link>中形成的轻度浓缩溶液。
+
+
+      资源种类：<link="ELEMENTSLIQUID">液体</link>
+
+      冰点：-82.5ºC
+
+      沸点：160ºC
+
+
+      比热容：4.100 (DTU/g)/ºC
+
+      热导率：0.609 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.9
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：<link="PLASTIFIABLELIQUID">塑料单体</link>, <link="ELEMENTSLIQUID">液体</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

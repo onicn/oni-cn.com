@@ -1,0 +1,404 @@
+id: WOOD
+parent_id: ELEMENTTYPES
+name: 木材
+title: STRINGS.CODEX.LUMBER.TITLE
+disabled: False
+search_only: False
+category: INDUSTRIALINGREDIENTS
+sort_string: 木材
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 木材
+    style: Title
+  - widget_type: CodexText
+    text: 可再生资源
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexImage
+    image: wood_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      厚重的<link="WOOD">木材</link>原木是从<link="FORESTTREE">乔木树</link>、<link="CRABWOOD">木壳蟹</link>和其他自然资源上收获而来的。
+
+
+      原木用于<link="HEAT">热量</link>和<link="POWER">电力</link>生产，还可以作为实用的建筑材料。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: wood_0__ui
+      text1: 木材
+      text2: 1000克
+      link_id: woodlog
+    produce:
+    - image: element_gas
+      color: 000000FF
+      text1: 二氧化碳
+      text2: 1000克
+      link_id: carbondioxide
+    fabricator:
+      image: crew_state_temp_up
+      text1: 600ºC
+      tooltip: 温度高于600ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 陶瓷
+    require:
+    - image: clay_0__ui
+      text1: 粘土
+      text2: 100千克
+      link_id: clay
+    - image: wood_0__ui
+      text1: 木材
+      text2: 25千克
+      link_id: wood
+    produce:
+    - image: ceramic_0__ui
+      text1: 陶瓷
+      text2: 100千克
+      link_id: ceramic
+    fabricator:
+      image: kiln_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 窑炉
+      text2: 40秒
+      link_id: kiln
+  - widget_type: CodexRecipePanel
+    text: 精炼碳
+    require:
+    - image: wood_0__ui
+      text1: 木材
+      text2: 200千克
+      link_id: wood
+    produce:
+    - image: carbon_0__ui
+      text1: 精炼碳
+      text2: 100千克
+      link_id: refinedcarbon
+    fabricator:
+      image: kiln_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 窑炉
+      text2: 40秒
+      link_id: kiln
+  - widget_type: CodexRecipePanel
+    text: 嫩肋排
+    require:
+    - image: dinomeat_raw_0__ui
+      text1: 硬肉
+      text2: 6千克
+      link_id: dinosaurmeat
+    - image: wood_0__ui
+      text1: 木材
+      text2: 100千克
+      link_id: wood
+    produce:
+    - image: dinobrisket_0__ui
+      text1: 嫩肋排
+      text2: 16,000千卡
+      tooltip: 品质：良好 [+3]
+      link_id: smokeddinosaurmeat
+    fabricator:
+      image: smoker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 熏炉
+      text2: 600秒
+      link_id: smoker
+  - widget_type: CodexRecipePanel
+    text: 熏鱼
+    require:
+    - image: pacufillet_0__ui
+      text1: 帕库鱼片
+      text2: 6,000千卡
+      tooltip: 品质：标准 [+2]
+      link_id: fishmeat
+    - image: wood_0__ui
+      text1: 木材
+      text2: 100千克
+      link_id: wood
+    produce:
+    - image: smokedfish_0__ui
+      text1: 熏鱼
+      text2: 11,200千卡
+      tooltip: 品质：良好 [+3]
+      link_id: smokedfish
+    fabricator:
+      image: smoker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 熏炉
+      text2: 600秒
+      link_id: smoker
+  - widget_type: CodexRecipePanel
+    text: 熏鱼
+    require:
+    - image: jawbofillet_0__ui
+      text1: 颚鱼片
+      text2: 6,000千卡
+      tooltip: 品质：良好 [+3]
+      link_id: prehistoricpacufillet
+    - image: wood_0__ui
+      text1: 木材
+      text2: 100千克
+      link_id: wood
+    produce:
+    - image: smokedfish_0__ui
+      text1: 熏鱼
+      text2: 11,200千卡
+      tooltip: 品质：良好 [+3]
+      link_id: smokedfish
+    fabricator:
+      image: smoker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 熏炉
+      text2: 600秒
+      link_id: smoker
+  - widget_type: CodexRecipePanel
+    text: 爆米花
+    require:
+    - image: spikefruit_0__ui
+      text1: 汗甜玉米
+      text2: 5,600千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: gardenfoodplantfood
+    - image: wood_0__ui
+      text1: 木材
+      text2: 100千克
+      link_id: wood
+    produce:
+    - image: smokedvegetables_0__ui
+      text1: 爆米花
+      text2: 11,450千卡
+      tooltip: 品质：标准 [+2]
+      link_id: smokedvegetables
+    fabricator:
+      image: smoker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 熏炉
+      text2: 600秒
+      link_id: smoker
+  - widget_type: CodexRecipePanel
+    text: 爆米花
+    require:
+    - image: iceberry_0__ui
+      text1: 刺壳果
+      text2: 5,600千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: hardskinberry
+    - image: wood_0__ui
+      text1: 木材
+      text2: 100千克
+      link_id: wood
+    produce:
+    - image: smokedvegetables_0__ui
+      text1: 爆米花
+      text2: 11,450千卡
+      tooltip: 品质：标准 [+2]
+      link_id: smokedvegetables
+    fabricator:
+      image: smoker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 熏炉
+      text2: 600秒
+      link_id: smoker
+  - widget_type: CodexRecipePanel
+    text: 爆米花
+    require:
+    - image: wormwood_basic_fruit_0__ui
+      text1: 贫瘠虫果
+      text2: 5,600千卡
+      tooltip: 品质：糟糕 [0]
+      link_id: wormbasicfruit
+    - image: wood_0__ui
+      text1: 木材
+      text2: 100千克
+      link_id: wood
+    produce:
+    - image: smokedvegetables_0__ui
+      text1: 爆米花
+      text2: 11,450千卡
+      tooltip: 品质：标准 [+2]
+      link_id: smokedvegetables
+    fabricator:
+      image: smoker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 熏炉
+      text2: 600秒
+      link_id: smoker
+  - widget_type: CodexConversionPanel
+    require:
+    - image: wood_0__ui
+      text1: 木材
+      text2: 720千克/周期
+      link_id: woodlog
+    produce:
+    - image: element_gas
+      color: 000000FF
+      text1: 二氧化碳
+      text2: 102千克/周期
+      link_id: carbondioxide
+    fabricator:
+      image: generatorwood_0__ui
+      text1: 木材燃烧器
+      link_id: WOODGASGENERATOR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: wood_0__ui
+      text1: 木材
+      text2: 600千克/周期
+      link_id: woodlog
+    produce:
+    - image: element_liquid
+      color: 00FF6AFF
+      text1: 乙醇
+      text2: 300千克/周期
+      link_id: ethanol
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 200千克/周期
+      link_id: toxicsand
+    - image: element_gas
+      color: 000000FF
+      text1: 二氧化碳
+      text2: 100千克/周期
+      link_id: carbondioxide
+    fabricator:
+      image: ethanoldistillery_0__ui
+      text1: 乙醇蒸馏器
+      link_id: ETHANOLDISTILLERY
+  - widget_type: CodexConversionPanel
+    require:
+    - image: wood_0__ui
+      text1: 木材
+      text2: 15千克/周期
+      link_id: woodlog
+    produce:
+    - image: element_gas
+      color: 000000FF
+      text1: 二氧化碳
+      text2: 2400克/周期
+      link_id: carbondioxide
+    fabricator:
+      image: campfire_small_0__ui
+      text1: 柴火炉
+      link_id: CAMPFIRE
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 碎石机
+    require:
+    - image: woodcrabshell_0__ui
+      text1: 木蟹壳
+      text2: 500千克
+      link_id: crabwoodshell
+    produce:
+    - image: wood_0__ui
+      text1: 木材
+      text2: 500千克
+      link_id: wood
+    fabricator:
+      image: rockrefinery_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 碎石机
+      text2: 40秒
+      link_id: rockcrusher
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: 474506FF
+      text1: 污染水
+      text2: 70千克/周期
+      link_id: dirtywater
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 10千克/周期
+      link_id: dirt
+    produce:
+    - image: wood_0__ui
+      text1: 木材
+      text2: 66.7千克/周期
+      link_id: woodlog
+    fabricator:
+      image: tree_0__ui
+      text1: 乔木树
+      link_id: FORESTTREE
+  - widget_type: CodexConversionPanel
+    require:
+    - image: snow_0__ui
+      text1: 雪
+      text2: 100千克/周期
+      link_id: snow
+    produce:
+    - image: wood_0__ui
+      text1: 木材
+      text2: 16.7至83.3千克/周期
+      link_id: woodlog
+    fabricator:
+      image: syrup_tree_0__ui
+      text1: 糖心树
+      link_id: SPACETREE
+  - widget_type: CodexConversionPanel
+    require:
+    - image: ice_floof_0__ui
+      text1: 狐鹿
+      text2: 1单位
+      link_id: wooddeer
+    produce:
+    - image: wood_0__ui
+      text1: 木材
+      text2: 360千克
+      link_id: woodlog
+    fabricator:
+      image: shearing_station_0__ui
+      text1: 修剪站
+      link_id: SHEARINGSTATION
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      木材是很好的<link="HEAT">热量</link>和<link="POWER">电力</link>来源。
+
+
+      隔热性能和优良的<link="DECOR">装饰度</link>使其成为有用的<b>建造材料</b>。
+
+
+      资源种类：有机物
+
+      熔点：600ºC
+
+      硬度：<color=#6D7BC1FF>18（柔软）</color>
+
+
+      比热容：2.300 (DTU/g)/ºC
+
+      热导率：0.220 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.6
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：<link="BUILDINGWOOD">木材</link>, <link="INDUSTRIALINGREDIENT">工业原料</link>, <link="ELEMENTSSOLID">固体</link>, 有机物
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

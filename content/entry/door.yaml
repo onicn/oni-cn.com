@@ -1,0 +1,69 @@
+id: DOOR
+parent_id: BUILDCATEGORYBASE
+name: 气动门
+disabled: False
+search_only: False
+category: BUILDCATEGORYBASE
+sort_string: 气动门
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="DOOR">气动门</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: door_internal_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      封闭区域，但不能阻挡<link="ELEMENTSLIQUID">液体</link>或<link="ELEMENTSGAS">气体</link>流动。
+
+
+      野生<link="CREATURES">小动物</link>无法通过门。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：1格宽x2格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：10秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="METAL">金属矿石</link>100千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    复制人通行权限'
+    tooltip: 设置允许或限制复制人通过门。
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    过热<link="HEAT">温度</link>：75ºC'
+    tooltip: 达到<b>75ºC</b>时开始过热
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LOGIC">信号输入端</link>'
+    tooltip: 当接收到信号时，输入端会使这个建筑一种状态发生变化
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    开启/关闭'
+    tooltip: >-
+      输入端行为：
+
+      • <b><style="logic_on">绿色信号</style></b>：开启
+
+      • <b><style="logic_off">红色信号</style></b>：关闭并锁定
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>门控系统可以用于阻止复制人进入受限区域。</i>
+    style: Body
+  layout: Vertical

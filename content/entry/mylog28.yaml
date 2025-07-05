@@ -1,0 +1,25 @@
+id: MYLOG28
+name: 星群
+title: STRINGS.CODEX.MYLOG.BODY.CLUSTERWORLDS.TITLE
+disabled: False
+search_only: False
+category: MYLOG
+sort_string: 星群
+required_dlc_ids:
+- EXPANSION1_ID
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 星群
+    style: Title
+  - widget_type: CodexText
+    text: >-
+      我的复制人对周围空间的调查收获了一些有趣的结果。我们并不孤独！……至少在小行星水平上。我们似乎处于一个“星群”——包含着许多我的复制人可以去探索的其他小行星。
+
+
+      由于这个星球的资源是有限的，我必须建造必要的设施以促进各个星球的探索和运输，确保我的殖民地的生存状况。
+    style: Body
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical

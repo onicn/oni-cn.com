@@ -1,0 +1,294 @@
+id: PLANTMEAT
+parent_id: FOOD
+name: 植物肉
+disabled: False
+search_only: False
+category: FOOD
+sort_string: 植物肉
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="PLANTMEAT">植物肉</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: critter_trap_fruit_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 植物上非常植物的植物肉。真好啊！
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 品质：低劣 [+1]
+    style: Body
+  - widget_type: CodexText
+    text: 卡路里：1,200千卡
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      冷藏温度：4ºC
+
+      深度冷冻温度：-18ºC
+
+      腐烂时间：4.0周期
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: critter_trap_fruit_0__ui
+      text1: 植物肉
+      text2: 700千卡/周期
+      tooltip: 品质：低劣 [+1]
+      link_id: plantmeat
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 437.5克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__ui
+      text1: 好吃哈奇
+      link_id: HATCH
+  - widget_type: CodexConversionPanel
+    require:
+    - image: critter_trap_fruit_0__ui
+      text1: 植物肉
+      text2: 700千卡/周期
+      tooltip: 品质：低劣 [+1]
+      link_id: plantmeat
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 583.3克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__veg_ui
+      text1: 草质哈奇
+      link_id: HATCHVEGGIE
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: ice_floof_0__ui
+      text1: 狐鹿
+      text2: 0.03单位/周期
+      link_id: deerspecies
+    produce:
+    - image: critter_trap_fruit_0__ui
+      text1: 植物肉
+      text2: 400千卡/周期
+      tooltip: 品质：低劣 [+1]
+      link_id: plantmeat
+    fabricator:
+      image: venus_critter_trap_0__ui
+      text1: 土星动物捕草
+      link_id: CRITTERTRAPPLANT
+  - widget_type: CodexConversionPanel
+    require:
+    - image: caterpillar_0__ui
+      text1: 电弧蛞蝓
+      text2: 0.03单位/周期
+      link_id: staterpillarspecies
+    produce:
+    - image: critter_trap_fruit_0__ui
+      text1: 植物肉
+      text2: 400千卡/周期
+      tooltip: 品质：低劣 [+1]
+      link_id: plantmeat
+    fabricator:
+      image: venus_critter_trap_0__ui
+      text1: 土星动物捕草
+      link_id: CRITTERTRAPPLANT
+  - widget_type: CodexConversionPanel
+    require:
+    - image: squirrel_0__ui
+      text1: 树鼠
+      text2: 0.03单位/周期
+      link_id: squirrelspecies
+    produce:
+    - image: critter_trap_fruit_0__ui
+      text1: 植物肉
+      text2: 400千卡/周期
+      tooltip: 品质：低劣 [+1]
+      link_id: plantmeat
+    fabricator:
+      image: venus_critter_trap_0__ui
+      text1: 土星动物捕草
+      link_id: CRITTERTRAPPLANT
+  - widget_type: CodexConversionPanel
+    require:
+    - image: glom_0__ui
+      text1: 疫病章鱼
+      text2: 0.03单位/周期
+      link_id: glomspecies
+    produce:
+    - image: critter_trap_fruit_0__ui
+      text1: 植物肉
+      text2: 400千卡/周期
+      tooltip: 品质：低劣 [+1]
+      link_id: plantmeat
+    fabricator:
+      image: venus_critter_trap_0__ui
+      text1: 土星动物捕草
+      link_id: CRITTERTRAPPLANT
+  - widget_type: CodexConversionPanel
+    require:
+    - image: drecko_0__fbr_ui
+      text1: 毛鳞壁虎
+      text2: 0.03单位/周期
+      link_id: dreckospecies
+    produce:
+    - image: critter_trap_fruit_0__ui
+      text1: 植物肉
+      text2: 400千卡/周期
+      tooltip: 品质：低劣 [+1]
+      link_id: plantmeat
+    fabricator:
+      image: venus_critter_trap_0__ui
+      text1: 土星动物捕草
+      link_id: CRITTERTRAPPLANT
+  - widget_type: CodexConversionPanel
+    require:
+    - image: chameleo_0__ui
+      text1: 逸蜥
+      text2: 0.03单位/周期
+      link_id: chameleonspecies
+    produce:
+    - image: critter_trap_fruit_0__ui
+      text1: 植物肉
+      text2: 400千卡/周期
+      tooltip: 品质：低劣 [+1]
+      link_id: plantmeat
+    fabricator:
+      image: venus_critter_trap_0__ui
+      text1: 土星动物捕草
+      link_id: CRITTERTRAPPLANT
+  - widget_type: CodexConversionPanel
+    require:
+    - image: driller_0__ui
+      text1: 锹环田鼠
+      text2: 0.03单位/周期
+      link_id: molespecies
+    produce:
+    - image: critter_trap_fruit_0__ui
+      text1: 植物肉
+      text2: 400千卡/周期
+      tooltip: 品质：低劣 [+1]
+      link_id: plantmeat
+    fabricator:
+      image: venus_critter_trap_0__ui
+      text1: 土星动物捕草
+      link_id: CRITTERTRAPPLANT
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seal_0__ui
+      text1: 栓角海豹
+      text2: 0.03单位/周期
+      link_id: sealspecies
+    produce:
+    - image: critter_trap_fruit_0__ui
+      text1: 植物肉
+      text2: 400千卡/周期
+      tooltip: 品质：低劣 [+1]
+      link_id: plantmeat
+    fabricator:
+      image: venus_critter_trap_0__ui
+      text1: 土星动物捕草
+      link_id: CRITTERTRAPPLANT
+  - widget_type: CodexConversionPanel
+    require:
+    - image: oilfloater_0__ui
+      text1: 浮油生物
+      text2: 0.03单位/周期
+      link_id: oilfloaterspecies
+    produce:
+    - image: critter_trap_fruit_0__ui
+      text1: 植物肉
+      text2: 400千卡/周期
+      tooltip: 品质：低劣 [+1]
+      link_id: plantmeat
+    fabricator:
+      image: venus_critter_trap_0__ui
+      text1: 土星动物捕草
+      link_id: CRITTERTRAPPLANT
+  - widget_type: CodexConversionPanel
+    require:
+    - image: hatch_0__ui
+      text1: 好吃哈奇
+      text2: 0.03单位/周期
+      link_id: hatchspecies
+    produce:
+    - image: critter_trap_fruit_0__ui
+      text1: 植物肉
+      text2: 400千卡/周期
+      tooltip: 品质：低劣 [+1]
+      link_id: plantmeat
+    fabricator:
+      image: venus_critter_trap_0__ui
+      text1: 土星动物捕草
+      link_id: CRITTERTRAPPLANT
+  - widget_type: CodexConversionPanel
+    require:
+    - image: pincher_0__ui
+      text1: 抛壳蟹
+      text2: 0.03单位/周期
+      link_id: crabspecies
+    produce:
+    - image: critter_trap_fruit_0__ui
+      text1: 植物肉
+      text2: 400千卡/周期
+      tooltip: 品质：低劣 [+1]
+      link_id: plantmeat
+    fabricator:
+      image: venus_critter_trap_0__ui
+      text1: 土星动物捕草
+      link_id: CRITTERTRAPPLANT
+  - widget_type: CodexConversionPanel
+    require:
+    - image: critter_0__ui
+      text1: 异化虫
+      text2: 0.03单位/周期
+      link_id: dreckospecies
+    produce:
+    - image: critter_trap_fruit_0__ui
+      text1: 植物肉
+      text2: 400千卡/周期
+      tooltip: 品质：低劣 [+1]
+      link_id: plantmeat
+    fabricator:
+      image: venus_critter_trap_0__ui
+      text1: 土星动物捕草
+      link_id: CRITTERTRAPPLANT
+  - widget_type: CodexConversionPanel
+    require:
+    - image: bee_0__ui
+      text1: 辐射蜂
+      text2: 0.03单位/周期
+      link_id: beetaspecies
+    produce:
+    - image: critter_trap_fruit_0__ui
+      text1: 植物肉
+      text2: 400千卡/周期
+      tooltip: 品质：低劣 [+1]
+      link_id: plantmeat
+    fabricator:
+      image: venus_critter_trap_0__ui
+      text1: 土星动物捕草
+      link_id: CRITTERTRAPPLANT
+  layout: Vertical

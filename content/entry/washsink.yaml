@@ -1,0 +1,99 @@
+id: WASHSINK
+parent_id: BUILDCATEGORYMEDICAL
+name: 洗手池
+disabled: False
+search_only: False
+category: BUILDCATEGORYMEDICAL
+sort_string: 洗手池
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="WASHSINK">洗手池</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 卫生设备
+    style: Body
+    image: research_type_alpha_icon
+    link_id: sanitationsciences
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: wash_sink_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      除去复制人身上的<link="DISEASE">病菌</link>。
+
+
+      带有病菌的复制人在按选定方向经过时会使用洗手池。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="WATER">水</link>：每次消耗5千克'
+    tooltip: 每次使用消耗<style="consumed">5千克</style><style="KKeyword"><link="WATER">水</link></style>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LIQUIDPIPING">液体输入管道</link>'
+    tooltip: 必须从<link="LIQUIDCONDUIT">液体管道</link>系统中接收<style="KKeyword">液体</style>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LIQUIDPIPING">液体输出管道</link>'
+    tooltip: 必须通过<link="LIQUIDCONDUIT">液体管道</link>系统排出<style="KKeyword">液体</style>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：2格宽x3格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：30秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="METAL">金属矿石</link>400千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DIRTYWATER">污染水</link>：每次产生5千克'
+    tooltip: >-
+      使用时产生<style="produced">5千克</style><style="KKeyword"><link="DIRTYWATER">污染水</link></style>
+
+
+      输出温度为输入材料的<style="KKeyword">温度</style>。
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    任意病菌：每次使用-120,000个病菌'
+    tooltip: 每次使用移除<style="consumed">120,000个病菌</style>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    过热<link="HEAT">温度</link>：75ºC'
+    tooltip: 达到<b>75ºC</b>时开始过热
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：+10（范围：2格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>2</b>格内提高<b><b>+10</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>类别</b>
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    <link="REQUIREMENTCLASSWASHSTATION">洗手站</link>'
+    style: Body
+  - widget_type: CodexText
+    text: '    <link="REQUIREMENTCLASSWASHSTATION">铺设管道的洗手站</link>'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>洗手池已铺设水管，因此无需手动注水或放水。</i>
+    style: Body
+  layout: Vertical

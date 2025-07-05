@@ -1,0 +1,109 @@
+id: PEMMICAN
+parent_id: FOOD
+name: 干肉饼
+disabled: False
+search_only: False
+category: FOOD
+sort_string: 干肉饼
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="PEMMICAN">干肉饼</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: pemmican_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      将<link="MEAT">肉</link>和<link="TALLOW">动物油脂</link>捣碎制成的高卡路里的砖形食物，保质期极长。
+
+
+      生存的滋味从未如此美妙。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 品质：标准 [+2]
+    style: Body
+  - widget_type: CodexText
+    text: 卡路里：2,600千卡
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 腐烂时间：永不腐烂
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: pemmican_0__ui
+      text1: 干肉饼
+      text2: 700千卡/周期
+      tooltip: 品质：标准 [+2]
+      link_id: pemmican
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 201.9克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__ui
+      text1: 好吃哈奇
+      link_id: HATCH
+  - widget_type: CodexConversionPanel
+    require:
+    - image: pemmican_0__ui
+      text1: 干肉饼
+      text2: 700千卡/周期
+      tooltip: 品质：标准 [+2]
+      link_id: pemmican
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 269.2克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__veg_ui
+      text1: 草质哈奇
+      link_id: HATCHVEGGIE
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 食物压制器
+    require:
+    - image: creaturemeat_0__ui
+      text1: 肉
+      text2: 1,600千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: meat
+    - image: tallow_0__ui
+      text1: 动物油脂
+      text2: 1000克
+      link_id: tallow
+    produce:
+    - image: pemmican_0__ui
+      text1: 干肉饼
+      text2: 2,600千卡
+      tooltip: 品质：标准 [+2]
+      link_id: pemmican
+    fabricator:
+      image: microbemusher_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 食物压制器
+      text2: 50秒
+      link_id: microbemusher
+  layout: Vertical

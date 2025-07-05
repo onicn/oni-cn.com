@@ -1,0 +1,88 @@
+id: ARTHISTORYREQUEST
+name: 回复：植入数据库请求
+title: STRINGS.CODEX.B51_ARTHISTORYREQUEST.TITLE
+disabled: False
+search_only: False
+category: EMAILS
+sort_string: 回复：植入数据库请求
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 回复：植入数据库请求
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：二
+    style: Subtitle
+  layout: Vertical
+  lock_id: email_arthistoryrequest
+- contents:
+  - widget_type: CodexText
+    text: >
+      <smallcaps>收件人：<b>布鲁萨德博士</b><alpha=#AA><size=12> <obroussard@gravitas.nova></size></color>
+
+      发件人：<b>斯特恩主管</b><alpha=#AA><size=12> <jstern@gravitas.nova></color></smallcaps></size>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_arthistoryrequest
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <indent=5%>博士，
+
+
+      如果在上传必需的科学和生存知识后还有可用空间，我会看看有没有办法。</indent>
+    style: Body
+  - widget_type: CodexText
+    text: >2
+
+      - 斯特恩主管
+
+      <size=11>庄严科技</size>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_arthistoryrequest
+- contents:
+  - widget_type: CodexText
+    text: 植入数据库请求
+    style: Subtitle
+  - widget_type: CodexText
+    text: >
+      <smallcaps>收件人：<b>斯特恩主管</b><size=12><alpha=#AA> <jstern@gravitas.nova></color></size>
+
+      发件人：<b>布鲁萨德博士</b><size=12><alpha=#AA> <obroussard@gravitas.nova></color></size></smallcaps>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_arthistoryrequest
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <indent=5%>主管，
+
+
+      我一直在思考这个问题。在建立殖民地时我突然想到，我们的实验体将来可能会旅行到无线电联系范围之外。
+
+
+      随着殖民地作为人类的代表进入宇宙，我认为除了实用信息之外，我们有责任保存这个星球的非科学知识。
+
+
+      我想提出正式请求，将全面的艺术和文化历史纳入微芯片数据库。</indent>
+    style: Body
+  - widget_type: CodexText
+    text: >2
+
+      - 布鲁萨德博士
+
+      <size=11>生物工程部
+
+      庄严科技</size>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_arthistoryrequest

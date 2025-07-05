@@ -1,0 +1,138 @@
+id: BIOMERUST
+parent_id: BIOMES
+name: 铁锈生态
+disabled: False
+search_only: False
+category: BIOMES
+sort_string: BIOMERUST
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 铁锈生态
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 铁锈生态的橙褐色区域是许多不寻常的动植物的家园。这里包含了用于几种中间技术的资源。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      <link="RUST">铁锈</link>可以通过<link="RUSTDEOXIDIZER">铁锈脱氧机</link>产生许多殖民地基本需求品。
+
+
+      <link="PUFTBLEACHSTONE">洁净飞鱼</link>，铁锈生态的常住生物，是<link="BLEACHSTONE">漂白石</link>的可再生来源，可以将其驯化以生产。
+
+
+      <link="DRECKOS">毛鳞壁虎</link>也可以在这些生态中找到，是<link="PHOSPHORITE">磷矿</link>和<link="CLOTHING">纺织生产</link>所需纤维的重要来源。
+
+
+      这片生态能找到两种植物：<link="BEANPLANTSEED">小吃豆</link>和<link="SALTPLANT">沙盐藤</link>，可以用于生产食物，较高地增加复制人的<link="MORALE">士气</link>。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 元素
+    style: Subtitle
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 雪
+    image: snow_0__ui
+    link_id: snow
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 铁矿
+    image: hematite_0__ui
+    link_id: ironore
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 高硫天然气
+    color: 76245DFF
+    image: element_gas
+    link_id: sourgas
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 盐水
+    color: CED2ECFF
+    image: element_liquid
+    link_id: saltwater
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 硫
+    image: sulfur_0__ui
+    link_id: sulfur
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 浓盐冰
+    image: frozen_brine_0__ui
+    link_id: brine
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 乙醇
+    color: 00FF6AFF
+    image: element_liquid
+    link_id: ethanol
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 盐
+    image: salt_0__ui
+    link_id: salt
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 二氧化碳
+    color: 000000FF
+    image: element_gas
+    link_id: carbondioxide
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 氯气
+    color: 04A778FF
+    image: element_gas
+    link_id: chlorinegas
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 漂白石
+    image: bleach_stone_0__ui
+    link_id: bleachstone
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 黑曜石
+    image: obsidian_0__ui
+    link_id: obsidian
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 镁铁质岩
+    image: igneous_rock_0__ui
+    link_id: maficrock
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 铁锈
+    image: iron_oxide_0__ui
+    link_id: rust
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 植物
+    style: Subtitle
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 小吃芽
+    image: beanplant_0__ui
+    link_id: beanplant
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 沙盐藤
+    image: saltplant_0__ui
+    link_id: saltplant
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 小动物
+    style: Subtitle
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 毛鳞壁虎
+    image: drecko_0__fbr_ui
+    link_id: drecko
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 洁净飞鱼
+    image: puft_0__anti_ui
+    link_id: puftbleachstone
+  layout: Vertical

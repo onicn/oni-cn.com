@@ -1,0 +1,66 @@
+id: SPACEPROGRAM
+parent_id: TECH
+name: 太空计划
+disabled: False
+search_only: False
+category: TECH
+sort_string: 太空计划
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="SPACEPROGRAM">太空计划</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 将复制人送入太空的第一步。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="ADVANCEDRESEARCH">高级研究</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: rocket_launchpad_0__ui
+  - widget_type: CodexText
+    text: <link="LAUNCHPAD">火箭平台</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: rocket_nosecone_0__ui
+  - widget_type: CodexText
+    text: <link="HABITATMODULESMALL">单太空员前锥</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: rocket_orbital_deploy_cargo_module_0__ui
+  - widget_type: CodexText
+    text: <link="ORBITALCARGOMODULE">环轨货舱</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: rocket_control_station_0__ui
+  - widget_type: CodexText
+    text: <link="ROCKETCONTROLSTATION">火箭控制台</link>
+    style: Body
+  layout: Horizontal

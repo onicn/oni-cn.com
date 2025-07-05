@@ -1,0 +1,100 @@
+id: REQUIREMENTCLASSPOWERBUILDING
+parent_id: BUILDCATEGORYCATEGORY
+name: 电力建筑
+disabled: False
+search_only: False
+category: BUILDCATEGORYCATEGORY
+sort_string: 电力建筑
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 电力建筑
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 为殖民地发展和扩展而发电、管理或储存电力的建筑。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 此类别的建筑：
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 煤炭发电机'
+    image: generatorphos_0__ui
+    link_id: generator
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 木材燃烧器'
+    image: generatorwood_0__ui
+    link_id: woodgasgenerator
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 泥炭燃烧器'
+    image: generatorpeat_0__ui
+    link_id: peatgenerator
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 氢气发电机'
+    image: generatormerc_0__ui
+    link_id: hydrogengenerator
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 天然气发电机'
+    image: generatormethane_0__ui
+    link_id: methanegenerator
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 石油发电机'
+    image: generatorpetrol_0__ui
+    link_id: petroleumgenerator
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 蒸汽涡轮机'
+    image: steamturbine2_0__ui
+    link_id: steamturbine2
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 太阳能板'
+    image: solar_panel_0__ui
+    link_id: solarpanel
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 蓄电池'
+    image: batterysm_0__ui
+    link_id: battery
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 巨型蓄电池'
+    image: batterymed_0__ui
+    link_id: batterymedium
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 智能蓄电池'
+    image: smartbattery_0__ui
+    link_id: batterysmart
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 变压器'
+    image: transformer_small_0__ui
+    link_id: powertransformersmall
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 大型变压器'
+    image: transformer_0__ui
+    link_id: powertransformer
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 电控站'
+    image: electricianworkdesk_0__ui
+    link_id: powercontrolstation
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 需求于：
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: '    • <link="POWERPLANT">发电厂</link>'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical

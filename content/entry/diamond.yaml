@@ -1,0 +1,136 @@
+id: DIAMOND
+parent_id: ELEMENTSSOLID
+name: 钻石
+disabled: False
+search_only: False
+category: ELEMENTSSOLID
+sort_string: 钻石
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="DIAMOND">钻石</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: diamond_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: diamond_0__ui
+      text1: 钻石
+      text2: 1000克
+      link_id: diamond
+    produce:
+    - image: element_liquid
+      color: 808080FF
+      text1: 熔融碳
+      text2: 1000克
+      link_id: moltencarbon
+    fabricator:
+      image: crew_state_temp_up
+      text1: 3926.9ºC
+      tooltip: 温度高于3926.9ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 化石
+    require:
+    - image: diamond_0__ui
+      text1: 钻石
+      text2: 1000克
+      link_id: diamond
+    produce:
+    - image: fossil_0__ui
+      text1: 化石
+      text2: 100千克
+      link_id: fossil
+    fabricator:
+      image: fossil_dig_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 远古标本
+      text2: 80秒
+      link_id: 远古标本
+  - widget_type: CodexConversionPanel
+    require:
+    - image: diamond_0__ui
+      text1: 钻石
+      text2: 1000克/周期
+      link_id: diamond
+    produce: []
+    fabricator:
+      image: lightbug_0__cry_ui
+      text1: 光耀虫
+      link_id: LIGHTBUGCRYSTAL
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 钻石压机
+    require:
+    - image: carbon_0__ui
+      text1: 精炼碳
+      text2: 100千克
+      link_id: refinedcarbon
+    produce:
+    - image: diamond_0__ui
+      text1: 钻石
+      text2: 100千克
+      link_id: diamond
+    fabricator:
+      image: diamond_press_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 钻石压机
+      text2: 80秒
+      link_id: diamondpress
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      (C) 钻石是工业级的高密度碳。
+
+
+      难以挖掘。
+
+
+      资源种类：其他
+
+      熔点：3926.9ºC
+
+      硬度：<color=#BD597FFF>250（几乎坚不可摧）</color>
+
+
+      比热容：0.516 (DTU/g)/ºC
+
+      热导率：80.000 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.8
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：<link="BUILDABLEANY">一般建造材料</link>, <link="TRANSPARENT">透明体</link>, <link="FLYINGCRITTEREDIBLE">诱饵</link>, <link="ELEMENTSSOLID">固体</link>, 其他
+
+      <style="KKeyword">装饰</style>：+100%
+
+      <style="KKeyword">过热温度</style>：+200ºC
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

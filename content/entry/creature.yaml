@@ -1,0 +1,92 @@
+id: CREATURE
+parent_id: ELEMENTSSOLID
+name: 遗传生物软泥
+disabled: False
+search_only: False
+category: ELEMENTSSOLID
+sort_string: 遗传生物软泥
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="CREATURE">遗传生物软泥</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: algae_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: algae_0__ui
+      text1: 遗传生物软泥
+      text2: 1000克
+      link_id: creature
+    produce:
+    - image: algae_0__ui
+      text1: 遗传生物软泥
+      text2: 1000克
+      link_id: creature
+    fabricator:
+      image: crew_state_temp_up
+      text1: 9726.9ºC
+      tooltip: 温度高于9726.9ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换于
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: algae_0__ui
+      text1: 遗传生物软泥
+      text2: 1000克
+      link_id: creature
+    produce:
+    - image: algae_0__ui
+      text1: 遗传生物软泥
+      text2: 1000克
+      link_id: creature
+    fabricator:
+      image: crew_state_temp_up
+      text1: 9726.9ºC
+      tooltip: 温度高于9726.9ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      (DuPe) 生物软泥是由水、碳和几十种微量元素混合而成的泥浆。
+
+
+      复制人是由纯生物软泥打印而成的。
+
+
+      资源种类：<link="ELEMENTSSOLID">固体</link>
+
+      熔点：9726.9ºC
+
+      硬度：<color=#6D7BC1FF>10（柔软）</color>
+
+
+      比热容：3.470 (DTU/g)/ºC
+
+      热导率：0.600 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.25
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：<link="ELEMENTSSOLID">固体</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

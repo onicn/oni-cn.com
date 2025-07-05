@@ -1,0 +1,167 @@
+id: URANIUMORE
+parent_id: ELEMENTSSOLID
+name: 铀矿
+disabled: False
+search_only: False
+category: ELEMENTSSOLID
+sort_string: 铀矿
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="URANIUMORE">铀矿</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: radium_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: radium_0__ui
+      text1: 铀矿
+      text2: 1000克
+      link_id: uraniumore
+    produce:
+    - image: element_liquid
+      color: A2DD10FF
+      text1: 熔融铀
+      text2: 1000克
+      link_id: moltenuranium
+    fabricator:
+      image: crew_state_temp_up
+      text1: 132.9ºC
+      tooltip: 温度高于132.9ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 铀矿移动电源
+    require:
+    - image: radium_0__ui
+      text1: 铀矿
+      text2: 10千克
+      link_id: uraniumore
+    produce:
+    - image: electrobank_uranium_0__ui
+      text1: 铀矿移动电源
+      text2: 1单位
+      link_id: electrobankuraniumore
+    fabricator:
+      image: craftingstation_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 工作台
+      text2: 60秒
+      link_id: craftingtable
+  - widget_type: CodexRecipePanel
+    text: 贫铀
+    require:
+    - image: radium_0__ui
+      text1: 铀矿
+      text2: 1000克
+      link_id: uraniumore
+    produce:
+    - image: depleted_uranium_0__ui
+      text1: 贫铀
+      text2: 500克
+      link_id: depleteduranium
+    fabricator:
+      image: manual_radbolt_generator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 人力辐射粒子发生器
+      text2: 40秒
+      link_id: highenergyparticlespawner
+  - widget_type: CodexRecipePanel
+    text: 浓缩铀
+    require:
+    - image: radium_0__ui
+      text1: 铀矿
+      text2: 10千克
+      link_id: uraniumore
+    produce:
+    - image: enriched_uranium_0__ui
+      text1: 浓缩铀
+      text2: 2000克
+      link_id: enricheduranium
+    - image: element_liquid
+      color: A2DD10FF
+      text1: 熔融铀
+      text2: 8千克
+      link_id: moltenuranium
+    fabricator:
+      image: enrichmentcentrifuge_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 铀素离心机
+      text2: 40秒
+      link_id: uraniumcentrifuge
+  - widget_type: CodexConversionPanel
+    require:
+    - image: radium_0__ui
+      text1: 铀矿
+      text2: 10千克/周期
+      link_id: uraniumore
+    produce:
+    - image: depleted_uranium_0__ui
+      text1: 贫铀
+      text2: 5千克/周期
+      link_id: depleteduranium
+    fabricator:
+      image: radiation_lamp_0__ui
+      text1: 辐射灯
+      link_id: RADIATIONLIGHT
+  - widget_type: CodexConversionPanel
+    require:
+    - image: radium_0__ui
+      text1: 铀矿
+      text2: 10千克/周期
+      link_id: uraniumore
+    produce:
+    - image: enriched_uranium_0__ui
+      text1: 浓缩铀
+      text2: 9千克/周期
+      link_id: enricheduranium
+    fabricator:
+      image: beehive_0__ui
+      text1: 辐射蜂巢
+      link_id: BEEHIVE
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      (U) 铀矿是一种高<link="RADIATION">放射性</link>的物质。
+
+
+      它可以精炼为燃料用于研究性反应堆。
+
+
+      资源种类：<link="METAL">金属矿石</link>
+
+      熔点：132.9ºC
+
+      硬度：<color=#BD597FFF>150（几乎坚不可摧）</color>
+
+
+      比热容：1.000 (DTU/g)/ºC
+
+      热导率：20.000 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.3
+
+      辐射释放量/1000千克：165拉德/周期
+
+
+      属性：<link="BUILDABLEANY">一般建造材料</link>, <link="METAL">金属矿石</link>, 不可粉碎物, <link="ELEMENTSSOLID">固体</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

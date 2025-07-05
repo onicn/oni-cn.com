@@ -1,0 +1,175 @@
+id: NAPHTHA
+parent_id: ELEMENTSLIQUID
+name: 液态石脑油
+disabled: False
+search_only: False
+icon_color: B000FFFF
+category: ELEMENTSLIQUID
+sort_string: 液态石脑油
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="NAPHTHA">液态石脑油</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    color: B000FFFF
+    image: element_liquid
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: B000FFFF
+      text1: 液态石脑油
+      text2: 1000克
+      link_id: naphtha
+    produce:
+    - image: element_gas
+      color: 76245DFF
+      text1: 高硫天然气
+      text2: 1000克
+      link_id: sourgas
+    fabricator:
+      image: crew_state_temp_up
+      text1: 538.9ºC
+      tooltip: 温度高于538.9ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: B000FFFF
+      text1: 液态石脑油
+      text2: 1000克
+      link_id: naphtha
+    produce:
+    - image: wolframite_0__ui
+      text1: 固态石脑油
+      text2: 1000克
+      link_id: solidnaphtha
+    fabricator:
+      image: crew_state_temp_down
+      text1: -50.1ºC
+      tooltip: 温度低于-50.1ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换于
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: isoresin_0__ui
+      text1: 异构树液
+      text2: 1000克
+      link_id: isoresin
+    produce:
+    - image: element_liquid
+      color: B000FFFF
+      text1: 液态石脑油
+      text2: 1000克
+      link_id: naphtha
+    fabricator:
+      image: crew_state_temp_up
+      text1: 200ºC
+      tooltip: 温度高于200ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: milkfat_0__ui
+      text1: 咸乳蜡
+      text2: 1000克
+      link_id: milkfat
+    produce:
+    - image: element_liquid
+      color: B000FFFF
+      text1: 液态石脑油
+      text2: 1000克
+      link_id: naphtha
+    fabricator:
+      image: crew_state_temp_up
+      text1: 159.9ºC
+      tooltip: 温度高于159.9ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: polypropylene_0__ui
+      text1: 塑料
+      text2: 1000克
+      link_id: polypropylene
+    produce:
+    - image: element_liquid
+      color: B000FFFF
+      text1: 液态石脑油
+      text2: 1000克
+      link_id: naphtha
+    fabricator:
+      image: crew_state_temp_up
+      text1: 159.9ºC
+      tooltip: 温度高于159.9ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: wolframite_0__ui
+      text1: 固态石脑油
+      text2: 1000克
+      link_id: solidnaphtha
+    produce:
+    - image: element_liquid
+      color: B000FFFF
+      text1: 液态石脑油
+      text2: 1000克
+      link_id: naphtha
+    fabricator:
+      image: crew_state_temp_up
+      text1: -50.1ºC
+      tooltip: 温度高于-50.1ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: 4F10B7FF
+      text1: 粘性凝胶流体
+      text2: 1000克
+      link_id: viscogel
+    produce:
+    - image: element_liquid
+      color: B000FFFF
+      text1: 液态石脑油
+      text2: 1000克
+      link_id: naphtha
+    fabricator:
+      image: crew_state_temp_up
+      text1: 479.9ºC
+      tooltip: 温度高于479.9ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      石脑油是一种由<link="POLYPROPYLENE">塑料</link>燃烧产生的烃类混合物。
+
+
+      资源种类：<link="ELEMENTSLIQUID">液体</link>
+
+      冰点：-50.1ºC
+
+      沸点：538.9ºC
+
+
+      比热容：2.191 (DTU/g)/ºC
+
+      热导率：0.200 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.6
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：烃类物质, <link="ELEMENTSLIQUID">液体</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

@@ -1,0 +1,101 @@
+id: BIOMEMOO
+parent_id: BIOMES
+name: 海牛生态
+disabled: False
+search_only: False
+category: BIOMES
+sort_string: BIOMEMOO
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 海牛生态
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 海牛生态是<link="MOO">释气海牛</link>的自然栖息地，是<link="METHANE">天然气</link>的一种重要来源。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      除了<link="METHANE">天然气</link>，这里还充斥着<link="CHLORINEGAS">氯气</link>。实际上，氯在这里以<link="ELEMENTSGAS">气态</link>、<link="ELEMENTSLIQUID">液态</link>和<link="ELEMENTSSOLID">固态</link>形式存在，这主要是由于<link="BLEACHSTONE">漂白石</link>的存在。
+
+
+      <link="IGNEOUSROCK">火成岩</link>与其更密实的形式，<link="GRANITE">花岗岩</link>，可作为实用的建造材料，但这片生态真正的重点是吃<link="GASGRASS">释气草</link>排泄<link="METHANE">天然气</link>的<link="MOO">释气海牛</link>。释气海牛不能繁殖，但释气海牛流星会经常从太空降落到这片生态上，使其成为寻找这些难以捉摸的生物的最好方式。
+
+
+      这片生态没有<link="OXYGEN">氧气</link>，所以我的复制人在深入冒险前需要做好充分准备。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 元素
+    style: Subtitle
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 固态二氧化碳
+    image: solid_carbon_dioxide_0__ui
+    link_id: solidcarbondioxide
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 固态氯
+    image: solid_chlorine_0__ui
+    link_id: solidchlorine
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 真空
+    color: 000000FF
+    image: unknown_far
+    link_id: vacuum
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 漂白石
+    image: bleach_stone_0__ui
+    link_id: bleachstone
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 液态氯
+    color: 3AC330FF
+    image: element_liquid
+    link_id: chlorine
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 花岗岩
+    image: granite_0__ui
+    link_id: granite
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 天然气
+    color: FF6E0FFF
+    image: element_gas
+    link_id: methane
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 火成岩
+    image: igneous_rock_0__ui
+    link_id: igneousrock
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 植物
+    style: Subtitle
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 释气草
+    image: gassygrass_0__ui
+    link_id: gasgrass
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 小动物
+    style: Subtitle
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 释气海牛
+    image: gassy_moo_0__ui
+    link_id: moo
+  layout: Vertical

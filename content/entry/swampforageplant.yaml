@@ -1,0 +1,78 @@
+id: SWAMPFORAGEPLANT
+parent_id: FOOD
+name: 沼泽甜菜心
+disabled: False
+search_only: False
+category: FOOD
+sort_string: 沼泽甜菜心
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="SWAMPFORAGEPLANT">沼泽甜菜心</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: swamptuber_vegetable_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      一种中心松软多汁但气味难闻的无籽植物。
+
+
+      无法再种植。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 品质：恶心 [-1]
+    style: Body
+  - widget_type: CodexText
+    text: 卡路里：2,400千卡
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 腐烂时间：永不腐烂
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: swamptuber_vegetable_0__ui
+      text1: 沼泽甜菜心
+      text2: 700千卡/周期
+      tooltip: 品质：恶心 [-1]
+      link_id: swampforageplant
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 218.8克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__ui
+      text1: 好吃哈奇
+      link_id: HATCH
+  - widget_type: CodexConversionPanel
+    require:
+    - image: swamptuber_vegetable_0__ui
+      text1: 沼泽甜菜心
+      text2: 700千卡/周期
+      tooltip: 品质：恶心 [-1]
+      link_id: swampforageplant
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 291.7克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__veg_ui
+      text1: 草质哈奇
+      link_id: HATCHVEGGIE
+  layout: Vertical

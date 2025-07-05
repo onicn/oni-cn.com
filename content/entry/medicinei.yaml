@@ -1,0 +1,41 @@
+id: MEDICINEI
+parent_id: TECH
+name: 药物学
+disabled: False
+search_only: False
+category: TECH
+sort_string: 药物学
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="MEDICINEI">药物学</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 配制天然药物以抵御困扰复制人的常见<link="SICKNESSES">疾病</link>。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: apothecary_0__ui
+  - widget_type: CodexText
+    text: <link="APOTHECARY">配药桌</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: lubricant_applicator_0__ui
+  - widget_type: CodexText
+    text: <style="KKeyword">齿轮膏</style>模型
+    style: Body
+  layout: Horizontal

@@ -1,0 +1,56 @@
+id: BASICCURE
+name: 治疗药片
+title: STRINGS.CODEX.BASICCURE.TITLE
+disabled: False
+search_only: False
+category: MEDICINES
+sort_string: 治疗药片
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 治疗药片
+    style: Title
+  - widget_type: CodexText
+    text: 自主药
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      复制人可以将此服下以治愈自己由<style="KKeyword">病菌</style>引起的轻度<link="DISEASE">疾病</link>。
+
+
+      治疗药片抵抗<link="FOODSICKNESS">食物中毒</link>非常有效。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 配药桌
+    require:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 1000克
+      link_id: carbon
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 1000克
+      link_id: water
+    produce:
+    - image: pill_foodpoisoning_0__ui
+      text1: 治疗药片
+      text2: 1单位
+      link_id: basiccure
+    fabricator:
+      image: apothecary_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 配药桌
+      text2: 50秒
+      link_id: apothecary
+  layout: Vertical

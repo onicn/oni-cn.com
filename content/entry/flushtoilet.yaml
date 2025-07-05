@@ -1,0 +1,112 @@
+id: FLUSHTOILET
+parent_id: BUILDCATEGORYPLUMBING
+name: 抽水马桶
+disabled: False
+search_only: False
+category: BUILDCATEGORYPLUMBING
+sort_string: 抽水马桶
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="FLUSHTOILET">抽水马桶</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 卫生设备
+    style: Body
+    image: research_type_alpha_icon
+    link_id: sanitationsciences
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: toiletflush_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      给予复制人一个解手的地方。
+
+
+      传播非常少的<link="DISEASE">病菌</link>。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="WATER">水</link>：每次消耗5千克'
+    tooltip: 每次使用消耗<style="consumed">5千克</style><style="KKeyword"><link="WATER">水</link></style>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    复制人分配'
+    tooltip: 只有分配的复制人才可使用这个设备
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LIQUIDPIPING">液体输入管道</link>'
+    tooltip: 必须从<link="LIQUIDCONDUIT">液体管道</link>系统中接收<style="KKeyword">液体</style>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LIQUIDPIPING">液体输出管道</link>'
+    tooltip: 必须通过<link="LIQUIDCONDUIT">液体管道</link>系统排出<style="KKeyword">液体</style>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：2格宽x3格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：30秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="METAL">金属矿石</link>400千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DIRTYWATER">污染水</link>：每次产生11.7千克'
+    tooltip: >-
+      使用时产生<style="produced">11.7千克</style><style="KKeyword"><link="DIRTYWATER">污染水</link></style>
+
+
+      复制人的废物以<b>37ºC</b>释放。
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="FOODPOISONING">食物中毒</link>：每次产生105,000个病菌'
+    tooltip: 每次使用产生<style="produced">105,000个病菌</style>个<style="KKeyword"><link="FOODPOISONING">食物中毒</link></style>病菌
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="HEAT">热量</link>：+250复制热/秒'
+    tooltip: >-
+      每秒产生<style="produced">250复制热</style>
+
+
+      总<style="KKeyword">温度</style>变化受到加热物质的材料属性影响：
+          • 质量
+          • 比热容
+          • 表面积
+          • 隔热厚度
+          • 热导率
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：-10（范围：2格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>2</b>格内降低<b><b>-10</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>类别</b>
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    <link="REQUIREMENTCLASSTOILETTYPE">厕所</link>'
+    style: Body
+  - widget_type: CodexText
+    text: '    <link="REQUIREMENTCLASSFLUSHTOILETTYPE">冲水厕所</link>'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>抽水马桶可以减少复制人通过皮肤接触到的病菌量，而且不用手动清空。</i>
+    style: Body
+  layout: Vertical

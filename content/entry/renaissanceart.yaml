@@ -1,0 +1,66 @@
+id: RENAISSANCEART
+parent_id: TECH
+name: 复兴艺术
+disabled: False
+search_only: False
+category: TECH
+sort_string: 复兴艺术
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="RENAISSANCEART">复兴艺术</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 由文化遗产组成的艺术。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="REFRACTIVEDECOR">高雅文化</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: painting_tall_off_0__ui
+  - widget_type: CodexText
+    text: <link="CANVASTALL">肖像画布</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: sculpture_marble_0__ui
+  - widget_type: CodexText
+    text: <link="MARBLESCULPTURE">大理石雕塑块</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: fossilsculpture_0__ui
+  - widget_type: CodexText
+    text: <link="FOSSILSCULPTURE">化石雕塑块</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: fossilsculpture_hanging_0__ui
+  - widget_type: CodexText
+    text: <link="CEILINGFOSSILSCULPTURE">垂吊化石雕塑块</link>
+    style: Body
+  layout: Horizontal

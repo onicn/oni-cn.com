@@ -1,0 +1,45 @@
+id: HIGHPRESSUREFORGING
+parent_id: TECH
+name: 加压锻造
+disabled: False
+search_only: False
+category: TECH
+sort_string: 加压锻造
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="HIGHPRESSUREFORGING">加压锻造</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 高压钻石锻造。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="HIGHTEMPFORGING">超热锻造</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: diamond_press_0__ui
+  - widget_type: CodexText
+    text: <link="DIAMONDPRESS">钻石压机</link>
+    style: Body
+  layout: Horizontal

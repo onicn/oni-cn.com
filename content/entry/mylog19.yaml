@@ -1,0 +1,25 @@
+id: MYLOG19
+name: 周期1000
+title: STRINGS.CODEX.MYLOG.BODY.LOG4.TITLE
+disabled: False
+search_only: False
+category: MYLOG
+sort_string: A4
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 周期1000
+    style: Title
+  - widget_type: CodexText
+    text: >+
+      今天我的殖民地成功运作连续一千周期了。我认为这是一个巨大的成功！
+
+
+      想象一下，要是我们的母星能看到我们现在这样会多自豪啊。
+
+    style: Body
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical
+  lock_id: log4

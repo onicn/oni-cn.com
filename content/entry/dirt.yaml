@@ -1,0 +1,723 @@
+id: DIRT
+parent_id: ELEMENTSSOLID
+name: 泥土
+disabled: False
+search_only: False
+category: ELEMENTSSOLID
+sort_string: 泥土
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="DIRT">泥土</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: dirt_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 1000克
+      link_id: dirt
+    produce:
+    - image: sand_0__ui
+      text1: 沙子
+      text2: 1000克
+      link_id: sand
+    fabricator:
+      image: crew_state_temp_up
+      text1: 326.9ºC
+      tooltip: 温度高于326.9ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换于
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: algae_0__ui
+      text1: 藻类
+      text2: 1000克
+      link_id: algae
+    produce:
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 1000克
+      link_id: dirt
+    fabricator:
+      image: crew_state_temp_up
+      text1: 125ºC
+      tooltip: 温度高于125ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: fertilizer_0__ui
+      text1: 肥料
+      text2: 1000克
+      link_id: fertilizer
+    produce:
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 1000克
+      link_id: dirt
+    fabricator:
+      image: crew_state_temp_up
+      text1: 125ºC
+      tooltip: 温度高于125ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: slime_mold_0__ui
+      text1: 菌泥
+      text2: 1000克
+      link_id: slimemold
+    produce:
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 1000克
+      link_id: dirt
+    fabricator:
+      image: crew_state_temp_up
+      text1: 125ºC
+      tooltip: 温度高于125ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: sludge_0__ui
+      text1: 泥巴
+      text2: 1000克
+      link_id: mud
+    produce:
+    - image: element_gas
+      color: 85C9E3FF
+      text1: 蒸汽
+      text2: 600克
+      link_id: steam
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 400克
+      link_id: dirt
+    fabricator:
+      image: crew_state_temp_up
+      text1: 99.7ºC
+      tooltip: 温度高于99.7ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: 474506FF
+      text1: 污染水
+      text2: 1000克
+      link_id: dirtywater
+    produce:
+    - image: element_gas
+      color: 85C9E3FF
+      text1: 蒸汽
+      text2: 990克
+      link_id: steam
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 10克
+      link_id: dirt
+    fabricator:
+      image: crew_state_temp_up
+      text1: 119.4ºC
+      tooltip: 温度高于119.4ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 软泥膏
+    require:
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 75千克
+      link_id: dirt
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 75千克
+      link_id: water
+    produce:
+    - image: mushbar_0__ui
+      text1: 软泥膏
+      text2: 800千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: mushbar
+    fabricator:
+      image: microbemusher_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 食物压制器
+      text2: 40秒
+      link_id: microbemusher
+  - widget_type: CodexRecipePanel
+    text: 抗敏药
+    require:
+    - image: seed_bristleblossom_0__ui
+      text1: 毛刺花种子
+      text2: 1单位
+      link_id: prickleflower
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 1000克
+      link_id: dirt
+    produce:
+    - image: pill_allergies_0__ui
+      text1: 抗敏药
+      text2: 10单位
+      link_id: antihistamine
+    fabricator:
+      image: apothecary_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 配药桌
+      text2: 100秒
+      link_id: apothecary
+  - widget_type: CodexRecipePanel
+    text: 抗敏药
+    require:
+    - image: kelp_leaf_0__ui
+      text1: 海梳蕨叶
+      text2: 10千克
+      link_id: kelp
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 1000克
+      link_id: dirt
+    produce:
+    - image: pill_allergies_0__ui
+      text1: 抗敏药
+      text2: 10单位
+      link_id: antihistamine
+    fabricator:
+      image: apothecary_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 配药桌
+      text2: 100秒
+      link_id: apothecary
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: 474506FF
+      text1: 污染水
+      text2: 23.4千克/周期
+      link_id: dirtywater
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 39千克/周期
+      link_id: dirt
+    - image: phosphorite_0__ui
+      text1: 磷矿
+      text2: 15.6千克/周期
+      link_id: phosphorite
+    produce:
+    - image: fertilizer_0__ui
+      text1: 肥料
+      text2: 72千克/周期
+      link_id: fertilizer
+    fabricator:
+      image: fertilizer_maker_0__ui
+      text1: 肥料合成器
+      link_id: FERTILIZERMAKER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 666.7千克/周期
+      link_id: dirt
+    produce: []
+    fabricator:
+      image: research_center_0__ui
+      text1: 研究站
+      link_id: RESEARCHCENTER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 10千克/周期
+      link_id: dirt
+    produce:
+    - image: pollinator_0__ui
+      text1: 拟蛾
+      text2: 0.2单位/周期
+      link_id: butterfly
+    fabricator:
+      image: pollinator_plant_0__ui
+      text1: 拟芽
+      link_id: BUTTERFLYPLANT
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: 00FF6AFF
+      text1: 乙醇
+      text2: 20千克/周期
+      link_id: ethanol
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 5千克/周期
+      link_id: dirt
+    produce:
+    - image: seed_beanplant_0__ui
+      text1: 小吃豆
+      text2: 0.57单位/周期
+      link_id: bean
+    fabricator:
+      image: beanplant_0__ui
+      text1: 小吃芽
+      link_id: BEANPLANT
+  - widget_type: CodexConversionPanel
+    require:
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 10千克/周期
+      link_id: dirt
+    produce:
+    - image: meallicegrain_0__ui
+      text1: 米虱
+      text2: 200千卡/周期
+      tooltip: 品质：恶心 [-1]
+      link_id: basicplantfood
+    fabricator:
+      image: meallice_0__ui
+      text1: 米虱木
+      link_id: BASICSINGLEHARVESTPLANT
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 20千克/周期
+      link_id: water
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 5千克/周期
+      link_id: dirt
+    produce:
+    - image: seed_coldwheat_0__ui
+      text1: 冰霜麦粒
+      text2: 1单位/周期
+      link_id: coldwheat
+    fabricator:
+      image: coldwheat_0__ui
+      text1: 冰霜小麦
+      link_id: COLDWHEAT
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: 3AC330FF
+      text1: 液态氯
+      text2: 500克/周期
+      link_id: chlorine
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 25千克/周期
+      link_id: dirt
+    produce:
+    - image: harvested_gassygrass_0__ui
+      text1: 释气草
+      text2: 250克/周期
+      link_id: gasgrass
+    fabricator:
+      image: gassygrass_0__ui
+      text1: 释气草
+      link_id: GASGRASS
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: 474506FF
+      text1: 污染水
+      text2: 70千克/周期
+      link_id: dirtywater
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 10千克/周期
+      link_id: dirt
+    produce:
+    - image: wood_0__ui
+      text1: 木材
+      text2: 66.7千克/周期
+      link_id: woodlog
+    fabricator:
+      image: tree_0__ui
+      text1: 乔木树
+      link_id: FORESTTREE
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_gas
+      color: 000000FF
+      text1: 二氧化碳
+      text2: 375克/周期
+      link_id: carbondioxide
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 19千克/周期
+      link_id: water
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 4000克/周期
+      link_id: dirt
+    produce:
+    - image: element_gas
+      color: B7FFFFFF
+      text1: 氧气
+      text2: 18.8千克/周期
+      link_id: oxygen
+    fabricator:
+      image: oxy_fern_0__ui
+      text1: 氧齿蕨
+      link_id: OXYFERN
+  - widget_type: CodexConversionPanel
+    require:
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 4800千克/周期
+      link_id: dirt
+    produce:
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 2400千克/周期
+      link_id: dirt
+    fabricator:
+      image: driller_0__ui
+      text1: 锹环田鼠
+      link_id: MOLE
+  - widget_type: CodexConversionPanel
+    require:
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 4800千克/周期
+      link_id: dirt
+    produce:
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 2400千克/周期
+      link_id: dirt
+    fabricator:
+      image: driller_0__del_ui
+      text1: 珍馐田鼠
+      link_id: MOLEDELICACY
+  - widget_type: CodexConversionPanel
+    require:
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 140千克/周期
+      link_id: dirt
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 70千克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__ui
+      text1: 好吃哈奇
+      link_id: HATCH
+  - widget_type: CodexConversionPanel
+    require:
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 140千克/周期
+      link_id: dirt
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 140千克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__veg_ui
+      text1: 草质哈奇
+      link_id: HATCHVEGGIE
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 植物粉碎机
+    require:
+    - image: slime_mold_0__ui
+      text1: 菌泥
+      text2: 100千克
+      link_id: slimemold
+    produce:
+    - image: element_liquid
+      color: 98A82FFF
+      text1: 植物润滑油
+      text2: 70千克
+      link_id: phytooil
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 30千克
+      link_id: dirt
+    fabricator:
+      image: milkpress_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 植物粉碎机
+      text2: 40秒
+      link_id: milkpress
+  - widget_type: CodexRecipePanel
+    text: 泥浆分离器
+    require:
+    - image: sludge_0__ui
+      text1: 泥巴
+      text2: 150千克
+      link_id: mud
+    produce:
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 60千克
+      link_id: dirt
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 90千克
+      link_id: water
+    fabricator:
+      image: sludge_press_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 泥浆分离器
+      text2: 20秒
+      link_id: sludgepress
+  - widget_type: CodexConversionPanel
+    require:
+    - image: unknown
+      color: 7F7F7FFF
+      text1: 可堆肥物
+      text2: 60单位/周期
+      link_id: compostable
+    produce:
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 60千克/周期
+      link_id: dirt
+    fabricator:
+      image: compost_0__ui
+      text1: 堆肥堆
+      link_id: COMPOST
+  - widget_type: CodexConversionPanel
+    require:
+    - image: ice_berry_bush_0__ui
+      text1: 刺壳果灌木
+      text2: 20% 生长进度/周期
+      link_id: hardskinberryplant
+    produce:
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 5千克/周期
+      link_id: dirt
+    fabricator:
+      image: ice_floof_0__ui
+      text1: 狐鹿
+      link_id: WOODDEER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: iceberry_0__ui
+      text1: 刺壳果
+      text2: 160千卡/周期
+      tooltip: 品质：恶心 [-1]
+      link_id: hardskinberry
+    produce:
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 5千克/周期
+      link_id: dirt
+    fabricator:
+      image: ice_floof_0__ui
+      text1: 狐鹿
+      link_id: WOODDEER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: bristleblossom_0__ui
+      text1: 毛刺花
+      text2: 10% 生长进度/周期
+      link_id: prickleflower
+    produce:
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 5千克/周期
+      link_id: dirt
+    fabricator:
+      image: ice_floof_0__ui
+      text1: 狐鹿
+      link_id: WOODDEER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: bristleberry_0__ui
+      text1: 毛刺浆果
+      text2: 160千卡/周期
+      tooltip: 品质：糟糕 [0]
+      link_id: pricklefruit
+    produce:
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 5千克/周期
+      link_id: dirt
+    fabricator:
+      image: ice_floof_0__ui
+      text1: 狐鹿
+      link_id: WOODDEER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: tree_0__ui
+      text1: 乔木树
+      text2: 11% 生长进度/周期
+      link_id: foresttree
+    produce:
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 12.5千克/周期
+      link_id: dirt
+    fabricator:
+      image: squirrel_0__hug_ui
+      text1: 毛绒树鼠
+      link_id: SQUIRREL
+  - widget_type: CodexConversionPanel
+    require:
+    - image: swampreed_0__ui
+      text1: 顶针芦苇
+      text2: 25% 生长进度/周期
+      link_id: basicfabricplant
+    produce:
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 12.5千克/周期
+      link_id: dirt
+    fabricator:
+      image: squirrel_0__hug_ui
+      text1: 毛绒树鼠
+      link_id: SQUIRREL
+  - widget_type: CodexConversionPanel
+    require:
+    - image: syrup_tree_0__ui
+      text1: 糖心树
+      text2: 11% 生长进度/周期
+      link_id: spacetree
+    produce:
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 12.5千克/周期
+      link_id: dirt
+    fabricator:
+      image: squirrel_0__hug_ui
+      text1: 毛绒树鼠
+      link_id: SQUIRREL
+  - widget_type: CodexConversionPanel
+    require:
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 4800千克/周期
+      link_id: dirt
+    produce:
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 2400千克/周期
+      link_id: dirt
+    fabricator:
+      image: driller_0__ui
+      text1: 锹环田鼠
+      link_id: MOLE
+  - widget_type: CodexConversionPanel
+    require:
+    - image: tree_0__ui
+      text1: 乔木树
+      text2: 9% 生长进度/周期
+      link_id: foresttree
+    produce:
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 20千克/周期
+      link_id: dirt
+    fabricator:
+      image: squirrel_0__ui
+      text1: 树鼠
+      link_id: SQUIRREL
+  - widget_type: CodexConversionPanel
+    require:
+    - image: swampreed_0__ui
+      text1: 顶针芦苇
+      text2: 20% 生长进度/周期
+      link_id: basicfabricplant
+    produce:
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 20千克/周期
+      link_id: dirt
+    fabricator:
+      image: squirrel_0__ui
+      text1: 树鼠
+      link_id: SQUIRREL
+  - widget_type: CodexConversionPanel
+    require:
+    - image: syrup_tree_0__ui
+      text1: 糖心树
+      text2: 9% 生长进度/周期
+      link_id: spacetree
+    produce:
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 20千克/周期
+      link_id: dirt
+    fabricator:
+      image: squirrel_0__ui
+      text1: 树鼠
+      link_id: SQUIRREL
+  - widget_type: CodexConversionPanel
+    require:
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 4800千克/周期
+      link_id: dirt
+    produce:
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 2400千克/周期
+      link_id: dirt
+    fabricator:
+      image: driller_0__del_ui
+      text1: 珍馐田鼠
+      link_id: MOLEDELICACY
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      泥土是一种柔软的、营养丰富的物质，能够维持生命。
+
+
+      某些<link="FOOD">食物</link>生产中必需要用到它。
+
+
+      资源种类：<link="FARMABLE">可耕种的泥土</link>
+
+      熔点：326.9ºC
+
+      硬度：<color=#71ABCFFF>2（非常柔软）</color>
+
+
+      比热容：1.480 (DTU/g)/ºC
+
+      热导率：2.000 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.75
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：<link="BUILDABLEANY">一般建造材料</link>, <link="ELEMENTSSOLID">固体</link>, <link="FARMABLE">可耕种的泥土</link>
+
+      <style="KKeyword">过热温度</style>：-10ºC
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

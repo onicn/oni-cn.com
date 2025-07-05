@@ -1,0 +1,69 @@
+id: TECHNICALS2
+parent_id: ROLES
+name: 电气工程
+disabled: False
+search_only: False
+category: ROLES
+sort_string: 电气工程
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="TECHNICALS2">电气工程</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: hat_role_technicals2
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 允许进行发电机的<style="KKeyword">调校</style>，从而暂时提高<style="KKeyword">电力</style>输出
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 工作培训
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexText
+    text: 工作培训会自动提供永久的特质和属性提升，即使复制人更换工作，这些特质和属性提升也会保留下来。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>+2</b><style="KKeyword">机械</style>
+    style: Body
+  - widget_type: CodexText
+    text: <link="POWER">发电机的调校</link>和<link="POWERSTATIONTOOLS">微芯片</link>的制作
+    style: Body
+  - widget_type: CodexText
+    text: <link="ADVANCEDCRAFTINGTABLE">焊接台</link>的使用
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提工作
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="TECHNICALS1">改良操作</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 升职机会
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexText
+    text: 晋升会在现有工作培训的基础上带来更多属性提升和特质。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="ENGINEERING1">机电工程</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

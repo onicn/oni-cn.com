@@ -1,0 +1,183 @@
+id: CRUDEOIL
+parent_id: ELEMENTSLIQUID
+name: 原油
+disabled: False
+search_only: False
+icon_color: 301265FF
+category: ELEMENTSLIQUID
+sort_string: 原油
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="CRUDEOIL">原油</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    color: 301265FF
+    image: element_liquid
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: 301265FF
+      text1: 原油
+      text2: 1000克
+      link_id: crudeoil
+    produce:
+    - image: element_liquid
+      color: FFC325FF
+      text1: 石油
+      text2: 1000克
+      link_id: petroleum
+    fabricator:
+      image: crew_state_temp_up
+      text1: 399.9ºC
+      tooltip: 温度高于399.9ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: 301265FF
+      text1: 原油
+      text2: 1000克
+      link_id: crudeoil
+    produce:
+    - image: frozen_crude_oil_0__ui
+      text1: 固态原油
+      text2: 1000克
+      link_id: solidcrudeoil
+    fabricator:
+      image: crew_state_temp_down
+      text1: -40.1ºC
+      tooltip: 温度低于-40.1ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换于
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: frozen_crude_oil_0__ui
+      text1: 固态原油
+      text2: 1000克
+      link_id: solidcrudeoil
+    produce:
+    - image: element_liquid
+      color: 301265FF
+      text1: 原油
+      text2: 1000克
+      link_id: crudeoil
+    fabricator:
+      image: crew_state_temp_up
+      text1: -40.1ºC
+      tooltip: 温度高于-40.1ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: 301265FF
+      text1: 原油
+      text2: 6吨/周期
+      link_id: crudeoil
+    produce:
+    - image: element_liquid
+      color: FFC325FF
+      text1: 石油
+      text2: 3000千克/周期
+      link_id: petroleum
+    - image: element_gas
+      color: FF6E0FFF
+      text1: 天然气
+      text2: 54千克/周期
+      link_id: methane
+    fabricator:
+      image: oilrefinery_0__ui
+      text1: 原油精炼器
+      link_id: OILREFINERY
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 600千克/周期
+      link_id: water
+    produce:
+    - image: element_liquid
+      color: 301265FF
+      text1: 原油
+      text2: 2000千克/周期
+      link_id: crudeoil
+    fabricator:
+      image: geyser_oil_cap_0__ui
+      text1: 油井
+      link_id: OILWELLCAP
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_gas
+      color: 000000FF
+      text1: 二氧化碳
+      text2: 20千克/周期
+      link_id: carbondioxide
+    produce:
+    - image: element_liquid
+      color: 301265FF
+      text1: 原油
+      text2: 10千克/周期
+      link_id: crudeoil
+    fabricator:
+      image: oilfloater_0__ui
+      text1: 浮油生物
+      link_id: OILFLOATER
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      原油是一种未经加工的潜在<link="POWER">电力</link>能源，由数十亿死亡的原始有机体沉积而成。
+
+
+      它也是某些类型机械的实用润滑剂。
+
+
+      资源种类：<link="ELEMENTSLIQUID">液体</link>
+
+      冰点：-40.1ºC
+
+      沸点：399.9ºC
+
+
+      比热容：1.690 (DTU/g)/ºC
+
+      热导率：2.000 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.8
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：溜滑, <link="LUBRICATINGOIL">齿轮油</link>, <link="UNREFINEDOIL">未精炼油</link>, <link="ELEMENTSLIQUID">液体</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

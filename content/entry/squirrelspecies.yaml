@@ -1,0 +1,366 @@
+id: SQUIRRELSPECIES
+parent_id: CREATURES
+name: 树鼠
+disabled: False
+search_only: False
+category: CREATURES
+sort_string: <link="SQUIRRELSPECIES">树鼠</link>
+sub_entries:
+- id: SquirrelHug
+  parent_id: SquirrelSpecies
+  name: <link="SQUIRREL">毛绒树鼠</link>
+  disabled: False
+  sort_string: 毛绒树鼠
+- id: Squirrel
+  parent_id: SquirrelSpecies
+  name: <link="SQUIRREL">树鼠</link>
+  disabled: False
+  sort_string: 树鼠
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 树鼠
+    style: Title
+  - widget_type: CodexText
+    text: 可驯化的小动物
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 树鼠是一种啮齿类动物，具有很强的匿藏本能，这使得它们会寻找并掩埋一些小物品，通常是种子。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 由于树鼠依靠树皮和木头生存，所以它们的匿藏行为是一种欲望还是一种娱乐形式目前还不得而知。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 尽管树鼠没有真正的对生拇指，但它灵巧的爪子可以让它在最狭窄的地方寻找种子和其他宝物。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 条目（2/2）
+    style: Subtitle
+  - widget_type: CodexText
+    text: <link="SQUIRRELHUG">毛绒树鼠</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="SQUIRREL">树鼠</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: squirrel_0__hug_ui
+  - widget_type: CodexImage
+    image: baby_squirrel_0__hug_ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexText
+    text: >-
+      毛绒树鼠是毛茸茸的、充满关爱的小动物，对于所有种类的蛋都会展现强烈的拥抱本能。
+
+
+      当被经过的复制人拥抱时，它会暂时增强情感。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 理想温度
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 舒适范围：<b>10ºC</b>至<b>40ºC</b>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 存活范围：<b>-45ºC</b>至<b>100ºC</b>'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 寿命
+    style: Subtitle
+  - widget_type: CodexText
+    text: 这种小动物特征<link="CREATURES__GUIDE__FERTILITY">寿命</link>为<b>100周期</b>。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 所需空间
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 当房间空间对每只小动物平均少于<b>4格</b>时会感到<link="CREATURES__GUIDE__MOOD">拥挤</link>。'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 当房间小于<b>4格</b>时会感到<link="CREATURES__GUIDE__MOOD">封闭</link>。'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 掉落物
+    style: Subtitle
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 肉
+    image: creaturemeat_0__ui
+    link_id: meat
+  - widget_type: CodexText
+    text: 	1,600千卡
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 食物
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: tree_0__ui
+      text1: 乔木树
+      text2: 11% 生长进度/周期
+      link_id: foresttree
+    produce:
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 12.5千克/周期
+      link_id: dirt
+    fabricator:
+      image: squirrel_0__hug_ui
+      text1: 毛绒树鼠
+      link_id: SQUIRREL
+  - widget_type: CodexConversionPanel
+    require:
+    - image: swampreed_0__ui
+      text1: 顶针芦苇
+      text2: 25% 生长进度/周期
+      link_id: basicfabricplant
+    produce:
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 12.5千克/周期
+      link_id: dirt
+    fabricator:
+      image: squirrel_0__hug_ui
+      text1: 毛绒树鼠
+      link_id: SQUIRREL
+  - widget_type: CodexConversionPanel
+    require:
+    - image: syrup_tree_0__ui
+      text1: 糖心树
+      text2: 11% 生长进度/周期
+      link_id: spacetree
+    produce:
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 12.5千克/周期
+      link_id: dirt
+    fabricator:
+      image: squirrel_0__hug_ui
+      text1: 毛绒树鼠
+      link_id: SQUIRREL
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require: []
+    produce:
+    - image: creaturemeat_0__ui
+      text1: 肉
+      text2: 1,600千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: meat
+    fabricator:
+      image: squirrel_0__hug_ui
+      text1: 毛绒树鼠
+      link_id: SQUIRREL
+  - widget_type: CodexConversionPanel
+    require:
+    - image: squirrel_0__hug_ui
+      text1: 毛绒树鼠
+      text2: 0.5单位/周期
+      link_id: squirrel
+    produce:
+    - image: frozen_brine_0__ui
+      text1: 浓盐冰
+      text2: 128千克/周期
+      link_id: brine
+    fabricator:
+      image: raptor_0__ui
+      text1: 霸王鹦
+      link_id: RAPTOR
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: squirrel_0__ui
+  - widget_type: CodexImage
+    image: baby_squirrel_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexText
+    text: >-
+      树鼠是一种令人讨厌但没有敌意的生物，以<link="BASICFABRICPLANT">顶针芦苇</link>和<link="FORESTTREE">乔木树</link>的枝杈为食。
+
+
+      众所周知，它们一旦找到足够大的合适区域，就会把<link="PLANTS">种子</link>种到地上。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 理想温度
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 舒适范围：<b>10ºC</b>至<b>40ºC</b>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 存活范围：<b>-45ºC</b>至<b>100ºC</b>'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 寿命
+    style: Subtitle
+  - widget_type: CodexText
+    text: 这种小动物特征<link="CREATURES__GUIDE__FERTILITY">寿命</link>为<b>100周期</b>。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 所需空间
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 当房间空间对每只小动物平均少于<b>12格</b>时会感到<link="CREATURES__GUIDE__MOOD">拥挤</link>。'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 当房间小于<b>12格</b>时会感到<link="CREATURES__GUIDE__MOOD">封闭</link>。'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 掉落物
+    style: Subtitle
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 肉
+    image: creaturemeat_0__ui
+    link_id: meat
+  - widget_type: CodexText
+    text: 	1,600千卡
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 食物
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: tree_0__ui
+      text1: 乔木树
+      text2: 9% 生长进度/周期
+      link_id: foresttree
+    produce:
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 20千克/周期
+      link_id: dirt
+    fabricator:
+      image: squirrel_0__ui
+      text1: 树鼠
+      link_id: SQUIRREL
+  - widget_type: CodexConversionPanel
+    require:
+    - image: swampreed_0__ui
+      text1: 顶针芦苇
+      text2: 20% 生长进度/周期
+      link_id: basicfabricplant
+    produce:
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 20千克/周期
+      link_id: dirt
+    fabricator:
+      image: squirrel_0__ui
+      text1: 树鼠
+      link_id: SQUIRREL
+  - widget_type: CodexConversionPanel
+    require:
+    - image: syrup_tree_0__ui
+      text1: 糖心树
+      text2: 9% 生长进度/周期
+      link_id: spacetree
+    produce:
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 20千克/周期
+      link_id: dirt
+    fabricator:
+      image: squirrel_0__ui
+      text1: 树鼠
+      link_id: SQUIRREL
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require: []
+    produce:
+    - image: creaturemeat_0__ui
+      text1: 肉
+      text2: 1,600千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: meat
+    fabricator:
+      image: squirrel_0__ui
+      text1: 树鼠
+      link_id: SQUIRREL
+  - widget_type: CodexConversionPanel
+    require:
+    - image: squirrel_0__ui
+      text1: 树鼠
+      text2: 0.5单位/周期
+      link_id: squirrel
+    produce:
+    - image: frozen_brine_0__ui
+      text1: 浓盐冰
+      text2: 128千克/周期
+      link_id: brine
+    fabricator:
+      image: raptor_0__ui
+      text1: 霸王鹦
+      link_id: RAPTOR
+  layout: Vertical

@@ -1,0 +1,51 @@
+id: TIMEOFFAPPROVED
+name: 休假申请已批准
+title: STRINGS.CODEX.TIMEOFFAPPROVED.TITLE
+disabled: False
+search_only: False
+category: EMAILS
+sort_string: 休假申请已批准
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 休假申请已批准
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：无
+    style: Subtitle
+  layout: Vertical
+  lock_id: email_timeoffapproved
+- contents:
+  - widget_type: CodexText
+    text: >
+      <smallcaps>收件人：<b>罗斯博士</b><size=12><alpha=#AA> <dross@gravitas.nova></size></color>
+
+      发件人：<b>管理员</b><size=12><alpha=#AA> <admin@gravitas.nova></color></size></smallcaps>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_timeoffapproved
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <indent=5%><b>休假申请批准</b>
+
+      祝你好运，德文！
+
+
+      <alpha=#AA><smallcaps><indent=10%>休假申请 [5月18日-20日]
+
+      原因：请假参加领取博客爆火奖（被“小镇名流”提名为最鲜食物博客）。</indent></smallcaps></color></indent>
+    style: Body
+  - widget_type: CodexText
+    text: >2
+
+      - 管理员
+
+      <size=11>庄严科技</size>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_timeoffapproved

@@ -1,0 +1,358 @@
+id: FOOD
+name: 食物
+disabled: False
+search_only: False
+category: Root
+sort_string: 食物
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="FOOD">食物</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexLabelWithLargeIcon
+    text: 伽马泥膏
+    style: BodyWhite
+    image: mushbarfried_0__ui
+    link_id: gammamush
+  - widget_type: CodexLabelWithLargeIcon
+    text: 六角根果实
+    style: BodyWhite
+    image: podmelon_fruit_0__ui
+    link_id: forestforageplant
+  - widget_type: CodexLabelWithLargeIcon
+    text: 冰霜汉堡
+    style: BodyWhite
+    image: frost_burger_0__ui
+    link_id: burger
+  - widget_type: CodexLabelWithLargeIcon
+    text: 冰霜面包
+    style: BodyWhite
+    image: frostbread_0__ui
+    link_id: coldwheatbread
+  - widget_type: CodexLabelWithLargeIcon
+    text: 冰霜麦粒
+    style: BodyWhite
+    image: seed_coldwheat_0__ui
+    link_id: coldwheatseed
+  - widget_type: CodexLabelWithLargeIcon
+    text: 刺壳果
+    style: BodyWhite
+    image: iceberry_0__ui
+    link_id: hardskinberry
+  - widget_type: CodexLabelWithLargeIcon
+    text: 刺壳果烤串
+    style: BodyWhite
+    image: iceberry_cooked_0__ui
+    link_id: cookedpikeapple
+  - widget_type: CodexLabelWithLargeIcon
+    text: 咖喱豆
+    style: BodyWhite
+    image: curried_beans_0__ui
+    link_id: curry
+  - widget_type: CodexLabelWithLargeIcon
+    text: 嫩肋排
+    style: BodyWhite
+    image: dinobrisket_0__ui
+    link_id: smokeddinosaurmeat
+  - widget_type: CodexLabelWithLargeIcon
+    text: 小吃豆
+    style: BodyWhite
+    image: seed_beanplant_0__ui
+    link_id: beanplantseed
+  - widget_type: CodexLabelWithLargeIcon
+    text: 巨蕨谷粒
+    style: BodyWhite
+    image: megafrond_grain_0__ui
+    link_id: fernfood
+  - widget_type: CodexLabelWithLargeIcon
+    text: 帕库鱼片
+    style: BodyWhite
+    image: pacufillet_0__ui
+    link_id: fishmeat
+  - widget_type: CodexLabelWithLargeIcon
+    text: 干肉饼
+    style: BodyWhite
+    image: pemmican_0__ui
+    link_id: pemmican
+  - widget_type: CodexLabelWithLargeIcon
+    text: 拟种
+    style: BodyWhite
+    image: seed_pollinator_plant_0__ui
+    link_id: butterflyplantseed
+  - widget_type: CodexLabelWithLargeIcon
+    text: 果薯条
+    style: BodyWhite
+    image: rootfries_0__ui
+    link_id: friescarrot
+  - widget_type: CodexLabelWithLargeIcon
+    text: 植物肉
+    style: BodyWhite
+    image: critter_trap_fruit_0__ui
+    link_id: plantmeat
+  - widget_type: CodexLabelWithLargeIcon
+    text: 毛刺浆果
+    style: BodyWhite
+    image: bristleberry_0__ui
+    link_id: pricklefruit
+  - widget_type: CodexLabelWithLargeIcon
+    text: 汗甜玉米
+    style: BodyWhite
+    image: spikefruit_0__ui
+    link_id: gardenfoodplantfood
+  - widget_type: CodexLabelWithLargeIcon
+    text: 沼泽欢愉
+    style: BodyWhite
+    image: swamp_delights_0__ui
+    link_id: swampdelights
+  - widget_type: CodexLabelWithLargeIcon
+    text: 沼泽甜菜心
+    style: BodyWhite
+    image: swamptuber_vegetable_0__ui
+    link_id: swampforageplant
+  - widget_type: CodexLabelWithLargeIcon
+    text: 沼浆果冻
+    style: BodyWhite
+    image: swampcrop_fruit_0__ui
+    link_id: swampfruit
+  - widget_type: CodexLabelWithLargeIcon
+    text: 浆果糕
+    style: BodyWhite
+    image: fruitcake_0__ui
+    link_id: fruitcake
+  - widget_type: CodexLabelWithLargeIcon
+    text: 浆果酿
+    style: BodyWhite
+    image: zestysalsa_0__ui
+    link_id: salsa
+  - widget_type: CodexLabelWithLargeIcon
+    text: 海生菜
+    style: BodyWhite
+    image: sea_lettuce_leaves_0__ui
+    link_id: lettuce
+  - widget_type: CodexLabelWithLargeIcon
+    text: 海陆双拼
+    style: BodyWhite
+    image: surfnturf_0__ui
+    link_id: surfandturf
+  - widget_type: CodexLabelWithLargeIcon
+    text: 淤泥根
+    style: BodyWhite
+    image: muckrootvegetable_0__ui
+    link_id: basicforageplant
+  - widget_type: CodexLabelWithLargeIcon
+    text: 混合浆果派
+    style: BodyWhite
+    image: wormwood_berry_pie_0__ui
+    link_id: berrypie
+  - widget_type: CodexLabelWithLargeIcon
+    text: 漫花果
+    style: BodyWhite
+    image: ova_melon_0__ui
+    link_id: vinefruit
+  - widget_type: CodexLabelWithLargeIcon
+    text: 火椒粒
+    style: BodyWhite
+    image: spicenut_0__ui
+    link_id: spicenut
+  - widget_type: CodexLabelWithLargeIcon
+    text: 火椒面包
+    style: BodyWhite
+    image: pepperbread_0__ui
+    link_id: spicebread
+  - widget_type: CodexLabelWithLargeIcon
+    text: 炙烤刺果
+    style: BodyWhite
+    image: gristleberry_0__ui
+    link_id: grilledpricklefruit
+  - widget_type: CodexLabelWithLargeIcon
+    text: 炸肉块
+    style: BodyWhite
+    image: deepfried_meat_0__ui
+    link_id: deepfriedmeat
+  - widget_type: CodexLabelWithLargeIcon
+    text: 炸豆小吃
+    style: BodyWhite
+    image: deepfried_nosh_beans_0__ui
+    link_id: deepfriednosh
+  - widget_type: CodexLabelWithLargeIcon
+    text: 烘烤拟种
+    style: BodyWhite
+    image: fried_mimillet_0__ui
+    link_id: butterflyfood
+  - widget_type: CodexLabelWithLargeIcon
+    text: 烤海鲜
+    style: BodyWhite
+    image: grilled_pacu_0__ui
+    link_id: cookedfish
+  - widget_type: CodexLabelWithLargeIcon
+    text: 烤肉串
+    style: BodyWhite
+    image: barbeque_0__ui
+    link_id: cookedmeat
+  - widget_type: CodexLabelWithLargeIcon
+    text: 烤虫果仁
+    style: BodyWhite
+    image: wormwood_roast_nuts_0__ui
+    link_id: wormbasicfood
+  - widget_type: CodexLabelWithLargeIcon
+    text: 煎泥膏
+    style: BodyWhite
+    image: mushbarfried_0__ui
+    link_id: friedmushbar
+  - widget_type: CodexLabelWithLargeIcon
+    text: 煎蘑菇
+    style: BodyWhite
+    image: funguscapfried_0__ui
+    link_id: friedmushroom
+  - widget_type: CodexLabelWithLargeIcon
+    text: 煎蛋卷
+    style: BodyWhite
+    image: cookedegg_0__ui
+    link_id: cookedegg
+  - widget_type: CodexLabelWithLargeIcon
+    text: 熏鱼
+    style: BodyWhite
+    image: smokedfish_0__ui
+    link_id: smokedfish
+  - widget_type: CodexLabelWithLargeIcon
+    text: 爆米花
+    style: BodyWhite
+    image: smokedvegetables_0__ui
+    link_id: smokedvegetables
+  - widget_type: CodexLabelWithLargeIcon
+    text: 生蛋
+    style: BodyWhite
+    image: rawegg_0__ui
+    link_id: rawegg
+  - widget_type: CodexLabelWithLargeIcon
+    text: 生蟹肉
+    style: BodyWhite
+    image: shellfish_0__ui
+    link_id: shellfishmeat
+  - widget_type: CodexLabelWithLargeIcon
+    text: 硬肉
+    style: BodyWhite
+    image: dinomeat_raw_0__ui
+    link_id: dinosaurmeat
+  - widget_type: CodexLabelWithLargeIcon
+    text: 米虱
+    style: BodyWhite
+    image: meallicegrain_0__ui
+    link_id: basicplantfood
+  - widget_type: CodexLabelWithLargeIcon
+    text: 米虱糕
+    style: BodyWhite
+    image: liceloaf_0__ui
+    link_id: basicplantbar
+  - widget_type: CodexLabelWithLargeIcon
+    text: 羽叶果薯
+    style: BodyWhite
+    image: purplerootvegetable_0__ui
+    link_id: carrot
+  - widget_type: CodexLabelWithLargeIcon
+    text: 肉
+    style: BodyWhite
+    image: creaturemeat_0__ui
+    link_id: meat
+  - widget_type: CodexLabelWithLargeIcon
+    text: 腌制米虱
+    style: BodyWhite
+    image: pickledmeal_0__ui
+    link_id: pickledmeal
+  - widget_type: CodexLabelWithLargeIcon
+    text: 菌斑果
+    style: BodyWhite
+    image: fatplantfood_0__ui
+    link_id: gardenforageplant
+  - widget_type: CodexLabelWithLargeIcon
+    text: 营养作用
+    style: BodyWhite
+    image: icon_category_food
+    link_id: idfoodeffects
+  - widget_type: CodexLabelWithLargeIcon
+    text: 营养棒
+    style: BodyWhite
+    image: fieldration_0__ui
+    link_id: fieldration
+  - widget_type: CodexLabelWithLargeIcon
+    text: 蘑菇
+    style: BodyWhite
+    image: funguscap_0__ui
+    link_id: mushroom
+  - widget_type: CodexLabelWithLargeIcon
+    text: 蘑菇乳蛋饼
+    style: BodyWhite
+    image: quiche_0__ui
+    link_id: quiche
+  - widget_type: CodexLabelWithLargeIcon
+    text: 蘑菇卷
+    style: BodyWhite
+    image: mushroom_wrap_0__ui
+    link_id: mushroomwrap
+  - widget_type: CodexLabelWithLargeIcon
+    text: 虫果
+    style: BodyWhite
+    image: wormwood_super_fruits_0__ui
+    link_id: wormsuperfruit
+  - widget_type: CodexLabelWithLargeIcon
+    text: 虫果果酱
+    style: BodyWhite
+    image: wormwood_preserved_berries_0__ui
+    link_id: wormsuperfood
+  - widget_type: CodexLabelWithLargeIcon
+    text: 蛋奶酥煎饼
+    style: BodyWhite
+    image: stackedpancakes_0__ui
+    link_id: pancakes
+  - widget_type: CodexLabelWithLargeIcon
+    text: 蟹肉天妇罗
+    style: BodyWhite
+    image: deepfried_shellfish_0__ui
+    link_id: deepfriedshellfish
+  - widget_type: CodexLabelWithLargeIcon
+    text: 豆腐
+    style: BodyWhite
+    image: loafu_0__ui
+    link_id: tofu
+  - widget_type: CodexLabelWithLargeIcon
+    text: 贫瘠虫果
+    style: BodyWhite
+    image: wormwood_basic_fruit_0__ui
+    link_id: wormbasicfruit
+  - widget_type: CodexLabelWithLargeIcon
+    text: 软泥膏
+    style: BodyWhite
+    image: mushbar_0__ui
+    link_id: mushbar
+  - widget_type: CodexLabelWithLargeIcon
+    text: 雪莓
+    style: BodyWhite
+    image: frozenberries_fruit_0__ui
+    link_id: icecavesforageplant
+  - widget_type: CodexLabelWithLargeIcon
+    text: 颚鱼片
+    style: BodyWhite
+    image: jawbofillet_0__ui
+    link_id: prehistoricpacufillet
+  - widget_type: CodexLabelWithLargeIcon
+    text: 食盐
+    style: BodyWhite
+    image: ui_food_table_salt
+    link_id: idtablesalt
+  - widget_type: CodexLabelWithLargeIcon
+    text: 鱼肉卷
+    style: BodyWhite
+    image: deepfried_fish_0__ui
+    link_id: deepfriedfish
+  - widget_type: CodexLabelWithLargeIcon
+    text: 麻婆豆腐
+    style: BodyWhite
+    image: spicey_tofu_0__ui
+    link_id: spicytofu
+  layout: Grid
+- contents:
+  - widget_type: CodexSpacer
+  layout: Vertical

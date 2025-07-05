@@ -1,0 +1,121 @@
+id: MISSIONCONTROLCLUSTER
+parent_id: BUILDCATEGORYROCKETRY
+name: 航天指挥站
+disabled: False
+search_only: False
+category: BUILDCATEGORYROCKETRY
+sort_string: 航天指挥站
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="MISSIONCONTROLCLUSTER">航天指挥站</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 烃类燃料推进
+    style: Body
+    image: research_type_alpha_icon
+    link_id: hydrocarbonpropulsion
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: mission_control_station_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      为范围内的火箭驾驶员提供引导数据，以提高火箭的速度。
+
+
+      进行操作的复制人必须具有<link="ASTRONOMY">天文学</link>技能。
+
+
+      需要清晰的视野才能运作。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="POWER">电力</link>：960瓦'
+    tooltip: 必须与至少有<style="consumed">960瓦</style>可用<style="KKeyword">电力</style>的电路相连
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    复制人的操作'
+    tooltip: 必须有复制人来才能使这个建筑运行
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    需要技能的复制人的操作'
+    tooltip: 只有具有<link="ASTRONOMY">天文学</link>技能或<link="BOOSTERRESEARCH2">天文学增幅块</link>的复制人才能使用这个建筑
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    专用房间：实验室'
+    tooltip: >-
+      必须建在专用<style="KKeyword">房间</style>内
+
+
+      建成后，<style="KKeyword">房间</style>将变为<style="KKeyword">实验室</style>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：3格宽x3格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：30秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="REFINEDMETAL">精炼金属</link>400千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="HEAT">热量</link>：+2.5千复制热/秒'
+    tooltip: >-
+      每秒产生<style="produced">2.5千复制热</style>
+
+
+      总<style="KKeyword">温度</style>变化受到加热物质的材料属性影响：
+          • 质量
+          • 比热容
+          • 表面积
+          • 隔热厚度
+          • 热导率
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    过热<link="HEAT">温度</link>：75ºC'
+    tooltip: 达到<b>75ºC</b>时开始过热
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LOGIC">信号输入端</link>'
+    tooltip: 当接收到信号时，输入端会使这个建筑一种状态发生变化
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    启用/禁用'
+    tooltip: >-
+      输入端行为：
+
+      • <b><style="logic_on">绿色信号</style></b>：启用建筑
+
+      • <b><style="logic_off">红色信号</style></b>：禁用建筑
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：-5（范围：1格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>1</b>格内降低<b><b>-5</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>类别</b>
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    <link="REQUIREMENTCLASSSCIENCEBUILDING">科学建筑</link>'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>就像局外者一样，他实际上知道的要更多。</i>
+    style: Body
+  layout: Vertical

@@ -1,0 +1,69 @@
+id: OXYGENMASKLOCKER
+parent_id: BUILDCATEGORYEQUIPMENT
+name: 氧气面罩存放柜
+disabled: False
+search_only: False
+category: BUILDCATEGORYEQUIPMENT
+sort_string: 氧气面罩存放柜
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="OXYGENMASKLOCKER">氧气面罩存放柜</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 便携气体
+    style: Body
+    image: research_type_alpha_icon
+    link_id: portablegasses
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: oxygen_mask_locker_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      存放<link="OXYGENMASK">氧气面罩</link>并为其补充<link="OXYGEN">氧气</link>。
+
+
+      建造在<link="OXYGENMASKMARKER">氧气面罩检查站</link>旁，使复制人在路过时戴上氧气面罩。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="GASPIPING">气体输入管道</link>'
+    tooltip: 必须从<link="GASCONDUIT">气体管道</link>系统中接收<style="KKeyword">气体</style>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：1格宽x2格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：30秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="METAL">金属矿石</link>100千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    过热<link="HEAT">温度</link>：75ºC'
+    tooltip: 达到<b>75ºC</b>时开始过热
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：+10（范围：2格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>2</b>格内提高<b><b>+10</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>氧气面罩存放柜用于存放未使用的氧气面罩，并为其充氧。</i>
+    style: Body
+  layout: Vertical

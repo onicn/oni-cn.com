@@ -1,0 +1,83 @@
+id: BUILDINGMATERIALCLASSES
+name: 建造材料
+disabled: False
+search_only: False
+category: Root
+sort_string: 建造材料
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="BUILDINGMATERIALCLASSES">建造材料</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexLabelWithLargeIcon
+    text: 金属矿石
+    style: BodyWhite
+    image: ui_metal
+    link_id: metal
+  - widget_type: CodexLabelWithLargeIcon
+    text: 精炼金属
+    style: BodyWhite
+    image: ui_refinedmetal
+    link_id: refinedmetal
+  - widget_type: CodexLabelWithLargeIcon
+    text: 塑料
+    style: BodyWhite
+    image: ui_plastic
+    link_id: plastic
+  - widget_type: CodexLabelWithLargeIcon
+    text: 矿物原料
+    style: BodyWhite
+    image: ui_buildableraw
+    link_id: buildableraw
+  - widget_type: CodexLabelWithLargeIcon
+    text: 可耕种的泥土
+    style: BodyWhite
+    image: ui_farmable
+    link_id: farmable
+  - widget_type: CodexLabelWithLargeIcon
+    text: 纤维
+    style: BodyWhite
+    image: ui_buildingfiber
+    link_id: buildingfiber
+  - widget_type: CodexLabelWithLargeIcon
+    text: 木材
+    style: BodyWhite
+    image: ui_buildingwood
+    link_id: buildingwood
+  - widget_type: CodexLabelWithLargeIcon
+    text: 化石
+    style: BodyWhite
+    image: amber_0__ui
+    link_id: fossils
+  - widget_type: CodexLabelWithLargeIcon
+    text: 透明体
+    style: BodyWhite
+    image: ui_transparent
+    link_id: transparent
+  - widget_type: CodexLabelWithLargeIcon
+    text: 可做水管的物质
+    style: BodyWhite
+    image: ui_plumbable
+    link_id: plumbable
+  - widget_type: CodexLabelWithLargeIcon
+    text: 珍贵岩石
+    style: BodyWhite
+    image: ui_preciousrock
+    link_id: preciousrock
+  - widget_type: CodexLabelWithLargeIcon
+    text: 隔热体
+    style: BodyWhite
+    image: ui_insulator
+    link_id: insulator
+  - widget_type: CodexLabelWithLargeIcon
+    text: 一般建造材料
+    style: BodyWhite
+    image: ui_elements_classes
+    link_id: buildableany
+  layout: Grid
+- contents:
+  - widget_type: CodexSpacer
+  layout: Vertical

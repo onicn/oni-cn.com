@@ -1,0 +1,87 @@
+id: PERSONALJOURNALB327
+name: 个人日志：B327
+title: STRINGS.CODEX.A2_B327.TITLE
+disabled: False
+search_only: False
+category: JOURNALS
+sort_string: 个人日志：B327
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 个人日志：B327
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：无
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+  lock_id: journal_B327_1
+- contents:
+  - widget_type: CodexText
+    text: >
+      今天我就要开始在庄严科技上班了，我……嗯，真的好紧张。
+
+
+      结果我发现，他们雇佣了一群新员工（我猜他们正在扩张），其中大多数都和我差不多大，但我是唯一一个没有完成博士学位的人。他们都管我叫克劳斯“先生”而不是“博士”，这是<i>最糟糕</i>的一点。
+
+
+      我很迷茫，不知道成为全职员工的我，今后要去哪里找时间完成我的博士学位。
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: journal_B327_1
+- contents:
+  - widget_type: CodexText
+    text: >
+      <i>今天我的表现真的很糟糕。</i>
+
+
+      有一次我把计算圆锥体体积的公式都弄错了。他们一定觉得我一无是处。
+
+
+      我唯一一次清楚自己在做什么，是在帮助一位年长的同事解决她那愚蠢的旧邮件问题的时候。
+
+
+      人们总说，只要你有能力，学历其实没有那么重要，但有些我同事都知道的事情，我就是<i>不知道</i>。虽然他们没有恶意，但这真的让人很沮丧。每次和他们交谈，我都觉得自己很笨！
+
+
+      我猜他们很快就会意识到我不属于这里，然后把我解雇掉。可是……我还有助学贷款要还（还包括国际费用！），我<i>不能</i>失去这笔收入。
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: journal_B327_2
+- contents:
+  - widget_type: CodexText
+    text: >
+      从我开始在这里工作以来，斯克洛多夫斯卡博士一直很友好，也很热情。有时在食堂吃饭时她会过来和我一起坐。虽然她从家里带来的饭闻起来像裹脚布一样，但她会和我聊起我们每个人在看哪些新的科研论文，这真的很好。
+
+
+      她告诉我说，我没有博士学位还能被聘用，肯定是因为我非常聪明，管理人员肯定从我身上看到了一些特殊的东西。
+
+
+      虽然不太相信她的话，但是能听到与我脑海中那个微弱声音不同的观点，我还是很高兴。
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: journal_B327_3
+- contents:
+  - widget_type: CodexText
+    text: >
+      时间已经过去一周半，我想我终于开始适应这里了。对于担任这个职位，我现在感觉好多了，一些资深科学家在实验室里甚至开始采纳我的想法。
+
+
+      斯克洛多夫斯卡博士或许是对的，我的焦虑仅仅是成长的烦恼而已。这是我第一份真正的工作，我想我只是害怕相信自己真的可以做到，因为我怕会出错。
+
+
+      我想要送给斯克洛多夫斯卡博士一台电子书阅读器作为感谢，方便她随时随地阅读书籍和论文，当然前提是，如果有一天我能还清助学贷款的话。
+
+
+      一旦还清助学贷款，我马上就会兑现这个承诺。
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: journal_B327_4

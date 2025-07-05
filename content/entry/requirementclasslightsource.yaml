@@ -1,0 +1,64 @@
+id: REQUIREMENTCLASSLIGHTSOURCE
+parent_id: BUILDCATEGORYCATEGORY
+name: 光源
+disabled: False
+search_only: False
+category: BUILDCATEGORYCATEGORY
+sort_string: 光源
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 光源
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 能产生光的建筑，发光可能是其主要目的，也可能是附加的。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 此类别的建筑：
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 迷你舱'
+    image: porta_pod_y_0__ui
+    link_id: exobaseheadquarters
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 电灯'
+    image: floorlamp_0__ui
+    link_id: floorlamp
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 吸顶灯'
+    image: ceilinglight_0__ui
+    link_id: ceilinglight
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 日光灯'
+    image: sun_lamp_0__ui
+    link_id: sunlamp
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 汞吸顶灯'
+    image: mercurylight_0__ui
+    link_id: mercuryceilinglight
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 需求于：
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: '    • <link="LABORATORY">实验室</link>'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical

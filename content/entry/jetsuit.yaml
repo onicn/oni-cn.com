@@ -1,0 +1,59 @@
+id: JETSUIT
+parent_id: EQUIPMENT
+name: 喷气服
+disabled: False
+search_only: False
+category: EQUIPMENT
+sort_string: 喷气服
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="JETSUIT">喷气服</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: suit_jetpack_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      在有毒和难以呼吸的环境中为复制人供给<link="OXYGEN">氧气</link>。
+
+
+      使复制人能够飞行。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    • <style="KKeyword">隔热</style>：+50'
+    tooltip: <style="KKeyword">隔热值</style>高的复制人更容易保持温暖，而<style="KKeyword">隔热值</style>低的复制人更容易保持凉爽。
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    • <style="KKeyword">运动</style>：-6'
+    tooltip: 决定了复制人的默认行走速度。
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    • <style="KKeyword">隔热厚度</style>：+20.0 cm'
+    tooltip: >-
+      决定了复制人在特定区域维持或失去身体<style="KKeyword">热量</style>的速度。
+
+
+      这是复制人的<style="KKeyword">装备</style>和自身<style="KKeyword">隔热值</style>之和。
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    • <style="KKeyword">挖掘</style>：+10'
+    tooltip: 决定了复制人的挖掘速度。
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    • <style="KKeyword">烫伤阈值</style>：+726.9ºC'
+    tooltip: 决定了复制人会被烫伤的<style="KKeyword">温度</style>。
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    • <style="KKeyword">冻伤阈值</style>：-1273.2ºC'
+    tooltip: 决定了复制人会被冻伤的<style="KKeyword">温度</style>。
+    style: Body
+  layout: Vertical

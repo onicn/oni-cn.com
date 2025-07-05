@@ -1,0 +1,138 @@
+id: SAUNA
+parent_id: BUILDCATEGORYFURNITURE
+name: 桑拿房
+disabled: False
+search_only: False
+category: BUILDCATEGORYFURNITURE
+sort_string: 桑拿房
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="SAUNA">桑拿房</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 可再生能源
+    style: Body
+    image: research_type_alpha_icon
+    link_id: renewableenergy
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: sauna_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      使用<link="STEAM">蒸汽</link>创造一个放松的氛围。
+
+
+      提升复制人的<link="MORALE">士气</link>，并提供持续存留的微暖感。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="POWER">电力</link>：60瓦'
+    tooltip: 必须与至少有<style="consumed">60瓦</style>可用<style="KKeyword">电力</style>的电路相连
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="GASPIPING">气体输入管道</link>'
+    tooltip: 必须从<link="GASCONDUIT">气体管道</link>系统中接收<style="KKeyword">气体</style>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LIQUIDPIPING">液体输出管道</link>'
+    tooltip: 必须通过<link="LIQUIDCONDUIT">液体管道</link>系统排出<style="KKeyword">液体</style>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    优选房间：娱乐室'
+    tooltip: 建造在<style="KKeyword">娱乐室</style>内时，这个建筑会获得额外的效果或功能
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="STEAM">蒸汽</link>：每次消耗25千克'
+    tooltip: 每次使用消耗<style="consumed">25千克</style><style="KKeyword"><link="STEAM">蒸汽</link></style>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：3格宽x3格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：60秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="METAL">金属矿石</link>100千克, <link="BUILDINGWOOD">木材</link>100千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="HEAT">热量</link>：+500复制热/秒'
+    tooltip: >-
+      每秒产生<style="produced">500复制热</style>
+
+
+      总<style="KKeyword">温度</style>变化受到加热物质的材料属性影响：
+          • 质量
+          • 比热容
+          • 表面积
+          • 隔热厚度
+          • 热导率
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="WATER">水</link>：每次产生25千克'
+    tooltip: >-
+      使用时产生<style="produced">25千克</style><style="KKeyword"><link="WATER">水</link></style>
+
+
+      输出温度为输入材料的<style="KKeyword">温度</style>。
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    严寒抗性'
+    tooltip: 使用这个建筑可提供对<style="KKeyword">严寒环境</style>和<style="KKeyword">双脚湿透</style>的暂时免疫
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    娱乐'
+    tooltip: 在<style="KKeyword">休息时间</style>提升复制人的<style="KKeyword">士气</style>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    士气: +2'
+    tooltip: ''
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    过热<link="HEAT">温度</link>：75ºC'
+    tooltip: 达到<b>75ºC</b>时开始过热
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LOGIC">信号输入端</link>'
+    tooltip: 当接收到信号时，输入端会使这个建筑一种状态发生变化
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    启用/禁用'
+    tooltip: >-
+      输入端行为：
+
+      • <b><style="logic_on">绿色信号</style></b>：启用建筑
+
+      • <b><style="logic_off">红色信号</style></b>：禁用建筑
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：+15（范围：3格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>3</b>格内提高<b><b>+15</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>类别</b>
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    <link="REQUIREMENTCLASSRECBUILDING">娱乐建筑</link>'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>一次热气腾腾的桑拿可以缓解一切身体疼痛。</i>
+    style: Body
+  layout: Vertical

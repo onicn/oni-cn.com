@@ -1,0 +1,64 @@
+id: TRAGICNEWS1
+name: 悲惨消息
+title: STRINGS.CODEX.INVESTIGATIONS.DLC2_RADIOCLIP1.TITLE
+disabled: False
+search_only: False
+category: RESEARCHNOTES
+sort_string: 悲惨消息
+required_dlc_ids:
+- DLC2_ID
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 悲惨消息
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：无
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+  lock_id: notes_tragicnews
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <smallcaps><b>[检测到文件片段]</b></smallcaps>
+
+
+      ……
+
+
+      [无线电静电音。]
+
+
+      ……悲惨的意外……旗舰太阳能电池项目……
+
+           ……例行训练……     ……两名功业彪炳的飞行员……无数的地勤人员……
+
+      ……顶点研究所所长表示痛心……  ……发誓要继续……不要白费……
+
+             ……研究界正在哀悼……
+
+      ……长期竞争对手庄严科技发表[无法识别]声明……
+
+      ……强烈谴责不安全的工作条件……    ……邀请应用……所有纪律……
+
+                   ……继续关注……
+    style: Body
+  layout: Vertical
+  lock_id: notes_tragicnews
+- contents:
+  - widget_type: CodexText
+    text: >
+      ……
+
+
+      [无线电静电音。]
+
+
+      <smallcaps><b>[录音结束]</b></smallcaps>
+
+
+      -----------
+    style: Body
+  layout: Vertical
+  lock_id: notes_tragicnews

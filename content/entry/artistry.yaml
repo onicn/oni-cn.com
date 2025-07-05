@@ -1,0 +1,87 @@
+id: ARTISTRY
+parent_id: TECH
+name: 艺术表达
+disabled: False
+search_only: False
+category: TECH
+sort_string: 艺术表达
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="ARTISTRY">艺术表达</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 给予复制人艺术创作的工具进行情感表达，从而大大提高<link="DECOR">装饰度</link>。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="INTERIORDECOR">室内装潢</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: flowervase_wall_0__ui
+  - widget_type: CodexText
+    text: <link="FLOWERVASEWALL">墙壁花盆</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: flowervase_hanging_basic_0__ui
+  - widget_type: CodexText
+    text: <link="FLOWERVASEHANGING">垂吊花盆</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: corner_tile_0__ui
+  - widget_type: CodexText
+    text: <link="CORNERMOULDING">边角饰件</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: crown_moulding_0__ui
+  - widget_type: CodexText
+    text: <link="CROWNMOULDING">天花板饰件</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: pedestal_0__ui
+  - widget_type: CodexText
+    text: <link="ITEMPEDESTAL">基座</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: sculpture_1x2_0__ui
+  - widget_type: CodexText
+    text: <link="SMALLSCULPTURE">雕塑块</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: icesculpture_0__ui
+  - widget_type: CodexText
+    text: <link="ICESCULPTURE">冰雕塑块</link>
+    style: Body
+  layout: Horizontal

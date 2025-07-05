@@ -1,0 +1,379 @@
+id: FOODDEHYDRATOR
+parent_id: BUILDCATEGORYFOOD
+name: 脱水机
+disabled: False
+search_only: False
+category: BUILDCATEGORYFOOD
+sort_string: 脱水机
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="FOODDEHYDRATOR">脱水机</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 美食制备
+    style: Body
+    image: research_type_alpha_icon
+    link_id: finerdining
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: dehydrator_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      使用少量、均匀的热量除去符合条件的<link="FOOD">食物</link>中的水分，并使其能稳定储存。
+
+
+      脱水的食物必须在<link="FOODREHYDRATOR">充水机</link>中处理才能食用。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="METHANE">天然气</link>：20克/秒'
+    tooltip: 使用时消耗<style="consumed">20克/秒</style><style="KKeyword"><link="METHANE">天然气</link></style>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="GASPIPING">气体输入管道</link>'
+    tooltip: 必须从<link="GASCONDUIT">气体管道</link>系统中接收<style="KKeyword">气体</style>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    复制人的操作'
+    tooltip: 必须有复制人来才能使这个建筑运行
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：3格宽x3格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：30秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="REFINEDMETAL">精炼金属</link>200千克, <link="PLASTIC">塑料</link>100千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    弄湿地面'
+    tooltip: 这个建筑使用时会把<style="KKeyword">水</style>倒在地面上
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="CARBONDIOXIDE">二氧化碳</link>：5克/秒'
+    tooltip: >-
+      使用时产生<style="produced">5克/秒</style><style="KKeyword"><link="CARBONDIOXIDE">二氧化碳</link></style>
+
+
+      输出温度至少为<b>75ºC</b>，如果输入材料的温度更高输出也会随之更高。
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="HEAT">热量</link>：+4千复制热/秒'
+    tooltip: >-
+      每秒产生<style="produced">4千复制热</style>
+
+
+      总<style="KKeyword">温度</style>变化受到加热物质的材料属性影响：
+          • 质量
+          • 比热容
+          • 表面积
+          • 隔热厚度
+          • 热导率
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    过热<link="HEAT">温度</link>：75ºC'
+    tooltip: 达到<b>75ºC</b>时开始过热
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LOGIC">信号输入端</link>'
+    tooltip: 当接收到信号时，输入端会使这个建筑一种状态发生变化
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    启用/禁用'
+    tooltip: >-
+      输入端行为：
+
+      • <b><style="logic_on">绿色信号</style></b>：启用建筑
+
+      • <b><style="logic_off">红色信号</style></b>：禁用建筑
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>类别</b>
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    <link="REQUIREMENTCLASSINDUSTRIALMACHINERY">工业机械</link>'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>一些脱除的液体不可避免地会洒在地上。</i>
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 所有配方
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 干燥的浆果酿
+    require:
+    - image: zestysalsa_0__ui
+      text1: 浆果酿
+      text2: 6,000千卡
+      tooltip: 品质：优秀 [+4]
+      link_id: salsa
+    - image: polypropylene_0__ui
+      text1: 塑料
+      text2: 12千克
+      link_id: polypropylene
+    produce:
+    - image: dehydrated_food_salsa_0__ui
+      text1: 干燥的浆果酿
+      text2: 6单位
+      link_id: 干燥的浆果酿
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 6千克
+      link_id: water
+    fabricator:
+      image: dehydrator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 脱水机
+      text2: 250秒
+      link_id: fooddehydrator
+  - widget_type: CodexRecipePanel
+    text: 干燥的蘑菇卷
+    require:
+    - image: mushroom_wrap_0__ui
+      text1: 蘑菇卷
+      text2: 6,000千卡
+      tooltip: 品质：优秀 [+4]
+      link_id: mushroomwrap
+    - image: polypropylene_0__ui
+      text1: 塑料
+      text2: 12千克
+      link_id: polypropylene
+    produce:
+    - image: dehydrated_food_mushroom_wrap_0__ui
+      text1: 干燥的蘑菇卷
+      text2: 6单位
+      link_id: 干燥的蘑菇卷
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 6千克
+      link_id: water
+    fabricator:
+      image: dehydrator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 脱水机
+      text2: 250秒
+      link_id: fooddehydrator
+  - widget_type: CodexRecipePanel
+    text: 干燥的海陆双拼
+    require:
+    - image: surfnturf_0__ui
+      text1: 海陆双拼
+      text2: 6,000千卡
+      tooltip: 品质：优秀 [+4]
+      link_id: surfandturf
+    - image: polypropylene_0__ui
+      text1: 塑料
+      text2: 12千克
+      link_id: polypropylene
+    produce:
+    - image: dehydrated_food_surf_and_turf_0__ui
+      text1: 干燥的海陆双拼
+      text2: 6单位
+      link_id: 干燥的海陆双拼
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 6千克
+      link_id: water
+    fabricator:
+      image: dehydrator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 脱水机
+      text2: 250秒
+      link_id: fooddehydrator
+  - widget_type: CodexRecipePanel
+    text: 干燥的火椒面包
+    require:
+    - image: pepperbread_0__ui
+      text1: 火椒面包
+      text2: 6,000千卡
+      tooltip: 品质：杰出 [+5]
+      link_id: spicebread
+    - image: polypropylene_0__ui
+      text1: 塑料
+      text2: 12千克
+      link_id: polypropylene
+    produce:
+    - image: dehydrated_food_spicebread_0__ui
+      text1: 干燥的火椒面包
+      text2: 6单位
+      link_id: 干燥的火椒面包
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 6千克
+      link_id: water
+    fabricator:
+      image: dehydrator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 脱水机
+      text2: 250秒
+      link_id: fooddehydrator
+  - widget_type: CodexRecipePanel
+    text: 干燥的蘑菇乳蛋饼
+    require:
+    - image: quiche_0__ui
+      text1: 蘑菇乳蛋饼
+      text2: 6,000千卡
+      tooltip: 品质：杰出 [+5]
+      link_id: quiche
+    - image: polypropylene_0__ui
+      text1: 塑料
+      text2: 12千克
+      link_id: polypropylene
+    produce:
+    - image: dehydrated_food_quiche_0__ui
+      text1: 干燥的蘑菇乳蛋饼
+      text2: 6单位
+      link_id: 干燥的蘑菇乳蛋饼
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 6千克
+      link_id: water
+    fabricator:
+      image: dehydrator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 脱水机
+      text2: 250秒
+      link_id: fooddehydrator
+  - widget_type: CodexRecipePanel
+    text: 干燥的咖喱豆
+    require:
+    - image: curried_beans_0__ui
+      text1: 咖喱豆
+      text2: 6,000千卡
+      tooltip: 品质：优秀 [+4]
+      link_id: curry
+    - image: polypropylene_0__ui
+      text1: 塑料
+      text2: 12千克
+      link_id: polypropylene
+    produce:
+    - image: dehydrated_food_curry_0__ui
+      text1: 干燥的咖喱豆
+      text2: 6单位
+      link_id: 干燥的咖喱豆
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 6千克
+      link_id: water
+    fabricator:
+      image: dehydrator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 脱水机
+      text2: 250秒
+      link_id: fooddehydrator
+  - widget_type: CodexRecipePanel
+    text: 干燥的麻婆豆腐
+    require:
+    - image: spicey_tofu_0__ui
+      text1: 麻婆豆腐
+      text2: 6,000千卡
+      tooltip: 品质：杰出 [+5]
+      link_id: spicytofu
+    - image: polypropylene_0__ui
+      text1: 塑料
+      text2: 12千克
+      link_id: polypropylene
+    produce:
+    - image: dehydrated_food_spicy_tofu_0__ui
+      text1: 干燥的麻婆豆腐
+      text2: 6单位
+      link_id: 干燥的麻婆豆腐
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 6千克
+      link_id: water
+    fabricator:
+      image: dehydrator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 脱水机
+      text2: 250秒
+      link_id: fooddehydrator
+  - widget_type: CodexRecipePanel
+    text: 干燥的冰霜汉堡
+    require:
+    - image: frost_burger_0__ui
+      text1: 冰霜汉堡
+      text2: 6,000千卡
+      tooltip: 品质：极佳 [+6]
+      link_id: burger
+    - image: polypropylene_0__ui
+      text1: 塑料
+      text2: 12千克
+      link_id: polypropylene
+    produce:
+    - image: dehydrated_food_burger_0__ui
+      text1: 干燥的冰霜汉堡
+      text2: 6单位
+      link_id: 干燥的冰霜汉堡
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 6千克
+      link_id: water
+    fabricator:
+      image: dehydrator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 脱水机
+      text2: 250秒
+      link_id: fooddehydrator
+  - widget_type: CodexRecipePanel
+    text: 干燥的浆果派
+    require:
+    - image: wormwood_berry_pie_0__ui
+      text1: 混合浆果派
+      text2: 6,000千卡
+      tooltip: 品质：杰出 [+5]
+      link_id: berrypie
+    - image: polypropylene_0__ui
+      text1: 塑料
+      text2: 12千克
+      link_id: polypropylene
+    produce:
+    - image: dehydrated_food_berry_pie_0__ui
+      text1: 干燥的浆果派
+      text2: 6单位
+      link_id: 干燥的浆果派
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 6千克
+      link_id: water
+    fabricator:
+      image: dehydrator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 脱水机
+      text2: 250秒
+      link_id: fooddehydrator
+  layout: Vertical

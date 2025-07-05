@@ -1,0 +1,154 @@
+id: BUILDCATEGORYFOOD
+parent_id: BUILDINGS
+name: 食物
+disabled: False
+search_only: False
+category: BUILDINGS
+sort_string: 食物
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="BUILDCATEGORYFOOD">食物</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexLabelWithLargeIcon
+    text: 充水机
+    style: BodyWhite
+    image: rehydrator_0__ui
+    link_id: foodrehydrator
+  - widget_type: CodexLabelWithLargeIcon
+    text: 冰箱
+    style: BodyWhite
+    image: fridge_0__ui
+    link_id: refrigerator
+  - widget_type: CodexLabelWithLargeIcon
+    text: 口粮箱
+    style: BodyWhite
+    image: rationbox_0__ui
+    link_id: rationbox
+  - widget_type: CodexLabelWithLargeIcon
+    text: 喂鱼器
+    style: BodyWhite
+    image: fishfeeder_0__ui
+    link_id: fishfeeder
+  - widget_type: CodexLabelWithLargeIcon
+    text: 土培砖
+    style: BodyWhite
+    image: farmtilerotating_0__ui
+    link_id: farmtile
+  - widget_type: CodexLabelWithLargeIcon
+    text: 孵化器
+    style: BodyWhite
+    image: incubator_0__ui
+    link_id: eggincubator
+  - widget_type: CodexLabelWithLargeIcon
+    text: 小动物公寓
+    style: BodyWhite
+    image: critter_condo_0__ui
+    link_id: crittercondo
+  - widget_type: CodexLabelWithLargeIcon
+    text: 小动物喂食器
+    style: BodyWhite
+    image: feeder_0__ui
+    link_id: creaturefeeder
+  - widget_type: CodexLabelWithLargeIcon
+    text: 小动物放生点
+    style: BodyWhite
+    image: relocator_dropoff_02_0__ui
+    link_id: critterdropoff
+  - widget_type: CodexLabelWithLargeIcon
+    text: 小动物直饮器
+    style: BodyWhite
+    image: critter_milk_feeder_0__ui
+    link_id: milkfeeder
+  - widget_type: CodexLabelWithLargeIcon
+    text: 小动物移取点
+    style: BodyWhite
+    image: relocator_pickup_0__ui
+    link_id: critterpickup
+  - widget_type: CodexLabelWithLargeIcon
+    text: 小动物陷阱
+    style: BodyWhite
+    image: critter_trap_ground_0__ui
+    link_id: creaturegroundtrap
+  - widget_type: CodexLabelWithLargeIcon
+    text: 捕鱼陷阱
+    style: BodyWhite
+    image: critter_trap_water_0__ui
+    link_id: watertrap
+  - widget_type: CodexLabelWithLargeIcon
+    text: 敲蛋桌
+    style: BodyWhite
+    image: egg_cracker_0__ui
+    link_id: eggcracker
+  - widget_type: CodexLabelWithLargeIcon
+    text: 水中城堡
+    style: BodyWhite
+    image: underwater_critter_condo_0__ui
+    link_id: underwatercrittercondo
+  - widget_type: CodexLabelWithLargeIcon
+    text: 油炸锅
+    style: BodyWhite
+    image: deepfryer_0__ui
+    link_id: deepfryer
+  - widget_type: CodexLabelWithLargeIcon
+    text: 液培砖
+    style: BodyWhite
+    image: farmtilehydroponicrotating_0__ui
+    link_id: hydroponicfarm
+  - widget_type: CodexLabelWithLargeIcon
+    text: 熏炉
+    style: BodyWhite
+    image: smoker_0__ui
+    link_id: smoker
+  - widget_type: CodexLabelWithLargeIcon
+    text: 燃气灶
+    style: BodyWhite
+    image: cookstation_gourmet_0__ui
+    link_id: gourmetcookingstation
+  - widget_type: CodexLabelWithLargeIcon
+    text: 电动烤炉
+    style: BodyWhite
+    image: cookstation_0__ui
+    link_id: cookingstation
+  - widget_type: CodexLabelWithLargeIcon
+    text: 种植箱
+    style: BodyWhite
+    image: planterbox_0__ui
+    link_id: planterbox
+  - widget_type: CodexLabelWithLargeIcon
+    text: 脱水机
+    style: BodyWhite
+    image: dehydrator_0__ui
+    link_id: fooddehydrator
+  - widget_type: CodexLabelWithLargeIcon
+    text: 飞行小动物公寓
+    style: BodyWhite
+    image: critter_condo_airborne_0__ui
+    link_id: airbornecrittercondo
+  - widget_type: CodexLabelWithLargeIcon
+    text: 飞行小动物陷阱
+    style: BodyWhite
+    image: critter_trap_air_0__ui
+    link_id: creatureairtrap
+  - widget_type: CodexLabelWithLargeIcon
+    text: 食物压制器
+    style: BodyWhite
+    image: microbemusher_0__ui
+    link_id: microbemusher
+  - widget_type: CodexLabelWithLargeIcon
+    text: 香料研磨器
+    style: BodyWhite
+    image: spice_grinder_0__ui
+    link_id: spicegrinder
+  - widget_type: CodexLabelWithLargeIcon
+    text: 鱼类放生点
+    style: BodyWhite
+    image: fishrelocator_0__ui
+    link_id: fishdeliverypoint
+  layout: Grid
+- contents:
+  - widget_type: CodexSpacer
+  layout: Vertical

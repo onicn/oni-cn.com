@@ -1,0 +1,57 @@
+id: UNDERWATERCRITTERCONDO
+parent_id: BUILDCATEGORYFOOD
+name: 水中城堡
+disabled: False
+search_only: False
+category: BUILDCATEGORYFOOD
+sort_string: 水中城堡
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="WATERCOOLER">水中城堡</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 生物舒适
+    style: Body
+    image: research_type_alpha_icon
+    link_id: animalcomfort
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: underwater_critter_condo_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 一个别致的休息区，用于成年的<link="CRABSPECIES">抛壳蟹</link>和<link="PACUSPECIES">帕库鱼</link>。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：3格宽x3格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：120秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="PLASTIC">塑料</link>200千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    过热<link="HEAT">温度</link>：75ºC'
+    tooltip: 达到<b>75ºC</b>时开始过热
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：+20（范围：4格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>4</b>格内提高<b><b>+20</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>即使是野生小动物，在短暂休息与娱乐后也会更开心。</i>
+    style: Body
+  layout: Vertical

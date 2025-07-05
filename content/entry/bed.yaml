@@ -1,0 +1,71 @@
+id: BED
+parent_id: BUILDCATEGORYFURNITURE
+name: 床铺
+disabled: False
+search_only: False
+category: BUILDCATEGORYFURNITURE
+sort_string: 床铺
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="BED">床铺</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: bedlg_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      为复制人提供的睡觉之处。
+
+
+      到了晚上，复制人会自动返回到床铺上睡觉。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    复制人分配'
+    tooltip: 只有分配的复制人才可使用这个设备
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：2格宽x2格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：10秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="BUILDABLERAW">矿物原料</link>或<link="BUILDINGWOOD">木材</link>200千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    体力: +100%/周期'
+    tooltip: ''
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="HEALTH">生命值</link>: +25/周期'
+    tooltip: ''
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>类别</b>
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    <link="REQUIREMENTCLASSBEDTYPE">床位</link>'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>如果没有床，复制人会因为睡在地面上而腰酸背痛。</i>
+    style: Body
+  layout: Vertical

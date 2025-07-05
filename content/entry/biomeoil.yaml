@@ -1,0 +1,119 @@
+id: BIOMEOIL
+parent_id: BIOMES
+name: 油质生态
+disabled: False
+search_only: False
+category: BIOMES
+sort_string: BIOMEOIL
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 油质生态
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 油质生态中的粘性<link="CRUDEOIL">原油</link>池常伴有丰富的<link="CARBONDIOXIDE">二氧化碳</link>。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      尽管<link="OXYGEN">氧气</link>在这片生态中更稀少，但这对于生存在二氧化碳环境下的生命来说是完美场所，可以驯化<link="OILFLOATERSPECIES">浮油生物</link>以产生可再生的<link="CRUDEOIL">原油</link>。
+
+
+      <link="DIAMOND">钻石</link>偶尔也可以在油质生态中找到，复制人需要<link="MINING3">极坚硬材料挖掘</link>技能才能开采。
+
+
+      <link="EVILFLOWER">孢子兰</link>很漂亮，但只有复制人<link="EQUIPMENT">装备</link>良好才能靠近。
+
+
+      尽管这片生态的危险不可轻视，但<link="CRUDEOIL">原油</link>和<link="PETROLEUM">石油</link>对我的殖民地带来的好处远高于风险。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 元素
+    style: Subtitle
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 沙子
+    image: sand_0__ui
+    link_id: sand
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 煤炭
+    image: carbon_0__ui
+    link_id: carbon
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 固态原油
+    image: frozen_crude_oil_0__ui
+    link_id: solidcrudeoil
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 化石
+    image: fossil_0__ui
+    link_id: fossil
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 钻石
+    image: diamond_0__ui
+    link_id: diamond
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 铅
+    image: lead_0__ui
+    link_id: lead
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 原油
+    color: 301265FF
+    image: element_liquid
+    link_id: crudeoil
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 铁矿
+    image: hematite_0__ui
+    link_id: ironore
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 花岗岩
+    image: granite_0__ui
+    link_id: granite
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 二氧化碳
+    color: 000000FF
+    image: element_gas
+    link_id: carbondioxide
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 火成岩
+    image: igneous_rock_0__ui
+    link_id: igneousrock
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 植物
+    style: Subtitle
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 雀跃掌
+    image: potted_cactus_0__ui
+    link_id: cactusplant
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 孢子兰
+    image: potted_evilflower_0__ui
+    link_id: evilflower
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 小动物
+    style: Subtitle
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 浮油生物
+    image: oilfloater_0__ui
+    link_id: oilfloater
+  layout: Vertical

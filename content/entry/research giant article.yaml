@@ -1,0 +1,80 @@
+id: RESEARCH GIANT ARTICLE
+name: 回复：你们看了这篇文章吗？
+title: STRINGS.CODEX.A1_RESEARCHGIANTARTICLE.TITLE
+disabled: False
+search_only: False
+category: EMAILS
+sort_string: 回复：你们看了这篇文章吗？
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 回复：你们看了这篇文章吗？
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：一
+    style: Subtitle
+  layout: Vertical
+  lock_id: email_researchgiant
+- contents:
+  - widget_type: CodexText
+    text: >
+      <smallcaps>收件人：<b>[受屏蔽]</b>
+
+      发件人：<b>斯特恩主管</b><size=12><alpha=#AA> <jstern@gravitas.nova></size></color></smallcaps>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_researchgiant
+- contents:
+  - widget_type: CodexText
+    text: <indent=5%>请不要在意它。如果这些记者中有人与你联系，请拒绝发表评论。</indent>
+    style: Body
+  - widget_type: CodexText
+    text: >2
+
+      - 斯特恩主管
+
+      <size=11>庄严科技</size>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_researchgiant
+- contents:
+  - widget_type: CodexText
+    text: 主题：你们看了这篇文章吗？
+    style: Subtitle
+  - widget_type: CodexText
+    text: >
+      <smallcaps>收件人：<b>斯特恩主管</b><size=12><alpha=#AA> <jstern@gravitas.nova></size></color>
+
+      发件人：<b>[受屏蔽]</b></smallcaps>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_researchgiant
+- contents:
+  - widget_type: CodexText
+    text: <indent=5%>主管，你知道最近突然出现的关于我们的文章吗？</indent>
+    style: Body
+  layout: Vertical
+  lock_id: email_researchgiant
+- contents:
+  - widget_type: CodexText
+    text: <indent=10%><color=#F44A47>>[失效链接]</color> <alpha=#AA><smallcaps>庄严科技：研究巨头令人可疑的发家史</smallcaps></indent></color>
+    style: Body
+  - widget_type: CodexText
+    text: >2
+
+      [受屏蔽]
+
+      <size=11>人事协调员
+
+      庄严科技</size>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_researchgiant

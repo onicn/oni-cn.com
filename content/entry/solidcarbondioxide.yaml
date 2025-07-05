@@ -1,0 +1,91 @@
+id: SOLIDCARBONDIOXIDE
+parent_id: ELEMENTSSOLID
+name: 固态二氧化碳
+disabled: False
+search_only: False
+category: ELEMENTSSOLID
+sort_string: 固态二氧化碳
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="SOLIDCARBONDIOXIDE">固态二氧化碳</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: solid_carbon_dioxide_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: solid_carbon_dioxide_0__ui
+      text1: 固态二氧化碳
+      text2: 1000克
+      link_id: solidcarbondioxide
+    produce:
+    - image: element_liquid
+      color: 878EB7FF
+      text1: 液态二氧化碳
+      text2: 1000克
+      link_id: liquidcarbondioxide
+    fabricator:
+      image: crew_state_temp_up
+      text1: -56.5ºC
+      tooltip: 温度高于-56.5ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换于
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: 878EB7FF
+      text1: 液态二氧化碳
+      text2: 1000克
+      link_id: liquidcarbondioxide
+    produce:
+    - image: solid_carbon_dioxide_0__ui
+      text1: 固态二氧化碳
+      text2: 1000克
+      link_id: solidcarbondioxide
+    fabricator:
+      image: crew_state_temp_down
+      text1: -56.5ºC
+      tooltip: 温度低于-56.5ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      (CO<sub>2</sub>) 固态二氧化碳是一种<link="ELEMENTSSOLID">固态</link>的不可呼吸的化合物。
+
+
+      资源种类：可液化物
+
+      熔点：-56.5ºC
+
+      硬度：<color=#71ABCFFF>2（非常柔软）</color>
+
+
+      比热容：0.846 (DTU/g)/ºC
+
+      热导率：1.460 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.8
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：<link="ELEMENTSSOLID">固体</link>, 可液化物
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

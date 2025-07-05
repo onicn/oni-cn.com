@@ -1,0 +1,98 @@
+id: BUILDINGS
+name: 建筑
+disabled: False
+search_only: False
+category: Root
+sort_string: 建筑
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="BUILDINGS">建筑</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexLabelWithLargeIcon
+    text: 信号
+    style: BodyWhite
+    image: icon_category_automation
+    link_id: buildcategoryautomation
+  - widget_type: CodexLabelWithLargeIcon
+    text: 医疗
+    style: BodyWhite
+    image: icon_category_medical
+    link_id: buildcategorymedical
+  - widget_type: CodexLabelWithLargeIcon
+    text: 基地
+    style: BodyWhite
+    image: icon_category_base
+    link_id: buildcategorybase
+  - widget_type: CodexLabelWithLargeIcon
+    text: 实用
+    style: BodyWhite
+    image: icon_category_utilities
+    link_id: buildcategoryutilities
+  - widget_type: CodexLabelWithLargeIcon
+    text: 家具
+    style: BodyWhite
+    image: icon_category_furniture
+    link_id: buildcategoryfurniture
+  - widget_type: CodexLabelWithLargeIcon
+    text: 氧气
+    style: BodyWhite
+    image: icon_category_oxygen
+    link_id: buildcategoryoxygen
+  - widget_type: CodexLabelWithLargeIcon
+    text: 水管
+    style: BodyWhite
+    image: icon_category_plumbing
+    link_id: buildcategoryplumbing
+  - widget_type: CodexLabelWithLargeIcon
+    text: 火箭
+    style: BodyWhite
+    image: icon_category_rocketry
+    link_id: buildcategoryrocketry
+  - widget_type: CodexLabelWithLargeIcon
+    text: 电力
+    style: BodyWhite
+    image: icon_category_electrical
+    link_id: buildcategorypower
+  - widget_type: CodexLabelWithLargeIcon
+    text: 站台
+    style: BodyWhite
+    image: icon_category_misc
+    link_id: buildcategoryequipment
+  - widget_type: CodexLabelWithLargeIcon
+    text: 类别
+    style: BodyWhite
+    image: icon_categories_placeholder
+    link_id: buildcategorycategory
+  - widget_type: CodexLabelWithLargeIcon
+    text: 精炼
+    style: BodyWhite
+    image: icon_category_refinery
+    link_id: buildcategoryrefining
+  - widget_type: CodexLabelWithLargeIcon
+    text: 辐射
+    style: BodyWhite
+    image: icon_category_radiation
+    link_id: buildcategoryhep
+  - widget_type: CodexLabelWithLargeIcon
+    text: 运输
+    style: BodyWhite
+    image: icon_category_shipping
+    link_id: buildcategoryconveyance
+  - widget_type: CodexLabelWithLargeIcon
+    text: 通风
+    style: BodyWhite
+    image: icon_category_ventilation
+    link_id: buildcategoryhvac
+  - widget_type: CodexLabelWithLargeIcon
+    text: 食物
+    style: BodyWhite
+    image: icon_category_food
+    link_id: buildcategoryfood
+  layout: Grid
+- contents:
+  - widget_type: CodexSpacer
+  layout: Vertical

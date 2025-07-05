@@ -1,0 +1,160 @@
+id: PLASTIC
+parent_id: BUILDINGMATERIALCLASSES
+name: 塑料
+disabled: False
+search_only: False
+category: BUILDINGMATERIALCLASSES
+sort_string: 塑料
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="PLASTIC">塑料</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 塑料是具有韧性、最大程度降低<link="HEAT">热量</link>传递的合成<link="ELEMENTSSOLID">固体</link>。其通常具有低熔点，但已经开发出了更高级的塑料，能够规避这一问题。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 固态粘性凝胶
+    image: viscogel_0__ui
+    link_id: solidviscogel
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 塑料
+    image: polypropylene_0__ui
+    link_id: polypropylene
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 塑料质
+    image: hardplastic_0__ui
+    link_id: hardpolypropylene
+  layout: Grid
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建造用处
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 飞行小动物公寓
+    image: critter_condo_airborne_0__ui
+    link_id: crittercondo
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 气体管道病菌传感器
+    image: gas_germs_sensor_0__ui
+    link_id: gasconduitdiseasesensor
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 液体管道病菌传感器
+    image: liquid_germs_sensor_0__ui
+    link_id: liquidconduitdiseasesensor
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 脱水机
+    image: dehydrator_0__ui
+    link_id: fooddehydrator
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 充水机
+    image: rehydrator_0__ui
+    link_id: foodrehydrator
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 气体计量阀
+    image: limit_valve_gas_0__ui
+    link_id: gaslimitvalve
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 小型气泵
+    image: minigaspump_0__ui
+    link_id: gasminipump
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 高压排气口
+    image: ventgas_powered_0__ui
+    link_id: gasventhighpressure
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 辐射粒子接合板
+    image: radbolt_joint_plate_0__ui
+    link_id: hepbridgetile
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 塑料梯子
+    image: ladder_plastic_0__ui
+    link_id: ladderfast
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 液体计量阀
+    image: limit_valve_liquid_0__ui
+    link_id: liquidlimitvalve
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 小型液泵
+    image: miniwaterpump_0__ui
+    link_id: liquidminipump
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 病菌传感器
+    image: diseasesensor_0__ui
+    link_id: logicdiseasesensor
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 舒适的床
+    image: elegantbed_0__ui
+    link_id: luxurybed
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 挤奶站
+    image: milking_station_0__ui
+    link_id: milkingstation
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 钻头前锥
+    image: rocket_nosecone_gathering_0__ui
+    link_id: noseconeharvest
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 轨道数据收集实验仪
+    image: orbital_research_station_0__ui
+    link_id: orbitalresearchcenter
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 氧石精炼炉
+    image: oxylite_refinery_0__ui
+    link_id: oxyliterefinery
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 塑料砖
+    image: floor_plastic_0__ui
+    link_id: plastictile
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 远程作业坞
+    image: remote_work_dock_0__ui
+    link_id: remoteworkerdock
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 运输轨道病菌传感器
+    image: conveyor_germs_sensor_0__ui
+    link_id: solidconduitdiseasesensor
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 轨道计量器
+    image: limit_valve_solid_0__ui
+    link_id: solidlimitvalve
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 蒸汽涡轮机
+    image: steamturbine2_0__ui
+    link_id: steamturbine2
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 运载管道
+    image: travel_tube_0__ui
+    link_id: traveltube
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 运载管道渡口
+    image: tube_tile_bridge_0__ui
+    link_id: traveltubewallbridge
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 水中城堡
+    image: underwater_critter_condo_0__ui
+    link_id: watercooler
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 铀素离心机
+    image: enrichmentcentrifuge_0__ui
+    link_id: uraniumcentrifuge
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 垂直风洞
+    image: wind_tunnel_0__ui
+    link_id: verticalwindtunnel
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 墙排马桶
+    image: toilet_wall_0__ui
+    link_id: walltoilet
+  layout: Grid

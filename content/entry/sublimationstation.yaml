@@ -1,0 +1,102 @@
+id: SUBLIMATIONSTATION
+parent_id: BUILDCATEGORYOXYGEN
+name: 升华站
+disabled: False
+search_only: False
+category: BUILDCATEGORYOXYGEN
+sort_string: 升华站
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="SUBLIMATIONSTATION">升华站</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: sublimation_station_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      加快<link="TOXICSAND">污染土</link>转换成<link="CONTAMINATEDOXYGEN">污染氧</link>的速率。
+
+
+      当区域的气压达到最大时将会闲置。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="TOXICSAND">污染土</link>：1000克/秒'
+    tooltip: 使用时消耗<style="consumed">1000克/秒</style><style="KKeyword"><link="TOXICSAND">污染土</link></style>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="POWER">电力</link>：60瓦'
+    tooltip: 必须与至少有<style="consumed">60瓦</style>可用<style="KKeyword">电力</style>的电路相连
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：2格宽x1格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：30秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="METAL">金属矿石</link>200千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="CONTAMINATEDOXYGEN">污染氧</link>：660克/秒'
+    tooltip: >-
+      使用时产生<style="produced">660克/秒</style><style="KKeyword"><link="CONTAMINATEDOXYGEN">污染氧</link></style>
+
+
+      输出温度至少为<b>30ºC</b>，如果输入材料的温度更高输出也会随之更高。
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="HEAT">热量</link>：+1.5千复制热/秒'
+    tooltip: >-
+      每秒产生<style="produced">1.5千复制热</style>
+
+
+      总<style="KKeyword">温度</style>变化受到加热物质的材料属性影响：
+          • 质量
+          • 比热容
+          • 表面积
+          • 隔热厚度
+          • 热导率
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    过热<link="HEAT">温度</link>：75ºC'
+    tooltip: 达到<b>75ºC</b>时开始过热
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LOGIC">信号输入端</link>'
+    tooltip: 当接收到信号时，输入端会使这个建筑一种状态发生变化
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    启用/禁用'
+    tooltip: >-
+      输入端行为：
+
+      • <b><style="logic_on">绿色信号</style></b>：启用建筑
+
+      • <b><style="logic_off">红色信号</style></b>：禁用建筑
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：-10（范围：2格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>2</b>格内降低<b><b>-10</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>升华是将固体直接转化为气体的过程。</i>
+    style: Body
+  layout: Vertical

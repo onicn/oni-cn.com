@@ -1,0 +1,34 @@
+id: TIMESORDER
+name: 时间的秩序
+title: STRINGS.CODEX.C8_TIMESORDER.TITLE
+disabled: False
+search_only: False
+category: INVESTIGATIONS
+sort_string: 时间的秩序
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 时间的秩序
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：三
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+  lock_id: journal_timesorder
+- contents:
+  - widget_type: CodexText
+    text: >-
+      现在我们已经成功使用时间之弓有一段时间了，而且没有明显的后果。我应该对此感到高兴，但仍有几个问题在深夜使我难以入眠。
+
+
+      如果时间之箭是向前运动的，那么根据熵定律，宇宙应该从有序变为无序。如果时间之弓将以前的时间点弯向更有序的时间点，逻辑上因为我们从中拿了东西，那么这个时间点就会变得更加无序。所有的自然宇宙定律都表明这会影响到我们现在的日子，但所有证据表明这不对。似乎我们不能改变我们过去的理论是错的！
+
+
+      这表明，时间事实上不是一个箭，而是几个箭，每个箭都指向着不同的方向。从根本上讲，这证明了其他时间线的存在，即不同的维度，我们可以假设其中一些维度也建立了时间之弓。
+
+
+      跨过这个最终维度阈的想法实在是太诱人了。想象一下，在另一个维度的庄严科技会发明什么呢！我必须找到撕开时空结构的方法，并从成百上千不同的时间线中挖掘人类的无限潜力。
+    style: Body
+  layout: Vertical
+  lock_id: journal_timesorder

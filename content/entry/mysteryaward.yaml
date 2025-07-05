@@ -1,0 +1,49 @@
+id: MYSTERYAWARD
+name: 《纳米科技》文章
+title: STRINGS.CODEX.MYSTERYAWARD.TITLE
+disabled: False
+search_only: False
+category: INVESTIGATIONS
+sort_string: 《纳米科技》文章
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 《纳米科技》文章
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：三
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+  lock_id: journal_mysteryaward
+- contents:
+  - widget_type: CodexText
+    text: <b>神秘项目赢得纳米科技奖</b>
+    style: Body
+  layout: Vertical
+  lock_id: journal_mysteryaward
+- contents:
+  - widget_type: CodexText
+    text: >-
+      昨晚的全球纳米科技奖在科学界引发了争议，因为这项最高奖颁给了一个细节无法公开的项目。
+
+
+      这篇高度机密的论文由首席研究员裴丽玲博士在非公开会议上提交给了陪审团，她是埃利昂科技大学首届引力加速器奖学金的获得者。
+
+
+      裁判长埃利亚斯·巴尔科承认这是不正规的，但支持这一决定。“我们是科学家——我们的工作就是打破界限。”
+
+
+      裴丽玲赢得了人人向往的哈拉斯奖章，这是该领域的最高创新奖项。
+
+
+      “我希望我能再多说一些，”裴丽玲说，“我非常感谢全球纳米科技奖给予我这一伟大荣誉，以及斯特恩博士的资助让这一切成为可能。这将改变一切关于……呃，改变一切。”
+
+
+      这是裴丽玲第二次登上头条。去年，这位令人瞩目的的年轻纳米科学家在“行星小姐”选美大赛中胜出，当场展示了纳米机器人如何用常见的室内植物收获的纤维编织舞裙。
+
+
+      下个月裴丽玲将加入庄严科技的团队。
+    style: Body
+  layout: Vertical
+  lock_id: journal_mysteryaward

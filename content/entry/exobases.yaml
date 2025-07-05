@@ -1,0 +1,39 @@
+id: EXOBASES
+name: 太空旅行
+title: STRINGS.CODEX.EXOBASES.TITLE
+disabled: False
+search_only: False
+category: SYSTEMS
+sort_string: <link="EXOBASES">太空旅行</link>
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 建造火箭
+    style: Subtitle
+  - widget_type: CodexText
+    text: >+
+      建造火箭首先需要建造<link="LAUNCHPAD">火箭平台</link>，然后从这里的菜单添加舱块。所有火箭需要一个引擎、一个前锥和一个指挥舱，由具有<link="ROCKETPILOTING1">火箭驾驶</link>或更高级的技能的复制人驾驶。注意，<link="HABITATMODULESMALL">单太空员前锥</link>同时有指挥舱和前锥的作用。
+
+    style: Body
+  - widget_type: CodexText
+    text: 太空旅行
+    style: Subtitle
+  - widget_type: CodexText
+    text: >+
+      为了扫描太空并查看星际目的地，首先需要在小行星表面建造<link="CLUSTERTELESCOPE">望远镜</link>。小行星轨道上的<link="ORBITALRESEARCHCENTER">轨道数据收集实验仪</link>，以及连接在火箭上的<link="SCANNERMODULE">制图舱</link>也可以揭示星图上的位置。
+
+
+      始终要检查引擎燃料，这决定了你的火箭能否达到目的地，火箭只能在有<link="LAUNCHPAD">火箭平台</link>的小行星上着陆，这一点要铭记于心，但一些舱块，比如<link="SCOUTMODULE">侦察舱</link>和<link="PIONEERMODULE">先锋舱</link>，在火箭处于轨道上时可以发射到小行星表面。
+
+    style: Body
+  - widget_type: CodexText
+    text: 太空运输
+    style: Subtitle
+  - widget_type: CodexText
+    text: >-
+      货物在有供给传送器的小行星上可通过<link="ELEMENTSGAS">气体</link>、<link="ELEMENTSLIQUID">液体</link>和<link="ELEMENTSSOLID">固体</link>管道/轨道传送。
+
+
+      没有供给传送器的小行星可以使用火箭传输货物，可通过<link="LAUNCHPAD">火箭平台</link>实现或从轨道上通过<link="ORBITALCARGOMODULE">环轨货舱</link>部署。另外，<link="RAILGUN">星际发射器</link>可以发送<link="RAILGUNPAYLOAD">星际载货</link>，但必须由<link="RAILGUNPAYLOADOPENER">载货拆包器</link>打开。<link="LANDINGBEACON">定位信标</link>可以引导载货和环轨货舱在小行星表面的指定位置着陆。
+    style: Body
+  layout: Vertical

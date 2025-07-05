@@ -1,0 +1,31 @@
+id: SCOUTROVER
+name: 侦察者
+title: STRINGS.CODEX.ROVER.TITLE
+disabled: False
+search_only: False
+category: CREATURES
+sort_string: 侦察者
+required_dlc_ids:
+- EXPANSION1_ID
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 侦察者
+    style: Title
+  - widget_type: CodexText
+    text: 侦察机器人
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      侦察者是被编程的侦察机器人，用于着陆并挖掘小行星，可避免直接将复制人送往小行星而带来的不必要的危险。
+
+
+      侦察者与其他生物互动被编程为非常高兴的社交状态。然而，这种编程导致了一个意想不到的结果，它们在孤独和低士气时工作会表现出与人一样的低效率现象。
+
+
+      为了弥补这一点，侦察者被编程了两种能够切换的不同个性，以便在长时间单独工作时能够和它自己进行愉快的深入交流。
+    style: Body
+  layout: Vertical

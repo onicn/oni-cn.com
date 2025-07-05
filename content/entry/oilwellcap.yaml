@@ -1,0 +1,107 @@
+id: OILWELLCAP
+parent_id: BUILDCATEGORYUTILITIES
+name: 油井
+disabled: False
+search_only: False
+category: BUILDCATEGORYUTILITIES
+sort_string: 油井
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="OILWELLCAP">油井</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 塑料制造
+    style: Body
+    image: research_type_alpha_icon
+    link_id: plastics
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: geyser_oil_cap_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      使用干净的<link="WATER">水</link>提取<link="CRUDEOIL">原油</link>。
+
+
+      必须建在<link="OILWELL">储油石</link>上。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="WATER">水</link>：1000克/秒'
+    tooltip: 使用时消耗<style="consumed">1000克/秒</style><style="KKeyword"><link="WATER">水</link></style>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="POWER">电力</link>：240瓦'
+    tooltip: 必须与至少有<style="consumed">240瓦</style>可用<style="KKeyword">电力</style>的电路相连
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LIQUIDPIPING">液体输入管道</link>'
+    tooltip: 必须从<link="LIQUIDCONDUIT">液体管道</link>系统中接收<style="KKeyword">液体</style>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：4格宽x4格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：120秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="REFINEDMETAL">精炼金属</link>200千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="CRUDEOIL">原油</link>：3333.33克/秒'
+    tooltip: >-
+      使用时产生<style="produced">3333.33克/秒</style><style="KKeyword"><link="CRUDEOIL">原油</link></style>
+
+
+      输出温度至少为<b>90ºC</b>，如果输入材料的温度更高输出也会随之更高。
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="HEAT">热量</link>：+2千复制热/秒'
+    tooltip: >-
+      每秒产生<style="produced">2千复制热</style>
+
+
+      总<style="KKeyword">温度</style>变化受到加热物质的材料属性影响：
+          • 质量
+          • 比热容
+          • 表面积
+          • 隔热厚度
+          • 热导率
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    过热<link="HEAT">温度</link>：2000ºC'
+    tooltip: 达到<b>2000ºC</b>时开始过热
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LOGIC">信号输入端</link>'
+    tooltip: 当接收到信号时，输入端会使这个建筑一种状态发生变化
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    启用/禁用'
+    tooltip: >-
+      输入端行为：
+
+      • <b><style="logic_on">绿色信号</style></b>：启用建筑
+
+      • <b><style="logic_off">红色信号</style></b>：禁用建筑
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>抽送到储油石的水无法回收。</i>
+    style: Body
+  layout: Vertical

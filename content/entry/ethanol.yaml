@@ -1,0 +1,238 @@
+id: ETHANOL
+parent_id: ELEMENTSLIQUID
+name: 乙醇
+disabled: False
+search_only: False
+icon_color: 00FF6AFF
+category: ELEMENTSLIQUID
+sort_string: 乙醇
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="ETHANOL">乙醇</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    color: 00FF6AFF
+    image: element_liquid
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: 00FF6AFF
+      text1: 乙醇
+      text2: 1000克
+      link_id: ethanol
+    produce:
+    - image: element_gas
+      color: 00FF6AFF
+      text1: 气态乙醇
+      text2: 1000克
+      link_id: ethanolgas
+    fabricator:
+      image: crew_state_temp_up
+      text1: 78.4ºC
+      tooltip: 温度高于78.4ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: 00FF6AFF
+      text1: 乙醇
+      text2: 1000克
+      link_id: ethanol
+    produce:
+    - image: ethanol_0__ui
+      text1: 固态乙醇
+      text2: 1000克
+      link_id: solidethanol
+    fabricator:
+      image: crew_state_temp_down
+      text1: -114.1ºC
+      tooltip: 温度低于-114.1ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换于
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: ethanol_0__ui
+      text1: 固态乙醇
+      text2: 1000克
+      link_id: solidethanol
+    produce:
+    - image: element_liquid
+      color: 00FF6AFF
+      text1: 乙醇
+      text2: 1000克
+      link_id: ethanol
+    fabricator:
+      image: crew_state_temp_up
+      text1: -114.1ºC
+      tooltip: 温度高于-114.1ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_gas
+      color: 00FF6AFF
+      text1: 气态乙醇
+      text2: 1000克
+      link_id: ethanolgas
+    produce:
+    - image: element_liquid
+      color: 00FF6AFF
+      text1: 乙醇
+      text2: 1000克
+      link_id: ethanol
+    fabricator:
+      image: crew_state_temp_down
+      text1: 78.4ºC
+      tooltip: 温度低于78.4ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: 00FF6AFF
+      text1: 乙醇
+      text2: 15千克/周期
+      link_id: ethanol
+    produce:
+    - image: purplerootvegetable_0__ui
+      text1: 羽叶果薯
+      text2: 444千卡/周期
+      tooltip: 品质：糟糕 [0]
+      link_id: carrot
+    fabricator:
+      image: purpleroot_0__ui
+      text1: 羽叶果薯植株
+      link_id: CARROTPLANT
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: 00FF6AFF
+      text1: 乙醇
+      text2: 20千克/周期
+      link_id: ethanol
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 5千克/周期
+      link_id: dirt
+    produce:
+    - image: seed_beanplant_0__ui
+      text1: 小吃豆
+      text2: 0.57单位/周期
+      link_id: bean
+    fabricator:
+      image: beanplant_0__ui
+      text1: 小吃芽
+      link_id: BEANPLANT
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: wood_0__ui
+      text1: 木材
+      text2: 600千克/周期
+      link_id: woodlog
+    produce:
+    - image: element_liquid
+      color: 00FF6AFF
+      text1: 乙醇
+      text2: 300千克/周期
+      link_id: ethanol
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 200千克/周期
+      link_id: toxicsand
+    - image: element_gas
+      color: 000000FF
+      text1: 二氧化碳
+      text2: 100千克/周期
+      link_id: carbondioxide
+    fabricator:
+      image: ethanoldistillery_0__ui
+      text1: 乙醇蒸馏器
+      link_id: ETHANOLDISTILLERY
+  - widget_type: CodexConversionPanel
+    require:
+    - image: syrup_tree_0__ui
+      text1: 糖心树
+      text2: 40千克/周期储存的<link="SUGARWATER">花蜜</link>
+      link_id: spacetree
+    produce:
+    - image: element_liquid
+      color: 00FF6AFF
+      text1: 乙醇
+      text2: 40千克/周期
+      link_id: ethanol
+    fabricator:
+      image: seal_0__ui
+      text1: 栓角海豹
+      link_id: SEAL
+  - widget_type: CodexConversionPanel
+    require:
+    - image: sucrose_0__ui
+      text1: 蔗糖
+      text2: 30.8千克/周期
+      link_id: sucrose
+    produce:
+    - image: element_liquid
+      color: 00FF6AFF
+      text1: 乙醇
+      text2: 40千克/周期
+      link_id: ethanol
+    fabricator:
+      image: seal_0__ui
+      text1: 栓角海豹
+      link_id: SEAL
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      (C<sub>2</sub>H<sub>6</sub>O) 乙醇是一种<link="ELEMENTSLIQUID">液态</link>高级化合物。
+
+
+      它可用作高效燃料。
+
+
+      资源种类：<link="ELEMENTSLIQUID">液体</link>
+
+      冰点：-114.1ºC
+
+      沸点：78.4ºC
+
+
+      比热容：2.460 (DTU/g)/ºC
+
+      热导率：0.171 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.7
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：<link="COMBUSTIBLELIQUID">可燃液体</link>, <link="ELEMENTSLIQUID">液体</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

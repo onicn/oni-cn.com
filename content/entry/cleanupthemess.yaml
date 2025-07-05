@@ -1,0 +1,37 @@
+id: CLEANUPTHEMESS
+name: 收拾残局
+title: STRINGS.CODEX.A8_CLEANUPTHEMESS.TITLE
+disabled: False
+search_only: False
+category: JOURNALS
+sort_string: 收拾残局
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 收拾残局
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：无
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+  lock_id: journal_cleanup
+- contents:
+  - widget_type: CodexText
+    text: >-
+      我这辈子收拾过不少残局，但从来没见过像今天在生物实验室看到的狼藉景象。地板上、墙上到处都是绿色的粪便。还有一些里面看起来像浮着人形东西的管子。
+
+
+      他们觉得老冈德森先生没那么聪明，不会根据事实进行推理，但我长着眼睛，对吧？
+
+
+      从来没有人会在意清洁工。
+
+
+      相反，清洁工会关注所有人。
+
+
+      - 斯丁奇·冈德森先生
+    style: Body
+  layout: Vertical
+  lock_id: journal_cleanup

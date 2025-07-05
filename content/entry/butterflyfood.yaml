@@ -1,0 +1,109 @@
+id: BUTTERFLYFOOD
+parent_id: FOOD
+name: 烘烤拟种
+disabled: False
+search_only: False
+category: FOOD
+sort_string: 烘烤拟种
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="BUTTERFLYFOOD">烘烤拟种</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: fried_mimillet_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      一份稍稍烤过的<link="BUTTERFLYPLANT">拟种</link>。
+
+
+      肚子里感觉飘飘的。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 品质：低劣 [+1]
+    style: Body
+  - widget_type: CodexText
+    text: 卡路里：1,500千卡
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      冷藏温度：4ºC
+
+      深度冷冻温度：-18ºC
+
+      腐烂时间：8.0周期
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: fried_mimillet_0__ui
+      text1: 烘烤拟种
+      text2: 700千卡/周期
+      tooltip: 品质：低劣 [+1]
+      link_id: butterflyfood
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 350克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__ui
+      text1: 好吃哈奇
+      link_id: HATCH
+  - widget_type: CodexConversionPanel
+    require:
+    - image: fried_mimillet_0__ui
+      text1: 烘烤拟种
+      text2: 700千卡/周期
+      tooltip: 品质：低劣 [+1]
+      link_id: butterflyfood
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 466.7克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__veg_ui
+      text1: 草质哈奇
+      link_id: HATCHVEGGIE
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 电动烤炉
+    require:
+    - image: seed_pollinator_plant_0__ui
+      text1: 拟种
+      text2: 1单位
+      link_id: butterflyplant
+    produce:
+    - image: fried_mimillet_0__ui
+      text1: 烘烤拟种
+      text2: 1,500千卡
+      tooltip: 品质：低劣 [+1]
+      link_id: butterflyfood
+    fabricator:
+      image: cookstation_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 电动烤炉
+      text2: 50秒
+      link_id: cookingstation
+  layout: Vertical

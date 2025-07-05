@@ -1,0 +1,69 @@
+id: ANTS
+name: 蚂蚁
+title: STRINGS.CODEX.B5_ANTS.TITLE
+disabled: False
+search_only: False
+category: JOURNALS
+sort_string: 蚂蚁
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 蚂蚁
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：一
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+  lock_id: journal_ants
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <smallcaps>[声纹识别系统初始化完成]
+
+      [识别编号：A001、B556]</smallcaps>
+
+
+      [录音开始]
+
+
+      技术员：<i>真菌切叶蚁</i>。你要用它们做什么实验？
+
+
+      主管：不是做实验。我只是觉得它们很神奇。你不觉得吗？
+
+
+      技术员：不太觉得？
+
+
+      主管：不应该啊。它们非常高效，在人类之前数百万年就会“种庄稼”。
+
+
+      （轻敲玻璃声）
+
+
+      主管：整个蚁群都由蚁后领导，并为蚁后服务。每一种成员分工明确。
+
+
+      技术员：动力测试的结果出来了，主管。
+
+
+      主管：如何？
+
+
+      技术员：不太好，女士。
+
+
+      主管：我知道了。蚂蚁另一个让我钦佩的品质是，它们能够搬动自己体重20倍的物体。
+
+
+      技术员：我不太明白你的意思，女士。
+
+
+      主管：你能搬动你自己那么重的东西吗，博士？
+
+
+      [录音结束]
+    style: Body
+  layout: Vertical
+  lock_id: journal_ants

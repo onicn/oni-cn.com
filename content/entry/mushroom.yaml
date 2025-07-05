@@ -1,0 +1,134 @@
+id: MUSHROOM
+parent_id: FOOD
+name: 蘑菇
+disabled: False
+search_only: False
+category: FOOD
+sort_string: 蘑菇
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="MUSHROOM">蘑菇</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: funguscap_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 生长在黑暗条件下、无味的可食用菌类。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 品质：糟糕 [0]
+    style: Body
+  - widget_type: CodexText
+    text: 卡路里：2,400千卡
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      冷藏温度：4ºC
+
+      深度冷冻温度：-18ºC
+
+      腐烂时间：8.0周期
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 煎蘑菇
+    require:
+    - image: funguscap_0__ui
+      text1: 蘑菇
+      text2: 2,400千卡
+      tooltip: 品质：糟糕 [0]
+      link_id: mushroom
+    produce:
+    - image: funguscapfried_0__ui
+      text1: 煎蘑菇
+      text2: 2,800千卡
+      tooltip: 品质：低劣 [+1]
+      link_id: friedmushroom
+    fabricator:
+      image: cookstation_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 电动烤炉
+      text2: 50秒
+      link_id: cookingstation
+  - widget_type: CodexConversionPanel
+    require:
+    - image: funguscap_0__ui
+      text1: 蘑菇
+      text2: 600千卡/周期
+      tooltip: 品质：糟糕 [0]
+      link_id: mushroom
+    produce: []
+    fabricator:
+      image: lightbug_0__org_ui
+      text1: 阳光虫
+      link_id: LIGHTBUGORANGE
+  - widget_type: CodexConversionPanel
+    require:
+    - image: funguscap_0__ui
+      text1: 蘑菇
+      text2: 700千卡/周期
+      tooltip: 品质：糟糕 [0]
+      link_id: mushroom
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 218.8克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__ui
+      text1: 好吃哈奇
+      link_id: HATCH
+  - widget_type: CodexConversionPanel
+    require:
+    - image: funguscap_0__ui
+      text1: 蘑菇
+      text2: 700千卡/周期
+      tooltip: 品质：糟糕 [0]
+      link_id: mushroom
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 291.7克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__veg_ui
+      text1: 草质哈奇
+      link_id: HATCHVEGGIE
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: slime_mold_0__ui
+      text1: 菌泥
+      text2: 4000克/周期
+      link_id: slimemold
+    produce:
+    - image: funguscap_0__ui
+      text1: 蘑菇
+      text2: 320千卡/周期
+      tooltip: 品质：糟糕 [0]
+      link_id: mushroom
+    fabricator:
+      image: fungusplant_0__ui
+      text1: 夜幕菇
+      link_id: MUSHROOMPLANT
+  layout: Vertical

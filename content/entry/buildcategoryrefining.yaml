@@ -1,0 +1,119 @@
+id: BUILDCATEGORYREFINING
+parent_id: BUILDINGS
+name: 精炼
+disabled: False
+search_only: False
+category: BUILDINGS
+sort_string: 精炼
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="BUILDCATEGORYREFINING">精炼</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexLabelWithLargeIcon
+    text: 乙醇蒸馏器
+    style: BodyWhite
+    image: ethanoldistillery_0__ui
+    link_id: ethanoldistillery
+  - widget_type: CodexLabelWithLargeIcon
+    text: 乳化器
+    style: BodyWhite
+    image: chemistry_lab_0__ui
+    link_id: chemicalrefinery
+  - widget_type: CodexLabelWithLargeIcon
+    text: 净水器
+    style: BodyWhite
+    image: waterpurifier_0__ui
+    link_id: waterpurifier
+  - widget_type: CodexLabelWithLargeIcon
+    text: 分子熔炉
+    style: BodyWhite
+    image: supermaterial_refinery_0__ui
+    link_id: supermaterialrefinery
+  - widget_type: CodexLabelWithLargeIcon
+    text: 原油精炼器
+    style: BodyWhite
+    image: oilrefinery_0__ui
+    link_id: oilrefinery
+  - widget_type: CodexLabelWithLargeIcon
+    text: 咸乳蜡收集器
+    style: BodyWhite
+    image: milk_separator_0__ui
+    link_id: milkfatseparator
+  - widget_type: CodexLabelWithLargeIcon
+    text: 堆肥堆
+    style: BodyWhite
+    image: compost_0__ui
+    link_id: compost
+  - widget_type: CodexLabelWithLargeIcon
+    text: 植物粉碎机
+    style: BodyWhite
+    image: milkpress_0__ui
+    link_id: milkpress
+  - widget_type: CodexLabelWithLargeIcon
+    text: 氧石精炼炉
+    style: BodyWhite
+    image: oxylite_refinery_0__ui
+    link_id: oxyliterefinery
+  - widget_type: CodexLabelWithLargeIcon
+    text: 泥浆分离器
+    style: BodyWhite
+    image: sludge_press_0__ui
+    link_id: sludgepress
+  - widget_type: CodexLabelWithLargeIcon
+    text: 漂白石料斗
+    style: BodyWhite
+    image: chlorinator_0__ui
+    link_id: chlorinator
+  - widget_type: CodexLabelWithLargeIcon
+    text: 玻璃熔炉
+    style: BodyWhite
+    image: glassrefinery_0__ui
+    link_id: glassforge
+  - widget_type: CodexLabelWithLargeIcon
+    text: 碎石机
+    style: BodyWhite
+    image: rockrefinery_0__ui
+    link_id: rockcrusher
+  - widget_type: CodexLabelWithLargeIcon
+    text: 窑炉
+    style: BodyWhite
+    image: kiln_0__ui
+    link_id: kiln
+  - widget_type: CodexLabelWithLargeIcon
+    text: 聚合物压塑器
+    style: BodyWhite
+    image: plasticrefinery_0__ui
+    link_id: polymerizer
+  - widget_type: CodexLabelWithLargeIcon
+    text: 肥料合成器
+    style: BodyWhite
+    image: fertilizer_maker_0__ui
+    link_id: fertilizermaker
+  - widget_type: CodexLabelWithLargeIcon
+    text: 脱盐器
+    style: BodyWhite
+    image: desalinator_0__ui
+    link_id: desalinator
+  - widget_type: CodexLabelWithLargeIcon
+    text: 藻类蒸馏器
+    style: BodyWhite
+    image: algae_distillery_0__ui
+    link_id: algaedistillery
+  - widget_type: CodexLabelWithLargeIcon
+    text: 金属精炼器
+    style: BodyWhite
+    image: metalrefinery_0__ui
+    link_id: metalrefinery
+  - widget_type: CodexLabelWithLargeIcon
+    text: 钻石压机
+    style: BodyWhite
+    image: diamond_press_0__ui
+    link_id: diamondpress
+  layout: Grid
+- contents:
+  - widget_type: CodexSpacer
+  layout: Vertical

@@ -1,0 +1,37 @@
+id: PRIORITY
+name: 优先度
+title: STRINGS.CODEX.PRIORITY.TITLE
+disabled: False
+search_only: False
+category: SYSTEMS
+sort_string: <link="PRIORITY">优先度</link>
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 任务优先度
+    style: Subtitle
+  - widget_type: CodexText
+    text: >+
+      复制人会根据多种因素决定他们任务的优先度。有些任务可以调整以影响任务的选择，而有些任务（比如寻找<link="OXYGEN">氧气</link>）非常重要不得延误。任务优先度主要由任务类型调配，然后可以通过<b>优先度工具</b> {Hotkey/Prioritize} 进一步细调。
+
+    style: Body
+  - widget_type: CodexText
+    text: 任务类型优先级
+    style: Subtitle
+  - widget_type: CodexText
+    text: >+
+      复制人执行的每项任务都能分入任务类别中。在<b>优先级界面</b>中，每名复制人的任务类别的优先级都可以被调整。如果想让复制人不做某种类型的任务，可以将任务类别优先级调整为禁止。一种常见的设置是根据复制人的属性来分配任务类型优先级。
+
+
+      例如，做研究很强的复制人可以调高研究任务类型的优先级。有着低运动属性的复制人可以调低供应和储存任务类型的优先级。
+
+    style: Body
+  - widget_type: CodexText
+    text: 优先度工具
+    style: Subtitle
+  - widget_type: CodexText
+    text: >+
+      可以使用<b>优先度工具</b> {Hotkey/Prioritize} 调整具体任务的优先度。这个工具应用的数值的影响总是低于上述的任务类型优先级。对于一名复制人来说，如果两个任务有相同的任务类型优先级，复制人会先选择有着更高优先度的任务。
+
+    style: Body
+  layout: Vertical

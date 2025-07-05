@@ -1,0 +1,61 @@
+id: CREATUREFEEDER
+parent_id: BUILDCATEGORYFOOD
+name: 小动物喂食器
+disabled: False
+search_only: False
+category: BUILDCATEGORYFOOD
+sort_string: 小动物喂食器
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="CREATUREFEEDER">小动物喂食器</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 养殖
+    style: Body
+    image: research_type_alpha_icon
+    link_id: ranching
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: feeder_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 自动为饥饿的<link="CREATURES">小动物</link>提供食物。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：1格宽x2格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：120秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="METAL">金属矿石</link>200千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    库存容量：2000千克'
+    tooltip: 最多容纳<b>2000千克</b>材料
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    过热<link="HEAT">温度</link>：75ºC'
+    tooltip: 达到<b>75ºC</b>时开始过热
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：-15（范围：3格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>3</b>格内降低<b><b>-15</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>小动物倾向于靠近食物源，提供喂食器后小动物不容易乱跑。</i>
+    style: Body
+  layout: Vertical

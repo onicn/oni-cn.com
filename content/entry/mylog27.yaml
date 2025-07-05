@@ -1,0 +1,24 @@
+id: MYLOG27
+name: 娱乐
+title: STRINGS.CODEX.MYLOG.BODY.RECBUILDINGS.TITLE
+disabled: False
+search_only: False
+category: MYLOG
+sort_string: 娱乐
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 娱乐
+    style: Title
+  - widget_type: CodexText
+    text: >
+      我的复制人继续发展并学到了很多东西，我不仅为他们取得的成就感到骄傲。但随着他们技能的增加，他们需要更多的激励来保持高士气。只工作，不玩耍，聪明的复制人也会变傻。
+
+
+      如果我想让我的殖民地继续发展，我就需要为我的的复制人提供更多精致的休闲活动来让他们放松。娱乐时间可以让复制人变得开心，变得开心的复制人同样也会富有生产力。
+    style: Body
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical
+  lock_id: //--TODO

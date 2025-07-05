@@ -1,0 +1,225 @@
+id: GOLDAMALGAM
+parent_id: ELEMENTSSOLID
+name: 金汞齐
+disabled: False
+search_only: False
+category: ELEMENTSSOLID
+sort_string: 金汞齐
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="GOLDAMALGAM">金汞齐</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: gold_amalgam_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: gold_amalgam_0__ui
+      text1: 金汞齐
+      text2: 1000克
+      link_id: goldamalgam
+    produce:
+    - image: element_liquid
+      color: F15300FF
+      text1: 熔融金
+      text2: 1000克
+      link_id: moltengold
+    fabricator:
+      image: crew_state_temp_up
+      text1: 1063.9ºC
+      tooltip: 温度高于1063.9ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 金
+    require:
+    - image: gold_amalgam_0__ui
+      text1: 金汞齐
+      text2: 100千克
+      link_id: goldamalgam
+    produce:
+    - image: gold_refined_0__ui
+      text1: 金
+      text2: 100千克
+      link_id: gold
+    fabricator:
+      image: metalrefinery_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 金属精炼器
+      text2: 40秒
+      link_id: metalrefinery
+  - widget_type: CodexRecipePanel
+    text: 金
+    require:
+    - image: gold_amalgam_0__ui
+      text1: 金汞齐
+      text2: 100千克
+      link_id: goldamalgam
+    produce:
+    - image: gold_refined_0__ui
+      text1: 金
+      text2: 50千克
+      link_id: gold
+    - image: sand_0__ui
+      text1: 沙子
+      text2: 50千克
+      link_id: sand
+    fabricator:
+      image: rockrefinery_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 碎石机
+      text2: 40秒
+      link_id: rockcrusher
+  - widget_type: CodexConversionPanel
+    require:
+    - image: gold_amalgam_0__ui
+      text1: 金汞齐
+      text2: 30千克/周期
+      link_id: goldamalgam
+    produce:
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 1500克/周期
+      link_id: hydrogen
+    fabricator:
+      image: caterpillar_0__wtr_ui
+      text1: 海绵蛞蝓
+      link_id: STATERPILLAR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: gold_amalgam_0__ui
+      text1: 金汞齐
+      text2: 30千克/周期
+      link_id: goldamalgam
+    produce:
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 1500克/周期
+      link_id: hydrogen
+    fabricator:
+      image: caterpillar_0__gas_ui
+      text1: 烟雾蛞蝓
+      link_id: STATERPILLAR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: gold_amalgam_0__ui
+      text1: 金汞齐
+      text2: 60千克/周期
+      link_id: goldamalgam
+    produce:
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 3000克/周期
+      link_id: hydrogen
+    fabricator:
+      image: caterpillar_0__ui
+      text1: 电弧蛞蝓
+      link_id: STATERPILLAR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: gold_amalgam_0__ui
+      text1: 金汞齐
+      text2: 140千克/周期
+      link_id: goldamalgam
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 35千克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__hvy_ui
+      text1: 石壳哈奇
+      link_id: HATCHHARD
+  - widget_type: CodexConversionPanel
+    require:
+    - image: gold_amalgam_0__ui
+      text1: 金汞齐
+      text2: 100千克/周期
+      link_id: goldamalgam
+    produce:
+    - image: gold_refined_0__ui
+      text1: 金
+      text2: 75千克/周期
+      link_id: gold
+    fabricator:
+      image: hatch_0__mtl_ui
+      text1: 光滑哈奇
+      link_id: HATCHMETAL
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 碎石机
+    require:
+    - image: bammoth_crown_0__ui
+      text1: 皇犸兔头冠
+      text2: 1单位
+      link_id: goldbellycrown
+    produce:
+    - image: gold_amalgam_0__ui
+      text1: 金汞齐
+      text2: 250千克
+      link_id: goldamalgam
+    fabricator:
+      image: rockrefinery_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 碎石机
+      text2: 40秒
+      link_id: rockcrusher
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      金汞齐是一种导电的金和汞的混合物。
+
+
+      它可用于建造<link="POWER">电力</link>系统。
+
+
+      资源种类：<link="METAL">金属矿石</link>
+
+      熔点：1063.9ºC
+
+      硬度：<color=#71ABCFFF>2（非常柔软）</color>
+
+
+      比热容：0.150 (DTU/g)/ºC
+
+      热导率：2.000 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.3
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：矿石, <link="BUILDABLEANY">一般建造材料</link>, <link="ELEMENTSSOLID">固体</link>, <link="METAL">金属矿石</link>
+
+      <style="KKeyword">装饰</style>：+10%
+
+      <style="KKeyword">过热温度</style>：+50ºC
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

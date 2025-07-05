@@ -1,0 +1,147 @@
+id: BIOMEFROZEN
+parent_id: BIOMES
+name: 苔原生态
+disabled: False
+search_only: False
+category: BIOMES
+sort_string: BIOMEFROZEN
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 苔原生态
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 苔原生态的零下温度产生了罕见的<link="ICE">冰</link>和<link="SNOW">雪</link>的冻层，对于殖民地的<link="HEAT">热量</link>调节需求来说很重要。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      这片生态并非缺乏生命，而是包含了一些我们非常需要的可培育植物。<link="COLDWHEAT">冰霜小麦</link>可以为一些复杂的食物提供营养丰富的原料，尽管需要零下温度才能生长。
+
+
+      幸运的是，可以在农场种植<link="COLDBREATHER">冰息萝卜</link>以降低环境温度。
+
+
+      非常关键的是，在这里可以检测到少许<link="WOLFRAMITE">黑钨矿</link>。这是一种非常稀有的金属，可以存起来用于<link="TUNGSTEN">钨</link>的生产。
+
+
+      尽管我的复制人很乐意短时间在苔原生态工作，但如果要在这里长时间工作，我还是需要为他们提供合适的<link="EQUIPMENT">装备</link>以避免环境对他们健康产生的不利影响。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 元素
+    style: Subtitle
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 液态二氧化碳
+    color: 878EB7FF
+    image: element_liquid
+    link_id: liquidcarbondioxide
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 黑钨矿
+    image: wolframite_0__ui
+    link_id: wolframite
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 液态氧
+    color: 579AA9FF
+    image: element_liquid
+    link_id: liquidoxygen
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 固态二氧化碳
+    image: solid_carbon_dioxide_0__ui
+    link_id: solidcarbondioxide
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 盐水
+    color: CED2ECFF
+    image: element_liquid
+    link_id: saltwater
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 铁锈
+    image: iron_oxide_0__ui
+    link_id: rust
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 盐
+    image: salt_0__ui
+    link_id: salt
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 火成岩
+    image: igneous_rock_0__ui
+    link_id: igneousrock
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 浓盐冰
+    image: frozen_brine_0__ui
+    link_id: brine
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 沙子
+    image: sand_0__ui
+    link_id: sand
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 砂岩
+    image: sand_stone_0__ui
+    link_id: sandstone
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 氧气
+    color: B7FFFFFF
+    image: element_gas
+    link_id: oxygen
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 雪
+    image: snow_0__ui
+    link_id: snow
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 二氧化碳
+    color: 000000FF
+    image: element_gas
+    link_id: carbondioxide
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 花岗岩
+    image: granite_0__ui
+    link_id: granite
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 污染冰
+    image: dirty_ice_0__ui
+    link_id: dirtyice
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 冰
+    image: ice_0__ui
+    link_id: ice
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 植物
+    style: Subtitle
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 冰霜小麦
+    image: coldwheat_0__ui
+    link_id: coldwheat
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 冰息萝卜
+    image: coldbreather_0__ui
+    link_id: coldbreather
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 小动物
+    style: Subtitle
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 无
+    color: FF0000FF
+    image: inspectorUI_cannot_build
+    link_id: 无
+  layout: Vertical

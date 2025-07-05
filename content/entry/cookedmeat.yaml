@@ -1,0 +1,189 @@
+id: COOKEDMEAT
+parent_id: FOOD
+name: 烤肉串
+disabled: False
+search_only: False
+category: FOOD
+sort_string: 烤肉串
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="COOKEDMEAT">烤肉串</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: barbeque_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      由被击败的小动物的肉烹饪而成。
+
+
+      它有着令人愉快的烟熏味。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 品质：良好 [+3]
+    style: Body
+  - widget_type: CodexText
+    text: 卡路里：4,000千卡
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      冷藏温度：4ºC
+
+      深度冷冻温度：-18ºC
+
+      腐烂时间：4.0周期
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 海陆双拼
+    require:
+    - image: barbeque_0__ui
+      text1: 烤肉串
+      text2: 4,000千卡
+      tooltip: 品质：良好 [+3]
+      link_id: cookedmeat
+    - image: grilled_pacu_0__ui
+      text1: 烤海鲜
+      text2: 1,600千卡
+      tooltip: 品质：良好 [+3]
+      link_id: cookedfish
+    produce:
+    - image: surfnturf_0__ui
+      text1: 海陆双拼
+      text2: 6,000千卡
+      tooltip: 品质：优秀 [+4]
+      link_id: surfandturf
+    fabricator:
+      image: cookstation_gourmet_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 燃气灶
+      text2: 50秒
+      link_id: gourmetcookingstation
+  - widget_type: CodexRecipePanel
+    text: 冰霜汉堡
+    require:
+    - image: frostbread_0__ui
+      text1: 冰霜面包
+      text2: 1,200千卡
+      tooltip: 品质：标准 [+2]
+      link_id: coldwheatbread
+    - image: sea_lettuce_leaves_0__ui
+      text1: 海生菜
+      text2: 400千卡
+      tooltip: 品质：糟糕 [0]
+      link_id: lettuce
+    - image: barbeque_0__ui
+      text1: 烤肉串
+      text2: 4,000千卡
+      tooltip: 品质：良好 [+3]
+      link_id: cookedmeat
+    produce:
+    - image: frost_burger_0__ui
+      text1: 冰霜汉堡
+      text2: 6,000千卡
+      tooltip: 品质：极佳 [+6]
+      link_id: burger
+    fabricator:
+      image: cookstation_gourmet_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 燃气灶
+      text2: 50秒
+      link_id: gourmetcookingstation
+  - widget_type: CodexConversionPanel
+    require:
+    - image: barbeque_0__ui
+      text1: 烤肉串
+      text2: 4,000千卡/周期
+      tooltip: 品质：良好 [+3]
+      link_id: cookedmeat
+    produce: []
+    fabricator:
+      image: lightbug_0__cry_ui
+      text1: 光耀虫
+      link_id: LIGHTBUGCRYSTAL
+  - widget_type: CodexConversionPanel
+    require:
+    - image: barbeque_0__ui
+      text1: 烤肉串
+      text2: 4,000千卡/周期
+      tooltip: 品质：良好 [+3]
+      link_id: cookedmeat
+    produce: []
+    fabricator:
+      image: lightbug_0__blk_ui
+      text1: 深渊虫
+      link_id: LIGHTBUGBLACK
+  - widget_type: CodexConversionPanel
+    require:
+    - image: barbeque_0__ui
+      text1: 烤肉串
+      text2: 700千卡/周期
+      tooltip: 品质：良好 [+3]
+      link_id: cookedmeat
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 131.3克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__ui
+      text1: 好吃哈奇
+      link_id: HATCH
+  - widget_type: CodexConversionPanel
+    require:
+    - image: barbeque_0__ui
+      text1: 烤肉串
+      text2: 700千卡/周期
+      tooltip: 品质：良好 [+3]
+      link_id: cookedmeat
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 175克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__veg_ui
+      text1: 草质哈奇
+      link_id: HATCHVEGGIE
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 电动烤炉
+    require:
+    - image: creaturemeat_0__ui
+      text1: 肉
+      text2: 3,200千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: meat
+    produce:
+    - image: barbeque_0__ui
+      text1: 烤肉串
+      text2: 4,000千卡
+      tooltip: 品质：良好 [+3]
+      link_id: cookedmeat
+    fabricator:
+      image: cookstation_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 电动烤炉
+      text2: 50秒
+      link_id: cookingstation
+  layout: Vertical

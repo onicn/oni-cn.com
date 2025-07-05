@@ -1,0 +1,51 @@
+id: POWER
+name: 电力
+title: STRINGS.CODEX.POWER.TITLE
+disabled: False
+search_only: False
+category: SYSTEMS
+sort_string: <link="POWER">电力</link>
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 电力
+    style: Subtitle
+  - widget_type: CodexText
+    text: >+
+      基地中的许多建筑都需要电力来运行。不同建筑运行需求的电力也不同。需要<link="WIRE">电线</link>在建筑间传导电力。
+
+    style: Body
+  - widget_type: CodexText
+    text: 发电机和蓄电池
+    style: Subtitle
+  - widget_type: CodexText
+    text: >+
+      有些建筑可以产生电力。复制人可运行<link="MANUALGENERATOR">人力发电机</link>产生清洁电力。一旦产生，电力就需要储存在<link="BATTERY">蓄电池</link>中以避免浪费。任何产生的未被消耗或储存的电力都将被浪费。蓄电池和发电机在使用时也会产生很多<link="HEAT">热量</link>。
+
+
+      电力还可以储存在便携的<link="ELECTROBANK">移动电源</link>里。
+
+    style: Body
+  - widget_type: CodexText
+    text: 电的衡量
+    style: Subtitle
+  - widget_type: CodexText
+    text: >+
+      储存在<link="BATTERY">蓄电池</link>中的电力以焦(耳)为单位衡量，建筑产生和消耗的电力以瓦(特)为单位衡量，相当于每秒（产生或消耗）多少焦(耳)。
+
+
+      一个储存了5000焦电力的电池可以给耗电240瓦的建筑用大概20秒。一个能产生480瓦电力的发电机可以使两个耗电240瓦的建筑一直运行下去。
+
+    style: Body
+  - widget_type: CodexText
+    text: 过载
+    style: Subtitle
+  - widget_type: CodexText
+    text: >+
+      如果电路中耗电功率过大，<link="WIRE">电线</link>就会过载。如果耗电功率超过了上限，电线就会受损并需要维修。
+
+
+      <link="WIRE">标准电线</link>功率上限为1000瓦。
+
+    style: Body
+  layout: Vertical

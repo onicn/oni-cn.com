@@ -1,0 +1,96 @@
+id: BIOMEMETALLIC
+parent_id: BIOMES
+name: 金属生态
+disabled: False
+search_only: False
+category: BIOMES
+sort_string: BIOMEMETALLIC
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 金属生态
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 金属生态中含有大量的金属，使其成为殖民地技术发展与生产的首选目的地。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      <link="GOLDAMALGAM">金汞齐</link>、<link="ALUMINUMORE">铝矿</link>、<link="COBALTITE">钴矿</link>在整个生态中到处都是。使用<link="METALREFINERY">金属精炼器</link>提炼这些金属就可以用于建造高级建筑。
+
+
+      尽管<link="CHLORINEGAS">氯气</link>和<link="HYDROGEN">氢气</link>是这片生态普遍存在的气体，但<link="OXYROCK">氧石</link>以岩石形态存在，挖开后就可为复制人提供<link="OXYGEN">氧气</link>。
+
+
+      <link="DIRT">泥土</link>，<link="CARBON">煤炭</link>和<link="IGNEOUSROCK">火成岩</link>构成了这片生态剩下的部分，使其成为崭露头角的工业化殖民地的绝佳资源储备。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 元素
+    style: Subtitle
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 铝矿
+    image: aluminum_ore_0__ui
+    link_id: aluminumore
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 氧石
+    image: oxyrock_0__ui
+    link_id: oxyrock
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 钴矿
+    image: cobalt_ore_0__ui
+    link_id: cobaltite
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 金汞齐
+    image: gold_amalgam_0__ui
+    link_id: goldamalgam
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 泥土
+    image: dirt_0__ui
+    link_id: dirt
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 火成岩
+    image: igneous_rock_0__ui
+    link_id: igneousrock
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 煤炭
+    image: carbon_0__ui
+    link_id: carbon
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 植物
+    style: Subtitle
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 无
+    color: FF0000FF
+    image: inspectorUI_cannot_build
+    link_id: 无
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 小动物
+    style: Subtitle
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 无
+    color: FF0000FF
+    image: inspectorUI_cannot_build
+    link_id: 无
+  layout: Vertical

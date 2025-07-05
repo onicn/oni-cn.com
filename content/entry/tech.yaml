@@ -1,0 +1,513 @@
+id: TECH
+name: 研究
+disabled: False
+search_only: False
+category: Root
+sort_string: 研究
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="TECH">研究</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexLabelWithLargeIcon
+    text: 丰碑
+    style: BodyWhite
+    image: monument_base_a_0__ui
+    link_id: monuments
+  - widget_type: CodexLabelWithLargeIcon
+    text: 乳化
+    style: BodyWhite
+    image: chemistry_lab_0__ui
+    link_id: advanceddistillation
+  - widget_type: CodexLabelWithLargeIcon
+    text: 人工伙伴
+    style: BodyWhite
+    image: sweep_bot_base_station_0__ui
+    link_id: artificialfriends
+  - widget_type: CodexLabelWithLargeIcon
+    text: 低温燃料推进
+    style: BodyWhite
+    image: rocket_cluster_hydrogen_engine_0__ui
+    link_id: cryofuelpropulsion
+  - widget_type: CodexLabelWithLargeIcon
+    text: 低阻导体
+    style: BodyWhite
+    image: utilities_electric_conduct_0__ui
+    link_id: prettygoodconductors
+  - widget_type: CodexLabelWithLargeIcon
+    text: 便携气体
+    style: BodyWhite
+    image: gas_bottler_0__ui
+    link_id: portablegasses
+  - widget_type: CodexLabelWithLargeIcon
+    text: 信息处理
+    style: BodyWhite
+    image: logic_counter_0__ui
+    link_id: dupetrafficcontrol
+  - widget_type: CodexLabelWithLargeIcon
+    text: 催化剂
+    style: BodyWhite
+    image: oxylite_refinery_0__ui
+    link_id: catalytics
+  - widget_type: CodexLabelWithLargeIcon
+    text: 养殖
+    style: BodyWhite
+    image: rancherstation_0__ui
+    link_id: ranching
+  - widget_type: CodexLabelWithLargeIcon
+    text: 内燃机
+    style: BodyWhite
+    image: generatorphos_0__ui
+    link_id: combustion
+  - widget_type: CodexLabelWithLargeIcon
+    text: 农业
+    style: BodyWhite
+    image: planttender_0__ui
+    link_id: agriculture
+  - widget_type: CodexLabelWithLargeIcon
+    text: 分离
+    style: BodyWhite
+    image: filter_gas_0__ui
+    link_id: advancedfiltration
+  - widget_type: CodexLabelWithLargeIcon
+    text: 加压锻造
+    style: BodyWhite
+    image: diamond_press_0__ui
+    link_id: highpressureforging
+  - widget_type: CodexLabelWithLargeIcon
+    text: 动物控制
+    style: BodyWhite
+    image: critter_trap_air_0__ui
+    link_id: animalcontrol
+  - widget_type: CodexLabelWithLargeIcon
+    text: 化石燃料
+    style: BodyWhite
+    image: generatormethane_0__ui
+    link_id: improvedcombustion
+  - widget_type: CodexLabelWithLargeIcon
+    text: 医疗设备
+    style: BodyWhite
+    image: treatment_chair_0__ui
+    link_id: medicineii
+  - widget_type: CodexLabelWithLargeIcon
+    text: 卫生设备
+    style: BodyWhite
+    image: toiletflush_0__ui
+    link_id: sanitationsciences
+  - widget_type: CodexLabelWithLargeIcon
+    text: 危险防护
+    style: BodyWhite
+    image: overlay_suit
+    link_id: suits
+  - widget_type: CodexLabelWithLargeIcon
+    text: 可再生能源
+    style: BodyWhite
+    image: steamturbine2_0__ui
+    link_id: renewableenergy
+  - widget_type: CodexLabelWithLargeIcon
+    text: 咸乳供应
+    style: BodyWhite
+    image: critter_milk_feeder_0__ui
+    link_id: dairyoperation
+  - widget_type: CodexLabelWithLargeIcon
+    text: 固体控制
+    style: BodyWhite
+    image: conveyor_shutoff_0__ui
+    link_id: solidspace
+  - widget_type: CodexLabelWithLargeIcon
+    text: 固体管理
+    style: BodyWhite
+    image: filter_material_conveyor_0__ui
+    link_id: solidmanagement
+  - widget_type: CodexLabelWithLargeIcon
+    text: 固体运输
+    style: BodyWhite
+    image: conveyorin_0__ui
+    link_id: solidtransport
+  - widget_type: CodexLabelWithLargeIcon
+    text: 基于液体的精炼工艺
+    style: BodyWhite
+    image: orescrubber_0__ui
+    link_id: liquidfiltering
+  - widget_type: CodexLabelWithLargeIcon
+    text: 基础耕种
+    style: BodyWhite
+    image: algaefarm_0__ui
+    link_id: farmingtech
+  - widget_type: CodexLabelWithLargeIcon
+    text: 塑料制造
+    style: BodyWhite
+    image: plasticrefinery_0__ui
+    link_id: plastics
+  - widget_type: CodexLabelWithLargeIcon
+    text: 复兴艺术
+    style: BodyWhite
+    image: painting_tall_off_0__ui
+    link_id: renaissanceart
+  - widget_type: CodexLabelWithLargeIcon
+    text: 多路传输
+    style: BodyWhite
+    image: logic_multiplexer_0__ui
+    link_id: multiplexing
+  - widget_type: CodexLabelWithLargeIcon
+    text: 天体探测
+    style: BodyWhite
+    image: meteor_detector_0__ui
+    link_id: skydetectors
+  - widget_type: CodexLabelWithLargeIcon
+    text: 太空电力
+    style: BodyWhite
+    image: rocket_battery_pack_0__ui
+    link_id: spacepower
+  - widget_type: CodexLabelWithLargeIcon
+    text: 太空计划
+    style: BodyWhite
+    image: rocket_launchpad_0__ui
+    link_id: spaceprogram
+  - widget_type: CodexLabelWithLargeIcon
+    text: 室内装潢
+    style: BodyWhite
+    image: flowervase_0__ui
+    link_id: interiordecor
+  - widget_type: CodexLabelWithLargeIcon
+    text: 并行自动化
+    style: BodyWhite
+    image: logic_ribbon_0__ui
+    link_id: parallelautomation
+  - widget_type: CodexLabelWithLargeIcon
+    text: 扩音器
+    style: BodyWhite
+    image: smartbattery_0__ui
+    link_id: acoustics
+  - widget_type: CodexLabelWithLargeIcon
+    text: 投射物
+    style: BodyWhite
+    image: suit_jetpack_0__ui
+    link_id: jetpacks
+  - widget_type: CodexLabelWithLargeIcon
+    text: 持久生命维持
+    style: BodyWhite
+    image: rocket_nosecone_default_0__ui
+    link_id: durablelifesupport
+  - widget_type: CodexLabelWithLargeIcon
+    text: 撞击计划
+    style: BodyWhite
+    image: research_type_orbital_icon
+    link_id: crashplan
+  - widget_type: CodexLabelWithLargeIcon
+    text: 改良水管
+    style: BodyWhite
+    image: utilities_liquid_insulated_0__ui
+    link_id: improvedliquidpiping
+  - widget_type: CodexLabelWithLargeIcon
+    text: 改良烃类燃料推进
+    style: BodyWhite
+    image: rocket_cluster_petroleum_engine_0__ui
+    link_id: betterhydrocarbonpropulsion
+  - widget_type: CodexLabelWithLargeIcon
+    text: 改良通风
+    style: BodyWhite
+    image: utilities_gas_insulated_0__ui
+    link_id: improvedgaspiping
+  - widget_type: CodexLabelWithLargeIcon
+    text: 敏感微成像
+    style: BodyWhite
+    image: rocket_scanner_module_0__ui
+    link_id: advancedscanners
+  - widget_type: CodexLabelWithLargeIcon
+    text: 数据科学
+    style: BodyWhite
+    image: data_miner_0__ui
+    link_id: datascience
+  - widget_type: CodexLabelWithLargeIcon
+    text: 新媒体
+    style: BodyWhite
+    image: pixel_pack_0__ui
+    link_id: screens
+  - widget_type: CodexLabelWithLargeIcon
+    text: 智能存储
+    style: BodyWhite
+    image: overlay_conveyor
+    link_id: smartstorage
+  - widget_type: CodexLabelWithLargeIcon
+    text: 智能家居
+    style: BodyWhite
+    image: overlay_logic
+    link_id: logiccontrol
+  - widget_type: CodexLabelWithLargeIcon
+    text: 暖通空调
+    style: BodyWhite
+    image: airconditioner_0__ui
+    link_id: hvac
+  - widget_type: CodexLabelWithLargeIcon
+    text: 机器人工具
+    style: BodyWhite
+    image: auto_miner_0__ui
+    link_id: robotictools
+  - widget_type: CodexLabelWithLargeIcon
+    text: 材料科学研究
+    style: BodyWhite
+    image: research_type_delta_icon
+    link_id: nuclearresearch
+  - widget_type: CodexLabelWithLargeIcon
+    text: 气体分配
+    style: BodyWhite
+    image: bottle_emptier_gas_conduit_0__ui
+    link_id: gasdistribution
+  - widget_type: CodexLabelWithLargeIcon
+    text: 气压管理
+    style: BodyWhite
+    image: valveliquid_0__ui
+    link_id: pressuremanagement
+  - widget_type: CodexLabelWithLargeIcon
+    text: 水管
+    style: BodyWhite
+    image: utilities_liquid_0__ui
+    link_id: liquidpiping
+  - widget_type: CodexLabelWithLargeIcon
+    text: 泵小型化
+    style: BodyWhite
+    image: miniwaterpump_0__ui
+    link_id: valveminiaturization
+  - widget_type: CodexLabelWithLargeIcon
+    text: 流动重导
+    style: BodyWhite
+    image: mechanical_surfboard_0__ui
+    link_id: flowredirection
+  - widget_type: CodexLabelWithLargeIcon
+    text: 液体分配
+    style: BodyWhite
+    image: bottle_emptier_liquid_conduit_0__ui
+    link_id: liquiddistribution
+  - widget_type: CodexLabelWithLargeIcon
+    text: 液体微调
+    style: BodyWhite
+    image: utilities_liquid_radiant_0__ui
+    link_id: liquidtemperature
+  - widget_type: CodexLabelWithLargeIcon
+    text: 温度调节
+    style: BodyWhite
+    image: fanice_0__ui
+    link_id: temperaturemodulation
+  - widget_type: CodexLabelWithLargeIcon
+    text: 烃类燃料推进
+    style: BodyWhite
+    image: rocket_petro_engine_small_0__ui
+    link_id: hydrocarbonpropulsion
+  - widget_type: CodexLabelWithLargeIcon
+    text: 熔炼
+    style: BodyWhite
+    image: metalrefinery_0__ui
+    link_id: smelting
+  - widget_type: CodexLabelWithLargeIcon
+    text: 环境鉴赏
+    style: BodyWhite
+    image: beach_chair_0__ui
+    link_id: environmentalappreciation
+  - widget_type: CodexLabelWithLargeIcon
+    text: 玻璃吹制
+    style: BodyWhite
+    image: floor_glass_0__ui
+    link_id: glassfurnishings
+  - widget_type: CodexLabelWithLargeIcon
+    text: 生物工程
+    style: BodyWhite
+    image: genetic_analysisstation_0__ui
+    link_id: bioengineering
+  - widget_type: CodexLabelWithLargeIcon
+    text: 生物舒适
+    style: BodyWhite
+    image: critter_condo_0__ui
+    link_id: animalcomfort
+  - widget_type: CodexLabelWithLargeIcon
+    text: 电力调节
+    style: BodyWhite
+    image: batterymed_0__ui
+    link_id: powerregulation
+  - widget_type: CodexLabelWithLargeIcon
+    text: 病原体诊断
+    style: BodyWhite
+    image: gas_germs_sensor_0__ui
+    link_id: medicineiii
+  - widget_type: CodexLabelWithLargeIcon
+    text: 空气系统
+    style: BodyWhite
+    image: electrolyzer_0__ui
+    link_id: improvedoxygen
+  - widget_type: CodexLabelWithLargeIcon
+    text: 精致翻修
+    style: BodyWhite
+    image: firepole_0__ui
+    link_id: refinedobjects
+  - widget_type: CodexLabelWithLargeIcon
+    text: 精馏
+    style: BodyWhite
+    image: algae_distillery_0__ui
+    link_id: distillation
+  - widget_type: CodexLabelWithLargeIcon
+    text: 纺织生产
+    style: BodyWhite
+    image: clothingfactory_0__ui
+    link_id: clothing
+  - widget_type: CodexLabelWithLargeIcon
+    text: 美食制备
+    style: BodyWhite
+    image: cookstation_gourmet_0__ui
+    link_id: finerdining
+  - widget_type: CodexLabelWithLargeIcon
+    text: 职业管理
+    style: BodyWhite
+    image: watercooler_0__ui
+    link_id: jobs
+  - widget_type: CodexLabelWithLargeIcon
+    text: 艺术
+    style: BodyWhite
+    image: painting_off_0__ui
+    link_id: fineart
+  - widget_type: CodexLabelWithLargeIcon
+    text: 艺术表达
+    style: BodyWhite
+    image: flowervase_wall_0__ui
+    link_id: artistry
+  - widget_type: CodexLabelWithLargeIcon
+    text: 药物学
+    style: BodyWhite
+    image: apothecary_0__ui
+    link_id: medicinei
+  - widget_type: CodexLabelWithLargeIcon
+    text: 蛮力精炼
+    style: BodyWhite
+    image: rockrefinery_0__ui
+    link_id: basicrefinement
+  - widget_type: CodexLabelWithLargeIcon
+    text: 豪华家装
+    style: BodyWhite
+    image: elegantbed_0__ui
+    link_id: luxury
+  - widget_type: CodexLabelWithLargeIcon
+    text: 超热锻造
+    style: BodyWhite
+    image: glassrefinery_0__ui
+    link_id: hightempforging
+  - widget_type: CodexLabelWithLargeIcon
+    text: 辐射粒子控制
+    style: BodyWhite
+    image: radbolt_battery_0__ui
+    link_id: nuclearstorage
+  - widget_type: CodexLabelWithLargeIcon
+    text: 辐射粒子推进
+    style: BodyWhite
+    image: rocket_hep_engine_0__ui
+    link_id: nuclearpropulsion
+  - widget_type: CodexLabelWithLargeIcon
+    text: 辐射精炼
+    style: BodyWhite
+    image: generatornuclear_0__ui
+    link_id: nuclearrefinement
+  - widget_type: CodexLabelWithLargeIcon
+    text: 辐射防护
+    style: BodyWhite
+    image: suit_leadsuit_0__ui
+    link_id: radiationprotection
+  - widget_type: CodexLabelWithLargeIcon
+    text: 运载管道
+    style: BodyWhite
+    image: tube_launcher_0__ui
+    link_id: traveltubes
+  - widget_type: CodexLabelWithLargeIcon
+    text: 进阶材料科学研究
+    style: BodyWhite
+    image: radiation_collector_0__ui
+    link_id: advancednuclearresearch
+  - widget_type: CodexLabelWithLargeIcon
+    text: 通用传感器
+    style: BodyWhite
+    image: pressureswitch_0__ui
+    link_id: genericsensors
+  - widget_type: CodexLabelWithLargeIcon
+    text: 通知系统
+    style: BodyWhite
+    image: hammer_0__ui
+    link_id: notificationsystems
+  - widget_type: CodexLabelWithLargeIcon
+    text: 通风
+    style: BodyWhite
+    image: utilities_gas_0__ui
+    link_id: gaspiping
+  - widget_type: CodexLabelWithLargeIcon
+    text: 除污
+    style: BodyWhite
+    image: co2filter_0__ui
+    link_id: directedairstreams
+  - widget_type: CodexLabelWithLargeIcon
+    text: 靶向药物
+    style: BodyWhite
+    image: bed_medical_0__ui
+    link_id: medicineiv
+  - widget_type: CodexLabelWithLargeIcon
+    text: 食物再利用
+    style: BodyWhite
+    image: juicer_0__ui
+    link_id: foodrepurposing
+  - widget_type: CodexLabelWithLargeIcon
+    text: 食物制备
+    style: BodyWhite
+    image: cookstation_0__ui
+    link_id: finedining
+  - widget_type: CodexLabelWithLargeIcon
+    text: 高级内燃机
+    style: BodyWhite
+    image: rocket_sugar_engine_0__ui
+    link_id: spacecombustion
+  - widget_type: CodexLabelWithLargeIcon
+    text: 高级卫生
+    style: BodyWhite
+    image: decontamination_shower_0__ui
+    link_id: advancedsanitation
+  - widget_type: CodexLabelWithLargeIcon
+    text: 高级咖啡
+    style: BodyWhite
+    image: espresso_machine_0__ui
+    link_id: precisionplumbing
+  - widget_type: CodexLabelWithLargeIcon
+    text: 高级气体流动
+    style: BodyWhite
+    image: rocket_co2_engine_0__ui
+    link_id: spacegas
+  - widget_type: CodexLabelWithLargeIcon
+    text: 高级电力调节
+    style: BodyWhite
+    image: utilities_electric_insulated_0__ui
+    link_id: advancedpowerregulation
+  - widget_type: CodexLabelWithLargeIcon
+    text: 高级研究
+    style: BodyWhite
+    image: research_type_beta_icon
+    link_id: advancedresearch
+  - widget_type: CodexLabelWithLargeIcon
+    text: 高级自动化
+    style: BodyWhite
+    image: logic_and_0__ui
+    link_id: logiccircuits
+  - widget_type: CodexLabelWithLargeIcon
+    text: 高速破坏
+    style: BodyWhite
+    image: rocket_nosecone_gathering_0__ui
+    link_id: highvelocitydestruction
+  - widget_type: CodexLabelWithLargeIcon
+    text: 高速运输
+    style: BodyWhite
+    image: rail_gun_0__ui
+    link_id: highvelocitytransport
+  - widget_type: CodexLabelWithLargeIcon
+    text: 高雅文化
+    style: BodyWhite
+    image: painting_wide_off_0__ui
+    link_id: refractivedecor
+  layout: Grid
+- contents:
+  - widget_type: CodexSpacer
+  layout: Vertical

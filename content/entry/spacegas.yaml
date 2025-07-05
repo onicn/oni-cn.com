@@ -1,0 +1,66 @@
+id: SPACEGAS
+parent_id: TECH
+name: 高级气体流动
+disabled: False
+search_only: False
+category: TECH
+sort_string: 高级气体流动
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="SPACEGAS">高级气体流动</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 供火箭使用的<link="ELEMENTSGAS">气体</link>引擎和运输舱。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="PRESSUREMANAGEMENT">气压管理</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: rocket_co2_engine_0__ui
+  - widget_type: CodexText
+    text: <link="CO2ENGINE">二氧化碳引擎</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: conduit_port_gas_loader_0__ui
+  - widget_type: CodexText
+    text: <link="MODULARLAUNCHPADPORTGAS">火箭端口气体装载器</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: conduit_port_gas_unloader_0__ui
+  - widget_type: CodexText
+    text: <link="MODULARLAUNCHPADPORTGASUNLOADER">火箭端口气体卸载器</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: rocket_storage_gas_small_0__ui
+  - widget_type: CodexText
+    text: <link="GASCARGOBAYSMALL">气罐货舱</link>
+    style: Body
+  layout: Horizontal

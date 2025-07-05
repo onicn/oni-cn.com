@@ -1,0 +1,71 @@
+id: INCOMING
+name: 迫在眉睫
+title: STRINGS.CODEX.INVESTIGATIONS.DLC4_INCOMINGASTEROID.TITLE
+disabled: False
+search_only: False
+category: JOURNALS
+sort_string: 迫在眉睫
+required_dlc_ids:
+- DLC4_ID
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 迫在眉睫
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：三
+    style: Subtitle
+  layout: Vertical
+  lock_id: journal_incoming
+- contents:
+  - widget_type: CodexText
+    text: >+
+      <smallcaps>[声纹识别系统初始化完成]
+
+      [识别编号：A001、B111]</smallcaps>
+
+
+      [录音开始]
+
+
+      奥莉维亚：所以说……我们加速了世界末日？
+
+
+      杰姬：从某些标准看，是的。但这改变不了什么。
+
+
+      奥莉维亚：这改变了一切，杰姬！
+
+
+      杰姬：即使[受屏蔽]科技缩短了下一颗小行星撞击的时间——
+
+
+      奥莉维亚：那可不止缩短，还提高了撞击几率！
+
+
+      杰姬：——撞击时间也不可能少于一百年。
+
+
+      杰姬：这足够我们制定损害控制方案了。
+
+
+      奥莉维亚：根据模型推算，原本的撞击时间可能超过一<i>亿</i>年！
+
+
+      杰姬：那你觉得没有我们现在的研究突破，人类能撑过其中多少年？
+
+
+      奥莉维亚：我-我只是觉得我们没法确定……
+
+
+      奥莉维亚：唯一能确定的是，要是停止[受屏蔽]的研究，最后将无人生还。
+
+
+      [录音结束]
+
+
+      ------------------
+
+    style: Body
+  layout: Vertical
+  lock_id: journal_incoming

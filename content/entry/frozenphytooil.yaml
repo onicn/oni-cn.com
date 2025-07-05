@@ -1,0 +1,91 @@
+id: FROZENPHYTOOIL
+parent_id: ELEMENTSSOLID
+name: 凝冻植物润滑油
+disabled: False
+search_only: False
+category: ELEMENTSSOLID
+sort_string: 凝冻植物润滑油
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="FROZENPHYTOOIL">凝冻植物润滑油</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: frozen_brine_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: frozen_brine_0__ui
+      text1: 凝冻植物润滑油
+      text2: 1000克
+      link_id: frozenphytooil
+    produce:
+    - image: element_liquid
+      color: 98A82FFF
+      text1: 植物润滑油
+      text2: 1000克
+      link_id: phytooil
+    fabricator:
+      image: crew_state_temp_up
+      text1: -33.1ºC
+      tooltip: 温度高于-33.1ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换于
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: 98A82FFF
+      text1: 植物润滑油
+      text2: 1000克
+      link_id: phytooil
+    produce:
+    - image: frozen_brine_0__ui
+      text1: 凝冻植物润滑油
+      text2: 1000克
+      link_id: frozenphytooil
+    fabricator:
+      image: crew_state_temp_down
+      text1: -33.1ºC
+      tooltip: 温度低于-33.1ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      凝冻植物润滑油是一种冻结成<link="ELEMENTSSOLID">固态</link>的浓而滑的<link="SLIME">菌泥</link>提取物。
+
+
+      资源种类：可液化物
+
+      熔点：-33.1ºC
+
+      硬度：<color=#71ABCFFF>2（非常柔软）</color>
+
+
+      比热容：0.900 (DTU/g)/ºC
+
+      热导率：2.000 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.9
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：溜滑, <link="ELEMENTSSOLID">固体</link>, 可液化物
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

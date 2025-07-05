@@ -1,0 +1,219 @@
+id: ICEBELLYPOOP
+parent_id: ELEMENTSSOLID
+name: 绒犸兔碎糜
+disabled: False
+search_only: False
+category: ELEMENTSSOLID
+sort_string: 绒犸兔碎糜
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="ICEBELLYPOOP">绒犸兔碎糜</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: bammoth_poop_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 磷矿
+    require:
+    - image: bammoth_poop_0__ui
+      text1: 绒犸兔碎糜
+      text2: 120千克
+      link_id: icebellypoop
+    produce:
+    - image: phosphorite_0__ui
+      text1: 磷矿
+      text2: 32千克
+      link_id: phosphorite
+    - image: clay_0__ui
+      text1: 粘土
+      text2: 88千克
+      link_id: clay
+    fabricator:
+      image: rockrefinery_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 碎石机
+      text2: 40秒
+      link_id: rockcrusher
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: purpleroot_0__ui
+      text1: 羽叶果薯植株
+      text2: 44% 生长进度/周期
+      link_id: carrotplant
+    produce:
+    - image: bammoth_poop_0__ui
+      text1: 绒犸兔碎糜
+      text2: 30千克/周期
+      link_id: icebellypoop
+    fabricator:
+      image: ice_belly_0__king_ui
+      text1: 皇犸兔
+      link_id: GOLDBELLY
+  - widget_type: CodexConversionPanel
+    require:
+    - image: purplerootvegetable_0__ui
+      text1: 羽叶果薯
+      text2: 1,778千卡/周期
+      tooltip: 品质：糟糕 [0]
+      link_id: carrot
+    produce:
+    - image: bammoth_poop_0__ui
+      text1: 绒犸兔碎糜
+      text2: 30千克/周期
+      link_id: icebellypoop
+    fabricator:
+      image: ice_belly_0__king_ui
+      text1: 皇犸兔
+      link_id: GOLDBELLY
+  - widget_type: CodexConversionPanel
+    require:
+    - image: rootfries_0__ui
+      text1: 果薯条
+      text2: 1,350千卡/周期
+      tooltip: 品质：良好 [+3]
+      link_id: friescarrot
+    produce:
+    - image: bammoth_poop_0__ui
+      text1: 绒犸兔碎糜
+      text2: 30千克/周期
+      link_id: icebellypoop
+    fabricator:
+      image: ice_belly_0__king_ui
+      text1: 皇犸兔
+      link_id: GOLDBELLY
+  - widget_type: CodexConversionPanel
+    require:
+    - image: beanplant_0__ui
+      text1: 小吃芽
+      text2: 14% 生长进度/周期
+      link_id: beanplant
+    produce:
+    - image: bammoth_poop_0__ui
+      text1: 绒犸兔碎糜
+      text2: 30千克/周期
+      link_id: icebellypoop
+    fabricator:
+      image: ice_belly_0__king_ui
+      text1: 皇犸兔
+      link_id: GOLDBELLY
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_beanplant_0__ui
+      text1: 小吃豆
+      text2: 1.62单位/周期
+      link_id: bean
+    produce:
+    - image: bammoth_poop_0__ui
+      text1: 绒犸兔碎糜
+      text2: 30千克/周期
+      link_id: icebellypoop
+    fabricator:
+      image: ice_belly_0__king_ui
+      text1: 皇犸兔
+      link_id: GOLDBELLY
+  - widget_type: CodexConversionPanel
+    require:
+    - image: purpleroot_0__ui
+      text1: 羽叶果薯植株
+      text2: 44% 生长进度/周期
+      link_id: carrotplant
+    produce:
+    - image: bammoth_poop_0__ui
+      text1: 绒犸兔碎糜
+      text2: 30千克/周期
+      link_id: icebellypoop
+    fabricator:
+      image: ice_belly_0__ui
+      text1: 绒犸兔
+      link_id: ICEBELLY
+  - widget_type: CodexConversionPanel
+    require:
+    - image: purplerootvegetable_0__ui
+      text1: 羽叶果薯
+      text2: 1,778千卡/周期
+      tooltip: 品质：糟糕 [0]
+      link_id: carrot
+    produce:
+    - image: bammoth_poop_0__ui
+      text1: 绒犸兔碎糜
+      text2: 30千克/周期
+      link_id: icebellypoop
+    fabricator:
+      image: ice_belly_0__ui
+      text1: 绒犸兔
+      link_id: ICEBELLY
+  - widget_type: CodexConversionPanel
+    require:
+    - image: rootfries_0__ui
+      text1: 果薯条
+      text2: 1,350千卡/周期
+      tooltip: 品质：良好 [+3]
+      link_id: friescarrot
+    produce:
+    - image: bammoth_poop_0__ui
+      text1: 绒犸兔碎糜
+      text2: 30千克/周期
+      link_id: icebellypoop
+    fabricator:
+      image: ice_belly_0__ui
+      text1: 绒犸兔
+      link_id: ICEBELLY
+  - widget_type: CodexConversionPanel
+    require:
+    - image: beanplant_0__ui
+      text1: 小吃芽
+      text2: 14% 生长进度/周期
+      link_id: beanplant
+    produce:
+    - image: bammoth_poop_0__ui
+      text1: 绒犸兔碎糜
+      text2: 30千克/周期
+      link_id: icebellypoop
+    fabricator:
+      image: ice_belly_0__ui
+      text1: 绒犸兔
+      link_id: ICEBELLY
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_beanplant_0__ui
+      text1: 小吃豆
+      text2: 1.62单位/周期
+      link_id: bean
+    produce:
+    - image: bammoth_poop_0__ui
+      text1: 绒犸兔碎糜
+      text2: 30千克/周期
+      link_id: icebellypoop
+    fabricator:
+      image: ice_belly_0__ui
+      text1: 绒犸兔
+      link_id: ICEBELLY
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      非常大只的小动物留下的一份小赠礼。
+
+
+      可以压碎以提取<link="PHOSPHORITE">磷矿</link>和<link="CLAY">粘土</link>。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

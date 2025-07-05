@@ -1,0 +1,162 @@
+id: CERESTOURISM
+name: 生态旅游
+title: STRINGS.CODEX.INVESTIGATIONS.DLC2_ECOTOURISM.TITLE3
+disabled: False
+search_only: False
+category: EMAILS
+sort_string: 生态旅游
+required_dlc_ids:
+- DLC2_ID
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 回复：回复：生态旅游
+    style: Subtitle
+  - widget_type: CodexText
+    text: >
+      <smallcaps>收件人：<b>[受屏蔽]</b>
+
+      发件人：<b>斯特恩主管</b><size=12><alpha=#AA> <jstern@gravitas.nova></size></color></smallcaps>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_cerestourism2
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <indent=5%>太迷人了。我没想到他的分数会这么高，他<i>确实</i>魅力超凡。
+
+
+      要是我能找到一个代替者，或许他就可以为特切纳博士工作。
+
+
+      同时，一切按计划进行……也要保持适当的谨慎。</indent>
+    style: Body
+  - widget_type: CodexText
+    text: >2
+
+      - 斯特恩主管
+
+      <size=11>庄严科技</size>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_cerestourism2
+- contents:
+  - widget_type: CodexText
+    text: 回复：回复：生态旅游
+    style: Subtitle
+  - widget_type: CodexText
+    text: 加密级别：二
+    style: Subtitle
+  layout: Vertical
+  lock_id: email_cerestourism2
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <indent=5%>主管，
+
+
+      明白。不会对此进行进一步评估。
+
+
+      其中的一位居民已经见过奥洛博士了。我在下面附上了他的结果。这些结果和我们的目标不相容，老实说有点可怕。
+
+
+      我是否应该阻止他参加培训？</indent>
+    style: Body
+  - widget_type: CodexText
+    text: >2
+
+      [受屏蔽]
+
+      <size=11>谷神星项目协调员
+
+      庄严科技</size>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_cerestourism2
+- contents:
+  - widget_type: CodexText
+    text: 回复：生态旅游
+    style: Subtitle
+  - widget_type: CodexText
+    text: >
+      <smallcaps>收件人：<b>[受屏蔽]</b>
+
+      发件人：<b>斯特恩主管</b><size=12><alpha=#AA> <jstern@gravitas.nova></size></color></smallcaps>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_cerestourism1
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <indent=5%>这些人是我亲自招募的，因为一些原因工资等级远高于你的。因此，就当他们已经经过预先审查了。
+
+
+      未能满足这个项目的时间线，可能意味着每个时间线都是失败的。我说清楚了吗？</indent>
+    style: Body
+  - widget_type: CodexText
+    text: >2
+
+      - 斯特恩主管
+
+      <size=11>庄严科技</size>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_cerestourism1
+- contents:
+  - widget_type: CodexText
+    text: 生态旅游
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：二
+    style: Subtitle
+  layout: Vertical
+  lock_id: email_cerestourism1
+- contents:
+  - widget_type: CodexText
+    text: >
+      <smallcaps>收件人：<b>斯特恩主管</b><size=12><alpha=#AA> <jstern@gravitas.nova></size></color>
+
+      发件人：<b>[受屏蔽]</b></smallcaps>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_cerestourism1
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <indent=5%>主管，
+
+
+      我已经核查完第一批预期旅居者了。
+
+
+      鉴于申请人没有接受过正式的太空旅行培训，我让奥洛博士对他们的心理和情绪健康进行了彻底的评估。
+
+
+      他的测试完成之后，这些预期居民就会送往生态圆顶开始培训。</indent></color>
+    style: Body
+  - widget_type: CodexText
+    text: >2
+
+      [受屏蔽]
+
+      <size=11>谷神星项目协调员
+
+      庄严科技</size>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_cerestourism1

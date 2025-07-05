@@ -1,0 +1,56 @@
+id: REQUIREMENTCLASSADVANCEDWASHSTATION
+parent_id: BUILDCATEGORYCATEGORY
+name: 铺设管道的洗手站
+disabled: False
+search_only: False
+category: BUILDCATEGORYCATEGORY
+sort_string: 铺设管道的洗手站
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 铺设管道的洗手站
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需要铺设管道才能移除复制人身上传播<link="DISEASE">疾病</link>的病菌的建筑。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 此类别的建筑：
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 淋浴隔间'
+    image: shower_0__ui
+    link_id: shower
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 洗手池'
+    image: wash_sink_0__ui
+    link_id: washsink
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 手部消毒站'
+    image: handsanitizer_0__ui
+    link_id: handsanitizer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 需求于：
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: '    • <link="PLUMBEDBATHROOM">卫生间</link>'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical

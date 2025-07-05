@@ -1,0 +1,179 @@
+id: FOSSIL
+parent_id: ELEMENTSSOLID
+name: 化石
+disabled: False
+search_only: False
+category: ELEMENTSSOLID
+sort_string: 化石
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="FOSSIL">化石</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: fossil_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: fossil_0__ui
+      text1: 化石
+      text2: 1000克
+      link_id: fossil
+    produce:
+    - image: element_liquid
+      color: AE0000FF
+      text1: 岩浆
+      text2: 1000克
+      link_id: magma
+    fabricator:
+      image: crew_state_temp_up
+      text1: 1338.9ºC
+      tooltip: 温度高于1338.9ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换于
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: amber_0__ui
+      text1: 琥珀
+      text2: 1000克
+      link_id: amber
+    produce:
+    - image: element_liquid
+      color: CC8B18FF
+      text1: 树脂
+      text2: 800克
+      link_id: naturalresin
+    - image: fossil_0__ui
+      text1: 化石
+      text2: 200克
+      link_id: fossil
+    fabricator:
+      image: crew_state_temp_up
+      text1: 95ºC
+      tooltip: 温度高于95ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 石灰
+    require:
+    - image: fossil_0__ui
+      text1: 化石
+      text2: 100千克
+      link_id: fossil
+    produce:
+    - image: limestone_0__ui
+      text1: 石灰
+      text2: 5千克
+      link_id: lime
+    - image: sedimentary_rock_0__ui
+      text1: 沉积岩
+      text2: 95千克
+      link_id: sedimentaryrock
+    fabricator:
+      image: rockrefinery_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 碎石机
+      text2: 40秒
+      link_id: rockcrusher
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 远古标本
+    require:
+    - image: diamond_0__ui
+      text1: 钻石
+      text2: 1000克
+      link_id: diamond
+    produce:
+    - image: fossil_0__ui
+      text1: 化石
+      text2: 100千克
+      link_id: fossil
+    fabricator:
+      image: fossil_dig_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 远古标本
+      text2: 80秒
+      link_id: 远古标本
+  - widget_type: CodexRecipePanel
+    text: 植物粉碎机
+    require:
+    - image: amber_0__ui
+      text1: 琥珀
+      text2: 100千克
+      link_id: amber
+    produce:
+    - image: element_liquid
+      color: CC8B18FF
+      text1: 树脂
+      text2: 50千克
+      link_id: naturalresin
+    - image: fossil_0__ui
+      text1: 化石
+      text2: 25千克
+      link_id: fossil
+    - image: sand_0__ui
+      text1: 沙子
+      text2: 25千克
+      link_id: sand
+    fabricator:
+      image: milkpress_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 植物粉碎机
+      text2: 40秒
+      link_id: milkpress
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      化石是一种高度压缩并硬化成矿物状态的有机物质。
+
+
+      它可用作<b>建造材料</b>。
+
+
+      资源种类：<link="BUILDABLERAW">矿物原料</link>
+
+      熔点：1338.9ºC
+
+      硬度：<color=#A3649AFF>50（非常坚硬）</color>
+
+
+      比热容：0.910 (DTU/g)/ºC
+
+      热导率：2.000 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.7
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：<link="FOSSILS">化石</link>, <link="ELEMENTSSOLID">固体</link>, <link="BUILDABLERAW">矿物原料</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

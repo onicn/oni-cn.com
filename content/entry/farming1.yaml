@@ -1,0 +1,55 @@
+id: FARMING1
+parent_id: ROLES
+name: 改良耕种 I
+disabled: False
+search_only: False
+category: ROLES
+sort_string: 改良耕种 I
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="FARMING1">改良耕种 I</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: hat_role_farming1
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 稍微提高复制人的耕种技能，提高收获植物<style="KKeyword">种子</style>的几率
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 工作培训
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexText
+    text: 工作培训会自动提供永久的特质和属性提升，即使复制人更换工作，这些特质和属性提升也会保留下来。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>+2</b><style="KKeyword">农业</style>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 升职机会
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexText
+    text: 晋升会在现有工作培训的基础上带来更多属性提升和特质。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="FARMING2">作物照料</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="RANCHING1">小动物养殖 I</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

@@ -1,0 +1,71 @@
+id: CORIUM
+parent_id: ELEMENTSSOLID
+name: 堆芯熔融物
+disabled: False
+search_only: False
+category: ELEMENTSSOLID
+sort_string: 堆芯熔融物
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="CORIUM">堆芯熔融物</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: radium_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: radium_0__ui
+      text1: 堆芯熔融物
+      text2: 1000克
+      link_id: corium
+    produce:
+    - image: element_gas
+      color: 00FF2CFF
+      text1: 核尘埃
+      text2: 1000克
+      link_id: fallout
+    fabricator:
+      image: crew_state_temp_up
+      text1: 626.9ºC
+      tooltip: 温度高于626.9ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      一种由核废料和熔融反应堆材料组成的放射性混合物。
+
+
+      会释放<link="FALLOUT">核尘埃</link>气体。
+
+
+      资源种类：其他
+
+      熔点：626.9ºC
+
+      硬度：<color=#BD597FFF>251（几乎坚不可摧）</color>
+
+
+      比热容：7.440 (DTU/g)/ºC
+
+      热导率：6.000 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.3
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：<link="ELEMENTSSOLID">固体</link>, 其他
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

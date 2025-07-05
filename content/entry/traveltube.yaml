@@ -1,0 +1,57 @@
+id: TRAVELTUBE
+parent_id: BUILDCATEGORYBASE
+name: 运载管道
+disabled: False
+search_only: False
+category: BUILDCATEGORYBASE
+sort_string: 运载管道
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="TRAVELTUBE">运载管道</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 运载管道
+    style: Body
+    image: research_type_alpha_icon
+    link_id: traveltubes
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: travel_tube_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      通过<link="TRAVELTUBEENTRANCE">运载管道入口</link>快速将复制人运输到运载管道末端。
+
+
+      仅能运输复制人。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：1格宽x1格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：10秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="PLASTIC">塑料</link>50千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：+5（范围：1格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>1</b>格内提高<b><b>+5</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>只有在运载管道下方有安全着陆区域时，复制人才会从运载管道中出来。</i>
+    style: Body
+  layout: Vertical

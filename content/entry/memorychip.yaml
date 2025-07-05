@@ -1,0 +1,55 @@
+id: MEMORYCHIP
+name: 复制人记忆解决方案
+title: STRINGS.CODEX.B50_MEMORYCHIP.TITLE
+disabled: False
+search_only: False
+category: EMAILS
+sort_string: 复制人记忆解决方案
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 复制人记忆解决方案
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：二
+    style: Subtitle
+  layout: Vertical
+  lock_id: email_memorychip
+- contents:
+  - widget_type: CodexText
+    text: >
+      <smallcaps>收件人：<b>斯特恩主管</b><alpha=#AA><size=12> <jstern@gravitas.nova></size></color>
+
+      发件人：<b>[受屏蔽]</b></smallcaps>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_memorychip
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <indent=5%>主管，
+
+
+      我对如何解决复制人记忆问题有一个想法。
+
+
+      与其尝试激活实验体的旧记忆，我们不如把在殖民地生存的所有必需信息融入打印过程之中？
+
+
+      近年来，数据工程可储存的数据量呈指数级增长。我们应该充分利用技术发展带来的这一优势。</indent>
+    style: Body
+  - widget_type: CodexText
+    text: >2
+
+      [受屏蔽]
+
+      <size=11>工程部
+
+      庄严科技</size>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_memorychip

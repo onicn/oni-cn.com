@@ -1,0 +1,52 @@
+id: MEDICINEII
+parent_id: TECH
+name: 医疗设备
+disabled: False
+search_only: False
+category: TECH
+sort_string: 医疗设备
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="MEDICINEII">医疗设备</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 医生照顾病人的基础必需品。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="MEDICINEI">药物学</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: treatment_chair_0__ui
+  - widget_type: CodexText
+    text: <link="DOCTORSTATION">医务站</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: handsanitizer_0__ui
+  - widget_type: CodexText
+    text: <link="HANDSANITIZER">手部消毒站</link>
+    style: Body
+  layout: Horizontal

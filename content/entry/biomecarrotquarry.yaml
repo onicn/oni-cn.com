@@ -1,0 +1,100 @@
+id: BIOMECARROTQUARRY
+parent_id: BIOMES
+name: 冷池生态
+disabled: False
+search_only: False
+category: BIOMES
+sort_string: BIOMECARROTQUARRY
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 冷池生态
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 冷池生态的寒冷环境具有丰富的<link="ETHANOL">乙醇</link>湖，是想要收集燃料资源的殖民地的绝佳去处。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      <link="CARROTPLANT">羽叶果薯</link>是一种高卡路里作物，在<link="OXYGEN">氧气</link>、<link="CONTAMINATEDOXYGEN">污染氧</link>和<link="CARBONDIOXIDE">二氧化碳</link>环境中生长。
+
+
+      它们构成了<link="BELLYSPECIES">绒犸兔</link>的全部饮食。饲养这些温和的巨兽很有趣，它们也能提供<link="MEAT">肉</link>、<link="PHOSPHORITE">磷矿</link>、<link="CINNABARORE">朱砂矿</link>和<link="BASICFABRIC">芦苇纤维</link>。
+
+
+      后者尤为重要，因为我的复制人想要在低温环境中生存，就必须穿上温暖的隔热衣物。
+
+
+      最初的调查还发现了这片富<link="OXYGEN">氧</link>环境中的丰富<link="IRONORE">铁矿</link>和<link="IGNEOUSROCK">火成岩</link>，对于工业项目非常理想。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 元素
+    style: Subtitle
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 二氧化碳
+    color: 000000FF
+    image: element_gas
+    link_id: carbondioxide
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 蔗糖
+    image: sucrose_0__ui
+    link_id: sucrose
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 乙醇
+    color: 00FF6AFF
+    image: element_liquid
+    link_id: ethanol
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 火成岩
+    image: igneous_rock_0__ui
+    link_id: igneousrock
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 氧气
+    color: B7FFFFFF
+    image: element_gas
+    link_id: oxygen
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 铁矿
+    image: hematite_0__ui
+    link_id: ironore
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 冰
+    image: ice_0__ui
+    link_id: ice
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 植物
+    style: Subtitle
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 羽叶果薯植株
+    image: purpleroot_0__ui
+    link_id: carrotplant
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 小动物
+    style: Subtitle
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 绒犸兔
+    image: ice_belly_0__ui
+    link_id: icebelly
+  layout: Vertical

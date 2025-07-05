@@ -1,0 +1,57 @@
+id: LOGICGATEDEMULTIPLEXER
+parent_id: BUILDCATEGORYAUTOMATION
+name: 信号分配器
+disabled: False
+search_only: False
+category: BUILDCATEGORYAUTOMATION
+sort_string: 信号分配器
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="ALGAEDISTILLERY">信号分配器</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 多路传输
+    style: Body
+    image: research_type_alpha_icon
+    link_id: multiplexing
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: logic_demultiplexer_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      由控制输入端选择，使输入的信号从四个可能的输出端中的其中一个进行输出。
+
+
+      将<b><style="logic_on">绿色信号</style></b>或<b><style="logic_off">红色信号</style></b>输出到两个控制输入端来决定选择哪个输出端。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：3格宽x4格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：3秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="REFINEDMETAL">精炼金属</link>25千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：-5（范围：1格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>1</b>格内降低<b><b>-5</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>信号分配器可以用于选择哪条电路能接收到给定的自动化信号。</i>
+    style: Body
+  layout: Vertical

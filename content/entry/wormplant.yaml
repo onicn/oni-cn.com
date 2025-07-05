@@ -1,0 +1,105 @@
+id: WORMPLANT
+parent_id: PLANTS
+name: 贫瘠虫果芽
+disabled: False
+search_only: False
+category: PLANTS
+sort_string: 贫瘠虫果芽
+required_dlc_ids:
+- EXPANSION1_ID
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 贫瘠虫果芽
+    style: Title
+  - widget_type: CodexText
+    text: 食用性植物
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      贫瘠虫果芽细长的茎限制了营养物质和酶向结果枝条的分布。这导致了可靠但相对无味的果实。
+
+
+      将<link="DIVERGENTSPECIES">异化虫</link>引入这些植物附近可以使其发育成<link="SUPERWORMPLANT">虫果芽</link>，具有更强的维管系统与更高品质的果实。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: wormwood_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 成长自
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: seed_wormwood_0__ui
+  - widget_type: CodexText
+    text: <link="WORMPLANT">虫果种子</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 详情
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexText
+    text: >-
+      贫瘠虫果芽能产出<link="WORMBASICFRUIT">贫瘠虫果</link>作为<link="FOOD">食物</link>。
+
+
+      如果它被<link="DIVERGENTSPECIES">异化虫</link>类小动物照料，会产生高品质的虫果。
+    style: Body
+  - widget_type: CodexText
+    text: >-
+      <b>生长需求</b>：
+          • 最大<link="RADIATION">辐射</link>：9,800拉德/周期
+          • 生长周期：4.0周期
+          • <link="HEAT">温度</link>：15至50ºC
+          • <link="ATMOSPHERE">气压</link>：最低150克
+          • <link="ATMOSPHERE">环境</link>：
+              • <link="OXYGEN">氧气</link>
+              • <link="CONTAMINATEDOXYGEN">污染氧</link>
+              • <link="CARBONDIOXIDE">二氧化碳</link>
+          • <link="SULFUR">硫</link>：-10千克/周期
+          • 农地
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      <b>效果</b>：
+          • <link="WORMBASICFRUIT">贫瘠虫果</link>：800千卡
+          • 基础<link="PLANTS">种子</link>收获几率：10%
+          • <link="DECOR">装饰度</link>：-5（范围：1格）
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: sulfur_0__ui
+      text1: 硫
+      text2: 10千克/周期
+      link_id: sulfur
+    produce:
+    - image: wormwood_basic_fruit_0__ui
+      text1: 贫瘠虫果
+      text2: 200千卡/周期
+      tooltip: 品质：糟糕 [0]
+      link_id: wormbasicfruit
+    fabricator:
+      image: wormwood_0__ui
+      text1: 贫瘠虫果芽
+      link_id: WORMPLANT
+  layout: Vertical

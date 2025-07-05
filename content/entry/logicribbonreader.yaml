@@ -1,0 +1,79 @@
+id: LOGICRIBBONREADER
+parent_id: BUILDCATEGORYAUTOMATION
+name: 线组读取器
+disabled: False
+search_only: False
+category: BUILDCATEGORYAUTOMATION
+sort_string: 线组读取器
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="LOGICRIBBONREADER">线组读取器</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 并行自动化
+    style: Body
+    image: research_type_alpha_icon
+    link_id: parallelautomation
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: logic_ribbon_reader_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 读取来自<link="LOGICRIBBON">信号线组</link>特定位的<b><style="logic_on">绿色信号</style></b>或<b><style="logic_off">红色信号</style></b>并输出到<link="LOGICWIRE">信号线</link>。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：2格宽x1格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：30秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="REFINEDMETAL">精炼金属</link>25千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LOGIC">信号输入端</link>'
+    tooltip: 当接收到信号时，输入端会使这个建筑一种状态发生变化
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    四位输入端'
+    tooltip: >-
+      输入端行为：
+
+      • <b><style="logic_on">绿色信号</style></b>：从选定位读取<b><style="logic_on">绿色信号</style></b>
+
+      • <b><style="logic_off">红色信号</style></b>：从选定位读取<b><style="logic_off">红色信号</style></b>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LOGIC">信号输出端</link>'
+    tooltip: 当这个建筑状态发生变化时，输出端会输出一个信号
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    位读取'
+    tooltip: >-
+      输出端行为：
+
+      • <b><style="logic_on">绿色信号</style></b>：对与之相连的<link="LOGICWIRE">信号线</link>输出<b><style="logic_on">绿色信号</style></b>
+
+      • <b><style="logic_off">红色信号</style></b>：对与之相连的<link="LOGICWIRE">信号线</link>输出<b><style="logic_off">红色信号</style></b>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：-5（范围：1格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>1</b>格内降低<b><b>-5</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>将<link="LOGICRIBBON">信号线组</link>单个位的信号输出到<link="LOGICWIRE">信号线</link>。</i>
+    style: Body
+  layout: Vertical

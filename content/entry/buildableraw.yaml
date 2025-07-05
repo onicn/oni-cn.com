@@ -1,0 +1,240 @@
+id: BUILDABLERAW
+parent_id: BUILDINGMATERIALCLASSES
+name: 矿物原料
+disabled: False
+search_only: False
+category: BUILDINGMATERIALCLASSES
+sort_string: 矿物原料
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="BUILDABLERAW">矿物原料</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 矿物原料是未精炼的有机固体。几乎所有的矿物原料都能通过<link="ROCKCRUSHER">碎石机</link>处理，而少数矿物需要用到<link="SUPERMATERIALREFINERY">分子熔炉</link>。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 异构树液
+    image: isoresin_0__ui
+    link_id: isoresin
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 隔热质
+    image: super_insulator_0__ui
+    link_id: superinsulator
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 页岩
+    image: shale_0__ui
+    link_id: shale
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 陶瓷
+    image: ceramic_0__ui
+    link_id: ceramic
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 黑曜石
+    image: obsidian_0__ui
+    link_id: obsidian
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 火成岩
+    image: igneous_rock_0__ui
+    link_id: igneousrock
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 花岗岩
+    image: granite_0__ui
+    link_id: granite
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 沉积岩
+    image: sedimentary_rock_0__ui
+    link_id: sedimentaryrock
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 砂岩
+    image: sand_stone_0__ui
+    link_id: sandstone
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 石墨
+    image: graphite_0__ui
+    link_id: graphite
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 镁铁质岩
+    image: igneous_rock_0__ui
+    link_id: maficrock
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 化石
+    image: fossil_0__ui
+    link_id: fossil
+  layout: Grid
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建造用处
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 空气净化器
+    image: co2filter_0__ui
+    link_id: airfilter
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 沙滩椅
+    image: beach_chair_0__ui
+    link_id: beachchair
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 床铺
+    image: bedlg_0__ui
+    link_id: bed
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 液桶排倒器
+    image: liquidator_0__ui
+    link_id: bottleemptier
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 地毯砖
+    image: floor_carpet_0__ui
+    link_id: carpettile
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 堆肥堆
+    image: compost_0__ui
+    link_id: compost
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 边角饰件
+    image: corner_tile_0__ui
+    link_id: cornermoulding
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 小动物公寓
+    image: critter_condo_0__ui
+    link_id: crittercondo
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 天花板饰件
+    image: crown_moulding_0__ui
+    link_id: crownmoulding
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 医务站
+    image: treatment_chair_0__ui
+    link_id: doctorstation
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 迷你舱
+    image: porta_pod_y_0__ui
+    link_id: exobaseheadquarters
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 干板墙
+    image: walls_0__ui
+    link_id: exteriorwall
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 花盆
+    image: flowervase_0__ui
+    link_id: flowervase
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 气体管桥
+    image: utilitygasbridge_0__ui
+    link_id: gasconduitbridge
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 气体管道
+    image: utilities_gas_0__ui
+    link_id: gasconduit
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 玻璃熔炉
+    image: glassrefinery_0__ui
+    link_id: glassforge
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 雅致的纪念碑
+    image: gravestone_0__ui
+    link_id: grave
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 辐射粒子变向器
+    image: orb_transporter_0__ui
+    link_id: highenergyparticleredirector
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 辐射粒子发生器
+    image: radiation_collector_0__ui
+    link_id: highenergyparticlespawner
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 隔热气体管道
+    image: utilities_gas_insulated_0__ui
+    link_id: insulatedgasconduit
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 隔热砖
+    image: floor_insulated_0__ui
+    link_id: insulationtile
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 基座
+    image: pedestal_0__ui
+    link_id: itempedestal
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 梯子
+    image: ladder_0__ui
+    link_id: ladder
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 液体管桥
+    image: utilityliquidbridge_0__ui
+    link_id: liquidconduitbridge
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 手压泵
+    image: waterpump_0__ui
+    link_id: liquidpumpingstation
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 人力辐射粒子发生器
+    image: manual_radbolt_generator_0__ui
+    link_id: highenergyparticlespawner
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 按摩床
+    image: masseur_0__ui
+    link_id: massagetable
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 分诊床
+    image: medical_cot_0__ui
+    link_id: medicalcot
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 金属精炼器
+    image: metalrefinery_0__ui
+    link_id: metalrefinery
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 植物粉碎机
+    image: milkpress_0__ui
+    link_id: milkpress
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 户外厕所
+    image: outhouse_0__ui
+    link_id: outhouse
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 口粮箱
+    image: rationbox_0__ui
+    link_id: rationbox
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 冰箱
+    image: fridge_0__ui
+    link_id: refrigerator
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 大型雕塑块
+    image: sculpture_0__ui
+    link_id: sculpture
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 泥浆分离器
+    image: sludge_press_0__ui
+    link_id: sludgepress
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 雕塑块
+    image: sculpture_1x2_0__ui
+    link_id: smallsculpture
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 存储箱
+    image: storagelocker_0__ui
+    link_id: storagelocker
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 砖块
+    image: floor_basic_0__ui
+    link_id: tile
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 洗手盆
+    image: wash_basin_0__ui
+    link_id: washbasin
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 饮水机
+    image: watercooler_0__ui
+    link_id: watercooler
+  layout: Grid

@@ -1,0 +1,157 @@
+id: SUPERINSULATOR
+parent_id: ELEMENTSSOLID
+name: 隔热质
+disabled: False
+search_only: False
+category: ELEMENTSSOLID
+sort_string: 隔热质
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="SUPERINSULATOR">隔热质</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: super_insulator_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: super_insulator_0__ui
+      text1: 隔热质
+      text2: 1000克
+      link_id: superinsulator
+    produce:
+    - image: element_liquid
+      color: E5290EFF
+      text1: 熔融钨
+      text2: 850克
+      link_id: moltentungsten
+    - image: element_gas
+      color: 76245DFF
+      text1: 高硫天然气
+      text2: 150克
+      link_id: sourgas
+    fabricator:
+      image: crew_state_temp_up
+      text1: 3621.9ºC
+      tooltip: 温度高于3621.9ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 沙子
+    require:
+    - image: super_insulator_0__ui
+      text1: 隔热质
+      text2: 100千克
+      link_id: superinsulator
+    produce:
+    - image: sand_0__ui
+      text1: 沙子
+      text2: 100千克
+      link_id: sand
+    fabricator:
+      image: rockrefinery_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 碎石机
+      text2: 40秒
+      link_id: rockcrusher
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 分子熔炉
+    require:
+    - image: isoresin_0__ui
+      text1: 异构树液
+      text2: 15千克
+      link_id: isoresin
+    - image: katairite_0__ui
+      text1: 深渊晶石
+      text2: 80千克
+      link_id: katairite
+    - image: swampreedwool_0__ui
+      text1: 芦苇纤维
+      text2: 5单位
+      link_id: basicfabric
+    produce:
+    - image: super_insulator_0__ui
+      text1: 隔热质
+      text2: 100千克
+      link_id: superinsulator
+    fabricator:
+      image: supermaterial_refinery_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 分子熔炉
+      text2: 80秒
+      link_id: supermaterialrefinery
+  - widget_type: CodexRecipePanel
+    text: 分子熔炉
+    require:
+    - image: isoresin_0__ui
+      text1: 异构树液
+      text2: 15千克
+      link_id: isoresin
+    - image: katairite_0__ui
+      text1: 深渊晶石
+      text2: 80千克
+      link_id: katairite
+    - image: feather_0__ui
+      text1: 羽毛纤维
+      text2: 5单位
+      link_id: featherfabric
+    produce:
+    - image: super_insulator_0__ui
+      text1: 隔热质
+      text2: 100千克
+      link_id: superinsulator
+    fabricator:
+      image: supermaterial_refinery_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 分子熔炉
+      text2: 80秒
+      link_id: supermaterialrefinery
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      隔热质由再结晶的<link="KATAIRITE">深渊晶石</link>构成，可减缓<link="HEAT">热传导</link>。
+
+
+      资源种类：人造材料
+
+      熔点：3621.9ºC
+
+      硬度：<color=#BD597FFF>200（几乎坚不可摧）</color>
+
+
+      比热容：5.570 (DTU/g)/ºC
+
+      热导率：0.000 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.6
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：<link="BUILDABLERAW">矿物原料</link>, <link="PLUMBABLE">可做水管的物质</link>, 可粉碎物, <link="BUILDABLEANY">一般建造材料</link>, <link="INSULATOR">隔热体</link>, <link="ELEMENTSSOLID">固体</link>, 人造材料
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

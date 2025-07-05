@@ -1,0 +1,176 @@
+id: MISSINGNOTES
+name: 回复：缺失的记录
+title: STRINGS.CODEX.MISSINGNOTES.TITLE
+disabled: False
+search_only: False
+category: EMAILS
+sort_string: 回复：缺失的记录
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 回复：缺失的记录
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：三
+    style: Subtitle
+  layout: Vertical
+  lock_id: email_missingnotes
+- contents:
+  - widget_type: CodexText
+    text: >
+      <smallcaps>收件人：<b>奥洛博士</b><alpha=#AA><size=12> <aolowe@gravitas.nova></size></color>
+
+      发件人：<b>斯特恩主管</b><alpha=#AA><size=12> <jstern@gravitas.nova></size></color></smallcaps>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_missingnotes
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <indent=5%>有问题的文件存在安全风险，因此被处理了。
+
+
+      至于你的邮件：你签署的保密协议非常清楚地写道如何处理来自媒体成员的请求。
+
+
+      到我的办公室见我。</indent>
+    style: Body
+  - widget_type: CodexText
+    text: >2
+
+      - 斯特恩主管
+
+      <size=11>
+
+      庄严科技</size>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_missingnotes
+- contents:
+  - widget_type: CodexText
+    text: 回复：缺失的记录
+    style: Subtitle
+  - widget_type: CodexText
+    text: >
+      <smallcaps>收件人：<b>琼斯博士</b><alpha=#AA><size=12> <ejones@gravitas.nova></size></color>
+
+      发件人：<b>奥洛博士</b><alpha=#AA><size=12> <aolowe@gravitas.nova></size></color></smallcaps>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_missingnotes
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <indent=5%>亲爱的琼斯博士，
+
+      我很抱歉再次打扰你……但我十分确定就是有人干预了我的文件。
+
+
+      自从上周的“小故障”以来，我注意到好几处异样。比如最近的员工工作满意度和安全性的调查，我对此的回应被解密了，我的数据和研究记录的很大一部分都被清除了。我甚至还少了几封电子邮件。
+
+
+      这一切都令我担忧。能请你或苏梅尔斯博士有时间调查一下吗？
+
+
+      非常感谢。
+
+
+      </indent>
+    style: Body
+  - widget_type: CodexText
+    text: >2
+
+      - 奥洛博士
+
+      <size=11>工业与组织心理学家
+
+      庄严科技</size>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_missingnotes
+- contents:
+  - widget_type: CodexText
+    text: 回复：缺失的记录
+    style: Subtitle
+  - widget_type: CodexText
+    text: >
+      <smallcaps>收件人：<b>奥洛博士</b><alpha=#AA><size=12> <aolowe@gravitas.nova></size></color>
+
+      发件人：<b>琼斯博士</b><alpha=#AA><size=12> <ejones@gravitas.nova></size></color></smallcaps>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_missingnotes
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <indent=5%>哦天，阿玛里，你也太夸张了！这可能只是系统网络升级出的一点小错误。没有谁能不通过新的手部扫描仪进入你办公室的。
+
+
+      附言：每个人的工作都是超级隐私的，不只是你的 ;)</indent>
+    style: Body
+  - widget_type: CodexText
+    text: >2
+
+      祝好，
+
+      琼斯博士
+
+      <size=11>信息统计部
+
+      庄严科技</size>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_missingnotes
+- contents:
+  - widget_type: CodexText
+    text: 主题：缺失的记录
+    style: Subtitle
+  - widget_type: CodexText
+    text: >
+      <smallcaps>收件人：<b>琼斯博士</b><alpha=#AA><size=12> <ejones@gravitas.nova></size></color>
+
+      发件人：<b>奥洛博士</b><alpha=#AA><size=12> <aolowe@gravitas.nova></size></color></smallcaps>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_missingnotes
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <indent=5%>你好，琼斯博士，
+
+
+      希望你身体健康。很抱歉打扰你——但我相信有人不正当地访问了我的电脑。
+
+
+      当我早上登陆的时候，“上次登陆”弹窗显示我的电脑在早上2点被访问过。我上次实际登陆是在下午6点，而且我的一些文件不见了。
+
+
+      我的工作隐私是十分重要的。所以能请人帮忙看一下吗？</indent>
+    style: Body
+  - widget_type: CodexText
+    text: >2
+
+      - 奥洛博士
+
+      <size=11>工业与组织心理学家
+
+      庄严科技</size>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_missingnotes

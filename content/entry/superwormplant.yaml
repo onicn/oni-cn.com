@@ -1,0 +1,108 @@
+id: SUPERWORMPLANT
+parent_id: PLANTS
+name: 虫果芽
+disabled: False
+search_only: False
+category: PLANTS
+sort_string: 虫果芽
+required_dlc_ids:
+- EXPANSION1_ID
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 虫果芽
+    style: Title
+  - widget_type: CodexText
+    text: 食用性植物
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      虫果芽与<link="DIVERGENTSPECIES">异化虫</link>类表现出共进化关系。
+
+
+      虽然虫果芽在没有异化虫帮助的情况下也能产生果实，但<link="WORMPLANT">贫瘠虫果</link>是次级版本的虫果，没有与虫果相同的味道和卡路里值。
+
+
+      关于异化虫如何激发虫果芽生长的机制尚未全部为人所知，但在某种程度上可以认为与这些昆虫对植物亲切地咕咕叫的次声“曲调”有关。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: wormwood_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 成长自
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: seed_wormwood_0__ui
+  - widget_type: CodexText
+    text: <link="WORMPLANT">虫果种子</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 详情
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexText
+    text: >-
+      一株虫果芽，在被<link="DIVERGENTSPECIES">异化虫</link>类小动物照料过后已茁壮成长。
+
+
+      它将产生高品质的<link="WORMSUPERFRUIT">虫果</link>。
+    style: Body
+  - widget_type: CodexText
+    text: >-
+      <b>生长需求</b>：
+          • 最大<link="RADIATION">辐射</link>：9,800拉德/周期
+          • 生长周期：8.0周期
+          • <link="HEAT">温度</link>：15至50ºC
+          • <link="ATMOSPHERE">气压</link>：最低150克
+          • <link="ATMOSPHERE">环境</link>：
+              • <link="OXYGEN">氧气</link>
+              • <link="CONTAMINATEDOXYGEN">污染氧</link>
+              • <link="CARBONDIOXIDE">二氧化碳</link>
+          • <link="SULFUR">硫</link>：-10千克/周期
+          • 农地
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      <b>效果</b>：
+          • <link="WORMSUPERFRUIT">虫果</link>：2,000千卡
+          • 基础<link="PLANTS">种子</link>收获几率：10%
+          • <link="DECOR">装饰度</link>：+15（范围：2格）
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: sulfur_0__ui
+      text1: 硫
+      text2: 10千克/周期
+      link_id: sulfur
+    produce:
+    - image: wormwood_super_fruits_0__ui
+      text1: 虫果
+      text2: 250千卡/周期
+      tooltip: 品质：低劣 [+1]
+      link_id: wormsuperfruit
+    fabricator:
+      image: wormwood_0__ui
+      text1: 虫果芽
+      link_id: WORMPLANT
+  layout: Vertical

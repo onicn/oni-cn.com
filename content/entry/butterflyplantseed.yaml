@@ -1,0 +1,136 @@
+id: BUTTERFLYPLANTSEED
+parent_id: FOOD
+name: 拟种
+disabled: False
+search_only: False
+category: FOOD
+sort_string: 拟种
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="BUTTERFLYPLANT">拟种</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: seed_pollinator_plant_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <link="BUTTERFLYPLANT">拟芽</link>的不可食用种子。
+
+
+      可以种下以培育更多的植株，或将其加工成<link="FOOD">食物</link>。
+
+
+      挖掘掩埋物可能会发现拟种。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 品质：标准 [+2]
+    style: Body
+  - widget_type: CodexText
+    text: 卡路里：0千卡
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      冷藏温度：4ºC
+
+      深度冷冻温度：-18ºC
+
+      腐烂时间：8.0周期
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 烘烤拟种
+    require:
+    - image: seed_pollinator_plant_0__ui
+      text1: 拟种
+      text2: 1单位
+      link_id: butterflyplant
+    produce:
+    - image: fried_mimillet_0__ui
+      text1: 烘烤拟种
+      text2: 1,500千卡
+      tooltip: 品质：低劣 [+1]
+      link_id: butterflyfood
+    fabricator:
+      image: cookstation_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 电动烤炉
+      text2: 50秒
+      link_id: cookingstation
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_pollinator_plant_0__ui
+      text1: 拟种
+      text2: 1单位/周期
+      link_id: butterflyplant
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 500克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__trp_ui
+      text1: 热带帕库鱼
+      link_id: PACUTROPICAL
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_pollinator_plant_0__ui
+      text1: 拟种
+      text2: 1单位/周期
+      link_id: butterflyplant
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 500克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__ui
+      text1: 帕库鱼
+      link_id: PACU
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_pollinator_plant_0__ui
+      text1: 拟种
+      text2: 1单位/周期
+      link_id: butterflyplant
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 500克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__glp_ui
+      text1: 大嘴鱼
+      link_id: PACUCLEANER
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require: []
+    produce:
+    - image: seed_pollinator_plant_0__ui
+      text1: 拟种
+      text2: 1单位
+      link_id: butterflyplant
+    fabricator:
+      image: pollinator_0__ui
+      text1: 拟蛾
+      link_id: BUTTERFLY
+  layout: Vertical

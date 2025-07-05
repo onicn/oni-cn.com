@@ -1,0 +1,49 @@
+id: MEETTHEPILOT
+name: 认识飞行员
+title: STRINGS.CODEX.B2_MEETTHEPILOT.TITLE
+disabled: False
+search_only: False
+category: NOTICES
+sort_string: 认识飞行员
+required_dlc_ids:
+- EXPANSION1_ID
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 认识飞行员
+    style: Title
+  - widget_type: CodexText
+    text: 梅娅·约翰森机长
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：一
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+  lock_id: notice_pilot
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <indent=%5>自从她可以走路开始，约翰森机长就一直梦想着飞上天空。在空军基地长大的她非常喜欢头顶飞过的喷气发动机的轰鸣声。
+
+
+      她16岁时，成为了驾驶战斗机的最年轻的飞行员，22岁时，就已经成为太空飞行计划的一员。
+
+
+      4年后，她被庄严科技找到，签订了独家合同，来驾驶我们的航天飞机。在她于庄严科技的时间中，约翰森机长在太空飞行的时间记录超过了1000小时，包括驾驶航天飞机和部署低地球轨道卫星，就在最近她被任命为我们首个民用太空旅游计划的飞行员，这个计划将于明年开始。
+
+
+      庄严科技很高兴能让约翰森机长坐在驾驶位上，带领我们抵达星空……甚至更远的地方！</indent>
+    style: Body
+  layout: Vertical
+  lock_id: notice_pilot
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <indent=%10><smallcaps>
+
+
+      庄严科技出品。</indent>
+    style: Body
+  layout: Vertical
+  lock_id: notice_pilot

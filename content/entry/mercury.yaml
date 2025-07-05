@@ -1,0 +1,176 @@
+id: MERCURY
+parent_id: ELEMENTSLIQUID
+name: 汞
+disabled: False
+search_only: False
+icon_color: 7393B4FF
+category: ELEMENTSLIQUID
+sort_string: 汞
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="MERCURY">汞</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    color: 7393B4FF
+    image: element_liquid
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: 7393B4FF
+      text1: 汞
+      text2: 1000克
+      link_id: mercury
+    produce:
+    - image: element_gas
+      color: 4D6DCAFF
+      text1: 汞蒸气
+      text2: 1000克
+      link_id: mercurygas
+    fabricator:
+      image: crew_state_temp_up
+      text1: 356.8ºC
+      tooltip: 温度高于356.8ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: 7393B4FF
+      text1: 汞
+      text2: 1000克
+      link_id: mercury
+    produce:
+    - image: mercury_refined_0__ui
+      text1: 固态汞
+      text2: 1000克
+      link_id: solidmercury
+    fabricator:
+      image: crew_state_temp_down
+      text1: -38.8ºC
+      tooltip: 温度低于-38.8ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换于
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: mercury_refined_0__ui
+      text1: 固态汞
+      text2: 1000克
+      link_id: solidmercury
+    produce:
+    - image: element_liquid
+      color: 7393B4FF
+      text1: 汞
+      text2: 1000克
+      link_id: mercury
+    fabricator:
+      image: crew_state_temp_up
+      text1: -38.8ºC
+      tooltip: 温度高于-38.8ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_gas
+      color: 4D6DCAFF
+      text1: 汞蒸气
+      text2: 1000克
+      link_id: mercurygas
+    produce:
+    - image: element_liquid
+      color: 7393B4FF
+      text1: 汞
+      text2: 1000克
+      link_id: mercury
+    fabricator:
+      image: crew_state_temp_down
+      text1: 356.8ºC
+      tooltip: 温度低于356.8ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 金属精炼器
+    require:
+    - image: cinnabar_0__ui
+      text1: 朱砂矿
+      text2: 100千克
+      link_id: cinnabar
+    produce:
+    - image: element_liquid
+      color: 7393B4FF
+      text1: 汞
+      text2: 100千克
+      link_id: mercury
+    fabricator:
+      image: metalrefinery_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 金属精炼器
+      text2: 40秒
+      link_id: metalrefinery
+  - widget_type: CodexRecipePanel
+    text: 碎石机
+    require:
+    - image: cinnabar_0__ui
+      text1: 朱砂矿
+      text2: 100千克
+      link_id: cinnabar
+    produce:
+    - image: element_liquid
+      color: 7393B4FF
+      text1: 汞
+      text2: 50千克
+      link_id: mercury
+    - image: sand_0__ui
+      text1: 沙子
+      text2: 50千克
+      link_id: sand
+    fabricator:
+      image: rockrefinery_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 碎石机
+      text2: 40秒
+      link_id: rockcrusher
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      (Hg) 汞是一种<link="ELEMENTSLIQUID">液态</link>金属。
+
+
+      资源种类：<link="ELEMENTSLIQUID">液体</link>
+
+      冰点：-38.8ºC
+
+      沸点：356.8ºC
+
+
+      比热容：0.140 (DTU/g)/ºC
+
+      热导率：8.300 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.25
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：<link="REFINEDMETAL">精炼金属</link>, <link="ELEMENTSLIQUID">液体</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

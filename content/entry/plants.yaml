@@ -1,0 +1,248 @@
+id: PLANTS
+name: 植物
+disabled: False
+search_only: False
+category: Root
+sort_string: 植物
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="PLANTS">植物</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexLabelWithLargeIcon
+    text: 乔木树
+    style: BodyWhite
+    image: tree_0__ui
+    link_id: foresttree
+  - widget_type: CodexLabelWithLargeIcon
+    text: 仙水掌
+    style: BodyWhite
+    image: cactus_0__ui
+    link_id: filterplant
+  - widget_type: CodexLabelWithLargeIcon
+    text: 六角根
+    style: BodyWhite
+    image: podmelon_0__ui
+    link_id: forestforageplantplanted
+  - widget_type: CodexLabelWithLargeIcon
+    text: 冰息萝卜
+    style: BodyWhite
+    image: coldbreather_0__ui
+    link_id: coldbreather
+  - widget_type: CodexLabelWithLargeIcon
+    text: 冰霜小麦
+    style: BodyWhite
+    image: coldwheat_0__ui
+    link_id: coldwheat
+  - widget_type: CodexLabelWithLargeIcon
+    text: 刺壳果灌木
+    style: BodyWhite
+    image: ice_berry_bush_0__ui
+    link_id: hardskinberryplant
+  - widget_type: CodexLabelWithLargeIcon
+    text: 同伴芽
+    style: BodyWhite
+    image: potted_bulb_0__ui
+    link_id: bulbplant
+  - widget_type: CodexLabelWithLargeIcon
+    text: 土星动物捕草
+    style: BodyWhite
+    image: venus_critter_trap_0__ui
+    link_id: crittertrapplant
+  - widget_type: CodexLabelWithLargeIcon
+    text: 夜幕菇
+    style: BodyWhite
+    image: fungusplant_0__ui
+    link_id: mushroomplant
+  - widget_type: CodexLabelWithLargeIcon
+    text: 孢子兰
+    style: BodyWhite
+    image: potted_evilflower_0__ui
+    link_id: evilflower
+  - widget_type: CodexLabelWithLargeIcon
+    text: 安宁芷
+    style: BodyWhite
+    image: potted_toes_0__ui
+    link_id: toeplant
+  - widget_type: CodexLabelWithLargeIcon
+    text: 小吃芽
+    style: BodyWhite
+    image: beanplant_0__ui
+    link_id: beanplant
+  - widget_type: CodexLabelWithLargeIcon
+    text: 巨蕨
+    style: BodyWhite
+    image: prehistoric_fern_0__ui
+    link_id: dinofern
+  - widget_type: CodexLabelWithLargeIcon
+    text: 恬静花
+    style: BodyWhite
+    image: potted_ice_flower_0__ui
+    link_id: iceflower
+  - widget_type: CodexLabelWithLargeIcon
+    text: 拟芽
+    style: BodyWhite
+    image: pollinator_plant_0__ui
+    link_id: butterflyplant
+  - widget_type: CodexLabelWithLargeIcon
+    text: 掩埋的淤泥根
+    style: BodyWhite
+    image: muckroot_0__ui
+    link_id: basicforageplantplanted
+  - widget_type: CodexLabelWithLargeIcon
+    text: 极乐刺
+    style: BodyWhite
+    image: potted_cylindricafan_0__ui
+    link_id: cylindrica
+  - widget_type: CodexLabelWithLargeIcon
+    text: 欢乐叶
+    style: BodyWhite
+    image: potted_leafy_0__ui
+    link_id: leafyplant
+  - widget_type: CodexLabelWithLargeIcon
+    text: 毛刺花
+    style: BodyWhite
+    image: bristleblossom_0__ui
+    link_id: prickleflower
+  - widget_type: CodexLabelWithLargeIcon
+    text: 气囊芦荟
+    style: BodyWhite
+    image: bluegrass_0__ui
+    link_id: bluegrass
+  - widget_type: CodexLabelWithLargeIcon
+    text: 氧齿蕨
+    style: BodyWhite
+    image: oxy_fern_0__ui
+    link_id: oxyfern
+  - widget_type: CodexLabelWithLargeIcon
+    text: 水草
+    style: BodyWhite
+    image: sea_lettuce_0__ui
+    link_id: sealettuce
+  - widget_type: CodexLabelWithLargeIcon
+    text: 汗甜玉米秆
+    style: BodyWhite
+    image: spike_fruit_0__ui
+    link_id: gardenfoodplant
+  - widget_type: CodexLabelWithLargeIcon
+    text: 沙盐藤
+    style: BodyWhite
+    image: saltplant_0__ui
+    link_id: saltplant
+  - widget_type: CodexLabelWithLargeIcon
+    text: 沼泽甜菜
+    style: BodyWhite
+    image: swamptuber_0__ui
+    link_id: swampforageplantplanted
+  - widget_type: CodexLabelWithLargeIcon
+    text: 沼浆笼
+    style: BodyWhite
+    image: swampcrop_0__ui
+    link_id: swampharvestplant
+  - widget_type: CodexLabelWithLargeIcon
+    text: 海梳蕨
+    style: BodyWhite
+    image: kelp_0__ui
+    link_id: kelpplant
+  - widget_type: CodexLabelWithLargeIcon
+    text: 漫殖藤主干
+    style: BodyWhite
+    image: vine_mother_0__ui
+    link_id: vinemother
+  - widget_type: CodexLabelWithLargeIcon
+    text: 火椒藤
+    style: BodyWhite
+    image: vinespicenut_0__ui
+    link_id: spicevine
+  - widget_type: CodexLabelWithLargeIcon
+    text: 环玫花
+    style: BodyWhite
+    image: discplant_0__ui
+    link_id: gardendecorplant
+  - widget_type: CodexLabelWithLargeIcon
+    text: 米虱木
+    style: BodyWhite
+    image: meallice_0__ui
+    link_id: basicsingleharvestplant
+  - widget_type: CodexLabelWithLargeIcon
+    text: 糖心树
+    style: BodyWhite
+    image: syrup_tree_0__ui
+    link_id: spacetree
+  - widget_type: CodexLabelWithLargeIcon
+    text: 羽叶果薯植株
+    style: BodyWhite
+    image: purpleroot_0__ui
+    link_id: carrotplant
+  - widget_type: CodexLabelWithLargeIcon
+    text: 芳香百合
+    style: BodyWhite
+    image: swamplily_0__ui
+    link_id: swamplily
+  - widget_type: CodexLabelWithLargeIcon
+    text: 菌斑根
+    style: BodyWhite
+    image: fatplant_0__ui
+    link_id: gardenforageplantplanted
+  - widget_type: CodexLabelWithLargeIcon
+    text: 虫果芽
+    style: BodyWhite
+    image: wormwood_0__ui
+    link_id: superwormplant
+  - widget_type: CodexLabelWithLargeIcon
+    text: 试验体52B
+    style: BodyWhite
+    image: gravitas_sap_tree_0__ui
+    link_id: saptree
+  - widget_type: CodexLabelWithLargeIcon
+    text: 诱人荆棘
+    style: BodyWhite
+    image: bristlebriar_0__ui
+    link_id: pricklegrass
+  - widget_type: CodexLabelWithLargeIcon
+    text: 贫瘠虫果芽
+    style: BodyWhite
+    image: wormwood_0__ui
+    link_id: wormplant
+  - widget_type: CodexLabelWithLargeIcon
+    text: 释气草
+    style: BodyWhite
+    image: gassygrass_0__ui
+    link_id: gasgrass
+  - widget_type: CodexLabelWithLargeIcon
+    text: 锦醇菇
+    style: BodyWhite
+    image: potted_cups_0__ui
+    link_id: winecups
+  - widget_type: CodexLabelWithLargeIcon
+    text: 雀跃掌
+    style: BodyWhite
+    image: potted_cactus_0__ui
+    link_id: cactusplant
+  - widget_type: CodexLabelWithLargeIcon
+    text: 雪莓藤
+    style: BodyWhite
+    image: frozenberries_0__ui
+    link_id: icecavesforageplantplanted
+  - widget_type: CodexLabelWithLargeIcon
+    text: 露珠藤
+    style: BodyWhite
+    image: brackwood_0__ui
+    link_id: dewdripperplant
+  - widget_type: CodexLabelWithLargeIcon
+    text: 露饵花
+    style: BodyWhite
+    image: ceiling_carnie_0__ui
+    link_id: flytrapplant
+  - widget_type: CodexLabelWithLargeIcon
+    text: 顶针芦苇
+    style: BodyWhite
+    image: swampreed_0__ui
+    link_id: basicfabricplant
+  layout: Grid
+- contents:
+  - widget_type: CodexSpacer
+  layout: Vertical

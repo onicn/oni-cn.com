@@ -1,0 +1,66 @@
+id: TRAVELTUBES
+parent_id: TECH
+name: 运载管道
+disabled: False
+search_only: False
+category: TECH
+sort_string: 运载管道
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="TRAVELTUBES">运载管道</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 以一种极具未来色彩的方式让复制人在基地中移动。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="SUITS">危险防护</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: tube_launcher_0__ui
+  - widget_type: CodexText
+    text: <link="TRAVELTUBEENTRANCE">运载管道入口</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: travel_tube_0__ui
+  - widget_type: CodexText
+    text: <link="TRAVELTUBE">运载管道</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: tube_tile_bridge_0__ui
+  - widget_type: CodexText
+    text: <link="TRAVELTUBEWALLBRIDGE">运载管道渡口</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: wind_tunnel_0__ui
+  - widget_type: CodexText
+    text: <link="VERTICALWINDTUNNEL">垂直风洞</link>
+    style: Body
+  layout: Horizontal

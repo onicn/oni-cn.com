@@ -1,0 +1,160 @@
+id: CONTAMINATEDOXYGEN
+parent_id: ELEMENTSGAS
+name: 污染氧
+disabled: False
+search_only: False
+icon_color: 224F40FF
+category: ELEMENTSGAS
+sort_string: 污染氧
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="CONTAMINATEDOXYGEN">污染氧</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    color: 224F40FF
+    image: element_gas
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_gas
+      color: 224F40FF
+      text1: 污染氧
+      text2: 1000克
+      link_id: contaminatedoxygen
+    produce:
+    - image: element_liquid
+      color: 579AA9FF
+      text1: 液态氧
+      text2: 1000克
+      link_id: liquidoxygen
+    fabricator:
+      image: crew_state_temp_down
+      text1: -183ºC
+      tooltip: 温度低于-183ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: unknown
+      color: 7F7F7FFF
+      text1: 过滤介质
+      text2: 80千克/周期
+      link_id: filter
+    - image: element_gas
+      color: 224F40FF
+      text1: 污染氧
+      text2: 60千克/周期
+      link_id: contaminatedoxygen
+    produce:
+    - image: clay_0__ui
+      text1: 粘土
+      text2: 86千克/周期
+      link_id: clay
+    - image: element_gas
+      color: B7FFFFFF
+      text1: 氧气
+      text2: 54千克/周期
+      link_id: oxygen
+    fabricator:
+      image: co2filter_0__ui
+      text1: 空气净化器
+      link_id: AIRFILTER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_gas
+      color: 224F40FF
+      text1: 污染氧
+      text2: 50千克/周期
+      link_id: contaminatedoxygen
+    produce:
+    - image: slime_mold_0__ui
+      text1: 菌泥
+      text2: 47.5千克/周期
+      link_id: slimemold
+    fabricator:
+      image: puft_0__ui
+      text1: 喷浮飞鱼
+      link_id: PUFT
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_gas
+      color: 224F40FF
+      text1: 污染氧
+      text2: 30千克/周期
+      link_id: contaminatedoxygen
+    produce:
+    - image: slime_mold_0__ui
+      text1: 菌泥
+      text2: 3000克/周期
+      link_id: slimemold
+    fabricator:
+      image: puft_0__alp_ui
+      text1: 贵族飞鱼
+      link_id: PUFTALPHA
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 600千克/周期
+      link_id: toxicsand
+    produce:
+    - image: element_gas
+      color: 224F40FF
+      text1: 污染氧
+      text2: 396千克/周期
+      link_id: contaminatedoxygen
+    fabricator:
+      image: sublimation_station_0__ui
+      text1: 升华站
+      link_id: SUBLIMATIONSTATION
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      (O<sub>2</sub>) 污染氧是未经过滤的脏空气。
+
+
+      可供呼吸。
+
+
+      资源种类：可呼吸的气体
+
+      凝点：-183ºC
+
+
+      比热容：1.010 (DTU/g)/ºC
+
+      热导率：0.024 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.08
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：气体, 可呼吸的气体
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

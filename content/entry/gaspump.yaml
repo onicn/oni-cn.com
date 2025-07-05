@@ -1,0 +1,101 @@
+id: GASPUMP
+parent_id: BUILDCATEGORYHVAC
+name: 气泵
+disabled: False
+search_only: False
+category: BUILDCATEGORYHVAC
+sort_string: 气泵
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="GASPUMP">气泵</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 通风
+    style: Body
+    image: research_type_alpha_icon
+    link_id: gaspiping
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: pumpgas_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      抽取<link="ELEMENTSGAS">气体</link>并通过<link="GASPIPING">管道</link>输送。
+
+
+      必须浸没在<link="ELEMENTSGAS">气体</link>中。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    气体的供给'
+    tooltip: 必须接收运送的<style="KKeyword">气体</style>才能运作
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="POWER">电力</link>：240瓦'
+    tooltip: 必须与至少有<style="consumed">240瓦</style>可用<style="KKeyword">电力</style>的电路相连
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="GASPIPING">气体输出管道</link>'
+    tooltip: 必须通过<link="GASCONDUIT">气体管道</link>系统排出<style="KKeyword">气体</style>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：2格宽x2格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：30秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="METAL">金属矿石</link>50千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    气体：500克/秒'
+    tooltip: 使用时消耗<style="consumed">500克/秒</style><style="KKeyword">气体</style>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    过热<link="HEAT">温度</link>：75ºC'
+    tooltip: 达到<b>75ºC</b>时开始过热
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LOGIC">信号输入端</link>'
+    tooltip: 当接收到信号时，输入端会使这个建筑一种状态发生变化
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    启用/禁用'
+    tooltip: >-
+      输入端行为：
+
+      • <b><style="logic_on">绿色信号</style></b>：启用建筑
+
+      • <b><style="logic_off">红色信号</style></b>：禁用建筑
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：-10（范围：2格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>2</b>格内降低<b><b>-10</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>类别</b>
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    <link="REQUIREMENTCLASSINDUSTRIALMACHINERY">工业机械</link>'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>用管道将泵的输出口和另一个建筑的输入口连接，气体就会被送到那个建筑中。</i>
+    style: Body
+  layout: Vertical

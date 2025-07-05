@@ -1,0 +1,28 @@
+id: VIDEOS13
+name: 视频：复制人士气
+disabled: False
+search_only: False
+category: Videos
+sort_string: 视频：复制人士气
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 视频：复制人士气
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexVideo
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      复制人吃的食物、住的房间、周围的装饰以及开展的娱乐活动都会影响他们的士气。好的体验会提升士气，而差的体验则会降低士气。一旦士气降至他们的期望值以下，复制人便会感到压力。
+
+
+      复制人的期望值会随着获得新的技能而升高，因此，为了维持复制人的士气，必须不断改善殖民地的环境。可在“状态”界面查看士气和压力概览。
+
+
+      相关<link="MISCELLANEOUSTIPS">教程：压力管理</link>
+    style: Body
+  layout: Vertical

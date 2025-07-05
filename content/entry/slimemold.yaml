@@ -1,0 +1,220 @@
+id: SLIMEMOLD
+parent_id: ELEMENTSSOLID
+name: 菌泥
+disabled: False
+search_only: False
+category: ELEMENTSSOLID
+sort_string: 菌泥
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="SLIMEMOLD">菌泥</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: slime_mold_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: slime_mold_0__ui
+      text1: 菌泥
+      text2: 1000克
+      link_id: slimemold
+    produce:
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 1000克
+      link_id: dirt
+    fabricator:
+      image: crew_state_temp_up
+      text1: 125ºC
+      tooltip: 温度高于125ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 植物润滑油
+    require:
+    - image: slime_mold_0__ui
+      text1: 菌泥
+      text2: 100千克
+      link_id: slimemold
+    produce:
+    - image: element_liquid
+      color: 98A82FFF
+      text1: 植物润滑油
+      text2: 70千克
+      link_id: phytooil
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 30千克
+      link_id: dirt
+    fabricator:
+      image: milkpress_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 植物粉碎机
+      text2: 40秒
+      link_id: milkpress
+  - widget_type: CodexConversionPanel
+    require:
+    - image: slime_mold_0__ui
+      text1: 菌泥
+      text2: 360千克/周期
+      link_id: slimemold
+    produce:
+    - image: algae_0__ui
+      text1: 藻类
+      text2: 120千克/周期
+      link_id: algae
+    - image: element_liquid
+      color: 474506FF
+      text1: 污染水
+      text2: 240千克/周期
+      link_id: dirtywater
+    fabricator:
+      image: algae_distillery_0__ui
+      text1: 藻类蒸馏器
+      link_id: ALGAEDISTILLERY
+  - widget_type: CodexConversionPanel
+    require:
+    - image: slime_mold_0__ui
+      text1: 菌泥
+      text2: 4000克/周期
+      link_id: slimemold
+    produce:
+    - image: funguscap_0__ui
+      text1: 蘑菇
+      text2: 320千卡/周期
+      tooltip: 品质：糟糕 [0]
+      link_id: mushroom
+    fabricator:
+      image: fungusplant_0__ui
+      text1: 夜幕菇
+      link_id: MUSHROOMPLANT
+  - widget_type: CodexConversionPanel
+    require:
+    - image: slime_mold_0__ui
+      text1: 菌泥
+      text2: 140千克/周期
+      link_id: slimemold
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 140千克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__veg_ui
+      text1: 草质哈奇
+      link_id: HATCHVEGGIE
+  - widget_type: CodexConversionPanel
+    require:
+    - image: slime_mold_0__ui
+      text1: 菌泥
+      text2: 70千克/周期
+      link_id: slimemold
+    produce:
+    - image: sand_0__ui
+      text1: 沙子
+      text2: 35千克/周期
+      link_id: sand
+    fabricator:
+      image: pincher_0__fresh_ui
+      text1: 沙泥蟹
+      link_id: CRABFRESHWATER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: slime_mold_0__ui
+      text1: 菌泥
+      text2: 70千克/周期
+      link_id: slimemold
+    produce:
+    - image: sand_0__ui
+      text1: 沙子
+      text2: 17.5千克/周期
+      link_id: sand
+    fabricator:
+      image: pincher_0__wood_ui
+      text1: 木壳蟹
+      link_id: CRABWOOD
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_gas
+      color: 224F40FF
+      text1: 污染氧
+      text2: 50千克/周期
+      link_id: contaminatedoxygen
+    produce:
+    - image: slime_mold_0__ui
+      text1: 菌泥
+      text2: 47.5千克/周期
+      link_id: slimemold
+    fabricator:
+      image: puft_0__ui
+      text1: 喷浮飞鱼
+      link_id: PUFT
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_gas
+      color: 224F40FF
+      text1: 污染氧
+      text2: 30千克/周期
+      link_id: contaminatedoxygen
+    produce:
+    - image: slime_mold_0__ui
+      text1: 菌泥
+      text2: 3000克/周期
+      link_id: slimemold
+    fabricator:
+      image: puft_0__alp_ui
+      text1: 贵族飞鱼
+      link_id: PUFTALPHA
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      菌泥是一种由藻类、真菌和粘多糖组成的生物混合物。
+
+
+      它可以蒸馏出<link="ALGAE">藻类</link>，挖掘后会释放<link="CONTAMINATEDOXYGEN">污染氧</link>。
+
+
+      资源种类：有机物
+
+      熔点：125ºC
+
+      硬度：<color=#71ABCFFF>2（非常柔软）</color>
+
+
+      比热容：0.200 (DTU/g)/ºC
+
+      热导率：2.000 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.65
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：<link="FLYINGCRITTEREDIBLE">诱饵</link>, <link="ELEMENTSSOLID">固体</link>, 有机物
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

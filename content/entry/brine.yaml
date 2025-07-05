@@ -1,0 +1,234 @@
+id: BRINE
+parent_id: ELEMENTSLIQUID
+name: 浓盐水
+disabled: False
+search_only: False
+icon_color: ADE9E5FF
+category: ELEMENTSLIQUID
+sort_string: 浓盐水
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="BRINE">浓盐水</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    color: ADE9E5FF
+    image: element_liquid
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: ADE9E5FF
+      text1: 浓盐水
+      text2: 1000克
+      link_id: brine
+    produce:
+    - image: element_gas
+      color: 85C9E3FF
+      text1: 蒸汽
+      text2: 700克
+      link_id: steam
+    - image: salt_0__ui
+      text1: 盐
+      text2: 300克
+      link_id: salt
+    fabricator:
+      image: crew_state_temp_up
+      text1: 102.8ºC
+      tooltip: 温度高于102.8ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: ADE9E5FF
+      text1: 浓盐水
+      text2: 1000克
+      link_id: brine
+    produce:
+    - image: frozen_brine_0__ui
+      text1: 浓盐冰
+      text2: 1000克
+      link_id: brine
+    fabricator:
+      image: crew_state_temp_down
+      text1: -22.5ºC
+      tooltip: 温度低于-22.5ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换于
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: frozen_brine_0__ui
+      text1: 浓盐冰
+      text2: 1000克
+      link_id: brine
+    produce:
+    - image: element_liquid
+      color: ADE9E5FF
+      text1: 浓盐水
+      text2: 1000克
+      link_id: brine
+    fabricator:
+      image: crew_state_temp_up
+      text1: -16.5ºC
+      tooltip: 温度高于-16.5ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: CCEEE8FF
+      text1: 咸乳
+      text2: 1000克
+      link_id: milk
+    produce:
+    - image: element_liquid
+      color: ADE9E5FF
+      text1: 浓盐水
+      text2: 900克
+      link_id: brine
+    - image: milkfat_0__ui
+      text1: 咸乳蜡
+      text2: 100克
+      link_id: milkfat
+    fabricator:
+      image: crew_state_temp_up
+      text1: 80ºC
+      tooltip: 温度高于80ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: CED2ECFF
+      text1: 盐水
+      text2: 1000克
+      link_id: saltwater
+    produce:
+    - image: element_liquid
+      color: ADE9E5FF
+      text1: 浓盐水
+      text2: 230克
+      link_id: brine
+    - image: ice_0__ui
+      text1: 冰
+      text2: 770克
+      link_id: ice
+    fabricator:
+      image: crew_state_temp_down
+      text1: -7.5ºC
+      tooltip: 温度低于-7.5ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: CED2ECFF
+      text1: 盐水
+      text2: 3000千克/周期
+      link_id: saltwater
+    - image: element_liquid
+      color: ADE9E5FF
+      text1: 浓盐水
+      text2: 3000千克/周期
+      link_id: brine
+    produce:
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 2790千克/周期
+      link_id: water
+    - image: salt_0__ui
+      text1: 盐
+      text2: 210千克/周期
+      link_id: salt
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 2100千克/周期
+      link_id: water
+    - image: salt_0__ui
+      text1: 盐
+      text2: 900千克/周期
+      link_id: salt
+    fabricator:
+      image: desalinator_0__ui
+      text1: 脱盐器
+      link_id: DESALINATOR
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: CCEEE8FF
+      text1: 咸乳
+      text2: 600千克/周期
+      link_id: milk
+    produce:
+    - image: milkfat_0__ui
+      text1: 咸乳蜡
+      text2: 54千克/周期
+      link_id: milkfat
+    - image: element_liquid
+      color: ADE9E5FF
+      text1: 浓盐水
+      text2: 486千克/周期
+      link_id: brine
+    - image: element_gas
+      color: 000000FF
+      text1: 二氧化碳
+      text2: 60千克/周期
+      link_id: carbondioxide
+    fabricator:
+      image: milk_separator_0__ui
+      text1: 咸乳蜡收集器
+      link_id: MILKFATSEPARATOR
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      浓盐水是一种溶解了高浓度<link="SALT">盐</link>的<link="WATER">水</link>。
+
+
+      它可用于淡化处理，以分离出可用的盐。
+
+
+      资源种类：<link="ELEMENTSLIQUID">液体</link>
+
+      冰点：-22.5ºC
+
+      沸点：102.8ºC
+
+
+      比热容：3.400 (DTU/g)/ºC
+
+      热导率：0.609 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.8
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：水基物, <link="ELEMENTSLIQUID">液体</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

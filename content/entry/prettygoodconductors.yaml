@@ -1,0 +1,80 @@
+id: PRETTYGOODCONDUCTORS
+parent_id: TECH
+name: 低阻导体
+disabled: False
+search_only: False
+category: TECH
+sort_string: 低阻导体
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="PRETTYGOODCONDUCTORS">低阻导体</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 纯芯电线，可负载更高<link="POWER">电力</link>而不会发生过载。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="ADVANCEDPOWERREGULATION">高级电力调节</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: utilities_electric_conduct_0__ui
+  - widget_type: CodexText
+    text: <link="WIREREFINED">导线</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: utilityelectricbridgeconductive_0__ui
+  - widget_type: CodexText
+    text: <link="WIREREFINEDBRIDGE">导线桥</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: utilities_electric_conduct_hiwatt_0__ui
+  - widget_type: CodexText
+    text: <link="WIREREFINEDHIGHWATTAGE">高负荷导线</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: heavywatttile_conductive_0__ui
+  - widget_type: CodexText
+    text: <link="WIREREFINEDBRIDGEHIGHWATTAGE">高负荷导线接合板</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: transformer_0__ui
+  - widget_type: CodexText
+    text: <link="POWERTRANSFORMER">大型变压器</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: electrobank_discharger_large_0__ui
+  - widget_type: CodexText
+    text: <link="LARGEELECTROBANKDISCHARGER">大型放电器</link>
+    style: Body
+  layout: Horizontal

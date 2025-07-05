@@ -1,0 +1,37 @@
+id: NEUTRONIUMAPPLICATIONS
+name: 潜在应用
+title: STRINGS.CODEX.A9_NEUTRONIUMAPPLICATIONS.TITLE
+disabled: False
+search_only: False
+category: INVESTIGATIONS
+sort_string: 潜在应用
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 潜在应用
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：三
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+  lock_id: notes_neutroniumapplications
+- contents:
+  - widget_type: CodexText
+    text: >-
+      [录音开始]
+
+
+      主管：时间的能量可以进行重新配置，使组成的中子质以适当频率振动，从而分解和分散。
+
+
+      主管：不过，要长时间稳定和维持这种重新配置的能量，以便有效地将中子质从现实生活中完全去除，还是相当困难的。
+
+
+      主管：我正在研究如何使这项技术更加可靠便捷，这些数据或许可以用于开发某种通用分解射线。
+
+
+      [录音结束]
+    style: Body
+  layout: Vertical
+  lock_id: notes_neutroniumapplications

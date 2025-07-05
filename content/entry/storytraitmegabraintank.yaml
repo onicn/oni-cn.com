@@ -1,0 +1,82 @@
+id: STORYTRAITMEGABRAINTANK
+parent_id: STORYTRAITS
+name: 梦境合成仪
+title: STRINGS.CODEX.STORY_TRAITS.MEGA_BRAIN_TANK.NAME
+disabled: False
+search_only: False
+icon_asset_name: mega_brain_tank_codex_icon
+category: STORYTRAITS
+sort_string: 梦境合成仪
+content_container:
+- contents:
+  - widget_type: CodexImage
+    image: MegaBrainTank_image
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 梦境合成仪
+    style: Title
+  - widget_type: CodexText
+    text: >-
+      为庄严科技的地下睡眠实验室的巨大遗物供能。
+
+
+      当复制人睡觉时，它们的头脑里是幸福的空白，并没有做梦。但在适当的条件下，可能会……不一样。
+    style: Body
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 飞机模型
+    style: Subtitle
+  - widget_type: CodexText
+    text: 一份珍贵的纪念品，曾经是商业航班中儿童餐的常见赠品。在底部有个洞，是霍兰博士将其安装在支架上留下来的。
+    style: Body
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical
+  lock_id: story_trait_mega_brain_tank_complete
+- contents:
+  - widget_type: CodexText
+    text: 初遇
+    style: Subtitle
+  - widget_type: CodexText
+    text: >-
+      我在我们的小行星中发现了深埋的梦境分析机器。
+
+
+      这里似乎有一些专用于睡眠的新衣服……这可能是解锁我的复制人做梦能力的关键？
+
+
+      我经常在想，要是他们的想象力被唤醒，他们能做些什么呢。
+    style: Body
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical
+  lock_id: story_trait_mega_brain_tank_initial
+- contents:
+  - widget_type: CodexText
+    text: 挑战完成
+    style: Subtitle
+  - widget_type: CodexText
+    text: >-
+      最初的梦境内容分析的基本指标的完成引起了电磁活动的激增，这似乎增强了我任何位置的复制人的能力。
+
+
+      如果我的复制人能保持用梦境日志为这个建筑供能，可能我们就可以持续获得这种好处。
+
+
+      侧面的一个不起眼的小隔层也突然打开了，里面有一件陌生的物体。
+
+
+      是一件纪念品，大概？
+    style: Body
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical
+  lock_id: story_trait_mega_brain_tank_complete

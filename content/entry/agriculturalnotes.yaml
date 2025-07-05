@@ -1,0 +1,174 @@
+id: AGRICULTURALNOTES
+name: 农业笔记
+title: STRINGS.CODEX.A2_AGRICULTURALNOTES.TITLE
+disabled: False
+search_only: False
+category: RESEARCHNOTES
+sort_string: 农业笔记
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 农业笔记
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：三
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+  lock_id: notes_agriculture1
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <smallcaps>[声纹识别系统初始化完成]
+
+      [识别编号：B577]</smallcaps>
+
+
+      [录音开始]
+
+
+      遗传学家：我们已经根据环境情况培育出了轮作作物。虽然多样化的植物是解决任何其余营养需求的理想选择，但我们的任何一种设计都足以无限期地维持殖民地居民的生存，而不会对大家的身体健康造成不良影响。
+
+
+      遗传学家：一些环境生存问题仍然存在。其中最为重要的是不同的温度、光照可用性以及最近营养水平的变化，对生产食物和氧气的植物来说尤为如此。
+
+
+      [录音结束]
+    style: Body
+  layout: Vertical
+  lock_id: notes_agriculture1
+- contents:
+  - widget_type: CodexText
+    text: >
+      <smallcaps>[检测到录音片段]
+
+      [声纹识别系统不可用]</smallcaps>
+
+
+      [录音开始]
+
+
+      ……选择这个是为了解决殖民地居民的心理健康问题。
+
+
+      虽然设计应该关注将情绪提升效果归因于诱人荆棘自然的信息素释放，但该项目已被移至侧重于生命维持的设计之下，是最低优先级了……
+
+
+      [录音结束]
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: notes_agriculture1
+- contents:
+  - widget_type: CodexText
+    text: >
+      <smallcaps>[检测到录音片段]
+
+      [声纹识别系统不可用]</smallcaps>
+
+
+      [录音开始]
+
+
+      ……目前还不清楚我们是否能够克服障碍，培育出能够在预计更不适宜我们殖民地居民居住的环境中繁殖的根，或者这种努力是否值得……
+
+
+      [录音结束]
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: notes_agriculture2
+- contents:
+  - widget_type: CodexText
+    text: >
+      <smallcaps>[检测到录音片段]
+
+      [声纹识别系统不可用]</smallcaps>
+
+
+      [录音开始]
+
+
+      ……如果毛刺花无法维持足够的数量，米虱木将凭其强大的适应性而成为一种潜在的备选应急作物。
+
+
+      在设计时，应关注长期可持续性和解决长期食用米虱木所带来的心理影响——
+
+
+      [录音结束]
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: notes_agriculture2
+- contents:
+  - widget_type: CodexText
+    text: >
+      <smallcaps>[检测到录音片段]
+
+      [声纹识别系统不可用]</smallcaps>
+
+
+      [录音开始]
+
+
+      ……在打印材料不足的情况下，顶针芦苇将被用作制造纺织品的应急资源。
+
+
+      设计应该关注植物的产出频率以及……嗯……柔软性。
+
+
+      [录音结束]
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: notes_agriculture3
+- contents:
+  - widget_type: CodexText
+    text: >
+      <smallcaps>[检测到录音片段]
+
+      [声纹识别系统不可用]</smallcaps>
+
+
+      [录音开始]
+
+
+      ……芳香百合是一种可靠的通用药用植物。
+
+
+      几乎不需要调整，只要保证它在任何地方都能存活……
+
+
+      [录音结束]
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: notes_agriculture3
+- contents:
+  - widget_type: CodexText
+    text: >
+      <smallcaps>[检测到录音片段]
+
+      [声纹识别系统不可用]</smallcaps>
+
+
+      [录音开始]
+
+
+      ……夜幕菇的基因序列决定它可以在弱光环境中生长。
+
+
+      我们应该对这些基因取样，希望能够将它们剪接加工成其他植物设计……
+
+
+      [录音结束]
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: notes_agriculture4

@@ -1,0 +1,66 @@
+id: FOODREPURPOSING
+parent_id: TECH
+name: 食物再利用
+disabled: False
+search_only: False
+category: TECH
+sort_string: 食物再利用
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="FOODREPURPOSING">食物再利用</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 将剩余<link="FOOD">食物</link>混合成可以提升<link="MORALE">士气</link>的浆水。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="AGRICULTURE">农业</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: juicer_0__ui
+  - widget_type: CodexText
+    text: <link="JUICER">榨汁机</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: spice_grinder_0__ui
+  - widget_type: CodexText
+    text: <link="SPICEGRINDER">香料研磨器</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: milkpress_0__ui
+  - widget_type: CodexText
+    text: <link="MILKPRESS">植物粉碎机</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: smoker_0__ui
+  - widget_type: CodexText
+    text: <link="SMOKER">熏炉</link>
+    style: Body
+  layout: Horizontal

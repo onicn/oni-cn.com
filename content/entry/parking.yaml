@@ -1,0 +1,50 @@
+id: PARKING
+name: D区停车场
+title: STRINGS.CODEX.STORY_TRAITS.CRITTER_MANIPULATOR.PARKING.TITLE
+disabled: False
+search_only: False
+category: EMAILS
+sort_string: D区停车场
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: D区停车场
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：二
+    style: Subtitle
+  layout: Vertical
+  lock_id: story_trait_critter_manipulator_parking
+- contents:
+  - widget_type: CodexText
+    text: >
+      <smallcaps>收件人：<b>全体</b><alpha=#AA><size=12></size></color>
+
+      发件人：<b>管理员</b><alpha=#AA><size=12> <admin@gravitas.nova></size></color></smallcaps>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: story_trait_critter_manipulator_parking
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <indent=5%>在上周生物工程部的小动物围栏被损坏后，我们在D区停车场又发现了另一组被咬烂的挡风玻璃雨刷器。
+
+
+      在另行通知前，强烈建议员工在A-C区停车。
+
+
+      请不要给市政动物管理中心打电话——所有目击到的小动物都应直接报告给拜伦博士。</indent>
+    style: Body
+  - widget_type: CodexText
+    text: >2
+
+      谢谢！
+
+      - 管理员
+
+      <size=11>庄严科技</size>
+    style: Body
+  layout: Vertical
+  lock_id: story_trait_critter_manipulator_parking

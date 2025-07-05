@@ -1,0 +1,96 @@
+id: KEROSENEENGINECLUSTER
+parent_id: BUILDCATEGORYROCKETRY
+name: 石油引擎
+disabled: False
+search_only: False
+category: BUILDCATEGORYROCKETRY
+sort_string: 石油引擎
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="KEROSENEENGINECLUSTER">石油引擎</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 改良烃类燃料推进
+    style: Body
+    image: research_type_alpha_icon
+    link_id: betterhydrocarbonpropulsion
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: rocket_cluster_petroleum_engine_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      燃烧<link="PETROLEUM">石油</link>以推动火箭进行太空探索。
+
+
+      石油引擎的高度限制较为宽松，可以带有很多舱块。
+
+
+      引擎必须通过<link="LAUNCHPAD">火箭平台</link>建造。
+
+
+      建好引擎后，可以添加更多的火箭舱块。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：7格宽x5格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：60秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="STEEL">钢</link>200千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="POWER">电力</link>：+480瓦'
+    tooltip: 为相连的<style="KKeyword">电路</style>产生<style="produced">480瓦</style>电力
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    过热<link="HEAT">温度</link>：2000ºC'
+    tooltip: 达到<b>2000ºC</b>时开始过热
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>类别</b>
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    <link="REQUIREMENTCLASSINDUSTRIALMACHINERY">工业机械</link>'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>更强大的火箭引擎能推动更重的负担。</i>
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 舱块统计
+    style: Subtitle
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>火箭速度</b>等于<b>引擎功率</b>除以<b>负担</b>
+    style: Body
+  - widget_type: CodexText
+    text: '    • 火箭支持的最大高度：35'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 高度：5'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 舱块负担：6'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 舱块引擎功率：48'
+    style: Body
+  layout: Vertical

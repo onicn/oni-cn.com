@@ -1,0 +1,44 @@
+id: POLLENGERMS
+parent_id: DISEASE
+name: 花香
+disabled: False
+search_only: False
+category: DISEASE
+sort_string: 花香
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="POLLENGERMS">花香</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 花香过敏原会引发具有过敏症特质的复制人打喷嚏。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 温度范围：-10ºC至100ºC
+    style: Body
+  - widget_type: CodexText
+    text: >
+      气压范围：0千克到1000千克
+    style: Body
+  - widget_type: CodexText
+    text: 灭菌物：
+    style: Body
+  - widget_type: CodexText
+    text: '    • 固体'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 气体'
+    style: Body
+  - widget_type: CodexText
+    text: '    • <link="OXYGEN">氧气</link>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 液体'
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

@@ -1,0 +1,69 @@
+id: SOLIDTRANSPORT
+parent_id: TECH
+name: 固体运输
+disabled: False
+search_only: False
+category: TECH
+sort_string: 固体运输
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="SOLIDTRANSPORT">固体运输</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 用新的自动化方式将复制人从每天繁重的材料运送工作中解脱出来。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="ADVANCEDPOWERREGULATION">高级电力调节</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="SMARTSTORAGE">智能存储</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: conveyorin_0__ui
+  - widget_type: CodexText
+    text: <link="SOLIDCONDUITINBOX">运输装载器</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: utilities_conveyor_0__ui
+  - widget_type: CodexText
+    text: <link="SOLIDCONDUIT">运输轨道</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: utilities_conveyorbridge_0__ui
+  - widget_type: CodexText
+    text: <link="SOLIDCONDUITBRIDGE">运输轨桥</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: conveyer_dropper_0__ui
+  - widget_type: CodexText
+    text: <link="SOLIDVENT">轨道滑槽</link>
+    style: Body
+  layout: Horizontal

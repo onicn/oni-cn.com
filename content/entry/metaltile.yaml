@@ -1,0 +1,61 @@
+id: METALTILE
+parent_id: BUILDCATEGORYBASE
+name: 金属砖
+disabled: False
+search_only: False
+category: BUILDCATEGORYBASE
+sort_string: 金属砖
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="METALTILE">金属砖</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 熔炼
+    style: Body
+    image: research_type_alpha_icon
+    link_id: smelting
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: floor_metal_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      用来建造房间的墙体和地面。
+
+
+      显著提高复制人的行走速度。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：1格宽x1格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：30秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="REFINEDMETAL">精炼金属</link>100千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    行走速度：+50%'
+    tooltip: 复制人在这种砖块上能够加速<b>50%</b>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：+15（范围：3格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>3</b>格内提高<b><b>+15</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>比起其他类型的砖块，金属砖传递热量的速度要快得多。</i>
+    style: Body
+  layout: Vertical

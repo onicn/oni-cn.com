@@ -1,0 +1,146 @@
+id: FRIESCARROT
+parent_id: FOOD
+name: 果薯条
+disabled: False
+search_only: False
+category: FOOD
+sort_string: 果薯条
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="FRIESCARROT">果薯条</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: rootfries_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      松脆，无法抗拒。
+
+
+      最好趁热吃。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 品质：良好 [+3]
+    style: Body
+  - widget_type: CodexText
+    text: 卡路里：5,400千卡
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      冷藏温度：4ºC
+
+      深度冷冻温度：-18ºC
+
+      腐烂时间：4.0周期
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: rootfries_0__ui
+      text1: 果薯条
+      text2: 1,350千卡/周期
+      tooltip: 品质：良好 [+3]
+      link_id: friescarrot
+    produce:
+    - image: bammoth_poop_0__ui
+      text1: 绒犸兔碎糜
+      text2: 30千克/周期
+      link_id: icebellypoop
+    fabricator:
+      image: ice_belly_0__king_ui
+      text1: 皇犸兔
+      link_id: GOLDBELLY
+  - widget_type: CodexConversionPanel
+    require:
+    - image: rootfries_0__ui
+      text1: 果薯条
+      text2: 700千卡/周期
+      tooltip: 品质：良好 [+3]
+      link_id: friescarrot
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 97.2克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__ui
+      text1: 好吃哈奇
+      link_id: HATCH
+  - widget_type: CodexConversionPanel
+    require:
+    - image: rootfries_0__ui
+      text1: 果薯条
+      text2: 1,350千卡/周期
+      tooltip: 品质：良好 [+3]
+      link_id: friescarrot
+    produce:
+    - image: bammoth_poop_0__ui
+      text1: 绒犸兔碎糜
+      text2: 30千克/周期
+      link_id: icebellypoop
+    fabricator:
+      image: ice_belly_0__ui
+      text1: 绒犸兔
+      link_id: ICEBELLY
+  - widget_type: CodexConversionPanel
+    require:
+    - image: rootfries_0__ui
+      text1: 果薯条
+      text2: 700千卡/周期
+      tooltip: 品质：良好 [+3]
+      link_id: friescarrot
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 129.6克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__veg_ui
+      text1: 草质哈奇
+      link_id: HATCHVEGGIE
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 油炸锅
+    require:
+    - image: purplerootvegetable_0__ui
+      text1: 羽叶果薯
+      text2: 4,000千卡
+      tooltip: 品质：糟糕 [0]
+      link_id: carrot
+    - image: tallow_0__ui
+      text1: 动物油脂
+      text2: 1000克
+      link_id: tallow
+    produce:
+    - image: rootfries_0__ui
+      text1: 果薯条
+      text2: 5,400千卡
+      tooltip: 品质：良好 [+3]
+      link_id: friescarrot
+    fabricator:
+      image: deepfryer_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 油炸锅
+      text2: 50秒
+      link_id: deepfryer
+  layout: Vertical

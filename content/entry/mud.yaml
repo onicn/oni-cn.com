@@ -1,0 +1,142 @@
+id: MUD
+parent_id: ELEMENTSSOLID
+name: 泥巴
+disabled: False
+search_only: False
+category: ELEMENTSSOLID
+sort_string: 泥巴
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="MUD">泥巴</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: sludge_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: sludge_0__ui
+      text1: 泥巴
+      text2: 1000克
+      link_id: mud
+    produce:
+    - image: element_gas
+      color: 85C9E3FF
+      text1: 蒸汽
+      text2: 600克
+      link_id: steam
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 400克
+      link_id: dirt
+    fabricator:
+      image: crew_state_temp_up
+      text1: 99.7ºC
+      tooltip: 温度高于99.7ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 泥土
+    require:
+    - image: sludge_0__ui
+      text1: 泥巴
+      text2: 150千克
+      link_id: mud
+    produce:
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 60千克
+      link_id: dirt
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 90千克
+      link_id: water
+    fabricator:
+      image: sludge_press_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 泥浆分离器
+      text2: 20秒
+      link_id: sludgepress
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: sulfur_0__ui
+      text1: 硫
+      text2: 50千克/周期
+      link_id: sulfur
+    produce:
+    - image: sludge_0__ui
+      text1: 泥巴
+      text2: 5000克/周期
+      link_id: mud
+    fabricator:
+      image: worm_head_0__ui
+      text1: 虫果果虫
+      link_id: DIVERGENTWORM
+  - widget_type: CodexConversionPanel
+    require:
+    - image: sucrose_0__ui
+      text1: 蔗糖
+      text2: 30千克/周期
+      link_id: sucrose
+    produce:
+    - image: sludge_0__ui
+      text1: 泥巴
+      text2: 30千克/周期
+      link_id: mud
+    fabricator:
+      image: worm_head_0__ui
+      text1: 虫果果虫
+      link_id: DIVERGENTWORM
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      一种<link="DIRT">泥土</link>和<link="WATER">水</link>的混合物。
+
+
+      可以使用<link="SLUDGEPRESS">泥浆分离器</link>将其分离成基本元素。
+
+
+      资源种类：有机物
+
+      熔点：99.7ºC
+
+      硬度：<color=#6D7BC1FF>10（柔软）</color>
+
+
+      比热容：0.830 (DTU/g)/ºC
+
+      热导率：2.000 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.7
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：不稳定, <link="ELEMENTSSOLID">固体</link>, 有机物
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

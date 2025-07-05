@@ -1,0 +1,204 @@
+id: CHLORINEGAS
+parent_id: ELEMENTSGAS
+name: 氯气
+disabled: False
+search_only: False
+icon_color: 04A778FF
+category: ELEMENTSGAS
+sort_string: 氯气
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="CHLORINEGAS">氯气</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    color: 04A778FF
+    image: element_gas
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_gas
+      color: 04A778FF
+      text1: 氯气
+      text2: 1000克
+      link_id: chlorinegas
+    produce:
+    - image: element_liquid
+      color: 3AC330FF
+      text1: 液态氯
+      text2: 1000克
+      link_id: chlorine
+    fabricator:
+      image: crew_state_temp_down
+      text1: -34.6ºC
+      tooltip: 温度低于-34.6ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换于
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: 3AC330FF
+      text1: 液态氯
+      text2: 1000克
+      link_id: chlorine
+    produce:
+    - image: element_gas
+      color: 04A778FF
+      text1: 氯气
+      text2: 1000克
+      link_id: chlorinegas
+    fabricator:
+      image: crew_state_temp_up
+      text1: -34.6ºC
+      tooltip: 温度高于-34.6ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_gas
+      color: 04A778FF
+      text1: 氯气
+      text2: 54千克/周期
+      link_id: chlorinegas
+    produce:
+    - image: megafrond_grain_0__ui
+      text1: 巨蕨谷粒
+      text2: 4单位/周期
+      link_id: fernfood
+    fabricator:
+      image: prehistoric_fern_0__ui
+      text1: 巨蕨
+      link_id: DINOFERN
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_gas
+      color: 04A778FF
+      text1: 氯气
+      text2: 3600克/周期
+      link_id: chlorinegas
+    - image: sand_0__ui
+      text1: 沙子
+      text2: 7千克/周期
+      link_id: sand
+    produce:
+    - image: salt_0__ui
+      text1: 盐
+      text2: 10.8千克/周期
+      link_id: salt
+    fabricator:
+      image: saltplant_0__ui
+      text1: 沙盐藤
+      link_id: SALTPLANT
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_gas
+      color: 04A778FF
+      text1: 氯气
+      text2: 30千克/周期
+      link_id: chlorinegas
+    produce:
+    - image: bleach_stone_0__ui
+      text1: 漂白石
+      text2: 28.5千克/周期
+      link_id: bleachstone
+    fabricator:
+      image: puft_0__anti_ui
+      text1: 洁净飞鱼
+      link_id: PUFTBLEACHSTONE
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_gas
+      color: 04A778FF
+      text1: 氯气
+      text2: 30千克/周期
+      link_id: chlorinegas
+    produce:
+    - image: bleach_stone_0__ui
+      text1: 漂白石
+      text2: 3000克/周期
+      link_id: bleachstone
+    fabricator:
+      image: puft_0__alp_ui
+      text1: 贵族飞鱼
+      link_id: PUFTALPHA
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: iron_oxide_0__ui
+      text1: 铁锈
+      text2: 450千克/周期
+      link_id: rust
+    - image: salt_0__ui
+      text1: 盐
+      text2: 150千克/周期
+      link_id: salt
+    produce:
+    - image: element_gas
+      color: B7FFFFFF
+      text1: 氧气
+      text2: 342千克/周期
+      link_id: oxygen
+    - image: element_gas
+      color: 04A778FF
+      text1: 氯气
+      text2: 18千克/周期
+      link_id: chlorinegas
+    - image: hematite_0__ui
+      text1: 铁矿
+      text2: 240千克/周期
+      link_id: ironore
+    fabricator:
+      image: rust_deoxidizer_0__ui
+      text1: 铁锈脱氧机
+      link_id: RUSTDEOXIDIZER
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      (Cl) 氯气是一种<link="ELEMENTSGAS">气态</link>的杀<link="DISEASE">菌</link>元素。
+
+
+      资源种类：不可呼吸的气体
+
+      凝点：-34.6ºC
+
+
+      比热容：0.480 (DTU/g)/ºC
+
+      热导率：0.008 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.07
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：气体, 不可呼吸的气体
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

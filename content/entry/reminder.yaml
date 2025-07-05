@@ -1,0 +1,52 @@
+id: REMINDER
+name: 员工提醒
+title: STRINGS.LORE.BUILDINGS.SET_OBJECT.TITLE
+disabled: False
+search_only: False
+category: EMAILS
+sort_string: 员工提醒
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 员工提醒
+    style: Title
+  - widget_type: CodexText
+    text: 标题：重要事项
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+  lock_id: misc_reminder
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <smallcaps><b>提醒全体人员！</b>
+
+      发件人：<b>管理员</b><alpha=#AA><admin@gravitas.nova></color>
+
+      收件人：<b>全体</b></smallcaps>
+
+      ------------------
+
+      <indent=5%>
+
+      致所有员工；
+
+
+      庄严科技没有举办“带孩子上班”活动。请员工不要把孩子带到机密的研究部门，尤其不要让孩子玩高速粒子加速器。
+
+
+      谢谢大家的理解。
+
+      - 庄严科技
+    style: Body
+  - widget_type: CodexText
+    text: >2
+
+      - 管理员
+
+      <size=11>庄严科技</size>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: misc_reminder

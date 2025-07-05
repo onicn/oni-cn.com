@@ -1,0 +1,65 @@
+id: HEPBRIDGETILE
+parent_id: BUILDCATEGORYHEP
+name: 辐射粒子接合板
+disabled: False
+search_only: False
+category: BUILDCATEGORYHEP
+sort_string: 辐射粒子接合板
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="HEPBRIDGETILE">辐射粒子接合板</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 辐射精炼
+    style: Body
+    image: research_type_alpha_icon
+    link_id: nuclear
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: radbolt_joint_plate_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 接收来自<link="HIGHENERGYPARTICLESPAWNER">辐射粒子发生器</link>的<link="RADIATION">辐射粒子</link>并使其穿墙而过。其他材料和元素会被挡住。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    辐射粒子输入口'
+    tooltip: 这个建筑上的辐射粒子端口允许其接收<style="KKeyword">辐射粒子</style>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：2格宽x1格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：3秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="PLASTIC">塑料</link>200千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    辐射粒子输出口'
+    tooltip: 这个建筑有一个可设置的辐射粒子端口，用于释放<style="KKeyword">辐射粒子</style>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：-25（范围：6格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>6</b>格内降低<b><b>-25</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>允许辐射粒子穿墙而过。</i>
+    style: Body
+  layout: Vertical

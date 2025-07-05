@@ -1,0 +1,59 @@
+id: NOTIFICATIONSYSTEMS
+parent_id: TECH
+name: 通知系统
+disabled: False
+search_only: False
+category: TECH
+sort_string: 通知系统
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="NOTIFICATIONSYSTEMS">通知系统</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 获取所有你需要的关于你复杂殖民地的消息。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="ADVANCEDRESEARCH">高级研究</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: hammer_0__ui
+  - widget_type: CodexText
+    text: <link="LOGICHAMMER">音槌</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: alarm_sensor_0__ui
+  - widget_type: CodexText
+    text: <link="LOGIC">自动化通知器</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: telephone_0__ui
+  - widget_type: CodexText
+    text: <link="TELEPHONE">共线电话</link>
+    style: Body
+  layout: Horizontal

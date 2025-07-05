@@ -1,0 +1,239 @@
+id: ALGAE
+parent_id: ELEMENTSSOLID
+name: 藻类
+disabled: False
+search_only: False
+category: ELEMENTSSOLID
+sort_string: 藻类
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="ALGAE">藻类</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: algae_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: algae_0__ui
+      text1: 藻类
+      text2: 1000克
+      link_id: algae
+    produce:
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 1000克
+      link_id: dirt
+    fabricator:
+      image: crew_state_temp_up
+      text1: 125ºC
+      tooltip: 温度高于125ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换于
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: 98A82FFF
+      text1: 植物润滑油
+      text2: 1000克
+      link_id: phytooil
+    produce:
+    - image: element_gas
+      color: 000000FF
+      text1: 二氧化碳
+      text2: 333.4克
+      link_id: carbondioxide
+    - image: algae_0__ui
+      text1: 藻类
+      text2: 666.6克
+      link_id: algae
+    fabricator:
+      image: crew_state_temp_up
+      text1: 75ºC
+      tooltip: 温度高于75ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: algae_0__ui
+      text1: 藻类
+      text2: 330千克/周期
+      link_id: algae
+    produce:
+    - image: element_gas
+      color: B7FFFFFF
+      text1: 氧气
+      text2: 300千克/周期
+      link_id: oxygen
+    fabricator:
+      image: mineraldeoxidizer_0__ui
+      text1: 氧气扩散器
+      link_id: MINERALDEOXIDIZER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: algae_0__ui
+      text1: 藻类
+      text2: 18千克/周期
+      link_id: algae
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 180千克/周期
+      link_id: water
+    - image: element_gas
+      color: 000000FF
+      text1: 二氧化碳
+      text2: 200克/周期
+      link_id: carbondioxide
+    produce:
+    - image: element_gas
+      color: B7FFFFFF
+      text1: 氧气
+      text2: 24千克/周期
+      link_id: oxygen
+    - image: element_liquid
+      color: 474506FF
+      text1: 污染水
+      text2: 174.2千克/周期
+      link_id: dirtywater
+    fabricator:
+      image: algaefarm_0__ui
+      text1: 藻类箱
+      link_id: ALGAEHABITAT
+  - widget_type: CodexConversionPanel
+    require:
+    - image: algae_0__ui
+      text1: 藻类
+      text2: 140千克/周期
+      link_id: algae
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 140千克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__veg_ui
+      text1: 草质哈奇
+      link_id: HATCHVEGGIE
+  - widget_type: CodexConversionPanel
+    require:
+    - image: algae_0__ui
+      text1: 藻类
+      text2: 7.5千克/周期
+      link_id: algae
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 3750克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__trp_ui
+      text1: 热带帕库鱼
+      link_id: PACUTROPICAL
+  - widget_type: CodexConversionPanel
+    require:
+    - image: algae_0__ui
+      text1: 藻类
+      text2: 7.5千克/周期
+      link_id: algae
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 3750克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__ui
+      text1: 帕库鱼
+      link_id: PACU
+  - widget_type: CodexConversionPanel
+    require:
+    - image: algae_0__ui
+      text1: 藻类
+      text2: 7.5千克/周期
+      link_id: algae
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 3750克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__glp_ui
+      text1: 大嘴鱼
+      link_id: PACUCLEANER
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: slime_mold_0__ui
+      text1: 菌泥
+      text2: 360千克/周期
+      link_id: slimemold
+    produce:
+    - image: algae_0__ui
+      text1: 藻类
+      text2: 120千克/周期
+      link_id: algae
+    - image: element_liquid
+      color: 474506FF
+      text1: 污染水
+      text2: 240千克/周期
+      link_id: dirtywater
+    fabricator:
+      image: algae_distillery_0__ui
+      text1: 藻类蒸馏器
+      link_id: ALGAEDISTILLERY
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      藻类由大量无运动性单细胞生命组成。
+
+
+      可用于<link="MINERALOXIDIZER">氧气扩散器</link>中产出<link="OXYGEN">氧气</link>。
+
+
+      资源种类：有机物
+
+      熔点：125ºC
+
+      硬度：<color=#71ABCFFF>2（非常柔软）</color>
+
+
+      比热容：0.200 (DTU/g)/ºC
+
+      热导率：2.000 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.65
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：<link="ELEMENTSSOLID">固体</link>, 有机物
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

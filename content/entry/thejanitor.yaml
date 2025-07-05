@@ -1,0 +1,111 @@
+id: THEJANITOR
+name: 回复：邋遢的清洁工
+title: STRINGS.CODEX.A5_THEJANITOR.TITLE
+disabled: False
+search_only: False
+category: EMAILS
+sort_string: 回复：邋遢的清洁工
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 回复：邋遢的清洁工
+    style: Title
+  - widget_type: CodexText
+    text: 未加密
+    style: Subtitle
+  layout: Vertical
+  lock_id: email_thejanitor
+- contents:
+  - widget_type: CodexText
+    text: >
+      <smallcaps>收件人：<b>苏梅尔斯博士</b><size=12><alpha=#AA> <jsummers@gravitas.nova></color></size>
+
+      发件人：<b>琼斯博士</b><size=12><alpha=#AA> <ejones@gravitas.nova></color></size></smallcaps>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_thejanitor
+- contents:
+  - widget_type: CodexText
+    text: <indent=5%><i>啐</i>，行吧。</indent>
+    style: Body
+  - widget_type: CodexText
+    text: >2
+
+      祝好，
+
+      琼斯博士
+
+      <size=11>信息统计部
+
+      庄严科技</size>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_thejanitor
+- contents:
+  - widget_type: CodexText
+    text: 标题：回复：邋遢的清洁工
+    style: Subtitle
+  - widget_type: CodexText
+    text: >
+      <smallcaps>收件人：<b>琼斯博士</b><size=12><alpha=#AA> <ejones@gravitas.nova></color></size>
+
+      发件人：<b>苏梅尔斯博士</b><size=12><alpha=#AA> <jsummers@gravitas.nova></color></size></smallcaps>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_thejanitor
+- contents:
+  - widget_type: CodexText
+    text: <indent=5%>哦，如果你了解他的话就会知道，他人真的很好，很可靠。有一次，我把自己办公椅上的轮子撞坏了一个，他很快给我拿来个新的，估计前后只有两分钟。我觉得，他应该只是因为工作太努力，弄得满身汗味而已。</indent>
+    style: Body
+  - widget_type: CodexText
+    text: >2
+
+      - 苏梅尔斯博士
+
+      <size=11>信息统计部
+
+      庄严科技</size>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_thejanitor
+- contents:
+  - widget_type: CodexText
+    text: 标题：邋遢的清洁工
+    style: Subtitle
+  - widget_type: CodexText
+    text: >
+      <smallcaps>收件人：<b>苏梅尔斯博士</b><size=12><alpha=#AA> <jsummers@gravitas.nova></color></size>
+
+      发件人：<b>琼斯博士</b><size=12><alpha=#AA> <ejones@gravitas.nova></color></size></smallcaps>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_thejanitor
+- contents:
+  - widget_type: CodexText
+    text: <indent=5%>我的天哪，你见过我们大楼的清洁工吗？他身上好臭，而且我每次见到他，他的腋窝下都有汗渍。太尴尬了。</indent>
+    style: Body
+  - widget_type: CodexText
+    text: >2
+
+      祝好，
+
+      琼斯博士
+
+      <size=11>信息统计部
+
+      庄严科技</size>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_thejanitor

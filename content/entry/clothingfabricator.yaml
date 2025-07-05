@@ -1,0 +1,163 @@
+id: CLOTHINGFABRICATOR
+parent_id: BUILDCATEGORYEQUIPMENT
+name: 纺织机
+disabled: False
+search_only: False
+category: BUILDCATEGORYEQUIPMENT
+sort_string: 纺织机
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="CLOTHINGFABRICATOR">纺织机</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 纺织生产
+    style: Body
+    image: research_type_alpha_icon
+    link_id: clothing
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: clothingfactory_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      为复制人裁剪<link="EQUIPMENT">服装</link>。
+
+
+      只有在队列中安排配方复制人才会进行制作。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="POWER">电力</link>：240瓦'
+    tooltip: 必须与至少有<style="consumed">240瓦</style>可用<style="KKeyword">电力</style>的电路相连
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    复制人的操作'
+    tooltip: 必须有复制人来才能使这个建筑运行
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：4格宽x3格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：240秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="REFINEDMETAL">精炼金属</link>200千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    过热<link="HEAT">温度</link>：75ºC'
+    tooltip: 达到<b>75ºC</b>时开始过热
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LOGIC">信号输入端</link>'
+    tooltip: 当接收到信号时，输入端会使这个建筑一种状态发生变化
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    启用/禁用'
+    tooltip: >-
+      输入端行为：
+
+      • <b><style="logic_on">绿色信号</style></b>：启用建筑
+
+      • <b><style="logic_off">红色信号</style></b>：禁用建筑
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>纺织机可以将芦苇纤维织成复制人的服装。</i>
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 所有配方
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 新潮时装
+    require:
+    - image: swampreedwool_0__ui
+      text1: 芦苇纤维
+      text2: 4单位
+      link_id: basicfabric
+    produce:
+    - image: shirt_decor01_0__ui
+      text1: 新潮时装
+      text2: 1单位
+      link_id: funkyvest
+    fabricator:
+      image: clothingfactory_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 纺织机
+      text2: 180秒
+      link_id: clothingfabricator
+  - widget_type: CodexRecipePanel
+    text: 保暖外套
+    require:
+    - image: swampreedwool_0__ui
+      text1: 芦苇纤维
+      text2: 4单位
+      link_id: basicfabric
+    produce:
+    - image: shirt_hot_shearling_0__ui
+      text1: 保暖外套
+      text2: 1单位
+      link_id: warmvest
+    fabricator:
+      image: clothingfactory_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 纺织机
+      text2: 180秒
+      link_id: clothingfabricator
+  - widget_type: CodexRecipePanel
+    text: 新潮时装
+    require:
+    - image: feather_0__ui
+      text1: 羽毛纤维
+      text2: 4单位
+      link_id: featherfabric
+    produce:
+    - image: shirt_decor01_0__ui
+      text1: 新潮时装
+      text2: 1单位
+      link_id: funkyvest
+    fabricator:
+      image: clothingfactory_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 纺织机
+      text2: 180秒
+      link_id: clothingfabricator
+  - widget_type: CodexRecipePanel
+    text: 保暖外套
+    require:
+    - image: feather_0__ui
+      text1: 羽毛纤维
+      text2: 4单位
+      link_id: featherfabric
+    produce:
+    - image: shirt_hot_shearling_0__ui
+      text1: 保暖外套
+      text2: 1单位
+      link_id: warmvest
+    fabricator:
+      image: clothingfactory_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 纺织机
+      text2: 180秒
+      link_id: clothingfabricator
+  layout: Vertical

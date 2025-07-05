@@ -1,0 +1,48 @@
+id: LADDER
+parent_id: BUILDCATEGORYBASE
+name: 梯子
+disabled: False
+search_only: False
+category: BUILDCATEGORYBASE
+sort_string: 梯子
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="LADDER">梯子</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: ladder_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 可使复制人上下移动。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：1格宽x1格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：10秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="BUILDABLERAW">矿物原料</link>或<link="BUILDINGWOOD">木材</link>100千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：-5（范围：1格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>1</b>格内降低<b><b>-5</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>（那意味着他们能在上面攀爬。）</i>
+    style: Body
+  layout: Vertical

@@ -1,0 +1,57 @@
+id: LOGICGATEFILTER
+parent_id: BUILDCATEGORYAUTOMATION
+name: 过滤门
+disabled: False
+search_only: False
+category: BUILDCATEGORYAUTOMATION
+sort_string: 过滤门
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="LOGICGATEFILTER">过滤门</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 高级自动化
+    style: Body
+    image: research_type_alpha_icon
+    link_id: logiccircuits
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: logic_filter_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      仅当输入端接收到持续时间长于选定过滤时间的<b><style="logic_on">绿色信号</style></b>时才使其通过。
+
+
+      若<b><style="logic_on">绿色信号</style></b>的持续时间不够，继续输出<b><style="logic_off">红色信号</style></b>。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：2格宽x1格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：3秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="REFINEDMETAL">精炼金属</link>25千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：-5（范围：1格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>1</b>格内降低<b><b>-5</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>这种逻辑门仅会输出持续时间长于选定过滤时间的绿色信号。</i>
+    style: Body
+  layout: Vertical

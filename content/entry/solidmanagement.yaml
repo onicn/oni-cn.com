@@ -1,0 +1,80 @@
+id: SOLIDMANAGEMENT
+parent_id: TECH
+name: 固体管理
+disabled: False
+search_only: False
+category: TECH
+sort_string: 固体管理
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="SOLIDMANAGEMENT">固体管理</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 在<link="ELEMENTSSOLID">固体</link>分类中做稳固决策。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="SOLIDSPACE">固体控制</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: filter_material_conveyor_0__ui
+  - widget_type: CodexText
+    text: <link="SOLIDFILTER">固体筛选器</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: conveyor_temperature_sensor_0__ui
+  - widget_type: CodexText
+    text: <link="SOLIDCONDUITTEMPERATURESENSOR">运输轨道温度传感器</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: conveyor_element_sensor_0__ui
+  - widget_type: CodexText
+    text: <link="SOLIDCONDUITELEMENTSENSOR">运输轨道元素传感器</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: conveyor_germs_sensor_0__ui
+  - widget_type: CodexText
+    text: <link="SOLIDCONDUITDISEASESENSOR">运输轨道病菌传感器</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: storagetile_0__ui
+  - widget_type: CodexText
+    text: <link="STORAGETILE">存储砖</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: rocket_cluster_storage_solid_0__ui
+  - widget_type: CodexText
+    text: <link="CARGOBAY">大型货舱</link>
+    style: Body
+  layout: Horizontal

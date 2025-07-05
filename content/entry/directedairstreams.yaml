@@ -1,0 +1,59 @@
+id: DIRECTEDAIRSTREAMS
+parent_id: TECH
+name: 除污
+disabled: False
+search_only: False
+category: TECH
+sort_string: 除污
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="DIRECTEDAIRSTREAMS">除污</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 有助于减少基地中<link="DISEASE">病菌</link>传播的设备。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="PRESSUREMANAGEMENT">气压管理</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: co2filter_0__ui
+  - widget_type: CodexText
+    text: <link="AIRFILTER">空气净化器</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: co2scrubber_0__ui
+  - widget_type: CodexText
+    text: <link="CO2SCRUBBER">碳素脱离器</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: door_external_0__ui
+  - widget_type: CodexText
+    text: <link="PRESSUREDOOR">机械气闸</link>
+    style: Body
+  layout: Horizontal

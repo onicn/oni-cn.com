@@ -1,0 +1,469 @@
+id: SUITFABRICATOR
+parent_id: BUILDCATEGORYEQUIPMENT
+name: 太空服锻造台
+disabled: False
+search_only: False
+category: BUILDCATEGORYEQUIPMENT
+sort_string: 太空服锻造台
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="SUITFABRICATOR">太空服锻造台</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 危险防护
+    style: Body
+    image: research_type_alpha_icon
+    link_id: suits
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: suit_maker_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      为复制人制造可供穿戴的防护性<link="EQUIPMENT">太空服</link>。
+
+
+      只有在队列中安排配方复制人才会进行制作。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="POWER">电力</link>：480瓦'
+    tooltip: 必须与至少有<style="consumed">480瓦</style>可用<style="KKeyword">电力</style>的电路相连
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：4格宽x3格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：240秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="REFINEDMETAL">精炼金属</link>400千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    过热<link="HEAT">温度</link>：75ºC'
+    tooltip: 达到<b>75ºC</b>时开始过热
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LOGIC">信号输入端</link>'
+    tooltip: 当接收到信号时，输入端会使这个建筑一种状态发生变化
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    启用/禁用'
+    tooltip: >-
+      输入端行为：
+
+      • <b><style="logic_on">绿色信号</style></b>：启用建筑
+
+      • <b><style="logic_off">红色信号</style></b>：禁用建筑
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>类别</b>
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    <link="REQUIREMENTCLASSINDUSTRIALMACHINERY">工业机械</link>'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>复制人穿上充满氧气的太空服后可进入危险区域。</i>
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 所有配方
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 气压服
+    require:
+    - image: aluminum_0__ui
+      text1: 铝
+      text2: 300千克
+      link_id: aluminum
+    - image: swampreedwool_0__ui
+      text1: 芦苇纤维
+      text2: 2单位
+      link_id: basicfabric
+    produce:
+    - image: suit_oxygen_0__ui
+      text1: 气压服
+      text2: 1单位
+      link_id: atmosuit
+    fabricator:
+      image: suit_maker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 太空服锻造台
+      text2: 40秒
+      link_id: suitfabricator
+  - widget_type: CodexRecipePanel
+    text: 气压服
+    require:
+    - image: aluminum_0__ui
+      text1: 铝
+      text2: 300千克
+      link_id: aluminum
+    - image: feather_0__ui
+      text1: 羽毛纤维
+      text2: 2单位
+      link_id: featherfabric
+    produce:
+    - image: suit_oxygen_0__ui
+      text1: 气压服
+      text2: 1单位
+      link_id: atmosuit
+    fabricator:
+      image: suit_maker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 太空服锻造台
+      text2: 40秒
+      link_id: suitfabricator
+  - widget_type: CodexRecipePanel
+    text: 气压服
+    require:
+    - image: cobalt_refined_0__ui
+      text1: 钴
+      text2: 300千克
+      link_id: cobalt
+    - image: swampreedwool_0__ui
+      text1: 芦苇纤维
+      text2: 2单位
+      link_id: basicfabric
+    produce:
+    - image: suit_oxygen_0__ui
+      text1: 气压服
+      text2: 1单位
+      link_id: atmosuit
+    fabricator:
+      image: suit_maker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 太空服锻造台
+      text2: 40秒
+      link_id: suitfabricator
+  - widget_type: CodexRecipePanel
+    text: 气压服
+    require:
+    - image: cobalt_refined_0__ui
+      text1: 钴
+      text2: 300千克
+      link_id: cobalt
+    - image: feather_0__ui
+      text1: 羽毛纤维
+      text2: 2单位
+      link_id: featherfabric
+    produce:
+    - image: suit_oxygen_0__ui
+      text1: 气压服
+      text2: 1单位
+      link_id: atmosuit
+    fabricator:
+      image: suit_maker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 太空服锻造台
+      text2: 40秒
+      link_id: suitfabricator
+  - widget_type: CodexRecipePanel
+    text: 气压服
+    require:
+    - image: copper_refined_0__ui
+      text1: 铜
+      text2: 300千克
+      link_id: copper
+    - image: swampreedwool_0__ui
+      text1: 芦苇纤维
+      text2: 2单位
+      link_id: basicfabric
+    produce:
+    - image: suit_oxygen_0__ui
+      text1: 气压服
+      text2: 1单位
+      link_id: atmosuit
+    fabricator:
+      image: suit_maker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 太空服锻造台
+      text2: 40秒
+      link_id: suitfabricator
+  - widget_type: CodexRecipePanel
+    text: 气压服
+    require:
+    - image: copper_refined_0__ui
+      text1: 铜
+      text2: 300千克
+      link_id: copper
+    - image: feather_0__ui
+      text1: 羽毛纤维
+      text2: 2单位
+      link_id: featherfabric
+    produce:
+    - image: suit_oxygen_0__ui
+      text1: 气压服
+      text2: 1单位
+      link_id: atmosuit
+    fabricator:
+      image: suit_maker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 太空服锻造台
+      text2: 40秒
+      link_id: suitfabricator
+  - widget_type: CodexRecipePanel
+    text: 气压服
+    require:
+    - image: iron_refined_0__ui
+      text1: 铁
+      text2: 300千克
+      link_id: iron
+    - image: swampreedwool_0__ui
+      text1: 芦苇纤维
+      text2: 2单位
+      link_id: basicfabric
+    produce:
+    - image: suit_oxygen_0__ui
+      text1: 气压服
+      text2: 1单位
+      link_id: atmosuit
+    fabricator:
+      image: suit_maker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 太空服锻造台
+      text2: 40秒
+      link_id: suitfabricator
+  - widget_type: CodexRecipePanel
+    text: 气压服
+    require:
+    - image: iron_refined_0__ui
+      text1: 铁
+      text2: 300千克
+      link_id: iron
+    - image: feather_0__ui
+      text1: 羽毛纤维
+      text2: 2单位
+      link_id: featherfabric
+    produce:
+    - image: suit_oxygen_0__ui
+      text1: 气压服
+      text2: 1单位
+      link_id: atmosuit
+    fabricator:
+      image: suit_maker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 太空服锻造台
+      text2: 40秒
+      link_id: suitfabricator
+  - widget_type: CodexRecipePanel
+    text: 气压服
+    require:
+    - image: nickel_0__ui
+      text1: 镍
+      text2: 300千克
+      link_id: nickel
+    - image: swampreedwool_0__ui
+      text1: 芦苇纤维
+      text2: 2单位
+      link_id: basicfabric
+    produce:
+    - image: suit_oxygen_0__ui
+      text1: 气压服
+      text2: 1单位
+      link_id: atmosuit
+    fabricator:
+      image: suit_maker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 太空服锻造台
+      text2: 40秒
+      link_id: suitfabricator
+  - widget_type: CodexRecipePanel
+    text: 气压服
+    require:
+    - image: nickel_0__ui
+      text1: 镍
+      text2: 300千克
+      link_id: nickel
+    - image: feather_0__ui
+      text1: 羽毛纤维
+      text2: 2单位
+      link_id: featherfabric
+    produce:
+    - image: suit_oxygen_0__ui
+      text1: 气压服
+      text2: 1单位
+      link_id: atmosuit
+    fabricator:
+      image: suit_maker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 太空服锻造台
+      text2: 40秒
+      link_id: suitfabricator
+  - widget_type: CodexRecipePanel
+    text: 气压服
+    require:
+    - image: suit_oxygen_0__ui
+      text1: 磨损的气压服
+      text2: 1单位
+      link_id: atmosuit
+    - image: swampreedwool_0__ui
+      text1: 芦苇纤维
+      text2: 1单位
+      link_id: basicfabric
+    produce:
+    - image: suit_oxygen_0__ui
+      text1: 气压服
+      text2: 1单位
+      link_id: atmosuit
+    fabricator:
+      image: suit_maker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 太空服锻造台
+      text2: 40秒
+      link_id: suitfabricator
+  - widget_type: CodexRecipePanel
+    text: 气压服
+    require:
+    - image: suit_oxygen_0__ui
+      text1: 磨损的气压服
+      text2: 1单位
+      link_id: atmosuit
+    - image: feather_0__ui
+      text1: 羽毛纤维
+      text2: 1单位
+      link_id: featherfabric
+    produce:
+    - image: suit_oxygen_0__ui
+      text1: 气压服
+      text2: 1单位
+      link_id: atmosuit
+    fabricator:
+      image: suit_maker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 太空服锻造台
+      text2: 40秒
+      link_id: suitfabricator
+  - widget_type: CodexRecipePanel
+    text: 喷气服
+    require:
+    - image: steel_0__ui
+      text1: 钢
+      text2: 200千克
+      link_id: steel
+    - image: element_liquid
+      color: FFC325FF
+      text1: 石油
+      text2: 25千克
+      link_id: petroleum
+    produce:
+    - image: suit_jetpack_0__ui
+      text1: 喷气服
+      text2: 1单位
+      link_id: jetsuit
+    fabricator:
+      image: suit_maker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 太空服锻造台
+      text2: 40秒
+      link_id: suitfabricator
+  - widget_type: CodexRecipePanel
+    text: 喷气服
+    require:
+    - image: suit_jetpack_0__ui
+      text1: 磨损的喷气服
+      text2: 1单位
+      link_id: jetsuit
+    - image: swampreedwool_0__ui
+      text1: 芦苇纤维
+      text2: 1单位
+      link_id: basicfabric
+    produce:
+    - image: suit_jetpack_0__ui
+      text1: 喷气服
+      text2: 1单位
+      link_id: jetsuit
+    fabricator:
+      image: suit_maker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 太空服锻造台
+      text2: 40秒
+      link_id: suitfabricator
+  - widget_type: CodexRecipePanel
+    text: 喷气服
+    require:
+    - image: suit_jetpack_0__ui
+      text1: 磨损的喷气服
+      text2: 1单位
+      link_id: jetsuit
+    - image: feather_0__ui
+      text1: 羽毛纤维
+      text2: 1单位
+      link_id: featherfabric
+    produce:
+    - image: suit_jetpack_0__ui
+      text1: 喷气服
+      text2: 1单位
+      link_id: jetsuit
+    fabricator:
+      image: suit_maker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 太空服锻造台
+      text2: 40秒
+      link_id: suitfabricator
+  - widget_type: CodexRecipePanel
+    text: 铅服
+    require:
+    - image: lead_0__ui
+      text1: 铅
+      text2: 200千克
+      link_id: lead
+    - image: glass_0__ui
+      text1: 玻璃
+      text2: 10千克
+      link_id: glass
+    produce:
+    - image: suit_leadsuit_0__ui
+      text1: 铅服
+      text2: 1单位
+      link_id: leadsuit
+    fabricator:
+      image: suit_maker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 太空服锻造台
+      text2: 40秒
+      link_id: suitfabricator
+  - widget_type: CodexRecipePanel
+    text: 铅服
+    require:
+    - image: suit_leadsuit_0__ui
+      text1: 磨损的铅服
+      text2: 1单位
+      link_id: leadsuit
+    - image: glass_0__ui
+      text1: 玻璃
+      text2: 5千克
+      link_id: glass
+    produce:
+    - image: suit_leadsuit_0__ui
+      text1: 铅服
+      text2: 1单位
+      link_id: leadsuit
+    fabricator:
+      image: suit_maker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 太空服锻造台
+      text2: 40秒
+      link_id: suitfabricator
+  layout: Vertical

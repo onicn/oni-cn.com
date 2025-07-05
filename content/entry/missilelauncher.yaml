@@ -1,0 +1,153 @@
+id: MISSILELAUNCHER
+parent_id: BUILDCATEGORYROCKETRY
+name: 流星爆破炮
+disabled: False
+search_only: False
+category: BUILDCATEGORYROCKETRY
+sort_string: 流星爆破炮
+sub_entries:
+- id: MISSILE_BASIC
+  parent_id: MissileLauncher
+  title: STRINGS.ITEMS.MISSILE_BASIC.NAME
+  disabled: False
+- id: MISSILE_LONGRANGE
+  parent_id: MissileLauncher
+  title: STRINGS.ITEMS.MISSILE_LONGRANGE.NAME
+  disabled: False
+content_container:
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 条目（2/2）
+    style: Subtitle
+  - widget_type: CodexText
+    text: <link="MISSILEBASIC">爆破弹</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="MISSILELONGRANGE">宇宙内爆破弹</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: <link="MISSILELAUNCHER">流星爆破炮</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 投射物
+    style: Body
+    image: research_type_alpha_icon
+    link_id: jetpacks
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: missile_launcher_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      向来袭太空物体发射爆炸性投射物以免受殖民地遭受撞击损坏。
+
+
+      投射物必须在<link="MISSILEFABRICATOR">爆破弹组装机</link>制造。
+
+
+      范围：水平16格，垂直32格。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="POWER">电力</link>：240瓦'
+    tooltip: 必须与至少有<style="consumed">240瓦</style>可用<style="KKeyword">电力</style>的电路相连
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：3格宽x5格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：30秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="METAL">金属矿石</link>400千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="HEAT">热量</link>：+2.5千复制热/秒'
+    tooltip: >-
+      每秒产生<style="produced">2.5千复制热</style>
+
+
+      总<style="KKeyword">温度</style>变化受到加热物质的材料属性影响：
+          • 质量
+          • 比热容
+          • 表面积
+          • 隔热厚度
+          • 热导率
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LOGIC">信号输入端</link>'
+    tooltip: 当接收到信号时，输入端会使这个建筑一种状态发生变化
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    启用/禁用'
+    tooltip: >-
+      输入端行为：
+
+      • <b><style="logic_on">绿色信号</style></b>：启用建筑
+
+      • <b><style="logic_off">红色信号</style></b>：禁用建筑
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>类别</b>
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    <link="REQUIREMENTCLASSINDUSTRIALMACHINERY">工业机械</link>'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>一些被炸成碎片的流星会留下可收集的资源。</i>
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: <link="MISSILELAUNCHER">爆破弹</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  - widget_type: CodexImage
+    image: missile
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      一种爆炸性投射物，用于抵御流星雨。
+
+
+      必须通过<link="MISSILELAUNCHER">流星爆破炮</link>发射。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: <link="MISSILELAUNCHER">宇宙内爆破弹</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  - widget_type: CodexImage
+    image: missile_longrange
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      一种远距离爆炸性投射物，用于抵御远处的太空物体。
+
+
+      必须通过<link="MISSILELAUNCHER">流星爆破炮</link>发射。
+    style: Body
+  layout: Vertical

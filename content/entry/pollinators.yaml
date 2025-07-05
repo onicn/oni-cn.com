@@ -1,0 +1,136 @@
+id: POLLINATORS
+name: 授粉
+title: STRINGS.CODEX.POLLINATORS.TITLE
+disabled: False
+search_only: False
+category: PLANTS
+sort_string: 授粉
+required_dlc_ids:
+- DLC4_ID
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 授粉
+    style: Title
+  - widget_type: CodexText
+    text: 小动物类加速生长
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      授粉是<link="PLANTS">植物</link>与某些<link="CREATURES">小动物</link>之间的共生作用，有利于植物生长。
+
+
+      一些<link="PLANTS">植物</link>完全依赖于传粉才能生长，而其他植物则会获得宝贵的生长加速。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require: []
+    produce:
+    - image: creaturemeat_0__ui
+      text1: 肉
+      text2: 1,600千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: meat
+    fabricator:
+      image: critter_0__ui
+      text1: 甜素甲虫
+      link_id: DIVERGENTBEETLE
+  - widget_type: CodexConversionPanel
+    require:
+    - image: critter_0__ui
+      text1: 甜素甲虫
+      text2: 0.5单位/周期
+      link_id: divergentbeetle
+    produce:
+    - image: frozen_brine_0__ui
+      text1: 浓盐冰
+      text2: 128千克/周期
+      link_id: brine
+    fabricator:
+      image: raptor_0__ui
+      text1: 霸王鹦
+      link_id: RAPTOR
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require: []
+    produce:
+    - image: creaturemeat_0__ui
+      text1: 肉
+      text2: 4,800千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: meat
+    fabricator:
+      image: worm_head_0__ui
+      text1: 虫果果虫
+      link_id: DIVERGENTWORM
+  - widget_type: CodexConversionPanel
+    require:
+    - image: worm_head_0__ui
+      text1: 虫果果虫
+      text2: 0.17单位/周期
+      link_id: divergentworm
+    produce:
+    - image: frozen_brine_0__ui
+      text1: 浓盐冰
+      text2: 128千克/周期
+      link_id: brine
+    fabricator:
+      image: raptor_0__ui
+      text1: 霸王鹦
+      link_id: RAPTOR
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require: []
+    produce:
+    - image: seed_pollinator_plant_0__ui
+      text1: 拟种
+      text2: 1单位
+      link_id: butterflyplant
+    fabricator:
+      image: pollinator_0__ui
+      text1: 拟蛾
+      link_id: BUTTERFLY
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 10千克/周期
+      link_id: dirt
+    produce:
+    - image: pollinator_0__ui
+      text1: 拟蛾
+      text2: 0.2单位/周期
+      link_id: butterfly
+    fabricator:
+      image: pollinator_plant_0__ui
+      text1: 拟芽
+      link_id: BUTTERFLYPLANT
+  layout: Vertical

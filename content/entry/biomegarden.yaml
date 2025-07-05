@@ -1,0 +1,136 @@
+id: BIOMEGARDEN
+parent_id: BIOMES
+name: 花园生态
+disabled: False
+search_only: False
+category: BIOMES
+sort_string: BIOMEGARDEN
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 花园生态
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 花园生态是一个温和的环境，有着适合<link="FARMING">耕种</link>的小动物和植物。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      这种生态对以农场为中心的殖民地特别有益。<link="STEGOSPECIES">尖块兽</link>能够帮助收获可食用植物，同时<link="BUTTERFLYSPECIES">拟蛾</link>可加速植物生长。
+
+
+      在这种生态中<link="POWER">电力</link>系统可以用<link="NICKELORE">镍矿</link>建造，并且有大量的<link="SHALE">页岩</link>可用，所以并不缺乏建造材料。
+
+
+      殖民地早期可以依靠<link="GARDENFORAGEPLANTPLANTED">菌斑根</link>维持生存。<link="VINEMOTHER">漫殖藤主干</link>在充分生长后会是一种高效的<link="FOOD">食物</link>作物，因为结出<link="VINEFRUIT">漫花果</link>的藤蔓数量变多并不会提高其对<link="WATER">水</link>的需求。
+
+
+      新殖民地应当能相对容易地在这里生存。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 元素
+    style: Subtitle
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 氧石
+    image: oxyrock_0__ui
+    link_id: oxyrock
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 二氧化碳
+    color: 000000FF
+    image: element_gas
+    link_id: carbondioxide
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 镍矿
+    image: nickel_ore_0__ui
+    link_id: nickelore
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 泥土
+    image: dirt_0__ui
+    link_id: dirt
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 肥料
+    image: fertilizer_0__ui
+    link_id: fertilizer
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 藻类
+    image: algae_0__ui
+    link_id: algae
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 水
+    color: 0063FFFF
+    image: element_liquid
+    link_id: water
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 泥炭
+    image: peat_0__ui
+    link_id: peat
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 氧气
+    color: B7FFFFFF
+    image: element_gas
+    link_id: oxygen
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 页岩
+    image: shale_0__ui
+    link_id: shale
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 泥土
+    image: dirt_0__ui
+    link_id: dirt
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 植物
+    style: Subtitle
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 汗甜玉米秆
+    image: spike_fruit_0__ui
+    link_id: gardenfoodplant
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 菌斑根
+    image: fatplant_0__ui
+    link_id: gardenforageplantplanted
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 环玫花
+    image: discplant_0__ui
+    link_id: gardendecorplant
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 拟芽
+    image: pollinator_plant_0__ui
+    link_id: butterflyplant
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 漫殖藤主干
+    image: vine_mother_0__ui
+    link_id: vinemother
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 小动物
+    style: Subtitle
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 拟蛾
+    image: pollinator_0__ui
+    link_id: butterfly
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 尖块兽
+    image: stego_0__ui
+    link_id: stego
+  layout: Vertical

@@ -1,0 +1,213 @@
+id: CLAY
+parent_id: ELEMENTSSOLID
+name: 粘土
+disabled: False
+search_only: False
+category: ELEMENTSSOLID
+sort_string: 粘土
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="CLAY">粘土</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: clay_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: clay_0__ui
+      text1: 粘土
+      text2: 1000克
+      link_id: clay
+    produce:
+    - image: ceramic_0__ui
+      text1: 陶瓷
+      text2: 1000克
+      link_id: ceramic
+    fabricator:
+      image: crew_state_temp_up
+      text1: 926.9ºC
+      tooltip: 温度高于926.9ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 陶瓷
+    require:
+    - image: clay_0__ui
+      text1: 粘土
+      text2: 100千克
+      link_id: clay
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 25千克
+      link_id: carbon
+    produce:
+    - image: ceramic_0__ui
+      text1: 陶瓷
+      text2: 100千克
+      link_id: ceramic
+    fabricator:
+      image: kiln_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 窑炉
+      text2: 40秒
+      link_id: kiln
+  - widget_type: CodexRecipePanel
+    text: 陶瓷
+    require:
+    - image: clay_0__ui
+      text1: 粘土
+      text2: 100千克
+      link_id: clay
+    - image: wood_0__ui
+      text1: 木材
+      text2: 25千克
+      link_id: wood
+    produce:
+    - image: ceramic_0__ui
+      text1: 陶瓷
+      text2: 100千克
+      link_id: ceramic
+    fabricator:
+      image: kiln_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 窑炉
+      text2: 40秒
+      link_id: kiln
+  - widget_type: CodexRecipePanel
+    text: 陶瓷
+    require:
+    - image: clay_0__ui
+      text1: 粘土
+      text2: 100千克
+      link_id: clay
+    - image: peat_0__ui
+      text1: 泥炭
+      text2: 25千克
+      link_id: peat
+    produce:
+    - image: ceramic_0__ui
+      text1: 陶瓷
+      text2: 100千克
+      link_id: ceramic
+    fabricator:
+      image: kiln_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 窑炉
+      text2: 40秒
+      link_id: kiln
+  - widget_type: CodexConversionPanel
+    require:
+    - image: clay_0__ui
+      text1: 粘土
+      text2: 140千克/周期
+      link_id: clay
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 70千克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__ui
+      text1: 好吃哈奇
+      link_id: HATCH
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 碎石机
+    require:
+    - image: bammoth_poop_0__ui
+      text1: 绒犸兔碎糜
+      text2: 120千克
+      link_id: icebellypoop
+    produce:
+    - image: phosphorite_0__ui
+      text1: 磷矿
+      text2: 32千克
+      link_id: phosphorite
+    - image: clay_0__ui
+      text1: 粘土
+      text2: 88千克
+      link_id: clay
+    fabricator:
+      image: rockrefinery_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 碎石机
+      text2: 40秒
+      link_id: rockcrusher
+  - widget_type: CodexConversionPanel
+    require:
+    - image: unknown
+      color: 7F7F7FFF
+      text1: 过滤介质
+      text2: 80千克/周期
+      link_id: filter
+    - image: element_gas
+      color: 224F40FF
+      text1: 污染氧
+      text2: 60千克/周期
+      link_id: contaminatedoxygen
+    produce:
+    - image: clay_0__ui
+      text1: 粘土
+      text2: 86千克/周期
+      link_id: clay
+    - image: element_gas
+      color: B7FFFFFF
+      text1: 氧气
+      text2: 54千克/周期
+      link_id: oxygen
+    fabricator:
+      image: co2filter_0__ui
+      text1: 空气净化器
+      link_id: AIRFILTER
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      粘土是一种在自然条件下由石头和土壤组成的柔软混合物，在高<link="HEAT">温</link>下会变硬。
+
+
+      它是一种可靠的<b>建造材料</b>。
+
+
+      资源种类：<link="FARMABLE">可耕种的泥土</link>
+
+      熔点：926.9ºC
+
+      硬度：<color=#71ABCFFF>5（非常柔软）</color>
+
+
+      比热容：0.920 (DTU/g)/ºC
+
+      热导率：2.000 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.65
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：<link="BUILDABLEANY">一般建造材料</link>, <link="ELEMENTSSOLID">固体</link>, <link="FARMABLE">可耕种的泥土</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

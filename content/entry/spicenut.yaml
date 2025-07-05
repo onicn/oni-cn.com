@@ -1,0 +1,225 @@
+id: SPICENUT
+parent_id: FOOD
+name: 火椒粒
+disabled: False
+search_only: False
+category: FOOD
+sort_string: 火椒粒
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="SPICENUT">火椒粒</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: spicenut_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <link="SPICEVINE">火椒藤</link>的美味果实。
+
+
+      苦涩外皮下隐藏着饱满、辛辣的核，常用于烹饪。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 品质：糟糕 [0]
+    style: Body
+  - widget_type: CodexText
+    text: 卡路里：0千卡
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      冷藏温度：4ºC
+
+      深度冷冻温度：-18ºC
+
+      腐烂时间：4.0周期
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 浆果酿
+    require:
+    - image: gristleberry_0__ui
+      text1: 炙烤刺果
+      text2: 4,000千卡
+      tooltip: 品质：低劣 [+1]
+      link_id: grilledpricklefruit
+    - image: spicenut_0__ui
+      text1: 火椒粒
+      text2: 2000克
+      link_id: spicenut
+    produce:
+    - image: zestysalsa_0__ui
+      text1: 浆果酿
+      text2: 4,400千卡
+      tooltip: 品质：优秀 [+4]
+      link_id: salsa
+    fabricator:
+      image: cookstation_gourmet_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 燃气灶
+      text2: 50秒
+      link_id: gourmetcookingstation
+  - widget_type: CodexRecipePanel
+    text: 火椒面包
+    require:
+    - image: seed_coldwheat_0__ui
+      text1: 冰霜麦粒
+      text2: 10单位
+      link_id: coldwheat
+    - image: spicenut_0__ui
+      text1: 火椒粒
+      text2: 1000克
+      link_id: spicenut
+    produce:
+    - image: pepperbread_0__ui
+      text1: 火椒面包
+      text2: 4,000千卡
+      tooltip: 品质：杰出 [+5]
+      link_id: spicebread
+    fabricator:
+      image: cookstation_gourmet_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 燃气灶
+      text2: 50秒
+      link_id: gourmetcookingstation
+  - widget_type: CodexRecipePanel
+    text: 火椒面包
+    require:
+    - image: megafrond_grain_0__ui
+      text1: 巨蕨谷粒
+      text2: 10单位
+      link_id: fernfood
+    - image: spicenut_0__ui
+      text1: 火椒粒
+      text2: 1000克
+      link_id: spicenut
+    produce:
+    - image: pepperbread_0__ui
+      text1: 火椒面包
+      text2: 4,000千卡
+      tooltip: 品质：杰出 [+5]
+      link_id: spicebread
+    fabricator:
+      image: cookstation_gourmet_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 燃气灶
+      text2: 50秒
+      link_id: gourmetcookingstation
+  - widget_type: CodexRecipePanel
+    text: 麻婆豆腐
+    require:
+    - image: loafu_0__ui
+      text1: 豆腐
+      text2: 3,600千卡
+      tooltip: 品质：标准 [+2]
+      link_id: tofu
+    - image: spicenut_0__ui
+      text1: 火椒粒
+      text2: 1000克
+      link_id: spicenut
+    produce:
+    - image: spicey_tofu_0__ui
+      text1: 麻婆豆腐
+      text2: 4,000千卡
+      tooltip: 品质：杰出 [+5]
+      link_id: spicytofu
+    fabricator:
+      image: cookstation_gourmet_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 燃气灶
+      text2: 50秒
+      link_id: gourmetcookingstation
+  - widget_type: CodexRecipePanel
+    text: 咸乳
+    require:
+    - image: spicenut_0__ui
+      text1: 火椒粒
+      text2: 3000克
+      link_id: spicenut
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 17千克
+      link_id: water
+    produce:
+    - image: element_liquid
+      color: CCEEE8FF
+      text1: 咸乳
+      text2: 20千克
+      link_id: milk
+    fabricator:
+      image: milkpress_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 植物粉碎机
+      text2: 40秒
+      link_id: milkpress
+  - widget_type: CodexRecipePanel
+    text: 免疫增补剂
+    require:
+    - image: spicenut_0__ui
+      text1: 火椒粒
+      text2: 1000克
+      link_id: spicenut
+    produce:
+    - image: pill_3_0__ui
+      text1: 免疫增补剂
+      text2: 1单位
+      link_id: intermediatebooster
+    fabricator:
+      image: apothecary_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 配药桌
+      text2: 100秒
+      link_id: apothecary
+  - widget_type: CodexConversionPanel
+    require:
+    - image: spicenut_0__ui
+      text1: 火椒粒
+      text2: 1000克/周期
+      link_id: spicenut
+    produce: []
+    fabricator:
+      image: lightbug_0__prp_ui
+      text1: 皇家虫
+      link_id: LIGHTBUGPURPLE
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: 474506FF
+      text1: 污染水
+      text2: 35千克/周期
+      link_id: dirtywater
+    - image: phosphorite_0__ui
+      text1: 磷矿
+      text2: 1000克/周期
+      link_id: phosphorite
+    produce:
+    - image: spicenut_0__ui
+      text1: 火椒粒
+      text2: 500克/周期
+      link_id: spicenut
+    fabricator:
+      image: vinespicenut_0__ui
+      text1: 火椒藤
+      link_id: SPICEVINE
+  layout: Vertical

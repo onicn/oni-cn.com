@@ -1,0 +1,207 @@
+id: DEPLETEDURANIUM
+parent_id: ELEMENTSSOLID
+name: 贫铀
+disabled: False
+search_only: False
+category: ELEMENTSSOLID
+sort_string: 贫铀
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="DEPLETEDURANIUM">贫铀</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: depleted_uranium_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: depleted_uranium_0__ui
+      text1: 贫铀
+      text2: 1000克
+      link_id: depleteduranium
+    produce:
+    - image: element_liquid
+      color: A2DD10FF
+      text1: 熔融铀
+      text2: 1000克
+      link_id: moltenuranium
+    fabricator:
+      image: crew_state_temp_up
+      text1: 132.9ºC
+      tooltip: 温度高于132.9ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换于
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: A2DD10FF
+      text1: 熔融铀
+      text2: 1000克
+      link_id: moltenuranium
+    produce:
+    - image: depleted_uranium_0__ui
+      text1: 贫铀
+      text2: 1000克
+      link_id: depleteduranium
+    fabricator:
+      image: crew_state_temp_down
+      text1: 132.9ºC
+      tooltip: 温度低于132.9ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: depleted_uranium_0__ui
+      text1: 贫铀
+      text2: 30千克/周期
+      link_id: depleteduranium
+    produce:
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 1500克/周期
+      link_id: hydrogen
+    fabricator:
+      image: caterpillar_0__wtr_ui
+      text1: 海绵蛞蝓
+      link_id: STATERPILLAR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: depleted_uranium_0__ui
+      text1: 贫铀
+      text2: 30千克/周期
+      link_id: depleteduranium
+    produce:
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 1500克/周期
+      link_id: hydrogen
+    fabricator:
+      image: caterpillar_0__gas_ui
+      text1: 烟雾蛞蝓
+      link_id: STATERPILLAR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: depleted_uranium_0__ui
+      text1: 贫铀
+      text2: 60千克/周期
+      link_id: depleteduranium
+    produce:
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 3000克/周期
+      link_id: hydrogen
+    fabricator:
+      image: caterpillar_0__ui
+      text1: 电弧蛞蝓
+      link_id: STATERPILLAR
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 人力辐射粒子发生器
+    require:
+    - image: radium_0__ui
+      text1: 铀矿
+      text2: 1000克
+      link_id: uraniumore
+    produce:
+    - image: depleted_uranium_0__ui
+      text1: 贫铀
+      text2: 500克
+      link_id: depleteduranium
+    fabricator:
+      image: manual_radbolt_generator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 人力辐射粒子发生器
+      text2: 40秒
+      link_id: highenergyparticlespawner
+  - widget_type: CodexRecipePanel
+    text: 人力辐射粒子发生器
+    require:
+    - image: enriched_uranium_0__ui
+      text1: 浓缩铀
+      text2: 1000克
+      link_id: enricheduranium
+    produce:
+    - image: depleted_uranium_0__ui
+      text1: 贫铀
+      text2: 800克
+      link_id: depleteduranium
+    fabricator:
+      image: manual_radbolt_generator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 人力辐射粒子发生器
+      text2: 40秒
+      link_id: highenergyparticlespawner
+  - widget_type: CodexConversionPanel
+    require:
+    - image: radium_0__ui
+      text1: 铀矿
+      text2: 10千克/周期
+      link_id: uraniumore
+    produce:
+    - image: depleted_uranium_0__ui
+      text1: 贫铀
+      text2: 5千克/周期
+      link_id: depleteduranium
+    fabricator:
+      image: radiation_lamp_0__ui
+      text1: 辐射灯
+      link_id: RADIATIONLIGHT
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      (U) 贫铀是铀235含量很低的<link="URANIUMORE">铀</link>。
+
+
+      它作为<link="ENRICHEDURANIUM">浓缩铀</link>的副产物，并且不适合做燃料。
+
+
+      资源种类：<link="REFINEDMETAL">精炼金属</link>
+
+      熔点：132.9ºC
+
+      硬度：<color=#BD597FFF>250（几乎坚不可摧）</color>
+
+
+      比热容：1.000 (DTU/g)/ºC
+
+      热导率：20.000 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.85
+
+      辐射释放量/1000千克：55拉德/周期
+
+
+      属性：<link="BUILDABLEANY">一般建造材料</link>, <link="REFINEDMETAL">精炼金属</link>, <link="ELEMENTSSOLID">固体</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

@@ -1,0 +1,133 @@
+id: ORBITALRESEARCHCENTER
+parent_id: BUILDCATEGORYEQUIPMENT
+name: 轨道数据收集实验仪
+disabled: False
+search_only: False
+category: BUILDCATEGORYEQUIPMENT
+sort_string: 轨道数据收集实验仪
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="ORBITALRESEARCHCENTER">轨道数据收集实验仪</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 撞击计划
+    style: Body
+    image: research_type_alpha_icon
+    link_id: crashplan
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: orbital_research_station_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      产生可以在<link="DLC1COSMICRESEARCHCENTER">虚拟天象仪</link>消耗的<link="ORBITALRESEARCHDATABANK">数据磁盘</link>以解锁新技术。
+
+
+      消耗<link="POLYPROPYLENE">塑料</link>和<link="POWER">电力</link>。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    在太空中使用'
+    tooltip: 这个建筑仅在火箭飞行时才能运作
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="POWER">电力</link>：60瓦'
+    tooltip: 必须与至少有<style="consumed">60瓦</style>可用<style="KKeyword">电力</style>的电路相连
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    需要技能的复制人的操作'
+    tooltip: 只有具有<link="ASTRONOMY">天文学</link>技能或<link="BOOSTERRESEARCH2">天文学增幅块</link>的复制人才能使用这个建筑
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：2格宽x3格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：120秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="PLASTIC">塑料</link>200千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="HEAT">热量</link>：+625复制热/秒'
+    tooltip: >-
+      每秒产生<style="produced">625复制热</style>
+
+
+      总<style="KKeyword">温度</style>变化受到加热物质的材料属性影响：
+          • 质量
+          • 比热容
+          • 表面积
+          • 隔热厚度
+          • 热导率
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    过热<link="HEAT">温度</link>：75ºC'
+    tooltip: 达到<b>75ºC</b>时开始过热
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LOGIC">信号输入端</link>'
+    tooltip: 当接收到信号时，输入端会使这个建筑一种状态发生变化
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    启用/禁用'
+    tooltip: >-
+      输入端行为：
+
+      • <b><style="logic_on">绿色信号</style></b>：启用建筑
+
+      • <b><style="logic_off">红色信号</style></b>：禁用建筑
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>类别</b>
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    <link="REQUIREMENTCLASSSCIENCEBUILDING">科学建筑</link>'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>在小行星轨道上时，轨道数据收集实验仪可以记录数据，并将其写入<link="ORBITALRESEARCHDATABANK">数据磁盘</link>。</i>
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 所有配方
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 数据磁盘
+    require:
+    - image: polypropylene_0__ui
+      text1: 塑料
+      text2: 5千克
+      link_id: polypropylene
+    produce:
+    - image: floppy_disc_0__ui
+      text1: 数据磁盘
+      text2: 1单位
+      link_id: databank
+    fabricator:
+      image: orbital_research_station_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 轨道数据收集实验仪
+      text2: 33秒
+      link_id: orbitalresearchcenter
+  layout: Vertical

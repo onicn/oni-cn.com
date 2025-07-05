@@ -1,0 +1,134 @@
+id: NUCLEARRESEARCHCENTER
+parent_id: BUILDCATEGORYEQUIPMENT
+name: 材料研究终端
+disabled: False
+search_only: False
+category: BUILDCATEGORYEQUIPMENT
+sort_string: 材料研究终端
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="NUCLEARRESEARCHCENTER">材料研究终端</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 材料科学研究
+    style: Body
+    image: research_type_alpha_icon
+    link_id: nuclearresearch
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: material_research_centre_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      执行<link="RESEARCHDCL1">应用科学研究</link>以解锁新技术。
+
+
+      消耗辐射粒子。
+
+
+      分配的复制人必须具有<link="ATOMICRESEARCH">应用科学研究</link>技能。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    辐射粒子：每<link="RESEARCH">研究</link>点消耗<style="consumed">10单位</style>'
+    tooltip: 这个研究站每生成一个<style="KKeyword">研究点</style>会消耗<style="consumed">10单位</style><style="KKeyword">辐射粒子</style>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="POWER">电力</link>：120瓦'
+    tooltip: 必须与至少有<style="consumed">120瓦</style>可用<style="KKeyword">电力</style>的电路相连
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    复制人的操作'
+    tooltip: 必须有复制人来才能使这个建筑运行
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    需要技能的复制人的操作'
+    tooltip: 只有具有<link="ATOMICRESEARCH">应用科学研究</link>技能或<link="BOOSTERRESEARCH3">应用科学增幅块</link>的复制人才能使用这个建筑
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    辐射粒子输入口'
+    tooltip: 这个建筑上的辐射粒子端口允许其接收<style="KKeyword">辐射粒子</style>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：5格宽x3格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：30秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="REFINEDMETAL">精炼金属</link>400千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    应用科学研究'
+    tooltip: 产生<style="KKeyword">应用科学研究</style>研究点
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="HEAT">热量</link>：+4.5千复制热/秒'
+    tooltip: >-
+      每秒产生<style="produced">4.5千复制热</style>
+
+
+      总<style="KKeyword">温度</style>变化受到加热物质的材料属性影响：
+          • 质量
+          • 比热容
+          • 表面积
+          • 隔热厚度
+          • 热导率
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    过热<link="HEAT">温度</link>：75ºC'
+    tooltip: 达到<b>75ºC</b>时开始过热
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LOGIC">信号输入端</link>'
+    tooltip: 当接收到信号时，输入端会使这个建筑一种状态发生变化
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    启用/禁用'
+    tooltip: >-
+      输入端行为：
+
+      • <b><style="logic_on">绿色信号</style></b>：启用建筑
+
+      • <b><style="logic_off">红色信号</style></b>：禁用建筑
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LOGIC">信号输出端</link>'
+    tooltip: 当这个建筑状态发生变化时，输出端会输出一个信号
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    辐射粒子库存'
+    tooltip: >-
+      输出端行为：
+
+      • 当库存充满辐射粒子时，输出<b><style="logic_on">绿色信号</style></b>
+
+      • 否则，输出<b><style="logic_off">红色信号</style></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>类别</b>
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    <link="REQUIREMENTCLASSSCIENCEBUILDING">科学建筑</link>'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>里面免费附带一些离子。</i>
+    style: Body
+  layout: Vertical

@@ -1,0 +1,119 @@
+id: ROOMSBATHROOM
+parent_id: ROOMS
+name: 厕所
+disabled: False
+search_only: False
+category: ROOMS
+sort_string: 厕所
+sub_entries:
+- id: PlumbedBathroom
+  parent_id: ROOMSBathroom
+  name: 卫生间
+  disabled: False
+  sort_string: 卫生间
+- id: Latrine
+  parent_id: ROOMSBathroom
+  name: 公共厕所
+  disabled: False
+  sort_string: 公共厕所
+content_container:
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 条目（2/2）
+    style: Subtitle
+  - widget_type: CodexText
+    text: <link="PLUMBEDBATHROOM">卫生间</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="LATRINE">公共厕所</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: ui_room_bathroom
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 卫生间
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      个人卫生的庇护所。
+
+
+      使用管道设施齐全的卫生间会提升复制人的士气。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 详情
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <b>效果：</b>
+          • <style="KKeyword">士气</style>：+2
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>需求：</b>
+    style: Body
+  - widget_type: CodexText
+    text: >2-
+          • <link="REQUIREMENTCLASSFLUSHTOILETTYPE">Flush Toilet</link>
+          • <link="REQUIREMENTCLASSWASHSTATION">Plumbed wash station</link>
+          • No <link="OUTHOUSE">Outhouses</link>
+          • No <link="REQUIREMENTCLASSINDUSTRIALMACHINERY">industrial machinery</link>
+          • Minimum size: 12 tiles
+          • Maximum size: 64 tiles
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 公共厕所
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      相比在整个殖民地人面前解手，这是一个进步。
+
+
+      在封闭房间里如厕会提升复制人的士气。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 详情
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <b>效果：</b>
+          • <style="KKeyword">士气</style>：+1
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>需求：</b>
+    style: Body
+  - widget_type: CodexText
+    text: >2-
+          • <link="REQUIREMENTCLASSTOILETTYPE">Toilet</link>
+          • <link="REQUIREMENTCLASSWASHSTATION">Wash station</link>
+          • No <link="REQUIREMENTCLASSINDUSTRIALMACHINERY">industrial machinery</link>
+          • Minimum size: 12 tiles
+          • Maximum size: 64 tiles
+    style: Body
+  layout: Vertical

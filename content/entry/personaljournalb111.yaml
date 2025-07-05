@@ -1,0 +1,69 @@
+id: PERSONALJOURNALB111
+name: 个人日志：B111
+title: STRINGS.CODEX.A1A_B111.TITLE
+disabled: False
+search_only: False
+category: JOURNALS
+sort_string: 个人日志：B111
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 个人日志：B111
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：三
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+  lock_id: journal_B111_1
+- contents:
+  - widget_type: CodexText
+    text: >
+      在我发现霍兰博士在实验室里喃喃自语后就把他送回家了。他看上去好几天没睡觉了！
+
+
+      我担心这里的所有人都怕让“主管”失望而把自己弄崩溃了。下次有机会的话，我得和杰姬说一说了。
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: journal_B111_1
+- contents:
+  - widget_type: CodexText
+    text: >
+      好吧，那样做没用。
+
+
+      在提到我们需要一些办公室联谊活动的时候，主管总是固执地强调我们“没那么多时间玩”。
+
+
+      这太荒谬了。明天我就要组织一些有意思的活动，每个人都参加，这样杰姬也不得不同意了。她仅仅需要看到短期的压力释放能带来的长期的好处，这样她就能理解娱乐的重要性了。
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: journal_B111_2
+- contents:
+  - widget_type: CodexText
+    text: >
+      我简直无法相信！我组织了一次聚餐，幻想这会是一次很好的休息，但杰姬在我们准备的时候发现了我们，强调说我们没有时间“闲混”。当然，所有人都不敢违抗“主管”，然后都回去工作了。
+
+
+      所有的食物都被扔掉了。有些人甚至带来了在家里包的饺子！看着休息室的垃圾袋里装满着土豆沙拉和鸡翅，我无比痛心。这些饺子真是太可惜了。
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: journal_B111_3
+- contents:
+  - widget_type: CodexText
+    text: >
+      我发现过压的实验室工作人员经常犯低级错误。这越来越危险了。我担心如果我们不把心理健康和身体健康看得同样重要，我们所构造的殖民地也将会遭受同样的问题。如果我们不能构建一个更好的世界，做这些计划有什么用呢？
+
+
+      也许会有某种方法，我可以不在杰姬知道的情况下偷偷地将一些必要的休息时间活动加入打印舱中。
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: journal_B111_4

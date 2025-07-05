@@ -1,0 +1,81 @@
+id: FORESTFORAGEPLANT
+parent_id: FOOD
+name: 六角根果实
+disabled: False
+search_only: False
+category: FOOD
+sort_string: 六角根果实
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="FORESTFORAGEPLANT">六角根果实</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: podmelon_fruit_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      一种肉质弹劲的无籽果实。
+
+
+      无法再种植。
+
+
+      六角根果实的卡路里密度比淤泥根要更高。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 品质：恶心 [-1]
+    style: Body
+  - widget_type: CodexText
+    text: 卡路里：6,400千卡
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 腐烂时间：永不腐烂
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: podmelon_fruit_0__ui
+      text1: 六角根果实
+      text2: 700千卡/周期
+      tooltip: 品质：恶心 [-1]
+      link_id: forestforageplant
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 82克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__ui
+      text1: 好吃哈奇
+      link_id: HATCH
+  - widget_type: CodexConversionPanel
+    require:
+    - image: podmelon_fruit_0__ui
+      text1: 六角根果实
+      text2: 700千卡/周期
+      tooltip: 品质：恶心 [-1]
+      link_id: forestforageplant
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 109.4克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__veg_ui
+      text1: 草质哈奇
+      link_id: HATCHVEGGIE
+  layout: Vertical

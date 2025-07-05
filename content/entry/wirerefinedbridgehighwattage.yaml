@@ -1,0 +1,69 @@
+id: WIREREFINEDBRIDGEHIGHWATTAGE
+parent_id: BUILDCATEGORYPOWER
+name: 高负荷导线接合板
+disabled: False
+search_only: False
+category: BUILDCATEGORYPOWER
+sort_string: 高负荷导线接合板
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="WIREREFINEDBRIDGEHIGHWATTAGE">高负荷导线接合板</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 低阻导体
+    style: Body
+    image: research_type_alpha_icon
+    link_id: prettygoodconductors
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: heavywatttile_conductive_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      可以运载比普通<link="WIREBRIDGEHIGHWATTAGE">高负荷接合板</link>更高的<link="POWER">功率</link>而不会过载。
+
+
+      允许<link="HIGHWATTAGEWIRE">高负荷电线</link>通过墙体和地面。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    技能：<link="TECHNICALS2">电气工程</link>'
+    tooltip: 必须至少有一名<link="TECHNICALS2">电气工程</link>技能的复制人才能建造这个建筑
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：1格宽x1格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：3秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="REFINEDMETAL">精炼金属</link>100千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    行走速度：-50%'
+    tooltip: 复制人在这种砖块上能够加速<b>-50%</b>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：-25（范围：6格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>6</b>格内降低<b><b>-25</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>接合板可让高负荷电线穿墙而过，而不会泄露气体和液体。</i>
+    style: Body
+  layout: Vertical

@@ -1,0 +1,74 @@
+id: BUILDCATEGORYMEDICAL
+parent_id: BUILDINGS
+name: 医疗
+disabled: False
+search_only: False
+category: BUILDINGS
+sort_string: 医疗
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="BUILDCATEGORYMEDICAL">医疗</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexLabelWithLargeIcon
+    text: 分诊床
+    style: BodyWhite
+    image: medical_cot_0__ui
+    link_id: medicalcot
+  - widget_type: CodexLabelWithLargeIcon
+    text: 医务站
+    style: BodyWhite
+    image: treatment_chair_0__ui
+    link_id: doctorstation
+  - widget_type: CodexLabelWithLargeIcon
+    text: 手部消毒站
+    style: BodyWhite
+    image: handsanitizer_0__ui
+    link_id: handsanitizer
+  - widget_type: CodexLabelWithLargeIcon
+    text: 按摩床
+    style: BodyWhite
+    image: masseur_0__ui
+    link_id: massagetable
+  - widget_type: CodexLabelWithLargeIcon
+    text: 洗手池
+    style: BodyWhite
+    image: wash_sink_0__ui
+    link_id: washsink
+  - widget_type: CodexLabelWithLargeIcon
+    text: 洗手盆
+    style: BodyWhite
+    image: wash_basin_0__ui
+    link_id: washbasin
+  - widget_type: CodexLabelWithLargeIcon
+    text: 润滑站
+    style: BodyWhite
+    image: oilchange_station_0__ui
+    link_id: oilchanger
+  - widget_type: CodexLabelWithLargeIcon
+    text: 病诊站
+    style: BodyWhite
+    image: bed_medical_0__ui
+    link_id: advanceddoctorstation
+  - widget_type: CodexLabelWithLargeIcon
+    text: 配药桌
+    style: BodyWhite
+    image: apothecary_0__ui
+    link_id: apothecary
+  - widget_type: CodexLabelWithLargeIcon
+    text: 除污淋浴隔间
+    style: BodyWhite
+    image: decontamination_shower_0__ui
+    link_id: decontaminationshower
+  - widget_type: CodexLabelWithLargeIcon
+    text: 雅致的纪念碑
+    style: BodyWhite
+    image: gravestone_0__ui
+    link_id: grave
+  layout: Grid
+- contents:
+  - widget_type: CodexSpacer
+  layout: Vertical

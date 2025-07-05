@@ -1,0 +1,28 @@
+id: VIDEOS16
+name: 视频：电路
+disabled: False
+search_only: False
+category: Videos
+sort_string: 视频：电路
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 视频：电路
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexVideo
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      发电机可以产生电力，而殖民地中的各种建筑和机器会消耗电力，称作用电器。每个用电器会从连入的电路中获取一定功率的电力，可以通过(ClickType/clicking)建筑然后进入能量选项卡查看
+
+
+      我可以使用电力概览 {Hotkey/Overlay2} 检查我的电路状态。如果用电器消耗的电力比发电机产生的要多，蓄电池就会流失电力直至电力不足。
+
+
+      此外，如果用电器消耗的电力比电线能承受的要多，电线就会过载并烧毁。为了修正这些状况，我需要重新把用电器分在多条电路上。
+    style: Body
+  layout: Vertical

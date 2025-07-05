@@ -1,0 +1,234 @@
+id: BUILDCATEGORYFURNITURE
+parent_id: BUILDINGS
+name: 家具
+disabled: False
+search_only: False
+category: BUILDINGS
+sort_string: 家具
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="BUILDCATEGORYFURNITURE">家具</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexLabelWithLargeIcon
+    text: 丰碑中段
+    style: BodyWhite
+    image: monument_mid_a_0__ui
+    link_id: monumentmiddle
+  - widget_type: CodexLabelWithLargeIcon
+    text: 丰碑底基
+    style: BodyWhite
+    image: monument_base_a_0__ui
+    link_id: monumentbottom
+  - widget_type: CodexLabelWithLargeIcon
+    text: 丰碑顶部
+    style: BodyWhite
+    image: monument_upper_a_0__ui
+    link_id: monumenttop
+  - widget_type: CodexLabelWithLargeIcon
+    text: 像素屏
+    style: BodyWhite
+    image: pixel_pack_0__ui
+    link_id: pixelpack
+  - widget_type: CodexLabelWithLargeIcon
+    text: 公园标识
+    style: BodyWhite
+    image: parksign_0__ui
+    link_id: parksign
+  - widget_type: CodexLabelWithLargeIcon
+    text: 共线电话
+    style: BodyWhite
+    image: telephone_0__ui
+    link_id: telephone
+  - widget_type: CodexLabelWithLargeIcon
+    text: 冰雕塑块
+    style: BodyWhite
+    image: icesculpture_0__ui
+    link_id: icesculpture
+  - widget_type: CodexLabelWithLargeIcon
+    text: 化石雕塑块
+    style: BodyWhite
+    image: fossilsculpture_0__ui
+    link_id: fossilsculpture
+  - widget_type: CodexLabelWithLargeIcon
+    text: 吸顶灯
+    style: BodyWhite
+    image: ceilinglight_0__ui
+    link_id: ceilinglight
+  - widget_type: CodexLabelWithLargeIcon
+    text: 垂吊化石雕塑块
+    style: BodyWhite
+    image: fossilsculpture_hanging_0__ui
+    link_id: ceilingfossilsculpture
+  - widget_type: CodexLabelWithLargeIcon
+    text: 垂吊花盆
+    style: BodyWhite
+    image: flowervase_hanging_basic_0__ui
+    link_id: flowervasehanging
+  - widget_type: CodexLabelWithLargeIcon
+    text: 垂直风洞
+    style: BodyWhite
+    image: wind_tunnel_0__ui
+    link_id: verticalwindtunnel
+  - widget_type: CodexLabelWithLargeIcon
+    text: 基座
+    style: BodyWhite
+    image: pedestal_0__ui
+    link_id: itempedestal
+  - widget_type: CodexLabelWithLargeIcon
+    text: 墙壁花盆
+    style: BodyWhite
+    image: flowervase_wall_0__ui
+    link_id: flowervasewall
+  - widget_type: CodexLabelWithLargeIcon
+    text: 大型雕塑块
+    style: BodyWhite
+    image: sculpture_0__ui
+    link_id: sculpture
+  - widget_type: CodexLabelWithLargeIcon
+    text: 大理石雕塑块
+    style: BodyWhite
+    image: sculpture_marble_0__ui
+    link_id: marblesculpture
+  - widget_type: CodexLabelWithLargeIcon
+    text: 天花板饰件
+    style: BodyWhite
+    image: crown_moulding_0__ui
+    link_id: crownmoulding
+  - widget_type: CodexLabelWithLargeIcon
+    text: 床铺
+    style: BodyWhite
+    image: bedlg_0__ui
+    link_id: bed
+  - widget_type: CodexLabelWithLargeIcon
+    text: 日光灯
+    style: BodyWhite
+    image: sun_lamp_0__ui
+    link_id: sunlamp
+  - widget_type: CodexLabelWithLargeIcon
+    text: 木雕塑块
+    style: BodyWhite
+    image: sculpture_wood_0__ui
+    link_id: woodsculpture
+  - widget_type: CodexLabelWithLargeIcon
+    text: 机械冲浪板
+    style: BodyWhite
+    image: mechanical_surfboard_0__ui
+    link_id: mechanicalsurfboard
+  - widget_type: CodexLabelWithLargeIcon
+    text: 桑拿房
+    style: BodyWhite
+    image: sauna_0__ui
+    link_id: sauna
+  - widget_type: CodexLabelWithLargeIcon
+    text: 梯床
+    style: BodyWhite
+    image: ladder_bed_0__ui
+    link_id: ladderbed
+  - widget_type: CodexLabelWithLargeIcon
+    text: 榨汁机
+    style: BodyWhite
+    image: juicer_0__ui
+    link_id: juicer
+  - widget_type: CodexLabelWithLargeIcon
+    text: 汞吸顶灯
+    style: BodyWhite
+    image: mercurylight_0__ui
+    link_id: mercuryceilinglight
+  - widget_type: CodexLabelWithLargeIcon
+    text: 汽水机
+    style: BodyWhite
+    image: sodamaker_0__ui
+    link_id: sodafountain
+  - widget_type: CodexLabelWithLargeIcon
+    text: 沙滩椅
+    style: BodyWhite
+    image: beach_chair_0__ui
+    link_id: beachchair
+  - widget_type: CodexLabelWithLargeIcon
+    text: 浓缩咖啡机
+    style: BodyWhite
+    image: espresso_machine_0__ui
+    link_id: espressomachine
+  - widget_type: CodexLabelWithLargeIcon
+    text: 游戏机台
+    style: BodyWhite
+    image: arcade_cabinet_0__ui
+    link_id: arcademachine
+  - widget_type: CodexLabelWithLargeIcon
+    text: 点唱机器人
+    style: BodyWhite
+    image: jukebot_0__ui
+    link_id: phonobox
+  - widget_type: CodexLabelWithLargeIcon
+    text: 热水浴缸
+    style: BodyWhite
+    image: hottub_0__ui
+    link_id: hottub
+  - widget_type: CodexLabelWithLargeIcon
+    text: 电灯
+    style: BodyWhite
+    image: floorlamp_0__ui
+    link_id: floorlamp
+  - widget_type: CodexLabelWithLargeIcon
+    text: 空白画布
+    style: BodyWhite
+    image: painting_off_0__ui
+    link_id: canvas
+  - widget_type: CodexLabelWithLargeIcon
+    text: 肖像画布
+    style: BodyWhite
+    image: painting_tall_off_0__ui
+    link_id: canvastall
+  - widget_type: CodexLabelWithLargeIcon
+    text: 舒适的床
+    style: BodyWhite
+    image: elegantbed_0__ui
+    link_id: luxurybed
+  - widget_type: CodexLabelWithLargeIcon
+    text: 花盆
+    style: BodyWhite
+    image: flowervase_0__ui
+    link_id: flowervase
+  - widget_type: CodexLabelWithLargeIcon
+    text: 边角饰件
+    style: BodyWhite
+    image: corner_tile_0__ui
+    link_id: cornermoulding
+  - widget_type: CodexLabelWithLargeIcon
+    text: 透明花盆
+    style: BodyWhite
+    image: flowervase_hanging_0__ui
+    link_id: flowervasehangingfancy
+  - widget_type: CodexLabelWithLargeIcon
+    text: 金属雕塑块
+    style: BodyWhite
+    image: sculpture_metal_0__ui
+    link_id: metalsculpture
+  - widget_type: CodexLabelWithLargeIcon
+    text: 雕塑块
+    style: BodyWhite
+    image: sculpture_1x2_0__ui
+    link_id: smallsculpture
+  - widget_type: CodexLabelWithLargeIcon
+    text: 风景画布
+    style: BodyWhite
+    image: painting_wide_off_0__ui
+    link_id: canvaswide
+  - widget_type: CodexLabelWithLargeIcon
+    text: 餐桌
+    style: BodyWhite
+    image: diningtable_0__ui
+    link_id: diningtable
+  - widget_type: CodexLabelWithLargeIcon
+    text: 饮水机
+    style: BodyWhite
+    image: watercooler_0__ui
+    link_id: watercooler
+  layout: Grid
+- contents:
+  - widget_type: CodexSpacer
+  layout: Vertical

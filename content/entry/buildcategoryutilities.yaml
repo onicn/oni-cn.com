@@ -1,0 +1,79 @@
+id: BUILDCATEGORYUTILITIES
+parent_id: BUILDINGS
+name: 实用
+disabled: False
+search_only: False
+category: BUILDINGS
+sort_string: 实用
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="BUILDCATEGORYUTILITIES">实用</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexLabelWithLargeIcon
+    text: 冰冷风扇
+    style: BodyWhite
+    image: fanice_0__ui
+    link_id: icecooledfan
+  - widget_type: CodexLabelWithLargeIcon
+    text: 制冰机
+    style: BodyWhite
+    image: freezerator_0__ui
+    link_id: icemachine
+  - widget_type: CodexLabelWithLargeIcon
+    text: 变温板
+    style: BodyWhite
+    image: thermalblock_0__ui
+    link_id: thermalblock
+  - widget_type: CodexLabelWithLargeIcon
+    text: 扫扫基站
+    style: BodyWhite
+    image: sweep_bot_base_station_0__ui
+    link_id: sweepbotstation
+  - widget_type: CodexLabelWithLargeIcon
+    text: 柴火炉
+    style: BodyWhite
+    image: campfire_small_0__ui
+    link_id: campfire
+  - widget_type: CodexLabelWithLargeIcon
+    text: 油井
+    style: BodyWhite
+    image: geyser_oil_cap_0__ui
+    link_id: oilwellcap
+  - widget_type: CodexLabelWithLargeIcon
+    text: 液体加热器
+    style: BodyWhite
+    image: boiler_0__ui
+    link_id: liquidheater
+  - widget_type: CodexLabelWithLargeIcon
+    text: 液温调节器
+    style: BodyWhite
+    image: liquidconditioner_0__ui
+    link_id: liquidconditioner
+  - widget_type: CodexLabelWithLargeIcon
+    text: 温度调节器
+    style: BodyWhite
+    image: airconditioner_0__ui
+    link_id: airconditioner
+  - widget_type: CodexLabelWithLargeIcon
+    text: 矿石洗涤器
+    style: BodyWhite
+    image: orescrubber_0__ui
+    link_id: orescrubber
+  - widget_type: CodexLabelWithLargeIcon
+    text: 空间加热器
+    style: BodyWhite
+    image: spaceheater_0__ui
+    link_id: spaceheater
+  - widget_type: CodexLabelWithLargeIcon
+    text: 融冰壶
+    style: BodyWhite
+    image: icemelter_kettle_0__ui
+    link_id: icekettle
+  layout: Grid
+- contents:
+  - widget_type: CodexSpacer
+  layout: Vertical

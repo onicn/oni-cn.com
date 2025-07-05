@@ -1,0 +1,335 @@
+id: MAGMA
+parent_id: ELEMENTSLIQUID
+name: 岩浆
+disabled: False
+search_only: False
+icon_color: AE0000FF
+category: ELEMENTSLIQUID
+sort_string: 岩浆
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="MAGMA">岩浆</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    color: AE0000FF
+    image: element_liquid
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: AE0000FF
+      text1: 岩浆
+      text2: 1000克
+      link_id: magma
+    produce:
+    - image: element_gas
+      color: B2B2B2FF
+      text1: 气态岩
+      text2: 1000克
+      link_id: rockgas
+    fabricator:
+      image: crew_state_temp_up
+      text1: 2356.9ºC
+      tooltip: 温度高于2356.9ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: AE0000FF
+      text1: 岩浆
+      text2: 1000克
+      link_id: magma
+    produce:
+    - image: igneous_rock_0__ui
+      text1: 火成岩
+      text2: 1000克
+      link_id: igneousrock
+    fabricator:
+      image: crew_state_temp_down
+      text1: 1409.9ºC
+      tooltip: 温度低于1409.9ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换于
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: crushed_rock_0__ui
+      text1: 碎岩
+      text2: 1000克
+      link_id: crushedrock
+    produce:
+    - image: element_liquid
+      color: AE0000FF
+      text1: 岩浆
+      text2: 1000克
+      link_id: magma
+    fabricator:
+      image: crew_state_temp_up
+      text1: 1409.9ºC
+      tooltip: 温度高于1409.9ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: shale_0__ui
+      text1: 页岩
+      text2: 1000克
+      link_id: shale
+    produce:
+    - image: element_liquid
+      color: AE0000FF
+      text1: 岩浆
+      text2: 1000克
+      link_id: magma
+    fabricator:
+      image: crew_state_temp_up
+      text1: 826.9ºC
+      tooltip: 温度高于826.9ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: ceramic_0__ui
+      text1: 陶瓷
+      text2: 1000克
+      link_id: ceramic
+    produce:
+    - image: element_liquid
+      color: AE0000FF
+      text1: 岩浆
+      text2: 1000克
+      link_id: magma
+    fabricator:
+      image: crew_state_temp_up
+      text1: 1849.9ºC
+      tooltip: 温度高于1849.9ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: limestone_0__ui
+      text1: 石灰
+      text2: 1000克
+      link_id: lime
+    produce:
+    - image: element_liquid
+      color: AE0000FF
+      text1: 岩浆
+      text2: 1000克
+      link_id: magma
+    fabricator:
+      image: crew_state_temp_up
+      text1: 1056.9ºC
+      tooltip: 温度高于1056.9ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: obsidian_0__ui
+      text1: 黑曜石
+      text2: 1000克
+      link_id: obsidian
+    produce:
+    - image: element_liquid
+      color: AE0000FF
+      text1: 岩浆
+      text2: 1000克
+      link_id: magma
+    fabricator:
+      image: crew_state_temp_up
+      text1: 2726.9ºC
+      tooltip: 温度高于2726.9ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: igneous_rock_0__ui
+      text1: 火成岩
+      text2: 1000克
+      link_id: igneousrock
+    produce:
+    - image: element_liquid
+      color: AE0000FF
+      text1: 岩浆
+      text2: 1000克
+      link_id: magma
+    fabricator:
+      image: crew_state_temp_up
+      text1: 1409.9ºC
+      tooltip: 温度高于1409.9ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: granite_0__ui
+      text1: 花岗岩
+      text2: 1000克
+      link_id: granite
+    produce:
+    - image: element_liquid
+      color: AE0000FF
+      text1: 岩浆
+      text2: 1000克
+      link_id: magma
+    fabricator:
+      image: crew_state_temp_up
+      text1: 668.9ºC
+      tooltip: 温度高于668.9ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: radium_0__ui
+      text1: 镭
+      text2: 1000克
+      link_id: radium
+    produce:
+    - image: element_liquid
+      color: AE0000FF
+      text1: 岩浆
+      text2: 1000克
+      link_id: magma
+    fabricator:
+      image: crew_state_temp_up
+      text1: 959.9ºC
+      tooltip: 温度高于959.9ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: sedimentary_rock_0__ui
+      text1: 沉积岩
+      text2: 1000克
+      link_id: sedimentaryrock
+    produce:
+    - image: element_liquid
+      color: AE0000FF
+      text1: 岩浆
+      text2: 1000克
+      link_id: magma
+    fabricator:
+      image: crew_state_temp_up
+      text1: 926.9ºC
+      tooltip: 温度高于926.9ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: sand_stone_0__ui
+      text1: 砂岩
+      text2: 1000克
+      link_id: sandstone
+    produce:
+    - image: element_liquid
+      color: AE0000FF
+      text1: 岩浆
+      text2: 1000克
+      link_id: magma
+    fabricator:
+      image: crew_state_temp_up
+      text1: 926.9ºC
+      tooltip: 温度高于926.9ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: oxyrock_0__ui
+      text1: 氧石
+      text2: 1000克
+      link_id: oxyrock
+    produce:
+    - image: element_liquid
+      color: AE0000FF
+      text1: 岩浆
+      text2: 1000克
+      link_id: magma
+    fabricator:
+      image: crew_state_temp_up
+      text1: 1409.9ºC
+      tooltip: 温度高于1409.9ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: igneous_rock_0__ui
+      text1: 镁铁质岩
+      text2: 1000克
+      link_id: maficrock
+    produce:
+    - image: element_liquid
+      color: AE0000FF
+      text1: 岩浆
+      text2: 1000克
+      link_id: magma
+    fabricator:
+      image: crew_state_temp_up
+      text1: 1409.9ºC
+      tooltip: 温度高于1409.9ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: sand_0__ui
+      text1: 浮土
+      text2: 1000克
+      link_id: regolith
+    produce:
+    - image: element_liquid
+      color: AE0000FF
+      text1: 岩浆
+      text2: 1000克
+      link_id: magma
+    fabricator:
+      image: crew_state_temp_up
+      text1: 1409.9ºC
+      tooltip: 温度高于1409.9ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: fossil_0__ui
+      text1: 化石
+      text2: 1000克
+      link_id: fossil
+    produce:
+    - image: element_liquid
+      color: AE0000FF
+      text1: 岩浆
+      text2: 1000克
+      link_id: magma
+    fabricator:
+      image: crew_state_temp_up
+      text1: 1338.9ºC
+      tooltip: 温度高于1338.9ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_gas
+      color: B2B2B2FF
+      text1: 气态岩
+      text2: 1000克
+      link_id: rockgas
+    produce:
+    - image: element_liquid
+      color: AE0000FF
+      text1: 岩浆
+      text2: 1000克
+      link_id: magma
+    fabricator:
+      image: crew_state_temp_down
+      text1: 2356.9ºC
+      tooltip: 温度低于2356.9ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      岩浆是一种被加热成<link="ELEMENTSLIQUID">液态</link>的<link="IGNEOUSROCK">火成岩</link>混合物。
+
+
+      资源种类：<link="ELEMENTSLIQUID">液体</link>
+
+      冰点：1409.9ºC
+
+      沸点：2356.9ºC
+
+
+      比热容：1.000 (DTU/g)/ºC
+
+      热导率：1.000 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.8
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：<link="LIGHT">光源</link>, <link="ELEMENTSLIQUID">液体</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

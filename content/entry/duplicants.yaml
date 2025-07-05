@@ -1,0 +1,147 @@
+id: DUPLICANTS
+parent_id: DUPLICANTSCATEGORY
+name: 复制人
+disabled: False
+search_only: False
+category: DUPLICANTSCATEGORY
+sort_string: 复制人
+sub_entries:
+- id: DuplicantStandard
+  parent_id: DUPLICANTS
+  name: 标准复制人
+  disabled: False
+  sort_string: 标准复制人
+- id: DuplicantBionic
+  parent_id: DUPLICANTS
+  name: 仿生复制人
+  disabled: False
+  sort_string: 仿生复制人
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 复制人
+    style: Title
+  - widget_type: CodexText
+    text: 殖民地工作者
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexText
+    text: >
+      复制人在<link="HEADQUARTERS">打印舱</link>被打印出来，完全成型并穿着标准制服。特殊服装可以在供应柜中找到。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 条目（2/2）
+    style: Subtitle
+  - widget_type: CodexText
+    text: <link="DUPLICANTSTANDARD">标准复制人</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="DUPLICANTBIONIC">仿生复制人</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 标准复制人
+    style: Title
+  - widget_type: CodexText
+    text: 殖民地工作者
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 基本需求
+    style: Subtitle
+  - widget_type: CodexText
+    text: >+
+      <link="REQUIREMENTCLASSTOILETTYPE">厕所</link>：复制人每1.0周期上一次厕所。缺乏可使用的设施会导致增加<link="STRESS">Stress</link>，并弄湿殖民地的地板。
+
+
+      <link="BUILDCATEGORYOXYGEN">氧气</link>：复制人以100克/秒的速率吸入<link="OXYGEN">氧气</link>并以2克/秒的速率呼出<link="CARBONDIOXIDE">二氧化碳</link>。他们可以短时间屏住呼吸。长时间缺乏可呼吸气体会导致窒息。
+
+
+      <link="FOOD">食物</link>：每日卡路里消耗为1,000千卡。<link="BUILDCATEGORYFOOD">食物</link>可以通过<link="GROUPFARMBUILDING">农业</link>和<link="REQUIREMENTCLASSRANCHSTATIONTYPE">养殖</link>建筑生产，通过<link="REQUIREMENTCLASSCOOKTOP">烹饪站</link>进一步加工。
+
+
+      <link="HEALTH">睡眠</link>：复制人需要<link="REQUIREMENTCLASSBEDTYPE">床位</link>，以及<link="MISCELLANEOUSTIPS14">日程表</link>中安排足够的就寝时间才能避免<link="STRESS">压力</link>和体力耗尽而过度疲劳的效果。
+
+    style: Body
+  - widget_type: CodexText
+    text: 工作者优化
+    style: Subtitle
+  - widget_type: CodexText
+    text: >+
+      <link="ROLES">技能</link>：执行殖民地的任务可以帮助复制人获得技能点，用于交换有用的技能。复制人自身的特质可能使其更倾向于某些任务，或者完全禁止某条职业道路。
+
+
+      <link="MORALE">士气</link>：士气超出复制人的期望就能触发喜悦反应，为殖民地产生各种积极影响。<link="REQUIREMENTCLASSRECBUILDING">娱乐</link>建筑的使用、提高<link="DECOR">装饰度</link>的<link="REQUIREMENTCLASSDECORATION">装饰性建筑</link>、更好的<link="FOOD">食物</link>都有助于提高士气。
+
+
+      <link="STRESS">压力</link>：当压力水平达到100%时，复制人会表现出负面的压力反应，可能会扰乱工作并损坏建筑。
+
+
+      <link="TECH">研究</link>：使用<link="REQUIREMENTCLASSSCIENCEBUILDING">科学建筑</link>解锁高级科技，提高工作效率并改善殖民地的生活水平。
+
+
+      <link="HEALTH">生命值</link>：工作场所的危险，包括接触<link="HEAT">高温</link>或<link="DISEASE">病菌</link>，可能会严重影响复制人的健康。专用的<link="REQUIREMENTCLASSCLINIC">医疗</link>建筑可以加速康复。
+
+
+      <i>更多维持复制人健康的信息在<link="MISCELLANEOUSTIPS">提示</link>和<link="LESSONS">教程</link>中有所提及。</i>
+
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 仿生复制人
+    style: Title
+  - widget_type: CodexText
+    text: 专化的殖民地工作者
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 基本需求
+    style: Subtitle
+  - widget_type: CodexText
+    text: >+
+      <link="POWER">电力</link>：仿生复制人通过便携式<link="ELECTROBANK">移动电源</link>行动，在休息时间会自动前去更换。如果移动电源耗尽，仿生复制人就会电力不足，可能会因为<link="OXYGEN">氧气</link>瓶耗尽而未能重启导致死亡。
+
+
+      <link="GUNKEMPTIER">粘渣油提取器</link>：仿生系统必须每4.0周期处理堆积的<link="LIQUIDGUNK">粘渣油</link>，否则就有产生脏乱的风险。如果没有专用的提取器，仿生复制人就会堵塞附近的<link="REQUIREMENTCLASSTOILETTYPE">厕所</link>。
+
+
+      <link="OXYGEN">氧气</link>：仿生复制人使用内部<link="OXYGEN">氧气</link>瓶为内部机械通风，必须每4.0周期补充一次。仿生复制人不产生<link="CARBONDIOXIDE">二氧化碳</link>。
+
+
+      <link="LUBRICATINGOIL">齿轮油</link>：保持仿生系统高效运行需要光顾<link="OILCHANGER">润滑站</link>或使用<link="LUBRICATIONSTICK">齿轮膏</link>。如果两者都不可用，仿生复制人就会放慢速度以避免磨损齿轮。
+
+    style: Body
+  - widget_type: CodexText
+    text: 工作者优化
+    style: Subtitle
+  - widget_type: CodexText
+    text: >+
+      <link="BOOSTER">增幅块</link>：仿生复制人通过安装增幅块获得特殊建筑的使用能力，并提高属性。增幅块可以在任意时间添加或移除，以自定义仿生复制人的职业道路或减轻仿生漏洞的负面影响。
+
+
+      <link="ROLES">技能</link>：执行殖民地的任务可以帮助复制人获得技能点，用于交换提升属性、扩展安装的<link="BOOSTER">增幅块</link>和<link="ELECTROBANK">移动电源</link>的技能。
+
+
+      <link="MORALE">士气</link>：士气超出复制人的期望就能触发喜悦反应，为殖民地产生各种积极影响。<link="REQUIREMENTCLASSRECBUILDING">娱乐</link>建筑的使用、提高<link="DECOR">装饰度</link>的<link="REQUIREMENTCLASSDECORATION">装饰性建筑</link>、更好的<link="FOOD">食物</link>都有助于提高士气。
+
+
+      <link="STRESS">压力</link>：当压力水平达到100%时，仿生复制人会表现出负面的压力反应，可能会扰乱工作并损坏建筑。
+
+
+      <link="TECH">研究</link>：使用<link="REQUIREMENTCLASSSCIENCEBUILDING">科学建筑</link>解锁高级科技，提高工作效率并改善殖民地的生活水平。
+
+
+      <i>更多维持仿生复制人健康的信息在<link="MISCELLANEOUSTIPS">提示</link>和<link="LESSONS">教程</link>中有所提及。</i>
+
+    style: Body
+  layout: Vertical

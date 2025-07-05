@@ -1,0 +1,110 @@
+id: SWAMPDELIGHTS
+parent_id: FOOD
+name: 沼泽欢愉
+disabled: False
+search_only: False
+category: FOOD
+sort_string: 沼泽欢愉
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="SWAMPDELIGHTS">沼泽欢愉</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: swamp_delights_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      由<link="SWAMPFRUIT">沼浆果冻</link>制作的干燥胶状方块。
+
+
+      每个方块嚼起来都有一种奇妙的质感，表面稍稍覆有一层精致的粉末。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 品质：低劣 [+1]
+    style: Body
+  - widget_type: CodexText
+    text: 卡路里：2,240千卡
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      冷藏温度：4ºC
+
+      深度冷冻温度：-18ºC
+
+      腐烂时间：8.0周期
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: swamp_delights_0__ui
+      text1: 沼泽欢愉
+      text2: 700千卡/周期
+      tooltip: 品质：低劣 [+1]
+      link_id: swampdelights
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 234.4克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__ui
+      text1: 好吃哈奇
+      link_id: HATCH
+  - widget_type: CodexConversionPanel
+    require:
+    - image: swamp_delights_0__ui
+      text1: 沼泽欢愉
+      text2: 700千卡/周期
+      tooltip: 品质：低劣 [+1]
+      link_id: swampdelights
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 312.5克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__veg_ui
+      text1: 草质哈奇
+      link_id: HATCHVEGGIE
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 电动烤炉
+    require:
+    - image: swampcrop_fruit_0__ui
+      text1: 沼浆果冻
+      text2: 1,840千卡
+      tooltip: 品质：糟糕 [0]
+      link_id: swampfruit
+    produce:
+    - image: swamp_delights_0__ui
+      text1: 沼泽欢愉
+      text2: 2,240千卡
+      tooltip: 品质：低劣 [+1]
+      link_id: swampdelights
+    fabricator:
+      image: cookstation_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 电动烤炉
+      text2: 50秒
+      link_id: cookingstation
+  layout: Vertical

@@ -1,0 +1,94 @@
+id: SOLIDVISCOGEL
+parent_id: ELEMENTSSOLID
+name: 固态粘性凝胶
+disabled: False
+search_only: False
+category: ELEMENTSSOLID
+sort_string: 固态粘性凝胶
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="SOLIDVISCOGEL">固态粘性凝胶</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: viscogel_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: viscogel_0__ui
+      text1: 固态粘性凝胶
+      text2: 1000克
+      link_id: solidviscogel
+    produce:
+    - image: element_liquid
+      color: 4F10B7FF
+      text1: 粘性凝胶流体
+      text2: 1000克
+      link_id: viscogel
+    fabricator:
+      image: crew_state_temp_up
+      text1: -30.6ºC
+      tooltip: 温度高于-30.6ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换于
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: 4F10B7FF
+      text1: 粘性凝胶流体
+      text2: 1000克
+      link_id: viscogel
+    produce:
+    - image: viscogel_0__ui
+      text1: 固态粘性凝胶
+      text2: 1000克
+      link_id: solidviscogel
+    fabricator:
+      image: crew_state_temp_down
+      text1: -30.6ºC
+      tooltip: 温度低于-30.6ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      <link="ELEMENTSLIQUID">液态</link>的粘性凝胶是一种具有极高表面张力的聚合物。
+
+
+      当前选中的处于<link="ELEMENTSSOLID">固态</link>。
+
+
+      资源种类：人造材料
+
+      熔点：-30.6ºC
+
+      硬度：<color=#71ABCFFF>2（非常柔软）</color>
+
+
+      比热容：1.550 (DTU/g)/ºC
+
+      热导率：0.450 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.6
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：<link="PLASTIC">塑料</link>, <link="ELEMENTSSOLID">固体</link>, 人造材料
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

@@ -1,0 +1,23 @@
+id: GEYSERGENERICSLUSHSALTWATER
+parent_id: GEYSERS
+name: 低温盐泥泉
+disabled: False
+search_only: False
+category: GEYSERS
+sort_string: 低温盐泥泉
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="GEYSERGENERICSLUSHWATER">低温盐泥泉</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: geyser_liquid_salt_water_cool_slush_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: "间歇泉和喷孔会以不同的间隔排出元素，它们能持续提供材料，尽管通常量很少。\n\n间歇泉的变量有：\n\n    • 排放元素 \n    • 排放温度 \n    • 排放质量 \n    • 周期长度 \n    • 休眠时间 \n    • 排出病菌"
+    style: Body
+  layout: Vertical

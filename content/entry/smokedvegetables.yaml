@@ -1,0 +1,230 @@
+id: SMOKEDVEGETABLES
+parent_id: FOOD
+name: 爆米花
+disabled: False
+search_only: False
+category: FOOD
+sort_string: 爆米花
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="SMOKEDVEGETABLES">爆米花</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: smokedvegetables_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 塞满香草的酥脆玉米，熏制数小时。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 品质：标准 [+2]
+    style: Body
+  - widget_type: CodexText
+    text: 卡路里：2,863千卡
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      冷藏温度：4ºC
+
+      深度冷冻温度：-18ºC
+
+      腐烂时间：16.0周期
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: smokedvegetables_0__ui
+      text1: 爆米花
+      text2: 700千卡/周期
+      tooltip: 品质：标准 [+2]
+      link_id: smokedvegetables
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 183.4克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__ui
+      text1: 好吃哈奇
+      link_id: HATCH
+  - widget_type: CodexConversionPanel
+    require:
+    - image: smokedvegetables_0__ui
+      text1: 爆米花
+      text2: 700千卡/周期
+      tooltip: 品质：标准 [+2]
+      link_id: smokedvegetables
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 244.5克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__veg_ui
+      text1: 草质哈奇
+      link_id: HATCHVEGGIE
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 熏炉
+    require:
+    - image: spikefruit_0__ui
+      text1: 汗甜玉米
+      text2: 5,600千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: gardenfoodplantfood
+    - image: wood_0__ui
+      text1: 木材
+      text2: 100千克
+      link_id: wood
+    produce:
+    - image: smokedvegetables_0__ui
+      text1: 爆米花
+      text2: 11,450千卡
+      tooltip: 品质：标准 [+2]
+      link_id: smokedvegetables
+    fabricator:
+      image: smoker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 熏炉
+      text2: 600秒
+      link_id: smoker
+  - widget_type: CodexRecipePanel
+    text: 熏炉
+    require:
+    - image: spikefruit_0__ui
+      text1: 汗甜玉米
+      text2: 5,600千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: gardenfoodplantfood
+    - image: peat_0__ui
+      text1: 泥炭
+      text2: 100千克
+      link_id: peat
+    produce:
+    - image: smokedvegetables_0__ui
+      text1: 爆米花
+      text2: 11,450千卡
+      tooltip: 品质：标准 [+2]
+      link_id: smokedvegetables
+    fabricator:
+      image: smoker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 熏炉
+      text2: 600秒
+      link_id: smoker
+  - widget_type: CodexRecipePanel
+    text: 熏炉
+    require:
+    - image: iceberry_0__ui
+      text1: 刺壳果
+      text2: 5,600千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: hardskinberry
+    - image: wood_0__ui
+      text1: 木材
+      text2: 100千克
+      link_id: wood
+    produce:
+    - image: smokedvegetables_0__ui
+      text1: 爆米花
+      text2: 11,450千卡
+      tooltip: 品质：标准 [+2]
+      link_id: smokedvegetables
+    fabricator:
+      image: smoker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 熏炉
+      text2: 600秒
+      link_id: smoker
+  - widget_type: CodexRecipePanel
+    text: 熏炉
+    require:
+    - image: iceberry_0__ui
+      text1: 刺壳果
+      text2: 5,600千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: hardskinberry
+    - image: peat_0__ui
+      text1: 泥炭
+      text2: 100千克
+      link_id: peat
+    produce:
+    - image: smokedvegetables_0__ui
+      text1: 爆米花
+      text2: 11,450千卡
+      tooltip: 品质：标准 [+2]
+      link_id: smokedvegetables
+    fabricator:
+      image: smoker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 熏炉
+      text2: 600秒
+      link_id: smoker
+  - widget_type: CodexRecipePanel
+    text: 熏炉
+    require:
+    - image: wormwood_basic_fruit_0__ui
+      text1: 贫瘠虫果
+      text2: 5,600千卡
+      tooltip: 品质：糟糕 [0]
+      link_id: wormbasicfruit
+    - image: wood_0__ui
+      text1: 木材
+      text2: 100千克
+      link_id: wood
+    produce:
+    - image: smokedvegetables_0__ui
+      text1: 爆米花
+      text2: 11,450千卡
+      tooltip: 品质：标准 [+2]
+      link_id: smokedvegetables
+    fabricator:
+      image: smoker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 熏炉
+      text2: 600秒
+      link_id: smoker
+  - widget_type: CodexRecipePanel
+    text: 熏炉
+    require:
+    - image: wormwood_basic_fruit_0__ui
+      text1: 贫瘠虫果
+      text2: 5,600千卡
+      tooltip: 品质：糟糕 [0]
+      link_id: wormbasicfruit
+    - image: peat_0__ui
+      text1: 泥炭
+      text2: 100千克
+      link_id: peat
+    produce:
+    - image: smokedvegetables_0__ui
+      text1: 爆米花
+      text2: 11,450千卡
+      tooltip: 品质：标准 [+2]
+      link_id: smokedvegetables
+    fabricator:
+      image: smoker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 熏炉
+      text2: 600秒
+      link_id: smoker
+  layout: Vertical

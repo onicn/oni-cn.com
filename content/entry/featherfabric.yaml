@@ -1,0 +1,535 @@
+id: FEATHERFABRIC
+name: 羽毛纤维
+title: STRINGS.CODEX.FEATHER_FABRIC.TITLE
+disabled: False
+search_only: False
+category: INDUSTRIALINGREDIENTS
+sort_string: 羽毛纤维
+required_dlc_ids:
+- DLC4_ID
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 羽毛纤维
+    style: Title
+  - widget_type: CodexText
+    text: 纺织原料
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexImage
+    image: feather_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 一种用于生产<link="EQUIPMENT">服装</link>和纺织品的未加工角蛋白。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 精致装束
+    require:
+    - image: shirt_decor01_0__ui
+      text1: 新潮时装
+      text2: 1单位
+      link_id: funkyvest
+    - image: feather_0__ui
+      text1: 羽毛纤维
+      text2: 3单位
+      link_id: featherfabric
+    produce:
+    - image: shirt_decor01_0__ui
+      text1: 精致装束
+      text2: 1单位
+      link_id: customclothing
+    fabricator:
+      image: super_snazzy_suit_alteration_station_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 时装翻新器
+      text2: 180秒
+      link_id: clothingalterationstation
+  - widget_type: CodexRecipePanel
+    text: 精致装束
+    require:
+    - image: shirt_decor01_0__ui
+      text1: 新潮时装
+      text2: 1单位
+      link_id: funkyvest
+    - image: feather_0__ui
+      text1: 羽毛纤维
+      text2: 3单位
+      link_id: featherfabric
+    produce:
+    - image: shirt_decor01_0__ui
+      text1: 精致装束
+      text2: 1单位
+      link_id: customclothing
+    fabricator:
+      image: super_snazzy_suit_alteration_station_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 时装翻新器
+      text2: 180秒
+      link_id: clothingalterationstation
+  - widget_type: CodexRecipePanel
+    text: 精致装束
+    require:
+    - image: shirt_decor01_0__ui
+      text1: 新潮时装
+      text2: 1单位
+      link_id: funkyvest
+    - image: feather_0__ui
+      text1: 羽毛纤维
+      text2: 3单位
+      link_id: featherfabric
+    produce:
+    - image: shirt_decor01_0__ui
+      text1: 精致装束
+      text2: 1单位
+      link_id: customclothing
+    fabricator:
+      image: super_snazzy_suit_alteration_station_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 时装翻新器
+      text2: 180秒
+      link_id: clothingalterationstation
+  - widget_type: CodexRecipePanel
+    text: 精致装束
+    require:
+    - image: shirt_decor01_0__ui
+      text1: 新潮时装
+      text2: 1单位
+      link_id: funkyvest
+    - image: feather_0__ui
+      text1: 羽毛纤维
+      text2: 3单位
+      link_id: featherfabric
+    produce:
+    - image: shirt_decor01_0__ui
+      text1: 精致装束
+      text2: 1单位
+      link_id: customclothing
+    fabricator:
+      image: super_snazzy_suit_alteration_station_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 时装翻新器
+      text2: 180秒
+      link_id: clothingalterationstation
+  - widget_type: CodexRecipePanel
+    text: 精致装束
+    require:
+    - image: shirt_decor01_0__ui
+      text1: 新潮时装
+      text2: 1单位
+      link_id: funkyvest
+    - image: feather_0__ui
+      text1: 羽毛纤维
+      text2: 3单位
+      link_id: featherfabric
+    produce:
+    - image: shirt_decor01_0__ui
+      text1: 精致装束
+      text2: 1单位
+      link_id: customclothing
+    fabricator:
+      image: super_snazzy_suit_alteration_station_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 时装翻新器
+      text2: 180秒
+      link_id: clothingalterationstation
+  - widget_type: CodexRecipePanel
+    text: 精致装束
+    require:
+    - image: shirt_decor01_0__ui
+      text1: 新潮时装
+      text2: 1单位
+      link_id: funkyvest
+    - image: feather_0__ui
+      text1: 羽毛纤维
+      text2: 3单位
+      link_id: featherfabric
+    produce:
+    - image: shirt_decor01_0__ui
+      text1: 精致装束
+      text2: 1单位
+      link_id: customclothing
+    fabricator:
+      image: super_snazzy_suit_alteration_station_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 时装翻新器
+      text2: 180秒
+      link_id: clothingalterationstation
+  - widget_type: CodexRecipePanel
+    text: 精致装束
+    require:
+    - image: shirt_decor01_0__ui
+      text1: 新潮时装
+      text2: 1单位
+      link_id: funkyvest
+    - image: feather_0__ui
+      text1: 羽毛纤维
+      text2: 3单位
+      link_id: featherfabric
+    produce:
+    - image: shirt_decor01_0__ui
+      text1: 精致装束
+      text2: 1单位
+      link_id: customclothing
+    fabricator:
+      image: super_snazzy_suit_alteration_station_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 时装翻新器
+      text2: 180秒
+      link_id: clothingalterationstation
+  - widget_type: CodexRecipePanel
+    text: 精致装束
+    require:
+    - image: shirt_decor01_0__ui
+      text1: 新潮时装
+      text2: 1单位
+      link_id: funkyvest
+    - image: feather_0__ui
+      text1: 羽毛纤维
+      text2: 3单位
+      link_id: featherfabric
+    produce:
+    - image: shirt_decor01_0__ui
+      text1: 精致装束
+      text2: 1单位
+      link_id: customclothing
+    fabricator:
+      image: super_snazzy_suit_alteration_station_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 时装翻新器
+      text2: 180秒
+      link_id: clothingalterationstation
+  - widget_type: CodexRecipePanel
+    text: 精致装束
+    require:
+    - image: shirt_decor01_0__ui
+      text1: 新潮时装
+      text2: 1单位
+      link_id: funkyvest
+    - image: feather_0__ui
+      text1: 羽毛纤维
+      text2: 3单位
+      link_id: featherfabric
+    produce:
+    - image: shirt_decor01_0__ui
+      text1: 精致装束
+      text2: 1单位
+      link_id: customclothing
+    fabricator:
+      image: super_snazzy_suit_alteration_station_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 时装翻新器
+      text2: 180秒
+      link_id: clothingalterationstation
+  - widget_type: CodexRecipePanel
+    text: 精致装束
+    require:
+    - image: shirt_decor01_0__ui
+      text1: 新潮时装
+      text2: 1单位
+      link_id: funkyvest
+    - image: feather_0__ui
+      text1: 羽毛纤维
+      text2: 3单位
+      link_id: featherfabric
+    produce:
+    - image: shirt_decor01_0__ui
+      text1: 精致装束
+      text2: 1单位
+      link_id: customclothing
+    fabricator:
+      image: super_snazzy_suit_alteration_station_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 时装翻新器
+      text2: 180秒
+      link_id: clothingalterationstation
+  - widget_type: CodexRecipePanel
+    text: 精致装束
+    require:
+    - image: shirt_decor01_0__ui
+      text1: 新潮时装
+      text2: 1单位
+      link_id: funkyvest
+    - image: feather_0__ui
+      text1: 羽毛纤维
+      text2: 3单位
+      link_id: featherfabric
+    produce:
+    - image: shirt_decor01_0__ui
+      text1: 精致装束
+      text2: 1单位
+      link_id: customclothing
+    fabricator:
+      image: super_snazzy_suit_alteration_station_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 时装翻新器
+      text2: 180秒
+      link_id: clothingalterationstation
+  - widget_type: CodexRecipePanel
+    text: 精致装束
+    require:
+    - image: shirt_decor01_0__ui
+      text1: 新潮时装
+      text2: 1单位
+      link_id: funkyvest
+    - image: feather_0__ui
+      text1: 羽毛纤维
+      text2: 3单位
+      link_id: featherfabric
+    produce:
+    - image: shirt_decor01_0__ui
+      text1: 精致装束
+      text2: 1单位
+      link_id: customclothing
+    fabricator:
+      image: super_snazzy_suit_alteration_station_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 时装翻新器
+      text2: 180秒
+      link_id: clothingalterationstation
+  - widget_type: CodexRecipePanel
+    text: 保暖外套
+    require:
+    - image: feather_0__ui
+      text1: 羽毛纤维
+      text2: 4单位
+      link_id: featherfabric
+    produce:
+    - image: shirt_hot_shearling_0__ui
+      text1: 保暖外套
+      text2: 1单位
+      link_id: warmvest
+    fabricator:
+      image: clothingfactory_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 纺织机
+      text2: 180秒
+      link_id: clothingfabricator
+  - widget_type: CodexRecipePanel
+    text: 新潮时装
+    require:
+    - image: feather_0__ui
+      text1: 羽毛纤维
+      text2: 4单位
+      link_id: featherfabric
+    produce:
+    - image: shirt_decor01_0__ui
+      text1: 新潮时装
+      text2: 1单位
+      link_id: funkyvest
+    fabricator:
+      image: clothingfactory_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 纺织机
+      text2: 180秒
+      link_id: clothingfabricator
+  - widget_type: CodexRecipePanel
+    text: 气压服
+    require:
+    - image: nickel_0__ui
+      text1: 镍
+      text2: 300千克
+      link_id: nickel
+    - image: feather_0__ui
+      text1: 羽毛纤维
+      text2: 2单位
+      link_id: featherfabric
+    produce:
+    - image: suit_oxygen_0__ui
+      text1: 气压服
+      text2: 1单位
+      link_id: atmosuit
+    fabricator:
+      image: suit_maker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 太空服锻造台
+      text2: 40秒
+      link_id: suitfabricator
+  - widget_type: CodexRecipePanel
+    text: 气压服
+    require:
+    - image: copper_refined_0__ui
+      text1: 铜
+      text2: 300千克
+      link_id: copper
+    - image: feather_0__ui
+      text1: 羽毛纤维
+      text2: 2单位
+      link_id: featherfabric
+    produce:
+    - image: suit_oxygen_0__ui
+      text1: 气压服
+      text2: 1单位
+      link_id: atmosuit
+    fabricator:
+      image: suit_maker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 太空服锻造台
+      text2: 40秒
+      link_id: suitfabricator
+  - widget_type: CodexRecipePanel
+    text: 气压服
+    require:
+    - image: cobalt_refined_0__ui
+      text1: 钴
+      text2: 300千克
+      link_id: cobalt
+    - image: feather_0__ui
+      text1: 羽毛纤维
+      text2: 2单位
+      link_id: featherfabric
+    produce:
+    - image: suit_oxygen_0__ui
+      text1: 气压服
+      text2: 1单位
+      link_id: atmosuit
+    fabricator:
+      image: suit_maker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 太空服锻造台
+      text2: 40秒
+      link_id: suitfabricator
+  - widget_type: CodexRecipePanel
+    text: 气压服
+    require:
+    - image: aluminum_0__ui
+      text1: 铝
+      text2: 300千克
+      link_id: aluminum
+    - image: feather_0__ui
+      text1: 羽毛纤维
+      text2: 2单位
+      link_id: featherfabric
+    produce:
+    - image: suit_oxygen_0__ui
+      text1: 气压服
+      text2: 1单位
+      link_id: atmosuit
+    fabricator:
+      image: suit_maker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 太空服锻造台
+      text2: 40秒
+      link_id: suitfabricator
+  - widget_type: CodexRecipePanel
+    text: 气压服
+    require:
+    - image: iron_refined_0__ui
+      text1: 铁
+      text2: 300千克
+      link_id: iron
+    - image: feather_0__ui
+      text1: 羽毛纤维
+      text2: 2单位
+      link_id: featherfabric
+    produce:
+    - image: suit_oxygen_0__ui
+      text1: 气压服
+      text2: 1单位
+      link_id: atmosuit
+    fabricator:
+      image: suit_maker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 太空服锻造台
+      text2: 40秒
+      link_id: suitfabricator
+  - widget_type: CodexRecipePanel
+    text: 气压服
+    require:
+    - image: suit_oxygen_0__ui
+      text1: 磨损的气压服
+      text2: 1单位
+      link_id: atmosuit
+    - image: feather_0__ui
+      text1: 羽毛纤维
+      text2: 1单位
+      link_id: featherfabric
+    produce:
+    - image: suit_oxygen_0__ui
+      text1: 气压服
+      text2: 1单位
+      link_id: atmosuit
+    fabricator:
+      image: suit_maker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 太空服锻造台
+      text2: 40秒
+      link_id: suitfabricator
+  - widget_type: CodexRecipePanel
+    text: 喷气服
+    require:
+    - image: suit_jetpack_0__ui
+      text1: 磨损的喷气服
+      text2: 1单位
+      link_id: jetsuit
+    - image: feather_0__ui
+      text1: 羽毛纤维
+      text2: 1单位
+      link_id: featherfabric
+    produce:
+    - image: suit_jetpack_0__ui
+      text1: 喷气服
+      text2: 1单位
+      link_id: jetsuit
+    fabricator:
+      image: suit_maker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 太空服锻造台
+      text2: 40秒
+      link_id: suitfabricator
+  - widget_type: CodexRecipePanel
+    text: 隔热质
+    require:
+    - image: isoresin_0__ui
+      text1: 异构树液
+      text2: 15千克
+      link_id: isoresin
+    - image: katairite_0__ui
+      text1: 深渊晶石
+      text2: 80千克
+      link_id: katairite
+    - image: feather_0__ui
+      text1: 羽毛纤维
+      text2: 5单位
+      link_id: featherfabric
+    produce:
+    - image: super_insulator_0__ui
+      text1: 隔热质
+      text2: 100千克
+      link_id: superinsulator
+    fabricator:
+      image: supermaterial_refinery_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 分子熔炉
+      text2: 80秒
+      link_id: supermaterialrefinery
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: raptor_0__ui
+      text1: 霸王鹦
+      text2: 1单位
+      link_id: raptor
+    produce:
+    - image: feather_0__ui
+      text1: 羽毛纤维
+      text2: 4单位
+      link_id: featherfabric
+    fabricator:
+      image: shearing_station_0__ui
+      text1: 修剪站
+      link_id: SHEARINGSTATION
+  layout: Vertical

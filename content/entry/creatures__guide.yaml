@@ -1,0 +1,388 @@
+id: CREATURES__GUIDE
+parent_id: CREATURES
+name: 生物指南
+disabled: False
+search_only: False
+category: CREATURES
+sort_string: 生物指南
+sub_entries:
+- id: CREATURES__GUIDE__METABOLISM
+  parent_id: CREATURES__GUIDE
+  name: 代谢
+  disabled: False
+  sort_string: 代谢
+- id: CREATURES__GUIDE__MOOD
+  parent_id: CREATURES__GUIDE
+  name: 心情
+  disabled: False
+  sort_string: 心情
+- id: CREATURES__GUIDE__FERTILITY
+  parent_id: CREATURES__GUIDE
+  name: 繁殖度
+  disabled: False
+  sort_string: 繁殖度
+- id: CREATURES__GUIDE__DOMESTICATION
+  parent_id: CREATURES__GUIDE
+  name: 驯化
+  disabled: False
+  sort_string: 驯化
+content_container:
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 条目（4/4）
+    style: Subtitle
+  - widget_type: CodexText
+    text: <link="CREATURES__GUIDE__METABOLISM">代谢</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="CREATURES__GUIDE__MOOD">心情</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="CREATURES__GUIDE__FERTILITY">繁殖度</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="CREATURES__GUIDE__DOMESTICATION">驯化</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 代谢
+    style: Title
+  - widget_type: CodexImage
+    image: codex_metabolism
+  - widget_type: CodexText
+    text: >-
+      小动物的代谢速率用于衡量其食欲与其排泄材料的快慢。
+
+
+      有着高代谢的小动物会经常饥饿。而低代谢的小动物不容易饿，但摄入量不高会导致其资源产生量也不高。
+
+
+      驯化、心情、是幼体还是成年体等条件都会影响消化过程。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 饥饿
+    style: Subtitle
+  - widget_type: CodexText
+    text: >-
+      温顺小动物的代谢速率比野生小动物显著更快，也会更快饥饿。这使得它们在资源生产方面更有价值，只需要殖民地满足其饮食需求即可。
+
+
+      小动物的胃容量大小不一，但都能储存至少5周期的食物。当储量低于90%时，它们就会寻找食物，直到吃饱为止。
+
+
+      幼体小动物的代谢最慢，温顺但郁闷的小动物紧随其后。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 饿死
+    style: Subtitle
+  - widget_type: CodexText
+    text: 除疫病章鱼和辐射蜂之外——它们不需要食物就能生存——温顺小动物持续饥饿10周期后会饿死。野生小动物不会饿死。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 心情
+    style: Title
+  - widget_type: CodexImage
+    image: codex_mood
+  - widget_type: CodexText
+    text: >-
+      与许多生物一样，小动物也容易被心情波动影响。虽然它们无法直接口头表达自己的感受，但这些变化会对生产和繁殖有明显影响。
+
+
+      影响小动物心情的因素包括：打扮、野生/温顺、生活环境、过度拥挤、封闭和咸乳消耗。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 快乐
+    style: Subtitle
+  - widget_type: CodexText
+    text: >-
+      快乐的温顺小动物产生的有用材料比郁闷或野生小动物更多，产蛋速率更快。驯化的小动物适应力不如野生小动物——它们需要更多来自殖民地的关照才能保持积极的性情。
+
+
+      幼体的幸福度基准更高，但不会产生资源或蛋。
+
+
+      拥有小动物养殖技能的复制人具有驯化和照顾小动物的专业知识，可以在梳理站提高小动物的心情并照顾小动物的健康。
+
+
+      喝过小动物直饮器的小动物也会享受到心情加成，尽管咸乳中缺乏有用的营养成分。
+
+
+      封闭或拥挤会降低小动物的幸福度。
+    style: Body
+  - widget_type: CodexText
+    text: <b>影响</b>
+    style: Body
+  - widget_type: CodexText
+    text: <indent=13px>•<indent=21px>间接提高产蛋率</indent></indent>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 满足
+    style: Subtitle
+  - widget_type: CodexText
+    text: 当小动物对环境或食物无可抱怨时，它就会感到满足。满足的小动物具有默认代谢速率、繁殖力和物种预期寿命。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 郁闷
+    style: Subtitle
+  - widget_type: CodexText
+    text: >-
+      小动物可以在低于标准的环境中存活，但会对其心情造成影响，从而影响代谢和生产。当其幸福度降至0以下时，会变得郁闷。
+
+
+      郁闷对野生小动物的影响比温顺小动物更弱，但野生小动物也会受过度拥挤和封闭的负面条件影响。
+    style: Body
+  - widget_type: CodexText
+    text: <b>影响</b>
+    style: Body
+  - widget_type: CodexText
+    text: >-
+      <indent=13px>•<indent=21px>小动物代谢
+
+      </indent></indent>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 痛苦
+    style: Subtitle
+  - widget_type: CodexText
+    text: 当过多不愉快的条件累积起来，小动物就会非常痛苦。这种水平的不愉快会严重减弱其为殖民地贡献的能力。痛苦的小动物代谢很低，且不会产蛋。
+    style: Body
+  - widget_type: CodexText
+    text: <b>影响</b>
+    style: Body
+  - widget_type: CodexText
+    text: <indent=13px>•<indent=21px>小动物代谢</indent></indent>
+    style: Body
+  - widget_type: CodexText
+    text: <indent=13px>•<indent=21px>繁殖</indent></indent>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 敌意
+    style: Subtitle
+  - widget_type: CodexText
+    text: >-
+      大多数小动物都是没有敌意的。它们在被复制人攻击时会尝试保护自己，但其被动天性导致了其伤害不高。
+
+
+      然而，有一些小动物有着异常强烈的自我保护本能，接近时必须格外小心。比如抛壳蟹，虽然天性没有敌意，但保护其幼崽的态度十分强硬，复制人或小动物如果过于靠近抛壳蟹的蛋就会被攻击。
+
+
+      另一方面，辐射蜂既有敌意又有放射性。虽然不能被驯化，但可以通过使用二氧化碳压制。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 封闭
+    style: Subtitle
+  - widget_type: CodexText
+    text: >-
+      每个物种都有其自己的空间需求。觉得自己处于过小房间中的小动物会感到封闭，卡在门或砖里也是如此。在这种状态下小动物不会繁殖。
+
+
+      锹环田鼠是例外：它们挖掘隧道的本能使其在狭窄的空间里也感到相当舒适，且不会感到封闭。
+    style: Body
+  - widget_type: CodexText
+    text: <b>影响</b>
+    style: Body
+  - widget_type: CodexText
+    text: >-
+      <indent=13px>•<indent=21px>繁殖
+
+      </indent></indent>
+    style: Body
+  - widget_type: CodexText
+    text: <indent=13px>•<indent=21px>幸福度</indent></indent>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 拥挤
+    style: Subtitle
+  - widget_type: CodexText
+    text: >-
+      当小动物的房间足够大，但共享相同的小动物太多时就会拥挤。由于每个物种都有其自己的空间需求，因此这个状态在同一房间的小动物身上可能会有所不同。
+
+
+      这种状态会随着超出的小动物数量而加剧：在已经拥挤的房间再添加一只新的小动物会进一步降低小动物的幸福度。
+    style: Body
+  - widget_type: CodexText
+    text: <b>影响</b>
+    style: Body
+  - widget_type: CodexText
+    text: >-
+      <indent=13px>•<indent=21px>幸福度
+
+      </indent></indent>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 繁殖度
+    style: Title
+  - widget_type: CodexImage
+    image: codex_reproduction
+  - widget_type: CodexText
+    text: >-
+      繁殖速率和方式因物种而异。大多数小动物产下的蛋必须孵化才能破壳成为下一代。
+
+
+      影响繁殖速率的因素包括蛋的照料、幸福度、生活条件和驯化。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 繁殖速率
+    style: Subtitle
+  - widget_type: CodexText
+    text: >-
+      小动物在完成其繁殖周期（即100%）时，会产一枚蛋并重新开始这一周期。
+
+
+      小动物的环境极大地影响其基础繁殖速率。当小动物感到拥挤时，它会等房间中的所有蛋孵化或被移走后才会产下自己的蛋。
+
+
+      如果空间过小或被卡在门或砖里，小动物会感到封闭，也不会繁殖。
+
+
+      心情和驯化也会影响繁殖：快乐的小动物会较快地繁殖，快乐的温顺小动物则更快。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 产蛋几率
+    style: Subtitle
+  - widget_type: CodexText
+    text: >-
+      在大多数情况下，蛋会孵化为与其亲代相同的小动物变种。然而，遗传波动性的存在导致其有几率孵化为同一物种的另一种变体。
+
+
+      有许多条件可以改变小动物产特定类型的蛋的几率。产蛋几率受以下因素影响：
+          • 食物
+          • 体温
+          • 环境气体和元素
+          • 小动物照料的植物
+          • 同一房间的变种
+
+      当温顺小动物产蛋时，其后代出生时也是温顺的。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 狭窄
+    style: Subtitle
+  - widget_type: CodexText
+    text: 拥挤的小动物——或者说是知道所有的蛋孵化后就会感到拥挤的小动物——会暂时停止产蛋。所有蛋孵化或从房间移走后其繁殖系统将会恢复。
+    style: Body
+  - widget_type: CodexText
+    text: <b>影响</b>
+    style: Body
+  - widget_type: CodexText
+    text: <indent=13px>•<indent=21px>繁殖</indent></indent>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 孵化度
+    style: Subtitle
+  - widget_type: CodexText
+    text: >-
+      小动物的孵化时间是其总寿命的五分之一：比如，小动物的最大年龄为100周期，则该小动物的蛋需要20周期孵化。
+
+
+      孵化速率可以通过小动物养殖员照料而加速。听过摇篮曲的蛋会比未受照料的蛋更快孵化。被毛绒树鼠拥抱也会加快孵化。
+
+
+      蛋可以在任何地方被拥抱，但必须置于孵化器中才能对其歌唱。摇篮曲和拥抱的效果是可累加的。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 最大年龄
+    style: Subtitle
+  - widget_type: CodexText
+    text: >-
+      除了辐射蜂巢和疫病章鱼——任其自生自灭就会永久存活——小动物都有固定的预期寿命。最大年龄表明了小动物能存活的最大周期数，除了饿死或其他非自然死因。
+
+
+      如果小动物受伤或不健康，则可以让小动物养殖员在梳理站恢复其健康。
+
+
+      幼年期是小动物足够成熟能繁殖之前的时期，其特点是代谢更慢，更容易保持幸福度。
+
+
+      大多数物种平均寿命为75至100周期。寿命最短的小动物是辐射蜂，其寿命只有5周期。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 驯化
+    style: Title
+  - widget_type: CodexImage
+    image: codex_domestication
+  - widget_type: CodexText
+    text: >-
+      所有第一次遇到的小动物都是野生的，但从驯化的成年体下的蛋孵化出的幼体除外——这些小家伙生来就是温顺的。
+
+
+      在驯化过程中，小动物的自立性越来越弱，并对环境和关照有更高的基准。其代谢会加速，导致所需的卡路里也会增加。
+
+
+      小动物可以被拥有小动物养殖技能的复制人在梳理站驯化，当轮到被照顾时会很兴奋。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 野性
+    style: Subtitle
+  - widget_type: CodexText
+    text: >-
+      野生小动物不需要殖民地的小动物养殖员喂食，这都归因于其缓慢的代谢。然而，它们要比驯化的小动物产生更少的材料。
+
+
+      只要是没有敌意的小动物，接近它并用陷阱捕捉或直接捕捉都是安全的。攻击小动物通常会引发战斗。
+    style: Body
+  - widget_type: CodexText
+    text: <b>影响</b>
+    style: Body
+  - widget_type: CodexText
+    text: >-
+      <indent=13px>•<indent=21px>小动物代谢
+
+      </indent></indent>
+    style: Body
+  - widget_type: CodexText
+    text: >-
+      <indent=13px>•<indent=21px>资源生产
+
+      </indent></indent>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 温顺
+    style: Subtitle
+  - widget_type: CodexText
+    text: >-
+      驯化的小动物能产生更多的资源，同时产蛋频率更高。它们需要额外的关照才能维持幸福度，在殖民地中发挥最大作用。（快乐的小动物才更愿意留在殖民地。）
+
+
+      一旦驯化，小动物就能在小动物喂食器处进食，而野生小动物则不能。
+    style: Body
+  - widget_type: CodexText
+    text: <b>影响</b>
+    style: Body
+  - widget_type: CodexText
+    text: >-
+      <indent=13px>•<indent=21px>幸福度
+
+      </indent></indent>
+    style: Body
+  - widget_type: CodexText
+    text: <indent=13px>•<indent=21px>小动物代谢</indent></indent>
+    style: Body
+  layout: Vertical

@@ -1,0 +1,64 @@
+id: BUILDINGFIBER
+parent_id: BUILDINGMATERIALCLASSES
+name: 纤维
+disabled: False
+search_only: False
+category: BUILDINGMATERIALCLASSES
+sort_string: 纤维
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="BUILDINGFIBER">纤维</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 纤维是有机聚合物，既结实又舒适，使其适合建造提高<link="MORALE">士气</link>的建筑。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 羽毛纤维
+    image: feather_0__ui
+    link_id: featherfabric
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 芦苇纤维
+    image: swampreedwool_0__ui
+    link_id: basicfabric
+  layout: Grid
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建造用处
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 沙滩椅
+    image: beach_chair_0__ui
+    link_id: beachchair
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 空白画布
+    image: painting_off_0__ui
+    link_id: canvas
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 肖像画布
+    image: painting_tall_off_0__ui
+    link_id: canvastall
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 风景画布
+    image: painting_wide_off_0__ui
+    link_id: canvaswide
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 地毯砖
+    image: floor_carpet_0__ui
+    link_id: carpettile
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 小动物公寓
+    image: critter_condo_0__ui
+    link_id: crittercondo
+  layout: Grid

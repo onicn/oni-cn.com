@@ -1,0 +1,84 @@
+id: THERMODYNAMICLAWS
+name: 热力学定律
+title: STRINGS.CODEX.A2_THERMODYNAMICLAWS.TITLE
+disabled: False
+search_only: False
+category: EMAILS
+sort_string: 热力学定律
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 热力学定律
+    style: Title
+  - widget_type: CodexText
+    text: 未加密
+    style: Subtitle
+  layout: Vertical
+  lock_id: email_thermodynamiclaws
+- contents:
+  - widget_type: CodexText
+    text: >
+      <smallcaps>收件人：<b>克劳斯先生</b><alpha=#AA><size=12> <okraus@gravitas.nova></size></color>
+
+      发件人：<b>琼斯博士</b><alpha=#AA><size=12> <ejones@gravitas.nova></size></color></smallcaps>
+
+      ------------------
+    style: Body
+  - widget_type: CodexText
+    text: >-
+      <indent=5%>克劳斯先生，<i>你好啊</i>！
+
+
+      今天早些时候我们聊了几句，随后我给你发了一封电子邮件，里面有一些你可能想要了解的东西，我想它对你的研究会非常有用！
+
+
+      </indent>
+    style: Body
+  - widget_type: CodexText
+    text: >-
+      <indent=10%><b>第一定律</b></indent>
+
+      <indent=15%>能量既不能凭空产生，也不能凭空消失，它只能从一种形式转化为另一种形式。</indent>
+    style: Body
+  - widget_type: CodexText
+    text: >-
+      <indent=10%><b>第二定律</b></indent>
+
+      <indent=15%>非平衡状态的孤立系统的熵会随着时间增大，不断接近平衡状态下的最大值。</indent>
+    style: Body
+  - widget_type: CodexText
+    text: >-
+      <indent=10%><b>第三定律</b></indent>
+
+      <indent=15%>系统的熵在温度趋近于绝对零度时趋于最小定值。</indent>
+    style: Body
+  - widget_type: CodexText
+    text: >-
+      <indent=10%><b>第零定律</b></indent>
+
+      <indent=15%>若两个热力学系统均与第三个系统处于热平衡状态，这两个系统也必互相处于热平衡。</indent>
+    style: Body
+  - widget_type: CodexText
+    text: >-
+      <indent=5%>
+
+      如果这对你来说太复杂，你可以过来找我聊聊，我<i>很高兴</i>回答你的问题。;)</indent>
+    style: Body
+  layout: Vertical
+  lock_id: email_thermodynamiclaws
+- contents:
+  - widget_type: CodexText
+    text: >2
+
+      祝好，
+
+      琼斯博士
+
+      <size=11>信息统计部
+
+      庄严科技</size>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_thermodynamiclaws

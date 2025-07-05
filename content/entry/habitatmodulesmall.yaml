@@ -1,0 +1,101 @@
+id: HABITATMODULESMALL
+parent_id: BUILDCATEGORYROCKETRY
+name: 单太空员前锥
+disabled: False
+search_only: False
+category: BUILDCATEGORYROCKETRY
+sort_string: 单太空员前锥
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="HABITATMODULESMALL">单太空员前锥</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 太空计划
+    style: Body
+    image: research_type_alpha_icon
+    link_id: spaceprogram
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: rocket_nosecone_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      与指挥舱和前锥的作用一致。
+
+
+      能容纳一名复制人。
+
+
+      每个火箭可安装一个指挥舱。
+
+
+      必须通过<link="LAUNCHPAD">火箭平台</link>建造。
+
+
+      必须建在火箭的最顶端。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    复制人分配'
+    tooltip: 只有分配的复制人才可使用这个设备
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：3格宽x3格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：60秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="METAL">金属矿石</link>200千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    复制人通行权限'
+    tooltip: 设置允许或限制复制人通过门。
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    过热<link="HEAT">温度</link>：2000ºC'
+    tooltip: 达到<b>2000ºC</b>时开始过热
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>类别</b>
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    <link="REQUIREMENTCLASSINDUSTRIALMACHINERY">工业机械</link>'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>一个幸运的复制人能够得到整个火箭最好的视野。</i>
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 舱块统计
+    style: Subtitle
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>火箭速度</b>等于<b>引擎功率</b>除以<b>负担</b>
+    style: Body
+  - widget_type: CodexText
+    text: '    • 高度：3'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 舱块负担：3'
+    style: Body
+  layout: Vertical

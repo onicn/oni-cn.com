@@ -1,0 +1,184 @@
+id: SHELLFISHMEAT
+parent_id: FOOD
+name: 生蟹肉
+disabled: False
+search_only: False
+category: FOOD
+sort_string: 生蟹肉
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="SHELLFISHMEAT">生蟹肉</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: shellfish_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 从死去的<link="CRABFRESHWATER">沙泥蟹</link>身上弄来的生肉块，好吃！
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 品质：标准 [+2]
+    style: Body
+  - widget_type: CodexText
+    text: 卡路里：1,000千卡
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      冷藏温度：4ºC
+
+      深度冷冻温度：-18ºC
+
+      腐烂时间：4.0周期
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: '营养作用:'
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    • <link="IDFOODEFFECTS__SEAFOODRADIATIONRESISTANCE">辐射抗性：水产食品</link>'
+    tooltip: >-
+      吃这种食物能提高<style="KKeyword">辐射</style>抗性
+          • 辐射抗性: +20%
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 烤海鲜
+    require:
+    - image: shellfish_0__ui
+      text1: 生蟹肉
+      text2: 1,000千卡
+      tooltip: 品质：标准 [+2]
+      link_id: shellfishmeat
+    produce:
+    - image: grilled_pacu_0__ui
+      text1: 烤海鲜
+      text2: 1,600千卡
+      tooltip: 品质：良好 [+3]
+      link_id: cookedfish
+    fabricator:
+      image: cookstation_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 电动烤炉
+      text2: 50秒
+      link_id: cookingstation
+  - widget_type: CodexRecipePanel
+    text: 蟹肉天妇罗
+    require:
+    - image: shellfish_0__ui
+      text1: 生蟹肉
+      text2: 1,000千卡
+      tooltip: 品质：标准 [+2]
+      link_id: shellfishmeat
+    - image: tallow_0__ui
+      text1: 动物油脂
+      text2: 2400克
+      link_id: tallow
+    - image: seed_coldwheat_0__ui
+      text1: 冰霜麦粒
+      text2: 2单位
+      link_id: coldwheat
+    produce:
+    - image: deepfried_shellfish_0__ui
+      text1: 蟹肉天妇罗
+      text2: 4,200千卡
+      tooltip: 品质：优秀 [+4]
+      link_id: deepfriedshellfish
+    fabricator:
+      image: deepfryer_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 油炸锅
+      text2: 50秒
+      link_id: deepfryer
+  - widget_type: CodexRecipePanel
+    text: 蟹肉天妇罗
+    require:
+    - image: shellfish_0__ui
+      text1: 生蟹肉
+      text2: 1,000千卡
+      tooltip: 品质：标准 [+2]
+      link_id: shellfishmeat
+    - image: tallow_0__ui
+      text1: 动物油脂
+      text2: 2400克
+      link_id: tallow
+    - image: megafrond_grain_0__ui
+      text1: 巨蕨谷粒
+      text2: 2单位
+      link_id: fernfood
+    produce:
+    - image: deepfried_shellfish_0__ui
+      text1: 蟹肉天妇罗
+      text2: 4,200千卡
+      tooltip: 品质：优秀 [+4]
+      link_id: deepfriedshellfish
+    fabricator:
+      image: deepfryer_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 油炸锅
+      text2: 50秒
+      link_id: deepfryer
+  - widget_type: CodexConversionPanel
+    require:
+    - image: shellfish_0__ui
+      text1: 生蟹肉
+      text2: 700千卡/周期
+      tooltip: 品质：标准 [+2]
+      link_id: shellfishmeat
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 525克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__ui
+      text1: 好吃哈奇
+      link_id: HATCH
+  - widget_type: CodexConversionPanel
+    require:
+    - image: shellfish_0__ui
+      text1: 生蟹肉
+      text2: 700千卡/周期
+      tooltip: 品质：标准 [+2]
+      link_id: shellfishmeat
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 700克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__veg_ui
+      text1: 草质哈奇
+      link_id: HATCHVEGGIE
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require: []
+    produce:
+    - image: shellfish_0__ui
+      text1: 生蟹肉
+      text2: 4,000千卡
+      tooltip: 品质：标准 [+2]
+      link_id: shellfishmeat
+    fabricator:
+      image: pincher_0__fresh_ui
+      text1: 沙泥蟹
+      link_id: CRABFRESHWATER
+  layout: Vertical

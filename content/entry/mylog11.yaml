@@ -1,0 +1,42 @@
+id: MYLOG11
+name: VA[?]……C
+title: STRINGS.CODEX.MYLOG.BODY.NEURALVACILLATOR.TITLE
+disabled: False
+search_only: False
+category: MYLOG
+sort_string: VA[?]……C
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: VA[?]……C
+    style: Title
+  - widget_type: CodexText
+    text: >+
+      <smallcaps>>>搜索数据库 ["振荡仪"]
+
+      >…错误…
+
+      >…正在修复损坏的数据…
+
+      >…已修复数据…
+
+      >……………………
+
+      >>正在返回结果
+
+      >……………………</smallcaps>
+
+      <b>我记得……</b>
+
+      <smallcaps>>……………………
+
+      >……………………</smallcaps>
+
+      <b>机器。</b>
+
+    style: Body
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical
+  lock_id: neuralvacillator

@@ -1,0 +1,51 @@
+id: CRITTERDELIVERY
+name: 小动物运送
+title: STRINGS.CODEX.CRITTERDELIVERY.TITLE
+disabled: False
+search_only: False
+category: JOURNALS
+sort_string: 小动物运送
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 小动物运送
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：二
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+  lock_id: journal_courier
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <smallcaps>[声纹识别系统初始化完成]
+
+      [识别编号：B482、B759、C094]</smallcaps>
+
+
+      [录音开始]
+
+
+      保安1：嘿！嘿！欢迎回来。
+
+
+      保安2：请把手放在扫描仪上。
+
+
+      专递员：当然，让我先找个地方……
+
+
+      专递员：哦呦——谢谢你，史蒂夫。这些小家伙一只手可拎不动。
+
+
+      （毛茸茸的鼻子在纸板上嗅的声音）
+
+
+      保安2：请跟我来。
+
+
+      [录音结束]
+    style: Body
+  layout: Vertical
+  lock_id: journal_courier

@@ -1,0 +1,76 @@
+id: AIRBORNECRITTERCONDO
+parent_id: BUILDCATEGORYFOOD
+name: 飞行小动物公寓
+disabled: False
+search_only: False
+category: BUILDCATEGORYFOOD
+sort_string: 飞行小动物公寓
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="CRITTERCONDO">飞行小动物公寓</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 生物舒适
+    style: Body
+    image: research_type_alpha_icon
+    link_id: animalcomfort
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: critter_condo_airborne_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 一个悬挂的休息区，用于成年的<link="PUFT">喷浮飞鱼</link>、<link="MOOSPECIES">释气海牛</link>和<link="LIGHTBUG">发光虫</link>。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    专用房间：畜舍'
+    tooltip: >-
+      必须建在专用<style="KKeyword">房间</style>内
+
+
+      建成后，<style="KKeyword">房间</style>将变为<style="KKeyword">畜舍</style>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：3格宽x3格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：120秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="PLASTIC">塑料</link>200千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    过热<link="HEAT">温度</link>：75ºC'
+    tooltip: 达到<b>75ºC</b>时开始过热
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：+20（范围：4格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>4</b>格内提高<b><b>+20</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>类别</b>
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    <link="REQUIREMENTCLASSRANCHSTATIONTYPE">养殖建筑</link>'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>能触发天然的筑巢本能，改善小动物的心情。</i>
+    style: Body
+  layout: Vertical

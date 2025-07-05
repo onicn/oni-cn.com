@@ -1,0 +1,48 @@
+id: SURFACEPOI
+name: 环保承诺
+title: STRINGS.CODEX.INVESTIGATIONS.DLC4_SURFACEPOI.TITLE
+disabled: False
+search_only: False
+category: NOTICES
+sort_string: 环保承诺
+required_dlc_ids:
+- DLC4_ID
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 环保承诺
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：无
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexText
+    text: <b>庄严科技太空垃圾解决方案誓言</b>
+    style: Body
+  layout: Vertical
+  lock_id: notice_surfacepoi
+- contents:
+  - widget_type: CodexText
+    text: >-
+      庄严科技承诺，将减少报废航天器坠落地球导致的伤亡事故。
+
+
+      该声明发布之际，距两家顶级航天企业因历史性集体诉讼遭受重创尚不足一月。
+
+
+      “数十年来，人类一直侥幸太空垃圾坠入无人区或在大气层烧毁，”庄严科技主管杰奎琳·斯特恩博士表示，“这种方式既不可持续，也无法保证安全。”
+
+
+      据统计，失控的太空再入碎片已占全球意外伤害事故的近四分之一。随着大型宽带卫星群的持续扩张，这一数字仍在稳步上升。
+
+
+      斯特恩博士解释道，“我们正在研发一种技术，可在大气热层分解高危大型太空物体，以便团队安全引导剩余碎片离轨。”
+
+
+      当被问及庄严科技是否可能借机窃取专利技术或擅自部署卫星时，她嗤之以鼻，“我们的唯一宗旨是守护并推动人类文明发展。”
+
+
+      本周末将召开相关线上新闻发布会。
+    style: Body
+  layout: Vertical
+  lock_id: notice_surfacepoi

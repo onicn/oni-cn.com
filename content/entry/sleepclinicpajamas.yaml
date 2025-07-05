@@ -1,0 +1,50 @@
+id: SLEEPCLINICPAJAMAS
+parent_id: EQUIPMENT
+name: 睡衣
+disabled: False
+search_only: False
+category: EQUIPMENT
+sort_string: 睡衣
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="SLEEPCLINICPAJAMAS">睡衣</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: pajamas_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 一份用于进入梦境的柔软蓬松的门票。
+    style: Body
+  - widget_type: CodexText
+    text: >-
+      通过减少<link="HEALTH">体力</link>帮助复制人入睡。
+
+
+      佩戴者能够做梦并产生梦境日志。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    • 隔热厚度: 0.3 cm'
+    tooltip: '隔热厚度: 0.3 cm'
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    • 装饰: 30'
+    tooltip: '装饰: 30'
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    • 运动: -8'
+    tooltip: ''
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    • 体力: -10%/周期'
+    tooltip: ''
+    style: Body
+  layout: Vertical

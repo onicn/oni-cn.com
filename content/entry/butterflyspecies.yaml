@@ -1,0 +1,102 @@
+id: BUTTERFLYSPECIES
+parent_id: CREATURES
+name: 拟蛾
+disabled: False
+search_only: False
+category: CREATURES
+sort_string: <link="BUTTERFLYSPECIES">拟蛾</link>
+required_dlc_ids:
+- DLC4_ID
+sub_entries:
+- id: Butterfly
+  parent_id: ButterflySpecies
+  name: <link="BUTTERFLY">拟蛾</link>
+  disabled: False
+  sort_string: 拟蛾
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 拟蛾
+    style: Title
+  - widget_type: CodexText
+    text: 小动物？
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      拟蛾难以分类。生物学家推测，<link="BUTTERFLYPLANT">拟芽</link>通过这种罕见的生殖拟态变异来提升种子传播效率，从而在其原生地一些关键物种灭绝后也能得以存活。
+
+
+      这些迷人的类蛾生物体内具有微小的植物蛋白“脑”细胞集群，受一种奇异本能的驱动，会照料它们的宿主植物。
+
+
+      然而，由于单基因的缺陷，这种照料行为会使区域内<i>除它自身</i>的所有植物受益。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: pollinator_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      拟蛾是一种飞行生物体，能够帮助附近的<link="PLANTS">植物</link>更快生长。
+
+
+      当叶子干枯时，它会硬化成<link="BUTTERFLYPLANT">拟种</link>。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 理想温度
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 舒适范围：<b>10ºC</b>至<b>45ºC</b>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 存活范围：<b>-40ºC</b>至<b>80ºC</b>'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 寿命
+    style: Subtitle
+  - widget_type: CodexText
+    text: 这种小动物特征<link="CREATURES__GUIDE__FERTILITY">寿命</link>为<b>5周期</b>。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 所需空间
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 当房间空间对每只小动物平均少于<b>8格</b>时会感到<link="CREATURES__GUIDE__MOOD">拥挤</link>。'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 当房间小于<b>8格</b>时会感到<link="CREATURES__GUIDE__MOOD">封闭</link>。'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 掉落物
+    style: Subtitle
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 拟种
+    image: seed_pollinator_plant_0__ui
+    link_id: butterflyplant
+  - widget_type: CodexText
+    text: 	1单位
+    style: Body
+  layout: Vertical

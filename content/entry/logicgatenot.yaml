@@ -1,0 +1,57 @@
+id: LOGICGATENOT
+parent_id: BUILDCATEGORYAUTOMATION
+name: 非门
+disabled: False
+search_only: False
+category: BUILDCATEGORYAUTOMATION
+sort_string: 非门
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="LOGICGATENOT">非门</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 通用传感器
+    style: Body
+    image: research_type_alpha_icon
+    link_id: genericsensors
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: logic_not_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      若输入端接收到<b><style="logic_off">红色信号</style></b>，输出<b><style="logic_on">绿色信号</style></b>。
+
+
+      若输入端接收到<b><style="logic_on">绿色信号</style></b>，输出<b><style="logic_off">红色信号</style></b>。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：2格宽x1格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：3秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="REFINEDMETAL">精炼金属</link>25千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：-5（范围：1格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>1</b>格内降低<b><b>-5</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>这种逻辑门会反转自动化信号，将绿色信号变成红色信号，反之亦然。</i>
+    style: Body
+  layout: Vertical

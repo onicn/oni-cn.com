@@ -1,0 +1,25 @@
+id: MYLOG2
+name: 周期1
+title: STRINGS.CODEX.MYLOG.BODY.LOG1.TITLE
+disabled: False
+search_only: False
+category: MYLOG
+sort_string: A1
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 周期1
+    style: Title
+  - widget_type: CodexText
+    text: >+
+      虽然我们目前还没有维持生命的设备，但我们发现我们处在一个小的可呼吸的气穴中。据我看来，我们当即是不会有任何危险的。
+
+
+      在可用的空气和我们贫瘠的食物储备之间衡量后，我估计在我的复制人有生命危险之前，我们有3天时间建立食物和氧气的生产。
+
+    style: Body
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical
+  lock_id: log1

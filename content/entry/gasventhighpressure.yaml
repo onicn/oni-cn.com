@@ -1,0 +1,85 @@
+id: GASVENTHIGHPRESSURE
+parent_id: BUILDCATEGORYHVAC
+name: 高压排气口
+disabled: False
+search_only: False
+category: BUILDCATEGORYHVAC
+sort_string: 高压排气口
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="GASVENTHIGHPRESSURE">高压排气口</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 改良通风
+    style: Body
+    image: research_type_alpha_icon
+    link_id: improvedgaspiping
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: ventgas_powered_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 将<link="GASPIPING">气体管道</link>中的<link="ELEMENTSGAS">气体</link>排放到气压更高的位置。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="GASPIPING">气体输入管道</link>'
+    tooltip: 必须从<link="GASCONDUIT">气体管道</link>系统中接收<style="KKeyword">气体</style>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：1格宽x1格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：30秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="REFINEDMETAL">精炼金属</link>200千克, <link="PLASTIC">塑料</link>50千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    超压：20千克'
+    tooltip: 当周围环境的质量大于<b>20千克</b>时停止运作
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LOGIC">信号输入端</link>'
+    tooltip: 当接收到信号时，输入端会使这个建筑一种状态发生变化
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    启用/禁用'
+    tooltip: >-
+      输入端行为：
+
+      • <b><style="logic_on">绿色信号</style></b>：启用建筑
+
+      • <b><style="logic_off">红色信号</style></b>：禁用建筑
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：-10（范围：2格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>2</b>格内降低<b><b>-10</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>类别</b>
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    <link="REQUIREMENTCLASSINDUSTRIALMACHINERY">工业机械</link>'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>高压排气口可以在气压更高的环境下排出气体。</i>
+    style: Body
+  layout: Vertical

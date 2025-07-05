@@ -1,0 +1,62 @@
+id: ARTIFICIALFRIENDS
+parent_id: TECH
+name: 人工伙伴
+disabled: False
+search_only: False
+category: TECH
+sort_string: 人工伙伴
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="ARTIFICIALFRIENDS">人工伙伴</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 横扫一切先前的同伴技术。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="ADVANCEDRESEARCH">高级研究</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="BASICREFINEMENT">蛮力精炼</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: sweep_bot_base_station_0__ui
+  - widget_type: CodexText
+    text: <link="SWEEPBOTSTATION">扫扫基站</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: rocket_scout_cargo_module_0__ui
+  - widget_type: CodexText
+    text: <link="SCOUTMODULE">侦察舱</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: swoopy_bot_0__ui
+  - widget_type: CodexText
+    text: <style="KKeyword">飞寻机</style>模型
+    style: Body
+  layout: Horizontal

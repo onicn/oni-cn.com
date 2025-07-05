@@ -1,0 +1,48 @@
+id: ADVANCEDSANITATION
+parent_id: TECH
+name: 高级卫生
+disabled: False
+search_only: False
+category: TECH
+sort_string: 高级卫生
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="ADVANCEDSANITATION">高级卫生</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 清洁脏乱的复制人。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="LIQUIDFILTERING">基于液体的精炼工艺</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="LIQUIDDISTRIBUTION">液体分配</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: decontamination_shower_0__ui
+  - widget_type: CodexText
+    text: <link="DECONTAMINATIONSHOWER">除污淋浴隔间</link>
+    style: Body
+  layout: Horizontal

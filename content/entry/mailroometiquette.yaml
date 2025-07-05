@@ -1,0 +1,45 @@
+id: MAILROOMETIQUETTE
+name: 邮件室行为规范
+title: STRINGS.CODEX.A1_MAILROOMETIQUETTE.TITLE
+disabled: False
+search_only: False
+category: NOTICES
+sort_string: 邮件室行为规范
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 邮件室行为规范
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：无
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+  lock_id: misc_mailroometiquette
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <smallcaps><b>提醒：邮件室行为规范</b>
+
+      发件人：<b>管理员</b> <alpha=#AA><admin@gravitas.nova></color>
+
+      收件人：<b>全体</b></smallcaps>
+
+      ------------------
+
+
+      <indent=5%>请勿将活蜜蜂送到办公室邮件室。实验测试对象申请需递交给管理员处理。
+
+
+      <i>请通过管理员申请一切测试对象。</i>
+
+
+      谢谢。
+
+
+      - 管理员
+
+      庄严科技</indent>
+    style: Body
+  layout: Vertical
+  lock_id: misc_mailroometiquette

@@ -1,0 +1,52 @@
+id: SPACERESEARCH
+parent_id: ROLES
+name: 数据分析研究
+disabled: False
+search_only: False
+category: ROLES
+sort_string: 数据分析研究
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="SPACERESEARCH">数据分析研究</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: hat_role_research4
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 允许复制人使用<link="DLC1COSMICRESEARCHCENTER">虚拟天象仪</link>进行研究
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 工作培训
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexText
+    text: 工作培训会自动提供永久的特质和属性提升，即使复制人更换工作，这些特质和属性提升也会保留下来。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>+2</b><style="KKeyword">科学</style>
+    style: Body
+  - widget_type: CodexText
+    text: <link="DLC1COSMICRESEARCHCENTER">虚拟天象仪</link>的使用
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提工作
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="ASTRONOMY">天文学</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

@@ -1,0 +1,68 @@
+id: ENGINEERCANDIDATE
+name: 回复：工程师人选？
+title: STRINGS.CODEX.C5_ENGINEERINGCANDIDATE.TITLE
+disabled: False
+search_only: False
+category: EMAILS
+sort_string: 回复：工程师人选？
+required_dlc_ids:
+- EXPANSION1_ID
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 回复：工程师人选？
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：一
+    style: Subtitle
+  layout: Vertical
+  lock_id: email_engineeringcandidate
+- contents:
+  - widget_type: CodexText
+    text: >
+      <smallcaps>收件人：<b>斯特恩主管</b><size=12><alpha=#AA> <jstern@gravitas.nova></size></color></smallcaps>
+
+      发件人：<b>[受屏蔽]</b>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_engineeringcandidate
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <indent=5%>主管，我想我找到了设计我们小规模殖民地机器的工程师完美人选。
+
+      -----------------------------------------------------------------------------------------------------
+
+      </indent>
+    style: Body
+  layout: Vertical
+  lock_id: email_engineeringcandidate
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <indent=10%><smallcaps><b>将创意性工作空间理念引入工业环境</b>
+
+
+      米克尔E.E.珀尔缪特是世界工业设计的冉冉新星，他为想不出好点子的劳动力策划有趣的工作空间，并以此出名。
+
+
+      “动力椅子该扔了。”珀尔缪特说道。“我感兴趣的是重新设计的工业空间。机器就是应该稀奇古怪才好。”
+
+
+      正是这种理念使珀尔缪特登上了热门新工业设计者的榜首。</indent></smallcaps>
+    style: Body
+  - widget_type: CodexText
+    text: >2
+
+      [受屏蔽]
+
+      <size=11>人力资源部协调员
+
+      庄严科技</size>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_engineeringcandidate

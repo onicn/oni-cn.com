@@ -1,0 +1,102 @@
+id: DINOFERN
+parent_id: PLANTS
+name: 巨蕨
+disabled: False
+search_only: False
+category: PLANTS
+sort_string: 巨蕨
+required_dlc_ids:
+- DLC4_ID
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 巨蕨
+    style: Title
+  - widget_type: CodexText
+    text: 可耕种植物
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <i>拜伦利斯巨型叶状体</i>，俗称“巨蕨”，是一种使周围环境相形见绌的巨型植物。
+
+
+      其大小并不是种植过程的唯一难题：巨蕨之所以能生长至如此巨大，要得益于它对其他生物（包括农民）很少喜欢的低温和腐蚀性气体环境的独特适应性。
+
+
+      尽管困难重重，但为了吹嘘和谷物收成，这一切是值得的。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: prehistoric_fern_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 成长自
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: seed_megafrond_0__ui
+  - widget_type: CodexText
+    text: <link="DINOFERN">巨蕨孢子</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 详情
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexText
+    text: 巨蕨可产出<link="FERNFOOD">巨蕨谷粒</link>，一种可以加工成<link="FOOD">食物</link>的古老谷物。
+    style: Body
+  - widget_type: CodexText
+    text: >-
+      <b>生长需求</b>：
+          • 最大<link="RADIATION">辐射</link>：2,200拉德/周期
+          • <link="CHLORINEGAS">氯气</link>的供给
+          • 生长周期：9.0周期
+          • <link="HEAT">温度</link>：-45至15ºC
+          • <link="ATMOSPHERE">气压</link>：最低500克
+          • <link="ATMOSPHERE">环境</link>：
+              • <link="CHLORINEGAS">氯气</link>
+          • 农地
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      <b>效果</b>：
+          • <link="CHLORINEGAS">氯气</link>：90克/秒
+          • <link="FERNFOOD">巨蕨谷粒</link>：36
+          • <link="DECOR">装饰度</link>：-10（范围：2格）
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_gas
+      color: 04A778FF
+      text1: 氯气
+      text2: 54千克/周期
+      link_id: chlorinegas
+    produce:
+    - image: megafrond_grain_0__ui
+      text1: 巨蕨谷粒
+      text2: 4单位/周期
+      link_id: fernfood
+    fabricator:
+      image: prehistoric_fern_0__ui
+      text1: 巨蕨
+      link_id: DINOFERN
+  layout: Vertical

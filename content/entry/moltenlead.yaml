@@ -1,0 +1,127 @@
+id: MOLTENLEAD
+parent_id: ELEMENTSLIQUID
+name: 熔融铅
+disabled: False
+search_only: False
+icon_color: F15300FF
+category: ELEMENTSLIQUID
+sort_string: 熔融铅
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="MOLTENLEAD">熔融铅</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    color: F15300FF
+    image: element_liquid
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: F15300FF
+      text1: 熔融铅
+      text2: 1000克
+      link_id: moltenlead
+    produce:
+    - image: element_gas
+      color: FFE28DFF
+      text1: 气态铅
+      text2: 1000克
+      link_id: leadgas
+    fabricator:
+      image: crew_state_temp_up
+      text1: 1749ºC
+      tooltip: 温度高于1749ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: F15300FF
+      text1: 熔融铅
+      text2: 1000克
+      link_id: moltenlead
+    produce:
+    - image: lead_0__ui
+      text1: 铅
+      text2: 1000克
+      link_id: lead
+    fabricator:
+      image: crew_state_temp_down
+      text1: 327.5ºC
+      tooltip: 温度低于327.5ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换于
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: lead_0__ui
+      text1: 铅
+      text2: 1000克
+      link_id: lead
+    produce:
+    - image: element_liquid
+      color: F15300FF
+      text1: 熔融铅
+      text2: 1000克
+      link_id: moltenlead
+    fabricator:
+      image: crew_state_temp_up
+      text1: 327.5ºC
+      tooltip: 温度高于327.5ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_gas
+      color: FFE28DFF
+      text1: 气态铅
+      text2: 1000克
+      link_id: leadgas
+    produce:
+    - image: element_liquid
+      color: F15300FF
+      text1: 熔融铅
+      text2: 1000克
+      link_id: moltenlead
+    fabricator:
+      image: crew_state_temp_down
+      text1: 1749ºC
+      tooltip: 温度低于1749ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      (Pb) 熔融铅是一种被加热成<link="ELEMENTSLIQUID">液态</link>的柔性但密度仍很高的<link="REFINEDMETAL">精炼金属</link>。
+
+
+      资源种类：<link="ELEMENTSLIQUID">液体</link>
+
+      冰点：327.5ºC
+
+      沸点：1749ºC
+
+
+      比热容：0.128 (DTU/g)/ºC
+
+      热导率：11.000 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.85
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：<link="METAL">金属矿石</link>, <link="REFINEDMETAL">精炼金属</link>, <link="LIGHT">光源</link>, <link="ELEMENTSLIQUID">液体</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

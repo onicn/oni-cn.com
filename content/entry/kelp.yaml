@@ -1,0 +1,150 @@
+id: KELP
+name: 海梳蕨叶
+title: STRINGS.CODEX.KELP.TITLE
+disabled: False
+search_only: False
+category: INDUSTRIALINGREDIENTS
+sort_string: 海梳蕨叶
+required_dlc_ids:
+- DLC4_ID
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 海梳蕨叶
+    style: Title
+  - widget_type: CodexText
+    text: 植物副产品
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexImage
+    image: kelp_leaf_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <link="KELPPLANT">海梳蕨</link>的叶子。
+
+
+      可以加工成<link="PHYTOOIL">植物润滑油</link>，或作为<link="ANTIHISTAMINE ">抗敏药</link>的原料。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 植物润滑油
+    require:
+    - image: kelp_leaf_0__ui
+      text1: 海梳蕨叶
+      text2: 25千克
+      link_id: kelp
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 75千克
+      link_id: water
+    produce:
+    - image: element_liquid
+      color: 98A82FFF
+      text1: 植物润滑油
+      text2: 100千克
+      link_id: phytooil
+    fabricator:
+      image: milkpress_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 植物粉碎机
+      text2: 40秒
+      link_id: milkpress
+  - widget_type: CodexRecipePanel
+    text: 抗敏药
+    require:
+    - image: kelp_leaf_0__ui
+      text1: 海梳蕨叶
+      text2: 10千克
+      link_id: kelp
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 1000克
+      link_id: dirt
+    produce:
+    - image: pill_allergies_0__ui
+      text1: 抗敏药
+      text2: 10单位
+      link_id: antihistamine
+    fabricator:
+      image: apothecary_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 配药桌
+      text2: 100秒
+      link_id: apothecary
+  - widget_type: CodexConversionPanel
+    require:
+    - image: kelp_leaf_0__ui
+      text1: 海梳蕨叶
+      text2: 20千克/周期
+      link_id: kelp
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 10千克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__trp_ui
+      text1: 热带帕库鱼
+      link_id: PACUTROPICAL
+  - widget_type: CodexConversionPanel
+    require:
+    - image: kelp_leaf_0__ui
+      text1: 海梳蕨叶
+      text2: 20千克/周期
+      link_id: kelp
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 10千克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__ui
+      text1: 帕库鱼
+      link_id: PACU
+  - widget_type: CodexConversionPanel
+    require:
+    - image: kelp_leaf_0__ui
+      text1: 海梳蕨叶
+      text2: 20千克/周期
+      link_id: kelp
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 10千克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__glp_ui
+      text1: 大嘴鱼
+      link_id: PACUCLEANER
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 10千克/周期
+      link_id: toxicsand
+    produce:
+    - image: kelp_leaf_0__ui
+      text1: 海梳蕨叶
+      text2: 10千克/周期
+      link_id: kelp
+    fabricator:
+      image: kelp_0__ui
+      text1: 海梳蕨
+      link_id: KELPPLANT
+  layout: Vertical

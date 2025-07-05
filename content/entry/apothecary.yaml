@@ -1,0 +1,324 @@
+id: APOTHECARY
+parent_id: BUILDCATEGORYMEDICAL
+name: 配药桌
+disabled: False
+search_only: False
+category: BUILDCATEGORYMEDICAL
+sort_string: 配药桌
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="APOTHECARY">配药桌</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 药物学
+    style: Body
+    image: research_type_alpha_icon
+    link_id: medicinei
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: apothecary_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      生产<link="MEDICINE">药物</link>以治疗大多数基本<link="DISEASE">疾病</link>。
+
+
+      复制人必须具有药物配制<link="ROLES">技能</link>才能制作药物。
+
+
+      只有在队列中安排配方复制人才会进行制作。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    复制人的操作'
+    tooltip: 必须有复制人来才能使这个建筑运行
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    需要技能的复制人的操作'
+    tooltip: 只有具有<link="MEDICINE1">药物配制</link>技能或<link="BOOSTERMEDICINE1">高级医疗增幅块</link>的复制人才能使用这个建筑
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：2格宽x3格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：120秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="METAL">金属矿石</link>400千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="HEAT">热量</link>：+625复制热/秒'
+    tooltip: >-
+      每秒产生<style="produced">625复制热</style>
+
+
+      总<style="KKeyword">温度</style>变化受到加热物质的材料属性影响：
+          • 质量
+          • 比热容
+          • 表面积
+          • 隔热厚度
+          • 热导率
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    过热<link="HEAT">温度</link>：75ºC'
+    tooltip: 达到<b>75ºC</b>时开始过热
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LOGIC">信号输入端</link>'
+    tooltip: 当接收到信号时，输入端会使这个建筑一种状态发生变化
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    启用/禁用'
+    tooltip: >-
+      输入端行为：
+
+      • <b><style="logic_on">绿色信号</style></b>：启用建筑
+
+      • <b><style="logic_off">红色信号</style></b>：禁用建筑
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>有些药物有助于预防疾病，有些则用于缓解现有的疾病。</i>
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 所有配方
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 维生素咀嚼胶囊
+    require:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 1000克
+      link_id: carbon
+    produce:
+    - image: pill_2_0__ui
+      text1: 维生素咀嚼胶囊
+      text2: 1单位
+      link_id: basicbooster
+    fabricator:
+      image: apothecary_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 配药桌
+      text2: 50秒
+      link_id: apothecary
+  - widget_type: CodexRecipePanel
+    text: 齿轮膏
+    require:
+    - image: element_liquid
+      color: 512360FF
+      text1: 粘渣油
+      text2: 80千克
+      link_id: liquidgunk
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 200千克
+      link_id: water
+    produce:
+    - image: lubricant_applicator_0__ui
+      text1: 齿轮膏
+      text2: 1单位
+      link_id: lubricationstick
+    - image: element_liquid
+      color: 474506FF
+      text1: 污染水
+      text2: 200千克
+      link_id: dirtywater
+    fabricator:
+      image: apothecary_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 配药桌
+      text2: 100秒
+      link_id: apothecary
+  - widget_type: CodexRecipePanel
+    text: 动物油脂齿轮膏
+    require:
+    - image: tallow_0__ui
+      text1: 动物油脂
+      text2: 10千克
+      link_id: tallow
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 70千克
+      link_id: water
+    produce:
+    - image: lubricant_applicator_tallow_0__ui
+      text1: 动物油脂齿轮膏
+      text2: 1单位
+      link_id: lubricationstick
+    fabricator:
+      image: apothecary_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 配药桌
+      text2: 100秒
+      link_id: apothecary
+  - widget_type: CodexRecipePanel
+    text: 免疫增补剂
+    require:
+    - image: spicenut_0__ui
+      text1: 火椒粒
+      text2: 1000克
+      link_id: spicenut
+    produce:
+    - image: pill_3_0__ui
+      text1: 免疫增补剂
+      text2: 1单位
+      link_id: intermediatebooster
+    fabricator:
+      image: apothecary_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 配药桌
+      text2: 100秒
+      link_id: apothecary
+  - widget_type: CodexRecipePanel
+    text: 基础辐射药丸
+    require:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 1000克
+      link_id: carbon
+    produce:
+    - image: pill_radiation_0__ui
+      text1: 基础辐射药丸
+      text2: 1单位
+      link_id: basicradpill
+    fabricator:
+      image: apothecary_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 配药桌
+      text2: 50秒
+      link_id: apothecary
+  - widget_type: CodexRecipePanel
+    text: 治疗药片
+    require:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 1000克
+      link_id: carbon
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 1000克
+      link_id: water
+    produce:
+    - image: pill_foodpoisoning_0__ui
+      text1: 治疗药片
+      text2: 1单位
+      link_id: basiccure
+    fabricator:
+      image: apothecary_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 配药桌
+      text2: 50秒
+      link_id: apothecary
+  - widget_type: CodexRecipePanel
+    text: 抗敏药
+    require:
+    - image: kelp_leaf_0__ui
+      text1: 海梳蕨叶
+      text2: 10千克
+      link_id: kelp
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 1000克
+      link_id: dirt
+    produce:
+    - image: pill_allergies_0__ui
+      text1: 抗敏药
+      text2: 10单位
+      link_id: antihistamine
+    fabricator:
+      image: apothecary_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 配药桌
+      text2: 100秒
+      link_id: apothecary
+  - widget_type: CodexRecipePanel
+    text: 抗敏药
+    require:
+    - image: seed_bristleblossom_0__ui
+      text1: 毛刺花种子
+      text2: 1单位
+      link_id: prickleflower
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 1000克
+      link_id: dirt
+    produce:
+    - image: pill_allergies_0__ui
+      text1: 抗敏药
+      text2: 10单位
+      link_id: antihistamine
+    fabricator:
+      image: apothecary_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 配药桌
+      text2: 100秒
+      link_id: apothecary
+  - widget_type: CodexRecipePanel
+    text: 医疗包
+    require:
+    - image: swamplilyflower_0__ui
+      text1: 芳香百合花
+      text2: 1000克
+      link_id: swamplilyflower
+    - image: phosphorite_0__ui
+      text1: 磷矿
+      text2: 1000克
+      link_id: phosphorite
+    produce:
+    - image: iv_slimelung_0__ui
+      text1: 医疗包
+      text2: 1单位
+      link_id: intermediatecure
+    fabricator:
+      image: apothecary_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 配药桌
+      text2: 100秒
+      link_id: apothecary
+  - widget_type: CodexRecipePanel
+    text: 血清瓶
+    require:
+    - image: steel_0__ui
+      text1: 钢
+      text2: 1000克
+      link_id: steel
+    - image: egg_lightbug_0__org_ui
+      text1: 阳光虫卵
+      text2: 1单位
+      link_id: lightbugorange
+    produce:
+    - image: vial_spore_0__ui
+      text1: 血清瓶
+      text2: 1单位
+      link_id: advancedcure
+    fabricator:
+      image: apothecary_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 配药桌
+      text2: 200秒
+      link_id: apothecary
+  layout: Vertical

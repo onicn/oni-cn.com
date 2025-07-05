@@ -1,0 +1,34 @@
+id: LIGHT
+name: 照明
+title: STRINGS.CODEX.LIGHT.TITLE
+disabled: False
+search_only: False
+category: SYSTEMS
+sort_string: <link="LIGHT">照明</link>
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 照明
+    style: Subtitle
+  - widget_type: CodexText
+    text: >+
+      小行星的大多数区域是黑暗的。像是<link="CEILINGLIGHT">吸顶灯</link>或者<link="LIGHTBUG">发光虫</link>这样的光源可以提高装饰度并给复制人的生产力带来加成。一些植物也同样对光照敏感。
+
+    style: Body
+  - widget_type: CodexText
+    text: 光源
+    style: Subtitle
+  - widget_type: CodexText
+    text: >+
+      <link="FLOORLAMP">电灯</link>和<link="CEILINGLIGHT">吸顶灯</link>通电后可提供适当的光。<link="LIGHTBUG">发光虫</link>能自然放出一个光环。强大的太阳光在白天地表可得。
+
+    style: Body
+  - widget_type: CodexText
+    text: 光的衡量
+    style: Subtitle
+  - widget_type: CodexText
+    text: >+
+      一个方格中光线量以勒克斯为单位衡量。勒克斯有着巨大的变化范围——简单的<link="CEILINGLIGHT">吸顶灯</link>能提供1800勒克斯的光，而太阳光能产生高达80000勒克斯的光。<link="SOLARPANEL">太阳能板</link>发电量与有多少光暴露在上面成正比。
+
+    style: Body
+  layout: Vertical

@@ -1,0 +1,218 @@
+id: STORYTRAITMORBROVER
+parent_id: STORYTRAITS
+name: 生机组构仪
+title: STRINGS.CODEX.STORY_TRAITS.MORB_ROVER_MAKER.NAME
+disabled: False
+search_only: False
+icon_asset_name: MorbRover_codex_icon
+category: STORYTRAITS
+sort_string: 生机组构仪
+content_container:
+- contents:
+  - widget_type: CodexImage
+    image: MorbRover_image
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 生机组构仪
+    style: Title
+  - widget_type: CodexText
+    text: >-
+      重新启动由庄严科技生物工程部和机器人部领头的雄心勃勃的合作项目。
+
+
+      如果重建得当，它就可以拯救复制人的生命。
+    style: Body
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 初遇
+    style: Title
+  - widget_type: CodexText
+    text: >-
+      我的复制人发现了满是蒙尘机械的实验室。也许是另一个殖民地实验的遗迹？
+
+
+      目前还不清楚这些仪器是用于生物实验，还是用于高级机电一体化技术……亦或者都是。
+    style: Body
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical
+  lock_id: story_trait_morbrover_initial
+- contents:
+  - widget_type: CodexText
+    text: 遇见P.E.G.G.Y.
+    style: Title
+  - widget_type: CodexText
+    text: >-
+      我们的恢复工作已经完成了！
+
+
+      在此建筑的机械装配缸上有一小块匾牌，上面写着：“病原体驱动的舱外地质勘探引导机器人（Y型）。”
+
+
+      相邻的水缸里装着浮动的东西，样子像是半成型的生物体。其鲜艳的颜色让我想起我们母星丛林上被灭除的有毒两栖生物。
+
+
+      杂乱之中有一份破旧的打印本，已被收回。
+    style: Body
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical
+  lock_id: story_trait_morbrover_reveal
+- contents:
+  - widget_type: CodexText
+    text: 加密级别：三
+    style: Title
+  - widget_type: CodexText
+    text: >-
+      <smallcaps>[检测到录音片段]
+
+      [声纹识别系统不可用]</smallcaps>
+
+
+      [录音开始]
+
+
+      ……然后打印舱说“叩叩，糊在家！”
+
+
+      呃。他们不会嘲笑<i>那</i>家伙的。
+
+
+      如果——
+
+
+      （叮当声）
+
+
+      嘿，嘿，粘糊糊的小家伙！看看你都长多大了。你准备好乘坐大机器人了吗？赛义德·阿利博士开完会随时都会回来。他看到你会很高兴的。
+
+
+      （潮湿地拍打玻璃声）
+
+
+      啊是的，我也会不耐烦的。
+
+
+      你猜怎么着，为什么我不直接带你去新家呢？我帮他做这活了不下十次了。
+
+
+      “看一次，做一次，教一次”，对吧？
+
+
+      [录音结束]
+    style: Body
+  layout: Vertical
+  lock_id: story_trait_morbrover_reveal_lore
+- contents:
+  - widget_type: CodexText
+    text: 匿名爱慕者
+    style: Title
+  - widget_type: CodexText
+    text: "我是\n   一粒亚原子\n比一颗灰尘还要小\n  在洗眼站从你的注视中\n\n     被冲走了  \n\n   我的爱就像钚\n 灰色又暗淡\n难以承受的重\n  直到    我在你身边\n\n 每一次呼吸 \n      我都燃烧着\n    看不见的\n              渴望\n\n附言：我让史蒂夫让我进去了，所以我能把这个留给你，希望你能喜欢。"
+    style: Body
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical
+  lock_id: story_trait_morbrover_locker
+- contents:
+  - widget_type: CodexText
+    text: 遗憾于身
+    style: Title
+  - widget_type: CodexText
+    text: >-
+      赛义德·阿利博士，
+
+
+      你生我的气是对的。我<i>就是</i>无人驾驶机器人项目被重新分配的原因。斯特恩主管把我叫了过去，讨论了你关于孢体粘蛋白交叉污染的担忧，然后我……
+
+
+      她说，X型的补充测试对谷神星任务产生了威胁。
+
+
+      在什么发生在那个可怜的实验室技术员身上之后，我应该再说点什么的，但是……
+
+
+      对他来说已经太晚了。
+
+
+      可能对我们所有人来说都太晚了。
+
+
+      你应该知道，我前脚刚离开，主管就收到了来自顶点研究所的某人发来的视频电话……我徘徊在她门外，听到她称呼他们为跨国安全负责人！当谈论到生物机器人，他们的说话方式就像……
+
+
+      在这里再写下去就不安全了。今晚下班后我在火箭机库等你。
+
+
+      我希望你能来。你不来我也能理解。
+
+
+      我非常非常抱歉。
+
+
+      - 猿桥博士
+    style: Body
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical
+  lock_id: story_trait_morbrover_reveal_complete_lore
+- contents:
+  - widget_type: CodexText
+    text: 挑战完成
+    style: Title
+  - widget_type: CodexText
+    text: >-
+      成功了！我的复制人让生机组构仪启动并运行的努力终于获得了回报！
+
+
+      我们第一台完全组装的P.E.G.G.Y.生物机器人已经准备好前往危险环境执行任务了，这意味着我能减少复制人暴露在危险中的情况。我们能生产生物机器人的数量似乎没有限制。
+
+
+      在孢体缸后面发现了一个小型玩具机器人。它偶尔会播放音质不良的笑声。
+    style: Body
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical
+  lock_id: story_trait_morbrover_complete
+- contents:
+  - widget_type: CodexText
+    text: <link="STORYTRAITMORBROVER">生物机器人</link>
+    style: Title
+  - widget_type: CodexText
+    text: >-
+      病原体驱动的引导机器人通过满足以下三个核心效果，使殖民地在恶劣环境的生存几率最大化：
+
+
+      1. 过滤并移除环境中的毒素。
+
+      2. 通过将毒素转化为可用的生物燃料，将其安全处理。
+
+      3. 为殖民地扩建提供地质勘探设备，使殖民地的危险最小化。
+
+
+      在此过程中聚集的毒素可能会不经意地传播。需要特殊训练才能安全处理。
+    style: Body
+  - widget_type: CodexImage
+    image: MorbRover_image
+  - widget_type: CodexText
+    text: >-
+      一台病原体驱动的舱外地质勘探引导机器人（Y型），又称“P.E.G.G.Y.”。
+
+
+      可以在危险环境中为其分配基本的建造和挖掘任务。
+    style: Body
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical
+  lock_id: story_trait_morbrover_biobot

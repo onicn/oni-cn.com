@@ -1,0 +1,590 @@
+id: PUFTSPECIES
+parent_id: CREATURES
+name: 喷浮飞鱼
+disabled: False
+search_only: False
+category: CREATURES
+sort_string: <link="PUFTSPECIES">喷浮飞鱼</link>
+sub_entries:
+- id: Puft
+  parent_id: PuftSpecies
+  name: <link="PUFT">喷浮飞鱼</link>
+  disabled: False
+  sort_string: 喷浮飞鱼
+- id: PuftAlpha
+  parent_id: PuftSpecies
+  name: <link="PUFTALPHA">贵族飞鱼</link>
+  disabled: False
+  sort_string: 贵族飞鱼
+- id: PuftBleachstone
+  parent_id: PuftSpecies
+  name: <link="PUFTBLEACHSTONE">洁净飞鱼</link>
+  disabled: False
+  sort_string: 洁净飞鱼
+- id: PuftOxylite
+  parent_id: PuftSpecies
+  name: <link="PUFTOXYLITE">厚壳飞鱼</link>
+  disabled: False
+  sort_string: 厚壳飞鱼
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 喷浮飞鱼
+    style: Title
+  - widget_type: CodexText
+    text: 小动物物种
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 喷浮飞鱼是一种温和的生物，其有限的智力大多被用于维持基本的生命行动。
+    style: Body
+  - widget_type: CodexText
+    text: >-
+      喷浮飞鱼的嘴边缘内侧通常都有一系列不对称的牙齿，但牙齿的功能已经完全退化了，因为喷浮飞鱼不会进食固体食物。
+
+
+      相反，在喷浮飞鱼喉咙后部有一个像鲸须一样的角蛋白网，可以过滤出空气中的微小有机物和食物颗粒。
+
+
+      喷浮飞鱼会通过自身的躯干背部排出无用的空气，而废物和任何难以消化的颗粒或病原体则会在之后以固体生物质的形式排出。
+    style: Body
+  - widget_type: CodexText
+    text: >-
+      由于温顺的性情和可训导的天性，喷浮飞鱼很容易饲养。
+
+
+      对于人类的行为，它的容忍度极高，人类几乎可以轻拍或抓挠它毛茸茸身体上的任何地方，胆子大的话，还可直接随意抚摸它三个眼球。
+    style: Body
+  - widget_type: CodexText
+    text: >-
+      喷浮飞鱼的胸腔中有一个专用气囊，用于储存不同浓度的气体，因此其能够控制自身浮力，毫不费力地在空中漂浮。
+
+
+      加上自身极其轻盈且富有弹性的皮肤，喷浮飞鱼能够无限期地保持漂浮状态，而且能量消耗可以忽略不计。它的腿已经失去作用，唯一用途是通过其中的平衡骨结构控制方向和维持平衡。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 条目（4/4）
+    style: Subtitle
+  - widget_type: CodexText
+    text: <link="PUFT">喷浮飞鱼</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="PUFTALPHA">贵族飞鱼</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="PUFTBLEACHSTONE">洁净飞鱼</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="PUFTOXYLITE">厚壳飞鱼</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 喷浮飞鱼
+    style: Title
+  - widget_type: CodexText
+    text: 可驯化的小动物
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: puft_0__ui
+  - widget_type: CodexImage
+    image: baby_puft_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexText
+    text: 喷浮飞鱼是一种没有攻击性的小动物，它每一次呼吸都会排泄<link="SLIMEMOLD">菌泥</link>。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 理想温度
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 舒适范围：<b>15ºC</b>至<b>55ºC</b>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 存活范围：<b>-50ºC</b>至<b>100ºC</b>'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 寿命
+    style: Subtitle
+  - widget_type: CodexText
+    text: 这种小动物特征<link="CREATURES__GUIDE__FERTILITY">寿命</link>为<b>75周期</b>。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 所需空间
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 当房间空间对每只小动物平均少于<b>16格</b>时会感到<link="CREATURES__GUIDE__MOOD">拥挤</link>。'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 当房间小于<b>16格</b>时会感到<link="CREATURES__GUIDE__MOOD">封闭</link>。'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 掉落物
+    style: Subtitle
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 肉
+    image: creaturemeat_0__ui
+    link_id: meat
+  - widget_type: CodexText
+    text: 	1,600千卡
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 食物
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_gas
+      color: 224F40FF
+      text1: 污染氧
+      text2: 50千克/周期
+      link_id: contaminatedoxygen
+    produce:
+    - image: slime_mold_0__ui
+      text1: 菌泥
+      text2: 47.5千克/周期
+      link_id: slimemold
+    fabricator:
+      image: puft_0__ui
+      text1: 喷浮飞鱼
+      link_id: PUFT
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require: []
+    produce:
+    - image: creaturemeat_0__ui
+      text1: 肉
+      text2: 1,600千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: meat
+    fabricator:
+      image: puft_0__ui
+      text1: 喷浮飞鱼
+      link_id: PUFT
+  layout: Vertical
+- contents:
+  - widget_type: CodexLargeSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 贵族飞鱼
+    style: Title
+  - widget_type: CodexText
+    text: 小动物变种
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: puft_0__alp_ui
+  - widget_type: CodexImage
+    image: baby_puft_0__alp_ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexText
+    text: 贵族飞鱼是一种懒惰的小动物，它每一次呼吸都会排泄吸入成分的<link="SLIMEMOLD">固体</link>。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 理想温度
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 舒适范围：<b>20ºC</b>至<b>40ºC</b>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 存活范围：<b>-50ºC</b>至<b>100ºC</b>'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 寿命
+    style: Subtitle
+  - widget_type: CodexText
+    text: 这种小动物特征<link="CREATURES__GUIDE__FERTILITY">寿命</link>为<b>75周期</b>。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 所需空间
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 当房间空间对每只小动物平均少于<b>16格</b>时会感到<link="CREATURES__GUIDE__MOOD">拥挤</link>。'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 当房间小于<b>16格</b>时会感到<link="CREATURES__GUIDE__MOOD">封闭</link>。'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 掉落物
+    style: Subtitle
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 肉
+    image: creaturemeat_0__ui
+    link_id: meat
+  - widget_type: CodexText
+    text: 	1,600千卡
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 食物
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_gas
+      color: 224F40FF
+      text1: 污染氧
+      text2: 30千克/周期
+      link_id: contaminatedoxygen
+    produce:
+    - image: slime_mold_0__ui
+      text1: 菌泥
+      text2: 3000克/周期
+      link_id: slimemold
+    fabricator:
+      image: puft_0__alp_ui
+      text1: 贵族飞鱼
+      link_id: PUFTALPHA
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_gas
+      color: 04A778FF
+      text1: 氯气
+      text2: 30千克/周期
+      link_id: chlorinegas
+    produce:
+    - image: bleach_stone_0__ui
+      text1: 漂白石
+      text2: 3000克/周期
+      link_id: bleachstone
+    fabricator:
+      image: puft_0__alp_ui
+      text1: 贵族飞鱼
+      link_id: PUFTALPHA
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_gas
+      color: B7FFFFFF
+      text1: 氧气
+      text2: 30千克/周期
+      link_id: oxygen
+    produce:
+    - image: oxyrock_0__ui
+      text1: 氧石
+      text2: 3000克/周期
+      link_id: oxyrock
+    fabricator:
+      image: puft_0__alp_ui
+      text1: 贵族飞鱼
+      link_id: PUFTALPHA
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require: []
+    produce:
+    - image: creaturemeat_0__ui
+      text1: 肉
+      text2: 1,600千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: meat
+    fabricator:
+      image: puft_0__alp_ui
+      text1: 贵族飞鱼
+      link_id: PUFTALPHA
+  layout: Vertical
+- contents:
+  - widget_type: CodexLargeSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 洁净飞鱼
+    style: Title
+  - widget_type: CodexText
+    text: 小动物变种
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: puft_0__anti_ui
+  - widget_type: CodexImage
+    image: baby_puft_0__anti_ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexText
+    text: 洁净飞鱼是一种没有侵略性的小动物，它每一次呼吸都会排泄<link="BLEACHSTONE">漂白石</link>。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 理想温度
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 舒适范围：<b>0ºC</b>至<b>60ºC</b>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 存活范围：<b>-50ºC</b>至<b>100ºC</b>'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 寿命
+    style: Subtitle
+  - widget_type: CodexText
+    text: 这种小动物特征<link="CREATURES__GUIDE__FERTILITY">寿命</link>为<b>75周期</b>。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 所需空间
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 当房间空间对每只小动物平均少于<b>16格</b>时会感到<link="CREATURES__GUIDE__MOOD">拥挤</link>。'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 当房间小于<b>16格</b>时会感到<link="CREATURES__GUIDE__MOOD">封闭</link>。'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 掉落物
+    style: Subtitle
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 肉
+    image: creaturemeat_0__ui
+    link_id: meat
+  - widget_type: CodexText
+    text: 	1,600千卡
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 食物
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_gas
+      color: 04A778FF
+      text1: 氯气
+      text2: 30千克/周期
+      link_id: chlorinegas
+    produce:
+    - image: bleach_stone_0__ui
+      text1: 漂白石
+      text2: 28.5千克/周期
+      link_id: bleachstone
+    fabricator:
+      image: puft_0__anti_ui
+      text1: 洁净飞鱼
+      link_id: PUFTBLEACHSTONE
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require: []
+    produce:
+    - image: creaturemeat_0__ui
+      text1: 肉
+      text2: 1,600千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: meat
+    fabricator:
+      image: puft_0__anti_ui
+      text1: 洁净飞鱼
+      link_id: PUFTBLEACHSTONE
+  layout: Vertical
+- contents:
+  - widget_type: CodexLargeSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 厚壳飞鱼
+    style: Title
+  - widget_type: CodexText
+    text: 小动物变种
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: puft_0__com_ui
+  - widget_type: CodexImage
+    image: baby_puft_0__com_ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexText
+    text: 厚壳飞鱼是一种没有侵略性的小动物，它每一次呼吸都会排泄浓缩的<link="OXYROCK">氧石</link>。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 理想温度
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 舒适范围：<b>0ºC</b>至<b>60ºC</b>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 存活范围：<b>-50ºC</b>至<b>100ºC</b>'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 寿命
+    style: Subtitle
+  - widget_type: CodexText
+    text: 这种小动物特征<link="CREATURES__GUIDE__FERTILITY">寿命</link>为<b>75周期</b>。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 所需空间
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 当房间空间对每只小动物平均少于<b>16格</b>时会感到<link="CREATURES__GUIDE__MOOD">拥挤</link>。'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 当房间小于<b>16格</b>时会感到<link="CREATURES__GUIDE__MOOD">封闭</link>。'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 掉落物
+    style: Subtitle
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 肉
+    image: creaturemeat_0__ui
+    link_id: meat
+  - widget_type: CodexText
+    text: 	1,600千卡
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 食物
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_gas
+      color: B7FFFFFF
+      text1: 氧气
+      text2: 50千克/周期
+      link_id: oxygen
+    produce:
+    - image: oxyrock_0__ui
+      text1: 氧石
+      text2: 47.5千克/周期
+      link_id: oxyrock
+    fabricator:
+      image: puft_0__com_ui
+      text1: 厚壳飞鱼
+      link_id: PUFTOXYLITE
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require: []
+    produce:
+    - image: creaturemeat_0__ui
+      text1: 肉
+      text2: 1,600千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: meat
+    fabricator:
+      image: puft_0__com_ui
+      text1: 厚壳飞鱼
+      link_id: PUFTOXYLITE
+  layout: Vertical
+- contents:
+  - widget_type: CodexLargeSpacer
+  layout: Vertical

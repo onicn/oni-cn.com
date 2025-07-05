@@ -1,0 +1,165 @@
+id: COOKEDFISH
+parent_id: FOOD
+name: 烤海鲜
+disabled: False
+search_only: False
+category: FOOD
+sort_string: 烤海鲜
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="COOKEDFISH">烤海鲜</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: grilled_pacu_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      由新鲜捕获的水生小动物制成的的熟肉块。
+
+
+      不出所料，尝起来有一股鱼腥味。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 品质：良好 [+3]
+    style: Body
+  - widget_type: CodexText
+    text: 卡路里：1,600千卡
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      冷藏温度：4ºC
+
+      深度冷冻温度：-18ºC
+
+      腐烂时间：4.0周期
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: '营养作用:'
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    • <link="IDFOODEFFECTS__SEAFOODRADIATIONRESISTANCE">辐射抗性：水产食品</link>'
+    tooltip: >-
+      吃这种食物能提高<style="KKeyword">辐射</style>抗性
+          • 辐射抗性: +20%
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 海陆双拼
+    require:
+    - image: barbeque_0__ui
+      text1: 烤肉串
+      text2: 4,000千卡
+      tooltip: 品质：良好 [+3]
+      link_id: cookedmeat
+    - image: grilled_pacu_0__ui
+      text1: 烤海鲜
+      text2: 1,600千卡
+      tooltip: 品质：良好 [+3]
+      link_id: cookedfish
+    produce:
+    - image: surfnturf_0__ui
+      text1: 海陆双拼
+      text2: 6,000千卡
+      tooltip: 品质：优秀 [+4]
+      link_id: surfandturf
+    fabricator:
+      image: cookstation_gourmet_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 燃气灶
+      text2: 50秒
+      link_id: gourmetcookingstation
+  - widget_type: CodexConversionPanel
+    require:
+    - image: grilled_pacu_0__ui
+      text1: 烤海鲜
+      text2: 700千卡/周期
+      tooltip: 品质：良好 [+3]
+      link_id: cookedfish
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 328.1克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__ui
+      text1: 好吃哈奇
+      link_id: HATCH
+  - widget_type: CodexConversionPanel
+    require:
+    - image: grilled_pacu_0__ui
+      text1: 烤海鲜
+      text2: 700千卡/周期
+      tooltip: 品质：良好 [+3]
+      link_id: cookedfish
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 437.5克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__veg_ui
+      text1: 草质哈奇
+      link_id: HATCHVEGGIE
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 电动烤炉
+    require:
+    - image: pacufillet_0__ui
+      text1: 帕库鱼片
+      text2: 1,000千卡
+      tooltip: 品质：标准 [+2]
+      link_id: fishmeat
+    produce:
+    - image: grilled_pacu_0__ui
+      text1: 烤海鲜
+      text2: 1,600千卡
+      tooltip: 品质：良好 [+3]
+      link_id: cookedfish
+    fabricator:
+      image: cookstation_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 电动烤炉
+      text2: 50秒
+      link_id: cookingstation
+  - widget_type: CodexRecipePanel
+    text: 电动烤炉
+    require:
+    - image: shellfish_0__ui
+      text1: 生蟹肉
+      text2: 1,000千卡
+      tooltip: 品质：标准 [+2]
+      link_id: shellfishmeat
+    produce:
+    - image: grilled_pacu_0__ui
+      text1: 烤海鲜
+      text2: 1,600千卡
+      tooltip: 品质：良好 [+3]
+      link_id: cookedfish
+    fabricator:
+      image: cookstation_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 电动烤炉
+      text2: 50秒
+      link_id: cookingstation
+  layout: Vertical

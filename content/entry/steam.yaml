@@ -1,0 +1,342 @@
+id: STEAM
+parent_id: ELEMENTSGAS
+name: 蒸汽
+disabled: False
+search_only: False
+icon_color: 85C9E3FF
+category: ELEMENTSGAS
+sort_string: 蒸汽
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="STEAM">蒸汽</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    color: 85C9E3FF
+    image: element_gas
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_gas
+      color: 85C9E3FF
+      text1: 蒸汽
+      text2: 1000克
+      link_id: steam
+    produce:
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 1000克
+      link_id: water
+    fabricator:
+      image: crew_state_temp_down
+      text1: 99.4ºC
+      tooltip: 温度低于99.4ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换于
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: polluted_sludge_0__ui
+      text1: 污染泥
+      text2: 1000克
+      link_id: toxicmud
+    produce:
+    - image: element_gas
+      color: 85C9E3FF
+      text1: 蒸汽
+      text2: 600克
+      link_id: steam
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 400克
+      link_id: toxicsand
+    fabricator:
+      image: crew_state_temp_up
+      text1: 99.7ºC
+      tooltip: 温度高于99.7ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: sludge_0__ui
+      text1: 泥巴
+      text2: 1000克
+      link_id: mud
+    produce:
+    - image: element_gas
+      color: 85C9E3FF
+      text1: 蒸汽
+      text2: 600克
+      link_id: steam
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 400克
+      link_id: dirt
+    fabricator:
+      image: crew_state_temp_up
+      text1: 99.7ºC
+      tooltip: 温度高于99.7ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: CC8B18FF
+      text1: 树液
+      text2: 1000克
+      link_id: resin
+    produce:
+    - image: element_gas
+      color: 85C9E3FF
+      text1: 蒸汽
+      text2: 750克
+      link_id: steam
+    - image: isoresin_0__ui
+      text1: 异构树液
+      text2: 250克
+      link_id: isoresin
+    fabricator:
+      image: crew_state_temp_up
+      text1: 125ºC
+      tooltip: 温度高于125ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: ADE9E5FF
+      text1: 浓盐水
+      text2: 1000克
+      link_id: brine
+    produce:
+    - image: element_gas
+      color: 85C9E3FF
+      text1: 蒸汽
+      text2: 700克
+      link_id: steam
+    - image: salt_0__ui
+      text1: 盐
+      text2: 300克
+      link_id: salt
+    fabricator:
+      image: crew_state_temp_up
+      text1: 102.8ºC
+      tooltip: 温度高于102.8ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      text1: 花蜜
+      text2: 1000克
+      link_id: sugarwater
+    produce:
+    - image: element_gas
+      color: 85C9E3FF
+      text1: 蒸汽
+      text2: 230克
+      link_id: steam
+    - image: sucrose_0__ui
+      text1: 蔗糖
+      text2: 770克
+      link_id: sucrose
+    fabricator:
+      image: crew_state_temp_up
+      text1: 160ºC
+      tooltip: 温度高于160ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: CC8B18FF
+      text1: 树脂
+      text2: 1000克
+      link_id: naturalresin
+    produce:
+    - image: element_gas
+      color: 85C9E3FF
+      text1: 蒸汽
+      text2: 750克
+      link_id: steam
+    - image: carbon_0__ui
+      text1: 精炼碳
+      text2: 250克
+      link_id: refinedcarbon
+    fabricator:
+      image: crew_state_temp_up
+      text1: 125ºC
+      tooltip: 温度高于125ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: 474506FF
+      text1: 污染水
+      text2: 1000克
+      link_id: dirtywater
+    produce:
+    - image: element_gas
+      color: 85C9E3FF
+      text1: 蒸汽
+      text2: 990克
+      link_id: steam
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 10克
+      link_id: dirt
+    fabricator:
+      image: crew_state_temp_up
+      text1: 119.4ºC
+      tooltip: 温度高于119.4ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 1000克
+      link_id: water
+    produce:
+    - image: element_gas
+      color: 85C9E3FF
+      text1: 蒸汽
+      text2: 1000克
+      link_id: steam
+    fabricator:
+      image: crew_state_temp_up
+      text1: 99.4ºC
+      tooltip: 温度高于99.4ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: CED2ECFF
+      text1: 盐水
+      text2: 1000克
+      link_id: saltwater
+    produce:
+    - image: element_gas
+      color: 85C9E3FF
+      text1: 蒸汽
+      text2: 930克
+      link_id: steam
+    - image: salt_0__ui
+      text1: 盐
+      text2: 70克
+      link_id: salt
+    fabricator:
+      image: crew_state_temp_up
+      text1: 99.7ºC
+      tooltip: 温度高于99.7ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: FFC325FF
+      text1: 石油
+      text2: 500千克/周期
+      link_id: petroleum
+    produce:
+    - image: polypropylene_0__ui
+      text1: 塑料
+      text2: 300千克/周期
+      link_id: polypropylene
+    - image: element_gas
+      color: 85C9E3FF
+      text1: 蒸汽
+      text2: 5千克/周期
+      link_id: steam
+    - image: element_gas
+      color: 000000FF
+      text1: 二氧化碳
+      text2: 5千克/周期
+      link_id: carbondioxide
+    fabricator:
+      image: plasticrefinery_0__ui
+      text1: 聚合物压塑器
+      link_id: POLYMERIZER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: CC8B18FF
+      text1: 树脂
+      text2: 500千克/周期
+      link_id: naturalresin
+    produce:
+    - image: polypropylene_0__ui
+      text1: 塑料
+      text2: 300千克/周期
+      link_id: polypropylene
+    - image: element_gas
+      color: 85C9E3FF
+      text1: 蒸汽
+      text2: 5千克/周期
+      link_id: steam
+    - image: element_gas
+      color: 000000FF
+      text1: 二氧化碳
+      text2: 5千克/周期
+      link_id: carbondioxide
+    fabricator:
+      image: plasticrefinery_0__ui
+      text1: 聚合物压塑器
+      link_id: POLYMERIZER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      text1: 花蜜
+      text2: 500千克/周期
+      link_id: sugarwater
+    produce:
+    - image: polypropylene_0__ui
+      text1: 塑料
+      text2: 300千克/周期
+      link_id: polypropylene
+    - image: element_gas
+      color: 85C9E3FF
+      text1: 蒸汽
+      text2: 5千克/周期
+      link_id: steam
+    - image: element_gas
+      color: 000000FF
+      text1: 二氧化碳
+      text2: 5千克/周期
+      link_id: carbondioxide
+    fabricator:
+      image: plasticrefinery_0__ui
+      text1: 聚合物压塑器
+      link_id: POLYMERIZER
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      (H<sub>2</sub>O) 蒸汽是加热成滚烫<link="ELEMENTSGAS">气体</link>的<link="WATER">水</link>。
+
+
+      资源种类：不可呼吸的气体
+
+      凝点：99.4ºC
+
+
+      比热容：4.179 (DTU/g)/ºC
+
+      热导率：0.184 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.08
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：气体, 不可呼吸的气体
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

@@ -1,0 +1,59 @@
+id: ROOMSSCIENCE
+parent_id: ROOMS
+name: 科学
+disabled: False
+search_only: False
+category: ROOMS
+sort_string: 科学
+sub_entries:
+- id: Laboratory
+  parent_id: ROOMSScience
+  name: 实验室
+  disabled: False
+  sort_string: 实验室
+content_container:
+- contents:
+  - widget_type: CodexImage
+    image: ui_room_science
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 实验室
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      这是疯狂的假设与严谨的科学实验相碰撞的地方。
+
+
+      在实验室中的科学建筑使用效率更高。
+
+
+      在实验室中能使用地质调谐仪和航天指挥站。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 详情
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>需求：</b>
+    style: Body
+  - widget_type: CodexText
+    text: >2-
+          • Two <link="REQUIREMENTCLASSSCIENCEBUILDING">science buildings</link>
+          • <link="REQUIREMENTCLASSLIGHTSOURCE">Light source</link>
+          • No <link="REQUIREMENTCLASSINDUSTRIALMACHINERY">industrial machinery</link>
+          • Minimum size: 32 tiles
+          • Maximum size: 120 tiles
+    style: Body
+  layout: Vertical

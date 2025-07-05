@@ -1,0 +1,45 @@
+id: BACTERIALCULTURES
+name: 无人照管的培养物
+title: STRINGS.CODEX.A2_BACTERIALCULTURES.TITLE
+disabled: False
+search_only: False
+category: NOTICES
+sort_string: 无人照管的培养物
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 无人照管的培养物
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：二
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+  lock_id: misc_unattendedcultures
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <smallcaps><b>提醒所有人员</b>
+
+      发件人：<b>管理员</b> <alpha=#AA><admin@gravitas.nova></color>
+
+      收件人：<b>全体</b></smallcaps>
+
+      ------------------
+
+
+      <indent=5%>为了同事的安全和健康，请不要在食堂冰箱里存放无标签细菌培养物。
+
+
+      同样，食堂的洗碗机不得用于清洗培养器皿。
+
+
+      谢谢大家的配合。
+
+
+      - 管理员
+
+      庄严科技</indent>
+    style: Body
+  layout: Vertical
+  lock_id: misc_unattendedcultures

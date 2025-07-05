@@ -1,0 +1,43 @@
+id: SUBLIMATING
+parent_id: ELEMENTTYPES
+name: 升华物
+title: STRINGS.MISC.TAGS.SUBLIMATING
+disabled: False
+search_only: False
+category: ELEMENTTYPES
+sort_string: <link="SUBLIMATES">升华物</link>
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="SUBLIMATES">升华物</link>
+    style: Title
+  - widget_type: CodexText
+    text: 挥发元素
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexImage
+    image: oxyrock_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      升华物是一类被动转化为<link="ELEMENTSGAS">气体</link>的<link="ELEMENTSSOLID">固体</link>元素。当完全挥发后，不会留下任何原始固体的痕迹。
+
+
+      当元素放在存储容器中时，这种被动转化仍然持续。
+    style: Body
+  - widget_type: CodexElementCategoryList
+    require:
+    - image: bleach_stone_0__ui
+      text1: 漂白石
+      link_id: bleachstone
+    - image: oxyrock_0__ui
+      text1: 氧石
+      link_id: oxyrock
+    - image: meteor_bleachstone_0__ui
+      text1: 漂白石流星
+      link_id: 漂白石流星
+    - image: meteor_oxylite_0__ui
+      text1: 氧石流星
+      link_id: 氧石流星
+  layout: Vertical

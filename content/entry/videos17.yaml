@@ -1,0 +1,25 @@
+id: VIDEOS17
+name: 视频：隔热
+disabled: False
+search_only: False
+category: Videos
+sort_string: 视频：隔热
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 视频：隔热
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexVideo
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      环境温度对我的复制人、殖民地中的植物和小动物有正面或负面的影响。按 {Hotkey/Overlay3} 将开启温度概览，在此概览下我可以找出任何太热和太冷的区域。
+
+
+      我可以使用冰冷风扇或空间加热器等实用建筑让环境更冷或更热。然而，我必须使用隔热砖以防止冷或热空气逸出，否则改变房间温度就会成效甚微。
+    style: Body
+  layout: Vertical

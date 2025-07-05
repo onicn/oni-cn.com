@@ -1,0 +1,141 @@
+id: VISCOGEL
+parent_id: ELEMENTSLIQUID
+name: 粘性凝胶流体
+disabled: False
+search_only: False
+icon_color: 4F10B7FF
+category: ELEMENTSLIQUID
+sort_string: 粘性凝胶流体
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="VISCOGEL">粘性凝胶流体</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    color: 4F10B7FF
+    image: element_liquid
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: 4F10B7FF
+      text1: 粘性凝胶流体
+      text2: 1000克
+      link_id: viscogel
+    produce:
+    - image: element_liquid
+      color: B000FFFF
+      text1: 液态石脑油
+      text2: 1000克
+      link_id: naphtha
+    fabricator:
+      image: crew_state_temp_up
+      text1: 479.9ºC
+      tooltip: 温度高于479.9ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: 4F10B7FF
+      text1: 粘性凝胶流体
+      text2: 1000克
+      link_id: viscogel
+    produce:
+    - image: viscogel_0__ui
+      text1: 固态粘性凝胶
+      text2: 1000克
+      link_id: solidviscogel
+    fabricator:
+      image: crew_state_temp_down
+      text1: -30.6ºC
+      tooltip: 温度低于-30.6ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换于
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: viscogel_0__ui
+      text1: 固态粘性凝胶
+      text2: 1000克
+      link_id: solidviscogel
+    produce:
+    - image: element_liquid
+      color: 4F10B7FF
+      text1: 粘性凝胶流体
+      text2: 1000克
+      link_id: viscogel
+    fabricator:
+      image: crew_state_temp_up
+      text1: -30.6ºC
+      tooltip: 温度高于-30.6ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 乳化器
+    require:
+    - image: isoresin_0__ui
+      text1: 异构树液
+      text2: 35千克
+      link_id: isoresin
+    - image: element_liquid
+      color: FFC325FF
+      text1: 石油
+      text2: 65千克
+      link_id: petroleum
+    produce:
+    - image: element_liquid
+      color: 4F10B7FF
+      text1: 粘性凝胶流体
+      text2: 100千克
+      link_id: viscogel
+    fabricator:
+      image: chemistry_lab_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 乳化器
+      text2: 80秒
+      link_id: chemicalrefinery
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      粘性凝胶流体是一种具有极高表面张力的<link="ELEMENTSLIQUID">液体</link>聚合物，不会像典型的液体那样流动，可用来实现不寻常的构造。
+
+
+      资源种类：<link="ELEMENTSLIQUID">液体</link>
+
+      冰点：-30.6ºC
+
+      沸点：479.9ºC
+
+
+      比热容：1.550 (DTU/g)/ºC
+
+      热导率：0.450 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.6
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：<link="ELEMENTSLIQUID">液体</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

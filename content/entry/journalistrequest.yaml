@@ -1,0 +1,139 @@
+id: JOURNALISTREQUEST
+name: 回复：回我
+title: STRINGS.CODEX.JOURNALISTREQUEST.TITLE
+disabled: False
+search_only: False
+category: EMAILS
+sort_string: 回复：回我
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 回复：回我
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：无
+    style: Subtitle
+  layout: Vertical
+  lock_id: email_journalistrequest
+- contents:
+  - widget_type: CodexText
+    text: >
+      <smallcaps>收件人：<b>[密件抄送：所有人]</b><alpha=#AA><size=10> </size></color>
+
+      发件人：<b>奎因·凯利</b><alpha=#AA><size=10> <editor@stemscoop.news></size></color></smallcaps>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_journalistrequest2
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <indent=5%>亲爱的同事，朋友以及社区成员们，
+
+
+      我已经在理工科独家新闻担任编辑九年了，是时候退休多去陪陪我的家人了。
+
+
+      请热烈欢迎多里安·赫斯特，他将立即接管编辑层的管理职责。</indent>
+    style: Body
+  - widget_type: CodexText
+    text: >2
+
+      祝一切顺利，
+
+      奎恩·凯利
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_journalistrequest2
+- contents:
+  - widget_type: CodexText
+    text: 回复：回我
+    style: Subtitle
+  - widget_type: CodexText
+    text: >
+      <smallcaps>收件人：<b>奥洛博士</b><size=10><alpha=#AA> <aolowe@gravitas.nova></size></color>
+
+      发件人：<b>奎恩·凯利</b><alpha=#AA><size=10> <editor@stemscoop.news></size></color></smallcaps>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_journalistrequest
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <indent=5%>我不知道你是怎么做到的，但斯特恩的办公室刚刚给报社打电话了，并给了我一次独家采访……以及参观庄严科技的机会。我欠你一瓶啤酒。不，一箱啤酒。六箱啤酒！
+
+
+      说正经的，多谢你了。我知道你现在处境艰难但你做了正确的事情。我们周二见。</indent>
+    style: Body
+  - widget_type: CodexText
+    text: >2
+
+      - 奎
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_journalistrequest
+- contents:
+  - widget_type: CodexText
+    text: 回复：回我
+    style: Subtitle
+  - widget_type: CodexText
+    text: >
+      <smallcaps>收件人：<b>奥洛博士</b><size=10><alpha=#AA> <aolowe@gravitas.nova></size></color>
+
+      发件人：<b>奎恩·凯利</b><alpha=#AA><size=10> <editor@stemscoop.news></size></color></smallcaps>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_journalistrequest
+- contents:
+  - widget_type: CodexText
+    text: <indent=5%>我在喷泉边上等了四个小时。你去哪了？这个故事一定能走红。回我个消息吧。</indent>
+    style: Body
+  - widget_type: CodexText
+    text: >2
+
+      - 奎
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_journalistrequest
+- contents:
+  - widget_type: CodexText
+    text: 回我
+    style: Subtitle
+  - widget_type: CodexText
+    text: >
+      <smallcaps>收件人：<b>奥洛博士</b><size=10><alpha=#AA> <aolowe@gravitas.nova></size></color>
+
+      发件人：<b>奎恩·凯利</b><alpha=#AA><size=10> <editor@stemscoop.news></size></color></smallcaps>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_journalistrequest
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <indent=5%>奥洛博士，
+
+
+      非常抱歉——我知道昨晚在你家“伏击”你是个坏主意。但在庄严科技发生了一些事，需要让人们知道。请回我消息。</indent>
+    style: Body
+  - widget_type: CodexText
+    text: >2
+
+      - 奎
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_journalistrequest

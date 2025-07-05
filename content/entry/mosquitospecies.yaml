@@ -1,0 +1,89 @@
+id: MOSQUITOSPECIES
+parent_id: CREATURES
+name: 蚋虱
+disabled: False
+search_only: False
+category: CREATURES
+sort_string: <link="MOSQUITOSPECIES">蚋虱</link>
+required_dlc_ids:
+- DLC4_ID
+sub_entries:
+- id: Mosquito
+  parent_id: MosquitoSpecies
+  name: <link="MOSQUITO">蚋虱</link>
+  disabled: False
+  sort_string: 蚋虱
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 蚋虱
+    style: Title
+  - widget_type: CodexText
+    text: 有害小动物
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      蚋虱是一种昆虫类小动物，需要从复制人或其他小动物身上获取额外的营养和矿物质，以弥补其过度发达的生殖系统所带来的巨大能量消耗。
+
+
+      蚋虱的触角兼具上颌触须功能，分布着高度灵敏的嗅觉神经元，使它们能够从极远距离精准定位营养来源。
+
+
+      然而，这些受体一旦感知到生物呼吸模式的特定变化，例如发起致命反击前的急促吸气，便会立即触发蚋虱的飞行逃逸反应。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: mosquito_0__ui
+  - widget_type: CodexImage
+    image: baby_mosquito_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexText
+    text: >-
+      蚋虱是一种飞行害虫，主要作为肉食性<link="FLYTRAPPLANT">露饵花</link>的食物以产生<link="AMBER">琥珀</link>。
+
+
+      蚋虱的后代必须接触<link="ELEMENTSLIQUID">液体</link>才能存活。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 理想温度
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 舒适范围：<b>5ºC</b>至<b>65ºC</b>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 存活范围：<b>0ºC</b>至<b>75ºC</b>'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 寿命
+    style: Subtitle
+  - widget_type: CodexText
+    text: 这种小动物特征<link="CREATURES__GUIDE__FERTILITY">寿命</link>为<b>10周期</b>。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 所需空间
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 当房间空间对每只小动物平均少于<b>4格</b>时会感到<link="CREATURES__GUIDE__MOOD">拥挤</link>。'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 当房间小于<b>4格</b>时会感到<link="CREATURES__GUIDE__MOOD">封闭</link>。'
+    style: Body
+  layout: Vertical

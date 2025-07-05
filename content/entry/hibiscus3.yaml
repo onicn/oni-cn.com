@@ -1,0 +1,65 @@
+id: HIBISCUS3
+name: 实验7D
+title: STRINGS.CODEX.A4_HIBISCUS3.TITLE
+disabled: False
+search_only: False
+category: RESEARCHNOTES
+sort_string: 实验7D
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 实验7D
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：二
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+  lock_id: notes_hibiscus3
+- contents:
+  - widget_type: CodexText
+    text: >-
+      实验7D
+
+      安全代码：B111
+
+
+      实验体：#762，“芙蓉-3号”
+
+      成年雌性，身长42厘米，体重257克
+
+
+      提供体：#650，“芙蓉”
+
+      成年雌性，身长42厘米，体重257克
+    style: Body
+  layout: Vertical
+  lock_id: notes_hibiscus3
+- contents:
+  - widget_type: CodexText
+    text: >-
+      猜想：从芙蓉克隆的实验体可在初次接触时正确操作控制杆装置，展现其保留了原始提供体的条件刺激记忆。
+
+
+      提供体 #650，“芙蓉”，在条件刺激下将控制杆拉到右侧以得到奖励（杏仁）。训练时间为期两周。
+
+
+      芙蓉迅速得知将控制杆拉到左侧没有结果，并在第一周结束之前便能够可靠地展现预期的行为。
+
+
+      训练再继续一周以强化神经通路并确保预期的行为训练有助于长期和肌肉记忆。
+
+
+      让克隆的实验体 #762，“芙蓉-3号”接触控制杆装置，以便确定记忆保留和唤回情况。
+
+
+      芙蓉-3号没有显示认出该装置的迹象，并且没有执行预期的行为。实验体最初未能与该装置进行任何层级的交互。
+
+
+      在第二次接触时，芙蓉-3号将控制杆拉到了左侧。
+
+
+      结论：打印的实验体没有保留来自提供体的任何记忆。
+    style: Body
+  layout: Vertical
+  lock_id: notes_hibiscus3

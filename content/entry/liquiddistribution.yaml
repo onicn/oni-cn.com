@@ -1,0 +1,66 @@
+id: LIQUIDDISTRIBUTION
+parent_id: TECH
+name: 液体分配
+disabled: False
+search_only: False
+category: TECH
+sort_string: 液体分配
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="LIQUIDDISTRIBUTION">液体分配</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 确保<link="ELEMENTSLIQUID">液体</link>资源能达到所需之处的高级配件。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="FLOWREDIRECTION">流动重导</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: bottle_emptier_liquid_conduit_0__ui
+  - widget_type: CodexText
+    text: <link="BOTTLEEMPTIERCONDUITLIQUID">液桶抽出器</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: rocket_floor_plug_liquid_0__ui
+  - widget_type: CodexText
+    text: <link="ROCKETINTERIORLIQUIDINPUT">液体输入配件</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: rocket_floor_plug_liquid_out_0__ui
+  - widget_type: CodexText
+    text: <link="ROCKETINTERIORLIQUIDOUTPUT">液体输出配件</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: toilet_wall_0__ui
+  - widget_type: CodexText
+    text: <link="WALLTOILET">墙排马桶</link>
+    style: Body
+  layout: Horizontal

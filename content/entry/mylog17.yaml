@@ -1,0 +1,24 @@
+id: MYLOG17
+name: 这里就是我们的家
+title: STRINGS.COLONY_ACHIEVEMENTS.THRIVING.MYLOGNAME
+disabled: False
+search_only: False
+category: MYLOG
+sort_string: 这里就是我们的家
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 这里就是我们的家
+    style: Title
+  - widget_type: CodexText
+    text: >-
+      很少有文明能有幸知道他们的起源。现在最重要的是我们都在这，而且我们能充分利用世界给予我们的一切。我能很自豪地说……
+
+
+      这颗小行星就是我们的家。
+    style: Body
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical
+  lock_id: thriving

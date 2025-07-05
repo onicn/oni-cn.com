@@ -1,0 +1,120 @@
+id: PHOSPHORUS
+parent_id: ELEMENTSSOLID
+name: 精炼磷
+disabled: False
+search_only: False
+category: ELEMENTSSOLID
+sort_string: 精炼磷
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="PHOSPHORUS">精炼磷</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: phosphorus_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: phosphorus_0__ui
+      text1: 精炼磷
+      text2: 1000克
+      link_id: phosphorus
+    produce:
+    - image: element_liquid
+      color: 908BB7FF
+      text1: 液态磷
+      text2: 1000克
+      link_id: liquidphosphorus
+    fabricator:
+      image: crew_state_temp_up
+      text1: 44.1ºC
+      tooltip: 温度高于44.1ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换于
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: 908BB7FF
+      text1: 液态磷
+      text2: 1000克
+      link_id: liquidphosphorus
+    produce:
+    - image: phosphorus_0__ui
+      text1: 精炼磷
+      text2: 1000克
+      link_id: phosphorus
+    fabricator:
+      image: crew_state_temp_down
+      text1: 44.1ºC
+      tooltip: 温度低于44.1ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: phosphorus_0__ui
+      text1: 精炼磷
+      text2: 1000克/周期
+      link_id: phosphorus
+    produce: []
+    fabricator:
+      image: lightbug_0__blu_ui
+      text1: 天蓝虫
+      link_id: LIGHTBUGBLUE
+  - widget_type: CodexConversionPanel
+    require:
+    - image: phosphorus_0__ui
+      text1: 精炼磷
+      text2: 1000克/周期
+      link_id: phosphorus
+    produce: []
+    fabricator:
+      image: lightbug_0__blk_ui
+      text1: 深渊虫
+      link_id: LIGHTBUGBLACK
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      (P) 精炼磷是一种<link="ELEMENTSSOLID">固态</link>化学元素。
+
+
+      资源种类：消耗性矿石
+
+      熔点：44.1ºC
+
+      硬度：<color=#71ABCFFF>0（非常柔软）</color>
+
+
+      比热容：0.770 (DTU/g)/ºC
+
+      热导率：0.236 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.75
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：<link="FLYINGCRITTEREDIBLE">诱饵</link>, <link="ELEMENTSSOLID">固体</link>, 消耗性矿石
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

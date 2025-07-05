@@ -1,0 +1,52 @@
+id: IMPROVEDOXYGEN
+parent_id: TECH
+name: 空气系统
+disabled: False
+search_only: False
+category: TECH
+sort_string: 空气系统
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="IMPROVEDOXYGEN">空气系统</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 保持殖民地中的空气清新可呼吸。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="LIQUIDPIPING">水管</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: electrolyzer_0__ui
+  - widget_type: CodexText
+    text: <link="ELECTROLYZER">电解器</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: rust_deoxidizer_0__ui
+  - widget_type: CodexText
+    text: <link="RUSTDEOXIDIZER">铁锈脱氧机</link>
+    style: Body
+  layout: Horizontal

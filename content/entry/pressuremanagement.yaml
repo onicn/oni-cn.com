@@ -1,0 +1,66 @@
+id: PRESSUREMANAGEMENT
+parent_id: TECH
+name: 气压管理
+disabled: False
+search_only: False
+category: TECH
+sort_string: 气压管理
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="PRESSUREMANAGEMENT">气压管理</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁用于管理殖民地气压的技术。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="GASPIPING">通风</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: valveliquid_0__ui
+  - widget_type: CodexText
+    text: <link="LIQUIDVALVE">液体调节阀</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: valvegas_0__ui
+  - widget_type: CodexText
+    text: <link="GASVALVE">气体调节阀</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: floor_gasperm_0__ui
+  - widget_type: CodexText
+    text: <link="GASPERMEABLEMEMBRANE">透气砖</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: door_manual_0__ui
+  - widget_type: CodexText
+    text: <link="MANUALPRESSUREDOOR">手动气闸</link>
+    style: Body
+  layout: Horizontal

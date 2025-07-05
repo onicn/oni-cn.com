@@ -1,0 +1,88 @@
+id: BEACHCHAIR
+parent_id: BUILDCATEGORYFURNITURE
+name: 沙滩椅
+disabled: False
+search_only: False
+category: BUILDCATEGORYFURNITURE
+sort_string: 沙滩椅
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="BEACHCHAIR">沙滩椅</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 环境鉴赏
+    style: Body
+    image: research_type_alpha_icon
+    link_id: environmentalappreciation
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: beach_chair_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      复制人可以通过躺在<link="LIGHT">阳光</link>下得以放松。
+
+
+      提升复制人的<link="MORALE">士气</link>。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    优选房间：娱乐室'
+    tooltip: 建造在<style="KKeyword">娱乐室</style>内时，这个建筑会获得额外的效果或功能
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：2格宽x3格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：60秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="BUILDABLERAW">矿物原料</link>400千克, <link="BUILDINGFIBER">纤维</link>2000克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    娱乐'
+    tooltip: 在<style="KKeyword">休息时间</style>提升复制人的<style="KKeyword">士气</style>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    士气：+8（明亮）'
+    tooltip: 如果这个建筑处于至少10000勒克斯光的地方，复制人会获得+8士气。
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    士气：+5（阴暗）'
+    tooltip: 如果这个建筑处于少于10000勒克斯光的地方，复制人会获得+5士气。
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    过热<link="HEAT">温度</link>：75ºC'
+    tooltip: 达到<b>75ºC</b>时开始过热
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：+25（范围：5格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>5</b>格内提高<b><b>+25</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>类别</b>
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    <link="REQUIREMENTCLASSRECBUILDING">娱乐建筑</link>'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>沉浸在令人放松的日光中。</i>
+    style: Body
+  layout: Vertical

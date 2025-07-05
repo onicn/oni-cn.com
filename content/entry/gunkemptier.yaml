@@ -1,0 +1,88 @@
+id: GUNKEMPTIER
+parent_id: BUILDCATEGORYPLUMBING
+name: 粘渣油提取器
+disabled: False
+search_only: False
+category: BUILDCATEGORYPLUMBING
+sort_string: 粘渣油提取器
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="GUNKEMPTIER">粘渣油提取器</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 卫生设备
+    style: Body
+    image: research_type_alpha_icon
+    link_id: sanitationsciences
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: gunkdump_station_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 清除复制人的仿生部件上堆积的陈旧<link="LIQUIDGUNK">粘渣油</link>。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    复制人分配'
+    tooltip: 只有分配的复制人才可使用这个设备
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LIQUIDPIPING">液体输出管道</link>'
+    tooltip: 必须通过<link="LIQUIDCONDUIT">液体管道</link>系统排出<style="KKeyword">液体</style>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：3格宽x3格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：60秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="METAL">金属矿石</link>400千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="HEAT">热量</link>：+125复制热/秒'
+    tooltip: >-
+      每秒产生<style="produced">125复制热</style>
+
+
+      总<style="KKeyword">温度</style>变化受到加热物质的材料属性影响：
+          • 质量
+          • 比热容
+          • 表面积
+          • 隔热厚度
+          • 热导率
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：-15（范围：3格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>3</b>格内降低<b><b>-15</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>类别</b>
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    <link="REQUIREMENTCLASSFLUSHTOILETTYPE">冲水厕所</link>'
+    style: Body
+  - widget_type: CodexText
+    text: '    <link="GROUPBIONICBUILDING">仿生保养站</link>'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>仿生复制人在光顾粘渣油提取器后会轻松很多。</i>
+    style: Body
+  layout: Vertical

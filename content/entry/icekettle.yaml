@@ -1,0 +1,86 @@
+id: ICEKETTLE
+parent_id: BUILDCATEGORYUTILITIES
+name: 融冰壶
+disabled: False
+search_only: False
+category: BUILDCATEGORYUTILITIES
+sort_string: 融冰壶
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="ICEKETTLE">融冰壶</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 温度调节
+    style: Body
+    image: research_type_alpha_icon
+    link_id: temperaturemodulation
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: icemelter_kettle_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 消耗<link="WOOD">木材</link>将<link="ICE">冰</link>融化成<link="WATER">水</link>，并将其桶装以便运输。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    复制人的操作'
+    tooltip: 必须有复制人来才能使这个建筑运行
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：2格宽x2格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：10秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="METAL">金属矿石</link>400千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    熔化速率：20千克/秒'
+    tooltip: >-
+      这个建筑将100千克的<style="KKeyword">冰</style>熔化为100千克的冷<style="KKeyword">水</style>（25ºC）
+
+
+      <style="KKeyword">木材</style>消耗会根据<style="KKeyword">冰</style>的初始温度变化
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    库存容量：500千克'
+    tooltip: 最多容纳<b>500千克</b>材料
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="HEAT">热量</link>：+3.75千复制热/秒'
+    tooltip: >-
+      每秒产生<style="produced">3.75千复制热</style>
+
+
+      总<style="KKeyword">温度</style>变化受到加热物质的材料属性影响：
+          • 质量
+          • 比热容
+          • 表面积
+          • 隔热厚度
+          • 热导率
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    过热<link="HEAT">温度</link>：75ºC'
+    tooltip: 达到<b>75ºC</b>时开始过热
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>水永远不会热到烫伤舌头。</i>
+    style: Body
+  layout: Vertical

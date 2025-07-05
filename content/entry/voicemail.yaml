@@ -1,0 +1,68 @@
+id: VOICEMAIL
+name: 语音信箱
+title: STRINGS.CODEX.INVESTIGATIONS.DLC2_VOICEMAIL.TITLE
+disabled: False
+search_only: False
+category: RESEARCHNOTES
+sort_string: 语音信箱
+required_dlc_ids:
+- DLC2_ID
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 语音信箱
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：无
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+  lock_id: email_voicemail
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <smallcaps>[检测到文件片段]
+
+      [声纹识别系统不可用]</smallcaps>
+
+
+      [录音开始]
+
+
+      ……爷爷？……你的一个穿羊毛衫的实习生刚刚给我寄了一封信，说你要去太空啦？？
+
+
+      你疯了吗？
+
+
+      写信日期上写的是一周后……那年轻人意识到他送早了的时候完全羞红了脸。
+
+
+      我试着联系米兰达，她说她在“可持续的未来”峰会之后就再也没听到过你的消息了。
+
+
+      她说了一些关于某种培训课程的事情。只是办公室里没有人知道她在说什么。
+
+
+      我该如何解释你明天的缺席？GEI绝对要发火的。如果他们要退出这场交易，那被解雇的就不仅仅是几个下属了。
+
+
+      ……在你悲惨的余生，还要跟四个陌生人一起困在太空度过，你到底能获得什么成就呀？
+
+
+      你是个商人，不是该死的宇航员！
+
+
+      更不用说还有<i>战争</i>呢！谁能说你的地面指挥部队一年里会不会覆灭啊？
+
+
+      [几部电话响个不停的声音。]
+
+
+      我得走了。给我回电话，不然我就直接去董事会。
+
+
+      [文件结束]
+    style: Body
+  layout: Vertical
+  lock_id: email_voicemail

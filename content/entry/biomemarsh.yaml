@@ -1,0 +1,127 @@
+id: BIOMEMARSH
+parent_id: BIOMES
+name: 湿地生态
+disabled: False
+search_only: False
+category: BIOMES
+sort_string: BIOMEMARSH
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 湿地生态
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 从<link="SLIMEMOLD">菌泥</link>中逸出的<link="CONTAMINATEDOXYGEN">污染氧</link>主宰着湿地生态的大气，正是由于这些，这种生态才众所周知。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      湿地生态包含大量<link="SLIMEMOLD">菌泥</link>，可以转化为<link="ALGAE">藻类</link>，或者可以用来种植<link="MUSHROOMPLANT">夜幕菇</link>，还可以将产生的藻类用来喂养<link="PACUSPECIES">帕库鱼</link>，从而提供更高级的<link="FOOD">食物</link>。
+
+
+      由于这种生态让我的复制人感染<link="SLIMELUNG">粘液肺</link>的可能性很高，可能需要慎重地建立适当的遏制区。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 元素
+    style: Subtitle
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 水
+    color: 0063FFFF
+    image: element_liquid
+    link_id: water
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 火成岩
+    image: igneous_rock_0__ui
+    link_id: igneousrock
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 沙子
+    image: sand_0__ui
+    link_id: sand
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 砂岩
+    image: sand_stone_0__ui
+    link_id: sandstone
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 金汞齐
+    image: gold_amalgam_0__ui
+    link_id: goldamalgam
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 污染氧
+    color: 224F40FF
+    image: element_gas
+    link_id: contaminatedoxygen
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 藻类
+    image: algae_0__ui
+    link_id: algae
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 污染水
+    color: 474506FF
+    image: element_liquid
+    link_id: dirtywater
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 粘土
+    image: clay_0__ui
+    link_id: clay
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 二氧化碳
+    color: 000000FF
+    image: element_gas
+    link_id: carbondioxide
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 沉积岩
+    image: sedimentary_rock_0__ui
+    link_id: sedimentaryrock
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 菌泥
+    image: slime_mold_0__ui
+    link_id: slimemold
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 植物
+    style: Subtitle
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 夜幕菇
+    image: fungusplant_0__ui
+    link_id: mushroomplant
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 顶针芦苇
+    image: swampreed_0__ui
+    link_id: basicfabricplant
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 同伴芽
+    image: potted_bulb_0__ui
+    link_id: bulbplant
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 小动物
+    style: Subtitle
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 喷浮飞鱼
+    image: puft_0__ui
+    link_id: puft
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 帕库鱼
+    image: pacu_0__ui
+    link_id: pacu
+  layout: Vertical

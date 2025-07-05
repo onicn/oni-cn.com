@@ -1,0 +1,71 @@
+id: LEAFYPLANT
+parent_id: PLANTS
+name: 欢乐叶
+disabled: False
+search_only: False
+category: PLANTS
+sort_string: 欢乐叶
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 欢乐叶
+    style: Title
+  - widget_type: CodexText
+    text: 装饰性植物
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      欢乐叶是一种阔叶室内盆栽植物，用于装饰生活区。
+
+
+      宽阔的绿叶欢快地摇动，为那些渴望娱乐的人带来了数小时的娱乐。
+
+
+      虽然欢乐叶能激发笑声和喜悦，但它不适合做脱口秀。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: potted_leafy_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 成长自
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: seed_potted_leafy_0__ui
+  - widget_type: CodexText
+    text: <link="LEAFYPLANT">欢乐叶种子</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 详情
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexText
+    text: 欢乐叶呈现一种令人平静的绿色，以舒缓<link="STRESS">压力</link>和提高<link="MORALE">士气</link>而闻名。
+    style: Body
+  - widget_type: CodexText
+    text: >-
+      <b>生长需求</b>：
+          • 最大<link="RADIATION">辐射</link>：2,200拉德/周期
+          • <link="HEAT">温度</link>：20至50ºC
+          • <link="ATMOSPHERE">气压</link>：最低150克
+          • <link="ATMOSPHERE">环境</link>：
+              • <link="OXYGEN">氧气</link>
+              • <link="CONTAMINATEDOXYGEN">污染氧</link>
+              • <link="CARBONDIOXIDE">二氧化碳</link>
+              • <link="CHLORINEGAS">氯气</link>
+              • <link="HYDROGEN">氢气</link>
+          • 农地
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

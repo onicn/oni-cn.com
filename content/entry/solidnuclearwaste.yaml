@@ -1,0 +1,91 @@
+id: SOLIDNUCLEARWASTE
+parent_id: ELEMENTSSOLID
+name: 固态核废料
+disabled: False
+search_only: False
+category: ELEMENTSSOLID
+sort_string: 固态核废料
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="SOLIDNUCLEARWASTE">固态核废料</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: radium_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: radium_0__ui
+      text1: 固态核废料
+      text2: 1000克
+      link_id: solidnuclearwaste
+    produce:
+    - image: element_liquid
+      color: 81B000FF
+      text1: 液态核废料
+      text2: 1000克
+      link_id: nuclearwaste
+    fabricator:
+      image: crew_state_temp_up
+      text1: 26.9ºC
+      tooltip: 温度高于26.9ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换于
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: 81B000FF
+      text1: 液态核废料
+      text2: 1000克
+      link_id: nuclearwaste
+    produce:
+    - image: radium_0__ui
+      text1: 固态核废料
+      text2: 1000克
+      link_id: solidnuclearwaste
+    fabricator:
+      image: crew_state_temp_down
+      text1: 26.9ºC
+      tooltip: 温度低于26.9ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      充满<link="RADIATION">放射性污染物</link>的剧毒固体。
+
+
+      资源种类：其他
+
+      熔点：26.9ºC
+
+      硬度：<color=#71ABCFFF>0（非常柔软）</color>
+
+
+      比热容：7.440 (DTU/g)/ºC
+
+      热导率：6.000 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.3
+
+      辐射释放量/1000千克：165拉德/周期
+
+
+      属性：<link="LIGHT">光源</link>, <link="ELEMENTSSOLID">固体</link>, 其他
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

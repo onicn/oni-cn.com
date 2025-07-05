@@ -1,0 +1,122 @@
+id: BIOMEOCEAN
+parent_id: BIOMES
+name: 海洋生态
+disabled: False
+search_only: False
+category: BIOMES
+sort_string: BIOMEOCEAN
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 海洋生态
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: <link="SAND">沙子</link>、<link="SALT">盐</link>和<link="BLEACHSTONE">漂白石</link>在这个满是<link="BRINE">盐水</link>的独特生态中比比皆是。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      <link="CRABSPECIES">抛壳蟹</link>的壳是优质<link="LIME">石灰</link>来源，但驯化抛壳蟹时要小心，它们在它们的蛋附近会表现出攻击性。
+
+
+      收获<link="SEALETTUCE">水草</link>产生<link="LETTUCE">海生菜</link>，用于更高级的<link="FOOD">食物</link>。
+
+
+      所有<link="WATER">水</link>都需要通过<link="DESALINATOR">脱盐器</link>过滤移除<link="SALT">盐</link>才能为我的复制人所用。幸运的是，可以通过<link="ROCKCRUSHER">碎石机</link>生产<link="SALT">食盐</link>，放在<link="DININGTABLE">餐桌</link>上使用，从而提升复制人的<link="MORALE">士气</link>。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 元素
+    style: Subtitle
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 浓盐水
+    color: ADE9E5FF
+    image: element_liquid
+    link_id: brine
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 浓盐冰
+    image: frozen_brine_0__ui
+    link_id: brine
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 花岗岩
+    image: granite_0__ui
+    link_id: granite
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 氢气
+    color: C51F8BFF
+    image: element_gas
+    link_id: hydrogen
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 化石
+    image: fossil_0__ui
+    link_id: fossil
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 漂白石
+    image: bleach_stone_0__ui
+    link_id: bleachstone
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 盐水
+    color: CED2ECFF
+    image: element_liquid
+    link_id: saltwater
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 沙子
+    image: sand_0__ui
+    link_id: sand
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 沉积岩
+    image: sedimentary_rock_0__ui
+    link_id: sedimentaryrock
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 盐
+    image: salt_0__ui
+    link_id: salt
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 二氧化碳
+    color: 000000FF
+    image: element_gas
+    link_id: carbondioxide
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 植物
+    style: Subtitle
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 水草
+    image: sea_lettuce_0__ui
+    link_id: sealettuce
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 火椒藤
+    image: vinespicenut_0__ui
+    link_id: spicevine
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 小动物
+    style: Subtitle
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 帕库鱼
+    image: pacu_0__ui
+    link_id: pacu
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 抛壳蟹
+    image: pincher_0__ui
+    link_id: crab
+  layout: Vertical

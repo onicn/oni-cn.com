@@ -1,0 +1,509 @@
+id: POLYPROPYLENE
+parent_id: ELEMENTSSOLID
+name: 塑料
+disabled: False
+search_only: False
+category: ELEMENTSSOLID
+sort_string: 塑料
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="POLYPROPYLENE">塑料</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: polypropylene_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: polypropylene_0__ui
+      text1: 塑料
+      text2: 1000克
+      link_id: polypropylene
+    produce:
+    - image: element_liquid
+      color: B000FFFF
+      text1: 液态石脑油
+      text2: 1000克
+      link_id: naphtha
+    fabricator:
+      image: crew_state_temp_up
+      text1: 159.9ºC
+      tooltip: 温度高于159.9ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 飞寻机
+    require:
+    - image: polypropylene_0__ui
+      text1: 塑料
+      text2: 200千克
+      link_id: polypropylene
+    produce:
+    - image: swoopy_bot_0__ui
+      text1: 飞寻机
+      text2: 1单位
+      link_id: fetchdrone
+    fabricator:
+      image: advanced_crafting_table_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 焊接台
+      text2: 120秒
+      link_id: advancedcraftingtable
+  - widget_type: CodexRecipePanel
+    text: 数据磁盘
+    require:
+    - image: polypropylene_0__ui
+      text1: 塑料
+      text2: 5千克
+      link_id: polypropylene
+    produce:
+    - image: floppy_disc_0__ui
+      text1: 数据磁盘
+      text2: 1单位
+      link_id: databank
+    fabricator:
+      image: data_miner_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 数据挖掘仪
+      text2: 200秒
+      link_id: dataminer
+  - widget_type: CodexRecipePanel
+    text: 干燥的浆果酿
+    require:
+    - image: zestysalsa_0__ui
+      text1: 浆果酿
+      text2: 6,000千卡
+      tooltip: 品质：优秀 [+4]
+      link_id: salsa
+    - image: polypropylene_0__ui
+      text1: 塑料
+      text2: 12千克
+      link_id: polypropylene
+    produce:
+    - image: dehydrated_food_salsa_0__ui
+      text1: 干燥的浆果酿
+      text2: 6单位
+      link_id: 干燥的浆果酿
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 6千克
+      link_id: water
+    fabricator:
+      image: dehydrator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 脱水机
+      text2: 250秒
+      link_id: fooddehydrator
+  - widget_type: CodexRecipePanel
+    text: 干燥的蘑菇卷
+    require:
+    - image: mushroom_wrap_0__ui
+      text1: 蘑菇卷
+      text2: 6,000千卡
+      tooltip: 品质：优秀 [+4]
+      link_id: mushroomwrap
+    - image: polypropylene_0__ui
+      text1: 塑料
+      text2: 12千克
+      link_id: polypropylene
+    produce:
+    - image: dehydrated_food_mushroom_wrap_0__ui
+      text1: 干燥的蘑菇卷
+      text2: 6单位
+      link_id: 干燥的蘑菇卷
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 6千克
+      link_id: water
+    fabricator:
+      image: dehydrator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 脱水机
+      text2: 250秒
+      link_id: fooddehydrator
+  - widget_type: CodexRecipePanel
+    text: 干燥的海陆双拼
+    require:
+    - image: surfnturf_0__ui
+      text1: 海陆双拼
+      text2: 6,000千卡
+      tooltip: 品质：优秀 [+4]
+      link_id: surfandturf
+    - image: polypropylene_0__ui
+      text1: 塑料
+      text2: 12千克
+      link_id: polypropylene
+    produce:
+    - image: dehydrated_food_surf_and_turf_0__ui
+      text1: 干燥的海陆双拼
+      text2: 6单位
+      link_id: 干燥的海陆双拼
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 6千克
+      link_id: water
+    fabricator:
+      image: dehydrator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 脱水机
+      text2: 250秒
+      link_id: fooddehydrator
+  - widget_type: CodexRecipePanel
+    text: 干燥的火椒面包
+    require:
+    - image: pepperbread_0__ui
+      text1: 火椒面包
+      text2: 6,000千卡
+      tooltip: 品质：杰出 [+5]
+      link_id: spicebread
+    - image: polypropylene_0__ui
+      text1: 塑料
+      text2: 12千克
+      link_id: polypropylene
+    produce:
+    - image: dehydrated_food_spicebread_0__ui
+      text1: 干燥的火椒面包
+      text2: 6单位
+      link_id: 干燥的火椒面包
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 6千克
+      link_id: water
+    fabricator:
+      image: dehydrator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 脱水机
+      text2: 250秒
+      link_id: fooddehydrator
+  - widget_type: CodexRecipePanel
+    text: 干燥的蘑菇乳蛋饼
+    require:
+    - image: quiche_0__ui
+      text1: 蘑菇乳蛋饼
+      text2: 6,000千卡
+      tooltip: 品质：杰出 [+5]
+      link_id: quiche
+    - image: polypropylene_0__ui
+      text1: 塑料
+      text2: 12千克
+      link_id: polypropylene
+    produce:
+    - image: dehydrated_food_quiche_0__ui
+      text1: 干燥的蘑菇乳蛋饼
+      text2: 6单位
+      link_id: 干燥的蘑菇乳蛋饼
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 6千克
+      link_id: water
+    fabricator:
+      image: dehydrator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 脱水机
+      text2: 250秒
+      link_id: fooddehydrator
+  - widget_type: CodexRecipePanel
+    text: 干燥的咖喱豆
+    require:
+    - image: curried_beans_0__ui
+      text1: 咖喱豆
+      text2: 6,000千卡
+      tooltip: 品质：优秀 [+4]
+      link_id: curry
+    - image: polypropylene_0__ui
+      text1: 塑料
+      text2: 12千克
+      link_id: polypropylene
+    produce:
+    - image: dehydrated_food_curry_0__ui
+      text1: 干燥的咖喱豆
+      text2: 6单位
+      link_id: 干燥的咖喱豆
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 6千克
+      link_id: water
+    fabricator:
+      image: dehydrator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 脱水机
+      text2: 250秒
+      link_id: fooddehydrator
+  - widget_type: CodexRecipePanel
+    text: 干燥的麻婆豆腐
+    require:
+    - image: spicey_tofu_0__ui
+      text1: 麻婆豆腐
+      text2: 6,000千卡
+      tooltip: 品质：杰出 [+5]
+      link_id: spicytofu
+    - image: polypropylene_0__ui
+      text1: 塑料
+      text2: 12千克
+      link_id: polypropylene
+    produce:
+    - image: dehydrated_food_spicy_tofu_0__ui
+      text1: 干燥的麻婆豆腐
+      text2: 6单位
+      link_id: 干燥的麻婆豆腐
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 6千克
+      link_id: water
+    fabricator:
+      image: dehydrator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 脱水机
+      text2: 250秒
+      link_id: fooddehydrator
+  - widget_type: CodexRecipePanel
+    text: 干燥的冰霜汉堡
+    require:
+    - image: frost_burger_0__ui
+      text1: 冰霜汉堡
+      text2: 6,000千卡
+      tooltip: 品质：极佳 [+6]
+      link_id: burger
+    - image: polypropylene_0__ui
+      text1: 塑料
+      text2: 12千克
+      link_id: polypropylene
+    produce:
+    - image: dehydrated_food_burger_0__ui
+      text1: 干燥的冰霜汉堡
+      text2: 6单位
+      link_id: 干燥的冰霜汉堡
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 6千克
+      link_id: water
+    fabricator:
+      image: dehydrator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 脱水机
+      text2: 250秒
+      link_id: fooddehydrator
+  - widget_type: CodexRecipePanel
+    text: 干燥的浆果派
+    require:
+    - image: wormwood_berry_pie_0__ui
+      text1: 混合浆果派
+      text2: 6,000千卡
+      tooltip: 品质：杰出 [+5]
+      link_id: berrypie
+    - image: polypropylene_0__ui
+      text1: 塑料
+      text2: 12千克
+      link_id: polypropylene
+    produce:
+    - image: dehydrated_food_berry_pie_0__ui
+      text1: 干燥的浆果派
+      text2: 6单位
+      link_id: 干燥的浆果派
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 6千克
+      link_id: water
+    fabricator:
+      image: dehydrator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 脱水机
+      text2: 250秒
+      link_id: fooddehydrator
+  - widget_type: CodexRecipePanel
+    text: 数据磁盘
+    require:
+    - image: polypropylene_0__ui
+      text1: 塑料
+      text2: 5千克
+      link_id: polypropylene
+    produce:
+    - image: floppy_disc_0__ui
+      text1: 数据磁盘
+      text2: 1单位
+      link_id: databank
+    fabricator:
+      image: orbital_research_station_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 轨道数据收集实验仪
+      text2: 33秒
+      link_id: orbitalresearchcenter
+  - widget_type: CodexRecipePanel
+    text: 塑料质
+    require:
+    - image: temp_conductor_0__ui
+      text1: 导热质
+      text2: 15千克
+      link_id: tempconductorsolid
+    - image: polypropylene_0__ui
+      text1: 塑料
+      text2: 70千克
+      link_id: polypropylene
+    - image: milkfat_0__ui
+      text1: 咸乳蜡
+      text2: 15千克
+      link_id: milkfat
+    produce:
+    - image: hardplastic_0__ui
+      text1: 塑料质
+      text2: 100千克
+      link_id: hardpolypropylene
+    fabricator:
+      image: supermaterial_refinery_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 分子熔炉
+      text2: 80秒
+      link_id: supermaterialrefinery
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: FFC325FF
+      text1: 石油
+      text2: 500千克/周期
+      link_id: petroleum
+    produce:
+    - image: polypropylene_0__ui
+      text1: 塑料
+      text2: 300千克/周期
+      link_id: polypropylene
+    - image: element_gas
+      color: 85C9E3FF
+      text1: 蒸汽
+      text2: 5千克/周期
+      link_id: steam
+    - image: element_gas
+      color: 000000FF
+      text1: 二氧化碳
+      text2: 5千克/周期
+      link_id: carbondioxide
+    fabricator:
+      image: plasticrefinery_0__ui
+      text1: 聚合物压塑器
+      link_id: POLYMERIZER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: CC8B18FF
+      text1: 树脂
+      text2: 500千克/周期
+      link_id: naturalresin
+    produce:
+    - image: polypropylene_0__ui
+      text1: 塑料
+      text2: 300千克/周期
+      link_id: polypropylene
+    - image: element_gas
+      color: 85C9E3FF
+      text1: 蒸汽
+      text2: 5千克/周期
+      link_id: steam
+    - image: element_gas
+      color: 000000FF
+      text1: 二氧化碳
+      text2: 5千克/周期
+      link_id: carbondioxide
+    fabricator:
+      image: plasticrefinery_0__ui
+      text1: 聚合物压塑器
+      link_id: POLYMERIZER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      text1: 花蜜
+      text2: 500千克/周期
+      link_id: sugarwater
+    produce:
+    - image: polypropylene_0__ui
+      text1: 塑料
+      text2: 300千克/周期
+      link_id: polypropylene
+    - image: element_gas
+      color: 85C9E3FF
+      text1: 蒸汽
+      text2: 5千克/周期
+      link_id: steam
+    - image: element_gas
+      color: 000000FF
+      text1: 二氧化碳
+      text2: 5千克/周期
+      link_id: carbondioxide
+    fabricator:
+      image: plasticrefinery_0__ui
+      text1: 聚合物压塑器
+      link_id: POLYMERIZER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: drecko_0__ui
+      text1: 滑鳞壁虎
+      text2: 1单位
+      link_id: dreckoplastic
+    produce:
+    - image: polypropylene_0__ui
+      text1: 塑料
+      text2: 150千克
+      link_id: polypropylene
+    fabricator:
+      image: shearing_station_0__ui
+      text1: 修剪站
+      link_id: SHEARINGSTATION
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      (C<sub>3</sub>H<sub>6</sub>)<sub>n</sub> <link="POLYPROPYLENE">塑料</link>是一种热塑性聚合物。
+
+
+      它适合用来建造各种先进的建筑和设备。
+
+
+      资源种类：人造材料
+
+      熔点：159.9ºC
+
+      硬度：<color=#71ABCFFF>1（非常柔软）</color>
+
+
+      比热容：1.920 (DTU/g)/ºC
+
+      热导率：0.150 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.85
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：抗菌物, <link="PLASTIC">塑料</link>, <link="BUILDABLEANY">一般建造材料</link>, <link="ELEMENTSSOLID">固体</link>, 人造材料
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

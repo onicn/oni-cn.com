@@ -1,0 +1,52 @@
+id: FOSSILS
+parent_id: BUILDINGMATERIALCLASSES
+name: 化石
+disabled: False
+search_only: False
+category: BUILDINGMATERIALCLASSES
+sort_string: 化石
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="FOSSILS">化石</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      化石是一类岩石和矿物的复合体，含有微量的石化生命形式。
+
+
+      化石有多种用途，比如基础建造材料、雕塑块或作为高级材料的生产原料。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 琥珀
+    image: amber_0__ui
+    link_id: amber
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 化石
+    image: fossil_0__ui
+    link_id: fossil
+  layout: Grid
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建造用处
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 垂吊化石雕塑块
+    image: fossilsculpture_hanging_0__ui
+    link_id: ceilingfossilsculpture
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 化石雕塑块
+    image: fossilsculpture_0__ui
+    link_id: fossilsculpture
+  layout: Grid

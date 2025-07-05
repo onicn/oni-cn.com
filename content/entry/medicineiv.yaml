@@ -1,0 +1,59 @@
+id: MEDICINEIV
+parent_id: TECH
+name: 靶向药物
+disabled: False
+search_only: False
+category: TECH
+sort_string: 靶向药物
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="MEDICINEIV">靶向药物</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 可攻克大多数顽固疾病的最先进医疗设备。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="MEDICINEIII">病原体诊断</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: bed_medical_0__ui
+  - widget_type: CodexText
+    text: <link="ADVANCEDDOCTORSTATION">病诊站</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: hottub_0__ui
+  - widget_type: CodexText
+    text: <link="HOTTUB">热水浴缸</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: radiation_sensor_0__ui
+  - widget_type: CodexText
+    text: <link="LOGICRADIATIONSENSOR">辐射传感器</link>
+    style: Body
+  layout: Horizontal

@@ -1,0 +1,158 @@
+id: CURRY
+parent_id: FOOD
+name: 咖喱豆
+disabled: False
+search_only: False
+category: FOOD
+sort_string: 咖喱豆
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="CURRY">咖喱豆</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: curried_beans_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      很有嚼劲的<link="BEANPLANTSEED">小吃豆</link>，与数块<link="GINGERCONFIG">滋补根</link>炖在一起。
+
+
+      真是太辣了！
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 品质：优秀 [+4]
+    style: Body
+  - widget_type: CodexText
+    text: 卡路里：5,000千卡
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      冷藏温度：4ºC
+
+      深度冷冻温度：-18ºC
+
+      腐烂时间：16.0周期
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: '营养作用:'
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    • <link="IDFOODEFFECTS__HOTSTUFF">热辣菜肴</link>'
+    tooltip: >-
+      复制人觉得这种辛辣的菜肴很提神
+          • 运动: +3
+          • 力量: +3
+          • 喷嚏: +1
+          • 压力: +5%/周期
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    • <link="IDFOODEFFECTS__WARMTOUCHFOOD">严寒抗性：辛辣饮食</link>'
+    tooltip: 使用这个食物可提供对<style="KKeyword">严寒环境</style>和<style="KKeyword">双脚湿透</style>的暂时免疫
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 干燥的咖喱豆
+    require:
+    - image: curried_beans_0__ui
+      text1: 咖喱豆
+      text2: 6,000千卡
+      tooltip: 品质：优秀 [+4]
+      link_id: curry
+    - image: polypropylene_0__ui
+      text1: 塑料
+      text2: 12千克
+      link_id: polypropylene
+    produce:
+    - image: dehydrated_food_curry_0__ui
+      text1: 干燥的咖喱豆
+      text2: 6单位
+      link_id: 干燥的咖喱豆
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 6千克
+      link_id: water
+    fabricator:
+      image: dehydrator_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 脱水机
+      text2: 250秒
+      link_id: fooddehydrator
+  - widget_type: CodexConversionPanel
+    require:
+    - image: curried_beans_0__ui
+      text1: 咖喱豆
+      text2: 700千卡/周期
+      tooltip: 品质：优秀 [+4]
+      link_id: curry
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 105克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__ui
+      text1: 好吃哈奇
+      link_id: HATCH
+  - widget_type: CodexConversionPanel
+    require:
+    - image: curried_beans_0__ui
+      text1: 咖喱豆
+      text2: 700千卡/周期
+      tooltip: 品质：优秀 [+4]
+      link_id: curry
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 140克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__veg_ui
+      text1: 草质哈奇
+      link_id: HATCHVEGGIE
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 燃气灶
+    require:
+    - image: ginger_0__ui
+      text1: 滋补根
+      text2: 4单位
+      link_id: gingerconfig
+    - image: seed_beanplant_0__ui
+      text1: 小吃豆
+      text2: 4单位
+      link_id: bean
+    produce:
+    - image: curried_beans_0__ui
+      text1: 咖喱豆
+      text2: 5,000千卡
+      tooltip: 品质：优秀 [+4]
+      link_id: curry
+    fabricator:
+      image: cookstation_gourmet_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 燃气灶
+      text2: 50秒
+      link_id: gourmetcookingstation
+  layout: Vertical

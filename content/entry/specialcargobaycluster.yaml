@@ -1,0 +1,740 @@
+id: SPECIALCARGOBAYCLUSTER
+parent_id: BUILDCATEGORYROCKETRY
+name: 小动物货舱
+disabled: False
+search_only: False
+category: BUILDCATEGORYROCKETRY
+sort_string: 小动物货舱
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="SPECIALCARGOBAY">小动物货舱</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 持久生命维持
+    style: Body
+    image: research_type_alpha_icon
+    link_id: durablelifesupport
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: rocket_storage_live_small_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      允许复制人在太空中运输<link="CREATURES">小动物</link>。
+
+
+      火箭返回后，储存的样本可释放到殖民地中。
+
+
+      必须通过<link="LAUNCHPAD">火箭平台</link>建造。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：3格宽x1格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：60秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="REFINEDMETAL">精炼金属</link>200千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    过热<link="HEAT">温度</link>：2000ºC'
+    tooltip: 达到<b>2000ºC</b>时开始过热
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>类别</b>
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    <link="REQUIREMENTCLASSINDUSTRIALMACHINERY">工业机械</link>'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>在运输时，小动物不需要喂食。</i>
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 可耕种的植物
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: ice_floof_0__ui
+  - widget_type: CodexText
+    text: <link="WOODDEER">狐鹿</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: caterpillar_0__wtr_ui
+  - widget_type: CodexText
+    text: <link="STATERPILLAR">海绵蛞蝓</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: caterpillar_0__gas_ui
+  - widget_type: CodexText
+    text: <link="STATERPILLAR">烟雾蛞蝓</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: caterpillar_0__ui
+  - widget_type: CodexText
+    text: <link="STATERPILLAR">电弧蛞蝓</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: squirrel_0__hug_ui
+  - widget_type: CodexText
+    text: <link="SQUIRREL">毛绒树鼠</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: lightbug_0__cry_ui
+  - widget_type: CodexText
+    text: <link="LIGHTBUGCRYSTAL">光耀虫</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: lightbug_0__ui
+  - widget_type: CodexText
+    text: <link="LIGHTBUG">发光虫</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: lightbug_0__blu_ui
+  - widget_type: CodexText
+    text: <link="LIGHTBUGBLUE">天蓝虫</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: lightbug_0__blk_ui
+  - widget_type: CodexText
+    text: <link="LIGHTBUGBLACK">深渊虫</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: glom_0__ui
+  - widget_type: CodexText
+    text: <link="GLOM">疫病章鱼</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: drecko_0__ui
+  - widget_type: CodexText
+    text: <link="DRECKOPLASTIC">滑鳞壁虎</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: lightbug_0__org_ui
+  - widget_type: CodexText
+    text: <link="LIGHTBUGORANGE">阳光虫</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: drecko_0__fbr_ui
+  - widget_type: CodexText
+    text: <link="DRECKO">毛鳞壁虎</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: bee_0__ui
+  - widget_type: CodexText
+    text: <link="BEE">辐射蜂</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: chameleo_0__ui
+  - widget_type: CodexText
+    text: <link="CHAMELEON">逸蜥</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: lightbug_0__pnk_ui
+  - widget_type: CodexText
+    text: <link="LIGHTBUGPINK">珊瑚虫</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: lightbug_0__prp_ui
+  - widget_type: CodexText
+    text: <link="LIGHTBUGPURPLE">皇家虫</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: driller_0__ui
+  - widget_type: CodexText
+    text: <link="MOLE">锹环田鼠</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: squirrel_0__ui
+  - widget_type: CodexText
+    text: <link="SQUIRREL">树鼠</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: seal_0__ui
+  - widget_type: CodexText
+    text: <link="SEAL">栓角海豹</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: puft_0__com_ui
+  - widget_type: CodexText
+    text: <link="PUFTOXYLITE">厚壳飞鱼</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: puft_0__ui
+  - widget_type: CodexText
+    text: <link="PUFT">喷浮飞鱼</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: puft_0__anti_ui
+  - widget_type: CodexText
+    text: <link="PUFTBLEACHSTONE">洁净飞鱼</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: puft_0__alp_ui
+  - widget_type: CodexText
+    text: <link="PUFTALPHA">贵族飞鱼</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: oilfloater_0__hot_ui
+  - widget_type: CodexText
+    text: <link="OILFLOATERHIGHTEMP">熔岩浮油生物</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: oilfloater_0__oxy_ui
+  - widget_type: CodexText
+    text: <link="OILFLOATERDECOR">长毛浮油生物</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: oilfloater_0__ui
+  - widget_type: CodexText
+    text: <link="OILFLOATER">浮油生物</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: gassy_moo_0__ui
+  - widget_type: CodexText
+    text: <link="MOO">释气海牛</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: driller_0__del_ui
+  - widget_type: CodexText
+    text: <link="MOLEDELICACY">珍馐田鼠</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: ice_belly_0__king_ui
+  - widget_type: CodexText
+    text: <link="GOLDBELLY">皇犸兔</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: hatch_0__ui
+  - widget_type: CodexText
+    text: <link="HATCH">好吃哈奇</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: ice_belly_0__ui
+  - widget_type: CodexText
+    text: <link="ICEBELLY">绒犸兔</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: hatch_0__hvy_ui
+  - widget_type: CodexText
+    text: <link="HATCHHARD">石壳哈奇</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: hatch_0__veg_ui
+  - widget_type: CodexText
+    text: <link="HATCHVEGGIE">草质哈奇</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: stego_0__ui
+  - widget_type: CodexText
+    text: <link="STEGO">尖块兽</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: pincher_0__ui
+  - widget_type: CodexText
+    text: <link="CRAB">抛壳蟹</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: hatch_0__mtl_ui
+  - widget_type: CodexText
+    text: <link="HATCHMETAL">光滑哈奇</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: pollinator_0__ui
+  - widget_type: CodexText
+    text: <link="BUTTERFLY">拟蛾</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: pincher_0__fresh_ui
+  - widget_type: CodexText
+    text: <link="CRABFRESHWATER">沙泥蟹</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: paculacanth_0__ui
+  - widget_type: CodexText
+    text: <link="PREHISTORICPACU">颚鱼</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: pacu_0__trp_ui
+  - widget_type: CodexText
+    text: <link="PACUTROPICAL">热带帕库鱼</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: pincher_0__wood_ui
+  - widget_type: CodexText
+    text: <link="CRABWOOD">木壳蟹</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: pacu_0__ui
+  - widget_type: CodexText
+    text: <link="PACU">帕库鱼</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: critter_0__ui
+  - widget_type: CodexText
+    text: <link="DIVERGENTBEETLE">甜素甲虫</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: pacu_0__glp_ui
+  - widget_type: CodexText
+    text: <link="PACUCLEANER">大嘴鱼</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: worm_head_0__ui
+  - widget_type: CodexText
+    text: <link="DIVERGENTWORM">虫果果虫</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: mosquito_0__ui
+  - widget_type: CodexText
+    text: <link="MOSQUITO">蚋虱</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: raptor_0__ui
+  - widget_type: CodexText
+    text: <link="RAPTOR">霸王鹦</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: baby_critter_0__ui
+  - widget_type: CodexText
+    text: <link="DIVERGENTBEETLE">甜素甲虫幼虫</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: baby_hatch_0__hvy_ui
+  - widget_type: CodexText
+    text: <link="HATCHHARD">石壳哈奇幼崽</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: baby_pincher_0__wood_ui
+  - widget_type: CodexText
+    text: <link="CRABWOOD">木壳蟹幼体</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: baby_worm_0__ui
+  - widget_type: CodexText
+    text: <link="DIVERGENTWORM">虫果果虫幼虫</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: baby_chameleo_0__ui
+  - widget_type: CodexText
+    text: <link="CHAMELEON">逸蜥幼崽</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: baby_icebelly_0__king_ui
+  - widget_type: CodexText
+    text: <link="GOLDBELLY">皇犸兔幼崽</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: baby_blarva_0__ui
+  - widget_type: CodexText
+    text: <link="BEE">辐射蜂幼虫</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: baby_drecko_0__fbr_ui
+  - widget_type: CodexText
+    text: <link="DRECKO">毛鳞壁虎幼崽</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: baby_hatch_0__ui
+  - widget_type: CodexText
+    text: <link="HATCH">好吃哈奇幼崽</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: baby_pincher_0__fresh_ui
+  - widget_type: CodexText
+    text: <link="CRABFRESHWATER">沙泥蟹幼体</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: baby_drecko_0__ui
+  - widget_type: CodexText
+    text: <link="DRECKOPLASTIC">滑鳞壁虎幼崽</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: baby_pincher_0__ui
+  - widget_type: CodexText
+    text: <link="CRAB">抛壳蟹幼体</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: baby_caterpillar_0__gas_ui
+  - widget_type: CodexText
+    text: <link="STATERPILLAR">烟雾蛞蝓幼体</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: baby_hatch_0__veg_ui
+  - widget_type: CodexText
+    text: <link="HATCHVEGGIE">草质哈奇幼崽</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: baby_caterpillar_0__wtr_ui
+  - widget_type: CodexText
+    text: <link="STATERPILLAR">海绵蛞蝓幼体</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: baby_caterpillar_0__ui
+  - widget_type: CodexText
+    text: <link="STATERPILLAR">电弧蛞蝓幼体</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: baby_squirrel_0__hug_ui
+  - widget_type: CodexText
+    text: <link="SQUIRREL">毛绒树鼠幼崽</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: baby_stego_0__ui
+  - widget_type: CodexText
+    text: <link="STEGO">尖块兽幼崽</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: baby_squirrel_0__ui
+  - widget_type: CodexText
+    text: <link="SQUIRREL">树鼠幼崽</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: baby_ice_floof_0__ui
+  - widget_type: CodexText
+    text: <link="WOODDEER">狐鹿幼崽</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: baby_seal_0__ui
+  - widget_type: CodexText
+    text: <link="SEAL">栓角海豹幼崽</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: baby_raptor_0__ui
+  - widget_type: CodexText
+    text: <link="RAPTOR">霸王鹦幼鸟</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: baby_puft_0__com_ui
+  - widget_type: CodexText
+    text: <link="PUFTOXYLITE">厚壳飞鱼幼体</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: baby_puft_0__ui
+  - widget_type: CodexText
+    text: <link="PUFT">喷浮飞鱼幼体</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: baby_puft_0__anti_ui
+  - widget_type: CodexText
+    text: <link="PUFTBLEACHSTONE">洁净飞鱼幼体</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: baby_puft_0__alp_ui
+  - widget_type: CodexText
+    text: <link="PUFTALPHA">贵族飞鱼幼体</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: baby_paculacanth_0__ui
+  - widget_type: CodexText
+    text: <link="PREHISTORICPACU">颚鱼苗</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: baby_pacu_0__trp_ui
+  - widget_type: CodexText
+    text: <link="PACUTROPICAL">热带帕库鱼苗</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: baby_pacu_0__ui
+  - widget_type: CodexText
+    text: <link="PACU">帕库鱼苗</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: baby_oilfloater_0__hot_ui
+  - widget_type: CodexText
+    text: <link="OILFLOATERHIGHTEMP">熔岩浮油生物幼体</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: baby_oilfloater_0__oxy_ui
+  - widget_type: CodexText
+    text: <link="OILFLOATERDECOR">长毛浮油生物幼体</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: baby_oilfloater_0__ui
+  - widget_type: CodexText
+    text: <link="OILFLOATER">浮油生物幼体</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: baby_mosquito_0__ui
+  - widget_type: CodexText
+    text: <link="MOSQUITO">蚋虱幼虫</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: baby_driller_0__del_ui
+  - widget_type: CodexText
+    text: <link="MOLEDELICACY">珍馐田鼠幼崽</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: baby_driller_0__ui
+  - widget_type: CodexText
+    text: <link="MOLE">锹环田鼠幼崽</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: baby_lightbug_0__prp_ui
+  - widget_type: CodexText
+    text: <link="LIGHTBUGPURPLE">皇家虫幼虫</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: baby_lightbug_0__pnk_ui
+  - widget_type: CodexText
+    text: <link="LIGHTBUGPINK">珊瑚虫幼虫</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: baby_lightbug_0__org_ui
+  - widget_type: CodexText
+    text: <link="LIGHTBUGORANGE">阳光虫幼虫</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: baby_lightbug_0__cry_ui
+  - widget_type: CodexText
+    text: <link="LIGHTBUGCRYSTAL">光耀虫幼虫</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: baby_lightbug_0__ui
+  - widget_type: CodexText
+    text: <link="LIGHTBUG">发光虫幼虫</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: baby_lightbug_0__blu_ui
+  - widget_type: CodexText
+    text: <link="LIGHTBUGBLUE">天蓝虫幼虫</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: baby_lightbug_0__blk_ui
+  - widget_type: CodexText
+    text: <link="LIGHTBUGBLACK">深渊虫幼虫</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: baby_icebelly_0__ui
+  - widget_type: CodexText
+    text: <link="ICEBELLY">绒犸兔幼崽</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: baby_hatch_0__mtl_ui
+  - widget_type: CodexText
+    text: <link="HATCHMETAL">光滑哈奇幼崽</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: baby_pacu_0__glp_ui
+  - widget_type: CodexText
+    text: <link="PACUCLEANER">大嘴鱼苗</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 舱块统计
+    style: Subtitle
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>火箭速度</b>等于<b>引擎功率</b>除以<b>负担</b>
+    style: Body
+  - widget_type: CodexText
+    text: '    • 高度：1'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 舱块负担：1'
+    style: Body
+  layout: Vertical

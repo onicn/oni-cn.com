@@ -1,0 +1,83 @@
+id: JETPACKS
+parent_id: TECH
+name: 投射物
+disabled: False
+search_only: False
+category: TECH
+sort_string: 投射物
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="JETPACKS">投射物</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 让复制人和爆炸物离开地面的东西。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="TRAVELTUBES">运载管道</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="PRECISIONPLUMBING">高级咖啡</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: suit_jetpack_0__ui
+  - widget_type: CodexText
+    text: <style="KKeyword">喷气服</style>模型
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: changingarea_jetsuit_arrow_0__ui
+  - widget_type: CodexText
+    text: <link="JETSUITMARKER">喷气服检查站</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: changingarea_jetsuit_0__ui
+  - widget_type: CodexText
+    text: <link="JETSUITLOCKER">喷气服存放柜</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: rocket_cluster_storage_liquid_0__ui
+  - widget_type: CodexText
+    text: <link="LIQUIDCARGOBAY">大型液缸货舱</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: missile_fabricator_0__ui
+  - widget_type: CodexText
+    text: <link="MISSILEFABRICATOR">爆破弹组装机</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: missile_launcher_0__ui
+  - widget_type: CodexText
+    text: <link="MISSILELAUNCHER">流星爆破炮</link>
+    style: Body
+  layout: Horizontal

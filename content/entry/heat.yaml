@@ -1,0 +1,51 @@
+id: HEAT
+name: 热量
+title: STRINGS.CODEX.HEAT.TITLE
+disabled: False
+search_only: False
+category: SYSTEMS
+sort_string: <link="HEAT">热量</link>
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 温度
+    style: Subtitle
+  - widget_type: CodexText
+    text: >+
+      几乎小行星上的所有东西都有温度。温度些许上升和下降很正常，但极端温度会导致基地中的各种问题。建筑会停止工作，作物会枯萎，物品甚至会熔化、沸腾、冻结。
+
+    style: Body
+  - widget_type: CodexText
+    text: 枯萎、过热和熔化
+    style: Subtitle
+  - widget_type: CodexText
+    text: >+
+      大多数作物需要其体温在一定范围内才能生长。超出范围虽不致命，但会停止生长。如果一个建筑的温度超过其过热温度，它就会受损并需要修复。
+
+      在极端温度下建筑甚至会熔化或沸腾掉。
+
+    style: Body
+  - widget_type: CodexText
+    text: 热能
+    style: Subtitle
+  - widget_type: CodexText
+    text: >
+      当物质的热能增加时温度就会提升，温度值等于总热能除以物质的比热容。由于不同物质的比热容差异较大，所以常会导致一定热能下一种物质比另一种的温度高的情况发生。这种性质使得水需要接近四倍的热能以升高与氧气相同的温度。
+    style: Body
+  - widget_type: CodexText
+    text: 导热和隔热
+    style: Subtitle
+  - widget_type: CodexText
+    text: >+
+      热能可以在建筑、生物、世界方格和其他实体间传导。当两个不同温度的物质接触时传导就会发生。热能传导速率是平均热导率和温度差异的乘积。热能在低热导率的物质间流动缓慢（隔热体），在高热导率的物质间流动迅速（导热体）。
+
+    style: Body
+  - widget_type: CodexText
+    text: 物态变化
+    style: Subtitle
+  - widget_type: CodexText
+    text: >+
+      冰的温度在超过熔点后会变成液态水。液态水的温度在达到沸点后会变成蒸汽。大多数元素都有类似的转变，但每一种元素的临界温度是不一样的。有时这种转变是不可逆的——石油沸腾后会变成高硫天然气，高硫天然气冷却后并不会变回石油。同样，物质冻结后也可能变成性质完全不同的另一种物质。
+
+    style: Body
+  layout: Vertical

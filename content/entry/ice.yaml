@@ -1,0 +1,158 @@
+id: ICE
+parent_id: ELEMENTSSOLID
+name: 冰
+disabled: False
+search_only: False
+category: ELEMENTSSOLID
+sort_string: 冰
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="ICE">冰</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: ice_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: ice_0__ui
+      text1: 冰
+      text2: 1000克
+      link_id: ice
+    produce:
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 1000克
+      link_id: water
+    fabricator:
+      image: crew_state_temp_up
+      text1: -0.6ºC
+      tooltip: 温度高于-0.6ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换于
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      text1: 花蜜
+      text2: 1000克
+      link_id: sugarwater
+    produce:
+    - image: ice_0__ui
+      text1: 冰
+      text2: 230克
+      link_id: ice
+    - image: sucrose_0__ui
+      text1: 蔗糖
+      text2: 770克
+      link_id: sucrose
+    fabricator:
+      image: crew_state_temp_down
+      text1: -82.5ºC
+      tooltip: 温度低于-82.5ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 1000克
+      link_id: water
+    produce:
+    - image: ice_0__ui
+      text1: 冰
+      text2: 1000克
+      link_id: ice
+    fabricator:
+      image: crew_state_temp_down
+      text1: -0.6ºC
+      tooltip: 温度低于-0.6ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: CED2ECFF
+      text1: 盐水
+      text2: 1000克
+      link_id: saltwater
+    produce:
+    - image: element_liquid
+      color: ADE9E5FF
+      text1: 浓盐水
+      text2: 230克
+      link_id: brine
+    - image: ice_0__ui
+      text1: 冰
+      text2: 770克
+      link_id: ice
+    fabricator:
+      image: crew_state_temp_down
+      text1: -7.5ºC
+      tooltip: 温度低于-7.5ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_gas
+      color: 000000FF
+      text1: 二氧化碳
+      text2: 300克/周期
+      link_id: carbondioxide
+    - image: ice_0__ui
+      text1: 冰
+      text2: 20千克/周期
+      link_id: ice
+    produce:
+    - image: oxyrock_0__ui
+      text1: 氧石
+      text2: 18千克/周期
+      link_id: oxyrock
+    fabricator:
+      image: bluegrass_0__ui
+      text1: 气囊芦荟
+      link_id: BLUEGRASS
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      (H<sub>2</sub>O) 冰是干净的水冻结成的<link="ELEMENTSSOLID">固体</link>。
+
+
+      资源种类：可液化物
+
+      熔点：-0.6ºC
+
+      硬度：<color=#866BA5FF>25（坚硬）</color>
+
+
+      比热容：2.050 (DTU/g)/ºC
+
+      热导率：2.180 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.8
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：溜滑, <link="ICEORE">冰</link>, <link="BUILDABLEANY">一般建造材料</link>, <link="ELEMENTSSOLID">固体</link>, 可液化物
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

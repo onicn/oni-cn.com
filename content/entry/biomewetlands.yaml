@@ -1,0 +1,109 @@
+id: BIOMEWETLANDS
+parent_id: BIOMES
+name: 险沼生态
+disabled: False
+search_only: False
+category: BIOMES
+sort_string: BIOMEWETLANDS
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 险沼生态
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 这种炎热油滑的生态含有大量<link="DIRTYWATER">污染水</link>池，以及用于建立工业系统的原料。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      肉食性<link="FLYTRAPPLANT">露饵花</link>会捕捉飞行小动物，比如讨厌的<link="MOSQUITOSPECIES">蚋虱</link>，并产生可转化为<link="NATURALRESIN">树脂</link>用于<link="POLYPROPYLENE">塑料</link>生产的<link="AMBER">琥珀</link>。本地植物还包括<link="KELPPLANT">海梳蕨</link>，可以加工成<link="PHYTOOIL">植物润滑油</link>。
+
+
+      称为<link="PREHISTORICPACUSPECIES">颚鱼</link>的水生庞然大物会以<link="PACUSPECIES">帕库鱼</link>为猎物，并排出大块<link="RUST">铁锈</link>。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 元素
+    style: Subtitle
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 污染土
+    image: toxic_sand_0__ui
+    link_id: toxicsand
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 火成岩
+    image: igneous_rock_0__ui
+    link_id: igneousrock
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 藻类
+    image: algae_0__ui
+    link_id: algae
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 泥土
+    image: dirt_0__ui
+    link_id: dirt
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 沙子
+    image: sand_0__ui
+    link_id: sand
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 氧气
+    color: B7FFFFFF
+    image: element_gas
+    link_id: oxygen
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 污染水
+    color: 474506FF
+    image: element_liquid
+    link_id: dirtywater
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 金汞齐
+    image: gold_amalgam_0__ui
+    link_id: goldamalgam
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 黑曜石
+    image: obsidian_0__ui
+    link_id: obsidian
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 植物
+    style: Subtitle
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 海梳蕨
+    image: kelp_0__ui
+    link_id: kelpplant
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 露饵花
+    image: ceiling_carnie_0__ui
+    link_id: flytrapplant
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 小动物
+    style: Subtitle
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 颚鱼
+    image: paculacanth_0__ui
+    link_id: prehistoricpacu
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 蚋虱
+    image: mosquito_0__ui
+    link_id: mosquito
+  layout: Vertical

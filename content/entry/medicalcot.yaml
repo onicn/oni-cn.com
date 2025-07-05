@@ -1,0 +1,102 @@
+id: MEDICALCOT
+parent_id: BUILDCATEGORYMEDICAL
+name: 分诊床
+disabled: False
+search_only: False
+category: BUILDCATEGORYMEDICAL
+sort_string: 分诊床
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="MEDICALCOT">分诊床</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: medical_cot_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      加速<link="HEALTH">生命值</link>恢复并治疗身体上的伤口。
+
+
+      使丧失行动能力的复制人苏醒。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    复制人分配'
+    tooltip: 只有分配的复制人才可使用这个设备
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    优选房间：医院'
+    tooltip: 建造在<style="KKeyword">医院</style>内时，这个建筑会获得额外的效果或功能
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：3格宽x2格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：10秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="BUILDABLERAW">矿物原料</link>200千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="HEALTH">生命值</link>: +50/周期'
+    tooltip: ''
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    压力: -10%/周期'
+    tooltip: ''
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    呼吸: +1%/秒'
+    tooltip: ''
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    医治'
+    tooltip: 医治能进一步提高生命值恢复，还可以治疗其他顽固<style="KKeyword">疾病</style>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="HEALTH">生命值</link>: +75/周期'
+    tooltip: ''
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="MEDICINE">受到治疗</link>的效果: +1'
+    tooltip: ''
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    压力: -20%/周期'
+    tooltip: ''
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    呼吸: +1%/秒'
+    tooltip: ''
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>类别</b>
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    <link="REQUIREMENTCLASSCLINIC">医疗设备</link>'
+    style: Body
+  - widget_type: CodexText
+    text: '    <link="REQUIREMENTCLASSBEDTYPE">床位</link>'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>复制人使用分诊床来从受伤中恢复，并接受同伴的医疗救助。</i>
+    style: Body
+  layout: Vertical

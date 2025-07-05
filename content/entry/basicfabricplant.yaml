@@ -1,0 +1,136 @@
+id: BASICFABRICPLANT
+parent_id: PLANTS
+name: 顶针芦苇
+disabled: False
+search_only: False
+category: PLANTS
+sort_string: 顶针芦苇
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 顶针芦苇
+    style: Title
+  - widget_type: CodexText
+    text: 纺织性植物
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      顶针芦苇是一种湿地植物，质地柔软、透气性好，因此广泛用于制作高品质的纺织品。
+
+
+      由于纤维很细，生长长度惊人，用芦苇织成的布极为柔软。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: swampreed_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 成长自
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: seed_swampreed_0__ui
+  - widget_type: CodexText
+    text: <link="BASICFABRICPLANT">顶针芦苇种子</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 详情
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexText
+    text: 顶针芦苇可产出品质极佳的柔软<link="BASICFABRIC">芦苇纤维</link>以供<link="EQUIPMENT">服装</link>生产。
+    style: Body
+  - widget_type: CodexText
+    text: >-
+      <b>生长需求</b>：
+          • 最大<link="RADIATION">辐射</link>：4,600拉德/周期
+          • 生长周期：2.0周期
+          • <link="HEAT">温度</link>：22至37ºC
+          • <link="ATMOSPHERE">环境</link>：
+              • <link="OXYGEN">氧气</link>
+              • <link="CONTAMINATEDOXYGEN">污染氧</link>
+              • <link="CARBONDIOXIDE">二氧化碳</link>
+              • <link="DIRTYWATER">污染水</link>
+              • <link="WATER">水</link>
+          • <link="ATMOSPHERE">环境</link>：
+              • <link="OXYGEN">氧气</link>
+              • <link="CONTAMINATEDOXYGEN">污染氧</link>
+              • <link="CARBONDIOXIDE">二氧化碳</link>
+              • <link="DIRTYWATER">污染水</link>
+              • <link="WATER">水</link>
+          • <link="DIRTYWATER">污染水</link>：-160千克/周期
+          • 农地
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      <b>效果</b>：
+          • <link="BASICFABRIC">芦苇纤维</link>：1
+          • 基础<link="PLANTS">种子</link>收获几率：10%
+          • <link="DECOR">装饰度</link>：+10（范围：1格）
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: 474506FF
+      text1: 污染水
+      text2: 160千克/周期
+      link_id: dirtywater
+    produce:
+    - image: swampreedwool_0__ui
+      text1: 芦苇纤维
+      text2: 0.5单位/周期
+      link_id: basicfabric
+    fabricator:
+      image: swampreed_0__ui
+      text1: 顶针芦苇
+      link_id: BASICFABRICPLANT
+  - widget_type: CodexConversionPanel
+    require:
+    - image: swampreed_0__ui
+      text1: 顶针芦苇
+      text2: 25% 生长进度/周期
+      link_id: basicfabricplant
+    produce:
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 12.5千克/周期
+      link_id: dirt
+    fabricator:
+      image: squirrel_0__hug_ui
+      text1: 毛绒树鼠
+      link_id: SQUIRREL
+  - widget_type: CodexConversionPanel
+    require:
+    - image: swampreed_0__ui
+      text1: 顶针芦苇
+      text2: 20% 生长进度/周期
+      link_id: basicfabricplant
+    produce:
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 20千克/周期
+      link_id: dirt
+    fabricator:
+      image: squirrel_0__ui
+      text1: 树鼠
+      link_id: SQUIRREL
+  layout: Vertical

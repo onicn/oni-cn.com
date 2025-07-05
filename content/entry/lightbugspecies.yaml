@@ -1,0 +1,989 @@
+id: LIGHTBUGSPECIES
+parent_id: CREATURES
+name: 发光虫
+disabled: False
+search_only: False
+category: CREATURES
+sort_string: <link="LIGHTBUGSPECIES">发光虫</link>
+sub_entries:
+- id: LightBug
+  parent_id: LightBugSpecies
+  name: <link="LIGHTBUG">发光虫</link>
+  disabled: False
+  sort_string: 发光虫
+- id: LightBugOrange
+  parent_id: LightBugSpecies
+  name: <link="LIGHTBUGORANGE">阳光虫</link>
+  disabled: False
+  sort_string: 阳光虫
+- id: LightBugPink
+  parent_id: LightBugSpecies
+  name: <link="LIGHTBUGPINK">珊瑚虫</link>
+  disabled: False
+  sort_string: 珊瑚虫
+- id: LightBugPurple
+  parent_id: LightBugSpecies
+  name: <link="LIGHTBUGPURPLE">皇家虫</link>
+  disabled: False
+  sort_string: 皇家虫
+- id: LightBugBlue
+  parent_id: LightBugSpecies
+  name: <link="LIGHTBUGBLUE">天蓝虫</link>
+  disabled: False
+  sort_string: 天蓝虫
+- id: LightBugBlack
+  parent_id: LightBugSpecies
+  name: <link="LIGHTBUGBLACK">深渊虫</link>
+  disabled: False
+  sort_string: 深渊虫
+- id: LightBugCrystal
+  parent_id: LightBugSpecies
+  name: <link="LIGHTBUGCRYSTAL">光耀虫</link>
+  disabled: False
+  sort_string: 光耀虫
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 发光虫
+    style: Title
+  - widget_type: CodexText
+    text: 小动物物种
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 发光虫的身体具有生物发光能力，可用于交流、寻找其他同类以及进行沟通。
+    style: Body
+  - widget_type: CodexText
+    text: 发光虫寻找伙伴时错误地接近非生命光源屡见不鲜。
+    style: Body
+  - widget_type: CodexText
+    text: 发光虫的翅膜非常脆弱，直接触摸它的翅膜是不明智的。
+    style: Body
+  - widget_type: CodexText
+    text: 可以轻抚发光虫身体的其他任何部位，但由于其外骨骼通常会很脆弱，建议抚摸时仍然要轻柔。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 条目（7/7）
+    style: Subtitle
+  - widget_type: CodexText
+    text: <link="LIGHTBUG">发光虫</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="LIGHTBUGORANGE">阳光虫</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="LIGHTBUGPINK">珊瑚虫</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="LIGHTBUGPURPLE">皇家虫</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="LIGHTBUGBLUE">天蓝虫</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="LIGHTBUGBLACK">深渊虫</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="LIGHTBUGCRYSTAL">光耀虫</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 发光虫
+    style: Title
+  - widget_type: CodexText
+    text: 可驯化的小动物
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: lightbug_0__ui
+  - widget_type: CodexImage
+    image: baby_lightbug_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexText
+    text: 发光虫能发出柔和的<link="LIGHT">光</link>，以吸引更多的同类前来相伴。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 理想温度
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 舒适范围：<b>10ºC</b>至<b>40ºC</b>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 存活范围：<b>-100ºC</b>至<b>100ºC</b>'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 寿命
+    style: Subtitle
+  - widget_type: CodexText
+    text: 这种小动物特征<link="CREATURES__GUIDE__FERTILITY">寿命</link>为<b>25周期</b>。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 所需空间
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 当房间空间对每只小动物平均少于<b>12格</b>时会感到<link="CREATURES__GUIDE__MOOD">拥挤</link>。'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 当房间小于<b>12格</b>时会感到<link="CREATURES__GUIDE__MOOD">封闭</link>。'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 食物
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: bristleberry_0__ui
+      text1: 毛刺浆果
+      text2: 266千卡/周期
+      tooltip: 品质：糟糕 [0]
+      link_id: pricklefruit
+    produce: []
+    fabricator:
+      image: lightbug_0__ui
+      text1: 发光虫
+      link_id: LIGHTBUG
+  - widget_type: CodexConversionPanel
+    require:
+    - image: gristleberry_0__ui
+      text1: 炙烤刺果
+      text2: 332千卡/周期
+      tooltip: 品质：低劣 [+1]
+      link_id: grilledpricklefruit
+    produce: []
+    fabricator:
+      image: lightbug_0__ui
+      text1: 发光虫
+      link_id: LIGHTBUG
+  - widget_type: CodexConversionPanel
+    require:
+    - image: iceberry_0__ui
+      text1: 刺壳果
+      text2: 133千卡/周期
+      tooltip: 品质：恶心 [-1]
+      link_id: hardskinberry
+    produce: []
+    fabricator:
+      image: lightbug_0__ui
+      text1: 发光虫
+      link_id: LIGHTBUG
+  - widget_type: CodexConversionPanel
+    require:
+    - image: iceberry_cooked_0__ui
+      text1: 刺壳果烤串
+      text2: 199千卡/周期
+      tooltip: 品质：低劣 [+1]
+      link_id: cookedpikeapple
+    produce: []
+    fabricator:
+      image: lightbug_0__ui
+      text1: 发光虫
+      link_id: LIGHTBUG
+  - widget_type: CodexConversionPanel
+    require:
+    - image: phosphorite_0__ui
+      text1: 磷矿
+      text2: 166克/周期
+      link_id: phosphorite
+    produce: []
+    fabricator:
+      image: lightbug_0__ui
+      text1: 发光虫
+      link_id: LIGHTBUG
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexLargeSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 阳光虫
+    style: Title
+  - widget_type: CodexText
+    text: 小动物变种
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: lightbug_0__org_ui
+  - widget_type: CodexImage
+    image: baby_lightbug_0__org_ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexText
+    text: >-
+      发光虫会发出柔和的<link="LIGHT">光</link>，以吸引更多同类聚集。
+
+
+      阳光变种通过选择性繁育，发出的光变成了橙色。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 理想温度
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 舒适范围：<b>10ºC</b>至<b>40ºC</b>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 存活范围：<b>-100ºC</b>至<b>100ºC</b>'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 寿命
+    style: Subtitle
+  - widget_type: CodexText
+    text: 这种小动物特征<link="CREATURES__GUIDE__FERTILITY">寿命</link>为<b>25周期</b>。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 所需空间
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 当房间空间对每只小动物平均少于<b>12格</b>时会感到<link="CREATURES__GUIDE__MOOD">拥挤</link>。'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 当房间小于<b>12格</b>时会感到<link="CREATURES__GUIDE__MOOD">封闭</link>。'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 食物
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: funguscap_0__ui
+      text1: 蘑菇
+      text2: 600千卡/周期
+      tooltip: 品质：糟糕 [0]
+      link_id: mushroom
+    produce: []
+    fabricator:
+      image: lightbug_0__org_ui
+      text1: 阳光虫
+      link_id: LIGHTBUGORANGE
+  - widget_type: CodexConversionPanel
+    require:
+    - image: funguscapfried_0__ui
+      text1: 煎蘑菇
+      text2: 700千卡/周期
+      tooltip: 品质：低劣 [+1]
+      link_id: friedmushroom
+    produce: []
+    fabricator:
+      image: lightbug_0__org_ui
+      text1: 阳光虫
+      link_id: LIGHTBUGORANGE
+  - widget_type: CodexConversionPanel
+    require:
+    - image: gristleberry_0__ui
+      text1: 炙烤刺果
+      text2: 500千卡/周期
+      tooltip: 品质：低劣 [+1]
+      link_id: grilledpricklefruit
+    produce: []
+    fabricator:
+      image: lightbug_0__org_ui
+      text1: 阳光虫
+      link_id: LIGHTBUGORANGE
+  - widget_type: CodexConversionPanel
+    require:
+    - image: iceberry_cooked_0__ui
+      text1: 刺壳果烤串
+      text2: 300千卡/周期
+      tooltip: 品质：低劣 [+1]
+      link_id: cookedpikeapple
+    produce: []
+    fabricator:
+      image: lightbug_0__org_ui
+      text1: 阳光虫
+      link_id: LIGHTBUGORANGE
+  - widget_type: CodexConversionPanel
+    require:
+    - image: phosphorite_0__ui
+      text1: 磷矿
+      text2: 250克/周期
+      link_id: phosphorite
+    produce: []
+    fabricator:
+      image: lightbug_0__org_ui
+      text1: 阳光虫
+      link_id: LIGHTBUGORANGE
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexLargeSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 珊瑚虫
+    style: Title
+  - widget_type: CodexText
+    text: 小动物变种
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: lightbug_0__pnk_ui
+  - widget_type: CodexImage
+    image: baby_lightbug_0__pnk_ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexText
+    text: >-
+      发光虫会发出柔和的<link="LIGHT">光</link>，以吸引更多同类聚集。
+
+
+      珊瑚变种通过选择性繁育，发出的光变成了粉红色。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 理想温度
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 舒适范围：<b>10ºC</b>至<b>40ºC</b>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 存活范围：<b>-100ºC</b>至<b>100ºC</b>'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 寿命
+    style: Subtitle
+  - widget_type: CodexText
+    text: 这种小动物特征<link="CREATURES__GUIDE__FERTILITY">寿命</link>为<b>25周期</b>。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 所需空间
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 当房间空间对每只小动物平均少于<b>12格</b>时会感到<link="CREATURES__GUIDE__MOOD">拥挤</link>。'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 当房间小于<b>12格</b>时会感到<link="CREATURES__GUIDE__MOOD">封闭</link>。'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 食物
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: funguscapfried_0__ui
+      text1: 煎蘑菇
+      text2: 2,800千卡/周期
+      tooltip: 品质：低劣 [+1]
+      link_id: friedmushroom
+    produce: []
+    fabricator:
+      image: lightbug_0__pnk_ui
+      text1: 珊瑚虫
+      link_id: LIGHTBUGPINK
+  - widget_type: CodexConversionPanel
+    require:
+    - image: pepperbread_0__ui
+      text1: 火椒面包
+      text2: 4,000千卡/周期
+      tooltip: 品质：杰出 [+5]
+      link_id: spicebread
+    produce: []
+    fabricator:
+      image: lightbug_0__pnk_ui
+      text1: 珊瑚虫
+      link_id: LIGHTBUGPINK
+  - widget_type: CodexConversionPanel
+    require:
+    - image: bristleberry_0__ui
+      text1: 毛刺浆果
+      text2: 1,600千卡/周期
+      tooltip: 品质：糟糕 [0]
+      link_id: pricklefruit
+    produce: []
+    fabricator:
+      image: lightbug_0__pnk_ui
+      text1: 珊瑚虫
+      link_id: LIGHTBUGPINK
+  - widget_type: CodexConversionPanel
+    require:
+    - image: gristleberry_0__ui
+      text1: 炙烤刺果
+      text2: 2,000千卡/周期
+      tooltip: 品质：低劣 [+1]
+      link_id: grilledpricklefruit
+    produce: []
+    fabricator:
+      image: lightbug_0__pnk_ui
+      text1: 珊瑚虫
+      link_id: LIGHTBUGPINK
+  - widget_type: CodexConversionPanel
+    require:
+    - image: iceberry_cooked_0__ui
+      text1: 刺壳果烤串
+      text2: 1,200千卡/周期
+      tooltip: 品质：低劣 [+1]
+      link_id: cookedpikeapple
+    produce: []
+    fabricator:
+      image: lightbug_0__pnk_ui
+      text1: 珊瑚虫
+      link_id: LIGHTBUGPINK
+  - widget_type: CodexConversionPanel
+    require:
+    - image: zestysalsa_0__ui
+      text1: 浆果酿
+      text2: 4,400千卡/周期
+      tooltip: 品质：优秀 [+4]
+      link_id: salsa
+    produce: []
+    fabricator:
+      image: lightbug_0__pnk_ui
+      text1: 珊瑚虫
+      link_id: LIGHTBUGPINK
+  - widget_type: CodexConversionPanel
+    require:
+    - image: phosphorite_0__ui
+      text1: 磷矿
+      text2: 1000克/周期
+      link_id: phosphorite
+    produce: []
+    fabricator:
+      image: lightbug_0__pnk_ui
+      text1: 珊瑚虫
+      link_id: LIGHTBUGPINK
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexLargeSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 皇家虫
+    style: Title
+  - widget_type: CodexText
+    text: 小动物变种
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: lightbug_0__prp_ui
+  - widget_type: CodexImage
+    image: baby_lightbug_0__prp_ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexText
+    text: >-
+      发光虫会发出柔和的<link="LIGHT">光</link>，以吸引更多同类聚集。
+
+
+      皇家变种通过选择性繁育，发出的光变成了紫色。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 理想温度
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 舒适范围：<b>10ºC</b>至<b>40ºC</b>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 存活范围：<b>-100ºC</b>至<b>100ºC</b>'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 寿命
+    style: Subtitle
+  - widget_type: CodexText
+    text: 这种小动物特征<link="CREATURES__GUIDE__FERTILITY">寿命</link>为<b>25周期</b>。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 所需空间
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 当房间空间对每只小动物平均少于<b>12格</b>时会感到<link="CREATURES__GUIDE__MOOD">拥挤</link>。'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 当房间小于<b>12格</b>时会感到<link="CREATURES__GUIDE__MOOD">封闭</link>。'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 食物
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: funguscapfried_0__ui
+      text1: 煎蘑菇
+      text2: 2,800千卡/周期
+      tooltip: 品质：低劣 [+1]
+      link_id: friedmushroom
+    produce: []
+    fabricator:
+      image: lightbug_0__prp_ui
+      text1: 皇家虫
+      link_id: LIGHTBUGPURPLE
+  - widget_type: CodexConversionPanel
+    require:
+    - image: gristleberry_0__ui
+      text1: 炙烤刺果
+      text2: 2,000千卡/周期
+      tooltip: 品质：低劣 [+1]
+      link_id: grilledpricklefruit
+    produce: []
+    fabricator:
+      image: lightbug_0__prp_ui
+      text1: 皇家虫
+      link_id: LIGHTBUGPURPLE
+  - widget_type: CodexConversionPanel
+    require:
+    - image: iceberry_cooked_0__ui
+      text1: 刺壳果烤串
+      text2: 1,200千卡/周期
+      tooltip: 品质：低劣 [+1]
+      link_id: cookedpikeapple
+    produce: []
+    fabricator:
+      image: lightbug_0__prp_ui
+      text1: 皇家虫
+      link_id: LIGHTBUGPURPLE
+  - widget_type: CodexConversionPanel
+    require:
+    - image: spicenut_0__ui
+      text1: 火椒粒
+      text2: 1000克/周期
+      link_id: spicenut
+    produce: []
+    fabricator:
+      image: lightbug_0__prp_ui
+      text1: 皇家虫
+      link_id: LIGHTBUGPURPLE
+  - widget_type: CodexConversionPanel
+    require:
+    - image: pepperbread_0__ui
+      text1: 火椒面包
+      text2: 4,000千卡/周期
+      tooltip: 品质：杰出 [+5]
+      link_id: spicebread
+    produce: []
+    fabricator:
+      image: lightbug_0__prp_ui
+      text1: 皇家虫
+      link_id: LIGHTBUGPURPLE
+  - widget_type: CodexConversionPanel
+    require:
+    - image: phosphorite_0__ui
+      text1: 磷矿
+      text2: 1000克/周期
+      link_id: phosphorite
+    produce: []
+    fabricator:
+      image: lightbug_0__prp_ui
+      text1: 皇家虫
+      link_id: LIGHTBUGPURPLE
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexLargeSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 天蓝虫
+    style: Title
+  - widget_type: CodexText
+    text: 小动物变种
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: lightbug_0__blu_ui
+  - widget_type: CodexImage
+    image: baby_lightbug_0__blu_ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexText
+    text: >-
+      发光虫会发出柔和的<link="LIGHT">光</link>，以吸引更多同类聚集。
+
+
+      天蓝变种通过选择性繁育，发出的光变成了蓝色。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 理想温度
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 舒适范围：<b>10ºC</b>至<b>40ºC</b>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 存活范围：<b>-100ºC</b>至<b>100ºC</b>'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 寿命
+    style: Subtitle
+  - widget_type: CodexText
+    text: 这种小动物特征<link="CREATURES__GUIDE__FERTILITY">寿命</link>为<b>25周期</b>。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 所需空间
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 当房间空间对每只小动物平均少于<b>12格</b>时会感到<link="CREATURES__GUIDE__MOOD">拥挤</link>。'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 当房间小于<b>12格</b>时会感到<link="CREATURES__GUIDE__MOOD">封闭</link>。'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 食物
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: pepperbread_0__ui
+      text1: 火椒面包
+      text2: 4,000千卡/周期
+      tooltip: 品质：杰出 [+5]
+      link_id: spicebread
+    produce: []
+    fabricator:
+      image: lightbug_0__blu_ui
+      text1: 天蓝虫
+      link_id: LIGHTBUGBLUE
+  - widget_type: CodexConversionPanel
+    require:
+    - image: zestysalsa_0__ui
+      text1: 浆果酿
+      text2: 4,400千卡/周期
+      tooltip: 品质：优秀 [+4]
+      link_id: salsa
+    produce: []
+    fabricator:
+      image: lightbug_0__blu_ui
+      text1: 天蓝虫
+      link_id: LIGHTBUGBLUE
+  - widget_type: CodexConversionPanel
+    require:
+    - image: phosphorite_0__ui
+      text1: 磷矿
+      text2: 1000克/周期
+      link_id: phosphorite
+    produce: []
+    fabricator:
+      image: lightbug_0__blu_ui
+      text1: 天蓝虫
+      link_id: LIGHTBUGBLUE
+  - widget_type: CodexConversionPanel
+    require:
+    - image: phosphorus_0__ui
+      text1: 精炼磷
+      text2: 1000克/周期
+      link_id: phosphorus
+    produce: []
+    fabricator:
+      image: lightbug_0__blu_ui
+      text1: 天蓝虫
+      link_id: LIGHTBUGBLUE
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexLargeSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 深渊虫
+    style: Title
+  - widget_type: CodexText
+    text: 小动物变种
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexText
+    text: 深渊变种的发光虫是不寻常基因突变的产物，它能够吸收光而不是发出光。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: lightbug_0__blk_ui
+  - widget_type: CodexImage
+    image: baby_lightbug_0__blk_ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexText
+    text: 这类发光虫没有发<link="LIGHT">光</link>能力，但讨人喜欢。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 理想温度
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 舒适范围：<b>10ºC</b>至<b>40ºC</b>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 存活范围：<b>-100ºC</b>至<b>100ºC</b>'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 寿命
+    style: Subtitle
+  - widget_type: CodexText
+    text: 这种小动物特征<link="CREATURES__GUIDE__FERTILITY">寿命</link>为<b>75周期</b>。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 所需空间
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 当房间空间对每只小动物平均少于<b>12格</b>时会感到<link="CREATURES__GUIDE__MOOD">拥挤</link>。'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 当房间小于<b>12格</b>时会感到<link="CREATURES__GUIDE__MOOD">封闭</link>。'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 食物
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: zestysalsa_0__ui
+      text1: 浆果酿
+      text2: 4,400千卡/周期
+      tooltip: 品质：优秀 [+4]
+      link_id: salsa
+    produce: []
+    fabricator:
+      image: lightbug_0__blk_ui
+      text1: 深渊虫
+      link_id: LIGHTBUGBLACK
+  - widget_type: CodexConversionPanel
+    require:
+    - image: creaturemeat_0__ui
+      text1: 肉
+      text2: 1,600千卡/周期
+      tooltip: 品质：恶心 [-1]
+      link_id: meat
+    produce: []
+    fabricator:
+      image: lightbug_0__blk_ui
+      text1: 深渊虫
+      link_id: LIGHTBUGBLACK
+  - widget_type: CodexConversionPanel
+    require:
+    - image: barbeque_0__ui
+      text1: 烤肉串
+      text2: 4,000千卡/周期
+      tooltip: 品质：良好 [+3]
+      link_id: cookedmeat
+    produce: []
+    fabricator:
+      image: lightbug_0__blk_ui
+      text1: 深渊虫
+      link_id: LIGHTBUGBLACK
+  - widget_type: CodexConversionPanel
+    require:
+    - image: katairite_0__ui
+      text1: 深渊晶石
+      text2: 1000克/周期
+      link_id: katairite
+    produce: []
+    fabricator:
+      image: lightbug_0__blk_ui
+      text1: 深渊虫
+      link_id: LIGHTBUGBLACK
+  - widget_type: CodexConversionPanel
+    require:
+    - image: phosphorus_0__ui
+      text1: 精炼磷
+      text2: 1000克/周期
+      link_id: phosphorus
+    produce: []
+    fabricator:
+      image: lightbug_0__blk_ui
+      text1: 深渊虫
+      link_id: LIGHTBUGBLACK
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexLargeSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 光耀虫
+    style: Title
+  - widget_type: CodexText
+    text: 小动物变种
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: lightbug_0__cry_ui
+  - widget_type: CodexImage
+    image: baby_lightbug_0__cry_ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexText
+    text: >-
+      发光虫会发出柔和的<link="LIGHT">光</link>，以吸引更多同类聚集。
+
+
+      光耀变种通过选择性繁育，发出的光得到了强化。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 理想温度
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 舒适范围：<b>10ºC</b>至<b>40ºC</b>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 存活范围：<b>-100ºC</b>至<b>100ºC</b>'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 寿命
+    style: Subtitle
+  - widget_type: CodexText
+    text: 这种小动物特征<link="CREATURES__GUIDE__FERTILITY">寿命</link>为<b>75周期</b>。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 所需空间
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 当房间空间对每只小动物平均少于<b>12格</b>时会感到<link="CREATURES__GUIDE__MOOD">拥挤</link>。'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 当房间小于<b>12格</b>时会感到<link="CREATURES__GUIDE__MOOD">封闭</link>。'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 食物
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: barbeque_0__ui
+      text1: 烤肉串
+      text2: 4,000千卡/周期
+      tooltip: 品质：良好 [+3]
+      link_id: cookedmeat
+    produce: []
+    fabricator:
+      image: lightbug_0__cry_ui
+      text1: 光耀虫
+      link_id: LIGHTBUGCRYSTAL
+  - widget_type: CodexConversionPanel
+    require:
+    - image: diamond_0__ui
+      text1: 钻石
+      text2: 1000克/周期
+      link_id: diamond
+    produce: []
+    fabricator:
+      image: lightbug_0__cry_ui
+      text1: 光耀虫
+      link_id: LIGHTBUGCRYSTAL
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexLargeSpacer
+  layout: Vertical

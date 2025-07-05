@@ -1,0 +1,22 @@
+id: MYLOG25
+name: 周期4000
+title: STRINGS.CODEX.MYLOG.BODY.LOG7.TITLE
+disabled: False
+search_only: False
+category: MYLOG
+sort_string: A7
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 周期4000
+    style: Title
+  - widget_type: CodexText
+    text: >+
+      不管怎么说，我觉得我要去睡觉了……
+
+    style: Body
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical
+  lock_id: log7

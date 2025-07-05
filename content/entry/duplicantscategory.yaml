@@ -1,0 +1,23 @@
+id: DUPLICANTSCATEGORY
+name: 复制人
+disabled: False
+search_only: False
+category: Root
+sort_string: 复制人
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="DUPLICANTS">复制人</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexLabelWithLargeIcon
+    text: 复制人
+    style: BodyWhite
+    image: codexIconDupes
+    link_id: duplicants
+  layout: Grid
+- contents:
+  - widget_type: CodexSpacer
+  layout: Vertical

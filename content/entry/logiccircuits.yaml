@@ -1,0 +1,66 @@
+id: LOGICCIRCUITS
+parent_id: TECH
+name: 高级自动化
+disabled: False
+search_only: False
+category: TECH
+sort_string: 高级自动化
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="LOGICCIRCUITS">高级自动化</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 限制殖民地自动化的唯一条件就是我自己的想象力。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="GENERICSENSORS">通用传感器</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: logic_and_0__ui
+  - widget_type: CodexText
+    text: <link="LOGICGATEAND">与门</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: logic_or_0__ui
+  - widget_type: CodexText
+    text: <link="LOGICGATEOR">或门</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: logic_buffer_0__ui
+  - widget_type: CodexText
+    text: <link="LOGICGATEBUFFER">缓冲门</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: logic_filter_0__ui
+  - widget_type: CodexText
+    text: <link="LOGICGATEFILTER">过滤门</link>
+    style: Body
+  layout: Horizontal

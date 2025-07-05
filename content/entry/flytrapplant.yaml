@@ -1,0 +1,163 @@
+id: FLYTRAPPLANT
+parent_id: PLANTS
+name: 露饵花
+disabled: False
+search_only: False
+category: PLANTS
+sort_string: 露饵花
+required_dlc_ids:
+- DLC4_ID
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 露饵花
+    style: Title
+  - widget_type: CodexText
+    text: 食肉植物
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      露饵花是一种肉食性花卉，其丝带状的蕊丝能感知捕猎范围内飞行小动物的存在。
+
+
+      这种植物的花瓣表面覆满纤细的中空绒毛，可固定猎物并确保消化酶均匀分布。唯一无法被其完全消化的部分是小动物的外骨骼，这些残骸会刺激花朵的黏膜。
+
+
+      液化的外骨骼残骸会按需排出。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: ceiling_carnie_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 成长自
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: seed_ceiling_carnie_0__ui
+  - widget_type: CodexText
+    text: <link="FLYTRAPPLANT">露饵花种子</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 详情
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexText
+    text: >-
+      露饵花是可以捕捉飞行小动物，比如<link="MOSQUITO">蚋虱</link>，的食肉植物。
+
+
+      露饵花的消化过程会产生可收获的<link="AMBER">琥珀</link>。
+    style: Body
+  - widget_type: CodexText
+    text: >-
+      <b>生长需求</b>：
+          • 肉食食物
+          • 最大<link="RADIATION">辐射</link>：7,400拉德/周期
+          • 生长周期：12.0周期
+          • <link="HEAT">温度</link>：10至55ºC
+          • <link="ATMOSPHERE">气压</link>：最低150克
+          • 农地
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      <b>效果</b>：
+          • <link="AMBER">琥珀</link>：264千克
+          • 基础<link="PLANTS">种子</link>收获几率：10%
+          • <link="DECOR">装饰度</link>：+15（范围：2格）
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: lightbug_0__ui
+      text1: 发光虫
+      text2: 0.08单位/周期
+      link_id: lightbugspecies
+    produce:
+    - image: amber_0__ui
+      text1: 琥珀
+      text2: 22千克/周期
+      link_id: amber
+    fabricator:
+      image: ceiling_carnie_0__ui
+      text1: 露饵花
+      link_id: FLYTRAPPLANT
+  - widget_type: CodexConversionPanel
+    require:
+    - image: bee_0__ui
+      text1: 辐射蜂
+      text2: 0.08单位/周期
+      link_id: beetaspecies
+    produce:
+    - image: amber_0__ui
+      text1: 琥珀
+      text2: 22千克/周期
+      link_id: amber
+    fabricator:
+      image: ceiling_carnie_0__ui
+      text1: 露饵花
+      link_id: FLYTRAPPLANT
+  - widget_type: CodexConversionPanel
+    require:
+    - image: puft_0__ui
+      text1: 喷浮飞鱼
+      text2: 0.08单位/周期
+      link_id: puftspecies
+    produce:
+    - image: amber_0__ui
+      text1: 琥珀
+      text2: 22千克/周期
+      link_id: amber
+    fabricator:
+      image: ceiling_carnie_0__ui
+      text1: 露饵花
+      link_id: FLYTRAPPLANT
+  - widget_type: CodexConversionPanel
+    require:
+    - image: pollinator_0__ui
+      text1: 拟蛾
+      text2: 0.08单位/周期
+      link_id: butterflyspecies
+    produce:
+    - image: amber_0__ui
+      text1: 琥珀
+      text2: 22千克/周期
+      link_id: amber
+    fabricator:
+      image: ceiling_carnie_0__ui
+      text1: 露饵花
+      link_id: FLYTRAPPLANT
+  - widget_type: CodexConversionPanel
+    require:
+    - image: mosquito_0__ui
+      text1: 蚋虱
+      text2: 0.08单位/周期
+      link_id: mosquitospecies
+    produce:
+    - image: amber_0__ui
+      text1: 琥珀
+      text2: 22千克/周期
+      link_id: amber
+    fabricator:
+      image: ceiling_carnie_0__ui
+      text1: 露饵花
+      link_id: FLYTRAPPLANT
+  layout: Vertical

@@ -1,0 +1,87 @@
+id: LIQUIDTEMPERATURE
+parent_id: TECH
+name: 液体微调
+disabled: False
+search_only: False
+category: TECH
+sort_string: 液体微调
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="LIQUIDTEMPERATURE">液体微调</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 用这些温度调节技术轻松操控<link="ELEMENTSLIQUID">液体</link><link="TEMPERATURES">热量</link>。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="IMPROVEDLIQUIDPIPING">改良水管</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: utilities_liquid_radiant_0__ui
+  - widget_type: CodexText
+    text: <link="LIQUIDCONDUITRADIANT">导热液体管道</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: liquidconditioner_0__ui
+  - widget_type: CodexText
+    text: <link="LIQUIDCONDITIONER">液温调节器</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: liquid_temperature_sensor_0__ui
+  - widget_type: CodexText
+    text: <link="LIQUIDCONDUITTEMPERATURESENSOR">液体管道温度传感器</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: liquid_element_sensor_0__ui
+  - widget_type: CodexText
+    text: <link="LIQUIDCONDUITELEMENTSENSOR">液体管道元素传感器</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: boiler_0__ui
+  - widget_type: CodexText
+    text: <link="LIQUIDHEATER">液体加热器</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: limit_valve_liquid_0__ui
+  - widget_type: CodexText
+    text: <link="LIQUIDLIMITVALVE">液体计量阀</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: contactconductivepipebridge_0__ui
+  - widget_type: CodexText
+    text: <link="CONTACTCONDUCTIVEPIPEBRIDGE">导热板</link>
+    style: Body
+  layout: Horizontal

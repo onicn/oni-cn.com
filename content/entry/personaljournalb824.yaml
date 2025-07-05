@@ -1,0 +1,84 @@
+id: PERSONALJOURNALB824
+name: 个人日志：B824
+title: STRINGS.CODEX.INVESTIGATIONS.DLC4_JOURNAL_B824.TITLE
+disabled: False
+search_only: False
+category: JOURNALS
+sort_string: 个人日志：B824
+required_dlc_ids:
+- DLC4_ID
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 个人日志：B824
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：无
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+  lock_id: journal_B824
+- contents:
+  - widget_type: CodexText
+    text: >+
+      自从穿上庄严科技笔挺的白大褂后已经过去四天了……而我就再也没把它脱下来过！虽然我不应该在实验室外穿，但我实在太爱这件衣服了！每天穿着它回家睡觉，现在都有点皱巴巴的了。
+
+
+      不过其他人的白大褂也都皱皱的，而且我敢打赌至少有一个人衣服上还粘着雪貂毛！
+
+
+      同批项目就我一个被录用，但我已经开始和新同事们熟络了。今天在食堂，我热情邀请一位同事尝尝我的鱼面三明治，她居然说“恶心死了！快拿开！”
+
+
+      这下我知道她不喜欢三明治了！
+
+
+      其实挺意外的，毕竟我从打开包裹起就发现她一直盯着看。也许她只是喜欢包装纸上的星空图案？和她剪贴板的闪粉笔很配呢。我好想要一支闪粉笔啊！不知道她有没有多余的！
+
+
+      ------------------
+
+
+      我的老天爷啊！今天讨论混合纠缠态时，我提到最喜欢的那篇论文，结果发现作者之一，斯克洛多夫斯卡博士竟在我的新团队里！就是合著那篇论文的本人啊！
+
+
+      八岁起我就因为她的研究立志成为物理学家！她说很惊讶我那么小就能理解那些概念，接着轻笑补充：“看来我们都习惯被以年龄预判呢，亲爱的。”
+
+
+      她让我直接叫她玛格达莱娜。我当场大声念了三遍巩固记忆，又把她逗笑了。
+
+
+      那种笑声和我往常听到的不太一样。我很喜欢。
+
+
+      ------------------
+
+    style: Body
+  layout: Vertical
+  lock_id: journal_B824
+- contents:
+  - widget_type: CodexText
+    text: >+
+      今早一到实验室就见到了斯特恩主管。她正在看我那个希克苏鲁伯陨石复发模型，我刚想解释这只是处理其他数据时的消遣练手项目，她就递了个硬盘说：“用你的程序跑这些数据。”
+
+
+      更新后的曲线图简直疯狂！
+
+
+      数据刚加载完，主管就把所有结果拷回硬盘，扔下句“全部删除”就走了。
+
+
+      没想到她对理论物理游戏这么感兴趣。我想庄严科技够凑个兴趣小组吗？我发邮件问了斯克洛多夫斯卡博士——我是说，玛格达莱娜——但她还没回我之前六封邮件，也许嫌我问题太多？
+
+
+      常有人这么说。可这多可笑啊，科学不就是不断追问嘛！
+
+
+      我决定先把图表发给玛格达莱娜，然后再按主管要求删除。
+
+
+      ------------------
+
+    style: Body
+  layout: Vertical
+  lock_id: journal_B824

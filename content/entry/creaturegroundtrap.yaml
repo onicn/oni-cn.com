@@ -1,0 +1,87 @@
+id: CREATUREGROUNDTRAP
+parent_id: BUILDCATEGORYFOOD
+name: 小动物陷阱
+disabled: False
+search_only: False
+category: BUILDCATEGORYFOOD
+sort_string: 小动物陷阱
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="CREATUREGROUNDTRAP">小动物陷阱</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 动物控制
+    style: Body
+    image: research_type_alpha_icon
+    link_id: animalcontrol
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: critter_trap_ground_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      活捉一只<link="CREATURES">小动物</link>以便运输。
+
+
+      只有具有<link="RANCHING1">小动物养殖 I</link>技能的复制人才能布置陷阱。可重复使用！
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：2格宽x2格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：10秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="METAL">金属矿石</link>200千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    过热<link="HEAT">温度</link>：75ºC'
+    tooltip: 达到<b>75ºC</b>时开始过热
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LOGIC">信号输入端</link>'
+    tooltip: 当接收到信号时，输入端会使这个建筑一种状态发生变化
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    陷阱布置器'
+    tooltip: >-
+      输入端行为：
+
+      • <b><style="logic_on">绿色信号</style></b>：布置陷阱
+
+      • <b><style="logic_off">红色信号</style></b>：撤销布置并清空陷阱
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LOGIC">信号输出端</link>'
+    tooltip: 当这个建筑状态发生变化时，输出端会输出一个信号
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    陷阱占用'
+    tooltip: >-
+      输出端行为：
+
+      • 当捕捉到小动物时，输出<b><style="logic_on">绿色信号</style></b>
+
+      • 否则，输出<b><style="logic_off">红色信号</style></b>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：-15（范围：3格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>3</b>格内降低<b><b>-15</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>这是为陆生小动物设计的，但有时挣扎的鱼也会误入其中。</i>
+    style: Body
+  layout: Vertical

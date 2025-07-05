@@ -1,0 +1,94 @@
+id: SOLIDETHANOL
+parent_id: ELEMENTSSOLID
+name: 固态乙醇
+disabled: False
+search_only: False
+category: ELEMENTSSOLID
+sort_string: 固态乙醇
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="SOLIDETHANOL">固态乙醇</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: ethanol_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: ethanol_0__ui
+      text1: 固态乙醇
+      text2: 1000克
+      link_id: solidethanol
+    produce:
+    - image: element_liquid
+      color: 00FF6AFF
+      text1: 乙醇
+      text2: 1000克
+      link_id: ethanol
+    fabricator:
+      image: crew_state_temp_up
+      text1: -114.1ºC
+      tooltip: 温度高于-114.1ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换于
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: 00FF6AFF
+      text1: 乙醇
+      text2: 1000克
+      link_id: ethanol
+    produce:
+    - image: ethanol_0__ui
+      text1: 固态乙醇
+      text2: 1000克
+      link_id: solidethanol
+    fabricator:
+      image: crew_state_temp_down
+      text1: -114.1ºC
+      tooltip: 温度低于-114.1ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      (C<sub>2</sub>H<sub>6</sub>O) 固态乙醇是一种高级化合物。
+
+
+      它可用作高效燃料。
+
+
+      资源种类：可液化物
+
+      熔点：-114.1ºC
+
+      硬度：<color=#BD597FFF>250（几乎坚不可摧）</color>
+
+
+      比热容：2.460 (DTU/g)/ºC
+
+      热导率：20.000 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.7
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：<link="ICEORE">冰</link>, <link="BUILDABLEANY">一般建造材料</link>, <link="ELEMENTSSOLID">固体</link>, 可液化物
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

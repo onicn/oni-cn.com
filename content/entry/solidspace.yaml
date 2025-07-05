@@ -1,0 +1,94 @@
+id: SOLIDSPACE
+parent_id: TECH
+name: 固体控制
+disabled: False
+search_only: False
+category: TECH
+sort_string: 固体控制
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="SOLIDSPACE">固体控制</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 运输并分类<link="ELEMENTSSOLID">固体</link>资源。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="SOLIDTRANSPORT">固体运输</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: conveyor_shutoff_0__ui
+  - widget_type: CodexText
+    text: <link="SOLIDLOGICVALVE">轨道截断器</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: conveyorout_0__ui
+  - widget_type: CodexText
+    text: <link="SOLIDCONDUITOUTBOX">运输存放器</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: limit_valve_solid_0__ui
+  - widget_type: CodexText
+    text: <link="SOLIDLIMITVALVE">轨道计量器</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: rocket_storage_solid_small_0__ui
+  - widget_type: CodexText
+    text: <link="SOLIDCARGOBAYSMALL">货舱</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: rocket_floor_plug_solid_0__ui
+  - widget_type: CodexText
+    text: <link="ROCKETINTERIORSOLIDINPUT">运输存放配件</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: rocket_floor_plug_solid_out_0__ui
+  - widget_type: CodexText
+    text: <link="ROCKETINTERIORSOLIDOUTPUT">运输装载配件</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: conduit_port_solid_loader_0__ui
+  - widget_type: CodexText
+    text: <link="MODULARLAUNCHPADPORTSOLID">火箭端口固体装载器</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: conduit_port_solid_unloader_0__ui
+  - widget_type: CodexText
+    text: <link="MODULARLAUNCHPADPORTSOLIDUNLOADER">火箭端口固体卸载器</link>
+    style: Body
+  layout: Horizontal

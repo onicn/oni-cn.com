@@ -1,0 +1,73 @@
+id: DUPETRAFFICCONTROL
+parent_id: TECH
+name: 信息处理
+disabled: False
+search_only: False
+category: TECH
+sort_string: 信息处理
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="DUPETRAFFICCONTROL">信息处理</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 实际上这扩展了复制人想象力的边界。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="LOGICCIRCUITS">高级自动化</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: logic_counter_0__ui
+  - widget_type: CodexText
+    text: <link="LOGICCOUNTER">信号计数器</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: logic_memory_0__ui
+  - widget_type: CodexText
+    text: <link="LOGICMEMORY">锁存器</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: logic_xor_0__ui
+  - widget_type: CodexText
+    text: <link="LOGICGATEXOR">异或门</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: arcade_cabinet_0__ui
+  - widget_type: CodexText
+    text: <link="ARCADEMACHINE">游戏机台</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: checkpoint_0__ui
+  - widget_type: CodexText
+    text: <link="CHECKPOINT">复制人检查站</link>
+    style: Body
+  layout: Horizontal

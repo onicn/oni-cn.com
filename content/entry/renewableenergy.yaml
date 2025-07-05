@@ -1,0 +1,66 @@
+id: RENEWABLEENERGY
+parent_id: TECH
+name: 可再生能源
+disabled: False
+search_only: False
+category: TECH
+sort_string: 可再生能源
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="RENEWABLEENERGY">可再生能源</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 可持续的清洁<link="POWER">电力</link>生产，几乎没有废物产生。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="PRETTYGOODCONDUCTORS">低阻导体</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: steamturbine2_0__ui
+  - widget_type: CodexText
+    text: <link="STEAMTURBINE2">蒸汽涡轮机</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: solar_panel_0__ui
+  - widget_type: CodexText
+    text: <link="SOLARPANEL">太阳能板</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: sauna_0__ui
+  - widget_type: CodexText
+    text: <link="SAUNA">桑拿房</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: rocket_cluster_steam_engine_0__ui
+  - widget_type: CodexText
+    text: <link="STEAMENGINECLUSTER">蒸汽引擎</link>
+    style: Body
+  layout: Horizontal

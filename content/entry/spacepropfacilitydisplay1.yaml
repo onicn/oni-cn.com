@@ -1,0 +1,48 @@
+id: SPACEPROPFACILITYDISPLAY1
+name: 太空中的办公室！
+title: STRINGS.CODEX.B1_SPACEFACILITYDISPLAY1.TITLE
+disabled: False
+search_only: False
+category: NOTICES
+sort_string: 太空中的办公室！
+required_dlc_ids:
+- EXPANSION1_ID
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 太空中的办公室！
+    style: Title
+  - widget_type: CodexText
+    text: 公开发布
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+  lock_id: display_spaceprop1
+- contents:
+  - widget_type: CodexText
+    text: >-
+      庄严科技新推出企业空间站，将你的办公室推向星空。
+
+
+      尽情享受这个使员工着迷的低地球轨道上，超过600平方英尺的太空办公室。迷人的风景、低重力健身房、提供最佳的营养棒的自助餐厅，都在等待你的员工的到来。
+
+
+      每天可通过我们的豪华航天飞机往返于你的卫星办公室。
+
+
+      请放心，我们的太空站和航天飞机使用极高效而环保的庄严科技专用电源。
+
+
+      工作场所革命现在就开始了！
+    style: Body
+  layout: Vertical
+  lock_id: display_spaceprop1
+- contents:
+  - widget_type: CodexText
+    text: >-
+      现在预订第一个太空轨道办公室。
+
+      即可保证100%退款（除去10%申请费）
+    style: Body
+  layout: Vertical
+  lock_id: display_spaceprop1

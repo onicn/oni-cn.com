@@ -1,0 +1,59 @@
+id: ANIMALCOMFORT
+parent_id: TECH
+name: 生物舒适
+disabled: False
+search_only: False
+category: TECH
+sort_string: 生物舒适
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="ANIMALCOMFORT">生物舒适</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 使小动物的生活质量最大化的行动计划。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="ANIMALCONTROL">动物控制</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: critter_condo_0__ui
+  - widget_type: CodexText
+    text: <link="CRITTERCONDO">小动物公寓</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: underwater_critter_condo_0__ui
+  - widget_type: CodexText
+    text: <link="WATERCOOLER">水中城堡</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: critter_condo_airborne_0__ui
+  - widget_type: CodexText
+    text: <link="CRITTERCONDO">飞行小动物公寓</link>
+    style: Body
+  layout: Horizontal

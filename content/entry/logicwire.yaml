@@ -1,0 +1,61 @@
+id: LOGICWIRE
+parent_id: BUILDCATEGORYAUTOMATION
+name: 信号线
+disabled: False
+search_only: False
+category: BUILDCATEGORYAUTOMATION
+sort_string: 信号线
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="LOGICWIRE">信号线</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 智能家居
+    style: Body
+    image: research_type_alpha_icon
+    link_id: logiccontrol
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: logic_wires_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      将建筑与<link="LOGIC">传感器</link>相连。
+
+
+      可穿过墙体和地面。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：1格宽x1格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：3秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="REFINEDMETAL">精炼金属</link>5千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LOGIC">位</link>深度：1'
+    tooltip: 将更高<style="KKeyword">位深度</style>的<style="KKeyword">自动化信号</style>输出到连接的<style="KKeyword">信号线</style>会导致电路受损
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：-5（范围：1格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>1</b>格内降低<b><b>-5</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>信号线用于将建筑的端口与逻辑门相连接。</i>
+    style: Body
+  layout: Vertical

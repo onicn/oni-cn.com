@@ -1,0 +1,80 @@
+id: REQUIREMENTCLASSBEDTYPE
+parent_id: BUILDCATEGORYCATEGORY
+name: 床位
+disabled: False
+search_only: False
+category: BUILDCATEGORYCATEGORY
+sort_string: 床位
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 床位
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 能够让复制人获得急需的休息的建筑。如果复制人没有分配床位，他们就会睡在地上。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 此类别的建筑：
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 分诊床'
+    image: medical_cot_0__ui
+    link_id: medicalcot
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 床铺'
+    image: bedlg_0__ui
+    link_id: bed
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 舒适的床'
+    image: elegantbed_0__ui
+    link_id: luxurybed
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 梯床'
+    image: ladder_bed_0__ui
+    link_id: ladder
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 需求于：
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: '    • <link="BARRACKS">宿舍</link>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • <link="BEDROOM">豪华宿舍</link>（至少一个<link="LUXURYBED">舒适的床</link>）'
+    style: Body
+  - widget_type: CodexText
+    text: '    • <link="PRIVATE BEDROOM">私人卧室</link>（单个<link="LUXURYBED">舒适的床</link>）'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 与下列冲突：
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: '    • <link="BEDROOM">豪华宿舍</link>（无<link="BED">床铺</link>）'
+    style: Body
+  - widget_type: CodexText
+    text: '    • <link="PRIVATE BEDROOM">私人卧室</link>（无<link="BED">床铺</link>）'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical

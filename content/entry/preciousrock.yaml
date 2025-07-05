@@ -1,0 +1,48 @@
+id: PRECIOUSROCK
+parent_id: BUILDINGMATERIALCLASSES
+name: 珍贵岩石
+disabled: False
+search_only: False
+category: BUILDINGMATERIALCLASSES
+sort_string: 珍贵岩石
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="PRECIOUSROCK">珍贵岩石</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      珍贵岩石是矿物原料。其极高的硬度能制成耐用的<link="DECOR">装饰物</link>。
+
+
+      一些珍贵岩石即使以其天然未加工的形式，也具有内在吸引力。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 黑曜石
+    image: obsidian_0__ui
+    link_id: obsidian
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 花岗岩
+    image: granite_0__ui
+    link_id: granite
+  layout: Grid
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建造用处
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 大理石雕塑块
+    image: sculpture_marble_0__ui
+    link_id: marblesculpture
+  layout: Grid

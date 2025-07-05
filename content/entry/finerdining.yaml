@@ -1,0 +1,66 @@
+id: FINERDINING
+parent_id: TECH
+name: 美食制备
+disabled: False
+search_only: False
+category: TECH
+sort_string: 美食制备
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="FINERDINING">美食制备</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 通过烹饪最美味、最高品质的<link="FOOD">食物</link>提升殖民地的士气。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="ANIMALCONTROL">动物控制</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: cookstation_gourmet_0__ui
+  - widget_type: CodexText
+    text: <link="GOURMETCOOKINGSTATION">燃气灶</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: dehydrator_0__ui
+  - widget_type: CodexText
+    text: <link="FOODDEHYDRATOR">脱水机</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: rehydrator_0__ui
+  - widget_type: CodexText
+    text: <link="FOODREHYDRATOR">充水机</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: deepfryer_0__ui
+  - widget_type: CodexText
+    text: <link="DEEPFRYER">油炸锅</link>
+    style: Body
+  layout: Horizontal

@@ -1,0 +1,92 @@
+id: LOGICCOUNTER
+parent_id: BUILDCATEGORYAUTOMATION
+name: 信号计数器
+disabled: False
+search_only: False
+category: BUILDCATEGORYAUTOMATION
+sort_string: 信号计数器
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="LOGICCOUNTER">信号计数器</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 信息处理
+    style: Body
+    image: research_type_alpha_icon
+    link_id: dupetrafficcontrol
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: logic_counter_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      记录接收到<b><style="logic_on">绿色信号</style></b>的次数，直到达到选定的数字。
+
+
+      当达到选定数字后，输出<b><style="logic_on">绿色信号</style></b>，直到接收到另一个<b><style="logic_on">绿色信号</style></b>，它将自动重置并重新开始计数。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：1格宽x3格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：30秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="REFINEDMETAL">精炼金属</link>25千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LOGIC">信号输入端</link>'
+    tooltip: 当接收到信号时，输入端会使这个建筑一种状态发生变化
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    计数器值'
+    tooltip: >-
+      输入端行为：
+
+      • <b><style="logic_on">绿色信号</style></b>：计数器加1
+
+      • <b><style="logic_off">红色信号</style></b>：无效果
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    重置计数器'
+    tooltip: >-
+      输入端行为：
+
+      • <b><style="logic_on">绿色信号</style></b>：重置计数器
+
+      • <b><style="logic_off">红色信号</style></b>：无效果
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LOGIC">信号输出端</link>'
+    tooltip: 当这个建筑状态发生变化时，输出端会输出一个信号
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    达到设定值'
+    tooltip: >-
+      输出端行为：
+
+      • 当计数器达到选定值时，输出<b><style="logic_on">绿色信号</style></b>
+
+      • 否则，输出<b><style="logic_off">红色信号</style></b>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：-5（范围：1格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>1</b>格内降低<b><b>-5</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>对于高于十的数字，可将多个计数器连在一起实现。</i>
+    style: Body
+  layout: Vertical

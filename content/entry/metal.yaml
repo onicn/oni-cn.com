@@ -1,0 +1,687 @@
+id: METAL
+parent_id: BUILDINGMATERIALCLASSES
+name: 金属矿石
+disabled: False
+search_only: False
+category: BUILDINGMATERIALCLASSES
+sort_string: 金属矿石
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="METAL">金属矿石</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      金属矿石是未加工的金属，在电力和一般建造中有着广泛的实际应用。
+
+
+      金属矿石通常会用<link="ROCKCRUSHER">碎石机</link>或<link="METALREFINERY">金属精炼器</link>加工成<link="REFINEDMETAL">精炼金属</link>。
+
+
+      一些稀有金属矿石还可以在<link="SUPERMATERIALREFINERY">分子熔炉</link>中精炼。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 铌
+    image: niobium_0__ui
+    link_id: niobium
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 铜矿
+    image: cuprite_0__ui
+    link_id: cuprite
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 钴矿
+    image: cobalt_ore_0__ui
+    link_id: cobaltite
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 黑钨矿
+    image: wolframite_0__ui
+    link_id: wolframite
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 钢
+    image: steel_0__ui
+    link_id: steel
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 铱
+    image: iridium_0__ui
+    link_id: iridium
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 铀矿
+    image: radium_0__ui
+    link_id: uraniumore
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 铝矿
+    image: aluminum_ore_0__ui
+    link_id: aluminumore
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 金汞齐
+    image: gold_amalgam_0__ui
+    link_id: goldamalgam
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 镍矿
+    image: nickel_ore_0__ui
+    link_id: nickelore
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 导热质
+    image: temp_conductor_0__ui
+    link_id: tempconductorsolid
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 铁矿
+    image: hematite_0__ui
+    link_id: ironore
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 朱砂矿
+    image: cinnabar_0__ui
+    link_id: cinnabar
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 黄铁矿
+    image: fools_gold_0__ui
+    link_id: foolsgold
+  layout: Grid
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建造用处
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 焊接台
+    image: advanced_crafting_table_0__ui
+    link_id: advancedcraftingtable
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 超级计算机
+    image: research_center2_0__ui
+    link_id: advancedresearchcenter
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 温度调节器
+    image: airconditioner_0__ui
+    link_id: airconditioner
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 藻类蒸馏器
+    image: algae_distillery_0__ui
+    link_id: algaedistillery
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 配药桌
+    image: apothecary_0__ui
+    link_id: apothecary
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 工艺品分析站
+    image: artifact_analysis_0__ui
+    link_id: artifactanalysisstation
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 蓄电池
+    image: batterysm_0__ui
+    link_id: battery
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 巨型蓄电池
+    image: batterymed_0__ui
+    link_id: batterymedium
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 蓄电池舱
+    image: rocket_battery_pack_0__ui
+    link_id: batterymodule
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 二氧化碳引擎
+    image: rocket_co2_engine_0__ui
+    link_id: co2engine
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 碳素脱离器
+    image: co2scrubber_0__ui
+    link_id: co2scrubber
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 柴火炉
+    image: campfire_small_0__ui
+    link_id: campfire
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 空白画布
+    image: painting_off_0__ui
+    link_id: canvas
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 肖像画布
+    image: painting_tall_off_0__ui
+    link_id: canvastall
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 风景画布
+    image: painting_wide_off_0__ui
+    link_id: canvaswide
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 吸顶灯
+    image: ceilinglight_0__ui
+    link_id: ceilinglight
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 望远镜
+    image: telescope_low_0__ui
+    link_id: clustertelescope
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 隔绝式望远镜
+    image: telescope_0__ui
+    link_id: clustertelescopeenclosed
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 电动烤炉
+    image: cookstation_0__ui
+    link_id: cookingstation
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 工作台
+    image: craftingstation_0__ui
+    link_id: craftingtable
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 小动物喂食器
+    image: feeder_0__ui
+    link_id: creaturefeeder
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 小动物放生点
+    image: relocator_dropoff_02_0__ui
+    link_id: critterdropoff
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 小动物移取点
+    image: relocator_pickup_0__ui
+    link_id: critterpickup
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 虚拟天象仪
+    image: research_space_0__ui
+    link_id: dlc1cosmicresearchcenter
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 数据挖掘仪
+    image: data_miner_0__ui
+    link_id: dataminer
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 除污淋浴隔间
+    image: decontamination_shower_0__ui
+    link_id: decontaminationshower
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 油炸锅
+    image: deepfryer_0__ui
+    link_id: deepfryer
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 钻石压机
+    image: diamond_press_0__ui
+    link_id: diamondpress
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 餐桌
+    image: diningtable_0__ui
+    link_id: diningtable
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 气动门
+    image: door_internal_0__ui
+    link_id: door
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 敲蛋桌
+    image: egg_cracker_0__ui
+    link_id: eggcracker
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 电解器
+    image: electrolyzer_0__ui
+    link_id: electrolyzer
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 乙醇蒸馏器
+    image: ethanoldistillery_0__ui
+    link_id: ethanoldistillery
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 农业站
+    image: planttender_0__ui
+    link_id: farmstation
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 肥料合成器
+    image: fertilizer_maker_0__ui
+    link_id: fertilizermaker
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 消防滑杆
+    image: firepole_0__ui
+    link_id: firepole
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 鱼类放生点
+    image: fishrelocator_0__ui
+    link_id: fishdeliverypoint
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 喂鱼器
+    image: fishfeeder_0__ui
+    link_id: fishfeeder
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 电灯
+    image: floorlamp_0__ui
+    link_id: floorlamp
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 垂吊花盆
+    image: flowervase_hanging_basic_0__ui
+    link_id: flowervasehanging
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 墙壁花盆
+    image: flowervase_wall_0__ui
+    link_id: flowervasewall
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 抽水马桶
+    image: toiletflush_0__ui
+    link_id: flushtoilet
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 气体装罐器
+    image: gas_bottler_0__ui
+    link_id: gasbottler
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 气体管道
+    image: utilities_gas_0__ui
+    link_id: gasconduit
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 导热气体管道
+    image: utilities_gas_radiant_0__ui
+    link_id: gasconduitradiant
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 气体筛选器
+    image: filter_gas_0__ui
+    link_id: gasfilter
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 透气砖
+    image: floor_gasperm_0__ui
+    link_id: gaspermeablemembrane
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 气泵
+    image: pumpgas_0__ui
+    link_id: gaspump
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 储气库
+    image: gasstorage_0__ui
+    link_id: gasreservoir
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 气体调节阀
+    image: valvegas_0__ui
+    link_id: gasvalve
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 排气口
+    image: ventgas_0__ui
+    link_id: gasvent
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 煤炭发电机
+    image: generatorphos_0__ui
+    link_id: generator
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 植物分析仪
+    image: genetic_analysisstation_0__ui
+    link_id: geneticanalysisstation
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 燃气灶
+    image: cookstation_gourmet_0__ui
+    link_id: gourmetcookingstation
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 粘渣油提取器
+    image: gunkdump_station_0__ui
+    link_id: gunkemptier
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 太空员舱
+    image: rocket_habitat_medium_module_0__ui
+    link_id: habitatmodulemedium
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 单太空员前锥
+    image: rocket_nosecone_0__ui
+    link_id: habitatmodulesmall
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 手部消毒站
+    image: handsanitizer_0__ui
+    link_id: handsanitizer
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 热水浴缸
+    image: hottub_0__ui
+    link_id: hottub
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 氢气发电机
+    image: generatormerc_0__ui
+    link_id: hydrogengenerator
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 液培砖
+    image: farmtilehydroponicrotating_0__ui
+    link_id: hydroponicfarm
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 冰冷风扇
+    image: fanice_0__ui
+    link_id: icecooledfan
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 融冰壶
+    image: icemelter_kettle_0__ui
+    link_id: icekettle
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 制冰机
+    image: freezerator_0__ui
+    link_id: icemachine
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 榨汁机
+    image: juicer_0__ui
+    link_id: juicer
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 窑炉
+    image: kiln_0__ui
+    link_id: kiln
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 液体装桶器
+    image: liquid_bottler_0__ui
+    link_id: liquidbottler
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 液温调节器
+    image: liquidconditioner_0__ui
+    link_id: liquidconditioner
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 液体管道
+    image: utilities_liquid_0__ui
+    link_id: liquidconduit
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 液体筛选器
+    image: filter_liquid_0__ui
+    link_id: liquidfilter
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 液体加热器
+    image: boiler_0__ui
+    link_id: liquidheater
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 液泵
+    image: pumpliquid_0__ui
+    link_id: liquidpump
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 储液库
+    image: liquidreservoir_0__ui
+    link_id: liquidreservoir
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 液体调节阀
+    image: valveliquid_0__ui
+    link_id: liquidvalve
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 排液口
+    image: ventliquid_0__ui
+    link_id: liquidvent
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 电力截断器
+    image: switchpowershutoff_0__ui
+    link_id: logicpowerrelay
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 人力发电机
+    image: generatormanual_0__ui
+    link_id: manualgenerator
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 手动气闸
+    image: door_manual_0__ui
+    link_id: manualpressuredoor
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 机械冲浪板
+    image: mechanical_surfboard_0__ui
+    link_id: mechanicalsurfboard
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 汞吸顶灯
+    image: mercurylight_0__ui
+    link_id: mercuryceilinglight
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 网格砖
+    image: floor_mesh_0__ui
+    link_id: meshtile
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 天然气发电机
+    image: generatormethane_0__ui
+    link_id: methanegenerator
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 食物压制器
+    image: microbemusher_0__ui
+    link_id: microbemusher
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 氧气扩散器
+    image: mineraldeoxidizer_0__ui
+    link_id: mineraldeoxidizer
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 流星爆破炮
+    image: missile_launcher_0__ui
+    link_id: missilelauncher
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 自动卸物箱
+    image: object_dispenser_0__ui
+    link_id: objectdispenser
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 润滑站
+    image: oilchange_station_0__ui
+    link_id: oilchanger
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 原油精炼器
+    image: oilrefinery_0__ui
+    link_id: oilrefinery
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 环轨货舱
+    image: rocket_orbital_deploy_cargo_module_0__ui
+    link_id: orbitalcargomodule
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 矿石洗涤器
+    image: orescrubber_0__ui
+    link_id: orescrubber
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 氧气面罩存放柜
+    image: oxygen_mask_locker_0__ui
+    link_id: oxygenmasklocker
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 氧气面罩检查站
+    image: oxygen_checkpoint_arrow_0__ui
+    link_id: oxygenmaskmarker
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 氧石烛台
+    image: oxy_sconce_0__ui
+    link_id: oxysconce
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 泥炭燃烧器
+    image: generatorpeat_0__ui
+    link_id: peatgenerator
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 石油发电机
+    image: generatorpetrol_0__ui
+    link_id: petroleumgenerator
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 点唱机器人
+    image: jukebot_0__ui
+    link_id: phonobox
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 聚合物压塑器
+    image: plasticrefinery_0__ui
+    link_id: polymerizer
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 变压器
+    image: transformer_small_0__ui
+    link_id: powertransformersmall
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 机械气闸
+    image: door_external_0__ui
+    link_id: pressuredoor
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 辐射灯
+    image: radiation_lamp_0__ui
+    link_id: radiationlight
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 星际发射器
+    image: rail_gun_0__ui
+    link_id: railgun
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 载货拆包器
+    image: railgun_emptier_0__ui
+    link_id: railgunpayloadopener
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 梳理站
+    image: rancherstation_0__ui
+    link_id: ranchstation
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 远程控制器
+    image: remote_work_terminal_0__ui
+    link_id: remoteworkterminal
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 研究站
+    image: research_center_0__ui
+    link_id: researchcenter
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 技能涤除器
+    image: respeccer_0__ui
+    link_id: resetskillsstation
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 碎石机
+    image: rockrefinery_0__ui
+    link_id: rockcrusher
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 火箭控制台
+    image: rocket_control_station_0__ui
+    link_id: rocketcontrolstation
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 气体输入配件
+    image: rocket_floor_plug_gas_0__ui
+    link_id: rocketinteriorgasinput
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 气体输出配件
+    image: rocket_floor_plug_gas_out_0__ui
+    link_id: rocketinteriorgasoutput
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 液体输入配件
+    image: rocket_floor_plug_liquid_0__ui
+    link_id: rocketinteriorliquidinput
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 液体输出配件
+    image: rocket_floor_plug_liquid_out_0__ui
+    link_id: rocketinteriorliquidoutput
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 电源插座配件
+    image: rocket_floor_plug_0__ui
+    link_id: rocketinteriorpowerplug
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 运输存放配件
+    image: rocket_floor_plug_solid_0__ui
+    link_id: rocketinteriorsolidinput
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 运输装载配件
+    image: rocket_floor_plug_solid_out_0__ui
+    link_id: rocketinteriorsolidoutput
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 铁锈脱氧机
+    image: rust_deoxidizer_0__ui
+    link_id: rustdeoxidizer
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 桑拿房
+    image: sauna_0__ui
+    link_id: sauna
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 侦察舱
+    image: rocket_scout_cargo_module_0__ui
+    link_id: scoutmodule
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 修剪站
+    image: shearing_station_0__ui
+    link_id: shearingstation
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 淋浴隔间
+    image: shower_0__ui
+    link_id: shower
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 袖珍放电器
+    image: electrobank_discharger_small_0__ui
+    link_id: smallelectrobankdischarger
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 小型固体氧化剂舱
+    image: rocket_oxidizer_tank_small_0__ui
+    link_id: smalloxidizertank
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 熏炉
+    image: smoker_0__ui
+    link_id: smoker
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 运输轨桥
+    image: utilities_conveyorbridge_0__ui
+    link_id: solidconduitbridge
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 运输轨道
+    image: utilities_conveyor_0__ui
+    link_id: solidconduit
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 运输存放器
+    image: conveyorout_0__ui
+    link_id: solidconduitoutbox
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 固体筛选器
+    image: filter_material_conveyor_0__ui
+    link_id: solidfilter
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 轨道滑槽
+    image: conveyer_dropper_0__ui
+    link_id: solidvent
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 空间加热器
+    image: spaceheater_0__ui
+    link_id: spaceheater
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 香料研磨器
+    image: spice_grinder_0__ui
+    link_id: spicegrinder
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 存储箱
+    image: storagelocker_0__ui
+    link_id: storagelocker
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 升华站
+    image: sublimation_station_0__ui
+    link_id: sublimationstation
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 糖素引擎
+    image: rocket_sugar_engine_0__ui
+    link_id: sugarengine
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 分子熔炉
+    image: supermaterial_refinery_0__ui
+    link_id: supermaterialrefinery
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 电闸
+    image: switchpower_0__ui
+    link_id: switch
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 共线电话
+    image: telephone_0__ui
+    link_id: telephone
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 洗手盆
+    image: wash_basin_0__ui
+    link_id: washbasin
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 洗手池
+    image: wash_sink_0__ui
+    link_id: washsink
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 净水器
+    image: waterpurifier_0__ui
+    link_id: waterpurifier
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 电线桥
+    image: utilityelectricbridge_0__ui
+    link_id: wirebridge
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 高负荷电线接合板
+    image: heavywatttile_0__ui
+    link_id: wirebridgehighwattage
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 电线
+    image: utilities_electric_0__ui
+    link_id: wire
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 高负荷电线
+    image: utilities_electric_insulated_0__ui
+    link_id: highwattagewire
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 木材燃烧器
+    image: generatorwood_0__ui
+    link_id: woodgasgenerator
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 飞行小动物陷阱
+    image: critter_trap_air_0__ui
+    link_id: flyingcreaturebait
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 脱盐器
+    image: desalinator_0__ui
+    link_id: desalinator
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 小动物陷阱
+    image: critter_trap_ground_0__ui
+    link_id: creaturegroundtrap
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 捕鱼陷阱
+    image: critter_trap_water_0__ui
+    link_id: watertrap
+  layout: Grid

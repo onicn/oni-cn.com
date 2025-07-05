@@ -1,0 +1,187 @@
+id: AICONTROL
+name: 回复：令人不快的请求
+title: STRINGS.CODEX.B6_AICONTROL.TITLE
+disabled: False
+search_only: False
+category: EMAILS
+sort_string: 回复：令人不快的请求
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 回复：令人不快的请求
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：二
+    style: Subtitle
+  layout: Vertical
+  lock_id: email_AIcontrol
+- contents:
+  - widget_type: CodexText
+    text: >
+      <smallcaps>收件人：<b>斯特恩主管</b><size=12><alpha=#AA> <jstern@gravitas.nova></size></color>
+
+      发件人：<b>布鲁萨德博士</b><size=12><alpha=#AA> <obroussard@gravitas.nova></color></size></smallcaps>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_AIcontrol
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <indent=5%>我只是感觉不太好。
+
+
+      如果你坚持这样做的话，我也阻止不了你，但是我会要求退出这个项目。</indent>
+    style: Body
+  - widget_type: CodexText
+    text: >2
+
+      - 布鲁萨德博士
+
+      <size=11>生物工程部
+
+      庄严科技</size>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_AIcontrol
+- contents:
+  - widget_type: CodexText
+    text: 标题：回复：令人不快的请求
+    style: Subtitle
+  - widget_type: CodexText
+    text: >
+      <smallcaps>收件人：<b>布鲁萨德博士</b><size=12><alpha=#AA> <obroussard@gravitas.nova></size></color>
+
+      发件人：<b>斯特恩主管</b><alpha=#AA><size=12> <jstern@gravitas.nova></size></color></smallcaps>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_AIcontrol2
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <indent=5%>你已经同意了颅骨芯片植入，为什么现在想反悔？
+
+
+      这会是一种极为有效的安全措施，可以保护你打印的实验体。</indent>
+    style: Body
+  - widget_type: CodexText
+    text: >2
+
+      - 斯特恩主管
+
+      <size=11>庄严科技</size>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_AIcontrol2
+- contents:
+  - widget_type: CodexText
+    text: 标题：回复：令人不快的请求
+    style: Subtitle
+  - widget_type: CodexText
+    text: >
+      <smallcaps>收件人：<b>斯特恩主管</b><size=12><alpha=#AA> <jstern@gravitas.nova></size></color>
+
+      发件人：<b>布鲁萨德博士</b><size=12><alpha=#AA> <obroussard@gravitas.nova></color></size></smallcaps>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_AIcontrol3
+- contents:
+  - widget_type: CodexText
+    text: <indent=5%>你是开玩笑的吧，杰奎琳？</indent>
+    style: Body
+  - widget_type: CodexText
+    text: >2
+
+      - 布鲁萨德博士
+
+      <size=11>生物工程部
+
+      庄严科技</size>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_AIcontrol3
+- contents:
+  - widget_type: CodexText
+    text: 标题：回复：令人不快的请求
+    style: Subtitle
+  - widget_type: CodexText
+    text: >
+      <smallcaps>收件人：<b>布鲁萨德博士</b><size=12><alpha=#AA> <obroussard@gravitas.nova></size></color>
+
+      发件人：<b>斯特恩主管</b><alpha=#AA><size=12> <jstern@gravitas.nova></size></color></smallcaps>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_AIcontrol3
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <indent=5%>博士，
+
+
+      我理解你的担忧，但工程部的最新项目是在我的监管下构思的。
+
+
+      请为他们提供任何所需的材料以推进研究。</indent>
+    style: Body
+  - widget_type: CodexText
+    text: >2
+
+      - 斯特恩主管
+
+      <size=11>庄严科技</size>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_AIcontrol3
+- contents:
+  - widget_type: CodexText
+    text: 标题：令人不快的请求
+    style: Subtitle
+  - widget_type: CodexText
+    text: >
+      <smallcaps>收件人：<b>斯特恩主管</b><size=12><alpha=#AA> <jstern@gravitas.nova></size></color>
+
+      发件人：<b>布鲁萨德博士</b><size=12><alpha=#AA> <obroussard@gravitas.nova></color></size></smallcaps>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_AIcontrol4
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <indent=5%>主管，
+
+
+      工程部请求获得所有模型实验体的脑谱图，以便开发一种舱链接软件，而我不同意他们的请求。
+
+
+      我认为他们正在设法获得植入实验体的临时控制权，并且我担心这种研究手段可能有悖伦理。</indent>
+    style: Body
+  - widget_type: CodexText
+    text: >2
+
+      - 布鲁萨德博士
+
+      <size=11>生物工程部
+
+      庄严科技</size>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_AIcontrol4

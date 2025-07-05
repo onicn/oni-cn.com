@@ -1,0 +1,243 @@
+id: ROLES
+name: 复制人技能
+disabled: False
+search_only: False
+category: Root
+sort_string: 复制人技能
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="ROLES">复制人技能</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexLabelWithLargeIcon
+    text: 作物照料
+    style: BodyWhite
+    image: hat_role_farming2
+    link_id: farming2
+  - widget_type: CodexLabelWithLargeIcon
+    text: 危险物挖掘
+    style: BodyWhite
+    image: hat_role_mining4
+    link_id: mining4
+  - widget_type: CodexLabelWithLargeIcon
+    text: 原理图
+    style: BodyWhite
+    image: hat_role_craftingboosters1
+    link_id: bionicsc1
+  - widget_type: CodexLabelWithLargeIcon
+    text: 坚硬材料挖掘
+    style: BodyWhite
+    image: hat_role_mining1
+    link_id: mining1
+  - widget_type: CodexLabelWithLargeIcon
+    text: 增幅块数据处理 I
+    style: BodyWhite
+    image: hat_role_gainingboosters1
+    link_id: bionicsa1
+  - widget_type: CodexLabelWithLargeIcon
+    text: 增幅块数据处理 II
+    style: BodyWhite
+    image: hat_role_gainingboosters2
+    link_id: bionicsa2
+  - widget_type: CodexLabelWithLargeIcon
+    text: 复杂数据处理
+    style: BodyWhite
+    image: hat_role_gainingboosters3
+    link_id: bionicsa3
+  - widget_type: CodexLabelWithLargeIcon
+    text: 大师技艺
+    style: BodyWhite
+    image: hat_role_art3
+    link_id: arting3
+  - widget_type: CodexLabelWithLargeIcon
+    text: 天文学
+    style: BodyWhite
+    image: hat_role_research3
+    link_id: astronomy
+  - widget_type: CodexLabelWithLargeIcon
+    text: 太空服耐久训练
+    style: BodyWhite
+    image: hat_role_suits1
+    link_id: thermalsuits
+  - widget_type: CodexLabelWithLargeIcon
+    text: 太空服训练
+    style: BodyWhite
+    image: hat_role_suits2
+    link_id: suits1
+  - widget_type: CodexLabelWithLargeIcon
+    text: 实地研究
+    style: BodyWhite
+    image: hat_role_research2
+    link_id: researching2
+  - widget_type: CodexLabelWithLargeIcon
+    text: 小动物养殖 I
+    style: BodyWhite
+    image: hat_role_rancher1
+    link_id: ranching1
+  - widget_type: CodexLabelWithLargeIcon
+    text: 小动物养殖 II
+    style: BodyWhite
+    image: hat_role_rancher2
+    link_id: ranching2
+  - widget_type: CodexLabelWithLargeIcon
+    text: 应用科学研究
+    style: BodyWhite
+    image: hat_role_research5
+    link_id: atomicresearch
+  - widget_type: CodexLabelWithLargeIcon
+    text: 拆毁
+    style: BodyWhite
+    image: hat_role_building3
+    link_id: building3
+  - widget_type: CodexLabelWithLargeIcon
+    text: 改良力量
+    style: BodyWhite
+    image: hat_role_basekeeping1
+    link_id: basekeeping1
+  - widget_type: CodexLabelWithLargeIcon
+    text: 改良建造 I
+    style: BodyWhite
+    image: hat_role_building1
+    link_id: building1
+  - widget_type: CodexLabelWithLargeIcon
+    text: 改良建造 II
+    style: BodyWhite
+    image: hat_role_building2
+    link_id: building2
+  - widget_type: CodexLabelWithLargeIcon
+    text: 改良携带 I
+    style: BodyWhite
+    image: hat_role_hauling1
+    link_id: hauling1
+  - widget_type: CodexLabelWithLargeIcon
+    text: 改良携带 II
+    style: BodyWhite
+    image: hat_role_hauling2
+    link_id: hauling2
+  - widget_type: CodexLabelWithLargeIcon
+    text: 改良操作
+    style: BodyWhite
+    image: hat_role_technicals1
+    link_id: technicals1
+  - widget_type: CodexLabelWithLargeIcon
+    text: 改良耕种 I
+    style: BodyWhite
+    image: hat_role_farming1
+    link_id: farming1
+  - widget_type: CodexLabelWithLargeIcon
+    text: 改良耕种 II
+    style: BodyWhite
+    image: hat_role_farming3
+    link_id: farming3
+  - widget_type: CodexLabelWithLargeIcon
+    text: 改良齿轮 I
+    style: BodyWhite
+    image: hat_role_innerworkings1
+    link_id: bionicsb1
+  - widget_type: CodexLabelWithLargeIcon
+    text: 改良齿轮 II
+    style: BodyWhite
+    image: hat_role_innerworkings2
+    link_id: bionicsb2
+  - widget_type: CodexLabelWithLargeIcon
+    text: 数据分析研究
+    style: BodyWhite
+    image: hat_role_research4
+    link_id: spaceresearch
+  - widget_type: CodexLabelWithLargeIcon
+    text: 机电工程
+    style: BodyWhite
+    image: hat_role_engineering1
+    link_id: engineering1
+  - widget_type: CodexLabelWithLargeIcon
+    text: 极坚硬材料挖掘
+    style: BodyWhite
+    image: hat_role_mining3
+    link_id: mining3
+  - widget_type: CodexLabelWithLargeIcon
+    text: 火工技艺
+    style: BodyWhite
+    image: hat_role_pyrotechnics
+    link_id: pyrotechnics
+  - widget_type: CodexLabelWithLargeIcon
+    text: 火箭驾驶
+    style: BodyWhite
+    image: hat_role_astronaut1
+    link_id: rocketpiloting1
+  - widget_type: CodexLabelWithLargeIcon
+    text: 火箭驾驶 II
+    style: BodyWhite
+    image: hat_role_astronaut2
+    link_id: rocketpiloting2
+  - widget_type: CodexLabelWithLargeIcon
+    text: 烧烤
+    style: BodyWhite
+    image: hat_role_cooking1
+    link_id: cooking1
+  - widget_type: CodexLabelWithLargeIcon
+    text: 烧烤 II
+    style: BodyWhite
+    image: hat_role_cooking2
+    link_id: cooking2
+  - widget_type: CodexLabelWithLargeIcon
+    text: 电气工程
+    style: BodyWhite
+    image: hat_role_technicals2
+    link_id: technicals2
+  - widget_type: CodexLabelWithLargeIcon
+    text: 病床礼仪
+    style: BodyWhite
+    image: hat_role_medicalaid2
+    link_id: medicine2
+  - widget_type: CodexLabelWithLargeIcon
+    text: 移动电源
+    style: BodyWhite
+    image: hat_role_innerworkings3
+    link_id: bionicsc3
+  - widget_type: CodexLabelWithLargeIcon
+    text: 管路工作
+    style: BodyWhite
+    image: hat_role_basekeeping2
+    link_id: basekeeping2
+  - widget_type: CodexLabelWithLargeIcon
+    text: 美学设计
+    style: BodyWhite
+    image: hat_role_art2
+    link_id: arting2
+  - widget_type: CodexLabelWithLargeIcon
+    text: 艺术基础
+    style: BodyWhite
+    image: hat_role_art1
+    link_id: arting1
+  - widget_type: CodexLabelWithLargeIcon
+    text: 药物配制
+    style: BodyWhite
+    image: hat_role_medicalaid1
+    link_id: medicine1
+  - widget_type: CodexLabelWithLargeIcon
+    text: 超坚硬材料挖掘
+    style: BodyWhite
+    image: hat_role_mining2
+    link_id: mining2
+  - widget_type: CodexLabelWithLargeIcon
+    text: 高级医疗护理
+    style: BodyWhite
+    image: hat_role_medicalaid3
+    link_id: medicine3
+  - widget_type: CodexLabelWithLargeIcon
+    text: 高级原理图
+    style: BodyWhite
+    image: hat_role_craftingboosters2
+    link_id: bionicsc2
+  - widget_type: CodexLabelWithLargeIcon
+    text: 高级研究
+    style: BodyWhite
+    image: hat_role_research1
+    link_id: researching1
+  layout: Grid
+- contents:
+  - widget_type: CodexSpacer
+  layout: Vertical

@@ -1,0 +1,106 @@
+id: SWAMPHARVESTPLANT
+parent_id: PLANTS
+name: 沼浆笼
+disabled: False
+search_only: False
+category: PLANTS
+sort_string: 沼浆笼
+required_dlc_ids:
+- EXPANSION1_ID
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 沼浆笼
+    style: Title
+  - widget_type: CodexText
+    text: 食用性植物
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      这种植物有着笼状的花并生长在沼泽的环境中，因此得名沼浆笼。
+
+
+      它的花会分泌一种稠而甜的液体，可以从笼底收集食用。
+
+
+      尽管本质上并不危险，但沼浆笼花的内部非常温暖和诱人，这种性质会使人想要爬到里面睡上一觉，不过醒来就会发现被困在其粘性的树液中了。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: swampcrop_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 成长自
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: seed_swampcrop_0__ui
+  - widget_type: CodexText
+    text: <link="SWAMPHARVESTPLANT">沼浆笼种子</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 详情
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexText
+    text: 沼浆笼能产出多汁甜美的<link="SWAMPFRUIT">沼浆果冻</link>作为<link="FOOD">食物</link>。
+    style: Body
+  - widget_type: CodexText
+    text: >-
+      <b>生长需求</b>：
+          • 最大<link="RADIATION">辐射</link>：4,600拉德/周期
+          • 生长周期：6.6周期
+          • <link="LIGHT">黑暗</link>
+          • <link="HEAT">温度</link>：10至30ºC
+          • <link="ATMOSPHERE">气压</link>：最低150克
+          • <link="ATMOSPHERE">环境</link>：
+              • <link="OXYGEN">氧气</link>
+              • <link="CONTAMINATEDOXYGEN">污染氧</link>
+              • <link="CARBONDIOXIDE">二氧化碳</link>
+          • <link="DIRTYWATER">污染水</link>：-40千克/周期
+          • 农地
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      <b>效果</b>：
+          • <link="SWAMPFRUIT">沼浆果冻</link>：1,840千卡
+          • 基础<link="PLANTS">种子</link>收获几率：10%
+          • <link="DECOR">装饰度</link>：-10（范围：2格）
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: 474506FF
+      text1: 污染水
+      text2: 40千克/周期
+      link_id: dirtywater
+    produce:
+    - image: swampcrop_fruit_0__ui
+      text1: 沼浆果冻
+      text2: 279千卡/周期
+      tooltip: 品质：糟糕 [0]
+      link_id: swampfruit
+    fabricator:
+      image: swampcrop_0__ui
+      text1: 沼浆笼
+      link_id: SWAMPHARVESTPLANT
+  layout: Vertical

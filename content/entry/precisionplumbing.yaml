@@ -1,0 +1,59 @@
+id: PRECISIONPLUMBING
+parent_id: TECH
+name: 高级咖啡
+disabled: False
+search_only: False
+category: TECH
+sort_string: 高级咖啡
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="PRECISIONPLUMBING">高级咖啡</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 让复制人在地下挖了一天后喝杯热咖啡放松一下。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="LIQUIDTEMPERATURE">液体微调</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: espresso_machine_0__ui
+  - widget_type: CodexText
+    text: <link="ESPRESSOMACHINE">浓缩咖啡机</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: rocket_cluster_liquid_fuel_tank_0__ui
+  - widget_type: CodexText
+    text: <link="LIQUIDFUELTANKCLUSTER">大型液缸燃料舱</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: mercurylight_0__ui
+  - widget_type: CodexText
+    text: <link="MERCURYCEILINGLIGHT">汞吸顶灯</link>
+    style: Body
+  layout: Horizontal

@@ -1,0 +1,193 @@
+id: SALTWATER
+parent_id: ELEMENTSLIQUID
+name: 盐水
+disabled: False
+search_only: False
+icon_color: CED2ECFF
+category: ELEMENTSLIQUID
+sort_string: 盐水
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="SALTWATER">盐水</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    color: CED2ECFF
+    image: element_liquid
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: CED2ECFF
+      text1: 盐水
+      text2: 1000克
+      link_id: saltwater
+    produce:
+    - image: element_gas
+      color: 85C9E3FF
+      text1: 蒸汽
+      text2: 930克
+      link_id: steam
+    - image: salt_0__ui
+      text1: 盐
+      text2: 70克
+      link_id: salt
+    fabricator:
+      image: crew_state_temp_up
+      text1: 99.7ºC
+      tooltip: 温度高于99.7ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: CED2ECFF
+      text1: 盐水
+      text2: 1000克
+      link_id: saltwater
+    produce:
+    - image: element_liquid
+      color: ADE9E5FF
+      text1: 浓盐水
+      text2: 230克
+      link_id: brine
+    - image: ice_0__ui
+      text1: 冰
+      text2: 770克
+      link_id: ice
+    fabricator:
+      image: crew_state_temp_down
+      text1: -7.5ºC
+      tooltip: 温度低于-7.5ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: CED2ECFF
+      text1: 盐水
+      text2: 3000千克/周期
+      link_id: saltwater
+    - image: element_liquid
+      color: ADE9E5FF
+      text1: 浓盐水
+      text2: 3000千克/周期
+      link_id: brine
+    produce:
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 2790千克/周期
+      link_id: water
+    - image: salt_0__ui
+      text1: 盐
+      text2: 210千克/周期
+      link_id: salt
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 2100千克/周期
+      link_id: water
+    - image: salt_0__ui
+      text1: 盐
+      text2: 900千克/周期
+      link_id: salt
+    fabricator:
+      image: desalinator_0__ui
+      text1: 脱盐器
+      link_id: DESALINATOR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: CED2ECFF
+      text1: 盐水
+      text2: 5千克/周期
+      link_id: saltwater
+    - image: bleach_stone_0__ui
+      text1: 漂白石
+      text2: 500克/周期
+      link_id: bleachstone
+    produce:
+    - image: sea_lettuce_leaves_0__ui
+      text1: 海生菜
+      text2: 400千卡/周期
+      tooltip: 品质：糟糕 [0]
+      link_id: lettuce
+    fabricator:
+      image: sea_lettuce_0__ui
+      text1: 水草
+      link_id: SEALETTUCE
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 乳化器
+    require:
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 93千克
+      link_id: water
+    - image: salt_0__ui
+      text1: 盐
+      text2: 7千克
+      link_id: salt
+    produce:
+    - image: element_liquid
+      color: CED2ECFF
+      text1: 盐水
+      text2: 100千克
+      link_id: saltwater
+    fabricator:
+      image: chemistry_lab_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 乳化器
+      text2: 40秒
+      link_id: chemicalrefinery
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      盐水是一种溶解了低浓度<link="SALT">盐</link>的<link="WATER">水</link>。
+
+
+      它可用于淡化处理，以分离出可用的盐。
+
+
+      资源种类：<link="ELEMENTSLIQUID">液体</link>
+
+      冰点：-7.5ºC
+
+      沸点：99.7ºC
+
+
+      比热容：4.100 (DTU/g)/ºC
+
+      热导率：0.609 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.8
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：水基物, <link="ELEMENTSLIQUID">液体</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

@@ -1,0 +1,45 @@
+id: GROUPCREATURERELOCATOR
+parent_id: BUILDCATEGORYCATEGORY
+name: 小动物搬迁建筑
+disabled: False
+search_only: False
+category: BUILDCATEGORYCATEGORY
+sort_string: 小动物搬迁建筑
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 小动物搬迁建筑
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 将<link="CREATURES">小动物</link>从一个地方移动到另一个地方的建筑。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 此类别的建筑：
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 小动物移取点'
+    image: relocator_pickup_0__ui
+    link_id: critterpickup
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 小动物放生点'
+    image: relocator_dropoff_02_0__ui
+    link_id: critterdropoff
+  - widget_type: CodexIndentedLabelWithIcon
+    text: '    • 鱼类放生点'
+    image: fishrelocator_0__ui
+    link_id: fishdeliverypoint
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical

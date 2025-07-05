@@ -1,0 +1,45 @@
+id: ENVIRONMENTALAPPRECIATION
+parent_id: TECH
+name: 环境鉴赏
+disabled: False
+search_only: False
+category: TECH
+sort_string: 环境鉴赏
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="ENVIRONMENTALAPPRECIATION">环境鉴赏</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 通过在高亮度的<link="LIGHT">光</link>附近闲逛提升<link="MORALE">士气</link>。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="GLASSFURNISHINGS">玻璃吹制</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: beach_chair_0__ui
+  - widget_type: CodexText
+    text: <link="BEACHCHAIR">沙滩椅</link>
+    style: Body
+  layout: Horizontal

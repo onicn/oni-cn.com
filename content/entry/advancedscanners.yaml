@@ -1,0 +1,59 @@
+id: ADVANCEDSCANNERS
+parent_id: TECH
+name: 敏感微成像
+disabled: False
+search_only: False
+category: TECH
+sort_string: 敏感微成像
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="ADVANCEDSCANNERS">敏感微成像</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 计算机系统会进行观察，因此复制人就不必再看了。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="DUPETRAFFICCONTROL">信息处理</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: rocket_scanner_module_0__ui
+  - widget_type: CodexText
+    text: <link="SCANNERMODULE">制图舱</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: inter_asteroid_automation_signal_sender_0__ui
+  - widget_type: CodexText
+    text: <link="LOGICINTERASTEROIDSENDER">信号播报器</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: inter_asteroid_automation_signal_receiver_0__ui
+  - widget_type: CodexText
+    text: <link="LOGICINTERASTEROIDRECEIVER">信号接收器</link>
+    style: Body
+  layout: Horizontal

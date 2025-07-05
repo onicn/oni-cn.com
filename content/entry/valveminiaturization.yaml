@@ -1,0 +1,52 @@
+id: VALVEMINIATURIZATION
+parent_id: TECH
+name: 泵小型化
+disabled: False
+search_only: False
+category: TECH
+sort_string: 泵小型化
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="VALVEMINIATURIZATION">泵小型化</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 体积更小、效率更高的泵，用于低吞吐量的情况。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="PLASTICS">塑料制造</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: miniwaterpump_0__ui
+  - widget_type: CodexText
+    text: <link="LIQUIDMINIPUMP">小型液泵</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: minigaspump_0__ui
+  - widget_type: CodexText
+    text: <link="GASMINIPUMP">小型气泵</link>
+    style: Body
+  layout: Horizontal

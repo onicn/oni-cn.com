@@ -1,0 +1,134 @@
+id: URANIUMCENTRIFUGE
+parent_id: BUILDCATEGORYHEP
+name: 铀素离心机
+disabled: False
+search_only: False
+category: BUILDCATEGORYHEP
+sort_string: 铀素离心机
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="URANIUMCENTRIFUGE">铀素离心机</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 辐射精炼
+    style: Body
+    image: research_type_alpha_icon
+    link_id: nuclear
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: enrichmentcentrifuge_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      从<link="URANIUMORE">铀矿</link>中提取<link="ENRICHEDURANIUM">浓缩铀</link>。
+
+
+      输出熔融的<link="DEPLETEDURANIUM">贫铀</link>。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="POWER">电力</link>：480瓦'
+    tooltip: 必须与至少有<style="consumed">480瓦</style>可用<style="KKeyword">电力</style>的电路相连
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LIQUIDPIPING">液体输出管道</link>'
+    tooltip: 必须通过<link="LIQUIDCONDUIT">液体管道</link>系统排出<style="KKeyword">液体</style>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：3格宽x4格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：480秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="REFINEDMETAL">精炼金属</link>800千克, <link="PLASTIC">塑料</link>100千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="HEAT">热量</link>：+625复制热/秒'
+    tooltip: >-
+      每秒产生<style="produced">625复制热</style>
+
+
+      总<style="KKeyword">温度</style>变化受到加热物质的材料属性影响：
+          • 质量
+          • 比热容
+          • 表面积
+          • 隔热厚度
+          • 热导率
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LOGIC">信号输入端</link>'
+    tooltip: 当接收到信号时，输入端会使这个建筑一种状态发生变化
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    启用/禁用'
+    tooltip: >-
+      输入端行为：
+
+      • <b><style="logic_on">绿色信号</style></b>：启用建筑
+
+      • <b><style="logic_off">红色信号</style></b>：禁用建筑
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：-10（范围：2格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>2</b>格内降低<b><b>-10</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>类别</b>
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    <link="REQUIREMENTCLASSINDUSTRIALMACHINERY">工业机械</link>'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>浓缩铀是一种特殊的物质，可用作强大的研究性反应堆的燃料。</i>
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 所有配方
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 浓缩铀
+    require:
+    - image: radium_0__ui
+      text1: 铀矿
+      text2: 10千克
+      link_id: uraniumore
+    produce:
+    - image: enriched_uranium_0__ui
+      text1: 浓缩铀
+      text2: 2000克
+      link_id: enricheduranium
+    - image: element_liquid
+      color: A2DD10FF
+      text1: 熔融铀
+      text2: 8千克
+      link_id: moltenuranium
+    fabricator:
+      image: enrichmentcentrifuge_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 铀素离心机
+      text2: 40秒
+      link_id: uraniumcentrifuge
+  layout: Vertical

@@ -1,0 +1,68 @@
+id: EXPELLED
+name: 院长来信
+title: STRINGS.CODEX.INVESTIGATIONS.DLC2_EXPELLED.TITLE
+disabled: False
+search_only: False
+category: INVESTIGATIONS
+sort_string: 院长来信
+required_dlc_ids:
+- DLC2_ID
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 院长来信
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：无
+    style: Subtitle
+  layout: Vertical
+  lock_id: email_expelled
+- contents:
+  - widget_type: CodexText
+    text: >
+      <smallcaps>收件人：<b>哈罗德P.莫尔森博士</b><alpha=#AA><size=12> <hmoreson@gravitas.nova></size></color>
+
+      发件人：<b>迪伦·廷布尔博士</b><alpha=#AA><size=12> <principal@brighthall.edu></size></color></smallcaps>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_expelled
+- contents:
+  - widget_type: CodexText
+    text: >-
+      亲爱的莫尔森博士，
+
+
+      我很遗憾地通知您，您的儿子，卡尔文，将被明堂科学学院开除，即刻生效。
+
+
+      卡尔文在此短暂的学期中，证明了自己是一个具有天赋的年轻人，在所有科目上都表现出色。
+
+
+      但很不幸，卡尔文选择将其智力应用于具有煽动性的活动上。
+
+
+      他最近的违规行为包括，在今天上午的赞助商庆祝大会上，对来自全球能源公司（GEI）受人尊敬的演讲嘉宾进行尖酸刻薄的言语攻击。随后，他又策划了一场全校范围的罢课。
+
+
+      我们知道，卡尔文来自被GEI占据的国家，是一位难民学者，需要面临自身带来的许多挑战，虽然我们对此十分同情，但学院不能再忍受这些对我们教学环境的破坏了。
+
+
+      谨上，
+    style: Body
+  - widget_type: CodexText
+    text: >
+      迪伦·廷布尔
+
+      <size=11>院长
+
+
+      明堂科学学院
+
+      <i>学习为生活做好准备</i></size>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_expelled

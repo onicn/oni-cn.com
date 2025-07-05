@@ -1,0 +1,154 @@
+id: GARDENFOODPLANTFOOD
+parent_id: FOOD
+name: 汗甜玉米
+disabled: False
+search_only: False
+category: FOOD
+sort_string: 汗甜玉米
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="GARDENFOODPLANTFOOD">汗甜玉米</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: spikefruit_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <link="GARDENFOODPLANT">汗甜玉米秆</link>的甜味果实。
+
+
+      汗甜玉米的卡路里密度比<link="GARDENFORAGEPLANT">菌斑果</link>更高。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 品质：恶心 [-1]
+    style: Body
+  - widget_type: CodexText
+    text: 卡路里：800千卡
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      冷藏温度：4ºC
+
+      深度冷冻温度：-18ºC
+
+      腐烂时间：16.0周期
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 爆米花
+    require:
+    - image: spikefruit_0__ui
+      text1: 汗甜玉米
+      text2: 5,600千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: gardenfoodplantfood
+    - image: wood_0__ui
+      text1: 木材
+      text2: 100千克
+      link_id: wood
+    produce:
+    - image: smokedvegetables_0__ui
+      text1: 爆米花
+      text2: 11,450千卡
+      tooltip: 品质：标准 [+2]
+      link_id: smokedvegetables
+    fabricator:
+      image: smoker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 熏炉
+      text2: 600秒
+      link_id: smoker
+  - widget_type: CodexRecipePanel
+    text: 爆米花
+    require:
+    - image: spikefruit_0__ui
+      text1: 汗甜玉米
+      text2: 5,600千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: gardenfoodplantfood
+    - image: peat_0__ui
+      text1: 泥炭
+      text2: 100千克
+      link_id: peat
+    produce:
+    - image: smokedvegetables_0__ui
+      text1: 爆米花
+      text2: 11,450千卡
+      tooltip: 品质：标准 [+2]
+      link_id: smokedvegetables
+    fabricator:
+      image: smoker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 熏炉
+      text2: 600秒
+      link_id: smoker
+  - widget_type: CodexConversionPanel
+    require:
+    - image: spikefruit_0__ui
+      text1: 汗甜玉米
+      text2: 700千卡/周期
+      tooltip: 品质：恶心 [-1]
+      link_id: gardenfoodplantfood
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 656.3克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__ui
+      text1: 好吃哈奇
+      link_id: HATCH
+  - widget_type: CodexConversionPanel
+    require:
+    - image: spikefruit_0__ui
+      text1: 汗甜玉米
+      text2: 700千卡/周期
+      tooltip: 品质：恶心 [-1]
+      link_id: gardenfoodplantfood
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 875克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__veg_ui
+      text1: 草质哈奇
+      link_id: HATCHVEGGIE
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: peat_0__ui
+      text1: 泥炭
+      text2: 10千克/周期
+      link_id: peat
+    produce:
+    - image: spikefruit_0__ui
+      text1: 汗甜玉米
+      text2: 267千卡/周期
+      tooltip: 品质：恶心 [-1]
+      link_id: gardenfoodplantfood
+    fabricator:
+      image: spike_fruit_0__ui
+      text1: 汗甜玉米秆
+      link_id: GARDENFOODPLANT
+  layout: Vertical

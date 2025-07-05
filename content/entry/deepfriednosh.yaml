@@ -1,0 +1,109 @@
+id: DEEPFRIEDNOSH
+parent_id: FOOD
+name: 炸豆小吃
+disabled: False
+search_only: False
+category: FOOD
+sort_string: 炸豆小吃
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="DEEPFRIEDNOSH">炸豆小吃</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: deepfried_nosh_beans_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 一把松脆可口的豆子。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 品质：良好 [+3]
+    style: Body
+  - widget_type: CodexText
+    text: 卡路里：5,000千卡
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      冷藏温度：4ºC
+
+      深度冷冻温度：-18ºC
+
+      腐烂时间：8.0周期
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: deepfried_nosh_beans_0__ui
+      text1: 炸豆小吃
+      text2: 700千卡/周期
+      tooltip: 品质：良好 [+3]
+      link_id: deepfriednosh
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 105克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__ui
+      text1: 好吃哈奇
+      link_id: HATCH
+  - widget_type: CodexConversionPanel
+    require:
+    - image: deepfried_nosh_beans_0__ui
+      text1: 炸豆小吃
+      text2: 700千卡/周期
+      tooltip: 品质：良好 [+3]
+      link_id: deepfriednosh
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 140克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__veg_ui
+      text1: 草质哈奇
+      link_id: HATCHVEGGIE
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 油炸锅
+    require:
+    - image: seed_beanplant_0__ui
+      text1: 小吃豆
+      text2: 6单位
+      link_id: bean
+    - image: tallow_0__ui
+      text1: 动物油脂
+      text2: 1000克
+      link_id: tallow
+    produce:
+    - image: deepfried_nosh_beans_0__ui
+      text1: 炸豆小吃
+      text2: 5,000千卡
+      tooltip: 品质：良好 [+3]
+      link_id: deepfriednosh
+    fabricator:
+      image: deepfryer_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 油炸锅
+      text2: 50秒
+      link_id: deepfryer
+  layout: Vertical

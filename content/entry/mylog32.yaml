@@ -1,0 +1,29 @@
+id: MYLOG32
+name: 区域分析
+title: STRINGS.CODEX.MYLOG.BODY.OUTSIDESTARTINGDLC1.TITLE
+disabled: False
+search_only: False
+category: MYLOG
+sort_string: 区域分析
+required_dlc_ids:
+- EXPANSION1_ID
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 区域分析
+    style: Title
+  - widget_type: CodexText
+    text: >+
+      随着我的复制人在周围进一步探索，我对我们周围环境已有了更详细的认识。
+
+
+      不幸的是，我的结论是，这个星球没有足够的资源来维持长期的殖民地。
+
+
+      我只能希望在我们的资源用光之前能以某种方式到达另一颗小行星。
+
+    style: Body
+  - widget_type: CodexText
+    text: ''
+    style: Body
+  layout: Vertical

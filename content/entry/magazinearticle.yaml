@@ -1,0 +1,49 @@
+id: MAGAZINEARTICLE
+name: 《拟核》文章
+title: STRINGS.CODEX.B8_MAGAZINEARTICLE.TITLE
+disabled: False
+search_only: False
+category: INVESTIGATIONS
+sort_string: 《拟核》文章
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 《拟核》文章
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：三
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+  lock_id: journal_magazine
+- contents:
+  - widget_type: CodexText
+    text: <b>独立实验室发明神奇技术，可将时间变成能量</b>
+    style: Body
+  layout: Vertical
+  lock_id: journal_magazine
+- contents:
+  - widget_type: CodexText
+    text: >-
+      最近成立的庄严科技的科学家们公布了他们的第一个技术原型，称为“时间之弓”，这是一种能够操纵第四维度，生成无限、清洁、可再生能源的装置。
+
+
+      虽然这听起来可能像科幻小说中的情节，但该研究所的创始人杰奎琳·斯特恩博士证实，这是千真万确的。
+
+
+      “目前我们已经证明，在适当的实验室条件下，负质量超流体是可以违反牛顿第二运动定律的，”她说。
+
+
+      “既然运动定律可以被弯曲和改变，为什么热力学定律不能呢？这就是这个项目的主要目的。”
+
+
+      时间之弓的工作原理是，通过快速振动第四维度的节段，在时间上向前和向后发送少量的质量，从而产生大量的能量，几乎没有浪费。
+
+
+      “使用第四维度作为燃料最好的地方在于，”斯特恩说道，“它是绝对无限的。”
+
+
+      对于那些急切期待人类时间旅行前景的人，现在还是不要抱太大希望。研究所表示，尽管他们已经成功通过时间传送了物质，但这项技术是专为发电而发明的，若作为传送人类的设备还存在不足。
+    style: Body
+  layout: Vertical
+  lock_id: journal_magazine

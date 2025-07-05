@@ -1,0 +1,55 @@
+id: LIQUIDPIPING
+parent_id: TECH
+name: 水管
+disabled: False
+search_only: False
+category: TECH
+sort_string: 水管
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="LIQUIDPIPING">水管</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 安装<link="ELEMENTSLIQUID">液体</link>基础设施的基本技术。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: utilities_liquid_0__ui
+  - widget_type: CodexText
+    text: <link="LIQUIDCONDUIT">液体管道</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: utilityliquidbridge_0__ui
+  - widget_type: CodexText
+    text: <link="LIQUIDCONDUITBRIDGE">液体管桥</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: pumpliquid_0__ui
+  - widget_type: CodexText
+    text: <link="LIQUIDPUMP">液泵</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: ventliquid_0__ui
+  - widget_type: CodexText
+    text: <link="LIQUIDVENT">排液口</link>
+    style: Body
+  layout: Horizontal

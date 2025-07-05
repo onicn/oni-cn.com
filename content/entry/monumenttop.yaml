@@ -1,0 +1,64 @@
+id: MONUMENTTOP
+parent_id: BUILDCATEGORYFURNITURE
+name: 丰碑顶部
+disabled: False
+search_only: False
+category: BUILDCATEGORYFURNITURE
+sort_string: 丰碑顶部
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="MONUMENTTOP">丰碑顶部</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 丰碑
+    style: Body
+    image: research_type_alpha_icon
+    link_id: monuments
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: monument_upper_a_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      建造丰碑的顶部。
+
+
+      可以自定义外观。
+
+
+      实现殖民化使命必须建造丰碑。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：5格宽x5格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：60秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="GLASS">玻璃</link>2500千克, <link="DIAMOND">钻石</link>2500千克, <link="STEEL">钢</link>5吨'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    过热<link="HEAT">温度</link>：2000ºC'
+    tooltip: 达到<b>2000ºC</b>时开始过热
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：+10（范围：5格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>5</b>格内提高<b><b>+10</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>建造丰碑表明你向宇宙宣布这块大岩石是你自己的。</i>
+    style: Body
+  layout: Vertical

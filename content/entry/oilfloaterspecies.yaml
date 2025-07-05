@@ -1,0 +1,470 @@
+id: OILFLOATERSPECIES
+parent_id: CREATURES
+name: 浮油生物
+disabled: False
+search_only: False
+category: CREATURES
+sort_string: <link="OILFLOATERSPECIES">浮油生物</link>
+sub_entries:
+- id: Oilfloater
+  parent_id: OilFloaterSpecies
+  name: <link="OILFLOATER">浮油生物</link>
+  disabled: False
+  sort_string: 浮油生物
+- id: OilfloaterDecor
+  parent_id: OilFloaterSpecies
+  name: <link="OILFLOATERDECOR">长毛浮油生物</link>
+  disabled: False
+  sort_string: 长毛浮油生物
+- id: OilfloaterHighTemp
+  parent_id: OilFloaterSpecies
+  name: <link="OILFLOATERHIGHTEMP">熔岩浮油生物</link>
+  disabled: False
+  sort_string: 熔岩浮油生物
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 浮油生物
+    style: Title
+  - widget_type: CodexText
+    text: 小动物物种
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      浮油生物是一种独特的生物，因其排泄物中含有成分几乎与原油相当的烃类物质而出名。
+
+
+      浮油生物的头上有两撮毛，称为嗅角，能帮助它们找到可吸入的二氧化碳。
+    style: Body
+  - widget_type: CodexText
+    text: 小嗅角位于主嗅角两侧，专门用于通过机械方式接收和检测浮油生物周围的气压。这些嗅角可以发送信号给大脑，从而让浮油生物能够根据情况收缩或膨胀气囊。
+    style: Body
+  - widget_type: CodexText
+    text: >-
+      浮油生物是一种友善的生物，它良好的性格和笑脸在繁育者中广为人知。
+
+
+      浮油生物很少会咬人类饲养员，但通常不被认为适合当做家庭宠物喂养，这完全是因为它们常常会不声不响地把家里弄得油腻腻的。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 条目（3/3）
+    style: Subtitle
+  - widget_type: CodexText
+    text: <link="OILFLOATER">浮油生物</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="OILFLOATERDECOR">长毛浮油生物</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="OILFLOATERHIGHTEMP">熔岩浮油生物</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 浮油生物
+    style: Title
+  - widget_type: CodexText
+    text: 可驯化的小动物
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: oilfloater_0__ui
+  - widget_type: CodexImage
+    image: baby_oilfloater_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexText
+    text: 浮油生物是一种粘糊糊的小动物，能消耗<link="CARBONDIOXIDE">二氧化碳</link>并排出<link="CRUDEOIL">原油</link>。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 理想温度
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 舒适范围：<b>50ºC</b>至<b>140ºC</b>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 存活范围：<b>0ºC</b>至<b>200ºC</b>'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 寿命
+    style: Subtitle
+  - widget_type: CodexText
+    text: 这种小动物特征<link="CREATURES__GUIDE__FERTILITY">寿命</link>为<b>100周期</b>。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 所需空间
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 当房间空间对每只小动物平均少于<b>12格</b>时会感到<link="CREATURES__GUIDE__MOOD">拥挤</link>。'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 当房间小于<b>12格</b>时会感到<link="CREATURES__GUIDE__MOOD">封闭</link>。'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 掉落物
+    style: Subtitle
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 肉
+    image: creaturemeat_0__ui
+    link_id: meat
+  - widget_type: CodexText
+    text: 	3,200千卡
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 食物
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_gas
+      color: 000000FF
+      text1: 二氧化碳
+      text2: 20千克/周期
+      link_id: carbondioxide
+    produce:
+    - image: element_liquid
+      color: 301265FF
+      text1: 原油
+      text2: 10千克/周期
+      link_id: crudeoil
+    fabricator:
+      image: oilfloater_0__ui
+      text1: 浮油生物
+      link_id: OILFLOATER
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require: []
+    produce:
+    - image: creaturemeat_0__ui
+      text1: 肉
+      text2: 3,200千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: meat
+    fabricator:
+      image: oilfloater_0__ui
+      text1: 浮油生物
+      link_id: OILFLOATER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: oilfloater_0__ui
+      text1: 浮油生物
+      text2: 0.25单位/周期
+      link_id: oilfloater
+    produce:
+    - image: frozen_brine_0__ui
+      text1: 浓盐冰
+      text2: 128千克/周期
+      link_id: brine
+    fabricator:
+      image: raptor_0__ui
+      text1: 霸王鹦
+      link_id: RAPTOR
+  layout: Vertical
+- contents:
+  - widget_type: CodexLargeSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 长毛浮油生物
+    style: Title
+  - widget_type: CodexText
+    text: 小动物变种
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: oilfloater_0__oxy_ui
+  - widget_type: CodexImage
+    image: baby_oilfloater_0__oxy_ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexText
+    text: >-
+      长毛浮油生物是一种友好的小动物，需要消耗<link="OXYGEN">氧气</link>，在复制人的悉心陪伴下能长得很好。
+
+
+      长毛浮油生物拥有非常漂亮和华丽的皮毛。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 理想温度
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 舒适范围：<b>0ºC</b>至<b>50ºC</b>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 存活范围：<b>-50ºC</b>至<b>100ºC</b>'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 寿命
+    style: Subtitle
+  - widget_type: CodexText
+    text: 这种小动物特征<link="CREATURES__GUIDE__FERTILITY">寿命</link>为<b>150周期</b>。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 所需空间
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 当房间空间对每只小动物平均少于<b>12格</b>时会感到<link="CREATURES__GUIDE__MOOD">拥挤</link>。'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 当房间小于<b>12格</b>时会感到<link="CREATURES__GUIDE__MOOD">封闭</link>。'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 掉落物
+    style: Subtitle
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 肉
+    image: creaturemeat_0__ui
+    link_id: meat
+  - widget_type: CodexText
+    text: 	3,200千卡
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 食物
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_gas
+      color: B7FFFFFF
+      text1: 氧气
+      text2: 30千克/周期
+      link_id: oxygen
+    produce: []
+    fabricator:
+      image: oilfloater_0__oxy_ui
+      text1: 长毛浮油生物
+      link_id: OILFLOATERDECOR
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require: []
+    produce:
+    - image: creaturemeat_0__ui
+      text1: 肉
+      text2: 3,200千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: meat
+    fabricator:
+      image: oilfloater_0__oxy_ui
+      text1: 长毛浮油生物
+      link_id: OILFLOATERDECOR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: oilfloater_0__oxy_ui
+      text1: 长毛浮油生物
+      text2: 0.25单位/周期
+      link_id: oilfloaterdecor
+    produce:
+    - image: frozen_brine_0__ui
+      text1: 浓盐冰
+      text2: 128千克/周期
+      link_id: brine
+    fabricator:
+      image: raptor_0__ui
+      text1: 霸王鹦
+      link_id: RAPTOR
+  layout: Vertical
+- contents:
+  - widget_type: CodexLargeSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 熔岩浮油生物
+    style: Title
+  - widget_type: CodexText
+    text: 小动物变种
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: oilfloater_0__hot_ui
+  - widget_type: CodexImage
+    image: baby_oilfloater_0__hot_ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexText
+    text: 浮油生物是一种粘糊糊的小动物，能消耗<link="CARBONDIOXIDE">二氧化碳</link>并排出<link="PETROLEUM">石油</link>。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 理想温度
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 舒适范围：<b>100ºC</b>至<b>200ºC</b>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 存活范围：<b>50ºC</b>至<b>300ºC</b>'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 寿命
+    style: Subtitle
+  - widget_type: CodexText
+    text: 这种小动物特征<link="CREATURES__GUIDE__FERTILITY">寿命</link>为<b>100周期</b>。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 所需空间
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 当房间空间对每只小动物平均少于<b>12格</b>时会感到<link="CREATURES__GUIDE__MOOD">拥挤</link>。'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 当房间小于<b>12格</b>时会感到<link="CREATURES__GUIDE__MOOD">封闭</link>。'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 掉落物
+    style: Subtitle
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 肉
+    image: creaturemeat_0__ui
+    link_id: meat
+  - widget_type: CodexText
+    text: 	3,200千卡
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 食物
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_gas
+      color: 000000FF
+      text1: 二氧化碳
+      text2: 20千克/周期
+      link_id: carbondioxide
+    produce:
+    - image: element_liquid
+      color: FFC325FF
+      text1: 石油
+      text2: 10千克/周期
+      link_id: petroleum
+    fabricator:
+      image: oilfloater_0__hot_ui
+      text1: 熔岩浮油生物
+      link_id: OILFLOATERHIGHTEMP
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require: []
+    produce:
+    - image: creaturemeat_0__ui
+      text1: 肉
+      text2: 3,200千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: meat
+    fabricator:
+      image: oilfloater_0__hot_ui
+      text1: 熔岩浮油生物
+      link_id: OILFLOATERHIGHTEMP
+  - widget_type: CodexConversionPanel
+    require:
+    - image: oilfloater_0__hot_ui
+      text1: 熔岩浮油生物
+      text2: 0.25单位/周期
+      link_id: oilfloaterhightemp
+    produce:
+    - image: frozen_brine_0__ui
+      text1: 浓盐冰
+      text2: 128千克/周期
+      link_id: brine
+    fabricator:
+      image: raptor_0__ui
+      text1: 霸王鹦
+      link_id: RAPTOR
+  layout: Vertical
+- contents:
+  - widget_type: CodexLargeSpacer
+  layout: Vertical

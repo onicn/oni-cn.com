@@ -1,0 +1,72 @@
+id: RADIATIONPROTECTION
+parent_id: TECH
+name: 辐射防护
+disabled: False
+search_only: False
+category: TECH
+sort_string: 辐射防护
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="RADIATIONPROTECTION">辐射防护</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 保护你的复制人免受危险级辐射的影响。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="MEDICINEIV">靶向药物</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="LIQUIDFILTERING">基于液体的精炼工艺</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="ADVANCEDNUCLEARRESEARCH">进阶材料科学研究</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: suit_leadsuit_0__ui
+  - widget_type: CodexText
+    text: <style="KKeyword">铅服</style>模型
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: changingarea_radiation_arrow_0__ui
+  - widget_type: CodexText
+    text: <link="LEADSUITMARKER">铅服检查站</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: changingarea_radiation_0__ui
+  - widget_type: CodexText
+    text: <link="LEADSUITLOCKER">铅服存放柜</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: radbolt_sensor_0__ui
+  - widget_type: CodexText
+    text: <link="LOGICHEPSENSOR">辐射粒子传感器</link>
+    style: Body
+  layout: Horizontal

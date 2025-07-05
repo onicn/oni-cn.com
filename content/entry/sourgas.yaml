@@ -1,0 +1,154 @@
+id: SOURGAS
+parent_id: ELEMENTSGAS
+name: 高硫天然气
+disabled: False
+search_only: False
+icon_color: 76245DFF
+category: ELEMENTSGAS
+sort_string: 高硫天然气
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="SOURGAS">高硫天然气</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    color: 76245DFF
+    image: element_gas
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_gas
+      color: 76245DFF
+      text1: 高硫天然气
+      text2: 1000克
+      link_id: sourgas
+    produce:
+    - image: element_liquid
+      color: FF9D00FF
+      text1: 液态甲烷
+      text2: 670克
+      link_id: liquidmethane
+    - image: sulfur_0__ui
+      text1: 硫
+      text2: 330克
+      link_id: sulfur
+    fabricator:
+      image: crew_state_temp_down
+      text1: -161.5ºC
+      tooltip: 温度低于-161.5ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换于
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: super_insulator_0__ui
+      text1: 隔热质
+      text2: 1000克
+      link_id: superinsulator
+    produce:
+    - image: element_liquid
+      color: E5290EFF
+      text1: 熔融钨
+      text2: 850克
+      link_id: moltentungsten
+    - image: element_gas
+      color: 76245DFF
+      text1: 高硫天然气
+      text2: 150克
+      link_id: sourgas
+    fabricator:
+      image: crew_state_temp_up
+      text1: 3621.9ºC
+      tooltip: 温度高于3621.9ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: hardplastic_0__ui
+      text1: 塑料质
+      text2: 1000克
+      link_id: hardpolypropylene
+    produce:
+    - image: element_gas
+      color: 76245DFF
+      text1: 高硫天然气
+      text2: 1000克
+      link_id: sourgas
+    fabricator:
+      image: crew_state_temp_up
+      text1: 1826.9ºC
+      tooltip: 温度高于1826.9ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: FFC325FF
+      text1: 石油
+      text2: 1000克
+      link_id: petroleum
+    produce:
+    - image: element_gas
+      color: 76245DFF
+      text1: 高硫天然气
+      text2: 1000克
+      link_id: sourgas
+    fabricator:
+      image: crew_state_temp_up
+      text1: 538.9ºC
+      tooltip: 温度高于538.9ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: B000FFFF
+      text1: 液态石脑油
+      text2: 1000克
+      link_id: naphtha
+    produce:
+    - image: element_gas
+      color: 76245DFF
+      text1: 高硫天然气
+      text2: 1000克
+      link_id: sourgas
+    fabricator:
+      image: crew_state_temp_up
+      text1: 538.9ºC
+      tooltip: 温度高于538.9ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      高硫天然气是一种含高浓度硫化氢的烃类<link="ELEMENTSGAS">气体</link>。
+
+
+      它是<link="PETROLEUM">石油</link>经高温加热的副产品。
+
+
+      资源种类：不可呼吸的气体
+
+      凝点：-161.5ºC
+
+
+      比热容：1.898 (DTU/g)/ºC
+
+      热导率：0.018 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.05
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：气体, 不可呼吸的气体
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

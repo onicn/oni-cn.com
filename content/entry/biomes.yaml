@@ -1,0 +1,143 @@
+id: BIOMES
+name: 生态
+disabled: False
+search_only: False
+category: Root
+sort_string: 生态
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="BIOMES">生态</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexLabelWithLargeIcon
+    text: 丛林生态
+    style: BodyWhite
+    image: biomeIconJungle
+    link_id: biomejungle
+  - widget_type: CodexLabelWithLargeIcon
+    text: 冰窟生态
+    style: BodyWhite
+    image: biomeIconIcecaves
+    link_id: biomeicecaves
+  - widget_type: CodexLabelWithLargeIcon
+    text: 冷池生态
+    style: BodyWhite
+    image: biomeIconCarrotquarry
+    link_id: biomecarrotquarry
+  - widget_type: CodexLabelWithLargeIcon
+    text: 太空生态
+    style: BodyWhite
+    image: biomeIconSpace
+    link_id: biomespace
+  - widget_type: CodexLabelWithLargeIcon
+    text: 寒羽生态
+    style: BodyWhite
+    image: biomeIconRaptor
+    link_id: biomeraptor
+  - widget_type: CodexLabelWithLargeIcon
+    text: 岩浆生态
+    style: BodyWhite
+    image: biomeIconMagma
+    link_id: biomemagma
+  - widget_type: CodexLabelWithLargeIcon
+    text: 岩漠生态
+    style: BodyWhite
+    image: biomeIconBarren
+    link_id: biomebarren
+  - widget_type: CodexLabelWithLargeIcon
+    text: 森林生态
+    style: BodyWhite
+    image: biomeIconForest
+    link_id: biomeforest
+  - widget_type: CodexLabelWithLargeIcon
+    text: 水域生态
+    style: BodyWhite
+    image: biomeIconAquatic
+    link_id: biomeaquatic
+  - widget_type: CodexLabelWithLargeIcon
+    text: 油质生态
+    style: BodyWhite
+    image: biomeIconOil
+    link_id: biomeoil
+  - widget_type: CodexLabelWithLargeIcon
+    text: 沼泽生态
+    style: BodyWhite
+    image: biomeIconSwamp
+    link_id: biomeswamp
+  - widget_type: CodexLabelWithLargeIcon
+    text: 浮土生态
+    style: BodyWhite
+    image: biomeIconRegolith
+    link_id: biomeregolith
+  - widget_type: CodexLabelWithLargeIcon
+    text: 海洋生态
+    style: BodyWhite
+    image: biomeIconOcean
+    link_id: biomeocean
+  - widget_type: CodexLabelWithLargeIcon
+    text: 海牛生态
+    style: BodyWhite
+    image: biomeIconMoo
+    link_id: biomemoo
+  - widget_type: CodexLabelWithLargeIcon
+    text: 湿地生态
+    style: BodyWhite
+    image: biomeIconMarsh
+    link_id: biomemarsh
+  - widget_type: CodexLabelWithLargeIcon
+    text: 砂岩生态
+    style: BodyWhite
+    image: biomeIconSandstone
+    link_id: biomesandstone
+  - widget_type: CodexLabelWithLargeIcon
+    text: 花园生态
+    style: BodyWhite
+    image: biomeIconGarden
+    link_id: biomegarden
+  - widget_type: CodexLabelWithLargeIcon
+    text: 花蜜生态
+    style: BodyWhite
+    image: biomeIconSugarwoods
+    link_id: biomesugarwoods
+  - widget_type: CodexLabelWithLargeIcon
+    text: 苔原生态
+    style: BodyWhite
+    image: biomeIconFrozen
+    link_id: biomefrozen
+  - widget_type: CodexLabelWithLargeIcon
+    text: 荒地生态
+    style: BodyWhite
+    image: biomeIconWasteland
+    link_id: biomewasteland
+  - widget_type: CodexLabelWithLargeIcon
+    text: 辐射生态
+    style: BodyWhite
+    image: biomeIconRadioactive
+    link_id: biomeradioactive
+  - widget_type: CodexLabelWithLargeIcon
+    text: 金属生态
+    style: BodyWhite
+    image: biomeIconMetallic
+    link_id: biomemetallic
+  - widget_type: CodexLabelWithLargeIcon
+    text: 铁锈生态
+    style: BodyWhite
+    image: biomeIconRust
+    link_id: biomerust
+  - widget_type: CodexLabelWithLargeIcon
+    text: 铌质生态
+    style: BodyWhite
+    image: biomeIconNiobium
+    link_id: biomeniobium
+  - widget_type: CodexLabelWithLargeIcon
+    text: 险沼生态
+    style: BodyWhite
+    image: biomeIconWetlands
+    link_id: biomewetlands
+  layout: Grid
+- contents:
+  - widget_type: CodexSpacer
+  layout: Vertical

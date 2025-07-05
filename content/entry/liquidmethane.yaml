@@ -1,0 +1,151 @@
+id: LIQUIDMETHANE
+parent_id: ELEMENTSLIQUID
+name: 液态甲烷
+disabled: False
+search_only: False
+icon_color: FF9D00FF
+category: ELEMENTSLIQUID
+sort_string: 液态甲烷
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="LIQUIDMETHANE">液态甲烷</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    color: FF9D00FF
+    image: element_liquid
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: FF9D00FF
+      text1: 液态甲烷
+      text2: 1000克
+      link_id: liquidmethane
+    produce:
+    - image: element_gas
+      color: FF6E0FFF
+      text1: 天然气
+      text2: 1000克
+      link_id: methane
+    fabricator:
+      image: crew_state_temp_up
+      text1: -161.5ºC
+      tooltip: 温度高于-161.5ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: FF9D00FF
+      text1: 液态甲烷
+      text2: 1000克
+      link_id: liquidmethane
+    produce:
+    - image: solid_methane_0__ui
+      text1: 固态甲烷
+      text2: 1000克
+      link_id: solidmethane
+    fabricator:
+      image: crew_state_temp_down
+      text1: -182.6ºC
+      tooltip: 温度低于-182.6ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换于
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: solid_methane_0__ui
+      text1: 固态甲烷
+      text2: 1000克
+      link_id: solidmethane
+    produce:
+    - image: element_liquid
+      color: FF9D00FF
+      text1: 液态甲烷
+      text2: 1000克
+      link_id: liquidmethane
+    fabricator:
+      image: crew_state_temp_up
+      text1: -182.6ºC
+      tooltip: 温度高于-182.6ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_gas
+      color: 76245DFF
+      text1: 高硫天然气
+      text2: 1000克
+      link_id: sourgas
+    produce:
+    - image: element_liquid
+      color: FF9D00FF
+      text1: 液态甲烷
+      text2: 670克
+      link_id: liquidmethane
+    - image: sulfur_0__ui
+      text1: 硫
+      text2: 330克
+      link_id: sulfur
+    fabricator:
+      image: crew_state_temp_down
+      text1: -161.5ºC
+      tooltip: 温度低于-161.5ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_gas
+      color: FF6E0FFF
+      text1: 天然气
+      text2: 1000克
+      link_id: methane
+    produce:
+    - image: element_liquid
+      color: FF9D00FF
+      text1: 液态甲烷
+      text2: 1000克
+      link_id: liquidmethane
+    fabricator:
+      image: crew_state_temp_down
+      text1: -161.5ºC
+      tooltip: 温度低于-161.5ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      (CH<sub>4</sub>) 甲烷是一种烷烃。
+
+
+      当前选中的处于<link="ELEMENTSLIQUID">液态</link>。
+
+
+      资源种类：<link="ELEMENTSLIQUID">液体</link>
+
+      冰点：-182.6ºC
+
+      沸点：-161.5ºC
+
+
+      比热容：2.191 (DTU/g)/ºC
+
+      热导率：0.030 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.75
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：<link="ELEMENTSLIQUID">液体</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

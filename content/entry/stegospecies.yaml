@@ -1,0 +1,181 @@
+id: STEGOSPECIES
+parent_id: CREATURES
+name: 尖块兽
+disabled: False
+search_only: False
+category: CREATURES
+sort_string: <link="STEGOSPECIES">尖块兽</link>
+required_dlc_ids:
+- DLC4_ID
+sub_entries:
+- id: Stego
+  parent_id: StegoSpecies
+  name: <link="STEGO">尖块兽</link>
+  disabled: False
+  sort_string: 尖块兽
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 尖块兽
+    style: Title
+  - widget_type: CodexText
+    text: 可驯化的小动物
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      与其他前脑神经元数量与尖块兽同样低下的生物不同，这种温顺的生物拥有独特的生存优势。
+
+
+      它们庞大的体型和尖刺状突起让大多数掠食者望而却步。一些民间轶事表明，某些小型物种甚至会收养失去双亲的尖块兽。
+
+
+      一些专家推测，这种行为可能是为了利用尖块兽的遗传性肌肉亢奋症状（类似不宁腿综合征），它们会规律性地跺击地面，从而震落周围植物上的可口果实。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: stego_0__ui
+  - widget_type: CodexImage
+    image: baby_stego_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexText
+    text: >-
+      尖块兽是没有敌意的小动物，靠<link="VINEMOTHER">漫殖藤</link>维生。
+
+
+      当它们在<link="PLANTS">植物</link>附近跺脚时，震动会导致可收获的物品掉在地上。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 理想温度
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 舒适范围：<b>20ºC</b>至<b>70ºC</b>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 存活范围：<b>-100ºC</b>至<b>100ºC</b>'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 寿命
+    style: Subtitle
+  - widget_type: CodexText
+    text: 这种小动物特征<link="CREATURES__GUIDE__FERTILITY">寿命</link>为<b>200周期</b>。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 所需空间
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 当房间空间对每只小动物平均少于<b>16格</b>时会感到<link="CREATURES__GUIDE__MOOD">拥挤</link>。'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 当房间小于<b>16格</b>时会感到<link="CREATURES__GUIDE__MOOD">封闭</link>。'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 掉落物
+    style: Subtitle
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 硬肉
+    image: dinomeat_raw_0__ui
+    link_id: dinosaurmeat
+  - widget_type: CodexText
+    text: 	12千克
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 食物
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: ova_melon_0__ui
+      text1: 漫花果
+      text2: 1,300千卡/周期
+      tooltip: 品质：糟糕 [0]
+      link_id: vinefruit
+    produce:
+    - image: peat_0__ui
+      text1: 泥炭
+      text2: 200千克/周期
+      link_id: peat
+    fabricator:
+      image: stego_0__ui
+      text1: 尖块兽
+      link_id: STEGO
+  - widget_type: CodexConversionPanel
+    require:
+    - image: bristleberry_0__ui
+      text1: 毛刺浆果
+      text2: 1,300千卡/周期
+      tooltip: 品质：糟糕 [0]
+      link_id: pricklefruit
+    produce:
+    - image: peat_0__ui
+      text1: 泥炭
+      text2: 200千克/周期
+      link_id: peat
+    fabricator:
+      image: stego_0__ui
+      text1: 尖块兽
+      link_id: STEGO
+  - widget_type: CodexConversionPanel
+    require:
+    - image: swampcrop_fruit_0__ui
+      text1: 沼浆果冻
+      text2: 1,300千卡/周期
+      tooltip: 品质：糟糕 [0]
+      link_id: swampfruit
+    produce:
+    - image: peat_0__ui
+      text1: 泥炭
+      text2: 300千克/周期
+      link_id: peat
+    fabricator:
+      image: stego_0__ui
+      text1: 尖块兽
+      link_id: STEGO
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require: []
+    produce:
+    - image: dinomeat_raw_0__ui
+      text1: 硬肉
+      text2: 12千克
+      link_id: dinosaurmeat
+    fabricator:
+      image: stego_0__ui
+      text1: 尖块兽
+      link_id: STEGO
+  layout: Vertical

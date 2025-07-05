@@ -1,0 +1,317 @@
+id: DIVERGENTSPECIES
+parent_id: CREATURES
+name: 异化虫
+disabled: False
+search_only: False
+category: CREATURES
+sort_string: <link="DRECKOSPECIES">异化虫</link>
+required_dlc_ids:
+- EXPANSION1_ID
+sub_entries:
+- id: DivergentBeetle
+  parent_id: DivergentSpecies
+  name: <link="DIVERGENTBEETLE">甜素甲虫</link>
+  disabled: False
+  sort_string: 甜素甲虫
+- id: DivergentWorm
+  parent_id: DivergentSpecies
+  name: <link="DIVERGENTWORM">虫果果虫</link>
+  disabled: False
+  sort_string: 虫果果虫
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 异化虫
+    style: Title
+  - widget_type: CodexText
+    text: 可驯化的小动物
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      “异化虫”是同一物种的两个不同形态的统称，两者都能无性繁殖并能够照料虫果芽。
+
+
+      当照料虫果芽时，两种形态的异化虫都会做相同的行为，然而虫果果虫具有稍微更细小的面部毛发，这有助于植物授粉并使其更快地生长。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 条目（2/2）
+    style: Subtitle
+  - widget_type: CodexText
+    text: <link="DIVERGENTBEETLE">甜素甲虫</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="DIVERGENTWORM">虫果果虫</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: critter_0__ui
+  - widget_type: CodexImage
+    image: baby_critter_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexText
+    text: >-
+      甜素甲虫是一种没有敌意的小动物，可以排泄大量的固体<link="SUCROSE">蔗糖</link>。
+
+
+      甜素甲虫与<link="DIVERGENTWORM">虫果果虫</link>关系密切，并表现出相似但效果较弱的耕种行为。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 理想温度
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 舒适范围：<b>10ºC</b>至<b>40ºC</b>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 存活范围：<b>-30ºC</b>至<b>100ºC</b>'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 寿命
+    style: Subtitle
+  - widget_type: CodexText
+    text: 这种小动物特征<link="CREATURES__GUIDE__FERTILITY">寿命</link>为<b>75周期</b>。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 所需空间
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 当房间空间对每只小动物平均少于<b>12格</b>时会感到<link="CREATURES__GUIDE__MOOD">拥挤</link>。'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 当房间小于<b>12格</b>时会感到<link="CREATURES__GUIDE__MOOD">封闭</link>。'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 掉落物
+    style: Subtitle
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 肉
+    image: creaturemeat_0__ui
+    link_id: meat
+  - widget_type: CodexText
+    text: 	1,600千卡
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 食物
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: sulfur_0__ui
+      text1: 硫
+      text2: 20千克/周期
+      link_id: sulfur
+    produce:
+    - image: sucrose_0__ui
+      text1: 蔗糖
+      text2: 10千克/周期
+      link_id: sucrose
+    fabricator:
+      image: critter_0__ui
+      text1: 甜素甲虫
+      link_id: DIVERGENTBEETLE
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require: []
+    produce:
+    - image: creaturemeat_0__ui
+      text1: 肉
+      text2: 1,600千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: meat
+    fabricator:
+      image: critter_0__ui
+      text1: 甜素甲虫
+      link_id: DIVERGENTBEETLE
+  - widget_type: CodexConversionPanel
+    require:
+    - image: critter_0__ui
+      text1: 甜素甲虫
+      text2: 0.5单位/周期
+      link_id: divergentbeetle
+    produce:
+    - image: frozen_brine_0__ui
+      text1: 浓盐冰
+      text2: 128千克/周期
+      link_id: brine
+    fabricator:
+      image: raptor_0__ui
+      text1: 霸王鹦
+      link_id: RAPTOR
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: worm_head_0__ui
+  - widget_type: CodexImage
+    image: baby_worm_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexText
+    text: >-
+      虫果果虫与植物形成共生关系，尤其是<link="WORMPLANT">虫果芽</link>，并本能地会照顾这些植株。
+
+
+      虫果果虫与<link="DIVERGENTBEETLE">甜素甲虫</link>关系密切。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 理想温度
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 舒适范围：<b>10ºC</b>至<b>40ºC</b>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 存活范围：<b>-30ºC</b>至<b>100ºC</b>'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 寿命
+    style: Subtitle
+  - widget_type: CodexText
+    text: 这种小动物特征<link="CREATURES__GUIDE__FERTILITY">寿命</link>为<b>150周期</b>。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 所需空间
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 当房间空间对每只小动物平均少于<b>16格</b>时会感到<link="CREATURES__GUIDE__MOOD">拥挤</link>。'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 当房间小于<b>16格</b>时会感到<link="CREATURES__GUIDE__MOOD">封闭</link>。'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 掉落物
+    style: Subtitle
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 肉
+    image: creaturemeat_0__ui
+    link_id: meat
+  - widget_type: CodexText
+    text: 	4,800千卡
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 食物
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: sulfur_0__ui
+      text1: 硫
+      text2: 50千克/周期
+      link_id: sulfur
+    produce:
+    - image: sludge_0__ui
+      text1: 泥巴
+      text2: 5000克/周期
+      link_id: mud
+    fabricator:
+      image: worm_head_0__ui
+      text1: 虫果果虫
+      link_id: DIVERGENTWORM
+  - widget_type: CodexConversionPanel
+    require:
+    - image: sucrose_0__ui
+      text1: 蔗糖
+      text2: 30千克/周期
+      link_id: sucrose
+    produce:
+    - image: sludge_0__ui
+      text1: 泥巴
+      text2: 30千克/周期
+      link_id: mud
+    fabricator:
+      image: worm_head_0__ui
+      text1: 虫果果虫
+      link_id: DIVERGENTWORM
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require: []
+    produce:
+    - image: creaturemeat_0__ui
+      text1: 肉
+      text2: 4,800千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: meat
+    fabricator:
+      image: worm_head_0__ui
+      text1: 虫果果虫
+      link_id: DIVERGENTWORM
+  - widget_type: CodexConversionPanel
+    require:
+    - image: worm_head_0__ui
+      text1: 虫果果虫
+      text2: 0.17单位/周期
+      link_id: divergentworm
+    produce:
+    - image: frozen_brine_0__ui
+      text1: 浓盐冰
+      text2: 128千克/周期
+      link_id: brine
+    fabricator:
+      image: raptor_0__ui
+      text1: 霸王鹦
+      link_id: RAPTOR
+  layout: Vertical

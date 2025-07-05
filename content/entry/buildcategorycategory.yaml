@@ -1,0 +1,119 @@
+id: BUILDCATEGORYCATEGORY
+parent_id: BUILDINGS
+name: 类别
+disabled: False
+search_only: False
+category: BUILDINGS
+sort_string: 类别
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="BUILDCATEGORYCATEGORY">类别</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexLabelWithLargeIcon
+    text: 仿生保养站
+    style: BodyWhite
+    image: oilchange_station_0__ui
+    link_id: groupbionicbuilding
+  - widget_type: CodexLabelWithLargeIcon
+    text: 光源
+    style: BodyWhite
+    image: floorlamp_0__ui
+    link_id: requirementclasslightsource
+  - widget_type: CodexLabelWithLargeIcon
+    text: 养殖建筑
+    style: BodyWhite
+    image: rancherstation_0__ui
+    link_id: requirementclassranchstationtype
+  - widget_type: CodexLabelWithLargeIcon
+    text: 农业建筑
+    style: BodyWhite
+    image: farmtilerotating_0__ui
+    link_id: groupfarmbuilding
+  - widget_type: CodexLabelWithLargeIcon
+    text: 冲水厕所
+    style: BodyWhite
+    image: toiletflush_0__ui
+    link_id: requirementclassflushtoilettype
+  - widget_type: CodexLabelWithLargeIcon
+    text: 医疗设备
+    style: BodyWhite
+    image: medical_cot_0__ui
+    link_id: requirementclassclinic
+  - widget_type: CodexLabelWithLargeIcon
+    text: 升温站
+    style: BodyWhite
+    image: spaceheater_0__ui
+    link_id: requirementclasswarmingstation
+  - widget_type: CodexLabelWithLargeIcon
+    text: 厕所
+    style: BodyWhite
+    image: outhouse_0__ui
+    link_id: requirementclasstoilettype
+  - widget_type: CodexLabelWithLargeIcon
+    text: 发电机
+    style: BodyWhite
+    image: generatorphos_0__ui
+    link_id: requirementclassgeneratortype
+  - widget_type: CodexLabelWithLargeIcon
+    text: 娱乐建筑
+    style: BodyWhite
+    image: arcade_cabinet_0__ui
+    link_id: requirementclassrecbuilding
+  - widget_type: CodexLabelWithLargeIcon
+    text: 小动物搬迁建筑
+    style: BodyWhite
+    image: relocator_dropoff_0__ui
+    link_id: groupcreaturerelocator
+  - widget_type: CodexLabelWithLargeIcon
+    text: 工业机械
+    style: BodyWhite
+    image: generatormanual_0__ui
+    link_id: requirementclassindustrialmachinery
+  - widget_type: CodexLabelWithLargeIcon
+    text: 床位
+    style: BodyWhite
+    image: bedlg_0__ui
+    link_id: requirementclassbedtype
+  - widget_type: CodexLabelWithLargeIcon
+    text: 洗手站
+    style: BodyWhite
+    image: wash_basin_0__ui
+    link_id: requirementclasswashstation
+  - widget_type: CodexLabelWithLargeIcon
+    text: 火箭内部
+    style: BodyWhite
+    image: rocket_control_station_0__ui
+    link_id: requirementclassrocketinterior
+  - widget_type: CodexLabelWithLargeIcon
+    text: 烹饪站
+    style: BodyWhite
+    image: cookstation_0__ui
+    link_id: requirementclasscooktop
+  - widget_type: CodexLabelWithLargeIcon
+    text: 电力建筑
+    style: BodyWhite
+    image: batterysm_0__ui
+    link_id: requirementclasspowerbuilding
+  - widget_type: CodexLabelWithLargeIcon
+    text: 科学建筑
+    style: BodyWhite
+    image: research_center_0__ui
+    link_id: requirementclasssciencebuilding
+  - widget_type: CodexLabelWithLargeIcon
+    text: 装饰物
+    style: BodyWhite
+    image: flowervase_0__ui
+    link_id: requirementclassdecoration
+  - widget_type: CodexLabelWithLargeIcon
+    text: 铺设管道的洗手站
+    style: BodyWhite
+    image: shower_0__ui
+    link_id: requirementclassadvancedwashstation
+  layout: Grid
+- contents:
+  - widget_type: CodexSpacer
+  layout: Vertical

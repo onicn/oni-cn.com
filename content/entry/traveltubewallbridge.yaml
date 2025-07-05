@@ -1,0 +1,57 @@
+id: TRAVELTUBEWALLBRIDGE
+parent_id: BUILDCATEGORYBASE
+name: 运载管道渡口
+disabled: False
+search_only: False
+category: BUILDCATEGORYBASE
+sort_string: 运载管道渡口
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="TRAVELTUBEWALLBRIDGE">运载管道渡口</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 运载管道
+    style: Body
+    image: research_type_alpha_icon
+    link_id: traveltubes
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: tube_tile_bridge_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      允许<link="TRAVELTUBE">运载管道</link>穿过墙体和地面。
+
+
+      本身可作为常规砖块使用。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：1格宽x1格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：3秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="PLASTIC">塑料</link>100千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    行走速度：-50%'
+    tooltip: 复制人在这种砖块上能够加速<b>-50%</b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>运载管道渡口可以让运载管道穿墙而过，而不会泄漏气体和液体。</i>
+    style: Body
+  layout: Vertical

@@ -1,0 +1,118 @@
+id: FOOLSGOLD
+parent_id: ELEMENTSSOLID
+name: 黄铁矿
+disabled: False
+search_only: False
+category: ELEMENTSSOLID
+sort_string: 黄铁矿
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="FOOLSGOLD">黄铁矿</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: fools_gold_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: fools_gold_0__ui
+      text1: 黄铁矿
+      text2: 1000克
+      link_id: foolsgold
+    produce:
+    - image: element_liquid
+      color: 5F98ADFF
+      text1: 熔融铁
+      text2: 1000克
+      link_id: molteniron
+    fabricator:
+      image: crew_state_temp_up
+      text1: 1083.9ºC
+      tooltip: 温度高于1083.9ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 铁
+    require:
+    - image: fools_gold_0__ui
+      text1: 黄铁矿
+      text2: 100千克
+      link_id: foolsgold
+    produce:
+    - image: iron_refined_0__ui
+      text1: 铁
+      text2: 100千克
+      link_id: iron
+    fabricator:
+      image: metalrefinery_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 金属精炼器
+      text2: 40秒
+      link_id: metalrefinery
+  - widget_type: CodexRecipePanel
+    text: 铁
+    require:
+    - image: fools_gold_0__ui
+      text1: 黄铁矿
+      text2: 100千克
+      link_id: foolsgold
+    produce:
+    - image: iron_refined_0__ui
+      text1: 铁
+      text2: 50千克
+      link_id: iron
+    - image: sand_0__ui
+      text1: 沙子
+      text2: 50千克
+      link_id: sand
+    fabricator:
+      image: rockrefinery_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 碎石机
+      text2: 40秒
+      link_id: rockcrusher
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      (FeS<sub>2</sub>) 黄铁矿是一种导电<link="RAWMETAL">金属</link>。
+
+
+      也被称为“愚人之金”，适合建造<link="POWER">电力</link>系统。
+
+
+      资源种类：<link="METAL">金属矿石</link>
+
+      熔点：1083.9ºC
+
+      硬度：<color=#866BA5FF>25（坚硬）</color>
+
+
+      比热容：0.386 (DTU/g)/ºC
+
+      热导率：4.500 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.7
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：矿石, <link="BUILDABLEANY">一般建造材料</link>, <link="ELEMENTSSOLID">固体</link>, <link="METAL">金属矿石</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

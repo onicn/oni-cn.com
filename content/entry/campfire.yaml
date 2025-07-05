@@ -1,0 +1,116 @@
+id: CAMPFIRE
+parent_id: BUILDCATEGORYUTILITIES
+name: 柴火炉
+disabled: False
+search_only: False
+category: BUILDCATEGORYUTILITIES
+sort_string: 柴火炉
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="CAMPFIRE">柴火炉</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 职业管理
+    style: Body
+    image: research_type_alpha_icon
+    link_id: jobs
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: campfire_small_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 消耗<link="WOOD">木材</link>以<link="HEAT">加热</link>寒冷的环境。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="WOODLOG">木材</link>：25克/秒'
+    tooltip: 使用时消耗<style="consumed">25克/秒</style><style="KKeyword"><link="WOODLOG">木材</link></style>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    复制人的操作'
+    tooltip: 必须有复制人来才能使这个建筑运行
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：1格宽x2格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：10秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="METAL">金属矿石</link>100千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="HEAT">热量</link>：+20千复制热/秒'
+    tooltip: >-
+      每秒产生<style="produced">20千复制热</style>
+
+
+      总<style="KKeyword">温度</style>变化受到加热物质的材料属性影响：
+          • 质量
+          • 比热容
+          • 表面积
+          • 隔热厚度
+          • 热导率
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    严寒抗性'
+    tooltip: 使用这个建筑可提供对<style="KKeyword">严寒环境</style>和<style="KKeyword">双脚湿透</style>的暂时免疫
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="CARBONDIOXIDE">二氧化碳</link>：4000毫克/秒'
+    tooltip: >-
+      使用时产生<style="produced">4000毫克/秒</style><style="KKeyword"><link="CARBONDIOXIDE">二氧化碳</link></style>
+
+
+      输出温度至少为<b>30ºC</b>，如果输入材料的温度更高输出也会随之更高。
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LIGHT">照明范围</link>：6格'
+    tooltip: >-
+      发<style="KKeyword">光</style>
+
+
+      当建筑有光照后，复制人就能更快地操作建筑
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LIGHT">亮度</link>：450勒克斯'
+    tooltip: >-
+      发<style="KKeyword">光</style>
+
+
+      当建筑有光照后，复制人就能更快地操作建筑
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：+20（范围：4格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>4</b>格内提高<b><b>+20</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>类别</b>
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    <link="REQUIREMENTCLASSWARMINGSTATION">升温站</link>'
+    style: Body
+  - widget_type: CodexText
+    text: '    <link="REQUIREMENTCLASSDECORATION">装饰物</link>'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>柴火炉能烘干湿透的双脚，并帮助复制人暂时忘掉自己有多冷。</i>
+    style: Body
+  layout: Vertical

@@ -1,0 +1,433 @@
+id: CRAFTINGTABLE
+parent_id: BUILDCATEGORYEQUIPMENT
+name: 工作台
+disabled: False
+search_only: False
+category: BUILDCATEGORYEQUIPMENT
+sort_string: 工作台
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="CRAFTINGTABLE">工作台</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 职业管理
+    style: Body
+    image: research_type_alpha_icon
+    link_id: jobs
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: craftingstation_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      为复制人生产可供使用的物品和装备。
+
+
+      只有在队列中安排配方复制人才会进行制作。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="POWER">电力</link>：60瓦'
+    tooltip: 必须与至少有<style="consumed">60瓦</style>可用<style="KKeyword">电力</style>的电路相连
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    复制人的操作'
+    tooltip: 必须有复制人来才能使这个建筑运行
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：2格宽x2格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：30秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="METAL">金属矿石</link>200千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    过热<link="HEAT">温度</link>：75ºC'
+    tooltip: 达到<b>75ºC</b>时开始过热
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LOGIC">信号输入端</link>'
+    tooltip: 当接收到信号时，输入端会使这个建筑一种状态发生变化
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    启用/禁用'
+    tooltip: >-
+      输入端行为：
+
+      • <b><style="logic_on">绿色信号</style></b>：启用建筑
+
+      • <b><style="logic_off">红色信号</style></b>：禁用建筑
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>工作台可以让复制人制作在低氧区域穿戴的氧气面罩。</i>
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 所有配方
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 金属移动电源
+    require:
+    - image: aluminum_ore_0__ui
+      text1: 铝矿
+      text2: 200千克
+      link_id: aluminumore
+    produce:
+    - image: electrobank_popcan_0__ui
+      text1: 金属移动电源
+      text2: 1单位
+      link_id: electrobankmetalore
+    fabricator:
+      image: craftingstation_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 工作台
+      text2: 60秒
+      link_id: craftingtable
+  - widget_type: CodexRecipePanel
+    text: 金属移动电源
+    require:
+    - image: cinnabar_0__ui
+      text1: 朱砂矿
+      text2: 200千克
+      link_id: cinnabar
+    produce:
+    - image: electrobank_popcan_0__ui
+      text1: 金属移动电源
+      text2: 1单位
+      link_id: electrobankmetalore
+    fabricator:
+      image: craftingstation_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 工作台
+      text2: 60秒
+      link_id: craftingtable
+  - widget_type: CodexRecipePanel
+    text: 金属移动电源
+    require:
+    - image: cobalt_ore_0__ui
+      text1: 钴矿
+      text2: 200千克
+      link_id: cobaltite
+    produce:
+    - image: electrobank_popcan_0__ui
+      text1: 金属移动电源
+      text2: 1单位
+      link_id: electrobankmetalore
+    fabricator:
+      image: craftingstation_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 工作台
+      text2: 60秒
+      link_id: craftingtable
+  - widget_type: CodexRecipePanel
+    text: 金属移动电源
+    require:
+    - image: cuprite_0__ui
+      text1: 铜矿
+      text2: 200千克
+      link_id: cuprite
+    produce:
+    - image: electrobank_popcan_0__ui
+      text1: 金属移动电源
+      text2: 1单位
+      link_id: electrobankmetalore
+    fabricator:
+      image: craftingstation_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 工作台
+      text2: 60秒
+      link_id: craftingtable
+  - widget_type: CodexRecipePanel
+    text: 金属移动电源
+    require:
+    - image: hematite_0__ui
+      text1: 铁矿
+      text2: 200千克
+      link_id: ironore
+    produce:
+    - image: electrobank_popcan_0__ui
+      text1: 金属移动电源
+      text2: 1单位
+      link_id: electrobankmetalore
+    fabricator:
+      image: craftingstation_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 工作台
+      text2: 60秒
+      link_id: craftingtable
+  - widget_type: CodexRecipePanel
+    text: 金属移动电源
+    require:
+    - image: nickel_ore_0__ui
+      text1: 镍矿
+      text2: 200千克
+      link_id: nickelore
+    produce:
+    - image: electrobank_popcan_0__ui
+      text1: 金属移动电源
+      text2: 1单位
+      link_id: electrobankmetalore
+    fabricator:
+      image: craftingstation_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 工作台
+      text2: 60秒
+      link_id: craftingtable
+  - widget_type: CodexRecipePanel
+    text: 铀矿移动电源
+    require:
+    - image: radium_0__ui
+      text1: 铀矿
+      text2: 10千克
+      link_id: uraniumore
+    produce:
+    - image: electrobank_uranium_0__ui
+      text1: 铀矿移动电源
+      text2: 1单位
+      link_id: electrobankuraniumore
+    fabricator:
+      image: craftingstation_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 工作台
+      text2: 60秒
+      link_id: craftingtable
+  - widget_type: CodexRecipePanel
+    text: 力量增幅块
+    require:
+    - image: kit_electrician_0__ui
+      text1: 微芯片
+      text2: 2单位
+      link_id: powerstationtools
+    produce:
+    - image: upgrade_disc_0__ui_basic_strength_0
+      text1: 力量增幅块
+      text2: 1单位
+      link_id: boostercarry1
+    fabricator:
+      image: craftingstation_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 工作台
+      text2: 60秒
+      link_id: craftingtable
+  - widget_type: CodexRecipePanel
+    text: 建造增幅块
+    require:
+    - image: kit_electrician_0__ui
+      text1: 微芯片
+      text2: 2单位
+      link_id: powerstationtools
+    produce:
+    - image: upgrade_disc_0__ui_basic_construction_0
+      text1: 建造增幅块
+      text2: 1单位
+      link_id: boosterconstruct1
+    fabricator:
+      image: craftingstation_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 工作台
+      text2: 60秒
+      link_id: craftingtable
+  - widget_type: CodexRecipePanel
+    text: 挖掘增幅块
+    require:
+    - image: kit_electrician_0__ui
+      text1: 微芯片
+      text2: 2单位
+      link_id: powerstationtools
+    produce:
+    - image: upgrade_disc_0__ui_basic_excavation_0
+      text1: 挖掘增幅块
+      text2: 1单位
+      link_id: boosterdig1
+    fabricator:
+      image: craftingstation_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 工作台
+      text2: 60秒
+      link_id: craftingtable
+  - widget_type: CodexRecipePanel
+    text: 高级医疗增幅块
+    require:
+    - image: kit_electrician_0__ui
+      text1: 微芯片
+      text2: 2单位
+      link_id: powerstationtools
+    produce:
+    - image: upgrade_disc_0__ui_medicine_0
+      text1: 高级医疗增幅块
+      text2: 1单位
+      link_id: boostermedicine1
+    fabricator:
+      image: craftingstation_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 工作台
+      text2: 60秒
+      link_id: craftingtable
+  - widget_type: CodexRecipePanel
+    text: 研究增幅块
+    require:
+    - image: kit_electrician_0__ui
+      text1: 微芯片
+      text2: 2单位
+      link_id: powerstationtools
+    produce:
+    - image: upgrade_disc_0__ui_science_4
+      text1: 研究增幅块
+      text2: 1单位
+      link_id: boosterresearch1
+    fabricator:
+      image: craftingstation_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 工作台
+      text2: 60秒
+      link_id: craftingtable
+  - widget_type: CodexRecipePanel
+    text: 氧气面罩
+    require:
+    - image: aluminum_ore_0__ui
+      text1: 铝矿
+      text2: 50千克
+      link_id: aluminumore
+    produce:
+    - image: oxygen_mask_0__ui
+      text1: 氧气面罩
+      text2: 1单位
+      link_id: oxygenmask
+    fabricator:
+      image: craftingstation_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 工作台
+      text2: 20秒
+      link_id: craftingtable
+  - widget_type: CodexRecipePanel
+    text: 氧气面罩
+    require:
+    - image: cinnabar_0__ui
+      text1: 朱砂矿
+      text2: 50千克
+      link_id: cinnabar
+    produce:
+    - image: oxygen_mask_0__ui
+      text1: 氧气面罩
+      text2: 1单位
+      link_id: oxygenmask
+    fabricator:
+      image: craftingstation_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 工作台
+      text2: 20秒
+      link_id: craftingtable
+  - widget_type: CodexRecipePanel
+    text: 氧气面罩
+    require:
+    - image: cobalt_ore_0__ui
+      text1: 钴矿
+      text2: 50千克
+      link_id: cobaltite
+    produce:
+    - image: oxygen_mask_0__ui
+      text1: 氧气面罩
+      text2: 1单位
+      link_id: oxygenmask
+    fabricator:
+      image: craftingstation_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 工作台
+      text2: 20秒
+      link_id: craftingtable
+  - widget_type: CodexRecipePanel
+    text: 氧气面罩
+    require:
+    - image: cuprite_0__ui
+      text1: 铜矿
+      text2: 50千克
+      link_id: cuprite
+    produce:
+    - image: oxygen_mask_0__ui
+      text1: 氧气面罩
+      text2: 1单位
+      link_id: oxygenmask
+    fabricator:
+      image: craftingstation_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 工作台
+      text2: 20秒
+      link_id: craftingtable
+  - widget_type: CodexRecipePanel
+    text: 氧气面罩
+    require:
+    - image: hematite_0__ui
+      text1: 铁矿
+      text2: 50千克
+      link_id: ironore
+    produce:
+    - image: oxygen_mask_0__ui
+      text1: 氧气面罩
+      text2: 1单位
+      link_id: oxygenmask
+    fabricator:
+      image: craftingstation_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 工作台
+      text2: 20秒
+      link_id: craftingtable
+  - widget_type: CodexRecipePanel
+    text: 氧气面罩
+    require:
+    - image: nickel_ore_0__ui
+      text1: 镍矿
+      text2: 50千克
+      link_id: nickelore
+    produce:
+    - image: oxygen_mask_0__ui
+      text1: 氧气面罩
+      text2: 1单位
+      link_id: oxygenmask
+    fabricator:
+      image: craftingstation_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 工作台
+      text2: 20秒
+      link_id: craftingtable
+  - widget_type: CodexRecipePanel
+    text: 氧气面罩
+    require:
+    - image: oxygen_mask_0__ui
+      text1: 磨损的氧气面罩
+      text2: 1单位
+      link_id: oxygenmask
+    produce:
+    - image: oxygen_mask_0__ui
+      text1: 氧气面罩
+      text2: 1单位
+      link_id: oxygenmask
+    fabricator:
+      image: craftingstation_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 工作台
+      text2: 20秒
+      link_id: craftingtable
+  layout: Vertical

@@ -1,0 +1,85 @@
+id: DECONTAMINATIONSHOWER
+parent_id: BUILDCATEGORYMEDICAL
+name: 除污淋浴隔间
+disabled: False
+search_only: False
+category: BUILDCATEGORYMEDICAL
+sort_string: 除污淋浴隔间
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="DECONTAMINATIONSHOWER">除污淋浴隔间</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 高级卫生
+    style: Body
+    image: research_type_alpha_icon
+    link_id: advancedsanitation
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: decontamination_shower_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      使用<link="WATER">水</link>移除<link="DISEASE">病菌</link>和<link="RADIATION">辐射</link>。
+
+
+      复制人和其<link="EQUIPMENT">衣物</link>都会被净化。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="WATER">水</link>：每次消耗100千克'
+    tooltip: 每次使用消耗<style="consumed">100千克</style><style="KKeyword"><link="WATER">水</link></style>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LIQUIDPIPING">液体输入管道</link>'
+    tooltip: 必须从<link="LIQUIDCONDUIT">液体管道</link>系统中接收<style="KKeyword">液体</style>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：2格宽x4格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：120秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="METAL">金属矿石</link>800千克, <link="LEAD">铅</link>100千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DIRTYWATER">污染水</link>：每次产生100千克'
+    tooltip: >-
+      使用时产生<style="produced">100千克</style><style="KKeyword"><link="DIRTYWATER">污染水</link></style>
+
+
+      输出温度为输入材料的<style="KKeyword">温度</style>。
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    任意病菌：每次使用-1,000,000个病菌'
+    tooltip: 每次使用移除<style="consumed">1,000,000个病菌</style>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    过热<link="HEAT">温度</link>：75ºC'
+    tooltip: 达到<b>75ºC</b>时开始过热
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：-20（范围：4格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>4</b>格内降低<b><b>-20</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>别忘了清理耳朵后面。</i>
+    style: Body
+  layout: Vertical

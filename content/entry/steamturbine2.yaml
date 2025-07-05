@@ -1,0 +1,115 @@
+id: STEAMTURBINE2
+parent_id: BUILDCATEGORYPOWER
+name: 蒸汽涡轮机
+disabled: False
+search_only: False
+category: BUILDCATEGORYPOWER
+sort_string: 蒸汽涡轮机
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="STEAMTURBINE2">蒸汽涡轮机</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 可再生能源
+    style: Body
+    image: research_type_alpha_icon
+    link_id: renewableenergy
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: steamturbine2_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      直接从机器地基的下方吸入<link="STEAM">蒸汽</link>并产生<link="POWER">电力</link>。
+
+
+      输出<link="WATER">水</link>。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LIQUIDPIPING">液体输出管道</link>'
+    tooltip: 必须通过<link="LIQUIDCONDUIT">液体管道</link>系统排出<style="KKeyword">液体</style>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    技能：<link="TECHNICALS2">电气工程</link>'
+    tooltip: 必须至少有一名<link="TECHNICALS2">电气工程</link>技能的复制人才能建造这个建筑
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：5格宽x3格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：60秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="REFINEDMETAL">精炼金属</link>800千克, <link="PLASTIC">塑料</link>200千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="POWER">电力</link>：+850瓦'
+    tooltip: 为相连的<style="KKeyword">电路</style>产生<style="produced">850瓦</style>电力
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="HEAT">热量</link>：+4千复制热/秒'
+    tooltip: >-
+      每秒产生<style="produced">4千复制热</style>
+
+
+      总<style="KKeyword">温度</style>变化受到加热物质的材料属性影响：
+          • 质量
+          • 比热容
+          • 表面积
+          • 隔热厚度
+          • 热导率
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    过热<link="HEAT">温度</link>：1000ºC'
+    tooltip: 达到<b>1000ºC</b>时开始过热
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LOGIC">信号输入端</link>'
+    tooltip: 当接收到信号时，输入端会使这个建筑一种状态发生变化
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    启用/禁用'
+    tooltip: >-
+      输入端行为：
+
+      • <b><style="logic_on">绿色信号</style></b>：启用建筑
+
+      • <b><style="logic_off">红色信号</style></b>：禁用建筑
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>类别</b>
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    <link="REQUIREMENTCLASSINDUSTRIALMACHINERY">工业机械</link>'
+    style: Body
+  - widget_type: CodexText
+    text: '    <link="REQUIREMENTCLASSPOWERBUILDING">电力建筑</link>'
+    style: Body
+  - widget_type: CodexText
+    text: '    <link="REQUIREMENTCLASSGENERATORTYPE">发电机</link>'
+    style: Body
+  - widget_type: CodexText
+    text: '    <link="REQUIREMENTCLASSGENERATORTYPE">重型发电机</link>'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>用于将地热能转化为可用的电力。</i>
+    style: Body
+  layout: Vertical

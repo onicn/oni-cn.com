@@ -1,0 +1,67 @@
+id: GLOMSPECIES
+parent_id: CREATURES
+name: 疫病章鱼
+disabled: False
+search_only: False
+category: CREATURES
+sort_string: <link="GLOMSPECIES">疫病章鱼</link>
+sub_entries:
+- id: Glom
+  parent_id: GlomSpecies
+  name: <link="GLOM">疫病章鱼</link>
+  disabled: False
+  sort_string: 疫病章鱼
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 疫病章鱼
+    style: Title
+  - widget_type: CodexText
+    text: 有害小动物
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 疫病章鱼是一种能力多样化的食腐生物，能够分解和吸收大多数动植物死亡后留下的残骸。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      其用以包裹内部软骨结构的层层菌泥对人类而言具有很高的致病风险。
+
+
+      只一勺疫病章鱼菌泥中便含有千兆数量级的病菌，这足以威慑潜在的掠食者，并使其食物溶解。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 不建议把疫病章鱼作为宠物。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: glom_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 疫病章鱼喜欢不卫生的环境，并且会频繁排出<link="CONTAMINATEDOXYGEN">污染氧</link>。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 理想温度
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 舒适范围：<b>30ºC</b>至<b>100ºC</b>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 存活范围：<b>0ºC</b>至<b>200ºC</b>'
+    style: Body
+  layout: Vertical

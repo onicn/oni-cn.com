@@ -1,0 +1,201 @@
+id: FRIEDMUSHROOM
+parent_id: FOOD
+name: 煎蘑菇
+disabled: False
+search_only: False
+category: FOOD
+sort_string: 煎蘑菇
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="FRIEDMUSHROOM">煎蘑菇</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: funguscapfried_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      一种用<link="MUSHROOM">夜幕菇</link>做成的煎菜。
+
+
+      它有着轻微的泥土味，味道浓郁可口。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 品质：低劣 [+1]
+    style: Body
+  - widget_type: CodexText
+    text: 卡路里：2,800千卡
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      冷藏温度：4ºC
+
+      深度冷冻温度：-18ºC
+
+      腐烂时间：8.0周期
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 蘑菇卷
+    require:
+    - image: funguscapfried_0__ui
+      text1: 煎蘑菇
+      text2: 2,800千卡
+      tooltip: 品质：低劣 [+1]
+      link_id: friedmushroom
+    - image: sea_lettuce_leaves_0__ui
+      text1: 海生菜
+      text2: 1,600千卡
+      tooltip: 品质：糟糕 [0]
+      link_id: lettuce
+    produce:
+    - image: mushroom_wrap_0__ui
+      text1: 蘑菇卷
+      text2: 4,800千卡
+      tooltip: 品质：优秀 [+4]
+      link_id: mushroomwrap
+    fabricator:
+      image: cookstation_gourmet_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 燃气灶
+      text2: 50秒
+      link_id: gourmetcookingstation
+  - widget_type: CodexRecipePanel
+    text: 蘑菇乳蛋饼
+    require:
+    - image: cookedegg_0__ui
+      text1: 煎蛋卷
+      text2: 2,800千卡
+      tooltip: 品质：标准 [+2]
+      link_id: cookedegg
+    - image: sea_lettuce_leaves_0__ui
+      text1: 海生菜
+      text2: 400千卡
+      tooltip: 品质：糟糕 [0]
+      link_id: lettuce
+    - image: funguscapfried_0__ui
+      text1: 煎蘑菇
+      text2: 2,800千卡
+      tooltip: 品质：低劣 [+1]
+      link_id: friedmushroom
+    produce:
+    - image: quiche_0__ui
+      text1: 蘑菇乳蛋饼
+      text2: 6,400千卡
+      tooltip: 品质：杰出 [+5]
+      link_id: quiche
+    fabricator:
+      image: cookstation_gourmet_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 燃气灶
+      text2: 50秒
+      link_id: gourmetcookingstation
+  - widget_type: CodexConversionPanel
+    require:
+    - image: funguscapfried_0__ui
+      text1: 煎蘑菇
+      text2: 700千卡/周期
+      tooltip: 品质：低劣 [+1]
+      link_id: friedmushroom
+    produce: []
+    fabricator:
+      image: lightbug_0__org_ui
+      text1: 阳光虫
+      link_id: LIGHTBUGORANGE
+  - widget_type: CodexConversionPanel
+    require:
+    - image: funguscapfried_0__ui
+      text1: 煎蘑菇
+      text2: 2,800千卡/周期
+      tooltip: 品质：低劣 [+1]
+      link_id: friedmushroom
+    produce: []
+    fabricator:
+      image: lightbug_0__pnk_ui
+      text1: 珊瑚虫
+      link_id: LIGHTBUGPINK
+  - widget_type: CodexConversionPanel
+    require:
+    - image: funguscapfried_0__ui
+      text1: 煎蘑菇
+      text2: 2,800千卡/周期
+      tooltip: 品质：低劣 [+1]
+      link_id: friedmushroom
+    produce: []
+    fabricator:
+      image: lightbug_0__prp_ui
+      text1: 皇家虫
+      link_id: LIGHTBUGPURPLE
+  - widget_type: CodexConversionPanel
+    require:
+    - image: funguscapfried_0__ui
+      text1: 煎蘑菇
+      text2: 700千卡/周期
+      tooltip: 品质：低劣 [+1]
+      link_id: friedmushroom
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 187.5克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__ui
+      text1: 好吃哈奇
+      link_id: HATCH
+  - widget_type: CodexConversionPanel
+    require:
+    - image: funguscapfried_0__ui
+      text1: 煎蘑菇
+      text2: 700千卡/周期
+      tooltip: 品质：低劣 [+1]
+      link_id: friedmushroom
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 250克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__veg_ui
+      text1: 草质哈奇
+      link_id: HATCHVEGGIE
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 电动烤炉
+    require:
+    - image: funguscap_0__ui
+      text1: 蘑菇
+      text2: 2,400千卡
+      tooltip: 品质：糟糕 [0]
+      link_id: mushroom
+    produce:
+    - image: funguscapfried_0__ui
+      text1: 煎蘑菇
+      text2: 2,800千卡
+      tooltip: 品质：低劣 [+1]
+      link_id: friedmushroom
+    fabricator:
+      image: cookstation_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 电动烤炉
+      text2: 50秒
+      link_id: cookingstation
+  layout: Vertical

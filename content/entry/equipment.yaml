@@ -1,0 +1,68 @@
+id: EQUIPMENT
+name: 装备
+disabled: False
+search_only: False
+category: Root
+sort_string: 装备
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="EQUIPMENT">装备</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexLabelWithLargeIcon
+    text: 保暖外套
+    style: BodyWhite
+    image: shirt_hot_shearling_0__ui
+    link_id: warmvest
+  - widget_type: CodexLabelWithLargeIcon
+    text: 喷气服
+    style: BodyWhite
+    image: suit_jetpack_0__ui
+    link_id: jetsuit
+  - widget_type: CodexLabelWithLargeIcon
+    text: 增幅块
+    style: BodyWhite
+    image: upgrade_disc_0__ui_basic_excavation_0
+    link_id: booster
+  - widget_type: CodexLabelWithLargeIcon
+    text: 新潮时装
+    style: BodyWhite
+    image: shirt_decor01_0__ui
+    link_id: funkyvest
+  - widget_type: CodexLabelWithLargeIcon
+    text: 气压服
+    style: BodyWhite
+    image: suit_oxygen_0__ui
+    link_id: atmosuit
+  - widget_type: CodexLabelWithLargeIcon
+    text: 氧气面罩
+    style: BodyWhite
+    image: oxygen_mask_0__ui
+    link_id: oxygenmask
+  - widget_type: CodexLabelWithLargeIcon
+    text: 睡衣
+    style: BodyWhite
+    image: pajamas_0__ui
+    link_id: sleepclinicpajamas
+  - widget_type: CodexLabelWithLargeIcon
+    text: 移动电源
+    style: BodyWhite
+    image: electrobank_large_0__ui
+    link_id: electrobanks
+  - widget_type: CodexLabelWithLargeIcon
+    text: 精致装束
+    style: BodyWhite
+    image: shirt_decor01_0__ui
+    link_id: customclothing
+  - widget_type: CodexLabelWithLargeIcon
+    text: 铅服
+    style: BodyWhite
+    image: suit_leadsuit_0__ui
+    link_id: leadsuit
+  layout: Grid
+- contents:
+  - widget_type: CodexSpacer
+  layout: Vertical

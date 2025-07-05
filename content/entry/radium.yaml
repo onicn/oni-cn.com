@@ -1,0 +1,71 @@
+id: RADIUM
+parent_id: ELEMENTSSOLID
+name: 镭
+disabled: False
+search_only: False
+category: ELEMENTSSOLID
+sort_string: 镭
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="RADIUM">镭</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: radium_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: radium_0__ui
+      text1: 镭
+      text2: 1000克
+      link_id: radium
+    produce:
+    - image: element_liquid
+      color: AE0000FF
+      text1: 岩浆
+      text2: 1000克
+      link_id: magma
+    fabricator:
+      image: crew_state_temp_up
+      text1: 959.9ºC
+      tooltip: 温度高于959.9ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      (Ra) 镭是一种发<link="LIGHT">光</link>的放射性物质。
+
+
+      它可用作<link="POWER">电力</link>能源。
+
+
+      资源种类：<link="ELEMENTSSOLID">固体</link>
+
+      熔点：959.9ºC
+
+      硬度：<color=#BD597FFF>250（几乎坚不可摧）</color>
+
+
+      比热容：1.000 (DTU/g)/ºC
+
+      热导率：20.000 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.25
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：<link="ELEMENTSSOLID">固体</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

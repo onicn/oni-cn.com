@@ -1,0 +1,216 @@
+id: COOKEDPIKEAPPLE
+parent_id: FOOD
+name: 刺壳果烤串
+disabled: False
+search_only: False
+category: FOOD
+sort_string: 刺壳果烤串
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="COOKEDPIKEAPPLE">刺壳果烤串</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: iceberry_cooked_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      烤<link="HARDSKINBERRY">刺壳果</link>可软化其尖刺，使吃起来没那么尴尬。
+
+
+      气味一点没少。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 品质：低劣 [+1]
+    style: Body
+  - widget_type: CodexText
+    text: 卡路里：1,200千卡
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      冷藏温度：4ºC
+
+      深度冷冻温度：-18ºC
+
+      腐烂时间：8.0周期
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 混合浆果派
+    require:
+    - image: seed_coldwheat_0__ui
+      text1: 冰霜麦粒
+      text2: 3单位
+      link_id: coldwheat
+    - image: wormwood_super_fruits_0__ui
+      text1: 虫果
+      text2: 1,000千卡
+      tooltip: 品质：低劣 [+1]
+      link_id: wormsuperfruit
+    - image: iceberry_cooked_0__ui
+      text1: 刺壳果烤串
+      text2: 2,000千卡
+      tooltip: 品质：低劣 [+1]
+      link_id: cookedpikeapple
+    produce:
+    - image: wormwood_berry_pie_0__ui
+      text1: 混合浆果派
+      text2: 4,200千卡
+      tooltip: 品质：杰出 [+5]
+      link_id: berrypie
+    fabricator:
+      image: cookstation_gourmet_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 燃气灶
+      text2: 50秒
+      link_id: gourmetcookingstation
+  - widget_type: CodexRecipePanel
+    text: 混合浆果派
+    require:
+    - image: megafrond_grain_0__ui
+      text1: 巨蕨谷粒
+      text2: 3单位
+      link_id: fernfood
+    - image: wormwood_super_fruits_0__ui
+      text1: 虫果
+      text2: 1,000千卡
+      tooltip: 品质：低劣 [+1]
+      link_id: wormsuperfruit
+    - image: iceberry_cooked_0__ui
+      text1: 刺壳果烤串
+      text2: 2,000千卡
+      tooltip: 品质：低劣 [+1]
+      link_id: cookedpikeapple
+    produce:
+    - image: wormwood_berry_pie_0__ui
+      text1: 混合浆果派
+      text2: 4,200千卡
+      tooltip: 品质：杰出 [+5]
+      link_id: berrypie
+    fabricator:
+      image: cookstation_gourmet_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 燃气灶
+      text2: 50秒
+      link_id: gourmetcookingstation
+  - widget_type: CodexConversionPanel
+    require:
+    - image: iceberry_cooked_0__ui
+      text1: 刺壳果烤串
+      text2: 199千卡/周期
+      tooltip: 品质：低劣 [+1]
+      link_id: cookedpikeapple
+    produce: []
+    fabricator:
+      image: lightbug_0__ui
+      text1: 发光虫
+      link_id: LIGHTBUG
+  - widget_type: CodexConversionPanel
+    require:
+    - image: iceberry_cooked_0__ui
+      text1: 刺壳果烤串
+      text2: 300千卡/周期
+      tooltip: 品质：低劣 [+1]
+      link_id: cookedpikeapple
+    produce: []
+    fabricator:
+      image: lightbug_0__org_ui
+      text1: 阳光虫
+      link_id: LIGHTBUGORANGE
+  - widget_type: CodexConversionPanel
+    require:
+    - image: iceberry_cooked_0__ui
+      text1: 刺壳果烤串
+      text2: 1,200千卡/周期
+      tooltip: 品质：低劣 [+1]
+      link_id: cookedpikeapple
+    produce: []
+    fabricator:
+      image: lightbug_0__pnk_ui
+      text1: 珊瑚虫
+      link_id: LIGHTBUGPINK
+  - widget_type: CodexConversionPanel
+    require:
+    - image: iceberry_cooked_0__ui
+      text1: 刺壳果烤串
+      text2: 1,200千卡/周期
+      tooltip: 品质：低劣 [+1]
+      link_id: cookedpikeapple
+    produce: []
+    fabricator:
+      image: lightbug_0__prp_ui
+      text1: 皇家虫
+      link_id: LIGHTBUGPURPLE
+  - widget_type: CodexConversionPanel
+    require:
+    - image: iceberry_cooked_0__ui
+      text1: 刺壳果烤串
+      text2: 700千卡/周期
+      tooltip: 品质：低劣 [+1]
+      link_id: cookedpikeapple
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 437.5克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__ui
+      text1: 好吃哈奇
+      link_id: HATCH
+  - widget_type: CodexConversionPanel
+    require:
+    - image: iceberry_cooked_0__ui
+      text1: 刺壳果烤串
+      text2: 700千卡/周期
+      tooltip: 品质：低劣 [+1]
+      link_id: cookedpikeapple
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 583.3克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__veg_ui
+      text1: 草质哈奇
+      link_id: HATCHVEGGIE
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 电动烤炉
+    require:
+    - image: iceberry_0__ui
+      text1: 刺壳果
+      text2: 800千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: hardskinberry
+    produce:
+    - image: iceberry_cooked_0__ui
+      text1: 刺壳果烤串
+      text2: 1,200千卡
+      tooltip: 品质：低劣 [+1]
+      link_id: cookedpikeapple
+    fabricator:
+      image: cookstation_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 电动烤炉
+      text2: 50秒
+      link_id: cookingstation
+  layout: Vertical

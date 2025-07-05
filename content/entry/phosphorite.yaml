@@ -1,0 +1,327 @@
+id: PHOSPHORITE
+parent_id: ELEMENTSSOLID
+name: 磷矿
+disabled: False
+search_only: False
+category: ELEMENTSSOLID
+sort_string: 磷矿
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="PHOSPHORITE">磷矿</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: phosphorite_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: phosphorite_0__ui
+      text1: 磷矿
+      text2: 1000克
+      link_id: phosphorite
+    produce:
+    - image: element_liquid
+      color: 908BB7FF
+      text1: 液态磷
+      text2: 1000克
+      link_id: liquidphosphorus
+    fabricator:
+      image: crew_state_temp_up
+      text1: 243.9ºC
+      tooltip: 温度高于243.9ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 医疗包
+    require:
+    - image: swamplilyflower_0__ui
+      text1: 芳香百合花
+      text2: 1000克
+      link_id: swamplilyflower
+    - image: phosphorite_0__ui
+      text1: 磷矿
+      text2: 1000克
+      link_id: phosphorite
+    produce:
+    - image: iv_slimelung_0__ui
+      text1: 医疗包
+      text2: 1单位
+      link_id: intermediatecure
+    fabricator:
+      image: apothecary_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 配药桌
+      text2: 100秒
+      link_id: apothecary
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: 474506FF
+      text1: 污染水
+      text2: 23.4千克/周期
+      link_id: dirtywater
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 39千克/周期
+      link_id: dirt
+    - image: phosphorite_0__ui
+      text1: 磷矿
+      text2: 15.6千克/周期
+      link_id: phosphorite
+    produce:
+    - image: fertilizer_0__ui
+      text1: 肥料
+      text2: 72千克/周期
+      link_id: fertilizer
+    fabricator:
+      image: fertilizer_maker_0__ui
+      text1: 肥料合成器
+      link_id: FERTILIZERMAKER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: 474506FF
+      text1: 污染水
+      text2: 35千克/周期
+      link_id: dirtywater
+    - image: phosphorite_0__ui
+      text1: 磷矿
+      text2: 1000克/周期
+      link_id: phosphorite
+    produce:
+    - image: spicenut_0__ui
+      text1: 火椒粒
+      text2: 500克/周期
+      link_id: spicenut
+    fabricator:
+      image: vinespicenut_0__ui
+      text1: 火椒藤
+      link_id: SPICEVINE
+  - widget_type: CodexConversionPanel
+    require:
+    - image: phosphorite_0__ui
+      text1: 磷矿
+      text2: 5千克/周期
+      link_id: phosphorite
+    produce:
+    - image: iceberry_0__ui
+      text1: 刺壳果
+      text2: 267千卡/周期
+      tooltip: 品质：恶心 [-1]
+      link_id: hardskinberry
+    fabricator:
+      image: ice_berry_bush_0__ui
+      text1: 刺壳果灌木
+      link_id: HARDSKINBERRYPLANT
+  - widget_type: CodexConversionPanel
+    require:
+    - image: phosphorite_0__ui
+      text1: 磷矿
+      text2: 4000克/周期
+      link_id: phosphorite
+    produce: []
+    fabricator:
+      image: coldbreather_0__ui
+      text1: 冰息萝卜
+      link_id: COLDBREATHER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: phosphorite_0__ui
+      text1: 磷矿
+      text2: 166克/周期
+      link_id: phosphorite
+    produce: []
+    fabricator:
+      image: lightbug_0__ui
+      text1: 发光虫
+      link_id: LIGHTBUG
+  - widget_type: CodexConversionPanel
+    require:
+    - image: phosphorite_0__ui
+      text1: 磷矿
+      text2: 1000克/周期
+      link_id: phosphorite
+    produce: []
+    fabricator:
+      image: lightbug_0__blu_ui
+      text1: 天蓝虫
+      link_id: LIGHTBUGBLUE
+  - widget_type: CodexConversionPanel
+    require:
+    - image: phosphorite_0__ui
+      text1: 磷矿
+      text2: 250克/周期
+      link_id: phosphorite
+    produce: []
+    fabricator:
+      image: lightbug_0__org_ui
+      text1: 阳光虫
+      link_id: LIGHTBUGORANGE
+  - widget_type: CodexConversionPanel
+    require:
+    - image: phosphorite_0__ui
+      text1: 磷矿
+      text2: 1000克/周期
+      link_id: phosphorite
+    produce: []
+    fabricator:
+      image: lightbug_0__pnk_ui
+      text1: 珊瑚虫
+      link_id: LIGHTBUGPINK
+  - widget_type: CodexConversionPanel
+    require:
+    - image: phosphorite_0__ui
+      text1: 磷矿
+      text2: 1000克/周期
+      link_id: phosphorite
+    produce: []
+    fabricator:
+      image: lightbug_0__prp_ui
+      text1: 皇家虫
+      link_id: LIGHTBUGPURPLE
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 碎石机
+    require:
+    - image: bammoth_poop_0__ui
+      text1: 绒犸兔碎糜
+      text2: 120千克
+      link_id: icebellypoop
+    produce:
+    - image: phosphorite_0__ui
+      text1: 磷矿
+      text2: 32千克
+      link_id: phosphorite
+    - image: clay_0__ui
+      text1: 粘土
+      text2: 88千克
+      link_id: clay
+    fabricator:
+      image: rockrefinery_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 碎石机
+      text2: 40秒
+      link_id: rockcrusher
+  - widget_type: CodexConversionPanel
+    require:
+    - image: meallice_0__ui
+      text1: 米虱木
+      text2: 33% 生长进度/周期
+      link_id: basicsingleharvestplant
+    produce:
+    - image: phosphorite_0__ui
+      text1: 磷矿
+      text2: 9千克/周期
+      link_id: phosphorite
+    fabricator:
+      image: drecko_0__ui
+      text1: 滑鳞壁虎
+      link_id: DRECKOPLASTIC
+  - widget_type: CodexConversionPanel
+    require:
+    - image: bristleblossom_0__ui
+      text1: 毛刺花
+      text2: 17% 生长进度/周期
+      link_id: prickleflower
+    produce:
+    - image: phosphorite_0__ui
+      text1: 磷矿
+      text2: 9千克/周期
+      link_id: phosphorite
+    fabricator:
+      image: drecko_0__ui
+      text1: 滑鳞壁虎
+      link_id: DRECKOPLASTIC
+  - widget_type: CodexConversionPanel
+    require:
+    - image: vinespicenut_0__ui
+      text1: 火椒藤
+      text2: 9% 生长进度/周期
+      link_id: spicevine
+    produce:
+    - image: phosphorite_0__ui
+      text1: 磷矿
+      text2: 10千克/周期
+      link_id: phosphorite
+    fabricator:
+      image: drecko_0__fbr_ui
+      text1: 毛鳞壁虎
+      link_id: DRECKO
+  - widget_type: CodexConversionPanel
+    require:
+    - image: swamplily_0__ui
+      text1: 芳香百合
+      text2: 6% 生长进度/周期
+      link_id: swamplily
+    produce:
+    - image: phosphorite_0__ui
+      text1: 磷矿
+      text2: 10千克/周期
+      link_id: phosphorite
+    fabricator:
+      image: drecko_0__fbr_ui
+      text1: 毛鳞壁虎
+      link_id: DRECKO
+  - widget_type: CodexConversionPanel
+    require:
+    - image: meallice_0__ui
+      text1: 米虱木
+      text2: 25% 生长进度/周期
+      link_id: basicsingleharvestplant
+    produce:
+    - image: phosphorite_0__ui
+      text1: 磷矿
+      text2: 10千克/周期
+      link_id: phosphorite
+    fabricator:
+      image: drecko_0__fbr_ui
+      text1: 毛鳞壁虎
+      link_id: DRECKO
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      磷矿是一种沉积岩混合物，饱含磷酸盐。
+
+
+      资源种类：<link="AGRICULTURE">农业</link>
+
+      熔点：243.9ºC
+
+      硬度：<color=#866BA5FF>25（坚硬）</color>
+
+
+      比热容：0.150 (DTU/g)/ºC
+
+      热导率：2.000 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.75
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：<link="FLYINGCRITTEREDIBLE">诱饵</link>, <link="ELEMENTSSOLID">固体</link>, <link="AGRICULTURE">农业</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

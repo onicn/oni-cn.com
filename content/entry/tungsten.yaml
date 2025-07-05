@@ -1,0 +1,255 @@
+id: TUNGSTEN
+parent_id: ELEMENTSSOLID
+name: 钨
+disabled: False
+search_only: False
+category: ELEMENTSSOLID
+sort_string: 钨
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="TUNGSTEN">钨</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: tungsten_refined_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: tungsten_refined_0__ui
+      text1: 钨
+      text2: 1000克
+      link_id: tungsten
+    produce:
+    - image: element_liquid
+      color: E5290EFF
+      text1: 熔融钨
+      text2: 1000克
+      link_id: moltentungsten
+    fabricator:
+      image: crew_state_temp_up
+      text1: 3421.9ºC
+      tooltip: 温度高于3421.9ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换于
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: temp_conductor_0__ui
+      text1: 导热质
+      text2: 1000克
+      link_id: tempconductorsolid
+    produce:
+    - image: element_liquid
+      color: 5EFDADFF
+      text1: 熔融铌
+      text2: 50克
+      link_id: moltenniobium
+    - image: tungsten_refined_0__ui
+      text1: 钨
+      text2: 950克
+      link_id: tungsten
+    fabricator:
+      image: crew_state_temp_up
+      text1: 2676.9ºC
+      tooltip: 温度高于2676.9ºC
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: E5290EFF
+      text1: 熔融钨
+      text2: 1000克
+      link_id: moltentungsten
+    produce:
+    - image: tungsten_refined_0__ui
+      text1: 钨
+      text2: 1000克
+      link_id: tungsten
+    fabricator:
+      image: crew_state_temp_down
+      text1: 3421.9ºC
+      tooltip: 温度低于3421.9ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 导热质
+    require:
+    - image: niobium_0__ui
+      text1: 铌
+      text2: 5千克
+      link_id: niobium
+    - image: tungsten_refined_0__ui
+      text1: 钨
+      text2: 95千克
+      link_id: tungsten
+    produce:
+    - image: temp_conductor_0__ui
+      text1: 导热质
+      text2: 100千克
+      link_id: tempconductorsolid
+    fabricator:
+      image: supermaterial_refinery_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 分子熔炉
+      text2: 80秒
+      link_id: supermaterialrefinery
+  - widget_type: CodexConversionPanel
+    require:
+    - image: tungsten_refined_0__ui
+      text1: 钨
+      text2: 30千克/周期
+      link_id: tungsten
+    produce:
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 1500克/周期
+      link_id: hydrogen
+    fabricator:
+      image: caterpillar_0__wtr_ui
+      text1: 海绵蛞蝓
+      link_id: STATERPILLAR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: tungsten_refined_0__ui
+      text1: 钨
+      text2: 30千克/周期
+      link_id: tungsten
+    produce:
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 1500克/周期
+      link_id: hydrogen
+    fabricator:
+      image: caterpillar_0__gas_ui
+      text1: 烟雾蛞蝓
+      link_id: STATERPILLAR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: tungsten_refined_0__ui
+      text1: 钨
+      text2: 60千克/周期
+      link_id: tungsten
+    produce:
+    - image: element_gas
+      color: C51F8BFF
+      text1: 氢气
+      text2: 3000克/周期
+      link_id: hydrogen
+    fabricator:
+      image: caterpillar_0__ui
+      text1: 电弧蛞蝓
+      link_id: STATERPILLAR
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 金属精炼器
+    require:
+    - image: wolframite_0__ui
+      text1: 黑钨矿
+      text2: 100千克
+      link_id: wolframite
+    produce:
+    - image: tungsten_refined_0__ui
+      text1: 钨
+      text2: 100千克
+      link_id: tungsten
+    fabricator:
+      image: metalrefinery_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 金属精炼器
+      text2: 40秒
+      link_id: metalrefinery
+  - widget_type: CodexRecipePanel
+    text: 碎石机
+    require:
+    - image: wolframite_0__ui
+      text1: 黑钨矿
+      text2: 100千克
+      link_id: wolframite
+    produce:
+    - image: tungsten_refined_0__ui
+      text1: 钨
+      text2: 50千克
+      link_id: tungsten
+    - image: sand_0__ui
+      text1: 沙子
+      text2: 50千克
+      link_id: sand
+    fabricator:
+      image: rockrefinery_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 碎石机
+      text2: 40秒
+      link_id: rockcrusher
+  - widget_type: CodexConversionPanel
+    require:
+    - image: wolframite_0__ui
+      text1: 黑钨矿
+      text2: 100千克/周期
+      link_id: wolframite
+    produce:
+    - image: tungsten_refined_0__ui
+      text1: 钨
+      text2: 75千克/周期
+      link_id: tungsten
+    fabricator:
+      image: hatch_0__mtl_ui
+      text1: 光滑哈奇
+      link_id: HATCHMETAL
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      (W) 钨是一种非常坚硬的结晶<link="RAWMETAL">金属</link>。
+
+
+      它可用于建造<link="POWER">电力</link>系统。
+
+
+      资源种类：<link="REFINEDMETAL">精炼金属</link>
+
+      熔点：3421.9ºC
+
+      硬度：<color=#BD597FFF>200（几乎坚不可摧）</color>
+
+
+      比热容：0.134 (DTU/g)/ºC
+
+      热导率：60.000 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.35
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：<link="PLUMBABLE">可做水管的物质</link>, <link="BUILDABLEANY">一般建造材料</link>, <link="ELEMENTSSOLID">固体</link>, <link="REFINEDMETAL">精炼金属</link>
+
+      <style="KKeyword">过热温度</style>：+50ºC
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

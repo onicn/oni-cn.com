@@ -1,0 +1,103 @@
+id: SOLIDCONDUITINBOX
+parent_id: BUILDCATEGORYCONVEYANCE
+name: 运输装载器
+disabled: False
+search_only: False
+category: BUILDCATEGORYCONVEYANCE
+sort_string: 运输装载器
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="SOLIDCONDUITINBOX">运输装载器</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 固体运输
+    style: Body
+    image: research_type_alpha_icon
+    link_id: solidtransport
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: conveyorin_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      将<link="ELEMENTSSOLID">固体材料</link>装载到<link="SOLIDCONDUIT">运输轨道</link>上进行运输。
+
+
+      只装载所选资源。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="POWER">电力</link>：120瓦'
+    tooltip: 必须与至少有<style="consumed">120瓦</style>可用<style="KKeyword">电力</style>的电路相连
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    技能：<link="ENGINEERING1">机电工程</link>'
+    tooltip: 必须至少有一名<link="ENGINEERING1">机电工程</link>技能的复制人才能建造这个建筑
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：1格宽x2格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：60秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="REFINEDMETAL">精炼金属</link>200千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    库存容量：1000千克'
+    tooltip: 最多容纳<b>1000千克</b>材料
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="HEAT">热量</link>：+2千复制热/秒'
+    tooltip: >-
+      每秒产生<style="produced">2千复制热</style>
+
+
+      总<style="KKeyword">温度</style>变化受到加热物质的材料属性影响：
+          • 质量
+          • 比热容
+          • 表面积
+          • 隔热厚度
+          • 热导率
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    过热<link="HEAT">温度</link>：75ºC'
+    tooltip: 达到<b>75ºC</b>时开始过热
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LOGIC">信号输入端</link>'
+    tooltip: 当接收到信号时，输入端会使这个建筑一种状态发生变化
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    启用/禁用'
+    tooltip: >-
+      输入端行为：
+
+      • <b><style="logic_on">绿色信号</style></b>：启用建筑
+
+      • <b><style="logic_off">红色信号</style></b>：禁用建筑
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：-10（范围：2格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>2</b>格内降低<b><b>-10</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>材料筛选项可用于决定哪些材料会被送到轨道上。</i>
+    style: Body
+  layout: Vertical

@@ -1,0 +1,149 @@
+id: ELECTROBANKS
+parent_id: EQUIPMENT
+name: 移动电源
+disabled: False
+search_only: False
+category: EQUIPMENT
+sort_string: 移动电源
+sub_entries:
+- id: ELECTROBANK
+  parent_id: ELECTROBANKS
+  name: <link="ELECTROBANK">复用移动电源</link>
+  disabled: False
+  sort_string: 复用移动电源
+- id: ELECTROBANKMETALORE
+  parent_id: ELECTROBANKS
+  name: <link="ELECTROBANKMETALORE">金属移动电源</link>
+  disabled: False
+  sort_string: 金属移动电源
+- id: ELECTROBANKURANIUMORE
+  parent_id: ELECTROBANKS
+  name: <link="ELECTROBANKURANIUMORE">铀矿移动电源</link>
+  disabled: False
+  sort_string: 铀矿移动电源
+- id: ELECTROBANKSELFCHARGING
+  parent_id: ELECTROBANKS
+  name: <link="ELECTROBANKSELFCHARGING">原子能移动电源</link>
+  disabled: False
+  sort_string: 原子能移动电源
+content_container:
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 条目（4/4）
+    style: Subtitle
+  - widget_type: CodexText
+    text: <link="ELECTROBANK">复用移动电源</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="ELECTROBANKMETALORE">金属移动电源</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="ELECTROBANKURANIUMORE">铀矿移动电源</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="ELECTROBANKSELFCHARGING">原子能移动电源</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: <link="ELECTROBANK">复用移动电源</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: electrobank_large_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      一种可充能的<link="ELECTROBANK">移动电源</link>。
+
+
+      可以通过<link="LARGEELECTROBANKDISCHARGER">大型放电器</link>或<link="SMALLELECTROBANKDISCHARGER">袖珍放电器</link>为建筑供电。
+
+
+      复制人可以在<link="ADVANCEDCRAFTINGTABLE">焊接台</link>生产新的<link="ELECTROBANK">复用移动电源</link>。
+
+
+      必须保持干燥。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: <link="ELECTROBANKMETALORE">金属移动电源</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: electrobank_popcan_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      一种由<link="METAL">金属矿石</link>制成的一次性<link="ELECTROBANK">移动电源</link>。
+
+
+      可以通过<link="LARGEELECTROBANKDISCHARGER">大型放电器</link>或<link="SMALLELECTROBANKDISCHARGER">袖珍放电器</link>为建筑供电。
+
+
+      复制人可以在<link="CRAFTINGTABLE">工作台</link>生产新的<link="ELECTROBANK">金属移动电源</link>。
+
+
+      必须保持干燥。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: <link="ELECTROBANKURANIUMORE">铀矿移动电源</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: electrobank_uranium_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      一种由<link="URANIUMORE">铀矿</link>制成的一次性<link="ELECTROBANK">移动电源</link>。
+
+
+      可以通过<link="LARGEELECTROBANKDISCHARGER">大型放电器</link>或<link="SMALLELECTROBANKDISCHARGER">袖珍放电器</link>为建筑供电。
+
+
+      复制人可以在<link="CRAFTINGTABLE">工作台</link>生产新的<link="ELECTROBANK">铀矿移动电源</link>。
+
+
+      必须保持干燥。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: <link="ELECTROBANKSELFCHARGING">原子能移动电源</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: electrobank_large_uranium_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      一种由<link="ENRICHEDURANIUM">浓缩铀</link>制成的自充能<link="ELECTROBANK">移动电源</link>。
+
+
+      可以通过<link="LARGEELECTROBANKDISCHARGER">大型放电器</link>或<link="SMALLELECTROBANKDISCHARGER">袖珍放电器</link>为建筑供电。
+
+
+      由于低<link="POWER">功率</link>和高<link="RADIATION">放射性</link>，不适合仿生复制人使用。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

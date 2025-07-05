@@ -1,0 +1,64 @@
+id: LIQUIDPUMPINGSTATION
+parent_id: BUILDCATEGORYPLUMBING
+name: 手压泵
+disabled: False
+search_only: False
+category: BUILDCATEGORYPLUMBING
+sort_string: 手压泵
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="LIQUIDPUMPINGSTATION">手压泵</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: waterpump_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      手动将<link="ELEMENTSLIQUID">液体</link>泵入桶中进行运输。
+
+
+      复制人只能携带桶装液体。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    复制人的操作'
+    tooltip: 必须有复制人来才能使这个建筑运行
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：2格宽x4格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：10秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="BUILDABLERAW">矿物原料</link>400千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    库存容量：20吨'
+    tooltip: 最多容纳<b>20吨</b>材料
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    过热<link="HEAT">温度</link>：75ºC'
+    tooltip: 达到<b>75ºC</b>时开始过热
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>手压泵允许复制人将液体桶装并运送到其他地方。</i>
+    style: Body
+  layout: Vertical

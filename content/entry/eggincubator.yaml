@@ -1,0 +1,413 @@
+id: EGGINCUBATOR
+parent_id: BUILDCATEGORYFOOD
+name: 孵化器
+disabled: False
+search_only: False
+category: BUILDCATEGORYFOOD
+sort_string: 孵化器
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="EGGINCUBATOR">孵化器</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 动物控制
+    style: Body
+    image: research_type_alpha_icon
+    link_id: animalcontrol
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: incubator_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      温育<link="CREATURES">小动物</link>蛋直至孵化。
+
+
+      分配的复制人必须具有<link="RANCHING1">小动物养殖</link>特质。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="POWER">电力</link>：240瓦'
+    tooltip: 必须与至少有<style="consumed">240瓦</style>可用<style="KKeyword">电力</style>的电路相连
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    需要技能的复制人的操作'
+    tooltip: 只有具有<link="RANCHING1">小动物养殖 I</link>技能或<link="BOOSTERRANCH1">养殖增幅块</link>的复制人才能使用这个建筑
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：2格宽x3格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：120秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="REFINEDMETAL">精炼金属</link>200千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="HEAT">热量</link>：+4.5千复制热/秒'
+    tooltip: >-
+      每秒产生<style="produced">4.5千复制热</style>
+
+
+      总<style="KKeyword">温度</style>变化受到加热物质的材料属性影响：
+          • 质量
+          • 比热容
+          • 表面积
+          • 隔热厚度
+          • 热导率
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    过热<link="HEAT">温度</link>：90ºC'
+    tooltip: 达到<b>90ºC</b>时开始过热
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LOGIC">信号输入端</link>'
+    tooltip: 当接收到信号时，输入端会使这个建筑一种状态发生变化
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    启用/禁用'
+    tooltip: >-
+      输入端行为：
+
+      • <b><style="logic_on">绿色信号</style></b>：启用建筑
+
+      • <b><style="logic_off">红色信号</style></b>：禁用建筑
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：+5（范围：1格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>1</b>格内提高<b><b>+5</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>孵化器可以为几种小动物蛋提供理想的孵化环境。</i>
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 可耕种的植物
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: egg_ice_floof_0__ui
+  - widget_type: CodexText
+    text: <link="WOODDEER">狐鹿蛋</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: egg_caterpillar_0__wtr_ui
+  - widget_type: CodexText
+    text: <link="STATERPILLAR">海绵蛞蝓蛋</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: egg_caterpillar_0__gas_ui
+  - widget_type: CodexText
+    text: <link="STATERPILLAR">烟雾蛞蝓蛋</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: egg_caterpillar_0__ui
+  - widget_type: CodexText
+    text: <link="STATERPILLAR">电弧蛞蝓蛋</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: egg_squirrel_0__hug_ui
+  - widget_type: CodexText
+    text: <link="SQUIRREL">毛绒树鼠蛋</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: egg_lightbug_0__cry_ui
+  - widget_type: CodexText
+    text: <link="LIGHTBUGCRYSTAL">光耀虫卵</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: egg_lightbug_0__ui
+  - widget_type: CodexText
+    text: <link="LIGHTBUG">发光虫卵</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: egg_lightbug_0__blu_ui
+  - widget_type: CodexText
+    text: <link="LIGHTBUGBLUE">天蓝虫卵</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: egg_lightbug_0__blk_ui
+  - widget_type: CodexText
+    text: <link="LIGHTBUGBLACK">深渊虫卵</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: egg_drecko_0__ui
+  - widget_type: CodexText
+    text: <link="DRECKOPLASTIC">滑鳞壁虎蛋</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: egg_lightbug_0__org_ui
+  - widget_type: CodexText
+    text: <link="LIGHTBUGORANGE">阳光虫卵</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: egg_drecko_0__fbr_ui
+  - widget_type: CodexText
+    text: <link="DRECKO">毛鳞壁虎蛋</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: egg_chameleo_0__ui
+  - widget_type: CodexText
+    text: <link="CHAMELEON">逸蜥蛋</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: egg_lightbug_0__pnk_ui
+  - widget_type: CodexText
+    text: <link="LIGHTBUGPINK">珊瑚虫卵</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: egg_lightbug_0__prp_ui
+  - widget_type: CodexText
+    text: <link="LIGHTBUGPURPLE">皇家虫卵</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: egg_driller_0__ui
+  - widget_type: CodexText
+    text: <link="MOLE">锹环田鼠蛋</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: egg_squirrel_0__ui
+  - widget_type: CodexText
+    text: <link="SQUIRREL">树鼠蛋</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: egg_seal_0__ui
+  - widget_type: CodexText
+    text: <link="SEAL">栓角海豹蛋</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: egg_puft_0__com_ui
+  - widget_type: CodexText
+    text: <link="PUFTOXYLITE">厚壳飞鱼蛋</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: egg_puft_0__ui
+  - widget_type: CodexText
+    text: <link="PUFT">喷浮飞鱼蛋</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: egg_puft_0__anti_ui
+  - widget_type: CodexText
+    text: <link="PUFTBLEACHSTONE">洁净飞鱼蛋</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: egg_puft_0__alp_ui
+  - widget_type: CodexText
+    text: <link="PUFTALPHA">贵族飞鱼蛋</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: egg_oilfloater_0__hot_ui
+  - widget_type: CodexText
+    text: <link="OILFLOATERHIGHTEMP">熔岩浮油生物蛋</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: egg_oilfloater_0__oxy_ui
+  - widget_type: CodexText
+    text: <link="OILFLOATERDECOR">长毛浮油生物蛋</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: egg_oilfloater_0__ui
+  - widget_type: CodexText
+    text: <link="OILFLOATER">浮油生物蛋</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: egg_driller_0__del_ui
+  - widget_type: CodexText
+    text: <link="MOLEDELICACY">珍馐田鼠蛋</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: egg_icebelly_0__king_ui
+  - widget_type: CodexText
+    text: <link="GOLDBELLY">皇犸兔蛋</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: egg_hatch_0__ui
+  - widget_type: CodexText
+    text: <link="HATCH">好吃哈奇蛋</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: egg_icebelly_0__ui
+  - widget_type: CodexText
+    text: <link="ICEBELLY">绒犸兔蛋</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: egg_hatch_0__hvy_ui
+  - widget_type: CodexText
+    text: <link="HATCHHARD">石壳哈奇蛋</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: egg_hatch_0__veg_ui
+  - widget_type: CodexText
+    text: <link="HATCHVEGGIE">草质哈奇蛋</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: egg_stego_0__ui
+  - widget_type: CodexText
+    text: <link="STEGO">尖块兽蛋</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: egg_pincher_0__ui
+  - widget_type: CodexText
+    text: <link="CRAB">抛壳蟹卵</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: egg_hatch_0__mtl_ui
+  - widget_type: CodexText
+    text: <link="HATCHMETAL">光滑哈奇蛋</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: egg_pincher_0__fresh_ui
+  - widget_type: CodexText
+    text: <link="CRABFRESHWATER">沙泥蟹卵</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: egg_paculacanth_0__ui
+  - widget_type: CodexText
+    text: <link="PREHISTORICPACU">颚鱼卵</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: egg_pacu_0__trp_ui
+  - widget_type: CodexText
+    text: <link="PACUTROPICAL">热带帕库鱼卵</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: egg_pincher_0__wood_ui
+  - widget_type: CodexText
+    text: <link="CRABWOOD">木壳蟹卵</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: egg_pacu_0__ui
+  - widget_type: CodexText
+    text: <link="PACUEGG">帕库鱼卵</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: egg_critter_0__ui
+  - widget_type: CodexText
+    text: <link="DIVERGENTBEETLE">甜素甲虫卵</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: egg_pacu_0__glp_ui
+  - widget_type: CodexText
+    text: <link="PACUCLEANER">大嘴鱼卵</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: egg_worm_0__ui
+  - widget_type: CodexText
+    text: <link="DIVERGENTWORM">虫果果虫卵</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: egg_mosquito_0__ui
+  - widget_type: CodexText
+    text: <link="MOSQUITO">蚋虱卵</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: egg_raptor_0__ui
+  - widget_type: CodexText
+    text: <link="RAPTOR">霸王鹦蛋</link>
+    style: Body
+  layout: Horizontal

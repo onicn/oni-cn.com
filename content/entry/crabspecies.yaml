@@ -1,0 +1,484 @@
+id: CRABSPECIES
+parent_id: CREATURES
+name: 抛壳蟹
+disabled: False
+search_only: False
+category: CREATURES
+sort_string: <link="CRABSPECIES">抛壳蟹</link>
+required_dlc_ids:
+- DLC3_ID
+sub_entries:
+- id: Crab
+  parent_id: CrabSpecies
+  name: <link="CRAB">抛壳蟹</link>
+  disabled: False
+  sort_string: 抛壳蟹
+- id: CrabFreshWater
+  parent_id: CrabSpecies
+  name: <link="CRABFRESHWATER">沙泥蟹</link>
+  disabled: False
+  sort_string: 沙泥蟹
+- id: CrabWood
+  parent_id: CrabSpecies
+  name: <link="CRABWOOD">木壳蟹</link>
+  disabled: False
+  sort_string: 木壳蟹
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 抛壳蟹
+    style: Title
+  - widget_type: CodexText
+    text: 可驯化的小动物
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 抛壳蟹是底栖的无脊椎动物，以其他生物的废物和丢弃的食物为生。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 它们有非常大的螯，可以安全地折叠到它们的壳中，在不使用的时候可作保护。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 当抛壳蟹成年后，它们必须定期抛掉它们的部分外骨骼，为生长腾出空间。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 尽管最令人激动的脱壳最早发生在抛壳蟹青年时期，但成年后它们也仍会继续生长和脱壳，直到它们最终死去。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 条目（3/3）
+    style: Subtitle
+  - widget_type: CodexText
+    text: <link="CRAB">抛壳蟹</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="CRABFRESHWATER">沙泥蟹</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="CRABWOOD">木壳蟹</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: pincher_0__ui
+  - widget_type: CodexImage
+    image: baby_pincher_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexText
+    text: >-
+      抛壳蟹只要周围没有它们的蛋，就是一种没有敌意的小动物。
+
+
+      抛壳蟹以<link="TOXICSAND">污染土</link>和<link="COMPOST">腐烂物</link>为食。
+
+
+      抛壳蟹脱壳后留下的壳可以粉碎成<link="LIME">石灰</link>。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 理想温度
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 舒适范围：<b>0ºC</b>至<b>40ºC</b>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 存活范围：<b>-50ºC</b>至<b>100ºC</b>'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 寿命
+    style: Subtitle
+  - widget_type: CodexText
+    text: 这种小动物特征<link="CREATURES__GUIDE__FERTILITY">寿命</link>为<b>100周期</b>。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 所需空间
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 当房间空间对每只小动物平均少于<b>12格</b>时会感到<link="CREATURES__GUIDE__MOOD">拥挤</link>。'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 当房间小于<b>12格</b>时会感到<link="CREATURES__GUIDE__MOOD">封闭</link>。'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 掉落物
+    style: Subtitle
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 蟹壳
+    image: crabshell_0__ui
+    link_id: crabshell
+  - widget_type: CodexText
+    text: 	10千克
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 食物
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 70千克/周期
+      link_id: toxicsand
+    produce:
+    - image: sand_0__ui
+      text1: 沙子
+      text2: 35千克/周期
+      link_id: sand
+    fabricator:
+      image: pincher_0__ui
+      text1: 抛壳蟹
+      link_id: CRAB
+  - widget_type: CodexConversionPanel
+    require:
+    - image: rotfood_0__ui
+      text1: 腐烂物
+      text2: 70千克/周期
+      link_id: compost
+    produce:
+    - image: sand_0__ui
+      text1: 沙子
+      text2: 35千克/周期
+      link_id: sand
+    fabricator:
+      image: pincher_0__ui
+      text1: 抛壳蟹
+      link_id: CRAB
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require: []
+    produce:
+    - image: crabshell_0__ui
+      text1: 蟹壳
+      text2: 10千克
+      link_id: crabshell
+    fabricator:
+      image: pincher_0__ui
+      text1: 抛壳蟹
+      link_id: CRAB
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: pincher_0__fresh_ui
+  - widget_type: CodexImage
+    image: baby_pincher_0__fresh_ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexText
+    text: >-
+      沙泥蟹只要周围没有它们的蛋，就是一种没有敌意的小动物。
+
+
+      沙泥蟹生活在<link="WATER">水</link>中并且能够清除其中的<link="DISEASE">病菌</link>。
+
+
+      沙泥蟹以<link="TOXICSAND">污染土</link>、<link="SLIMEMOLD">菌泥</link>和<link="COMPOST">腐烂物</link>为食。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 理想温度
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 舒适范围：<b>0ºC</b>至<b>40ºC</b>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 存活范围：<b>-50ºC</b>至<b>100ºC</b>'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 寿命
+    style: Subtitle
+  - widget_type: CodexText
+    text: 这种小动物特征<link="CREATURES__GUIDE__FERTILITY">寿命</link>为<b>100周期</b>。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 所需空间
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 当房间空间对每只小动物平均少于<b>12格</b>时会感到<link="CREATURES__GUIDE__MOOD">拥挤</link>。'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 当房间小于<b>12格</b>时会感到<link="CREATURES__GUIDE__MOOD">封闭</link>。'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 掉落物
+    style: Subtitle
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 生蟹肉
+    image: shellfish_0__ui
+    link_id: shellfishmeat
+  - widget_type: CodexText
+    text: 	4,000千卡
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 食物
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 70千克/周期
+      link_id: toxicsand
+    produce:
+    - image: sand_0__ui
+      text1: 沙子
+      text2: 35千克/周期
+      link_id: sand
+    fabricator:
+      image: pincher_0__fresh_ui
+      text1: 沙泥蟹
+      link_id: CRABFRESHWATER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: rotfood_0__ui
+      text1: 腐烂物
+      text2: 70千克/周期
+      link_id: compost
+    produce:
+    - image: sand_0__ui
+      text1: 沙子
+      text2: 35千克/周期
+      link_id: sand
+    fabricator:
+      image: pincher_0__fresh_ui
+      text1: 沙泥蟹
+      link_id: CRABFRESHWATER
+  - widget_type: CodexConversionPanel
+    require:
+    - image: slime_mold_0__ui
+      text1: 菌泥
+      text2: 70千克/周期
+      link_id: slimemold
+    produce:
+    - image: sand_0__ui
+      text1: 沙子
+      text2: 35千克/周期
+      link_id: sand
+    fabricator:
+      image: pincher_0__fresh_ui
+      text1: 沙泥蟹
+      link_id: CRABFRESHWATER
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require: []
+    produce:
+    - image: shellfish_0__ui
+      text1: 生蟹肉
+      text2: 4,000千卡
+      tooltip: 品质：标准 [+2]
+      link_id: shellfishmeat
+    fabricator:
+      image: pincher_0__fresh_ui
+      text1: 沙泥蟹
+      link_id: CRABFRESHWATER
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: pincher_0__wood_ui
+  - widget_type: CodexImage
+    image: baby_pincher_0__wood_ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexText
+    text: >-
+      木壳蟹只要周围没有它们的蛋，就是一种没有敌意的小动物。
+
+
+      木壳蟹以<link="TOXICSAND">污染土</link>、<link="SLIMEMOLD">菌泥</link>和<link="COMPOST">腐烂物</link>为食。
+
+
+      木壳蟹脱壳后留下的壳可以打碎成<link="WOOD">木材</link>。
+
+
+      木壳蟹在<link="ETHANOL">乙醇</link>中生活。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 理想温度
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 舒适范围：<b>0ºC</b>至<b>40ºC</b>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 存活范围：<b>-50ºC</b>至<b>100ºC</b>'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 寿命
+    style: Subtitle
+  - widget_type: CodexText
+    text: 这种小动物特征<link="CREATURES__GUIDE__FERTILITY">寿命</link>为<b>100周期</b>。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 所需空间
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 当房间空间对每只小动物平均少于<b>12格</b>时会感到<link="CREATURES__GUIDE__MOOD">拥挤</link>。'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 当房间小于<b>12格</b>时会感到<link="CREATURES__GUIDE__MOOD">封闭</link>。'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 掉落物
+    style: Subtitle
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 木蟹壳
+    image: woodcrabshell_0__ui
+    link_id: crabwoodshell
+  - widget_type: CodexText
+    text: 	500千克
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 食物
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 70千克/周期
+      link_id: toxicsand
+    produce:
+    - image: sand_0__ui
+      text1: 沙子
+      text2: 17.5千克/周期
+      link_id: sand
+    fabricator:
+      image: pincher_0__wood_ui
+      text1: 木壳蟹
+      link_id: CRABWOOD
+  - widget_type: CodexConversionPanel
+    require:
+    - image: rotfood_0__ui
+      text1: 腐烂物
+      text2: 70千克/周期
+      link_id: compost
+    produce:
+    - image: sand_0__ui
+      text1: 沙子
+      text2: 17.5千克/周期
+      link_id: sand
+    fabricator:
+      image: pincher_0__wood_ui
+      text1: 木壳蟹
+      link_id: CRABWOOD
+  - widget_type: CodexConversionPanel
+    require:
+    - image: slime_mold_0__ui
+      text1: 菌泥
+      text2: 70千克/周期
+      link_id: slimemold
+    produce:
+    - image: sand_0__ui
+      text1: 沙子
+      text2: 17.5千克/周期
+      link_id: sand
+    fabricator:
+      image: pincher_0__wood_ui
+      text1: 木壳蟹
+      link_id: CRABWOOD
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require: []
+    produce:
+    - image: woodcrabshell_0__ui
+      text1: 木蟹壳
+      text2: 500千克
+      link_id: crabwoodshell
+    fabricator:
+      image: pincher_0__wood_ui
+      text1: 木壳蟹
+      link_id: CRABWOOD
+  layout: Vertical

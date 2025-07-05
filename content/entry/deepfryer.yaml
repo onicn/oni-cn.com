@@ -1,0 +1,352 @@
+id: DEEPFRYER
+parent_id: BUILDCATEGORYFOOD
+name: 油炸锅
+disabled: False
+search_only: False
+category: BUILDCATEGORYFOOD
+sort_string: 油炸锅
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="DEEPFRYER">油炸锅</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 美食制备
+    style: Body
+    image: research_type_alpha_icon
+    link_id: finerdining
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: deepfryer_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      使用<link="TALLOW">动物油脂</link>烹饪种类繁多的改良<link="FOOD">食物</link>。
+
+
+      只有在队列中安排配方复制人才会进行制作。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="POWER">电力</link>：480瓦'
+    tooltip: 必须与至少有<style="consumed">480瓦</style>可用<style="KKeyword">电力</style>的电路相连
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    复制人的操作'
+    tooltip: 必须有复制人来才能使这个建筑运行
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    需要技能的复制人的操作'
+    tooltip: 只有具有<link="COOKING1">烧烤</link>技能或<link="BOOSTERCOOK1">烧烤增幅块</link>的复制人才能使用这个建筑
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    专用房间：厨房'
+    tooltip: >-
+      必须建在专用<style="KKeyword">房间</style>内
+
+
+      建成后，<style="KKeyword">房间</style>将变为<style="KKeyword">厨房</style>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：2格宽x2格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：30秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="METAL">金属矿石</link>400千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    精制：'
+    tooltip: 将原材料加工成精制材料
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="FRIESCARROT">果薯条</link>'
+    tooltip: >
+      原料：
+
+      • 1单位<link="CARROT">羽叶果薯</link>
+
+      • 1单位<link="TALLOW">动物油脂</link>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DEEPFRIEDNOSH">炸豆小吃</link>'
+    tooltip: >
+      原料：
+
+      • 6单位<link="BEAN">小吃豆</link>
+
+      • 1单位<link="TALLOW">动物油脂</link>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DEEPFRIEDFISH">鱼肉卷</link>'
+    tooltip: >
+      原料：
+
+      • 1单位<link="FISHMEAT">帕库鱼片</link>
+
+      • 2.4单位<link="TALLOW">动物油脂</link>
+
+      • 2单位<link="COLDWHEAT">冰霜麦粒</link>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DEEPFRIEDFISH">鱼肉卷</link>'
+    tooltip: >
+      原料：
+
+      • 1单位<link="FISHMEAT">帕库鱼片</link>
+
+      • 2.4单位<link="TALLOW">动物油脂</link>
+
+      • 2单位<link="FERNFOOD">巨蕨谷粒</link>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DEEPFRIEDSHELLFISH">蟹肉天妇罗</link>'
+    tooltip: >
+      原料：
+
+      • 1单位<link="SHELLFISHMEAT">生蟹肉</link>
+
+      • 2.4单位<link="TALLOW">动物油脂</link>
+
+      • 2单位<link="COLDWHEAT">冰霜麦粒</link>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DEEPFRIEDSHELLFISH">蟹肉天妇罗</link>'
+    tooltip: >
+      原料：
+
+      • 1单位<link="SHELLFISHMEAT">生蟹肉</link>
+
+      • 2.4单位<link="TALLOW">动物油脂</link>
+
+      • 2单位<link="FERNFOOD">巨蕨谷粒</link>
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    杀死病菌'
+    tooltip: 烹饪过程能杀死所有存在于食物原料上的<style="KKeyword">病菌</style>，从而防止吃东西时产生<style="KKeyword">疾病</style>风险
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="HEAT">热量</link>：+10千复制热/秒'
+    tooltip: >-
+      每秒产生<style="produced">10千复制热</style>
+
+
+      总<style="KKeyword">温度</style>变化受到加热物质的材料属性影响：
+          • 质量
+          • 比热容
+          • 表面积
+          • 隔热厚度
+          • 热导率
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    过热<link="HEAT">温度</link>：75ºC'
+    tooltip: 达到<b>75ºC</b>时开始过热
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LOGIC">信号输入端</link>'
+    tooltip: 当接收到信号时，输入端会使这个建筑一种状态发生变化
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    启用/禁用'
+    tooltip: >-
+      输入端行为：
+
+      • <b><style="logic_on">绿色信号</style></b>：启用建筑
+
+      • <b><style="logic_off">红色信号</style></b>：禁用建筑
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>类别</b>
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    <link="REQUIREMENTCLASSCOOKTOP">烹饪站</link>'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>油炸的东西味道更好。</i>
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 所有配方
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 果薯条
+    require:
+    - image: purplerootvegetable_0__ui
+      text1: 羽叶果薯
+      text2: 4,000千卡
+      tooltip: 品质：糟糕 [0]
+      link_id: carrot
+    - image: tallow_0__ui
+      text1: 动物油脂
+      text2: 1000克
+      link_id: tallow
+    produce:
+    - image: rootfries_0__ui
+      text1: 果薯条
+      text2: 5,400千卡
+      tooltip: 品质：良好 [+3]
+      link_id: friescarrot
+    fabricator:
+      image: deepfryer_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 油炸锅
+      text2: 50秒
+      link_id: deepfryer
+  - widget_type: CodexRecipePanel
+    text: 炸豆小吃
+    require:
+    - image: seed_beanplant_0__ui
+      text1: 小吃豆
+      text2: 6单位
+      link_id: bean
+    - image: tallow_0__ui
+      text1: 动物油脂
+      text2: 1000克
+      link_id: tallow
+    produce:
+    - image: deepfried_nosh_beans_0__ui
+      text1: 炸豆小吃
+      text2: 5,000千卡
+      tooltip: 品质：良好 [+3]
+      link_id: deepfriednosh
+    fabricator:
+      image: deepfryer_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 油炸锅
+      text2: 50秒
+      link_id: deepfryer
+  - widget_type: CodexRecipePanel
+    text: 鱼肉卷
+    require:
+    - image: pacufillet_0__ui
+      text1: 帕库鱼片
+      text2: 1,000千卡
+      tooltip: 品质：标准 [+2]
+      link_id: fishmeat
+    - image: tallow_0__ui
+      text1: 动物油脂
+      text2: 2400克
+      link_id: tallow
+    - image: seed_coldwheat_0__ui
+      text1: 冰霜麦粒
+      text2: 2单位
+      link_id: coldwheat
+    produce:
+    - image: deepfried_fish_0__ui
+      text1: 鱼肉卷
+      text2: 4,200千卡
+      tooltip: 品质：优秀 [+4]
+      link_id: deepfriedfish
+    fabricator:
+      image: deepfryer_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 油炸锅
+      text2: 50秒
+      link_id: deepfryer
+  - widget_type: CodexRecipePanel
+    text: 鱼肉卷
+    require:
+    - image: pacufillet_0__ui
+      text1: 帕库鱼片
+      text2: 1,000千卡
+      tooltip: 品质：标准 [+2]
+      link_id: fishmeat
+    - image: tallow_0__ui
+      text1: 动物油脂
+      text2: 2400克
+      link_id: tallow
+    - image: megafrond_grain_0__ui
+      text1: 巨蕨谷粒
+      text2: 2单位
+      link_id: fernfood
+    produce:
+    - image: deepfried_fish_0__ui
+      text1: 鱼肉卷
+      text2: 4,200千卡
+      tooltip: 品质：优秀 [+4]
+      link_id: deepfriedfish
+    fabricator:
+      image: deepfryer_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 油炸锅
+      text2: 50秒
+      link_id: deepfryer
+  - widget_type: CodexRecipePanel
+    text: 蟹肉天妇罗
+    require:
+    - image: shellfish_0__ui
+      text1: 生蟹肉
+      text2: 1,000千卡
+      tooltip: 品质：标准 [+2]
+      link_id: shellfishmeat
+    - image: tallow_0__ui
+      text1: 动物油脂
+      text2: 2400克
+      link_id: tallow
+    - image: seed_coldwheat_0__ui
+      text1: 冰霜麦粒
+      text2: 2单位
+      link_id: coldwheat
+    produce:
+    - image: deepfried_shellfish_0__ui
+      text1: 蟹肉天妇罗
+      text2: 4,200千卡
+      tooltip: 品质：优秀 [+4]
+      link_id: deepfriedshellfish
+    fabricator:
+      image: deepfryer_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 油炸锅
+      text2: 50秒
+      link_id: deepfryer
+  - widget_type: CodexRecipePanel
+    text: 蟹肉天妇罗
+    require:
+    - image: shellfish_0__ui
+      text1: 生蟹肉
+      text2: 1,000千卡
+      tooltip: 品质：标准 [+2]
+      link_id: shellfishmeat
+    - image: tallow_0__ui
+      text1: 动物油脂
+      text2: 2400克
+      link_id: tallow
+    - image: megafrond_grain_0__ui
+      text1: 巨蕨谷粒
+      text2: 2单位
+      link_id: fernfood
+    produce:
+    - image: deepfried_shellfish_0__ui
+      text1: 蟹肉天妇罗
+      text2: 4,200千卡
+      tooltip: 品质：优秀 [+4]
+      link_id: deepfriedshellfish
+    fabricator:
+      image: deepfryer_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 油炸锅
+      text2: 50秒
+      link_id: deepfryer
+  layout: Vertical

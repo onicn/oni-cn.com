@@ -1,0 +1,69 @@
+id: GASDISTRIBUTION
+parent_id: TECH
+name: 气体分配
+disabled: False
+search_only: False
+category: TECH
+sort_string: 气体分配
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="GASDISTRIBUTION">气体分配</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 设计建筑连接方式，使<link="ELEMENTSGAS">气体</link>资源正确流通。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="IMPROVEDGASPIPING">改良通风</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="SPACEGAS">高级气体流动</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: bottle_emptier_gas_conduit_0__ui
+  - widget_type: CodexText
+    text: <link="BOTTLEEMPTIERCONDUITGAS">气罐抽出器</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: rocket_floor_plug_gas_0__ui
+  - widget_type: CodexText
+    text: <link="ROCKETINTERIORGASINPUT">气体输入配件</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: rocket_floor_plug_gas_out_0__ui
+  - widget_type: CodexText
+    text: <link="ROCKETINTERIORGASOUTPUT">气体输出配件</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: rocket_cluster_oxidizer_tank_0__ui
+  - widget_type: CodexText
+    text: <link="OXIDIZERTANKCLUSTER">大型固体氧化剂舱</link>
+    style: Body
+  layout: Horizontal

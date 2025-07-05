@@ -1,0 +1,70 @@
+id: ELLIESBIRTHDAY
+name: 办公室蛋糕
+title: STRINGS.CODEX.B2_ELLIESBIRTHDAY.TITLE
+disabled: False
+search_only: False
+category: JOURNALS
+sort_string: 办公室蛋糕
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 办公室蛋糕
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：无
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+  lock_id: journal_elliesbirthday1
+- contents:
+  - widget_type: CodexText
+    text: >
+      约书亚：嗨，克劳斯先生，我正在传捐款盘。要不要贡献几块钱给埃莉买个蛋糕？
+
+
+      奥托：唔……我还是算了吧。
+
+
+      约书亚：别这样奥托，今天是她的生日呢。
+
+
+      奥托：好吧，好吧。但我只有这么多。
+
+
+      奥托：我不明白你为什么要跟她在一起混。她不是……有点刻薄吗？
+
+
+      约书亚：哪怕是最刻薄的人在某些方面也会有闪光点的。
+
+
+      奥托：哈哈。希望你能找到她的闪光点吧。
+
+
+      约书亚：谢谢你出的蛋糕钱，奥托。
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: journal_elliesbirthday1
+- contents:
+  - widget_type: CodexText
+    text: >-
+      埃莉：好漂亮的蛋糕。你肯定花了好大力气来逼大家凑份子钱吧。
+
+
+      约书亚：你知道的，如果你对别人好一点，他们也许愿意多跟你相处一下。
+
+
+      埃莉：啐，算了吧。朋友重<i>质</i>而不重量，约书亚。
+
+
+      约书亚：哇哦！我刚刚是不是听到你在拐弯抹角地夸我？
+
+
+      埃莉：啥？少臭美了，呕。
+
+
+      约书亚：哦，别担心，我不会告诉别人的。我不是爱说闲话的人。
+    style: Body
+  layout: Vertical
+  lock_id: journal_elliesbirthday2

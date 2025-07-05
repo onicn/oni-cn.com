@@ -1,0 +1,69 @@
+id: RESEARCHING2
+parent_id: ROLES
+name: 实地研究
+disabled: False
+search_only: False
+category: ROLES
+sort_string: 实地研究
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="RESEARCHING2">实地研究</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: hat_role_research2
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 允许复制人研究<style="KKeyword">间歇泉</style>、小行星，和其他地理现象
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 工作培训
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexText
+    text: 工作培训会自动提供永久的特质和属性提升，即使复制人更换工作，这些特质和属性提升也会保留下来。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>+2</b><style="KKeyword">科学</style>
+    style: Body
+  - widget_type: CodexText
+    text: 地理分析
+    style: Body
+  - widget_type: CodexText
+    text: <link="GEOTUNER">地质调谐仪</link>的使用
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提工作
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="RESEARCHING1">高级研究</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 升职机会
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexText
+    text: 晋升会在现有工作培训的基础上带来更多属性提升和特质。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="ATOMICRESEARCH">应用科学研究</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

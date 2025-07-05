@@ -1,0 +1,55 @@
+id: SKYDETECTORS
+parent_id: TECH
+name: 天体探测
+disabled: False
+search_only: False
+category: TECH
+sort_string: 天体探测
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="SKYDETECTORS">天体探测</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 将复制人的目光投向太空，看看那里还有什么我们还没发现的。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="SPACEPROGRAM">太空计划</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="NOTIFICATIONSYSTEMS">通知系统</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: meteor_detector_0__ui
+  - widget_type: CodexText
+    text: <link="COMETDETECTOR">太空扫描仪</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: telescope_0__ui
+  - widget_type: CodexText
+    text: <link="CLUSTERTELESCOPEENCLOSED">隔绝式望远镜</link>
+    style: Body
+  layout: Horizontal

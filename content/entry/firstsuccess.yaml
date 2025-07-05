@@ -1,0 +1,31 @@
+id: FIRSTSUCCESS
+name: 令人鼓舞的结果
+title: STRINGS.CODEX.A8_FIRSTSUCCESS.TITLE
+disabled: False
+search_only: False
+category: INVESTIGATIONS
+sort_string: 令人鼓舞的结果
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 令人鼓舞的结果
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：三
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+  lock_id: notes_firstsuccess
+- contents:
+  - widget_type: CodexText
+    text: >-
+      我们成功地实现了0.03毫秒以下的小段时间的压缩和膨胀。这证明时间是一种可以进行物理操作的东西，所以我们的愿景是可以实现的。
+
+
+      时间膨胀和收缩的一个意外结果是，受影响的时间部分与未受影响的更大的时间部分之间会产生一个"真空"产物。
+
+
+      到目前为止，我们看到，处理部分两侧的未受影响的时间都会扩大或收缩以弥补这种真空，但我们不确定这种结果的影响会有多深远，也不确定它会给自然宇宙的规律带来什么影响。在所有压缩和膨胀实验结束时，我们都会撤销对时间的更改，不会留下持久的改变。
+    style: Body
+  layout: Vertical
+  lock_id: notes_firstsuccess

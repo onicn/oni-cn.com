@@ -1,0 +1,49 @@
+id: RADIATION
+name: 辐射
+title: STRINGS.CODEX.RADIATION.TITLE
+disabled: False
+search_only: False
+category: SYSTEMS
+sort_string: <link="RADIATION">辐射</link>
+required_dlc_ids:
+- EXPANSION1_ID
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 辐射
+    style: Subtitle
+  - widget_type: CodexText
+    text: >-
+      当运输<link="URANIUMORE">铀矿</link>等辐射性材料时，必须小心不要将外部的物体暴露在<link="RADIATIONSICKNESS">放射性污染物</link>中。
+
+
+      使用正确的运输容器，比如用<link="LEAD">铅</link>做内衬的容器，是保证复制人不得<link="RADIATIONSICKNESS">辐射病</link>的关键。
+    style: Body
+  - widget_type: CodexText
+    text: 辐射病
+    style: Subtitle
+  - widget_type: CodexText
+    text: >+
+      暴露在<link="RADIATIONSICKNESS">辐射性污染物</link>中的复制人需要穿戴防护设备，否则他们就会患<link="RADIATIONSICKNESS">辐射病</link>。
+
+
+      某些复制人对辐射有天生的抵抗力，但长时间暴露在放射性污染物中仍会使其生病。
+
+
+      吃<link="BASICRADPILL">辐射药丸</link>或水产食品，比如<link="COOKEDFISH">烤海鲜</link>和<link="SEALETTUCE">水草</link>，可以提前增强复制人的辐射抗性，但并不会治疗已经得<link="RADIATIONSICKNESS">辐射病</link>的复制人。
+
+
+      另一方面，辐射可以杀死物体表面（包括复制人）上的<link="FOODPOISONING">食物中毒</link>，<link="SLIMELUNG">粘液肺</link>和<link="ZOMBIESPORES">僵尸孢子</link>病菌。
+
+    style: Body
+  - widget_type: CodexText
+    text: 核能
+    style: Subtitle
+  - widget_type: CodexText
+    text: >-
+      <link="NUCLEARREACTOR">研究性反应堆</link>需要<link="ENRICHEDURANIUM">浓缩铀</link>才能运作，铀可以使用<link="URANIUMCENTRIFUGE">铀素离心机</link>浓缩。
+
+
+      一旦<link="NUCLEARREACTOR">研究性反应堆</link>供给了<link="ENRICHEDURANIUM">浓缩铀</link>就会产生大量的<link="HEAT">热</link>，然后供入<link="WATER">水</link>以产生<link="STEAM">蒸汽</link>，并与<link="STEAMTURBINE2">蒸汽涡轮机</link>相连以产生相当多的<link="POWER">电力</link>。
+    style: Body
+  layout: Vertical

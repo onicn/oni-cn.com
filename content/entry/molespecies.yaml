@@ -1,0 +1,337 @@
+id: MOLESPECIES
+parent_id: CREATURES
+name: 锹环田鼠
+disabled: False
+search_only: False
+category: CREATURES
+sort_string: <link="MOLESPECIES">锹环田鼠</link>
+sub_entries:
+- id: Mole
+  parent_id: MoleSpecies
+  name: <link="MOLE">锹环田鼠</link>
+  disabled: False
+  sort_string: 锹环田鼠
+- id: MoleDelicacy
+  parent_id: MoleSpecies
+  name: <link="MOLEDELICACY">珍馐田鼠</link>
+  disabled: False
+  sort_string: 珍馐田鼠
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 锹环田鼠
+    style: Title
+  - widget_type: CodexText
+    text: 可驯化的小动物
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 锹环田鼠是一种独特的生物，拥有两对完全发育的肺，能够在地下活动期间长时间屏住呼吸。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 锹环田鼠身体周围有很多钻头形状的角蛋白结构，这使得它能够高速钻穿大多数天然材料。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 条目（2/2）
+    style: Subtitle
+  - widget_type: CodexText
+    text: <link="MOLE">锹环田鼠</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="MOLEDELICACY">珍馐田鼠</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: driller_0__ui
+  - widget_type: CodexImage
+    image: baby_driller_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexText
+    text: >-
+      锹环田鼠是一种穴居动物，以聚集在陆地表面的<link="REGOLITH">浮土</link>为食。
+
+
+      它们无法挖穿<link="REFINEDMETAL">精炼金属</link>。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 理想温度
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 舒适范围：<b>-100ºC</b>至<b>400ºC</b>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 存活范围：<b>-200ºC</b>至<b>500ºC</b>'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 寿命
+    style: Subtitle
+  - widget_type: CodexText
+    text: 这种小动物特征<link="CREATURES__GUIDE__FERTILITY">寿命</link>为<b>100周期</b>。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 掉落物
+    style: Subtitle
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 肉
+    image: creaturemeat_0__ui
+    link_id: meat
+  - widget_type: CodexText
+    text: 	16,000千卡
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 食物
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: sand_0__ui
+      text1: 浮土
+      text2: 4800千克/周期
+      link_id: regolith
+    produce:
+    - image: sand_0__ui
+      text1: 浮土
+      text2: 2400千克/周期
+      link_id: regolith
+    fabricator:
+      image: driller_0__ui
+      text1: 锹环田鼠
+      link_id: MOLE
+  - widget_type: CodexConversionPanel
+    require:
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 4800千克/周期
+      link_id: dirt
+    produce:
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 2400千克/周期
+      link_id: dirt
+    fabricator:
+      image: driller_0__ui
+      text1: 锹环田鼠
+      link_id: MOLE
+  - widget_type: CodexConversionPanel
+    require:
+    - image: hematite_0__ui
+      text1: 铁矿
+      text2: 4800千克/周期
+      link_id: ironore
+    produce:
+    - image: hematite_0__ui
+      text1: 铁矿
+      text2: 2400千克/周期
+      link_id: ironore
+    fabricator:
+      image: driller_0__ui
+      text1: 锹环田鼠
+      link_id: MOLE
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require: []
+    produce:
+    - image: creaturemeat_0__ui
+      text1: 肉
+      text2: 16,000千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: meat
+    fabricator:
+      image: driller_0__ui
+      text1: 锹环田鼠
+      link_id: MOLE
+  - widget_type: CodexConversionPanel
+    require:
+    - image: driller_0__ui
+      text1: 锹环田鼠
+      text2: 0.05单位/周期
+      link_id: mole
+    produce:
+    - image: frozen_brine_0__ui
+      text1: 浓盐冰
+      text2: 128千克/周期
+      link_id: brine
+    fabricator:
+      image: raptor_0__ui
+      text1: 霸王鹦
+      link_id: RAPTOR
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: driller_0__del_ui
+  - widget_type: CodexImage
+    image: baby_driller_0__del_ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexText
+    text: >-
+      珍馐田鼠是一种穴居动物，当食用喜好温度的<link="REGOLITH">浮土</link>时身体表面会长出可剪下来的<link="GINGERCONFIG">滋补根</link>。
+
+
+      它们无法挖穿<link="REFINEDMETAL">精炼金属</link>。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 理想温度
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 舒适范围：<b>-100ºC</b>至<b>100ºC</b>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 存活范围：<b>-200ºC</b>至<b>500ºC</b>'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 寿命
+    style: Subtitle
+  - widget_type: CodexText
+    text: 这种小动物特征<link="CREATURES__GUIDE__FERTILITY">寿命</link>为<b>100周期</b>。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 掉落物
+    style: Subtitle
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 肉
+    image: creaturemeat_0__ui
+    link_id: meat
+  - widget_type: CodexText
+    text: 	8,000千卡
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 食物
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: sand_0__ui
+      text1: 浮土
+      text2: 4800千克/周期
+      link_id: regolith
+    produce:
+    - image: sand_0__ui
+      text1: 浮土
+      text2: 2400千克/周期
+      link_id: regolith
+    fabricator:
+      image: driller_0__del_ui
+      text1: 珍馐田鼠
+      link_id: MOLEDELICACY
+  - widget_type: CodexConversionPanel
+    require:
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 4800千克/周期
+      link_id: dirt
+    produce:
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 2400千克/周期
+      link_id: dirt
+    fabricator:
+      image: driller_0__del_ui
+      text1: 珍馐田鼠
+      link_id: MOLEDELICACY
+  - widget_type: CodexConversionPanel
+    require:
+    - image: hematite_0__ui
+      text1: 铁矿
+      text2: 4800千克/周期
+      link_id: ironore
+    produce:
+    - image: hematite_0__ui
+      text1: 铁矿
+      text2: 2400千克/周期
+      link_id: ironore
+    fabricator:
+      image: driller_0__del_ui
+      text1: 珍馐田鼠
+      link_id: MOLEDELICACY
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require: []
+    produce:
+    - image: creaturemeat_0__ui
+      text1: 肉
+      text2: 8,000千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: meat
+    fabricator:
+      image: driller_0__del_ui
+      text1: 珍馐田鼠
+      link_id: MOLEDELICACY
+  - widget_type: CodexConversionPanel
+    require:
+    - image: driller_0__del_ui
+      text1: 珍馐田鼠
+      text2: 0.1单位/周期
+      link_id: moledelicacy
+    produce:
+    - image: frozen_brine_0__ui
+      text1: 浓盐冰
+      text2: 128千克/周期
+      link_id: brine
+    fabricator:
+      image: raptor_0__ui
+      text1: 霸王鹦
+      link_id: RAPTOR
+  layout: Vertical

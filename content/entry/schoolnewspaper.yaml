@@ -1,0 +1,46 @@
+id: SCHOOLNEWSPAPER
+name: 校报文章
+title: STRINGS.CODEX.SCHOOLNEWSPAPER.TITLE
+disabled: False
+search_only: False
+category: INVESTIGATIONS
+sort_string: 校报文章
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 校报文章
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：三
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+  lock_id: journal_newspaper
+- contents:
+  - widget_type: CodexText
+    text: <b>本地学生的派对时间</b>
+    style: Body
+  layout: Vertical
+  lock_id: journal_newspaper
+- contents:
+  - widget_type: CodexText
+    text: >-
+      本周末，埃利昂科技大学的学生们举行了一场非传统的派对。
+
+
+      当其他同龄人把灯罩当帽子戴在头上，或者在熟睡的同学身上画眉毛，玩到凌晨才尽兴归来时，学生杰姬·斯特恩和奥莉维亚·布鲁萨德在宿舍度过了周末，她们准备好茶点和装饰品，等待她们尊贵的客人——她们自己——到来。
+
+
+      这两位前途无限光明的理工科学生的专业是理论物理，主要从事时空领域的研究。他们的实验假设，如果他们关于时空延展性的理论成立，那么他们未来的自己就可以穿越时间来参加派对，证明时间旅行的存在。
+
+
+      他们也考虑到了未来的自己可能日程安排非常繁忙，于是提出如果尊贵的客人无法出席，可以用代号“沙漏”发信息过来，表明他们希望能来，但实在无法脱身。
+
+
+      遗憾的是，最终他们没有收到回复，也没有人到场参加派对，不过这并没有使奥莉维亚和杰姬灰心丧气。
+
+
+      就像奥莉维亚说的，“这对我们来说只是意味着更多零食而已！”
+    style: Body
+  layout: Vertical
+  lock_id: journal_newspaper

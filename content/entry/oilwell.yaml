@@ -1,0 +1,24 @@
+id: OILWELL
+name: 储油石
+title: STRINGS.CREATURES.SPECIES.OIL_WELL.NAME
+disabled: False
+search_only: False
+category: GEYSERS
+sort_string: <link="OILWELL">储油石</link>
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="OILWELL">储油石</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  - widget_type: CodexImage
+    image: geyser_side_oil_0__ui
+  - widget_type: CodexText
+    text: >-
+      储油石是一种岩层，在其表层内藏有<link="CRUDEOIL">原油</link>。
+
+
+      加以充足的压力即可从储油石中开采出原油。
+    style: Body
+  - widget_type: CodexDividerLine
+  layout: Vertical

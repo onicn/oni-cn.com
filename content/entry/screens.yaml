@@ -1,0 +1,48 @@
+id: SCREENS
+parent_id: TECH
+name: 新媒体
+disabled: False
+search_only: False
+category: TECH
+sort_string: 新媒体
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="SCREENS">新媒体</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 有着很多漂亮颜色的高科技显示器。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="GLASSFURNISHINGS">玻璃吹制</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="RENAISSANCEART">复兴艺术</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: pixel_pack_0__ui
+  - widget_type: CodexText
+    text: <link="PIXELPACK">像素屏</link>
+    style: Body
+  layout: Horizontal

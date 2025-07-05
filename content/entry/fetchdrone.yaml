@@ -1,0 +1,29 @@
+id: FETCHDRONE
+name: 飞寻机
+title: STRINGS.CODEX.FETCHDRONE.TITLE
+disabled: False
+search_only: False
+category: CREATURES
+sort_string: 飞寻机
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 飞寻机
+    style: Title
+  - widget_type: CodexText
+    text: 运送机器人
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      飞寻机是飞行运送机器人，旨在远距离水平与垂直方向运输固体物品。
+
+
+      这些无线机器人可能在飞行途中因耗尽<link="ELECTROBANK">移动电源</link>而暂时停机，需要运来替代电源。重启后，它们就像第一天工作一样充满活力。
+
+
+      不幸的是，一些断电的飞寻机直接掉到了液体池里，再也没有机会重启了。
+    style: Body
+  layout: Vertical

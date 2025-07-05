@@ -1,0 +1,96 @@
+id: SUPERCOOLANTGAS
+parent_id: ELEMENTSGAS
+name: 气态超级冷却剂
+disabled: False
+search_only: False
+icon_color: 37AD93FF
+category: ELEMENTSGAS
+sort_string: 气态超级冷却剂
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="SUPERCOOLANTGAS">气态超级冷却剂</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    color: 37AD93FF
+    image: element_gas
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_gas
+      color: 37AD93FF
+      text1: 气态超级冷却剂
+      text2: 1000克
+      link_id: supercoolantgas
+    produce:
+    - image: element_liquid
+      color: 37AD93FF
+      text1: 超级冷却剂
+      text2: 1000克
+      link_id: supercoolant
+    fabricator:
+      image: crew_state_temp_down
+      text1: 436.9ºC
+      tooltip: 温度低于436.9ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换于
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: 37AD93FF
+      text1: 超级冷却剂
+      text2: 1000克
+      link_id: supercoolant
+    produce:
+    - image: element_gas
+      color: 37AD93FF
+      text1: 气态超级冷却剂
+      text2: 1000克
+      link_id: supercoolantgas
+    fabricator:
+      image: crew_state_temp_up
+      text1: 436.9ºC
+      tooltip: 温度高于436.9ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      超级冷却剂是一种工业级<link="FULLERENE">富勒烯</link>冷却剂。
+
+
+      当前选中的处于<link="ELEMENTSGAS">气态</link>。
+
+
+      资源种类：不可呼吸的气体
+
+      凝点：436.9ºC
+
+
+      比热容：8.440 (DTU/g)/ºC
+
+      热导率：1.200 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.06
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：气体, 不可呼吸的气体
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

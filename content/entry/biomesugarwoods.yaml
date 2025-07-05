@@ -1,0 +1,95 @@
+id: BIOMESUGARWOODS
+parent_id: BIOMES
+name: 花蜜生态
+disabled: False
+search_only: False
+category: BIOMES
+sort_string: BIOMESUGARWOODS
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 花蜜生态
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 富含<link="SNOW">雪</link>的花蜜生态是大型<link="SPACETREE">糖心树</link>的家园。这种复杂的植物可产生<link="SUGARWATER">花蜜</link>，能提炼成<link="SUCROSE">蔗糖</link>和<link="STEAM">蒸汽</link>。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      <link="SEALSPECIES">栓角海豹</link>能食用这种甜味液体，并产生<link="ETHANOL">乙醇</link>以支持殖民地的燃料供应。栓角海豹的养殖还能获得<link="TALLOW">动物油脂</link>，一种油性物质，可用于<link="FOOD">食物</link>，或者提炼成<link="CRUDEOIL">原油</link>以支持本地的<link="POWER">电力</link>系统。
+
+
+      在<link="ICE">冰</link>和<link="SNOW">雪</link>的下面埋藏着大量固态<link="MERCURY">汞</link>沉积物，这是一种稀有金属，可液化后用于工业冷却系统。
+
+
+      这种生态的景象值得一看：除了偶尔的<link="ICEFLOWER">恬静花</link>带来柔和魅力之外，<link="LIGHTBUG">发光虫</link>的光照在这片冻土之上也令人心动。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 元素
+    style: Subtitle
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 固态汞
+    image: mercury_refined_0__ui
+    link_id: solidmercury
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 磷矿
+    image: phosphorite_0__ui
+    link_id: phosphorite
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 雪
+    image: snow_0__ui
+    link_id: snow
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 冰
+    image: ice_0__ui
+    link_id: ice
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 氧气
+    color: B7FFFFFF
+    image: element_gas
+    link_id: oxygen
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 植物
+    style: Subtitle
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 糖心树
+    image: syrup_tree_0__ui
+    link_id: spacetree
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 恬静花
+    image: potted_ice_flower_0__ui
+    link_id: iceflower
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 小动物
+    style: Subtitle
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 栓角海豹
+    image: seal_0__ui
+    link_id: seal
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 发光虫
+    image: lightbug_0__ui
+    link_id: lightbug
+  layout: Vertical

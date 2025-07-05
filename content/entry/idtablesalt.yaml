@@ -1,0 +1,27 @@
+id: IDTABLESALT
+parent_id: FOOD
+name: 食盐
+disabled: False
+search_only: False
+category: FOOD
+sort_string: 食盐
+content_container:
+- contents:
+  - widget_type: CodexImage
+    image: ui_food_table_salt
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 食盐
+    style: Title
+  - widget_type: CodexText
+    text: >-
+      一种调味料，复制人可以将其加到<link="FOOD">食物</link>中以提升<link="MORALE">士气</link>。
+
+
+      复制人在<link="DININGTABLE">餐桌</link>前吃饭时会自动使用食盐。
+
+
+      <i>“只选用最精细的颗粒。”</i>
+    style: Body
+  layout: Vertical

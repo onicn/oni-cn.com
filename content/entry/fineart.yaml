@@ -1,0 +1,52 @@
+id: FINEART
+parent_id: TECH
+name: 艺术
+disabled: False
+search_only: False
+category: TECH
+sort_string: 艺术
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="FINEART">艺术</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 用艺术提高<link="DECOR">装饰度</link>的更多选择。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="ARTISTRY">艺术表达</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: painting_off_0__ui
+  - widget_type: CodexText
+    text: <link="CANVAS">空白画布</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: sculpture_0__ui
+  - widget_type: CodexText
+    text: <link="SCULPTURE">大型雕塑块</link>
+    style: Body
+  layout: Horizontal

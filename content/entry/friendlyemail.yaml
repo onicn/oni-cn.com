@@ -1,0 +1,66 @@
+id: FRIENDLYEMAIL
+name: 你好啊！
+title: STRINGS.CODEX.B7_FRIENDLYEMAIL.TITLE
+disabled: False
+search_only: False
+category: EMAILS
+sort_string: 你好啊！
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 你好啊！
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：无
+    style: Subtitle
+  layout: Vertical
+  lock_id: email_friendlyemail
+- contents:
+  - widget_type: CodexText
+    text: >
+      <smallcaps>收件人：<b>特切纳博士</b><alpha=#AA><size=12> <ntechna@gravitas.nova></size></color>
+
+      发件人：<b>琼斯博士</b><alpha=#AA><size=12> <ejones@gravitas.nova></size></color></smallcaps>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_friendlyemail
+- contents:
+  - widget_type: CodexText
+    text: >-
+      <indent=5%>天呐，<i>你好啊</i>，尼古拉！
+
+
+      你有没有听说过最近在厨房发生的那件超级古怪的事？约书亚的午餐从冰箱里消失了，上星期的每一天都发生了这样的怪事！
+
+
+      那间房里有<i>成吨</i>的摄像头，所有人都只看到了冰箱门后露出的一头刺猬般的金发。
+
+
+      真是太<i>怪</i>了，对吧？;)
+
+
+      不管了，反正跟我们没关系，但我们的计算机系统一直出现<i>小故障</i>，就是姓名首字母为“N.T.”的所有员工大概半年的数据都被<i>彻底</i>消除了。
+
+
+      但是别担心！我肯定能在它影响<i>你的</i>任何工作之前解决它。
+
+
+      拜拜！</indent>
+    style: Body
+  - widget_type: CodexText
+    text: >2
+
+      祝好，
+
+      琼斯博士
+
+      <size=11>信息统计部
+
+      庄严科技</size>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_friendlyemail

@@ -1,0 +1,429 @@
+id: BELLYSPECIES
+parent_id: CREATURES
+name: 绒犸兔
+disabled: False
+search_only: False
+category: CREATURES
+sort_string: <link="BELLYSPECIES">绒犸兔</link>
+required_dlc_ids:
+- DLC2_ID
+sub_entries:
+- id: GoldBelly
+  parent_id: BellySpecies
+  name: <link="GOLDBELLY">皇犸兔</link>
+  disabled: False
+  sort_string: 皇犸兔
+- id: IceBelly
+  parent_id: BellySpecies
+  name: <link="ICEBELLY">绒犸兔</link>
+  disabled: False
+  sort_string: 绒犸兔
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 绒犸兔
+    style: Title
+  - widget_type: CodexText
+    text: 可驯化的小动物
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      绒犸兔是记录以来最古老的物种，其古老的遗骸可追溯到大约10,000年前。
+
+
+      这种平静的食草动物因其独特的肢体语言而出名：一只愤怒的青年绒犸兔会通过在对手面前戏剧性地摔倒表达不满，而行动不便的年长绒犸兔会背对着引起它烦恼的来源坐着。
+
+
+      在看护者面前舔舐地面可能是其深厚感情的表现，也可能是缺乏矿物质的表现。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 条目（2/2）
+    style: Subtitle
+  - widget_type: CodexText
+    text: <link="GOLDBELLY">皇犸兔</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="ICEBELLY">绒犸兔</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: ice_belly_0__king_ui
+  - widget_type: CodexImage
+    image: baby_icebelly_0__king_ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexText
+    text: >-
+      皇犸兔是一种笨拙但没有敌意的生物，依靠<link="CARROT">羽叶果薯</link>、<link="BEANPLANTSEED">小吃豆</link>。
+
+
+      其华丽的头冠只在吃<link="FRIESCARROT">果薯条</link>时生长。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 理想温度
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 舒适范围：<b>30ºC</b>至<b>70ºC</b>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 存活范围：<b>-100ºC</b>至<b>100ºC</b>'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 寿命
+    style: Subtitle
+  - widget_type: CodexText
+    text: 这种小动物特征<link="CREATURES__GUIDE__FERTILITY">寿命</link>为<b>200周期</b>。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 所需空间
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 当房间空间对每只小动物平均少于<b>16格</b>时会感到<link="CREATURES__GUIDE__MOOD">拥挤</link>。'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 当房间小于<b>16格</b>时会感到<link="CREATURES__GUIDE__MOOD">封闭</link>。'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 掉落物
+    style: Subtitle
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 肉
+    image: creaturemeat_0__ui
+    link_id: meat
+  - widget_type: CodexText
+    text: 	22,400千卡
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 食物
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: purpleroot_0__ui
+      text1: 羽叶果薯植株
+      text2: 44% 生长进度/周期
+      link_id: carrotplant
+    produce:
+    - image: bammoth_poop_0__ui
+      text1: 绒犸兔碎糜
+      text2: 30千克/周期
+      link_id: icebellypoop
+    fabricator:
+      image: ice_belly_0__king_ui
+      text1: 皇犸兔
+      link_id: GOLDBELLY
+  - widget_type: CodexConversionPanel
+    require:
+    - image: purplerootvegetable_0__ui
+      text1: 羽叶果薯
+      text2: 1,778千卡/周期
+      tooltip: 品质：糟糕 [0]
+      link_id: carrot
+    produce:
+    - image: bammoth_poop_0__ui
+      text1: 绒犸兔碎糜
+      text2: 30千克/周期
+      link_id: icebellypoop
+    fabricator:
+      image: ice_belly_0__king_ui
+      text1: 皇犸兔
+      link_id: GOLDBELLY
+  - widget_type: CodexConversionPanel
+    require:
+    - image: rootfries_0__ui
+      text1: 果薯条
+      text2: 1,350千卡/周期
+      tooltip: 品质：良好 [+3]
+      link_id: friescarrot
+    produce:
+    - image: bammoth_poop_0__ui
+      text1: 绒犸兔碎糜
+      text2: 30千克/周期
+      link_id: icebellypoop
+    fabricator:
+      image: ice_belly_0__king_ui
+      text1: 皇犸兔
+      link_id: GOLDBELLY
+  - widget_type: CodexConversionPanel
+    require:
+    - image: beanplant_0__ui
+      text1: 小吃芽
+      text2: 14% 生长进度/周期
+      link_id: beanplant
+    produce:
+    - image: bammoth_poop_0__ui
+      text1: 绒犸兔碎糜
+      text2: 30千克/周期
+      link_id: icebellypoop
+    fabricator:
+      image: ice_belly_0__king_ui
+      text1: 皇犸兔
+      link_id: GOLDBELLY
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_beanplant_0__ui
+      text1: 小吃豆
+      text2: 1.62单位/周期
+      link_id: bean
+    produce:
+    - image: bammoth_poop_0__ui
+      text1: 绒犸兔碎糜
+      text2: 30千克/周期
+      link_id: icebellypoop
+    fabricator:
+      image: ice_belly_0__king_ui
+      text1: 皇犸兔
+      link_id: GOLDBELLY
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: ice_belly_0__king_ui
+      text1: 皇犸兔
+      text2: 1单位
+      link_id: goldbelly
+    produce:
+    - image: bammoth_crown_0__ui
+      text1: 皇犸兔头冠
+      text2: 250单位
+      link_id: goldbellycrown
+    fabricator:
+      image: shearing_station_0__ui
+      text1: 修剪站
+      link_id: SHEARINGSTATION
+  - widget_type: CodexConversionPanel
+    require: []
+    produce:
+    - image: creaturemeat_0__ui
+      text1: 肉
+      text2: 22,400千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: meat
+    fabricator:
+      image: ice_belly_0__king_ui
+      text1: 皇犸兔
+      link_id: GOLDBELLY
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: ice_belly_0__ui
+  - widget_type: CodexImage
+    image: baby_icebelly_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexText
+    text: >-
+      绒犸兔是一种笨拙但没有敌意的生物，依靠<link="CARROT">羽叶果薯</link>、<link="BEANPLANTSEED">小吃豆</link>和<link="FRIESCARROT">果薯条</link>生存。
+
+
+      其厚厚的外层毛可以修剪为<link="BASICFABRIC">芦苇纤维</link>。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 理想温度
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 舒适范围：<b>30ºC</b>至<b>70ºC</b>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 存活范围：<b>-100ºC</b>至<b>100ºC</b>'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 寿命
+    style: Subtitle
+  - widget_type: CodexText
+    text: 这种小动物特征<link="CREATURES__GUIDE__FERTILITY">寿命</link>为<b>200周期</b>。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 所需空间
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 当房间空间对每只小动物平均少于<b>16格</b>时会感到<link="CREATURES__GUIDE__MOOD">拥挤</link>。'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 当房间小于<b>16格</b>时会感到<link="CREATURES__GUIDE__MOOD">封闭</link>。'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 掉落物
+    style: Subtitle
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 肉
+    image: creaturemeat_0__ui
+    link_id: meat
+  - widget_type: CodexText
+    text: 	22,400千卡
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 食物
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: purpleroot_0__ui
+      text1: 羽叶果薯植株
+      text2: 44% 生长进度/周期
+      link_id: carrotplant
+    produce:
+    - image: bammoth_poop_0__ui
+      text1: 绒犸兔碎糜
+      text2: 30千克/周期
+      link_id: icebellypoop
+    fabricator:
+      image: ice_belly_0__ui
+      text1: 绒犸兔
+      link_id: ICEBELLY
+  - widget_type: CodexConversionPanel
+    require:
+    - image: purplerootvegetable_0__ui
+      text1: 羽叶果薯
+      text2: 1,778千卡/周期
+      tooltip: 品质：糟糕 [0]
+      link_id: carrot
+    produce:
+    - image: bammoth_poop_0__ui
+      text1: 绒犸兔碎糜
+      text2: 30千克/周期
+      link_id: icebellypoop
+    fabricator:
+      image: ice_belly_0__ui
+      text1: 绒犸兔
+      link_id: ICEBELLY
+  - widget_type: CodexConversionPanel
+    require:
+    - image: rootfries_0__ui
+      text1: 果薯条
+      text2: 1,350千卡/周期
+      tooltip: 品质：良好 [+3]
+      link_id: friescarrot
+    produce:
+    - image: bammoth_poop_0__ui
+      text1: 绒犸兔碎糜
+      text2: 30千克/周期
+      link_id: icebellypoop
+    fabricator:
+      image: ice_belly_0__ui
+      text1: 绒犸兔
+      link_id: ICEBELLY
+  - widget_type: CodexConversionPanel
+    require:
+    - image: beanplant_0__ui
+      text1: 小吃芽
+      text2: 14% 生长进度/周期
+      link_id: beanplant
+    produce:
+    - image: bammoth_poop_0__ui
+      text1: 绒犸兔碎糜
+      text2: 30千克/周期
+      link_id: icebellypoop
+    fabricator:
+      image: ice_belly_0__ui
+      text1: 绒犸兔
+      link_id: ICEBELLY
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_beanplant_0__ui
+      text1: 小吃豆
+      text2: 1.62单位/周期
+      link_id: bean
+    produce:
+    - image: bammoth_poop_0__ui
+      text1: 绒犸兔碎糜
+      text2: 30千克/周期
+      link_id: icebellypoop
+    fabricator:
+      image: ice_belly_0__ui
+      text1: 绒犸兔
+      link_id: ICEBELLY
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: ice_belly_0__ui
+      text1: 绒犸兔
+      text2: 1单位
+      link_id: icebelly
+    produce:
+    - image: swampreedwool_0__ui
+      text1: 芦苇纤维
+      text2: 5单位
+      link_id: basicfabric
+    fabricator:
+      image: shearing_station_0__ui
+      text1: 修剪站
+      link_id: SHEARINGSTATION
+  - widget_type: CodexConversionPanel
+    require: []
+    produce:
+    - image: creaturemeat_0__ui
+      text1: 肉
+      text2: 22,400千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: meat
+    fabricator:
+      image: ice_belly_0__ui
+      text1: 绒犸兔
+      link_id: ICEBELLY
+  layout: Vertical

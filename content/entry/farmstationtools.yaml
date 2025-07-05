@@ -1,0 +1,28 @@
+id: FARMSTATIONTOOLS
+name: 微肥
+title: STRINGS.CODEX.FARM_STATION_TOOLS.TITLE
+disabled: False
+search_only: False
+category: INDUSTRIALINGREDIENTS
+sort_string: 微肥
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 微肥
+    style: Title
+  - widget_type: CodexText
+    text: 专用农业设备
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexImage
+    image: kit_planttender_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      微肥是在<link="FARMSTATION">农业站</link>生产的专用<link="FERTILIZER">肥料</link>。
+
+
+      必须由具有<link="FARMING2">作物照料</link>技能的复制人制作，帮助<link="PLANTS">植物</link>更快生长。
+    style: Body
+  layout: Vertical

@@ -1,0 +1,26 @@
+id: SWEEPBOT
+name: 扫扫机
+title: STRINGS.CODEX.SWEEPY.TITLE
+disabled: False
+search_only: False
+category: CREATURES
+sort_string: 扫扫机
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 扫扫机
+    style: Title
+  - widget_type: CodexText
+    text: 清理机器人
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      扫扫机是一种家用扫地机器人，用于清理固体和液体杂物。<link="SWEEPBOTSTATION">扫扫基站</link>会自动地启用扫扫机，储存机器人捡起的杂物，并为停靠的机器人充电。
+
+
+      尽管如此，扫扫机不能越过间隙或凹凸不平的地面，而且遇到这些情况它会表现“这很糟糕”的动作。
+    style: Body
+  layout: Vertical

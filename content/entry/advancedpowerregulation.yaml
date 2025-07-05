@@ -1,0 +1,80 @@
+id: ADVANCEDPOWERREGULATION
+parent_id: TECH
+name: 高级电力调节
+disabled: False
+search_only: False
+category: TECH
+sort_string: 高级电力调节
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="ADVANCEDPOWERREGULATION">高级电力调节</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 大规模<link="POWER">电力</link>管理所需的电路组件。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="COMBUSTION">内燃机</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: utilities_electric_insulated_0__ui
+  - widget_type: CodexText
+    text: <link="HIGHWATTAGEWIRE">高负荷电线</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: heavywatttile_0__ui
+  - widget_type: CodexText
+    text: <link="WIREBRIDGEHIGHWATTAGE">高负荷电线接合板</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: generatormerc_0__ui
+  - widget_type: CodexText
+    text: <link="HYDROGENGENERATOR">氢气发电机</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: switchpowershutoff_0__ui
+  - widget_type: CodexText
+    text: <link="LOGICPOWERRELAY">电力截断器</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: transformer_small_0__ui
+  - widget_type: CodexText
+    text: <link="POWERTRANSFORMERSMALL">变压器</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: wattage_sensor_0__ui
+  - widget_type: CodexText
+    text: <link="LOGICWATTSENSOR">功率传感器</link>
+    style: Body
+  layout: Horizontal

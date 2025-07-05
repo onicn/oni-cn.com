@@ -1,0 +1,96 @@
+id: TUNGSTENGAS
+parent_id: ELEMENTSGAS
+name: 气态钨
+disabled: False
+search_only: False
+icon_color: FF007DFF
+category: ELEMENTSGAS
+sort_string: 气态钨
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="TUNGSTENGAS">气态钨</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    color: FF007DFF
+    image: element_gas
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_gas
+      color: FF007DFF
+      text1: 气态钨
+      text2: 1000克
+      link_id: tungstengas
+    produce:
+    - image: element_liquid
+      color: E5290EFF
+      text1: 熔融钨
+      text2: 1000克
+      link_id: moltentungsten
+    fabricator:
+      image: crew_state_temp_down
+      text1: 5929.9ºC
+      tooltip: 温度低于5929.9ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换于
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: E5290EFF
+      text1: 熔融钨
+      text2: 1000克
+      link_id: moltentungsten
+    produce:
+    - image: element_gas
+      color: FF007DFF
+      text1: 气态钨
+      text2: 1000克
+      link_id: tungstengas
+    fabricator:
+      image: crew_state_temp_up
+      text1: 5929.9ºC
+      tooltip: 温度高于5929.9ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      (W) 气态钨是一种过热的结晶<link="RAWMETAL">金属</link>。
+
+
+      当前选中的处于<link="ELEMENTSGAS">气态</link>。
+
+
+      资源种类：不可呼吸的气体
+
+      凝点：5929.9ºC
+
+
+      比热容：0.134 (DTU/g)/ºC
+
+      热导率：1.000 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.03
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：<link="METAL">金属矿石</link>, <link="REFINEDMETAL">精炼金属</link>, 气体, 不可呼吸的气体
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

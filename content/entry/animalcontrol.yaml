@@ -1,0 +1,76 @@
+id: ANIMALCONTROL
+parent_id: TECH
+name: 动物控制
+disabled: False
+search_only: False
+category: TECH
+sort_string: 动物控制
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="ANIMALCONTROL">动物控制</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 管理殖民地小动物种群的有用技术。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 前提技术
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <link="AGRICULTURE">农业</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="RANCHING">养殖</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: critter_trap_air_0__ui
+  - widget_type: CodexText
+    text: <link="FLYINGCREATUREBAIT">飞行小动物陷阱</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: critter_trap_ground_0__ui
+  - widget_type: CodexText
+    text: <link="CREATUREGROUNDTRAP">小动物陷阱</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: critter_trap_water_0__ui
+  - widget_type: CodexText
+    text: <link="WATERTRAP">捕鱼陷阱</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: incubator_0__ui
+  - widget_type: CodexText
+    text: <link="EGGINCUBATOR">孵化器</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: critter_sensor_0__ui
+  - widget_type: CodexText
+    text: <link="LOGICCRITTERCOUNTSENSOR">小动物传感器</link>
+    style: Body
+  layout: Horizontal

@@ -1,0 +1,25 @@
+id: VIDEOS15
+name: 视频：挖掘资源
+disabled: False
+search_only: False
+category: Videos
+sort_string: 视频：挖掘资源
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 视频：挖掘资源
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexVideo
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      挖掘对于建造一个健康的殖民地是必要的。指示复制人在一片区域内进行挖掘可以获得资源以建造基础设备、寻到食物、还可以清出一片空间用于殖民地发展。按 {Hotkey/Dig} 打开挖掘工具，此时我可以选择需要让复制人挖掘的区域。
+
+
+      复制人需要习得超坚硬材料挖掘技能才能挖掘深渊晶石，需要极坚硬材料挖掘技能才能挖掘钻石和黑曜石。没有正确的技能，这些材料就无法挖掘。
+    style: Body
+  layout: Vertical

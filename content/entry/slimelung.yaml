@@ -1,0 +1,65 @@
+id: SLIMELUNG
+parent_id: DISEASE
+name: 粘液肺
+disabled: False
+search_only: False
+category: DISEASE
+sort_string: 粘液肺
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="SLIMELUNG">粘液肺</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 粘液肺病菌常见于<link="SLIMEMOLD">菌泥</link>和<link="CONTAMINATEDOXYGEN">污染氧</link>中。吸入这些病菌会导致复制人咳嗽，并呼吸困难。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 温度范围：10ºC至100ºC
+    style: Body
+  - widget_type: CodexText
+    text: >
+      气压范围：0千克到1000千克
+    style: Body
+  - widget_type: CodexText
+    text: 繁殖于：
+    style: Body
+  - widget_type: CodexText
+    text: '    • <link="SLIMEMOLD">菌泥</link>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • <link="CONTAMINATEDOXYGEN">污染氧</link>'
+    style: Body
+  - widget_type: CodexText
+    text: 抑菌物：
+    style: Body
+  - widget_type: CodexText
+    text: '    • 气体'
+    style: Body
+  - widget_type: CodexText
+    text: 抗菌物：
+    style: Body
+  - widget_type: CodexText
+    text: '    • 固体'
+    style: Body
+  - widget_type: CodexText
+    text: '    • <link="OXYGEN">氧气</link>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 液体'
+    style: Body
+  - widget_type: CodexText
+    text: 灭菌物：
+    style: Body
+  - widget_type: CodexText
+    text: '    • <link="BLEACHSTONE">漂白石</link>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • <link="CHLORINEGAS">氯气</link>'
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

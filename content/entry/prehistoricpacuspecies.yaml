@@ -1,0 +1,195 @@
+id: PREHISTORICPACUSPECIES
+parent_id: CREATURES
+name: 颚鱼
+disabled: False
+search_only: False
+category: CREATURES
+sort_string: <link="PREHISTORICPACUSPECIES">颚鱼</link>
+required_dlc_ids:
+- DLC4_ID
+sub_entries:
+- id: PrehistoricPacu
+  parent_id: PrehistoricPacuSpecies
+  name: <link="PREHISTORICPACU">颚鱼</link>
+  disabled: False
+  sort_string: 颚鱼
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 颚鱼
+    style: Title
+  - widget_type: CodexText
+    text: 水生小动物
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      颚鱼的外貌或许吓人，但对有经验的饲养者而言完全无害。
+
+
+      这种鱼类因下颌结构特殊而无法正常咀嚼食物，只能吞食体型偏小的猎物。
+
+
+      尽管基因分析显示它长期独立进化，但仍与<link="PACU">帕库鱼</link>等锯脂鲤科鱼类存在部分相似基因。不过，这并不影响它成为可食用鱼种。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: paculacanth_0__ui
+  - widget_type: CodexImage
+    image: baby_paculacanth_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexText
+    text: >-
+      颚鱼是一种食肉水生小动物，以<link="PACU">帕库鱼</link>为食并产生<link="RUST">铁锈</link>。
+
+
+      颚鱼对复制人没有危险。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 理想温度
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 舒适范围：<b>0ºC</b>至<b>60ºC</b>'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 存活范围：<b>-20ºC</b>至<b>100ºC</b>'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 寿命
+    style: Subtitle
+  - widget_type: CodexText
+    text: 这种小动物特征<link="CREATURES__GUIDE__FERTILITY">寿命</link>为<b>100周期</b>。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 所需空间
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    • 当房间空间对每只小动物平均少于<b>12格</b>时会感到<link="CREATURES__GUIDE__MOOD">拥挤</link>。'
+    style: Body
+  - widget_type: CodexText
+    text: '    • 当房间小于<b>12格</b>时会感到<link="CREATURES__GUIDE__MOOD">封闭</link>。'
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 掉落物
+    style: Subtitle
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 颚鱼片
+    image: jawbofillet_0__ui
+    link_id: prehistoricpacufillet
+  - widget_type: CodexText
+    text: 	12,000千卡
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 食物
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: pacu_0__ui
+      text1: 帕库鱼
+      text2: 1单位/周期
+      link_id: pacu
+    produce:
+    - image: iron_oxide_0__ui
+      text1: 铁锈
+      text2: 60千克/周期
+      link_id: rust
+    fabricator:
+      image: paculacanth_0__ui
+      text1: 颚鱼
+      link_id: PREHISTORICPACU
+  - widget_type: CodexConversionPanel
+    require:
+    - image: pacu_0__glp_ui
+      text1: 大嘴鱼
+      text2: 1单位/周期
+      link_id: pacucleaner
+    produce:
+    - image: iron_oxide_0__ui
+      text1: 铁锈
+      text2: 60千克/周期
+      link_id: rust
+    fabricator:
+      image: paculacanth_0__ui
+      text1: 颚鱼
+      link_id: PREHISTORICPACU
+  - widget_type: CodexConversionPanel
+    require:
+    - image: pacu_0__trp_ui
+      text1: 热带帕库鱼
+      text2: 1单位/周期
+      link_id: pacutropical
+    produce:
+    - image: iron_oxide_0__ui
+      text1: 铁锈
+      text2: 60千克/周期
+      link_id: rust
+    fabricator:
+      image: paculacanth_0__ui
+      text1: 颚鱼
+      link_id: PREHISTORICPACU
+  - widget_type: CodexConversionPanel
+    require:
+    - image: pacufillet_0__ui
+      text1: 帕库鱼片
+      text2: 1,000千卡/周期
+      tooltip: 品质：标准 [+2]
+      link_id: fishmeat
+    produce:
+    - image: iron_oxide_0__ui
+      text1: 铁锈
+      text2: 60千克/周期
+      link_id: rust
+    fabricator:
+      image: paculacanth_0__ui
+      text1: 颚鱼
+      link_id: PREHISTORICPACU
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require: []
+    produce:
+    - image: jawbofillet_0__ui
+      text1: 颚鱼片
+      text2: 12,000千卡
+      tooltip: 品质：良好 [+3]
+      link_id: prehistoricpacufillet
+    fabricator:
+      image: paculacanth_0__ui
+      text1: 颚鱼
+      link_id: PREHISTORICPACU
+  layout: Vertical

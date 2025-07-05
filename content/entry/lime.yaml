@@ -1,0 +1,169 @@
+id: LIME
+parent_id: ELEMENTSSOLID
+name: 石灰
+disabled: False
+search_only: False
+category: ELEMENTSSOLID
+sort_string: 石灰
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="LIME">石灰</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: limestone_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: limestone_0__ui
+      text1: 石灰
+      text2: 1000克
+      link_id: lime
+    produce:
+    - image: element_liquid
+      color: AE0000FF
+      text1: 岩浆
+      text2: 1000克
+      link_id: magma
+    fabricator:
+      image: crew_state_temp_up
+      text1: 1056.9ºC
+      tooltip: 温度高于1056.9ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 钢
+    require:
+    - image: iron_refined_0__ui
+      text1: 铁
+      text2: 70千克
+      link_id: iron
+    - image: carbon_0__ui
+      text1: 精炼碳
+      text2: 20千克
+      link_id: refinedcarbon
+    - image: limestone_0__ui
+      text1: 石灰
+      text2: 10千克
+      link_id: lime
+    produce:
+    - image: steel_0__ui
+      text1: 钢
+      text2: 100千克
+      link_id: steel
+    fabricator:
+      image: metalrefinery_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 金属精炼器
+      text2: 40秒
+      link_id: metalrefinery
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 碎石机
+    require:
+    - image: eggshells_0__ui
+      text1: 蛋壳
+      text2: 5千克
+      link_id: eggshell
+    produce:
+    - image: limestone_0__ui
+      text1: 石灰
+      text2: 5千克
+      link_id: lime
+    fabricator:
+      image: rockrefinery_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 碎石机
+      text2: 40秒
+      link_id: rockcrusher
+  - widget_type: CodexRecipePanel
+    text: 碎石机
+    require:
+    - image: crabshell_0__ui
+      text1: 蟹壳
+      text2: 10千克
+      link_id: crabshell
+    produce:
+    - image: limestone_0__ui
+      text1: 石灰
+      text2: 10千克
+      link_id: lime
+    fabricator:
+      image: rockrefinery_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 碎石机
+      text2: 40秒
+      link_id: rockcrusher
+  - widget_type: CodexRecipePanel
+    text: 碎石机
+    require:
+    - image: fossil_0__ui
+      text1: 化石
+      text2: 100千克
+      link_id: fossil
+    produce:
+    - image: limestone_0__ui
+      text1: 石灰
+      text2: 5千克
+      link_id: lime
+    - image: sedimentary_rock_0__ui
+      text1: 沉积岩
+      text2: 95千克
+      link_id: sedimentaryrock
+    fabricator:
+      image: rockrefinery_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 碎石机
+      text2: 40秒
+      link_id: rockcrusher
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      (CaCO<sub>3</sub>) 石灰是<link="CREATURES">小动物</link>蛋壳中常见的一种矿物质。
+
+
+      它可用作<b>建造材料</b>。
+
+
+      资源种类：消耗性矿石
+
+      熔点：1056.9ºC
+
+      硬度：<color=#A3649AFF>50（非常坚硬）</color>
+
+
+      比热容：0.834 (DTU/g)/ºC
+
+      热导率：2.000 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.75
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：<link="ELEMENTSSOLID">固体</link>, 消耗性矿石
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

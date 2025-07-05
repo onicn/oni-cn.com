@@ -1,0 +1,125 @@
+id: BIOMERADIOACTIVE
+parent_id: BIOMES
+name: 辐射生态
+disabled: False
+search_only: False
+category: BIOMES
+sort_string: BIOMERADIOACTIVE
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 辐射生态
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 这种生态的环境非常不稳定，但含有非常有用的资源，对于核技术的探索来说十分宝贵。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      如果我的复制人要开始探索这片生态，<link="LEADSUIT">铅服</link>是非常必要的，因为这里常有危险的<link="RADIATIONSICKNESS">放射性污染物</link>。
+
+
+      <link="BEE">辐射蜂</link>有着双重威胁，因为它们有着高放射性同时具有攻击性。然而，<link="BEEHIVE">辐射蜂巢</link>如果能够开发，就能提供将<link="URANIUMORE">铀矿</link>转化为<link="ENRICHEDURANIUM">浓缩铀</link>的极佳功能。
+
+
+      如果我的复制人没有适当的防护，那就应该不惜一切代价避免接触辐射生态和其中的辐射蜂，但如果我们想要建立更高等级的核技术，我的殖民地就必须前往这片危险的生态。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 元素
+    style: Subtitle
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 漂白石
+    image: bleach_stone_0__ui
+    link_id: bleachstone
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 铁锈
+    image: iron_oxide_0__ui
+    link_id: rust
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 泥土
+    image: dirt_0__ui
+    link_id: dirt
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 液态氯
+    color: 3AC330FF
+    image: element_liquid
+    link_id: chlorine
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 雪
+    image: snow_0__ui
+    link_id: snow
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 固态氯
+    image: solid_chlorine_0__ui
+    link_id: solidchlorine
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 固态二氧化碳
+    image: solid_carbon_dioxide_0__ui
+    link_id: solidcarbondioxide
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 冰
+    image: ice_0__ui
+    link_id: ice
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 二氧化碳
+    color: 000000FF
+    image: element_gas
+    link_id: carbondioxide
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 硫
+    image: sulfur_0__ui
+    link_id: sulfur
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 黑钨矿
+    image: wolframite_0__ui
+    link_id: wolframite
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 氯气
+    color: 04A778FF
+    image: element_gas
+    link_id: chlorinegas
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 铀矿
+    image: radium_0__ui
+    link_id: uraniumore
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 植物
+    style: Subtitle
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 冰息萝卜
+    image: coldbreather_0__ui
+    link_id: coldbreather
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 小动物
+    style: Subtitle
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 辐射蜂巢
+    image: beehive_0__ui
+    link_id: beehive
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 发光虫
+    image: lightbug_0__ui
+    link_id: lightbug
+  layout: Vertical

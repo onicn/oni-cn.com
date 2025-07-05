@@ -1,0 +1,1083 @@
+id: EGGCRACKER
+parent_id: BUILDCATEGORYFOOD
+name: 敲蛋桌
+disabled: False
+search_only: False
+category: BUILDCATEGORYFOOD
+sort_string: 敲蛋桌
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="EGGCRACKER">敲蛋桌</link>
+    style: Title
+  - widget_type: CodexLabelWithIcon
+    text: 食物制备
+    style: Body
+    image: research_type_alpha_icon
+    link_id: finedining
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: egg_cracker_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      将可孵化的<link="CREATURES">小动物</link>蛋转化为烹饪原料。
+
+
+      破裂的蛋无法孵化。
+
+
+      只有在队列中安排配方复制人才会进行打蛋。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 需求
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    复制人的操作'
+    tooltip: 必须有复制人来才能使这个建筑运行
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 建筑特性
+    style: Subtitle
+  - widget_type: CodexText
+    text: '    建筑大小：2格宽x2格高'
+    style: Body
+  - widget_type: CodexText
+    text: '    建造时间：10秒'
+    style: Body
+  - widget_type: CodexText
+    text: '    材料：<link="METAL">金属矿石</link>50千克'
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 效果
+    style: Subtitle
+  - widget_type: CodexTextWithTooltip
+    text: '    过热<link="HEAT">温度</link>：75ºC'
+    tooltip: 达到<b>75ºC</b>时开始过热
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="LOGIC">信号输入端</link>'
+    tooltip: 当接收到信号时，输入端会使这个建筑一种状态发生变化
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    启用/禁用'
+    tooltip: >-
+      输入端行为：
+
+      • <b><style="logic_on">绿色信号</style></b>：启用建筑
+
+      • <b><style="logic_off">红色信号</style></b>：禁用建筑
+    style: Body
+  - widget_type: CodexTextWithTooltip
+    text: '    <link="DECOR">装饰度</link>：+5（范围：1格）'
+    tooltip: <style="KKeyword">装饰度</style>在<b>1</b>格内提高<b><b>+5</b></b>
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <i>生蛋是某些高品质食品配方中的原料。</i>
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 所有配方
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 生蛋
+    require:
+    - image: egg_chameleo_0__ui
+      text1: 逸蜥蛋
+      text2: 1单位
+      link_id: chameleon
+    produce:
+    - image: rawegg_0__ui
+      text1: 生蛋
+      text2: 1,600千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: rawegg
+    - image: eggshells_0__ui
+      text1: 蛋壳
+      text2: 1000克
+      link_id: eggshell
+    fabricator:
+      image: egg_cracker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 敲蛋桌
+      text2: 5秒
+      link_id: eggcracker
+  - widget_type: CodexRecipePanel
+    text: 生蛋
+    require:
+    - image: egg_pincher_0__ui
+      text1: 抛壳蟹卵
+      text2: 1单位
+      link_id: crab
+    produce:
+    - image: rawegg_0__ui
+      text1: 生蛋
+      text2: 1,600千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: rawegg
+    - image: eggshells_0__ui
+      text1: 蛋壳
+      text2: 1000克
+      link_id: eggshell
+    fabricator:
+      image: egg_cracker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 敲蛋桌
+      text2: 5秒
+      link_id: eggcracker
+  - widget_type: CodexRecipePanel
+    text: 生蛋
+    require:
+    - image: egg_pincher_0__fresh_ui
+      text1: 沙泥蟹卵
+      text2: 1单位
+      link_id: crabfreshwater
+    produce:
+    - image: rawegg_0__ui
+      text1: 生蛋
+      text2: 1,600千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: rawegg
+    - image: eggshells_0__ui
+      text1: 蛋壳
+      text2: 1000克
+      link_id: eggshell
+    fabricator:
+      image: egg_cracker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 敲蛋桌
+      text2: 5秒
+      link_id: eggcracker
+  - widget_type: CodexRecipePanel
+    text: 生蛋
+    require:
+    - image: egg_pincher_0__wood_ui
+      text1: 木壳蟹卵
+      text2: 1单位
+      link_id: crabwood
+    produce:
+    - image: rawegg_0__ui
+      text1: 生蛋
+      text2: 1,600千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: rawegg
+    - image: eggshells_0__ui
+      text1: 蛋壳
+      text2: 1000克
+      link_id: eggshell
+    fabricator:
+      image: egg_cracker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 敲蛋桌
+      text2: 5秒
+      link_id: eggcracker
+  - widget_type: CodexRecipePanel
+    text: 生蛋
+    require:
+    - image: egg_critter_0__ui
+      text1: 甜素甲虫卵
+      text2: 1单位
+      link_id: divergentbeetle
+    produce:
+    - image: rawegg_0__ui
+      text1: 生蛋
+      text2: 1,600千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: rawegg
+    - image: eggshells_0__ui
+      text1: 蛋壳
+      text2: 1000克
+      link_id: eggshell
+    fabricator:
+      image: egg_cracker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 敲蛋桌
+      text2: 5秒
+      link_id: eggcracker
+  - widget_type: CodexRecipePanel
+    text: 生蛋
+    require:
+    - image: egg_worm_0__ui
+      text1: 虫果果虫卵
+      text2: 1单位
+      link_id: divergentworm
+    produce:
+    - image: rawegg_0__ui
+      text1: 生蛋
+      text2: 1,600千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: rawegg
+    - image: eggshells_0__ui
+      text1: 蛋壳
+      text2: 1000克
+      link_id: eggshell
+    fabricator:
+      image: egg_cracker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 敲蛋桌
+      text2: 5秒
+      link_id: eggcracker
+  - widget_type: CodexRecipePanel
+    text: 生蛋
+    require:
+    - image: egg_drecko_0__fbr_ui
+      text1: 毛鳞壁虎蛋
+      text2: 1单位
+      link_id: drecko
+    produce:
+    - image: rawegg_0__ui
+      text1: 生蛋
+      text2: 1,600千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: rawegg
+    - image: eggshells_0__ui
+      text1: 蛋壳
+      text2: 1000克
+      link_id: eggshell
+    fabricator:
+      image: egg_cracker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 敲蛋桌
+      text2: 5秒
+      link_id: eggcracker
+  - widget_type: CodexRecipePanel
+    text: 生蛋
+    require:
+    - image: egg_drecko_0__ui
+      text1: 滑鳞壁虎蛋
+      text2: 1单位
+      link_id: dreckoplastic
+    produce:
+    - image: rawegg_0__ui
+      text1: 生蛋
+      text2: 1,600千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: rawegg
+    - image: eggshells_0__ui
+      text1: 蛋壳
+      text2: 1000克
+      link_id: eggshell
+    fabricator:
+      image: egg_cracker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 敲蛋桌
+      text2: 5秒
+      link_id: eggcracker
+  - widget_type: CodexRecipePanel
+    text: 生蛋
+    require:
+    - image: egg_icebelly_0__king_ui
+      text1: 皇犸兔蛋
+      text2: 1单位
+      link_id: goldbelly
+    produce:
+    - image: rawegg_0__ui
+      text1: 生蛋
+      text2: 6,400千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: rawegg
+    - image: eggshells_0__ui
+      text1: 蛋壳
+      text2: 4000克
+      link_id: eggshell
+    fabricator:
+      image: egg_cracker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 敲蛋桌
+      text2: 5秒
+      link_id: eggcracker
+  - widget_type: CodexRecipePanel
+    text: 生蛋
+    require:
+    - image: egg_hatch_0__ui
+      text1: 好吃哈奇蛋
+      text2: 1单位
+      link_id: hatch
+    produce:
+    - image: rawegg_0__ui
+      text1: 生蛋
+      text2: 1,600千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: rawegg
+    - image: eggshells_0__ui
+      text1: 蛋壳
+      text2: 1000克
+      link_id: eggshell
+    fabricator:
+      image: egg_cracker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 敲蛋桌
+      text2: 5秒
+      link_id: eggcracker
+  - widget_type: CodexRecipePanel
+    text: 生蛋
+    require:
+    - image: egg_hatch_0__hvy_ui
+      text1: 石壳哈奇蛋
+      text2: 1单位
+      link_id: hatchhard
+    produce:
+    - image: rawegg_0__ui
+      text1: 生蛋
+      text2: 1,600千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: rawegg
+    - image: eggshells_0__ui
+      text1: 蛋壳
+      text2: 1000克
+      link_id: eggshell
+    fabricator:
+      image: egg_cracker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 敲蛋桌
+      text2: 5秒
+      link_id: eggcracker
+  - widget_type: CodexRecipePanel
+    text: 生蛋
+    require:
+    - image: egg_hatch_0__mtl_ui
+      text1: 光滑哈奇蛋
+      text2: 1单位
+      link_id: hatchmetal
+    produce:
+    - image: rawegg_0__ui
+      text1: 生蛋
+      text2: 1,600千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: rawegg
+    - image: eggshells_0__ui
+      text1: 蛋壳
+      text2: 1000克
+      link_id: eggshell
+    fabricator:
+      image: egg_cracker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 敲蛋桌
+      text2: 5秒
+      link_id: eggcracker
+  - widget_type: CodexRecipePanel
+    text: 生蛋
+    require:
+    - image: egg_hatch_0__veg_ui
+      text1: 草质哈奇蛋
+      text2: 1单位
+      link_id: hatchveggie
+    produce:
+    - image: rawegg_0__ui
+      text1: 生蛋
+      text2: 1,600千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: rawegg
+    - image: eggshells_0__ui
+      text1: 蛋壳
+      text2: 1000克
+      link_id: eggshell
+    fabricator:
+      image: egg_cracker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 敲蛋桌
+      text2: 5秒
+      link_id: eggcracker
+  - widget_type: CodexRecipePanel
+    text: 生蛋
+    require:
+    - image: egg_icebelly_0__ui
+      text1: 绒犸兔蛋
+      text2: 1单位
+      link_id: icebelly
+    produce:
+    - image: rawegg_0__ui
+      text1: 生蛋
+      text2: 6,400千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: rawegg
+    - image: eggshells_0__ui
+      text1: 蛋壳
+      text2: 4000克
+      link_id: eggshell
+    fabricator:
+      image: egg_cracker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 敲蛋桌
+      text2: 5秒
+      link_id: eggcracker
+  - widget_type: CodexRecipePanel
+    text: 生蛋
+    require:
+    - image: egg_lightbug_0__blk_ui
+      text1: 深渊虫卵
+      text2: 1单位
+      link_id: lightbugblack
+    produce:
+    - image: rawegg_0__ui
+      text1: 生蛋
+      text2: 160千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: rawegg
+    - image: eggshells_0__ui
+      text1: 蛋壳
+      text2: 100克
+      link_id: eggshell
+    fabricator:
+      image: egg_cracker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 敲蛋桌
+      text2: 5秒
+      link_id: eggcracker
+  - widget_type: CodexRecipePanel
+    text: 生蛋
+    require:
+    - image: egg_lightbug_0__blu_ui
+      text1: 天蓝虫卵
+      text2: 1单位
+      link_id: lightbugblue
+    produce:
+    - image: rawegg_0__ui
+      text1: 生蛋
+      text2: 160千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: rawegg
+    - image: eggshells_0__ui
+      text1: 蛋壳
+      text2: 100克
+      link_id: eggshell
+    fabricator:
+      image: egg_cracker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 敲蛋桌
+      text2: 5秒
+      link_id: eggcracker
+  - widget_type: CodexRecipePanel
+    text: 生蛋
+    require:
+    - image: egg_lightbug_0__cry_ui
+      text1: 光耀虫卵
+      text2: 1单位
+      link_id: lightbugcrystal
+    produce:
+    - image: rawegg_0__ui
+      text1: 生蛋
+      text2: 160千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: rawegg
+    - image: eggshells_0__ui
+      text1: 蛋壳
+      text2: 100克
+      link_id: eggshell
+    fabricator:
+      image: egg_cracker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 敲蛋桌
+      text2: 5秒
+      link_id: eggcracker
+  - widget_type: CodexRecipePanel
+    text: 生蛋
+    require:
+    - image: egg_lightbug_0__ui
+      text1: 发光虫卵
+      text2: 1单位
+      link_id: lightbug
+    produce:
+    - image: rawegg_0__ui
+      text1: 生蛋
+      text2: 160千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: rawegg
+    - image: eggshells_0__ui
+      text1: 蛋壳
+      text2: 100克
+      link_id: eggshell
+    fabricator:
+      image: egg_cracker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 敲蛋桌
+      text2: 5秒
+      link_id: eggcracker
+  - widget_type: CodexRecipePanel
+    text: 生蛋
+    require:
+    - image: egg_lightbug_0__org_ui
+      text1: 阳光虫卵
+      text2: 1单位
+      link_id: lightbugorange
+    produce:
+    - image: rawegg_0__ui
+      text1: 生蛋
+      text2: 160千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: rawegg
+    - image: eggshells_0__ui
+      text1: 蛋壳
+      text2: 100克
+      link_id: eggshell
+    fabricator:
+      image: egg_cracker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 敲蛋桌
+      text2: 5秒
+      link_id: eggcracker
+  - widget_type: CodexRecipePanel
+    text: 生蛋
+    require:
+    - image: egg_lightbug_0__pnk_ui
+      text1: 珊瑚虫卵
+      text2: 1单位
+      link_id: lightbugpink
+    produce:
+    - image: rawegg_0__ui
+      text1: 生蛋
+      text2: 160千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: rawegg
+    - image: eggshells_0__ui
+      text1: 蛋壳
+      text2: 100克
+      link_id: eggshell
+    fabricator:
+      image: egg_cracker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 敲蛋桌
+      text2: 5秒
+      link_id: eggcracker
+  - widget_type: CodexRecipePanel
+    text: 生蛋
+    require:
+    - image: egg_lightbug_0__prp_ui
+      text1: 皇家虫卵
+      text2: 1单位
+      link_id: lightbugpurple
+    produce:
+    - image: rawegg_0__ui
+      text1: 生蛋
+      text2: 160千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: rawegg
+    - image: eggshells_0__ui
+      text1: 蛋壳
+      text2: 100克
+      link_id: eggshell
+    fabricator:
+      image: egg_cracker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 敲蛋桌
+      text2: 5秒
+      link_id: eggcracker
+  - widget_type: CodexRecipePanel
+    text: 生蛋
+    require:
+    - image: egg_driller_0__del_ui
+      text1: 珍馐田鼠蛋
+      text2: 1单位
+      link_id: moledelicacy
+    produce:
+    - image: rawegg_0__ui
+      text1: 生蛋
+      text2: 1,600千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: rawegg
+    - image: eggshells_0__ui
+      text1: 蛋壳
+      text2: 1000克
+      link_id: eggshell
+    fabricator:
+      image: egg_cracker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 敲蛋桌
+      text2: 5秒
+      link_id: eggcracker
+  - widget_type: CodexRecipePanel
+    text: 生蛋
+    require:
+    - image: egg_driller_0__ui
+      text1: 锹环田鼠蛋
+      text2: 1单位
+      link_id: mole
+    produce:
+    - image: rawegg_0__ui
+      text1: 生蛋
+      text2: 1,600千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: rawegg
+    - image: eggshells_0__ui
+      text1: 蛋壳
+      text2: 1000克
+      link_id: eggshell
+    fabricator:
+      image: egg_cracker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 敲蛋桌
+      text2: 5秒
+      link_id: eggcracker
+  - widget_type: CodexRecipePanel
+    text: 生蛋
+    require:
+    - image: egg_oilfloater_0__oxy_ui
+      text1: 长毛浮油生物蛋
+      text2: 1单位
+      link_id: oilfloaterdecor
+    produce:
+    - image: rawegg_0__ui
+      text1: 生蛋
+      text2: 1,600千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: rawegg
+    - image: eggshells_0__ui
+      text1: 蛋壳
+      text2: 1000克
+      link_id: eggshell
+    fabricator:
+      image: egg_cracker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 敲蛋桌
+      text2: 5秒
+      link_id: eggcracker
+  - widget_type: CodexRecipePanel
+    text: 生蛋
+    require:
+    - image: egg_oilfloater_0__ui
+      text1: 浮油生物蛋
+      text2: 1单位
+      link_id: oilfloater
+    produce:
+    - image: rawegg_0__ui
+      text1: 生蛋
+      text2: 1,600千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: rawegg
+    - image: eggshells_0__ui
+      text1: 蛋壳
+      text2: 1000克
+      link_id: eggshell
+    fabricator:
+      image: egg_cracker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 敲蛋桌
+      text2: 5秒
+      link_id: eggcracker
+  - widget_type: CodexRecipePanel
+    text: 生蛋
+    require:
+    - image: egg_oilfloater_0__hot_ui
+      text1: 熔岩浮油生物蛋
+      text2: 1单位
+      link_id: oilfloaterhightemp
+    produce:
+    - image: rawegg_0__ui
+      text1: 生蛋
+      text2: 1,600千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: rawegg
+    - image: eggshells_0__ui
+      text1: 蛋壳
+      text2: 1000克
+      link_id: eggshell
+    fabricator:
+      image: egg_cracker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 敲蛋桌
+      text2: 5秒
+      link_id: eggcracker
+  - widget_type: CodexRecipePanel
+    text: 生蛋
+    require:
+    - image: egg_pacu_0__glp_ui
+      text1: 大嘴鱼卵
+      text2: 1单位
+      link_id: pacucleaner
+    produce:
+    - image: rawegg_0__ui
+      text1: 生蛋
+      text2: 3,200千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: rawegg
+    - image: eggshells_0__ui
+      text1: 蛋壳
+      text2: 2000克
+      link_id: eggshell
+    fabricator:
+      image: egg_cracker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 敲蛋桌
+      text2: 5秒
+      link_id: eggcracker
+  - widget_type: CodexRecipePanel
+    text: 生蛋
+    require:
+    - image: egg_pacu_0__ui
+      text1: 帕库鱼卵
+      text2: 1单位
+      link_id: pacuegg
+    produce:
+    - image: rawegg_0__ui
+      text1: 生蛋
+      text2: 3,200千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: rawegg
+    - image: eggshells_0__ui
+      text1: 蛋壳
+      text2: 2000克
+      link_id: eggshell
+    fabricator:
+      image: egg_cracker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 敲蛋桌
+      text2: 5秒
+      link_id: eggcracker
+  - widget_type: CodexRecipePanel
+    text: 生蛋
+    require:
+    - image: egg_pacu_0__trp_ui
+      text1: 热带帕库鱼卵
+      text2: 1单位
+      link_id: pacutropical
+    produce:
+    - image: rawegg_0__ui
+      text1: 生蛋
+      text2: 3,200千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: rawegg
+    - image: eggshells_0__ui
+      text1: 蛋壳
+      text2: 2000克
+      link_id: eggshell
+    fabricator:
+      image: egg_cracker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 敲蛋桌
+      text2: 5秒
+      link_id: eggcracker
+  - widget_type: CodexRecipePanel
+    text: 生蛋
+    require:
+    - image: egg_paculacanth_0__ui
+      text1: 颚鱼卵
+      text2: 1单位
+      link_id: prehistoricpacu
+    produce:
+    - image: rawegg_0__ui
+      text1: 生蛋
+      text2: 3,200千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: rawegg
+    - image: eggshells_0__ui
+      text1: 蛋壳
+      text2: 2000克
+      link_id: eggshell
+    fabricator:
+      image: egg_cracker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 敲蛋桌
+      text2: 5秒
+      link_id: eggcracker
+  - widget_type: CodexRecipePanel
+    text: 生蛋
+    require:
+    - image: egg_puft_0__alp_ui
+      text1: 贵族飞鱼蛋
+      text2: 1单位
+      link_id: puftalpha
+    produce:
+    - image: rawegg_0__ui
+      text1: 生蛋
+      text2: 400千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: rawegg
+    - image: eggshells_0__ui
+      text1: 蛋壳
+      text2: 250克
+      link_id: eggshell
+    fabricator:
+      image: egg_cracker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 敲蛋桌
+      text2: 5秒
+      link_id: eggcracker
+  - widget_type: CodexRecipePanel
+    text: 生蛋
+    require:
+    - image: egg_puft_0__anti_ui
+      text1: 洁净飞鱼蛋
+      text2: 1单位
+      link_id: puftbleachstone
+    produce:
+    - image: rawegg_0__ui
+      text1: 生蛋
+      text2: 400千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: rawegg
+    - image: eggshells_0__ui
+      text1: 蛋壳
+      text2: 250克
+      link_id: eggshell
+    fabricator:
+      image: egg_cracker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 敲蛋桌
+      text2: 5秒
+      link_id: eggcracker
+  - widget_type: CodexRecipePanel
+    text: 生蛋
+    require:
+    - image: egg_puft_0__ui
+      text1: 喷浮飞鱼蛋
+      text2: 1单位
+      link_id: puft
+    produce:
+    - image: rawegg_0__ui
+      text1: 生蛋
+      text2: 400千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: rawegg
+    - image: eggshells_0__ui
+      text1: 蛋壳
+      text2: 250克
+      link_id: eggshell
+    fabricator:
+      image: egg_cracker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 敲蛋桌
+      text2: 5秒
+      link_id: eggcracker
+  - widget_type: CodexRecipePanel
+    text: 生蛋
+    require:
+    - image: egg_puft_0__com_ui
+      text1: 厚壳飞鱼蛋
+      text2: 1单位
+      link_id: puftoxylite
+    produce:
+    - image: rawegg_0__ui
+      text1: 生蛋
+      text2: 400千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: rawegg
+    - image: eggshells_0__ui
+      text1: 蛋壳
+      text2: 250克
+      link_id: eggshell
+    fabricator:
+      image: egg_cracker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 敲蛋桌
+      text2: 5秒
+      link_id: eggcracker
+  - widget_type: CodexRecipePanel
+    text: 生蛋
+    require:
+    - image: egg_raptor_0__ui
+      text1: 霸王鹦蛋
+      text2: 1单位
+      link_id: raptor
+    produce:
+    - image: rawegg_0__ui
+      text1: 生蛋
+      text2: 6,400千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: rawegg
+    - image: eggshells_0__ui
+      text1: 蛋壳
+      text2: 4000克
+      link_id: eggshell
+    fabricator:
+      image: egg_cracker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 敲蛋桌
+      text2: 5秒
+      link_id: eggcracker
+  - widget_type: CodexRecipePanel
+    text: 生蛋
+    require:
+    - image: egg_seal_0__ui
+      text1: 栓角海豹蛋
+      text2: 1单位
+      link_id: seal
+    produce:
+    - image: rawegg_0__ui
+      text1: 生蛋
+      text2: 1,600千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: rawegg
+    - image: eggshells_0__ui
+      text1: 蛋壳
+      text2: 1000克
+      link_id: eggshell
+    fabricator:
+      image: egg_cracker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 敲蛋桌
+      text2: 5秒
+      link_id: eggcracker
+  - widget_type: CodexRecipePanel
+    text: 生蛋
+    require:
+    - image: egg_squirrel_0__ui
+      text1: 树鼠蛋
+      text2: 1单位
+      link_id: squirrel
+    produce:
+    - image: rawegg_0__ui
+      text1: 生蛋
+      text2: 1,600千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: rawegg
+    - image: eggshells_0__ui
+      text1: 蛋壳
+      text2: 1000克
+      link_id: eggshell
+    fabricator:
+      image: egg_cracker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 敲蛋桌
+      text2: 5秒
+      link_id: eggcracker
+  - widget_type: CodexRecipePanel
+    text: 生蛋
+    require:
+    - image: egg_squirrel_0__hug_ui
+      text1: 毛绒树鼠蛋
+      text2: 1单位
+      link_id: squirrel
+    produce:
+    - image: rawegg_0__ui
+      text1: 生蛋
+      text2: 1,600千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: rawegg
+    - image: eggshells_0__ui
+      text1: 蛋壳
+      text2: 1000克
+      link_id: eggshell
+    fabricator:
+      image: egg_cracker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 敲蛋桌
+      text2: 5秒
+      link_id: eggcracker
+  - widget_type: CodexRecipePanel
+    text: 生蛋
+    require:
+    - image: egg_caterpillar_0__ui
+      text1: 电弧蛞蝓蛋
+      text2: 1单位
+      link_id: staterpillar
+    produce:
+    - image: rawegg_0__ui
+      text1: 生蛋
+      text2: 1,600千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: rawegg
+    - image: eggshells_0__ui
+      text1: 蛋壳
+      text2: 1000克
+      link_id: eggshell
+    fabricator:
+      image: egg_cracker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 敲蛋桌
+      text2: 5秒
+      link_id: eggcracker
+  - widget_type: CodexRecipePanel
+    text: 生蛋
+    require:
+    - image: egg_caterpillar_0__gas_ui
+      text1: 烟雾蛞蝓蛋
+      text2: 1单位
+      link_id: staterpillar
+    produce:
+    - image: rawegg_0__ui
+      text1: 生蛋
+      text2: 1,600千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: rawegg
+    - image: eggshells_0__ui
+      text1: 蛋壳
+      text2: 1000克
+      link_id: eggshell
+    fabricator:
+      image: egg_cracker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 敲蛋桌
+      text2: 5秒
+      link_id: eggcracker
+  - widget_type: CodexRecipePanel
+    text: 生蛋
+    require:
+    - image: egg_caterpillar_0__wtr_ui
+      text1: 海绵蛞蝓蛋
+      text2: 1单位
+      link_id: staterpillar
+    produce:
+    - image: rawegg_0__ui
+      text1: 生蛋
+      text2: 1,600千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: rawegg
+    - image: eggshells_0__ui
+      text1: 蛋壳
+      text2: 1000克
+      link_id: eggshell
+    fabricator:
+      image: egg_cracker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 敲蛋桌
+      text2: 5秒
+      link_id: eggcracker
+  - widget_type: CodexRecipePanel
+    text: 生蛋
+    require:
+    - image: egg_stego_0__ui
+      text1: 尖块兽蛋
+      text2: 1单位
+      link_id: stego
+    produce:
+    - image: rawegg_0__ui
+      text1: 生蛋
+      text2: 6,400千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: rawegg
+    - image: eggshells_0__ui
+      text1: 蛋壳
+      text2: 4000克
+      link_id: eggshell
+    fabricator:
+      image: egg_cracker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 敲蛋桌
+      text2: 5秒
+      link_id: eggcracker
+  - widget_type: CodexRecipePanel
+    text: 生蛋
+    require:
+    - image: egg_ice_floof_0__ui
+      text1: 狐鹿蛋
+      text2: 1单位
+      link_id: wooddeer
+    produce:
+    - image: rawegg_0__ui
+      text1: 生蛋
+      text2: 1,600千卡
+      tooltip: 品质：恶心 [-1]
+      link_id: rawegg
+    - image: eggshells_0__ui
+      text1: 蛋壳
+      text2: 1000克
+      link_id: eggshell
+    fabricator:
+      image: egg_cracker_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 敲蛋桌
+      text2: 5秒
+      link_id: eggcracker
+  layout: Vertical

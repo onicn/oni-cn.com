@@ -1,0 +1,300 @@
+id: WORMSUPERFRUIT
+parent_id: FOOD
+name: 虫果
+disabled: False
+search_only: False
+category: FOOD
+sort_string: 虫果
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="WORMSUPERFRUIT">虫果</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: wormwood_super_fruits_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 一种丰满健康的水果，味道有点像蜂蜜。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 品质：低劣 [+1]
+    style: Body
+  - widget_type: CodexText
+    text: 卡路里：250千卡
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      冷藏温度：4ºC
+
+      深度冷冻温度：-18ºC
+
+      腐烂时间：4.0周期
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 虫果果酱
+    require:
+    - image: wormwood_super_fruits_0__ui
+      text1: 虫果
+      text2: 2,000千卡
+      tooltip: 品质：低劣 [+1]
+      link_id: wormsuperfruit
+    - image: sucrose_0__ui
+      text1: 蔗糖
+      text2: 4000克
+      link_id: sucrose
+    produce:
+    - image: wormwood_preserved_berries_0__ui
+      text1: 虫果果酱
+      text2: 2,400千卡
+      tooltip: 品质：良好 [+3]
+      link_id: wormsuperfood
+    fabricator:
+      image: cookstation_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 电动烤炉
+      text2: 50秒
+      link_id: cookingstation
+  - widget_type: CodexRecipePanel
+    text: 混合浆果派
+    require:
+    - image: seed_coldwheat_0__ui
+      text1: 冰霜麦粒
+      text2: 3单位
+      link_id: coldwheat
+    - image: wormwood_super_fruits_0__ui
+      text1: 虫果
+      text2: 1,000千卡
+      tooltip: 品质：低劣 [+1]
+      link_id: wormsuperfruit
+    - image: gristleberry_0__ui
+      text1: 炙烤刺果
+      text2: 2,000千卡
+      tooltip: 品质：低劣 [+1]
+      link_id: grilledpricklefruit
+    produce:
+    - image: wormwood_berry_pie_0__ui
+      text1: 混合浆果派
+      text2: 4,200千卡
+      tooltip: 品质：杰出 [+5]
+      link_id: berrypie
+    fabricator:
+      image: cookstation_gourmet_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 燃气灶
+      text2: 50秒
+      link_id: gourmetcookingstation
+  - widget_type: CodexRecipePanel
+    text: 混合浆果派
+    require:
+    - image: seed_coldwheat_0__ui
+      text1: 冰霜麦粒
+      text2: 3单位
+      link_id: coldwheat
+    - image: wormwood_super_fruits_0__ui
+      text1: 虫果
+      text2: 1,000千卡
+      tooltip: 品质：低劣 [+1]
+      link_id: wormsuperfruit
+    - image: iceberry_cooked_0__ui
+      text1: 刺壳果烤串
+      text2: 2,000千卡
+      tooltip: 品质：低劣 [+1]
+      link_id: cookedpikeapple
+    produce:
+    - image: wormwood_berry_pie_0__ui
+      text1: 混合浆果派
+      text2: 4,200千卡
+      tooltip: 品质：杰出 [+5]
+      link_id: berrypie
+    fabricator:
+      image: cookstation_gourmet_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 燃气灶
+      text2: 50秒
+      link_id: gourmetcookingstation
+  - widget_type: CodexRecipePanel
+    text: 混合浆果派
+    require:
+    - image: seed_coldwheat_0__ui
+      text1: 冰霜麦粒
+      text2: 3单位
+      link_id: coldwheat
+    - image: wormwood_super_fruits_0__ui
+      text1: 虫果
+      text2: 1,000千卡
+      tooltip: 品质：低劣 [+1]
+      link_id: wormsuperfruit
+    - image: ova_melon_0__ui
+      text1: 漫花果
+      text2: 2,000千卡
+      tooltip: 品质：糟糕 [0]
+      link_id: vinefruit
+    produce:
+    - image: wormwood_berry_pie_0__ui
+      text1: 混合浆果派
+      text2: 4,200千卡
+      tooltip: 品质：杰出 [+5]
+      link_id: berrypie
+    fabricator:
+      image: cookstation_gourmet_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 燃气灶
+      text2: 50秒
+      link_id: gourmetcookingstation
+  - widget_type: CodexRecipePanel
+    text: 混合浆果派
+    require:
+    - image: megafrond_grain_0__ui
+      text1: 巨蕨谷粒
+      text2: 3单位
+      link_id: fernfood
+    - image: wormwood_super_fruits_0__ui
+      text1: 虫果
+      text2: 1,000千卡
+      tooltip: 品质：低劣 [+1]
+      link_id: wormsuperfruit
+    - image: gristleberry_0__ui
+      text1: 炙烤刺果
+      text2: 2,000千卡
+      tooltip: 品质：低劣 [+1]
+      link_id: grilledpricklefruit
+    produce:
+    - image: wormwood_berry_pie_0__ui
+      text1: 混合浆果派
+      text2: 4,200千卡
+      tooltip: 品质：杰出 [+5]
+      link_id: berrypie
+    fabricator:
+      image: cookstation_gourmet_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 燃气灶
+      text2: 50秒
+      link_id: gourmetcookingstation
+  - widget_type: CodexRecipePanel
+    text: 混合浆果派
+    require:
+    - image: megafrond_grain_0__ui
+      text1: 巨蕨谷粒
+      text2: 3单位
+      link_id: fernfood
+    - image: wormwood_super_fruits_0__ui
+      text1: 虫果
+      text2: 1,000千卡
+      tooltip: 品质：低劣 [+1]
+      link_id: wormsuperfruit
+    - image: iceberry_cooked_0__ui
+      text1: 刺壳果烤串
+      text2: 2,000千卡
+      tooltip: 品质：低劣 [+1]
+      link_id: cookedpikeapple
+    produce:
+    - image: wormwood_berry_pie_0__ui
+      text1: 混合浆果派
+      text2: 4,200千卡
+      tooltip: 品质：杰出 [+5]
+      link_id: berrypie
+    fabricator:
+      image: cookstation_gourmet_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 燃气灶
+      text2: 50秒
+      link_id: gourmetcookingstation
+  - widget_type: CodexRecipePanel
+    text: 混合浆果派
+    require:
+    - image: megafrond_grain_0__ui
+      text1: 巨蕨谷粒
+      text2: 3单位
+      link_id: fernfood
+    - image: wormwood_super_fruits_0__ui
+      text1: 虫果
+      text2: 1,000千卡
+      tooltip: 品质：低劣 [+1]
+      link_id: wormsuperfruit
+    - image: ova_melon_0__ui
+      text1: 漫花果
+      text2: 2,000千卡
+      tooltip: 品质：糟糕 [0]
+      link_id: vinefruit
+    produce:
+    - image: wormwood_berry_pie_0__ui
+      text1: 混合浆果派
+      text2: 4,200千卡
+      tooltip: 品质：杰出 [+5]
+      link_id: berrypie
+    fabricator:
+      image: cookstation_gourmet_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 燃气灶
+      text2: 50秒
+      link_id: gourmetcookingstation
+  - widget_type: CodexConversionPanel
+    require:
+    - image: wormwood_super_fruits_0__ui
+      text1: 虫果
+      text2: 700千卡/周期
+      tooltip: 品质：低劣 [+1]
+      link_id: wormsuperfruit
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 2100克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__ui
+      text1: 好吃哈奇
+      link_id: HATCH
+  - widget_type: CodexConversionPanel
+    require:
+    - image: wormwood_super_fruits_0__ui
+      text1: 虫果
+      text2: 700千卡/周期
+      tooltip: 品质：低劣 [+1]
+      link_id: wormsuperfruit
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 2800克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__veg_ui
+      text1: 草质哈奇
+      link_id: HATCHVEGGIE
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: sulfur_0__ui
+      text1: 硫
+      text2: 10千克/周期
+      link_id: sulfur
+    produce:
+    - image: wormwood_super_fruits_0__ui
+      text1: 虫果
+      text2: 250千卡/周期
+      tooltip: 品质：低劣 [+1]
+      link_id: wormsuperfruit
+    fabricator:
+      image: wormwood_0__ui
+      text1: 虫果芽
+      link_id: WORMPLANT
+  layout: Vertical

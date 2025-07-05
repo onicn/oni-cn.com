@@ -1,0 +1,799 @@
+id: BRINEICE
+parent_id: ELEMENTSSOLID
+name: 浓盐冰
+disabled: False
+search_only: False
+category: ELEMENTSSOLID
+sort_string: 浓盐冰
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="BRINE">浓盐冰</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: frozen_brine_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: frozen_brine_0__ui
+      text1: 浓盐冰
+      text2: 1000克
+      link_id: brine
+    produce:
+    - image: element_liquid
+      color: ADE9E5FF
+      text1: 浓盐水
+      text2: 1000克
+      link_id: brine
+    fabricator:
+      image: crew_state_temp_up
+      text1: -16.5ºC
+      tooltip: 温度高于-16.5ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换于
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: ADE9E5FF
+      text1: 浓盐水
+      text2: 1000克
+      link_id: brine
+    produce:
+    - image: frozen_brine_0__ui
+      text1: 浓盐冰
+      text2: 1000克
+      link_id: brine
+    fabricator:
+      image: crew_state_temp_down
+      text1: -22.5ºC
+      tooltip: 温度低于-22.5ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: frozen_brine_0__ui
+      text1: 浓盐冰
+      text2: 10千克/周期
+      link_id: brine
+    produce:
+    - image: brackorb_0__ui
+      text1: 露珠
+      text2: 0.5单位/周期
+      link_id: dewdrip
+    fabricator:
+      image: brackwood_0__ui
+      text1: 露珠藤
+      link_id: DEWDRIPPERPLANT
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: dinomeat_raw_0__ui
+      text1: 硬肉
+      text2: 500克/周期
+      link_id: dinosaurmeat
+    produce:
+    - image: frozen_brine_0__ui
+      text1: 浓盐冰
+      text2: 64千克/周期
+      link_id: brine
+    fabricator:
+      image: raptor_0__ui
+      text1: 霸王鹦
+      link_id: RAPTOR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: creaturemeat_0__ui
+      text1: 肉
+      text2: 800千卡/周期
+      tooltip: 品质：恶心 [-1]
+      link_id: meat
+    produce:
+    - image: frozen_brine_0__ui
+      text1: 浓盐冰
+      text2: 64千克/周期
+      link_id: brine
+    fabricator:
+      image: raptor_0__ui
+      text1: 霸王鹦
+      link_id: RAPTOR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: hatch_0__ui
+      text1: 好吃哈奇
+      text2: 0.25单位/周期
+      link_id: hatch
+    produce:
+    - image: frozen_brine_0__ui
+      text1: 浓盐冰
+      text2: 128千克/周期
+      link_id: brine
+    fabricator:
+      image: raptor_0__ui
+      text1: 霸王鹦
+      link_id: RAPTOR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: baby_hatch_0__ui
+      text1: 好吃哈奇幼崽
+      text2: 0.25单位/周期
+      link_id: hatch
+    produce:
+    - image: frozen_brine_0__ui
+      text1: 浓盐冰
+      text2: 128千克/周期
+      link_id: brine
+    fabricator:
+      image: raptor_0__ui
+      text1: 霸王鹦
+      link_id: RAPTOR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: hatch_0__veg_ui
+      text1: 草质哈奇
+      text2: 0.25单位/周期
+      link_id: hatchveggie
+    produce:
+    - image: frozen_brine_0__ui
+      text1: 浓盐冰
+      text2: 128千克/周期
+      link_id: brine
+    fabricator:
+      image: raptor_0__ui
+      text1: 霸王鹦
+      link_id: RAPTOR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: baby_hatch_0__veg_ui
+      text1: 草质哈奇幼崽
+      text2: 0.25单位/周期
+      link_id: hatchveggie
+    produce:
+    - image: frozen_brine_0__ui
+      text1: 浓盐冰
+      text2: 128千克/周期
+      link_id: brine
+    fabricator:
+      image: raptor_0__ui
+      text1: 霸王鹦
+      link_id: RAPTOR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: hatch_0__mtl_ui
+      text1: 光滑哈奇
+      text2: 0.25单位/周期
+      link_id: hatchmetal
+    produce:
+    - image: frozen_brine_0__ui
+      text1: 浓盐冰
+      text2: 128千克/周期
+      link_id: brine
+    fabricator:
+      image: raptor_0__ui
+      text1: 霸王鹦
+      link_id: RAPTOR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: baby_hatch_0__mtl_ui
+      text1: 光滑哈奇幼崽
+      text2: 0.25单位/周期
+      link_id: hatchmetal
+    produce:
+    - image: frozen_brine_0__ui
+      text1: 浓盐冰
+      text2: 128千克/周期
+      link_id: brine
+    fabricator:
+      image: raptor_0__ui
+      text1: 霸王鹦
+      link_id: RAPTOR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: hatch_0__hvy_ui
+      text1: 石壳哈奇
+      text2: 0.25单位/周期
+      link_id: hatchhard
+    produce:
+    - image: frozen_brine_0__ui
+      text1: 浓盐冰
+      text2: 128千克/周期
+      link_id: brine
+    fabricator:
+      image: raptor_0__ui
+      text1: 霸王鹦
+      link_id: RAPTOR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: baby_hatch_0__hvy_ui
+      text1: 石壳哈奇幼崽
+      text2: 0.25单位/周期
+      link_id: hatchhard
+    produce:
+    - image: frozen_brine_0__ui
+      text1: 浓盐冰
+      text2: 128千克/周期
+      link_id: brine
+    fabricator:
+      image: raptor_0__ui
+      text1: 霸王鹦
+      link_id: RAPTOR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: squirrel_0__ui
+      text1: 树鼠
+      text2: 0.5单位/周期
+      link_id: squirrel
+    produce:
+    - image: frozen_brine_0__ui
+      text1: 浓盐冰
+      text2: 128千克/周期
+      link_id: brine
+    fabricator:
+      image: raptor_0__ui
+      text1: 霸王鹦
+      link_id: RAPTOR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: baby_squirrel_0__ui
+      text1: 树鼠幼崽
+      text2: 0.5单位/周期
+      link_id: squirrel
+    produce:
+    - image: frozen_brine_0__ui
+      text1: 浓盐冰
+      text2: 128千克/周期
+      link_id: brine
+    fabricator:
+      image: raptor_0__ui
+      text1: 霸王鹦
+      link_id: RAPTOR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: squirrel_0__hug_ui
+      text1: 毛绒树鼠
+      text2: 0.5单位/周期
+      link_id: squirrel
+    produce:
+    - image: frozen_brine_0__ui
+      text1: 浓盐冰
+      text2: 128千克/周期
+      link_id: brine
+    fabricator:
+      image: raptor_0__ui
+      text1: 霸王鹦
+      link_id: RAPTOR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: baby_squirrel_0__hug_ui
+      text1: 毛绒树鼠幼崽
+      text2: 0.5单位/周期
+      link_id: squirrel
+    produce:
+    - image: frozen_brine_0__ui
+      text1: 浓盐冰
+      text2: 128千克/周期
+      link_id: brine
+    fabricator:
+      image: raptor_0__ui
+      text1: 霸王鹦
+      link_id: RAPTOR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: driller_0__ui
+      text1: 锹环田鼠
+      text2: 0.05单位/周期
+      link_id: mole
+    produce:
+    - image: frozen_brine_0__ui
+      text1: 浓盐冰
+      text2: 128千克/周期
+      link_id: brine
+    fabricator:
+      image: raptor_0__ui
+      text1: 霸王鹦
+      link_id: RAPTOR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: baby_driller_0__ui
+      text1: 锹环田鼠幼崽
+      text2: 0.05单位/周期
+      link_id: mole
+    produce:
+    - image: frozen_brine_0__ui
+      text1: 浓盐冰
+      text2: 128千克/周期
+      link_id: brine
+    fabricator:
+      image: raptor_0__ui
+      text1: 霸王鹦
+      link_id: RAPTOR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: driller_0__del_ui
+      text1: 珍馐田鼠
+      text2: 0.1单位/周期
+      link_id: moledelicacy
+    produce:
+    - image: frozen_brine_0__ui
+      text1: 浓盐冰
+      text2: 128千克/周期
+      link_id: brine
+    fabricator:
+      image: raptor_0__ui
+      text1: 霸王鹦
+      link_id: RAPTOR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: baby_driller_0__del_ui
+      text1: 珍馐田鼠幼崽
+      text2: 0.1单位/周期
+      link_id: moledelicacy
+    produce:
+    - image: frozen_brine_0__ui
+      text1: 浓盐冰
+      text2: 128千克/周期
+      link_id: brine
+    fabricator:
+      image: raptor_0__ui
+      text1: 霸王鹦
+      link_id: RAPTOR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: oilfloater_0__ui
+      text1: 浮油生物
+      text2: 0.25单位/周期
+      link_id: oilfloater
+    produce:
+    - image: frozen_brine_0__ui
+      text1: 浓盐冰
+      text2: 128千克/周期
+      link_id: brine
+    fabricator:
+      image: raptor_0__ui
+      text1: 霸王鹦
+      link_id: RAPTOR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: baby_oilfloater_0__ui
+      text1: 浮油生物幼体
+      text2: 0.25单位/周期
+      link_id: oilfloater
+    produce:
+    - image: frozen_brine_0__ui
+      text1: 浓盐冰
+      text2: 128千克/周期
+      link_id: brine
+    fabricator:
+      image: raptor_0__ui
+      text1: 霸王鹦
+      link_id: RAPTOR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: oilfloater_0__oxy_ui
+      text1: 长毛浮油生物
+      text2: 0.25单位/周期
+      link_id: oilfloaterdecor
+    produce:
+    - image: frozen_brine_0__ui
+      text1: 浓盐冰
+      text2: 128千克/周期
+      link_id: brine
+    fabricator:
+      image: raptor_0__ui
+      text1: 霸王鹦
+      link_id: RAPTOR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: baby_oilfloater_0__oxy_ui
+      text1: 长毛浮油生物幼体
+      text2: 0.25单位/周期
+      link_id: oilfloaterdecor
+    produce:
+    - image: frozen_brine_0__ui
+      text1: 浓盐冰
+      text2: 128千克/周期
+      link_id: brine
+    fabricator:
+      image: raptor_0__ui
+      text1: 霸王鹦
+      link_id: RAPTOR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: oilfloater_0__hot_ui
+      text1: 熔岩浮油生物
+      text2: 0.25单位/周期
+      link_id: oilfloaterhightemp
+    produce:
+    - image: frozen_brine_0__ui
+      text1: 浓盐冰
+      text2: 128千克/周期
+      link_id: brine
+    fabricator:
+      image: raptor_0__ui
+      text1: 霸王鹦
+      link_id: RAPTOR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: baby_oilfloater_0__hot_ui
+      text1: 熔岩浮油生物幼体
+      text2: 0.25单位/周期
+      link_id: oilfloaterhightemp
+    produce:
+    - image: frozen_brine_0__ui
+      text1: 浓盐冰
+      text2: 128千克/周期
+      link_id: brine
+    fabricator:
+      image: raptor_0__ui
+      text1: 霸王鹦
+      link_id: RAPTOR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: drecko_0__fbr_ui
+      text1: 毛鳞壁虎
+      text2: 0.25单位/周期
+      link_id: drecko
+    produce:
+    - image: frozen_brine_0__ui
+      text1: 浓盐冰
+      text2: 128千克/周期
+      link_id: brine
+    fabricator:
+      image: raptor_0__ui
+      text1: 霸王鹦
+      link_id: RAPTOR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: baby_drecko_0__fbr_ui
+      text1: 毛鳞壁虎幼崽
+      text2: 0.25单位/周期
+      link_id: drecko
+    produce:
+    - image: frozen_brine_0__ui
+      text1: 浓盐冰
+      text2: 128千克/周期
+      link_id: brine
+    fabricator:
+      image: raptor_0__ui
+      text1: 霸王鹦
+      link_id: RAPTOR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: drecko_0__ui
+      text1: 滑鳞壁虎
+      text2: 0.25单位/周期
+      link_id: dreckoplastic
+    produce:
+    - image: frozen_brine_0__ui
+      text1: 浓盐冰
+      text2: 128千克/周期
+      link_id: brine
+    fabricator:
+      image: raptor_0__ui
+      text1: 霸王鹦
+      link_id: RAPTOR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: baby_drecko_0__ui
+      text1: 滑鳞壁虎幼崽
+      text2: 0.25单位/周期
+      link_id: dreckoplastic
+    produce:
+    - image: frozen_brine_0__ui
+      text1: 浓盐冰
+      text2: 128千克/周期
+      link_id: brine
+    fabricator:
+      image: raptor_0__ui
+      text1: 霸王鹦
+      link_id: RAPTOR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: baby_stego_0__ui
+      text1: 尖块兽幼崽
+      text2: 0.04单位/周期
+      link_id: stego
+    produce:
+    - image: frozen_brine_0__ui
+      text1: 浓盐冰
+      text2: 128千克/周期
+      link_id: brine
+    fabricator:
+      image: raptor_0__ui
+      text1: 霸王鹦
+      link_id: RAPTOR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: chameleo_0__ui
+      text1: 逸蜥
+      text2: 1单位/周期
+      link_id: chameleon
+    produce:
+    - image: frozen_brine_0__ui
+      text1: 浓盐冰
+      text2: 128千克/周期
+      link_id: brine
+    fabricator:
+      image: raptor_0__ui
+      text1: 霸王鹦
+      link_id: RAPTOR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: baby_chameleo_0__ui
+      text1: 逸蜥幼崽
+      text2: 1单位/周期
+      link_id: chameleon
+    produce:
+    - image: frozen_brine_0__ui
+      text1: 浓盐冰
+      text2: 128千克/周期
+      link_id: brine
+    fabricator:
+      image: raptor_0__ui
+      text1: 霸王鹦
+      link_id: RAPTOR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: worm_head_0__ui
+      text1: 虫果果虫
+      text2: 0.17单位/周期
+      link_id: divergentworm
+    produce:
+    - image: frozen_brine_0__ui
+      text1: 浓盐冰
+      text2: 128千克/周期
+      link_id: brine
+    fabricator:
+      image: raptor_0__ui
+      text1: 霸王鹦
+      link_id: RAPTOR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: baby_worm_0__ui
+      text1: 虫果果虫幼虫
+      text2: 0.17单位/周期
+      link_id: divergentworm
+    produce:
+    - image: frozen_brine_0__ui
+      text1: 浓盐冰
+      text2: 128千克/周期
+      link_id: brine
+    fabricator:
+      image: raptor_0__ui
+      text1: 霸王鹦
+      link_id: RAPTOR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: critter_0__ui
+      text1: 甜素甲虫
+      text2: 0.5单位/周期
+      link_id: divergentbeetle
+    produce:
+    - image: frozen_brine_0__ui
+      text1: 浓盐冰
+      text2: 128千克/周期
+      link_id: brine
+    fabricator:
+      image: raptor_0__ui
+      text1: 霸王鹦
+      link_id: RAPTOR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: baby_critter_0__ui
+      text1: 甜素甲虫幼虫
+      text2: 0.5单位/周期
+      link_id: divergentbeetle
+    produce:
+    - image: frozen_brine_0__ui
+      text1: 浓盐冰
+      text2: 128千克/周期
+      link_id: brine
+    fabricator:
+      image: raptor_0__ui
+      text1: 霸王鹦
+      link_id: RAPTOR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: caterpillar_0__ui
+      text1: 电弧蛞蝓
+      text2: 0.25单位/周期
+      link_id: staterpillar
+    produce:
+    - image: frozen_brine_0__ui
+      text1: 浓盐冰
+      text2: 128千克/周期
+      link_id: brine
+    fabricator:
+      image: raptor_0__ui
+      text1: 霸王鹦
+      link_id: RAPTOR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: baby_caterpillar_0__ui
+      text1: 电弧蛞蝓幼体
+      text2: 0.25单位/周期
+      link_id: staterpillar
+    produce:
+    - image: frozen_brine_0__ui
+      text1: 浓盐冰
+      text2: 128千克/周期
+      link_id: brine
+    fabricator:
+      image: raptor_0__ui
+      text1: 霸王鹦
+      link_id: RAPTOR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: caterpillar_0__gas_ui
+      text1: 烟雾蛞蝓
+      text2: 0.25单位/周期
+      link_id: staterpillar
+    produce:
+    - image: frozen_brine_0__ui
+      text1: 浓盐冰
+      text2: 128千克/周期
+      link_id: brine
+    fabricator:
+      image: raptor_0__ui
+      text1: 霸王鹦
+      link_id: RAPTOR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: baby_caterpillar_0__gas_ui
+      text1: 烟雾蛞蝓幼体
+      text2: 0.25单位/周期
+      link_id: staterpillar
+    produce:
+    - image: frozen_brine_0__ui
+      text1: 浓盐冰
+      text2: 128千克/周期
+      link_id: brine
+    fabricator:
+      image: raptor_0__ui
+      text1: 霸王鹦
+      link_id: RAPTOR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: caterpillar_0__wtr_ui
+      text1: 海绵蛞蝓
+      text2: 0.25单位/周期
+      link_id: staterpillar
+    produce:
+    - image: frozen_brine_0__ui
+      text1: 浓盐冰
+      text2: 128千克/周期
+      link_id: brine
+    fabricator:
+      image: raptor_0__ui
+      text1: 霸王鹦
+      link_id: RAPTOR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: baby_caterpillar_0__wtr_ui
+      text1: 海绵蛞蝓幼体
+      text2: 0.25单位/周期
+      link_id: staterpillar
+    produce:
+    - image: frozen_brine_0__ui
+      text1: 浓盐冰
+      text2: 128千克/周期
+      link_id: brine
+    fabricator:
+      image: raptor_0__ui
+      text1: 霸王鹦
+      link_id: RAPTOR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: baby_icebelly_0__ui
+      text1: 绒犸兔幼崽
+      text2: 0.04单位/周期
+      link_id: icebelly
+    produce:
+    - image: frozen_brine_0__ui
+      text1: 浓盐冰
+      text2: 128千克/周期
+      link_id: brine
+    fabricator:
+      image: raptor_0__ui
+      text1: 霸王鹦
+      link_id: RAPTOR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: baby_icebelly_0__king_ui
+      text1: 皇犸兔幼崽
+      text2: 0.04单位/周期
+      link_id: goldbelly
+    produce:
+    - image: frozen_brine_0__ui
+      text1: 浓盐冰
+      text2: 128千克/周期
+      link_id: brine
+    fabricator:
+      image: raptor_0__ui
+      text1: 霸王鹦
+      link_id: RAPTOR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: ice_floof_0__ui
+      text1: 狐鹿
+      text2: 0.5单位/周期
+      link_id: wooddeer
+    produce:
+    - image: frozen_brine_0__ui
+      text1: 浓盐冰
+      text2: 128千克/周期
+      link_id: brine
+    fabricator:
+      image: raptor_0__ui
+      text1: 霸王鹦
+      link_id: RAPTOR
+  - widget_type: CodexConversionPanel
+    require:
+    - image: baby_ice_floof_0__ui
+      text1: 狐鹿幼崽
+      text2: 0.5单位/周期
+      link_id: wooddeer
+    produce:
+    - image: frozen_brine_0__ui
+      text1: 浓盐冰
+      text2: 128千克/周期
+      link_id: brine
+    fabricator:
+      image: raptor_0__ui
+      text1: 霸王鹦
+      link_id: RAPTOR
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      浓盐冰是一种冻结成<link="ELEMENTSSOLID">固态</link>的溶解了高浓度<link="SALT">盐</link>的<link="WATER">水</link>。
+
+
+      它可用于淡化处理，以分离出可用的盐。
+
+
+      资源种类：可液化物
+
+      熔点：-16.5ºC
+
+      硬度：<color=#866BA5FF>25（坚硬）</color>
+
+
+      比热容：3.400 (DTU/g)/ºC
+
+      热导率：2.180 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.8
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：溜滑, <link="ICEORE">冰</link>, <link="BUILDABLEANY">一般建造材料</link>, <link="ELEMENTSSOLID">固体</link>, 可液化物
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

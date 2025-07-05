@@ -1,0 +1,44 @@
+id: CRYOTANKWARNINGS
+name: 低温箱安全规范
+title: STRINGS.CODEX.CRYOTANKWARNINGS.TITLE
+disabled: False
+search_only: False
+category: INVESTIGATIONS
+sort_string: 低温箱安全规范
+required_dlc_ids:
+- EXPANSION1_ID
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 低温箱安全规范
+    style: Title
+  - widget_type: CodexText
+    text: 低温箱3000的重要操作说明
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+  lock_id: cryotank_warning
+- contents:
+  - widget_type: CodexText
+    text: >2+
+          • 除非世界末日使你别无选择，否则不要将低温箱3000的内容物置于无人看管的状态。
+
+          • 确保低温箱3000有足够的电力能维持至少6000年。
+
+          • 当低温箱3000浸没在热熔岩中时，不要尝试解冻内容物。
+
+          • 仅能使用合格的庄严科技低温箱维修设备来对你的低温箱3000进行维修。尝试自己维修设备会使保修失效。
+
+          • 不要将食物放到低温箱3000中。低温箱3000不是冰箱。
+
+          • 不要让孩子在低温箱3000中玩。低温箱3000不是玩具。
+
+          • 虽然低温箱3000能够承受核爆炸，但庄严科技及其子公司不对核尘埃导致的任何结果负责。
+
+          • 从低温箱3000解冻后等待至少5分钟后才能操作重型机器。
+
+          • 每台低温箱3000最好只使用一次。
+
+    style: Body
+  layout: Vertical
+  lock_id: cryotank_warning

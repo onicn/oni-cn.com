@@ -1,0 +1,94 @@
+id: SOLIDRESIN
+parent_id: ELEMENTSSOLID
+name: 固态树液
+disabled: False
+search_only: False
+category: ELEMENTSSOLID
+sort_string: 固态树液
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="SOLIDRESIN">固态树液</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: resin_solid_0__ui
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换为
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: resin_solid_0__ui
+      text1: 固态树液
+      text2: 1000克
+      link_id: solidresin
+    produce:
+    - image: element_liquid
+      color: CC8B18FF
+      text1: 树液
+      text2: 1000克
+      link_id: resin
+    fabricator:
+      image: crew_state_temp_up
+      text1: 20ºC
+      tooltip: 温度高于20ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 转换于
+  layout: Vertical
+- contents:
+  - widget_type: CodexTemperatureTransitionPanel
+    require:
+    - image: element_liquid
+      color: CC8B18FF
+      text1: 树液
+      text2: 1000克
+      link_id: resin
+    produce:
+    - image: resin_solid_0__ui
+      text1: 固态树液
+      text2: 1000克
+      link_id: solidresin
+    fabricator:
+      image: crew_state_temp_down
+      text1: 20ºC
+      tooltip: 温度低于20ºC
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      从一颗暴躁的树上收获的固化粘胶。
+
+
+      它可用于生产<link="ISORESIN">异构树液</link>.
+
+
+      资源种类：有机物
+
+      熔点：20ºC
+
+      硬度：<color=#6D7BC1FF>10（柔软）</color>
+
+
+      比热容：1.300 (DTU/g)/ºC
+
+      热导率：0.170 (DTU/(m*s))/ºC
+
+      辐射吸收因数：0.75
+
+      辐射释放量/1000千克：0拉德/周期
+
+
+      属性：<link="BUILDABLEANY">一般建造材料</link>, <link="TRANSPARENT">透明体</link>, <link="ELEMENTSSOLID">固体</link>, 有机物
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical

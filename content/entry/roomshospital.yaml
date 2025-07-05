@@ -1,0 +1,113 @@
+id: ROOMSHOSPITAL
+parent_id: ROOMS
+name: 医疗
+disabled: False
+search_only: False
+category: ROOMS
+sort_string: 医疗
+sub_entries:
+- id: MassageClinic
+  parent_id: ROOMSHospital
+  name: 按摩诊所
+  disabled: False
+  sort_string: 按摩诊所
+- id: Hospital
+  parent_id: ROOMSHospital
+  name: 医院
+  disabled: False
+  sort_string: 医院
+content_container:
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 条目（2/2）
+    style: Subtitle
+  - widget_type: CodexText
+    text: <link="MASSAGECLINIC">按摩诊所</link>
+    style: Body
+  - widget_type: CodexText
+    text: <link="HOSPITAL">医院</link>
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: ui_room_hospital
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 按摩诊所
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      一个有着十分放松氛围的舒适空间，特别是有精美装饰的时候。
+
+
+      在按摩诊所接受按摩会大大缓解复制人的压力。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 详情
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>需求：</b>
+    style: Body
+  - widget_type: CodexText
+    text: >2-
+          • <link="MASSAGETABLE">Massage Table</link>
+          • No <link="REQUIREMENTCLASSINDUSTRIALMACHINERY">industrial machinery</link>
+          • <link="REQUIREMENTCLASSDECORATION">Decor item</link> (1)
+          • Minimum size: 12 tiles
+          • Maximum size: 64 tiles
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 医院
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      一个专用的医疗设施，能最大程度地缩短康复时间。
+
+
+      将生病的复制人分配到医院的医疗建筑，从而降低疾病扩散风险。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 详情
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: <b>需求：</b>
+    style: Body
+  - widget_type: CodexText
+    text: >2-
+          • <link="REQUIREMENTCLASSCLINIC">Medical equipment</link>
+          • <link="REQUIREMENTCLASSTOILETTYPE">Toilet</link>
+          • <link="DININGTABLE">Mess Table</link>
+          • No <link="REQUIREMENTCLASSINDUSTRIALMACHINERY">industrial machinery</link>
+          • Minimum size: 12 tiles
+          • Maximum size: 96 tiles
+    style: Body
+  layout: Vertical

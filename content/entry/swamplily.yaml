@@ -1,0 +1,95 @@
+id: SWAMPLILY
+parent_id: PLANTS
+name: 芳香百合
+disabled: False
+search_only: False
+category: PLANTS
+sort_string: 芳香百合
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 芳香百合
+    style: Title
+  - widget_type: CodexText
+    text: 药用性植物
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      芳香百合天然含有高浓度的维生素，能产生分子组成与乙酰水杨酸（俗称阿司匹林）类似的酸。
+
+
+      因此，这种植物是增强免疫系统和治疗诸如疼痛和发烧等各种常见疾病的理想选择。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: swamplily_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 成长自
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: seed_swamplily_0__ui
+  - widget_type: CodexText
+    text: <link="SWAMPLILY">芳香百合种子</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 详情
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexText
+    text: 芳香百合能产出<link="SWAMPLILYFLOWER">芳香百合花</link>，一种具有药用性质的美丽花朵。
+    style: Body
+  - widget_type: CodexText
+    text: >-
+      <b>生长需求</b>：
+          • 最大<link="RADIATION">辐射</link>：4,600拉德/周期
+          • 生长周期：12.0周期
+          • <link="HEAT">温度</link>：35至85ºC
+          • <link="ATMOSPHERE">气压</link>：最低150克
+          • <link="ATMOSPHERE">环境</link>：
+              • <link="CHLORINEGAS">氯气</link>
+          • 农地
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      <b>效果</b>：
+          • <link="SWAMPLILYFLOWER">芳香百合花</link>：2000克
+          • 基础<link="PLANTS">种子</link>收获几率：10%
+          • <link="DECOR">装饰度</link>：+15（范围：2格）
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: swamplily_0__ui
+      text1: 芳香百合
+      text2: 6% 生长进度/周期
+      link_id: swamplily
+    produce:
+    - image: phosphorite_0__ui
+      text1: 磷矿
+      text2: 10千克/周期
+      link_id: phosphorite
+    fabricator:
+      image: drecko_0__fbr_ui
+      text1: 毛鳞壁虎
+      link_id: DRECKO
+  layout: Vertical

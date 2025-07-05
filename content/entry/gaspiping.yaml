@@ -1,0 +1,55 @@
+id: GASPIPING
+parent_id: TECH
+name: 通风
+disabled: False
+search_only: False
+category: TECH
+sort_string: 通风
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="GASPIPING">通风</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 安装<link="ELEMENTSGAS">气体</link>基础设施的基本技术。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: utilities_gas_0__ui
+  - widget_type: CodexText
+    text: <link="GASCONDUIT">气体管道</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: utilitygasbridge_0__ui
+  - widget_type: CodexText
+    text: <link="GASCONDUITBRIDGE">气体管桥</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: pumpgas_0__ui
+  - widget_type: CodexText
+    text: <link="GASPUMP">气泵</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: ventgas_0__ui
+  - widget_type: CodexText
+    text: <link="GASVENT">排气口</link>
+    style: Body
+  layout: Horizontal

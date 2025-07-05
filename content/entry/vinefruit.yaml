@@ -1,0 +1,181 @@
+id: VINEFRUIT
+parent_id: FOOD
+name: 漫花果
+disabled: False
+search_only: False
+category: FOOD
+sort_string: 漫花果
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="VINEFRUIT">漫花果</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: ova_melon_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: >-
+      这些果实生长于<link="VINEMOTHER">漫殖藤</link>。
+
+
+      一口塞越多越有趣。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 品质：糟糕 [0]
+    style: Body
+  - widget_type: CodexText
+    text: 卡路里：325千卡
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      冷藏温度：4ºC
+
+      深度冷冻温度：-18ºC
+
+      腐烂时间：8.0周期
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 混合浆果派
+    require:
+    - image: seed_coldwheat_0__ui
+      text1: 冰霜麦粒
+      text2: 3单位
+      link_id: coldwheat
+    - image: wormwood_super_fruits_0__ui
+      text1: 虫果
+      text2: 1,000千卡
+      tooltip: 品质：低劣 [+1]
+      link_id: wormsuperfruit
+    - image: ova_melon_0__ui
+      text1: 漫花果
+      text2: 2,000千卡
+      tooltip: 品质：糟糕 [0]
+      link_id: vinefruit
+    produce:
+    - image: wormwood_berry_pie_0__ui
+      text1: 混合浆果派
+      text2: 4,200千卡
+      tooltip: 品质：杰出 [+5]
+      link_id: berrypie
+    fabricator:
+      image: cookstation_gourmet_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 燃气灶
+      text2: 50秒
+      link_id: gourmetcookingstation
+  - widget_type: CodexRecipePanel
+    text: 混合浆果派
+    require:
+    - image: megafrond_grain_0__ui
+      text1: 巨蕨谷粒
+      text2: 3单位
+      link_id: fernfood
+    - image: wormwood_super_fruits_0__ui
+      text1: 虫果
+      text2: 1,000千卡
+      tooltip: 品质：低劣 [+1]
+      link_id: wormsuperfruit
+    - image: ova_melon_0__ui
+      text1: 漫花果
+      text2: 2,000千卡
+      tooltip: 品质：糟糕 [0]
+      link_id: vinefruit
+    produce:
+    - image: wormwood_berry_pie_0__ui
+      text1: 混合浆果派
+      text2: 4,200千卡
+      tooltip: 品质：杰出 [+5]
+      link_id: berrypie
+    fabricator:
+      image: cookstation_gourmet_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 燃气灶
+      text2: 50秒
+      link_id: gourmetcookingstation
+  - widget_type: CodexConversionPanel
+    require:
+    - image: ova_melon_0__ui
+      text1: 漫花果
+      text2: 700千卡/周期
+      tooltip: 品质：糟糕 [0]
+      link_id: vinefruit
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 1615.4克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__ui
+      text1: 好吃哈奇
+      link_id: HATCH
+  - widget_type: CodexConversionPanel
+    require:
+    - image: ova_melon_0__ui
+      text1: 漫花果
+      text2: 700千卡/周期
+      tooltip: 品质：糟糕 [0]
+      link_id: vinefruit
+    produce:
+    - image: carbon_0__ui
+      text1: 煤炭
+      text2: 2153.8克/周期
+      link_id: carbon
+    fabricator:
+      image: hatch_0__veg_ui
+      text1: 草质哈奇
+      link_id: HATCHVEGGIE
+  - widget_type: CodexConversionPanel
+    require:
+    - image: ova_melon_0__ui
+      text1: 漫花果
+      text2: 1,300千卡/周期
+      tooltip: 品质：糟糕 [0]
+      link_id: vinefruit
+    produce:
+    - image: peat_0__ui
+      text1: 泥炭
+      text2: 200千克/周期
+      link_id: peat
+    fabricator:
+      image: stego_0__ui
+      text1: 尖块兽
+      link_id: STEGO
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 90千克/周期
+      link_id: water
+    produce:
+    - image: ova_melon_0__ui
+      text1: 漫花果
+      text2: 108至2,600千卡/周期
+      tooltip: 品质：糟糕 [0]
+      link_id: vinefruit
+    fabricator:
+      image: vine_mother_0__ui
+      text1: 漫殖藤主干
+      link_id: VINEMOTHER
+  layout: Vertical

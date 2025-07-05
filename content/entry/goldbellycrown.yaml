@@ -1,0 +1,73 @@
+id: GOLDBELLYCROWN
+name: 皇犸兔头冠
+title: STRINGS.CODEX.VARIANT_GOLD.TITLE
+disabled: False
+search_only: False
+category: INDUSTRIALINGREDIENTS
+sort_string: 皇犸兔头冠
+required_dlc_ids:
+- DLC2_ID
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 皇犸兔头冠
+    style: Title
+  - widget_type: CodexText
+    text: 小动物副产品
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexImage
+    image: bammoth_crown_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 欲戴王冠，必承其重，直到在复制人的帮助下如释重负。
+    style: Body
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 金汞齐
+    require:
+    - image: bammoth_crown_0__ui
+      text1: 皇犸兔头冠
+      text2: 1单位
+      link_id: goldbellycrown
+    produce:
+    - image: gold_amalgam_0__ui
+      text1: 金汞齐
+      text2: 250千克
+      link_id: goldamalgam
+    fabricator:
+      image: rockrefinery_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 碎石机
+      text2: 40秒
+      link_id: rockcrusher
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: ice_belly_0__king_ui
+      text1: 皇犸兔
+      text2: 1单位
+      link_id: goldbelly
+    produce:
+    - image: bammoth_crown_0__ui
+      text1: 皇犸兔头冠
+      text2: 250单位
+      link_id: goldbellycrown
+    fabricator:
+      image: shearing_station_0__ui
+      text1: 修剪站
+      link_id: SHEARINGSTATION
+  layout: Vertical

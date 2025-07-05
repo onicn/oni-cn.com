@@ -1,0 +1,243 @@
+id: BEANPLANTSEED
+parent_id: FOOD
+name: 小吃豆
+disabled: False
+search_only: False
+category: FOOD
+sort_string: 小吃豆
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="BEANPLANTSEED">小吃豆</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: seed_beanplant_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 一种不可直接食用的豆子，但能加工成美味的食物。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 品质：良好 [+3]
+    style: Body
+  - widget_type: CodexText
+    text: 卡路里：0千卡
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      冷藏温度：4ºC
+
+      深度冷冻温度：-18ºC
+
+      腐烂时间：8.0周期
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 应用
+  layout: Vertical
+- contents:
+  - widget_type: CodexRecipePanel
+    text: 炸豆小吃
+    require:
+    - image: seed_beanplant_0__ui
+      text1: 小吃豆
+      text2: 6单位
+      link_id: bean
+    - image: tallow_0__ui
+      text1: 动物油脂
+      text2: 1000克
+      link_id: tallow
+    produce:
+    - image: deepfried_nosh_beans_0__ui
+      text1: 炸豆小吃
+      text2: 5,000千卡
+      tooltip: 品质：良好 [+3]
+      link_id: deepfriednosh
+    fabricator:
+      image: deepfryer_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 油炸锅
+      text2: 50秒
+      link_id: deepfryer
+  - widget_type: CodexRecipePanel
+    text: 咖喱豆
+    require:
+    - image: ginger_0__ui
+      text1: 滋补根
+      text2: 4单位
+      link_id: gingerconfig
+    - image: seed_beanplant_0__ui
+      text1: 小吃豆
+      text2: 4单位
+      link_id: bean
+    produce:
+    - image: curried_beans_0__ui
+      text1: 咖喱豆
+      text2: 5,000千卡
+      tooltip: 品质：优秀 [+4]
+      link_id: curry
+    fabricator:
+      image: cookstation_gourmet_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 燃气灶
+      text2: 50秒
+      link_id: gourmetcookingstation
+  - widget_type: CodexRecipePanel
+    text: 豆腐
+    require:
+    - image: seed_beanplant_0__ui
+      text1: 小吃豆
+      text2: 6单位
+      link_id: bean
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 50千克
+      link_id: water
+    produce:
+    - image: loafu_0__ui
+      text1: 豆腐
+      text2: 3,600千卡
+      tooltip: 品质：标准 [+2]
+      link_id: tofu
+    fabricator:
+      image: microbemusher_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 食物压制器
+      text2: 50秒
+      link_id: microbemusher
+  - widget_type: CodexRecipePanel
+    text: 咸乳
+    require:
+    - image: seed_beanplant_0__ui
+      text1: 小吃豆
+      text2: 2单位
+      link_id: bean
+    - image: element_liquid
+      color: 0063FFFF
+      text1: 水
+      text2: 18千克
+      link_id: water
+    produce:
+    - image: element_liquid
+      color: CCEEE8FF
+      text1: 咸乳
+      text2: 20千克
+      link_id: milk
+    fabricator:
+      image: milkpress_0__ui
+      color: RGBA(1.000, 1.000, 1.000, 1.000)
+      text1: 植物粉碎机
+      text2: 40秒
+      link_id: milkpress
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_beanplant_0__ui
+      text1: 小吃豆
+      text2: 1.62单位/周期
+      link_id: bean
+    produce:
+    - image: bammoth_poop_0__ui
+      text1: 绒犸兔碎糜
+      text2: 30千克/周期
+      link_id: icebellypoop
+    fabricator:
+      image: ice_belly_0__king_ui
+      text1: 皇犸兔
+      link_id: GOLDBELLY
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_beanplant_0__ui
+      text1: 小吃豆
+      text2: 1.62单位/周期
+      link_id: bean
+    produce:
+    - image: bammoth_poop_0__ui
+      text1: 绒犸兔碎糜
+      text2: 30千克/周期
+      link_id: icebellypoop
+    fabricator:
+      image: ice_belly_0__ui
+      text1: 绒犸兔
+      link_id: ICEBELLY
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_beanplant_0__ui
+      text1: 小吃豆
+      text2: 1单位/周期
+      link_id: bean
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 500克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__trp_ui
+      text1: 热带帕库鱼
+      link_id: PACUTROPICAL
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_beanplant_0__ui
+      text1: 小吃豆
+      text2: 1单位/周期
+      link_id: bean
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 500克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__ui
+      text1: 帕库鱼
+      link_id: PACU
+  - widget_type: CodexConversionPanel
+    require:
+    - image: seed_beanplant_0__ui
+      text1: 小吃豆
+      text2: 1单位/周期
+      link_id: bean
+    produce:
+    - image: toxic_sand_0__ui
+      text1: 污染土
+      text2: 500克/周期
+      link_id: toxicsand
+    fabricator:
+      image: pacu_0__glp_ui
+      text1: 大嘴鱼
+      link_id: PACUCLEANER
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexCollapsibleHeader
+    text: 生产源
+  layout: Vertical
+- contents:
+  - widget_type: CodexConversionPanel
+    require:
+    - image: element_liquid
+      color: 00FF6AFF
+      text1: 乙醇
+      text2: 20千克/周期
+      link_id: ethanol
+    - image: dirt_0__ui
+      text1: 泥土
+      text2: 5千克/周期
+      link_id: dirt
+    produce:
+    - image: seed_beanplant_0__ui
+      text1: 小吃豆
+      text2: 0.57单位/周期
+      link_id: bean
+    fabricator:
+      image: beanplant_0__ui
+      text1: 小吃芽
+      link_id: BEANPLANT
+  layout: Vertical

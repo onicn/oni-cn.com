@@ -1,0 +1,35 @@
+id: LUBRICATINGOIL
+parent_id: ELEMENTTYPES
+name: 齿轮油
+title: STRINGS.MISC.TAGS.LUBRICATINGOIL
+disabled: False
+search_only: False
+category: ELEMENTTYPES
+sort_string: <link="LUBRICATINGOIL">齿轮油</link>
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="LUBRICATINGOIL">齿轮油</link>
+    style: Title
+  - widget_type: CodexText
+    text: 机械润滑剂
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexImage
+    image: liquid_tank_0__ui
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 齿轮油是用于维护复杂机械的润滑油，可保护齿轮系统避免损坏，并最大程度减少部件之间的摩擦，维持最佳性能。
+    style: Body
+  - widget_type: CodexElementCategoryList
+    require:
+    - image: element_liquid
+      color: 301265FF
+      text1: 原油
+      link_id: crudeoil
+    - image: element_liquid
+      color: 98A82FFF
+      text1: 植物润滑油
+      link_id: phytooil
+  layout: Vertical

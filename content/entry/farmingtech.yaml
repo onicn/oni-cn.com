@@ -1,0 +1,55 @@
+id: FARMINGTECH
+parent_id: TECH
+name: 基础耕种
+disabled: False
+search_only: False
+category: TECH
+sort_string: 基础耕种
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="FARMINGTECH">基础耕种</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 学习培育<link="PLANTS">植物</link>的基本原理。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 解锁
+    style: Subtitle
+  - widget_type: CodexDividerLine
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexImage
+    image: algaefarm_0__ui
+  - widget_type: CodexText
+    text: <link="ALGAEHABITAT">藻类箱</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: planterbox_0__ui
+  - widget_type: CodexText
+    text: <link="PLANTERBOX">种植箱</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: rationbox_0__ui
+  - widget_type: CodexText
+    text: <link="RATIONBOX">口粮箱</link>
+    style: Body
+  layout: Horizontal
+- contents:
+  - widget_type: CodexImage
+    image: compost_0__ui
+  - widget_type: CodexText
+    text: <link="COMPOST">堆肥堆</link>
+    style: Body
+  layout: Horizontal

@@ -1,0 +1,54 @@
+id: ULTI
+name: 不合条件的受扶养者
+title: STRINGS.CODEX.INVESTIGATIONS.DLC3_ULTI.TITLE
+disabled: False
+search_only: False
+category: EMAILS
+sort_string: 不合条件的受扶养者
+required_dlc_ids:
+- DLC3_ID
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 不合条件的受扶养者
+    style: Title
+  - widget_type: CodexText
+    text: 加密级别：二
+    style: Subtitle
+  layout: Vertical
+  lock_id: email_ulti
+- contents:
+  - widget_type: CodexText
+    text: >
+      <smallcaps><size=12>收件人：<b>机器人部</b><alpha=#AA></size></color>
+
+      发件人：<b>管理员</b><alpha=#AA><size=12> <admin@gravitas.nova></size></color>
+
+      抄送：<b>斯特恩主管</b><alpha=#AA><size=12> <jstern@gravitas.nova></size></color>
+
+      </smallcaps>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_ulti
+- contents:
+  - widget_type: CodexText
+    text: >
+      <indent=5%>请注意，奥铽梅特个人助理（UMPA）原型体没有资格在员工的个人所得税表中申报为受抚养者。
+
+
+      UMPA的机载录音当前正在审查中。</indent>
+    style: Body
+  - widget_type: CodexText
+    text: >
+      谢谢！
+
+      - 管理员
+
+      <size=11>庄严科技</size>
+
+      ------------------
+    style: Body
+  layout: Vertical
+  lock_id: email_ulti

@@ -1,0 +1,164 @@
+id: BUILDCATEGORYBASE
+parent_id: BUILDINGS
+name: 基地
+disabled: False
+search_only: False
+category: BUILDINGS
+sort_string: 基地
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: <link="BUILDCATEGORYBASE">基地</link>
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexLabelWithLargeIcon
+    text: 储气库
+    style: BodyWhite
+    image: gasstorage_0__ui
+    link_id: gasreservoir
+  - widget_type: CodexLabelWithLargeIcon
+    text: 储液库
+    style: BodyWhite
+    image: liquidreservoir_0__ui
+    link_id: liquidreservoir
+  - widget_type: CodexLabelWithLargeIcon
+    text: 地堡砖
+    style: BodyWhite
+    image: floor_bunker_0__ui
+    link_id: bunkertile
+  - widget_type: CodexLabelWithLargeIcon
+    text: 地堡门
+    style: BodyWhite
+    image: door_bunker_0__ui
+    link_id: bunkerdoor
+  - widget_type: CodexLabelWithLargeIcon
+    text: 地毯砖
+    style: BodyWhite
+    image: floor_carpet_0__ui
+    link_id: carpettile
+  - widget_type: CodexLabelWithLargeIcon
+    text: 塑料梯子
+    style: BodyWhite
+    image: ladder_plastic_0__ui
+    link_id: ladderfast
+  - widget_type: CodexLabelWithLargeIcon
+    text: 塑料砖
+    style: BodyWhite
+    image: floor_plastic_0__ui
+    link_id: plastictile
+  - widget_type: CodexLabelWithLargeIcon
+    text: 存储砖
+    style: BodyWhite
+    image: storagetile_0__ui
+    link_id: storagetile
+  - widget_type: CodexLabelWithLargeIcon
+    text: 存储箱
+    style: BodyWhite
+    image: storagelocker_0__ui
+    link_id: storagelocker
+  - widget_type: CodexLabelWithLargeIcon
+    text: 干板墙
+    style: BodyWhite
+    image: walls_0__ui
+    link_id: exteriorwall
+  - widget_type: CodexLabelWithLargeIcon
+    text: 手动气闸
+    style: BodyWhite
+    image: door_manual_0__ui
+    link_id: manualpressuredoor
+  - widget_type: CodexLabelWithLargeIcon
+    text: 智能存储箱
+    style: BodyWhite
+    image: smartstoragelocker_0__ui
+    link_id: storagelockersmart
+  - widget_type: CodexLabelWithLargeIcon
+    text: 木砖
+    style: BodyWhite
+    image: floor_wood_0__ui
+    link_id: woodtile
+  - widget_type: CodexLabelWithLargeIcon
+    text: 机械气闸
+    style: BodyWhite
+    image: door_external_0__ui
+    link_id: pressuredoor
+  - widget_type: CodexLabelWithLargeIcon
+    text: 梯子
+    style: BodyWhite
+    image: ladder_0__ui
+    link_id: ladder
+  - widget_type: CodexLabelWithLargeIcon
+    text: 气动门
+    style: BodyWhite
+    image: door_internal_0__ui
+    link_id: door
+  - widget_type: CodexLabelWithLargeIcon
+    text: 消防滑杆
+    style: BodyWhite
+    image: firepole_0__ui
+    link_id: firepole
+  - widget_type: CodexLabelWithLargeIcon
+    text: 砖块
+    style: BodyWhite
+    image: floor_basic_0__ui
+    link_id: tile
+  - widget_type: CodexLabelWithLargeIcon
+    text: 窗户砖
+    style: BodyWhite
+    image: floor_glass_0__ui
+    link_id: glasstile
+  - widget_type: CodexLabelWithLargeIcon
+    text: 网格砖
+    style: BodyWhite
+    image: floor_mesh_0__ui
+    link_id: meshtile
+  - widget_type: CodexLabelWithLargeIcon
+    text: 自动卸物箱
+    style: BodyWhite
+    image: object_dispenser_0__ui
+    link_id: objectdispenser
+  - widget_type: CodexLabelWithLargeIcon
+    text: 运载管道
+    style: BodyWhite
+    image: travel_tube_0__ui
+    link_id: traveltube
+  - widget_type: CodexLabelWithLargeIcon
+    text: 运载管道入口
+    style: BodyWhite
+    image: tube_launcher_0__ui
+    link_id: traveltubeentrance
+  - widget_type: CodexLabelWithLargeIcon
+    text: 运载管道渡口
+    style: BodyWhite
+    image: tube_tile_bridge_0__ui
+    link_id: traveltubewallbridge
+  - widget_type: CodexLabelWithLargeIcon
+    text: 迷你舱
+    style: BodyWhite
+    image: porta_pod_y_0__ui
+    link_id: exobaseheadquarters
+  - widget_type: CodexLabelWithLargeIcon
+    text: 透气砖
+    style: BodyWhite
+    image: floor_gasperm_0__ui
+    link_id: gaspermeablemembrane
+  - widget_type: CodexLabelWithLargeIcon
+    text: 金属砖
+    style: BodyWhite
+    image: floor_metal_0__ui
+    link_id: metaltile
+  - widget_type: CodexLabelWithLargeIcon
+    text: 隔热砖
+    style: BodyWhite
+    image: floor_insulated_0__ui
+    link_id: insulationtile
+  - widget_type: CodexLabelWithLargeIcon
+    text: 雪砖
+    style: BodyWhite
+    image: floor_snow_0__ui
+    link_id: snowtile
+  layout: Grid
+- contents:
+  - widget_type: CodexSpacer
+  layout: Vertical

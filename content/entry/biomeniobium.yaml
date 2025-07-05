@@ -1,0 +1,73 @@
+id: BIOMENIOBIUM
+parent_id: BIOMES
+name: 铌质生态
+disabled: False
+search_only: False
+category: BIOMES
+sort_string: BIOMENIOBIUM
+content_container:
+- contents:
+  - widget_type: CodexText
+    text: 铌质生态
+    style: Title
+  - widget_type: CodexDividerLine
+  layout: Vertical
+- contents:
+  - widget_type: CodexText
+    text: 铌质生态只有两种资源，但因为<link="NIOBIUM">铌</link>是非常稀有且珍贵的资源，所以值得特意来一次。
+    style: Body
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: >-
+      <link="NIOBIUM">铌</link>本身不是特别有用的资源，但通过<link="SUPERMATERIALREFINERY">分子熔炉</link>加工，就会变成高导热性的<link="TEMPCONDUCTORSOLID">导热质</link>，对解决殖民地中许多极端温度问题大有帮助。
+
+
+      这片生态的边缘充满着<link="OBSIDIAN">黑曜石</link>，我们需要具有<link="MINING3">极坚硬材料挖掘</link>技能的复制人才能在这里进一步探索。
+    style: Body
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 元素
+    style: Subtitle
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 黑曜石
+    image: obsidian_0__ui
+    link_id: obsidian
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 铌
+    image: niobium_0__ui
+    link_id: niobium
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 植物
+    style: Subtitle
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 无
+    color: FF0000FF
+    image: inspectorUI_cannot_build
+    link_id: 无
+  layout: Vertical
+- contents:
+  - widget_type: CodexSpacer
+  - widget_type: CodexText
+    text: 小动物
+    style: Subtitle
+  - widget_type: CodexSpacer
+  layout: Vertical
+- contents:
+  - widget_type: CodexIndentedLabelWithIcon
+    text: 无
+    color: FF0000FF
+    image: inspectorUI_cannot_build
+    link_id: 无
+  layout: Vertical
